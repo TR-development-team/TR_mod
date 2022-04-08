@@ -1,0 +1,20 @@
+characters={
+	GUG_Godo_Takuo={
+		name=JAP_Godo_Takuo
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_GodoTakuo.tga"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+			id=-1
+		}
+
+	}
+
+}

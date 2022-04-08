@@ -1,4 +1,4 @@
-﻿capital = 202 #Kiev
+﻿capital = 200 
 
 oob = "UKR_1936"
 
@@ -13,7 +13,7 @@ add_ideas = {
         partial_economic_mobilisation
 }
 set_stability = 0.7
-country_event = { id = TR_russia.7 days = 325 }
+country_event = { id = TR_Ukraine.1 days = 325 }
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -80,50 +80,10 @@ set_politics = {
 set_popularities = {	syndicalist = 100
 }
 
-create_country_leader = {
-	name = "ネストル・マフノ"
-	desc = ""
-	picture = "gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.png"
-	expire = "1963.3.1"
-	ideology = syndicalist_subtype
-	traits = {
-		
-	}
-}
+recruit_character = UKR_Nestor_Makhno
+recruit_character = UKR_Nikita_Khrushchev
 
-create_country_leader = {
-	name = "ニキータ・フルシチョフ"
-	desc = ""
-	picture = "gfx/leaders/UKR/Portrait_UKR_Khrushchev.png"
-	expire = "1953.3.1"
-	ideology = totalist_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Stepan Bandera"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_Soviet_Generic_3.dds"
-	expire = "1953.3.1"
-	ideology = national_populist_ideology
-	traits = {
-		
-	}
-}
-
-create_field_marshal = {
-	name = "ネストル・マフノ"
-	portrait_path = "gfx/leaders/SOV/Portrait_UKR_Nestor_Makhno.tga"
-	traits = { offensive_doctrine }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
-}
-
+recruit_character = UKR_Nestor_Makhno_corps
 
 
 

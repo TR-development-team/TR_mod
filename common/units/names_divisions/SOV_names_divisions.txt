@@ -1552,10 +1552,7 @@ SOV_CAV_02 = #COSSACK CAVALRY
 
 	can_use = {
 		OR = {
-			AND = {
-				tag = SOV
-				has_completed_focus = SOV_restore_cossack_units
-			}
+			tag = SOV
 			tag = UKR
 		}
 	}
@@ -1685,7 +1682,7 @@ SOV_PEN_01 =
 
 	for_countries = { SOV }
 
-	can_use = { has_completed_focus = SOV_penal_battalions }
+	can_use = { tag = SOV }
 
 	division_types = { "infantry" }
 
@@ -1862,7 +1859,6 @@ SOV_INF_03 =
 	for_countries = { SOV }
 
 	can_use = { 
-		has_completed_focus = SOV_the_eyes_fear
 		always = yes
 	}
 
@@ -1884,10 +1880,10 @@ SOV_INF_03 =
 SOV_JAP_INF = {
 	name = "Japanese Expeditionary Force"
 
-	for_countries = { SOV }
+	for_countries = { SIB }
 
 	can_use = { 
-		ROOT = { has_country_flag = SOV_CSW_transfer_vladivostok_flag }
+		tag = SIB
 	}
 
 	division_types = { "infantry" }

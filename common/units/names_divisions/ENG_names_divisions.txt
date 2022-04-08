@@ -1024,10 +1024,6 @@ ENG_MNT_02 = {
 	can_use = {
 		OR = {
 			tag = ENG
-			AND = {
-				tag = RAJ
-				has_completed_focus = RAJ_indian_gurkhas
-			}
 		}
 	}
 
@@ -1162,9 +1158,6 @@ ENG_COL_01 = {
 	for_countries = { ENG }
 
 	can_use = {
-		NOT = {
-			has_completed_focus = ENG_decolonization
-		}
 	}
 
 	division_types = { "infantry" }

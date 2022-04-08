@@ -1922,16 +1922,17 @@ country_event = {
 		owns_state = 831
 		}
 	KOR = {
+		change_tag_from = JAP
 		transfer_state = 831
 		transfer_state = 830
-		add_popularity = {
+	add_popularity = {
 		ideology = totalist
 		popularity = 0.3
 	}
-		set_politics = {
+	set_politics = {
 		ruling_party = totalist
 		elections_allowed = no
-		change_tag_from = JAP
+
 	}
 	country_event = TR_japan.51
 	}
@@ -2133,7 +2134,5 @@ country_event = {
 	option = {#よろしい、君を首相として奏薦しよう
 	    name = TR_japan.55.a	
 	    set_country_flag = JAP_Prime_Minister_Kita
-	}		
-	    
-    }
+	}
 }

@@ -122,24 +122,6 @@ set_popularities = {
 }
 
 
-create_country_leader = {
-	name = "伍堂卓雄"
-	
-	picture = "gfx/leaders/JAP/Portrait_JAP_GodoTakuo.tga"
-	expire = "1964.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		
-	}
-}
+recruit_character = GUG_Godo_Takuo
 
-create_corps_commander = {
-	name = "安藤利吉"
-	portrait_path = "gfx/leaders/JAP/Portrait_JAP_Ando_RIkichi.tga"
-	traits = { }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = JAP_rikichi_ando 

@@ -91,27 +91,13 @@ create_country_leader = {
 create_country_leader = {
 	name = "ホセ・カルロス・マリアテギ"
 	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "Portrait_peru_Mariategui.tga"
+	picture = "gfx/leaders/PRU/Portrait_PRU_Jose_Carlos_Mariategui.png"
 	expire = "1965.1.1"
 	ideology = totalist_subtype
 	traits = {
 		#
 	}
 }
-
-1939.1.1 = {
-	create_country_leader = {
-		name = "Manuel Prado Ugarteche"
-		desc = "POLITICS_MANUEL_PRADO_UGARTECHE_DESC"
-		picture = "gfx/leaders/South America/Portrait_South_America_Generic_2.dds"
-		expire = "1965.1.1"
-		ideology = fascism_ideology
-		traits = {
-			#
-		}
-	}
-}
-
 
 ### VARIANTS ###
 # 1936 Start #

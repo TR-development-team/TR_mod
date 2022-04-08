@@ -88,180 +88,20 @@ set_popularities = {
 
 set_stability = 0.50
 
+recruit_character = AUS_Karl_Renner
+recruit_character = AUS_franz_josef_otto_von_habsburg
+recruit_character = AUS_Engelbert_Dollfuss
+recruit_character = AUS_Adolf_Joseph_Lanz
 
-create_country_leader = {
-	name = "エンゲルベルト・ドルフース"
-	desc = "POLITICS_ADOLF_JOSEPH_DESC"
-	picture = "gfx/leaders/AUS/Portrait_AUS_dollfuss.png"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "アドルフ・ヨーゼフ・ランツ"
-	desc = "POLITICS_ADOLF_JOSEPH_DESC"
-	picture = "gfx/leaders/AUS/Portrait_AUS_Adolf_Joseph_Lanz.tga"
-	expire = "1965.1.1"
-	ideology = Gnosticism_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "フランツ=ヨーゼフ2世"
-	desc = "POLITICS_OTTOI_DESC"
-	picture = "gfx/leaders/AUS/Portrait_AUS_otto1.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "フランツ=ヨーゼフ2世"
-	desc = "POLITICS_OTTOI_DESC"
-	picture = "gfx/leaders/AUS/Portrait_AUS_otto1.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "フランツ=ヨーゼフ2世"
-	desc = "POLITICS_OTTOI_DESC"
-	picture = "gfx/leaders/AUS/Portrait_AUS_otto1.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "フランツ=ヨーゼフ2世"
-	desc = "POLITICS_OTTOI_DESC"
-	picture = "gfx/leaders/AUS/Portrait_AUS_otto1.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "フランツ=ヨーゼフ2世"
-	desc = "POLITICS_OTTOI_DESC"
-	picture = "gfx/leaders/AUS/Portrait_AUS_otto1.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "カール・レンナー"
-	desc = "POLITICS_KARL_RENNER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_AUS_renner.png"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-
-create_field_marshal = {
-	name = "オイゲン・フォン・エスターライヒ"
-	portrait_path = "gfx/leaders/AUS/portrait_AUS_Eugen.tga"
-	traits = { offensive_doctrine war_hero }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "カール・エグルゼーア"
-	portrait_path = "gfx/leaders/AUS/Portrai_AUS_Eglseer.tga"
-	traits = { trait_mountaineer trickster }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "オットー・スコルツェニー"
-	portrait_path = "gfx/leaders/AUS/Portrai_AUS_Skorzeny.tga"
-	traits = { trait_mountaineer trickster }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_corps_commander = {
-	name = "ロタール・レンデュリック"
-	portrait_path = "gfx/leaders/AUS/Portrai_AUS_Rendulic.tga"
-	traits = { infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "フランツ・ベーメ"
-	portrait_path = "gfx/leaders/AUS/Portrai_AUS_FranzBohme.tga"
-	traits = { infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "アドルフ・ヒトラー"
-	portrait_path = "gfx/leaders/AUS/Portrai_AUS_Hitler.tga"
-	traits = { politically_connected }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "ハインリヒ・ヒムラー"
-	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Himmler.tga"
-	traits = { politically_connected }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "カール・マリア・ヴィリグート"
-	portrait_path = "gfx/leaders/AUS/Portrait_AUS_Karl_Maria_Wiligut.tga"
-	traits = { politically_connected }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
+recruit_character = AUS_Eugen_von_Osterreich
+recruit_character = AUS_Franz_Bohme
+recruit_character = AUS_Karl_Eglseer
+recruit_character = AUS_Otto_Skorzeny
+recruit_character = AUS_Lothar_Rendulic
+recruit_character = AUS_Karl_Maria_Wiligut
+recruit_character = AUS_Erik_Jan_Hanussen
+recruit_character = AUS_Heinrich_Himmler
+recruit_character = AUS_Adolf_Hitler
 
 ### VARIANTS ###
 # 1936 Start #

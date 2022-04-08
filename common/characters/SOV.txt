@@ -1,0 +1,347 @@
+characters={
+	RUS_Joseph_Stalin={
+		name=SOV_Joseph_Stalin
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_SOV_stalin.tga"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+                        traits = { Stalin_traits }
+		}
+	}
+	RUS_Nestor_Makhno={
+		name=UKR_Nestor_Makhno
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.png"
+			}
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+	}
+	RUS_Nikolai_bukharin={
+		name=SOV_Nikolai_bukharin
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_SOV_bukharin.tga"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+	}
+	RUS_Yuliy_martov={
+		name=RUS_Yuliy_martov
+		portraits={
+		    civilian={
+			        large="gfx/leaders/SOV/RUS_martov.tga"
+		    }
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+		}
+	}
+	RUS_Boris_Savinkov={
+		name=RUS_Boris_Savinkov
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/RUS_savinkov.tga"
+		    }
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+		}
+	}
+	RUS_Pavel_Milyukov={
+		name=RUS_Pavel_Milyukov
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/RUS_milyukov.tga"
+		    }
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+		}
+	}
+	RUS_Dmitri_Pavlovich={
+		name=RUS_Dmitri_Pavlovich
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/RUS_Dmitri.tga"
+		    }
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+		}
+	}
+	RUS_nikolai_ii={
+		name=RUS_nikolai_ii
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/RUS_nikolai_ii.tga"
+		    }
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+		}
+	}
+	RUS_Pyotr_wrangel={
+		name=RUS_Pyotr_wrangel
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/RUS_wrangel2.tga"
+		    }
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+	RUS_Pyotr_wrangel_Army={
+		name=RUS_Pyotr_wrangel
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/RUS_wrangel2.tga"
+			}
+		}
+		field_marshal = {
+			traits = { defensive_doctrine career_officer war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	RUS_Anton_Denikin={
+		name=RUS_Anton_Denikin
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_SOV_denikin.tga"
+			}
+		}
+		field_marshal = {
+			traits = { career_officer war_hero infantry_officer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	RUS_Roman_Ungern={
+		name=RUS_Roman_Ungern
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_RUS_Roman_Ungern.png"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless cavalry_officer cavalry_leader substance_abuser}
+			skill = 4
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	RUS_Vlazimir_Kappel={
+		name=RUS_Vlazimir_Kappel
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_SOV_kappel.tga"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_leader career_officer brilliant_strategist }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	RUS_Sergey_Markov={
+		name=RUS_Sergey_Markov
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_Russia_Markov.tga"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer panzer_leader career_officer brilliant_strategist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	RUS_Abram_Dragomirov={
+		name=RUS_Abram_Dragomirov
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_Russia_Dragomirov.tga"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer career_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	RUS_Mikhail_Drozdovskiy={
+		name=RUS_Mikhail_Drozdovskiy
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_Russia_Drozdovskiy.tga"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer infantry_leader trait_engineer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	RUS_Pyotr_Krasnov={
+		name=RUS_Pyotr_Krasnov
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_Russia_Krasnov.tga"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer cavalry_leader organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	RUS_Ivan_Romanovsky={
+		name=RUS_Ivan_Romanovsky
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_Russia_Romanovsky.tga"
+			}
+		}
+		corps_commander = {
+			traits = { skilled_staffer old_guard trait_cautious }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	RUS_Pavel_Shatilov={
+		name=RUS_Pavel_Shatilov
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_Russia_shatilov.tga"
+			}
+		}
+		corps_commander = {
+			traits = {  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	RUS_Pyotr_Mahrov={
+		name=RUS_Pyotr_Mahrov
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_Russia_Mahrov.tga"
+			}
+		}
+		corps_commander = {
+			traits ={ cavalry_officer career_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	RUS_konstantin_nechayev = {
+		name = SOV_konstantin_nechayev
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_konstantin_nechayev"
+				small = "GFX_idea_SOV_konstantin_nechayev"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer war_hero }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	RUS_aleksandr_rodzyanko = {
+		name = SOV_aleksandr_rodzyanko
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_aleksandr_rodzyanko"
+				small = "GFX_idea_SOV_aleksandr_rodzyanko"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	RUS_andrey_shkuro = {
+		name = SOV_andrey_shkuro
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_andrey_shkuro"
+				small = "GFX_idea_SOV_andrey_shkuro"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless cavalry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+
+
+	RUS_Alexander_Kolchak={
+		name=RUS_Alexander_Kolchak
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_Russia_Kolchak.tga"
+			}
+		}
+		navy_leader = {
+			traits ={ battleship_adherent }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 2
+			logistics_skill = 3
+		}
+	}
+}

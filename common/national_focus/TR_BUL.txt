@@ -221,7 +221,7 @@ focus_tree = {
 			factor = 50
 		}
 	completion_reward = {
-                        set_capital = 249
+                        set_capital = {state = 249}
                         add_research_slot = 1
                         
                                 249 = {
@@ -741,7 +741,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-                        set_capital = 797
+                        set_capital = {state = 797}
                         set_province_name = {
                                   id = 9833
                                   name = "ツァーリグラード"

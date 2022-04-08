@@ -9,6 +9,8 @@ set_technology = {
 add_ideas = { 
          militaly_dictatorship
          CHI_late_army
+         limited_conscription
+         partial_economic_mobilisation
 }
 
 
@@ -22,24 +24,6 @@ set_popularities = {
 	paternal_autocrat = 100
 }
 
-create_country_leader = {
-	name = "盛世才"
-	desc = "POLITICS_SHENG_SHICAI_DESC"
-	picture = "Portrait_Shinjang_Sheng_Shicai.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = SIK_Sheng_Shicai
+recruit_character = SIK_Sheng_Shicai_marshal
 
-create_corps_commander = {
-	name = "Chiang Yu-fen"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}

@@ -72,72 +72,11 @@ set_convoys = 30
 set_stability = 0.75
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1933.10.16"
-	election_frequency = 36
-	elections_allowed = yes
+	ruling_party = authoritarian_democrat
+	last_election = "1935.6.9"
+	election_frequency = 12
+	elections_allowed = no # none after offset 1
 }
 set_popularities = {
-	democratic = 96
-	fascism = 2
-	communism = 2
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1936.10.19"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = {
-		democratic = 84
-		fascism = 2
-		communism = 2
-		neutrality = 12
-	}
-}
-
-create_country_leader = {
-	name = "Sveinn Björnsson"
-	desc = ""
-	picture = "portrait_ice_sveinn_bjornsson.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Johannes Valurson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Haraldur Gudmunsson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Einar Olgeirsson"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
+	authoritarian_democrat = 100
 }

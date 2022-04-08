@@ -9,14 +9,19 @@ provinces={
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
-		owner = SIK
+		owner = KML
+		add_core_of = KML
 		add_core_of = ETR
 		add_core_of = SIK
-
+		add_claim_by = CHI
+		add_claim_by = YUN
 
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
+		}
+		victory_points = {
+			4704 3 #クムル
 		}
 	}
 }

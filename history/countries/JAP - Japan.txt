@@ -192,6 +192,8 @@ set_popularities = {
 	national_populist = 9
 }
 
+### Diplomacy ###
+add_opinion_modifier = { target = CHI modifier = embargo }
 give_guarantee = TEX
 give_guarantee = YUN
 MEN = { give_military_access = JAP }
@@ -256,7 +258,6 @@ recruit_character = JAP_Kurita_Takeo
 recruit_character = JAP_Watanabe_Jotaro
 recruit_character = JAP_yasuji_okamura
 recruit_character = JAP_toshizo_nishio
-recruit_character = JAP_rikichi_ando
 recruit_character = JAP_naruhiko_higashikuni
 recruit_character = JAP_seishiro_itagaki
 recruit_character = JAP_takashi_sakai

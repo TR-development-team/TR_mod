@@ -3,21 +3,24 @@ state={
 	name="STATE_756"
 	local_supplies=0.0 
 provinces={
-		1778 2028 4783 5076 7727 7803 7971 8102 10770 10899 12596 12820 
+		1778 2028 5076 7727 7971 8102 12596 12820 
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000
-	state_category = pastoral
+	state_category = rural
 	history={
-		owner = KUO
-                add_core_of = KUO
-		add_core_of = XSM
+		owner = HEX
+                add_core_of = HEX
 		add_claim_by = CHI
+		add_claim_by = YUN
 		buildings = {
-			infrastructure = 1
-
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
 		}
-
+                victory_points = {
+			2028 5
+		}
 
 	}
 }

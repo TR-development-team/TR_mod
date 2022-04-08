@@ -1,0 +1,143 @@
+characters={
+	UKS_Nestor_Makhno={
+		name=UKR_Nestor_Makhno
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.png"
+			}
+		}
+		country_leader={
+			ideology= syndicalist_subtype
+		}
+	}
+	UKS_Nikita_Khrushchev={
+		name=UKR_Nikita_Khrushchev
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Khrushchev.png"
+			}
+		}
+		country_leader={
+			ideology= radical_socialist_subtype
+		}
+		country_leader={
+			ideology= totalist_subtype
+		}
+	}
+	UKS_ivan_chernyakhovsky = {
+		name = SOV_ivan_chernyakhovsky
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_ivan_chernyakhovsky"
+				small= "GFX_idea_SOV_ivan_chernyakhovsky"
+			}
+		}
+		corps_commander = {
+			traits = { armor_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 413
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+	UKS_grigory_kulik = {
+		name = SOV_grigory_kulik
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_grigory_kulik
+				small=GFX_portrait_SOV_grigory_kulik_small
+			}
+		}
+		corps_commander = {
+			traits = { old_guard inflexible_strategist career_officer politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+	UKS_kirill_moskalenko = {
+		name = SOV_kirill_moskalenko
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_kirill_moskalenko
+				small=GFX_portrait_SOV_kirill_moskalenko_small
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+	UKS_dmitry_lelyushenko = {
+		name = SOV_dmitry_lelyushenko
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_dmitry_lelyushenko
+				small=GFX_portrait_SOV_dmitry_lelyushenko_small
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless armor_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+	UKS_rodion_malinovsky = {
+		name = SOV_rodion_malinovsky
+		portraits = {
+			army = {
+				large = GFX_portrait_SOV_rodion_malinovsky
+				small=GFX_portrait_SOV_rodion_malinovsky_small
+			}
+		}
+		corps_commander = {
+			traits = { old_guard career_officer trait_cautious politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+
+	UKS_vitaly_primakov = {
+		name = SOV_vitaly_primakov
+
+		portraits = {
+			army = {
+				large = "GFX_portrait_SOV_vasily_primakov"
+				small = "GFX_portrait_SOV_vasily_primakov_small"
+			}
+		}
+
+		corps_commander = {
+			traits = { cavalry_officer trait_reckless war_hero cavalry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+		}
+	}
+}

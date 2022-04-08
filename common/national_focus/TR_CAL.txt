@@ -1,0 +1,2646 @@
+focus_tree = {
+	id = California_focus
+	continuous_focus_position = { x = 700 y = 1600 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CAL
+		}
+	}
+	default = no
+	#1936年帝国会議
+	focus = {
+		id = CAL_Politic_focus_1
+		icon = GFX_
+		x = 17
+		y = 0
+		cost = 1
+        available = {
+            has_global_flag = Empire_Conference_End
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_political_power = 50
+		}
+	}
+	#連邦へ
+	focus = {
+		id = CAL_Politic_focus_2
+		icon = GFX_
+		x = -6
+		y = 1
+		cost = 2
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+			has_country_flag = CAL_Federation
+            }
+		prerequisite = { focus = CAL_Politic_focus_1 }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_political_power = 50
+		}
+	}
+	#第一回加州立法院議員総選挙
+	focus = {
+		id = CAL_Politic_focus_3
+		icon = GFX_
+		x = -6
+		y = 2
+		cost = 2
+		prerequisite = { focus = CAL_Politic_focus_2 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#海軍クーデター
+	focus = {
+		id = CAL_Navy_Corp_1
+		icon = GFX_
+		x = 0
+		y = 3
+		cost = 6
+		prerequisite = { focus = CAL_Politic_focus_3 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#自治領への回帰
+	focus = {
+		id = CAL_Navy_Corp_2
+		icon = GFX_
+		x = -2
+		y = 4
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_1 }
+		mutually_exclusive = { focus = CAL_Navy_Corp_8 } 
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#警察の増員
+	focus = {
+		id = CAL_Navy_Corp_3
+		icon = GFX_
+		x = -3
+		y = 5
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_2 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#新聞社の統制
+	focus = {
+		id = CAL_Navy_Corp_4
+		icon = GFX_
+		x = -3
+		y = 6
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_3 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#沿岸都市への展開
+	focus = {
+		id = CAL_Navy_Corp_5
+		icon = GFX_
+		x = -1
+		y = 5
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_2 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#都市から武器を取り除く
+	focus = {
+		id = CAL_Navy_Corp_6
+		icon = GFX_
+		x = -1
+		y = 6
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_5 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#民間映画の検閲
+	focus = {
+		id = CAL_Navy_Corp_7
+		icon = GFX_
+		x = -2
+		y = 7
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_4 }
+		prerequisite = { focus = CAL_Navy_Corp_6 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#海軍の王国
+	focus = {
+		id = CAL_Navy_Corp_8
+		icon = GFX_
+		x = 2
+		y = 4
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_1 }
+		mutually_exclusive = { focus = CAL_Navy_Corp_2 }   
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#特別警察隊の強化
+	focus = {
+		id = CAL_Navy_Corp_9
+		icon = GFX_
+		x = 1
+		y = 5
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_8 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#新聞王を叩き潰す
+	focus = {
+		id = CAL_Navy_Corp_10
+		icon = GFX_
+		x = 1
+		y = 6
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_9 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#戦時措置法
+	focus = {
+		id = CAL_Navy_Corp_11
+		icon = GFX_
+		x = 3
+		y = 5
+		cost = 6
+		prerequisite = { focus = CAL_Navy_Corp_8 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#白人の強制収容
+	focus = {
+		id = CAL_Navy_Corp_12
+		icon = GFX_
+		x = 3
+		y = 6
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_11 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#加州映画協会による独占
+	focus = {
+		id = CAL_Navy_Corp_13
+		icon = GFX_
+		x = 2
+		y = 7
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_10 }
+		prerequisite = { focus = CAL_Navy_Corp_12 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#統治機構の確立
+	focus = {
+		id = CAL_Navy_Corp_14
+		icon = GFX_
+		x = 0
+		y = 8
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_7 focus = CAL_Navy_Corp_13 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#軍港整備
+	focus = {
+		id = CAL_Navy_Corp_15
+		icon = GFX_
+		x = -2
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_14 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#更なる造船力
+	focus = {
+		id = CAL_Navy_Corp_16
+		icon = GFX_
+		x = -2
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_15 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#東太平洋を支配せよ
+	focus = {
+		id = CAL_Navy_Corp_17
+		icon = GFX_
+		x = -2
+		y = 11
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_16 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#日本語教育
+	focus = {
+		id = CAL_Navy_Corp_18
+		icon = GFX_
+		x = 0
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_14 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#神宮の建設
+	focus = {
+		id = CAL_Navy_Corp_19
+		icon = GFX_
+		x = 0
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_18 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#日本化の進展
+	focus = {
+		id = CAL_Navy_Corp_20
+		icon = GFX_
+		x = 0
+		y = 11
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_19 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#アジアからの移民を奨励
+	focus = {
+		id = CAL_Navy_Corp_21
+		icon = GFX_
+		x = 2
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_14 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#点と線から面へ
+	focus = {
+		id = CAL_Navy_Corp_22
+		icon = GFX_
+		x = 2
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_21 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#治安の回復
+	focus = {
+		id = CAL_Navy_Corp_23
+		icon = GFX_
+		x = 2
+		y = 11
+		cost = 8
+		prerequisite = { focus = CAL_Navy_Corp_22 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#文民統治の復活
+	focus = {
+		id = CAL_Navy_Corp_24
+		icon = GFX_
+		x = -1
+		y = 12
+		cost = 10
+		prerequisite = { focus = CAL_Navy_Corp_17 }
+		prerequisite = { focus = CAL_Navy_Corp_20 }
+		prerequisite = { focus = CAL_Navy_Corp_23 }
+		mutually_exclusive = { focus = CAL_Navy_Corp_25 } 
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#軍政の維持
+	focus = {
+		id = CAL_Navy_Corp_25
+		icon = GFX_
+		x = 1
+		y = 12
+		cost = 10
+		prerequisite = { focus = CAL_Navy_Corp_17 }
+		prerequisite = { focus = CAL_Navy_Corp_20 }
+		prerequisite = { focus = CAL_Navy_Corp_23 }
+		mutually_exclusive = { focus = CAL_Navy_Corp_24 } 
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#加州保守党の勝利！
+	focus = {
+		id = CAL_Democratic_focus_1
+		icon = GFX_
+		x = -6
+		y = 3
+		cost = 8
+		prerequisite = { focus = CAL_Politic_focus_3 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#日本連邦の一員
+	focus = {
+		id = CAL_Democratic_focus_2
+		icon = GFX_
+		x = -6
+		y = 4
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_1 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#白人との協調
+	focus = {
+		id = CAL_Democratic_focus_3
+		icon = GFX_
+		x = -5
+		y = 5
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_2 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#日米時事新聞社の設立
+	focus = {
+		id = CAL_Democratic_focus_4
+		icon = GFX_
+		x = -5
+		y = 6
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_3 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#移民への援助
+	focus = {
+		id = CAL_Democratic_focus_5
+		icon = GFX_
+		x = -7
+		y = 5
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_2 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#農業への投資
+	focus = {
+		id = CAL_Democratic_focus_6
+		icon = GFX_
+		x = -7
+		y = 6
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_5 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#加州自由党の勝利！
+	focus = {
+		id = CAL_Democratic_focus_7
+		icon = GFX_
+		x = -10
+		y = 3
+		cost = 8
+		prerequisite = { focus = CAL_Politic_focus_3 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#加州第一
+	focus = {
+		id = CAL_Democratic_focus_8
+		icon = GFX_
+		x = -10
+		y = 4
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_7 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#行政の腐敗と戦う
+	focus = {
+		id = CAL_Democratic_focus_9
+		icon = GFX_
+		x = -9
+		y = 5
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_8 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#教育改革
+	focus = {
+		id = CAL_Democratic_focus_10
+		icon = GFX_
+		x = -9
+		y = 6
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_9 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#平等な権利
+	focus = {
+		id = CAL_Democratic_focus_11
+		icon = GFX_
+		x = -11
+		y = 5
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_8 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#自由貿易の推進
+	focus = {
+		id = CAL_Democratic_focus_12
+		icon = GFX_
+		x = -11
+		y = 6
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_11 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#寛容な国家
+	focus = {
+		id = CAL_Democratic_focus_13
+		icon = GFX_
+		x = -8
+		y = 7
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_4 focus = CAL_Democratic_focus_10 }
+		prerequisite = { focus = CAL_Democratic_focus_6 focus = CAL_Democratic_focus_12 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#本国企業との良好な関係
+	focus = {
+		id = CAL_Democratic_focus_14
+		icon = GFX_
+		x = -6
+		y = 8
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_4 }
+		prerequisite = { focus = CAL_Democratic_focus_6 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#日本石油との協力
+	focus = {
+		id = CAL_Democratic_focus_15
+		icon = GFX_
+		x = -6
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_14 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#三菱の支社を招く
+	focus = {
+		id = CAL_Democratic_focus_16
+		icon = GFX_
+		x = -6
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_15 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#レジスタンスの鎮静化
+	focus = {
+		id = CAL_Democratic_focus_17
+		icon = GFX_
+		x = -8
+		y = 8
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_13 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#モルモン教徒との交渉
+	focus = {
+		id = CAL_Democratic_focus_18
+		icon = GFX_
+		x = -8
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_17 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#過激派の粉砕
+	focus = {
+		id = CAL_Democratic_focus_19
+		icon = GFX_
+		x = -8
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_18 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#国内産業の重視
+	focus = {
+		id = CAL_Democratic_focus_20
+		icon = GFX_
+		x = -10
+		y = 8
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_10 }
+		prerequisite = { focus = CAL_Democratic_focus_12 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#企業本社の誘致
+	focus = {
+		id = CAL_Democratic_focus_21
+		icon = GFX_
+		x = -10
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_20 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#加州自動車工業会社の設立
+	focus = {
+		id = CAL_Democratic_focus_22
+		icon = GFX_
+		x = -10
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_21 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#太平洋岸連邦
+	focus = {
+		id = CAL_Democratic_focus_23
+		icon = GFX_
+		x = -8
+		y = 11
+		cost = 8
+		prerequisite = { focus = CAL_Democratic_focus_19 }
+		prerequisite = { focus = CAL_Democratic_focus_16 focus = CAL_Democratic_focus_22 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#加州社会党の勝利！
+	focus = {
+		id = CAL_socialism_focus_1
+		icon = GFX_
+		x = -15
+		y = 3
+		cost = 8
+		prerequisite = { focus = CAL_Politic_focus_3 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#人種平等
+	focus = {
+		id = CAL_socialism_focus_2
+		icon = GFX_
+		x = -15
+		y = 4
+		cost = 8
+		prerequisite = { focus = CAL_Politic_focus_3 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#労働者の権利
+	focus = {
+		id = CAL_socialism_focus_3
+		icon = GFX_
+		x = -14
+		y = 5
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_2 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#協同組合法
+	focus = {
+		id = CAL_socialism_focus_4
+		icon = GFX_
+		x = -14
+		y = 6
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_3 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#学校と病院
+	focus = {
+		id = CAL_socialism_focus_5
+		icon = GFX_
+		x = -14
+		y = 7
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_4 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#カリフォルニアの貧困を終わらせる
+	focus = {
+		id = CAL_socialism_focus_6
+		icon = GFX_
+		x = -16
+		y = 5
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_2 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#累進課税
+	focus = {
+		id = CAL_socialism_focus_7
+		icon = GFX_
+		x = -16
+		y = 6
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_6 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#年金の保証
+	focus = {
+		id = CAL_socialism_focus_8
+		icon = GFX_
+		x = -16
+		y = 7
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_7 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#現実主義
+	focus = {
+		id = CAL_socialism_focus_9
+		icon = GFX_
+		x = -13
+		y = 8
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_5 }
+		prerequisite = { focus = CAL_socialism_focus_8 }
+		mutually_exclusive = { focus = CAL_socialism_focus_10 } 
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#理想主義
+	focus = {
+		id = CAL_socialism_focus_10
+		icon = GFX_
+		x = -17
+		y = 8
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_5 }
+		prerequisite = { focus = CAL_socialism_focus_8 }
+		mutually_exclusive = { focus = CAL_socialism_focus_9 } 
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#福祉制度の拡充
+	focus = {
+		id = CAL_socialism_focus_11
+		icon = GFX_
+		x = -13
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_9 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#州兵の復活
+	focus = {
+		id = CAL_socialism_focus_12
+		icon = GFX_
+		x = -13
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_11 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#農地改革
+	focus = {
+		id = CAL_socialism_focus_13
+		icon = GFX_
+		x = -13
+		y = 11
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_12 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#日本からの自立を進める
+	focus = {
+		id = CAL_socialism_focus_14
+		icon = GFX_
+		x = -15
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_5 }
+		prerequisite = { focus = CAL_socialism_focus_8 }
+		prerequisite = { focus = CAL_socialism_focus_9 focus = CAL_socialism_focus_10 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#レジスタンスと握手する
+	focus = {
+		id = CAL_socialism_focus_15
+		icon = GFX_
+		x = -15
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_14 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#団結した国家
+	focus = {
+		id = CAL_socialism_focus_16
+		icon = GFX_
+		x = -15
+		y = 11
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_15 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#労働者評議会
+	focus = {
+		id = CAL_socialism_focus_17
+		icon = GFX_
+		x = -17
+		y = 9
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_10 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#革命防衛隊
+	focus = {
+		id = CAL_socialism_focus_18
+		icon = GFX_
+		x = -17
+		y = 10
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_17 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#地主を排除
+	focus = {
+		id = CAL_socialism_focus_19
+		icon = GFX_
+		x = -17
+		y = 11
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_18 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#太平洋岸共和国の樹立
+	focus = {
+		id = CAL_socialism_focus_20
+		icon = GFX_
+		x = -13
+		y = 12
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_13 }
+		prerequisite = { focus = CAL_socialism_focus_16 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#真のアメリカ
+	focus = {
+		id = CAL_socialism_focus_21
+		icon = GFX_
+		x = -17
+		y = 12
+		cost = 8
+		prerequisite = { focus = CAL_socialism_focus_19 }
+		prerequisite = { focus = CAL_socialism_focus_16 }
+		relative_position_id = CAL_Politic_focus_1
+        available = {
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		}
+	}
+	#北米に巣食う夷狄を討て
+	focus = {
+		id = CAL_Shogunate_focus_1
+		icon = GFX_
+		x = 6
+		y = 1
+		cost = 8
+		relative_position_id = CAL_Politic_focus_1
+        available = { has_country_flag = CAL_Shogunate }
+		prerequisite = { focus = CAL_Politic_focus_1 }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#将軍宣下
+	focus = {
+		id = CAL_Shogunate_focus_2
+		icon = GFX_
+		x = 6
+		y = 2
+		cost = 5
+		relative_position_id = CAL_Politic_focus_1
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_1 }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#前近代へ
+	focus = {
+		id = CAL_Shogunate_focus_3
+		icon = GFX_
+		x = 6
+		y = 3
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_2 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#社は土地の意味
+	focus = {
+		id = CAL_Shogunate_focus_4
+		icon = GFX_
+		x = 7
+		y = 4
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_3 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#稷は国家の意味
+	focus = {
+		id = CAL_Shogunate_focus_5
+		icon = GFX_
+		x = 5
+		y = 4
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_3 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#土台たる社稷の復興
+	focus = {
+		id = CAL_Shogunate_focus_6
+		icon = GFX_
+		x = 6
+		y = 5
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_4 }
+		prerequisite = { focus = CAL_Shogunate_focus_5 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#自治なき社稷はない
+	focus = {
+		id = CAL_Shogunate_focus_7
+		icon = GFX_
+		x = 7
+		y = 6
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_6 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#自然なる神道
+	focus = {
+		id = CAL_Shogunate_focus_8
+		icon = GFX_
+		x = 7
+		y = 7
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_7 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#欧州模倣政治の根絶
+	focus = {
+		id = CAL_Shogunate_focus_9
+		icon = GFX_
+		x = 5
+		y = 6
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_6 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#官僚などは必要ない
+	focus = {
+		id = CAL_Shogunate_focus_10
+		icon = GFX_
+		x = 5
+		y = 7
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_9 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#アジア的農村共同体の復興
+	focus = {
+		id = CAL_Shogunate_focus_11
+		icon = GFX_
+		x = 6
+		y = 8
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_8 }
+		prerequisite = { focus = CAL_Shogunate_focus_10 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#相互扶助
+	focus = {
+		id = CAL_Shogunate_focus_12
+		icon = GFX_
+		x = 7
+		y = 9
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_11 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#荒地の開墾
+	focus = {
+		id = CAL_Shogunate_focus_13
+		icon = GFX_
+		x = 7
+		y = 10
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_12 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#人格教育の重視
+	focus = {
+		id = CAL_Shogunate_focus_14
+		icon = GFX_
+		x = 5
+		y = 9
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_11 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#土地均分制
+	focus = {
+		id = CAL_Shogunate_focus_15
+		icon = GFX_
+		x = 5
+		y = 10
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_14 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#君民共治
+	focus = {
+		id = CAL_Shogunate_focus_16
+		icon = GFX_
+		x = 6
+		y = 11
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_13 }
+		prerequisite = { focus = CAL_Shogunate_focus_15 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#"大同"の理想を巡って
+	focus = {
+		id = CAL_Shogunate_focus_17
+		icon = GFX_
+		x = 6
+		y = 12
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_16 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#白人は人に非ず
+	focus = {
+		id = CAL_Shogunate_focus_18
+		icon = GFX_
+		x = 7
+		y = 13
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_17 }
+		mutually_exclusive = { focus = CAL_Shogunate_focus_23 } 
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#黄黒白
+	focus = {
+		id = CAL_Shogunate_focus_19
+		icon = GFX_
+		x = 7
+		y = 14
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_18 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#異人居留区の設置
+	focus = {
+		id = CAL_Shogunate_focus_20
+		icon = GFX_
+		x = 7
+		y = 15
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_19 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#現代の旗本
+	focus = {
+		id = CAL_Shogunate_focus_21
+		icon = GFX_
+		x = 7
+		y = 16
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_20 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#五人組
+	focus = {
+		id = CAL_Shogunate_focus_22
+		icon = GFX_
+		x = 7
+		y = 17
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_21 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#全ての人を子と思い親と思え
+	focus = {
+		id = CAL_Shogunate_focus_23
+		icon = GFX_
+		x = 5
+		y = 13
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_17 }
+		mutually_exclusive = { focus = CAL_Shogunate_focus_18 } 
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#将軍廃位
+	focus = {
+		id = CAL_Shogunate_focus_24
+		icon = GFX_
+		x = 5
+		y = 14
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_23 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#自然なる宗教指導者を
+	focus = {
+		id = CAL_Shogunate_focus_25
+		icon = GFX_
+		x = 5
+		y = 15
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_24 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#祭政一致
+	focus = {
+		id = CAL_Shogunate_focus_26
+		icon = GFX_
+		x = 5
+		y = 16
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_25 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#近代が招いた社会不安を根絶する
+	focus = {
+		id = CAL_Shogunate_focus_27
+		icon = GFX_
+		x = 5
+		y = 17
+		cost = 8
+        available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_26 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+
+		}
+	}
+	#将軍の権威はロッキー山脈を越えて
+	focus = {
+		id = CAL_Shogunate_focus_28
+		icon = GFX_
+		x = 7
+		y = 18
+		cost = 8
+		available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_22 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+	}
+	}
+	#もっと開墾地が必要だ
+	focus = {
+		id = CAL_Shogunate_focus_29
+		icon = GFX_
+		x = 5
+		y = 18
+		cost = 8
+		available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_27 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+	}
+	}
+	#農民たちの亜米利加国
+	focus = {
+		id = CAL_Shogunate_focus_30
+		icon = GFX_
+		x = 6
+		y = 19
+		cost = 8
+		available = {}
+		prerequisite = { focus = CAL_Shogunate_focus_28 }
+		prerequisite = { focus = CAL_Shogunate_focus_29 }
+		available_if_capitulated = yes
+		relative_position_id = CAL_Politic_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+	}
+	}
+	#暴落する市場
+	focus = {
+		id = CAL_Economy_focus_1
+		icon = GFX_
+		x = 29
+		y = 0
+		cost = 3
+		available = {}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_stability = -0.1
+	    }
+	}
+	#可及的速やかに…
+	focus = {
+		id = CAL_Economy_focus_2
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 2
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_1 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_stability = -0.05
+	    }
+	}
+	#…誠に遺憾です
+	focus = {
+		id = CAL_Economy_focus_3
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 2
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_1 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_stability = -0.05
+	    }
+	}
+	#事態は悪化する一方だ…
+	focus = {
+		id = CAL_Economy_focus_4
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 2
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_2 }
+		prerequisite = { focus = CAL_Economy_focus_3 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_stability = -0.1
+	    }
+	}
+	#日本の支援を求める
+	focus = {
+		id = CAL_Economy_focus_5
+		icon = GFX_
+		x = 0
+		y = 3
+		cost = 4
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_4 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_political_power = 50
+	    }
+	}
+	#円ブロックによる恩恵
+	focus = {
+		id = CAL_Economy_focus_6
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 4
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_5 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_stability = 0.05
+	    }
+	}
+	#立て直しの始まり
+	focus = {
+		id = CAL_Economy_focus_7
+		icon = GFX_
+		x = 0
+		y = 5
+		cost = 2
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_6 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_stability = 0.05
+	    }
+	}
+	#民衆に手を差し伸べる
+	focus = {
+		id = CAL_Economy_focus_8
+		icon = GFX_
+		x = -2
+		y = 6
+		cost = 8
+		available = { NOT ={ has_country_flag = CAL_Shogunate } }
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_7 }
+		mutually_exclusive = { focus = CAL_Economy_focus_9 } 
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		swap_ideas = {
+			remove_idea = CAL_black_thursday
+			add_idea = CAL_black_thursday_intervention_1
+		}
+	    }
+	}
+	#財布の紐を引き締める
+	focus = {
+		id = CAL_Economy_focus_9
+		icon = GFX_
+		x = 2
+		y = 6
+		cost = 8
+		available = { NOT ={has_country_flag = CAL_Shogunate } }
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_7 }
+		mutually_exclusive = { focus = CAL_Economy_focus_8 } 
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		swap_ideas = {
+			remove_idea = CAL_black_thursday
+			add_idea = CAL_black_thursday_austerity_1
+		}
+	    }
+	}
+	#失業者給付金
+	focus = {
+		id = CAL_Economy_focus_10
+		icon = GFX_
+		x = -3
+		y = 7
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_8 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+           add_ideas = acceptable_Unemployment_subsidies
+	    }
+	}
+	#工場の救済
+	focus = {
+		id = CAL_Economy_focus_11
+		icon = GFX_
+		x = -1
+		y = 7
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_8 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_political_power = -50
+	    }
+	}
+	#社会資本の整備
+	focus = {
+		id = CAL_Economy_focus_12
+		icon = GFX_
+		x = -3
+		y = 8
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_10 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		swap_ideas = {
+			remove_idea = CAL_black_thursday_intervention_1
+			add_idea = CAL_black_thursday_intervention_2
+		}
+	    }
+	}
+	#科学技術は経済を救う
+	focus = {
+		id = CAL_Economy_focus_13
+		icon = GFX_
+		x = -1
+		y = 8
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_11 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_ideas = acceptable_school_system
+	    }
+	}
+	#前例のない成長
+	focus = {
+		id = CAL_Economy_focus_14
+		icon = GFX_
+		x = -2
+		y = 9
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_12 }
+		prerequisite = { focus = CAL_Economy_focus_13 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		swap_ideas = {
+			remove_idea = CAL_black_thursday_intervention_2
+			add_idea = CAL_black_thursday_intervention_3
+		}
+	    }
+	}
+	#農業補助金
+	focus = {
+		id = CAL_Economy_focus_15
+		icon = GFX_
+		x = 1
+		y = 7
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_9 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_ideas = CAL_agricultural_subsidy
+	    }
+	}
+	#財源を確保する
+	focus = {
+		id = CAL_Economy_focus_16
+		icon = GFX_
+		x = 3
+		y = 7
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_9 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_political_power = 100
+	    }
+	}
+	#不採算事業からの撤退
+	focus = {
+		id = CAL_Economy_focus_17
+		icon = GFX_
+		x = 1
+		y = 8
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_15 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+	    378 = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		910 = {
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	    }
+	}
+	#デノミネーション
+	focus = {
+		id = CAL_Economy_focus_18
+		icon = GFX_
+		x = 3
+		y = 8
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_16 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		swap_ideas = {
+			remove_idea = CAL_black_thursday_austerity_1
+			add_idea = CAL_black_thursday_austerity_2
+		}
+	    }
+	}
+	#安定した経済
+	focus = {
+		id = CAL_Economy_focus_19
+		icon = GFX_
+		x = 2
+		y = 9
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_17 }
+		prerequisite = { focus = CAL_Economy_focus_18 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		swap_ideas = {
+			remove_idea = CAL_black_thursday_austerity_2
+			add_idea = CAL_black_thursday_austerity_3
+		}
+	    }
+	}
+	#西海岸の夜明け
+	focus = {
+		id = CAL_Economy_focus_20
+		icon = GFX_
+		x = 0
+		y = 10
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_14 focus = CAL_Economy_focus_19 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_timed_idea = {
+			idea = CAL_Economic_Boom
+			days = 365
+		}
+	    }
+	}
+	#油田の開発
+	focus = {
+		id = CAL_Economy_focus_21
+		icon = GFX_
+		x = -2
+		y = 11
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_20 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		if = {
+			limit = {
+				has_full_control_of_state = 910
+			}
+		add_resource = {
+			type = oil
+			amount = 25
+			state = 910
+		}
+	    }
+		if = {
+			limit = {
+				has_full_control_of_state = 378
+			}
+		add_resource = {
+			type = oil
+			amount = 10
+			state = 378
+		}
+	    }
+	    }
+	}
+	#石油精製所の拡大
+	focus = {
+		id = CAL_Economy_focus_22
+		icon = GFX_
+		x = -2
+		y = 12
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_21 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		if = {
+			limit = {
+				has_full_control_of_state = 378
+			}
+			378 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_full_control_of_state = 910
+			}
+			910 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	    }
+	}
+	#石油化学産業の拡大
+	focus = {
+		id = CAL_Economy_focus_23
+		icon = GFX_
+		x = -2
+		y = 13
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_22 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		if = {
+			limit = {
+				has_full_control_of_state = 910
+			}
+			910 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	    }
+	}
+	#産業研究への投資
+	focus = {
+		id = CAL_Economy_focus_24
+		icon = GFX_
+		x = 0
+		y = 11
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_20 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+	    }
+	}
+	#更なる研究資金
+	focus = {
+		id = CAL_Economy_focus_25
+		icon = GFX_
+		x = 0
+		y = 12
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_24 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_research_slot = 1
+	    }
+	}
+	#放射性元素の研究
+	focus = {
+		id = CAL_Economy_focus_26
+		icon = GFX_
+		x = 0
+		y = 13
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_25 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {	
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = nuclear
+		}
+	    }
+	}
+	#鉄道網の整備
+	focus = {
+		id = CAL_Economy_focus_27
+		icon = GFX_
+		x = 2
+		y = 11
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_20 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+		complete_tooltip = {
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#民間部門への投資
+	focus = {
+		id = CAL_Economy_focus_28
+		icon = GFX_
+		x = 2
+		y = 12
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_27 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	#軍事部門への投資
+	focus = {
+		id = CAL_Economy_focus_29
+		icon = GFX_
+		x = 2
+		y = 13
+		cost = 8
+		available = {}
+		available_if_capitulated = yes
+		prerequisite = { focus = CAL_Economy_focus_28 }
+		relative_position_id = CAL_Economy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+		complete_tooltip = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}		
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

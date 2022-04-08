@@ -132,292 +132,32 @@ add_ideas = {
         SOV_fin_independent
 }
 
-create_country_leader = {
-	name = "ヨシフ・ジュガシヴィリ"
-	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "gfx/leaders/SOV/Portrait_SOV_stalin.tga"
-	expire = "1953.3.1"
-	ideology = totalist_subtype
-	traits = { Stalin_traits
-		
-	}
-}
+recruit_character = RUS_Joseph_Stalin
+recruit_character = RUS_Nestor_Makhno
+recruit_character = RUS_Nikolai_bukharin
+recruit_character = RUS_Yuliy_martov
+recruit_character = RUS_Boris_Savinkov
+recruit_character = RUS_Pavel_Milyukov
+recruit_character = RUS_Dmitri_Pavlovich
+recruit_character = RUS_nikolai_ii
+recruit_character = RUS_Pyotr_wrangel
 
-create_country_leader = {
-	name = "ネストル・マフノ"
-	desc = ""
-	picture = "gfx/leaders/SOV/Portrait_UKR_Nestor_Makhno.tga"
-	expire = "1963.3.1"
-	ideology = syndicalist_subtype
-	traits = {
-		
-	}
-}
+recruit_character = RUS_Pyotr_wrangel_Army
+recruit_character = RUS_Anton_Denikin
+recruit_character = RUS_Roman_Ungern
+recruit_character = RUS_Vlazimir_Kappel
+recruit_character = RUS_Sergey_Markov
+recruit_character = RUS_Abram_Dragomirov
+recruit_character = RUS_Mikhail_Drozdovskiy
+recruit_character = RUS_Pyotr_Krasnov
+recruit_character = RUS_Ivan_Romanovsky
+recruit_character = RUS_Pavel_Shatilov
+recruit_character = RUS_Pyotr_Mahrov
+recruit_character = RUS_konstantin_nechayev
+recruit_character = RUS_aleksandr_rodzyanko
+recruit_character = RUS_andrey_shkuro
+recruit_character = RUS_Alexander_Kolchak
 
-
-create_country_leader = {
-	name = "ニコライ・ブハーリン"
-	desc = "POLITICS_BUKHARIN_STALIN_DESC"
-	picture = "gfx/leaders/SOV/Portrait_SOV_bukharin.tga"
-	expire = "1953.3.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		
-	}
-}
-
-
-create_country_leader = {
-	name = "ニコライ2世"
-	desc = "POLITICS_KONSTANTIN_RODZAEVSKY_DESC"
-	picture = "gfx/leaders/SOV/RUS_nikolai_ii.tga"
-	expire = "1953.3.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "ピョートル・ヴラーンゲリ"
-	desc = "POLITICS_WRANGEL_DESC"
-	picture = "gfx/leaders/SOV/RUS_wrangel2.tga"
-	expire = "1963.3.1"
-	ideology = national_populist_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "ボリス・サヴィンコフ"
-	desc = "POLITICS_SAVINKOV_DESC"
-	picture = "gfx/leaders/SOV/RUS_savinkov.tga"
-	expire = "1953.3.1"
-	ideology = social_liberal_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "パーヴェル・ミリュコーフ"
-	desc = "POLITICS_MILYUKOV_DESC"
-	picture = "gfx/leaders/SOV/RUS_milyukov.tga"
-	expire = "1953.3.1"
-	ideology = market_liberal_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "ドミトリー・パヴロヴィチ"
-	desc = "POLITICS_DMITRI_DESC"
-	picture = "gfx/leaders/SOV/RUS_Dmitri.tga"
-	expire = "1953.3.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "ユーリー・マルトフ"
-	desc = "POLITICS_MARTOV_DESC"
-	picture = "gfx/leaders/SOV/RUS_martov.tga"
-	expire = "1953.3.1"
-	ideology = social_democrat_subtype
-	traits = {
-		
-	}
-}
-
-
-
-add_namespace = {
-	name = "unit_leader_sov"
-	type = unit_leader
-}
-
-
-
-
-
-create_field_marshal = {
-	name = "ピョートル・ヴラーンゲリ"
-	portrait_path = "gfx/leaders/SOV/RUS_wrangel2.tga"
-	traits = { defensive_doctrine career_officer war_hero }
-	skill = 4
-
-
-	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_field_marshal = {
-	name = "アントン・デニーキン"
-	portrait_path = "gfx/leaders/SOV/Portrait_SOV_denikin.tga"
-	traits = { career_officer war_hero infantry_officer }
-	skill = 4
-
-
-	
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-
-create_corps_commander = {
-	name = "ウラジミール・カッペル"
-	portrait_path = "gfx/leaders/SOV/Portrait_SOV_kappel.tga"
-	traits = { infantry_officer career_officer }
-	skill = 5
-
-
-	
-	attack_skill = 4
-	defense_skill = 5
-	planning_skill = 2
-	logistics_skill = 5
-}
-
-create_corps_commander = {
-	name = "セルゲイ・マルコフ"
-	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Markov.tga"
-	traits = { armor_officer career_officer }
-	skill = 4
-
-
-	
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "アブラム・ドラゴミロフ"
-	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Dragomirov.tga"
-	traits = { cavalry_officer career_officer }
-	skill = 2
-
-
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "ミハイル・ドロズドフスキー"
-	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Drozdovskiy.tga"
-	traits = { infantry_officer career_officer }
-	skill = 2
-
-
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "ピョートル・クラスノフ"
-	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Krasnov.tga"
-	traits = { cavalry_officer career_officer }
-	skill = 4
-
-
-	
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "イヴァン・ロマノフスキー"
-	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Romanovsky.tga"
-	traits = { career_officer }
-	skill = 2
-
-
-	
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "パーヴェル・シャチーロフ"
-	portrait_path = "gfx/leaders/SOV/Portrait_Russia_shatilov.tga"
-	traits = { career_officer }
-	skill = 3
-
-
-	
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-
-create_corps_commander = {
-	name = "ピョートル・マクロフ"
-	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Mahrov.tga"
-	traits = { cavalry_officer career_officer }
-	skill = 1
-
-	
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_navy_leader = {
-	name = "アレクサンドル・コルチャーク"
-	portrait_path = "gfx/leaders/SOV/Portrait_Russia_Kolchak.tga"
-	traits = { battleship_adherent }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
-if = {
-	limit = {
-		has_dlc = "La Resistance"
-	}
-
-
-	create_operative_leader = {
-		name = "Kim Philby"
-		GFX = GFX_portrait_kim_philby
-		traits = { operative_double_agent operative_infiltrator }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV ENG }
-	}
-	create_operative_leader = {
-		name = "Richard Sorge"
-		GFX = GFX_portrait_richard_sorge
-		traits = { operative_well_groomed }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { SOV GER }
-	}
-}
 
 ### VARIANTS ###
 # 1936 Start #

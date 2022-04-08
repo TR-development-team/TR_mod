@@ -1,4 +1,4 @@
-﻿capital = 618
+﻿capital = 619
 
 oob = "ETR_1936"
 
@@ -7,7 +7,11 @@ set_technology = {
 	
 }
 
-
+add_ideas = {
+         CHI_late_army
+         limited_conscription
+         partial_economic_mobilisation
+}
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -15,7 +19,16 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+if = {
+	limit = {
+		has_start_date < 1936.01.02
+	}
 
+	declare_war_on = {
+		target = SIK
+		type = annex_everything
+	}
+}
 set_popularities = {
 	totalist = 9
 	syndicalist = 4
@@ -30,35 +43,6 @@ set_popularities = {
         Gnosticism = 4
 }
 
-create_country_leader = {
-	name = "アリハーン・トラ"
-	desc = ""
-	picture = "gfx/leaders/SIK/Portrait_Turk_Ali_Khan.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "アリハーン・トラ"
-	desc = ""
-	picture = "gfx/leaders/SIK/Portrait_Turk_Ali_Khan.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "アリハーン・トラ"
-	desc = ""
-	picture = "gfx/leaders/SIK/Portrait_Turk_Ali_Khan.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = ETR_Khoja_Niyaz
 
 

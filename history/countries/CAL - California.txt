@@ -7,6 +7,11 @@ set_research_slots = 3
 TEX = { give_military_access = CAL }
 add_ideas = {
         Tiyoda_Kensho
+        CAL_black_thursday
+        Second_Utah_War
+        Anti_Japan_Resistance
+        Santa_Clara_Development
+
         Constitutional_monarchy
         low_minimum_wage
         trinket_max_workhours
@@ -15,11 +20,13 @@ add_ideas = {
         trinket_school_system
         trinket_pensions
         low_health_care
+        
+        CAL_Tokugawa_Iesato
+        CAL_Goto_Fumio
+        CAL_Nomura_Kichisaburo
+        CAL_Ikeda_Hayato
+        CAL_Ino_Eiichi
 }
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 365
-                 }  
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -130,10 +137,13 @@ set_popularities = {
 recruit_character = CAL_Gondo_Seikyo
 recruit_character = CAL_Yoneda_Gozo
 recruit_character = CAL_Joseph_Kurihara
+recruit_character = CAL_John_F_Aiso
+recruit_character = CAL_Abiko_Kyutaro
 recruit_character = CAL_Tokugawa_Iesato
+recruit_character = CAL_kiyoshi_hasegawa
 recruit_character = CAL_Yamamoto_Eisuke
 
-recruit_character = CAL_kiyoshi_hasegawa
+
 recruit_character = JAP_Kuribayashi_Tadamichi
 recruit_character = JAP_shizuichi_tanaka
 recruit_character = JAP_Yamamoto_Eisuke

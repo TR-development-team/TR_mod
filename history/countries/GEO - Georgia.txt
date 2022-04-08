@@ -77,26 +77,8 @@ set_popularities = {
 	social_democrat = 15
 }
 
+recruit_character = GEO_Joseph_Stalin
 
-create_country_leader = {
-	name = "Noe Zhordania"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1953.3.1"
-	ideology = social_democrat_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "ヨシフ・ジュガシヴィリ"
-	desc = "POLITICS_JOSEPH_STALIN_DESC"
-	picture = "gfx/leaders/SOV/Portrait_SOV_stalin.tga"
-	expire = "1953.3.1"
-	ideology = totalist_subtype
-	traits = {
-		Stalin_traits
-	}
-}
+recruit_character = GEO_semyon_budyonny
+recruit_character = GEO_issa_pliyev
 

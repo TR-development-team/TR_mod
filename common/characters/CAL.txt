@@ -32,11 +32,33 @@ characters={
 			ideology= social_democrat_subtype
 		}
 	}	
+	CAL_John_F_Aiso={
+		name=CAL_John_F_Aiso
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_CAL_John_F_Aiso.png"
+			}
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+	}
+	CAL_Abiko_Kyutaro={
+		name=CAL_Abiko_Kyutaro
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_CAL_Abiko_Kyutaro.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+	}
 	CAL_Tokugawa_Iesato={
 		name=CAL_Tokugawa_Iesato
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_japan_tokugawa.tga"
+				large="gfx/leaders/CAL/Portrait_japan_tokugawa.tga"
 			}
 		}
 		country_leader={

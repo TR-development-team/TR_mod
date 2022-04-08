@@ -1,0 +1,22 @@
+characters={
+	ETR_Khoja_Niyaz={
+		name=ETR_Khoja_Niyaz
+		portraits={
+			civilian={
+				large="gfx/leaders/ETR/Portrait_ETR_Khoja_Niyaz.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+}

@@ -438,9 +438,6 @@ characters={
 		        planning_skill = 2
 		        logistics_skill = 2
 		}
-		visible = {
-			NOT = { has_character_flag = JAP_Purge_commander }
-		}
 	}
 	JAP_Hideki_Tojo ={
 		name=JAP_Hideki_Tojo_int
@@ -457,9 +454,6 @@ characters={
 			planning_skill = 1
 			logistics_skill = 2
 		}
-		visible = {
-			NOT = { has_character_flag = JAP_Purge_commander }
-		}
 	}
 	JAP_Obata_Toshiro ={
 		name=JAP_Obata_Toshiro
@@ -475,9 +469,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 5
 			logistics_skill = 3
-		}
-		visible = {
-			NOT = { has_character_flag = JAP_Purge_commander }
 		}
 	}
 	JAP_sadao_araki={
@@ -496,9 +487,6 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=0
-		}
-		visible = {
-			NOT = { has_character_flag = JAP_Purge_commander }
 		}
 	}
 
@@ -519,9 +507,6 @@ characters={
 			planning_skill=3
 			logistics_skill=4
 			legacy_id=0
-		}
-		visible = {
-			NOT = { has_character_flag = JAP_Purge_commander }
 		}
 	}
 
@@ -1206,12 +1191,12 @@ characters={
 			}
 		}
 		navy_leader={
-			traits={ gentlemanly }
-			skill=2
+			traits={ gentlemanly bold }
+			skill=3
 			attack_skill=2
 			defense_skill=2
-			maneuvering_skill=1
-			coordination_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
 			legacy_id=0
 		}
 	}

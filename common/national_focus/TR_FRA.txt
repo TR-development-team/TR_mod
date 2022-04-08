@@ -155,16 +155,9 @@ focus_tree = {
         set_cosmetic_tag = FRA_RNP
 		effect_tooltip = { retire_country_leader = yes }
 		hidden_effect = { 
-			kill_ideology_leader = national_populist 
 		    add_ideas = FRA_marcel_deat
 		}
-		create_country_leader = {
-			name = "マルセル・デア"
-			desc = "POLITICS_MARSEL_DESC"
-			picture = "gfx/leaders/FRA/Portrait_FRA_marsell.tga"
-			expire = "1965.1.1"
-			ideology = national_populist_subtype
-		}
+		promote_character = FRA_marcel_deat
         add_popularity = {
 			ideology = national_populist
 			popularity = 0.2
@@ -200,19 +193,12 @@ focus_tree = {
         set_cosmetic_tag = FRA_PPF
 		effect_tooltip = { retire_country_leader = yes }
 		hidden_effect = { 
-			kill_ideology_leader = national_populist 
 			add_ideas = FRA_Jacques_Doriot
 			add_ideas = FRA_La_Rochelle
 			add_ideas = FRA_Marius_Berliet
 			add_ideas = FRA_francois_de_larocque_Int
 		}
-		create_country_leader = {
-			name = "ジャック・ドリオ"
-			desc = "POLITICS_DORIOT_DESC"
-			picture = "gfx/leaders/FRA/Portrait_FRA_doriot.tga"
-			expire = "1965.1.1"
-			ideology = national_populist_subtype
-		}
+		promote_character = FRA_Jacques_Doriot
         add_popularity = {
 			ideology = national_populist
 			popularity = 0.2

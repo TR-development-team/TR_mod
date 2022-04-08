@@ -135,9 +135,7 @@ country_event = {
 
 
                 hidden_effect = {
-                         transfer_navy = {
-                                  target = ENR
-                          }
+                         ENG = { transfer_navy = { target = ENR } }
                          country_event = {
 					id = TR_news.7
 					days = 2
@@ -167,7 +165,6 @@ country_event = {
 			set_rule = {
 				can_join_factions = no
 			}
-		}
                 122 = {
 					add_core_of = ENR
 				}
@@ -214,71 +211,66 @@ country_event = {
 					add_core_of = ENR
 				}
                 IRE = {
-                        transfer_state = 119
-                      }
+                    transfer_state = 119
+                    }
                 ENR = {
-			transfer_state = 130
-			transfer_state = 132
-                        transfer_state = 128
-			transfer_state = 129
-                        transfer_state = 122
-                        transfer_state = 131
-                        transfer_state = 338
-                      }
+			        transfer_state = 130
+			        transfer_state = 132
+                    transfer_state = 128
+			        transfer_state = 129
+                    transfer_state = 122
+                    transfer_state = 131
+                    transfer_state = 338
+                    }
                 CAN = {
-			transfer_state = 331
-                        transfer_state = 332
-                      }
+			        transfer_state = 331
+                    transfer_state = 332
+                    }
                 SPR = {
-			transfer_state = 118
-                      }
+			        transfer_state = 118
+                    }
                 ITA = {
-			transfer_state = 272
-                        transfer_state = 298
-                        transfer_state = 116
-                        transfer_state = 700
-                        transfer_state = 701
-                      }
+			        transfer_state = 272
+                    transfer_state = 298
+                    transfer_state = 116
+                    transfer_state = 700
+                    transfer_state = 701
+                    }
                 ARG = {
-			transfer_state = 720
-                        transfer_state = 299
-                      }
+			        transfer_state = 720
+                    transfer_state = 299
+                    }
                 JAP = {
-			transfer_state = 270
-                        transfer_state = 703
-                        transfer_state = 704 
-                        transfer_state = 709
-                      }
+			        transfer_state = 270
+                    transfer_state = 703
+                    transfer_state = 704 
+                    transfer_state = 709
+                    }
                 USA = {
-			transfer_state = 693
-                        transfer_state = 690
-                        transfer_state = 696
-                        transfer_state = 689
-                      }
+			        transfer_state = 693
+                    transfer_state = 690
+                    transfer_state = 696
+                    transfer_state = 689
+                    }
                 FRA = {
-			transfer_state = 687
-                        transfer_state = 691
-                        transfer_state = 692
-                        transfer_state = 308
-                        transfer_state = 707
-                      }
+			        transfer_state = 687
+                    transfer_state = 691
+                    transfer_state = 692
+                    transfer_state = 308
+                    transfer_state = 707
+                }
                 MEX = {
-			transfer_state = 311
-                      }
-
-
+			        transfer_state = 311
+				}
                 hidden_effect = {
-                        ENG  = { transfer_navy = {
-                                  target = ENR
-                                  }
-                               }
-                         country_event = {
-					id = TR_news.7
-					days = 2
-					
+                    ENG = { transfer_navy = { target = ENR } }
+                    country_event = {
+					    id = TR_news.7
+					    days = 2		
 				}
 		}
 	}
+}
 }
 
 country_event = {
@@ -319,7 +311,7 @@ country_event = {
 				create_unit = {
 					division = "division_template = \"Civil war Infantry\" start_experience_factor = 0.1"
 					owner = ENR
-					count = 5
+					count = 3
 				}
 			}
 			random_owned_controlled_state = {
@@ -359,7 +351,7 @@ country_event = {
 				create_unit = {
 					division = "division_template = \"Civil war Infantry\" start_experience_factor = 0.1"
 					owner = ENR
-					count = 3
+					count = 2
 				}
 			}
                         random_owned_controlled_state = {
@@ -367,7 +359,7 @@ country_event = {
 				create_unit = {
 					division = "division_template = \"Civil war Infantry\" start_experience_factor = 0.1"
 					owner = ENR
-					count = 3
+					count = 2
 				}
 			}
 			random_owned_controlled_state = {
@@ -375,9 +367,8 @@ country_event = {
 				create_unit = {
 					division = "division_template = \"Civil war Infantry\" start_experience_factor = 0.1"
 					owner = ENR
-					count = 3
+					count = 2
 				}
 			}
 	}
 }
-

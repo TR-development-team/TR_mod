@@ -1,0 +1,75 @@
+characters={
+	ALB_enver_hoxha={
+		name="Enver Hoxha"
+		portraits={
+			civilian={
+				large=GFX_portrait_Enver_Hoxha
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+			id=-1
+		}
+	}
+	ALB_eqrem_belishi={
+		name="Eqrem Belishi"
+		portraits={
+			civilian={
+				large=GFX_portrait_Eqrem_Belishi
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+			id=-1
+		}
+	}
+	ALB_king_zog={
+		name="King Zog"
+		portraits={
+			civilian={
+				large="gfx/leaders/ALB/Portrait_ALB_Zogu.tga"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+			id=-1
+		}
+	}
+	ALB_gjon_burbank={
+		name="Gjon Burbank"
+		portraits={
+			civilian={
+				large=GFX_portrait_Gjon_Burbank
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			id=-1
+		}
+	}
+	ALB_xhemal_aranitasi={
+		name=ALB_xhemal_aranitasi
+		portraits={
+			army={
+				large=GFX_portrait_Xhemal_Aranitasi
+				small=GFX_portrait_Xhemal_Aranitasi_small
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

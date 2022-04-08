@@ -1,0 +1,40 @@
+
+state={
+	id=915
+	name="STATE_915"
+
+	history={
+		owner =ANQ
+                add_core_of = ANQ
+		add_claim_by = CHI
+		victory_points = {
+			7191 10 
+		}
+		victory_points = {
+			1055 3 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+
+			1055 = {
+				naval_base = 3
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+
+		}
+
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1055 1168 1195 4013 4099 7086 7146 7174 9944 9972 10014 10086 11920 11947 12059 
+	}
+	manpower=9403920
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

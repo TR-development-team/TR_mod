@@ -23,10 +23,19 @@ leader_traits = {
                 stability_factor = 0.1
                 political_power_factor = 0.1
 	}
+
+        Shogun_traits = {#徳川将軍
+		random = no
+                war_support_weekly = 0.002
+                army_morale_factor = 0.1
+                conscription = 0.01
+                political_power_factor = -0.05
+	}
+
         BUL_Khan = {#ボリス3世
 		random = no
-                offensive_war_stability_factor = 0.3
-                subversive_activites_upkeep = -0.25
+                offensive_war_stability_factor = 0.2
+                subversive_activites_upkeep = -0.1
                 non_core_manpower = 0.05
                 ai_focus_aggressive_factor = 0.2
 		ai_will_do = {
@@ -35,8 +44,8 @@ leader_traits = {
 	}
         BUL_Tsar = {#ボリス3世
 		random = no
-                stability_factor = 0.2
-                political_power_factor = 0.1
+                stability_factor = 0.1
+                political_power_factor = 0.05
 		ai_will_do = {
 			factor = 1
 		}
@@ -53,7 +62,7 @@ leader_traits = {
 	}
         Trotsky_traits = {#トロツキー
 		random = no
-                army_org_factor = 0.1
+                army_org_factor = 0.05
                 war_support_factor = 0.1
 		subversive_activites_upkeep = -0.25
 		
@@ -64,7 +73,6 @@ leader_traits = {
         Levine_traits = {#レヴィーネ
 		random = no
                 stability_factor = 0.1
-		industrial_capacity_factory = 0.05
 		subversive_activites_upkeep = -0.1
 		
 		ai_will_do = {
@@ -193,120 +201,6 @@ leader_traits = {
                 stability_factor = -0.1
 	}
         ####首相#####
-        #共通
-        TR_ambitious_union_boss = {
-		random = no
-		industrial_capacity_factory = 0.1
-                political_power_gain = 0.05
-	}
-        TR_silent_workhorse = {
-
-		random = no
-
-		political_power_gain = 0.1
-                production_speed_buildings_factor = 0.05
-		industrial_capacity_factory = 0.05
-	}
-        TR_naive_optimist = {
-
-		random = no
-
-		political_power_gain = 0.02
-                consumer_goods_factor = -0.03
-	}
-        TR_flamboyant_tough_guy = {
-
-		random = no
-
-		war_support_factor = 0.06
-		stability_factor = 0.06
-		political_power_gain = -0.08
-	}
-	TR_happy_amateur = {
-		consumer_goods_factor = 0.02
-		political_power_gain = 0.1
-
-		random = no
-	}
-	TR_Popular_Politician = {
-		random = no
-		stability_factor = 0.1
-		political_power_cost = -0.05
-	}
-
-	TR_smiling_oilman = {
-                political_power_cost = 0.05
-		local_resources_factor = 0.1
-		production_speed_synthetic_refinery_factor = 0.1
-
-		random = no
-	}
-	TR_old_admiral = {
-		production_speed_naval_base_factor = 0.1
-		production_speed_dockyard_factor = 0.05
-		experience_gain_navy = 0.1
-
-		random = no
-	}
-
-	TR_old_air_marshal = {
-		production_speed_air_base_factor = 0.13
-
-		equipment_bonus = {
-			fighter_equipment = {
-				build_cost_ic = -0.05
-				instant = yes
-			}
-			heavy_fighter_equipment = {
-				build_cost_ic = -0.05
-				instant = yes
-			}
-			CAS_equipment = {
-				build_cost_ic = -0.05
-				instant = yes
-			}
-			tac_bomber_equipment = {
-				build_cost_ic = -0.05
-				instant = yes
-			}
-			strat_bomber_equipment = {
-				build_cost_ic = -0.05
-				instant = yes
-			}
-		}
-		experience_gain_air = 0.1
-
-		random = no
-	}
-
-	TR_old_general = {
-		production_speed_bunker_factor = 0.1
-		max_planning = 0.1
-		experience_gain_army = 0.07
-
-		random = no
-	}
-	TR_political_protege = {
-		political_power_gain = 0.15
-
-		random = no
-	}
-
-	TR_corporate_suit = {
-		consumer_goods_factor = -0.02
-		political_power_gain = -0.15
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_arms_factory_factor = 0.05
-
-		random = no
-	}
-        Defender_of_freedom = {
-		random = no
-
-                political_power_factor = 0.05
-                drift_defence_factor = 0.20
-                stability_factor = 0.1
-	}
         #固有
         Nonkinatousan = {#町田忠治
 		random = no
@@ -388,7 +282,7 @@ leader_traits = {
 	}
         AUS_Hitler_traits = {#ヒトラー
 
-                stability_factor = 0.1
+                stability_factor = 0.03
                 war_support_factor = 0.1
 
 
@@ -401,7 +295,130 @@ leader_traits = {
                 max_command_power = 25
                 army_morale_factor = 0.1
 	}
+        #共通
+        TR_ambitious_union_boss = {
+		random = no
+		industrial_capacity_factory = 0.1
+                political_power_gain = 0.05
+	}
+        TR_silent_workhorse = {
+
+		random = no
+
+		political_power_gain = 0.1
+                production_speed_buildings_factor = 0.05
+		industrial_capacity_factory = 0.05
+	}
+        TR_naive_optimist = {
+
+		random = no
+
+		political_power_gain = 0.02
+                consumer_goods_factor = -0.03
+	}
+        TR_flamboyant_tough_guy = {
+
+		random = no
+
+		war_support_factor = 0.06
+		stability_factor = 0.06
+		political_power_gain = -0.08
+	}
+	TR_happy_amateur = {
+		consumer_goods_factor = 0.02
+		political_power_gain = 0.1
+
+		random = no
+	}
+	TR_Popular_Politician = {
+		random = no
+		stability_factor = 0.1
+		political_power_cost = -0.05
+	}
+
+	TR_smiling_oilman = {
+                political_power_cost = 0.05
+		local_resources_factor = 0.1
+		production_speed_synthetic_refinery_factor = 0.1
+
+		random = no
+	}
+	TR_old_admiral = {
+		production_speed_naval_base_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		experience_gain_navy = 0.1
+
+		random = no
+	}
+
+	TR_old_air_marshal = {
+		production_speed_air_base_factor = 0.13
+
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			heavy_fighter_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			CAS_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			tac_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+			strat_bomber_equipment = {
+				build_cost_ic = -0.05
+				instant = yes
+			}
+		}
+		experience_gain_air = 0.1
+
+		random = no
+	}
+
+	TR_old_general = {
+		production_speed_bunker_factor = 0.1
+		max_planning = 0.1
+		experience_gain_army = 0.07
+
+		random = no
+	}
+	TR_political_protege = {
+		political_power_gain = 0.15
+
+		random = no
+	}
+
+	TR_corporate_suit = {
+		consumer_goods_factor = -0.02
+		political_power_gain = -0.15
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_arms_factory_factor = 0.05
+
+		random = no
+	}
+        Defender_of_freedom = {
+		random = no
+
+                political_power_factor = 0.05
+                drift_defence_factor = 0.20
+                stability_factor = 0.1
+	}
         ####外務大臣#####
+        #固有
+        AUS_Hanussen_traits = {#エリック・ヤン・ハヌッセン
+
+               political_power_factor = 0.1
+               opinion_gain_monthly_factor = -0.3
+
+
+		random = no
+	}
         #共通
 	TR_biased_intellectual = {
 		opinion_gain_monthly_same_ideology_factor = 0.15
@@ -449,16 +466,31 @@ leader_traits = {
 
 		random = no
 	}
+        ####経済大臣#####
         #固有
-        AUS_Hanussen_traits = {#エリック・ヤン・ハヌッセン
+	JAP_Daruma_Traits = {#高橋是清
 
-               political_power_factor = 0.12
-               opinion_gain_monthly_factor = -0.3
-
+                production_factory_max_efficiency_factor = 0.1
+		industrial_capacity_factory = 0.075
+		production_speed_buildings_factor = 0.075
 
 		random = no
 	}
-        ####経済大臣#####
+        AUS_Wiligut_traits = {#カール・マリア・ヴィリグート
+                
+                non_core_manpower = 0.02
+                stability_factor = -0.1
+                consumer_goods_factor = -0.05
+
+		random = no
+	}
+	TR_Orgone = {#ヴィルヘルム・ライヒ
+                stability_factor = -0.05
+                consumer_goods_factor = -0.05
+                MONTHLY_POPULATION = 0.1
+
+		random = no
+	}
         #共通
 	TR_administrative_genius = {
 		industrial_capacity_factory = 0.05
@@ -562,31 +594,34 @@ leader_traits = {
 
 		random = no
 	}
-        #固有
-	JAP_Daruma_Traits = {#高橋是清
-
-                production_factory_max_efficiency_factor = 0.1
-		industrial_capacity_factory = 0.075
-		production_speed_buildings_factor = 0.075
-
-		random = no
-	}
-        AUS_Wiligut_traits = {#カール・マリア・ヴィリグート
-                
-                non_core_manpower = 0.02
-                stability_factor = -0.1
-                consumer_goods_factor = -0.05
-
-		random = no
-	}
-	TR_Orgone = {#ヴィルヘルム・ライヒ
-                stability_factor = -0.05
-                consumer_goods_factor = -0.05
-                MONTHLY_POPULATION = 0.1
-
-		random = no
-	}
         ####内務大臣#####
+        #固有
+        AUS_Himmler_traits = {#ヒムラー
+
+                resistance_damage_to_garrison = -0.1
+		foreign_subversive_activites = -0.1
+                subversive_activites_upkeep = -0.1
+                decryption_factor = 0.1
+                encryption_factor = 0.1
+
+
+		random = no
+	}
+        GER_Rohm_traits = {#レーム
+                stability_factor = 0.05
+                resistance_damage_to_garrison = -0.2
+
+		random = no
+	}
+        JAP_Tojo_traits = {#東条英機
+
+                resistance_damage_to_garrison = -0.1
+		stability_factor = 0.05
+		resistance_growth = -0.1
+
+
+		random = no
+	}
         #共通
         Founder_of_intelligence = {
 		random = no
@@ -683,33 +718,7 @@ leader_traits = {
 
 		random = no
 	}
-        #固有
-        AUS_Himmler_traits = {#ヒムラー
 
-                resistance_damage_to_garrison = -0.1
-		foreign_subversive_activites = -0.1
-                subversive_activites_upkeep = -0.1
-                decryption_factor = 0.1
-                encryption_factor = 0.1
-
-
-		random = no
-	}
-        GER_Rohm_traits = {#レーム
-                stability_factor = 0.05
-                resistance_damage_to_garrison = -0.2
-
-		random = no
-	}
-        JAP_Tojo_traits = {#東条英機
-
-                resistance_damage_to_garrison = -0.1
-		stability_factor = 0.05
-		resistance_growth = -0.1
-
-
-		random = no
-	}
 
 #統合参謀総長
 	cos_school_of_manoeuvre = {

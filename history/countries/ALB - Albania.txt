@@ -24,37 +24,9 @@ set_popularities = {
 
 set_convoys = 5
 
-#Victor Emmanuel III of Italy after 39
-create_country_leader = {
-	name = "ゾグ1世"
-	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "gfx/leaders/ALB/Portrait_ALB_Zogu.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Enver Hoxha"
-	desc = "POLITICS_KING_ZOG_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		staunch_stalinist
-	}
-}
-
-create_field_marshal = {
-	name = "Xhemal Aranitasi"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 1
-    defense_skill = 3
-    planning_skill = 2
-    logistics_skill = 1
-}
+recruit_character = ALB_enver_hoxha
+recruit_character = ALB_eqrem_belishi
+recruit_character = ALB_king_zog
+recruit_character = ALB_gjon_burbank
+recruit_character = ALB_xhemal_aranitasi
 

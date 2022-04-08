@@ -1,0 +1,36 @@
+characters={
+	KML_Yulbars_Khan={
+		name=KML_Yulbars_Khan
+		portraits={
+			civilian={
+				large="gfx/leaders/KML/Portrait_KML_Yulbars_Khan.png"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+	KML_Yulbars_Khan_marshal={
+		name=KML_Yulbars_Khan
+		portraits={
+			army={
+				large="gfx/leaders/KML/Portrait_KML_Yulbars_Khan.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

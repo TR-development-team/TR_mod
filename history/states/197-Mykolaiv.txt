@@ -16,11 +16,7 @@ state={
 			dockyard = 1
 		}
 		add_core_of = UKR
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-			}
-		}
+                add_core_of = UKS
 	}
 
 	local_supplies=0.0 

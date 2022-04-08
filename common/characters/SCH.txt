@@ -1,0 +1,35 @@
+characters={
+	SCH_Liu_Wenhui={
+		name=SCH_Liu_Wenhui
+		portraits={
+			civilian={
+				large="gfx/leaders/SCH/Portrait_SCH_Liu_Wenhui.png"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+	SCH_Liu_Wenhui_marshal={
+		name=SCH_Liu_Wenhui
+		portraits={
+			army={
+				large="gfx/leaders/SCH/Portrait_SCH_Liu_Wenhui.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+}

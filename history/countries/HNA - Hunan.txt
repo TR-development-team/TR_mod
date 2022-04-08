@@ -69,114 +69,12 @@ add_ideas = {
          HNA_Constitution
          HNA_PRC_partisan
 }
+recruit_character = HNA_Mao_Zedong
+recruit_character = HNA_Chen_Chiungming
+recruit_character = HNA_Zhao_Hengti
 
-create_country_leader = {
-	name = "毛沢東"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Mao_Zedong.tga"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "陳炯明"
-	desc = ""
-	picture = "gfx/leaders/HNA/Portrait_HNA_Chen_Chiungming.tga"
-	expire = "1965.1.1"
-	ideology = syndicalist_subtype
-	traits = {
-		
-	}
-}
-
-
-create_country_leader = {
-	name = "毛沢東"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Mao_Zedong.tga"
-	expire = "1965.1.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "陳炯明"
-	desc = ""
-	picture = "gfx/leaders/HNA/Portrait_HNA_Chen_Chiungming.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "陳炯明"
-	desc = ""
-	picture = "gfx/leaders/HNA/Portrait_HNA_Chen_Chiungming.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "趙恒惕"
-	desc = ""
-	picture = "gfx/leaders/HNA/Portrait_China_Zhao_Hengti.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "趙恒惕"
-	desc = ""
-	picture = "gfx/leaders/HNA/Portrait_China_Zhao_Hengti.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "趙恒惕"
-	desc = ""
-	picture = "gfx/leaders/HNA/Portrait_China_Zhao_Hengti.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-
-create_field_marshal = {
-	name = "陳炯明"
-	portrait_path = "gfx/leaders/HNA/Portrait_HNA_Chen_Chiungming.tga"
-	traits = { politically_connected offensive_doctrine organizer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_field_marshal = {
-	name = "趙恒惕"
-	portrait_path = "gfx/leaders/HNA/Portrait_China_Zhao_Hengti.tga"
-	traits = { politically_connected }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = HNA_Zhao_Hengti_marshal
+recruit_character = HNA_Chen_Chiungming_marshal
 
 
 ### VARIANTS ###

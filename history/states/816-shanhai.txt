@@ -3,18 +3,21 @@ state={
 	name="STATE_816"
 	local_supplies=0.0 
 provinces={
-		7014 12076
+		7014 12076 10034 12052
 	}
         state_category=Large_city
-	manpower=1850000
+	manpower=5850000
 	history={
 		owner = JAP
 		add_claim_by = CHI
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 5
-                        7014 = {
-				naval_base = 5
+			7014 = {
+				naval_base = 6
+				coastal_bunker = 1
+				bunker = 1
+
 			}
                         air_base = 3
 		}

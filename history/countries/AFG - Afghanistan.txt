@@ -23,24 +23,9 @@ set_popularities = {
 	national_populist = 100
 }
 
-
-create_country_leader = {
-	name = "ハビーブッラーカラカーニ"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_AFG_Kalakani.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-create_corps_commander = {
-	name = "Sardar Shah Wali Khan"
-	portrait_path = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_3.dds"
-	traits = { desert_fox }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
+recruit_character = AFG_Habibullah_Kalakani
+recruit_character = AFG_mohammed_zahir_shah
+recruit_character = AFG_akram_sattari
+recruit_character = AFG_yaqub_khan
+recruit_character = AFG_mihrdil_shahnawaz
+recruit_character = AFG_sardar_shah_wali_khan

@@ -7,15 +7,17 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = ETR
+		owner = SIK
                 add_core_of = ETR
 		add_core_of = SIK
+		add_claim_by = CHI
+		add_claim_by = YUN
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+
 		}
                 victory_points = {
-			7866 5 
+			1783 1 #クイトゥン
 		}
 
 	}

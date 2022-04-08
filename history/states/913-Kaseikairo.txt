@@ -1,0 +1,29 @@
+state={
+	id=913
+	name="STATE_913"
+
+	history={
+		owner = HEX
+                add_core_of = HEX
+		add_claim_by = CHI
+		add_claim_by = YUN
+
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 1
+		}
+		victory_points = {
+			5100 1 #張掖
+		}
+
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		5057 5100 12327 
+	}
+	manpower=1000400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

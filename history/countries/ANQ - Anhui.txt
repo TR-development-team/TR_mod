@@ -43,14 +43,6 @@ add_timed_idea = {
                  }  
 
 
-create_country_leader = {
-	name = "梁鴻志"
-	desc = ""
-	picture = "gfx/leaders/CHI/Portrait_China_Liang_Hongzhi.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
+
+recruit_character = ANQ_Liang_Hongzhi
 

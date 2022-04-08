@@ -1,0 +1,269 @@
+characters={
+	ENR_oswald_mosley={
+		name=ENG_oswald_mosley
+		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_mosley.tga"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+		}
+	}
+
+	ENR_winston_churchill={
+		name=ENG_winston_churchill
+		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Winston_Churchill.tga"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			traits = {
+				british_bulldog
+			}
+		}
+	}
+
+
+	ENR_Aleister_Crowley={
+		name=ENG_Aleister_Crowley
+		portraits={
+			civilian={
+				large="gfx/leaders/ENG/Portrait_ENG_Crowley.tga"
+			}
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+	}
+
+	ENG_claude_auchinleck={
+		name=ENG_claude_auchinleck
+		portraits={
+			army={
+				small="GFX_idea_claude_auchinleck"
+			}
+			army={
+				large=GFX_portrait_ENG_claude_auchinleck
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist career_officer }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+
+	ENG_neil_ritchie={
+		name=ENG_neil_ritchie
+		portraits={
+			army={
+				large=GFX_portrait_ENG_neil_ritchie
+				small=GFX_portrait_ENG_neil_ritchie_small
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist armor_officer politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	ENG_william_slim={
+		name=ENG_william_slim
+		portraits={
+			army={
+				large=GFX_portrait_ENG_william_slim
+				small=GFX_portrait_ENG_william_slim_small
+			}
+		}
+		corps_commander={
+			traits={ war_hero trickster }
+			skill=5
+			attack_skill=3
+			defense_skill=3
+			planning_skill=5
+			logistics_skill=5
+			legacy_id=0
+		}
+	}
+
+	ENG_richard_oconnor={
+		name=ENG_richard_oconnor
+		portraits={
+			army={
+				large=GFX_portrait_ENG_richard_oconnor
+				small=GFX_portrait_ENG_richard_oconnor_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=999
+		}
+	}
+
+	ENG_william_platt={
+		name=ENG_william_platt
+		portraits={
+			army={
+				large=GFX_portrait_ENG_william_platt
+				small=GFX_portrait_ENG_william_platt_small
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	ENG_george_giffard={
+		name=ENG_george_giffard
+		portraits={
+			army={
+				large=GFX_portrait_ENG_george_giffard
+				small=GFX_portrait_ENG_george_giffard_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	ENG_jackie_smyth={
+		name=ENG_jackie_smyth
+		portraits={
+			army={
+				large=GFX_portrait_ENG_jackie_smyth
+				small=GFX_portrait_ENG_jackie_smyth_small
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ENG_william_gott={
+		name=ENG_william_gott
+		portraits={
+			army={
+				large=GFX_portrait_ENG_william_gott
+				small=GFX_portrait_ENG_william_gott_small
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist armor_officer war_hero }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	ENG_jock_campbell={
+		name=ENG_jock_campbell
+		portraits={
+			army={
+				large=GFX_portrait_ENG_jock_campbell
+				small=GFX_portrait_ENG_jock_campbell_small
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	ENG_bruce_fraser={
+		name=ENG_bruce_fraser
+		portraits={
+			army={
+				large=GFX_portrait_ENG_bruce_fraser
+				small=GFX_portrait_ENG_bruce_fraser_small
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast naval_lineage blockade_runner }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=4
+			coordination_skill=4
+			legacy_id=986
+		}
+	}
+
+	ENG_algernon_willis={
+		name=ENG_algernon_willis
+		portraits={
+			army={
+				large=GFX_portrait_ENG_algernon_willis
+				small=GFX_portrait_ENG_algernon_willis_small
+			}
+		}
+		navy_leader={
+			traits={ battleship_adherent spotter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=991
+		}
+	}
+
+	ENG_arthur_power={
+		name=ENG_arthur_power
+		portraits={
+			army={
+				large=GFX_portrait_ENG_arthur_power
+				small=GFX_portrait_ENG_arthur_power_small
+			}
+		}
+		navy_leader={
+			traits={ gunnery_expert }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=992
+		}
+	}
+}

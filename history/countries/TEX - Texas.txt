@@ -141,16 +141,7 @@ create_country_leader = {
 	}
 }
 
-create_field_marshal = {
-	name = "ドワイト・D・アイゼンハワー"
-	portrait_path = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
-	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
-	skill = 5
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 5
-	logistics_skill = 5
-}
+recruit_character = USA_dwight_d_eisenhower
 
 
 

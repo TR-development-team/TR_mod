@@ -36,33 +36,6 @@ set_popularities = {
 	national_populist = 5
 }
 
-create_country_leader = {
-	name = "ムハンマド・ナギーブ"
-	desc = ""
-	picture = "Portrait_EGY_Naguib.tga"
-	ideology = radical_socialist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ahmed Husayn"
-	desc = ""
-	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "ファールーク1世"
-	desc = ""
-	picture = "Kingfarouk.tga"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = EGY_farouk_I
+recruit_character = EGY_Naguib
 

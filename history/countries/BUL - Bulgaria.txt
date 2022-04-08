@@ -88,170 +88,28 @@ set_politics = {
 	elections_allowed = no
 }
 
-	set_popularities = { 
+set_popularities = { 
 	paternal_autocrat = 100
 	}
 
+recruit_character = BUL_boris_Communist
+recruit_character = BUL_boris_iii
+recruit_character = BUL_boris_iii_Khan
 
-	create_country_leader = { 
-		name = "コムラド・ボリス・コバーグ"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		#
-	}
-}
-
-	create_country_leader = { 
-		name = "コムラド・ボリス・コバーグ"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
-	expire = "1965.1.1"
-	ideology = syndicalist_subtype
-	traits = {
-		#
-	}
-}
-
-	create_country_leader = { 
-		name = "コムラド・ボリス・コバーグ"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
-	expire = "1965.1.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		#
-	}
-}
-
-	create_country_leader = { 
-		name = "ボリス3世"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
-}
-	create_country_leader = { 
-		name = "ボリス3世"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-	create_country_leader = { 
-		name = "ボリス3世"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-	create_country_leader = { 
-		name = "ボリス3世"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
-		expire = "1965.1.1"
-		ideology = paternal_autocrat_subtype
-		traits = {
-			
-		}
-	}
-        create_country_leader = { 
-		name = "ボリス3世"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris.tga"
-		expire = "1965.1.1"
-		ideology = authoritarian_democrat_subtype
-		traits = { 
-			
-		}
-	}
-        create_country_leader = { 
-		name = "ボリス3世"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris1.tga"
-		expire = "1965.1.1"
-		ideology = national_populist_subtype
-		traits = { 
-			
-		}
-	}
-        create_country_leader = { 
-		name = "ボリス3世"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris1.tga"
-		expire = "1965.1.1"
-		ideology = Gnosticism_subtype
-		traits = { 
-			
-		}
-	}
-        create_country_leader = { 
-		name = "ボリス3世"
-		desc = "POLITICS_BORIS_III_DESC"
-		picture = "gfx/leaders/BUL/portrait_BUL_Boris2.tga"
-		expire = "1965.1.1"
-		ideology = social_conservative_subtype
-		traits = { 
-			
-		}
-	}
-
-
-
-	
-	set_research_slots = 3 
-
-
-        create_field_marshal = {
-	               name = "ボリス3世"
-	               portrait_path = "gfx/leaders/BUL/portrait_BUL_Boris1.tga"
-	               traits = { 
-                                 organizer
-		                 offensive_doctrine
-		                 politically_connected
-		                 media_personality
-	                                }
-	              skill = 6
-	              attack_skill = 5
-	              defense_skill = 2
-	              planning_skill = 4
-	              logistics_skill = 4
-                     }
-         create_corps_commander = { 
-			name = "Vasil Tenev Boydev"
-			portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-			traits = { armor_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 2
-			logistics_skill = 3
-		}
-
-		create_field_marshal = { 
-			name = "Georgi Nikolov Popov"
-			portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-			traits = { defensive_doctrine }
-			skill = 4
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 4
-		}
-
-
+recruit_character = BUL_boris_iii_marshal
+recruit_character = BUL_atanas_shalapatov
+recruit_character = BUL_nikola_mihov
+recruit_character = BUL_georgi_popov
+recruit_character = BUL_ivan_markov
+recruit_character = BUL_georgi_markov
+recruit_character = BUL_asen_nikolov
+recruit_character = BUL_nikola_stoychev
+recruit_character = BUL_damian_velchev
+recruit_character = BUL_angel_dotsev
+recruit_character = BUL_nikola_nakov
+recruit_character = BUL_konstantin_lukash
+recruit_character = BUL_nikola_hadzipetkov
+recruit_character = BUL_vasil_boydev
 
 ### VARIANTS ###
 # 1936 Start #

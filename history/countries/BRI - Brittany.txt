@@ -170,42 +170,11 @@ set_convoys = 20
 	}
 }
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = social_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	lections_allowed = no
 }
 set_popularities = {
-	democratic = 20
-	fascism = 40
-	communism = 10
-	neutrality = 30
-}
-
-create_country_leader = {
-	name = "Yann-Morvan Gefflot"
-	picture = "gfx//leaders//Europe//Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-}
-
-create_country_leader = {
-	name = "Morvan Marchal"
-	picture = "gfx//leaders//Europe//portrait_europe_generic_2.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-}
-
-create_country_leader = {
-	name = "Olier Mordrel"
-	picture = "gfx//leaders//Europe//Portrait_Europe_Generic_6.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-}
-
-create_country_leader = {
-	name = "Maurice Duhamel"
-	picture = "gfx//leaders//Europe//portrait_europe_generic_4.dds"
-	expire = "1965.1.1"
-	ideology = centrism
+	social_democrat = 100
 }

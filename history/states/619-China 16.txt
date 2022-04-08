@@ -12,13 +12,18 @@ state={
 	}
 
 	history={
-		owner = SIK
+		owner = ETR
 		add_core_of = ETR
 		add_core_of = SIK
+		add_claim_by = CHI
+		add_claim_by = YUN
 
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 1
+			arms_factory = 1
+		}
+                victory_points = {
+			2015 3 
 		}
 	}
 

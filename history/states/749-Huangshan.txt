@@ -9,9 +9,9 @@ provinces={
 	buildings_max_level_factor=1.000
 	state_category=town
 	history={
-		owner = NAN
-                add_core_of = NAN
-                add_core_of = CHI
+		owner = ANQ
+                add_core_of = ANQ
+                add_claim_by = CHI
 
 
 		buildings = {
@@ -21,20 +21,6 @@ provinces={
 			12019 1
 		}
 		
-		1938.10.25 = {
-			controller = JAP
-			CHI = {
-				set_province_controller = 1125
-				set_province_controller = 7104
-				set_province_controller = 12019
-
-			}
-			buildings = {
-				infrastructure = 3
-				air_base = 1
-			}
-
-		}
 
 	}
 }

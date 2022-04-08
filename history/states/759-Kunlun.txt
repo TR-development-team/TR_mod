@@ -9,10 +9,11 @@ provinces={
 	buildings_max_level_factor=1.000
 	state_category = wasteland
 	history={
-		owner = SIK
+		owner = HEX
 		add_core_of = ETR
 		add_core_of = SIK
-
+		add_claim_by = CHI
+		add_claim_by = YUN
 
 		buildings = {
 			infrastructure = 1

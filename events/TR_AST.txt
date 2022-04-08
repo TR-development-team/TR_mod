@@ -27,12 +27,33 @@ country_event = {
                 set_cosmetic_tag = AST_ENG
                 add_ideas = AST_Exile_Hanpatsu
                 set_global_flag = AST_ENG_Exile
-                effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = social_democrat 
-                                  kill_ideology_leader = social_liberal 
-                                  kill_ideology_leader = market_liberal
-                                  kill_ideology_leader = social_conservative
-                                  kill_ideology_leader = Gnosticism
+		hidden_effect = { 
+                AST_Elizabeth_II = {
+			promote_character = {
+			ideology= social_democrat_subtype
+			}
+			promote_character = {
+			ideology= social_liberal_subtype
+			}
+			promote_character = {
+			ideology= market_liberal_subtype
+			}
+			promote_character = {
+			ideology= social_conservative_subtype
+			}
+			promote_character = {
+			ideology= authoritarian_democrat_subtype
+			}
+			promote_character = {
+			ideology= paternal_autocrat_subtype
+			}
+			promote_character = {
+			ideology= national_populist_subtype
+			}
+			promote_character = {
+			ideology= Gnosticism_subtype
+			}
+		}
                 set_politics = {
 			ruling_party = social_conservative
 			elections_allowed = no
@@ -40,41 +61,6 @@ country_event = {
                 add_popularity = {
 			ideology = social_conservative
 			popularity = 0.12
-		}
-		create_country_leader = {
-			name = "エリザベス2世"
-			desc = ""
-			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
-			expire = "1965.1.1"
-			ideology = social_democrat_subtype
-		}
-                create_country_leader = {
-			name = "エリザベス2世"
-			desc = ""
-			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
-			expire = "1965.1.1"
-			ideology = social_liberal_subtype
-		}
-                create_country_leader = {
-			name = "エリザベス2世"
-			desc = ""
-			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
-			expire = "1965.1.1"
-			ideology = market_liberal_subtype
-		}
-                create_country_leader = {
-			name = "エリザベス2世"
-			desc = ""
-			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
-			expire = "1965.1.1"
-			ideology = social_conservative_subtype
-		}
-                create_country_leader = {
-			name = "エリザベス2世"
-			desc = ""
-			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
-			expire = "1965.1.1"
-			ideology = Gnosticism_subtype
 		}
                 }
                 annex_country = {

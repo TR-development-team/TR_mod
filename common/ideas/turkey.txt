@@ -456,7 +456,6 @@
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-				conscription_factor = -0.25
                                 political_power_factor = -0.25
 				consumer_goods_factor = 0.1
 				war_support_factor = -0.3
@@ -470,7 +469,6 @@
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-				conscription_factor = -0.05
                                 political_power_factor = -0.05
 				consumer_goods_factor = 0.05
 			}
@@ -484,7 +482,7 @@
 			removal_cost = -1
 			modifier = {
                                 political_power_cost = -0.15
-				stability_factor = 0.15
+				stability_factor = 0.1
 			}
 		}
                 TUR_Turkey_State = {

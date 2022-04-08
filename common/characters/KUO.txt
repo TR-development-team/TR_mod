@@ -1,0 +1,60 @@
+characters={
+	KUO_Feng_Yuxiang={
+		name=KUO_Feng_Yuxiang
+		portraits={
+			civilian={
+				large="gfx/leaders/KUO/Portrait_KUO_Feng_Yuxiang.png"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+	}
+	KUO_Feng_Yuxiang_marshal={
+		name=KUO_Feng_Yuxiang
+		portraits={
+			army={
+				large="gfx/leaders/KUO/Portrait_KUO_Feng_Yuxiang.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+}

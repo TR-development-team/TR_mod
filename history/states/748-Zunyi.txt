@@ -8,6 +8,7 @@ provinces={
 	history={
 		owner = YUN
 		add_core_of = YUN
+		add_core_of = YNN
 		add_claim_by = CHI
 		buildings = {
 			infrastructure = 1
@@ -15,12 +16,6 @@ provinces={
 		}
 		victory_points = {
 			1010 3
-		}
-		1939.1.1 = {
-			buildings = {
-				infrastructure = 2
-				air_base = 1
-			}
 		}
 	}
 	manpower=1500000

@@ -12,34 +12,16 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-       authoritarian_democrat = 100
+       paternal_autocrat = 100
 	
 }
-
-create_country_leader = {
-	name = "ダライ・ラマ14世"
-	desc = ""
-	picture = "Portrait_Tibet_Tenzin_Gyatso.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "ダライ・ラマ14世"
-	desc = ""
-	picture = "Portrait_Tibet_Tenzin_Gyatso.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = TIB_jamphel_yeshe_gyaltsen
+recruit_character = TIB_namgang_rinpoche
+recruit_character = TIB_penor_tashi
+recruit_character = TIB_tsepon_shatra

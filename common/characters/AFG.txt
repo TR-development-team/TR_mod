@@ -1,0 +1,80 @@
+characters={
+
+
+	AFG_yaqub_khan={
+		name=AFG_yaqub_khan
+		portraits={
+			civilian={
+				large=GFX_portrait_Yaqub_Khan
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+			id=-1
+		}
+	}
+	AFG_akram_sattari={
+		name=AFG_akram_sattari
+		portraits={
+			civilian={
+				large=GFX_portrait_Akram_Sattari
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+			id=-1
+		}
+	}
+	AFG_mohammed_zahir_shah={
+		name=AFG_mohammed_zahir_shah
+		portraits={
+			civilian={
+				large=GFX_portrait_Mohammed_Zahir_Shah
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+			id=-1
+		}
+	}
+	AFG_Habibullah_Kalakani={
+		name=AFG_Habibullah_Kalakani
+		portraits={
+			civilian={
+				large="gfx/leaders/Asia/Portrait_AFG_Kalakani.tga"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			id=-1
+		}
+	}
+
+	AFG_sardar_shah_wali_khan={
+		name=AFG_sardar_shah_wali_khan
+		portraits={
+			army={
+				large=GFX_portrait_Sardar_Shah_Wali_Khan
+				small=GFX_portrait_Sardar_Shah_Wali_Khan_small
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+}

@@ -662,20 +662,12 @@ country_event = {
 	option = {
 		name = TR_USA.16.a
 		add_stability = 0.05
-           annex_country = {
+                annex_country = {
                         target = TEX
                         transfer_troops = yes
                       }
-           create_field_marshal = {
-           	name = "ドワイト・D・アイゼンハワー"
-           	portrait_path = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
-           	traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected }
-           	skill = 5
-           	attack_skill = 3
-           	defense_skill = 3
-           	planning_skill = 5
-           	logistics_skill = 5
-                      }
+           TEX = { retire_character = USA_dwight_d_eisenhower }
+           USA = { recruit_character = USA_dwight_d_eisenhower }
 
 
         }

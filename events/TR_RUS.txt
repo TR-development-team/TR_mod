@@ -260,7 +260,6 @@ country_event = {
 		create_faction = "russianwhite_faction"
                 add_ideas = SOV_CIVIL_WAR
                 set_country_flag = SOV_OCREVOLUTION
-                 
                 remove_ideas = SOV_revolution_1
                 195 = {
 					add_core_of = RUS
@@ -375,14 +374,10 @@ country_event = {
                         transfer_state = 590
                         transfer_state = 583
                       }
-                 UKR = {
-			transfer_state = 225
-			transfer_state = 221
-                        transfer_state = 227
-			transfer_state = 228
-                        transfer_state = 137
-                      }
-		
+                set_capital = {
+                  state = 249
+                  remember_old_capital = yes
+                 }
 
 	}
         option = {
@@ -396,6 +391,10 @@ country_event = {
                 remove_ideas = SOV_revolution_1
                 add_ideas = SOV_CIVIL_WAR
                 set_country_flag = SOV_OCREVOLUTION
+                set_capital = {
+                  state = 249
+                  remember_old_capital = yes
+                 }
                 RUS = {
                         change_tag_from = SOV
 		}
@@ -544,7 +543,7 @@ country_event = {
 		}
                 division_template = {
 				name = "Soviet Infantry"
-				division_names_group = RUS_GAR_01
+				division_names_group = SOV_GAR_01
 				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
@@ -676,7 +675,7 @@ country_event = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 202 }
+				prioritize = { 203 }
 				create_unit = {
 					division = "division_template = \"Free Infantry\" start_experience_factor = 0.1"
 					owner = UKR

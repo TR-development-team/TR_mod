@@ -77,27 +77,6 @@ create_country_leader = {
 
 set_convoys = 70
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1938.10.15"
-		election_frequency = 60
-		elections_allowed = yes
-	}
-
-	# Didn't take office until '40, added for flavor
-	create_country_leader = {
-		name = "Peter Fraser"
-		desc = "POLITICS_PETER_FRASER_DESC"
-		picture = "Portrait_NewZealand_Peter_Fraser.dds"
-		expire = "1965.1.1"
-		ideology = socialism
-		traits = {
-			#
-		}
-	}
-	set_convoys = 80
-}
 
 create_corps_commander = {
 	name = "Bernard Freyberg"

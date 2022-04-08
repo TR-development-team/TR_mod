@@ -1,0 +1,23 @@
+state={
+	id=912
+	name="STATE_912"
+	local_supplies=0.0 
+provinces={
+		4783 7803 10770 10899
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = NGX
+                add_core_of = NGX
+		add_claim_by = MEN
+		add_claim_by = CHI
+		add_claim_by = YUN
+		buildings = {
+			infrastructure = 1
+		}
+
+
+	}
+}

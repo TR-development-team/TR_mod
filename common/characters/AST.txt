@@ -1,0 +1,235 @@
+characters={
+	AST_richard_dixon={
+		name=AST_richard_dixon
+		portraits={
+			civilian={
+				large="GFX_AST_richard_dixon"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+			id=-1
+		}
+	}
+
+	AST_john_curtin={
+		name=AST_john_curtin
+		portraits={
+			civilian={
+				large=GFX_portrait_AST_john_curtin
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+			id=-1
+		}
+	}
+
+	AST_earle_page={
+		name=AST_earle_page
+		portraits={
+			civilian={
+				large="GFX_AST_earle_page"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			id=-1
+		}
+	}
+
+	AST_eric_campbell={
+		name=AST_eric_campbell
+		portraits={
+			civilian={
+				large="GFX_AST_eric_campbell"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			id=-1
+		}
+	}
+
+	AST_Elizabeth_II={
+		name=AST_Elizabeth_II
+		portraits={
+			civilian={
+				large="gfx/leaders/AST/Portrait_AST_Elizabeth.tga"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology= national_populist_subtype
+		}
+		country_leader={
+			ideology= Gnosticism_subtype
+		}
+	}
+
+	AST_leslie_morshead={
+		name=AST_leslie_morshead
+		portraits={
+			army={
+				large="GFX_AST_leslie_morshead"
+				small=GFX_portrait_AST_leslie_morshead_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=5
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	AST_thomas_blamey={
+		name=AST_thomas_blamey
+		portraits={
+			army={
+				large="GFX_AST_thomas_blamey"
+				small=GFX_portrait_AST_thomas_blamey_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	AST_henry_wynter={
+		name=AST_henry_wynter
+		portraits={
+			army={
+				large="GFX_AST_henry_wynter"
+				small=GFX_portrait_AST_henry_wynter_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	AST_alan_vasey={
+		name=AST_alan_vasey
+		portraits={
+			army={
+				large="GFX_AST_alan_vasey"
+				small=GFX_portrait_AST_alan_vasey_small
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	AST_horace_robertson={
+		name=AST_horace_robertson
+		portraits={
+			army={
+				large="GFX_AST_horace_robertson"
+				small=GFX_portrait_AST_horace_robertson_small
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	AST_john_northcott={
+		name=AST_john_northcott
+		portraits={
+			army={
+				large="GFX_AST_john_northcott"
+				small=GFX_portrait_AST_john_northcott_small
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	AST_harold_farncomb={
+		name=AST_harold_farncomb
+		portraits={
+			army={
+				large="GFX_AST_harold_farncomb"
+				small=GFX_portrait_AST_harold_farncomb_small
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast naval_lineage }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=-1
+		}
+	}
+
+	AST_victor_crutchley={
+		name=AST_victor_crutchley
+		portraits={
+			army={
+				large="GFX_AST_victor_crutchley"
+				small=GFX_portrait_AST_victor_crutchley_small
+			}
+		}
+		navy_leader={
+			traits={ bold }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+}

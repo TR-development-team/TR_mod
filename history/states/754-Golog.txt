@@ -11,7 +11,9 @@ provinces={
 	history={
 		owner = XSM
 		add_core_of = XSM
-		add_core_of = CHI
+		add_core_of = HEX
+		add_claim_by = CHI
+		add_claim_by = YUN
 		victory_points = {
 			12732 3 
 		}
@@ -20,20 +22,6 @@ provinces={
 			industrial_complex = 1
 			arms_factory = 1
 
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-			}
 		}
 	}
 }

@@ -1,0 +1,22 @@
+characters={
+	ANQ_Liang_Hongzhi={
+		name=ANQ_Liang_Hongzhi
+		portraits={
+			civilian={
+				large="gfx/leaders/ANQ/Portrait_ANQ_Liang_Hongzhi.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+}

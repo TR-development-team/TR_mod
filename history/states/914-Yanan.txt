@@ -1,0 +1,29 @@
+state={
+	id=914
+	name="STATE_914"
+
+	history={
+		owner = DTN
+                add_core_of = DTN
+                add_core_of = KUO
+		add_claim_by = CHI
+		add_claim_by = YUN
+
+		victory_points = {
+			8049 3 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 2
+		}
+	}
+
+	local_supplies=0.0 
+provinces={
+		12356 7208 8049 5007
+	}
+	manpower=1013400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

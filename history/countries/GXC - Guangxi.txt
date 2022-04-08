@@ -34,39 +34,15 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 5
-	paternal_autocrat = 91
-	national_populist = 4
+	authoritarian_democrat = 18
+	paternal_autocrat = 54
+	national_populist = 28
 }
 
-create_country_leader = {
-	name = "安藤利吉"
-	
-	picture = "gfx/leaders/JAP/Portrait_JAP_Ando_RIkichi.tga"
-	expire = "1960.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "劉震寰"
-	
-	picture = "gfx/leaders/CHI/Portrait_China_Liu_Chen_fuan.tga"
-	expire = "1960.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		
-	}
-}
+recruit_character = GXC_li_zongren
+recruit_character = GXC_Liu_Chen_fuan
 
-create_corps_commander = {
-	name = "Chen Jitang"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = GXC_li_zongren_marshal
+recruit_character = GXC_Liu_Chen_fuan_marshal
+recruit_character = GXC_chen_jitang
+

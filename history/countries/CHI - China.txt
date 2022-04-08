@@ -84,202 +84,30 @@ set_popularities = {
 	national_populist = 50
 }
 
-create_country_leader = {
-	name = "蔣介石"
-	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
-	picture = "gfx/leaders/CHI/Portrait_China_Chiang.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		generallissimo
-	}
-}
-
-create_country_leader = {
-	name = "蔣介石"
-	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
-	picture = "gfx/leaders/CHI/Portrait_China_Chiang.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-              generallissimo
-	}
-}
-create_country_leader = {
-	name = "陳誠"
-	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
-	picture = "gfx/leaders/CHI/Portrait_China_Chen_Cheng.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-
-	}
-}
-create_country_leader = {
-	name = "趙恒惕"
-	desc = ""
-	picture = "gfx/leaders/CHI/Portrait_China_Zhao_Hengti.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "毛沢東"
-	desc = ""
-	picture = "gfx/leaders/PRC/Portrait_Mao_Zedong.tga"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "張国燾"
-	desc = "POLITICS_ZHANG_GUOTAO_DESC"
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		cornered_fox
-	}
-}
-
-
-create_country_leader = {
-	name = "翁文灝" 
-	desc = "POLITICS_ZHANG_LAN_DESC"
-	picture = "gfx/leaders/CHI/GFX_portrait_chi_weng_wenhao"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "汪兆銘"
-	desc = "POLITICS_WANG_DESC"
-	picture = "gfx/leaders/CHI/Portrait_CHI_Wang.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "汪兆銘"
-	desc = "POLITICS_WANG_DESC"
-	picture = "gfx/leaders/CHI/Portrait_CHI_Wang.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-
+### Diplomacy ###
 add_opinion_modifier = { target = PRC modifier = hostile_status }
+add_opinion_modifier = { target = JAP modifier = embargo }
 
-create_field_marshal = {
-	name = "杜聿明"
-	gfx = "GFX_portrait_chi_du_yuming"
-	traits = { defensive_doctrine trait_cautious armor_officer harsh_leader }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
 
-create_field_marshal = {
-	name = "陳誠"
-	portrait_path = "gfx/leaders/CHI/Portrait_China_Chen_Cheng.tga"
-	traits = { logistics_wizard organizer brilliant_strategist politically_connected }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 4
-}
-create_field_marshal = {
-	name = "薛岳"
-	gfx = "GFX_portrait_chi_xue_yue"
-	traits = { offensive_doctrine trait_reckless brilliant_strategist war_hero }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 3
-}
+### country_leader ###
+recruit_character = CHI_Chen_Cheng
+recruit_character = CHI_chiang_kaishek
 
-create_corps_commander = {
-	name = "戴安瀾"
-	gfx = "GFX_portrait_chi_tai_an_lan"
-	traits = {  trait_reckless career_officer }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
-}
+recruit_character = CHI_kokumin_seifu
+recruit_character = CHI_Dai_Li
+recruit_character = CHI_Chen_Kuofu
 
-create_corps_commander = {
-	name = "王耀武"
-	gfx = "GFX_portrait_chi_wang_yaowu"
-	traits = { trait_cautious infantry_officer }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "孫立人"
-	gfx = "GFX_portrait_chi_sun_li_jen"
-	traits = { brilliant_strategist }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "胡宗南"
-	gfx = "GFX_portrait_chi_hu_zongnan"
-	traits = { politically_connected }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "顧祝同"
-	gfx = "GFX_portrait_chi_gu_zhutong"
-	traits = { career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "衛立煌"
-	gfx = "GFX_portrait_chi_wei_lihuang"
-	traits = { infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-
+recruit_character = CHI_Chen_Cheng_marshal
+recruit_character = CHI_tu_yuming
+recruit_character = CHI_hsueh_yueh
+recruit_character = CHI_tai_anlan
+recruit_character = CHI_wang_yaowu
+recruit_character = CHI_sun_li_jen
+recruit_character = CHI_hu_zongnan
+recruit_character = CHI_gu_zhutong
+recruit_character = CHI_wei_lihuang
+recruit_character = CHI_fu_zuoyi
+recruit_character = CHI_zhang_xueliang
 
 
 ### VARIANTS ###

@@ -1,0 +1,84 @@
+characters={
+	HNA_Mao_Zedong={
+		name=HNA_Mao_Zedong
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/Portrait_Mao_Zedong.tga"
+			}
+		}
+		country_leader={
+			ideology= totalist_subtype
+		}
+		country_leader={
+			ideology= radical_socialist_subtype
+		}
+	}
+	HNA_Chen_Chiungming={
+		name=HNA_Chen_Chiungming
+		portraits={
+			civilian={
+				large="gfx/leaders/HNA/Portrait_HNA_Chen_Chiungming.tga"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= syndicalist_subtype
+		}
+	}	
+	HNA_Zhao_Hengti={
+		name=HNA_Zhao_Hengti
+		portraits={
+			civilian={
+				large="gfx/leaders/HNA/Portrait_HNA_Zhao_Hengti.png"
+			}
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+	}
+	HNA_Zhao_Hengti_marshal={
+		name=HNA_Zhao_Hengti
+		portraits={
+			army={
+				large="gfx/leaders/HNA/Portrait_HNA_Zhao_Hengti.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	HNA_Chen_Chiungming_marshal={
+		name=HNA_Chen_Chiungming
+		portraits={
+			army={
+				large="gfx/leaders/HNA/Portrait_HNA_Chen_Chiungming.tga"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer trait_cautious brilliant_strategist}
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+}

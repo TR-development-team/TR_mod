@@ -149,14 +149,7 @@ country_event = {
 			elections_allowed = no
 		}
 		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = radical_socialist }
-		create_country_leader = {
-			name = "グリゴリー・ジノヴィエフ"
-			desc = ""
-			picture = "gfx/leaders/SOV/Portrait_Soviet_Zinoviev.tga"
-			expire = "1965.1.1"
-			ideology = radical_socialist_subtype
-		}
+		promote_character = SOV_Grigory_Zinoviev
 		create_wargoal = {
 			target = GEO
 			type = annex_everything
@@ -205,6 +198,12 @@ country_event = {
                 remove_ideas = RUS_CIVIL_WAR
                 set_rule = { can_create_factions = no }
                 set_global_flag = Soviet_Win_flag
+		set_autonomy = {
+		    target = UKS
+		    autonomy_state = Union_Republics
+		    end_wars = yes
+		    end_civil_wars = yes
+		}
 		add_stability = 0.1
 		dismantle_faction = yes
 	}
@@ -220,12 +219,18 @@ country_event = {
                 remove_ideas = RUS_CIVIL_WAR
                 set_global_flag = Soviet_Win_flag
 		add_stability = 0.1
-                         set_rule = { can_create_factions = no }
+                set_rule = { can_create_factions = no }
 		dismantle_faction = yes
 		annex_country = {
 			target = SIB
 			transfer_troops = yes
 			}
+		set_autonomy = {
+		    target = UKS
+		    autonomy_state = Union_Republics
+		    end_wars = yes
+		    end_civil_wars = yes
+		}
 		40 = {
 			add_core_of = RUS
 		}

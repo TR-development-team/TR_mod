@@ -41,10 +41,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-        effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = national_populist }
         hidden_effect = { 
-			kill_ideology_leader = paternal_autocrat 
 		    add_ideas = CHI_Dai_Li
 			add_ideas = CHI_He_Yingqin_MoE
 		    add_ideas = CHI_Dai_Li_MoI
@@ -53,20 +50,8 @@ focus_tree = {
 			ruling_party = paternal_autocrat
 			elections_allowed = no
 		}
-		create_country_leader = {
-			name = "陳果夫"
-			desc = ""
-			picture = "gfx/leaders/CHI/Portrai_china_ChenGuofu.tga"
-			expire = "1965.1.1"
-			ideology = national_populist_subtype
-		}
-                create_country_leader = {
-			name = "戴笠"
-			desc = ""
-			picture = "gfx/leaders/CHI/Portrai_china_DaiLi.tga"
-			expire = "1965.1.1"
-			ideology = paternal_autocrat_subtype
-		}
+		promote_character = CHI_Dai_Li
+		promote_character = CHI_Chen_Kuofu
                  
 		
 	}
@@ -86,33 +71,18 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-        effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = national_populist }
         hidden_effect = { 
-			kill_ideology_leader = paternal_autocrat 
 			add_ideas = CHI_Chen_Kuofu
 			add_ideas = CHI_Sung_Tzuwen_FA
-		    add_ideas = CHI_Chen_Lifu
+		        add_ideas = CHI_Chen_Lifu
 			add_ideas = CHI_Wu_Zhongxin_MoE
 		}
         set_politics = {
 			ruling_party = national_populist
 			elections_allowed = no
 		}
-		create_country_leader = {
-			name = "陳果夫"
-			desc = ""
-			picture = "gfx/leaders/CHI/Portrai_china_ChenGuofu.tga"
-			expire = "1965.1.1"
-			ideology = national_populist_subtype
-		}
-        create_country_leader = {
-			name = "戴笠"
-			desc = ""
-			picture = "gfx/leaders/CHI/Portrai_china_DaiLi.tga"
-			expire = "1965.1.1"
-			ideology = paternal_autocrat_subtype
-		}
+		promote_character = CHI_Dai_Li
+		promote_character = CHI_Chen_Kuofu
                  
 		
 	}

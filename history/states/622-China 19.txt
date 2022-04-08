@@ -7,26 +7,27 @@ state={
 	}
 
 	history={
-		owner = DTN
-		add_claim_by = CHI
+		owner = KUO
+                add_core_of = KUO
                 add_core_of = DTN
+		add_claim_by = CHI
+		add_claim_by = YUN
+
 		victory_points = {
-			8049 3 
+			7314 1 
 		}
 		buildings = {
 			infrastructure = 1
-			arms_factory = 2
-			industrial_complex = 2
-
+			arms_factory = 1
 		}
 
 	}
 
 	local_supplies=0.0 
 provinces={
-		517 1458 4939 5007 7208 7314 7659 8049 10733 10880 12156 12356 
+		517 1458 4939 7314 7659 10733 10880 12156
 	}
-	manpower=7006200
+	manpower=6003200
 	buildings_max_level_factor=1.000
 	state_category=city
 }

@@ -2,8 +2,6 @@
 
 oob = "HON_1936"
 
-set_cosmetic_tag = HON_JAP
-
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -109,16 +107,6 @@ set_popularities = {
 	national_populist = 3
 }
 
-create_country_leader = {
-	name = "本間雅晴"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_Masaharu_Homma.dds"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-        traits = {
-		
-	}
-	
-}
+
 
 

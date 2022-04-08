@@ -141,7 +141,7 @@ country_event = {
 
 	option = {
 		name = TR_Turkey.4.a
-                set_capital = 49
+                set_capital = {state = 49}
                 set_cosmetic_tag = TUR_REP
                 effect_tooltip = { retire_country_leader = yes }
 		hidden_effect = { kill_ideology_leader = paternal_autocrat }
@@ -280,14 +280,14 @@ country_event = {
 
 	option = {
 		name = TR_Turkey.7.a
-                declare_war_on = {
+            declare_war_on = {
 			target = TUR
 			type = annex_everything
-		}
-                division_template = {
+		    }
+            division_template = {
 				name = "Kurdistan Infantry"
                                 
-				division_names_group = KUR_INF_01
+				division_names_group = TUR_INF_01
 
 				regiments = {
 					infantry = { x = 0 y = 0 }

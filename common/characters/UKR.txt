@@ -1,0 +1,43 @@
+characters={
+	UKR_Nestor_Makhno={
+		name=UKR_Nestor_Makhno
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.png"
+			}
+		}
+		country_leader={
+			ideology= syndicalist_subtype
+		}
+	}
+	UKR_Nikita_Khrushchev={
+		name=UKR_Nikita_Khrushchev
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Khrushchev.png"
+			}
+		}
+		country_leader={
+			ideology= radical_socialist_subtype
+		}
+		country_leader={
+			ideology= totalist_subtype
+		}
+	}
+	UKR_Nestor_Makhno_corps={
+		name=UKR_Nestor_Makhno
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Nestor_Makhno.png"
+			}
+		}
+		field_marshal = {
+			traits = { media_personality politically_connected trickster guerilla_fighter organizer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+}

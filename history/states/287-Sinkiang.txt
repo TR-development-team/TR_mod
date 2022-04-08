@@ -3,9 +3,11 @@ state={
 	name="STATE_287"
 
 	history={
-		owner = SIK
+		owner = ETR
 		add_core_of = ETR
 		add_core_of = SIK
+		add_claim_by = CHI
+		add_claim_by = YUN
 
 		buildings = {
 			infrastructure = 1

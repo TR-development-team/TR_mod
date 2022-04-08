@@ -22,7 +22,6 @@ on_actions = {
 			clr_global_flag = JF_ROM
 			clr_global_flag = JF_BUL
 			clr_global_flag = JF_SHX
-			clr_global_flag = JF_SQI
 			clr_global_flag = JF_SWE
 			clr_global_flag = JF_SWI
 			clr_global_flag = JF_TIB
@@ -185,13 +184,6 @@ on_actions = {
 						tag = SHX
 					}
 					set_global_flag = JF_SHX
-				}
-				else_if = {
-					limit = {
-						tag = SQI
-						QIE = { has_country_flag = QIE_manchu_restoration }
-					}
-					set_global_flag = JF_SQI
 				}
 				else_if = {
 					limit = {

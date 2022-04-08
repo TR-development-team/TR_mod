@@ -1,0 +1,36 @@
+characters={
+	XSM_Ma_Bufang={
+		name=NGX_Ma_Bufang
+		portraits={
+			civilian={
+				large="gfx/leaders/XSM/Portrait_Ma_Bufang.png"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology= national_populist_subtype
+		}
+	}
+	XSM_Ma_Bufang_marshal={
+		name=NGX_Ma_Bufang
+		portraits={
+			army={
+				large="gfx/leaders/XSM/Portrait_Ma_Bufang.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

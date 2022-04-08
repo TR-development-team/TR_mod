@@ -1,0 +1,86 @@
+characters={
+	GXC_li_zongren={
+		name=GXC_li_zongren
+		portraits={
+			civilian={
+				large=GFX_portrait_GXC_li_zongren
+			}
+			army={
+				small=GFX_portrait_GXC_li_zongren_small
+				large="GFX_portrait_li_zongren"
+			}
+		}
+
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			id=-1
+		}
+	}
+	GXC_Liu_Chen_fuan={
+		name=GXC_Liu_Chen_fuan
+		portraits={
+			civilian={
+				large="gfx/leaders/GXC/Portrait_GXC_Liu_Chen_fuan.png"
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+			id=-1
+		}
+	}
+	GXC_Liu_Chen_fuan_marshal={
+		name=GXC_Liu_Chen_fuan
+		portraits={
+			civilian={
+				large="gfx/leaders/GXC/Portrait_GXC_Liu_Chen_fuan.png"
+			}
+		}
+		field_marshal = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	GXC_li_zongren_marshal={
+		name=GXC_li_zongren
+		portraits={
+			civilian={
+				large=GFX_portrait_GXC_li_zongren
+			}
+		}
+		field_marshal = {
+			traits = { organizer politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	GXC_chen_jitang={
+		name=GXC_chen_jitang
+		portraits={
+			army={
+				large=GFX_portrait_GXC_chen_jitang
+				small=GFX_portrait_GXC_chen_jitang_small
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+}

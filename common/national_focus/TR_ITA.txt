@@ -337,19 +337,9 @@ focus_tree = {
 			set_politics = {
 				ruling_party = national_populist
 				elections_allowed = no
-            }
-			hidden_effect = { kill_ideology_leader = national_populist 
-			create_country_leader = {
-				name = "ベニート・ムッソリーニ"
-				desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-				picture = "Portrait_Italy_Mussolini.tga"
-				expire = "1965.1.1"
-				expire = "1965.1.1"
-				ideology = national_populist_subtype
-				traits = { Mussolini_traits  }
-		        }
-		    }
-            set_party_name = {
+                        }
+			promote_character = ITA_benito_mussolini_NP
+                        set_party_name = {
 					ideology = national_populist
 					long_name = ITA_fascistparty_long
 					name = ITA_fascistparty
@@ -870,15 +860,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.1
 			effect_tooltip = { retire_country_leader = yes }
-			hidden_effect = { kill_ideology_leader = totalist }
-			create_country_leader = {
-				name = "ミケーレ・ビアンキ"
-				desc = "POLITICS_BENITO_MUSSOLINI_DESC"
-				picture = "Portrait_Italy_Bianchi.tga"
-				expire = "1965.1.1"
-				ideology = totalist_subtype
-				traits = {   }
-		        }
+			promote_character = ITA_Michele_Bianchi
 		    }
 	}
 	
@@ -1030,7 +1012,6 @@ focus_tree = {
 		icon = GFX_focus_generic_italy_first
 		available_if_capitulated = yes
 		mutually_exclusive = { 
-			focus = ITA_totalist_Focus_12
 		}
 		available = {
 			is_subject = no	

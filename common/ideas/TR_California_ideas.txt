@@ -1,0 +1,298 @@
+ideas = {
+       
+    country = {
+
+		### Starting ###
+        CAL_black_thursday = {
+			allowed = {
+				always = no
+			}
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.25
+				min_export = -0.25
+			}
+		}
+		CAL_black_thursday_intervention_1 = {
+			allowed = {
+				always = no
+			}
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.2
+				min_export = -0.2
+			}
+		}
+		CAL_black_thursday_intervention_2 = {
+			allowed = {
+				always = no
+			}
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				consumer_goods_factor = 0.1
+				min_export = -0.1
+			}
+		}
+		CAL_black_thursday_intervention_3 = {
+			allowed = {
+				always = no
+			}
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		CAL_black_thursday_austerity_1 = {
+			allowed = {
+				always = no
+			}
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.2
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.1
+				min_export = -0.1
+			}
+		}
+		CAL_black_thursday_austerity_2 = {
+			allowed = {
+				always = no
+			}
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.25
+				industrial_capacity_factory = -0.15
+			}
+		}
+		CAL_black_thursday_austerity_3 = {
+			allowed = {
+				always = no
+			}
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = -0.05
+			}
+		}
+		CAL_Economic_Boom = {
+			allowed = {
+				always = no
+			}
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+        Second_Utah_War = {
+			allowed = {
+				always = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				conscription_factor = -0.05
+                                political_power_cost = 0.2
+			}
+		}
+        Anti_Japan_Resistance = {
+			allowed = {
+				always = no
+			}
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				conscription_factor = -0.1
+                                resistance_target = 0.1
+                                resistance_growth = 0.1
+			}
+		}
+        Santa_Clara_Development = {
+			allowed = {
+				always = no
+			}
+			picture = man_five_year_plan_industry
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+                                political_power_cost = 0.1
+                                production_speed_buildings_factor = 0.2
+			}
+		}
+		CAL_agricultural_subsidy = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_cost = 0.03
+                consumer_goods_factor = -0.02
+				MONTHLY_POPULATION = 0.1
+			}
+		}  
+    }
+	Head_of_State = {
+		CAL_Tokugawa_Iesato = {
+			picture = CAL_Tokugawa_Iesato
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				authoritarian_democrat
+                TR_benevolent_gentleman
+			}
+		}
+		CAL_Shogun_Iesato = {
+			name = CAL_Tokugawa_Iesato
+			picture = CAL_Tokugawa_Iesato
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				national_populist
+                Shogun_traits
+			}
+		}
+    }
+	Government_leaders = {
+		CAL_Goto_Fumio = {
+			picture = CAL_Goto_Fumio
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				authoritarian_democrat
+                TR_silent_workhorse
+			}
+		}
+		CAL_Hasegawa_Kiyoshi = {
+			picture = CAL_Hasegawa_Kiyoshi
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				authoritarian_democrat
+                TR_old_admiral
+			}
+		}
+    }
+	Minister_of_Foreign_Affairs = {
+		CAL_Nomura_Kichisaburo = {
+			picture = CAL_Nomura_Kichisaburo
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				authoritarian_democrat
+                TR_great_compromiser
+			}
+		}
+    }
+	Minister_of_Economy = {
+		CAL_Ikeda_Hayato = {
+			picture = CAL_Ikeda_Hayato
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+                TR_administrative_genius
+			}
+		}
+    }
+	Minister_of_Interior = {
+		CAL_Ino_Eiichi = {
+			picture = CAL_Ino_Eiichi
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				authoritarian_democrat
+                TR_silent_lawyer
+			}
+		}
+		CAL_Takagi_Soukichi = {
+			picture = CAL_Takagi_Soukichi
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				authoritarian_democrat
+                TR_man_of_the_people
+			}
+		}
+    }
+}

@@ -3,9 +3,9 @@ state={
 	name="STATE_849"
 	local_supplies=0.0 
 provinces={
-		9974 
+		9974 10058 7058 
 	}
-	manpower=1330700
+	manpower=1930700
 	buildings_max_level_factor=1.000
 	state_category=city
         history={
@@ -20,7 +20,7 @@ provinces={
 			industrial_complex = 1
 			dockyard = 1
                         9974 = {
-				naval_base = 3
+				naval_base = 5
 			}
 
 

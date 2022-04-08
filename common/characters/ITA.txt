@@ -1,0 +1,398 @@
+characters={
+	ITA_benito_mussolini={
+		name=ITA_benito_mussolini
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_Italy_Mussolini.tga"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+			traits = { Mussolini_traits }
+		}
+	}
+	ITA_Michele_Bianchi={
+		name=ITA_Michele_Bianchi
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_Italy_Bianchi.tga"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+		}
+	}
+	ITA_Giacomo_Matteotti={
+		name=ITA_Giacomo_Matteotti
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_Italy_Matteotti.tga"
+			}
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+	}
+
+	ITA_Antonio_Gramsci={
+		name=ITA_Antonio_Gramsci
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_Italy_Gramsci.tga"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+	}
+
+	ITA_Ivanoe_Bonomi={
+		name=ITA_Ivanoe_Bonomi
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_ITA_Ivanoe_Bonomi.tga"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+		}
+	}
+
+	ITA_Alcide_De_Gasperi={
+		name=ITA_Alcide_De_Gasperi
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_ITA_Gasperi.tga"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+		}
+	}
+
+	ITA_victor_emmanuel_iii={
+		name=ITA_victor_emmanuel_iii
+		portraits={
+			civilian={
+				large="GFX_portrait_italy_victor_emmanuel_iii"
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+		}
+	}
+
+	ITA_Gabriele_dAnnunzio={
+		name=ITA_Gabriele_dAnnunzio
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_italy_Dannunzio.tga"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+
+ 	ITA_benito_mussolini_NP ={
+		name=ITA_benito_mussolini
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_Italy_Mussolini.tga"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			traits = { Mussolini_traits }
+		}
+	}
+
+	ITA_Julius_Evola={
+		name=ITA_Julius_Evola
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_ITA_Evola.tga"
+			}
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+	}
+
+	ITA_pietro_badoglio={
+		name=ITA_pietro_badoglio
+		portraits={
+			army={
+				small="GFX_idea_pietro_badoglio"
+			}
+			army={
+				large=GFX_portrait_ITA_pietro_badoglio
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_emilio_de_bono={
+		name=ITA_emilio_de_bono
+		portraits={
+			army={
+				small="GFX_idea_emilio_de_bono"
+			}
+			army={
+				large=GFX_portrait_ITA_emilio_de_bono
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard trait_cautious politically_connected defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ugo_cavallero={
+		name=ITA_ugo_cavallero
+		portraits={
+			army={
+				small="GFX_idea_ugo_cavallero"
+			}
+			army={
+				large=GFX_portrait_ITA_ugo_cavallero
+			}
+		}
+		
+		corps_commander={
+			traits={ old_guard career_officer trait_cautious }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	ITA_giovanni_messe={
+		name=ITA_giovanni_messe
+		portraits={
+			army={
+				small="GFX_idea_giovanni_messe"
+			}
+			army={
+				large=GFX_portrait_ITA_giovanni_messe
+			}
+		}
+		
+		corps_commander={
+			traits={ armor_officer war_hero }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	ITA_sebastiano_visconti_prasca={
+		name=ITA_sebastiano_visconti_prasca
+		portraits={
+			army={
+				large=GFX_portrait_ITA_sebastiano_visconti_prasca
+				small=GFX_portrait_ITA_sebastiano_visconti_prasca_small
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist career_officer }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_ubaldo_soddu={
+		name=ITA_ubaldo_soddu
+		portraits={
+			army={
+				large=GFX_portrait_ITA_ubaldo_soddu
+				small=GFX_portrait_ITA_ubaldo_soddu_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_cautious }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_italo_balbo={
+		name=ITA_italo_balbo
+		portraits={
+			army={
+				small="GFX_idea_italo_balbo"
+			}
+			army={
+				large=GFX_portrait_ITA_italo_balbo
+			}
+		}
+		
+		corps_commander={
+			traits={ career_officer politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_rodolfo_graziani={
+		name=ITA_rodolfo_graziani
+		portraits={
+			army={
+				small="GFX_idea_rodolfo_graziani"
+			}
+			army={
+				large=GFX_portrait_ITA_rodolfo_graziani
+			}
+		}
+
+		field_marshal={
+			traits={ trait_cautious politically_connected offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_inigo_campioni={
+		name=ITA_inigo_campioni
+		portraits={
+			navy={
+				small="GFX_idea_inigo_campioni"
+			}
+			army={
+				large=GFX_portrait_ITA_inigo_campioni
+			}
+		}
+		
+		navy_leader={
+			traits={ battleship_adherent superior_tactician spotter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=0
+		}
+	}
+
+	ITA_alberto_da_zara={
+		name=ITA_alberto_da_zara
+		portraits={
+			navy={
+				small="GFX_idea_alberto_da_zara"
+			}
+			army={
+				large=GFX_portrait_ITA_alberto_da_zara
+			}
+		}
+		
+		navy_leader={
+			traits={ gentlemanly superior_tactician }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	ITA_giuseppe_fioravanzo={
+		name=ITA_giuseppe_fioravanzo
+		portraits={
+			army={
+				large=GFX_portrait_ITA_giuseppe_fioravanzo
+				small=GFX_portrait_ITA_giuseppe_fioravanzo_small
+			}
+		}
+		navy_leader={
+			traits={ aviation_enthusiast blockade_runner }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=4
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+
+	ITA_carlo_bergamini={
+		name=ITA_carlo_bergamini
+		portraits={
+			navy={
+				small="GFX_idea_carlo_bergamini"
+			}
+			army={
+				large=GFX_portrait_ITA_carlo_bergamini
+			}
+		}
+		
+		navy_leader={
+			traits={ gunnery_expert battleship_adherent ironside }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+
+	ITA_angelo_iachino={
+		name=ITA_angelo_iachino
+		portraits={
+			navy={
+				small="GFX_idea_angelo_iachino"
+			}
+			army={
+				large=GFX_portrait_ITA_angelo_iachino
+			}
+		}
+
+		navy_leader={
+			traits={ bold navy_career_officer superior_tactician spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=3
+			coordination_skill=1
+			legacy_id=0
+		}
+	}
+}

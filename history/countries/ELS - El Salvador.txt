@@ -56,31 +56,11 @@ set_convoys = 5
 }
 
 set_politics = {
-	ruling_party = fascism
-	last_election = "1935.1.15"
-	election_frequency = 48
-	elections_allowed = yes
+	ruling_party = authoritarian_democrat
+	last_election = "1935.6.9"
+	election_frequency = 12
+	elections_allowed = no # none after offset 1
 }
 set_popularities = {
-	fascism = 100
-}
-
-create_country_leader = {
-	name = "Maximiliano Hernández Martínez"
-	desc = "POLITICS_MAXIMILIANO_HERNANDEZ_MARTINEZ_DESC"
-	picture = "GFX_portrait_el_salvador_maximiliano_hernandez_martinez"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = fascism
-		last_election = "1939.1.3"
-		election_frequency = 48
-		elections_allowed = yes
-	}
+	authoritarian_democrat = 100
 }
