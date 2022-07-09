@@ -142,7 +142,7 @@ characters={
 		name=FRA_maurice_gamelin
 		portraits={
 			army={
-				small="GFX_idea_maurice_gamelin"
+				small=GFX_idea_FRA_Maurice_Gamelin
 			}
 			army={
 				large=GFX_portrait_FRA_maurice_gamelin
@@ -164,7 +164,7 @@ characters={
 		name=FRA_maxime_weygand
 		portraits={
 			army={
-				small="GFX_idea_maxime_weygand"
+				small=GFX_idea_FRA_Maxime_Weygand
 			}
 			army={
 				large="gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.tga"
@@ -187,6 +187,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/FRA/Portrait_FRA_Maurice_Pujo.tga"
+				small=GFX_idea_FRA_Maurice_Pujo
 			}
 		}
 		
@@ -206,6 +207,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/FRA/Portrait_FRA_Francois_de_La_Rocque.tga"
+				small=GFX_idea_FRA_francois_de_larocque
 			}
 		}
 		
@@ -225,7 +227,7 @@ characters={
 		portraits={
 			army={
 				large=GFX_portrait_FRA_jean_de_lattre_de_tassigny
-				small=GFX_portrait_FRA_jean_de_lattre_de_tassigny_small
+				small=GFX_idea_FRA_Lattre_de_Tassigny
 			}
 		}
 		corps_commander={
@@ -303,9 +305,9 @@ characters={
 		name=FRA_charles_de_gaulle
 		portraits={
 			army={
-				small="GFX_idea_charles_de_gaulle"
+				small=GFX_idea_FRA_Charles_de_Gaulle
 			}
-			civilian={
+			army={
 				large=GFX_portrait_FRA_charles_de_gaulle
 			}
 		}
@@ -426,7 +428,7 @@ characters={
 		name=FRA_charles_huntziger
 		portraits={
 			army={
-				small="GFX_idea_charles_huntziger"
+				small=GFX_idea_FRA_Charles_Huntziger
 			}
 			army={
 				large=GFX_portrait_FRA_charles_huntziger
@@ -506,7 +508,7 @@ characters={
 		portraits={
 			army={
 				large=GFX_portrait_FRA_francois_darlan
-				small="GFX_idea_francois_darlan"
+				small=GFX_idea_FRA_Francois_Darlan
 			}
 		}
 

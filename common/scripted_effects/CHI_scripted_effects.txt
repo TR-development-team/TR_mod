@@ -1,0 +1,20 @@
+#正統性
+CHI_set_People_support_values = {
+	set_variable = { CHI_People_support = 50 }
+	set_variable = { CHI_People_support_low_increase = 5 }
+	set_variable = { CHI_People_support_medium_increase = 10 }
+	set_variable = { CHI_People_support_high_increase = 15 }
+	set_variable = { CHI_People_support_low_decrease = -5 }
+	set_variable = { CHI_People_support_medium_decrease = -10 }
+	set_variable = { CHI_People_support_high_decrease = -15 }
+}
+CHI_People_support_low_increase_effect = {
+	custom_effect_tooltip = CHI_People_support_tt
+	custom_effect_tooltip = CHI_People_support_low_increase_tt
+	add_to_variable = { CHI_People_support = CHI_People_support_low_increase }
+	clamp_variable = {
+		var = CHI_People_support
+		min = 0
+		max = 100
+	}
+}

@@ -1,10 +1,15 @@
-﻿capital = 606
+﻿capital = 613
 
 oob = "ANQ_1936"
 
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
 }
 set_stability = 0.4
 set_war_support = 0.4
@@ -27,9 +32,18 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 5
+	syndicalist = 5
+	radical_socialist = 5
+	social_democrat = 2
+	social_liberal = 1
+	market_liberal = 2
+	social_conservative = 20
+	authoritarian_democrat = 35
+	paternal_autocrat = 10
+	national_populist = 15
+        Gnosticism = 0
 }
-
 add_ideas = {
          CHI_late_army
          YUN_jap_economic
@@ -43,6 +57,6 @@ add_timed_idea = {
                  }  
 
 
-
+recruit_character = ANQ_Duan_Qirui
 recruit_character = ANQ_Liang_Hongzhi
 

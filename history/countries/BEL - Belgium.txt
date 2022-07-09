@@ -18,7 +18,7 @@ add_ideas = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_recon = 1
 	tech_engineers = 1
 	motorised_infantry = 1
@@ -26,88 +26,37 @@ set_technology = {
 	trench_warfare = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	basic_train = 1
 }
 
 
-
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = social_democrat
 	last_election = "1932.11.27"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	social_democrat = 37
-	social_liberal = 11
-	market_liberal = 14
-	social_conservative = 38
+	totalist = 5
+	syndicalist = 7
+	radical_socialist = 5
+	social_democrat = 31
+	social_liberal = 10
+	market_liberal = 10
+	social_conservative = 5
+	authoritarian_democrat = 3
+	paternal_autocrat = 2
+	national_populist = 15
+        Gnosticism = 7
 }
 
 set_convoys = 80
 set_stability = 0.75
 
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Leopold_III.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-	
-	}
-}
+recruit_character = BEL_joseph_jacquemotte
+recruit_character = BEL_Paul_Henri_Spaak
+recruit_character = BEL_hubert_pierlot
+recruit_character = BEL_leon_degrelle
 
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Leopold_III.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Leopold_III.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Leopold_III.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-	
-	}
-}
-
-create_corps_commander = {
-	name = "M.C.L. Keyaerts"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { trait_mountaineer hill_fighter }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_navy_leader = {
-	name = "Georges Timmermans"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_3.dds"
-	traits = { bold }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
+recruit_character = BEL_mcl_keyaerts
+recruit_character = BEL_georges_timmermans

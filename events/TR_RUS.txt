@@ -16,14 +16,7 @@ country_event = {
 		add_stability = -0.1
 		add_war_support = -0.1
                 effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = paternal_autocrat }
-		create_country_leader = {
-			name = "アレクセイ2世"
-			desc = "POLITICS_ALEXEI_DESC"
-			picture = "gfx/leaders/SOV/RUS_alexei_ii.tga"
-			expire = "1965.1.1"
-			ideology = paternal_autocrat_subtype
-		}
+		promote_character = RUS_alexei_ii
                 hidden_effect = {
                          country_event = {
 					id = TR_news.15

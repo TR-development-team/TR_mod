@@ -1,0 +1,483 @@
+
+ideas = {
+       
+    country = {
+		KUO_Hui_repulsion = {
+			allowed = {
+				always = no
+			}
+            picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.1
+				stability_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		KUO_Hui_repulsion_1 = {
+			allowed = {
+				always = no
+			}
+            picture = chi_war_of_resistance2
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.05
+				stability_factor = -0.10
+				war_support_factor = -0.10
+			}
+		}
+		KUO_Hui_repulsion_2 = {
+			allowed = {
+				always = no
+			}
+            picture = chi_war_of_resistance
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		KUO_Freedom_religion = {
+			allowed = {
+				always = no
+			}
+            picture = generic_democratic_drift_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+                stability_factor = 0.10
+			}
+		}
+		KUO_Divine_Right = {
+			allowed = {
+				always = no
+			}
+            picture = jap_supremacy_of_will
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+                stability_factor = 0.10
+				war_support_factor = 0.10
+			}
+		}
+		KUO_Feng_Yuxiang_Thought = {
+			allowed = {
+				always = no
+			}
+            picture = jap_supremacy_of_will
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.3
+                stability_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+		KUO_Anti_Japan = {
+			allowed = {
+				always = no
+			}
+            picture = sour_loser
+			removal_cost = -1
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.1
+			}
+            targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.1
+			}
+            targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.1
+			}
+            targeted_modifier = {
+				tag = GUG
+				attack_bonus_against = 0.1
+			}
+			modifier = {
+			}
+		}
+		KUO_Modern_rule = {
+			allowed = {
+				always = no
+			}
+            picture = generic_manpower_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+                stability_factor = 0.05
+			}
+		}
+		KUO_Modern_rule_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_manpower_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.15
+                stability_factor = 0.1
+				command_power_gain = 0.5
+			}
+		}
+		KUO_Industrial_enlightenment_campaign = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.05
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		KUO_Rural_community = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.05
+				industry_air_damage_factor = -0.1
+			}
+		}
+		KUO_Rural_community_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				global_building_slots_factor = 0.10
+				industry_air_damage_factor = -0.2
+			}
+		}
+		KUO_Army_reorganization = {
+			allowed = {
+				always = no
+			}
+            picture = saf_soviet_advisers
+			removal_cost = -1
+			modifier = {
+				experience_gain_army_factor = 0.1
+                war_support_factor = 0.10
+			}
+		}
+		KUO_Railway_maintenance = {
+			allowed = {
+				always = no
+			}
+            picture = generic_build_infrastructure
+			removal_cost = -1
+			modifier = {
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.2
+			}
+		}
+		KUO_Trade_revitalization = {
+			allowed = {
+				always = no
+			}
+            picture = can_wartime_prices_and_trade_board
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				trade_opinion_factor = 0.1
+			}
+		}
+		KUO_Start_modernization = {
+			allowed = {
+				always = no
+			}
+            picture = man_five_year_plan_industry
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		KUO_Investing_in_rural = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		KUO_Investing_in_rural_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		KUO_Opium_ban = {
+			allowed = {
+				always = no
+			}
+            picture =  generic_morale_bonus
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		KUO_Opium_cultivation = {
+			allowed = {
+				always = no
+			}
+            picture = prc_permit_opium_trade
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		KUO_Logistics = {
+			allowed = {
+				always = no
+			}
+            picture = chi_army_corruption2
+			removal_cost = -1
+			modifier = {
+				supply_consumption_factor = -0.10
+				attrition = -0.1
+			}
+		}
+		KUO_Fortress_construction = {
+			allowed = {
+				always = no
+			}
+            picture = generic_fortify_the_borders
+			removal_cost = -1
+			modifier = {
+				production_speed_bunker_factor = 0.1
+			}
+		}
+		KUO_Fortress_construction_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_fortify_the_borders
+			removal_cost = -1
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				army_core_defence_factor = 0.15
+			}
+		}
+		KUO_Fortress_construction_2 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_fortify_the_borders
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				training_time_army_factor = -0.1
+				production_speed_bunker_factor = 0.1
+				army_core_defence_factor = 0.15
+			}
+		}
+		KUO_Mobile_Army = {
+			allowed = {
+				always = no
+			}
+            picture = CZE_planning_bonus
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+			}
+		}
+		KUO_Mobile_Army_1 = {
+			allowed = {
+				always = no
+			}
+            picture = CZE_planning_bonus
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+				planning_speed = 0.15
+			}
+		}
+		KUO_Mobile_Army_2 = {
+			allowed = {
+				always = no
+			}
+            picture = CZE_planning_bonus
+			removal_cost = -1
+			modifier = {
+				army_speed_factor = 0.1
+				planning_speed = 0.15
+				army_org_Factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		KUO_Weapon_Production = {
+			allowed = {
+				always = no
+			}
+            picture = generic_infantry_equipment_manufacturer_3
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			modifier = {
+				
+			}
+		}
+    }
+#大臣
+    Head_of_State = {	
+        KUO_Feng_Yuxiang = {
+			picture = KUO_Feng_Yuxiang
+			allowed = {
+				original_tag = KUO
+			}
+			available = {
+				always = no
+		    }
+
+			removal_cost = -1
+			
+			traits = {
+				Head_of_State
+                authoritarian_democrat
+				Feng_Yuxiang_traits
+			}
+		}
+    }
+    Government_leaders = {	  
+		KUO_Liu_Ji = {
+			picture = KUO_Liu_Ji
+			allowed = {
+				original_tag = KUO
+			}
+			available = {
+				always = no
+		    }
+
+			removal_cost = -1
+			
+			traits = {
+				Head_of_State
+                authoritarian_democrat
+				TR_old_general
+			}
+		}  
+    }
+    Minister_of_Foreign_Affairs = { 
+		KUO_Zhang_Zhijiang = {
+			picture = KUO_Zhang_Zhijiang
+			
+			allowed = {
+				original_tag = KUO
+            }
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				authoritarian_democrat
+				TR_the_cloak_n_dagger_schemer
+			}
+		}
+		}
+        Minister_of_Economy = {	
+            KUO_Song_Zheyuan = {
+			
+			picture = KUO_Song_Zheyuan
+			
+			allowed = {
+				original_tag = KUO
+                }  
+            available = {
+                always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+				TR_laissez_faire_capitalist
+			}
+		}
+               
+               }
+    Minister_of_Interior = {	
+		KUO_Lu_Zhonglin = {
+			picture = KUO_Lu_Zhonglin
+			
+			allowed = {
+				original_tag = KUO
+			}
+			available = {
+				always = no
+		    }
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				authoritarian_democrat
+				TR_back_stabber
+			}
+		}          
+    }
+	chief_of_staff = { 
+		KUO_Liu_Ji_cos = {
+			picture = KUO_Liu_Ji
+			name = KUO_Liu_Ji
+			allowed = {
+				original_tag = KUO
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+	}
+	chief_of_army = { 
+        KUO_Feng_Yuxiang_coa = {
+			picture = KUO_Feng_Yuxiang
+			name = KUO_Feng_Yuxiang
+			allowed = {
+				original_tag = KUO
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		KUO_Zheng_Jinsheng = {
+			picture = KUO_Zheng_Jinsheng
+			allowed = {
+				original_tag = KUO
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
+	}
+}

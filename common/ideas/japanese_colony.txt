@@ -62,7 +62,7 @@
 			picture = jap_militarism_showa
 			modifier = {
                                 ai_call_ally_desire_factor = -2000
-				conscription_factor = -0.5
+				conscription_factor = -0.3
                                 war_support_factor = -0.3
 			}
 		}
@@ -70,7 +70,7 @@
 			picture = jap_militarism_showa
 			modifier = {
 				ai_call_ally_desire_factor = -2000
-                                conscription_factor = -0.2
+                                conscription_factor = -0.15
 			}
 		}
                 NMB_JAP_colony = {

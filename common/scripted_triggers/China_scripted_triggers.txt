@@ -1,0 +1,140 @@
+#####################################
+# Chinese Shared Triggers
+#####################################
+
+can_become_china = {
+	OR = {
+	tag = CHI
+	tag = MIN 
+        tag = PRC
+        tag = YUN 
+        tag = YNN
+	tag = SAN
+        tag = KUO
+        tag = HNA
+        tag = HEX
+        tag = DTN
+        tag = SCH
+        tag = NAN
+	}
+}
+
+can_integration_chinese_provinces = {
+	has_country_flag = china_integration_unlocked
+}
+
+is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = {
+	is_owned_by = ROOT
+	is_fully_controlled_by = ROOT
+	NOT = { is_core_of = ROOT }
+}
+is_ruled_by_right_kmt = {
+	custom_trigger_tooltip = {
+		tooltip = is_ruled_by_right_kmt
+		### factions override all alignments
+		if = {
+			limit = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
+			faction_leader = { original_tag = CHI }
+		}
+		### overlords override puppets' alignments
+		else_if = {
+			limit = { is_subject = yes }
+			overlord = { original_tag = CHI }
+		}
+		### if not in faction, check tag-specific conditions
+		else = {
+			OR = {
+				AND = {
+					original_tag = GXC
+					has_government = national_populist
+				}
+				AND = {
+					original_tag = SCH
+					has_government = paternal_autocrat
+				}
+				AND = {
+					original_tag = SIK
+					has_government = paternal_autocrat
+				}
+				AND = {
+					original_tag = XSM
+					has_government = paternal_autocrat
+				}
+			}
+		}
+	}
+}
+
+
+is_ruled_by_federalists = {
+	custom_trigger_tooltip = {
+		tooltip = is_ruled_by_federalists
+		### factions override all alignments
+		if = {
+			limit = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
+			faction_leader = { original_tag = HNA }
+		}
+		### overlords override puppets' alignments
+		else_if = {
+			limit = { is_subject = yes }
+			overlord = { original_tag = HNA }
+		}
+		else = {
+			OR = {
+				AND = {
+					original_tag = GXC
+					has_government = social_conservative
+				}
+				AND = {
+					original_tag = SCH
+					has_government = social_conservative
+				}
+				AND = {
+					original_tag = YNN
+					has_government = social_conservative
+				}
+				AND = {
+					original_tag = XSM
+					has_government = social_conservative
+				}
+			}
+		}
+	}
+}
+
+
+
+
+is_core_china_tag = {
+	OR = {
+	tag = CHI
+	tag = MIN 
+        tag = PRC
+        tag = ANQ
+        tag = YUN
+	tag = SIK
+	tag = XSM 
+        tag = YNN
+        tag = FUJ
+	tag = SAN
+        tag = KUO
+        tag = FUJ
+        tag = HNA
+        tag = GXC
+        tag = HEX
+        tag = NGX
+        tag = DTN
+        tag = ETR
+        tag = KML
+        tag = SCH
+        tag = GUG
+        tag = NAN
+        tag = SHX
+	}
+}

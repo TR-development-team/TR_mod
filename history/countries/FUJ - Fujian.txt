@@ -5,7 +5,6 @@ oob = "FUJ_1936"
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	gwtank = 1
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
@@ -66,28 +65,8 @@ add_timed_idea = {
 		days = 500
                  }  
 
-
-create_country_leader = {
-	name = "陳紹寛"
-	desc = ""
-	picture = "gfx/leaders/CHI/Portrait_China_Chen_ShaoKuan.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-
-create_navy_leader = {
-	name = "陳紹寛"
-	portrait_path = "gfx/leaders/CHI/Portrait_China_Chen_ShaoKuan.tga"
-	traits = { naval_lineage aviation_enthusiast }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 1
-	coordination_skill = 1
-}
+recruit_character = FUJ_Chen_ShaoKuan
+recruit_character = CHI_Chen_ShaoKuan
 
 
 ### VARIANTS ###

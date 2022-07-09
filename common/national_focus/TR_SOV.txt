@@ -372,15 +372,7 @@ focus_tree = {
 		add_ideas = Absolute_monarchy
                 remove_ideas = SOV_ALEXEI_II
                 add_ideas = SOV_WRANGEL
-		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = national_populist }
-		create_country_leader = {
-			name = "ピョートル4世"
-			desc = "POLITICS_WRANGEL_DESC"
-			picture = "RUS_wrangel.tga"
-			expire = "1965.1.1"
-			ideology = national_populist_subtype
-		}
+		promote_character = RUS_Pyotr_wrangel_1
 
 	 }
 	}

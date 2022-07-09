@@ -99,139 +99,27 @@ set_popularities = {
 	paternal_autocrat = 24
 	national_populist = 16
 }
+recruit_character = TUR_Enver_Pasha
+recruit_character = TUR_AbdulmecidII
+recruit_character = TUR_Mustafa_Kemal
+recruit_character = TUR_Shakib_Arslan
+recruit_character = TUR_Sabahaddin
 
-
-
-	create_country_leader = {
-		name = "ムスタファ・ケマル"
-		desc = "POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
-		picture = "gfx/leaders/TUR/gfx/leaders/TUR/Portrait_Turkey_kemal.tga"
-		expire = "1965.1.1"
-		ideology = authoritarian_democrat_subtype
-		traits = {
-			
-		}
-	}
-	
-	create_country_leader = {
-		name = "アブデュルメジト2世"
-		desc = "POLITICS_Abdulmecid_DESC"
-		picture = "gfx/leaders/TUR/portrait_TUR_Abdulmecid.tga"
-		expire = "1965.1.1"
-		ideology = paternal_autocrat_subtype
-		traits = {
-			
-		}
-	}
-	create_country_leader = {
-		name = "サバハディン王子"
-		desc = "POLITICS_SABAHADDIN_DESC"
-		picture = "gfx/leaders/TUR/Portrait_Ottoman_Sabahaddin.tga"
-		expire = "1965.1.1"
-		ideology = market_liberal_subtype
-		traits = {
-			
-		}
-	}
-	create_country_leader = {
-		name = "シャキーブ・アルスラン"
-		desc = "POLITICS_ARSLAN_DESC"
-		picture = "gfx/leaders/TUR/Portrait_Ottoman_Shakib_Arslan.tga"
-		expire = "1965.1.1"
-		ideology = social_conservative_subtype
-		traits = {
-			
-		}
-	}
-	create_country_leader = {
-		name = "エンヴェル・パシャ"
-		desc = ""
-		picture = "gfx/leaders/TUR/Portrait_Turkey_Enver.tga"
-		expire = "1965.1.1"
-		ideology = national_populist_subtype
-		traits = {
-
-		}
-	}
-
-
-        create_field_marshal = {
-	         name = "ムスタファ・ケマル"
-	         portrait_path = "gfx/leaders/TUR/Portrait_Turkey_kemal.tga"
-	         traits = { 
-                         logistics_wizard 
-                         organizer
-		         war_hero
-		         media_personality
-	                 }
-	            skill = 5
-	            attack_skill = 4
-	            defense_skill = 4
-	            planning_skill = 6
-	            logistics_skill = 4
-                 }
-        create_field_marshal = {
-	         name = "エンヴェル・パシャ"
-	         portrait_path = "gfx/leaders/TUR/Portrait_Turkey_Enver.tga"
-	         traits = {  
-                         offensive_doctrine
-		         politically_connected
-                         media_personality
-	                 }
-	            skill = 2
-	            attack_skill = 2
-	            defense_skill = 2
-	            planning_skill = 2
-	            logistics_skill = 2
-                 }
-	create_corps_commander = {
-		name = "Cemil Cahit Toydemir"
-		portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-		traits = { desert_fox }
-		skill = 3
-	
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 3
-		logistics_skill = 2
-	}
-	
-	create_corps_commander = {
-		name = "Nazmi Solok"
-		portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-		traits = { trickster }
-		skill = 3
-	
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 3
-	}
-	
-	create_corps_commander = {
-		name = "Salih Omurtak"
-		portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_4.dds"
-		traits = {  hill_fighter }
-		skill = 3
-	
-		attack_skill = 2
-		defense_skill = 3
-		planning_skill = 2
-		logistics_skill = 2
-	}
-	
-	create_navy_leader = {
-		name = "Rauf Orbay"
-		portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_1.dds"
-		traits = { bold }
-		skill = 2
-		attack_skill = 3
-		defense_skill = 1
-		maneuvering_skill = 1
-		coordination_skill = 2
-	}
-
-
+recruit_character = TUR_Mustafa_Kemal_marshal
+recruit_character = TUR_Enver_Pasha_marshal
+recruit_character = TUR_izzettin_chalishlar
+recruit_character = TUR_kazim_karabekir
+recruit_character = TUR_mustafa_muglali
+recruit_character = TUR_mehmet_salih_omurtak
+recruit_character = TUR_hayrullah_fisek
+recruit_character = TUR_mehmet_nuri_yamut
+recruit_character = TUR_mehmet_ali_ulgen
+recruit_character = TUR_sukru_okan
+recruit_character = TUR_fevzi_cakmak
+recruit_character = TUR_ahmet_fevzi_pasha
+recruit_character = TUR_refet_pasha
+recruit_character = TUR_mehmet_esat_pasha
+ 
 	create_operative_leader = {
 		name = "Ruzi Nazar"
 		GFX = "GFX_portrait_tur_ruzi_nazar"

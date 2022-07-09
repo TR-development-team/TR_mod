@@ -2,12 +2,6 @@
 mobile_warfare_ratios = {
 	enable = {
 		has_tech = mobile_warfare
-		has_tech = basic_light_tank
-		has_tech = motorised_infantry
-		num_of_military_factories > 20
-	}
-	abort = {
-		num_of_military_factories < 21
 	}
 
 	ai_strategy = {
@@ -15,15 +9,26 @@ mobile_warfare_ratios = {
 		id = armor
 		value = 10
 	}
-	ai_strategy = {
-		type = role_ratio
-		id = mobile
-		value = 5
+}
+
+superior_firepower_ratios = {
+	enable = {
+		has_tech = superior_firepower
 	}
+	abort = {
+		has_tech = concentrated_fire_plans
+	}
+
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = -15
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = artillery
+		value = 15
 	}
 }
 
@@ -31,10 +36,6 @@ mobile_warfare_ratios = {
 concentrated_fire_plans_ratios = {
 	enable = {
 		has_tech = concentrated_fire_plans
-		num_of_military_factories > 10
-	}
-	abort = {
-		num_of_military_factories < 11
 	}
 
 	ai_strategy = {
@@ -45,7 +46,7 @@ concentrated_fire_plans_ratios = {
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 5
+		value = 10
 	}
 	ai_strategy = {
 		type = unit_ratio
@@ -57,75 +58,54 @@ concentrated_fire_plans_ratios = {
 grand_battle_plan_ratios = {
 	enable = {
 		has_tech = trench_warfare
-		has_tech = interwar_antitank
-		has_tech = tech_engineers
-		num_of_military_factories > 10
-	}
-	abort = {
-		num_of_military_factories < 11
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 10
+		value = 15 #10
 	}
-	ai_strategy = {
-		type = role_ratio
-		id = anti_tank
-		value = 5
-	}
+	#ai_strategy = {
+	#	type = role_ratio
+	#	id = anti_tank
+	#	value = 5
+	#}
 }
 
 mass_assault_ratios = {
 	enable = {
 		has_tech = mass_assault
-		has_tech = interwar_antitank
-		has_tech = tech_engineers
-		num_of_military_factories > 10
-	}
-	abort = {
-		OR = {
-			has_tech = large_front_operations
-			num_of_military_factories < 11
-		}
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = 25
+		value = 30 #25
 	}
-	ai_strategy = {
-		type = role_ratio
-		id = anti_tank
-		value = 5
-	}
+	#ai_strategy = {
+	#	type = role_ratio
+	#	id = anti_tank
+	#	value = 5
+	#}
 }
 
-#Later in  mass_assault tree
+#Later in mass_assault tree
 large_front_operations_ratios = {
 	enable = {
 		has_tech = large_front_operations
-		num_of_military_factories > 20
-	}
-	abort = {
-		num_of_military_factories < 21
 	}
 
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
-		value = -5
+		value = -10
 	}
 	ai_strategy = {
 		type = role_ratio
 		id = armor
-		value = 5
+		value = 10
 	}
 }
-
-
 
 ##############
 ### NAVAL ####
@@ -134,9 +114,7 @@ large_front_operations_ratios = {
 #submarine
 #screen_ship
 #convoy
-#naval_transport
 #carrier
-
 
 #Fleet in being tree
 fleet_in_being_ratios = {
@@ -170,7 +148,6 @@ trade_interdiction_ratios = {
 	}
 }
 
-
 #Base Strike tree
 base_strike_ratios = {
 	enable = {
@@ -183,7 +160,7 @@ base_strike_ratios = {
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
-		value = 20
+		value = 40
 	}
 
 	ai_strategy = {
@@ -275,4 +252,3 @@ force_rotation = {
 		value = 30
 	}
 }
-

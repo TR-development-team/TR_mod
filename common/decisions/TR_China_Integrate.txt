@@ -1,0 +1,1363 @@
+#####中国ステート地域別
+#湖北
+# 620 武昌
+# 750 常徳
+# 908 漢口
+# 909 漢陽
+
+#陝西
+# 622 陝西
+# 744 西安
+# 914 延安
+
+#山西
+# 615 山西
+# 905 山西東部
+
+#河南
+# 607 河南
+# 906 南陽
+# 907 安陽
+
+#四川
+# 605 四川
+# 751 涼山
+# 753 甘南
+
+#貴州
+# 603 貴州
+# 748 遵義
+
+#雲南
+# 325 雲南
+# 747 大理
+
+#西康
+# 601 西康
+# 752 甘孜
+
+#湖南
+# 602 湖南
+# 872 湘贛
+
+#江西
+# 600 江西
+# 871 贛南
+
+#福建
+# 595 福建
+# 873 竜岩
+
+#広東
+# 592 嶺南
+# 593 広東
+# 863 広州
+
+#広西
+# 594 南寧
+# 599 広西
+
+#綏遠
+# 621 綏遠
+# 746 オルドス
+
+#察哈爾
+# 611 南チャハル
+# 612 チャハル
+
+#甘粛
+# 283 甘粛
+# 756 酒泉
+# 913 河西回廊
+
+#寧夏
+# 616 寧夏
+# 912 アルシャー
+
+#青海
+# 604 青海
+# 754 ゴロク
+# 755 海西
+
+#新疆
+# 287 タクラマカン
+# 617 ウルムチ
+# 618 ジュンガル盆地
+# 619 ヤルカンド
+# 759 崑崙山
+# 760 クムル
+# 911 イリ
+
+#安徽
+# 606 安徽
+# 749 黄山
+
+#浙江
+# 596 杭州
+# 915 浙江
+
+#江蘇
+# 598 江蘇
+# 613 蘇州
+
+#河北・山東
+# 597 山東
+# 608 北京
+# 614 河北
+
+#河北日本占領地
+# 609 東河北
+
+#日本租借地
+# 326 香港
+# 591 海南
+# 728 広州湾
+# 743 青島
+# 745 関東州
+# 816 上海
+# 842 威海衛
+# 849 寧波
+# 864 福州
+# 865 厦門
+
+#ポルトガル租借地
+# 729 マカオ
+
+#台湾
+# 524 台湾
+
+#満州
+# 328 吉林
+# 610 熱河
+# 714 黒竜江
+# 715 遼寧
+# 716 遼東
+# 717 松江
+# 761 フルンボイル
+
+#チベット
+# 322 ナクチュ
+# 757 シガツェ
+# 758 ガリ
+
+#蔵南地区
+# 434 アルナーチャル・プラデーシュ
+
+
+CHI_integrate_policy = {
+#湖北
+	tr_integrate_hubei_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				620 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				750 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				908 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				909 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 620
+			has_full_control_of_state = 750
+			has_full_control_of_state = 908
+			has_full_control_of_state = 909
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 620 state = 750 state = 908 state = 909 }
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_hubei_province"
+			620 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			750 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			908 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			909 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#陝西
+	tr_integrate_Shaanxi_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				622 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				744 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				914 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 622
+			has_full_control_of_state = 744
+			has_full_control_of_state = 914
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 622 state = 744 state = 914 }
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Shaanxi_province"
+			622 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			744 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			914 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#山西
+	tr_integrate_Shanxi_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				615 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				905 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 615
+			has_full_control_of_state = 905
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 615 state = 905 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Shanxi_province"
+			615 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			905 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#河南
+	tr_integrate_Henan_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				607 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				906 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				907 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 607
+			has_full_control_of_state = 906
+			has_full_control_of_state = 907
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 607 state = 906 state = 907 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Henan_province"
+			607 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			906 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			907 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#四川
+	tr_integrate_Sichuan_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				605 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				751 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				753 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 605
+			has_full_control_of_state = 751
+			has_full_control_of_state = 753
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 605 state = 751 state = 753 }
+		}
+		cost = 60
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Sichuan_province"
+			605 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			751 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			753 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#貴州
+	tr_integrate_Guizhou_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				603 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				748 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 603
+			has_full_control_of_state = 748
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 603 state = 748 }
+		}
+		cost = 30
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Guizhou_province"
+			603 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			748 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#雲南
+	tr_integrate_Yunnan_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				325 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				747 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 325
+			has_full_control_of_state = 747
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 325 state = 747 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Yunnan_province"
+			325 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			747 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#西康
+	tr_integrate_Xikang_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				601 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				752 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 601
+			has_full_control_of_state = 752
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 325 state = 747 }
+		}
+		cost = 30
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Xikang_province"
+			601 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			752 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#湖南
+	tr_integrate_Hunan_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				602 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				872 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 602
+			has_full_control_of_state = 872
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 602 state = 872 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Hunan_province"
+			602 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			872 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#江西
+	tr_integrate_Jiangxi_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				600 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				871 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 600
+			has_full_control_of_state = 871
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 600 state = 871 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Jiangxi_province"
+			600 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			871 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#福建
+	tr_integrate_Fujian_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				595 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				873 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 595
+			has_full_control_of_state = 873
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 595 state = 873 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Fujian_province"
+			595 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			873 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#広東
+	tr_integrate_Guangdong_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				592 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				593 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				863 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 592
+			has_full_control_of_state = 593
+			has_full_control_of_state = 863
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 592 state = 593 state = 863 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Guangdong_province"
+			592 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			593 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			863 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#広西
+	tr_integrate_Guangxi_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				594 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				599 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 594
+			has_full_control_of_state = 599
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 594 state = 599 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Guangxi_province"
+			594 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			599 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#綏遠
+	tr_integrate_Suiyuan_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				621 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				746 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 621
+			has_full_control_of_state = 746
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 621 state = 746 }
+		}
+		cost = 25
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Suiyuan_province"
+			621 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			746 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#察哈爾
+	tr_integrate_Chahars_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				611 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				612 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 611
+			has_full_control_of_state = 612
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 611 state = 612 }
+		}
+		cost = 25
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Chahars_province"
+			611 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			612 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#甘粛
+	tr_integrate_Gansu_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				283 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				756 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				913 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 283
+			has_full_control_of_state = 756
+			has_full_control_of_state = 913
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 283 state = 756 state = 913 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Gansu_province"
+			283 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			756 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			913 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#寧夏
+	tr_integrate_Ningxia_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				611 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				912 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 616
+			has_full_control_of_state = 912
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 616 state = 912 }
+		}
+		cost = 25
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 30
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Ningxia_province"
+			616 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			912 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#青海
+	tr_integrate_Qinghai_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				604 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				754 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				755 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 604
+			has_full_control_of_state = 754
+			has_full_control_of_state = 755
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 604 state = 754 state = 755 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Qinghai_province"
+			604 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			754 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			755 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#新疆
+	tr_integrate_Xinjiang_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				287 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				617 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				618 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				619 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				759 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				760 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				911 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 287
+			has_full_control_of_state = 617
+			has_full_control_of_state = 618
+			has_full_control_of_state = 619
+			has_full_control_of_state = 759
+			has_full_control_of_state = 760
+			has_full_control_of_state = 911
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 287 state = 617 state = 618 state = 619 state = 759 state = 760 state = 911 }
+		}
+		cost = 100
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 120
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Xinjiang_province"
+			287 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			617 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			618 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			619 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			759 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			760 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			911 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#安徽
+	tr_integrate_Anhui_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				606 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				749 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 606
+			has_full_control_of_state = 749
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 606 state = 749 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Anhui_province"
+			606 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			749 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#浙江
+	tr_integrate_Zhejiang_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				596 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				915 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 596
+			has_full_control_of_state = 915
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 596 state = 915 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Zhejiang_province"
+			596 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			915 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#江蘇
+	tr_integrate_Jiangsu_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				598 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				613 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 598
+			has_full_control_of_state = 613
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 598 state = 613 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 60
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Jiangsu_province"
+			598 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			613 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#河北・山東
+	tr_integrate_Hebei_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				597 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				608 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				609 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				614 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 597
+			has_full_control_of_state = 608
+			has_full_control_of_state = 609
+			has_full_control_of_state = 614
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 597 state = 608 state = 609 state = 614 }
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Hebei_province"
+			597 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			608 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			609 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			614 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#東三省
+	tr_integrate_Manchu_province = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		visible = {
+			OR = {
+				tag = CHI
+				tag = MIN 
+				tag = PRC
+				tag = YUN 
+				tag = YNN
+				tag = SAN
+				tag = KUO
+				tag = HNA
+				tag = HEX
+				tag = DTN
+				tag = SCH
+ 				tag = NAN
+			}
+			OR = {
+				328 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				610 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				714 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				715 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				716 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				717 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				761 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 328
+			has_full_control_of_state = 610
+			has_full_control_of_state = 714
+			has_full_control_of_state = 715
+			has_full_control_of_state = 716
+			has_full_control_of_state = 717
+			has_full_control_of_state = 761
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 328 state = 610 state = 714 state = 715 state = 716 state = 717 state = 761 }
+		}
+		cost = 300
+		fire_only_once = yes
+		modifier = {
+                        consumer_goods_factor = 0.1
+                        MONTHLY_POPULATION = -1.0
+                        stability_weekly = -0.005
+			political_power_gain = -0.5
+		}
+		days_remove = 360
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Manchu_province"
+			328= { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			610 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			714 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			715 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			716 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			717 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			761 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}

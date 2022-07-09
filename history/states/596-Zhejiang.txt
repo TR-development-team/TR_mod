@@ -4,8 +4,8 @@ state={
 	name="STATE_596"
 
 	history={
-		owner = NAN
-                add_core_of = NAN
+		owner = ANQ
+                add_core_of = ANQ
 		add_claim_by = CHI
 		victory_points = {
 			7191 10 
@@ -17,7 +17,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
-			dockyard = 2
+			dockyard = 1
 			7191 = {
 				naval_base = 1
 				coastal_bunker = 1
@@ -35,7 +35,7 @@ state={
 provinces={
 		4042 7191 10101 11991 1096 
 	}
-	manpower=9380405
+	manpower=7380405
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

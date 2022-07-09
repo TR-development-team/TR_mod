@@ -18,8 +18,8 @@ add_ideas = {
         acceptable_health_care
 }
 set_research_slots = 3
-set_stability = 0.75
-set_war_support = 0
+set_stability = 0.5
+set_war_support = 0.5
 
 set_technology = {
 	infantry_weapons = 1
@@ -33,6 +33,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
+	basic_train = 1
 }
 
 if = {
@@ -84,135 +85,41 @@ add_ideas = {
 
 
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = national_populist
 	last_election = "1933.4.26"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	social_democrat = 22
-	social_liberal = 18
-	market_liberal = 12
-	social_conservative = 48
+	totalist = 3
+	syndicalist = 3
+	radical_socialist = 0
+	social_democrat = 5
+	social_liberal = 7
+	market_liberal = 10
+	social_conservative = 20
+	authoritarian_democrat = 0
+	paternal_autocrat = 15
+	national_populist = 28
+        Gnosticism = 9
 }
+
 
 set_convoys = 150
-set_stability = 0.75
 
+recruit_character = HOL_lou_de_visser
+recruit_character = HOL_willem_schermerhorn
+recruit_character = HOL_hendrikus_colijn
+recruit_character = HOL_wilhelmina
+recruit_character = HOL_van_Tonningen
+recruit_character = HOL_anton_mussert
 
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Wilhelmina.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Wilhelmina.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Wilhelmina.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Wilhelmina.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-	
-	}
-}
-
-
-create_field_marshal = {
-	name = "Izaak Reijnders"
-	id = 980
-	gfx = "GFX_portrait_hol_izaak_reijnders"
-	traits = { old_guard inflexible_strategist trait_reckless }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Petrus Wilhelmus Best"
-	gfx = "GFX_portrait_hol_petrus_wilhelmus_best"
-	traits = { organizer skilled_staffer }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Godfried van Voorst tot Voorst"
-	gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
-	traits = { brilliant_strategist career_officer armor_officer politically_connected }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_navy_leader = {
-	name = "Johannes Theodorus Furstner"
-	gfx = "GFX_portrait_hol_johannes_theodorus_furstner"
-	traits = { caustic_personality fly_swatter blockade_runner }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	maneuvering_skill = 2
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "Conrad Helfrich"
-	gfx = "GFX_portrait_hol_conrad_helfrich"
-	traits = { seawolf superior_tactician bold navy_career_officer }
-	id = 981
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-
-create_navy_leader = {
-	name = "Karel Doorman"
-	gfx = "GFX_portrait_hol_karel_doorman"
-	traits = { fleet_protector naval_lineage bold }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-
+recruit_character = HOL_izaak_reijnders
+recruit_character = HOL_petrus_wilhelmus_best
+recruit_character = HOL_godfried_van_voorst_tot_voorst
+recruit_character = HOL_johannes_theodorus_furstner
+recruit_character = HOL_conrad_helfrich
+recruit_character = HOL_karel_doorman
 
 ### VARIANTS ###
 # 1936 Start #

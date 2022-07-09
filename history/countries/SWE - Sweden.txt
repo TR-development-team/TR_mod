@@ -8,7 +8,7 @@ if = {
 		set_naval_oob = "SWE_1936_naval_legacy"
 	}
 }
-
+set_cosmetic_tag = SWE_NOR
 set_research_slots = 3
 
 add_ideas = {
@@ -32,13 +32,31 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
-	gwtank = 1
-	basic_light_tank = 1
 	CAS1 = 1
 	early_fighter = 1
 	naval_bomber1 = 1
 	cv_naval_bomber1 = 1
 	early_bomber = 1
+	basic_train = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -92,121 +110,14 @@ set_popularities = {
         Gnosticism = 2
 }
 
+recruit_character = SWE_sven_linderot
+recruit_character = SWE_per_albin_hansson
+recruit_character = SWE_axel_pehrssonbramstorp
+recruit_character = SWE_sven_olov_lindholm
 
-
-
-create_country_leader = {
-	name = "グスタフ5世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Gustaf_V.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "グスタフ5世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Gustaf_V.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "グスタフ5世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Gustaf_V.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "グスタフ5世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Gustaf_V.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-
-create_country_leader = {
-	name = "グスタフ5世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Gustaf_V.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Sven Linderot"
-	desc = "POLITICS_SVEN_LINDEROT_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Axel Pehrsson-Bramstorp"
-	desc = "POLITICS_AXEL_PEHRSSON_BRAMSTORP_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Folke Högberg"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { commando }
-	skill = 3
-
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Erik af Edholm"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  hill_fighter }
-	skill = 4
-
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 4
-	logistics_skill = 4
-}
-
-create_navy_leader = {
-	name = "Claes Lindström"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { battleship_adherent blockade_runner }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 4
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
+recruit_character = SWE_folke_hogberg
+recruit_character = SWE_erik_af_edholm
+recruit_character = SWE_claes_lindstrom
 
 
 ### VARIANTS ###

@@ -9,14 +9,14 @@ if = {
 	}
 }
 country_event = { id = TR_China.1 days = 7 }
-set_research_slots = 3
+set_research_slots = 2
 set_stability = 0.4
 set_war_support = 0.4
 create_faction = Nationalist_China_faction
+set_major = yes
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	gwtank = 1
 	interwar_antiair = 1
 	early_fighter = 1
 	early_bomber = 1
@@ -59,7 +59,8 @@ add_ideas = {
         CHI_Chang_Chun
         CHI_Chen_Kuofu_MoE
         CHI_Dai_Li_MoI
-        CHI_He_Yingqin_coa
+        CHI_He_Yingqin_cos
+        CHI_Chen_Cheng_coa
         CHI_Sung_Meiling_cair
 }
 
@@ -78,10 +79,17 @@ set_politics = {
 }
 
 set_popularities = {
-        social_conservative = 7
-        authoritarian_democrat = 5
-	paternal_autocrat = 38
-	national_populist = 50
+	totalist = 8
+	syndicalist = 4
+	radical_socialist = 5
+	social_democrat = 5
+	social_liberal = 4
+	market_liberal = 5
+	social_conservative = 9
+	authoritarian_democrat = 12
+	paternal_autocrat = 17
+	national_populist = 31
+        Gnosticism = 0
 }
 
 ### Diplomacy ###
@@ -90,8 +98,13 @@ add_opinion_modifier = { target = JAP modifier = embargo }
 
 
 ### country_leader ###
+recruit_character = CHI_Sung_Qingling
+recruit_character = CHI_Wang_Kemin
+recruit_character = CHI_San_Ko
+recruit_character = CHI_Dai_Jitao
 recruit_character = CHI_Chen_Cheng
 recruit_character = CHI_chiang_kaishek
+recruit_character = CHI_Zhang_Tianran
 
 recruit_character = CHI_kokumin_seifu
 recruit_character = CHI_Dai_Li

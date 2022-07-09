@@ -58,7 +58,7 @@ characters={
 		name=CAL_Tokugawa_Iesato
 		portraits={
 			civilian={
-				large="gfx/leaders/CAL/Portrait_japan_tokugawa.tga"
+				large="gfx/leaders/CAL/Portrait_japan_tokugawa.png"
 			}
 		}
 		country_leader={
@@ -66,6 +66,17 @@ characters={
 		}
 		country_leader={
 			ideology= national_populist_subtype
+		}
+	}
+	CAL_Arima_Yoriyasu={
+		name=CAL_Arima_Yoriyasu
+		portraits={
+			civilian={
+				large="gfx/leaders/CAL/Portrait_CAL_Arima_Yoriyasu.png"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
 		}
 	}
 	CAL_kiyoshi_hasegawa={

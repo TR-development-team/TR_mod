@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 
 	id = japan_focus
 
@@ -459,7 +459,7 @@
     #東洋革新党の勝利
     focus = {
 	    id =JAP_KAKUSHINTO_WIN
-	    icon = GFX_goal_ideology_social_liberal
+	    icon = GFX_goal_TR_JP_Touyou_win
         prerequisite = {
 			focus = JAP_SHUGIIN
 		}
@@ -695,7 +695,7 @@
 	#教育の振興
 	focus = {
 		id = JAP_PYQuxTzV
-		icon = GFX_focus_research2
+		icon = GFX_goal_TR_JP_Research_up
 		x = 11
 		y = 4
         available = {
@@ -712,7 +712,7 @@
 	completion_reward = {
 			add_stability = 0.05
 			add_political_power= 50
-
+            increase_school_system = yes
 		}
 	}
 	#植民地政策の転換
@@ -807,7 +807,6 @@
 		}
 	completion_reward = {
 			add_stability = 0.1	
-
 		}
 	}
 	#教育改革
@@ -824,7 +823,7 @@
 		}
 	completion_reward = {
 			add_stability = 0.1	
-
+            increase_school_system = yes
 		}
 	}
 
@@ -906,7 +905,7 @@
 	#立憲民政党の勝利
     focus = {
 	    id =JAP_MINSEITO_WIN
-	    icon = GFX_goal_ideology_market_liberal
+	    icon = GFX_goal_ideology_social_liberal
         prerequisite = {
 			focus = JAP_SHUGIIN
 		}
@@ -933,7 +932,7 @@
 	#自由貿易
 	focus = {
 		id = JAP_DGuUraYs
-		icon = GFX_goal_generic_trade
+		icon = GFX_goal_TR_JP_econom
 		x = 11
 		y = 2
 		cost = 10
@@ -953,14 +952,13 @@
 		}
 	completion_reward = {
 			add_stability = 0.05
-			add_ideas = free_trade
-
+			increase_trade_laws = yes
 		}
 	}
 	#行政改革
 	focus = {
 		id = JAP_UHmdcxaz
-		icon = GFX_goal_government_centralised_icon
+		icon = GFX_goal_TR_JP_politics
 		x = 11
 		y = 3
 		cost = 10  
@@ -971,7 +969,6 @@
 		}
 	completion_reward = {
 			add_stability = 0.1	
-
 		}
 	}
 	#立憲政友会の勝利
@@ -1295,7 +1292,7 @@
 	########################
 	focus = {
 		id =JAP_KAKUMEI_NF
-		icon = GFX_goal_RUS_spirit_of_revolution
+		icon = GFX_goal_TR_JP_Maycomun
                 prerequisite = {
 			
 		}
@@ -3349,7 +3346,7 @@
 	#国家総動員法
 	focus = {
 		id = JAP_Army_focus_2
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_axis_build_infantry
 		x = -10
 		y = 1
 		cost = 10
@@ -3394,7 +3391,7 @@
 	#参謀本部の強化
 	focus = {
 		id = JAP_Army_focus_11
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_more_territorial_claims
 		x = -8
 		y = 3
 		cost = 6
@@ -3414,7 +3411,7 @@
 	#精神的優越
 	focus = {
 		id = JAP_Army_focus_4
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_jap_spiritual_mobilization
 		x = -10
 		y = 2
 		cost = 5
@@ -3434,7 +3431,7 @@
 	#技術的優越
 	focus = {
 		id = JAP_Army_focus_10
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_production
 		x = -10
 		y = 3
 		cost = 5
@@ -3479,7 +3476,7 @@
 	#野砲の開発
 	focus = {
 		id = JAP_Army_focus_13
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_artillery2
 		x = -10
 		y = 4
 		cost = 5
@@ -3504,7 +3501,7 @@
 	#陸軍の刷新
 	focus = {
 		id = JAP_Army_focus_19
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_doctrines
 		x = -10
 		y = 5
 		cost = 9
@@ -3525,7 +3522,7 @@
 	#本土の要塞化
 	focus = {
 		id = JAP_Army_focus_20
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_defence
 		x = -12
 		y = 6
 		cost = 4
@@ -3545,7 +3542,7 @@
 	#本土用装備
 	focus = {
 		id = JAP_Army_focus_21
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_japanese_instructors
 		x = -12
 		y = 7
 		cost = 4
@@ -3565,7 +3562,7 @@
 	#機械化歩兵
 	focus = {
 		id = JAP_Army_focus_22
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_motorized
 		x = -14
 		y = 8
 		cost = 4
@@ -3585,7 +3582,7 @@
 	#機動火砲
 	focus = {
 		id = JAP_Army_focus_23
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_motorized
 		x = -14
 		y = 9
 		cost = 1
@@ -3605,7 +3602,7 @@
 	#本土用戦車
 	focus = {
 		id = JAP_Army_focus_24
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_JAP_tank
 		x = -12
 		y = 8
 		cost = 1
@@ -3630,7 +3627,7 @@
 	#列車砲の強化
 	focus = {
 		id = JAP_Army_focus_25
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_artillery
 		x = -12
 		y = 9
 		cost = 1
@@ -3654,7 +3651,7 @@
 	#作戦の強化
 	focus = {
 		id = JAP_Army_focus_26
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_more_territorial_claims
 		x = -10
 		y = 6
 		cost = 4
@@ -3674,7 +3671,7 @@
 	#戦車の強化
 	focus = {
 		id = JAP_Army_focus_27
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_build_tank
 		x = -10
 		y = 7
 		cost = 2
@@ -3698,7 +3695,7 @@
 	#大陸用戦車
 	focus = {
 		id = JAP_Army_focus_28
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_JAP_tank
 		x = -10
 		y = 8
 		cost = 1
@@ -3722,7 +3719,7 @@
 	#新型戦車の開発
 	focus = {
 		id = JAP_Army_focus_29
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_army_tanks
 		x = -10
 		y = 9
 		cost = 6
@@ -3749,7 +3746,7 @@
 	#沿岸の要塞化
 	focus = {
 		id = JAP_Army_focus_31
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_defence
 		x = -8
 		y = 6
 		cost = 4
@@ -3769,7 +3766,7 @@
 	#沿岸用装備
 	focus = {
 		id = JAP_Army_focus_32
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_japanese_instructors
 		x = -8
 		y = 7
 		cost = 4
@@ -3789,7 +3786,7 @@
 	#沿岸用戦車
 	focus = {
 		id = JAP_Army_focus_33
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_JAP_tank
 		x = -8
 		y = 8
 		cost = 1
@@ -3881,7 +3878,7 @@
 	#士官の強化
 	focus = {
 		id = JAP_Army_focus_15
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_japanese_officer
 		x = -14
 		y = 5
 		cost = 4
@@ -3965,7 +3962,7 @@
 	#技術本部の設置
 	focus = {
 		id = JAP_Army_focus_5
-		icon = GFX_goal_generic_small_arms
+		icon =GFX_focus_research
 		x = -12
 		y = 2
 		cost = 1
@@ -3989,7 +3986,7 @@
 	#技術本部の強化
 	focus = {
 		id = JAP_Army_focus_9
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_focus_research
 		x = -12
 		y = 3
 		cost = 3
@@ -4515,7 +4512,7 @@
 	#飛行艇の強化
 	focus = {
 		id = JAP_Air_focus_6
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_air_naval_bomber
 		x = 2
 		y = 2
 		cost = 5
@@ -4670,7 +4667,7 @@
 	#制空の要
 	focus = {
 		id = JAP_Air_focus_13
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_air_fighter
 		x = -2
 		y = 3
 		cost = 5
@@ -4708,7 +4705,7 @@
 	#艦隊防空の要
 	focus = {
 		id = JAP_Air_focus_15
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_build_airforce
 		x = 2
 		y = 3
 		cost = 5
@@ -4765,7 +4762,7 @@
 	#航空支援重視
 	focus = {
 		id = JAP_Air_focus_18
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_air_doctrine
 		x = -2
 		y = 4
 		cost = 3
@@ -4786,7 +4783,7 @@
 	#戦場支援
 	focus = {
 		id = JAP_Air_focus_19
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_CAS
 		x = -2
 		y = 5
 		cost = 3
@@ -5137,7 +5134,7 @@
 	#海軍軍縮の完遂
 	focus = {
 		id = JAP_Navy_focus_1
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_navy_cruiser
 		x = 10
 		y = 1
 		cost = 5
@@ -5195,7 +5192,7 @@
 	#艦隊運用の更新
 	focus = {
 		id = JAP_Navy_focus_4
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 10
 		y = 2
 		cost = 5
@@ -5442,7 +5439,7 @@
 	#多角的ドクトリン
 	focus = {
 		id = JAP_Navy_focus_8
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = 8
 		y = 3
 		cost = 6
@@ -5462,7 +5459,7 @@
 	#保守的ドクトリン
 	focus = {
 		id = JAP_Navy_focus_9
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_build_navy
 		x = 12
 		y = 3
 		cost = 6
@@ -5624,7 +5621,7 @@
 	#主力艦の近代化
 	focus = {
 		id = JAP_Navy_focus_27
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_navy_battleship
 		x = 10
 		y = 7
 		cost = 1
@@ -5719,7 +5716,7 @@
 	#潜水艦の発展
 	focus = {
 		id = JAP_Navy_focus_10
-		icon = GFX_goal_generic_small_arms
+		icon = GFX_goal_generic_wolf_pack
 		x = 4
 		y = 4
 		cost = 6
@@ -5833,7 +5830,7 @@
 	#潜水艦の近代化
 	focus = {
 		id = JAP_Navy_focus_16
-		icon = GFX_goal_generic_small_arms
+		icon =GFX_goal_generic_navy_submarine
 		x = 6
 		y = 7
 		cost = 5

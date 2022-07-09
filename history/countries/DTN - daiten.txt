@@ -42,25 +42,6 @@ add_ideas = {
 
 
 
-create_country_leader = {
-	name = "張天然"
-	desc = ""
-	picture = "gfx/leaders/CHI/Portrait_China_Tianran.tga"
-	expire = "1965.1.1"
-	ideology = Gnosticism_subtype
-	traits = {
-		
-	}
-}
-
-create_field_marshal = {
-	name = "張天然"
-	gfx = "gfx/leaders/CHI/Portrait_China_Tianran.tga"
-	traits = { }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
+recruit_character = DTN_Zhang_Tianran
+recruit_character = DTN_Zhang_Tianran_marshal
 

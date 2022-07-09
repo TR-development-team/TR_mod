@@ -1,0 +1,205 @@
+add_namespace = TR_California
+
+
+country_event = {
+	id = TR_California.1
+	title = TR_California.1.t
+	desc = TR_California.1.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_California.1.a
+		ai_chance = {
+			base = 50
+		}
+        set_country_flag = CAL_Federation
+		promote_character = CAL_Arima_Yoriyasu
+		set_cosmetic_tag = CAL_IND
+	}
+	option = {
+		name = TR_California.1.b
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = -100
+		set_country_flag = CAL_Shogunate
+		set_cosmetic_tag = CAL_SHOGUNATE
+	}
+}
+
+country_event = {
+	id = TR_California.2
+	title = TR_California.2.t
+	desc = TR_California.2.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_California.2.a
+		ai_chance = {
+			base = 32
+		}
+        complete_national_focus = CAL_Politic_focus_3
+		set_country_flag = CAL_Conservative
+	}
+	option = {
+		name = TR_California.2.b
+		ai_chance = {
+			base = 33
+		}
+		complete_national_focus = CAL_Politic_focus_3
+		set_country_flag = CAL_Liberalism
+	}
+	option = {
+		name = TR_California.2.c
+		ai_chance = {
+			base = 35
+		}
+		complete_national_focus = CAL_Politic_focus_3
+        set_country_flag = CAL_Socialism
+		hidden_effect = {
+		country_event = {
+			id = TR_California.3
+			days = 7
+		}
+	    }
+	}
+}
+
+country_event = {
+	id = TR_California.3
+	title = TR_California.3.t
+	desc = TR_California.3.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_California.3.a
+		ai_chance = {
+			base = 50
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+	}
+	option = {
+		name = TR_California.3.b
+		ai_chance = {
+			base = 50
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		promote_character = CAL_kiyoshi_hasegawa
+		clr_country_flag = CAL_Socialism
+		hidden_effect = {
+		    drop_cosmetic_tag = yes
+			country_event = {
+				id = TR_California.5
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = TR_California.4
+	title = TR_California.4.t
+	desc = TR_California.4.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_California.4.a
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.3
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+	}
+}
+country_event = {
+	id = TR_California.5
+	title = TR_California.5.t
+	desc = TR_California.5.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_California.5.a
+		ai_chance = {
+			base = 50
+		}
+		complete_national_focus = CAL_Navy_Corp_1
+		set_country_flag = CAL_Dominion
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+	}
+	option = {
+		name = TR_California.5.b
+		ai_chance = {
+			base = 50
+		}
+		complete_national_focus = CAL_Navy_Corp_1
+		set_country_flag = CAL_Naval_Kingdom
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=919
+	name="STATE_919"
+	manpower = 334928
+	resources={
+		chromium=20 # was: 28
+	}
+	
+	state_category = town
+
+	history={
+		owner = MAN
+		victory_points = {
+			11765 1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = MAN
+		add_claim_by = CHI
+	}
+
+	local_supplies=0.0 
+provinces={
+		664 681 837 3695 3787 3811 6684 6686 6838 9639 9641 9762 9926 11624 11629 11643 11750 11765 11777
+	}
+}

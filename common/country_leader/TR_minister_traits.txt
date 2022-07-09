@@ -85,6 +85,23 @@ leader_traits = {
                 army_attack_factor = 0.1
 	        mobilization_speed = 0.1
 	}
+        Ma_Zhongying_traits = {#馬仲英
+		random = no
+                army_org_factor = 0.1
+                conscription = 0.01
+                offensive_war_stability_factor = 0.15
+                justify_war_goal_time = -0.1
+                opinion_gain_monthly_factor = -0.2
+	        MONTHLY_POPULATION = -0.2
+	}
+        Feng_Yuxiang_traits = {#馮玉祥
+		random = no
+                max_command_power = 20
+                political_power_gain = 0.05
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+                opinion_gain_monthly_factor = -0.25
+	}
         #共通
         TR_powerhungry_demagogue = {#権力に餓えた扇動家
 		random = no

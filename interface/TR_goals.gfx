@@ -29,6 +29,26 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/goal_JAP_yen.png"
 	}
 	SpriteType = {	
+		name = "GFX_goal_TR_JP_politics"
+		texturefile = "gfx/interface/goals/JAP/TR_JP_politics.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_TR_JP_Touyou_win"
+		texturefile = "gfx/interface/goals/JAP/TR_JP_Touyou_win.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_TR_JP_econom"
+		texturefile = "gfx/interface/goals/JAP/TR_JP_econom.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_TR_JP_Maycomun"
+		texturefile = "gfx/interface/goals/JAP/TR_JP_Maycomun.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_TR_JP_Research_up"
+		texturefile = "gfx/interface/goals/JAP/TR_JP_Research_up.png"
+	}
+	SpriteType = {	
 		name = "GFX_goal_japan_helmet"
 		texturefile = "gfx/interface/goals/JAP/goal_japan_helmet.png"
 	}
@@ -255,5 +275,21 @@ spriteTypes = {
 	SpriteType = {	
 		name = "GFX_goal_Unite_Arabia"
 		texturefile = "gfx/interface/goals/Unite_Arabia.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_TR_RU_romanohu"
+		texturefile = "gfx/interface/goals/RUS/TR_RU_romanohu.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_CHI_Taili"
+		texturefile = "gfx/interface/goals/CHI/CHI_Taili.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_CHI_Chen_Guofu"
+		texturefile = "gfx/interface/goals/CHI/CHI_Chen_Guofu.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_CHI_Chen_Cheng"
+		texturefile = "gfx/interface/goals/CHI/CHI_Chen_Cheng.png"
 	}
 }

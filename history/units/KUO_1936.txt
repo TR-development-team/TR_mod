@@ -5,6 +5,7 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 	}
@@ -71,6 +72,36 @@ units = {
 			name_order = 5
 		}
 		location = 7631
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+
+	}
+	division = { # "Peixun Shi"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 7314
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+
+	}
+        division = { # "Peixun Shi"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1458
+		division_template = "Juntuán"
+		start_experience_factor = 0.2
+
+	}
+        division = { # "Peixun Shi"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 10880
 		division_template = "Juntuán"
 		start_experience_factor = 0.2
 

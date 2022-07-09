@@ -69,6 +69,92 @@
 			      army_morale_factor = -0.05
 			}
 		}
+		CHI_Peple_Support_very_Low = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = man_low_legitimacy
+			
+			modifier = {
+                                political_power_cost = 0.25
+                                conscription_factor = -0.4
+				stability_factor = -0.25
+				war_support_factor = -0.5
+			}
+		}
+		CHI_Peple_Support_Low = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				original_tag = MAN
+			}
+			
+			removal_cost = -1
+
+			picture = man_low_legitimacy2
+			
+			modifier = {
+                                political_power_cost = 0.1
+                                conscription_factor = -0.2
+				stability_factor = -0.15
+				war_support_factor = -0.2
+			}
+		}
+		CHI_Peple_Support_medium = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_low_legitimacy3
+			
+			modifier = {
+                                conscription_factor = -0.05
+				stability_factor = -0.05
+				war_support_factor = -0.05
+			}
+		}
+		CHI_Peple_Support_high = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_low_legitimacy4
+			
+			modifier = {
+                                political_power_cost = -0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		CHI_Peple_Support_very_high = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = man_low_legitimacy5
+			
+			modifier = {
+                                political_power_cost = -0.2
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
                 CHI_hikoritunatouti = {
 			allowed = {
 				always = no
@@ -98,7 +184,7 @@
 			modifier = {
                              stability_factor = 0.1
                              consumer_goods_factor = 0.05
-                             political_power_factor = -0.1
+                             political_power_factor = 0.02
 			}
 		}
                 CHI_fuannteinakokka = {
@@ -140,12 +226,28 @@
 			
 			removal_cost = -1
             
-			research_bonus = {
-				land_doctrine = -0.5
-			}
 			modifier = {
+                                conscription_factor = -0.15
                                 army_org_factor = -0.2
                                 war_support_factor = -0.2
+                                industrial_capacity_factory = -0.1
+                                MONTHLY_POPULATION = -0.5
+			}
+		}
+               CHI_Anti_Communist = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_purge
+
+			
+			removal_cost = -1
+	
+			modifier = {
+                                stability_factor = 0.05
+                                totalist_drift = -0.01
+                                syndicalist_drift = -0.01
+                                radical_socialist_drift = -0.01
 			}
 		}
                 CHI_guerrilla = {
@@ -192,8 +294,8 @@
 			removal_cost = -1
                      
 			modifier = {
-                                army_morale_factor = 0.12
-				stability_factor = 0.25
+                                army_morale_factor = 0.1
+				stability_factor = 0.1
 				resistance_target = -0.1
 			}
 		}
@@ -207,8 +309,7 @@
 			removal_cost = -1
                      
 			modifier = {
-                             political_power_factor = 0.05
-                             stability_factor = 0.1
+                             war_support_factor = 0.2
 			}
 		}
                 CHI_strongleader = {
@@ -221,8 +322,7 @@
 			removal_cost = -1
                      
 			modifier = {
-                             political_power_factor = 0.05
-                             stability_factor = 0.1
+                             political_power_factor = 0.15
 			}
 		}
                 CHI_strongparty = {
@@ -235,11 +335,66 @@
 			removal_cost = -1
                      
 			modifier = {
-                             political_power_factor = 0.05
                              stability_factor = 0.1
 			}
 		}
+                CHI_Military_Police = {
+			allowed = {
+				always = no
+			}
+                       picture = generic_secret_police
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                             stability_factor = 0.1
+                             required_garrison_factor = -0.05
+			}
+		}
+                CHI_Youth_group = {
+			allowed = {
+				always = no
+			}
+                       picture = POL_Ideology_Drift_Defence
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                                war_support_factor = 0.10
+                             	production_speed_buildings_factor = 0.1
+			}
+		}
+                CHI_Minsei_first = {
+			allowed = {
+				always = no
+			}
+                       picture = idea_SOV_third_five_year_plan_civilian
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+                             consumer_goods_factor = -0.05
+                             production_speed_industrial_complex_factor = 0.1
+			}
+		}
                 CHI_Shading_sun = {
+			allowed = {
+				always = no
+			}
+                        picture = sour_loser
+
+			
+			removal_cost = -1
+
+			modifier = {
+			       war_support_factor = 0.1
+                               political_power_factor = 0.1
+			}
+		}
+                CHI_Shading_sun_1 = {
 			allowed = {
 				always = no
 			}
@@ -266,8 +421,99 @@
 			}
 
 			modifier = {
-			       war_support_factor = 0.2
+			       war_support_factor = 0.3
                                political_power_factor = 0.1
+			}
+		}
+        CHI_war_of_resistance_prepare = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+
+			picture = generic_morale_bonus
+			
+			modifier = {
+				political_power_factor = -0.15
+                consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+                production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+        CHI_war_of_resistance_1 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+			targeted_modifier = {
+				tag = JAP
+				defense_bonus_against = 0.1
+			}
+            targeted_modifier = {
+				tag = MAN
+				defense_bonus_against = 0.1
+			}
+            targeted_modifier = {
+				tag = SHX
+				defense_bonus_against = 0.1
+			}
+            targeted_modifier = {
+				tag = GUG
+				defense_bonus_against = 0.1
+			}
+			picture = chi_war_of_resistance2
+			
+			modifier = {
+				political_power_factor = -0.1
+				war_support_factor = 0.10
+				stability_factor = -0.10
+				surrender_limit = 0.1
+                army_core_attack_factor = 0.1
+				supply_consumption_factor = -0.20
+				industry_air_damage_factor = -0.1
+				industry_free_repair_factor = 1
+			}
+		}
+        CHI_war_of_resistance_2 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+			targeted_modifier = {
+				tag = JAP
+				defense_bonus_against = 0.2
+			}
+            targeted_modifier = {
+				tag = MAN
+				defense_bonus_against = 0.2
+			}
+            targeted_modifier = {
+				tag = SHX
+				defense_bonus_against = 0.2
+			}
+            targeted_modifier = {
+				tag = GUG
+				defense_bonus_against = 0.2
+			}
+
+			picture = chi_war_of_resistance3
+			
+			modifier = {
+				political_power_factor = -0.1
+				war_support_factor = 0.20
+				stability_factor = -0.05
+				surrender_limit = 0.2
+                army_core_attack_factor = 0.2
+				supply_consumption_factor = -0.20
+				industry_air_damage_factor = -0.5
+				industry_free_repair_factor = 2
 			}
 		}
                 CHI_Equipment_Idea = {
@@ -301,7 +547,7 @@
 			picture = generic_morale_bonus
 			
 			modifier = {
-				land_reinforce_rate = 0.02
+				land_reinforce_rate = 0.05
 				army_morale_factor = 0.10
 			}
 		}
@@ -330,8 +576,41 @@
 			picture = hol_expand_the_colonial_army
 			
 			modifier = {
+                                army_org = 3
 				army_infantry_attack_factor = 0.05
                                 army_infantry_defence_factor = 0.05
+			}
+		}
+                CHI_Reform_Army_1 = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+
+			picture = hol_expand_the_colonial_army
+			
+			modifier = {
+                                army_org = 5
+				army_infantry_attack_factor = 0.12
+                                army_infantry_defence_factor = 0.12
+			}
+		}
+                CHI_Military_school = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+
+			picture = hol_expand_the_colonial_army
+			
+			modifier = {
+                                command_power_gain_mult = 0.5
+                                army_leader_start_planning_level= 1
+                                military_leader_cost_factor = -0.50
 			}
 		}
                 CHI_USA_Collaborate = {
@@ -341,18 +620,32 @@
 				always = no 
 			}
 
-                        research_bonus = {
-				land_doctrine = 0.1
-			}
                      
 			picture = tur_kemalist_officers
 			removal_cost = -1
 			modifier = {
+                                land_doctrine_cost_factor = -0.15
                                 army_org_factor = 0.1
 			}
 		}
 }
 Head_of_State = { 
+	CHI_Lin_Sen = {
+		picture = CHI_Lin_Sen
+		
+		allowed = {
+			original_tag = CHI
+		}
+		available = {
+			always = no
+		}
+		removal_cost = -1
+		traits = { 
+			Head_of_State
+			social_conservative
+			TR_popular_figurehead
+		}
+	}
 	CHI_Chiang_Chingkuo = {
 		picture = CHI_Chiang_Chingkuo
 		
@@ -384,22 +677,6 @@ Head_of_State = {
 			Head_of_State
 			paternal_autocrat
 			TR_Local_tyrant2
-		}
-	}
-	CHI_Lin_Sen = {
-		picture = CHI_Lin_Sen
-		
-		allowed = {
-			original_tag = CHI
-		}
-		available = {
-			always = no
-		}
-		removal_cost = -1
-		traits = { 
-			Head_of_State
-			national_populist
-			TR_popular_figurehead
 		}
 	}
 	CHI_Sung_Meiling = {

@@ -1,13 +1,66 @@
 characters={
+	CHI_Sung_Qingling{
+		name=CHI_Sung_Qingling
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_CHI_Sung_Qingling.png"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+	}
+	CHI_Wang_Kemin={
+		name=CHI_Wang_Kemin
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_CHI_Wang_Kemin.png"
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+		}
+	}
+	CHI_San_Ko={
+		name=CHI_San_Ko
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_CHI_San_Ko.png"
+			}
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+		}
+	}
+	CHI_Dai_Jitao={
+		name=CHI_Dai_Jitao
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_CHI_Dai_Jitao.png"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+		}
+	}
 	CHI_Chen_Cheng={
 		name=CHI_Chen_Cheng
 		portraits={
 			civilian={
-				large="gfx/leaders/CHI/Portrait_China_Chen_Cheng.tga"
+				large="gfx/leaders/CHI/Portrait_China_Chen_Cheng.png"
 			}
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
+                        ideology=authoritarian_democrat_subtype
 		}
 	}
 	CHI_chiang_kaishek={
@@ -36,9 +89,11 @@ characters={
 		}
 		country_leader={
                         ideology=paternal_autocrat_subtype
+                        traits={ CHI_Power_struggle }
 		}
 		country_leader={
 			ideology=national_populist_subtype
+                        traits={ CHI_Power_struggle }
 		}
 	}
 	CHI_Dai_Li={
@@ -56,11 +111,22 @@ characters={
 		name=CHI_Chen_Kuofu
 		portraits={
 			civilian={
-				large="gfx/leaders/CHI/Portrai_china_ChenGuofu.tga"
+				large="gfx/leaders/CHI/Portrai_china_ChenGuofu.png"
 			}
 		}
 		country_leader={
                         ideology=national_populist_subtype
+		}
+	}
+	CHI_Zhang_Tianran={
+		name=CHI_Zhang_Tianran
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_China_Zhang_Tianran.tga"
+			}
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
 		}
 	}
 
@@ -68,7 +134,8 @@ characters={
 		name=CHI_Chen_Cheng
 		portraits={
 			army={
-				large="gfx/leaders/CHI/Portrait_China_Chen_Cheng.tga"
+				large="gfx/leaders/CHI/Portrait_China_Chen_Cheng.png"
+				small=GFX_idea_CHI_Chen_Cheng
 			}
 		}
 		field_marshal={

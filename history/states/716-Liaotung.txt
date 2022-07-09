@@ -11,8 +11,8 @@ state={
 		add_claim_by = CHI
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 3
+			arms_factory = 2
+			industrial_complex = 5
                         dockyard = 1
 			air_base = 5
 			964 = {
@@ -22,8 +22,18 @@ state={
 
 		}
 		victory_points = {
-			11771 3 
+			11771 15
 		}
+		victory_points = {
+			9781 5
+		}
+		victory_points = {
+			9835 3
+		}
+		victory_points = {
+			6981 1
+		}
+
 
 	}
 
@@ -33,5 +43,5 @@ provinces={
 	}
 	manpower=10264620
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=metropolis
 }

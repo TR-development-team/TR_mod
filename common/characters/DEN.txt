@@ -1,0 +1,75 @@
+characters={
+	DEN_aksel_larsen={
+		name=DEN_aksel_larsen
+		portraits={
+			civilian={
+				large=GFX_portrait_Aksel_Larsen
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	DEN_thorvald_stauning={
+		name=DEN_thorvald_stauning
+		portraits={
+			civilian={
+				large=GFX_portrait_Thorvald_Stauning
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	DEN_peter_rochegune_munch={
+		name=DEN_peter_rochegune_munch
+		portraits={
+			civilian={
+				large=GFX_portrait_Peter_Rochegune_Munch
+			}
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	DEN_frits_clausen={
+		name=DEN_frits_clausen
+		portraits={
+			civilian={
+				large=GFX_portrait_Frits_Clausen
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	DEN_wilhelm_wain_prior={
+		name=DEN_wilhelm_wain_prior
+		portraits={
+			army={
+				large=GFX_portrait_Wilhelm_Wain_Prior
+				small=GFX_portrait_Wilhelm_Wain_Prior_small
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+}

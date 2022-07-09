@@ -1,373 +1,5 @@
 CHI_united_policy = {
-	CHI_invade_PRC = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 30
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-                        is_neighbor_of = PRC
-                        owns_state = 607
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = PRC
-				type = annex_everything
-			}
-			add_state_core = 600
-                        add_state_core = 602
-			add_state_core = 871
-                        add_state_core = 872
-		}
-	}
-	CHI_invade_FUJ = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 30
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-                        is_neighbor_of = FUJ
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = FUJ
-				type = annex_everything
-			}
-			add_state_core = 595
-                        add_state_core = 873
-		}
-	}
-	CHI_invade_HNA = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 30
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-                        is_neighbor_of = HNA
-                        owns_state = 607
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = HNA
-				type = annex_everything
-			}
-			add_state_core = 600
-                        add_state_core = 602
-			add_state_core = 871
-                        add_state_core = 872
 
-		}
-	}
-	CHI_invade_GXC = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 30
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-                        is_neighbor_of = GXC
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = GXC
-				type = annex_everything
-			}
-			add_state_core = 599
-			add_state_core = 594
-		}
-	}
-	CHI_invade_KUO = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 30
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-                        is_neighbor_of = KUO
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = KUO
-				type = annex_everything
-			}
-			add_state_core = 746
-			add_state_core = 616
-			add_state_core = 756
-			add_state_core = 621
-		}
-	}
-        CHI_invade_MIN = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 30
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = MIN
-				type = annex_everything
-			}
-			add_state_core = 607
-		}
-	}
-        CHI_invade_ANQ = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 30
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = ANQ
-				type = annex_everything
-			}
-			add_state_core = 606
-                        add_state_core = 749
-		}
-	}
-        CHI_invade_NAN = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = NAN
-				type = annex_everything
-			}
-			add_state_core = 613
-                        add_state_core = 596
-                        add_state_core = 598
-		}
-	}
-        CHI_invade_DTN = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 10
-		}
-		cost = 50
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = DTN
-				type = annex_everything
-			}
-			add_state_core = 622
-		}
-	}
-        CHI_invade_XSM = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 100
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-			CHI = {
-				owns_state = 622
-                                owns_state = 606
-                                owns_state = 600
-                                owns_state = 607
-			}
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-			CHI = {
-				owns_state = 622
-                                owns_state = 606
-                                owns_state = 600
-                                owns_state = 607
-			}
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = XSM
-				type = annex_everything
-			}
-			add_state_core = 283
-			add_state_core = 754
-                        add_state_core = 756
-			add_state_core = 616
-			add_state_core = 755
-			add_state_core = 604
-		}
-	}
-        CHI_invade_MEN = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 100
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-			CHI = {
-				owns_state = 622
-                                owns_state = 606
-                                owns_state = 600
-                                owns_state = 755
-			}
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-			CHI = {
-				owns_state = 622
-                                owns_state = 606
-                                owns_state = 600
-                                owns_state = 755
-			}
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = MEN
-				type = annex_everything
-			}
-			add_state_core = 746
-		}
-	}
-	CHI_invade_YUN = {
-		icon = generic_nationalism
-		ai_will_do = {
-			factor = 1
-		}
-		cost = 200
-		visible = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        
-			CHI = {
-				owns_state = 622
-                                owns_state = 606
-                                owns_state = 600
-                                owns_state = 755
-			}
-		}
-		available = {
-			has_country_flag = CHI_expand
-			tag = CHI
-                        has_war = no
-			CHI = {
-				owns_state = 622
-                                owns_state = 606
-                                owns_state = 600
-                                owns_state = 755
-			}
-		}
-		fire_only_once = yes
-		days_remove = 15
-		complete_effect = {
-			create_wargoal = {
-				target = YUN
-				type = annex_everything
-			}
-			create_wargoal = {
-				target = YNN
-				type = annex_everything
-			}
-			add_state_core = 605
-		}
-	}
 }
 CHI_militaly_reform = {
 	CHI_militaly_reform1 = {
@@ -382,7 +14,10 @@ CHI_militaly_reform = {
 		ai_will_do = {
 			factor = 500
 		}
-		days_remove = 90
+		days_remove = 100
+		modifier = {
+			political_power_gain = -0.25
+		}
 
 		visible = {
 			OR = {
@@ -422,5 +57,112 @@ CHI_militaly_reform = {
 		complete_effect = {
 			army_experience = -100						
 		}		
+	}
+}
+CHI_Warlord_diplomatic_decisions = {
+	CHI_visit_GXC = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { GXC = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_visit_GXC target: [From.GetName]"
+			GXC = {
+				country_event = {
+					id = TR_china.8
+					days = 2
+				}
+			}
+		}
+	}
+	CHI_visit_SCH = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { SCH = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_visit_SCH target: [From.GetName]"
+			SCH = {
+				country_event = {
+					id = TR_china.9
+					days = 2
+				}
+			}
+		}
+	}
+	CHI_visit_YUN = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { YNN = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_visit_YUN target: [From.GetName]"
+			YNN = {
+				country_event = {
+					id = TR_china.10
+					days = 2
+				}
+			}
+		}
+	}
+	CHI_visit_SAN = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { SAN = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_visit_SAN target: [From.GetName]"
+			SAN = {
+				country_event = {
+					id = TR_china.11
+					days = 2
+				}
+			}
+		}
+	}
+	CHI_visit_XSM = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { XSM = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove CHI_visit_XSM target: [From.GetName]"
+			XSM = {
+				country_event = {
+					id = TR_china.12
+					days = 2
+				}
+			}
+		}
 	}
 }

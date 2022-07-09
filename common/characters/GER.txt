@@ -145,15 +145,15 @@ characters={
 	GER_mikhail_frunze={
 		name=GER_mikhail_frunze
 		portraits={
-			civilian={
+			army={
 				large="gfx/leaders/GER/Portrait_GER_Frunze.tga"
 			}
 		}
 		field_marshal = {
 			traits = { logistics_wizard media_personality inflexible_strategist organizer }
-			skill = 5
-			attack_skill = 4
-			defense_skill = 4
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
 			planning_skill = 4
 			logistics_skill = 4
 		}
@@ -161,15 +161,16 @@ characters={
 	GER_Lev_Trotsky_marshal={
 		name=GER_Lev_Trotsky
 		portraits={
-			civilian={
+			army={
 				large="gfx/leaders/GER/Portrait_GER_trotsky.tga"
+				small=GFX_idea_GER_Lev_Trotsky
 			}
 		}
 		field_marshal = {
-			traits = { offensive_doctrine media_personality politically_connected }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 4
+			traits = { media_personality politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 4
 		}
@@ -177,29 +178,31 @@ characters={
 	GER_Ernst_Junger_marshal={
 		name=GER_Ernst_Junger
 		portraits={
-			civilian={
+			army={
 				large="gfx/leaders/GER/Portrait_GER_Ernst_Junger.tga"
+				small=GFX_idea_GER_Ernst_Junger
 			}
 		}
 		field_marshal = {
 			traits = { organizer logistics_wizard media_personality  }
 			skill = 3
-			attack_skill = 3
+			attack_skill = 4
 			defense_skill = 2
-			planning_skill = 3
+			planning_skill = 2
 			logistics_skill = 2
 		}
 	}
 	GER_Rohm={
 		name=GER_Rohm
 		portraits={
-			civilian={
+			army={
 				large = "gfx/leaders/GER/Portrait_GER_Rohm.tga"
+				small=GFX_idea_GER_Rohm
 			}
 		}
 		field_marshal = {
 			traits = { politically_connected}
-			skill = 2
+			skill = 1
 			attack_skill = 1
 			defense_skill = 1
 			planning_skill = 1
@@ -589,6 +592,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/GER/Portrait_GER_Ernst_von_Salomon.tga"
+				small=GFX_idea_GER_Ernst_von_Salomon
 			}
 		}
 		
@@ -623,6 +627,7 @@ characters={
 		portraits={
 			army={
 				large="gfx/leaders/GER/Portrait_GER_Edmund_Heines.tga"
+				small=GFX_idea_GER_Edmund_Heines
 			}
 		}
 		

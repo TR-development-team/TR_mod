@@ -124,6 +124,22 @@ bookmarks = {
 				AUS_FZvPTIpA
 			}
 		}
+                "CHI" = {
+			minor = yes
+			history = "TR_CHI_GATHERING_STORM_DESC"
+			ideology = national_populist
+			ideas = {
+				CHI_hikoritunatouti
+	                        CHI_fuannteinakokka
+                                CHI_Shading_sun
+			}
+
+			focuses = {
+				CHI_Military_corps_1
+				CHI_XMCAoyjQ
+				CHI_GnWQctLH
+			}
+		}
                 "BUL" = {
 			minor = yes
 			history = "TR_BUL_GATHERING_STORM_DESC"
@@ -138,22 +154,6 @@ bookmarks = {
 				BUL_ElpxumRY
 				BUL_naKgcXxB
 				BUL_DynMWbim
-			}
-		}
-                "CHI" = {
-			minor = yes
-			history = "TR_CHI_GATHERING_STORM_DESC"
-			ideology = national_populist
-			ideas = {
-				CHI_hikoritunatouti
-	                        CHI_fuannteinakokka
-                                CHI_Shading_sun
-			}
-
-			focuses = {
-				CHI_DVWwgiOM
-				CHI_XMCAoyjQ
-				CHI_GnWQctLH
 			}
 		}
                 "TUR" = {

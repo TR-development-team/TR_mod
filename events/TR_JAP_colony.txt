@@ -247,11 +247,9 @@ country_event = {#1936年帝国会議-自治領の主権
 	
 	option = {
 		name = TR_japfed.11.a
-                end_puppet = CAL
                 end_puppet = SAU
                 end_puppet = CEN
                 end_puppet = SIB
-                JAP = { add_to_faction = CAL }
                 JAP = { add_to_faction = SAU }
                 JAP = { add_to_faction = CEN }
                 JAP = { add_to_faction = SIB }
@@ -284,32 +282,8 @@ country_event = {#1936年帝国会議-自治領の主権
 	
 	option = {
 		name = TR_japfed.12.a
-                ai_chance = {
-			base = 50
-		}
-                set_cosmetic_tag = CAL_IND
-                JAP = { add_to_faction = CAL }
-
-		
-	}
-        option = {
-		name = TR_japfed.12.b
-                ai_chance = {
-			base = 50
-		}
-		add_ideas = Absolute_monarchy
-                set_cosmetic_tag = CAL_SHOGUNATE
-                add_popularity = {
-			ideology = national_populist
-			popularity = 0.4
-		}
-		set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-                JAP = { add_to_faction = CAL }
-
-		
+        JAP = { end_puppet = CAL }
+        JAP = { add_to_faction = CAL }
 	}
 }
 

@@ -12,14 +12,24 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = paternal_autocrat
 	last_election = "1933.3.5"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 18
+	syndicalist = 4
+	radical_socialist = 3
+	social_democrat = 6
+	social_liberal = 3
+	market_liberal = 11
+	social_conservative = 13
+	authoritarian_democrat = 3
+	paternal_autocrat = 22
+	national_populist = 12
+        Gnosticism = 5
 }
 
 set_convoys = 5

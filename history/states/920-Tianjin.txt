@@ -1,0 +1,31 @@
+
+state={
+	id=920
+	name="STATE_920"
+	manpower = 1059382
+	
+	state_category = city
+
+	history={
+		owner = JAP
+                add_claim_by = CHI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+			10068 = {
+				naval_base = 6
+			}
+		}
+		victory_points = {
+			10068 5
+		}
+
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		4137 10068
+	}
+}

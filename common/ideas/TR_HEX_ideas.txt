@@ -1,0 +1,78 @@
+
+ideas = {
+       
+    country = {
+
+    }
+#大臣
+    Head_of_State = {	
+        HEX_Ma_Zhongying = {
+			picture = HEX_Ma_Zhongying
+			allowed = {
+				original_tag = HEX
+			}
+			available = {
+				always = no
+		    }
+
+			removal_cost = -1
+			
+			traits = {
+				Head_of_State
+                national_populist
+				Ma_Zhongying_traits
+			}
+		}
+    }
+    Government_leaders = {	    
+        HEX_Ma_Hushan = {
+			picture = HEX_Ma_Hushan
+			allowed = {
+				original_tag = HEX
+			}
+			available = {
+				always = no
+		    }
+
+			removal_cost = -1
+			
+			traits = {
+				Government_leaders
+                national_populist
+				TR_political_protege
+			}
+		}
+    }
+	chief_of_staff = { 
+		HEX_Ma_Zhongying_cos = {
+			name = HEX_Ma_Zhongying
+			picture = HEX_Ma_Zhongying
+			allowed = {
+				original_tag = HEX
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+	}
+	chief_of_army = { 
+		HEX_Ma_Hushan_coa = {
+			name = HEX_Ma_Hushan
+			picture = HEX_Ma_Hushan
+			allowed = {
+				original_tag = HEX
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+		}
+	}
+}

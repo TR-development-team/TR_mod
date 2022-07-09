@@ -2502,11 +2502,11 @@ naval_manufacturer = {
                       			
 			allowed = {
 				original_tag = JAP
-                                  }  
-                        available = {
-                               always = no
+                }  
+			available = {
+				always = no
 			}
-			removal_cost = -1			
+			removal_cost = -1	
 			traits = { 
 				Head_of_State
 				totalist
@@ -2514,16 +2514,14 @@ naval_manufacturer = {
 			}
 		}
 		JAP_oosugi_sakae = {
+			picture = JAP_oosugi_sakae
 			allowed = {
 				original_tag = JAP
 			}
 			available = {
-					always = no
-			}
-            picture = JAP_oosugi_sakae
-
-			
-		    removal_cost = -1
+				always = no
+		    }
+			removal_cost = -1
 	        traits = { 
 				Head_of_State
 				syndicalist
@@ -2535,11 +2533,11 @@ naval_manufacturer = {
                       			
 			allowed = {
 				original_tag = JAP
-                                  }  
-                        available = {
-                               always = no
-			}
-			removal_cost = -1			
+            }  
+			available = {
+				always = no
+		    }
+			removal_cost = -1		
 			traits = { 
 				Head_of_State
 				radical_socialist
@@ -2547,32 +2545,31 @@ naval_manufacturer = {
 			}
 		}
 		JAP_hirohito_hs = {
-			allowed = {
-				original_tag = JAP
-			}
-			available = {
-					always = no
-			}
             picture = JAP_Emperor_Hirohito
 
-			
-		removal_cost = -1
+		    allowed = {
+				original_tag = JAP
+            }  
+			available = {
+				always = no
+		    }
+			removal_cost = -1
 	        traits = { 
 				Head_of_State
 				emperor_showa 
 			}
 		}
 		JAP_yasuhito = {
-			allowed = {
-				original_tag = JAP
-			}
-			available = {
-					always = no
-			}
             picture = JAP_Chichibunomiya
 
-			
+		    allowed = {
+				original_tag = JAP
+            }  
+			available = {
+				always = no
+		    }
 			removal_cost = -1
+
 	        traits = { 
 				Head_of_State
 				Yasuhito_traits

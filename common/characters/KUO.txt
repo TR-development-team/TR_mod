@@ -57,4 +57,72 @@ characters={
 			legacy_id=-1
 		}
 	}
+	KUO_Lu_Zhonglin={
+		name=KUO_Lu_Zhonglin
+		portraits={
+			army={
+				large="gfx/leaders/KUO/Portrait_KUO_Lu_Zhonglin.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	KUO_Shi_Yousan={
+		name=KUO_Shi_Yousan
+		portraits={
+			army={
+				large="gfx/leaders/KUO/Portrait_KUO_Shi_Yousan.png"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader trait_reckless } 
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	KUO_Song_Zheyuan={
+		name=KUO_Song_Zheyuan
+		portraits={
+			army={
+				large="gfx/leaders/KUO/Portrait_KUO_Song_Zheyuan.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious	career_officer } 
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	KUO_Han_Fuchu={
+		name=KUO_Han_Fuchu
+		portraits={
+			army={
+				large="gfx/leaders/KUO/Portrait_KUO_Han_Fuchu.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 }

@@ -1,0 +1,201 @@
+characters={
+	HOL_lou_de_visser={
+		name=HOL_lou_de_visser
+		portraits={
+			civilian={
+				large="GFX_portrait_HOL_lou_de_visser"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HOL_willem_schermerhorn={
+		name=HOL_willem_schermerhorn
+		portraits={
+			army={
+				small="GFX_idea_HOL_willem_schermerhorn"
+			}
+			civilian={
+				large="GFX_portrait_hol_wim_schermerhorn"
+			}
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HOL_hendrikus_colijn={
+		name=HOL_hendrikus_colijn
+		portraits={
+			civilian={
+				large="GFX_portrait_holland_hendrikus_colijn"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	HOL_wilhelmina = {
+		name=HOL_wilhelmina
+		gender = female 
+		country_leader={
+			expire = "1965.1.1"
+			ideology = paternal_autocrat_subtype
+			traits = {
+			}
+		}
+		portraits={
+			civilian={
+				large="GFX_portrait_HOL_wilhelmina"
+			}
+		}
+	}
+	
+	HOL_van_Tonningen={
+		name=HOL_van_Tonningen
+		portraits={
+			civilian={
+				large="gfx/leaders/HOL/Portrait_HOL_van_Tonningen.png"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			id=-1
+		}
+	}
+	HOL_anton_mussert={
+		name=HOL_anton_mussert
+		portraits={
+			civilian={
+				large="GFX_portrait_hol_anton_mussert"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			traits={ }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HOL_izaak_reijnders={
+		name=HOL_izaak_reijnders
+		portraits={
+			army={
+				large="GFX_portrait_hol_izaak_reijnders"
+				small="GFX_idea_HOL_izaak_reijnders"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist trait_reckless }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=980
+		}
+	}
+	HOL_petrus_wilhelmus_best={
+		name=HOL_petrus_wilhelmus_best
+		portraits={
+			army={
+				large="GFX_portrait_hol_petrus_wilhelmus_best"
+				small="GFX_idea_HOL_petrus_wilhelmus_best"
+			}
+		}
+		corps_commander={
+			traits={ organizer skilled_staffer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	HOL_godfried_van_voorst_tot_voorst={
+		name=HOL_godfried_van_voorst_tot_voorst
+		portraits={
+			army={
+				large="GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+				small="GFX_idea_HOL_godfried_van_voorst_tot_voorst"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist career_officer armor_officer politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	HOL_johannes_theodorus_furstner={
+		name=HOL_johannes_theodorus_furstner
+		portraits={
+			army={
+				large="GFX_portrait_HOL_johannes_theodorus_furstner"
+				small="GFX_portrait_HOL_johannes_theodorus_furstner_small"
+			}
+			civilian={
+				small="GFX_portrait_HOL_johannes_theodorus_furstner_small"
+			}
+		}
+		navy_leader={
+			traits={ caustic_personality blockade_runner fly_swatter }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	HOL_conrad_helfrich={
+		name=HOL_conrad_helfrich
+		portraits={
+			army={
+				large="GFX_portrait_hol_conrad_helfrich"
+				small=GFX_portrait_HOL_conrad_helfrich_small
+			}
+		}
+		navy_leader={
+			traits={ bold navy_career_officer seawolf superior_tactician }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=981
+		}
+	}
+	HOL_karel_doorman={
+		name=HOL_karel_doorman
+		portraits={
+			army={
+				large="GFX_portrait_hol_karel_doorman"
+				small="GFX_idea_HOL_karel_doorman"
+			}
+		}
+		navy_leader={
+			traits={ bold naval_lineage fleet_protector }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
+		}
+
+	}
+}

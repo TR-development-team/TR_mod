@@ -1,0 +1,30 @@
+
+state={
+	id=917
+	name="STATE_917" # Nikolayevsk
+	manpower = 213849
+	
+	state_category = town
+	resources={
+		steel=7
+	}
+
+	history={
+		owner = JAP
+		buildings = {
+			infrastructure = 3
+			12559 = {
+				naval_base = 3
+
+			}
+		}
+		victory_points = { 12559 3 }
+		add_core_of = JAP
+		add_claim_by = CHI
+	}
+
+	local_supplies=0.0 
+provinces={
+		12559 7868 4841
+	}
+}

@@ -88,6 +88,17 @@ characters={
 			ideology=paternal_autocrat_subtype
 		}
 	}
+	RUS_alexei_ii={
+		name=RUS_alexei_ii
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/RUS_alexei_ii.png"
+		    }
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+		}
+	}
 	RUS_Pyotr_wrangel={
 		name=RUS_Pyotr_wrangel
 		portraits={
@@ -97,6 +108,28 @@ characters={
 		}
 		country_leader={
 			ideology=national_populist_subtype
+		}
+	}
+	RUS_Pyotr_wrangel_1={
+		name=RUS_Pyotr_wrangel_1
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/RUS_wrangel.tga"
+		    }
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+	RUS_Sergey_Taboritsky={
+		name=RUS_Sergey_Taboritsky
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/Portrait_RUS_Sergey_Taboritsky.png"
+		    }
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
 		}
 	}
 	RUS_Pyotr_wrangel_Army={

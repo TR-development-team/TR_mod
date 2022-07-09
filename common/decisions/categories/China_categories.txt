@@ -8,7 +8,39 @@ CHI_united_policy = {
 	has_country_flag = CHI_expand
 	}
 }
-
+CHI_integrate_policy = {
+	icon = generic_political_actions
+	allowed = {
+        OR = {
+	tag = CHI
+	tag = MIN 
+        tag = PRC
+        tag = YUN
+        tag = KUO
+        tag = HNA
+        tag = HEX
+        tag = DTN
+        tag = SCH
+        tag = YNN
+        tag = NAN
+	}
+        }
+	visible = {
+        OR = {
+	tag = CHI
+	tag = MIN 
+        tag = PRC
+        tag = YUN
+        tag = KUO
+        tag = HNA
+        tag = HEX
+        tag = DTN
+        tag = SCH
+        tag = YNN
+        tag = NAN
+	}
+	}
+}
 CHI_militaly_reform = {
 	icon = army_reform
 	allowed = {
@@ -22,12 +54,17 @@ CHI_militaly_reform = {
 	tag = XSM 
         tag = YNN
         tag = FUJ
-        tag = PRC
 	tag = SAN
         tag = KUO
         tag = FUJ
         tag = HNA
         tag = GXC
+        tag = HEX
+        tag = NGX
+        tag = DTN
+        tag = ETR
+        tag = KML
+        tag = SCH
 	}
         }
 	visible = {
@@ -41,12 +78,23 @@ CHI_militaly_reform = {
 	tag = XSM 
         tag = YNN
         tag = FUJ
-        tag = PRC
 	tag = SAN
         tag = KUO
         tag = FUJ
         tag = HNA
         tag = GXC
+        tag = HEX
+        tag = NGX
+        tag = DTN
+        tag = ETR
+        tag = KML
+        tag = SCH
 	}
+	}
+}
+CHI_Warlord_diplomatic_decisions = {
+	icon = generic_political_actions
+	allowed = {
+              original_tag = CHI
 	}
 }

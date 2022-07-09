@@ -1,10 +1,10 @@
 
 state={
 	id=408
-	name="STATE_408"
-	manpower = 1329031
+	name="TR_STATE_408"
+	manpower = 530492
 	resources={
-		chromium=20 # was: 28
+		chromium=5 # was: 28
 	}
 	
 	state_category = town
@@ -12,15 +12,12 @@ state={
 	history={
 		owner = JAP
 		victory_points = {
-			957 15
+			6961 3
 		}
 		buildings = {
-			infrastructure = 4
-			dockyard = 3
-			air_base = 5
-			957 = {
-				naval_base = 8
-				coastal_bunker = 3
+			infrastructure = 2
+			6961 = {
+				naval_base = 2
 			}
 		}
 		add_core_of = JAP
@@ -29,6 +26,6 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		664 681 837 957 3695 3723 3739 3753 3787 3811 3977 6684 6686 6715 6833 6838 6961 6989 9639 9641 9762 9895 9926 11624 11626 11629 11643 11745 11750 11765 11777 11879 11904 
+		6961 9895 11904 11745 6833 11626 6715 3739 3753 3723
 	}
 }

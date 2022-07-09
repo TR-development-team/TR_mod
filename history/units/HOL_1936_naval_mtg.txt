@@ -29,10 +29,10 @@
 	### EAST INDIES SQUADRON ###
 	fleet = {
 		name = "Nederlands-Indië Marine"			
-		naval_base = 7381  # Batavia	
+		naval_base = 2115 
 		task_force = {				
 			name = "Nederlands-Indië Eskader"			
-			location = 7381  # Batavia	
+			location = 2115 
 			ship = { name = "HrMs Soerabaja" definition = heavy_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = HOL version_name = "Soerabaja Class" } }	}		
 			ship = { name = "HrMs Java" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Java Class" } } }
 			ship = { name = "HrMs Sumatra" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = HOL version_name = "Java Class" } } }
@@ -48,7 +48,7 @@
 		}				
 		task_force = {				
 			name = "Nederlands-Indië Onderzeeboot Smaldeel"			
-			location = 4608  # Soerbaja
+			location = 12828
 			ship = { ordered_name = 7 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "K-III Class" } } }
 			ship = { ordered_name = 8 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "K-III Class" } } }
 			ship = { ordered_name = 10 definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = HOL version_name = "K-III Class" } } }

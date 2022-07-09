@@ -1,0 +1,29 @@
+
+state={
+	id=918
+	name="STATE_918" 
+	manpower = 128391
+	
+	state_category = rural
+	resources={
+		steel=7
+	}
+
+	history={
+		owner = SIB
+		buildings = {
+			infrastructure = 1
+			1772 = {
+				naval_base = 1
+
+			}
+		}
+		add_core_of = SIB
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		7785 12660 7691 1845 1730 12591 1772
+	}
+}

@@ -6,7 +6,8 @@ state=
 	state_category = large_town
 	history=
 	{
-		owner = JAP
+		owner = GUG
+                add_core_of = GUG
 		add_claim_by = CHI
 		victory_points = {
 			10062 3 
@@ -14,6 +15,7 @@ state=
 		buildings = {
 			infrastructure = 3
 			air_base = 1
+			industrial_complex = 1
 			10062 = {
 				naval_base = 6
 				coastal_bunker = 1
