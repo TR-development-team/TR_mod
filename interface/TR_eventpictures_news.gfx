@@ -44,5 +44,44 @@ spriteTypes = {
 		name = "GFX_News_event_Black_Thursday"
 		texturefile = "gfx/event_pictures/News_event_Black_Thursday.dds"
 	}
-
+        SpriteType = {	##
+		name = "GFX_news_event_CHI_KUO"
+		texturefile = "gfx/event_pictures/news/news_event_CHI_KUO.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_FRA_deat"
+		texturefile = "gfx/event_pictures/news/news_event_FRA_deat.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_FRA_doriot"
+		texturefile = "gfx/event_pictures/news/news_event_FRA_doriot.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_FRA_maurras"
+		texturefile = "gfx/event_pictures/news/news_event_FRA_maurras.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_FRA_alsace_lorraine"
+		texturefile = "gfx/event_pictures/news/news_event_FRA_alsace_lorraine.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_JAP_Seiyukai_meeting"
+		texturefile = "gfx/event_pictures/news/news_event_JAP_Seiyukai_meeting.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_JAP_Ugaki_Sokaku"
+		texturefile = "gfx/event_pictures/news/news_event_JAP_Ugaki_Sokaku.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_GER_spartacus_bund"
+		texturefile = "gfx/event_pictures/news/news_event_GER_spartacus_bund.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_ENG_general_strike"
+		texturefile = "gfx/event_pictures/news/news_event_ENG_general_strike.png"
+	}
+        SpriteType = {	##
+		name = "GFX_news_event_Russian_civil_war"
+		texturefile = "gfx/event_pictures/news/news_event_Russian_civil_war.png"
+	}
 }

@@ -29,7 +29,7 @@ news_event = {
 	id =TR_news.2
 	title = TR_news.2.t
 	desc = TR_news.2.d
-	picture = GFX_news_event_gathering_protest
+	picture = GFX_News_event_Bloody_May_Day
 	
 	major = yes
 	
@@ -53,7 +53,7 @@ news_event = {
 	id =TR_news.3
 	title = TR_news.3.t
 	desc = TR_news.3.d
-	picture = GFX_news_event_japanese_army_parade
+	picture = GFX_news_event_JAP_Seiyukai_meeting
 	
 	major = yes
 	
@@ -90,7 +90,7 @@ news_event = {
 	id =TR_news.4
 	title = TR_news.4.t
 	desc = TR_news.4.d
-	picture = news_event_japanese_parade
+	picture = news_event_JAP_Ugaki_Sokaku
 	
 	major = yes
 	
@@ -125,7 +125,7 @@ news_event = {
 	id =TR_news.5
 	title = TR_news.5.t
 	desc = TR_news.5.d
-	picture = GFX_news_event_ger_civil_war
+	picture = GFX_news_event_GER_spartacus_bund
 	
 	major = yes
 	
@@ -149,7 +149,7 @@ news_event = {
 	id =TR_news.6
 	title = TR_news.6.t
 	desc = TR_news.6.d
-	picture = GFX_news_event_french_parade
+	picture = GFX_news_event_FRA_alsace_lorraine
 	
 	major = yes
 	
@@ -159,13 +159,19 @@ news_event = {
 		name = TR_news.6.a
 		trigger = {
 			NOT = {
-				TAG = FRA
+				OR = { TAG = FRA
+				       TAG = GER
+                                      }
 			}
 		}
 	}
 	option = {
 		name = TR_news.6.b
 		trigger = { TAG = FRA }
+	}
+	option = {
+		name = TR_news.6.c
+		trigger = { TAG = GER }
 	}
 
 }
@@ -174,7 +180,7 @@ news_event = {
 	id =TR_news.7
 	title = TR_news.7.t
 	desc = TR_news.7.d
-	picture = GFX_news_event_eng_blackshirts
+	picture = GFX_news_event_ENG_general_strike
 	
 	major = yes
 	
@@ -198,7 +204,7 @@ news_event = {
 	id =TR_news.8
 	title = TR_news.8.t
 	desc = TR_news.8.d
-	picture = GFX_news_event_001
+	picture = GFX_news_event_Russian_civil_war
 	
 	major = yes
 	
@@ -457,14 +463,18 @@ news_event = {
 		name = TR_news.21.a
 		trigger = {
 			NOT = {
-				TAG = JAP
-                                TAG = SHX
+				OR = { TAG = JAP
+                                       TAG = SHX }
 			}
 		}
 	}
 	option = {
 		name = TR_news.21.b
-		trigger = { OR = { TAG = JAP TAG = SHX } }
+		trigger = { TAG = JAP }
+	}
+	option = {
+		name = TR_news.21.c
+		trigger = { TAG = SHX }
 	}
 
 }
@@ -1012,4 +1022,112 @@ news_event = {
 		trigger = { TAG = JAP }
 	}
 
+}
+#中原大戦
+news_event = {
+	id =TR_news.43
+	title = TR_news.43.t
+	desc = TR_news.43.d
+	picture = GFX_news_event_CHI_KUO
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.43.a
+        trigger = {
+			NOT = {
+				TAG = CHI
+				TAG = KUO
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.43.b
+			trigger = { TAG = CHI }
+    }
+	option = {
+		name = TR_news.43.c
+			trigger = { TAG = KUO }
+	}
+}
+#シャルル・モーラス
+news_event = {
+	id =TR_news.44
+	title = TR_news.44.t
+	desc = TR_news.44.d
+	picture = GFX_news_event_FRA_maurras
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_news.44.a
+        trigger = {
+			NOT = {
+				TAG = FRA
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.44.b
+			trigger = { TAG = FRA }
+    }
+}
+#ジャック・ドリオ
+news_event = {
+	id =TR_news.45
+	title = TR_news.45.t
+	desc = TR_news.45.d
+	picture = GFX_news_event_FRA_doriot
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.45.a
+        trigger = {
+			NOT = {
+				TAG = FRA
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.45.b
+			trigger = { TAG = FRA }
+    }
+}
+#マルセル・デア
+news_event = {
+	id =TR_news.46
+	title = TR_news.46.t
+	desc = TR_news.46.d
+	picture = GFX_news_event_FRA_deat
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.46.a
+        trigger = {
+			NOT = {
+				TAG = FRA
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.46.b
+			trigger = { TAG = FRA }
+    }
 }

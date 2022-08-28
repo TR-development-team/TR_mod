@@ -1,13 +1,10 @@
 characters={
 	
-	FRA_maurice_thorez={
-		name=FRA_maurice_thorez
+	FRA_marcel_deat={
+		name=FRA_marcel_deat
 		portraits={
-			army={
-				small="GFX_idea_maurice_thorez"
-			}
 			civilian={
-				large="GFX_portrait_fra_maurice_thorez"
+				large="gfx/leaders/FRA/Portrait_FRA_marsell.tga"
 			}
 		}
 		country_leader={
@@ -23,6 +20,20 @@ characters={
 		}
 		country_leader={
 			ideology= syndicalist_subtype
+		}
+	}
+	FRA_maurice_thorez={
+		name=FRA_maurice_thorez
+		portraits={
+			army={
+				small="GFX_idea_maurice_thorez"
+			}
+			civilian={
+				large="GFX_portrait_fra_maurice_thorez"
+			}
+		}
+		country_leader={
+			ideology= radical_socialist_subtype
 		}
 	}
 	FRA_Jean_Paul_Sartre ={
@@ -75,18 +86,27 @@ characters={
 			ideology=social_conservative_subtype
 		}
 	}
-	FRA_JEAN_III={
-		name=FRA_JEAN_III
+	FRA_francois_de_larocque_1={
+		name=FRA_francois_de_larocque
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_FRA_Jean_dOrleans.tga"
+				large="gfx/leaders/FRA/Portrait_FRA_Francois_de_La_Rocque_1.png"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Francois_de_La_Rocque_1.png"
 			}
 		}
 		country_leader={
 			ideology=authoritarian_democrat_subtype
 		}
-		country_leader={
-			ideology=paternal_autocrat_subtype
+		field_marshal={
+			traits = { media_personality politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
 		}
 	}
 	FRA_Charles_Maurras={
@@ -97,23 +117,43 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_populist_subtype
-                        traits = { dislikes_germany }
+			ideology=paternal_autocrat_subtype
 		}
 	}
-
-	FRA_marcel_deat={
-		name=FRA_marcel_deat
+	FRA_Jean_dOrleans={
+		name=FRA_JEAN_III
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_FRA_marsell.tga"
+				large="gfx/leaders/FRA/Portrait_FRA_Jean_dOrleans.png"
 			}
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=paternal_autocrat_subtype
 		}
 	}
-
+	FRA_maxime_weygand={
+		name=FRA_Maxime_Weygand_TR
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.png"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.png"
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+		}
+		field_marshal={
+			traits={ organizer old_guard inflexible_strategist career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
 	FRA_Jacques_Doriot={
 		name=FRA_Jacques_Doriot
 		portraits={
@@ -145,7 +185,7 @@ characters={
 				small=GFX_idea_FRA_Maurice_Gamelin
 			}
 			army={
-				large=GFX_portrait_FRA_maurice_gamelin
+				large="gfx/leaders/FRA/Portrait_FRA_Maurice_Gamelin.png"
 			}
 		}
 
@@ -160,27 +200,7 @@ characters={
 		}
 	}
 
-	FRA_maxime_weygand={
-		name=FRA_maxime_weygand
-		portraits={
-			army={
-				small=GFX_idea_FRA_Maxime_Weygand
-			}
-			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.tga"
-			}
-		}
-		
-		field_marshal={
-			traits={ organizer old_guard inflexible_strategist career_officer }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
+
 
 	FRA_Maurice_Pujo={
 		name=FRA_Maurice_Pujo
@@ -202,25 +222,7 @@ characters={
 		}
 	}
 
-	FRA_francois_de_larocque={
-		name=FRA_francois_de_larocque
-		portraits={
-			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Francois_de_La_Rocque.tga"
-				small=GFX_idea_FRA_francois_de_larocque
-			}
-		}
-		
-		field_marshal={
-			traits = { media_personality politically_connected }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
+
 
 	FRA_jean_de_lattre_de_tassigny={
 		name=FRA_jean_de_lattre_de_tassigny

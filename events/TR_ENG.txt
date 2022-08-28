@@ -22,6 +22,7 @@ country_event = {
                 end_puppet = AST
                 end_puppet = NZL
                 end_puppet = IRE
+				end_puppet = EWA
 		ENR = {
 			set_country_flag = ENG_revolution_FLAG
 			set_rule = {
@@ -79,9 +80,7 @@ country_event = {
 		136 = {
 					add_core_of = ENR
 				}
-                IRE = {
-                        transfer_state = 119
-                      }
+
                 ENR = {
 			transfer_state = 130
 			transfer_state = 132
@@ -91,19 +90,28 @@ country_event = {
                         transfer_state = 131
                         transfer_state = 338
                       }
-                CAN = {
+		IRE = {
+			drop_cosmetic_tag = yes
+            }
+		AST = {
+			drop_cosmetic_tag = yes
+            }
+		SAF = {
+			drop_cosmetic_tag = yes
+            }
+		NZL = {
+			drop_cosmetic_tag = yes
+            }
+        CAN = {
+			drop_cosmetic_tag = yes
 			transfer_state = 331
-                        transfer_state = 332
-                      }
-                SPR = {
+            transfer_state = 332
+            }
+        SPR = {
 			transfer_state = 118
-                      }
+            }
                 ITA = {
-			transfer_state = 272
-                        transfer_state = 298
                         transfer_state = 116
-                        transfer_state = 700
-                        transfer_state = 701
                       }
                 ARG = {
 			transfer_state = 720
@@ -122,17 +130,26 @@ country_event = {
                         transfer_state = 689
                       }
                 FRA = {
-			transfer_state = 687
+			             transfer_state = 687
                         transfer_state = 691
                         transfer_state = 692
                         transfer_state = 308
                         transfer_state = 707
                       }
                 MEX = {
-			transfer_state = 311
+			               transfer_state = 311
                       }
+					  FRA = { 
+						set_autonomy = {
+					   target = EWA
+					   autonomous_state = autonomy_colony
+						}
+					  }
+					  EWA = { 
+						set_cosmetic_tag = EWA_FRA
+					  }
 
-
+                
 
                 hidden_effect = {
                          ENG = { transfer_navy = { target = ENR } }
@@ -211,7 +228,7 @@ country_event = {
 					add_core_of = ENR
 				}
                 IRE = {
-                    transfer_state = 119
+                    drop_cosmetic_tag = yes
                     }
                 ENR = {
 			        transfer_state = 130

@@ -788,7 +788,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 41
 		}
-		location = 3686
+		location = 9417
 		division_template = "Strelkovaya Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.85
@@ -836,7 +836,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 11649
+		location = 6741
 		division_template = "Strelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.1
@@ -1047,15 +1047,6 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 3
-		progress = 0.4
-		efficiency = 50
-	}
 
 	add_equipment_production = {
 		equipment = {

@@ -81,7 +81,6 @@ units = {
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.1
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
 	}
 	division = { # "4. divize"
 		division_name = {
@@ -136,7 +135,6 @@ units = {
 		division_template = "Rychlá divize"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.1
-		force_equipment_variants = { light_tank_equipment_1 = { owner = "CZE" } }
 	}
 
 	### I Armáda ###
@@ -235,15 +233,6 @@ instant_effect = {
 			creator = "CZE"
 		}
 		requested_factories = 1
-		progress = 0.48
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "CZE"
-		}
-		requested_factories = 2
 		progress = 0.48
 		efficiency = 100
 	}

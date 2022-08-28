@@ -1,0 +1,138 @@
+characters = {
+	POR_Alvaro_Cunhal = {
+		name = POR_Alvaro_Cunhal
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POR/Portrait_POR_Cunhal.tga"
+			}
+		}
+		country_leader = {
+			ideology=totalist_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	POR_bento_goncalves = {
+		name = POR_bento_goncalves
+		portraits = {
+			civilian = {
+				large = GFX_portrait_POR_bento_goncalves
+			}
+		}
+		country_leader = {
+			ideology=radical_socialist_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+	POR_Duarte_II = {
+		name = POR_Duarte_II
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POR/Portrait_POR_Duarte_II.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+	}
+	POR_antonio_de_oliveira_salazar = {
+		name = POR_antonio_de_oliveira_salazar
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/POR/Portrait_POR_Salazar.tga"
+			}
+		}
+		country_leader = {
+			ideology=national_populist_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+
+
+	POR_jose_vicente_de_freitas = {
+		name = POR_jose_vicente_de_freitas
+		portraits = {
+			army = {
+				large = "GFX_portrait_por_jose_vicente_de_freitas"
+				small = GFX_portrait_POR_jose_vicente_de_freitas_small
+			}
+		}
+		field_marshal = {
+			traits = { old_guard politically_connected }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	POR_luis_augusto_ferreira_martins = {
+		name = POR_luis_augusto_ferreira_martins
+		portraits = {
+			army = {
+				large = "GFX_portrait_por_luis_augusto_ferreira_martins"
+				small = GFX_portrait_POR_luis_augusto_ferreira_martins_small
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id = -1
+		}
+	}
+
+	POR_raul_augusto_esteves = {
+		name = POR_raul_augusto_esteves
+		portraits = {
+			army = {
+				large = GFX_portrait_POR_raul_augusto_esteves
+				small = GFX_portrait_POR_raul_augusto_esteves_small
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+
+	POR_jose_mendes_cabecadas = {
+		name = POR_jose_mendes_cabecadas
+		portraits = {
+			army = {
+				large = "GFX_portrait_por_jose_mendes_cabecadas"
+				small = GFX_portrait_POR_jose_mendes_cabecadas_small
+			}
+		}
+		navy_leader = {
+			traits = { old_guard_navy gentlemanly }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			maneuvering_skill = 4
+			coordination_skill = 4
+			legacy_id = -1
+		}
+	}
+
+
+}

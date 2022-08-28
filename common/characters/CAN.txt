@@ -1,0 +1,210 @@
+characters={
+
+	CAN_tim_buck={
+		name=CAN_tim_buck
+		portraits={
+			civilian={
+				large=GFX_portrait_CAN_tim_buck
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAN_j_s_woodsworth={
+		name=CAN_j_s_woodsworth
+		portraits={
+			civilian={
+				large=GFX_portrait_CAN_j_s_woodsworth
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	CAN_mackenzie_king={
+		name=CAN_mackenzie_king
+		portraits={
+			civilian={
+				large="gfx/leaders/CAN/Portrait_CAN_Mackenzie_King.png"
+			}
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	CAN_adrien_arcand={
+		name=CAN_adrien_arcand
+		portraits={
+			civilian={
+				large="GFX_CAN_adrien_arcand"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+
+	CAN_thomas_victor_anderson={
+		name=CAN_thomas_victor_anderson
+		portraits={
+			army={
+				large=GFX_portrait_CAN_thomas_victor_anderson
+				small=GFX_portrait_CAN_thomas_victor_anderson_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+
+	CAN_charles_foulkes={
+		name=CAN_charles_foulkes
+		portraits={
+			army={
+				large="GFX_CAN_charles_foulkes"
+				small=GFX_portrait_CAN_charles_foulkes_small
+			}
+		}
+		field_marshal={
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	CAN_percival_john_montague={
+		name=CAN_percival_john_montague
+		portraits={
+			army={
+				large=GFX_portrait_CAN_percival_john_montague
+				small=GFX_portrait_CAN_percival_john_montague_small
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=1
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=-1
+		}
+	}
+
+	CAN_bert_hoffmeister={
+		name=CAN_bert_hoffmeister
+		portraits={
+			army={
+				large="GFX_CAN_bert_hoffmeister"
+				small=GFX_portrait_CAN_bert_hoffmeister_small
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	CAN_leonard_w_murray={
+		name=CAN_leonard_w_murray
+		portraits={
+			army={
+				large="GFX_CAN_leonard_warren_murray"
+				small=GFX_portrait_CAN_leonard_w_murray_small
+			}
+		}
+		navy_leader={
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=-1
+		}
+	}
+
+	CAN_ht_bailliegrohman={
+		name=CAN_ht_bailliegrohman
+		portraits={
+			army={
+				large=GFX_portrait_CAN_ht_bailliegrohman
+				small=GFX_portrait_CAN_ht_bailliegrohman_small
+			}
+		}
+		navy_leader={
+			traits={ spotter }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=-1
+		}
+	}
+
+	CAN_james_d_prentice={
+		name=CAN_james_d_prentice
+		portraits={
+			army={
+				large="GFX_CAN_james_prentice"
+				small=GFX_portrait_CAN_james_d_prentice_small
+			}
+		}
+		navy_leader={
+			traits={ spotter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+	CAN_harry_dewolf={
+		name=CAN_harry_dewolf
+		portraits={
+			army={
+				large="GFX_CAN_harry_dewolf"
+				small=GFX_portrait_CAN_harry_dewolf_small
+			}
+		}
+		navy_leader={
+			traits={ bold superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=5
+			legacy_id=-1
+		}
+	}
+
+
+
+}

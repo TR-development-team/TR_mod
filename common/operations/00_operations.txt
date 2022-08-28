@@ -1035,12 +1035,7 @@ operation_coup_government = { ### 7 1/70
 		targets = { FROM }
 	}
 	allowed = {
-		NOT = {
-			has_game_rule = {
-				rule = allow_coups
-				option = BLOCKED
-			}
-		}
+		always = no
 	}
 
 	available = {
@@ -1050,30 +1045,7 @@ operation_coup_government = { ### 7 1/70
 			NOT = {
 				has_government = var:PREV.ROOT.current_party_ideology_group
 			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = fascism }
-				}
-				fascism > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = communism }
-				}
-				communism > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = democratic }
-				}
-				democratic > 0.2
-			}
-			if = {
-				limit = {
-					PREV.ROOT = { has_government = paternal_autocrat }
-				}
-				paternal_autocrat > 0.2
-			}
+
 				#set_temp_variable = { coup_ideology@ROOT = PREV.ROOT.current_party_ideology_group }
 				#set_temp_variable = { coup_ideology_popularity@ROOT = party_popularity@ROOT.coup_ideology }
 				#check_variable = { ROOT.coup_ideology_popularity > 0.2 }

@@ -1,7 +1,11 @@
 ﻿capital = 218
 
-set_research_slots = 2
+oob = "DON_1936"
 
+set_research_slots = 2
+add_ideas = {
+        Colonical_system
+}
 # Starting tech
 set_technology = {
 	tech_support = 1		
@@ -59,18 +63,23 @@ if = {
 	}
 }
 
+set_cosmetic_tag = DON_Russia
+SOV = { 
+        set_autonomy = {
+	  target = DON
+	  autonomous_state = autonomy_colony
+        }
+      }
+
 set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1936.1.1"
+	ruling_party = paternal_autocrat
+	last_election = "1935.5.21"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
-
 set_popularities = {
-	social_conservative = 30
-	authoritarian_democrat = 30
-	totalist = 20
-	national_populist = 20
+	paternal_autocrat = 100
 }
 
-#TODO, James make Ivan Kononov country leader for the fascists
+
+recruit_character = DON_Pyotr_Krasnov

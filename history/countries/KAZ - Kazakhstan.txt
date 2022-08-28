@@ -1,6 +1,4 @@
-﻿capital = 586 #Almaty
-
-oob = "KAZ_1936"
+﻿capital = 652 #オレンブルク
 
 set_research_slots = 3
 
@@ -8,99 +6,34 @@ set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_recon = 1
+	gw_artillery = 1			
+	interwar_antiair = 1
 	tech_support = 1		
+	tech_recon = 1
 	tech_engineers = 1
-	tech_military_police = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
-	paratroopers = 1
-	gw_artillery = 1
-	gwtank = 1
-	basic_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
-	mass_assault = 1
-	fleet_in_being = 1
 }
-
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		mtg_transport = 1
-		basic_battery = 1
-		basic_torpedo = 1
-	}
-}
-
+set_cosmetic_tag = KAZ_Alash
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = social_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	totalist = 5
+	totalist = 13
 	syndicalist = 5
-	radical_socialist = 5
-	social_democrat = 5
+	radical_socialist = 12
+	social_democrat = 27
 	social_liberal = 10
-	market_liberal = 15
-	social_conservative = 40
-	authoritarian_democrat = 5
+	market_liberal = 8
+	social_conservative = 8
+	authoritarian_democrat = 7
 	paternal_autocrat = 5
 	national_populist = 5
 }
 
-create_country_leader = {
-	name = "Nikolay Aleksandrovich Skvortsov"
-	desc = ""
-	picture = "Portrait_KAZ_Nikolay_Skvortsov.dds"
-	expire = "1953.3.1"
-	ideology = totalist_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Ilyas Zhansugurov"
-	desc = ""
-	picture = "Portrait_KAZ_Ilyas_Zhansugurov.dds"
-	expire = "1953.3.1"
-	ideology = social_conservative_subtype
-	traits = {
-		
-	}
-}
+recruit_character = KAZ_Akhmet_Baitursynov
 
 
 

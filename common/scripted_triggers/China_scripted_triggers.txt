@@ -1,7 +1,30 @@
 #####################################
 # Chinese Shared Triggers
 #####################################
-
+is_chinese_tag = {
+	OR = {
+	tag = CHI
+	tag = MIN 
+        tag = PRC
+        tag = ANQ
+        tag = YUN
+	tag = SIK
+	tag = XSM 
+        tag = YNN
+        tag = FUJ
+	tag = SAN
+        tag = KUO
+        tag = FUJ
+        tag = HNA
+        tag = GXC
+        tag = HEX
+        tag = NGX
+        tag = DTN
+        tag = ETR
+        tag = KML
+        tag = SCH
+	}
+}
 can_become_china = {
 	OR = {
 	tag = CHI

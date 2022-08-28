@@ -200,7 +200,7 @@ country_event = {
 		ai_chance = {
 		    base = 50
 			modifier = {
-				factor = 50
+				factor = 2
 				has_government = social_conservative
 			}
 		}
@@ -215,7 +215,7 @@ country_event = {
 		ai_chance = {
 		    base = 50
 			modifier = {
-				factor = 50
+				factor = 2
 				has_government = market_liberal
 			}
 		}
@@ -1183,7 +1183,7 @@ country_event = {
 		ai_chance = {
 			base = 35
 			modifier = {
-				factor = 50
+				factor = 2
 				has_government = market_liberal
 			}
 		}
@@ -1213,7 +1213,7 @@ country_event = {
 		ai_chance = {
 			base = 35
 			modifier = {
-				factor = 50
+				factor = 2
 				has_government = social_conservative
 			}
 		}
@@ -1243,7 +1243,7 @@ country_event = {
 		ai_chance = {
 			base = 15
 			modifier = {
-				factor = 50
+				factor = 4
 				has_government = social_liberal
 			}
 		}
@@ -1273,7 +1273,7 @@ country_event = {
 		ai_chance = {
 			base = 15
 			modifier = {
-				factor = 50
+				factor = 4
 				has_government = social_democrat
 			}
 		}

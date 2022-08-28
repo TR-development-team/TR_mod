@@ -13,17 +13,13 @@ state={
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 1
+			industrial_complex = 2
+			arms_factory = 1
 			air_base = 1
 
 		}
 		add_core_of = SOV
                 add_core_of = RUS
-		1939.1.1 = {
-			buildings = {
-				arms_factory = 3
-			}
-		}
 	}
 
 	local_supplies=0.0 

@@ -1,0 +1,30 @@
+characters={
+	UZB_mikhail_frunze={
+		name=GER_mikhail_frunze
+		portraits={
+			civilian={
+				large="gfx/leaders/UZB/Portrait_UZB_Mikhail_Frunze.png"
+			}
+			army={
+				large="gfx/leaders/UZB/Portrait_UZB_Mikhail_Frunze.png"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+		field_marshal = {
+			traits = { logistics_wizard media_personality inflexible_strategist organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+}

@@ -3,7 +3,7 @@ characters={
 		name=SOV_Joseph_Stalin
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_SOV_stalin.tga"
+				large="gfx/leaders/GEO/Portrait_GEO_Joseph_Stalin.png"
 			}
 		}
 		country_leader={
@@ -37,7 +37,7 @@ characters={
 		name=RUS_Yuliy_martov
 		portraits={
 		    civilian={
-			        large="gfx/leaders/SOV/RUS_martov.tga"
+			        large="gfx/leaders/SOV/Portrait_SOV_Yuli_Martov.png"
 		    }
 		}
 		country_leader={
@@ -66,6 +66,17 @@ characters={
 			ideology=market_liberal_subtype
 		}
 	}
+	RUS_Nikolai_Trubetzkoy={
+		name=RUS_Nikolai_Trubetzkoy
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/Portrait_SOV_Nikolai_Trubetzkoy.png"
+		    }
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+		}
+	}
 	RUS_Dmitri_Pavlovich={
 		name=RUS_Dmitri_Pavlovich
 		portraits={
@@ -81,7 +92,7 @@ characters={
 		name=RUS_nikolai_ii
 		portraits={
 		    civilian={
-			large="gfx/leaders/SOV/RUS_nikolai_ii.tga"
+			large="gfx/leaders/SOV/RUS_nikolai_ii.png"
 		    }
 		}
 		country_leader={
@@ -158,10 +169,10 @@ characters={
 		field_marshal = {
 			traits = { career_officer war_hero infantry_officer }
 			skill = 4
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 4
 			planning_skill = 4
-			logistics_skill = 4
+			logistics_skill = 3
 		}
 	}
 	RUS_Roman_Ungern={
@@ -184,7 +195,7 @@ characters={
 		name=RUS_Vlazimir_Kappel
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_SOV_kappel.tga"
+				large="gfx/leaders/SOV/Portrait_SOV_Vladimir_Kappel.png"
 			}
 		}
 		corps_commander = {
@@ -248,7 +259,7 @@ characters={
 		name=RUS_Pyotr_Krasnov
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_Russia_Krasnov.tga"
+				large="gfx/leaders/SOV/Portrait_SOV_Pyotr_Krasnov_1.png"
 			}
 		}
 		corps_commander = {

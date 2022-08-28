@@ -1,0 +1,29 @@
+
+state={
+	id=923
+	name="STATE_923"
+	manpower = 102934
+	
+	state_category = pastoral
+	
+	resources={
+
+	}
+
+	history={
+		owner = BOL
+		buildings = {
+			infrastructure = 1
+		}
+                add_core_of = BOL
+                add_core_of = BRR
+                add_core_of = SPO
+                add_core_of = AMZ
+		add_core_of = BRA
+	}
+
+	local_supplies=0.0 
+provinces={
+		2198 5216 10960
+	}
+}

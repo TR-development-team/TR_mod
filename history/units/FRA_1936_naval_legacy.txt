@@ -172,7 +172,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Force d'Attaque Légère"			
-			location = 9994 # Bizerte, Tunisia	
+			location = 7132 # Oran	
 			ship = { name = "La Galissonnière" definition = light_cruiser equipment = { light_cruiser_2 = { amount = 1 owner = FRA } } }	# La Galissonnière variant
 			ship = { name = "Émile Bertin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 			# 1e Division des Contre-Torpilleurs
@@ -190,7 +190,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Flotte d'Afrique de l'Ouest"			
-			location = 4948 # Dakar			
+			location = 7132 # Oran			
 			ship = { name = "Jeanne d'Arc" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 			ship = { name = "Duguay-Trouin" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
 			ship = { name = "Primauguet" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = FRA } } }
@@ -218,7 +218,7 @@ units= {
 		}				
 		task_force = {				
 			name = "6ème Escadron Sous-Marins"			
-			location = 9994 # Bizerte, Tunisia	
+			location = 7132 # Oran
 			# 9e Division des Sous-Marins
 			ship = { name = "Caïman" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
 			ship = { name = "Morse" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
@@ -235,7 +235,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Sous-Marins Force de Levant"			
-			location = 792 # Beirut			
+			location = 7132 # Oran		
 			# 11e Division des Sous-Marins
 			ship = { name = "Requin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				
 			ship = { name = "Marsouin" definition = submarine equipment = { submarine_1 = { amount = 1 owner = FRA } } }				

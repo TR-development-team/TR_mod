@@ -181,6 +181,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ENR_vNHJmZRb }
+		NOT = {
+			has_war_with = ENG
+		}
 		ai_will_do = {
 			factor = 100
 		}

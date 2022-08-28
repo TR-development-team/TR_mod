@@ -60,109 +60,32 @@ add_ideas = {
 
 
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = market_liberal
 	last_election = "1933.7.1"
 	election_frequency = 36
 	elections_allowed = yes
 }
 set_popularities = {
-	market_liberal = 15
-	social_conservative = 55
-	authoritarian_democrat = 25
-	paternal_autocrat = 5
+	totalist = 5
+	syndicalist = 2
+	radical_socialist = 5
+	social_democrat = 20
+	social_liberal = 12
+	market_liberal = 16
+	social_conservative = 12
+	authoritarian_democrat = 3
+	paternal_autocrat = 2
+	national_populist = 8
+        Gnosticism = 15
 }
+recruit_character = FIN_aimo_aaltonen
+recruit_character = FIN_kyosti_kallio
+recruit_character = FIN_risto_heikki_ryti
+recruit_character = FIN_vilho_annala
 
-1939.1.1 = {
-	set_politics = {
-		ruling_party = neutrality
-		last_election = "1939.7.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-}
-create_country_leader = {
-	name = "Risto Heikki Ryti"
-	desc = "POLITICS_RISTO_HEIKKI_RYT_DESC"
-	picture = "Portrait_Finland_Risto_Heikki_Ryti.dds"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Aimo Aaltonen"
-	desc = "POLITICS_AIMO_AALTONEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Vilho Annala"
-	desc = "POLITICS_VILHO_ANNALA_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Kyösti Kallio"
-	desc = "POLITICS_KYÖSTI_KALLIO_DESC"
-	picture = "gfx/leaders/FIN/Portrait_Finland_Kyosti_Kallio.dds"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-
-
-add_ideas = {
-	sisu
-}
-
-create_field_marshal = {
-	name = "Carl Gustaf Emil Mannerheim"
-	picture = "portrait_fin_carl_mannerheim.dds"
-	traits = { inflexible_strategist war_hero trait_cautious defensive_doctrine trickster winter_specialist }
-	skill = 5
-	id = 58
-	attack_skill = 3
-	defense_skill = 5
-	planning_skill = 5
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Erik Heinrichs"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { winter_specialist ranger }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Vilho Petter Nenonen"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { winter_specialist commando }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 1
-    planning_skill = 4
-    logistics_skill = 2
-}
+recruit_character = FIN_carl_mannerheim
+recruit_character = FIN_erik_heinrichs
+recruit_character = FIN_vilho_petter_nenonen
 
 ### VARIANTS ###
 # 1936 Start #

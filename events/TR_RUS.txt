@@ -245,268 +245,243 @@ country_event = {
 	
 	option = {
 		name = TR_russia.5.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		}
-                set_rule = { can_create_factions = yes }
-                end_puppet = UZB
+        end_puppet = BUK
+		end_puppet = KHI
+		end_puppet = STE
+		end_puppet = BAL
+		end_puppet = LIT
 		create_faction = "russianwhite_faction"
-                add_ideas = SOV_CIVIL_WAR
-                set_country_flag = SOV_OCREVOLUTION
-                remove_ideas = SOV_revolution_1
-                195 = {
-					add_core_of = RUS
-				}
-                208 = {
-					add_core_of = RUS
-				}
-                263 = {
-					add_core_of = RUS
-				}
-                209 = {
-					add_core_of = RUS
-				}
-                246 = {
-					add_core_of = RUS
-				}
-                244 = {
-					add_core_of = RUS
-				}
-                210 = {
-					add_core_of = RUS
-				}
-                207 = {
-					add_core_of = RUS
-				}
-                206 = {
-					add_core_of = RUS
-				}
-                204 = {
-					add_core_of = RUS
-				}
-                194 = {
-					add_core_of = RUS
-				}
-                241 = {
-					add_core_of = RUS
-				}
-                243 = {
-					add_core_of = RUS
-				}
-                242 = {
-					add_core_of = RUS
-				}
-                205 = {
-					add_core_of = RUS
-				}
-                224 = {
-					add_core_of = RUS
-				}
-                247 = {
-					add_core_of = RUS
-				}
-                219 = {
-					add_core_of = RUS
-				}
-                223 = {
-					add_core_of = RUS
-				}
-                222 = {
-					add_core_of = RUS
-				}
-		RUS = { inherit_technology = SOV
+        add_ideas = SOV_CIVIL_WAR
+        set_country_flag = SOV_OCREVOLUTION
+        remove_ideas = SOV_revolution_1
+		hidden_effect = {
+		RUS = { 
+			inherit_technology = SOV
 			transfer_state = 195
 			transfer_state = 208
-                        transfer_state = 263
+            transfer_state = 263
 			transfer_state = 209
-                        transfer_state = 246
-                        transfer_state = 244
-                        transfer_state = 210
-                        transfer_state = 207
+            transfer_state = 246
+            transfer_state = 244
+            transfer_state = 210
+            transfer_state = 207
 			transfer_state = 206
-                        transfer_state = 204
+            transfer_state = 204
 			transfer_state = 194
-                        transfer_state = 241
-                        transfer_state = 243
-                        transfer_state = 242
-                        transfer_state = 205
-                        transfer_state = 224
+            transfer_state = 241
+            transfer_state = 243
+            transfer_state = 242
+            transfer_state = 205
+            transfer_state = 224
 			transfer_state = 247
-                        transfer_state = 219
+            transfer_state = 219
 			transfer_state = 223
-                        transfer_state = 222
-                      }
-                 BAL = {
-			transfer_state = 13
-			transfer_state = 191
-                        transfer_state = 190
-			transfer_state = 12
-                        transfer_state = 189
-                        transfer_state = 11
-                        transfer_state = 784
-                        transfer_state = 96
-                        transfer_state = 878
-			transfer_state = 879
-                        transfer_state = 880
-                        transfer_state = 884
-                        transfer_state = 885
-                        transfer_state = 881
-                        transfer_state = 883
-                        transfer_state = 882                      
-                      }
-                 KAZ = {
-			transfer_state = 587
+            transfer_state = 222
+			transfer_state = 96
+            }
+        BAL = {
+			drop_cosmetic_tag = yes
+			}
+		LIT = {
+			drop_cosmetic_tag = yes
+			}
+		BUK = {
+			country_event = {
+				id = TR_central_asia.2
+				days = 3		
+			}
+			}
+		STE = {
+			country_event = {
+			id = TR_central_asia.3
+			days = 3		
+			}
+		}
+        KAZ = {
+			inherit_technology = STE
+			transfer_state = 652
 			transfer_state = 406
-                        transfer_state = 407
+            transfer_state = 407
 			transfer_state = 402
-                        transfer_state = 404
-                        transfer_state = 586
-                        transfer_state = 589
-                        transfer_state = 404
-                        transfer_state = 588
-                        transfer_state = 590
-                        transfer_state = 583
-                      }
-                set_capital = {
-                  state = 249
-                  remember_old_capital = yes
-                 }
-
+            transfer_state = 402
+            transfer_state = 587
+            transfer_state = 583
+			transfer_state = 582
+			transfer_state = 893
+			country_event = {
+				id = TR_central_asia.1
+				days = 1		
+			}
+            }
+        set_capital = {
+            state = 249
+            remember_old_capital = yes
+        }
+	    }
 	}
-        option = {
+    option = {
 		name = TR_russia.5.b
                 ai_chance = {
 			base = 0
 		}
-                set_rule = { can_create_factions = yes }
-                end_puppet = UZB
+        end_puppet = BUK
+		end_puppet = KHI
+		end_puppet = STE
+		end_puppet = BAL
+		end_puppet = LIT
 		create_faction = "russianwhite_faction"
-                remove_ideas = SOV_revolution_1
-                add_ideas = SOV_CIVIL_WAR
-                set_country_flag = SOV_OCREVOLUTION
-                set_capital = {
-                  state = 249
-                  remember_old_capital = yes
-                 }
-                RUS = {
-                        change_tag_from = SOV
-		}
-                
-                195 = {
-					add_core_of = RUS
-				}
-                208 = {
-					add_core_of = RUS
-				}
-                263 = {
-					add_core_of = RUS
-				}
-                209 = {
-					add_core_of = RUS
-				}
-                246 = {
-					add_core_of = RUS
-				}
-                244 = {
-					add_core_of = RUS
-				}
-                210 = {
-					add_core_of = RUS
-				}
-                207 = {
-					add_core_of = RUS
-				}
-                206 = {
-					add_core_of = RUS
-				}
-                204 = {
-					add_core_of = RUS
-				}
-                194 = {
-					add_core_of = RUS
-				}
-                241 = {
-					add_core_of = RUS
-				}
-                243 = {
-					add_core_of = RUS
-				}
-                242 = {
-					add_core_of = RUS
-				}
-                205 = {
-					add_core_of = RUS
-				}
-                224 = {
-					add_core_of = RUS
-				}
-                247 = {
-					add_core_of = RUS
-				}
-                219 = {
-					add_core_of = RUS
-				}
-                223 = {
-					add_core_of = RUS
-				}
-                222 = {
-					add_core_of = RUS
-				}
-		RUS = {
+        remove_ideas = SOV_revolution_1
+        add_ideas = SOV_CIVIL_WAR
+        set_country_flag = SOV_OCREVOLUTION
+        set_capital = {
+            state = 249
+            remember_old_capital = yes
+        }
+		hidden_effect = {
+		RUS = { 
+			inherit_technology = SOV
+			change_tag_from = SOV
 			transfer_state = 195
 			transfer_state = 208
-                        transfer_state = 263
+            transfer_state = 263
 			transfer_state = 209
-                        transfer_state = 246
-                        transfer_state = 244
-                        transfer_state = 210
-                        transfer_state = 207
+            transfer_state = 246
+            transfer_state = 244
+            transfer_state = 210
+            transfer_state = 207
 			transfer_state = 206
-                        transfer_state = 204
+            transfer_state = 204
 			transfer_state = 194
-                        transfer_state = 241
-                        transfer_state = 243
-                        transfer_state = 242
-                        transfer_state = 205
-                        transfer_state = 224
+            transfer_state = 241
+            transfer_state = 243
+            transfer_state = 242
+            transfer_state = 205
+            transfer_state = 224
 			transfer_state = 247
-                        transfer_state = 219
+            transfer_state = 219
 			transfer_state = 223
-                        transfer_state = 222
-                      }
-                 BAL = {
-			transfer_state = 13
-			transfer_state = 191
-                        transfer_state = 190
-			transfer_state = 12
-                        transfer_state = 189
-                        transfer_state = 11
-                        transfer_state = 784
-                        transfer_state = 96
-                      }
-                 KAZ = {
-			transfer_state = 587
+            transfer_state = 222
+			transfer_state = 96
+            }
+		BAL = {
+			drop_cosmetic_tag = yes
+			}
+		LIT = {
+			drop_cosmetic_tag = yes
+			}
+		BUK = {
+			country_event = {
+				id = TR_central_asia.2
+				days = 3		
+			}
+			}
+		STE = {
+			country_event = {
+			id = TR_central_asia.3
+			days = 3		
+			}
+		}
+        KAZ = {
+			inherit_technology = STE
+			transfer_state = 652
 			transfer_state = 406
-                        transfer_state = 407
+            transfer_state = 407
 			transfer_state = 402
-                        transfer_state = 404
-                        transfer_state = 586
-                        transfer_state = 589
-                        transfer_state = 404
-                        transfer_state = 588
-                        transfer_state = 590
-                        transfer_state = 583
-                      }
-                 UKR = {
-			transfer_state = 225
-			transfer_state = 221
-                        transfer_state = 227
-			transfer_state = 228
-                        transfer_state = 137
-                      }
-		
-
-	}
+            transfer_state = 402
+            transfer_state = 587
+            transfer_state = 583
+			transfer_state = 582
+			transfer_state = 893
+			country_event = {
+				id = TR_central_asia.1
+				days = 1		
+			}
+            }
+		}
+	    }
+		option = {
+			name = TR_russia.5.c
+					ai_chance = {
+				base = 0
+			}
+			end_puppet = BUK
+			end_puppet = KHI
+			end_puppet = STE
+			end_puppet = BAL
+			end_puppet = LIT
+			create_faction = "russianwhite_faction"
+			remove_ideas = SOV_revolution_1
+			add_ideas = SOV_CIVIL_WAR
+			set_country_flag = SOV_OCREVOLUTION
+			set_capital = {
+				state = 249
+				remember_old_capital = yes
+			}
+			hidden_effect = {
+			RUS = { 
+				inherit_technology = SOV
+				transfer_state = 195
+				transfer_state = 208
+				transfer_state = 263
+				transfer_state = 209
+				transfer_state = 246
+				transfer_state = 244
+				transfer_state = 210
+				transfer_state = 207
+				transfer_state = 206
+				transfer_state = 204
+				transfer_state = 194
+				transfer_state = 241
+				transfer_state = 243
+				transfer_state = 242
+				transfer_state = 205
+				transfer_state = 224
+				transfer_state = 247
+				transfer_state = 219
+				transfer_state = 223
+				transfer_state = 222
+				transfer_state = 96
+				}
+			BAL = {
+				drop_cosmetic_tag = yes
+				}
+			LIT = {
+				drop_cosmetic_tag = yes
+				}
+			BUK = {
+				country_event = {
+					id = TR_central_asia.2
+					days = 3		
+				}
+				}
+			STE = {
+				country_event = {
+					id = TR_central_asia.3
+					days = 3		
+				}
+				}
+			KAZ = {
+				inherit_technology = STE
+				change_tag_from = SOV
+				transfer_state = 652
+				transfer_state = 406
+				transfer_state = 407
+				transfer_state = 402
+				transfer_state = 402
+				transfer_state = 587
+				transfer_state = 583
+				transfer_state = 582
+				transfer_state = 893
+				country_event = {
+					id = TR_central_asia.1
+					days = 1		
+				}
+				}
+			}
+			}
 }
 
 country_event = {

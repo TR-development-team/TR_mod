@@ -48,6 +48,11 @@ CHI_ignore_claims = {
 	}
 	ai_strategy = {
 		type = ignore_claim
+		id = "SAN"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
 		id = "MIN"
 		value = 1
 	}

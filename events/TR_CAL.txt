@@ -113,6 +113,7 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
+		add_stability = -0.1
 		add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.2
@@ -149,6 +150,7 @@ country_event = {
 	
 	option = {
 		name = TR_California.4.a
+		add_stability = -0.2
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.3
@@ -156,6 +158,13 @@ country_event = {
 		set_politics = {
 			ruling_party = national_populist
 			elections_allowed = no
+		}
+		hidden_effect = {
+		    add_ideas = CAL_Shogun_Iesato
+			add_ideas = CAL_Gondo_Seikyo_GL
+			add_ideas = CAL_Saneatsu_Mushanokoji
+			add_ideas = CAL_Shimonaka_yasaburo
+			add_ideas = CAL_Tachibana_Kozaburo
 		}
 	}
 }
@@ -201,5 +210,111 @@ country_event = {
 			ruling_party = paternal_autocrat
 			elections_allowed = no
 		}
+	}
+}
+country_event = {
+	id = TR_California.6
+	title = TR_California.6.t
+	desc = TR_California.6.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_California.6.a
+		add_stability = 0.1
+	}
+}
+country_event = {
+	id = TR_California.7
+	title = TR_California.7.t
+	desc = TR_California.7.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_California.7.a
+		add_political_power = 50
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+	}
+}
+country_event = {
+	id = TR_California.8
+	title = TR_California.8.t
+	desc = TR_California.8.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_California.8.a
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		set_country_flag = CAL_Shogunate_2
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.1
+		}
+		add_ideas = CAL_Murofuse_Koshin
+	}
+	option = {
+		name = TR_California.8.b
+		ai_chance = {
+			base = 50
+		}
+		add_stability = -0.1
+		set_country_flag = CAL_Autonomy
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		hidden_effect = {
+		    add_ideas = CAL_Shogun_Iesato
+			add_ideas = CAL_Gondo_Seikyo_GL
+			add_ideas = CAL_Saneatsu_Mushanokoji
+			add_ideas = CAL_Shimonaka_yasaburo
+			add_ideas = CAL_Tachibana_Kozaburo
+		}
+	}
+}
+country_event = {
+	id = TR_California.9
+	title = TR_California.9.t
+	desc = TR_California.9.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		add_stability = -0.1
+		name = TR_California.9.a
+		add_political_power = -50
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+		add_ideas = CAL_Gondo_Seikyo
 	}
 }

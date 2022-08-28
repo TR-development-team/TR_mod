@@ -1,0 +1,37 @@
+
+state={
+	id=924
+	name="STATE_924"
+	manpower = 272934
+	
+	state_category = town
+	
+	resources={
+
+	}
+
+	history={
+		owner = BOL
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 1
+			12994 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = CHL
+		add_core_of = BOL
+		add_core_of = PRU
+		victory_points = {
+			12994 3 
+		}
+	}
+
+	local_supplies=0.0 
+provinces={
+		5146 8231 12994
+	}
+}

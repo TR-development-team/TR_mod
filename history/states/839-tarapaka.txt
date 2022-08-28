@@ -3,17 +3,17 @@ state={
 	name="STATE_839"
 	local_supplies=0.0 
 provinces={
-		5131 8217 8231 
+		5131 8217 
 	}
-	state_category=town
-	manpower=1000000
+	state_category=rural
+	manpower=200000
 	history={
 		owner = PRU
                 add_core_of = CHL
                 add_core_of = PRU
+                add_core_of = BOL
 		buildings = {
 			infrastructure = 2
-                        industrial_complex = 1
                         arms_factory = 1
 		}
 		

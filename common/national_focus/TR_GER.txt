@@ -222,7 +222,7 @@ focus_tree = {
 				create_unit = {
 					division = "division_template = \"Red Militia\" start_experience_factor = 0.1"
 					owner = GER
-					count = 5
+					count = 2
 				}
 			}
 			random_owned_controlled_state = {
@@ -230,7 +230,7 @@ focus_tree = {
 				create_unit = {
 					division = "division_template = \"Red Militia\" start_experience_factor = 0.1"
 					owner = GER
-					count = 5
+					count = 2
 				}
 			}
 		}
@@ -266,14 +266,6 @@ focus_tree = {
 			}
 			random_owned_controlled_state = {
 				prioritize = { 64 }
-				create_unit = {
-					division = "division_template = \"Red Infantry\" start_experience_factor = 0.1"
-					owner = GER
-					count = 2
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 51 }
 				create_unit = {
 					division = "division_template = \"Red Infantry\" start_experience_factor = 0.1"
 					owner = GER
@@ -495,7 +487,7 @@ focus_tree = {
 		cost = 10
         available = {
 			if = {
-				date > 1939.7.1
+				date > 1940.1.1
 			}
                 is_subject = no
                 has_government = radical_socialist

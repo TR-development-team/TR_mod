@@ -1,7 +1,7 @@
 ﻿capital = 113
 
 oob = "IRE_1936"
-
+set_cosmetic_tag = IRE_ENG
 set_research_slots = 3
 
 set_technology = {
@@ -11,13 +11,7 @@ set_technology = {
 }
 
 set_convoys = 10
-ENG = { 
-        set_autonomy = {
-		target = IRE
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-	}
-      }
+
 add_ideas = {
         acceptable_minimum_wage
         good_max_workhours
@@ -27,7 +21,12 @@ add_ideas = {
         good_pensions
         good_health_care
 }
-
+ENG = { 
+        set_autonomy = {
+		target = IRE
+		autonomous_state = autonomy_dominion
+	}
+      } 
 set_politics = {
 	ruling_party = social_conservative
 	last_election = "1933.1.24"
@@ -35,31 +34,23 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	social_democrat = 12
-	social_liberal = 12
-	market_liberal = 12
-	social_conservative = 64
+	totalist = 8
+	syndicalist = 5
+	radical_socialist = 3
+	social_democrat = 5
+	social_liberal = 21
+	market_liberal = 19
+	social_conservative = 14
+	authoritarian_democrat = 8
+	paternal_autocrat = 4
+	national_populist = 9
+        Gnosticism = 3
 }
 
-create_country_leader = {
-	name = "Éamon de Valera"
-	desc = "POLITICS_ÉAMON_DE_VALERA_DESC"
-	picture = "Portrait_Ireland_Eamon_de_Valera.dds"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = IRE_james_larkin
+recruit_character = IRE_william_norton
+recruit_character = IRE_eamon_de_valera
+recruit_character = IRE_William_Cosgrave
+recruit_character = IRE_eoin_oduffy
 
-
-create_corps_commander = {
-	name = "Michael Costello"
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
+recruit_character = IRE_michael_costello

@@ -73,69 +73,15 @@ set_popularities = {
 set_convoys = 100
 set_stability = 0.4
 
-        create_country_leader = {
-		name = "アルヴァロ・クニャル"
-		desc = ""
-		picture = "gfx/leaders/POR/Portrait_POR_Cunhal.tga"
-		expire = "1965.1.1"
-		ideology = totalist_subtype
-		traits = {
-			
-		}
-	}
-	create_country_leader = {
-		name = "ドゥアルテ2世"
-		desc = ""
-		picture = "gfx/leaders/POR/Portrait_Duarte_II.tga"
-		expire = "1965.1.1"
-		ideology = paternal_autocrat_subtype
-		traits = {
-		
-		}
-	}
-	
-	create_country_leader = {
-		name = "ベント・ゴンサルヴェス"
-		desc = "POLITICS_BENTO_GONCALVES_DESC"
-		picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-		expire = "1965.1.1"
-		ideology = radical_socialist_subtype
-		traits = {
-			
-		}
-	}
-	
-	create_country_leader = {
-		name = "アントニオ・サラザール"
-		desc = ""
-		picture = "gfx/leaders/POR/Portrait_POR_Salazar.tga"
-		expire = "1965.1.1"
-		ideology = national_populist_subtype
-		traits = {
-			
-		}
-	}
-	
+recruit_character = POR_Alvaro_Cunhal
+recruit_character = POR_bento_goncalves
+recruit_character = POR_Duarte_II
+recruit_character = POR_antonio_de_oliveira_salazar
 
-	
-
-
-
-
-	
-	
-	create_corps_commander = {
-		name = "José Vicente de Freitas"
-		portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-		traits = {  }
-		skill = 3
-	
-		attack_skill = 2
-		defense_skill = 3
-		planning_skill = 2
-		logistics_skill = 3
-	}
-
+recruit_character = POR_jose_vicente_de_freitas
+recruit_character = POR_luis_augusto_ferreira_martins
+recruit_character = POR_raul_augusto_esteves
+recruit_character = POR_jose_mendes_cabecadas
 ### VARIANTS ###
 # 1936 Start #
 if = {

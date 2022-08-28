@@ -1,0 +1,25 @@
+characters={
+	WGR_maurice_gamelin={
+		name=FRA_maurice_gamelin
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_FRA_Maurice_Gamelin.png"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Maurice_Gamelin.png"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+}

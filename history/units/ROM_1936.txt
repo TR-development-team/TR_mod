@@ -167,7 +167,6 @@ units = {
 		location = 9617
 		division_template = "Regimentul de Blindate"
 		start_experience_factor = 0.3
-		force_equipment_variants = { gw_tank_equipment = { owner = "ROM" creator = "FRA" amount = 72 } }
 
 	}
 
@@ -496,15 +495,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.24
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "ROM" 
-		}
-		requested_factories = 1
-		progress = 0.4
 		efficiency = 100
 	}
 }

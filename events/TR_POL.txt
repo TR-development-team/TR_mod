@@ -9,23 +9,23 @@ country_event = {
 	picture = GFX_report_event_france_parade
 
 
-        fire_only_once = yes
-        trigger = {
-                tag = POL
-                 
-		GER = { has_war_with = FRA }
+    fire_only_once = yes
+
+    trigger = {
+        tag = POL
+		GER = { has_war_with = DDR }
+		FRA = { owns_state = 28 }
 		is_subject = no
 	}
 
 	
 	option = { 
 		name = TR_poland.1.a
-                declare_war_on = {
+        declare_war_on = {
 			target = DDR
 			type = annex_everything
 		}
-                
-                GER = { country_event = TR_poland.2 }
+        GER = { country_event = TR_poland.2 }
 	}
 }
 
@@ -36,9 +36,8 @@ country_event = {
 	picture = GFX_report_event_france_parade
 
 
-        fire_only_once = yes
-
-        is_triggered_only = yes
+    fire_only_once = yes
+    is_triggered_only = yes
 	
 	option = { 
 		name = TR_poland.2.a

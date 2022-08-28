@@ -10,11 +10,11 @@ characters={
 			ideology=social_democrat_subtype
 		}
 	}
-	AUS_franz_josef_otto_von_habsburg={
-		name=AUS_franz_josef_otto_von_habsburg
+	AUS_Richard_Coudenhove_Kalergi={
+		name=AUS_Richard_Coudenhove_Kalergi
 		portraits={
 			civilian={
-				large="gfx/leaders/AUS/Portrait_AUS_otto1.tga"
+				large="gfx/leaders/AUS/Portait_AUS_Richard_Coudenhove_Kalergi.tga"
 			}
 		}
 		country_leader={
@@ -22,6 +22,14 @@ characters={
 		}
 		country_leader={
 			ideology=market_liberal_subtype
+		}
+	}
+	AUS_franz_josef_otto_von_habsburg={
+		name=AUS_franz_josef_otto_von_habsburg
+		portraits={
+			civilian={
+				large="gfx/leaders/AUS/Portrait_AUS_otto1.tga"
+			}
 		}
 		country_leader={
 			ideology=social_conservative_subtype
@@ -144,7 +152,7 @@ characters={
 		name=AUS_Adolf_Hitler
 		portraits={
 			army={
-				large="gfx/leaders/AUS/Portrai_AUS_Hitler.tga"
+				large="gfx/leaders/AUS/Portrait_AUS_Adolf_Hitler_2.png"
 			}
 		}
 		corps_commander={

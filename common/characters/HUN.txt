@@ -1,0 +1,166 @@
+characters={
+	HUN_matyas_rakosi={
+		name=HUN_matyas_rakosi
+		portraits={
+			civilian={
+				large="GFX_Portrait_hungary_matyas_rakosi"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HUN_arpad_szakasits={
+		name=HUN_arpad_szakasits
+		portraits={
+			civilian={
+				large="GFX_Portrait_hungary_arpad_szakasits"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	HUN_miklos_horthy={
+			name=HUN_miklos_horthy
+			portraits={
+				navy = { 
+					large = "gfx/leaders/HUN/Portrait_HUN_Horthy_Miklos.png"
+					small = "GFX_idea_HUN_miklos_horthy_admiral"
+				}
+				civilian={
+					large="gfx/leaders/HUN/Portrait_HUN_Horthy_Miklos.png"
+				}
+			}
+			country_leader={
+				ideology=authoritarian_democrat_subtype
+			}
+			country_leader={
+				ideology=paternal_autocrat_subtype
+			}
+	}
+
+	HUN_istvan_szechenyi={
+		name=HUN_istvan_szechenyi
+		portraits={
+			civilian={
+				large="GFX_Portrait_hungary_istvan_szechenyi"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			id=-1
+		}
+	}
+	HUN_Adolf_Hitler={
+		name=AUS_Adolf_Hitler
+		portraits={
+			civilian={
+				large="gfx/leaders/AUS/Portrait_AUS_Adolf_Hitler_2.png"
+			}
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+                        traits = { Stalin_traits }
+		}
+	}
+
+	HUN_geza_lakatos={
+		name=HUN_geza_lakatos
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_geza_lakatos"
+				small="GFX_idea_HUN_geza_lakatos"
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	HUN_ivan_hindy={
+		name=HUN_ivan_hindy
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_ivan_hindy"
+				small="GFX_idea_HUN_ivan_hindy"
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	HUN_karoly_beregfy={
+		name=HUN_karoly_beregfy
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_karoly_beregfy"
+				small="GFX_idea_HUN_karoly_beregfy"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	HUN_lajos_veress={
+		name=HUN_lajos_veress
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_lajos_veress"
+				small="GFX_idea_HUN_lajos_veress"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	HUN_ferenc_feketehalmyczeydner={
+		name=HUN_ferenc_feketehalmyczeydner
+		portraits={
+			army={
+				large="GFX_Portrait_hungary_ferenc_feketehalmy_czeydner"
+				small="GFX_idea_HUN_ferenc_feketehalmy_czeydner"
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+
+}

@@ -19,7 +19,6 @@ add_ideas = {
         good_health_care
 }
 set_research_slots = 3
-set_country_flag = monroe_doctrine
 set_stability = 0.8
 set_war_support = 0.1
 
@@ -62,15 +61,8 @@ if = {
 	}
 }
 
-if = { 
-	limit = { NOT = { has_dlc = "Together for Victory" } }
-	set_cosmetic_tag = CAN_ALY
-}
-if = {
-	limit = { has_dlc = "Together for Victory" }
-	set_cosmetic_tag = CAN_UK
 
-}
+set_cosmetic_tag = CAN_UK
 ENG = { 
         set_autonomy = {
 	  target = CAN
@@ -88,110 +80,36 @@ set_politics = {
 }
 
 set_popularities = {
-	social_democrat = 22
-	social_liberal = 35
-	market_liberal = 18
-	social_conservative = 25
+	totalist = 8
+	syndicalist = 5
+	radical_socialist = 3
+	social_democrat = 5
+	social_liberal = 31  
+	market_liberal = 19 
+	social_conservative = 15 
+	authoritarian_democrat = 3 
+	paternal_autocrat = 4
+	national_populist = 4 
+        Gnosticism = 3
 }
 
-create_country_leader = {
-	name = "マッケンジー・キング"
-	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "Portrait_Canada_Mackenzie_King.dds"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
+
+recruit_character = CAN_tim_buck
+recruit_character = CAN_j_s_woodsworth
+recruit_character = CAN_mackenzie_king
+recruit_character = CAN_adrien_arcand
+
+recruit_character = CAN_thomas_victor_anderson
+recruit_character = CAN_charles_foulkes
+recruit_character = CAN_percival_john_montague
+recruit_character = CAN_bert_hoffmeister
+recruit_character = CAN_leonard_w_murray
+recruit_character = CAN_ht_bailliegrohman
+recruit_character = CAN_james_d_prentice
+recruit_character = CAN_harry_dewolf
 
 set_convoys = 100
 set_stability = 0.75
-
-create_corps_commander = {
-	name = "Thomas Victor Anderson"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  }
-	skill = 4
-    attack_skill = 2
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 5
-}
-
-create_field_marshal = {
-	name = "Charles Foulkes"
-	gfx = "GFX_CAN_charles_foulkes"
-	traits = { }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 4
-    logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Percival John Montague"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { }
-	skill = 3
-    attack_skill = 1
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 5
-}
-create_corps_commander = {
-	name = "Bert Hoffmeister"
-	gfx = "GFX_CAN_bert_hoffmeister"
-	traits = { hill_fighter }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
-}
-
-create_navy_leader = {
-	name = "Leonard W. Murray"
-	gfx = "GFX_CAN_leonard_warren_murray"
-	traits = { }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-
-create_navy_leader = {
-	name = "H.T. Baillie-Grohman"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
-create_navy_leader = {
-	name = "James D. Prentice"
-	gfx = "GFX_CAN_james_prentice"
-	traits = { spotter }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-create_navy_leader = {
-	name = "Harry DeWolf"
-	gfx = "GFX_CAN_harry_dewolf"
-	traits = { superior_tactician bold }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 5
-}
 
 ### VARIANTS ###
 # 1936 Start #

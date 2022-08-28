@@ -93,10 +93,8 @@
                      
 			picture = generic_purge
 			removal_cost = -1
-                        research_bonus = {
-				land_doctrine = -0.5
-			}
-			modifier = {
+			modifier = { 
+                                land_doctrine_cost_factor = 0.5
                                 army_org_factor = -0.3
                                 production_speed_buildings_factor = -0.15
 			}
@@ -111,10 +109,8 @@
 			removal_cost = -1
                      
 			picture = SPR_disbanded_army
-			research_bonus = {
-				land_doctrine = -1.0
-			}
 			modifier = {
+                                land_doctrine_cost_factor = 1.0
                                 war_support_factor = -0.5
 				conscription_factor = -0.75
                                 army_org_factor = -0.9
@@ -129,13 +125,11 @@
 
 			
 			removal_cost = -1
-                        research_bonus = {
-				land_doctrine = -0.3
-			}
                      
 			picture = generic_army_problems
 			removal_cost = -1
 			modifier = {
+                                land_doctrine_cost_factor = 0.3
 				conscription_factor = -0.25
                                 army_org_factor = -0.1
 			}
@@ -385,13 +379,11 @@
 
 			
 			removal_cost = -1
-                        research_bonus = {
-				land_doctrine = 0.1
-			}
                      
 			picture = tur_kemalist_officers
 			removal_cost = -1
-			modifier = {
+			modifier = {    
+                                land_doctrine_cost_factor = -0.1
                                 army_org_factor = 0.1
                                 army_attack_factor = 0.1
 			}

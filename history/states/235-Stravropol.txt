@@ -4,21 +4,21 @@ state={
 	name="STATE_235"
 	manpower = 1316516
 	
-	state_category = rural
+	state_category = town
 	resources={
 		chromium=14 # was: 20
 	}
 
 	history={
-		owner = SOV
+		owner = KAV
+		add_core_of = KAV
 		buildings = {
 			infrastructure = 2
 			air_base = 2
+			arms_factory = 1
 		}
-		add_core_of = SOV
-                add_core_of = RUS
 		victory_points = {
-			11696 3
+			11696 5
 		}
 	}
 

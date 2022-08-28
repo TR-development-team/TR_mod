@@ -81,27 +81,7 @@ set_popularities = {
 	authoritarian_democrat = 15
 	paternal_autocrat = 45
 }
+recruit_character = PER_soleyman_mirza_eskandari
+recruit_character = PER_Reza_Shah_Pahlavi
 
-create_country_leader = {
-	name = "Reza Shah Pahlavi"
-	desc = "POLITICS_REZA_SHAH_PAHLAVI_DESC"
-	picture = "Portrait_Iran_Reza_Shah_Pahlavi.dds"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
-
-
-
-create_corps_commander = {
-	name = "Hasan Arfa"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	traits = {  desert_fox }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = PER_hasan_arfa

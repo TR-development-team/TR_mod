@@ -86,10 +86,10 @@ units= {
 	### Black Sea Fleet -- Sevastopol
 	fleet = {
 		name = "Chernomorskiy Flot"
-		naval_base = 3686 # Sevastopopl
+		naval_base = 9417
 		task_force = {				
 			name = "Chernomorskiy Flot"
-			location = 3686 # Sevastopopl
+			location = 9417
 			ship = { name = "Parizhskaya Kommuna" definition = battleship equipment = { battleship_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Krasni Kavkaz" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
 			ship = { name = "Krasny Krym" definition = light_cruiser equipment = { light_cruiser_1 = { amount = 1 owner = SOV } } }
@@ -98,7 +98,7 @@ units= {
 		}	
 		task_force = {	
 			name = "Chernomorskiy Podvodniy Flot"
-			location = 3686 # Sevastopopl
+			location = 9417
 			# 9iy Podvodniy Flot
 			ship = { name = "Shch-121" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			
 			ship = { name = "Shch-122" definition = submarine equipment = { submarine_1 = { amount = 1 owner = SOV } } }			

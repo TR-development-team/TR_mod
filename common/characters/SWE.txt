@@ -38,6 +38,20 @@ characters={
 			id=-1
 		}
 	}
+	SWE_Arvid_Lindman={
+		name=SWE_Arvid_Lindman
+		portraits={
+			civilian={
+				large="gfx/leaders/SWE/Portrait_SWE_Arvid_Lindman.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+	}
 	SWE_sven_olov_lindholm={
 		name=SWE_sven_olov_lindholm
 		portraits={

@@ -1,0 +1,113 @@
+characters={
+	FIN_aimo_aaltonen={
+		name=FIN_aimo_aaltonen
+		portraits={
+			civilian={
+				large=GFX_portrait_FIN_aimo_aaltonen
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FIN_kyosti_kallio={
+		name=FIN_kyosti_kallio
+		portraits={
+			civilian={
+				large=GFX_portrait_FIN_kyosti_kallio
+			}
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FIN_risto_heikki_ryti={
+		name=FIN_risto_heikki_ryti
+		portraits={
+			civilian={
+				large="gfx/leaders/FIN/Portrait_FIN_Risto_Ryti.png"
+			}
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FIN_vilho_annala={
+		name=FIN_vilho_annala
+		portraits={
+			civilian={
+				large=GFX_portrait_FIN_vilho_annala
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+	FIN_carl_mannerheim={
+		name=FIN_carl_mannerheim
+		portraits={
+			army={
+				large=GFX_portrait_FIN_carl_mannerheim
+				small="GFX_idea_carl_mannerheim"
+			}
+		}	
+		field_marshal={
+			traits={ inflexible_strategist trait_cautious war_hero trickster winter_specialist defensive_doctrine }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=58
+		}
+	}
+
+	FIN_erik_heinrichs={
+		name=FIN_erik_heinrichs
+		portraits={
+			army={
+				large=GFX_portrait_FIN_erik_heinrichs
+				small=GFX_portrait_FIN_erik_heinrichs_small
+			}
+		}
+		corps_commander={
+			traits={ winter_specialist ranger }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	FIN_vilho_petter_nenonen={
+		name=FIN_vilho_petter_nenonen
+		portraits={
+			army={
+				large=GFX_portrait_FIN_vilho_petter_nenonen
+				small=GFX_portrait_FIN_vilho_petter_nenonen_small
+			}
+		}
+		corps_commander={
+			traits={ commando winter_specialist }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

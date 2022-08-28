@@ -12,8 +12,11 @@ provinces={
                 add_claim_by = CHI
 		buildings = {
 			infrastructure = 2
-                        4205 = {
+			4205 = {
 				naval_base = 4
+				coastal_bunker = 1
+				bunker = 1
+
 			}
 		}
 		

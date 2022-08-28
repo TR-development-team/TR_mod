@@ -4,17 +4,17 @@ state = {
 	name = "STATE_901" #Khiva
 
 	history = {
-	
+		owner = KHI
+		add_core_of = KHI
+		add_core_of = UZB
 		victory_points = {
-			12465 1
+			12465 5
 		}
-		owner = UZB
 		buildings = {
 			infrastructure = 2
-
+			industrial_complex = 1
+                        arms_factory = 1
 		}
-		
-		add_core_of = UZB
 	}
 
 	provinces = {
@@ -23,7 +23,7 @@ state = {
 	
 	manpower = 258430
 	buildings_max_level_factor = 1.000
-	state_category = rural
+	state_category = city
 
 	local_supplies = 0.0 
 }

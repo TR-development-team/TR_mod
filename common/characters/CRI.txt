@@ -1,0 +1,29 @@
+characters={
+	CRI_ilyas_tarkhan = {
+		name = CRI_ilyas_tarkhan
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Ilyas_Tarkhan
+			}
+		}
+		country_leader = {
+			ideology = radical_socialist_subtype
+			id = -1
+		}
+	}
+	CRI_Noman_Chelebicihan = {
+		name = CRI_Noman_Chelebicihan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CRI/Portrait_CRI_Noman_Chelebicihan.png"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+	}
+}
+	

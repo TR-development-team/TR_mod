@@ -15,12 +15,16 @@ country_event = {
 	
 	option = { 
 		name = TR_france.1.a
-		declare_war_on = {
-			target = GER
-			type = annex_everything
-		}
-                add_named_threat = { threat = 10 name = FRA_GERMANCIVILWAR }
+                add_named_threat = { threat = 5 name = FRA_GERMANCIVILWAR }
+                       FRA = {
+			transfer_state = 28
+                      }
                 hidden_effect = {
+                         country_event = {
+					id = TR_Germany.9
+					days = 1
+					
+				}
                          country_event = {
 					id = TR_news.6
 					days = 2
@@ -46,6 +50,7 @@ country_event = {
                 ai_chance = {
 			base = 100
 		}
+		set_global_flag = FRA_RUS_Friendship
                 add_political_power = -50
                 reverse_add_opinion_modifier = {
 				target = SOV
@@ -59,6 +64,7 @@ country_event = {
                 ai_chance = {
 			base = 0
 		}
+		set_global_flag = FRA_RUS_Friendship
                reverse_add_opinion_modifier = {
 				target = SOV
 				modifier = SOV_FRA_SUPPORT_DENY
@@ -123,10 +129,10 @@ country_event = {#トルコが同盟を提案
 
 	}
 }
-country_event = {#ダダ
-	id = TR_france.98
-	title = TR_france.98.t
-	desc = TR_france.98.d
+country_event = {#フランス王国摂政評議会
+	id = TR_france.5
+	title = TR_france.5.t
+	desc = TR_france.5.d
 	picture = GFX_report_event_generic_lend_lease
 
 
@@ -135,32 +141,21 @@ country_event = {#ダダ
 
 	
 	option = { 
-		name = TR_france.98.a
-                ai_chance = {
-			base = 99
-		}
-                add_political_power = 5
-
-	}
-        option = { 
-		name = TR_france.98.b
-                ai_chance = {
-			base = 1
-		}
-                add_stability = -0.1
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
-		}
-
+		name = TR_france.5.a
+			country_event = {
+				id = TR_france.6
+				days = 7
+				
+			}
+                
 
 	}
 }
-country_event = {#ダダ
-	id = TR_france.99
-	title = TR_france.99.t
-	desc = TR_france.99.d
-	picture = GFX_report_event_generic_lend_lease
+country_event = {#第三回フランス王国摂政評議会
+	id = TR_france.6
+	title = TR_france.6.t
+	desc = TR_france.6.d
+	picture = GFX_report_event_Chambre_des_Deputes.png
 
 
         fire_only_once = yes
@@ -168,38 +163,171 @@ country_event = {#ダダ
 
 	
 	option = { 
-		name = TR_france.99.a
-                ai_chance = {
-			base = 90
+		name = TR_france.6.a
+		ai_chance = {
+			base = 37
 		}
-                add_political_power = 5
+		country_event = {
+			id = TR_france.7
+			days = 3
+			
+		}
+                
 
 	}
-        option = { 
-		name = TR_france.99.b
-                ai_chance = {
-			base = 10
+	option = { 
+		name = TR_france.6.b
+		ai_chance = {
+			base = 33
 		}
-                add_stability = -0.2
-                add_political_power = -50
-                set_politics = {
-			ruling_party = Gnosticism
+		country_event = {
+			id = TR_france.8
+			days = 3
+			
+		}
+                
+
+	}
+	option = { 
+		name = TR_france.6.c
+		ai_chance = {
+			base = 30
+		}
+		country_event = {
+			id = TR_france.9
+			days = 3
+			
+		}
+                
+
+	}
+}
+country_event = {#シャルル・モーラス内閣
+	id = TR_france.7
+	title = TR_france.7.t
+	desc = TR_france.7.d
+	picture = GFX_report_event_Chambre_des_Deputes
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.7.a
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		hidden_effect = { 
+			add_ideas = FRA_maurras
+			add_ideas = FRA_Maurice_Pujo
+			add_ideas = FRA_Leon_Daudet
+			add_ideas = FRA_Marie_de_Roux
+		}
+		set_country_flag = FRA_AF_has_power
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_france.10
+		    	days = 100
+			
+		    }
+			country_event = {
+				id = TR_news.44
+				days = 2
+				
+			}
+	    }
+	}
+}
+country_event = {#ジャック・ドリオ内閣
+	id = TR_france.8
+	title = TR_france.8.t
+	desc = TR_france.8.d
+	picture = GFX_report_event_Chambre_des_Deputes
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.8.a
+		hidden_effect = { 
+			add_ideas = FRA_Jacques_Doriot
+			add_ideas = FRA_Philippe_Henriot
+			add_ideas = FRA_Pierre_Taittinger
+			add_ideas = FRA_Xavier_Vallat
+		}
+		set_politics = {
+			ruling_party = national_populist
 			elections_allowed = no
 		}
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.1
+        add_popularity = {
+			ideology = national_populist
+			popularity = 0.2
 		}
-                set_country_flag = FRA_DADADADA
-
-
+		set_country_flag = FRA_PPF_has_power
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_france.10
+		    	days = 100
+			
+		    }
+			country_event = {
+				id = TR_news.45
+				days = 2
+				
+			}
+	    }
 	}
 }
+country_event = {#マルセル・デア内閣
+	id = TR_france.9
+	title = TR_france.9.t
+	desc = TR_france.9.d
+	picture = GFX_report_event_Chambre_des_Deputes
 
-country_event = {#ダダ
-	id = TR_france.100
-	title = TR_france.100.t
-	desc = TR_france.100.d
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.9.a
+		hidden_effect = { 
+		    add_ideas = FRA_marcel_deat
+			add_ideas = FRA_Georges_Albertini
+			add_ideas = FRA_Gabriel_Lafaye
+			add_ideas = FRA_Eugene_Deloncle
+		}
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+        add_popularity = {
+			ideology = totalist
+			popularity = 0.2
+		}
+		set_country_flag = FRA_RNP_has_power
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_france.10
+		    	days = 100
+			
+		    }
+			country_event = {
+				id = TR_news.46
+				days = 2
+				
+			}
+	    }
+}
+}
+country_event = {#経済戦争
+	id = TR_france.10
+	title = TR_france.10.t
+	desc = TR_france.10.d
 	picture = GFX_report_event_generic_lend_lease
 
 
@@ -208,9 +336,658 @@ country_event = {#ダダ
 
 	
 	option = { 
-		name = TR_france.100.a
-                add_ideas = FRA_DADAISM
-         
+		name = TR_france.10.a
+		set_country_flag = FRA_Economy_Reform
 	}
+}
+country_event = {#最高司令部の設立
+	id = TR_france.11
+	title = TR_france.11.t
+	desc = TR_france.11.d
+	picture = GFX_report_event_generic_lend_lease
 
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.11.a
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = FRA_de_Gaulle_plan
+        add_ideas = FRA_Charles_de_Gaulle_coa
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+	option = { 
+		name = TR_france.11.b
+		ai_chance = {
+			base = 30
+		}
+		set_country_flag = FRA_Tassigny_plan
+		add_ideas = FRA_Lattre_de_Tassigny
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.25
+			uses = 2
+			category = land_doctrine
+		}
+	}
+	option = { 
+		name = TR_france.11.c
+		ai_chance = {
+			base = 30
+		}
+		set_country_flag = FRA_Huntziger_plan
+		add_ideas = FRA_Charles_Huntziger 
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.1
+			uses = 3
+			category = land_doctrine
+		}
+	}
+}
+country_event = {#米仏同盟(アメリカで起こる)
+	id = TR_france.12
+	title = TR_france.12.t
+	desc = TR_france.12.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.12.a
+		ai_chance = {
+		    base = 75
+			modifier = {
+				factor = 2
+				has_government = national_populist
+			}
+		}
+		every_country = {
+			limit = {
+				is_in_faction_with = USA
+				is_subject = no
+			}
+			USA = {
+				remove_from_faction = PREV
+			}
+			FRA = {
+				add_to_faction = PREV
+			}
+		}
+		USA = {
+			dismantle_faction = yes
+		}
+		hidden_effect = {
+		    FRA = { 
+				country_event = {
+		    	id = TR_france.13
+		    	days = 1
+			}
+		    }
+	    }
+	}
+	option = { 
+		name = TR_france.12.b
+		ai_chance = {
+			base = 25
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = medium_decrease
+		}
+	}
+}
+country_event = {#米仏同盟合意
+	id = TR_france.13
+	title = TR_france.13.t
+	desc = TR_france.13.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.13.a
+		add_political_power = 20
+	}
+}
+country_event = {#オランダとの外交
+	id = TR_france.14
+	title = TR_france.14.t
+	desc = TR_france.14.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	option = { 
+		name = TR_france.14.a
+		ai_chance = {
+			base = 70
+		}
+		HOL = { 
+			country_event = {
+			id = TR_france.15
+			days = 1
+		}
+		}
+	}
+	option = { 
+		name = TR_france.14.b
+		ai_chance = {
+			base = 29
+		}
+		give_guarantee = HOL
+		add_opinion_modifier = {
+			target = HOL
+			modifier = medium_increase
+		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = medium_decrease
+		}
+	}
+	option = { 
+		name = TR_france.14.c
+		ai_chance = {
+			base = 1
+		}
+		create_wargoal = {
+			target = HOL
+			type = annex_everything
+		}
+		add_political_power = -100
+		add_stability = -0.05
+		add_war_support = -0.1
+	}
+}
+country_event = {#フランスが同盟を提案(オランダ)
+	id = TR_france.15
+	title = TR_france.15.t
+	desc = TR_france.15.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.15.a
+		ai_chance = {
+		    base = 75
+			modifier = {
+				factor = 2
+				has_government = national_populist
+			}
+		}
+		FRA = {
+			add_to_faction = HOL
+		}
+	}
+	option = { 
+		name = TR_france.15.b
+		ai_chance = {
+			base = 25
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = medium_decrease
+		}
+	}
+}
+country_event = {#ロマンディ分離運動
+	id = TR_france.16
+	title = TR_france.16.t
+	desc = TR_france.16.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.16.a
+		ai_chance = {
+		    base = 99
+		}
+		add_political_power = -20
+		add_manpower = -1000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+		}
+		925 = {
+			add_core_of = FRA
+		}
+		SWI = { 
+			country_event = {
+			id = TR_france.17
+			days = 3
+		}
+		}
+
+
+    }
+	option = { 
+		name = TR_france.16.b
+		ai_chance = {
+			base = 1
+		}
+		add_war_support = -0.05
+	}
+}
+country_event = {#ロマンディ蜂起！
+	id = TR_france.17
+	title = TR_france.17.t
+	desc = TR_france.17.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.17.a
+		add_political_power = -30
+		add_manpower = -500
+		FRA = { 
+			country_event = {
+			id = TR_france.18
+			days = 1
+		    }
+	    }
+    }
+}
+country_event = {#ロマンディ蜂起！-フランスの対応
+	id = TR_france.18
+	title = TR_france.18.t
+	desc = TR_france.18.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.18.a
+		ai_chance = {
+		    base = 60
+		}
+		SWI = { 
+			country_event = {
+			id = TR_france.19
+			days = 1
+		    }
+	    }
+    }
+	option = { 
+		name = TR_france.18.b
+		ai_chance = {
+		    base = 80
+		}
+		SWI = { 
+			country_event = {
+			id = TR_france.20
+			days = 1
+		    }
+	    }
+    }
+	option = { 
+		name = TR_france.18.c
+		ai_chance = {
+		    base = 3
+		}
+		SWI = { 
+			country_event = {
+			id = TR_france.21
+			days = 1
+		    }
+	    }
+    }
+}
+country_event = {#フランスの恫喝-ロマンディ割譲要求
+	id = TR_france.19
+	title = TR_france.19.t
+	desc = TR_france.19.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.19.a
+		ai_chance = {
+			base = 50
+		}
+		add_political_power = -100
+		add_stability = -0.1
+		FRA = { 
+			country_event = {
+			id = TR_france.22
+			days = 1
+		    }
+	    }
+    }
+	option = { 
+		name = TR_france.19.b
+		ai_chance = {
+			base = 47
+		}
+		trigger = {
+            ITA = { is_faction_leader = yes has_war = no } 
+		}
+		ITA = { 
+			country_event = {
+			id = TR_france.23
+			days = 1
+		    }
+	    }
+    }
+	option = { 
+		name = TR_france.19.c
+		ai_chance = {
+			base = 3
+		}
+		FRA = { 
+			country_event = {
+			id = TR_france.24
+			days = 1
+		    }
+	    }
+    }
+}
+country_event = {#フランスの恫喝-ロマンディと従属を要求
+	id = TR_france.20
+	title = TR_france.20.t
+	desc = TR_france.20.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.20.a
+		ai_chance = {
+			base = 30
+		}
+		add_political_power = -300
+		add_stability = -0.3
+		FRA = { 
+			country_event = {
+			id = TR_france.25
+			days = 1
+		    }
+	    }
+    }
+	option = { 
+		name = TR_france.20.b
+		ai_chance = {
+			base = 60
+		}
+		trigger = {
+            ITA = { is_faction_leader = yes }
+		}
+		ITA = { 
+			country_event = {
+			id = TR_france.26
+			days = 1
+		    }
+	    }
+    }
+	option = { 
+		name = TR_france.20.c
+		ai_chance = {
+			base = 30
+		}
+		FRA = { 
+			country_event = {
+			id = TR_france.24
+			days = 1
+		    }
+	    }
+    }
+}
+country_event = {#フランスが同盟を提案
+	id = TR_france.21
+	title = TR_france.21.t
+	desc = TR_france.21.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.21.a
+		ai_chance = {
+			base = 97
+		}
+		add_political_power = -50
+		add_stability = -0.05
+		FRA = {
+			add_to_faction = SWI
+		}
+    }
+	option = { 
+		name = TR_france.21.b
+		ai_chance = {
+			base = 3
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = medium_decrease
+		}
+    }
+}
+country_event = {#スイスがロマンディを割譲
+	id = TR_france.22
+	title = TR_france.22.t
+	desc = TR_france.22.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.22.a
+		FRA = {
+			transfer_state = 925
+            }
+			add_opinion_modifier = {
+				target = SWI
+				modifier = large_decrease
+			}
+    }
+}
+country_event = {#スイスが仲裁を要請
+	id = TR_france.23
+	title = TR_france.23.t
+	desc = TR_france.23.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.23.a
+		ai_chance = {
+			base = 60
+		}
+			add_opinion_modifier = {
+				target = SWI
+				modifier = large_decrease
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = medium_increase
+			}
+			FRA = { 
+				country_event = {
+				id = TR_france.22
+				days = 1
+				}
+			}
+    }
+	option = { 
+		name = TR_france.23.b
+		ai_chance = {
+			base = 20
+		}
+		ITA = {
+			add_to_faction = SWI
+		}
+			add_opinion_modifier = {
+				target = SWI
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = large_decrease
+			}
+			FRA = { 
+				country_event = {
+				id = TR_france.24
+				days = 1
+				}
+			}
+    }
+}
+country_event = {#スイスが拒否！
+	id = TR_france.24
+	title = TR_france.24.t
+	desc = TR_france.24.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.24.a
+		trigger = {
+            NOT = {ITA = { is_in_faction_with = SWI } }
+		}
+		create_wargoal = {
+			target = SWI
+			type = annex_everything
+		}
+    }
+	option = { 
+		name = TR_france.24.b
+		trigger = {
+            ITA = { is_in_faction_with = SWI }
+		}
+		set_global_flag = FRA_ITA_rival
+		add_opinion_modifier = {
+			target = SWI
+			modifier = large_decrease
+		}
+		add_opinion_modifier = {
+			target = ITA
+			modifier = large_decrease
+		}
+    }
+}
+country_event = {#スイスが屈服！
+	id = TR_france.25
+	title = TR_france.25.t
+	desc = TR_france.25.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.25.a        
+        puppet = SWI
+		FRA = {
+			transfer_state = 925
+            }
+
+    }
+}
+country_event = {#スイスが仲裁を要請
+	id = TR_france.26
+	title = TR_france.26.t
+	desc = TR_france.26.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.26.a
+		ai_chance = {
+			base = 20
+		}
+			add_opinion_modifier = {
+				target = SWI
+				modifier = large_decrease
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = medium_increase
+			}
+			FRA = { 
+				country_event = {
+				id = TR_france.25
+				days = 1
+				}
+			}
+    }
+	option = { 
+		name = TR_france.26.b
+		ai_chance = {
+			base = 60
+		}
+		ITA = {
+			add_to_faction = SWI
+		}
+			add_opinion_modifier = {
+				target = SWI
+				modifier = large_increase
+			}
+			add_opinion_modifier = {
+				target = FRA
+				modifier = large_decrease
+			}
+			FRA = { 
+				country_event = {
+				id = TR_france.24
+				days = 1
+				}
+			}
+    }
 }

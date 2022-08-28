@@ -3,7 +3,8 @@ state={
 	name="STATE_589"
 
 	history={
-		owner = SOV
+		owner = STE
+		add_core_of = STE
 		add_core_of = KAZ
 		buildings = {
 			infrastructure = 2
@@ -11,13 +12,6 @@ state={
 
 		}
 		
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 1
-
-			}
-
-		}
 		victory_points = {
 			1668 1
 		}
@@ -29,5 +23,5 @@ provinces={
 	}
 	manpower=535191
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 }

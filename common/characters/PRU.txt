@@ -1,0 +1,55 @@
+characters={
+	PRU_Jose_Carlos_Mariategui={
+		name=PRU_Jose_Carlos_Mariategui
+		portraits={
+			civilian={
+				large="gfx/leaders/PRU/Portrait_PRU_Jose_Carlos_Mariategui.png"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+			id=-1
+		}
+	}
+	PRU_sebastian_lynch={
+		name=PRU_sebastian_lynch
+		portraits={
+			civilian={
+				large=GFX_portrait_Sebastian_Lynch
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+			id=-1
+		}
+	}
+
+
+	PRU_Oscar_benavides={
+		name=PRU_Oscar_benavides
+		portraits={
+			civilian={
+				large="GFX_Portrait_peru_oscar_benavides"
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PRU_manuel_prado_ugarteche={
+		name=PRU_manuel_prado_ugarteche
+		portraits={
+			civilian={
+				large=GFX_portrait_Manuel_Prado_Ugarteche
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

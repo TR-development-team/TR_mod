@@ -1,0 +1,22 @@
+characters={
+	HYD_osman_ali_khan={
+		name=HYD_osman_ali_khan
+		portraits={
+			civilian={
+				large="gfx/leaders/HYD/Portrait_HYD_osman_ali_khan.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+}

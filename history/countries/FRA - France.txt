@@ -1,6 +1,19 @@
 ﻿capital = 16
 
-oob = "FRA_1936"
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "FRA_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "FRA_1936_nsb"
+}
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "FRA_1936_naval_mtg"
@@ -16,7 +29,8 @@ set_stability = 0.5
 starting_train_buffer = 1
 create_faction = FRENCH_FACTION
 add_to_faction = FRA
-
+add_to_faction = FNA
+country_event = { id = TR_france.5 days = 3 }
 country_event = { id = TR_france.1 days = 45 }
 
 # Starting tech
@@ -131,23 +145,23 @@ set_convoys = 300
 
 
 set_politics = {
-	ruling_party = national_populist
+	ruling_party = paternal_autocrat
 	last_election = "1935.11.15"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 8
+	totalist = 16
 	syndicalist = 8
 	radical_socialist = 0
 	social_democrat = 5
-	social_liberal = 7
-	market_liberal = 10
+	social_liberal = 4
+	market_liberal = 5
 	social_conservative = 9
-	authoritarian_democrat = 0
-	paternal_autocrat = 5
-	national_populist = 32
-        Gnosticism = 16
+	authoritarian_democrat = 3
+	paternal_autocrat = 23
+	national_populist = 19
+        Gnosticism = 8
 }
 
 add_ideas = {
@@ -164,31 +178,30 @@ add_ideas = {
             FRA_Maurice_Pujo
             FRA_marcel_deat_Eco
             FRA_Jacques_Doriot_Int 
-            FRA_Maxime_Weygand
+            FRA_Maurice_Gamelin_cos
             FRA_francois_de_larocque_carm
             FRA_Francois_Darlan
             FRA_jean_mermoz
             FRA_revenge
             FRA_black_thursday
 }
-
-recruit_character = FRA_maurice_thorez
+recruit_character = FRA_marcel_deat
 recruit_character = FRA_albert_camus
+recruit_character = FRA_maurice_thorez
 recruit_character = FRA_Jean_Paul_Sartre
 recruit_character = FRA_leon_blum
 recruit_character = FRA_edouard_daladier
 recruit_character = FRA_pierre_laval
-recruit_character = FRA_JEAN_III
+recruit_character = FRA_francois_de_larocque_1
 recruit_character = FRA_Charles_Maurras
+recruit_character = FRA_Jacques_Doriot
 recruit_character = FRA_Tristan_Tzara
 
-recruit_character = FRA_Jacques_Doriot
-recruit_character = FRA_marcel_deat
+recruit_character = FRA_Jean_dOrleans
 
 recruit_character = FRA_maurice_gamelin
 recruit_character = FRA_maxime_weygand
 recruit_character = FRA_Maurice_Pujo
-recruit_character = FRA_francois_de_larocque
 recruit_character = FRA_jean_de_lattre_de_tassigny
 recruit_character = FRA_alphonse_juin
 recruit_character = FRA_alphonse_georges
@@ -200,7 +213,6 @@ recruit_character = FRA_Marc_Augier
 recruit_character = FRA_Marcel_Bucard
 recruit_character = FRA_henri_giraud
 recruit_character = FRA_charles_huntziger
-recruit_character = FRA_alphonse_georges
 recruit_character = FRA_gastonhenri_billotte
 recruit_character = FRA_henry_freydenberg
 recruit_character = FRA_rene_olry

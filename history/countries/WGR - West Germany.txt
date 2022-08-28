@@ -128,27 +128,7 @@ add_ideas = {
        Colonical_system
 }
 
-create_country_leader = {
-	name = "ハインリヒ・ヒムラー"
-	desc = "POLITICS_HIMMLER_DESC"
-	picture = "gfx/leaders/GER/Portrait_GER_Himmler.tga"
-	expire = "1965.1.1"
-	ideology = Gnosticism_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "マキシム・ウェイガン"
-	desc = ""
-	picture = "gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		
-	}
-}
+recruit_character = WGR_maurice_gamelin
 
 
 ### Ship Variants ###

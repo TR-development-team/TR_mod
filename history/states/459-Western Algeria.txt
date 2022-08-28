@@ -10,7 +10,8 @@ state={
 	}
 
 	history={
-		owner = FRA
+		owner = FNA
+		add_core_of = FNA
 		add_core_of = ALG
 
 		victory_points = {
@@ -22,6 +23,9 @@ state={
 		buildings = {
 			infrastructure = 2
 			air_base = 5
+			industrial_complex = 1
+                        arms_factory = 1
+			dockyard = 1
 			1145 = {
 				naval_base = 2
 			}

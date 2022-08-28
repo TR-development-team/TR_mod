@@ -85,8 +85,7 @@ units = {
 		}
 		location = 3273
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "52nd 'Lowland' Infantry Division"
@@ -96,17 +95,14 @@ units = {
 		}
 		location = 9392
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
+		start_experience_factor = 0.3
 	}
 	#Northern Command
 	division= {	
 		name = "5th Cavalry Brigade"
 		location = 11297
 		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "5th Infantry Division"
@@ -125,8 +121,7 @@ units = {
 		}
 		location = 9397
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "49th 'West Riding' Infantry Division"
@@ -136,8 +131,7 @@ units = {
 		}
 		location = 11218
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	#Eastern Command
@@ -157,8 +151,7 @@ units = {
 		}
 		location = 11221
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "54th 'East Anglia' Infantry Division"
@@ -168,8 +161,7 @@ units = {
 		}
 		location = 3287
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	#Western Command	
@@ -177,8 +169,7 @@ units = {
 		name = "6th Cavalry Brigade"
 		location = 407
 		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "42nd 'East Lancashire' Infantry Division"
@@ -188,8 +179,7 @@ units = {
 		}
 		location = 6318
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "53rd 'Welsh' Infantry Division"
@@ -199,8 +189,7 @@ units = {
 		}
 		location = 311
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "55th 'West Lancashire' Infantry Division"
@@ -210,8 +199,7 @@ units = {
 		}
 		location = 6384
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	#Southern Command
@@ -237,8 +225,7 @@ units = {
 		}
 		location = 3369
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "48th 'South Midland' Infantry Division"
@@ -248,8 +235,7 @@ units = {
 		}
 		location = 6351
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	
@@ -259,8 +245,7 @@ units = {
 		name = "Gibraltar Defense Force"
 		location = 4135
 		division_template = "Colonial Garrison"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		start_experience_factor = 0.3
 
 	}
 	
@@ -269,11 +254,10 @@ units = {
 		name = "Malta Command"
 		location = 12003
 		division_template = "Colonial Garrison"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.15
+		start_experience_factor = 0.3
 
 	}
-	
+}
 	
 air_wings = {
 	### RAF Fighter Command ###
@@ -352,6 +336,8 @@ air_wings = {
 			amount = 24
 		}
 	}
+	}
+
 
 	
 	#########################
@@ -386,16 +372,6 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.3
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.4
 		efficiency = 50
 	}
 

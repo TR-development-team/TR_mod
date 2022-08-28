@@ -1,0 +1,28 @@
+characters={
+	FNA_maxime_weygand={
+		name=FRA_Maxime_Weygand_TR
+		portraits={
+			civilian={
+				large="gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.png"
+			}
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.png"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+		}
+		field_marshal={
+			traits={ organizer old_guard inflexible_strategist career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+}

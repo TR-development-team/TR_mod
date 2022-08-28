@@ -7,7 +7,8 @@ state={
 	impassable = yes
 
 	history={
-		owner = ITA
+		owner = FNA
+		add_core_of = FNA
 		add_core_of = MRT
 		buildings = {
 			infrastructure = 0

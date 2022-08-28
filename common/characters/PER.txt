@@ -1,0 +1,54 @@
+characters={
+	PER_soleyman_mirza_eskandari={
+		name=PER_soleyman_mirza_eskandari
+		portraits={
+			civilian={
+				large=GFX_portrait_Soleyman_Mirza_Eskandari
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+		}
+	}
+	PER_Reza_Shah_Pahlavi={
+		name=PER_Reza_Shah_Pahlavi
+		portraits={
+			civilian={
+				large="gfx/leaders/PER/Portrait_PER_Reza_Shah_Pahlavi.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+
+	}
+	PER_hasan_arfa={
+		name=PER_hasan_arfa
+		portraits={
+			army={
+				large=GFX_portrait_Hasan_Arfa
+				small=GFX_portrait_Hasan_Arfa_small
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+}

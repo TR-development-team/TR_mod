@@ -77,27 +77,10 @@ set_popularities = {
 	national_populist = 13
 }
 
-create_country_leader = {
-	name = "Óscar Benavides"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "GFX_Portrait_peru_oscar_benavides"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "ホセ・カルロス・マリアテギ"
-	desc = "POLITICS_OSCAR_BENAVIDES_DESC"
-	picture = "gfx/leaders/PRU/Portrait_PRU_Jose_Carlos_Mariategui.png"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = PRU_Jose_Carlos_Mariategui
+recruit_character = PRU_sebastian_lynch
+recruit_character = PRU_Oscar_benavides
+recruit_character = PRU_manuel_prado_ugarteche
 
 ### VARIANTS ###
 # 1936 Start #

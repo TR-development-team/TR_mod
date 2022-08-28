@@ -414,45 +414,12 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = { 
-                                463 = {
-					add_core_of = USA
-				}
-				465 = {
-					add_core_of = USA
-				}
-				464 = {
-					add_core_of = USA
-				}
-				468 = {
-					add_core_of = USA
-				}
-		                276 = {
-					add_core_of = USA
-				}
-                                471 = {
-					add_core_of = USA
-				}
-				473 = {
-					add_core_of = USA
-				}
-				740 = {
-					add_core_of = USA
-				}
-				470 = {
-					add_core_of = USA
-				}
-		                469 = {
-					add_core_of = USA
-				}
-                                682 = {
-					add_core_of = USA
-				}
-		                467 = {
-					add_core_of = USA
-				}
-                                331 = {
-					add_core_of = USA
-				}			
+		every_state = {
+			limit = {
+				is_core_of = CAN
+			}
+			add_core_of = USA
+		}		
 			declare_war_on = {
 				target = CAN
 				type = annex_everything
@@ -520,7 +487,10 @@ focus_tree = {
 		y = 8
 		cost = 6
                 bypass = {
+                        OR = {
                           FRA = { is_faction_leader = no }
+                          has_idea = FRA_USA_Friendship
+                          }
                         }
 		available = {
 			is_subject = no	
@@ -624,28 +594,28 @@ focus_tree = {
 		}
 	completion_reward = { 
                         add_named_threat = { threat = 50 name = USA_WW2 }
-                        380 = {
+            380 = {
 					add_core_of = USA
 			}
-                        377 = {
+            377 = {
 					add_core_of = USA
 			}
-                        380 = {
+            380 = {
 					add_core_of = USA
 			}
-                        387 = {
+            387 = {
 					add_core_of = USA
 			}
-                        379 = {
+            379 = {
 					add_core_of = USA
 			}
-                        378 = {
+            378 = {
 					add_core_of = USA
 			}
-                        385 = {
+            385 = {
 					add_core_of = USA
 			}
-                        386 = {
+            386 = {
 					add_core_of = USA
 			}
 			declare_war_on = {

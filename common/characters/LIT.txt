@@ -1,0 +1,241 @@
+characters={
+	LIT_antanas_snieckus={
+		name=LIT_antanas_snieckus
+		portraits={
+			civilian={
+				large="GFX_portrait_LIT_antanas_snieskus"
+			}
+			army={
+				small="GFX_idea_LIT_antanas_snieskus"
+			}
+		}
+
+		country_leader={
+			ideology=totalist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	LIT_zigmas_angarietis={
+		name=LIT_zigmas_angarietis
+		portraits={
+			civilian={
+				large="GFX_portrait_LIT_zigmas_angarietis"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	LIT_kazys_grinius={
+		name=LIT_kazys_grinius
+		portraits={
+			civilian={
+				large="GFX_portrait_LIT_kazys_grinius"
+			}
+			army={
+				small="GFX_idea_LIT_kazys_grinius"
+			}
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	LIT_petras_schatz={
+		name=LIT_petras_schatz
+		portraits={
+			civilian={
+				large=GFX_portrait_LIT_petras_schatz
+			}
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+			id=-1
+		}
+	}
+	LIT_Michael_Alexandrovich={
+		name=RUS_Michael_Alexandrovich
+		portraits={
+			civilian={
+				large="gfx/leaders/LIT/Portrait_RUS_Michael_Alexandrovich.png"
+			}
+			army={
+				large="gfx/leaders/LIT/Portrait_RUS_Michael_Alexandrovich.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+	}
+	LIT_antanas_smetona={
+		name=LIT_antanas_smetona
+		portraits={
+			civilian={
+				large="GFX_Portrait_lithuania_antanas_smetona"
+			}
+		}
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+	LIT_karl_gero={
+		name=LIT_karl_gero
+		portraits={
+			civilian={
+				large="GFX_portrait_LIT_karl_gero_von_urach"
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+	LIT_augustinas_voldemaras={
+                        name = LIT_augustinas_voldemaras
+			portraits={
+				army={
+					small="GFX_idea_LIT_augustinas_voldemaras"
+				}
+				civilian={
+					large="GFX_portrait_LIT_augustinas_voldemaras"
+				}
+			}
+			country_leader={
+				ideology=national_populist_subtype
+				expire="1965.1.1.1"
+				id=-1
+			}
+
+	}
+
+
+
+	LIT_stasys_rastikis={
+		name=LIT_stasys_rastikis
+		portraits={
+			army={
+				large="GFX_portrait_LIT_stasys_rastikis"
+				small="GFX_idea_LIT_stasys_rastikis"
+			}
+			civilian={
+				large="GFX_portrait_LIT_stasys_rastikis"
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard trait_cautious BALTIC_anti_bolshevik }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+
+	LIT_edvardas_adamkavicius={
+		name=LIT_edvardas_adamkavicius
+		portraits={
+			army={
+				small="GFX_idea_LIT_edvardas_adamkavicius"
+				large="GFX_portrait_LIT_edvardas_adamkavicius"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer BALTIC_anti_bolshevik }
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	LIT_kazys_skuchas={
+		name=LIT_kazys_skuchas
+		portraits={
+			army={
+				large="GFX_portrait_LIT_kazys_skucas"
+				small="GFX_portrait_LIT_kazys_skucas"
+			}
+		}
+		corps_commander = {
+			visible = { has_completed_focus = LIT_rastikis_military_reforms }
+			traits = { war_hero BALTIC_anti_bolshevik }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	LIT_stasys_pundzevichius={
+		name=LIT_stasys_pundzevichius
+		portraits={
+			army={
+				small="GFX_idea_LIT_stasys_pundzevicius"
+				large="GFX_portrait_LIT_stasys_pundzevicius"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_officer BALTIC_anti_bolshevik }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	LIT_kazys_musteikis={
+		name=LIT_kazys_musteikis
+		portraits={
+			army={
+				small="GFX_idea_LIT_kazys_musteikis"
+				large="GFX_portrait_LIT_kazys_musteikis"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer JAP_communist_sympathizer }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+
+}

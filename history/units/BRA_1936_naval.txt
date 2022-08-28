@@ -5,10 +5,10 @@ units = {
 	##### Naval OOB #####
 	fleet = {
 		name = "Marinha do Brasil"			
-		naval_base = 10980 # Rio de Janiero
+		naval_base = 10980
 		task_force = {
 			name = "Marinha do Brasil"
-			location = 10980 # Rio de Janiero
+			location = 10980
 			ship = { name = "NRB Minas Gerais" pride_of_the_fleet = yes definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BRA version_name = "Minas Geras Class"} } }
 			ship = { name = "NRB São Paulo" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = BRA version_name = "Minas Geras Class"} } }
 			ship = { name = "NRB Bahia" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = BRA version_name = "Bahia Class"} } }
@@ -26,7 +26,7 @@ units = {
 		}				
 		task_force = {				
 			name = "Flotilha de Submarinos"			
-			location = 10980 # Rio de Janiero
+			location = 10980
 			ship = { name = "NRB Humaytá" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = BRA version_name = "Humaytá Class"} } }
 		}				
 	}

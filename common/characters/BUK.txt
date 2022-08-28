@@ -1,0 +1,40 @@
+characters = {
+	BUK_polat_usmon = {
+		name = BUK_polat_usmon
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Polat_Usmon_Khodzhayev
+			}
+		}
+		country_leader = {
+			ideology = radical_socialist_subtype
+			id = -1
+		}
+	}
+	BUK_mohammed_alim_khan = {
+		name = BUK_mohammed_alim_khan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BUK/Portrait_BUK_Alim_Khan.png"
+			}
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			id = -1
+		}
+		country_leader = {
+			ideology = authoritarian_democrat_subtype
+			id = -1
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			id = -1
+		}
+		country_leader = {
+			ideology = national_populist_subtype
+			id = -1
+		}
+	}
+
+}
+	

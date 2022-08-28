@@ -95,72 +95,59 @@ has_same_government_as_ROOT = {
 
 # checks for these three government types for the country in scope
 has_socialist_government = {
-	has_country_flag = TR_is_socialist
-}
-
-# checks for these four government types for the country in scope
-has_elected_government = {
-	has_country_flag = TR_is_elected
+    OR ={
+	has_government = radical_socialist
+	has_government = syndicalist
+	has_government = totalist
+        }
 }
 
 # checks for these five government types for the country in scope
 has_democratic_government = {
-	has_country_flag = TR_is_democratic
+    OR ={
+	has_government = social_democrat
+	has_government = social_liberal
+	has_government = market_liberal
+	has_government = social_conservative
+        }
 }
 
 # checks for these two government types for the country in scope
 has_authoritarian_government = {
-	has_country_flag = TR_is_authoritarian
+    OR ={
+	has_government = authoritarian_democrat
+	has_government = paternal_autocrat
+	has_government = national_populist
+	has_government = Gnosticism
+        }
 }
 
 # checks for these two government types for the country in scope
 has_dictatorship_government = {
-	has_country_flag = TR_is_dictatorship
+    OR ={
+	has_government = totalist
+	has_government = paternal_autocrat
+	has_government = national_populist
+	has_government = Gnosticism
+        }
 }
 
 has_right_democratic_government = {
-	has_country_flag = TR_right_wing_democracy
+    OR ={
+	has_government = market_liberal
+	has_government = social_conservative
+        has_government = authoritarian_democrat
+        }
 }
 
 has_left_democratic_government = {
-	has_country_flag = TR_left_wing_democracy
+    OR ={
+	has_government = social_democrat
+	has_government = social_liberal
+        }
 }
 
-# checks whether the country in scope has the same government type as ROOT (the country running the event/focus)
-# note that it's not the exact same government - just the general type, as above
-same_government_type_as_ROOT = {
-	OR = {
-		AND = {
-			has_socialist_government = yes
-			ROOT = { has_socialist_government = yes }
-		}
-		AND = {
-			has_democratic_government = yes
-			ROOT = { has_democratic_government = yes }
-		}
-		AND = {
-			has_dictatorship_government = yes
-			ROOT = { has_dictatorship_government = yes }
-		}
-	}
-}
 
-same_government_type_as_ROOT_authoritarian = {
-	OR = {
-		AND = {
-			has_socialist_government = yes
-			ROOT = { has_socialist_government = yes }
-		}
-		AND = {
-			has_elected_government = yes
-			ROOT = { has_elected_government = yes }
-		}
-		AND = {
-			has_authoritarian_government = yes
-			ROOT = { has_authoritarian_government = yes }
-		}
-	}
-}
 
 # Can be used in any country scope (to ensure the country has no owned state which it doesn't control)
 controls_all_owned_states = {

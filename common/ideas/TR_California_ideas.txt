@@ -163,8 +163,319 @@ ideas = {
 				MONTHLY_POPULATION = 0.1
 			}
 		}  
+		CAL_Shashoku = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = -0.05
+				conscription_factor = 0.03
+                consumer_goods_factor = -0.05
+				MONTHLY_POPULATION = 0.1
+			}
+		}  
+		CAL_Shashoku_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = -0.05
+				conscription_factor = 0.03
+				stability_factor =0.1
+				local_resources = 0.05
+                consumer_goods_factor = -0.05
+				MONTHLY_POPULATION = 0.1
+			}
+		}  
+		CAL_Shashoku_2 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = -0.05
+				conscription_factor = 0.06
+				stability_factor = 0.1
+				local_resources = 0.05
+                consumer_goods_factor = -0.1
+				MONTHLY_POPULATION = 0.2
+			}
+		}  
+		CAL_Shashoku_3 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = -0.05
+				conscription_factor = 0.1
+				stability_factor = 0.15
+				local_resources = 0.1
+                consumer_goods_factor = -0.1
+				MONTHLY_POPULATION = 0.3
+			}
+		}  
+		CAL_Shashoku_4 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = -0.1
+				political_power_gain = 0.05
+				conscription_factor = 0.1
+				stability_factor = 0.2
+				local_resources = 0.1
+				drift_defence_factor = 0.5
+                consumer_goods_factor = -0.1
+				MONTHLY_POPULATION = 0.3
+			}
+		}  
+		CAL_Shashoku_5 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = -0.1
+				political_power_gain = 0.2
+				conscription_factor = 0.2
+				stability_factor = 0.2
+				local_resources = 0.1
+				drift_defence_factor = 0.5
+                consumer_goods_factor = -0.1
+				MONTHLY_POPULATION = 0.5
+			}
+		}  
+		CAL_anarchy = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.5
+				compliance_gain = 0.01
+			}
+		}  
+		CAL_anarchy_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.5
+				syndicalist_drift = 0.1
+				compliance_gain = 0.02
+			}
+		}  
+		CAL_mutual_aid = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				industry_free_repair_factor = 1
+				industry_air_damage_factor = -0.2
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}  
+		CAL_moral_education = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = 0.05
+				research_speed_factor = 0.02
+				MONTHLY_POPULATION = -0.03
+			}
+		}  
+		CAL_Land_equalization_system = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				global_building_slots_factor = 0.15
+			}
+		}  
+		CAL_Yellow_Racial_Supremacy = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				MONTHLY_POPULATION = -0.5
+				conscription_factor = -0.25
+				stability_factor = 0.1
+			}
+		}  
+		CAL_Yellow_Racial_Supremacy_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				MONTHLY_POPULATION = -0.5
+				conscription_factor = -0.25
+				stability_factor = 0.1
+				resistance_target = -0.2
+				research_speed_factor = -0.05
+			}
+		}  
+		CAL_Yellow_Racial_Supremacy_2 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				MONTHLY_POPULATION = -0.7
+				conscription_factor = -0.3
+				stability_factor = 0.1
+				resistance_target = -0.2
+				research_speed_factor = -0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}  
+		CAL_modern_hatamoto = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription = 0.01
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				training_time_army_factor = -0.1
+			}
+		}  
+		CAL_Goningumi_system = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = 0.1
+			}
+		}  
+		CAL_racial_equality = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				conscription_factor = 0.04
+				resistance_target = -0.1
+			}
+		}  
     }
 	Head_of_State = {
+		CAL_Gondo_Seikyo = {
+			picture = CAL_Gondo_Seikyo
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Head_of_State
+				syndicalist
+                TR_die_hard_reformer
+			}
+		}
 		CAL_Tokugawa_Iesato = {
 			picture = CAL_Tokugawa_Iesato
 			allowed = {
@@ -198,6 +509,22 @@ ideas = {
 		}
     }
 	Government_leaders = {
+		CAL_Gondo_Seikyo_GL = {
+			name = CAL_Gondo_Seikyo
+			picture = CAL_Gondo_Seikyo
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				syndicalist
+                TR_flamboyant_tough_guy
+			}
+		}
 		CAL_Goto_Fumio = {
 			picture = CAL_Goto_Fumio
 			allowed = {
@@ -228,8 +555,24 @@ ideas = {
                 TR_old_admiral
 			}
 		}
+		CAL_Murofuse_Koshin= {
+			picture = CAL_Murofuse_Koshin
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				national_populist
+                TR_political_protege
+			}
+		}
     }
 	Minister_of_Foreign_Affairs = {
+
 		CAL_Nomura_Kichisaburo = {
 			picture = CAL_Nomura_Kichisaburo
 			allowed = {
@@ -243,6 +586,21 @@ ideas = {
 				Minister_of_Foreign_Affairs
 				authoritarian_democrat
                 TR_great_compromiser
+			}
+		}
+		CAL_Saneatsu_Mushanokoji= {
+			picture = CAL_Saneatsu_Mushanokoji
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				national_populist
+                TR_biased_intellectual
 			}
 		}
     }
@@ -260,6 +618,21 @@ ideas = {
 				Minister_of_Economy
 				authoritarian_democrat
                 TR_administrative_genius
+			}
+		}
+		CAL_Shimonaka_yasaburo= {
+			picture = CAL_Shimonaka_yasaburo
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				national_populist
+                TR_theoretical_scientist
 			}
 		}
     }
@@ -291,6 +664,21 @@ ideas = {
 			traits = { 
 				Minister_of_Interior
 				authoritarian_democrat
+                TR_man_of_the_people
+			}
+		}
+		CAL_Tachibana_Kozaburo= {
+			picture = CAL_Tachibana_Kozaburo
+			allowed = {
+				original_tag = CAL
+			}
+			available = {
+				always = no
+			}
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				national_populist
                 TR_man_of_the_people
 			}
 		}

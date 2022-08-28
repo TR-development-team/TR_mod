@@ -1,0 +1,19 @@
+characters={
+	PAK_Victor_Duleep_Singh={
+		name=PAK_Victor_Duleep_Singh
+		portraits={
+			civilian={
+				large="gfx/leaders/PAK/Portrait_PAK_Prince_Victor_Duleep_Singh.png"
+			}
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology= national_populist_subtype
+		}
+	}
+}

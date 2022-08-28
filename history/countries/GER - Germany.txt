@@ -1,5 +1,18 @@
-﻿capital = 890
-oob = "GER_1936"
+﻿capital = 844
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_oob = "GER_1936"
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_oob = "GER_1936_nsb"
+}
 
 set_fuel_ratio = 0.8
 starting_train_buffer = 1
@@ -181,7 +194,6 @@ recruit_character = GER_Heinrich_Himmler
 recruit_character = GER_Lev_Trotsky
 recruit_character = GER_Eugen_Levine
 
-recruit_character = GER_mikhail_frunze
 recruit_character = GER_Lev_Trotsky_marshal
 recruit_character = GER_Ernst_Junger_marshal
 recruit_character = GER_Rohm
@@ -196,7 +208,6 @@ recruit_character = GER_paul_hausser
 recruit_character = GER_friedrich_schulz
 recruit_character = GER_sepp_dietrich
 recruit_character = GER_albert_kesselring
-recruit_character = GER_paul_hausser
 recruit_character = GER_felix_steiner
 recruit_character = GER_Walther_Stennes
 recruit_character = GER_Gregor_Strasser

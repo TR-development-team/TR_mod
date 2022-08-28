@@ -1,0 +1,29 @@
+
+state={
+	id=925
+	name="STATE_925"
+	manpower = 639485
+	resources={
+		aluminium=6
+	}
+
+	state_category = city
+
+
+	history={
+		owner = SWI
+		victory_points = { 6666 5 }
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = SWI
+		add_claim_by = FRA
+	}
+
+	local_supplies=0.0 
+provinces={
+		6666 6683 9622 11590 13124 
+	}
+}

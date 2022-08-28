@@ -156,7 +156,7 @@ units = {
 		}
 		location = 575
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 
 	}
 
@@ -170,12 +170,30 @@ units = {
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
 		start_experience_factor = 0.3
 	}
+	division= {	# "3ème Div. d'Infanterie Motorisée"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
+		location = 454
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.3
+	}
 
 	# IIIe Corps d'Armée (Région Militaire in 1936) -- Rouen
 	division= {	# "5ème Div. d'Infanterie Motorisée"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
+		}
+		location = 11563
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "5ème Div. d'Infanterie Motorisée"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
 		}
 		location = 11563
 		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
@@ -213,7 +231,15 @@ units = {
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-
+	division= {	# "19ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 58
+		}
+		location = 3509
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
 	# Ve Corps d'Armée (Région Militaire in 1936) -- Orleans
 	division= {	# "9ème Div. d'Infanterie Motorisée"
 		division_name = {
@@ -231,8 +257,7 @@ units = {
 		}
 		location = 3509
 		division_template = "Division d'Infanterie" 
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 
 	}
 
@@ -246,18 +271,6 @@ units = {
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-	division= {	# "3ème Div. d'Inf. Nord-Africaine"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 43
-		}
-		location = 3671
-		division_template = "Division Coloniale"	 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
-	}
-
 	# XIe Corps d'Armée (Région Militaire in 1936) -- Nantes
 	division= {	# "16ème Division d'Infanterie"
 		division_name = {
@@ -266,8 +279,7 @@ units = {
 		}
 		location = 3552
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "21ème Division d'Infanterie"
@@ -283,7 +295,7 @@ units = {
 		name = "5ème Brigade de Chars de Combat"
 		location = 11465
 		division_template = "Brigade de Chars de Combat" 		# R-35s
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -295,9 +307,7 @@ units = {
 		}
 		location = 11506
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
+		start_experience_factor = 0.3
 	}
 	division= {	# "3ème Division de Cavalerie"
 		division_name = {
@@ -306,8 +316,7 @@ units = {
 		}
 		location = 11506
 		division_template = "Division d'Infanterie" 
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "5ème Division de Cavalerie"
@@ -317,16 +326,14 @@ units = {
 		}
 		location = 11506
 		division_template = "Division d'Infanterie" 
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 
 	}
 	division= {	
 		name = "4ème Brigade de Chars de Combat"
 		location = 11506
 		division_template = "Brigade de Chars de Combat" 		# R-35s
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 		force_equipment_variants = { light_tank_equipment_1 = { owner = "FRA" } }
 	}
 
@@ -335,6 +342,15 @@ units = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 14
+		}
+		location = 9642
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "14ème Division d'Infanterie"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
 		}
 		location = 9642
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
@@ -358,12 +374,49 @@ units = {
 		}
 		location = 3652
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 
 	}
+	# nancy
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 11516
+		division_template = "Division d'Infanterie Motorisée" 	# All motorized are frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 11516
+		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+		start_experience_factor = 0.3
 
-	
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location = 11516
+		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+		start_experience_factor = 0.3
+
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location = 11516
+		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+		start_experience_factor = 0.3
+
+	}	
 	### Southern France Region
 	# XIIIe Corps d'Armée (Région Militaire in 1936) -- Clermont-Ferrand
 	division= {	# "4ème Division d'Infanterie"
@@ -373,8 +426,7 @@ units = {
 		}
 		location = 11576
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 
 	}
 	division= {	# "18ème Division d'Infanterie"
@@ -384,9 +436,7 @@ units = {
 		}
 		location = 11576
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
+		start_experience_factor = 0.3
 	}
 	division= {	# "25ème Div. d'Infanterie Motorisée"
 		division_name = {
@@ -406,22 +456,19 @@ units = {
 		}
 		location = 6766
 		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 
 	}
-	division= {	# "4ème Div. d'Inf. Coloniale"
+	division= {	# "22ème Division d'Infanterie"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 52
 		}
 		location = 6766
-		division_template = "Division Coloniale"	 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		division_template = "Division d'Infanterie" 	# Second line, reserve equipment
+		start_experience_factor = 0.3
 
 	}
-
 	# XVIIIe Corps d'Armée (Région Militaire in 1936) -- Bordeaux
 	division= {	# "36ème Division d'Infanterie"
 		division_name = {
@@ -432,23 +479,29 @@ units = {
 		division_template = "Division d'Infanterie" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-	division= {	# "1ère Div. d'Inf. Coloniale"
+	division= {	# "36ème Division d'Infanterie"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 51
 		}
-		location = 6657
-		division_template = "Division Coloniale"	 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
+		location = 9737
+		division_template = "Division d'Infanterie" 	# Frontline, best equipment
+		start_experience_factor = 0.3
 	}
-
 	# XIVe Corps d'Armée (Région Militaire in 1936) -- Lyon
 	division= {	# "27ème Division d'Infanterie Alpine"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 27
+		}
+		location = 6657
+		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
+	division= {	# "27ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
 		}
 		location = 6657
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
@@ -461,26 +514,14 @@ units = {
 		}
 		location = 9736
 		division_template = "Division d'Infanterie Alpine" 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-	division= {	# "1ère Div. d'Inf. Nord-Africaine"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 41
-		}
-		location = 3764
-		division_template = "Division Coloniale"	 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
+		start_experience_factor = 0.3
 
 	}
 	division= {	
 		name = "1ère Brigade de Chars de Combat"
 		location = 6613
 		division_template = "Brigade de Chars de Combat" 			# FT-17s
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 		force_equipment_variants = { gw_tank_equipment = { owner = "FRA" } }
 	}
 
@@ -495,16 +536,14 @@ units = {
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-	division= {	# "2ème Div. d'Inf. Coloniale"
+	division= {	# "29ème Division d'Infanterie Alpine"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 48
 		}
-		location = 11834
-		division_template = "Division Coloniale"		 	# Second line, reserve equipment
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-
+		location = 6975
+		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		start_experience_factor = 0.3
 	}
 
 	# XVIe Corps d'Armée (Région Militaire in 1936) -- Montpellier
@@ -517,103 +556,31 @@ units = {
 		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
 		start_experience_factor = 0.3
 	}
-
+ 	division= {	# "31ème Division d'Infanterie Alpine"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 9898
+		division_template = "Division d'Infanterie Alpine" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+	}
 	
 
 
 	##### North African Theatre #####
 	### Army: Troupes de Alger ###
 	# XIXe Corps d'Armée (Région Militaire in 1936) -- Alger
-	division= {	
-		name = "1ère Bge. d'Infanterie Algérienne"
-		location = 1145
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 
-	}
-	division= {	
-		name = "2ème Bge. d'Infanterie Algérienne"
-		location = 1145
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-	division= {	
-		name = "4ème Bge. d'Infanterie Algérienne"
-		location = 1145
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-	division= {	
-		name = "5ème Bge. d'Infanterie Algérienne"
-		location = 1145
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-	# attached directly to Army
-	division= {	
-		name = "3ème Bge. d'Infanterie Algérienne"
-		location = 7132
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
-	division= {	
-		name = "7ème Bge. d'Infanterie Algérienne"
-		location = 7132
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-
-	}
 	division= {	
 		name = "Groupement Cavalerie d'Algérienne"
 		location = 7132
 		division_template = "Division de Cavalerie" 	
 		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+		start_experience_factor = 0.3
 
 	}
 	
-	### Army: Protectorat de Tunisie ### -- Tunis
-	division= {	# "Division de Tunise"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 93
-		}
-		location = 11969
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
-	division= {	# "Division de Sousse"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 94
-		}
-		location = 9994
-		division_template = "Brigade Coloniale" 	# Colonial unit, reserve equipment
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-
-	}
 
 	
 }

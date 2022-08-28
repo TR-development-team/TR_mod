@@ -910,5 +910,161 @@ tank_manufacturer = {
 			}
 		}
 	}	
+	#minister
+	Head_of_State = {	
+		USA_Norman_Thomas = {
+		
+		picture = USA_Norman_Thomas
+		
+		allowed = {
+			original_tag = USA
+			}
+		available = {
+			always = no
+					  }
+		
+		traits = { 
+			    Head_of_State
+				social_democrat
+				TR_pig_headed_isolationist
+				}
+			}
+		}
+		Government_leaders = {	
+			USA_James_Hudson_Maurer = {
+			
+			picture = USA_James_Hudson_Maurer
+			
+			allowed = {
+				original_tag = USA
+				}
+			available = {
+				always = no
+						  }
+			
+			traits = { 
+				    Government_leaders
+					social_democrat
+					TR_ambitious_union_boss
+					}
+				}
+			}
+        Minister_of_Foreign_Affairs = {	
+			USA_Devere_Allen= {
+			
+			picture = USA_Devere_Allen
+			
+			allowed = {
+				original_tag = USA
+				}
+			available = {
+				always = no
+						  }
+			
+			traits = { 
+				    Minister_of_Foreign_Affairs
+					social_democrat
+					TR_biased_intellectual
+					}
+				}
+			}
+		Minister_of_Economy = {	
+			USA_Haim_Kantorovitch = {
+			
+			picture = USA_Haim_Kantorovitch
+			
+			allowed = {
+				original_tag = USA
+				}
+			available = {
+				always = no
+						  }
+			
+			traits = { 
+				    Minister_of_Economy
+					social_democrat
+					TR_mixed_economy
+					}
+				}
+			}
+		Minister_of_Interior = {	
+			USA_Darlington_Hoopes = {
+			
+			picture = USA_Darlington_Hoopes
+				
+			allowed = {
+					original_tag = USA
+				}
+			available = {
+				always = no
+			  }
+				
+			traits = { 
+				    Minister_of_Interior
+					social_democrat
+					TR_silent_lawyer
+					}
+				}
+			}
+		chief_of_staff = {	
+			USA_William_Leahy = {
+			
+			picture = USA_William_Leahy
+				
+			allowed = {
+					original_tag = USA
+				}
+				
+			traits = { 
+				    chief_of_staff
+					cos_school_of_fire_support
+					}
+				}
+			}
+		chief_of_army = {	
+			USA_Malin_craig = {
+				
+			picture = USA_Malin_craig
+					
+			allowed = {
+				original_tag = USA
+				}
+					
+			traits = { 
+				    chief_of_army
+					carm_guns_and_butter_doctrine
+					}
+				}
+			}
+		chief_of_navy = {	
+			USA_William_Leahy_nav = {
+			name = USA_William_Leahy
+			picture = USA_William_Leahy
+					
+			allowed = {
+				original_tag = USA
+				}
+					
+			traits = { 
+				    chief_of_navy
+					cnav_base_control_doctrine
+					}
+				}
+			}
+		chief_of_air_force = {	
+			USA_henry_arnold = {
+				
+			picture = USA_henry_arnold
+					
+			allowed = {
+				original_tag = USA
+				}
+					
+			traits = { 
+				    chief_of_air_force
+					cair_carpet_bombing_doctrine
+					}
+				}
+			}
 }
 

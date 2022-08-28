@@ -91,7 +91,7 @@ if = {
 
 
 set_politics = {
-		ruling_party = social_democrat
+		ruling_party = social_conservative
 		last_election = "1932.9.18"
 		election_frequency = 48
 		elections_allowed = yes
@@ -100,19 +100,20 @@ set_popularities = {
 	totalist = 6
 	syndicalist = 6
 	radical_socialist = 5
-	social_democrat = 38
-	social_liberal = 15
-	market_liberal = 5
-	social_conservative = 5
-	authoritarian_democrat = 8
+	social_democrat = 18
+	social_liberal = 13
+	market_liberal = 7
+	social_conservative = 19
+	authoritarian_democrat = 13
 	paternal_autocrat = 5
-	national_populist = 5
+	national_populist = 6
         Gnosticism = 2
 }
 
 recruit_character = SWE_sven_linderot
 recruit_character = SWE_per_albin_hansson
 recruit_character = SWE_axel_pehrssonbramstorp
+recruit_character = SWE_Arvid_Lindman
 recruit_character = SWE_sven_olov_lindholm
 
 recruit_character = SWE_folke_hogberg

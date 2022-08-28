@@ -374,6 +374,14 @@ country_event = {
 			}
 			CHI= { add_to_faction = SCH }
 		}
+
+	hidden_effect = {
+		country_event = {
+			id = TR_news.43
+			days = 2
+			
+		}
 	}
+}
 }
 

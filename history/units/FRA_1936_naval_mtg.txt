@@ -175,7 +175,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Force d'Attaque Légère"			
-			location = 9994 # Bizerte, Tunisia	
+			location = 7132 # Oran
 			ship = { name = "La Galissonnière" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "La Galissonnière Class" } } }
 			ship = { name = "Émile Bertin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Émile Bertin Class" } } }
 			# 1e Division des Contre-Torpilleurs
@@ -193,7 +193,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Flotte d'Afrique de l'Ouest"			
-			location = 4948 # Dakar			
+			location = 7132 # Oran	 	
 			ship = { name = "Jeanne d'Arc" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
 			ship = { name = "Duguay-Trouin" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
 			ship = { name = "Primauguet" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = FRA version_name = "Duguay-Trouin Class" } } }
@@ -221,7 +221,7 @@ units= {
 		}				
 		task_force = {				
 			name = "6ème Escadron Sous-Marins"			
-			location = 9994 # Bizerte, Tunisia	
+			location = 7132 # Oran
 			# 9e Division des Sous-Marins
 			ship = { name = "Caïman" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "600 Series" } } }				
 			ship = { name = "Morse" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "600 Series" } } }				
@@ -243,7 +243,7 @@ units= {
 		}				
 		task_force = {				
 			name = "Sous-Marins Force de Levant"			
-			location = 792 # Beirut			
+			location = 7132 # Oran	
 			# 11e Division des Sous-Marins
 			ship = { name = "Requin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "600 Series" } } }				
 			ship = { name = "Marsouin" definition = submarine equipment = { ship_hull_submarine_1 = { amount = 1 owner = FRA version_name = "600 Series" } } }				

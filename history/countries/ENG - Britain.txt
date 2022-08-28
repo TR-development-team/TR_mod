@@ -159,21 +159,22 @@ set_politics = {
 }
 set_popularities = {
 	totalist = 15
-	syndicalist = 15
-	radical_socialist = 20
-	social_democrat = 7
-	social_liberal = 3
+	syndicalist = 9
+	radical_socialist = 10
+	social_democrat = 15
+	social_liberal = 6
 	market_liberal = 5
-	social_conservative = 10
-	authoritarian_democrat = 5
-	paternal_autocrat = 5
-	national_populist = 5
-        Gnosticism = 10
+	social_conservative = 16
+	authoritarian_democrat = 4
+	paternal_autocrat = 4
+	national_populist = 11
+        Gnosticism = 5
 }
 
 
 recruit_character = ENG_oswald_mosley
 recruit_character = ENG_winston_churchill
+recruit_character = ENG_winston_churchill_2
 recruit_character = ENG_Aleister_Crowley
 
 recruit_character = ENG_alan_brooke

@@ -94,20 +94,6 @@ SIB_soviet = {
 	color_ui = rgb { 182 107 88 }
 }
 
-FRA_RNP = {
-	color = rgb { 30 84 183 }
-	color_ui = rgb { 35 101 222 }
-}
-
-FRA_PPF = {
-	color = rgb {  0  18  93 }
-	color_ui = rgb {  0  18  93 }
-}
-
-FRA_KING = {
-	color = rgb { 65 109 167 }
-	color_ui = rgb { 65 109 167 }
-}
 
 AUS_GER = {
 	color = rgb { 60 60 60 }
@@ -139,4 +125,44 @@ SHX_QING = {
 SPO_WIN = {
 	color = rgb { 76 145 63 }
 	color_ui = rgb { 99 189 82 }
+}
+EWA_FRA = {
+	color = rgb {  0  18  93 }
+	color_ui = rgb {  0  18  93 }
+}
+IRE_ENG = {
+	color = rgb { 150 0 24 }  
+	color_ui = rgb { 150 0 24 }
+}
+CAN_UK = {
+	color = rgb { 150 0 24 }  
+	color_ui = rgb { 150 0 24 }
+}
+SAF_UK = {
+	color = rgb { 150 0 24 }  
+	color_ui = rgb { 150 0 24 }
+}
+AST_UK = {
+	color = rgb { 150 0 24 }  
+	color_ui = rgb { 150 0 24 }
+}
+NZL_UK = {
+	color = rgb { 150 0 24 }  
+	color_ui = rgb { 150 0 24 }
+}
+BAL_Russia = {
+	color = rgb { 0 120 0  }
+	color_ui = rgb { 0 120 0  }
+}
+DON_Russia = {
+	color = rgb { 0 120 0  }
+	color_ui = rgb { 0 120 0  }
+}
+LIT_Russia = {
+	color = rgb { 0 120 0  }
+	color_ui = rgb { 0 120 0  }
+}
+UZB_Turkestan = {
+	color = rgb { 125 13 24 }
+	color_ui = rgb { 163 17 31 }
 }
