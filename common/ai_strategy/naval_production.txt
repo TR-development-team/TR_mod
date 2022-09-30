@@ -77,8 +77,8 @@
 #### Non-MTG strategies ####
 default_role_ratios_minors = {
 	allowed = {
+		has_dlc = "Man the Guns"
 		NOT = {
-			has_dlc = "Man the Guns"
 			tag = GER
 			tag = FRA
 			tag = ENG
@@ -87,6 +87,9 @@ default_role_ratios_minors = {
 			tag = USA
 			tag = AST
 		}
+	}
+	enable = {
+		always = yes
 	}
 
 	ai_strategy = {
@@ -130,6 +133,9 @@ default_role_ratios_majors = {
 			tag = USA
 			tag = AST
 		}
+	}
+	enable = {
+		always = yes
 	}
 
 	ai_strategy = {
@@ -203,6 +209,9 @@ naval_unit_role_ratios_GER = {
 		has_dlc = "Man the Guns"
 		tag = GER
 	}
+	enable = {
+		always = yes
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -233,6 +242,9 @@ naval_unit_role_ratios_ENG = {
 			tag = ENR
 		}
 	}
+	enable = {
+		always = yes
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -260,6 +272,9 @@ naval_unit_role_ratios_FRA = {
 		has_dlc = "Man the Guns"
 		tag = FRA
 	}
+	enable = {
+		always = yes
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -279,6 +294,9 @@ naval_unit_role_ratios_CAN = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		tag = AST
+	}
+	enable = {
+		always = yes
 	}
 
 	ai_strategy = {
@@ -304,6 +322,9 @@ naval_unit_role_ratios_RUS = {
 			tag = SOV
 		}
 	}
+	enable = {
+		always = yes
+	}
 
 	ai_strategy = {
 		type = role_ratio
@@ -318,6 +339,9 @@ naval_unit_role_ratios_JAP = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		tag = JAP
+	}
+	enable = {
+		always = yes
 	}
 	ai_strategy = {
 		type = role_ratio
@@ -364,6 +388,9 @@ naval_unit_role_ratios_USA = {
 		has_dlc = "Man the Guns"
 		tag = USA
 
+	}
+	enable = {
+		always = yes
 	}
 
 	ai_strategy = {

@@ -64,9 +64,6 @@ NDefines.NDiplomacy.BASE_PEACE_LIBERATE_FACTOR = 0							-- Vanilla is 100
 NDefines.NDiplomacy.PEACE_SCORE_PER_PASS = 0.75								-- Vanilla is 0.2
 NDefines.NCountry.STATE_OCCUPATION_COST_MULTIPLIER = 0.25					-- Vanilla is 0.01
 
--- Air
-NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.1                    -- Vanilla is 0.7
-
 -- Volunteers
 NDefines.NAI.SEND_VOLUNTEER_EVAL_BASE_DISTANCE = 1000.0  					-- Vanilla is 175.0
 NDefines.NAI.SEND_VOLUNTEER_EVAL_CONTAINMENT_FACTOR = 0						-- Vanilla is 0.1
@@ -85,41 +82,3 @@ NDefines.NGraphics.COUNTRY_FLAG_LARGE_STRIPE_MAX_HEIGHT = 24000				-- Vanilla is
 NDefines.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {200, 350, 600}  	-- Vanilla is 100, 250, 500
 NDefines.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {300, 500, 1000} 		-- Vanilla is 300, 500, 1500
 
--- General AI
-NDefines.NAI.NEUTRAL_THREAT_PARANOIA = 0									-- Vanilla is 10
-NDefines.NAI.DIFFERENT_FACTION_THREAT = 0									-- Vanilla is 30
-NDefines.NAI.RESEARCH_BONUS_FACTOR = 1.5									-- Vanilla is 0.9
-NDefines.NAI.MIN_AI_SCORE_TO_TRADE_LAW_OVERRIDE_HARD_CODED_SCORE = 0.0		-- Vanilla is 1000.0
-
--- Battleplan AI
-NDefines.NAI.HOUR_BAD_COMBAT_REEVALUATE = 42								-- Vanilla is 100
-NDefines.NAI.PLAN_ACTIVATION_SUPERIORITY_AGGRO = 1.2						-- Vanilla is 1.0
-NDefines.NAI.AI_FRONT_MOVEMENT_FACTOR_FOR_READY = 0.1						-- Vanilla is 0.25
-NDefines.NAI.PLAN_VALUE_TO_EXECUTE = -0.2									-- Vanilla is -0.5
-NDefines.NAI.MIN_PLAN_VALUE_TO_MICRO_INACTIVE = 0.1							-- Vanilla is 0.2
-
-NDefines.NAI.VP_LEVEL_IMPORTANCE_HIGH = 25									-- Not defined in vanilla
-NDefines.NAI.VP_LEVEL_IMPORTANCE_MEDIUM = 10								-- Vanilla is 10
-NDefines.NAI.VP_LEVEL_IMPORTANCE_LOW = 3									-- Not defined in vanilla
-
--- Combat AI
-NDefines.NAI.MAX_DIST_PORT_RUSH = 40.0										-- Vanilla is 0.2
-NDefines.NAI.FORTIFIED_RATIO_TO_CONSIDER_A_FRONT_FORTIFIED = 0.3			-- Vanilla is 0.5
-NDefines.NAI.HEAVILY_FORTIFIED_RATIO_TO_CONSIDER_A_FRONT_FORTIFIED = 0.3	-- Vanilla is 0.5
-NDefines.NAI.INVASION_DISTANCE_RANDOMNESS = 400								-- Vanilla is 300
-NDefines.NMilitary.PLAN_EXECUTE_CAREFUL_MAX_FORT = 4						-- Vanilla is 5
-NDefines.NAI.ATTACK_HEAVILY_DEFENDED_LIMIT = 1.1							-- Vanilla is 0.5
-
--- Naval AI
-NDefines.NAI.MAX_DISTANCE_NALAV_INVASION = 300.0							-- Vanilla is 200
-NDefines.NAI.ENEMY_NAVY_STRENGTH_DONT_BOTHER = 1.5							-- Vanilla is 2.5
-NDefines.NAI.NAVAL_INVADED_AREA_PRIO_MULT = 4.0								-- Vanilla is 2.0
-
--- Production AI
-NDefines.NAI.MANPOWER_RESERVED_THRESHOLD = 0.1 								-- Undefined in vanilla
-NDefines.NAI.DEPLOY_MIN_TRAINING_WAR_FACTOR = 0.05							-- Vanilla is 0.25
-NDefines.NAI.DEPLOY_MIN_EQUIPMENT_WAR_FACTOR = 0.80							-- Vanilla is 90
-NDefines.NAI.MIN_FIELD_STRENGTH_TO_BUILD_UNITS = 0.6						-- Vanilla is 0.7
-NDefines.NAI.MIN_MANPOWER_TO_BUILD_UNITS = 0.6								-- Vanilla is 0.7
-NDefines.NAI.UPGRADE_DIVISION_RELUCTANCE = 14								-- Vanilla is 7
-NDefines.NAI.VARIANT_UPGRADE_MIN_XP = 1000									-- Vanilla is 50

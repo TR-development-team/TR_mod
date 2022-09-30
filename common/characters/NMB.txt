@@ -1,0 +1,91 @@
+characters={
+	NMB_Kashii_Kohei={
+		name=NMB_Kashii_Kohei
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Kashii.tga"
+			}
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Kashii.tga"
+			}
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
+		}
+		country_leader={
+			ideology= kokoku_shikan_subtype
+		}
+		field_marshal={
+			traits={ trait_engineer trait_cautious }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	NMB_Yanagawa_Heisuke={
+		name=NMB_Yanagawa_Heisuke
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Potraits_JAP_Yanagawa.tga"
+			}
+			civilian={
+				large="gfx/leaders/JAP/Potraits_JAP_Yanagawa.tga"
+			}
+		}
+		field_marshal={
+			traits={  }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	NMB_Ando_Teruzo={
+		name=NMB_Ando_Teruzo
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Potraits_JAP_Ando_Teruzo.tga"
+			}
+			civilian={
+				large="gfx/leaders/JAP/Potraits_JAP_Ando_Teruzo.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	NMB_Kurihara_Yasuhide={
+		name=NMB_Kurihara_Yasuhide
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Potraits_JAP_Kurihara.tga"
+			}
+			civilian={
+				large="gfx/leaders/JAP/Potraits_JAP_Kurihara.tga"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+}

@@ -8,10 +8,7 @@
 			name = "Home Fleet"
 			location = 11064 # Scapa Flow
 			ship = { name = "HMS Furious" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ENG version_name = "Courageous Class" } } 
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "ENG" amount = 18 }
-					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 12 }
-				}
+
 			}
 			ship = { name = "HMS Nelson" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
 			ship = { name = "HMS Rodney" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Nelson Class" } } }
@@ -23,8 +20,8 @@
 			ship = { name = "HMS Renown" definition = battle_cruiser start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Renown Class" } } }
 			ship = { name = "HMS Norfolk" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS Calcutta" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "C-Class"} } }
-			ship = { name = "HMS Emerald" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
-			ship = { name = "HMS Enterprise" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
+			ship = { name = "HMS Emerald" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
+			ship = { name = "HMS Enterprise" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
 			ship = { name = "HMS Sabre" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "S Class"} } }
 			ship = { name = "HMS Shikari" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "S Class"} } }
 			### 6th Destroyer Flotilla
@@ -50,7 +47,7 @@
 			ship = { name = "HMS Fame" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }
 			ship = { name = "HMS Firedrake" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }
 			ship = { name = "HMS Foresight" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }
-			ship = { name = "HMS Fortune" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }							# to RCN as Saskatchewan, 1943	
+			ship = { name = "HMS Fortune" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = ENG version_name = "E/F/G/H Class"} } }								# to RCN as Saskatchewan, 1943	
 		}				
 		task_force = {				
 			name = "Reserve Fleet"			
@@ -73,10 +70,6 @@
 			name = "Channel Force"			
 			location = 9458 # Portsmouth
 			ship = { name = "HMS Courageous" definition = carrier start_experience_factor = 0.25 equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = ENG version_name = "Courageous Class" } }
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "ENG" amount = 18 }
-					cv_nav_bomber_equipment_1 =  { owner = "ENG" amount = 24 }
-				}
 			}
 			ship = { name = "HMS Resolution" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Revenge Class"} } }			
 			ship = { name = "HMS Revenge" definition = battleship start_experience_factor = 0.25 equipment = { ship_hull_heavy_1 = { amount = 1 owner = ENG version_name = "Revenge Class"} } }					
@@ -254,12 +247,12 @@
 			location = 13010  # Bermuda
 			ship = { name = "HMS Berwick" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
 			ship = { name = "HMS York" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }	
-			ship = { name = "HMS Orion" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }
+			ship = { name = "HMS Orion" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }
 		}				
 		task_force = {				
 			name = "South Atlantic Fleet"
 			location = 2038 # Sierra Leone
-			ship = { name = "HMS Neptune" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }	
+			ship = { name = "HMS Neptune" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class" } } }	
 			ship = { name = "HMS Dauntless" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Danae Class"} } }
 			# Destroyer Division 4
 			ship = { name = "HMS Vansittart" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ENG version_name = "V/W Class"} } }	
@@ -271,7 +264,7 @@
 			location = 12960 # Falkland Is.
 			ship = { name = "HMS Exeter" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }		
 			ship = { name = "HMS Cumberland" definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "County Class" } } }
-			ship = { name = "HMS Ajax" definition = light_cruiser equipment = { ship_hull_cruiser_1 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }	
+			ship = { name = "HMS Ajax" definition = light_cruiser equipment = { ship_hull_cruiser_2 = { amount = 1 owner = ENG version_name = "Emerald Class" } } }	
 		}				
 		task_force = {				
 			name = "3rd Submarine Flotilla"			

@@ -834,9 +834,6 @@ focus_tree = {
 		icon = GFX_goal_list_left
 		x = 7
 		y = 4
-        available = {
-                has_country_flag = JAP_KAIGEN_TEPPAI
-        }
         prerequisite = {
 			focus = JAP_IypmrVhM
             }
@@ -5148,7 +5145,7 @@ focus_tree = {
 			factor = 3
 		}
 	completion_reward = {
-            add_ideas = JAP_Gunshukukouka
+            
 		}
 	}
 	#標準商船の設計
@@ -5254,7 +5251,7 @@ focus_tree = {
 		y = 4
 		cost = 4
 		relative_position_id = JAP_Army_focus_1
-		prerequisite = { focus = JAP_Navy_focus_1 }
+		prerequisite = { focus = JAP_Navy_focus_33 }
 		available = {
             }
 		available_if_capitulated = yes

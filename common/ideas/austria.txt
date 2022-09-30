@@ -293,9 +293,15 @@
 				original_tag = AUS
                                   }
 			available = {
-				always = no
-		                  }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
                         Government_leaders
                         Gnosticism
@@ -313,9 +319,15 @@
 				original_tag = AUS
                                   }
 			available = {
-				always = no
-		                  }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
                         Minister_of_Foreign_Affairs
                         Gnosticism
@@ -333,9 +345,15 @@
 				original_tag = AUS
                                   }
 			available = {
-				always = no
-		                  }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
                         Minister_of_Economy
                         Gnosticism
@@ -352,8 +370,15 @@
 				original_tag = AUS
                                   }
 			available = {
-				always = no
-		                  }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 			traits = { 
                         Minister_of_Interior

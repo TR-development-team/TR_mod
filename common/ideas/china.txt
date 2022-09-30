@@ -637,9 +637,15 @@ Head_of_State = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = head_of_state_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Head_of_State
 			social_conservative
@@ -653,9 +659,15 @@ Head_of_State = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = head_of_state_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Head_of_State
 			authoritarian_democrat
@@ -670,9 +682,15 @@ Head_of_State = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = head_of_state_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Head_of_State
 			paternal_autocrat
@@ -686,9 +704,15 @@ Head_of_State = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = head_of_state_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Head_of_State
 			national_populist
@@ -704,9 +728,15 @@ Government_leaders = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Government_leaders_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Government_leaders
 			authoritarian_democrat
@@ -720,9 +750,15 @@ Government_leaders = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Government_leaders_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Government_leaders
 			paternal_autocrat
@@ -736,9 +772,15 @@ Government_leaders = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Government_leaders_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Government_leaders
 			national_populist
@@ -752,9 +794,15 @@ Government_leaders = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Government_leaders_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Government_leaders
 			national_populist
@@ -770,9 +818,15 @@ Minister_of_Foreign_Affairs = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Foreign_Affairs_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Foreign_Affairs
 			authoritarian_democrat
@@ -787,9 +841,15 @@ Minister_of_Foreign_Affairs = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Foreign_Affairs_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Foreign_Affairs
 			paternal_autocrat
@@ -805,9 +865,15 @@ Minister_of_Foreign_Affairs = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Foreign_Affairs_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Foreign_Affairs
 			national_populist
@@ -824,9 +890,15 @@ Minister_of_Economy = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Economy_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Economy
 			authoritarian_democrat
@@ -841,9 +913,15 @@ Minister_of_Economy = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Economy_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Economy
 			authoritarian_democrat
@@ -858,9 +936,15 @@ Minister_of_Economy = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Economy_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Economy
 			paternal_autocrat
@@ -875,9 +959,15 @@ Minister_of_Economy = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Economy_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Economy
 			national_populist
@@ -892,9 +982,15 @@ Minister_of_Economy = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Economy_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Economy
 			national_populist
@@ -909,9 +1005,15 @@ Minister_of_Economy = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Economy_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Economy
 			national_populist
@@ -928,9 +1030,15 @@ Minister_of_Interior = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Interior_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Interior
 			authoritarian_democrat
@@ -945,9 +1053,15 @@ Minister_of_Interior = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Interior_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Interior
 			paternal_autocrat
@@ -961,9 +1075,15 @@ Minister_of_Interior = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Interior_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Interior
 			national_populist
@@ -977,9 +1097,15 @@ Minister_of_Interior = {
 			original_tag = CHI
 		}
 		available = {
-			always = no
+			custom_trigger_tooltip = {
+				tooltip = Minister_of_Interior_available
+				always = no
+			}
+			hidden_trigger = {
+				has_country_flag = can_change_minister
+			}
 		}
-		removal_cost = -1
+		cancel_if_invalid = no
 		traits = { 
 			Minister_of_Interior
 			national_populist

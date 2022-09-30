@@ -22,8 +22,6 @@ no_air_for_small_countries = {
 	}
 	enable = {
 		num_of_military_factories < 8
-		stop_infantry_prod = no
-		slow_artillery_prod = no
 	}
 
 	abort_when_not_enabled = yes
@@ -43,7 +41,6 @@ we_need_guns_not_planes = {
 		num_of_military_factories > 7
 		num_of_military_factories < 30
 		has_war = no
-		slow_infantry_prod = no
 	}
 
 	abort_when_not_enabled = yes
@@ -193,57 +190,6 @@ strategic_bombers_strategy2 = {
 		type = unit_ratio
 		id = strategic_bomber
 		value = 2
-	}
-}
-
-no_more_carrier_fighters = {
-	enable = {
-		OR = {
-			has_navy_size = { size < 1 unit = carrier }
-			stop_carrier_fighter_prod = yes
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = cv_fighter_equipment
-		value = -100
-	}
-}
-
-no_more_carrier_bombers = {
-	enable = {
-		OR = {
-			has_navy_size = { size < 1 unit = carrier }
-			stop_carrier_navbomber_prod = yes
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = cv_nav_bomber_equipment
-		value = -100
-	}
-}
-
-no_more_carrier_cas = {
-	enable = {
-		OR = {
-			has_navy_size = { size < 1 unit = carrier }
-			stop_carrier_cas_prod = yes
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = cv_CAS_equipment
-		value = -100
 	}
 }
 

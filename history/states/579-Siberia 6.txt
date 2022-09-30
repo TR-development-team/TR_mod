@@ -3,16 +3,15 @@ state={
 	id=579
 	name="STATE_579" # Salekhard
 	manpower = 45484
-	
+	impassable = yes
 	state_category = wasteland
 
 	history={
-		owner = SOV
+		owner = YAK
+		add_core_of = YAK
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = SOV
-                add_core_of = RUS
 	}
 
 	local_supplies=0.0 

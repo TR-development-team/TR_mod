@@ -11,9 +11,9 @@ bookmarks = {
 			history = "TR_JAP_GATHERING_STORM_DESC"
 			ideology = market_liberal
 			ideas = {
-				JAP_Shading_sun
-				JAP_colony_deficit
+				JAP_asian_leader
 				JAP_black_thursday
+				JAP_ugaki_gunshuku
 			}	
 			focuses = {
 				JAP_KAIGEN_KEIZOKU_NF
@@ -40,9 +40,8 @@ bookmarks = {
 			history = "TR_FRA_GATHERING_STORM_DESC"
 			ideology = national_populist
 			ideas = {
-                                FRA_Ancien_1
-                                FRA_En_Avant_1
-                                FRA_national_revolution_1
+                                FRA_revenge
+                                FRA_black_thursday
 	                }
 			focuses = {
 				FRA_AF_1
@@ -98,9 +97,9 @@ bookmarks = {
                                 SOV_revolution
 			}
 			focuses = {
-                                SOV_EpgSsBIF
-				SOV_GbeQigRE
-                                SOV_spZgYhXG
+                                SOV_Autocrat_focus_1
+				SOV_Democracy_focus_1
+                                SOV_Democracy_focus_2
 			}	
 		}
 
@@ -170,6 +169,16 @@ bookmarks = {
 				TUR_YFxLpbEB
 	                        TUR_EYAINjyc
                                 TUR_tROgPzvG
+			}
+		}
+                "RUS" = {
+			minor = yes
+			history = "TR_RUS_GATHERING_STORM_DESC"
+			ideology = radical_socialist
+			ideas = {
+			}
+
+			focuses = {
 			}
 		}
 

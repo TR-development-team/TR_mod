@@ -536,10 +536,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				totalist
@@ -553,10 +559,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				syndicalist
@@ -570,10 +582,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				radical_socialist
@@ -587,10 +605,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				radical_socialist
@@ -604,10 +628,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				radical_socialist
@@ -621,10 +651,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				radical_socialist
@@ -642,10 +678,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				totalist
@@ -660,9 +702,15 @@ Head_of_State = {
 				original_tag = GER
                                   }
 			available = {
-				always = no
-		                  }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
                         Government_leaders
                         totalist
@@ -677,10 +725,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				syndicalist
@@ -694,10 +748,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				radical_socialist
@@ -711,10 +771,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				radical_socialist
@@ -728,10 +794,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				radical_socialist
@@ -745,10 +817,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				radical_socialist
@@ -765,10 +843,15 @@ Head_of_State = {
 				original_tag = GER
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -784,10 +867,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				radical_socialist
@@ -801,10 +890,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				radical_socialist
@@ -820,9 +915,15 @@ Head_of_State = {
 				original_tag = GER
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				totalist
@@ -836,9 +937,15 @@ Head_of_State = {
 				original_tag = GER
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				totalist
@@ -853,9 +960,15 @@ Head_of_State = {
 			}
 			
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				syndicalist
@@ -869,10 +982,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				radical_socialist
@@ -886,10 +1005,16 @@ Head_of_State = {
 				original_tag = GER
 			}
 			
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				radical_socialist
@@ -904,10 +1029,15 @@ Head_of_State = {
 			}
 			
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				radical_socialist
@@ -922,10 +1052,15 @@ Head_of_State = {
 			}
 			
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				radical_socialist
@@ -942,10 +1077,15 @@ Head_of_State = {
 			}
 			
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 
 			
 			traits = { 
@@ -962,10 +1102,15 @@ Head_of_State = {
 			}
 			
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			
 			traits = { 
 				Minister_of_Interior
@@ -981,10 +1126,15 @@ Head_of_State = {
 			}
 			
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			
 			traits = { 
 				Minister_of_Interior
@@ -1000,10 +1150,15 @@ Head_of_State = {
 				original_tag = GER
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			
 			traits = { 
 				Minister_of_Interior
@@ -1019,10 +1174,15 @@ Head_of_State = {
 				original_tag = GER
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			
 			traits = { 
 				Minister_of_Interior
@@ -1037,10 +1197,15 @@ Head_of_State = {
 				original_tag = GER
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			
 			traits = { 
 				Minister_of_Interior
@@ -1055,10 +1220,15 @@ Head_of_State = {
 				original_tag = GER
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			
 			traits = { 
 				Minister_of_Interior
@@ -1073,14 +1243,19 @@ Head_of_State = {
 				original_tag = GER
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-                        removal_cost = -1
+			cancel_if_invalid = no
 			
 			traits = { 
 				Minister_of_Interior
-				radical_socialist
+				social_democrat
                 TR_compassionate_gentleman
 			}
 		}

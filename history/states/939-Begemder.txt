@@ -1,0 +1,29 @@
+state = {
+	id = 939 # Begemder
+	name = "STATE_939"
+	manpower = 1100000
+	resources = {
+	}
+	
+	state_category = pastoral
+
+	history = {
+		
+		buildings = {
+			# infrastructure = 1
+		}
+		
+		victory_points = { 
+			1984 2
+		}
+		
+		owner = ETO
+		add_core_of = ETO
+	}
+
+	provinces = {
+ 		1984 2040 13137 13241
+ 	}
+
+	local_supplies = 0.0 
+}

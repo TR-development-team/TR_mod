@@ -60,104 +60,16 @@ set_popularities = {
 	national_populist = 5
         Gnosticism = 17
 }
-create_country_leader = {
-	name = "ジッドゥ・クリシュナムルティ"
-	desc = ""
-	picture = "gfx/leaders/RAJ/Portrait_RAJ_Krishnamurti.tga"
-	expire = "1965.1.1"
-	ideology = Gnosticism_subtype
-	traits = {
-		
-	}
-}
 
-create_country_leader = {
-	name = "ラース・ビハーリー・ボース"
-	desc = ""
-	picture = "gfx/leaders/RAJ/Portrait_RAJ_Behari_Bose.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		
-	}
-}
+recruit_character = RAJ_p_krishna_pillai
+recruit_character = RAJ_Jawaharlal_Nehru
+recruit_character = RAJ_Behari_Bose
+recruit_character = RAJ_Jiddu_Krishnamurti
 
-
-create_country_leader = {
-	name = "ジャワハルラール・ネルー"
-	desc = ""
-	picture = "gfx/leaders/RAJ/Portrait_RAJ_Nehru.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "P. Krishna Pillai"
-	desc = "POLITICS_P_KRISHNA_PILLAI_DESC"
-	picture = "GFX_RAJ_krishna_pillai"
-	expire = "1965.1.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "B. P. Sitaramayya"
-	desc = "POLITICS_B_P_SITARAMAYYA_DESC"
-	picture = "GFX_RAJ_pattabhi_sitaramayya"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		
-	}
-}
-
-create_corps_commander = {
-	name = "Noel Beresford-Peirse"
-	gfx = "GFX_RAJ_noel_beresford_peirse"
-	traits = { armor_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Frank Messervy"
-	gfx = "GFX_RAJ_frank_messervy"
-	traits = { hill_fighter }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Douglas Gracey"
-	gfx = "GFX_RAJ_douglas_gracey"
-	traits = { desert_fox }
-	skill = 3
-	attack_skill = 1
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-
-create_navy_leader = {
-	name = "Herbert Fitzherbert"
-	gfx = "GFX_RAJ_herbert_fitzherbert"
-	traits = { old_guard_navy }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 1
-	coordination_skill = 2
-}
+recruit_character = RAJ_noel_beresfordpeirse
+recruit_character = RAJ_frank_messervy
+recruit_character = RAJ_douglas_gracey
+recruit_character = RAJ_herbert_fitzherbert
 
 if = {
 	limit = {

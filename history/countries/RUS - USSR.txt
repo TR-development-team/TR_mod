@@ -1,16 +1,9 @@
 ﻿
-capital = 219
+capital = 206
 
-oob = "SOV_1936"
+oob = "RUS_1936"
 
 set_major = yes
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "SOV_1936_naval_mtg"
-	else = {
-		set_naval_oob = "SOV_1936_naval_legacy"
-	}
-}
 add_ideas = {
         Democratic_centralism
 	limited_conscription
@@ -20,10 +13,20 @@ add_ideas = {
         trinket_max_workhours
         trinket_safety_regulations
         trinket_Unemployment_subsidies
+        #大臣
+        SOV_Mikhail_Kalinin
+        SOV_Lev_Kamenev
+        SOV_Nikolai_Bukharin_FA
+        SOV_Grigory_Zinoviev_ME
+        SOV_Alexei_Rikov
+        SOV_Alexander_Svechin
+        SOV_Mikhail_Tukhachevskii
+        SOV_Pavel_Dybenko
+        SOV_Yakov_Alksnis
 }
 
-
-country_event = { id = TR_russia.6 days = 10 }
+set_cosmetic_tag = RUS_Minsk
+country_event = { id = TR_russia.6 days = 326 }
 
 set_research_slots = 3
 starting_train_buffer = 1
@@ -42,10 +45,6 @@ set_technology = {
 	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1  # PLACEHOLDER
-	#basic_heavy_tank = 1  # PLACEHOLDER
-	#basic_medium_tank = 1 # PLACEHOLDER
 	early_fighter = 1
 	fighter1 = 1
 	early_bomber = 1
@@ -100,7 +99,6 @@ if = {
 		basic_light_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		mtg_transport = 1
 	}
 }
@@ -125,8 +123,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 37
-	radical_socialist = 44
+	totalist = 27
+	syndicalist = 16
+	radical_socialist = 38
         Gnosticism = 19
 }
 
@@ -137,18 +136,19 @@ add_ideas = {
 }
 
 
-recruit_character = SOV_Joseph_Stalin
-recruit_character = SOV_Nestor_Makhno
-recruit_character = SOV_Nikolai_bukharin
+recruit_character = SOV_Vyacheslav_Molotov
+recruit_character = SOV_Alexander_Shliapnikov
+recruit_character = SOV_Lev_Kamenev
 recruit_character = SOV_Yuliy_martov
 recruit_character = SOV_Boris_Savinkov
 recruit_character = SOV_Pavel_Milyukov
 recruit_character = SOV_Nikolai_Trubetzkoy
-recruit_character = SOV_Dmitri_Pavlovich
-recruit_character = SOV_nikolai_ii
+recruit_character = SOV_Alexander_Guchkov
 recruit_character = SOV_Pyotr_wrangel
+recruit_character = SOV_Pavel_Bermont_Avalov
 recruit_character = SOV_Alexander_Bogdanov
 
+recruit_character = SOV_Nikolai_bukharin
 recruit_character = SOV_Grigory_Zinoviev
 
 recruit_character = SOV_georgy_zhukov

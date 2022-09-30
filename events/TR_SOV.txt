@@ -55,28 +55,11 @@ country_event = {
 		}
 		set_country_flag = SOV_Congress_END
         set_country_flag = SOV_Stalin_Win
+		add_ideas = SOV_Vyacheslav_Molotov
 		set_politics = {
 			ruling_party = totalist
 			elections_allowed = no
-		}
-		annex_country = {
-			target = GEO
-			transfer_troops = yes
-			}	
-			231 = {
-				add_core_of = RUS
-			}
-			229 = {
-				add_core_of = RUS
-			}
-			230 = {
-				add_core_of = RUS
-			}
-			233 = {
-				add_core_of = RUS
-			}
-
-                
+		}		
 	}
 	option = { 
 		name = TR_Soviet.2.b
@@ -85,27 +68,17 @@ country_event = {
 		}
 		set_country_flag = SOV_Congress_END
 		set_country_flag = SOV_Bukharin_Win
+		add_ideas = SOV_Nikolai_Bukharin
 		set_politics = {
 			ruling_party = radical_socialist
 			elections_allowed = no
 		}
+		effect_tooltip = { retire_country_leader = yes }
+		promote_character = SOV_Nikolai_bukharin
 		create_wargoal = {
 			target = GEO
 			type = annex_everything
-		}
-		231 = {
-			add_core_of = RUS
-		}
-		229 = {
-			add_core_of = RUS
-		}
-		230 = {
-			add_core_of = RUS
-		}
-		233 = {
-			add_core_of = RUS
-		}
-                
+		}       
 	}
 	option = { 
 		name = TR_Soviet.2.c
@@ -114,6 +87,7 @@ country_event = {
 		}
 		set_country_flag = SOV_Congress_END
 		set_country_flag = SOV_Bogdanov_Win
+		add_ideas = SOV_Alexander_Bogdanov
 		set_politics = {
 			ruling_party = Gnosticism
 			elections_allowed = no
@@ -121,21 +95,7 @@ country_event = {
 		create_wargoal = {
 			target = GEO
 			type = annex_everything
-		}
-		231 = {
-			add_core_of = RUS
-		}
-		229 = {
-			add_core_of = RUS
-		}
-		230 = {
-			add_core_of = RUS
-		}
-		233 = {
-			add_core_of = RUS
-		}
-
-                
+		}       
 	}
 	option = { 
 		name = TR_Soviet.2.e
@@ -144,6 +104,7 @@ country_event = {
 		}
 		set_country_flag = SOV_Congress_END
 		set_country_flag = SOV_Zinoviev_Win
+		add_ideas = SOV_Grigory_Zinoviev
 		set_politics = {
 			ruling_party = radical_socialist
 			elections_allowed = no
@@ -153,20 +114,7 @@ country_event = {
 		create_wargoal = {
 			target = GEO
 			type = annex_everything
-		}
-		231 = {
-			add_core_of = RUS
-		}
-		229 = {
-			add_core_of = RUS
-		}
-		230 = {
-			add_core_of = RUS
-		}
-		233 = {
-			add_core_of = RUS
-		}
-                
+		}      
 	}
 }
 
@@ -198,12 +146,6 @@ country_event = {
                 remove_ideas = RUS_CIVIL_WAR
                 set_rule = { can_create_factions = no }
                 set_global_flag = Soviet_Win_flag
-		set_autonomy = {
-		    target = UKS
-		    autonomy_state = Union_Republics
-		    end_wars = yes
-		    end_civil_wars = yes
-		}
 		add_stability = 0.1
 		dismantle_faction = yes
 	}
@@ -225,49 +167,99 @@ country_event = {
 			target = SIB
 			transfer_troops = yes
 			}
-		set_autonomy = {
-		    target = UKS
-		    autonomy_state = Union_Republics
-		    end_wars = yes
-		    end_civil_wars = yes
-		}
-		40 = {
-			add_core_of = RUS
-		}
-		654 = {
-			add_core_of = RUS
-		}
-		329 = {
-			add_core_of = RUS
-		}
-		569 = {
-			add_core_of = RUS
-		}
-		568 = {
-			add_core_of = RUS
-		}
-		567 = {
-			add_core_of = RUS
-		}
-		566 = {
-			add_core_of = RUS
-		}
-		564 = {
-			add_core_of = RUS
-		}
-		565 = {
-			add_core_of = RUS
-		}
-		563 = {
-			add_core_of = RUS
-		}
-		574 = {
-			add_core_of = RUS
-		}
-		561 = {
+		every_state = {
+			limit = {
+				is_core_of = SIB
+			}
 			add_core_of = RUS
 		}
 
 	}
 
+}
+#ミンスクソビエトについて
+country_event = {
+	id = TR_Soviet.4
+	title = TR_Soviet.4.t
+	desc = TR_Soviet.4.d
+	picture = GFX_
+
+
+        is_triggered_only = yes
+        fire_only_once = yes
+
+	
+	option = { 
+		name = TR_Soviet.4.a
+        add_political_power = 25
+	}
+}
+#同志ジュガシヴィリ
+country_event = {
+	id = TR_Soviet.5
+	title = TR_Soviet.5.t
+	desc = TR_Soviet.5.d
+	picture = GFX_
+
+
+        is_triggered_only = yes
+        fire_only_once = yes
+
+	
+	option = { 
+		name = TR_Soviet.5.a
+        add_political_power = 25
+		add_opinion_modifier = { target = GEO modifier = large_increase }
+		diplomatic_relation = {
+			country = GEO
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+#同志ラデック
+country_event = {
+	id = TR_Soviet.6
+	title = TR_Soviet.6.t
+	desc = TR_Soviet.6.d
+	picture = GFX_
+
+
+        is_triggered_only = yes
+        fire_only_once = yes
+
+	
+	option = { 
+		name = TR_Soviet.6.a
+        add_political_power = 25
+		add_opinion_modifier = { target = POL modifier = large_increase }
+		diplomatic_relation = {
+			country = POL
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+#同志ルクセンブルク
+country_event = {
+	id = TR_Soviet.7
+	title = TR_Soviet.7.t
+	desc = TR_Soviet.7.d
+	picture = GFX_
+
+
+        is_triggered_only = yes
+        fire_only_once = yes
+
+	
+	option = { 
+		name = TR_Soviet.7.a
+        add_political_power = 25
+		add_opinion_modifier = { target = GER modifier = large_increase }
+		diplomatic_relation = {
+			country = GER
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
 }

@@ -66,7 +66,6 @@ white_peace_with_ROOT = {
 	if = {
 		limit = { has_country_flag = KR_war_skip }
 		clr_country_flag = KR_war_skip
-		country_event = { id = kr.political.205 hours = 2 }
 	}
 	else = {
 		white_peace = ROOT
@@ -165,7 +164,6 @@ white_peace_with_TARGET = {
 	if = {
 		limit = { has_country_flag = KR_war_skip }
 		clr_country_flag = KR_war_skip
-		country_event = { id = kr.political.207 hours = 2 }
 	}
 	else = {
 		white_peace = event_target:white_peace_receiver

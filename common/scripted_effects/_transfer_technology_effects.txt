@@ -1116,103 +1116,6 @@ transfer_technology = {
 			}
 			set_technology = { lar_decryption_bonus_tech = 1 popup = no }
 		}
-		###hidden###
-		if = {
-			limit = {
-				PREV = { has_tech = camel_corps_tech }
-			}
-			set_technology = { camel_corps_tech = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_ski_infantry }
-			}
-			set_technology = { tech_ski_infantry = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_marine_bonus }
-			}
-			set_technology = { tech_marine_bonus = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_marine_bonus_2 }
-			}
-			set_technology = { tech_marine_bonus_2 = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = jungle_warfare }
-			}
-			set_technology = { jungle_warfare = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = improved_field_hospitals }
-			}
-			set_technology = { improved_field_hospitals = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = expanded_engineer_corps_tech }
-			}
-			set_technology = { expanded_engineer_corps_tech = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = mountain_training_tech }
-			}
-			set_technology = { mountain_training_tech = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = improved_recon_units_tech }
-			}
-			set_technology = { improved_recon_units_tech = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = asymmetrical_warfare }
-			}
-			set_technology = { asymmetrical_warfare = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = desert_warfare }
-			}
-			set_technology = { desert_warfare = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = anti_fortification_artillery }
-			}
-			set_technology = { anti_fortification_artillery = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_integrated_specialists }
-			}
-			set_technology = { tech_integrated_specialists = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_at_cavalry }
-			}
-			set_technology = { tech_at_cavalry = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_dragoon_tactics }
-			}
-			set_technology = { tech_dragoon_tactics = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_improved_encryption }
-			}
-			set_technology = { tech_improved_encryption = 1 popup = no }
-		}
 		###industry###
 		if = {
 			limit = {
@@ -2245,18 +2148,6 @@ transfer_technology = {
 		}
 		if = {
 			limit = {
-				PREV = { has_tech = improved_cruiser_armor_scheme }
-			}
-			set_technology = { improved_cruiser_armor_scheme = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = advanced_cruiser_armor_scheme }
-			}
-			set_technology = { advanced_cruiser_armor_scheme = 1 popup = no }
-		}
-		if = {
-			limit = {
 				PREV = { has_tech = early_ship_hull_heavy }
 			}
 			set_technology = { early_ship_hull_heavy = 1 popup = no }
@@ -2494,24 +2385,6 @@ transfer_technology = {
 				PREV = { has_tech = improved_heavy_shell }
 			}
 			set_technology = { improved_heavy_shell = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = basic_secondary_battery }
-			}
-			set_technology = { basic_secondary_battery = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = improved_secondary_battery }
-			}
-			set_technology = { improved_secondary_battery = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = dp_secondary_battery }
-			}
-			set_technology = { dp_secondary_battery = 1 popup = no }
 		}
 		if = {
 			limit = {
@@ -4139,154 +4012,6 @@ transfer_technology_without_doctrines = {
 			}
 			set_technology = { lar_decryption_bonus_tech = 1 popup = no }
 		}
-		###hidden###
-		if = {
-			limit = {
-				PREV = { has_tech = camel_corps_tech }
-			}
-			set_technology = { camel_corps_tech = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_ski_infantry }
-			}
-			set_technology = { tech_ski_infantry = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_marine_bonus }
-			}
-			set_technology = { tech_marine_bonus = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_marine_bonus_2 }
-			}
-			set_technology = { tech_marine_bonus_2 = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = jungle_warfare }
-			}
-			set_technology = { jungle_warfare = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = improved_field_hospitals }
-			}
-			set_technology = { improved_field_hospitals = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = expanded_engineer_corps_tech }
-			}
-			set_technology = { expanded_engineer_corps_tech = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = mountain_training_tech }
-			}
-			set_technology = { mountain_training_tech = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = improved_recon_units_tech }
-			}
-			set_technology = { improved_recon_units_tech = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = asymmetrical_warfare }
-			}
-			set_technology = { asymmetrical_warfare = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = desert_warfare }
-			}
-			set_technology = { desert_warfare = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = anti_fortification_artillery }
-			}
-			set_technology = { anti_fortification_artillery = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_integrated_specialists }
-			}
-			set_technology = { tech_integrated_specialists = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_at_cavalry }
-			}
-			set_technology = { tech_at_cavalry = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_dragoon_tactics }
-			}
-			set_technology = { tech_dragoon_tactics = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = tech_improved_encryption }
-			}
-			set_technology = { tech_improved_encryption = 1 popup = no }
-		}
-		###industry###
-		if = {
-			limit = {
-				PREV = { has_tech = basic_machine_tools }
-			}
-			set_technology = { basic_machine_tools = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = improved_machine_tools }
-			}
-			set_technology = { improved_machine_tools = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = advanced_machine_tools }
-			}
-			set_technology = { advanced_machine_tools = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = assembly_line_production }
-			}
-			set_technology = { assembly_line_production = 1 popup = no }
-		}
-		if = {
-			limit = {
-				NOT = { has_tech = streamlined_line }
-				PREV = { has_tech = flexible_line }
-			}
-			set_technology = { flexible_line = 1 popup = no }
-		}
-		if = {
-			limit = {
-				NOT = { has_tech = flexible_line }
-				PREV = { has_tech = streamlined_line }
-			}
-			set_technology = { streamlined_line = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = improved_equipment_conversion }
-			}
-			set_technology = { improved_equipment_conversion = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = advanced_equipment_conversion }
-			}
-			set_technology = { advanced_equipment_conversion = 1 popup = no }
-		}
 		if = {
 			limit = {
 				NOT = { has_tech = dispersed_industry }
@@ -5114,24 +4839,6 @@ transfer_technology_without_doctrines = {
 				PREV = { has_tech = improved_heavy_shell }
 			}
 			set_technology = { improved_heavy_shell = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = basic_secondary_battery }
-			}
-			set_technology = { basic_secondary_battery = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = improved_secondary_battery }
-			}
-			set_technology = { improved_secondary_battery = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = dp_secondary_battery }
-			}
-			set_technology = { dp_secondary_battery = 1 popup = no }
 		}
 		if = {
 			limit = {

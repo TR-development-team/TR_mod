@@ -8,7 +8,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= totalist_subtype
+			ideology= Neo_Jacobinist_subtype
 		}
 	}
 	FRA_albert_camus={
@@ -19,7 +19,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= syndicalist_subtype
+			ideology= left_libertarianist_subtype
 		}
 	}
 	FRA_maurice_thorez={
@@ -33,7 +33,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= radical_socialist_subtype
+			ideology= Leninist_subtype
 		}
 	}
 	FRA_Jean_Paul_Sartre ={
@@ -44,7 +44,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= radical_socialist_subtype
+			ideology= Council_communist_subtype
 		}
 	}
 	FRA_leon_blum={
@@ -117,7 +117,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=Catholic_Integralism_subtype
 		}
 	}
 	FRA_Jean_dOrleans={
@@ -128,7 +128,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=Catholic_Integralism_subtype
 		}
 	}
 	FRA_maxime_weygand={
@@ -142,7 +142,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=Military_junta_subtype
 		}
 		field_marshal={
 			traits={ organizer old_guard inflexible_strategist career_officer }
@@ -162,15 +162,15 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=president_principle_subtype
 		}
 	}
 
-	FRA_Tristan_Tzara={
-		name=FRA_Tristan_Tzara
+	FRA_Maurice_Blanchot={
+		name=FRA_Maurice_Blanchot
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_FRA_Tzara.tga"
+				large="gfx/leaders/FRA/Portrait_FRA_Maurice_Blanchot.png"
 			}
 		}
 		country_leader={

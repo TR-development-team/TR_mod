@@ -2,23 +2,20 @@
 state={
 	id=562
 	name="TR_STATE_562" # Okhotsk
-	manpower = 126961
-	state_category = wasteland
+	manpower = 63480
+	state_category = pastoral
 
 	history={
 		owner = SIB
 		buildings = {
 			infrastructure = 1
-			12683 = {
-				naval_base = 1
 
-			}
 		}
 		add_core_of = SIB
 	}
 
 	local_supplies=0.0 
 provinces={
-		1714 1805 1865 4810 4881 7772 10540 10572 10598 11607 12518 12551 12650 12683 
+		1714 1805 4810 4881 7772 10572 10598 11607 12518 12551 12650
 	}
 }

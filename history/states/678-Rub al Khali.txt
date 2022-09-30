@@ -6,16 +6,22 @@ state={
 	state_category = wasteland
         impassable = yes
 
+
 	history={
 		owner = SAU
 		buildings = {
 			infrastructure = 0
+
 		}
 		add_core_of = SAU
+
 	}
 
-	local_supplies=0.0 
-provinces={
-		4932 5081 8030 8118 10870 12740 12768 
+	provinces={
+		4932 5081 8118 12740 
 	}
+	manpower=42
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }

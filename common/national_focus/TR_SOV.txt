@@ -7,283 +7,2025 @@ focus_tree = {
 			tag = SOV
 		}
 	}
-        continuous_focus_position = { x = 2500 y = 1300 }
-	#Focus for フィンランド独立の承認 - focus ID randomly generated due to title being in non-latin characters
+    continuous_focus_position = { x = 2700 y = 0 }
+
+	#二月革命
 	focus = {
-		id = SOV_cTSKnGVm
-		icon = GFX_focus_invite_finland
-		x = 15
+		id = SOV_Political_focus_1
+		icon = GFX_goal_RUS_February_Revolution
+		x = 14
 		y = 0
-		cost = 3
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
+		cost = 5
+		available = {
+            always = no
+            }
+        bypass = {
+			has_country_flag = SOV_FEBREVOLUTION
 		}
-                cancelable = no
 		completion_reward = {
-			white_peace = FIN
-                        add_political_power = -100
-                        remove_ideas = SOV_fin_independent
+
 		}
 	}
-
-	#Focus for 農業への補助金 - focus ID randomly generated due to title being in non-latin characters
+	#軍隊の介入
 	focus = {
-		id = SOV_swhItSlY
-		icon = GFX_focus_usa_guarantee_the_american_dream
-		x = 11
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_vWFfJTdj }
-		ai_will_do = {
-			factor = 1
+		id = SOV_Political_focus_2
+		icon = GFX_goal_generic_military_sphere
+		x = -6
+		y = 1
+		cost = 5
+		available = {
+            always = no
+            }
+        bypass = {
+			has_country_flag = SOV_DOKUSAI
 		}
-	completion_reward = {
-                
-                       add_stability = 0.15
-		    }
-	        }
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Political_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
 
-	#Focus for 共和国臨時政府の組織 - focus ID randomly generated due to title being in non-latin characters
+		}
+	}
+	#改革勅令
 	focus = {
-		id = SOV_spZgYhXG
-		icon = GFX_goal_support_democracy
-		x = 10
+		id = SOV_Political_focus_3
+		icon = GFX_focus_POL_complete_april_constitution
+		x = 7
+		y = 1
+		cost = 5
+		available = {
+            always = no
+        }
+		bypass = {
+			OR = { has_country_flag = SOV_MINSHU has_country_flag = SOV_RIKKEN}
+		}
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Political_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#立憲君主制への移行
+	focus = {
+		id = SOV_Democracy_focus_1
+		icon = GFX_goal_RUS_Alexei_Constitutional_monarchy
+		x = 5
 		y = 2
-		cost = 4
-                 available = {
+		cost = 3
+		available = {
+            always = no
+        }
+        bypass = {
+			has_country_flag = SOV_RIKKEN
+		}
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Political_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = Constitutional_monarchy
+            set_country_flag = SOV_FEBREVO_II
+		}
+	}
+	#皇帝の退位
+	focus = {
+		id = SOV_Democracy_focus_2
+		icon = GFX_goal_RUS_Republic_Russia
+		x = 9
+		y = 2
+		cost = 3
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+            always = no
+            }
+        bypass = {
 			has_country_flag = SOV_MINSHU
 		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_zSQWZvaD }
-		ai_will_do = {
-			factor = 1
+		prerequisite = { focus = SOV_Political_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = Democratic_Republic
+            set_country_flag = SOV_FEBREVO_II
 		}
-	completion_reward = {
-		add_ideas = Democratic_Republic
-                        swap_ideas = {
+	}
+	#臨時政府を組織
+	focus = {
+		id = SOV_Democracy_focus_3
+		icon = GFX_goal_government_centralised_icon
+		x = 7
+		y = 3
+		cost = 4
+		ai_will_do = {
+			factor = 240
+		}
+		prerequisite = { focus = SOV_Democracy_focus_1 focus = SOV_Democracy_focus_2 }
+		relative_position_id = SOV_Political_focus_1
+		cancel_if_invalid = no
+		select_effect = {
+			remove_ideas = SOV_Okhrana
+			if = {
+				limit = { has_country_flag = SOV_MINSHU }
+				country_event = {
+					id = TR_russia.14
+					days = 14
+				}
+			}
+			if = {
+				limit = { has_country_flag = SOV_RIKKEN }
+				country_event = {
+					id = TR_russia.15
+					days = 14
+				}
+			}
+		}
+		completion_reward = {
+			add_stability = 0.1
+            swap_ideas = {
 				remove_idea = SOV_army_disband
 				add_idea = SOV_army_disband_1
 			}
-                        swap_ideas = {
+            swap_ideas = {
 				remove_idea = SOV_revolution
 				add_idea = SOV_revolution_1
 			}
-                        set_country_flag = SOV_FEBREVO_II
-                        add_ideas = SOV_REPUBLIC
-		    }
-	        }
-
-
-	#Focus for 国家労働奉仕団を設立 - focus ID randomly generated due to title being in non-latin characters
+		}
+	}
+	#象徴皇帝
 	focus = {
-		id = SOV_upXYGqMt
-		icon = GFX_focus_generic_industry_3
-		x = 16
+		id = SOV_Democracy_focus_4
+		icon = GFX_goal_generic_Constitutional_monarchy_focus
+		x = 4
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 200
+		}
+		prerequisite = { focus = SOV_Democracy_focus_1 }
+		prerequisite = { focus = SOV_Democracy_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#社会の自由化
+	focus = {
+		id = SOV_Democracy_focus_5
+		icon = GFX_goal_generic_Liberty_Society
+		x = 6
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 200
+		}
+		prerequisite = { focus = SOV_Democracy_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = trinket_minimum_wage
+			add_ideas = trinket_max_workhours
+			add_ideas = trinket_safety_regulations
+			add_ideas = trinket_Unemployment_subsidies
+			add_ideas = trinket_school_system
+			add_ideas = trinket_pensions
+			add_ideas = trinket_health_care
+		}
+	}
+	#憲法制定議会
+	focus = {
+		id = SOV_Democracy_focus_6
+		icon = GFX_goal_reform_electoral_law
+		x = 8
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 200
+		}
+		prerequisite = { focus = SOV_Democracy_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.05
+            add_political_power = 50
+		}
+	}
+	#共和国精神
+	focus = {
+		id = SOV_Democracy_focus_7
+		icon = GFX_goal_support_democracy
+		x = 10
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 200
+		}
+		prerequisite = { focus = SOV_Democracy_focus_2 }
+		prerequisite = { focus = SOV_Democracy_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = SOV_REPUBLIC
+		}
+	}
+	#民主主義を守れ！
+	focus = {
+		id = SOV_Democracy_focus_8
+		icon = GFX_goal_generic_Election_Vote
+		x = 6
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+            NOT = {has_country_flag = SOV_SR_Dictator }
+            }
+		prerequisite = { focus = SOV_Democracy_focus_4 focus = SOV_Democracy_focus_7 }
+		prerequisite = { focus = SOV_Democracy_focus_5 }
+		prerequisite = { focus = SOV_Democracy_focus_6 }
+		mutually_exclusive = { focus = SOV_Terror_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.1
+			country_event = TR_russia.4	
+		}
+	}
+	#改革の推進
+	focus = {
+		id = SOV_Democracy_focus_9
+		icon = GFX_
+		x = 4
 		y = 6
 		cost = 8
-                available = {
-                               has_country_flag = SOV_DOKUSAI
-                
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_FtrmLfuP }
 		ai_will_do = {
-			factor = 100
+			factor = 80
 		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = SOV_depression
-				add_idea = SOV_depression_1
-			}
-                        add_ideas = SOV_KOKKAROUDOU
-		    }
-	        }
-
-	#Focus for 公共事業への投資 - focus ID randomly generated due to title being in non-latin characters
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		prerequisite = { focus = SOV_Democracy_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = SOV_Free_russia
+		}
+	}
+	#自由思想
 	focus = {
-		id = SOV_eBXTygVG
-		icon = GFX_goal_generic_production
-		x = 20
+		id = SOV_Democracy_focus_10
+		icon = GFX_
+		x = 6
 		y = 6
 		cost = 8
-                 available = {
-			OR = { has_country_flag = SOV_MINSHU
-                               has_country_flag = SOV_RIKKEN
-                  }
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_FtrmLfuP }
 		ai_will_do = {
-			factor = 100
+			factor = 80
 		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = SOV_depression
-				add_idea = SOV_depression_1
-			}
-                        add_ideas = SOV_KOUKYOU
-		    }
-	        }
-
-	#Focus for 交通網の整備 - focus ID randomly generated due to title being in non-latin characters
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		prerequisite = { focus = SOV_Democracy_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+            add_ideas = SOV_Free_thinker
+		}
+	}
+	#労働改革
 	focus = {
-		id = SOV_UjvlHtxh
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 18
+		id = SOV_Democracy_focus_11
+		icon = GFX_
+		x = 2
 		y = 7
 		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_upXYGqMt 
-			focus = SOV_eBXTygVG 
-		}
 		ai_will_do = {
-			factor = 1
+			factor = 80
 		}
-	complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-
+		prerequisite = { focus = SOV_Democracy_focus_9 }
+		prerequisite = { focus = SOV_Democracy_focus_10 }
+		relative_position_id = SOV_Political_focus_1
 		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-                  random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
+			add_ideas = good_max_workhours
+			add_ideas = good_minimum_wage
+			add_ideas = good_safety_regulations
+		}
+	}
+	#医療改革
+	focus = {
+		id = SOV_Democracy_focus_12
+		icon = GFX_
+		x = 4
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Democracy_focus_9 }
+		prerequisite = { focus = SOV_Democracy_focus_10 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = good_health_care
+		}
+	}
+	#教育改革
+	focus = {
+		id = SOV_Democracy_focus_13
+		icon = GFX_
+		x = 6
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Democracy_focus_9 }
+		prerequisite = { focus = SOV_Democracy_focus_10 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = acceptable_school_system
+		}
+	}
+	#ドゥーマの権限を強化
+	focus = {
+		id = SOV_Democracy_focus_14
+		icon = GFX_
+		x = 4
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Democracy_focus_11 }
+		prerequisite = { focus = SOV_Democracy_focus_12 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#寛容なる国家
+	focus = {
+		id = SOV_Democracy_focus_15
+		icon = GFX_
+		x = 6
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Democracy_focus_13 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Free_russia
+				add_idea = SOV_Free_russia_1
+			}	
+		}
+	}
+	#民主主義のロシア
+	focus = {
+		id = SOV_Democracy_focus_16
+		icon = GFX_
+		x = 5
+		y = 9
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Democracy_focus_14 }
+		prerequisite = { focus = SOV_Democracy_focus_15 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Free_russia_1
+				add_idea = SOV_Free_russia_2
+			}	
+		}
+	}
+	#大テロル
+	focus = {
+		id = SOV_Terror_focus_1
+		icon = GFX_goal_RUS_Savinkov_Terror
+		x = 8
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 240
+		}
+		available = {
+            has_country_flag = SOV_SR_Dictator
+            }
+		bypass = {
+            has_country_flag = SOV_OCREVOLUTION
+            }
+		prerequisite = { focus = SOV_Democracy_focus_7 }
+		prerequisite = { focus = SOV_Democracy_focus_5 }
+		prerequisite = { focus = SOV_Democracy_focus_6 }
+		mutually_exclusive = { focus = SOV_Democracy_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			country_event = {
+				id = TR_russia.21
+				days = 1
 			}
 		}
 	}
-
-
-	#Focus for 重工業化政策 - focus ID randomly generated due to title being in non-latin characters
+	#オフラーナの再編
 	focus = {
-		id = SOV_JpxSgPhG
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 14
+		id = SOV_Terror_focus_2
+		icon = GFX_
+		x = 8
+		y = 6
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		prerequisite = { focus = SOV_Terror_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = SOV_Republic_Okhrana
+		}
+	}
+	#農業社会主義
+	focus = {
+		id = SOV_Terror_focus_3
+		icon = GFX_
+		x = 10
+		y = 6
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		prerequisite = { focus = SOV_Terror_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_ideas = SOV_Narodnism
+		}
+	}
+	#戦闘団を統合
+	focus = {
+		id = SOV_Terror_focus_4
+		icon = GFX_
+		x = 8
 		y = 7
 		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_upXYGqMt }
 		ai_will_do = {
-			factor = 50
+			factor = 80
 		}
-	completion_reward = {
-                
-                        add_ideas = SOV_JYUKOUGYO
-                        random_owned_controlled_state = {
+		prerequisite = { focus = SOV_Terror_focus_2 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Republic_Okhrana
+				add_idea = SOV_Republic_Okhrana_1
+			}	
+		}
+	}
+	#ミールの復興
+	focus = {
+		id = SOV_Terror_focus_5
+		icon = GFX_
+		x = 10
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_idea = SOV_Narodnism
+        }
+		prerequisite = { focus = SOV_Terror_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Narodnism
+				add_idea = SOV_Narodnism_1
+			}
+		}
+	}
+	#土地改革
+	focus = {
+		id = SOV_Terror_focus_6
+		icon = GFX_
+		x = 12
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_idea = SOV_Narodnism_1
+        }
+		prerequisite = { focus = SOV_Terror_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Narodnism_1
+				add_idea = SOV_Narodnism_2
+			}
+		}
+	}
+	#慈悲なき殺戮
+	focus = {
+		id = SOV_Terror_focus_7
+		icon = GFX_
+		x = 8
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Terror_focus_4 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Republic_Okhrana_1
+				add_idea = SOV_Republic_Okhrana_2
+			}
+		}
+	}
+	#市場社会主義
+	focus = {
+		id = SOV_Terror_focus_8
+		icon = GFX_
+		x = 10
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Terror_focus_5 }
+		prerequisite = { focus = SOV_Terror_focus_6 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Narodnism_2
+				add_idea = SOV_Narodnism_3
+			}
+		}
+	}
+	#黒馬を見たり
+	focus = {
+		id = SOV_Terror_focus_9
+		icon = GFX_
+		x = 9
+		y = 9
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Terror_focus_7 }
+		prerequisite = { focus = SOV_Terror_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.2
+			}
+		}
+	}
+	#黒男爵の独裁
+	focus = {
+		id = SOV_Autocrat_focus_1
+		icon = GFX_goal_RUS_Pyotr_Wrangel
+		x = -11
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+            has_country_flag = SOV_Wrangel
+            }
+		prerequisite = { focus = SOV_Political_focus_2 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = SOV_army_disband
+				add_idea = SOV_army_disband_1
+			}
+            swap_ideas = {
+				remove_idea = SOV_revolution
+				add_idea = SOV_revolution_1
+			}
+            set_country_flag = SOV_FEBREVO_II
+			promote_character = RUS_Pyotr_wrangel
+            add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		        }
+			set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		         }
+		    }
+	}
+	#オフラーナの強化
+	focus = {
+		id = SOV_Autocrat_focus_2
+		icon = GFX_goal_generic_police_state
+		x = -13
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Okhrana
+				add_idea = SOV_Okhrana_1
+			}	
+		}
+	}
+	#戒厳令
+	focus = {
+		id = SOV_Autocrat_focus_3
+		icon = GFX_goal_generic_Close_Parliaments
+		x = -11
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#傀儡皇帝
+	focus = {
+		id = SOV_Autocrat_focus_4
+		icon = GFX_
+		x = -9
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.05
+					}
+			add_political_power = 100
+		}
+	}
+	#弾圧の開始
+	focus = {
+		id = SOV_Autocrat_focus_5
+		icon = GFX_goal_generic_political_purge
+		x = -13
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_2 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+            add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.1
+					}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+		}
+	}
+	#名ばかりのドゥーマ
+	focus = {
+		id = SOV_Autocrat_focus_6
+		icon = GFX_goal_generic_Ban_Parties
+		x = -11
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.6
+					}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.2
+					}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.1
+					}
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+					}
+		}
+	}
+	#黒いヴォシチ
+	focus = {
+		id = SOV_Autocrat_focus_7
+		icon = GFX_
+		x = -9
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_4 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = 0.05
+					}
+		}
+	}
+	#永遠のツァーリズム
+	focus = {
+		id = SOV_Autocrat_focus_8
+		icon = GFX_
+		x = -11
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		select_effect = {
+			if = {
+				limit = { has_country_flag = SOV_Monarchist }
+				country_event = {
+					id = TR_russia.25
+					days = 10
+				}
+			}
+		}
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+			NOT = { has_country_flag = SOV_Purishkevich_die }
+		}
+		bypass = {  }
+		prerequisite = { focus = SOV_Autocrat_focus_5 focus = SOV_Monarchism_focus_5 }
+		prerequisite = { focus = SOV_Autocrat_focus_6 focus = SOV_Monarchism_focus_6 }
+		prerequisite = { focus = SOV_Autocrat_focus_7 focus = SOV_Monarchism_focus_7 }
+		mutually_exclusive = { focus = SOV_Monarchism_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#皇帝の慈悲
+	focus = {
+		id = SOV_Autocrat_focus_9
+		icon = GFX_
+		x = -12
+		y = 6
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#ボリシェヴィキ残党の粉砕
+	focus = {
+		id = SOV_Autocrat_focus_10
+		icon = GFX_
+		x = -10
+		y = 6
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#上からの近代化
+	focus = {
+		id = SOV_Autocrat_focus_11
+		icon = GFX_
+		x = -14
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_9 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#忠誠を示せ！
+	focus = {
+		id = SOV_Autocrat_focus_12
+		icon = GFX_
+		x = -12
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_9 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#社会の軍事化
+	focus = {
+		id = SOV_Autocrat_focus_13
+		icon = GFX_
+		x = -10
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_10 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#監視社会
+	focus = {
+		id = SOV_Autocrat_focus_14
+		icon = GFX_
+		x = -8
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_10 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#団結の象徴たる皇帝
+	focus = {
+		id = SOV_Autocrat_focus_15
+		icon = GFX_
+		x = -12
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_11 }
+		prerequisite = { focus = SOV_Autocrat_focus_12 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#合理的憲法
+	focus = {
+		id = SOV_Autocrat_focus_16
+		icon = GFX_
+		x = -10
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_13 }
+		prerequisite = { focus = SOV_Autocrat_focus_14 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#強力なるロシア
+	focus = {
+		id = SOV_Autocrat_focus_17
+		icon = GFX_
+		x = -11
+		y = 9
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Autocrat_focus_15 }
+		prerequisite = { focus = SOV_Autocrat_focus_16 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#君主主義者の結集
+	focus = {
+		id = SOV_Monarchism_focus_1
+		icon = GFX_goal_RUS_romanov
+		x = -3
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+            has_country_flag = SOV_Monarchist
+            }
+		prerequisite = { focus = SOV_Political_focus_2 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+		    add_ideas = totalist_dictatorship
+            swap_ideas = {
+				remove_idea = SOV_army_disband
+				add_idea = SOV_army_disband_1
+			}
+            swap_ideas = {
+				remove_idea = SOV_revolution
+				add_idea = SOV_revolution_1
+			}
+            set_country_flag = SOV_FEBREVO_II
+            add_popularity = {
+			ideology = national_populist
+			popularity = 0.1
+		        }
+			set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		         }
+		    }
+	}
+	#忠誠による団結
+	focus = {
+		id = SOV_Monarchism_focus_2
+		icon = GFX_goal_government_centralised_icon
+		x = -5
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Monarchism_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+            add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+				}
+		}
+	}
+	#正教会との協力
+	focus = {
+		id = SOV_Monarchism_focus_3
+		icon = GFX_goal_RUS_Corporate_Orthodox
+		x = -3
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Monarchism_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		        }
+				country_event = {
+					id = TR_russia.35
+					days = 1
+				}
+		}
+	}
+	#ムラドロッシとの協力
+	focus = {
+		id = SOV_Monarchism_focus_4
+		icon = GFX_goal_RUS_Mladorossi_kazembek
+		x = -1
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Monarchism_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.05
+				country_event = {
+					id = TR_russia.36
+					days = 1
+				}
+		}
+	}
+	#血に塗られた夜
+	focus = {
+		id = SOV_Monarchism_focus_5
+		icon = GFX_goal_generic_political_purge
+		x = -5
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Monarchism_focus_2 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+            add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+					}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -20000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+		}
+	}
+	#聖人皇帝
+	focus = {
+		id = SOV_Monarchism_focus_6
+		icon = GFX_goal_RUS_Saint_Alexei
+		x = -3
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Monarchism_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.1
+			add_popularity = {
+				ideology = Gnosticism
+				popularity = 0.05
+				}
+		}
+	}
+	#国家革命の開始
+	focus = {
+		id = SOV_Monarchism_focus_7
+		icon = GFX_goal_generic_national_revolution
+		x = -1
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Monarchism_focus_4 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.05
+				}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.05
+				}
+		}
+	}
+	#摂政評議会
+	focus = {
+		id = SOV_Monarchism_focus_8
+		icon = GFX_goal_RUS_regency_council
+		x = -3
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		select_effect = {
+			country_event = {
+				id = TR_russia.26
+				days = 25
+			}
+		}
+		available = {
+            has_country_flag = SOV_Purishkevich_die
+            }
+		bypass = {  }
+		prerequisite = { focus = SOV_Monarchism_focus_5 }
+		prerequisite = { focus = SOV_Monarchism_focus_6 }
+		prerequisite = { focus = SOV_Monarchism_focus_7 }
+		mutually_exclusive = { focus = SOV_Autocrat_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#神聖なる帝国
+	focus = {
+		id = SOV_Messianism_focus_1
+		icon = GFX_goal_RUS_Alexei_Taboritsky
+		x = -5
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+            has_government = Gnosticism
+            }
+		prerequisite = { focus = SOV_Monarchism_focus_8 }
+		mutually_exclusive = { focus = SOV_Mladorossi_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			country_event = {
+				id = TR_russia.33
+				days = 1
+			}
+		}
+	}
+	#時計の針を戻す
+	focus = {
+		id = SOV_Messianism_focus_2
+		icon = GFX_
+		x = -6
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Messianism_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+            add_ideas = SOV_feudalism
+		}
+	}
+	#正統か死か！
+	focus = {
+		id = SOV_Messianism_focus_3
+		icon = GFX_
+		x = -4
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Messianism_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_manpower = -50000
+			add_popularity = {
+				ideology = Gnosticism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.05
+					}
+		}
+	}
+	#再び鎖につなぐ
+	focus = {
+		id = SOV_Messianism_focus_4
+		icon = GFX_
+		x = -7
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Messianism_focus_2 }
+		prerequisite = { focus = SOV_Messianism_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_feudalism
+				add_idea = SOV_feudalism_1
+			}	
+		}
+	}
+	#帝国の純化
+	focus = {
+		id = SOV_Messianism_focus_5
+		icon = GFX_goal_RUS_Taboritsky_Pure
+		x = -5
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Messianism_focus_2 }
+		prerequisite = { focus = SOV_Messianism_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			country_event = {
+				id = TR_russia.27
+				days = 1
+			}
+		}
+	}
+	#人民連合を取り込む
+	focus = {
+		id = SOV_Messianism_focus_6
+		icon = GFX_
+		x = -3
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Messianism_focus_2 focus = SOV_Mladorossi_focus_2 }
+		prerequisite = { focus = SOV_Messianism_focus_3 focus = SOV_Mladorossi_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.1
+				}
+			if = {
+				limit = { has_government = Gnosticism }
+				add_popularity = {
+					ideology = Gnosticism
+					popularity = 0.1
+					}
+			}
+			if = {
+				limit = { has_government = totalist }
+				add_popularity = {
+					ideology = totalist
+					popularity = 0.1
+					}
+			}
+		}
+	}
+	#アベルの予言
+	focus = {
+		id = SOV_Messianism_focus_7
+		icon = GFX_
+		x = -6
+		y = 9
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Messianism_focus_4 }
+		prerequisite = { focus = SOV_Messianism_focus_5 }
+		prerequisite = { focus = SOV_Messianism_focus_6 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			country_event = {
+				id = TR_russia.28
+				days = 1
+			}
+		}
+	}
+	#皇帝殉教者
+	focus = {
+		id = SOV_Messianism_focus_8
+		icon = GFX_
+		x = -4
+		y = 9
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = { has_completed_focus = SOV_Messianism_focus_7 }
+		prerequisite = { focus = SOV_Messianism_focus_4 }
+		prerequisite = { focus = SOV_Messianism_focus_5 }
+		prerequisite = { focus = SOV_Messianism_focus_6 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			country_event = {
+				id = TR_russia.29
+				days = 1
+			}
+		}
+	}
+	#贖罪の儀式
+	focus = {
+		id = SOV_Messianism_focus_9
+		icon = GFX_
+		x = -5
+		y = 10
+		cost = 8
+		available = {
+			is_subject = no
+			has_war = no
+			controls_all_owned_states = yes
+			has_completed_focus = SOV_Diplomacy_focus_19
+				}
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Messianism_focus_7 }
+		prerequisite = { focus = SOV_Messianism_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			country_event = {
+				id = TR_russia.30
+				days = 1
+			}
+		}
+	}
+	#勝利の皇帝アレクセイ
+	focus = {
+		id = SOV_Messianism_focus_10
+		icon = GFX_
+		x = -5
+		y = 11
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			is_subject = no
+			has_war = no
+			controls_all_owned_states = yes
+			has_country_flag = SOV_Alexei_Revival
+				}
+		prerequisite = { focus = SOV_Messianism_focus_9 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+			country_event = {
+				id = TR_russia.31
+				days = 1
+			}
+		}
+	}
+	#皇帝とソビエト
+	focus = {
+		id = SOV_Mladorossi_focus_1
+		icon = GFX_goal_RUS_Mladorossi
+		x = -1
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+            has_government = totalist
+            }
+		prerequisite = { focus = SOV_Monarchism_focus_8 }
+		relative_position_id = SOV_Political_focus_1
+		mutually_exclusive = { focus = SOV_Messianism_focus_1 }
+		completion_reward = {
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.2
+			}
+		}
+	}
+	#赤いヴォシチ
+	focus = {
+		id = SOV_Mladorossi_focus_2
+		icon = GFX_
+		x = -2
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Mladorossi_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#党による支配
+	focus = {
+		id = SOV_Mladorossi_focus_3
+		icon = GFX_
+		x = 0
+		y = 7
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Mladorossi_focus_1 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#働く皇帝
+	focus = {
+		id = SOV_Mladorossi_focus_4
+		icon = GFX_
+		x = -1
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Mladorossi_focus_2 }
+		prerequisite = { focus = SOV_Mladorossi_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#正教原理主義
+	focus = {
+		id = SOV_Mladorossi_focus_5
+		icon = GFX_
+		x = 1
+		y = 8
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Mladorossi_focus_2 }
+		prerequisite = { focus = SOV_Mladorossi_focus_3 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#ユーラシア主義の受容
+	focus = {
+		id = SOV_Mladorossi_focus_6
+		icon = GFX_
+		x = -2
+		y = 9
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Mladorossi_focus_4 }
+		prerequisite = { focus = SOV_Mladorossi_focus_5 }
+		prerequisite = { focus = SOV_Messianism_focus_6 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#精神の革命
+	focus = {
+		id = SOV_Mladorossi_focus_7
+		icon = GFX_
+		x = 0
+		y = 9
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Mladorossi_focus_4 }
+		prerequisite = { focus = SOV_Mladorossi_focus_5 }
+		prerequisite = { focus = SOV_Messianism_focus_6 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#連邦的帝国
+	focus = {
+		id = SOV_Mladorossi_focus_8
+		icon = GFX_
+		x = -1
+		y = 10
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Mladorossi_focus_6 }
+		prerequisite = { focus = SOV_Mladorossi_focus_7 }
+		relative_position_id = SOV_Political_focus_1
+		completion_reward = {
+
+		}
+	}
+	#ロシア内戦
+	focus = {
+		id = SOV_Military_focus_1
+		icon = GFX_goal_support_communism
+		x = 38
+		y = 0
+		cost = 8
+		ai_will_do = {
+			factor = 160
+		}
+		available = {
+            always = no
+            }
+        bypass = {
+			has_country_flag = SOV_OCREVOLUTION
+		}
+		completion_reward = {
+
+		}
+	}
+	#軍需産業の動員
+	focus = {
+		id = SOV_Military_focus_2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		bypass = {
+			has_country_flag = SOV_Great_Purge_flag
+		}
+		prerequisite = { focus = SOV_Military_focus_1 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_offsite_building = { type = arms_factory level = 2 }
+		}
+	}
+	#フランスに支援を要求
+	focus = {
+		id = SOV_Military_focus_3
+		icon = GFX_focus_chi_reach_out_to_france
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		bypass = {
+			has_country_flag = SOV_Great_Purge_flag
+		}
+		available = {
+			NOT = { has_global_flag = FRA_RUS_Friendship }
+			}
+		prerequisite = { focus = SOV_Military_focus_1 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			FRA = { country_event = TR_france.2 }
+		}
+	}
+	#反共義勇軍
+	focus = {
+		id = SOV_Military_focus_4
+		icon = GFX_goal_anti_comintern_pact
+		x = 2
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		bypass = {
+			has_country_flag = SOV_Great_Purge_flag
+		}
+		prerequisite = { focus = SOV_Military_focus_1 }
+		relative_position_id = SOV_Military_focus_1	
+		completion_reward = {
+        add_manpower = 50000
+        add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 2000
+			producer = SOV
+		}
+		}
+	}
+	#スタフカの設置
+	focus = {
+		id = SOV_Military_focus_5
+		icon = GFX_goal_generic_military_deal
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 160
+		}
+		prerequisite = { focus = SOV_Military_focus_2 }
+		prerequisite = { focus = SOV_Military_focus_3 }
+		prerequisite = { focus = SOV_Military_focus_4 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			army_experience = 15
+			add_ideas = SOV_Stavka
+		}
+	}
+	#軍事省
+	focus = {
+		id = SOV_Military_focus_6
+		icon = GFX_goal_generic_army_doctrines
+		x = -7
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Military_focus_5 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = SOV_army_disband_1
+				add_idea = SOV_army_disband_2
+			}
+			
+		}
+	}
+	#数の重視
+	focus = {
+		id = SOV_Military_focus_7
+		icon = GFX_focus_SOV_mobilization_plan
+		x = -10
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Military_focus_6 }
+		mutually_exclusive = { focus = SOV_Military_focus_8 }
+		mutually_exclusive = { focus = SOV_Military_focus_9 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+			add_ideas = SOV_Russian_army
+		}
+	}
+	#大規模作戦
+	focus = {
+		id = SOV_Military_focus_8
+		icon = GFX_focus_generic_military_mission
+		x = -7
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Military_focus_6 }
+		mutually_exclusive = { focus = SOV_Military_focus_7 }
+		mutually_exclusive = { focus = SOV_Military_focus_9 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+			add_ideas = SOV_Russian_army
+		}
+	}
+	#機動戦
+	focus = {
+		id = SOV_Military_focus_9
+		icon = GFX_goal_panzerwaffe
+		x = -4
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Military_focus_6 }
+		mutually_exclusive = { focus = SOV_Military_focus_8 }
+		mutually_exclusive = { focus = SOV_Military_focus_7 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+			add_ideas = SOV_Russian_army
+		}
+	}
+	#大規模動員
+	focus = {
+		id = SOV_Military_focus_10
+		icon = GFX_focus_SOV_mobilization_plan
+		x = -11
+		y = 5
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_7 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Russian_army
+				add_idea = SOV_mass_assault
+			}	
+		}
+	}
+	#歩兵銃の規格化
+	focus = {
+		id = SOV_Military_focus_11
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -9
+		y = 5
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_7 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+            add_ideas = SOV_infantry_weapons
+		}
+	}
+	#陸軍士官学校
+	focus = {
+		id = SOV_Military_focus_12
+		icon = GFX_focus_generic_military_academy
+		x = -7
+		y = 5
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_8 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Russian_army
+				add_idea = SOV_grand_battle_plan
+			}	
+		}
+	}
+	#装甲の近代化
+	focus = {
+		id = SOV_Military_focus_13
+		icon = GFX_goal_generic_build_tank
+		x = -5
+		y = 5
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_9 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	#戦車学校
+	focus = {
+		id = SOV_Military_focus_14
+		icon = GFX_goal_generic_army_tanks
+		x = -3
+		y = 5
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_9 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_Russian_army
+				add_idea = SOV_mobile_warfare
+			}	
+		}
+	}
+	#軍事教練
+	focus = {
+		id = SOV_Military_focus_15
+		icon = GFX_focus_generic_military_academy
+		x = -10
+		y = 6
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_10 }
+		prerequisite = { focus = SOV_Military_focus_11 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_mass_assault
+				add_idea = SOV_mass_assault_1
+			}	
+		}
+	}
+	#ロジスティクスの重視
+	focus = {
+		id = SOV_Military_focus_16
+		icon = GFX_focus_generic_support_the_left_right
+		x = -8
+		y = 6
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_12 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_grand_battle_plan
+				add_idea = SOV_grand_battle_plan_1
+			}	
+		}
+	}
+	#特殊部隊
+	focus = {
+		id = SOV_Military_focus_17
+		icon = GFX_goal_generic_special_forces
+		x = -6
+		y = 6
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_12 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 3
+				category = mountaineers_tech
+				category = marine_tech
+				category = para_tech
+			}
+		}
+	}
+	#大規模な自動車化
+	focus = {
+		id = SOV_Military_focus_18
+		icon = GFX_goal_generic_army_motorized
+		x = -4
+		y = 6
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_13 }
+		prerequisite = { focus = SOV_Military_focus_14 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_mobile_warfare
+				add_idea = SOV_mobile_warfare_1
+			}	
+		}
+	}
+	#政治将校
+	focus = {
+		id = SOV_Military_focus_19
+		icon = GFX_focus_generic_military_mission
+		x = -10
+		y = 7
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_15 }
+		prerequisite = { focus = SOV_Equipment_focus_3 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = SOV_army_disband_2
+				add_idea = SOV_army_disband_3
+			}
+			swap_ideas = {
+				remove_idea = SOV_mass_assault_1
+				add_idea = SOV_mass_assault_2
+			}	
+		}
+	}
+	#電子戦
+	focus = {
+		id = SOV_Military_focus_20
+		icon = GFX_goal_generic_radio_equipment
+		x = -7
+		y = 7
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_16 }
+		prerequisite = { focus = SOV_Military_focus_17 }
+		prerequisite = { focus = SOV_Equipment_focus_3 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = SOV_army_disband_2
+				add_idea = SOV_army_disband_3
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = computing_tech
+				category = radar_tech
+				category = decryption_tech
+				category = encryption_tech
+			}
+		}
+	}
+	#機械化部隊
+	focus = {
+		id = SOV_Military_focus_21
+		icon = GFX_focus_generic_steel
+		x = -4
+		y = 7
+		cost = 8
+		prerequisite = { focus = SOV_Equipment_focus_3 }
+		prerequisite = { focus = SOV_Military_focus_18 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+            swap_ideas = {
+				remove_idea = SOV_army_disband_2
+				add_idea = SOV_army_disband_3
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	#装備の更新
+	focus = {
+		id = SOV_Equipment_focus_1
+		icon = GFX_goal_generic_cavalry
+		x = 0
+		y = 4
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_6 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	#銃の更新
+	focus = {
+		id = SOV_Equipment_focus_2
+		icon = GFX_goal_generic_allies_build_infantry
+		x = -1
+		y = 5
+		cost = 8
+		prerequisite = { focus = SOV_Equipment_focus_1 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	#火砲の近代化
+	focus = {
+		id = SOV_Equipment_focus_3
+		icon = GFX_goal_generic_army_artillery2
+		x = -1
+		y = 6
+		cost = 8
+		prerequisite = { focus = SOV_Equipment_focus_2 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	#新たな軍需企業
+	focus = {
+		id = SOV_Equipment_focus_4
+		icon = GFX_goal_generic_construction
+		x = -1
+		y = 7
+		cost = 8
+		prerequisite = { focus = SOV_Equipment_focus_3 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
 						building = arms_factory
@@ -306,756 +2048,703 @@ focus_tree = {
 						}
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 1
 					instant_build = yes
 				}
 			}
-		    }
-	        }
-
-	#Focus for 農地改革 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_fQcTEvxG
-		icon = GFX_focus_prc_agrarian_socialism
-		x = 22
-		y = 7
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_eBXTygVG }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                          add_stability = -0.1
-                        add_ideas = SOV_NOUTIKAIKAKU
-		    }
-	        }
-
-	#Focus for 軍需産業への偏重 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_NrREmTfX
-		icon = GFX_focus_generic_combined_arms
-		x = 14
-		y = 8
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_JpxSgPhG }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = SOV_depression_1
-				add_idea = SOV_depression_2
-			}
-                        add_ideas = SOV_GUNJYUSANGYO
-		    }
-	        }
-
-
-	#Focus for ピョートルとは皇帝にふさわしい名ではないか - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_PskIdWAt
-		icon = GFX_focus_focus_fra_fascist_threat
-		x = 2
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_EysrDhkO }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-		add_ideas = Absolute_monarchy
-                remove_ideas = SOV_ALEXEI_II
-                add_ideas = SOV_WRANGEL
-		promote_character = RUS_Pyotr_wrangel_1
-
-	 }
-	}
-
-
-	#Focus for 再建の完了 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_qeIhUKyQ
-		icon = GFX_goal_generic_production2
-		x = 18
-		y = 9
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { 
-                        focus = SOV_HcoXgUkM 
-                        focus = SOV_NrREmTfX 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-
-                       remove_ideas = SOV_depression_2
-		    }
-	        }
-
-	#Focus for オフラーナに更なる権限を与える - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_ygOqcaNA
-		icon = GFX_focus_eng_move_to_secure_the_dominions
-		x = 0
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_PskIdWAt }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_ideas = SOV_HIMITSUKEISATU
-		}
-	}
-
-	#Focus for 医療改革 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_XyZzuDxV
-		icon = GFX_focus_generic_the_giant_wakes
-		x = 7
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_vWFfJTdj }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-			add_stability = 0.05	
-                        add_ideas = SOV_Health_care
-		}
-	}
-
-	#Focus for 労働組合の承認 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_DLVIYNKb
-		icon = GFX_focus_por_workers_of_iberia
-		x = 9
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_vWFfJTdj }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-			add_stability = 0.05	
-                        add_ideas = SOV_UNIOM_Accept
-		}
-	}
-
-	#Focus for ロシア人民の皇帝 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_XmqcSguz
-		icon = GFX_focus_focus_fra_third_empire
-		x = 2
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_wcprXIZS 
-		}
-		prerequisite = { 
-			focus = SOV_XuEOinFI 
-		}
-		prerequisite = { 
-			focus = SOV_ygOqcaNA 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_ideas = SOV_Imperator
-		}
-	}
-
-	#Focus for ゼムストヴォの権限強化 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_vWFfJTdj
-		icon = GFX_goal_generic_demand_territory
-		x = 9
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_zZCNisrY }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_stability = 0.05
-                        add_ideas = SOV_Zemstvo
-		}
-	}
-
-	#Focus for 内戦の終結 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_InCyzleb
-		icon = GFX_focus_generic_monarchy_2
-		x = 15
-		y = 4
-                 available = {
-                 NOT = {
-				country_exists = RUS
-			}
-                }
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_aZCANXWc }
-		ai_will_do = {
-			factor = 1
-		}
-	 completion_reward = {
-                set_rule = { can_create_factions = no }
-		    dismantle_faction = yes
-			set_country_flag = SOV_OCREVOLUTION_END
-                        remove_ideas = SOV_CIVIL_WAR
-                        add_timed_idea = {
-					idea = GER_CIVILWAR_MARKS
-					days = 365
-				} 
-		}
-	}
-
-
-	#Focus for 思想的自由 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_cwJVIpMg
-		icon = GFX_focus_research2
-		x = 7
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_zZCNisrY }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_ideas = SOV_Free_thinker
-		}
-	}
-
-	#Focus for 自由なロシア - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_zZCNisrY
-		icon = GFX_focus_focus_fra_liberte_egalite_solidarite
-		x = 8
-		y = 4
-		cost = 10
-                available = {
-			has_country_flag = SOV_OCREVOLUTION_END
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_ZUlrbEsj }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_ideas = SOV_Free_russia
-		}
-	}
-
-
-	#Focus for ペトログラード・ソヴィエトの蜂起 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_zIlvEcxF
-		icon = GFX_goal_generic_war_with_comintern
-		x = 15
-		y = 1
-		cost = 10
-                available = {
-                            always = no
-                       }
-                bypass = {
-			has_country_flag = SOV_OCREVOLUTION
-		}
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for 反共義勇軍 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_qnyktfMY
-		icon = GFX_goal_anti_comintern_pact
-		x = 15
-		y = 2
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_zIlvEcxF }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_manpower = 50000
-                       send_equipment = {
-			target = SOV
-			type = infantry_equipment
-			amount = 5000
-		}
-		}
-	}
-
-	#Focus for フランスに支援を要求 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_aZCANXWc
-		icon = GFX_focus_chi_reach_out_to_france
-		x = 15
-		y = 3
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_SCODjQFJ 
-		}
-		prerequisite = { 
-			focus = SOV_FoguBVrA 
-		}
-		prerequisite = { 
-			focus = SOV_qnyktfMY 
-		}
-		available = {
-			NOT = { has_global_flag = FRA_RUS_Friendship }
-			}
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-
-                        FRA = { country_event = TR_france.2 }
-		}
-	}
-
-	#Focus for 名ばかりのドゥーマ - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_TWrMOIAz
-		icon = GFX_focus_generic_strike_at_democracy2
-		x = 2
-		y = 3
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_EpgSsBIF }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_popularity = {
-			ideology = national_populist
-			popularity = 1.0
-		        }
-                        add_stability = 0.2
-                        add_political_power = -50
-		    }
-	        }
-
-	#Focus for 強力なロシア - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_EysrDhkO
-		icon = GFX_goal_support_fascism
-		x = 2
-		y = 4
-		cost = 10
-                available = {
-			has_country_flag = SOV_OCREVOLUTION_END
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_TWrMOIAz }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_ideas = SOV_strong_russia
-		}
-	}
-
-	#Focus for 第一回ドゥーマ選挙 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_ZUlrbEsj
-		icon = GFX_goal_support_democracy
-		x = 8
-		y = 3
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_spZgYhXG 
-			focus = SOV_GbeQigRE 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_stability = 0.2	
-
-			country_event = TR_russia.4	
-		}
-	}
-
-	#Focus for 皇帝の亡命 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_zSQWZvaD
-		icon = GFX_goal_tfv_sever_ties_with_uk
-		x = 10
-		y = 1
-		cost = 10
-                available = {
-                            always = no
-                       }
-                bypass = {
-			has_country_flag = SOV_MINSHU
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_2 }
-		mutually_exclusive = { 
-			focus = SOV_ajJyrTzl 
-		}
-		mutually_exclusive = { 
-			focus = SOV_GDBmwjeo 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for ヴラーンゲリ将軍が実権を掌握 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_EpgSsBIF
-		icon = GFX_focus_mex_support_general_cedillo
-		x = 2
-		y = 2
-		cost = 4
-                available = {
-			has_country_flag = SOV_DOKUSAI
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_GDBmwjeo }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-		    add_ideas = totalist_dictatorship
-            swap_ideas = {
-				remove_idea = SOV_army_disband
-				add_idea = SOV_army_disband_1
-			}
-                         swap_ideas = {
-				remove_idea = SOV_revolution
-				add_idea = SOV_revolution_1
-			}
-                        set_country_flag = SOV_FEBREVO_II
-                        add_ideas = SOV_ALEXEI_II
-                        add_popularity = {
-			ideology = national_populist
-			popularity = 0.3
-		        }
-			set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		         }
-		    }
-	        }
-
-
-	#Focus for 立憲君主制への移行 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_GbeQigRE
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 6
-		y = 2
-                available = {
-			has_country_flag = SOV_RIKKEN
-		}
-		cost = 4
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_ajJyrTzl }
-		ai_will_do = {
-			factor = 1
-		}
-	        completion_reward = {
-				add_ideas = Constitutional_monarchy
-                        swap_ideas = {
-				remove_idea = SOV_army_disband
-				add_idea = SOV_army_disband_1
-			}
-                        swap_ideas = {
-				remove_idea = SOV_revolution
-				add_idea = SOV_revolution_1
-			}
-                        set_country_flag = SOV_FEBREVO_II
-                        add_ideas = SOV_ALEXEI_II
-			set_politics = {
-			ruling_party = social_liberal
-			elections_allowed = no
-		         }
-		    }
-	        }
-
-	#Focus for 二月詔書 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_ajJyrTzl
-		icon = GFX_focus_generic_monarchy_1
-		x = 6
-		y = 1
-		cost = 10
-                available = {
-                            always = no
-                       }
-                bypass = {
-			has_country_flag = SOV_RIKKEN
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_2 }
-		mutually_exclusive = { 
-			focus = SOV_GDBmwjeo 
-		}
-		mutually_exclusive = { 
-			focus = SOV_zSQWZvaD 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for 2月革命
-	focus = {
-		id = SOV_2
-		icon = GFX_goal_tfv_burn_the_royal_portraits
-		x = 6
-		y = 0
-		cost = 10
-                available = {
-                            always = no
-                       }
-                bypass = {
-			has_country_flag = SOV_FEBREVOLUTION
-		}
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for 白衛軍を組織 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_SCODjQFJ
-		icon = GFX_goal_generic_political_pressure
-		x = 17
-		y = 2
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_zIlvEcxF }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-			division_template = {
-				name = "White Infantry"
-				division_names_group = SOV_GAR_01
-				is_locked = yes
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 252 }
-				create_unit = {
-					division = "division_template = \"White Infantry\" start_experience_factor = 0.1"
-					owner = SOV
-					count = 2
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 217 }
-				create_unit = {
-					division = "division_template = \"White Infantry\" start_experience_factor = 0.1"
-					owner = SOV
-					count = 2
-				}
-			}
-		}
-	}
-
-	#Focus for 軍事産業の動員 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_FoguBVrA
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 13
-		y = 2
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_zIlvEcxF }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_offsite_building = { type = arms_factory level = 2 }
-		    }
-	        }
-
-	#Focus for 戒厳令 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_GDBmwjeo
-		icon = GFX_focus_rom_royal_dictatorship
-		x = 2
-		y = 1
-		cost = 10
-                available = {
-                            always = no
-                       }
-                bypass = {
-			has_country_flag = SOV_DOKUSAI
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_2 }
-		mutually_exclusive = { 
-			focus = SOV_ajJyrTzl 
-		}
-		mutually_exclusive = { 
-			focus = SOV_zSQWZvaD 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-
-}
-
-	#Focus for 陸軍の改革 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_bYrzTMXw
-		icon = GFX_goal_generic_small_arms
-		x = 23
-		y = 0
-		cost = 10
-                available = {
-			has_country_flag = SOV_OCREVOLUTION_END
-		}
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	 completion_reward = {
-                        remove_ideas = SOV_army_disband_1
-		}
-	}
-	#軍事研究の強化
-	focus = {
-		id = SOV_XysYepoB1
-		icon = GFX_focus_research2
-		x = 23
-		y = 1
-		available = {
-			num_of_factories > 100
-		}
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_bYrzTMXw }
-		ai_will_do = {
-			factor = 1
-		}
-	 completion_reward = {
-                        add_research_slot = 1
-		}
-	}
-	#Focus for 反対者を粛清 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_wcprXIZS
-		icon = GFX_focus_TUR_purge_the_kemalists
-		x = 2
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_PskIdWAt }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
-                        add_stability = 0.2	
-                        add_timed_idea = {
-					idea = SOV_shukusei
-					days = 365
-				}              
-                      
-		}
-	}
-
-	#Focus for 国家工場の建設 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_XuEOinFI
-		icon = GFX_focus_generic_industry_3
-		x = 4
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_PskIdWAt }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
-					arms_factory > 0
 					free_building_slots = {
 						building = arms_factory
-						size > 1
+						size > 0
 						include_locked = yes
 					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 2
 					instant_build = yes
 				}
-				
-			}
-			random_owned_controlled_state = {
-				limit = {
-					industrial_complex > 0
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-				
 			}
 		}
 	}
-
-	#Focus for 鉱山の開発 - focus ID randomly generated due to title being in non-latin characters
+	#兵器開発局の強化
 	focus = {
-		id = SOV_QXmpeRua
-		icon = GFX_goal_generic_construct_civilian
-		x = 18
+		id = SOV_Equipment_focus_5
+		icon = GFX_focus_research2
+		x = -1
 		y = 8
-		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_UjvlHtxh }
-		ai_will_do = {
-			factor = 1
+		cost = 8
+		prerequisite = { focus = SOV_Equipment_focus_4 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_research_slot = 1
 		}
-	 completion_reward = {
-                      random_owned_state = {
+	}
+	#ロシア空軍の近代化
+	focus = {
+		id = SOV_Air_focus_1
+		icon = GFX_goal_generic_build_airforce
+		x = 2
+		y = 5
+		cost = 8
+		prerequisite = { focus = SOV_Equipment_focus_1 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			air_experience = 75
+		}
+	}
+	#地上支援重視
+	focus = {
+		id = SOV_Air_focus_2
+		icon = GFX_
+		x = 1
+		y = 6
+		cost = 8
+		prerequisite = { focus = SOV_Air_focus_1 }
+		mutually_exclusive = { focus = SOV_Air_focus_3 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
+			}
+		}
+	}
+	#戦略爆撃重視
+	focus = {
+		id = SOV_Air_focus_3
+		icon = GFX_
+		x = 3
+		y = 6
+		cost = 8
+		prerequisite = { focus = SOV_Air_focus_1 }
+		mutually_exclusive = { focus = SOV_Air_focus_2 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = tactical_bomber
+			}
+		}
+	}
+	#空軍士官学校
+	focus = {
+		id = SOV_Air_focus_4
+		icon = GFX_
+		x = 2
+		y = 7
+		cost = 8
+		prerequisite = {focus = SOV_Air_focus_2 focus = SOV_Air_focus_3 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			air_experience = 75
+		}
+	}
+	#戦闘機の研究
+	focus = {
+		id = SOV_Air_focus_5
+		icon = GFX_goal_generic_air_fighter2
+		x = 1
+		y = 8
+		cost = 8
+		prerequisite = { focus = SOV_Air_focus_2 }
+		prerequisite = { focus = SOV_Air_focus_4 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1.0
+				uses = 2
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+				technology = fighter3
+				technology = heavy_fighter1
+				technology = heavy_fighter2
+				technology = heavy_fighter3
+			}
+		}
+	}
+	#カチューシャ計画
+	focus = {
+		id = SOV_Air_focus_6
+		icon = GFX_goal_generic_secret_weapon
+		x = 3
+		y = 8
+		cost = 8
+		prerequisite = { focus = SOV_Air_focus_3 }
+		prerequisite = { focus = SOV_Air_focus_4 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = jet_rocket_bonus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+				category = jet_technology
+			}
+		}
+	}
+	#核分裂
+	focus = {
+		id = SOV_Air_focus_7
+		icon = GFX_focus_wonderweapons
+		x = 3
+		y = 9
+		cost = 8
+		prerequisite = { focus = SOV_Air_focus_6 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	#海軍省
+	focus = {
+		id = SOV_Navy_focus_1
+		icon = GFX_
+		x = 6
+		y = 3
+		cost = 8
+		prerequisite = { focus = SOV_Military_focus_5 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+	#潜水艦
+	focus = {
+		id = SOV_Navy_focus_2
+		icon = GFX_
+		x = 5
+		y = 4
+		cost = 8
+		prerequisite = { focus = SOV_Navy_focus_1 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				uses = 2
+				category = ss_tech
+			}
+		}
+	}
+	#駆逐艦
+	focus = {
+		id = SOV_Navy_focus_3
+		icon = GFX_
+		x = 5
+		y = 5
+		cost = 8
+		prerequisite = { focus = SOV_Navy_focus_2 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				uses = 2
+				category = dd_tech
+			}
+		}
+	}
+	#対艦攻撃機の開発
+	focus = {
+		id = SOV_Navy_focus_4
+		icon = GFX_
+		x = 5
+		y = 6
+		cost = 8
+		prerequisite = { focus = SOV_Navy_focus_3 }
+		prerequisite = { focus = SOV_Air_focus_1 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = nav_bomber_bonus
+				bonus = 1.0
+				uses = 2
+				category = naval_bomber
+			}
+		}
+	}
+	#ペトログラードの再整備
+	focus = {
+		id = SOV_Navy_focus_5
+		icon = GFX_
+		x = 8
+		y = 4
+		cost = 8
+		available = {
+			owns_state = 195
+			controls_state = 195
+		}
+		prerequisite = { focus = SOV_Navy_focus_1 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			195 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#セヴァストポリの改修
+	focus = {
+		id = SOV_Navy_focus_6
+		icon = GFX_
+		x = 7
+		y = 5
+		cost = 8
+		available = {
+			owns_state = 137
+			controls_state = 137
+		}
+		prerequisite = { focus = SOV_Navy_focus_5 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			137 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#ムルマンスクの改修
+	focus = {
+		id = SOV_Navy_focus_7
+		icon = GFX_
+		x = 9
+		y = 5
+		cost = 8
+		available = {
+			owns_state = 213
+			controls_state = 213
+		}
+		prerequisite = { focus = SOV_Navy_focus_5 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			213 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#日本の軍港を接収
+	focus = {
+		id = SOV_Navy_focus_8
+		icon = GFX_
+		x = 8
+		y = 6
+		cost = 8
+		available = {
+			owns_state = 916
+			controls_state = 916
+		}
+		prerequisite = { focus = SOV_Navy_focus_6 }
+		prerequisite = { focus = SOV_Navy_focus_7 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			916 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#戦艦の近代化
+	focus = {
+		id = SOV_Navy_focus_9
+		icon = GFX_
+		x = 7
+		y = 7
+		cost = 8
+		prerequisite = { focus = SOV_Navy_focus_8 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				uses = 2
+				category = bb_tech
+			}
+		}
+	}
+	#空母の開発
+	focus = {
+		id = SOV_Navy_focus_10
+		icon = GFX_
+		x = 9
+		y = 7
+		cost = 8
+		prerequisite = { focus = SOV_Navy_focus_8 }
+		relative_position_id = SOV_Military_focus_1
+		completion_reward = {
+			add_tech_bonus = {
+				name = ss_bonus
+				bonus = 1.0
+				uses = 2
+				category = cv_tech
+			}
+		}
+	}
+	#恐慌との戦い
+	focus = {
+		id = SOV_Economy_focus_1
+		icon = GFX_focus_generic_industry_1
+		x = 33
+		y = 9
+		cost = 8
+		ai_will_do = {
+			factor = 120
+		}
+		available = {
+			OR = { has_country_flag = SOV_DOKUSAI has_country_flag = SOV_MINSHU has_country_flag = SOV_RIKKEN }
+		}
+		completion_reward = {
+			add_stability = 0.1	
+		}
+	}
+	#中央経済評議会の設置
+	focus = {
+		id = SOV_Economy_focus_2
+		icon = GFX_
+		x = -4
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 120
+		}
+		available = {
+			has_idea = SOV_depression
+			OR = { has_country_flag = SOV_DOKUSAI has_country_flag = SOV_SR_Dictator }
+        }
+		prerequisite = { focus = SOV_Economy_focus_1 }
+		mutually_exclusive = { focus = SOV_Economy_focus_3 }
+		mutually_exclusive = { focus = SOV_Economy_focus_4 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_depression
+				add_idea = SOV_depression_plan_1
+			}
+		}
+	}
+	#官僚による主導
+	focus = {
+		id = SOV_Economy_focus_3
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 120
+		}
+		available = {
+			has_idea = SOV_depression
+			OR = { has_country_flag = SOV_MINSHU has_country_flag = SOV_RIKKEN }
+        }
+		prerequisite = { focus = SOV_Economy_focus_1 }
+		mutually_exclusive = { focus = SOV_Economy_focus_2 }
+		mutually_exclusive = { focus = SOV_Economy_focus_4 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_depression
+				add_idea = SOV_depression_1
+			}
+		}
+	}
+	#自治体との協力
+	focus = {
+		id = SOV_Economy_focus_4
+		icon = GFX_
+		x = 4
+		y = 1
+		cost = 8
+		ai_will_do = {
+			factor = 120
+		}
+		available = {
+			has_idea = SOV_depression
+			OR = { has_country_flag = SOV_MINSHU has_country_flag = SOV_RIKKEN }
+			NOT = { has_country_flag = SOV_SR_Dictator }
+        }
+		prerequisite = { focus = SOV_Economy_focus_1 }
+		mutually_exclusive = { focus = SOV_Economy_focus_3 }
+		mutually_exclusive = { focus = SOV_Economy_focus_2 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_depression
+				add_idea = SOV_depression_local_1
+			}
+		}
+	}
+	#国家労働奉仕団
+	focus = {
+		id = SOV_Economy_focus_5
+		icon = GFX_goal_generic_construction2
+		x = -4
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_idea = SOV_depression_plan_1
+        }
+		prerequisite = { focus = SOV_Economy_focus_2 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_depression_plan_1
+				add_idea = SOV_depression_plan_2
+			}
+			add_ideas = SOV_KOKKAROUDOU
+		}
+	}
+	#鉄道国有化
+	focus = {
+		id = SOV_Economy_focus_6
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -4
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Economy_focus_5 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			add_ideas = SOV_National_rail_way
+		}
+	}
+	#重工業化政策
+	focus = {
+		id = SOV_Economy_focus_7
+		icon = GFX_focus_generic_industry_3
+		x = -2
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			OR = { has_idea = SOV_depression_1 has_idea = SOV_depression_plan_2}
+        }
+		prerequisite = { focus = SOV_Economy_focus_2 focus = SOV_Economy_focus_3 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			add_manpower = -20000
+			if = {
+				limit = { has_idea = SOV_depression_1 }
+				swap_ideas = {
+					remove_idea = SOV_depression_1
+					add_idea = SOV_depression_2
+				}
+			}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 0
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = arms_factory
+							size > 1
+							include_locked = yes
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = arms_factory
+											size > 1
+											include_locked = yes
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+		}
+	}
+	#自動車産業
+	focus = {
+		id = SOV_Economy_focus_8
+		icon = GFX_goal_generic_army_motorized
+		x = -2
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			OR = { has_idea = SOV_depression_plan_2 has_idea = SOV_depression_3 }
+        }
+		prerequisite = { focus = SOV_Economy_focus_7 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_depression_plan_2 }
+				swap_ideas = {
+					remove_idea = SOV_depression_plan_2
+					add_idea = SOV_depression_plan_3
+				}
+			}
+			add_ideas = SOV_Nation_Automobile
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#資源開発
+	focus = {
+		id = SOV_Economy_focus_9
+		icon = GFX_focus_generic_tungsten
+		x = 0
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Economy_focus_2 focus = SOV_Economy_focus_3 focus = SOV_Economy_focus_4 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			random_owned_state = {
 				limit = {
 					is_core_of = ROOT
 					steel > 0
@@ -1087,368 +2776,1075 @@ focus_tree = {
 			}
 		}
 	}
-
-	#Focus for 経済の再建 - focus ID randomly generated due to title being in non-latin characters
+	#インフラの整備
 	focus = {
-		id = SOV_FtrmLfuP
-		icon = GFX_goal_generic_production2
-		x = 18
-		y = 5
-		cost = 6
-                available = {
-			has_country_flag = SOV_FEBREVO_II
-		}
-		available_if_capitulated = yes
+		id = SOV_Economy_focus_10
+		icon = GFX_goal_reichsautobahn
+		x = 0
+		y = 3
+		cost = 8
 		ai_will_do = {
-			factor = 1
+			factor = 80
 		}
-	completion_reward = {
-			add_stability = 0.1	
+		prerequisite = { focus = SOV_Economy_focus_9 }
+		relative_position_id = SOV_Economy_focus_1
+	
+			completion_reward = {
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+					  random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = infrastructure
+											size > 0
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						free_building_slots = {
+							building = infrastructure
+							size > 1
+						}
+						OR = {
+							is_in_home_area = yes
+							NOT = {
+								owner = {
+									any_owned_state = {
+										free_building_slots = {
+											building = infrastructure
+											size > 1
+										}
+										is_in_home_area = yes
+									}
+								}
+							}
+						}
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+	}
+	#ゼムストヴォの権限を強化
+	focus = {
+		id = SOV_Economy_focus_11
+		icon = GFX_
+		x = 2
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Economy_focus_3 focus = SOV_Economy_focus_4 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+            add_ideas = SOV_Zemstvo
+		}
+	}
+	#地方開発
+	focus = {
+		id = SOV_Economy_focus_12
+		icon = GFX_goal_generic_construction
+		x = 2
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			OR = { has_idea = SOV_depression_2 has_idea = SOV_depression_local_2} 
+        }
+		prerequisite = { focus = SOV_Economy_focus_11 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			if = {
+				limit = { has_idea = SOV_depression_2}
+				swap_ideas = {
+					remove_idea = SOV_depression_2
+					add_idea = SOV_depression_3
+				}
+			}
+			if = {
+				limit = { has_idea = SOV_depression_local_2}
+				swap_ideas = {
+					remove_idea = SOV_depression_local_2
+					add_idea = SOV_depression_local_3
+				}
+			}
+			swap_ideas = {
+				remove_idea = SOV_Zemstvo
+				add_idea = SOV_Zemstvo_1
+			}
+		}
+	}
+	#農業近代化
+	focus = {
+		id = SOV_Economy_focus_13
+		icon = GFX_goal_generic_agrarian_reform
+		x = 4
+		y = 2
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Economy_focus_4 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			add_ideas = SOV_NOUTIKAIKAKU
+		}
+	}
+	#投資の拡大
+	focus = {
+		id = SOV_Economy_focus_14
+		icon = GFX_
+		x = 4
+		y = 3
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_idea = SOV_depression_local_1
+        }
+		prerequisite = { focus = SOV_Economy_focus_13 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_depression_local_1
+				add_idea = SOV_depression_local_2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#軍需産業中心の経済
+	focus = {
+		id = SOV_Economy_focus_15
+		icon = GFX_
+		x = -3
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_idea = SOV_depression_plan_3
+        }
+		prerequisite = { focus = SOV_Economy_focus_10 }
+		prerequisite = { focus = SOV_Economy_focus_6 }
+		prerequisite = { focus = SOV_Economy_focus_8 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_depression_plan_3
+				add_idea = SOV_depression_plan_4
+			}
+			add_ideas = SOV_GUNJYUSANGYO
+		}
+	}
+	#バランスの取れた経済
+	focus = {
+		id = SOV_Economy_focus_16
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_idea = SOV_depression_3
+        }
+		prerequisite = { focus = SOV_Economy_focus_10 }
+		prerequisite = { focus = SOV_Economy_focus_8 }
+		prerequisite = { focus = SOV_Economy_focus_12 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_depression_3
+				add_idea = SOV_depression_4
+			}
+		}
+	}
+	#強靭なる民間部門
+	focus = {
+		id = SOV_Economy_focus_17
+		icon = GFX_
+		x = 3
+		y = 4
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		available = {
+			has_idea = SOV_depression_local_3
+        }
+		prerequisite = { focus = SOV_Economy_focus_10 }
+		prerequisite = { focus = SOV_Economy_focus_12 }
+		prerequisite = { focus = SOV_Economy_focus_14 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_depression_local_3
+				add_idea = SOV_depression_local_4
+			}
+			add_ideas = SOV_MINJYU
+		}
+	}
+	#ペトログラード大学
+	focus = {
+		id = SOV_Economy_focus_18
+		icon = GFX_focus_research
+		x = 0
+		y = 5
+		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = SOV_Economy_focus_15 focus = SOV_Economy_focus_16 focus = SOV_Economy_focus_17 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	#戦争準備計画
+	focus = {
+		id = SOV_Economy_focus_19
+		icon = GFX_
+		x = -3
+		y = 6
+		cost = 8
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		prerequisite = { focus = SOV_Economy_focus_18 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
 
 		}
 	}
-
-	#Focus for 民需産業の整備 - focus ID randomly generated due to title being in non-latin characters
+	#鉄道計画
 	focus = {
-		id = SOV_HcoXgUkM
-		icon = GFX_goal_generic_construct_civ_factory
-		x = 22
-		y = 8
+		id = SOV_Economy_focus_20
+		icon = GFX_
+		x = 0
+		y = 6
 		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_fQcTEvxG }
-		ai_will_do = {
-			factor = 1
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
 		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = SOV_depression_1
-				add_idea = SOV_depression_2
-			}
-                        add_ideas = SOV_MINJYU
-		    }
-	        }
+		prerequisite = { focus = SOV_Economy_focus_18 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
 
-	#Focus for 研究枠の追加 - focus ID randomly generated due to title being in non-latin characters
+		}
+	}
+	#工業化計画
 	focus = {
-		id = SOV_XysYepoB
-		icon = GFX_focus_research2
+		id = SOV_Economy_focus_21
+		icon = GFX_
+		x = 3
+		y = 6
+		cost = 8
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+		}
+		prerequisite = { focus = SOV_Economy_focus_18 }
+		relative_position_id = SOV_Economy_focus_1
+		completion_reward = {
+
+		}
+	}
+	#外交の道
+	focus = {
+		id = SOV_Diplomacy_focus_1
+		icon = GFX_
 		x = 18
 		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_qeIhUKyQ }
-		ai_will_do = {
-			factor = 1
-		}
-	 completion_reward = {
-                        add_research_slot = 1
-		}
-	}
-        #Focus for 失地回復 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_lcjhrWRC
-		icon = GFX_focus_BUL_prussia_of_the_balkans
-		x = 30
-		y = 0
-		cost = 10
-                available = {
-					has_country_flag = SOV_OCREVOLUTION_END
-			if = {
-	
-				date > 1938.1.1
-			} 
-                        has_war = no
+		cost = 8
+		available = {
 			is_subject = no
-                        is_in_faction = no
+			has_country_flag = SOV_OCREVOLUTION_END
 		}
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = {                
-		set_rule = { can_create_factions = yes }
-                create_faction = "Moscow_Treaty"
+		completion_reward = {
+			add_war_support = 0.1
 		}
 	}
-        #Focus for フィンランドを取り戻す - focus ID randomly generated due to title being in non-latin characters
+	#ロシア統一
 	focus = {
-		id = SOV_tjRCvLbm
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		x = 29
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_ohkzpYHM }
-		ai_will_do = {
-			factor = 1
+		id = SOV_Diplomacy_focus_2
+		icon = GFX_
+		x = 6
+		y = 0
+		cost = 8
+		available = {
+			is_subject = no
+			has_country_flag = SOV_OCREVOLUTION_END
 		}
-	completion_reward = { 
-                        722 = {
-					add_core_of = SOV
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	#露仏同盟
+	focus = {
+		id = SOV_Diplomacy_focus_3
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 8
+		available = {
+			is_subject = no
+			SOV = { has_country_flag =SOV_OCREVOLUTION_END OR = { has_war_with = JAP has_war_with = GER } is_in_faction = no }
+			FRA = { OR = { has_war_with = JAP has_war_with = GER } is_faction_leader = yes }
+			NOT = { has_country_flag = SOV_SR_Dictator }
+			}
+		bypass = {is_in_faction_with = FRA}
+		prerequisite = { focus = SOV_Diplomacy_focus_1 }
+		mutually_exclusive = { focus = SOV_Diplomacy_focus_6 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+            FRA = { add_to_faction = SOV }
+		}
+	}
+	#ペトログラード会談
+	focus = {
+		id = SOV_Diplomacy_focus_4
+		icon = GFX_
+		x = -1
+		y = 2
+		cost = 8
+		available = {
+			is_subject = no
 				}
-                        147 = {
-					add_core_of = SOV
+		prerequisite = { focus = SOV_Diplomacy_focus_3 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+
+		}
+	}
+	#米国との協力
+	focus = {
+		id = SOV_Diplomacy_focus_5
+		icon = GFX_
+		x = -1
+		y = 3
+		cost = 8
+		available = {
+			is_subject = no
 				}
-                        146 = {
-					add_core_of = SOV
+		prerequisite = { focus = SOV_Diplomacy_focus_4 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+
+		}
+	}
+	#独自の道を行く
+	focus = {
+		id = SOV_Diplomacy_focus_6
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 8
+		available = {
+			has_country_flag = SOV_OCREVOLUTION_END
+			if = {
+	            date > 1938.1.1
+			} 
+            has_war = no
+			is_subject = no
+            is_in_faction = no
+		}
+		prerequisite = { focus = SOV_Diplomacy_focus_1 }
+		mutually_exclusive = { focus = SOV_Diplomacy_focus_3 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			add_war_support = 0.1
+			create_faction = "Moscow_Treaty"
+		}
+	}
+	#バルカン外交
+	focus = {
+		id = SOV_Diplomacy_focus_7
+		icon = GFX_
+		x = 1
+		y = 2
+		cost = 8
+		available = {
+			is_subject = no
 				}
+		prerequisite = { focus = SOV_Diplomacy_focus_6 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+
+		}
+	}
+	#中国との協力
+	focus = {
+		id = SOV_Diplomacy_focus_8
+		icon = GFX_
+		x = 1
+		y = 3
+		cost = 8
+		available = {
+			is_subject = no
+				}
+		prerequisite = { focus = SOV_Diplomacy_focus_7 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+
+		}
+	}
+	#大国としての地位を主張
+	focus = {
+		id = SOV_Diplomacy_focus_9
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 8
+		available = {
+			is_subject = no
+			controls_all_owned_states = yes
+				}
+		prerequisite = { focus = SOV_Diplomacy_focus_8 focus = SOV_Diplomacy_focus_5 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	#ウラル要塞計画
+	focus = {
+		id = SOV_Diplomacy_focus_10
+		icon = GFX_
+		x = 3
+		y = 1
+		cost = 8
+		prerequisite = { focus = SOV_Diplomacy_focus_1 }
+		prerequisite = { focus = SOV_Diplomacy_focus_2 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+
+		}
+	}
+	#西シベリア回復
+	focus = {
+		id = SOV_Diplomacy_focus_20
+		icon = GFX_
+		x = 3
+		y = 2
+		cost = 8
+		available = {
+			is_subject = no
+				}
+		prerequisite = { focus = SOV_Diplomacy_focus_10 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = YAK
+				}
+				add_core_of = SOV
+			}
+			if = {
+				limit = { YAK = { is_subject_of = SOV } }
+				annex_country = {
+					target = YAK
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = { country_exists = YAK YAK = { is_subject = no } }
+				create_wargoal = {
+					target = YAK
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#第二次シベリア植民
+	focus = {
+		id = SOV_Diplomacy_focus_11
+		icon = GFX_
+		x = 3
+		y = 4
+		cost = 8
+		available = {
+			if = {
+				date > 1940.1.1
+			}
+			can_declare_war_on = JAP
+			is_subject = no
+		}
+		prerequisite = { focus = SOV_Diplomacy_focus_20 }
+		prerequisite = { focus = SOV_Diplomacy_focus_16 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			if = {
+				limit = { country_exists = SIB }
+				create_wargoal = {
+					target = SIB
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = JAP }
+				create_wargoal = {
+					target = JAP
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#カフカースの平定
+	focus = {
+		id = SOV_Diplomacy_focus_12
+		icon = GFX_
+		x = 5
+		y = 1
+		cost = 8
+		available = {
+			is_subject = no
+		}
+		prerequisite = { focus = SOV_Diplomacy_focus_2 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			if = {
+				limit = { KAV = { is_subject_of = SOV } }
+				annex_country = {
+					target = KAV
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = { DON = { is_subject_of = SOV } }
+				annex_country = {
+					target = DON
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = { KAV = { is_subject = no } }
+				create_wargoal = {
+					target = KAV
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { DON = { is_subject = no } }
+				create_wargoal = {
+					target = DON
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = GEO }
+				create_wargoal = {
+					target = GEO
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = AZR }
+				create_wargoal = {
+					target = AZR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = ARM }
+				create_wargoal = {
+					target = ARM
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#ウクライナの問題
+	focus = {
+		id = SOV_Diplomacy_focus_13
+		icon = GFX_
+		x = 5
+		y = 2
+		cost = 8
+		available = {
+			is_subject = no
+			OR = { is_neighbor_of = UKR is_neighbor_of = UKS }
+				}
+		bypass = { NOT = { country_exists = UKR country_exists =UKS country_exists =CRI } }
+		prerequisite = { focus = SOV_Diplomacy_focus_12 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = UKR
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { country_exists = UKR }
+				create_wargoal = {
+					target = UKR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = UKS }
+				create_wargoal = {
+					target = UKS
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = CRI }
+				create_wargoal = {
+					target = CRI
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#バルトへの影響力を取り戻す
+	focus = {
+		id = SOV_Diplomacy_focus_14
+		icon = GFX_
+		x = 7
+		y = 1
+		cost = 8
+		available = {
+			is_subject = no
+			OR= {
+				is_neighbor_of = BAL
+				is_neighbor_of = LIT
+			}
+		}
+		bypass = { NOT = { country_exists = LIT } NOT = { country_exists = BAL }}
+		prerequisite = { focus = SOV_Diplomacy_focus_2 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = BAL
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { BAL = { is_subject_of = SOV } }
+				annex_country = {
+					target = BAL
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = { country_exists = BAL BAL = { is_subject = no } }
+				create_wargoal = {
+					target = BAL
+					type = annex_everything
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = LIT
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { LIT = { is_subject_of = SOV } }
+				annex_country = {
+					target = LIT
+					transfer_troops = yes
+				}
+			}
+			if = {
+				limit = { country_exists = LIT BAL = { is_subject = no } }
+				create_wargoal = {
+					target = LIT
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#フィンランドを回復
+	focus = {
+		id = SOV_Diplomacy_focus_15
+		icon = GFX_
+		x = 7
+		y = 2
+		cost = 8
+		available = {
+			is_subject = no
+			is_neighbor_of = FIN
+				}
+		bypass = { NOT = { country_exists = FIN } }
+		prerequisite = { focus = SOV_Diplomacy_focus_14 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			722 = {
+				add_core_of = SOV
+			}
+			147 = {
+				add_core_of = SOV
+			}
+			146 = {
+				add_core_of = SOV
+			}
+			every_state = {
+				limit = {
+					is_core_of = FIN
+				}
+				add_claim_by = SOV
+			}
 			create_wargoal = {
 				target = FIN
 				type = annex_everything
 			}
 		}
 	}
-
-	#Focus for 外へ目を向ける - focus ID randomly generated due to title being in non-latin characters
+	#中央アジアの再征服
 	focus = {
-		id = SOV_vquKzWgs
-		icon = GFX_focus_BUL_prussia_of_the_balkans
-		x = 30
-		y = 4
-		cost = 10
-                available = {
-			if = {
-	
-				date > 1941.6.1
-			} 
-			is_subject = no
-		}
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = SOV_tjRCvLbm 
-		}
-		prerequisite = { 
-			focus = SOV_pFSqlRWf 
-		}
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = { 
-                            }
-             }              
-
-	#Focus for 中央アジア - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_gwYuEZfG
-		icon = GFX_goal_generic_small_arms
-		x = 31
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_TKDtGqmU }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = { 
-                        407 = {
-					add_core_of = SOV
-				}
-                        406 = {
-					add_core_of = SOV
-				}
-                        add_state_claim = 402
-                        add_state_claim = 587
-                        add_state_claim = 583
-                        add_state_claim = 590
-                        add_state_claim = 404
-                        add_state_claim = 588
-                        add_state_claim = 589
-                        add_state_claim = 586
-                        add_state_claim = 585
-                        add_state_claim = 732
-                        add_state_claim = 742
-                        add_state_claim = 405
-                        add_state_claim = 584
-						create_wargoal = {
-							target = KAZ
-							type = annex_everything
-						}
-						create_wargoal = {
-							target = STE
-							type = annex_everything
-						}
-						create_wargoal = {
-							target = KHI
-							type = annex_everything
-						}
-						create_wargoal = {
-							target = BUK
-							type = annex_everything
-						}
-						create_wargoal = {
-							target = UZB
-							type = annex_everything
-						}
-		}
-	}
-
-	#Focus for 第二次シベリア植民 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_pFSqlRWf
-		icon = GFX_goal_generic_attack_allies
-		x = 31
+		id = SOV_Diplomacy_focus_16
+		icon = GFX_
+		x = 6
 		y = 3
-		cost = 10
-                available = {
-                        has_war = no
+		cost = 8
+		available = {
 			is_subject = no
-                        JAP = { has_war_with = USA }
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_gwYuEZfG }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = { 
-                        40 = {
-					add_core_of = SOV
-				}
-                        654 = {
-					add_core_of = SOV
-				}
-                        329 = {
-					add_core_of = SOV
-				}
-                        569 = {
-					add_core_of = SOV
-				}
-                        568 = {
-					add_core_of = SOV
-				}
-                        567 = {
-					add_core_of = SOV
-				}
-                        566 = {
-					add_core_of = SOV
-				}
-                        564 = {
-					add_core_of = SOV
-				}
-                        565 = {
-					add_core_of = SOV
-				}
-                        563 = {
-					add_core_of = SOV
-				}
-                        574 = {
-					add_core_of = SOV
-				}
-                        561 = {
-					add_core_of = SOV
-				}
-			create_wargoal = {
-				target = SIB
-				type = annex_everything
+			OR= {
+				is_faction_leader = yes
+				is_in_faction = yes
 			}
-                        create_wargoal = {
-				target = JAP
-				type = annex_everything
+		}
+		prerequisite = { focus = SOV_Diplomacy_focus_13 }
+		prerequisite = { focus = SOV_Diplomacy_focus_15 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = KAZ
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { country_exists = KAZ }
+				create_wargoal = {
+					target = KAZ
+					type = annex_everything
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = KHI
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { country_exists = KHI KHI = { is_subject = no } }
+				create_wargoal = {
+					target = KHI
+					type = annex_everything
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BUK
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { country_exists = BUK BUK = { is_subject = no } }
+				create_wargoal = {
+					target = BUK
+					type = annex_everything
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = STE
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { country_exists = STE STE = { is_subject = no } }
+				create_wargoal = {
+					target = STE
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { STE = { is_subject_of = SOV } }
+				annex_country = {
+					target = STE
+					transfer_troops = yes
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = UZB
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { country_exists = UZB }
+				create_wargoal = {
+					target = UZB
+					type = annex_everything
+				}
 			}
 		}
 	}
-
-	#Focus for ドイツを打倒 - focus ID randomly generated due to title being in non-latin characters
+	#ポーランドを粉砕
 	focus = {
-		id = SOV_KkOaLIYm
-		icon = GFX_focus_attack_soviet
-		x = 29
+		id = SOV_Diplomacy_focus_17
+		icon = GFX_
+		x = 5
+		y = 4
+		cost = 8
+		available = {
+			is_subject = no
+				}
+		prerequisite = { focus = SOV_Diplomacy_focus_16 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = POL
+				}
+				add_claim_by = SOV
+			}
+			if = {
+				limit = { country_exists = POL }
+				create_wargoal = {
+					target = POL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#南下政策
+	focus = {
+		id = SOV_Diplomacy_focus_18
+		icon = GFX_
+		x = 7
+		y = 4
+		cost = 8
+		available = {
+			is_subject = no
+				}
+		prerequisite = { focus = SOV_Diplomacy_focus_16 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			add_state_claim = 266
+			add_state_claim = 420
+			add_state_claim = 797
+			add_state_claim = 354
+			add_state_claim = 800
+			if = {
+				limit = { country_exists = TUR }
+				create_wargoal = {
+					target = TUR
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = PER }
+				create_wargoal = {
+					target = PER
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#分かたれざるロシア
+	focus = {
+		id = SOV_Diplomacy_focus_19
+		icon = GFX_
+		x = 3
 		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_vquKzWgs }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = { 
-			create_wargoal = {
-				target = GER
-				type = annex_everything
-			}
-                        create_wargoal = {
-				target = POL
-				type = annex_everything
-			}
-		}
-	}
-
-	#Focus for 南下政策 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_PxTfbqoS
-		icon = GFX_focus_jap_strike_south
-		x = 31
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_vquKzWgs }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = { 
-			create_wargoal = {
-				target = PER
-				type = annex_everything
-			}
-                        create_wargoal = {
-				target = TUR
-				type = annex_everything
-			}
+		cost = 8
+		available = {
+			is_subject = no
+			controls_all_owned_states = yes
+			10 = { is_owned_by_ROOT_or_subject = yes }
+			111 = { is_owned_by_ROOT_or_subject = yes }
+			566 = { is_owned_by_ROOT_or_subject = yes }
+			202 = { is_owned_by_ROOT_or_subject = yes }
+			231 = { is_owned_by_ROOT_or_subject = yes }
+			195 = { is_owned_by_ROOT_or_subject = yes }
+			878 = { is_owned_by_ROOT_or_subject = yes }
+			784 = { is_owned_by_ROOT_or_subject = yes }
+			590 = { is_owned_by_ROOT_or_subject = yes }
+			900 = { is_owned_by_ROOT_or_subject = yes }
+				}
+		prerequisite = { focus = SOV_Diplomacy_focus_9 }
+		prerequisite = { focus = SOV_Diplomacy_focus_11 }
+		prerequisite = { focus = SOV_Diplomacy_focus_17 }
+		prerequisite = { focus = SOV_Diplomacy_focus_18 }
+		relative_position_id =SOV_Diplomacy_focus_1
+		completion_reward = {
+			add_stability = 0.1
 		}
 	}
-        #Focus for アジア - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_TKDtGqmU
-		icon = GFX_focus_usa_focus_on_asia
-		x = 31
-		y = 1
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_lcjhrWRC }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-        #Focus for ヨーロッパ - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_qjzUQZJA
-		icon = GFX_focus_usa_focus_on_europe
-		x = 29
-		y = 1
-		cost = 2
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_lcjhrWRC }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Focus for バルトの反乱者を討伐 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = SOV_ohkzpYHM
-		icon = GFX_goal_generic_secret_weapon
-		x = 29
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = SOV_qjzUQZJA }
-		ai_will_do = {
-			factor = 1
-		}
-	completion_reward = { 
-                        add_state_claim = 13
-                        add_state_claim = 191
-                        add_state_claim = 12
-                        add_state_claim = 190
-                        add_state_claim = 11
-                        add_state_claim = 189
-                        add_state_claim = 784
-                        add_state_claim = 96
-			create_wargoal = {
-				target = BAL
-				type = annex_everything
-			}
-		}
-	}
-
 #end of focuses 
  }

@@ -226,7 +226,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-                        picture = can_wartime_prices_and_trade_board
+                        picture = JAP_food_import
 
 			
 			removal_cost = -1
@@ -241,7 +241,7 @@ ideas = {
 				always = no
 			}
 
-			picture = jap_militarism_showa
+			picture = JAP_Japan_Kiku
 			removal_cost = -1
 	
 
@@ -420,7 +420,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.3
@@ -436,7 +436,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.1
@@ -452,7 +452,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.1
@@ -468,7 +468,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.05
@@ -508,7 +508,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.25
@@ -524,7 +524,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.25
@@ -539,7 +539,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.2
@@ -577,7 +577,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_production_bonus
+                        picture = JAP_industrial_standard
 
 			
 			removal_cost = -1
@@ -675,7 +675,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_production_bonus
+                        picture = JAP_industrial_standard
 
 			
 			removal_cost = -1
@@ -722,7 +722,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
@@ -735,7 +735,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.10
@@ -748,7 +748,7 @@ ideas = {
 				always = no
 			}
 
-			picture = great_depression
+			picture = JAP_disaster_stricken_country
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.05
@@ -786,7 +786,7 @@ ideas = {
 				always = no
 			}
              
-			picture = SPR_disbanded_army
+			picture = JAP_ugaki_gunshuku
 
 			removal_cost = -1
 
@@ -884,7 +884,7 @@ ideas = {
 				always = no
 			}
              
-			picture = can_wartime_prices_and_trade_board
+			picture = JAP_trade
 
 			removal_cost = -1
 			modifier = {
@@ -910,7 +910,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_democratic_drift_bonus
+                        picture = JAP_democracy
 
 			
 			removal_cost = -1
@@ -1205,7 +1205,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-                        picture = state_shintoism
+                        picture = JAP_japanese_loyalism
 
 			
 			removal_cost = -1
@@ -1221,7 +1221,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-                        picture = state_shintoism
+                        picture = JAP_co_prosper
 
 			
 			removal_cost = -1
@@ -2497,14 +2497,24 @@ naval_manufacturer = {
 	
     #minister
     Head_of_State = {	
-                JAP_Tokugawa_Yoshichika = {
+        JAP_Tokugawa_Yoshichika = {
 			picture = JAP_Tokugawa_Yoshichika
                       			
 			allowed = {
 				original_tag = JAP
                 }  
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Tokugawa_Yoshichika"
 			}
 			removal_cost = -1	
 			traits = { 
@@ -2519,8 +2529,18 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_oosugi_sakae"
+			}
 			removal_cost = -1
 	        traits = { 
 				Head_of_State
@@ -2535,8 +2555,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }  
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Tokuda_Kyuichi"
+			}
 			removal_cost = -1		
 			traits = { 
 				Head_of_State
@@ -2551,8 +2581,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }  
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_hirohito_hs"
+			}
 			removal_cost = -1
 	        traits = { 
 				Head_of_State
@@ -2566,8 +2606,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }  
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_yasuhito"
+			}
 			removal_cost = -1
 
 	        traits = { 
@@ -2585,8 +2635,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Kita_Ikki"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2602,8 +2662,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Aso_Hisashi_GL"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2616,7 +2686,17 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
 					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Ito_Noe"
 			}
             picture = JAP_Ito_Noe
 
@@ -2634,8 +2714,18 @@ naval_manufacturer = {
 			allowed = {
 				original_tag = JAP
                                   }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Nosaka_Sanzo"
 			}
 			removal_cost = -1			
 			traits = { 
@@ -2652,8 +2742,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Abe_Iso"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2669,8 +2769,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Katayama_Tetsu"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2686,8 +2796,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Nishio_Suehiro_GL"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2703,8 +2823,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Takeru_inukai"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2720,8 +2850,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Inukai_Tsuyoshi"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2737,8 +2877,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_Nakano_Seigo"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2754,8 +2904,18 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea JAP_machida_chuji"
+			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2771,8 +2931,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2788,8 +2955,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2805,8 +2979,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2822,8 +3003,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2839,8 +3027,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2856,8 +3051,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2873,8 +3075,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2890,8 +3099,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2907,8 +3123,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2924,8 +3147,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -2943,8 +3173,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -2961,8 +3198,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -2978,8 +3222,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -2995,8 +3246,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -3012,8 +3270,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -3029,8 +3294,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -3046,8 +3318,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -3063,8 +3342,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -3080,8 +3366,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -3097,8 +3390,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -3114,8 +3414,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -3134,8 +3441,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3151,8 +3465,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3165,9 +3486,16 @@ naval_manufacturer = {
                       			
 			allowed = {
 				original_tag = JAP
-                                  }  
-                        available = {
-                               always = no
+                }  
+			cancel_if_invalid = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
 			removal_cost = -1			
 			traits = { 
@@ -3184,8 +3512,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3201,8 +3536,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3218,8 +3560,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3235,8 +3584,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3252,8 +3608,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3269,8 +3632,15 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3286,8 +3656,15 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3303,8 +3680,15 @@ naval_manufacturer = {
 				original_tag = JAP
                 }
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3320,8 +3704,15 @@ naval_manufacturer = {
 				original_tag = JAP
                 }
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3337,8 +3728,15 @@ naval_manufacturer = {
 				original_tag = JAP
                 }
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3354,8 +3752,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3371,8 +3776,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3388,8 +3800,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3405,8 +3824,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -3421,9 +3847,16 @@ naval_manufacturer = {
 			allowed = {
 				original_tag = JAP
                 }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
+			cancel_if_invalid = no
 			removal_cost = -1			
 			traits = { 
 				Minister_of_Economy
@@ -3442,8 +3875,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3459,8 +3899,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3476,8 +3923,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3493,8 +3947,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3510,8 +3971,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3527,8 +3995,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3544,8 +4019,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3561,8 +4043,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3578,8 +4067,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3595,8 +4091,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3612,8 +4115,15 @@ naval_manufacturer = {
 				original_tag = JAP
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3629,8 +4139,15 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3646,8 +4163,15 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3663,8 +4187,15 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3680,8 +4211,15 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior
@@ -3697,8 +4235,15 @@ naval_manufacturer = {
 				original_tag = JAP
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior

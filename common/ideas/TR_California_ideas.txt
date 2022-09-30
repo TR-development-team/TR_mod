@@ -467,9 +467,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				syndicalist
@@ -482,9 +488,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				authoritarian_democrat
@@ -498,9 +510,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				national_populist
@@ -516,9 +534,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				syndicalist
@@ -531,9 +555,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				authoritarian_democrat
@@ -546,9 +576,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				authoritarian_democrat
@@ -561,9 +597,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				national_populist
@@ -579,9 +621,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				authoritarian_democrat
@@ -594,9 +642,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				national_populist
@@ -611,9 +665,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				authoritarian_democrat
@@ -626,9 +686,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				national_populist
@@ -643,9 +709,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				authoritarian_democrat
@@ -658,9 +730,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				authoritarian_democrat
@@ -673,9 +751,15 @@ ideas = {
 				original_tag = CAL
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				national_populist
@@ -683,4 +767,64 @@ ideas = {
 			}
 		}
     }
+	chief_of_staff = {	
+		CAL_Kuribayashi_Tadamichi = {
+		name = JAP_Kuribayashi_Tadamichi
+		picture = CAL_Kuribayashi_Tadamichi
+			
+		allowed = {
+				original_tag = CAL
+			}
+			
+		traits = { 
+				chief_of_staff
+				cos_school_of_defence
+				}
+			}
+		}
+	chief_of_army = {	
+		CAL_Kuribayashi_Tadamichi_coa = {
+		name = JAP_Kuribayashi_Tadamichi
+		picture = CAL_Kuribayashi_Tadamichi
+				
+		allowed = {
+			original_tag = CAL
+			}
+				
+		traits = { 
+				chief_of_army
+				carm_guns_and_butter_doctrine
+				}
+			}
+		}
+	chief_of_navy = {	
+		CAL_Hasegawa_Kiyoshi_nav = {
+		name = CAL_Hasegawa_Kiyoshi
+		picture = CAL_Hasegawa_Kiyoshi
+				
+		allowed = {
+			original_tag = CAL
+			}
+				
+		traits = { 
+				chief_of_navy
+				cnav_base_control_doctrine
+				}
+			}
+		}
+	chief_of_air_force = {	
+		CAL_Hasegawa_Kiyoshi_air = {
+		name = CAL_Hasegawa_Kiyoshi
+		picture = CAL_Hasegawa_Kiyoshi
+				
+		allowed = {
+			original_tag = CAL
+			}
+				
+		traits = { 
+				chief_of_air_force
+				cair_naval_aviation_doctrine
+				}
+			}
+		}
 }

@@ -1,0 +1,29 @@
+
+state={
+	id=930
+	name="STATE_930"
+	manpower = 509000
+	resources={
+	}
+	
+	state_category = city
+	
+	history={
+		owner = GAL
+		victory_points = {
+			9427 20 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		add_core_of = POL
+                add_core_of = GAL
+	}
+
+	local_supplies=0.0 
+provinces={
+		9427
+	}
+}

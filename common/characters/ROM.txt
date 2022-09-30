@@ -1,0 +1,222 @@
+characters={
+	ROM_constantin_ion_parhon={
+		name=ROM_constantin_ion_parhon
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_constantin_ion_parhon"
+			}
+		}
+		country_leader={
+			ideology= Totalist_Leninist_subtype
+		}
+		country_leader={
+			ideology= Leninist_subtype
+		}
+	}
+	ROM_gheorghe_tatarescu={
+		name=ROM_gheorghe_tatarescu
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_gheorghe_tatarescu"
+			}
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+		}
+	}
+	ROM_king_carol_II={
+		name=ROM_king_carol_II
+		portraits={
+			civilian={
+				large="gfx/leaders/ROM/Portrait_ROM_carol1.png"
+			}
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+	}
+	ROM_king_michael={
+		name=ROM_king_michael
+		portraits={
+			civilian={
+				large="gfx/leaders/ROM/Portrait_ROM_Michael.tga"
+			}
+		}
+		country_leader={
+			ideology= conservative_liberalism_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+	}
+
+
+	ROM_armand_calinescu={
+		name=ROM_armand_calinescu
+		portraits={
+			civilian={
+				large="GFX_Portrait_romania_armand_calinescu"
+			}
+			army={
+				small="GFX_idea_ROM_armand_calinescu"
+			}
+		}
+
+		country_leader={
+			ideology=authoritarian_democrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	ROM_corneliu_codreanu={
+		name=ROM_corneliu_codreanu
+		portraits={
+			civilian={
+				large="gfx/leaders/ROM/Portrait_ROM_Comeliu_Codreanu.tga"
+			}
+		}
+		country_leader={
+			ideology=president_principle_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=occultism_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+
+	ROM_petre_dumitrescu={
+		name=ROM_petre_dumitrescu
+		portraits={
+			army={
+				large="GFX_Portrait_romania_petre_dumitrescu"
+				small="GFX_idea_ROM_petre_dumitrescu"
+			}
+		}
+		field_marshal={
+			traits={ logistics_wizard offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	ROM_ioan_mihail_racovita={
+		name=ROM_ioan_mihail_racovita
+		portraits={
+			army={
+				large="GFX_Portrait_romania_ioan_mihail_racovita"
+				small="GFX_idea_ROM_ioan_mihail_racovita"
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	ROM_constantin_sanatescu={
+		name=ROM_constantin_sanatescu
+		portraits={
+			army={
+				small="GFX_idea_ROM_constantin_sanatescu"
+				large="GFX_Portrait_romania_constantin_sanatescu"
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_expert }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		
+	}
+
+	ROM_ion_antonescu={
+		name=ROM_ion_antonescu
+		portraits={
+			army={
+				small="GFX_idea_ROM_ion_antonescu"
+				large="GFX_Portrait_romania_ion_antonescu"
+			}
+			civilian={
+				large="GFX_Portrait_romania_ion_antonescu"
+			}
+		}
+		
+		field_marshal={
+			traits={ offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	ROM_horia_macellariu={
+		name=ROM_horia_macellariu
+		portraits={
+			army={
+				small="GFX_idea_ROM_horia_macellariu"
+				large="GFX_Portrait_romania_horia_macellariu"
+			}
+		}
+		
+		navy_leader={
+			traits={ gentlemanly spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+	ROM_gheorghe_avramescu={
+		name=ROM_gheorghe_avramescu
+		portraits={
+			army={
+				small="GFX_idea_ROM_gheorghe_avramescu"
+				large="GFX_Portrait_romania_gheorghe_avramescu"
+			}
+		}
+
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+}

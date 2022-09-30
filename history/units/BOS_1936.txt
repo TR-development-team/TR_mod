@@ -1,0 +1,70 @@
+﻿division_template = {
+	name = "Pesadijska Divizija"	
+	division_names_group = YUG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+        recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Konjička Divizija" 
+	division_names_group = YUG_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }     
+	}
+}
+
+
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11899
+		division_template = "Pesadijska Divizija"	
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 6983
+		division_template = "Konjička Divizija" 
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9894
+		division_template = "Konjička Divizija" 
+		start_experience_factor = 0.3
+	}
+	
+}
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+instant_effect = {
+}

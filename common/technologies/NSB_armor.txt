@@ -58,6 +58,7 @@ technologies = {
 			extra_ammo_storage
 			wet_ammo_storage
 			smoke_launchers
+			expanded_fuel_tank
 		}
 		enable_subunits = {
 			light_armor
@@ -175,6 +176,7 @@ technologies = {
 
 					load_oob = "unlock_tanks"
 				}
+
 			}
 
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
@@ -255,9 +257,14 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
 			}
 			modifier = {
 				is_major = yes
+				not = { tag = JAP }
 				has_war = yes
 				factor = 10 #you are embarassing yourself
 			}
@@ -281,6 +288,7 @@ technologies = {
 				date > "1939.1.1"
 			}
 		}
+
 
 		categories = {
 			armor
@@ -519,6 +527,10 @@ technologies = {
 			modifier = {
 				factor = 2
 				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
 				date > "1938.1.1"
 			}
 			modifier = {
@@ -577,12 +589,17 @@ technologies = {
 			position = { x = 2 y = @1940 }
 		}
 
+
 		ai_will_do = {
 			factor = 3
 
 			modifier = {
 				factor = 2
 				is_major = yes
+				not = {
+					tag = JAP
+					num_of_military_factories < 50
+				}
 			}
 			modifier = {
 				date < "1941.1.1"
@@ -641,6 +658,7 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 2 y = @1943 }
 		}
+
 
 		ai_will_do = {
 			factor = 1
@@ -786,6 +804,11 @@ technologies = {
 				tag = FRA
 				factor = 3
 			}
+			modifier = {
+				tag = JAP
+				num_of_military_factories < 100
+				factor = 0
+			}
 		}
 
 		categories = {
@@ -821,8 +844,14 @@ technologies = {
 			position = { x = 5 y = @1940 }
 		}
 
+
 		ai_will_do = {
 			factor = 0.8
+			modifier = {
+				tag = JAP
+				num_of_military_factories < 100
+				factor = 0
+			}
 			modifier = {
 				factor = 1.2
 				date > "1942.1.1"
@@ -867,6 +896,7 @@ technologies = {
 			name = nsb_armour_folder
 			position = { x = 5 y = @1943 }
 		}
+
 
 		ai_will_do = {
 			factor = 0.8

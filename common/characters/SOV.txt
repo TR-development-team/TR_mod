@@ -1,14 +1,13 @@
 characters={
-	RUS_Joseph_Stalin={
-		name=SOV_Joseph_Stalin
+	RUS_Alexander_Kazembek={
+		name=RUS_Alexander_Kazembek
 		portraits={
 			civilian={
-				large="gfx/leaders/GEO/Portrait_GEO_Joseph_Stalin.png"
+				large="gfx/leaders/SOV/Portrait_RUS_Alexander_Kazembek.png"
 			}
 		}
 		country_leader={
-			ideology=totalist_subtype
-                        traits = { Stalin_traits }
+			ideology=national_bolshevist_subtype
 		}
 	}
 	RUS_Nestor_Makhno={
@@ -19,18 +18,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=syndicalist_subtype
+			ideology=anarco_communist_subtype
 		}
 	}
 	RUS_Nikolai_bukharin={
-		name=SOV_Nikolai_bukharin
+		name=SOV_Nikolai_Bukharin
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_SOV_bukharin.tga"
+				large="gfx/leaders/RUS/Portrait_SOV_Nikolai_bukharin.png"
 			}
 		}
 		country_leader={
-			ideology=radical_socialist_subtype
+			ideology=Leninist_subtype
 		}
 	}
 	RUS_Yuliy_martov={
@@ -44,15 +43,29 @@ characters={
 			ideology=social_democrat_subtype
 		}
 	}
+	RUS_Viktor_Chernov={
+		name=RUS_Viktor_Chernov
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/Portrait_RUS_Viktor_Chernov.png"
+		    }
+		}
+		country_leader={
+			ideology=SL_Narodniki_subtype
+		}
+	}
 	RUS_Boris_Savinkov={
 		name=RUS_Boris_Savinkov
 		portraits={
 		    civilian={
-			large="gfx/leaders/SOV/RUS_savinkov.tga"
+			large="gfx/leaders/SOV/Portrait_RUS_Boris_Savinkov.png"
 		    }
 		}
 		country_leader={
-			ideology=social_liberal_subtype
+			ideology=Narodniki_subtype
+		}
+		country_leader={
+			ideology=SL_Narodniki_subtype
 		}
 	}
 	RUS_Pavel_Milyukov={
@@ -77,15 +90,15 @@ characters={
 			ideology=social_conservative_subtype
 		}
 	}
-	RUS_Dmitri_Pavlovich={
-		name=RUS_Dmitri_Pavlovich
+	RUS_Alexander_Guchkov={
+		name=RUS_Alexander_Guchkov
 		portraits={
 		    civilian={
-			large="gfx/leaders/SOV/RUS_Dmitri.tga"
+			large="gfx/leaders/SOV/Portrait_RUS_Alexander_Guchkov.png"
 		    }
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
+			ideology=prussian_constitutionalism_subtype
 		}
 	}
 	RUS_nikolai_ii={
@@ -96,18 +109,29 @@ characters={
 		    }
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=absolute_monarchy_subtype
 		}
 	}
 	RUS_alexei_ii={
 		name=RUS_alexei_ii
 		portraits={
 		    civilian={
-			large="gfx/leaders/SOV/RUS_alexei_ii.png"
+			large="gfx/leaders/SOV/Portrait_RUS_Emperor_Alexei_Beard.png"
 		    }
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=absolute_monarchy_subtype
+		}
+	}
+	RUS_Anastasia={
+		name=RUS_Anastasia
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/Portrait_RUS_Anastasia.png"
+		    }
+		}
+		country_leader={
+			ideology=absolute_monarchy_subtype
 		}
 	}
 	RUS_Pyotr_wrangel={
@@ -118,7 +142,7 @@ characters={
 		    }
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=militarism_subtype
 		}
 	}
 	RUS_Pyotr_wrangel_1={
@@ -129,7 +153,32 @@ characters={
 		    }
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=absolute_monarchy_subtype
+		}
+	}
+	RUS_Vladimir_Purishkevich={
+		name=RUS_Vladimir_Purishkevich
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/Portrait_RUS_Vladimir_Purishkevich_old.png"
+		    }
+		}
+		country_leader={
+			ideology=president_principle_subtype
+		}
+	}
+	RUS_Regent_Council={
+		name=RUS_Regent_Council
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/Portrait_RUS_Regent_Council.png"
+		    }
+		}
+		country_leader={
+			ideology=absolute_monarchy_subtype
+		}
+		country_leader={
+			ideology=president_principle_subtype
 		}
 	}
 	RUS_Sergey_Taboritsky={
@@ -137,6 +186,17 @@ characters={
 		portraits={
 		    civilian={
 			large="gfx/leaders/SOV/Portrait_RUS_Sergey_Taboritsky.png"
+		    }
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+	}
+	RUS_alexei_ii_portrait ={
+		name=RUS_alexei_ii_portrait
+		portraits={
+		    civilian={
+			large="gfx/leaders/SOV/RUS_alexei_ii_portrait.png"
 		    }
 		}
 		country_leader={
@@ -163,7 +223,7 @@ characters={
 		name=RUS_Anton_Denikin
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_SOV_denikin.tga"
+				large="gfx/leaders/SOV/Portrait_RUS_Denikin.png"
 			}
 		}
 		field_marshal = {
@@ -172,6 +232,41 @@ characters={
 			attack_skill = 3
 			defense_skill = 4
 			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	RUS_Lavr_Kornilov={
+		name=RUS_Lavr_Kornilov
+		portraits={
+			civilian={
+				large="gfx/leaders/SOV/Portrait_RUS_Lavr_Kornilov.png"
+			}
+		}
+		field_marshal = {
+			traits = { career_officer war_hero organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+	RUS_Pavel_Bermont_Avalov={
+		name=RUS_Pavel_Bermont_Avalov
+		portraits={
+			civilian = {
+				large = "gfx/leaders/SOV/Portrait_RUS_Pavel_Bermont_Avalov.png"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Portrait_RUS_Pavel_Bermont_Avalov.png"
+			}
+		}
+		corps_commander = {
+			traits = { commando trait_engineer trickster winter_specialist  }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
 			logistics_skill = 3
 		}
 	}
@@ -211,7 +306,7 @@ characters={
 		name=RUS_Sergey_Markov
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_Russia_Markov.tga"
+				large="gfx/leaders/SOV/Portrait_RUS_Sergey_Markov_old.png"
 			}
 		}
 		corps_commander = {
@@ -227,7 +322,7 @@ characters={
 		name=RUS_Abram_Dragomirov
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_Russia_Dragomirov.tga"
+				large="gfx/leaders/SOV/Portrait_RUS_Abram_Dragomirov.png"
 			}
 		}
 		corps_commander = {
@@ -243,7 +338,7 @@ characters={
 		name=RUS_Mikhail_Drozdovskiy
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_Russia_Drozdovskiy.tga"
+				large="gfx/leaders/SOV/Portrait_RUS_Mikhail_Drozdovsky.png"
 			}
 		}
 		corps_commander = {
@@ -291,7 +386,7 @@ characters={
 		name=RUS_Pavel_Shatilov
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_Russia_shatilov.tga"
+				large="gfx/leaders/SOV/Portrait_RUS_Pavel_Shatilov.png"
 			}
 		}
 		corps_commander = {
@@ -317,23 +412,6 @@ characters={
 			defense_skill = 1
 			planning_skill = 2
 			logistics_skill = 1
-		}
-	}
-	RUS_konstantin_nechayev = {
-		name = SOV_konstantin_nechayev
-		portraits = {
-			army = {
-				large = "GFX_portrait_SOV_konstantin_nechayev"
-				small = "GFX_idea_SOV_konstantin_nechayev"
-			}
-		}
-		corps_commander = {
-			traits = { infantry_officer war_hero }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
 		}
 	}
 	RUS_aleksandr_rodzyanko = {
@@ -370,13 +448,75 @@ characters={
 			logistics_skill = 1
 		}
 	}
-
-
+	RUS_Alexander_Kutepov = {
+		name = RUS_Alexander_Kutepov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_RUS_Alexander_Kutepov.png"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer infantry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	RUS_Yevgeny_Miller = {
+		name = RUS_Yevgeny_Miller
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_RUS_Yevgeny_Miller.png"
+			}
+		}
+		corps_commander = {
+			traits = { career_officer cavalry_leader }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	RUS_Boris_Annenkov = {
+		name = RUS_Boris_Annenkov
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_RUS_Boris_Annenkov.png"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer trait_reckless career_officer harsh_leader }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	RUS_Aleksei_Arkhangelsky = {
+		name = RUS_Aleksei_Arkhangelsky
+		portraits = {
+			army = {
+				large = "gfx/leaders/SOV/Portrait_RUS_Aleksei_Arkhangelsky.png"
+			}
+		}
+		corps_commander = {
+			traits = { organizer skilled_staffer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
 	RUS_Alexander_Kolchak={
 		name=RUS_Alexander_Kolchak
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_Russia_Kolchak.tga"
+				large="gfx/leaders/SOV/Portrait_RUS_Alexander_Kolchak_old.png"
 			}
 		}
 		navy_leader = {

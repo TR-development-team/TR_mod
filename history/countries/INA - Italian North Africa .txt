@@ -20,12 +20,6 @@ add_ideas = {
 
 set_convoys = 20
 
-ITA = { 
-        set_autonomy = {
-	   target = INA
-	   autonomous_state = autonomy_colony
-        }
-      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"

@@ -1,9 +1,5 @@
 spriteTypes = {
 
-
-#####日本#####
-
-
 	SpriteType = {	
 		name = "GFX_goal_FNG_japan_money"
 		texturefile = "gfx/interface/goals/JAP/FNG_japan_money.png"
@@ -141,10 +137,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/JAP_target_indonesia.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_JAP_target_indochina"
-		texturefile = "gfx/interface/goals/JAP/JAP_target_indochina.png"
-	}
-	SpriteType = {	
 		name = "GFX_goal_JAP_target_india"
 		texturefile = "gfx/interface/goals/JAP/JAP_target_india.png"
 	}
@@ -221,10 +213,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/colonialist_crusade2.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_colonialist_crusade2"
-		texturefile = "gfx/interface/goals/colonialist_crusade2.png"
-	}
-	SpriteType = {	
 		name = "GFX_goal_list_left"
 		texturefile = "gfx/interface/goals/list_left.png"
 	}
@@ -277,10 +265,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Unite_Arabia.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_TR_RU_romanohu"
-		texturefile = "gfx/interface/goals/RUS/TR_RU_romanohu.png"
-	}
-	SpriteType = {	
 		name = "GFX_goal_CHI_Taili"
 		texturefile = "gfx/interface/goals/CHI/CHI_Taili.png"
 	}
@@ -291,5 +275,301 @@ spriteTypes = {
 	SpriteType = {	
 		name = "GFX_goal_CHI_Chen_Cheng"
 		texturefile = "gfx/interface/goals/CHI/CHI_Chen_Cheng.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Maurras_in_Prison"
+		texturefile = "gfx/interface/goals/FRA/Maurras_in_Prison.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_French_Kingdom"
+		texturefile = "gfx/interface/goals/FRA/FRA_French_Kingdom.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Greater_France"
+		texturefile = "gfx/interface/goals/FRA/FRA_Greater_France.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_maurras_holds_on"
+		texturefile = "gfx/interface/goals/FRA/FRA_maurras_holds_on.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_doriot_has_power"
+		texturefile = "gfx/interface/goals/FRA/FRA_doriot_has_power.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_deat_has_power"
+		texturefile = "gfx/interface/goals/FRA/FRA_deat_has_power.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_In_Action_Action_Francaise"
+		texturefile = "gfx/interface/goals/FRA/FRA_In_Action_Action_Francaise.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_action_francaise"
+		texturefile = "gfx/interface/goals/FRA/action_francaise.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Fontainebleau"
+		texturefile = "gfx/interface/goals/FRA/FRA_Fontainebleau.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Dark_Enlightenment"
+		texturefile = "gfx/interface/goals/FRA/Dark_Enlightenment.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Formalize_the_Noble_Structure"
+		texturefile = "gfx/interface/goals/FRA/FRA_Formalize_the_Noble_Structure.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_camelots_du_roi"
+		texturefile = "gfx/interface/goals/FRA/FRA_camelots_du_roi.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_unity_by_catholic"
+		texturefile = "gfx/interface/goals/FRA/unity_by_catholic.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_localist_ideals"
+		texturefile = "gfx/interface/goals/FRA/FRA_localist_ideals.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_ban_PCF"
+		texturefile = "gfx/interface/goals/FRA/FRA_ban_PCF.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Gallic_Democracy"
+		texturefile = "gfx/interface/goals/FRA/Gallic_Democracy.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_En_Avant"
+		texturefile = "gfx/interface/goals/FRA/En_Avant.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_collective_elan"
+		texturefile = "gfx/interface/goals/FRA/collective_elan.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Maximilien_Robespierre"
+		texturefile = "gfx/interface/goals/FRA/Maximilien_Robespierre.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Execute_King"
+		texturefile = "gfx/interface/goals/FRA/Execute_King.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Europe"
+		texturefile = "gfx/interface/goals/FRA/FRA_Europe.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Berlin_Decree"
+		texturefile = "gfx/interface/goals/FRA/FRA_Berlin_Decree.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_PPF_SS"
+		texturefile = "gfx/interface/goals/FRA/PPF_SS.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_doriot"
+		texturefile = "gfx/interface/goals/FRA/FRA_doriot.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Alliance_franco_russe"
+		texturefile = "gfx/interface/goals/FRA/Alliance_franco_russe.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Alliance_franco_russe2"
+		texturefile = "gfx/interface/goals/FRA/Alliance_franco_russe2.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Support_White_army"
+		texturefile = "gfx/interface/goals/FRA/Support_White_army.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_attack_swiss"
+		texturefile = "gfx/interface/goals/FRA/attack_swiss.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_National_Revolution"
+		texturefile = "gfx/interface/goals/FRA/FRA_National_Revolution.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_New_Religion"
+		texturefile = "gfx/interface/goals/FRA/FRA_New_Religion.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_FRA_Deat_France"
+		texturefile = "gfx/interface/goals/FRA/Deat_France.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_BUL_Tsar_Boris"
+		texturefile = "gfx/interface/goals/BUL/BUL_Tsar_Boris.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_antisemitism_focus"
+		texturefile = "gfx/interface/goals/antisemitism_focus.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_focus_solidarity"
+		texturefile = "gfx/interface/goals/focus_solidarity.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Strike_red_Germany"
+		texturefile = "gfx/interface/goals/Strike_red_Germany.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Closed_Immigration"
+		texturefile = "gfx/interface/goals/Closed_Immigration.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_agrarian_reform"
+		texturefile = "gfx/interface/goals/agrarian_reform.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Catholic_Education"
+		texturefile = "gfx/interface/goals/Catholic_Education.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Ban_Communism"
+		texturefile = "gfx/interface/goals/Ban_Communism.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Close_Parliaments"
+		texturefile = "gfx/interface/goals/Close_Parliaments.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Ban_Parties"
+		texturefile = "gfx/interface/goals/Ban_Parties.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_agency"
+		texturefile = "gfx/interface/goals/agency.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_education"
+		texturefile = "gfx/interface/goals/education.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_union_agreement"
+		texturefile = "gfx/interface/goals/generic_union_agreement.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_King_question"
+		texturefile = "gfx/interface/goals/King_question.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Anti_Germany"
+		texturefile = "gfx/interface/goals/Anti_Germany.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_German_Collapse"
+		texturefile = "gfx/interface/goals/German_Collapse.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Be_Friend_Austria"
+		texturefile = "gfx/interface/goals/Be_Friend_Austria.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Earth_Expansion"
+		texturefile = "gfx/interface/goals/Earth_Expansion.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Europe_Expansion"
+		texturefile = "gfx/interface/goals/Europe_Expansion.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Dutch_Nationalism"
+		texturefile = "gfx/interface/goals/Dutch_Nationalism.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_flag_spain"
+		texturefile = "gfx/interface/goals/flag_spain.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_crush_church"
+		texturefile = "gfx/interface/goals/crush_church.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Red_Election"
+		texturefile = "gfx/interface/goals/Red_Election.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Technocrat"
+		texturefile = "gfx/interface/goals/Technocrat.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Red_Worker"
+		texturefile = "gfx/interface/goals/Red_Worker.png"
+	}
+
+	SpriteType = {	
+		name = "GFX_goal_generic_Constitutional_monarchy_focus"
+		texturefile = "gfx/interface/goals/generic_Constitutional_monarchy_focus.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Election_Vote"
+		texturefile = "gfx/interface/goals/generic_Election_Vote.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Liberty_Society"
+		texturefile = "gfx/interface/goals/generic_Liberty_Society.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_national_revolution"
+		texturefile = "gfx/interface/goals/generic_national_revolution.png"
+	}
+
+
+	SpriteType = {	
+		name = "GFX_goal_RUS_romanov"
+		texturefile = "gfx/interface/goals/SOV/RUS_romanov.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Alexei_Constitutional_monarchy"
+		texturefile = "gfx/interface/goals/SOV/Alexei_Constitutional_monarchy.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Pyotr_Wrangel"
+		texturefile = "gfx/interface/goals/SOV/Pyotr_Wrangel.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Republic_Russia"
+		texturefile = "gfx/interface/goals/SOV/Republic_Russia.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Mladorossi"
+		texturefile = "gfx/interface/goals/SOV/RUS_Mladorossi.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Saint_Alexei"
+		texturefile = "gfx/interface/goals/SOV/RUS_Saint_Alexei.png"
+	}
+
+	SpriteType = {	
+		name = "GFX_goal_RUS_Corporate_Orthodox"
+		texturefile = "gfx/interface/goals/SOV/RUS_Corporate_Orthodox.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_February_Revolution"
+		texturefile = "gfx/interface/goals/SOV/RUS_February_Revolution.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Mladorossi_kazembek"
+		texturefile = "gfx/interface/goals/SOV/RUS_Mladorossi_kazembek.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_regency_council"
+		texturefile = "gfx/interface/goals/SOV/RUS_regency_council.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Savinkov_Terror"
+		texturefile = "gfx/interface/goals/SOV/RUS_Savinkov_Terror.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Alexei_Taboritsky"
+		texturefile = "gfx/interface/goals/SOV/RUS_Alexei_Taboritsky.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Taboritsky_Pure"
+		texturefile = "gfx/interface/goals/SOV/RUS_Taboritsky_Pure.png"
 	}
 }

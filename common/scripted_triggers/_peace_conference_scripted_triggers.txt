@@ -1,0 +1,32 @@
+### in state scope
+is_important_state = {
+	OR = {
+		state = 118 #Gibraltar
+		state = 837 #Suez Canal
+		state = 685 #Panama Canal
+		state = 797 #Bosphorous
+		state = 116 #Malta
+		state = 336 #Singapore
+	}
+}
+is_important_state_china = {
+	OR = {
+		state = 920 #天津
+		state = 816 #上海
+		state = 842 #威海衛
+		state = 743 #青島
+		state = 745 #関東州
+		state = 863 #広東
+		state = 864 #福州
+		state = 865 #廈門
+		state = 849 #寧波
+		state = 728 #広州湾
+		state = 326 #香港
+		state = 729 #マカオ
+	}
+}
+is_french_colonial_claim = {
+	OR = {
+	}
+}
+

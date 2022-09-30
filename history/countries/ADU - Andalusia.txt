@@ -45,7 +45,6 @@ if = {
 		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_medium_battery = 1
-		basic_secondary_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		mtg_transport = 1
@@ -79,74 +78,186 @@ add_ideas = {
 	ADU_surrealism
         SPR_depression
 }
+recruit_character = ADU_Jose_Diaz
+recruit_character = ADU_Juan_Garcia_Oliver
+recruit_character = ADU_Andreu_Nin
+recruit_character = ADU_Niceto_Alcala_Zamora
+recruit_character = ADU_Xavier_I
+recruit_character = ADU_jose_antonio_primo_de_rivera
+recruit_character = ADU_Federico_Garcia_Lorca
 
-        create_country_leader = {
-		name = "ガルシア・ロルカ"
-		desc = "POLITICS_DALI_DESC"
-		picture = "gfx/leaders/SPR/Portrait_Spain_Lorca.tga"
-		expire = "1965.1.1"
-		ideology = Gnosticism_subtype
-		traits = {
+recruit_character = ADU_Salvador_Dali
 
+recruit_character = SPR_vicente_rojo_lluch
+recruit_character = SPR_jose_miaja
+recruit_character = SPR_jose_asensio_torrado
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	# Submarines #
+	create_equipment_variant = {
+		name = "B Class"				
+		type = ship_hull_submarine_1
+		parent_version = 0
+		name_group = SPR_SS_HISTORICAL
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "C Class"				
+		type = ship_hull_submarine_2
+		name_group = SPR_SS_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = empty
 		}
 	}
-	create_country_leader = {
-		name = "ハビエル1世"
-		desc = "POLITICS_Xavier_DESC"
-		picture = "gfx/leaders/SPR/portrait_SPR_Xavier.tga"
-		expire = "1965.1.1"
-		ideology = paternal_autocrat_subtype
-		traits = {
-
+	# Destroyers #
+	create_equipment_variant = {
+		name = "Alsedo Class"				
+		type = ship_hull_light_1
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Churucca Class"	
+		type = ship_hull_light_2
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-        create_country_leader = {
-		name = "ハビエル1世"
-		desc = "POLITICS_Xavier_DESC"
-		picture = "gfx/leaders/SPR/portrait_SPR_Xavier.tga"
-		expire = "1965.1.1"
-		ideology = authoritarian_democrat_subtype
-		traits = {
-
+	create_equipment_variant = {
+		name = "Júpiter Class"					# minelayers
+		type = ship_hull_light_2
+		name_group = SPR_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = empty
+			mid_1_custom_slot = ship_mine_layer_1
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-        create_country_leader = {
-		name = "アンドレウ・ニン"
-		desc = ""
-		picture = "gfx/leaders/SPR/Portrait_Spain_AndreuNin.tga"
-		expire = "1965.1.1"
-		ideology = radical_socialist_subtype
-		traits = {
-
+	# Light Cruisers #
+	create_equipment_variant = {
+		name = "República Class"
+		type = ship_hull_cruiser_1
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_light_medium_battery_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Méndez Núñes Class"
+		type = ship_hull_cruiser_1
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_1
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = empty
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Príncipe Alfonso Class"
+		type = ship_hull_cruiser_2
+		name_group = SPR_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_1
+			front_1_custom_slot = empty
+			mid_1_custom_slot = ship_torpedo_1
+			mid_2_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_light_medium_battery_1
 		}
 	}
-	create_country_leader = {
-		name = "フアン・ガルシア・オリバー"
-		desc = ""
-		picture = "gfx/leaders/SPR/Portrait_Spain_JoanGarcia.tga"
-		expire = "1965.1.1"
-		ideology = syndicalist_subtype
-		traits = {
-
+	# Heavy Cruisers #
+	create_equipment_variant = {
+		name = "Canarias Class"				
+		type = ship_hull_cruiser_2
+		name_group = SPR_CA_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = empty
+			mid_1_custom_slot = ship_medium_battery_2
+			mid_2_custom_slot = empty
+			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
-	create_country_leader = {
-		name = "ホセ・ディアス"
-		desc = "POLITICS_JOSE_DIAZ_DESC"
-		picture = "gfx/leaders/SPR/Portrait_Spain_JoseDiaz.tga"
-		expire = "1965.1.1"
-		ideology = totalist_subtype
-		traits = {
-
+	# Battleships #
+	create_equipment_variant = {
+		name = "España Class"	
+		type = ship_hull_heavy_1
+		name_group = SPR_BB_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_1
+			fixed_ship_anti_air_slot = ship_anti_air_1
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = heavy_ship_engine_1
+			fixed_ship_secondaries_slot = ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bb_1
+			front_1_custom_slot = ship_heavy_battery_1
+			mid_1_custom_slot = ship_secondaries_1
+			mid_2_custom_slot = ship_secondaries_1
+			rear_1_custom_slot = empty
 		}
 	}
-	create_country_leader = {
-		name = "フランシスコ・フランコ"
-		desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-		picture = "gfx/leaders/SPR/Portrait_Spain_Franco.tga"
-		expire = "1965.1.1"
-		ideology = national_populist_subtype
-		traits = {
-
-		}
-	}
+}

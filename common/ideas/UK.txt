@@ -5,20 +5,6 @@
   
 
 		### Starting ###
-               george_v = {
-			
-			allowed = {
-				original_tag = ENG
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-                              stability_factor = 0.1
-			}
-			
-
-		}
 
 		ENG_LOSE_IN_INDIA = {
 			allowed = {
@@ -57,7 +43,7 @@
 			}
 		}
 
-                ENG_revolution = {
+        ENG_revolution = {
 			allowed = {
 				always = no
 			}
@@ -74,7 +60,164 @@
 			        conscription_factor = -0.3
 			}
 		}
-
-
-}
+    }
+	#minister
+	Head_of_State = {	
+		ENG_George_V = {
+		
+		picture = ENG_George_V
+		
+		allowed = {
+			original_tag = ENG
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+		
+		traits = { 
+			    Head_of_State
+				TR_stern_imperialist
+				}
+			}
+		}
+	Government_leaders = {	
+		ENG_Winston_Churchill = {
+			
+		picture = ENG_Winston_Churchill
+			
+		allowed = {
+			original_tag = ENG
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+		traits = { 
+			    Government_leaders
+				social_conservative
+				TR_flamboyant_tough_guy
+				}
+			}
+		}
+    Minister_of_Foreign_Affairs = {	
+		ENG_Anthony_Eden = {
+			
+		picture = ENG_Anthony_Eden
+			
+		allowed = {
+			original_tag = ENG
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+		traits = { 
+			    Minister_of_Foreign_Affairs
+				social_conservative
+				TR_great_compromiser
+				}
+			}
+		}
+	Minister_of_Economy = {	
+		ENG_Neville_Chamberlain = {
+			
+		picture = ENG_Neville_Chamberlain
+			
+		allowed = {
+			original_tag = ENG
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+		traits = { 
+			    Minister_of_Economy
+				social_conservative
+				TR_administrative_genius
+				}
+			}
+		}
+	Minister_of_Interior = {	
+		ENG_John_Simon = {
+		
+		picture = ENG_John_Simon
+			
+		allowed = {
+				original_tag = ENG
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+				
+		traits = { 
+			    Minister_of_Interior
+				market_liberal
+				TR_compassionate_gentleman
+				}
+			}
+		}
+		chief_of_staff = {	
+			ENG_Montgomery_Massingberd = {
+			
+			picture = ENG_Montgomery_Massingberd
+				
+			allowed = {
+				original_tag = ENG
+				}
+				
+			traits = { 
+				    chief_of_staff
+					cos_school_of_fire_support
+				}
+			}
+			}
+		chief_of_army = {	
+			ENG_Bernard_Montgomery = {
+			picture = ENG_Bernard_Montgomery
+					
+			allowed = {
+				original_tag = ENG
+				}
+					
+			traits = { 
+				chief_of_army
+				carm_elastic_defence_doctrine
+				}
+			}		
+		}
 }

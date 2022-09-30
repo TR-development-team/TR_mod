@@ -1,0 +1,40 @@
+characters={
+	GAL_Karl_Albrecht_von_Osterreich={
+		name=POL_Karl_Albrecht_von_Osterreich
+		portraits={
+			army={
+				large="gfx/leaders/POL/Portrait_POL_Karl_Albrecht_von_Osterreich.png"
+			}
+			civilian={
+				large="gfx/leaders/POL/Portrait_POL_Karl_Albrecht_von_Osterreich.png"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= conservative_liberalism_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+		corps_commander={
+			traits={ }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

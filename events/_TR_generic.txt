@@ -1,0 +1,380 @@
+﻿add_namespace = TR_generic_event
+
+# Which cores to return?
+country_event = {
+	id = TR_generic_event.1
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_generic_event.1 FROM = [From.GetName]" }
+	title = TR_generic_event.1.t
+	desc = TR_generic_event.1.d
+	picture = GFX_report_event_generic_diplomacy2
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_generic_event.1.a #return all land
+		ai_chance = {
+			base = 1
+		}
+		clr_country_flag = returning_land
+		custom_effect_tooltip = will_return_all
+		hidden_effect = {
+			event_target:return_to = {
+				country_event = TR_generic_event.2
+			}
+		}
+	}
+	option = {
+		name = TR_generic_event.1.b #return all land but vital provinces
+		trigger = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_claim_or_core_of_ROOT = no
+				is_important_state = yes
+				NOT = { has_state_flag = keeping_state@ROOT }
+
+				OR = {
+					AND = {
+						ROOT = { tag = JAP }
+						is_important_state_china = yes
+					}
+					AND = {
+						ROOT = { tag = SOV }
+						is_important_state_china = yes
+					}
+					AND = {
+						ROOT = { tag = ENG }
+						is_important_state_china = yes
+					}
+					AND = {
+						ROOT = { tag = ENR }
+						is_important_state_china = yes
+					}
+					AND = {
+						ROOT = { tag = DDR }
+						is_important_state_china = yes
+					}
+					AND = {
+						ROOT = { tag = AUS }
+						is_important_state_china = yes
+					}
+					AND = {
+						ROOT = { tag = USA }
+						is_important_state_china = yes
+					}
+					AND = {
+						ROOT = { tag = FRA }
+						is_french_colonial_claim = yes
+					}
+					AND = {
+						ROOT = { tag = POR }
+						is_french_colonial_claim = yes
+					}
+					ROOT = { is_ai = no }
+				}
+				OR = {
+					is_core_of = event_target:return_to
+					is_claimed_by = event_target:return_to
+				}
+			}
+		}
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = will_return_rest
+		hidden_effect = {
+			clr_country_flag = returning_land
+			every_owned_state = {
+				limit = {
+					is_claim_or_core_of_ROOT = no
+					is_important_state = yes
+					NOT = { has_state_flag = keeping_state@ROOT }
+					OR = {
+						AND = {
+							ROOT = { tag = JAP }
+							is_important_state_china = yes
+						}
+						AND = {
+							ROOT = { tag = SOV }
+							is_important_state_china = yes
+						}
+						AND = {
+							ROOT = { tag = ENG }
+							is_important_state_china = yes
+						}
+						AND = {
+							ROOT = { tag = ENR }
+							is_important_state_china = yes
+						}
+						AND = {
+							ROOT = { tag = DDR }
+							is_important_state_china = yes
+						}
+						AND = {
+							ROOT = { tag = AUS }
+							is_important_state_china = yes
+						}
+						AND = {
+							ROOT = { tag = USA }
+							is_important_state_china = yes
+						}
+						AND = {
+							ROOT = { tag = FRA }
+							is_french_colonial_claim = yes
+						}
+						AND = {
+							ROOT = { tag = POR }
+							is_french_colonial_claim = yes
+						}
+						ROOT = { is_ai = no }
+					}
+					OR = {
+						is_core_of = event_target:return_to
+						is_claimed_by = event_target:return_to
+					}
+				}
+				set_state_flag = keeping_state@ROOT
+			}
+			if = {
+				limit = {
+					any_owned_state = {
+						is_claim_or_core_of_ROOT = no
+						is_important_state = no
+						NOT = { has_state_flag = keeping_state@ROOT }
+						OR = {
+							any_neighbor_state = { is_owned_by = event_target:return_to }
+							is_coastal = yes
+						}
+						OR = {
+							AND = {
+								ROOT = { tag = JAP }
+								is_important_state_china = yes
+							}
+							AND = {
+								ROOT = { tag = SOV }
+								is_important_state_china = yes
+							}
+							AND = {
+								ROOT = { tag = ENG }
+								is_important_state_china = yes
+							}
+							AND = {
+								ROOT = { tag = ENR }
+								is_important_state_china = yes
+							}
+							AND = {
+								ROOT = { tag = DDR }
+								is_important_state_china = yes
+							}
+							AND = {
+								ROOT = { tag = AUS }
+								is_important_state_china = yes
+							}
+							AND = {
+								ROOT = { tag = USA }
+								is_important_state_china = yes
+							}
+							AND = {
+								ROOT = { tag = FRA }
+								is_french_colonial_claim = yes
+							}
+							AND = {
+								ROOT = { tag = POR }
+								is_french_colonial_claim = yes
+							}
+							ROOT = { is_ai = no }
+						}
+						}
+						OR = {
+							is_core_of = event_target:return_to
+							is_claimed_by = event_target:return_to
+						}
+					}
+				}
+				event_target:return_to = {
+					country_event = TR_generic_event.2
+				}
+			}
+		}
+	option = {
+		name = TR_generic_event.1.c #return cores only
+		trigger = {
+			is_ai = no
+			any_owned_state = {
+				is_claim_or_core_of_ROOT = no
+				is_important_state = no
+				NOT = { has_state_flag = keeping_state@ROOT }
+				is_core_of = event_target:return_to
+			}
+			any_owned_state = {
+				is_claim_or_core_of_ROOT = no
+				is_important_state = no
+				NOT = { has_state_flag = keeping_state@ROOT }
+				NOT = { is_core_of = event_target:return_to }
+				is_claimed_by = event_target:return_to
+			}
+		}
+		custom_effect_tooltip = will_return_cores
+		hidden_effect = {
+			clr_country_flag = returning_land
+			every_owned_state = {
+				limit = {
+					is_claim_or_core_of_ROOT = no
+					NOT = { has_state_flag = keeping_state@ROOT }
+					NOT = { is_core_of = event_target:return_to }
+					is_claimed_by = event_target:return_to
+				}
+				set_state_flag = keeping_state@ROOT
+			}
+			event_target:return_to = {
+				country_event = TR_generic_event.2
+			}
+		}
+	}
+	option = {
+		name = TR_generic_event.1.e #keep it all you pig
+		ai_chance = { base = 0 }
+		clr_country_flag = returning_land
+		custom_effect_tooltip = will_not_return
+		hidden_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						is_core_of = event_target:return_to
+						is_claimed_by = event_target:return_to
+					}
+					is_claim_or_core_of_ROOT = no
+					NOT = { has_state_flag = keeping_state@ROOT }
+				}
+				set_state_flag = keeping_state@ROOT
+			}
+		}
+	}
+}
+# Cores/claims have been returned by an ally
+country_event = {
+	id = TR_generic_event.2
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_generic_event.2 FROM = [From.GetName]" }
+	title = TR_generic_event.2.t
+	desc = TR_generic_event.2.d
+	picture = GFX_report_event_generic_diplomacy2
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_generic_event.2.a
+		add_opinion_modifier = {
+			target = FROM
+			modifier = returned_land_opinion
+		}
+		set_temp_variable = { tag_to_release = ROOT }
+		while_loop_effect = {
+			limit = {
+				FROM = {
+					any_owned_state = {
+						is_claim_or_core_of_ROOT = yes
+						is_claim_or_core_of_FROM = no
+						OR = {
+							any_neighbor_state = { is_owned_by = ROOT }
+							is_coastal = yes
+						}
+						OR = {
+							NOT = { has_variable = ambition_area_@ROOT }
+							AND = {
+								FROM = { tag = JAP }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = SOV }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = ENG }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = ENR }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = DDR }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = AUS }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = USA }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = FRA }
+								is_french_colonial_claim = yes
+							}
+							AND = {
+								FROM = { tag = POR }
+								is_french_colonial_claim = yes
+							}
+							FROM = { is_ai = no }
+						}
+						NOT = { has_state_flag = keeping_state@FROM }
+					}
+				}
+			}
+			FROM = {
+				every_owned_state = {
+					limit = {
+						is_claim_or_core_of_ROOT = yes
+						is_claim_or_core_of_FROM = no
+						OR = {
+							any_neighbor_state = { is_owned_by = ROOT }
+							is_coastal = yes
+						}
+						OR = {
+							NOT = { has_variable = ambition_area_@ROOT }
+							AND = {
+								FROM = { tag = JAP }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = SOV }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = ENG }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = ENR }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = DDR }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = AUS }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = USA }
+								is_important_state_china = yes
+							}
+							AND = {
+								FROM = { tag = FRA }
+								is_french_colonial_claim = yes
+							}
+							AND = {
+								FROM = { tag = POR }
+								is_french_colonial_claim = yes
+							}
+							FROM = { is_ai = no }
+						}
+						NOT = { has_state_flag = keeping_state@FROM }
+					}
+					transfer_state_to = ROOT
+				}
+			}
+		}
+	}
+}

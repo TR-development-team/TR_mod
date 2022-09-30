@@ -1,13 +1,14 @@
 
 state={
 	id=570
-	name="STATE_570" # Novosibirsk
+	name="TR_STATE_570" # Novosibirsk
 	manpower = 1765369
 
 	state_category = town
 
 	history={
-		owner = SOV
+		owner = YAK
+		add_core_of = YAK
 		victory_points = {
 			7274 3 
 		}
@@ -15,13 +16,6 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 			air_base = 1
-		}
-		add_core_of = SOV
-                add_core_of = RUS
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 3
-			}
 		}
 	}
 

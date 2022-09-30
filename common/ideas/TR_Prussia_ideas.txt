@@ -70,9 +70,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				paternal_autocrat
@@ -85,9 +91,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				paternal_autocrat
@@ -102,9 +114,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				authoritarian_democrat
@@ -117,9 +135,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				paternal_autocrat
@@ -132,9 +156,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				paternal_autocrat
@@ -147,9 +177,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				national_populist
@@ -162,9 +198,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				Gnosticism
@@ -180,9 +222,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				authoritarian_democrat
@@ -195,11 +243,16 @@ ideas = {
 			allowed = {
 				original_tag = DDR
 			}
-	                available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				national_populist
@@ -214,9 +267,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				authoritarian_democrat
@@ -230,9 +289,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
                 authoritarian_democrat
@@ -246,9 +311,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				paternal_autocrat
@@ -264,9 +335,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
                 authoritarian_democrat
@@ -280,9 +357,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				paternal_autocrat
@@ -295,9 +378,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				paternal_autocrat
@@ -311,9 +400,15 @@ ideas = {
 				original_tag = DDR
 			}
 			available = {
-				always = no
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				national_populist

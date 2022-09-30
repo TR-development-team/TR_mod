@@ -1,8 +1,8 @@
-﻿capital = 574 #Yakutsk
+﻿capital = 571#オムスク
 
-#oob = "YAK_1936"
+oob = "YAK_1936"
 
-set_research_slots = 2
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
@@ -13,8 +13,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_military_police = 1
 	tech_mountaineers = 1
-	motorised_infantry = 1
-	paratroopers = 1
 	gw_artillery = 1
 
 
@@ -48,52 +46,38 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		mtg_transport = 1
-		basic_battery = 1
-		basic_torpedo = 1
-	}
-}
+
+set_cosmetic_tag = YAK_Russia
+SOV = { 
+        set_autonomy = {
+	  target = YAK
+	  autonomous_state = autonomy_colony
+        }
+      }
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 8
+	syndicalist = 6
+	radical_socialist = 8
+	social_democrat = 3
+	social_liberal = 3
+	market_liberal = 5
+	social_conservative = 6
+	authoritarian_democrat = 5
+	paternal_autocrat = 34
+	national_populist = 14
+        Gnosticism = 8
 }
 
-set_popularities = {
-	social_conservative = 60
-	national_populist = 0
-	totalist = 20
-	authoritarian_democrat = 20
-}
 
 recruit_character = YAK_pavel_pevznyak
 recruit_character = YAK_anatoly_pepelyayev
+recruit_character = YAK_Roman_Ungern
 
 
 

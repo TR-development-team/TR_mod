@@ -11,7 +11,62 @@
 # influence
 
 
+ENG_per_ardua_ad_astra_1 = {
+	allowed = {
+		OR = {
+			original_tag = ENR
+			original_tag = ENG
+		}
+	}
+	enable = {
+		always = yes
+	}
 
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -10
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 150
+	}
+}
+
+ENG_per_ardua_ad_astra_2 = {
+	allowed = {
+		OR = {
+			original_tag = ENR
+			original_tag = ENG
+		}
+	}
+	enable = {
+		date > 1938.1.1
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 120
+	}
+}
+
+ENG_per_ardua_ad_astra_3 = {
+	allowed = {
+		OR = {
+			original_tag = ENR
+			original_tag = ENG
+		}
+	}
+	enable = {
+		date > 1939.1.1
+	}
+
+	ai_strategy = {
+		type = air_factory_balance
+		value = 125
+	}
+}
 
 
 
@@ -73,4 +128,33 @@ ENR_protect_italy = {
 }
 
 
+
+ENG_invade_ireland = {
+	allowed = {
+		OR = {
+			original_tag = ENR
+			original_tag = ENG
+		}
+	}
+	enable = {
+		has_war_with = IRE
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = "IRE"
+		value = 200
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		tag = IRE
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = IRE
+		value = 100
+	}
+}
 

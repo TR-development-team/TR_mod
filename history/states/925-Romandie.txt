@@ -2,28 +2,24 @@
 state={
 	id=925
 	name="STATE_925"
-	manpower = 639485
+	manpower = 1211689
 	resources={
-		aluminium=6
+		aluminium=18 # was: 28 #CarloTODO
 	}
-
-	state_category = city
-
-
+	state_category = large_town
 	history={
 		owner = SWI
+
 		victory_points = { 6666 5 }
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
-			industrial_complex = 1
+			industrial_complex = 2
 		}
 		add_core_of = SWI
-		add_claim_by = FRA
 	}
-
+	provinces={
+		6666 6683 9622 13124 
+	}
 	local_supplies=0.0 
-provinces={
-		6666 6683 9622 11590 13124 
-	}
 }

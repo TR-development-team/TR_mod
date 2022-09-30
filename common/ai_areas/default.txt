@@ -1,42 +1,11 @@
 areas = {
-	### BASE AREAS - USED IN DEFAULT PRIORITIES ###
-	europe = {
-		continents = {
-			europe
-		}
-	}
 
-	north_america = {
-		continents = {
-			north_america
-			central_america
-		}
-	}
-
-	south_america = {
-		continents = {
-			south_america
-		}
-	}
-
-	africa = {
-		continents = {
-			africa
-		}
-	}
-
-	asia = {
-		continents = {
-			asia
-			india
-		}
-	}
-
-	middle_east = {
-		continents = {
-			middle_east
-		}
-	}
+	suez = {
+        strategic_regions = {
+            128
+            28
+        }
+    }
 
     scandinavia = {
 		strategic_regions = {
@@ -50,48 +19,178 @@ areas = {
         }
     }
 
-	suez = {
+    italy = {
         strategic_regions = {
-            128
-            28
+            23 # italy
+            21
         }
     }
 
-	oceania = {
-		strategic_regions = {
-			156 #Southern Australia
-			157 #New Zealand
-			248 #Eastern Australia
-			249 #Northern Australia
-			250 #Central Australia
+    UK = {
+        strategic_regions = {
+            1 
+            2
+            3
+            4
+        }
+    }
 
-			81 #Coral Sea
-			86 #Tasman Sea
-			98 #Great Australian Bight
+    north_africa = {
+        strategic_regions = {
+            128 # egypt
+            225 # trippoli
+            126 # east maghreb
+            182 # west maghreb
+        }
+    }
+
+	europe = {
+		continents = {
+			europe
+		}
+	}
+
+    mainland_europe = {
+        strategic_regions = {
+            208 # france
+            19
+            20
+            5 # benelux
+            41 # iberia
+            209
+            210
+            23 # italy
+            21
+            7 # germany
+            6
+            8
+            22 # chechoslovakia
+            38 # poland
+            39
+            37 # baltics
+            27 # balkans
+            24
+            26
+            25 # greece
+        }
+    }
+	
+	normandy_landing_zone = {
+        strategic_regions = {
+            208 # france
+            20
+            5 # benelux
+        }
+    }
+
+	north_america = {
+
+		continents = {
+			north_america
+		}
+	}
+
+	south_america = {
+
+		continents = {
+			south_america
+		}
+	}
+
+	africa = {
+
+		continents = {
+			africa
+		}
+	}
+
+	asia = {
+
+		continents = {
+			asia
+		}
+	}
+
+	middle_east = {
+
+		continents = {
+			middle_east
 		}
 	}
 
 	pacific = {
+
 		strategic_regions = {
-			78 #Philippine Sea
-			83 #Solomon Sea
-			84 #Bismarck Sea
-			94 #Mariana Trench
-			96 #West Emperor Chain
-			97 #Eastern Micronesia
-			105 #Hawaii Ridge
-			111 #North Central Pacific
-			112 #Far South Pacific
-			113 #South Central Pacific
-			115 #North East Pacific
-			167 #New Guinea
-			172 #Pacific Line Ridge
-			175 #Central Pacific
-			176 #Central North Pacific
-			177 #Western North Pacific
-			178 #West Polynesia
-			179 #East Polynesia
-			180 #Micronesian Gap
+			105 # Hawaii
+			180 # Micronesian Gap
+			97  # Eastern Micronesia
+			32  # South-Eastern Pacific
+			84  # Bismarck Sea
+			95  # West Emperor Sea
+			94  # Mariana Region
+			177 # Western North Pacific
+			172 # Pacific Line Ridge
+			78  # Phillipine Sea
+			109 # Peruvian Coast
+			160 # Phillipines
+			83  # Solomon Sea
+			167 # New Guinea
+			91  # Arafura Sea
+			178 # West Polynesia
+			179 # French Polynesia
 		}
 	}
+
+	oceania = {
+
+		strategic_regions = {
+			156 # Australia
+			157 # New Zealand
+			86  # Tasman Sea
+			98  # Great Australian Bight
+			81  # Coral Sea
+		}
+	}
+	
+	home_islands = {
+		strategic_regions = {
+			76 	#Okinawa et al
+			154 #Kanto
+			160 #Phillipines - we care about these too!
+		}
+	}
+	
+	just_philippines = {
+		strategic_regions = {
+			160 #Phillipines
+		}
+	}
+	
+	east_indies = {
+		strategic_regions = {
+			167 #Papua
+			93
+			158
+			159 #Brunei
+			187
+		}
+	}
+	
+	burma = {
+		strategic_regions = {
+			189 #Burma
+			142 #Vietnam/Siam
+			141 #Bengal
+		}
+	}
+
+	horn_of_africa = {
+		strategic_regions = {
+			17 #Ethiopian Highlands
+			273 #Danakil
+			274 #Ogaden 
+		}
+	}
+	
+	
 }

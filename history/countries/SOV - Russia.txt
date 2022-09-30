@@ -19,7 +19,7 @@ country_event = { id = TR_russia.5 days = 312 }
 set_research_slots = 3
 starting_train_buffer = 1
 set_stability = 0.4
-set_war_support = 0.3
+set_war_support = 0.4
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -83,12 +83,12 @@ if = {
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_light_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
 		mtg_transport = 1
 	}
 }
@@ -103,16 +103,7 @@ if = {
 }
 
 
-if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
 
-	declare_war_on = {
-		target = FIN
-		type = annex_everything
-	}
-}
 
 set_convoys = 50
 
@@ -143,38 +134,53 @@ add_ideas = {
 	SOV_army_disband
         SOV_depression
         SOV_revolution
-        SOV_fin_independent
+        SOV_Okhrana
+        #大臣
+        RUS_nikolai_ii
+        RUS_Pavel_Ignatiev
+        RUS_Nikolai_Pokrovsky
+        RUS_Pyotr_Bark
+        RUS_Alexandr_Protopopov
+        RUS_Lavr_Kornilov
+        RUS_Pyotr_wrangel_coa
 }
 
-recruit_character = RUS_Joseph_Stalin
-recruit_character = RUS_Nestor_Makhno
+recruit_character = RUS_Alexander_Kazembek
 recruit_character = RUS_Nikolai_bukharin
 recruit_character = RUS_Yuliy_martov
-recruit_character = RUS_Boris_Savinkov
+recruit_character = RUS_Viktor_Chernov
 recruit_character = RUS_Pavel_Milyukov
 recruit_character = RUS_Nikolai_Trubetzkoy
-recruit_character = RUS_Dmitri_Pavlovich
+recruit_character = RUS_Alexander_Guchkov
 recruit_character = RUS_nikolai_ii
-recruit_character = RUS_Pyotr_wrangel
+recruit_character = RUS_Vladimir_Purishkevich
 recruit_character = RUS_Sergey_Taboritsky
 
+recruit_character = RUS_Boris_Savinkov
 recruit_character = RUS_alexei_ii
+recruit_character = RUS_Pyotr_wrangel
 recruit_character = RUS_Pyotr_wrangel_1
+recruit_character = RUS_Anastasia
+recruit_character = RUS_Regent_Council
+recruit_character = RUS_alexei_ii_portrait
 
 recruit_character = RUS_Pyotr_wrangel_Army
-recruit_character = RUS_Roman_Ungern
-recruit_character = RUS_Vlazimir_Kappel
+recruit_character = RUS_Pavel_Bermont_Avalov
 recruit_character = RUS_Sergey_Markov
 recruit_character = RUS_Abram_Dragomirov
 recruit_character = RUS_Mikhail_Drozdovskiy
 recruit_character = RUS_Ivan_Romanovsky
 recruit_character = RUS_Pavel_Shatilov
 recruit_character = RUS_Pyotr_Mahrov
-recruit_character = RUS_konstantin_nechayev
 recruit_character = RUS_aleksandr_rodzyanko
 recruit_character = RUS_andrey_shkuro
-recruit_character = RUS_Alexander_Kolchak
+recruit_character = RUS_Boris_Annenkov
+recruit_character = RUS_Lavr_Kornilov
+recruit_character = RUS_Alexander_Kutepov
+recruit_character = RUS_Yevgeny_Miller
+recruit_character = RUS_Aleksei_Arkhangelsky
 
+recruit_character = RUS_Alexander_Kolchak
 
 ### VARIANTS ###
 # 1936 Start #
@@ -225,7 +231,7 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Leningrad & Minsk Class"
+		name = "Minsk Class"
 		type = destroyer_1
 		upgrades = {
 			ship_torpedo_upgrade = 3
@@ -263,17 +269,6 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Series II Leninets"				# represents Leninets series II, XI
-		type = ship_hull_submarine_2
-		name_group = SOV_SS_LENINETS
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = ship_mine_layer_sub
-		}
-	}
-	create_equipment_variant = {
 		name = "Series V Shchuka"				# represents Shchuka series III, V, V-bis, V-bis-2
 		type = ship_hull_submarine_1
 		name_group = SOV_SS_SHCHUKA
@@ -284,17 +279,6 @@ if = {
 			rear_1_custom_slot = empty
 		}
 		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Series IX Srednyaya"				# 'Stalinets', series IX, IX-bis, IX-bis-2 and P-class
-		type = ship_hull_submarine_2
-		name_group = SOV_SS_STALINETS
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_2
-			rear_1_custom_slot = empty
-		}
 	}
 	create_equipment_variant = {
 		name = "Series X Shchuka"				
@@ -311,7 +295,7 @@ if = {
 	create_equipment_variant = {
 		name = "Orfey Class"						# represents Yakov Sverdlov, Frunze, and Orfey classes
 		type = ship_hull_light_1
-		name_group = SOV_DD_HISTORICAL
+		name_group = SOV_DD_IMPERIAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -328,7 +312,7 @@ if = {
 	create_equipment_variant = {
 		name = "Fidonisi Class"						# represents Fidonisi and Izyaslav classes
 		type = ship_hull_light_1
-		name_group = SOV_DD_HISTORICAL
+		name_group = SOV_DD_IMPERIAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -343,9 +327,9 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Leningrad & Minsk Class"				
+		name = "Minsk Class"				
 		type = ship_hull_light_2
-		name_group = SOV_DD_HISTORICAL
+		name_group = SOV_DD_IMPERIAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_2
@@ -361,7 +345,7 @@ if = {
 	create_equipment_variant = {
 		name = "Bug Class"					# minelayer
 		type = ship_hull_light_1
-		name_group = SOV_MINELAYERS_HISTORICAL
+		name_group = SOV_MINELAYERS_IMPERIAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -376,9 +360,9 @@ if = {
 	}
 	# Light Cruisers #
 	create_equipment_variant = {
-		name = "Komintern Class"
+		name = "Nikolai Class"
 		type = ship_hull_cruiser_1
-		name_group = SOV_CL_HISTORICAL
+		name_group = SOV_CL_IMPERIAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -393,9 +377,9 @@ if = {
 		obsolete = yes
 	}
 	create_equipment_variant = {
-		name = "Chervona Ukraina Class"
+		name = "Novgorod Class"
 		type = ship_hull_cruiser_1
-		name_group = SOV_CL_HISTORICAL
+		name_group = SOV_CL_IMPERIAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -411,7 +395,7 @@ if = {
 	create_equipment_variant = {
 		name = "Marti Class"
 		type = ship_hull_cruiser_1				# minelayer
-		name_group = SOV_MINELAYERS_HISTORICAL
+		name_group = SOV_MINELAYERS_IMPERIAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -426,9 +410,9 @@ if = {
 	}
 	# Heavy Cruisers #
 		create_equipment_variant = {
-			name = "Kirov Class"
+			name = "Stolypin Class"
 			type = ship_hull_cruiser_1
-			name_group = SOV_CA_HISTORICAL
+			name_group = SOV_CA_IMPERIAL
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_medium_battery_1
@@ -446,7 +430,7 @@ if = {
 	create_equipment_variant = {
 		name = "Marat Class"					
 		type = ship_hull_heavy_1
-		name_group = SOV_BB_HISTORICAL
+		name_group = SOV_MINESWEEPERS_IMPERIAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_heavy_battery_1
@@ -464,109 +448,3 @@ if = {
 	}
 }
 
-# 1939 Start #
-1939.1.1 = {
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		# Ship variants #
-		create_equipment_variant = {
-			name = "Series X Shchuka"
-			type = submarine_2
-			upgrades = {
-				ship_reliability_upgrade = 3
-				sub_engine_upgrade = 3
-				sub_stealth_upgrade = 3
-				sub_torpedo_upgrade = 3
-			}
-		}
-
-		create_equipment_variant = {
-			name = "Maxim Gorky Class"
-			type = heavy_cruiser_2
-			upgrades = {
-				ship_reliability_upgrade = 2
-				ship_engine_upgrade = 2
-				ship_armor_upgrade = 2
-				ship_gun_upgrade = 2
-			}
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		# Submarines #
-		create_equipment_variant = {
-			name = "Series XIII Leninets"				
-			type = ship_hull_submarine_2
-			name_group = SOV_SS_LENINETS
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_2
-				rear_1_custom_slot = ship_mine_layer_sub
-			}
-		}
-		create_equipment_variant = {
-			name = "Series XIV K-Class"				
-			type = ship_hull_submarine_3
-			name_group = SOV_SS_SHCHUKA
-			parent_version = 0
-			modules = {
-				fixed_ship_torpedo_slot = ship_torpedo_sub_2
-				fixed_ship_engine_slot = sub_ship_engine_3
-				front_1_custom_slot = ship_mine_layer_sub
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = ship_torpedo_sub_2
-			}
-		}
-		# Destroyers #
-		create_equipment_variant = {
-			name = "Gnevnyy Class"				
-			type = ship_hull_light_2
-			name_group = SOV_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = empty
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Soobrazitelnyi Class"				
-			type = ship_hull_light_3
-			name_group = SOV_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_2
-				fixed_ship_torpedo_slot = empty
-				mid_1_custom_slot = empty
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-		}
-		create_equipment_variant = {
-			name = "Tashkent Class"				
-			type = ship_hull_light_3
-			name_group = SOV_DD_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_light_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = light_ship_engine_3
-				fixed_ship_torpedo_slot = ship_torpedo_1
-				mid_1_custom_slot = ship_anti_air_1
-				rear_1_custom_slot = ship_depth_charge_1
-			}
-		}
-	}
-}

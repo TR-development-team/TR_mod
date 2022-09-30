@@ -12,10 +12,15 @@ ideas = {
 				original_tag = HEX
 			}
 			available = {
-				always = no
-		    }
-
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 			traits = {
 				Head_of_State
@@ -31,10 +36,15 @@ ideas = {
 				original_tag = HEX
 			}
 			available = {
-				always = no
-		    }
-
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 			traits = {
 				Government_leaders

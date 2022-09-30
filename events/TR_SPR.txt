@@ -41,126 +41,43 @@ country_event = {
 				}
 			}
           hidden_effect = {
-                ADU = {
-			transfer_state = 169
-			transfer_state = 118
-                        transfer_state = 173
-			transfer_state = 789
-                        transfer_state = 170
-                      }
-                CAT = {
-			transfer_state = 165
-			transfer_state = 167
-                        transfer_state = 166
-			transfer_state = 794
-                        transfer_state = 172
-                      }
-                165 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                166 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                167 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                168 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                169 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                170 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                171 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                172 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                173 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                41 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                118 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                174 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                175 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                176 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                177 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                178 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                788 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                789 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                790 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                791 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                792 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                793 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                794 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                country_event = {
-			id = TR_news.27
-			days = 11
-                        }
-		ADU = { country_event = {
-					id = TR_spain.2
-					days = 10
-					
-				} }
-                CAT = { country_event = {
+            ADU = {
+			    transfer_state = 169
+			    transfer_state = 118
+                transfer_state = 173
+			    transfer_state = 789
+                transfer_state = 170
+                }
+            CAT = {
+			    transfer_state = 165
+			    transfer_state = 167
+                transfer_state = 166
+			    transfer_state = 794
+                transfer_state = 172
+            }
+			every_state = {
+				limit = {
+					is_core_of = SPR
+				}
+				add_core_of = CAT
+				add_core_of = ADU
+			}
+            country_event = {
+			    id = TR_news.27
+			    days = 11
+                }
+		    ADU = { 
+			    country_event = {
+			    	id = TR_spain.2
+			    	days = 10	
+			    	} 
+			    }
+            CAT = { 
+				country_event = {
 					id = TR_spain.3
-					days = 10
-					
-				} }		
+					days = 10	
+				} 
+			}		
 		}
 	}
         option = {
@@ -190,129 +107,46 @@ country_event = {
 				}
 			}
                       }
-             hidden_effect = {
-                ADU = { change_tag_from = SPR
-			transfer_state = 169
-			transfer_state = 118
-                        transfer_state = 173
-			transfer_state = 789
-                        transfer_state = 170
-                      }
-                CAT = {
-			transfer_state = 165
-			transfer_state = 167
-                        transfer_state = 166
-			transfer_state = 794
-                        transfer_state = 172
-                      }
-                165 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                166 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                167 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                168 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                169 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                170 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                171 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                172 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                173 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                41 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                118 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                174 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                175 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                176 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                177 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                178 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                788 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                789 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                790 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                791 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                792 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                793 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                794 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                country_event = {
-			id = TR_news.27
-			days = 11
-                        }
-		ADU = { country_event = {
-					id = TR_spain.2
-					days = 10
-					
-				} }
-                CAT = { country_event = {
+          hidden_effect = {
+            ADU = {
+				change_tag_from = SPR
+			    transfer_state = 169
+			    transfer_state = 118
+                transfer_state = 173
+			    transfer_state = 789
+                transfer_state = 170
+                }
+            CAT = {
+			    transfer_state = 165
+			    transfer_state = 167
+                transfer_state = 166
+			    transfer_state = 794
+                transfer_state = 172
+            }
+			every_state = {
+				limit = {
+					is_core_of = SPR
+				}
+				add_core_of = CAT
+				add_core_of = ADU
+			}
+            country_event = {
+			    id = TR_news.27
+			    days = 11
+                }
+		    ADU = { 
+			    country_event = {
+			    	id = TR_spain.2
+			    	days = 10	
+			    	} 
+			    }
+            CAT = { 
+				country_event = {
 					id = TR_spain.3
-					days = 10
-					
-				} }		
+					days = 10	
+				} 
+			}	
 		  }
-                
 		}
         option = {
 		name = TR_spain.1.c
@@ -341,128 +175,46 @@ country_event = {
 				}
 			}
                       }
-             hidden_effect = {
-                ADU = { 
-			transfer_state = 169
-			transfer_state = 118
-                        transfer_state = 173
-			transfer_state = 789
-                        transfer_state = 170
-                      }
-                CAT = { change_tag_from = SPR
-			transfer_state = 165
-			transfer_state = 167
-                        transfer_state = 166
-			transfer_state = 794
-                        transfer_state = 172
-                      }
-                165 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                166 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                167 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                168 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                169 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                170 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                171 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                172 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                173 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                41 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                118 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                174 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                175 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                176 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                177 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                178 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                788 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                789 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                790 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                791 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                792 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                793 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                794 = {
-                        add_core_of = ADU
-			add_core_of = CAT
-		      }
-                country_event = {
-			id = TR_news.27
-			days = 11
-                        }
-		ADU = { country_event = {
-					id = TR_spain.2
-					days = 10
-					
-				} }
-                CAT = { country_event = {
+          hidden_effect = {
+            ADU = {
+			    transfer_state = 169
+			    transfer_state = 118
+                transfer_state = 173
+			    transfer_state = 789
+                transfer_state = 170
+                }
+            CAT = {
+				change_tag_from = SPR
+			    transfer_state = 165
+			    transfer_state = 167
+                transfer_state = 166
+			    transfer_state = 794
+                transfer_state = 172
+            }
+			every_state = {
+				limit = {
+					is_core_of = SPR
+				}
+				add_core_of = CAT
+				add_core_of = ADU
+			}
+            country_event = {
+			    id = TR_news.27
+			    days = 11
+                }
+		    ADU = { 
+			    country_event = {
+			    	id = TR_spain.2
+			    	days = 10	
+			    	} 
+			    }
+            CAT = { 
+				country_event = {
 					id = TR_spain.3
-					days = 10
-					
-				} }
-		}
+					days = 10	
+				} 
+			}	
+		  }
 	}
  }
 
@@ -689,30 +441,18 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
-                add_political_power = 5
-                
-
+        add_political_power = 5
+		promote_character = ADU_Federico_Garcia_Lorca
 	}
-
 	option = {#ダリ
 		name = TR_spain.5.b
 		ai_chance = {
 			base = 50
 		}
-                add_political_power = 5
-                effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = Gnosticism }
-		create_country_leader = {
-		      name = "サルバドール・ダリ"
-		      desc = "POLITICS_DALI_DESC"
-		      picture = "gfx/leaders/SPR/Portrait_Spain_Dali.tga"
-		      expire = "1965.1.1"
-		      ideology = Gnosticism_subtype
-	                 }
+        add_political_power = 5
+        effect_tooltip = { retire_country_leader = yes }
+		promote_character = ADU_Salvador_Dali
 	}
-
-
-
 }
 
 country_event = {

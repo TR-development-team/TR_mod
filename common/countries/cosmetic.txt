@@ -15,6 +15,10 @@ KOR_JAP = {
 	color = rgb { 252 201 185 }
 	color_ui = rgb { 252 201 185 }
 }
+KOR_JAP_autonomy = {
+	color = rgb { 252 201 185 }
+	color_ui = rgb { 252 201 185 }
+}
 NMB_JAP = {
 	color = rgb { 252 201 185 }
 	color_ui = rgb { 252 201 185 }
@@ -162,7 +166,23 @@ LIT_Russia = {
 	color = rgb { 0 120 0  }
 	color_ui = rgb { 0 120 0  }
 }
+YAK_Russia = {
+	color = rgb { 0 120 0  }
+	color_ui = rgb { 0 120 0  }
+}
 UZB_Turkestan = {
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 163 17 31 }
+}
+BOS_AUS_TUR = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+HUN_AUS_kingdom = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
+}
+GAL_AUS = {
+	color = rgb { 194 198 215 }
+	color_ui = rgb { 255 255 255 }
 }

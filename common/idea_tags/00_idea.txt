@@ -64,7 +64,7 @@ idea_categories = {
 
 		removal_cost = -1
 	}
-	military_staff = {
+	TR_military_staff = {
 		slot = chief_of_staff
 		slot = chief_of_army
 		slot = chief_of_navy
@@ -75,6 +75,20 @@ idea_categories = {
 		cost = 150
 		removal_cost = 0
 	}
+	military_staff_characters = {
+		character_slot = army_chief 
+		character_slot = navy_chief 
+		character_slot = air_chief
+		character_slot = high_command
+		character_slot = high_command
+		character_slot = high_command
+
+		ledger = invalid # must be overridden
+
+		cost = 150
+		removal_cost = 0
+	}
+	
 	research_production = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer
@@ -207,6 +221,7 @@ slot_ledgers = {
 	tank_manufacturer = army
 	naval_manufacturer = navy
 	aircraft_manufacturer = air
+	weapons_manufacturer = army
 	
 	theorist = invalid # must be overridden
 	high_command = invalid # must be overridden

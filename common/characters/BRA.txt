@@ -1,0 +1,63 @@
+characters={
+	BRA_luis_carlos_prestes={
+		name=BRA_luis_carlos_prestes
+		portraits={
+			civilian={
+				large=GFX_portrait_BRA_luis_carlos_prestes
+			}
+		}
+		country_leader={
+			ideology=Totalist_Leninist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	BRA_armando_sales={
+		name=BRA_armando_sales
+		portraits={
+			civilian={
+				large=GFX_portrait_BRA_armando_sales
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	BRA_getulio_vargas={
+		name=BRA_getulio_vargas
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/Portrait_BRA_Getulio_Vargas.png"
+			}
+		}
+		country_leader={
+			ideology=oligarchy_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=Military_junta_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	BRA_plinio_salgado={
+		name=BRA_plinio_salgado
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/Portrait_BRA_Plinio_Salgado.png"
+			}
+		}
+		country_leader={
+			ideology=Integralism_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

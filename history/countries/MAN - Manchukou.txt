@@ -98,96 +98,11 @@ set_popularities = {
 	national_populist = 5
 }
 
-create_country_leader = {
-	name = "愛新覚羅溥儀"
-	
-	picture = "gfx/leaders/MAN/Portrait_Qing_PuYi.tga"
-	expire = "1960.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "甘粕正彦"
-	
-	picture = "gfx/leaders/MAN/Portrai_man_amakasu.tga"
-	expire = "1960.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "大杉栄"
-	desc = "POLITICS_OSUGI_DESC"
-	picture = "gfx/leaders/JAP/Portrait_JAP_osugi.tga"
-	expire = "1981.3.6"
-	ideology = syndicalist_subtype
-}
+recruit_character = MAN_oosugi_sakae
+recruit_character = MAN_Toyama_Hidezo
+recruit_character = MAN_Masahiko_Amakasu
 
-create_country_leader = {
-	name = "頭山秀三"
-	
-	picture = "gfx/leaders/MAN/Portrai_man_touyama.tga"
-	expire = "1960.1.1"
-	ideology = social_liberal_subtype
-	traits = { Pan_Asian_Politician }
-}
-
-create_corps_commander = {
-	name = "張海鵬"
-	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = {  }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "張景恵"
-	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { infantry_officer }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "煕洽"
-	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = { career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "川島芳子"
-	GFX = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { cavalry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-	female = yes
-}
-create_corps_commander = {
-	name = "張学良"
-	portrait_path = "gfx/leaders/CHI/portrait_chi_zhang_xueliang.dds"
-	traits = { }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
+recruit_character = MAN_zhang_haipeng
+recruit_character = MAN_zhang_jinghui
+recruit_character = MAN_aisin_gioro_xiqia
+recruit_character = MAN_yoshiko_kawashima

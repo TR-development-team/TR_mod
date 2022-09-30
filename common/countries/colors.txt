@@ -155,6 +155,10 @@ ARG = {
 	color = rgb { 145 157 236 }
 	color_ui = rgb { 189 204 255 }
 }
+ALG = {
+	color = rgb { 153 102 51 }
+	color_ui = rgb { 153 102 51 }
+}
 AST = {
 	color = rgb { 57 143 97 }
 	color_ui = rgb { 74 186 126 }
@@ -347,6 +351,14 @@ SLO = {
 	color = rgb { 158  161  188 }
 	color_ui = rgb { 255 255 255 }
 }
+SLV = {
+	color = rgb { 102 178 255 }
+	color_ui = rgb { 102 178 255 }
+}
+TRA = {
+	color = rgb { 211  207  173 }
+	color_ui = rgb { 211  207  173 }
+}
 RAJ = {
 	color = rgb { 226  135  40 }
 	color_ui = rgb { 226  135  40 }
@@ -428,8 +440,8 @@ UKR = {
 	color_ui = rgb { 10  0  0 }	
 }
 DON = {
-	color = rgb { 153 61 0 }
-	color_ui = rgb { 153 61 0 }
+	color = rgb { 249 201 0 }
+	color_ui = rgb { 249 201 0 }
 }
 AZR = {
 	color = rgb { 69  151  49 }
@@ -1056,8 +1068,8 @@ MEL = {
 	color_ui = { 255 230 230 }
 }
 UKS = {
-	color = rgb { 125 13 24 }
-	color_ui = rgb { 163 17 31 }
+	color = rgb { 153 61 0 }
+	color_ui = rgb { 153 61 0 }
 }
 
 NGX = {

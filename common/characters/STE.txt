@@ -31,16 +31,10 @@ characters={
 			ideology= social_conservative_subtype
 		}
 		country_leader={
-			ideology= authoritarian_democrat_subtype
+			ideology= colonial_government_subtype
 		}
 		country_leader={
-			ideology= paternal_autocrat_subtype
-		}
-		country_leader={
-			ideology=national_populist_subtype
-		}
-		country_leader={
-			ideology=Gnosticism_subtype
+			ideology= mil_colonial_government_subtype
 		}
 		field_marshal={
 			traits={ infantry_officer infantry_leader career_officer brilliant_strategist }
@@ -49,6 +43,32 @@ characters={
 			defense_skill=3
 			planning_skill=4
 			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	STE_Konstantin_Petrovich_Nechaev={
+		name=STE_Konstantin_Petrovich_Nechaev
+		portraits={
+			civilian={
+				large="gfx/leaders/STE/Portrait_STE_Konstantin_Petrovich_Nechaev.png"
+			}
+			civilian={
+				large="gfx/leaders/STE/Portrait_STE_Konstantin_Petrovich_Nechaev.png"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+		corps_commander={
+			traits={ career_officer cavalry_leader cavalry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=0
 		}
 	}

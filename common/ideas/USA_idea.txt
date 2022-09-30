@@ -359,7 +359,7 @@
 			allowed = {
 				always = no
 			}
-                        picture = generic_spy_intel
+                        picture = befriend_usa
 
 			
 			removal_cost = -1
@@ -919,9 +919,16 @@ tank_manufacturer = {
 		allowed = {
 			original_tag = USA
 			}
-		available = {
-			always = no
-					  }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 		
 		traits = { 
 			    Head_of_State
@@ -938,9 +945,16 @@ tank_manufacturer = {
 			allowed = {
 				original_tag = USA
 				}
-			available = {
-				always = no
-						  }
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Government_leaders_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
 			
 			traits = { 
 				    Government_leaders
@@ -957,9 +971,16 @@ tank_manufacturer = {
 			allowed = {
 				original_tag = USA
 				}
-			available = {
-				always = no
-						  }
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Foreign_Affairs_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
 			
 			traits = { 
 				    Minister_of_Foreign_Affairs
@@ -976,9 +997,16 @@ tank_manufacturer = {
 			allowed = {
 				original_tag = USA
 				}
-			available = {
-				always = no
-						  }
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
 			
 			traits = { 
 				    Minister_of_Economy
@@ -995,9 +1023,16 @@ tank_manufacturer = {
 			allowed = {
 					original_tag = USA
 				}
-			available = {
-				always = no
-			  }
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Interior_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
 				
 			traits = { 
 				    Minister_of_Interior

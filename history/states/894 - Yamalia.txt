@@ -7,12 +7,11 @@ state = {
 	state_category = pastoral
 
 	history = {
-		owner = SOV
+		owner = YAK
+		add_core_of = YAK
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = SOV
-		add_core_of = RUS
 	}
 
 	provinces = {

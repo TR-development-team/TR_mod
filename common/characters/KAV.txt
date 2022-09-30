@@ -3,10 +3,10 @@ characters={
 		name=RUS_Anton_Denikin
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_SOV_denikin.tga"
+				large="gfx/leaders/SOV/Portrait_RUS_Denikin.png"
 			}
 			army={
-				large="gfx/leaders/SOV/Portrait_SOV_denikin.tga"
+				large="gfx/leaders/SOV/Portrait_RUS_Denikin.png"
 			}
 		}
 		country_leader={
@@ -31,10 +31,10 @@ characters={
 			ideology= social_conservative_subtype
 		}
 		country_leader={
-			ideology= authoritarian_democrat_subtype
+			ideology= colonial_government_subtype
 		}
 		country_leader={
-			ideology= paternal_autocrat_subtype
+			ideology= mil_colonial_government_subtype
 		}
 		country_leader={
 			ideology=national_populist_subtype

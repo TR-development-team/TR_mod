@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= totalist_subtype
+			ideology= Jughashvilist_subtype
 		}
 	}
  	USA_Bill_Haywood={
@@ -18,7 +18,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= syndicalist_subtype
+			ideology= anarco_syndicalist_subtype
 		}
 	}
  	USA_Father_Divine={
@@ -29,7 +29,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= syndicalist_subtype
+			ideology= radical_socialist_subtype
 		}
 	}
  	USA_Norman_Thomas={
@@ -40,7 +40,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= social_democrat_subtype
+			ideology= Democratic_socialism_left_subtype
  	                traits = { champion_of_peace_1 }
 		}
 	}
@@ -63,10 +63,10 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= social_conservative_subtype
+			ideology= market_liberal_subtype
 		}
 		country_leader={
-			ideology= market_liberal_subtype
+			ideology= social_conservative_subtype
 		}
 	}
  	USA_Richard_Russell_jr={
@@ -88,7 +88,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= paternal_autocrat_subtype
+			ideology= Theocracy_subtype
 		}
 	}
  	USA_Gerald_LK_Smith={
@@ -99,7 +99,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= national_populist_subtype
+			ideology= president_principle_subtype
                         traits = { dictator }
 		}
 	}
@@ -642,21 +642,6 @@ characters={
 				large=GFX_portrait_USA_frank_jack_fletcher
 			}
 		}
-		advisor={
-			slot = high_command
-			idea_token = frank_jack_fletcher
-			ledger = air
-			allowed = {
-				original_tag = USA
-			}
-			traits = {
-				navy_carrier_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 		
 		navy_leader={
 			traits={ gunnery_expert superior_tactician spotter }
@@ -675,21 +660,6 @@ characters={
 			army={
 				large=GFX_portrait_USA_raymond_a_spruance
 				small=GFX_portrait_USA_raymond_a_spruance_small
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = raymond_spruance
-			ledger = navy
-			allowed = {
-				original_tag = USA
-			}
-			traits = {
-				navy_naval_air_defense_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 		navy_leader={

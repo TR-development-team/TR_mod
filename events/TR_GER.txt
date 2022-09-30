@@ -122,22 +122,6 @@ hidden_effect = {
 					count = 2
 				}
 			}
-                        random_owned_controlled_state = {
-				prioritize = { 68 }
-				create_unit = {
-					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
-					owner = DDR
-					count = 2
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 63 }
-				create_unit = {
-					division = "division_template = \"Prussia Infantry\" start_experience_factor = 0.1"
-					owner = DDR
-					count = 2
-				}
-			}
 		}
                       hidden_effect = {
                          country_event = {

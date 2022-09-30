@@ -1,0 +1,80 @@
+characters={
+
+	SWI_fritz_platten={
+		name=SWI_fritz_platten
+		portraits={
+			civilian={
+				large=GFX_portrait_SWI_fritz_platten
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SWI_federal_assembly={
+		name=SWI_federal_assembly
+		portraits={
+			civilian={
+				large=GFX_portrait_SWI_federal_assembly
+			}
+		}
+		country_leader={
+			ideology=social_democrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+		country_leader={
+			ideology=social_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	SWI_ernest_beuin={
+		name=SWI_ernest_beuin
+		portraits={
+			civilian={
+				large=GFX_portrait_SWI_ernest_beuin
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	SWI_henri_guisan={
+		name=SWI_henri_guisan
+		portraits={
+			army={
+				large=GFX_portrait_SWI_henri_guisan
+				small=GFX_portrait_SWI_henri_guisan_small
+			}
+		}
+		corps_commander={
+			traits={ winter_specialist }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

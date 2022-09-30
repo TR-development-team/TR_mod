@@ -1043,7 +1043,7 @@ country_event = {
 
 	#新たな総統に万歳！
 	option = {
-		name = TR_China.31.a
+		name = TR_China.30.a
 		set_country_flag = CHI_MIB_WIN
         complete_national_focus = CHI_rHbtxkBC
 	}
@@ -1065,5 +1065,210 @@ country_event = {
 		add_stability = -0.15
 		set_country_flag = CHI_GGJ_WIN
         complete_national_focus = CHI_rHbtxkBC
+	}
+}
+#落日
+country_event = {
+	id = TR_China.32
+	title = TR_China.32.t
+	desc = TR_China.32.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+    trigger = {
+        tag = JAP
+		is_subject = no
+		is_faction_leader = yes
+		has_war_with = CHI
+		817 = { is_fully_controlled_by = CHI }#ソウル
+		818 = { is_fully_controlled_by = CHI }#釜山
+		829 = { is_fully_controlled_by = CHI }#平壌
+		328 = { is_fully_controlled_by = CHI }#新京
+		608 = { is_fully_controlled_by = CHI }#北京
+		816 = { is_fully_controlled_by = CHI }#上海
+		863 = { is_fully_controlled_by = CHI }#広州
+		916 = { is_fully_controlled_by = CHI }#ウラジオストク
+		MAN = { OR = { has_capitulated = yes exists = no } }
+		SHX = { OR = { has_capitulated = yes exists = no } }
+		GUG = { OR = { has_capitulated = yes exists = no } }
+		NAN = { OR = { has_capitulated = yes exists = no } }
+		CHI = { 
+			is_faction_leader = yes
+			controls_all_owned_states = yes
+		}
+	}
+    fire_only_once = yes
+
+
+	#降伏だ！残された領土だけでも守らねば
+	option = {
+		name = TR_China.32.a
+		ai_chance = {
+			base = 99
+		}
+		CHI = { country_event = TR_China.33 }
+
+	}
+	#我々は断じて降伏しない！
+	option = {
+		name = TR_China.32.b
+		ai_chance = {
+			base = 1
+		modifier = {
+			factor = 2
+			has_country_flag = JAP_KAIGEN_KEIZOKU
+		}
+	}
+		add_stability = -0.2
+	}	
+}
+#日本の降伏
+country_event = {
+	id = TR_China.33
+	title = TR_China.33.t
+	desc = TR_China.33.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#中国は今、100年の屈辱を晴らしたのだ
+	option = {
+		name = TR_China.33.a
+		ai_chance = {
+			base = 100
+		}
+		set_global_flag = war_of_resistance_china_win
+		every_state = {
+			limit = {
+				OR = { is_core_of = CHI is_claimed_by = CHI }
+				is_owned_by = JAP
+			}
+			transfer_state_to = CHI
+		}	
+		if = {
+			limit = {
+				MAN = { exists = yes has_capitulated = yes }
+			}
+			CHI = {
+			    annex_country = {
+				    target = MAN
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				KOR = { exists = yes has_capitulated = yes }
+			}
+			CHI = {
+			    annex_country = {
+				    target = KOR
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				SHX = { exists = yes has_capitulated = yes }
+			}
+			CHI = {
+			    annex_country = {
+				    target = SHX
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				GUG = { exists = yes has_capitulated = yes }
+			}
+			CHI = {
+			    annex_country = {
+				    target = GUG
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				NAN = { exists = yes has_capitulated = yes }
+			}
+			CHI = {
+			    annex_country = {
+				    target = NAN
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				KOR = { exists = no }
+			}
+			every_state = {
+				limit = {
+					OR = { is_core_of = KOR }
+					is_owned_by = JAP
+				}
+				transfer_state_to = KOR
+			}	
+			CHI = {
+			    puppet = KOR
+		    }
+		}
+		every_country = {
+				limit = {
+					OR = { tag = JAP is_in_faction_with = JAP }
+				}
+				white_peace_with_ROOT = yes
+		}	
+
+	}
+	#降伏は認めない。日本を地図から消し去るまでは
+	option = {
+		name = TR_China.33.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.3
+	}	
+}
+country_event = { #軍閥併合ディシジョン用イベント
+	id = TR_China.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_China.34 FROM = [From.GetName]" }
+	title = TR_China.34.t
+	desc = TR_China.34.d
+
+	picture = GFX_report_event_CHI_beijing_beiyang_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_China.34.a #yes
+		ai_chance = {
+			base = 100
+			modifier = {
+				tag = HEX
+				factor = 0
+			}
+		}
+		china_integrate_ally_effect = yes
+	}
+	option = {
+		name = TR_China.34.b #no
+		ai_chance = {
+			base = 0
+			modifier = {
+				tag = HEX
+				add = 100
+			}
+		}
+		leave_faction = yes
+		FROM = {
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
 	}
 }

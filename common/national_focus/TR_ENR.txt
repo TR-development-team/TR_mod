@@ -181,9 +181,12 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ENR_vNHJmZRb }
+		available = { 
 		NOT = {
 			has_war_with = ENG
 		}
+			is_subject = no
+	    }
 		ai_will_do = {
 			factor = 100
 		}
@@ -409,6 +412,7 @@ focus_tree = {
 		prerequisite = { 
 			focus = ENR_CZkbsPKB 
 		}
+		available = {is_subject = no}
 		ai_will_do = {
 			factor = 1
 		}
@@ -443,7 +447,8 @@ focus_tree = {
 		y = 0
 		cost = 10
                 available = {
-                            has_country_flag = ENR_BIGBIG 
+					is_subject = no
+                     has_country_flag = ENR_BIGBIG 
                        }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -463,6 +468,9 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = ENR_MPhaAfjF }
+		available = {
+			is_subject = no
+			}
 		ai_will_do = {
 			factor = 1
 		}

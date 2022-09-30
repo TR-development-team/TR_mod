@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=totalist_subtype
+			ideology=Strasserism_subtype
 		}
 	}
 	DDR_Ernst_Junger={
@@ -18,7 +18,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=syndicalist_subtype
+			ideology=Conservative_Revolution_subtype
 		}
 	}
 	DDR_rosa_luxemburg={
@@ -29,7 +29,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=radical_socialist_subtype
+			ideology=Luxemburgist_subtype
 		}
 	}
 	DDR_Arthur_Crispien={
@@ -51,13 +51,10 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= social_conservative_subtype
+			ideology= National_conservative_subtype
 		}
                 country_leader={
-			ideology= market_liberal_subtype
-		}
-                country_leader={
-			ideology= social_liberal_subtype
+			ideology= National_liberalism_subtype
 		}
 	}
 	DDR_Otto_von_Bismarck={
@@ -68,18 +65,18 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= authoritarian_democrat_subtype
+			ideology= prussian_constitutionalism_subtype
 		}
 	}
 	DDR_Willhelm_II={
 		name=DDR_Wilhelm_II
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_Germany_Wilhelm_II.tga"
+				large="gfx/leaders/DDR/Portrait_DDR_Wilhelm_II.png"
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=absolute_monarchy_subtype
 		}
 	}
 	DDR_Kurt_von_Schleicher={
@@ -336,6 +333,45 @@ characters={
 		}
 	}
 
+
+	DDR_alexander_von_falkenhausen = {
+		name = CHI_alexander_von_falkenhausen
+		portraits = {
+			army = {
+				large="GFX_portrait_chi_alexander_von_falkenhausen"
+				small="GFX_idea_CHI_alexander_von_falkenhausen" 
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 603
+			traits = { infantry_officer }
+		}
+	}
+
+	DDR_Rudiger_von_der_Goltz={
+		name=DDR_Rudiger_von_der_Goltz
+		portraits={
+			army={
+				large="gfx/leaders/DDR/Portrait_DDR_Rudiger_von_der_Goltz.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ old_guard infantry_leader career_officer trait_reckless }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+
+
 	DDR_karl_donitz={
 		name=GER_karl_donitz
 		portraits={
@@ -357,26 +393,6 @@ characters={
 			legacy_id=26
 		}
 	}
-
-	DDR_alexander_von_falkenhausen = {
-		name = CHI_alexander_von_falkenhausen
-		portraits = {
-			army = {
-				large="GFX_portrait_chi_alexander_von_falkenhausen"
-				small="GFX_idea_CHI_alexander_von_falkenhausen" 
-			}
-		}
-		corps_commander = {
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = 603
-			traits = { infantry_officer }
-		}
-	}
-
 	DDR_Reinhard_Heydrich_Navy={
 		name=DDR_Reinhard_Heydrich
 		portraits={

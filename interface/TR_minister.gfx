@@ -606,12 +606,82 @@ spriteTypes = {
 
 
 ###ロシア###
-
       SpriteType = {	
-		name = "GFX_idea_SOV_Alexei_Romanov"
-		texturefile = "gfx/interface/ideas/minister/SOV/idea_SOV_Alexei_Romanov.dds"
+		name = "GFX_idea_RUS_nikolai_ii"
+		texturefile = "gfx/interface/ideas/minister/SOV/nikolai_ii.png"
 	}
-
+      SpriteType = {	
+		name = "GFX_idea_RUS_alexei_ii"
+		texturefile = "gfx/interface/ideas/minister/SOV/Alexei_II.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_RUS_Pavel_Ignatiev"
+		texturefile = "gfx/interface/ideas/minister/SOV/Pavel_Ignatiev.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_RUS_Nikolai_Pokrovsky"
+		texturefile = "gfx/interface/ideas/minister/SOV/Nikolai_Pokrovsky.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_RUS_Pyotr_Bark"
+		texturefile = "gfx/interface/ideas/minister/SOV/Pyotr_Bark.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_RUS_Alexandr_Protopopov"
+		texturefile = "gfx/interface/ideas/minister/SOV/Alexandr_Protopopov.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_RUS_Anton_Denikin"
+		texturefile = "gfx/interface/ideas/minister/SOV/Anton_Denikin.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_RUS_Lavr_Kornilov"
+		texturefile = "gfx/interface/ideas/minister/SOV/Lavr_Kornilov.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_RUS_Pyotr_wrangel"
+		texturefile = "gfx/interface/ideas/minister/SOV/Pyotr_Wrangel.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_RUS_Alexander_Guchkov"
+		texturefile = "gfx/interface/ideas/minister/SOV/Alexander_Guchkov.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_RUS_Alexander_Kazembek"
+		texturefile = "gfx/interface/ideas/minister/SOV/alexander_kazembek.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_RUS_Boris_Savinkov"
+		texturefile = "gfx/interface/ideas/minister/SOV/boris_savinkov.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_RUS_Nikolai_Trubetzkoy"
+		texturefile = "gfx/interface/ideas/minister/SOV/nikolai_trubetzkoy.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_RUS_Pavel_Bermont_Avalov"
+		texturefile = "gfx/interface/ideas/minister/SOV/pavel_bermont_avalov.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_RUS_Pavel_Milyukov"
+		texturefile = "gfx/interface/ideas/minister/SOV/Pavel_Milyukov.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_RUS_Sergey_Taboritsky"
+		texturefile = "gfx/interface/ideas/minister/SOV/Sergey_Taboritsky.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_RUS_Viktor_Chernov"
+		texturefile = "gfx/interface/ideas/minister/SOV/Vikotor_chernov.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_RUS_Yuliy_martov"
+		texturefile = "gfx/interface/ideas/minister/SOV/Yuliy_Martov.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_RUS_Vladimir_Purishkevich"
+		texturefile = "gfx/interface/ideas/minister/SOV/Vladimir_Purishkevich.png"
+	}
 ###ドイツ###
     #国家元首
       SpriteType = {	
@@ -885,6 +955,10 @@ spriteTypes = {
 		name = "GFX_idea_CAL_Saneatsu_Mushanokoji"
 		texturefile = "gfx/interface/ideas/minister/CAL/Saneatsu_Mushanokoji.png"
 	}
+       SpriteType = {	
+		name = "GFX_idea_CAL_Kuribayashi_Tadamichi"
+		texturefile = "gfx/interface/ideas/minister/CAL/Kuribayashi_Tadamichi.png"
+	}
 ###河西###
 
       SpriteType = {	
@@ -966,5 +1040,136 @@ spriteTypes = {
       SpriteType = {	
 		name = "GFX_idea_USA_William_Leahy"
 		texturefile = "gfx/interface/ideas/minister/USA/William_Leahy.png"
+	}
+
+###イギリス###
+
+      SpriteType = {	
+		name = "GFX_idea_ENG_Alan_Brooke"
+		texturefile = "gfx/interface/ideas/minister/ENG/Alan_Brooke.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Anthony_Eden"
+		texturefile = "gfx/interface/ideas/minister/ENG/Anthony_Eden.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Bernard_Montgomery"
+		texturefile = "gfx/interface/ideas/minister/ENG/Bernard_Montgomery.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Clement_Attlee"
+		texturefile = "gfx/interface/ideas/minister/ENG/Clement_Attlee.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Dudley_Pound"
+		texturefile = "gfx/interface/ideas/minister/ENG/Dudley_Pound.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Edward_VIII"
+		texturefile = "gfx/interface/ideas/minister/ENG/Edward_VIII.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Ernle_Chatfield"
+		texturefile = "gfx/interface/ideas/minister/ENG/Ernle_Chatfield.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_George_VI"
+		texturefile = "gfx/interface/ideas/minister/ENG/George_VI.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_George_V"
+		texturefile = "gfx/interface/ideas/minister/ENG/George_V.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_John_Simon"
+		texturefile = "gfx/interface/ideas/minister/ENG/John_Simon.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Montgomery_Massingberd"
+		texturefile = "gfx/interface/ideas/minister/ENG/Montgomery_Massingberd.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Neville_Chamberlain"
+		texturefile = "gfx/interface/ideas/minister/ENG/Neville_Chamberlain.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Owen_Tudor_Boyd"
+		texturefile = "gfx/interface/ideas/minister/ENG/Owen_Tudor_Boyd.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Stanley_Baldwin"
+		texturefile = "gfx/interface/ideas/minister/ENG/Stanley_Baldwin.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_ENG_Winston_Churchill"
+		texturefile = "gfx/interface/ideas/minister/ENG/Winston_Churchill.png"
+	}
+###ソビエト###
+
+      SpriteType = {	
+		name = "GFX_idea_SOV_Alexander_Bogdanov"
+		texturefile = "gfx/interface/ideas/minister/RUS/alexander_bogdanov.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Alexander_Shliapnikov"
+		texturefile = "gfx/interface/ideas/minister/RUS/Alexander_Shliapnikov.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Alexander_Svechin"
+		texturefile = "gfx/interface/ideas/minister/RUS/Alexander_Svechin.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Alexei_Rikov"
+		texturefile = "gfx/interface/ideas/minister/RUS/Alexei_Rikov.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Boris_Shaposhnikov"
+		texturefile = "gfx/interface/ideas/minister/RUS/Boris_Shaposhnikov.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Georgy_Zhukov"
+		texturefile = "gfx/interface/ideas/minister/RUS/Georgy_Zhukov.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Grigory_Zinoviev"
+		texturefile = "gfx/interface/ideas/minister/RUS/Grigory_Zinoviev.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Lev_Kamenev"
+		texturefile = "gfx/interface/ideas/minister/RUS/Lev_Kamenev.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Mikhail_Kalinin"
+		texturefile = "gfx/interface/ideas/minister/RUS/Mikhail_Kalinin.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Mikhail_Tukhachevskii"
+		texturefile = "gfx/interface/ideas/minister/RUS/Mikhail_Tukhachevskii.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Nikolai_Bukharin"
+		texturefile = "gfx/interface/ideas/minister/RUS/Nikolai_Bukharin.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Pavel_Dybenko"
+		texturefile = "gfx/interface/ideas/minister/RUS/Pavel_Dybenko.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Vyacheslav_Molotov"
+		texturefile = "gfx/interface/ideas/minister/RUS/Vyacheslav_Molotov.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_SOV_Yakov_Alksnis"
+		texturefile = "gfx/interface/ideas/minister/RUS/Yakov_Alksnis.png"
+	}
+###ザカフカース/ジョージア###
+
+      SpriteType = {	
+		name = "GFX_idea_GEO_Ioseb_jugashvili"
+		texturefile = "gfx/interface/ideas/minister/GEO/Ioseb_jugashvili.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_GEO_Lavrentiy_Beria"
+		texturefile = "gfx/interface/ideas/minister/GEO/Lavrentiy_Beria.png"
 	}
 }

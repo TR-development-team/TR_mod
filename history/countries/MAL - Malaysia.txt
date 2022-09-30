@@ -92,16 +92,7 @@ set_popularities = {
 	authoritarian_democrat = 100
 }
 
-create_country_leader = {
-	name = "山梨勝之進"
-	
-	picture = "gfx/leaders/JAP/Portrait_JAP_Yamanashi.tga"
-	expire = "1960.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
+recruit_character = MAL_Yamanashi_Katsunoshin
 
 
 if = {
@@ -250,21 +241,6 @@ if = {
 			obsolete = yes
 		}
 		create_equipment_variant = {
-			name = "Soryu Class"
-			type = ship_hull_carrier_1
-			name_group = JAP_CV_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = ship_deck_space
-			}
-		}
-		create_equipment_variant = {
 			name = "Zuiho Class"
 			type = ship_hull_carrier_conversion_ca
 			name_group = JAP_CVL_HISTORICAL
@@ -290,22 +266,6 @@ if = {
 				fixed_ship_radar_slot = empty
 				fixed_ship_engine_slot = carrier_ship_engine_1
 				fixed_ship_secondaries_slot = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Ryujo Class"
-			name_group = JAP_CVL_HISTORICAL
-			type = ship_hull_carrier_1
-			parent_version = 0
-			modules = {
-				fixed_ship_deck_slot_1 = ship_deck_space
-				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = carrier_ship_engine_1
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = empty
 			}
 			obsolete = yes
 		}
@@ -369,27 +329,6 @@ if = {
 			obsolete = yes
 		}
 			
-		### Heavy Cruiser Variants			
-		create_equipment_variant = {
-			name = "Myoko Class"
-			type = ship_hull_cruiser_2
-			name_group = JAP_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = ship_medium_battery_2
-				mid_1_custom_slot = ship_torpedo_1
-				mid_2_custom_slot = ship_torpedo_1
-				rear_1_custom_slot = ship_airplane_launcher_1
-			}
-			obsolete = yes
-		}
 		create_equipment_variant = {
 			name = "Aoba Class"
 			type = ship_hull_cruiser_1
@@ -427,62 +366,6 @@ if = {
 				rear_1_custom_slot = empty
 			}
 			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Izumo Class"
-			type = ship_hull_cruiser_coastal_defense_ship
-			name_group = JAP_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_1
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_1
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				mid_1_custom_slot = ship_secondaries_1
-				mid_2_custom_slot = ship_secondaries_1
-				rear_1_custom_slot = empty
-			}
-			obsolete = yes
-		}
-		create_equipment_variant = {
-			name = "Tone Class"
-			type = ship_hull_cruiser_2
-			name_group = JAP_CA_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = empty
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = ship_medium_battery_2
-				mid_1_custom_slot = ship_torpedo_2
-				mid_2_custom_slot = ship_airplane_launcher_1
-				rear_1_custom_slot = ship_airplane_launcher_1
-			}
-		}
-		create_equipment_variant = {
-			name = "Mogami Class"
-			type = ship_hull_cruiser_2
-			name_group = JAP_CL_HISTORICAL
-			parent_version = 0
-			modules = {
-				fixed_ship_battery_slot = ship_medium_battery_2
-				fixed_ship_anti_air_slot = ship_anti_air_1
-				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
-				fixed_ship_engine_slot = cruiser_ship_engine_2
-				fixed_ship_armor_slot = ship_armor_cruiser_2
-				fixed_ship_secondaries_slot = ship_secondaries_1
-				front_1_custom_slot = ship_medium_battery_2
-				mid_1_custom_slot = ship_torpedo_2
-				mid_2_custom_slot = ship_torpedo_2
-				rear_1_custom_slot = ship_airplane_launcher_1
-			}
 		}
 		create_equipment_variant = {
 			name = "Yubari Class"

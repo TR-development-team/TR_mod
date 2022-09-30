@@ -44,13 +44,4 @@ set_popularities = {
 	authoritarian_democrat = 100
 }
 
-create_country_leader = {
-	name = "南次郎"
-	
-	picture = "gfx/leaders/JAP/Portrait_JAP_MinamiJiro.tga"
-	expire = "1960.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
+recruit_character = NGA_Minami_Jiro

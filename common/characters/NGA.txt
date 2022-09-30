@@ -1,0 +1,22 @@
+characters={
+	NGA_Minami_Jiro={
+		name=JAP_Minami_Jiro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_MinamiJiro.tga"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_MinamiJiro.tga"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
+		}
+		country_leader={
+			ideology= kokoku_shikan_subtype
+		}
+	}
+}

@@ -11,7 +11,6 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	gwtank = 1
 	early_fighter = 1
 	cv_early_fighter = 1
 	cv_naval_bomber1 = 1
@@ -25,6 +24,28 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 	marines = 1
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
 }
 add_ideas = {
         Constitutional_monarchy
@@ -54,7 +75,7 @@ JAP = {
 
 
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -63,41 +84,12 @@ set_popularities = {
 	social_democrat = 5
 	social_liberal = 20
 	market_liberal = 15
-	social_conservative = 35
-	authoritarian_democrat = 20
-	paternal_autocrat = 2
+	social_conservative = 15
+	authoritarian_democrat = 26
+	paternal_autocrat = 16
 	national_populist = 3
 }
 
-create_country_leader = {
-	name = "松井石根"
-	
-	picture = "gfx/leaders/JAP/Portrait_JAP_Matuiiwane.tga"
-	expire = "1960.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "グリゴリー・セミョーノフ"
-	
-	picture = "gfx/leaders/SIB/Portraits_SIB_Semyonov.tga"
-	expire = "1960.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	name = "コンスタンティン・チェルネンコ"
-	
-	picture = "gfx/leaders/SIB/Portraits_SIB_Chernenko.tga"
-	expire = "1960.1.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		
-	}
-}
-recruit_character = JAP_iwane_matsui
+recruit_character = SIB_Konstantin_Chernenko
+recruit_character = SIB_Suzuki_Yorimichi
+recruit_character = SIB_Grigory_Semyonov

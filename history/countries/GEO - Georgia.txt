@@ -4,7 +4,7 @@ oob = "GEO_1936"
 set_cosmetic_tag = GEO_Kavkaz
 set_research_slots = 3
 
-country_event = { id = TR_russia.8 days = 324 }
+country_event = { id = TR_russia.8 days = 336 }
 add_ideas = {
         Democratic_centralism
 }
@@ -26,13 +26,15 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 48
-	syndicalist = 22
-	radical_socialist = 15
+	totalist = 41
+	radical_socialist = 29
 	social_democrat = 15
+        Gnosticism = 15
 }
 
 recruit_character = GEO_Joseph_Stalin
+recruit_character = GEO_Sergei_Kirov
+recruit_character = GEO_Vladimir_Mayakovsky
 
 recruit_character = GEO_semyon_budyonny
 recruit_character = GEO_issa_pliyev

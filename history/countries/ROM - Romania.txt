@@ -75,179 +75,43 @@ if = {
 
 
 
-
-
-
-#Kick off kings crazy life
-if = {
-	limit = {
-		has_dlc = "Death or Dishonor"
-	}
-	ROM = {
-		#Pick from list of the sane events first
-		random_list = {
-			100 = { country_event = { id = DOD_romania.81 days = 2 random_days = 20 } }
-		}
-	}
-}
-
-if = {
-	limit = {
-		#has_dlc = Battle for the Bosporus
-	}
-	add_opinion_modifier = { 
-		target = GRE
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
-		target = TUR
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
-		target = YUG
-		modifier = BFTB_balkan_pact_ally
-	}
-	add_opinion_modifier = { 
-		target = BUL
-		modifier = BFTB_balkan_pact_enemy
-	}
-	add_opinion_modifier = { 
-		target = HUN
-		modifier = BFTB_balkan_pact_enemy
-	}
-}
-
 set_convoys = 10
 set_politics = {
-	ruling_party = social_conservative
+	ruling_party = authoritarian_democrat
 	last_election = "1933.12.20"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	totalist = 5
+	totalist = 9
 	syndicalist = 0
-	radical_socialist = 0
+	radical_socialist = 5
 	social_democrat = 6
 	social_liberal = 3
-	market_liberal = 6
-	social_conservative = 29
-	authoritarian_democrat = 3
+	market_liberal = 8
+	social_conservative = 15
+	authoritarian_democrat = 16
 	paternal_autocrat = 3
-	national_populist = 22
-        Gnosticism = 23
+	national_populist = 17
+        Gnosticism = 18
 }
 
 
-create_country_leader = {
-	name = "カロル2世"
-	desc = "POLITICS_CAROL2_DESC"
-	picture = "gfx/leaders/ROM/Portrait_ROM_carol2.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = ROM_constantin_ion_parhon
+recruit_character = ROM_gheorghe_tatarescu
+recruit_character = ROM_king_carol_II
+recruit_character = ROM_corneliu_codreanu
 
-create_country_leader = {
-	name = "Constantin Ion Parhon"
-	desc = "POLITICS_CONSTANTIN_PARHON_DESC"
-	picture = "gfx/leaders/ROM/Portrait_Romania_Constantin_Parhon.dds"
-	expire = "1965.1.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = ROM_king_michael
+recruit_character = ROM_armand_calinescu
 
-create_country_leader = {
-	name = "カロル2世"
-	desc = "POLITICS_CAROL2_DESC"
-	picture = "gfx/leaders/ROM/Portrait_ROM_carol2.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = ROM_petre_dumitrescu
+recruit_character = ROM_ioan_mihail_racovita
+recruit_character = ROM_constantin_sanatescu
+recruit_character = ROM_ion_antonescu
+recruit_character = ROM_horia_macellariu
+recruit_character = ROM_gheorghe_avramescu
 
-create_country_leader = {
-	name = "カロル2世"
-	desc = "POLITICS_CAROL2_DESC"
-	picture = "gfx/leaders/ROM/Portrait_ROM_carol2.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-
-create_field_marshal = {
-	name = "Petre Dumitrescu"
-	gfx = GFX_Portrait_romania_petre_dumitrescu
-	traits = { offensive_doctrine logistics_wizard }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_field_marshal = {
-	name = "Ion Antonescu"
-	picture = "gfx/leaders/ROM/Portrait_Romania_Ion_Antonescu.dds"
-	traits = { offensive_doctrine }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Ioan Mihail Racovita"
-	gfx = GFX_Portrait_romania_ioan_mihail_racovita
-	traits = { hill_fighter }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Gheorghe Avramescu"
-	gfx = GFX_Portrait_romania_gheorghe_avramescu
-	traits = { }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Constantin Sanatescu"
-	gfx = GFX_Portrait_romania_constantin_sanatescu 
-	traits = { infantry_expert }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-create_navy_leader = {
-	name = "Horia Macellariu"
-	gfx = "GFX_Portrait_romania_horia_macellariu"
-	traits = { gentlemanly spotter }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 1
-}
 
 
 ### VARIANTS ###

@@ -2,6 +2,9 @@
 
 
 default_unit_production = {
+	enable = {
+		always = yes
+	}
 	ai_strategy = {
 		type = role_ratio
 		id = armor
@@ -246,6 +249,9 @@ more_armor_focused_nation = {
 			original_tag = RUS
 			original_tag = SOV
 		}
+	}
+	enable = {
+		always = yes
 	}
 	abort_when_not_enabled = yes
 

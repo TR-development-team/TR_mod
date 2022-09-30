@@ -1,11 +1,10 @@
 CHI_united_policy = {
 	icon = generic_political_actions
 	allowed = {
-		original_tag = CHI
-	}
+        can_become_china = yes
+        }
 	visible = {
-	tag = CHI
-	has_country_flag = CHI_expand
+        can_become_china = yes
 	}
 }
 CHI_integrate_policy = {

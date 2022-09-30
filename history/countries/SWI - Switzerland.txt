@@ -51,55 +51,8 @@ add_ideas = {
 
 set_stability = 0.85
 
-create_country_leader = {
-	name = "スイス連邦参事会"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "スイス連邦参事会"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "スイス連邦参事会"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "スイス連邦参事会"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = SWI_fritz_platten
+recruit_character = SWI_federal_assembly
+recruit_character = SWI_ernest_beuin
 
-
-create_corps_commander = {
-	name = "Henri Guisan"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  winter_specialist }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
+recruit_character = SWI_henri_guisan

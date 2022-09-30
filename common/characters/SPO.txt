@@ -1,0 +1,22 @@
+characters={
+	SPO_Mizuno_Ryo={
+		name=SPO_Mizuno_Ryo
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/Portrait_Mizuno.tga"
+			}
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= authoritarian_democrat_subtype
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+	}
+}

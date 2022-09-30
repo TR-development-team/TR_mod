@@ -4,6 +4,9 @@ equipments = {
 		year = 1922
 
 		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
 		}
 
 		is_archetype = yes
@@ -23,7 +26,7 @@ equipments = {
 		module_slots = {
 			fixed_ship_battery_slot = {
 				required = yes
-				allowed_module_categories = { ship_light_battery }
+				allowed_module_categories = { ship_light_battery dp_light_battery}
 			}
 			fixed_ship_anti_air_slot = {
 				required = no
@@ -97,7 +100,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.80
 		
 		naval_range = 1500
@@ -152,6 +155,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			rear_1_custom_slot = mid_1_custom_slot
@@ -197,6 +201,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			mid_1_custom_slot = {
@@ -208,6 +213,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			rear_1_custom_slot = {
@@ -219,6 +225,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 		}
@@ -265,6 +272,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			mid_1_custom_slot = {
@@ -276,6 +284,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -288,6 +297,7 @@ equipments = {
 					ship_depth_charge
 					ship_anti_air
 					ship_light_battery
+					dp_light_battery
 				}
 			}
 		}
@@ -334,7 +344,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 5
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.80
 		
 		naval_range = 1500
@@ -382,7 +392,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.85
 
 		naval_range = 1800
@@ -434,7 +444,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.90
 
 		naval_range = 2000
@@ -485,7 +495,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 10
 		surface_visibility = 10
-		naval_speed = 25
+		naval_speed = 30
 		reliability = 0.92
 
 		naval_range = 2500

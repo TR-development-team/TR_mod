@@ -348,8 +348,15 @@ ideas = {
 				original_tag = KUO
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 
 			removal_cost = -1
 			
@@ -367,13 +374,19 @@ ideas = {
 				original_tag = KUO
 			}
 			available = {
-				always = no
-		    }
-
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			
 			traits = {
-				Head_of_State
+				Government_leaders
                 authoritarian_democrat
 				TR_old_general
 			}
@@ -387,8 +400,15 @@ ideas = {
 				original_tag = KUO
             }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Foreign_Affairs
@@ -405,9 +425,16 @@ ideas = {
 			allowed = {
 				original_tag = KUO
                 }  
-            available = {
-                always = no
-			}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no	
 			removal_cost = -1
 			traits = { 
 				Minister_of_Economy
@@ -425,8 +452,15 @@ ideas = {
 				original_tag = KUO
 			}
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Minister_of_Interior

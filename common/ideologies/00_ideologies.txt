@@ -4,6 +4,13 @@ ideologies = {
 	totalist = {
 		types = {
 			totalist_subtype = {} #generic
+			National_syndicalist_subtype = {can_be_randomly_selected = no}
+			Neo_Jacobinist_subtype = {can_be_randomly_selected = no}
+			Jughashvilist_subtype = {can_be_randomly_selected = no}
+			Totalist_Leninist_subtype = {can_be_randomly_selected = no}
+			national_bolshevist_subtype = {can_be_randomly_selected = no}
+			Strasserism_subtype = {can_be_randomly_selected = no}
+			pure_socialism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_TOTALIST_1"
@@ -37,6 +44,14 @@ ideologies = {
 	syndicalist = {
 		types = {
 			syndicalist_subtype = {} #generic
+			orthodox_syndicalist_subtype = {can_be_randomly_selected = no}
+			anarchism_subtype = {can_be_randomly_selected = no}
+			anarco_syndicalist_subtype = {can_be_randomly_selected = no}
+			anarco_communist_subtype = {can_be_randomly_selected = no}
+			left_libertarianist_subtype = {can_be_randomly_selected = no}
+			Tolstoyist_subtype = {can_be_randomly_selected = no}
+			agricultural_anarchist_subtype = {can_be_randomly_selected = no}
+			Conservative_Revolution_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SYNDICALIST_1"
@@ -70,6 +85,12 @@ ideologies = {
 	radical_socialist = {
 		types = {
 			radical_socialist_subtype = {} #generic
+			Trotskyist_subtype = {can_be_randomly_selected = no}
+			Luxemburgist_subtype = {can_be_randomly_selected = no}
+			Leninist_subtype = {can_be_randomly_selected = no}
+			Council_communist_subtype = {can_be_randomly_selected = no}
+			Narodniki_subtype = {can_be_randomly_selected = no}
+			military_socialism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_RADICAL_SOCIALIST_1"
@@ -103,6 +124,11 @@ ideologies = {
 	social_democrat = {
 		types = {
 			social_democrat_subtype = {}
+			Democratic_socialism_subtype = {can_be_randomly_selected = no}
+			Democratic_socialism_left_subtype = {can_be_randomly_selected = no}
+            Fabianism_subtype = {can_be_randomly_selected = no}
+            Orthodox_Marxism_subtype = {can_be_randomly_selected = no}
+			Christian_socialism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_DEMOCRAT_1"
@@ -137,6 +163,10 @@ ideologies = {
 	social_liberal = {
 		types = {
 			social_liberal_subtype = {}
+			Pan_Asianism_subtype = {can_be_randomly_selected = no}
+			Progressivism_subtype = {can_be_randomly_selected = no}
+			SL_Narodniki_subtype = {can_be_randomly_selected = no}
+			Pan_Europeanism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_LIBERAL_1"
@@ -171,6 +201,12 @@ ideologies = {
 	market_liberal = {
 		types = {
 			market_liberal_subtype = {}
+			libertarian_subtype = {can_be_randomly_selected = no}
+			classical_liberalism_subtype = {can_be_randomly_selected = no}
+			conservative_liberalism_subtype = {can_be_randomly_selected = no}
+			National_liberalism_subtype = {can_be_randomly_selected = no}
+			lib_Christian_democracy_subtype = {can_be_randomly_selected = no}
+			parliamentarism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_MARKET_LIBERAL_1"
@@ -205,6 +241,11 @@ ideologies = {
 	social_conservative = {
 		types = {
 			social_conservative_subtype = {}
+			liberal_conservative_subtype = {can_be_randomly_selected = no}
+			Neo_Canton_system_subtype = {can_be_randomly_selected = no}
+			National_conservative_subtype = {can_be_randomly_selected = no}
+			con_Christian_democracy_subtype = {can_be_randomly_selected = no}
+            Royal_Centerism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_1"
@@ -239,6 +280,12 @@ ideologies = {
 	authoritarian_democrat = {
 		types = {
 			authoritarian_democrat_subtype = {}
+			oligarchy_subtype = {can_be_randomly_selected = no}
+			colonial_government_subtype = {can_be_randomly_selected = no}
+			dem_Military_junta_subtype = {can_be_randomly_selected = no}
+			prussian_constitutionalism_subtype = {can_be_randomly_selected = no}
+            Dominant_party_system_subtype = {can_be_randomly_selected = no}
+            national_coalition_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_1"
@@ -272,6 +319,13 @@ ideologies = {
 	paternal_autocrat = {
 		types = {
 			paternal_autocrat_subtype = {}
+			Catholic_Integralism_subtype = {can_be_randomly_selected = no}
+			militarism_subtype = {can_be_randomly_selected = no}
+			Military_junta_subtype = {can_be_randomly_selected = no}
+			mil_colonial_government_subtype = {can_be_randomly_selected = no}
+			absolute_monarchy_subtype = {can_be_randomly_selected = no}
+			Theocracy_subtype = {can_be_randomly_selected = no}
+			pat_Islamism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_PATERNAL_AUTOCRAT_1"
@@ -305,6 +359,13 @@ ideologies = {
 	national_populist = {
 		types = {
 			national_populist_subtype = {}
+			Fascist_subtype = {can_be_randomly_selected = no}
+			Integralism_subtype = {can_be_randomly_selected = no}
+			Nationalism_subtype = {can_be_randomly_selected = no}
+			kokoku_shikan_subtype = {can_be_randomly_selected = no}
+			president_principle_subtype = {can_be_randomly_selected = no}
+			asian_monroe_subtype = {can_be_randomly_selected = no}
+			Islamism_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_NATIONAL_POPULIST_1"
@@ -337,6 +398,11 @@ ideologies = {
       Gnosticism = {
 		types = {
 			Gnosticism_subtype = {}
+			esotericism_subtype = {can_be_randomly_selected = no}
+            occultism_subtype = {can_be_randomly_selected = no}
+            Neo_Paganism_subtype = {can_be_randomly_selected = no}
+            Aryanism_subtype = {can_be_randomly_selected = no}
+			Proletarian_culture_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_Gnosticism_1"

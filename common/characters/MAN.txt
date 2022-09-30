@@ -1,0 +1,113 @@
+characters={
+	MAN_oosugi_sakae={
+		name=JAP_oosugi_sakae
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_osugi.tga"
+			}
+		}
+		country_leader={
+			ideology=anarco_syndicalist_subtype
+		}
+	}
+	MAN_Toyama_Hidezo={
+		name=MAN_Toyama_Hidezo
+		portraits={
+			civilian={
+				large="gfx/leaders/MAN/Portrait_MAN_Toyama_Hidezo.png"
+			}
+		}
+		country_leader={
+			ideology=Pan_Asianism_subtype
+			id=-1
+		}
+	}
+	MAN_Masahiko_Amakasu={
+		name=MAN_Masahiko_Amakasu
+		portraits={
+			civilian={
+				large="gfx/leaders/MAN/Portrai_man_amakasu.tga"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+			id=-1
+		}
+	}
+	MAN_zhang_haipeng={
+		name=MAN_zhang_haipeng
+		portraits={
+			army={
+				large="GFX_portrait_man_zhang_haipeng"
+				small="GFX_idea_MAN_zhang_haipeng"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MAN_zhang_jinghui={
+		name=MAN_zhang_jinghui
+		portraits={
+			army={
+				large="GFX_portrait_man_zhang_jinghui"
+				small="GFX_idea_MAN_zhang_jinghui"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	MAN_aisin_gioro_xiqia={
+		name=MAN_aisin_gioro_xiqia
+		portraits={
+			army={
+				large="GFX_portrait_man_aisin_gioro_xiqia"
+				small="GFX_idea_MAN_aisin_gioro_xiqia"
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	MAN_yoshiko_kawashima={
+		name=MAN_yoshiko_kawashima
+		portraits={
+			army={
+				large="GFX_portrait_man_yoshiko_kawashima"
+				small="GFX_idea_MAN_yoshiko_kawashima"
+			}
+		}
+		gender = female
+		corps_commander={
+			traits={ cavalry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+
+
+}

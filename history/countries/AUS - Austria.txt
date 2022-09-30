@@ -2,6 +2,7 @@
 
 oob = "AUS_1936"
 
+set_cosmetic_tag = AUS_Austria
 set_research_slots = 4
 starting_train_buffer = 1.5
 set_major = yes
@@ -78,11 +79,6 @@ add_ideas = {
            acceptable_school_system
            AUS_MINZOKUMONDAI
 }
-
-set_autonomy = {
-		target = BOS
-		autonomous_state = autonomy_integrated_puppet
-	}
 
 set_politics = {
 	ruling_party = social_conservative
@@ -209,7 +205,6 @@ if = {
 	create_equipment_variant = {
 		name = "U-107 Class"				
 		type = ship_hull_submarine_2
-		name_group = AUS_SS_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_1
@@ -221,7 +216,6 @@ if = {
 	create_equipment_variant = {
 		name = "Radetzky Class"				
 		type = ship_hull_light_2
-		name_group = AUS_DD_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -238,7 +232,6 @@ if = {
 	create_equipment_variant = {
 		name = "Zenta Class"				
 		type = ship_hull_cruiser_coastal_defense_ship
-		name_group = AUS_CL_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1

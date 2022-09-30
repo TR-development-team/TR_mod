@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=totalist_subtype
+			ideology=Strasserism_subtype
 		}
 	}
 	GER_Ernst_Junger={
@@ -18,7 +18,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=syndicalist_subtype
+			ideology=Conservative_Revolution_subtype
 		}
 	}
 	GER_rosa_luxemburg={
@@ -29,7 +29,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=radical_socialist_subtype
+			ideology=Luxemburgist_subtype
 		}
 	}
 	GER_Lev_Trotsky={
@@ -40,7 +40,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=radical_socialist_subtype
+			ideology=Trotskyist_subtype
 		}
 	}
 	GER_Eugen_Levine={
@@ -51,7 +51,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=radical_socialist_subtype
+			ideology=Luxemburgist_subtype
 		}
 	}
 	GER_Arthur_Crispien={
@@ -62,7 +62,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= social_democrat_subtype
+			ideology= Democratic_socialism_subtype
 		}
 	}
 	GER_Otto_Wels={
@@ -113,7 +113,7 @@ characters={
 		name=DDR_Wilhelm_II
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_Germany_Wilhelm_II.tga"
+				large="gfx/leaders/DDR/Portrait_DDR_Wilhelm_II.png"
 			}
 		}
 		country_leader={
@@ -219,9 +219,9 @@ characters={
 		}
 		corps_commander={
 			traits={ trait_cautious armor_officer }
-			skill=1
-			attack_skill=1
-			defense_skill=1
+			skill=2
+			attack_skill=2
+			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
 			legacy_id=3

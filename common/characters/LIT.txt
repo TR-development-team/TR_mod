@@ -74,10 +74,10 @@ characters={
 			ideology= social_conservative_subtype
 		}
 		country_leader={
-			ideology= authoritarian_democrat_subtype
+			ideology= colonial_government_subtype
 		}
 		country_leader={
-			ideology= paternal_autocrat_subtype
+			ideology= mil_colonial_government_subtype
 		}
 	}
 	LIT_antanas_smetona={
@@ -186,7 +186,6 @@ characters={
 			}
 		}
 		corps_commander = {
-			visible = { has_completed_focus = LIT_rastikis_military_reforms }
 			traits = { war_hero BALTIC_anti_bolshevik }
 			skill=2
 			attack_skill=2

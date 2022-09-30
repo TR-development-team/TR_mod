@@ -7,7 +7,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= syndicalist_subtype
+			ideology= anarco_communist_subtype
 		}
 	}
 	UKS_Nikita_Khrushchev={
@@ -18,10 +18,21 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= radical_socialist_subtype
+			ideology= Totalist_Leninist_subtype
 		}
 		country_leader={
-			ideology= totalist_subtype
+			ideology= Leninist_subtype
+		}
+	}
+	UKS_Volodymyr_Vynnychenko={
+		name=UKR_Volodymyr_Vynnychenko
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Volodymyr_Vynnychenko.png"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
 		}
 	}
 	UKS_ivan_chernyakhovsky = {

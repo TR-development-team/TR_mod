@@ -9,7 +9,7 @@
 			allowed = {
 				always = no
 			}
-            picture = sour_loser
+            picture = FRA_revanchism
 			
 			removal_cost = -1
 			targeted_modifier = {
@@ -28,7 +28,7 @@
 			allowed = {
 				always = no
 			}
-            picture = sour_loser
+            picture = FRA_revanchism
 			
 			removal_cost = -1
 			targeted_modifier = {
@@ -107,7 +107,7 @@
 					instant = yes
 				}
 			}
-			picture = man_five_year_plan_industry
+			picture = FRA_Automobile_factory
 			removal_cost = -1
 			modifier = {
 			}
@@ -117,7 +117,7 @@
 				always = no
 			}
 
-			picture = fra_deluge
+			picture = FRA_catholicism
 			removal_cost = -1
 			modifier = {
                 stability_weekly = -0.005
@@ -130,7 +130,7 @@
 				always = no
 			}
 
-			picture = fra_deluge
+			picture = FRA_catholicism
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.10
@@ -143,7 +143,7 @@
 				always = no
 			}
 
-			picture = fra_deluge
+			picture = FRA_catholicism
 			removal_cost = -1
 			modifier = {
 				stability_weekly = 0.002
@@ -204,7 +204,7 @@
 				always = no
 			}
 
-			picture = fra_deluge
+			picture = FRA_feudalism
 			removal_cost = -1
 			modifier = {
                 stability_factor = -0.05
@@ -216,7 +216,7 @@
 				always = no
 			}
 
-			picture = fra_deluge
+			picture = FRA_Fleur_de_lis
 			removal_cost = -1
 			modifier = {
 				stability_weekly = 0.003
@@ -229,7 +229,7 @@
 				always = no
 			}
 
-			picture = fra_deluge
+			picture = FRA_Fleur_de_lis
 			removal_cost = -1
 			modifier = {
 				stability_weekly = 0.003
@@ -247,7 +247,7 @@
 				always = no
 			}
 
-			picture = fra_deluge
+			picture = FRA_decentralization
 			removal_cost = -1
 			modifier = {
 				political_power_factor = -0.05
@@ -262,7 +262,7 @@
 				always = no
 			}
 
-			picture = fra_deluge
+			picture =FRA_camelots_du_roi
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.05
@@ -288,7 +288,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = Fascism_Constitution
 			removal_cost = -1
 			modifier = {
                 political_power_factor = 0.25
@@ -299,7 +299,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = Fascism_Council
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.2
@@ -310,7 +310,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = FRA_En_Avant
 			removal_cost = -1
 			modifier = {
 				mobilization_speed = 0.1
@@ -323,7 +323,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = FRA_En_Avant
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.03
@@ -337,7 +337,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = FRA_decentralization
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.05
@@ -351,7 +351,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = FRA_ethnic_leader
 			removal_cost = -1
 			modifier = {
                 stability_weekly = 0.005
@@ -365,7 +365,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = generic_Military_Police
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.05
@@ -380,7 +380,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = air_war_plans_division_focus
 			removal_cost = -1
 			modifier = {
 				training_time_factor = -0.1
@@ -393,7 +393,7 @@
 				always = no
 			}
 
-			picture = eng_imperial_conscription
+			picture = generic_production_bonus
 			removal_cost = -1
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
@@ -574,7 +574,7 @@
 			allowed = {
 				always = no
 			}
-            picture = bul_prussia_of_the_balkans
+            picture = FRA_expansion
 
 			
 			removal_cost = -1
@@ -583,14 +583,13 @@
 			modifier = {
                 conscription = 0.01
                 justify_war_goal_time = -0.3
-                war_support_factor = 0.2
 			}
 		}
 		FRA_production = {
 			allowed = {
 				always = no
 			}
-            picture = bul_prussia_of_the_balkans
+            picture = generic_production_bonus
 
 			
 			removal_cost = -1
@@ -606,8 +605,7 @@
 			allowed = {
 				always = no
 			}
-            picture = bul_prussia_of_the_balkans
-
+            picture = generic_exploit_mines
 			
 			removal_cost = -1
 	
@@ -620,7 +618,7 @@
 			allowed = {
 				always = no
 			}
-            picture = bul_prussia_of_the_balkans
+            picture = eng_imperial_conscription
 
 			
 			removal_cost = -1
@@ -635,7 +633,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = generic_armor
 
 			
 			removal_cost = -1
@@ -652,7 +650,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = generic_armor
 
 			
 			removal_cost = -1
@@ -670,7 +668,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = generic_armor
 
 			
 			removal_cost = -1
@@ -694,7 +692,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = tur_kemalist_officers
 
 			
 			removal_cost = -1
@@ -709,7 +707,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = tur_kemalist_officers
 
 			
 			removal_cost = -1
@@ -727,7 +725,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = tur_kemalist_officers
 
 			
 			removal_cost = -1
@@ -747,7 +745,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = MEX_revolutionary_army
 
 			
 			removal_cost = -1
@@ -764,7 +762,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = MEX_revolutionary_army
 
 			
 			removal_cost = -1
@@ -783,7 +781,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = MEX_revolutionary_army
 
 			
 			removal_cost = -1
@@ -801,7 +799,7 @@
 			allowed = {
 				always = no
 			}
-            picture = mex_politicised_army
+            picture = MEX_politicised_army
 
 			
 			removal_cost = -1
@@ -832,7 +830,7 @@
 			allowed = {
 				always = no
 			}
-            picture = generic_infantry_equipment_manufacturer_3
+            picture = generic_infantry_bonus
 
 			
 			removal_cost = -1
@@ -852,8 +850,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 		    picture = FRA_marcel_deat
 		    removal_cost = -1
@@ -868,8 +873,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 		    picture = FRA_Maurice_Gamelin
 		    removal_cost = -1
@@ -884,8 +896,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 		    picture = FRA_Charles_de_Gaulle
 		    removal_cost = -1
@@ -900,8 +919,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 		    picture = FRA_Philippe_Petain
 		    removal_cost = -1
@@ -916,8 +942,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 		    picture = FRA_Jean_Orleans
 		    removal_cost = -1
@@ -927,7 +960,29 @@
 				TR_stern_imperialist
 			}
 		}
-
+        FRA_Jacques_Doriot_hs = {
+			name = FRA_Jacques_Doriot
+			picture = FRA_Jacques_Doriot
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+		    removal_cost = -1
+	        traits = { 
+				Head_of_State
+                national_populist
+				TR_ruthless_powermonger
+			}
+		}
 		}
     Government_leaders = {	
 		FRA_marcel_deat = {		
@@ -936,10 +991,16 @@
 			allowed = {
 				original_tag = FRA
                 }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				totalist
@@ -952,10 +1013,16 @@
 			allowed = {
 				original_tag = FRA
                 }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				authoritarian_democrat
@@ -968,10 +1035,16 @@
 			allowed = {
 				original_tag = FRA
                 }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				paternal_autocrat
@@ -984,10 +1057,16 @@
 			allowed = {
 				original_tag = FRA
                                   }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				national_populist
@@ -1004,9 +1083,15 @@
 				original_tag = FRA
             }
 			available = {
-				always = no
-		    }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				totalist
@@ -1020,9 +1105,15 @@
 				original_tag = FRA
             }
 			available = {
-				always = no
-		    }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				authoritarian_democrat
@@ -1036,9 +1127,15 @@
 				original_tag = FRA
             }
 			available = {
-				always = no
-		    }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				paternal_autocrat
@@ -1052,9 +1149,15 @@
 				original_tag = FRA
             }
 			available = {
-				always = no
-		    }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				national_populist
@@ -1068,9 +1171,15 @@
 				original_tag = FRA
             }
 			available = {
-				always = no
-		    }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				national_populist
@@ -1088,8 +1197,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 		    picture = FRA_marcel_deat
 			removal_cost = -1
@@ -1105,9 +1221,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				totalist
@@ -1120,8 +1242,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 		    picture = FRA_jean_mermoz
 			removal_cost = -1
@@ -1137,10 +1266,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-	
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				authoritarian_democrat
@@ -1153,10 +1287,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-	
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				paternal_autocrat
@@ -1169,10 +1308,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-	
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				national_populist
@@ -1185,10 +1329,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-	
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				national_populist
@@ -1203,10 +1352,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-			
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				totalist
@@ -1219,10 +1373,16 @@
 			allowed = {
 				original_tag = FRA
                 }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				authoritarian_democrat
@@ -1236,10 +1396,16 @@
 			allowed = {
 				original_tag = FRA
                 }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				authoritarian_democrat
@@ -1252,10 +1418,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-	
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				paternal_autocrat
@@ -1269,10 +1440,16 @@
 			allowed = {
 				original_tag = FRA
                 }  
-            available = {
-                always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				national_populist
@@ -1285,10 +1462,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-	
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				national_populist
@@ -1301,10 +1483,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
-	
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				national_populist
@@ -1317,8 +1504,15 @@
 		        original_tag = FRA
 		    }
 			available = {
-				always = no
-		    }
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			
 		    picture = FRA_jean_mermoz
 			removal_cost = -1

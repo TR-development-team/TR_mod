@@ -4,6 +4,11 @@ ENG_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
 	for_countries = { ENG }
+
+	can_use = {
+		not = { has_government = totalist }
+	}
+
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
@@ -58,6 +63,10 @@ ENG_DE_HISTORICAL = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
@@ -92,6 +101,10 @@ ENG_CL_HISTORICAL = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
 	
@@ -119,6 +132,10 @@ ENG_CLAA_HISTORICAL = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
 	
@@ -141,6 +158,10 @@ ENG_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
 	for_countries = { ENG }
+
+	can_use = { 
+		not = { has_government = totalist }
+	}
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -165,6 +186,10 @@ ENG_MINELAYERS_HISTORICAL = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
 	
@@ -184,6 +209,10 @@ ENG_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
 	for_countries = { ENG }
+
+	can_use = { 
+		not = { has_government = totalist }
+	}
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
@@ -205,6 +234,10 @@ ENG_BC_HISTORICAL = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
 	
@@ -222,6 +255,10 @@ ENG_CV_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
 	for_countries = { ENG }
+
+	can_use = { 
+		not = { has_government = totalist }
+	}
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
@@ -243,6 +280,10 @@ ENG_CVL_HISTORICAL = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
@@ -263,6 +304,10 @@ ENG_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
 	for_countries = { ENG }
+
+	can_use = { 
+		not = { has_government = totalist }
+	}
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -304,6 +349,10 @@ ENG_COUNTIES = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 
 	prefix = "HMS "							
@@ -329,6 +378,10 @@ ENG_CITIES = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 
 	prefix = "HMS "							
@@ -350,6 +403,10 @@ ENG_COLONIES = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		not = { has_government = totalist }
+	}
+
 	type = ship
 
 	prefix = "HMS "							
@@ -363,6 +420,10 @@ ENG_KINGS = {
 	name = NAME_THEME_KINGS # 1066 - 1936
 
 	for_countries = { ENG }
+
+	can_use = { 
+		NOT = { has_government = totalist }
+	}
 
 	type = ship
 
@@ -384,6 +445,10 @@ ENG_BATTLES = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		NOT = { has_government = totalist }
+	}
+
 	type = ship
 
 	prefix = "HMS "
@@ -401,6 +466,11 @@ ENG_RIVERS = {
 	name = NAME_THEME_RIVERS
 
 	for_countries = { ENG }
+
+	can_use = { 
+		NOT = { has_government = totalist }
+	}
+
 	type = ship
 
 	prefix = "HMS "
@@ -417,6 +487,10 @@ ENG_MYTHOLOGY = {
 	name = NAME_THEME_MYTHOLOGY
 
 	for_countries = { ENG }
+
+	can_use = { 
+		NOT = { has_government = totalist }
+	}
 
 	type = ship
 
@@ -439,6 +513,10 @@ ENG_DD_COMMUNIST = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
 	for_countries = { ENG }
+
+	can_use = { 
+		has_government = totalist
+	}
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
@@ -494,6 +572,10 @@ ENG_DE_COMMUNISM = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
@@ -527,6 +609,11 @@ ENG_CL_COMMUNISM = {
 	name = NAME_THEME_HISTORICAL_CL
 
 	for_countries = { ENG }
+
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
 	
@@ -554,6 +641,9 @@ ENG_CLAA_COMMUNISM = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
 
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
@@ -578,6 +668,9 @@ ENG_CA_COMMUNISM = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
 
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
@@ -602,6 +695,10 @@ ENG_MINELAYERS_COMMUNISM = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
 	
@@ -622,6 +719,10 @@ ENG_BB_COMMUNISM = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 	ship_types = { ship_hull_heavy battleship }
 	
@@ -641,6 +742,11 @@ ENG_BC_COMMUNISM = {
 	name = NAME_THEME_HISTORICAL_BC
 
 	for_countries = { ENG }
+
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 	ship_types = { ship_hull_heavy battle_cruiser }
 	
@@ -658,6 +764,10 @@ ENG_CV_COMMUNISM = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
 	for_countries = { ENG }
+
+	can_use = { 
+		has_government = totalist
+	}
 
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
@@ -679,6 +789,10 @@ ENG_CVL_COMMUNISM = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
@@ -699,6 +813,10 @@ ENG_SS_COMMUNISM= {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
 	for_countries = { ENG }
+
+	can_use = { 
+		has_government = totalist
+	}
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -740,6 +858,10 @@ ENG_COUNTIES_COMMUNIST = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 
 	prefix = "WLNS "
@@ -766,6 +888,10 @@ ENG_CITIES_COMMUNIST = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 
 	prefix = "WLNS "
@@ -788,6 +914,10 @@ ENG_ADMIRALS_COMMUNIST = {
 
 	for_countries = { ENG }
 
+	can_use = { 
+		has_government = totalist
+	}
+
 	type = ship
 
 	prefix = "WLNS "
@@ -803,6 +933,10 @@ ENG_BATTLES_COMMUNIST = {
 	name = NAME_THEME_BATTLES # 1642 - 1651
 
 	for_countries = { ENG }
+
+	can_use = { 
+		has_government = totalist
+	}
 
 	type = ship
 
@@ -823,6 +957,10 @@ ENG_RIVERS_COMMUNIST = {
 	name = NAME_THEME_RIVERS
 
 	for_countries = { ENG }
+
+	can_use = { 
+		has_government = totalist
+	}
 
 	type = ship
 

@@ -1,0 +1,27 @@
+characters={
+	TEX_Kawai_Tatsuo = {
+		name = JAP_Kawai_Tatsuo
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/TEX/Portrait_JAP_Kawai_Tatsuo.png"
+			}
+		}
+		country_leader = {
+			ideology = oligarchy_subtype
+			id = -1
+		}
+	}
+	TEX_Dwight_D_Eisenhower = {
+		name = USA_Dwight_D_Eisenhower
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
+			}
+		}
+		country_leader = {
+			ideology = Military_junta_subtype
+			id = -1
+		}
+	}
+}
+	

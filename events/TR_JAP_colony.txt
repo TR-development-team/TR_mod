@@ -403,11 +403,11 @@ country_event = {#1936年帝国会議-自治領の主権
 		}
                 set_cosmetic_tag = SIB_IND
                 add_popularity = {
-			ideology = authoritarian_democrat
+			ideology = paternal_autocrat
 			popularity = 0.3
 		}
 		set_politics = {
-			ruling_party = authoritarian_democrat
+			ruling_party = paternal_autocrat
 			elections_allowed = no
 		}
                 JAP = { add_to_faction = SIB }

@@ -1,0 +1,22 @@
+
+state = {
+	id = 953
+	name = "STATE_953" # Khatangsky
+	manpower = 15974
+	impassable = yes
+	state_category = pastoral
+
+	history = {
+		owner = YAK
+		add_core_of = YAK
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	provinces = {
+		2900 4812 9224 11122 12687 13065
+	}
+
+	local_supplies = 0.0 
+}

@@ -11,7 +11,10 @@ characters={
 		}
 
 		country_leader={
-			ideology= paternal_autocrat_subtype
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology= mil_colonial_government_subtype
 		}
 		field_marshal={
 			traits={ defensive_doctrine career_officer  }

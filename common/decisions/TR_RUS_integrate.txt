@@ -1,0 +1,369 @@
+RUS_integrate_policy = {
+#ドン、ドネツク、ルガンスク
+	tr_integrate_DON_province = {
+		icon = infiltrate_state
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+		}
+		visible = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+			OR = {
+				245 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				228 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				227 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				218 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 245
+			has_full_control_of_state = 228
+			has_full_control_of_state = 227
+			has_full_control_of_state = 218
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 218 state = 227 state = 228 state = 245 }
+		}
+		cost = 75
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = -0.20
+		}
+		days_remove = 90
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_DON_province"
+			245 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			228 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			227 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			218 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#東ウクライナ
+	tr_integrate_East_UKR_province = {
+		icon = infiltrate_state
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+		}
+		visible = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+			OR = {
+				193 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				225 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				259 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				221 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				226 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				200 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				196 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 193
+			has_full_control_of_state = 225
+			has_full_control_of_state = 259
+			has_full_control_of_state = 221
+			has_full_control_of_state = 226
+			has_full_control_of_state = 200
+			has_full_control_of_state = 196
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 221 state = 193 state = 225 state = 259 state = 226 state = 200 state = 196 }
+		}
+		cost = 150
+		fire_only_once = yes
+		modifier = {
+                        consumer_goods_factor = 0.1
+                        MONTHLY_POPULATION = -0.5
+                        stability_weekly = -0.001
+			political_power_gain = -0.5
+		}
+		days_remove = 200
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_East_UKR_province"
+			193 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			225 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			259 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			221 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			226 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			200 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			196 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#西ウクライナ
+	tr_integrate_West_UKR_province = {
+		icon = infiltrate_state
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+		}
+		visible = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+			OR = {
+				202 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				203 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				197 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				192 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				201 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				198 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				904 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				93 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				199 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				927 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				928 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 202
+			has_full_control_of_state = 203
+			has_full_control_of_state = 197
+			has_full_control_of_state = 192
+			has_full_control_of_state = 201
+			has_full_control_of_state = 198
+			has_full_control_of_state = 904
+			has_full_control_of_state = 93
+			has_full_control_of_state = 199
+			has_full_control_of_state = 927
+			has_full_control_of_state = 928
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 202 state = 203 state = 197 state = 192 state = 201 state = 198 state = 834 state = 93 state = 199 state = 927 state = 928 }
+		}
+		cost = 200
+		fire_only_once = yes
+		modifier = {
+                        consumer_goods_factor = 0.15
+                        MONTHLY_POPULATION = -0.7
+                        stability_weekly = -0.002
+			political_power_gain = -0.5
+		}
+		days_remove = 300
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_West_UKR_province"
+			202 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			203 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			197 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			192 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			201 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			198 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			904 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			93 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		        199 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			927 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			928 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#グルジア
+	tr_integrate_GEO_province = {
+		icon = infiltrate_state
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+		}
+		visible = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+			OR = {
+				231 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				895 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 231
+			has_full_control_of_state = 895
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 231 state = 895 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+                        consumer_goods_factor = 0.05
+                        MONTHLY_POPULATION = -0.2
+			political_power_gain = -0.2
+		}
+		days_remove = 120
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_GEO_province"
+			231 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			895 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#アゼルバイジャン
+	tr_integrate_AZR_province = {
+		icon = infiltrate_state
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+		}
+		visible = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+			OR = {
+				229 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 229
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 229 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+                        consumer_goods_factor = 0.05
+                        MONTHLY_POPULATION = -0.2
+			political_power_gain = -0.2
+		}
+		days_remove = 120
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_AZR_province"
+			229 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#アルメニア
+	tr_integrate_ARM_province = {
+		icon = infiltrate_state
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+		}
+		visible = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+			OR = {
+				230 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 230
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 230 }
+		}
+		cost = 50
+		fire_only_once = yes
+		modifier = {
+                        consumer_goods_factor = 0.05
+                        MONTHLY_POPULATION = -0.2
+			political_power_gain = -0.2
+		}
+		days_remove = 120
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_ARM_province"
+			230 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+#カフカース
+	tr_integrate_KAV_province = {
+		icon = infiltrate_state
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+		}
+		visible = {
+			OR = {
+				tag = SOV
+				tag = RUS 
+			}
+			OR = {
+				232 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				233 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				234 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				235 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				236 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				237 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				238 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				891 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				897 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				898 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			}
+		}
+		available = {
+			has_full_control_of_state = 232
+			has_full_control_of_state = 233
+			has_full_control_of_state = 234
+			has_full_control_of_state = 235
+			has_full_control_of_state = 236
+			has_full_control_of_state = 237
+			has_full_control_of_state = 238
+			has_full_control_of_state = 891
+			has_full_control_of_state = 897
+			has_full_control_of_state = 898
+		}
+		highlight_states = {
+			highlight_state_targets = { state = 232 state = 233 state = 234 state = 235 state = 236 state = 237 state = 238 state = 891 state = 897 state = 898 }
+		}
+		cost = 150
+		fire_only_once = yes
+		modifier = {
+                        consumer_goods_factor = 0.1
+                        MONTHLY_POPULATION = -0.1
+			political_power_gain = -0.3
+		}
+		days_remove = 200
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_KAV_province"
+			232 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			233 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			234 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			235 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			236 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			237 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			238 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			891 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		        897 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			898 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+		}
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}

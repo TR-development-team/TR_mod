@@ -18,3 +18,43 @@ CHI_People_support_low_increase_effect = {
 		max = 100
 	}
 }
+transfer_all_unit_leaders_to_FROM = {
+	every_unit_leader = {
+		limit = { has_character_flag = CHI_original_unit_leader }
+		remove_second_in_command_role = yes
+		set_nationality = FROM
+	}
+}
+
+#軍閥併合
+china_integrate_ally_effect = {
+	transfer_all_unit_leaders_to_FROM = yes
+	every_subject_country = {
+		get_current_government_type = yes
+		FROM = {
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_integrated_puppet
+				end_wars = no
+			}
+		}
+		restore_previous_government_type = yes
+	}
+	every_owned_state = {
+		limit = {
+			is_mainland_china = yes
+			is_claim_or_core_of_FROM = no
+		}
+		add_claim_by = FROM
+	}
+	FROM = {
+		annex_country = {
+			target = ROOT
+			transfer_troops = yes
+		}
+	}
+	if = {
+		limit = { is_ai = no }
+		FROM = { change_tag_from = ROOT }
+	}
+}

@@ -8,10 +8,10 @@ focus_tree = {
 		}
 	}
         continuous_focus_position = { x = 2500 y = 1300 }
-	#Focus for ブルガリア王国の独立 - focus ID randomly generated due to title being in non-latin characters
+	#ブルガリア王国の独立
 	focus = {
 		id = BUL_ElpxumRY
-		icon = GFX_focus_BUL_promote_bulgarian_nationalism
+		icon = GFX_goal_BUL_Tsar_Boris
 		x = 6
 		y = 0
 		cost = 2
@@ -24,7 +24,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 急速な工業化政策 - focus ID randomly generated due to title being in non-latin characters
+	#急速な工業化政策
 	focus = {
 		id = BUL_UVcjhOMo
 		icon = GFX_goal_generic_construct_civ_factory
@@ -77,7 +77,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ワラキアを取り戻せ - focus ID randomly generated due to title being in non-latin characters
+	#ワラキアを取り戻せ
 	focus = {
 		id = BUL_yiqlSbMf
 		icon = GFX_focus_BUL_the_fate_of_the_balkans
@@ -117,7 +117,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 大ブルガール・ハン国を宣言 - focus ID randomly generated due to title being in non-latin characters
+	#大ブルガール・ハン国を宣言
 	focus = {
 		id = BUL_DynMWbim
 		icon = GFX_focus_BUL_supremacy_on_the_bosporus
@@ -182,7 +182,7 @@ focus_tree = {
 				
 	}
 	}
-        #Focus for 蛮族経済 - focus ID randomly generated due to title being in non-latin characters
+    #蛮族経済
 	focus = {
 		id = BUL_fVQOrwMW
 		icon = GFX_focus_generic_provoke_border_clashes
@@ -198,7 +198,7 @@ focus_tree = {
                     add_ideas = BUL_BANZOKU
 	   }
         }
-        #Focus for 母なるヴォルガ川 - focus ID randomly generated due to title being in non-latin characters
+    #母なるヴォルガ
 	focus = {
 		id = BUL_TjNcErKS
 		icon = GFX_focus_spa_no_compromise_on_carlist_ideals
@@ -259,7 +259,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ロシア内戦？関係ないね！ - focus ID randomly generated due to title being in non-latin characters
+	#ロシア内戦？関係ないね！
 	focus = {
 		id = BUL_ZNmpvfMC
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
@@ -305,7 +305,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for アナキストを潰せ！ - focus ID randomly generated due to title being in non-latin characters
+	#アナキストを潰せ！
 	focus = {
 		id = BUL_NpcLYZrB
 		icon = GFX_focus_spr_anarchism_knows_no_borders
@@ -342,7 +342,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 北へ！ - focus ID randomly generated due to title being in non-latin characters
+	#北へ！
 	focus = {
 		id = BUL_rFMudlON
 		icon = GFX_focus_rom_preserve_romania
@@ -378,7 +378,7 @@ focus_tree = {
 
 		}
 	}
-	#Focus for 民族の故郷へ帰還せよ - focus ID randomly generated due to title being in non-latin characters
+	#民族の故郷へ帰還せよ
 	focus = {
 		id = BUL_ECKONvSr
 		icon = GFX_focus_BUL_prussia_of_the_balkans
@@ -400,7 +400,7 @@ focus_tree = {
 	   }
         }
 
-	#Focus for 鋼鉄の馬 - focus ID randomly generated due to title being in non-latin characters
+	#鋼鉄の馬
 	focus = {
 		id = BUL_nBUirHvJ
 		icon = GFX_goal_continuous_armor_production
@@ -422,10 +422,10 @@ focus_tree = {
 			}
 	   }
         }
-	#Focus for 我らが大ハーンボリス - focus ID randomly generated due to title being in non-latin characters
+	#我らが大ハーンボリス
 	focus = {
 		id = BUL_aSTMlBfR
-		icon = GFX_focus_BUL_plot_against_boris
+		icon = GFX_goal_BUL_Tsar_Boris
 		x = 9
 		y = 2
 		cost = 15
@@ -442,7 +442,7 @@ focus_tree = {
 	}
 	}
 
-	#Focus for ハーンの野望は止まらない - focus ID randomly generated due to title being in non-latin characters
+	#ハーンの野望は止まらない
 	focus = {
 		id = BUL_IOTPobsJ
 		icon = GFX_focus_BUL_plot_against_boris
@@ -475,7 +475,7 @@ focus_tree = {
 	   }
         }
 
-	#Focus for ブルガリア第三帝国を宣言 - focus ID randomly generated due to title being in non-latin characters
+	#ブルガリア第三帝国を宣言
 	focus = {
 		id = BUL_naKgcXxB
 		icon = GFX_focus_BUL_guardians_of_the_balkans
@@ -523,10 +523,10 @@ focus_tree = {
 	}
 	}
 
-	#Focus for 我らがツァールボリス - focus ID randomly generated due to title being in non-latin characters
+	#我らがツァールボリス
 	focus = {
 		id = BUL_GdrcfZao
-		icon = GFX_focus_BUL_power_to_the_tsar
+		icon = GFX_goal_BUL_Tsar_Boris
 		x = 3
 		y = 2
 		cost = 15
@@ -542,7 +542,7 @@ focus_tree = {
 	}
 	}
 
-	#Focus for 軍事化された国家 - focus ID randomly generated due to title being in non-latin characters
+	#軍事化された国家
 	focus = {
 		id = BUL_hbnsiGtp
 		icon = GFX_focus_eng_move_to_secure_the_dominions
@@ -597,7 +597,7 @@ focus_tree = {
 	}
 
 
-	#Focus for マケドニアを統一せよ - focus ID randomly generated due to title being in non-latin characters
+	#マケドニアを統一せよ
 	focus = {
 		id = BUL_svGfoeYi
 		icon = GFX_focus_GRE_bedrock_of_balkan_stability
@@ -633,7 +633,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for セルビアを打倒 - focus ID randomly generated due to title being in non-latin characters
+	#セルビアを打倒
 	focus = {
 		id = BUL_XGtBApMw
 		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
@@ -669,7 +669,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for コンスタンティノポリスを正教徒の下へ - focus ID randomly generated due to title being in non-latin characters
+	#コンスタンティノポリスを正教徒の下へ
 	focus = {
 		id = BUL_eUpSzfDq
 		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
@@ -723,7 +723,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 第四のローマ - focus ID randomly generated due to title being in non-latin characters
+	#第四のローマ
 	focus = {
 		id = BUL_PEvMGmel
 		icon = GFX_focus_GRE_byzantine_themata
@@ -790,7 +790,7 @@ focus_tree = {
 	}
 
 
-	#Focus for ブルガリアの野望は止まらない - focus ID randomly generated due to title being in non-latin characters
+	#ブルガリアの野望は止まらない
 	focus = {
 		id = BUL_AibeHZFz
 		icon = GFX_focus_BUL_bulgaria_on_the_three_seas
@@ -871,7 +871,7 @@ focus = {
 		id = BUL_motorization_effort
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = BUL_army_effort }
-		bypass = { has_tech = BUL_motorised_infantry }
+		bypass = { has_tech = motorised_infantry }
 		x = 1
 		y = 1
 		relative_position_id = BUL_army_effort
@@ -2487,10 +2487,4 @@ focus = {
 	
 
 	
-	}	
-
-
-
-
-#End of focuses 
- }
+}	

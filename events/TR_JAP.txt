@@ -689,6 +689,7 @@ country_event = {#京城合意
 		effect_tooltip = { release_puppet = KOR }
         hidden_effect = {
         KOR = {
+			inherit_technology = JAP
 		    transfer_state = 525
 		    transfer_state = 527
 			transfer_state = 817

@@ -29,6 +29,9 @@ opinion_modifiers = {
                SOV_FRA_SUPPORT = {
 		        value = 50
 	        }
+               returned_land_opinion = {
+		        value = 50
+	        }
                SOV_FRA_SUPPORT_DENY = {
 		        value = -25
 	        }

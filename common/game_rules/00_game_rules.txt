@@ -1758,3 +1758,63 @@ raj_fragmentation_status = {
 		desc = "RULE_OPTION_RAJ_FRAGMENTED_DESC"
 	}
 }
+eth_fragmentation_status = {
+	name = "ETH_FRAGMENTATION_STATUS" 
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = ETH_FRAGMENTED
+		text = "RULE_OPTION_ETH_FRAGMENTED"
+		desc = "RULE_OPTION_ETH_FRAGMENTED_DESC"
+	}
+}
+ita_fragmentation_status = {
+	name = "ITA_FRAGMENTATION_STATUS" 
+	required_dlc = "Man the Guns"
+	group = "RULE_GROUP_GAME_SETUP"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
+	}
+	option = {
+		name = ITA_FRAGMENTED 
+		text = "RULE_OPTION_ITA_FRAGMENTED"
+		desc = "RULE_OPTION_ITA_FRAGMENTED_DESC"
+	}
+}
+
+
+
+ #     #  ###       #####   #######  #######  #######  ###  #     #   #####    #####  
+ #     #   #       #     #  #           #        #      #   ##    #  #     #  #     # 
+ #     #   #       #        #           #        #      #   # #   #  #        #       
+ #     #   #        #####   #####       #        #      #   #  #  #  #  ####   #####  
+ #     #   #             #  #           #        #      #   #   # #  #     #        # 
+ #     #   #       #     #  #           #        #      #   #    ##  #     #  #     # 
+  #####   ###       #####   #######     #        #     ###  #     #   #####    #####  
+
+
+obsolete_focus_branches_visibility = {
+	name = "OBSOLETE_FOCUS_BRANCHES_VISIBILITY"
+	required_dlc = "No Step Back"
+	group = "RULE_GROUP_GENERAL_UI"
+	default = {
+		name = HIDE
+		text = "RULE_OPTION_HIDE"
+		desc = "RULE_OPTION_HIDE_DESC"
+	}
+	option = {
+		name = SHOW
+		text = "RULE_OPTION_SHOW"
+		desc = "RULE_OPTION_SHOW_DESC_DESC"
+		allow_achievements = yes
+	}
+}
+
+#We could add stuff for political advisor visibility filters here too, in the future

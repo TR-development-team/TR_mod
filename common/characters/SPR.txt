@@ -1,0 +1,637 @@
+characters={
+
+	SPR_Jose_Diaz={
+		name=SPR_Jose_Diaz
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_SPR_Jose_Diaz.png"
+			}
+		}
+		country_leader={
+			ideology=Totalist_Leninist_subtype
+		}
+	}
+	SPR_Juan_Garcia_Oliver={
+		name=SPR_Juan_Garcia_Oliver
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_SPR_Juan_Garcia_Oliver.png"
+			}
+		}
+		country_leader={
+			ideology=anarco_syndicalist_subtype
+		}
+	}
+	SPR_Andreu_Nin={
+		name=SPR_Andreu_Nin
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_SPR_Andreu_Nin.png"
+			}
+		}
+		country_leader={
+			ideology=Trotskyist_subtype
+		}
+	}
+	SPR_Niceto_Alcala_Zamora={
+		name=SPR_Niceto_Alcala_Zamora
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_SPR_Niceto_Alcala_Zamora.png"
+			}
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+		}
+	}
+	SPR_Xavier_I={
+		name=SPR_Xavier_I
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_SPR_Xavier_I.png"
+			}
+		}
+		country_leader={
+			ideology=prussian_constitutionalism_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=absolute_monarchy_subtype
+			id=-1
+		}
+	}
+	SPA_jose_antonio_primo_de_rivera={
+		name=SPA_jose_antonio_primo_de_rivera
+		portraits={
+			army={
+				small="GFX_idea_SPA_jose_antonio_primo_de_rivera"
+			}
+			civilian={
+				large="GFX_portrait_SPA_jose_antonio_primo_de_rivera"
+			}
+		}
+
+		country_leader={
+			ideology=Fascist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SPR_Federico_Garcia_Lorca={
+		name=SPR_Federico_Garcia_Lorca
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_SPR_Federico_Garcia_Lorca.png"
+			}
+		}
+
+		country_leader={
+			ideology=Gnosticism_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SPR_Salvador_Dali={
+		name=SPR_Salvador_Dali
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_SPR_Salvador_Dali.png"
+			}
+		}
+
+		country_leader={
+			ideology=Gnosticism_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	# Unit Leaders
+
+	SPR_vicente_rojo_lluch={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPR_vicente_rojo_lluch
+			portraits={
+				army={
+					large="GFX_portrait_SPR_vicente_rojo_lluch"
+					small=GFX_portrait_SPR_vicente_rojo_lluch_small
+				}
+			}
+			corps_commander={
+				traits={ brilliant_strategist }
+				skill=3
+				attack_skill=3
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=3
+				legacy_id=1102
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPR_vicente_rojo_lluch
+			portraits={
+				army={
+					small="GFX_idea_generic_army_europe_5"
+				}
+			}
+			corps_commander={
+				traits={ brilliant_strategist }
+				skill=3
+				attack_skill=3
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=3
+				legacy_id=1102
+			}
+		}
+	}
+
+	SPR_jose_miaja={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPR_jose_miaja
+			portraits={
+				army={
+					large="GFX_portrait_SPR_jose_miaja"
+					small=GFX_portrait_SPR_jose_miaja_small
+				}
+			}
+			corps_commander={
+				traits={ infantry_leader }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=1
+				legacy_id=1103
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPR_jose_miaja
+			portraits={
+				army={
+					small="GFX_idea_generic_army_europe_2"
+				}
+			}
+		}
+	}
+
+	SPR_jose_asensio_torrado={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPR_jose_asensio_torrado
+			portraits={
+				army={
+					large="GFX_portrait_SPR_jose_asensio_torrado"
+					small=GFX_portrait_SPR_jose_asensio_torrado_small
+				}
+			}
+			corps_commander={
+				traits={ career_officer infantry_leader }
+				skill=2
+				attack_skill=1
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=1
+				legacy_id=1101
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPR_jose_asensio_torrado
+			portraits={
+				army={
+					large=GFX_portrait_SPR_jose_asensio_torrado
+					small=GFX_portrait_SPR_jose_asensio_torrado_small
+				}
+			}
+			corps_commander={
+				traits={ defensive_doctrine organisational_leader }
+				skill=2
+				attack_skill=1
+				defense_skill=3
+				planning_skill=2
+				logistics_skill=1
+				legacy_id=1100
+			}
+		}
+	}
+
+	SPR_valentin_gonzalez={
+		name=SPR_valentin_gonzalez
+		portraits={
+			army={
+				large="GFX_portrait_SPR_valentin_gonzalez"
+				small=GFX_portrait_SPR_valentin_gonzalez_small
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1104
+		}
+	}
+
+	SPR_enrique_lister={
+		name = SPR_enrique_lister
+		portraits={
+			army={
+				large="GFX_portrait_SPR_enrique_lister"
+				small = GFX_portrait_SPR_enrique_lister_small
+			}
+		}
+		corps_commander={
+			traits={ politically_connected infantry_leader trickster }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1119
+		}
+	}
+
+	SPR_juan_modesto={
+		name=SPR_juan_modesto
+		portraits={
+			army={
+				large="GFX_portrait_SPR_juan_modesto"
+				small=GFX_portrait_SPR_juan_modesto_small
+			}
+		}
+		corps_commander={
+			traits={ trait_mountaineer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1105
+		}
+	}
+
+	SPR_antonio_cordon_garcia={
+		name=SPR_antonio_cordon_garcia
+		portraits={
+			army={
+				large="GFX_portrait_SPR_antonio_cordon_garcia"
+				small=GFX_portrait_SPR_antonio_cordon_garcia_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=1106
+		}
+	}
+
+	SPR_janos_galicz={ # Independent Communist
+		name=SPR_janos_galicz
+		portraits={
+			army={
+				large="GFX_portrait_SPR_janos_galicz"
+				small=GFX_portrait_SPR_janos_galicz_small
+			}
+		}
+		
+		corps_commander={
+			traits={ trait_reckless }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=1107
+		}
+	}
+
+	SPR_mohamed_meziane={
+		name=SPR_mohamed_meziane
+		portraits={
+			army={
+				large="GFX_portrait_SPA_mohamed_meziane"
+				small=GFX_portrait_SPR_mohamed_meziane_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer harsh_leader trait_SPA_nationalist_sympathies }
+			skill=4
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1109
+		}
+	}
+
+	SPR_gonzalo_queipo_de_llano={
+		name=SPR_gonzalo_queipo_de_llano
+		portraits={
+			army={
+				large="GFX_portrait_SPA_gonzalo_queipo_de_llano"
+				small=GFX_portrait_SPR_gonzalo_queipo_de_llano_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_SPA_nationalist_sympathies }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1110
+		}
+	}
+
+	SPA_emilio_mola={ # Falangist/Francoist
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_emilio_mola
+			portraits={
+				army={
+					large="GFX_portrait_SPA_emilio_mola"
+					small=GFX_portrait_SPA_emilio_mola_small
+				}
+			}
+			
+			field_marshal={
+				traits={ trait_cautious trait_SPA_nationalist_sympathies thorough_planner organisational_leader }
+				skill=3
+				attack_skill=2
+				defense_skill=2
+				planning_skill=4
+				logistics_skill=2
+				legacy_id=1111
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPA_emilio_mola_vidal
+			portraits={
+				army={
+					small="GFX_idea_generic_army_europe_5"
+				}
+			}
+		}
+	}
+
+	SPA_juan_yague={ # Falangist
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_juan_yague
+			portraits={
+				army={
+					large="GFX_portrait_SPA_juan_yague"
+					small=GFX_portrait_SPA_juan_yague_small
+				}
+			}
+			corps_commander={
+				traits={ brilliant_strategist trait_reckless trait_SPA_nationalist_sympathies }
+				skill=3
+				attack_skill=4
+				defense_skill=2
+				planning_skill=2
+				logistics_skill=2
+				legacy_id=1112
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPA_juan_yague_blanco
+			portraits={
+				army={
+					small="GFX_idea_generic_air_europe_3"
+				}
+			}
+		}
+	}
+
+	SPA_agustin_munoz_grandes={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_agustin_munoz_grandes
+			portraits={
+				army={
+					small="GFX_idea_SPA_agustin_munoz_grandes"
+					large="GFX_portrait_SPA_augustin_muynoz_grandes"
+				}
+			}
+			
+			corps_commander={
+				traits={ infantry_officer trait_SPA_nationalist_sympathies }
+				skill=3
+				attack_skill=2
+				defense_skill=3
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=1113
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPA_agustin_munoz_grandes
+			portraits={
+				army={
+					small="GFX_idea_generic_army_europe_3"
+				}
+			}
+		}
+	}
+
+	SPA_jose_enrique_varela={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_jose_enrique_varela
+			portraits={
+				army={
+					large="GFX_portrait_SPA_jose_enrique_varela"
+					small=GFX_portrait_SPA_jose_enrique_varela_small
+				}
+			}
+
+			corps_commander={
+				traits={ trait_SPA_nationalist_sympathies organizer infantry_leader }
+				skill=3
+				attack_skill=3
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=2
+				legacy_id=1114
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPA_jose_enrique_varela
+			portraits={
+				army={
+					small="GFX_idea_generic_army_europe_3"
+				}
+			}
+		}
+	}
+
+	SPA_miguel_cabanellas={ # Carlist
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_miguel_cabanellas
+			portraits={
+				army={
+					large="GFX_portrait_SPA_miguel_cabanellas"
+					small=GFX_portrait_SPA_miguel_cabanellas_small
+				}
+			}
+		
+			corps_commander={
+				traits={ old_guard cavalry_officer trait_SPA_nationalist_sympathies }
+				skill=3
+				attack_skill=2
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=3
+				legacy_id=1115
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPA_miguel_cabanellas_ferrer
+			portraits={
+				army={
+					small="GFX_idea_generic_army_europe_3"
+				}
+			}
+		}
+	}
+
+	SPR_jose_millan_astray={
+		name=SPR_jose_millan_astray
+		portraits={
+			army={
+				large="GFX_portrait_SPA_jose_millan_astray"
+				small=GFX_portrait_SPR_jose_millan_astray_small
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless war_hero trait_SPA_nationalist_sympathies }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1116
+		}
+	}
+
+	SPR_miguel_buiza_fernandez_palacios={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPR_miguel_buiza_fernandez_palacios
+			portraits={
+				army={
+					large="GFX_portrait_SPR_miguel_buiza_fernandez_palacios"
+					small=GFX_portrait_SPR_miguel_buiza_fernandez_palacios_small
+				}
+			}
+			navy_leader={
+				traits={ craven }
+				skill=1
+				attack_skill=1
+				defense_skill=1
+				maneuvering_skill=1
+				coordination_skill=1
+				legacy_id=1117
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPR_miguel_buiza_fernandez_palacios
+			portraits={
+				army={
+					small="GFX_idea_generic_navy_europe_2"
+				}
+			}
+		}
+	}
+
+	SPA_luis_carrero_blanco={ # Francoist
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_luis_carrero_blanco
+			portraits={
+				army={
+					large="GFX_portrait_SPA_luis_carrero_blanco"
+					small=GFX_portrait_SPA_luis_carrero_blanco_small
+				}
+			}
+			
+			navy_leader={
+				traits={ trait_SPA_nationalist_sympathies seawolf }
+				skill=2
+				attack_skill=2
+				defense_skill=2
+				maneuvering_skill=2
+				coordination_skill=1
+				legacy_id=1118
+			}
+		}
+		instance = {
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+			}
+			name=SPA_luis_carrero_blanco
+			portraits={
+				army={
+					small="GFX_idea_generic_navy_europe_1"
+				}
+			}
+		}
+	}
+}

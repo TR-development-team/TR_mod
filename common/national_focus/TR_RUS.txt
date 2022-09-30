@@ -1,6 +1,6 @@
 focus_tree = {
 	id = soviet_focus
-	continuous_focus_position = { x = 1500 y = 1500 } 
+	continuous_focus_position = { x =1800  y = 150 } 
 	country = {
 		factor = 0
 		modifier = {
@@ -8,13 +8,180 @@ focus_tree = {
 			tag = RUS
 		}
 	}
-	#軍事革命委員会
+	#ミンスク人民委員会議
 	focus = {
-		id = RUS_junshigemingweiyuanhui
+		id = RUS_Minsk_focus_1
 		icon = GFX_focus_SOV_the_supreme_soviet
-		x = 11
+		x = 14
 		y = 0
 		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = TR_Soviet.4
+				days = 1
+			}
+		}
+	}
+	#ザカフカースへの手紙
+	focus = {
+		id = RUS_Minsk_focus_2
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
+		y = 1
+		cost = 2
+		prerequisite = { focus = RUS_Minsk_focus_1 }
+		relative_position_id = RUS_Minsk_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = TR_Soviet.5
+				days = 1
+			}
+		}
+	}
+	#ラデックと話す
+	focus = {
+		id = RUS_Minsk_focus_3
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = { focus = RUS_Minsk_focus_1 }
+		relative_position_id = RUS_Minsk_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = TR_Soviet.6
+				days = 1
+			}
+		}
+	}
+	#ドイツとの通信
+	focus = {
+		id = RUS_Minsk_focus_4
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
+		y = 1
+		cost = 2
+		prerequisite = { focus = RUS_Minsk_focus_1 }
+		relative_position_id = RUS_Minsk_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = TR_Soviet.7
+				days = 1
+			}
+		}
+	}
+	#亡命者の結集
+	focus = {
+		id = RUS_Minsk_focus_5
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
+		y = 2
+		cost = 5
+		prerequisite = { focus = RUS_Minsk_focus_2 }
+		prerequisite = { focus = RUS_Minsk_focus_3 }
+		prerequisite = { focus = RUS_Minsk_focus_4 }
+		relative_position_id = RUS_Minsk_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_manpower = 50000
+		}
+	}
+	#インターナショナル顧問団を招聘
+	focus = {
+		id = RUS_Minsk_focus_6
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
+		y = 3
+		cost = 5
+		prerequisite = { focus = RUS_Minsk_focus_5 }
+		relative_position_id = RUS_Minsk_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			GER = { country_event = TR_Soviet.1 }
+		}
+	}
+	#改革の布告
+	focus = {
+		id = RUS_Minsk_focus_7
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = { focus = RUS_Minsk_focus_5 }
+		relative_position_id = RUS_Minsk_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+            add_ideas = low_max_workhours
+			add_ideas = low_safety_regulations
+			increase_school_system = yes
+			add_ideas = low_minimum_wage
+			add_ideas = low_Unemployment_subsidies
+			add_ideas = low_pensions
+			add_ideas = low_health_care
+		}
+	}
+	#革命裁判所の設置
+	focus = {
+		id = RUS_Minsk_focus_8
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
+		y = 3
+		cost = 5
+		prerequisite = { focus = RUS_Minsk_focus_5 }
+		relative_position_id = RUS_Minsk_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	#各地での蜂起を煽動する
+	focus = {
+		id = RUS_Minsk_focus_9
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
+		y = 4
+		cost = 8
+		prerequisite = { focus = RUS_Minsk_focus_6 }
+		prerequisite = { focus = RUS_Minsk_focus_7 }
+		prerequisite = { focus = RUS_Minsk_focus_8 }
+		relative_position_id = RUS_Minsk_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+
+		}
+	}
+	#軍事革命員会の成立
+	focus = {
+		id = RUS_focus_1
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 6
+		y = 0
+		cost = 5
+		available = {
+			has_global_flag = Russian_civil_war
+		}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -22,128 +189,496 @@ focus_tree = {
 			add_political_power= 50
 		}
 	}
-
-	#戦時共産主義
+	#赤衛隊の組織化
 	focus = {
-		id = RUS_zhanshigongchanzhuyi
-		icon = GFX_focus_SOV_organize_wreckers
-		x = 9
+		id = RUS_focus_2
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
 		y = 1
-		cost = 5
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_junshigemingweiyuanhui  }
-		completion_reward = {
-			add_ideas = RUS_WAR_COMMUNISM
-		}
-	}
-
-	#亡命者の帰国
-	focus = {
-		id = RUS_wangmingzhenoguiguo
-		icon = GFX_focus_SOV_womens_fascist_movement
-		x = 11
-		y = 1
-		cost = 5
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = RUS_junshigemingweiyuanhui  }
-	    completion_reward = {
-			add_manpower = 50000
-			add_equipment_to_stockpile = {
-                         type = infantry_equipment
-                         amount = 1000
-                         producer = RUS
-                      } 
-		}
-	}
-
-	#反革命の取締り
-	focus = {
-		id = RUS_fangemingnoqudiri
-		icon = GFX_focus_SOV_military_purge
-		x = 13
-		y = 1
-		cost = 5
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = RUS_junshigemingweiyuanhui  }
-	    completion_reward = {
-			add_ideas = RUS_Cheka
-		}
-	}
-
-	#人民委員会議の設立
-	focus = {
-		id = RUS_renminweiyuanhuiyinosheli
-		icon = GFX_focus_generic_soviet_politics
-		x = 11
-		y = 2
-		cost = 5
+		cost = 6
+		prerequisite = { focus = RUS_focus_1 }
+		relative_position_id = RUS_focus_1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = RUS_zhanshigongchanzhuyi  } prerequisite = { focus = RUS_wangmingzhenoguiguo  } prerequisite = { focus = RUS_fangemingnoqudiri  }
-	    completion_reward = {
-			add_stability = 0.1
+		completion_reward = {
+			add_manpower = 50000
+			add_war_support = 0.05
 		}
 	}
-
-	#労農赤軍
+	#チェーカーの設立
 	focus = {
-		id = RUS_laonongchijun
-		icon = GFX_focus_SOV_builder_of_the_red_army
-		x = 5
-		y = 3
-		cost = 5
+		id = RUS_focus_3
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
+		y = 1
+		cost = 6
+		prerequisite = { focus = RUS_focus_1 }
+		relative_position_id = RUS_focus_1
 		search_filters = {
-			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = RUS_renminweiyuanhuiyinosheli  }
-	completion_reward = {
-		    army_experience = 20
+		completion_reward = {
+			add_ideas = RUS_Cheka
+		}
+	}
+	#最高国民経済会議
+	focus = {
+		id = RUS_focus_4
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
+		y = 1
+		cost = 6
+		prerequisite = { focus = RUS_focus_1 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	#労働者・農民赤軍
+	focus = {
+		id = RUS_focus_5
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
+		y = 2
+		cost = 6
+		prerequisite = { focus = RUS_focus_2 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_Red_Army
 				add_idea = RUS_Red_Army_1
 			}
 		}
 	}
-
-	#ドイツに支援を要請
+	#赤色テロル
 	focus = {
-		id = RUS_doitunizhiyuanwoyaoqing
-		icon = GFX_focus_SOV_support_spanish_poum
-		x = 1
-		y = 3
-		cost = 5
+		id = RUS_focus_6
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = RUS_focus_3 }
+		relative_position_id = RUS_focus_1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = RUS_renminweiyuanhuiyinosheli  }
 		completion_reward = {
-                        GER = { country_event = TR_Soviet.1 }
+			add_stability = 0.1
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
 		}
 	}
-
+	#戦時共産主義
+	focus = {
+		id = RUS_focus_7
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
+		y = 2
+		cost = 6
+		prerequisite = { focus = RUS_focus_4 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = RUS_WAR_COMMUNISM
+		}
+	}
+	#政治将校制度
+	focus = {
+		id = RUS_focus_8
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
+		y = 3
+		cost = 6
+		prerequisite = { focus = RUS_focus_5 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = RUS_political_officer
+		}
+	}
+	#収容所の設置
+	focus = {
+		id = RUS_focus_9
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 0
+		y = 3
+		cost = 6
+		prerequisite = { focus = RUS_focus_6 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = RUS_concentration_camp
+		}
+	}
+	#穀物徴発
+	focus = {
+		id = RUS_focus_10
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
+		y = 3
+		cost = 6
+		prerequisite = { focus = RUS_focus_7 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = RUS_grain_requisition
+		}
+	}
+	#赤軍の再編成
+	focus = {
+		id = RUS_Military_focus_1
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -4
+		y = 3
+		cost = 8
+		prerequisite = { focus = RUS_focus_5 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			army_experience = 50
+		}
+	}
+	#統一されたドクトリンの制定
+	focus = {
+		id = RUS_Military_focus_2
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -4
+		y = 4
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_1 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			army_experience = 15
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	#トゥハチェフスキーの主導
+	focus = {
+		id = RUS_Military_focus_3
+		icon = GFX_focus_SOV_approach_tukahchevsky
+		x = -6
+		y = 5
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_2 }
+		mutually_exclusive = { focus = RUS_Military_focus_4 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = RUS_Red_Army_1
+				add_idea = RUS_Red_Army_T
+			}	
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	#スヴェチンの主導
+	focus = {
+		id = RUS_Military_focus_4
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
+		y = 5
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_2 }
+		mutually_exclusive = { focus = RUS_Military_focus_3 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = RUS_Red_Army_1
+				add_idea = RUS_Red_Army_S
+			}	
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+		}
+	}
+	#敵の破壊を重視
+	focus = {
+		id = RUS_Military_focus_5
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -6
+		y = 6
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_3 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = RUS_Red_Army_T
+				add_idea = RUS_Red_Army_T_1
+			}	
+		}
+	}
+	#空挺部隊の創設
+	focus = {
+		id = RUS_Military_focus_6
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -6
+		y = 7
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_5 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = para_tech
+			}
+		}
+	}
+	#縦深攻撃
+	focus = {
+		id = RUS_Military_focus_7
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -6
+		y = 8
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_6 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = RUS_Red_Army_T_1
+				add_idea = RUS_Red_Army_T_2
+			}
+		}
+	}
+	#広域での戦い
+	focus = {
+		id = RUS_Military_focus_8
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -4
+		y = 6
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_3 focus = RUS_Military_focus_4 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mass_assault
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	#機動戦力の強化
+	focus = {
+		id = RUS_Military_focus_9
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -4
+		y = 7
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_8 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	#連続作戦能力の確保
+	focus = {
+		id = RUS_Military_focus_10
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -4
+		y = 8
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_9 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mass_assault
+				category = cat_mobile_warfare
+			}
+		}
+	}
+	#消耗戦の重視
+	focus = {
+		id = RUS_Military_focus_11
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
+		y = 6
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_4 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = RUS_Red_Army_S
+				add_idea = RUS_Red_Army_S_1
+			}
+		}
+	}
+	#諸兵科連合戦
+	focus = {
+		id = RUS_Military_focus_12
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
+		y = 7
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_11 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+	}
+	#作戦機動
+	focus = {
+		id = RUS_Military_focus_13
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -2
+		y = 8
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_12 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+		    swap_ideas = {
+				remove_idea = RUS_Red_Army_S_1
+				add_idea = RUS_Red_Army_S_2
+			}
+		}
+	}
+	#軍事大学
+	focus = {
+		id = RUS_Military_focus_14
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = -4
+		y = 9
+		cost = 8
+		prerequisite = { focus = RUS_Military_focus_7 focus = RUS_Military_focus_13 }
+		prerequisite = { focus = RUS_Military_focus_10 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_research_slot = 1
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mass_assault
+				category = cat_mobile_warfare
+			}
+		}
+	}
 	#新経済政策
 	focus = {
-		id = RUS_xinjingjizhengce
-		icon = GFX_goal_generic_soviet_construction
-		x = 17
+		id = RUS_Economy_focus_1
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 4
 		y = 3
-		cost = 10
+		cost = 8
+		prerequisite = { focus = RUS_focus_7 }
+		relative_position_id = RUS_focus_1
 		available = {
-			has_country_flag = SOV_Congress_END
 			has_global_flag = Soviet_Win_flag
+			has_country_flag = SOV_Congress_END
 			NOT = { country_exists = SOV }
 			}
 		search_filters = {
-			FOCUS_FILTER_INDUSTRY
+			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = RUS_renminweiyuanhuiyinosheli  }
 		completion_reward = {
 			swap_ideas = {
 				remove_idea = RUS_WAR_COMMUNISM
@@ -151,119 +686,609 @@ focus_tree = {
 			}	
 		}
 	}
-
-	#トゥハチェフスキーの主導
+	#ゴスプランの設立
 	focus = {
-		id = RUS_touhatiehusukinozhudao
-		icon = GFX_focus_SOV_approach_tukahchevsky
+		id = RUS_Economy_focus_2
+		icon = GFX_focus_SOV_the_supreme_soviet
 		x = 4
 		y = 4
-		cost = 10
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_1 }
+		relative_position_id = RUS_focus_1
 		search_filters = {
-			FOCUS_FILTER_MANPOWER
+			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = RUS_laonongchijun  }
-		mutually_exclusive = { focus = RUS_suvuetinnozhudao  }
 		completion_reward = {
-		    swap_ideas = {
-				remove_idea = RUS_Red_Army_1
-				add_idea = RUS_Red_Army_T
-			}	
+			add_ideas = RUS_Gosplan
 		}
 	}
-
-		#軍事研究の強化
-		focus = {
-			id = RUS_sobietokexue1
-			icon = GFX_focus_generic_socialist_science
-			x = 5
-			y = 5
-			cost = 10
-			available = {
-				has_country_flag = SOV_Congress_END
-				num_of_factories > 150
-			}
-			search_filters = {
-				FOCUS_FILTER_RESEARCH
-			}
-			prerequisite = { focus = RUS_touhatiehusukinozhudao focus = RUS_suvuetinnozhudao }
-			completion_reward = {
-				add_research_slot = 1
-			}
-		}
-
-	#一国社会主義
+	#ネップの維持
 	focus = {
-		id = RUS_yiguoshehuizhuyi
-		icon = GFX_focus_SOV_socialism_in_one_country
-		x = 0
+		id = RUS_Economy_focus_3
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
 		y = 5
-		cost = 10		
-		
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_2 }
+		mutually_exclusive = { focus = RUS_Economy_focus_4 }
+		relative_position_id = RUS_focus_1
 		available = {
-			OR = { 
-				has_country_flag = SOV_Stalin_Win
-			    has_country_flag = SOV_Bukharin_Win
-			     }
-			}
+			NOT = { 
+				   has_country_flag = SOV_Stalin_Win
+					}
+			   }
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = RUS_waijiaozhengce  }
-		mutually_exclusive = { focus = RUS_shijiegeming  }
-	    completion_reward = {
-			add_political_power= 50
-			custom_effect_tooltip = "一国社会主義ディシジョンをアンロックする予定"
-		}
-	}
-
-	#スヴェチンの主導
-	focus = {
-		id = RUS_suvuetinnozhudao
-		icon = GFX_focus_SOV_organization_centralization_discipline
-		x = 6
-		y = 4
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = RUS_laonongchijun  }
-		mutually_exclusive = { focus = RUS_touhatiehusukinozhudao  }
 		completion_reward = {
-		    swap_ideas = {
-				remove_idea = RUS_Red_Army_1
-				add_idea = RUS_Red_Army_S
-			}	
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY
+				add_idea = RUS_NEW_ECONOMIC_POLICY_1
+			}
+			remove_ideas = RUS_grain_requisition
 		}
 	}
-
-	#外交政策
+	#五ヵ年計画
 	focus = {
-		id = RUS_waijiaozhengce
-		icon = GFX_focus_SOV_proclaim_soviet_hegemony
-		x = 1
-		y = 4
-		cost = 10
+		id = RUS_Economy_focus_4
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 6
+		y = 5
+		cost = 8
 		available = {
-			    has_country_flag = SOV_Congress_END
-                has_global_flag = Soviet_Win_flag
-                NOT = { country_exists = SOV }
-                }
+			NOT = { 
+				   has_country_flag = SOV_Bukharin_Win
+					}
+			   }
+		prerequisite = { focus = RUS_Economy_focus_2 }
+		mutually_exclusive = { focus = RUS_Economy_focus_3 }
+		relative_position_id = RUS_focus_1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = RUS_doitunizhiyuanwoyaoqing  }
-	    completion_reward = {
-			add_war_support = 0.05
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY
+				add_idea = RUS_Five_Years_Plan	
+			}
 		}
 	}
+	#外国資本の誘致
+	focus = {
+		id = RUS_Economy_focus_5
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 1
+		y = 6
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_3 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY_1
+				add_idea = RUS_NEW_ECONOMIC_POLICY_2
+			}
+		}
+	}
+	#ゴスバンクの改革
+	focus = {
+		id = RUS_Economy_focus_6
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 3
+		y = 6
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_3 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = RUS_Gosbank
+		}
+	}
+	#農業集団化の強行
+	focus = {
+		id = RUS_Economy_focus_7
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 5
+		y = 6
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_4 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Five_Years_Plan
+				add_idea = RUS_Five_Years_Plan_1
+			}
+		}
+	}
+	#モデル都市
+	focus = {
+		id = RUS_Economy_focus_8
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 7
+		y = 6
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_4 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 2
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#労働改革
+	focus = {
+		id = RUS_Economy_focus_9
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
+		y = 7
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_5 }
+		prerequisite = { focus = RUS_Economy_focus_6 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			remove_ideas = RUS_concentration_camp
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY_2
+				add_idea = RUS_NEW_ECONOMIC_POLICY_3
+			}
+			add_ideas = acceptable_max_workhours
+			add_ideas = acceptable_minimum_wage
+			add_ideas = acceptable_Unemployment_subsidies
+		}
+	}
+	#独立した労働組合
+	focus = {
+		id = RUS_Economy_focus_10
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
+		y = 8
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_9 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = RUS_Labour_Union
+		}
+	}
+	#混合経済体制
+	focus = {
+		id = RUS_Economy_focus_11
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 2
+		y = 9
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_10 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_NEW_ECONOMIC_POLICY_3
+				add_idea = RUS_NEW_ECONOMIC_POLICY_4
+			}
+		}
+	}
+	#ダムの建設
+	focus = {
+		id = RUS_Economy_focus_12
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 4
+		y = 7
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_5 focus = RUS_Economy_focus_7 }
+		prerequisite = { focus = RUS_Economy_focus_6 focus = RUS_Economy_focus_8 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}	
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = industrial_complex
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#鉄道整備
+	focus = {
+		id = RUS_Economy_focus_13
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 4
+		y = 8
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_12 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 0
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#資源開発
+	focus = {
+		id = RUS_Economy_focus_14
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 4
+		y = 9
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_13 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					steel > 0
+				}
+				add_resource = {
+					type = steel
+					amount = 27
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					aluminium > 0
+				}
+				add_resource = {
+					type = aluminium
+					amount = 16
+				}
+			}
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					tungsten > 0
+				}
+				add_resource = {
+					type = tungsten
+					amount = 16
+				}
+			}
+		}
+	}
+	#生産性向上運動
+	focus = {
+		id = RUS_Economy_focus_15
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 6
+		y = 7
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_7 }
+		prerequisite = { focus = RUS_Economy_focus_8 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Five_Years_Plan_1
+				add_idea = RUS_Five_Years_Plan_2
+			}
+		}
+	}
+	#ラーゲリの増設
+	focus = {
+		id = RUS_Economy_focus_16
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 6
+		y = 8
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_15 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_concentration_camp
+				add_idea = RUS_concentration_camp_1
+			}
+			add_ideas = no_minimum_wage
+			add_ideas = no_max_workhours
+			add_ideas = no_safety_regulations
+		}
+	}
+	#指令経済の確立
+	focus = {
+		id = RUS_Economy_focus_17
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 6
+		y = 9
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_16 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = RUS_Five_Years_Plan_2
+				add_idea = RUS_Five_Years_Plan_3
+			}
+		}
+	}
+	#工科大学
+	focus = {
+		id = RUS_Economy_focus_18
+		icon = GFX_focus_SOV_the_supreme_soviet
+		x = 4
+		y = 10
+		cost = 8
+		prerequisite = { focus = RUS_Economy_focus_11 focus = RUS_Economy_focus_17 }
+		prerequisite = { focus = RUS_Economy_focus_14 }
+		relative_position_id = RUS_focus_1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 	#党大会
 	focus = {
 		id = RUS_dangdahui
 		icon = GFX_focus_SOV_the_path_of_marxism_leninism
-		x = 11
-		y = 3
+		x = 20
+		y = 5
 		cost = 8
 		available = {
                 has_global_flag = Soviet_Win_flag
@@ -272,7 +1297,6 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_USA_CONGRESS
 		}
-		prerequisite = { focus = RUS_renminweiyuanhuiyinosheli  }
 	    completion_reward = {
 			country_event = TR_Soviet.2
 		}
@@ -282,8 +1306,8 @@ focus_tree = {
 	focus = {
 		id = RUS_gangtienovuositi
 		icon = GFX_focus_fra_loyalty_stalin
-		x = 12
-		y = 4
+		x = 21
+		y = 6
 		cost = 2
 		available = {
 			has_country_flag = SOV_Stalin_Win
@@ -305,8 +1329,8 @@ focus_tree = {
 	focus = {
 		id = RUS_gangtienovuositi_1
 		icon = GFX_focus_fra_loyalty_stalin
-		x = 12
-		y = 5
+		x = 21
+		y = 7
 		cost = 15
 		available = {
 			has_country_flag = SOV_Stalin_Win
@@ -327,8 +1351,8 @@ focus_tree = {
 	focus = {
 		id = RUS_gangtienovuositi_2
 		icon = GFX_focus_fra_loyalty_stalin
-		x = 12
-		y = 6
+		x = 21
+		y = 8
 		cost = 10
 		available = {
 			has_country_flag = SOV_Stalin_Win
@@ -350,8 +1374,8 @@ focus_tree = {
 	focus = {
 		id = RUS_gangtienovuositi_3
 		icon = GFX_focus_SOV_the_last_purge
-		x = 12
-		y = 7
+		x = 21
+		y = 9
 		cost = 10
 		available = {
 			has_country_flag = SOV_Stalin_Win
@@ -378,8 +1402,8 @@ focus_tree = {
 	focus = {
 		id = RUS_gangtienovuositi_4
 		icon = GFX_focus_SOV_father_of_nations
-		x = 12
-		y = 8
+		x = 21
+		y = 10
 		cost = 10
 		available = {
 			has_country_flag = SOV_Stalin_Win
@@ -398,8 +1422,8 @@ focus_tree = {
 	focus = {
 		id = RUS_gangtienovuositi_5
 		icon = GFX_focus_SOV_stalins_cult_of_personality
-		x = 12
-		y = 9
+		x = 21
+		y = 11
 		cost = 10
 		available = {
 			has_country_flag = SOV_Stalin_Win
@@ -414,36 +1438,12 @@ focus_tree = {
 		}
 	}
 
-	#世界革命
-	focus = {
-		id = RUS_shijiegeming
-		icon = GFX_goal_support_fourth_int
-		x = 2
-		y = 5
-		cost = 10
-		available = {
-			OR = { 
-				has_country_flag = SOV_Bogdanov_Win
-			    has_country_flag = SOV_Zinoviev_Win
-			     }
-			}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = RUS_waijiaozhengce  }
-		mutually_exclusive = { focus = RUS_yiguoshehuizhuyi  }
-	    completion_reward = {
-			add_political_power= 50
-			custom_effect_tooltip = "世界革命ディシジョンをアンロックする予定"
-		}
-	}
-
 	#赤い星
 	focus = {
 		id = RUS_chiixing
 		icon = GFX_focus_ger_great_red_menace
-		x = 14
-		y = 4
+		x = 23
+		y = 6
 		cost = 2
 		available = {
 			has_country_flag = SOV_Bogdanov_Win
@@ -464,8 +1464,8 @@ focus_tree = {
 	focus = {
 		id = RUS_chiixing_1
 		icon = GFX_focus_ger_great_red_menace
-		x = 14
-		y = 5
+		x = 23
+		y = 7
 		cost = 10
 		available = {
 			has_country_flag = SOV_Bogdanov_Win
@@ -487,8 +1487,8 @@ focus_tree = {
 	focus = {
 		id = RUS_chiixing_2
 		icon = GFX_focus_ger_great_red_menace
-		x = 14
-		y = 6
+		x = 23
+		y = 8
 		cost = 10
 		available = {
 			has_country_flag = SOV_Bogdanov_Win
@@ -506,8 +1506,8 @@ focus_tree = {
 	focus = {
 		id = RUS_chiixing_3
 		icon = GFX_focus_ger_great_red_menace
-		x = 14
-		y = 7
+		x = 23
+		y = 9
 		cost = 10
 		available = {
 			has_country_flag = SOV_Bogdanov_Win
@@ -525,8 +1525,8 @@ focus_tree = {
 	focus = {
 		id = RUS_chiixing_4
 		icon = GFX_focus_ger_great_red_menace
-		x = 14
-		y = 8
+		x = 23
+		y = 10
 		cost = 10
 		available = {
 			has_country_flag = SOV_Bogdanov_Win
@@ -540,35 +1540,35 @@ focus_tree = {
 		}
 	}
 
-		#未来的プロレタリア文化社会
-		focus = {
-			id = RUS_chiixing_5
-			icon = GFX_focus_ger_great_red_menace
-			x = 14
-			y = 9
-			cost = 10
-			available = {
-				has_country_flag = SOV_Bogdanov_Win
-				}
-			search_filters = {
-				FOCUS_FILTER_POLITICAL
+	#未来的プロレタリア文化社会
+	focus = {
+		id = RUS_chiixing_5
+		icon = GFX_focus_ger_great_red_menace
+		x = 23
+		y = 11
+		cost = 10
+		available = {
+			has_country_flag = SOV_Bogdanov_Win
 			}
-			prerequisite = { focus = RUS_chiixing_4  }
-			completion_reward = {
-				add_ideas = RUS_New_Social
-				add_popularity = {
-					ideology = Gnosticism
-					popularity = 0.2
-						}
-			}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
+		prerequisite = { focus = RUS_chiixing_4  }
+		completion_reward = {
+			add_ideas = RUS_New_Social
+			add_popularity = {
+				ideology = Gnosticism
+					popularity = 0.2
+					}
+		}
+	}
 
 	#農民の友
 	focus = {
 		id = RUS_nongminnoyou
 		icon = GFX_focus_SOV_bukharinists
-		x = 10
-		y = 4
+		x = 19
+		y = 6
 		cost = 2
         available = {
 			has_country_flag = SOV_Bukharin_Win
@@ -589,8 +1589,8 @@ focus_tree = {
 	focus = {
 		id = RUS_nongminnoyou_1
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 10
-		y = 5
+		x = 19
+		y = 7
 		cost = 10
         available = {
 			has_country_flag = SOV_Bukharin_Win
@@ -603,13 +1603,12 @@ focus_tree = {
 			add_ideas = RUS_Proletaria_Humanism
 		}
 	}
-
 	#市場社会主義
 	focus = {
 		id = RUS_nongminnoyou_2
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 10
-		y = 6
+		x = 19
+		y = 8
 		cost = 10
         available = {
 			has_country_flag = SOV_Bukharin_Win
@@ -628,8 +1627,8 @@ focus_tree = {
 	focus = {
 		id = RUS_nongminnoyou_3
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 10
-		y = 7
+		x = 19
+		y = 9
 		cost = 10
         available = {
 			has_country_flag = SOV_Bukharin_Win
@@ -648,8 +1647,8 @@ focus_tree = {
 	focus = {
 		id = RUS_nongminnoyou_4
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 10
-		y = 8
+		x = 19
+		y = 10
 		cost = 10
         available = {
 			has_country_flag = SOV_Bukharin_Win
@@ -673,8 +1672,8 @@ focus_tree = {
 	focus = {
 		id = RUS_nongminnoyou_5
 		icon = GFX_focus_prc_agrarian_socialism
-		x = 10
-		y = 9
+		x = 19
+		y = 11
 		cost = 10
         available = {
 			has_country_flag = SOV_Bukharin_Win
@@ -692,8 +1691,8 @@ focus_tree = {
 	focus = {
 		id = RUS_reninnohoujizhe
 		icon = GFX_focus_SOV_zinovyevists
-		x = 8
-		y = 4
+		x = 17
+		y = 6
 		cost = 2
 		available = {
 			has_country_flag = SOV_Zinoviev_Win
@@ -714,8 +1713,8 @@ focus_tree = {
 	focus = {
 		id = RUS_reninnohoujizhe_1
 		icon = GFX_focus_generic_soviet_politics
-		x = 8
-		y = 5
+		x = 17
+		y = 7
 		cost = 10
 		available = {
 			has_country_flag = SOV_Zinoviev_Win
@@ -736,8 +1735,8 @@ focus_tree = {
 	focus = {
 		id = RUS_reninnohoujizhe_2
 		icon = GFX_focus_generic_soviet_politics
-		x = 8
-		y = 6
+		x = 17
+		y = 8
 		cost = 10
 		available = {
 			has_country_flag = SOV_Zinoviev_Win
@@ -755,8 +1754,8 @@ focus_tree = {
 	focus = {
 		id = RUS_reninnohoujizhe_3
 		icon = GFX_focus_generic_soviet_politics
-		x = 8
-		y = 7
+		x = 17
+		y = 9
 		cost = 10
 		available = {
 			has_country_flag = SOV_Zinoviev_Win
@@ -778,8 +1777,8 @@ focus_tree = {
 		focus = {
 			id = RUS_reninnohoujizhe_4
 			icon = GFX_focus_generic_soviet_politics
-			x = 8
-			y = 8
+			x = 17
+			y = 10
 			cost = 10
 			available = {
 				has_country_flag = SOV_Zinoviev_Win
@@ -801,8 +1800,8 @@ focus_tree = {
 		focus = {
 			id = RUS_reninnohoujizhe_5
 			icon = GFX_focus_generic_soviet_politics
-			x = 8
-			y = 9
+			x = 17
+			y = 11
 			cost = 10
 			available = {
 				has_country_flag = SOV_Zinoviev_Win
@@ -815,304 +1814,424 @@ focus_tree = {
 				add_ideas = RUS_Lenin_is_God
 			}
 		}
-	#ゴスプランの設立
-	focus = {
-		id = RUS_gosupurannosheli
-		icon = GFX_focus_generic_industry_3
-		x = 17
-		y = 4
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_xinjingjizhengce  }
-	    completion_reward = {
-			add_ideas = RUS_Gosplan
-		}
-	}
-
-	#五ヵ年計画
-	focus = {
-		id = RUS_wukanianjihua
-		icon = GFX_focus_SOV_merge_plants
-		x = 18
-		y = 5
-		cost = 10
-		available = {
-		 NOT = { 
-				has_country_flag = SOV_Bukharin_Win
-			     }
-			}
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_gosupurannosheli  }
-		mutually_exclusive = { focus = RUS_netupunoweichi  }
-	completion_reward = {
-		swap_ideas = {
-			remove_idea = RUS_NEW_ECONOMIC_POLICY
-			add_idea = RUS_Five_Years_Plan	
-		}
-		}
-	}
-	#ネップの維持
-	focus = {
-		id = RUS_netupunoweichi
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 16
-		y = 5
-		cost = 10
-		available = {
-			NOT = { 
-				   has_country_flag = SOV_Stalin_Win
+		#外交政策
+		focus = {
+			id = RUS_Diplomacy_focus_1
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 6
+			y = 10
+			cost = 8
+			available = {
+					has_country_flag = SOV_Congress_END
+					has_global_flag = Soviet_Win_flag
+					NOT = { country_exists = SOV has_idea = GER_CIVILWAR_MARKS }
 					}
-			   }
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_gosupurannosheli  }
-		mutually_exclusive = { focus = RUS_wukanianjihua  }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_NEW_ECONOMIC_POLICY
-				add_idea = RUS_NEW_ECONOMIC_POLICY_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
 			}
+			completion_reward = {
+				add_war_support = 0.1
 			}
 		}
-
-	#農業集団化の強行
-	focus = {
-		id = RUS_nongyejituanhuanoqiangxing
-		icon = GFX_focus_SOV_the_road_of_life
-		x = 18
-		y = 6
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_wukanianjihua  }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Five_Years_Plan
-				add_idea = RUS_Five_Years_Plan_1
+		#陣営の選択
+		focus = {
+			id = RUS_Diplomacy_focus_2
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = -2
+			y = 1
+			cost = 8
+			available = {
+				is_subject = no
+					}
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
 			}
-			}
-		}
-	#全てを重工業へ回せ
-	focus = {
-		id = RUS_quantewochonggongyehehuise
-		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
-		x = 18
-		y = 7
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_nongyejituanhuanoqiangxing  }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Five_Years_Plan_1
-				add_idea = RUS_Five_Years_Plan_2
-			}
+			prerequisite = { focus = RUS_Diplomacy_focus_1 }
+			completion_reward = {
+				add_war_support = 0.05
 			}
 		}
-	#強制労働
-	focus = {
-		id = RUS_qiangzhilaodong
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 18
-		y = 8
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_quantewochonggongyehehuise  }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_Five_Years_Plan_2
-				add_idea = RUS_Five_Years_Plan_3
+		#第三インターナショナルへの加盟
+		focus = {
+			id = RUS_Diplomacy_focus_3
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = -3
+			y = 2
+			cost = 8
+			available = {
+				is_subject = no
+				NOT = { has_country_flag = SOV_Bukharin_Win has_country_flag = SOV_Stalin_Win }
+                is_in_faction = no
+			    threat > 0.8
+                GER = { 
+			        is_subject = no	
+			        is_faction_leader = yes
+			    } 
+		    }
+			relative_position_id = RUS_Diplomacy_focus_1
+			mutually_exclusive = { focus = RUS_Diplomacy_focus_4 }
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
 			}
-			add_ideas = no_minimum_wage
-			add_ideas = no_max_workhours
-			add_ideas = no_safety_regulations
-		}
-	}
-	#ソビエト科学
-	focus = {
-		id = RUS_sobietokexue
-		icon = GFX_focus_generic_socialist_science
-		x = 17
-		y = 9
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_RESEARCH
-		}
-		prerequisite = { focus = RUS_qiangzhilaodong  focus = RUS_weilainoweinojipan  }
-	    completion_reward = {
-			add_research_slot = 1
-		}
-	}
-
-	#漸進的社会化
-	focus = {
-		id = RUS_jianjindeshehuihua
-		icon = GFX_focus_SOV_breadbasket_of_the_union
-		x = 16
-		y = 6
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_netupunoweichi  }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_NEW_ECONOMIC_POLICY_1
-				add_idea = RUS_NEW_ECONOMIC_POLICY_2
-			}
+			prerequisite = { focus = RUS_Diplomacy_focus_2 }
+			completion_reward = {
+				GER = { add_to_faction = RUS }
 			}
 		}
-
-	#農産物売買の自由化
-	focus = {
-		id = RUS_nongchanwumaimainoziyouhua
-		icon = GFX_focus_prc_agrarian_socialism
-		x = 16
-		y = 7
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_jianjindeshehuihua  }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_NEW_ECONOMIC_POLICY_2
-				add_idea = RUS_NEW_ECONOMIC_POLICY_3
+		#一国社会主義
+		focus = {
+			id = RUS_Diplomacy_focus_4
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = -1
+			y = 2
+			cost = 8
+			available = {
+				is_subject = no
+					}
+			relative_position_id = RUS_Diplomacy_focus_1
+			mutually_exclusive = { focus = RUS_Diplomacy_focus_3 }
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
 			}
-			}
-		}
-
-
-	#未来の為の基盤
-	focus = {
-		id = RUS_weilainoweinojipan
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 16
-		y = 8
-		cost = 10
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = RUS_nongchanwumaimainoziyouhua  }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = RUS_NEW_ECONOMIC_POLICY_3
-				add_idea = RUS_NEW_ECONOMIC_POLICY_4
-			}
+			prerequisite = { focus = RUS_Diplomacy_focus_2 }
+			completion_reward = {
+				create_faction = "Fourth_International"
 			}
 		}
-	#第三インターナショナルへの加盟
-	focus = {
-		id = RUS_disanintanasiyonaruhenojiameng
-		icon = GFX_focus_SOV_international_union_of_soviet_republics
-		x = 2
-		y = 6
-		cost = 10
-		available = {
-			is_subject = no
-                        is_in_faction = no
-			threat > 0.8
-            GER = { 
-			  is_subject = no	
-			  is_faction_leader = yes
-			 } 
+		#同志を探す
+		focus = {
+			id = RUS_Diplomacy_focus_5
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = -1
+			y = 3
+			cost = 8
+			available = {
+				is_subject = no
+					}
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_4 }
+			completion_reward = {
+			}
 		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
+		#中央ラーダの解体
+		focus = {
+			id = RUS_Diplomacy_focus_6
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 2
+			y = 1
+			cost = 8
+			available = {
+				is_subject = no
+				OR = {is_neighbor_of = UKR is_neighbor_of = UKS}
+					}
+			bypass = { NOT = { country_exists = UKR country_exists =UKS } }
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_1 }
+			completion_reward = {
+				every_state = {
+					limit = {
+						is_core_of = UKR
+					}
+					add_claim_by = RUS
+				}
+				if = {
+					limit = { country_exists = UKR }
+				    create_wargoal = {
+					    target = UKR
+					    type = annex_everything
+				    }
+			    }
+				if = {
+					limit = { country_exists = UKS }
+				    create_wargoal = {
+					    target = UKS
+					    type = annex_everything
+				    }
+			    }
+			}
 		}
-		prerequisite = { focus = RUS_shijiegeming  }
-		completion_reward = {
-			GER = { add_to_faction = RUS }
-		}  
-	}
-
-	#第四インターナショナルの創設
-	focus = {
-		id = RUS_disiintanasiyonarunochuangshe
-		icon = GFX_focus_SOV_the_comecon
-		x = 0
-		y = 6
-		cost = 10
-		available = {
-			is_subject = no
-                        is_in_faction = no
-
+		#西シベリアを回復
+		focus = {
+			id = RUS_Diplomacy_focus_7
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 1
+			y = 2
+			cost = 8
+			available = {
+				is_subject = no
+				is_neighbor_of = YAK
+					}
+			bypass = { NOT = { country_exists = YAK } }
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_6 }
+			completion_reward = {
+				every_state = {
+					limit = {
+						is_core_of = YAK
+					}
+					add_core_of = RUS
+				}
+				create_wargoal = {
+					target = YAK
+					type = annex_everything
+				}
+			}
 		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
+		#バルトを平定
+		focus = {
+			id = RUS_Diplomacy_focus_8
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 3
+			y = 2
+			cost = 8
+			available = {
+				is_subject = no
+				OR= {
+					is_neighbor_of = BAL
+					is_neighbor_of = LIT
+				}
+			}
+			bypass = { NOT = { country_exists = LIT } NOT = { country_exists = BAL }}
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_6 }
+			completion_reward = {
+				every_state = {
+					limit = {
+						is_core_of = BAL
+					}
+					add_claim_by = RUS
+				}
+				create_wargoal = {
+					target = BAL
+					type = annex_everything
+				}
+				every_state = {
+					limit = {
+						is_core_of = LIT
+					}
+					add_claim_by = RUS
+				}
+				create_wargoal = {
+					target = LIT
+					type = annex_everything
+				}
+			}
 		}
-		prerequisite = { focus = RUS_yiguoshehuizhuyi  }
-		completion_reward = {                
-            create_faction = "Fourth_International"
+		#中央アジアの平定
+		focus = {
+			id = RUS_Diplomacy_focus_9
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 1
+			y = 3
+			cost = 8
+			available = {
+				is_subject = no
+				OR= {
+					is_faction_leader = yes
+					is_in_faction = yes
+				}
+					}
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_7 }
+			completion_reward = {
+				every_state = {
+					limit = {
+						is_core_of = KAZ
+					}
+					add_claim_by = RUS
+				}
+				if = {
+					limit = { country_exists = KAZ }
+				    create_wargoal = {
+					    target = KAZ
+					    type = annex_everything
+				    }
+			    }
+				every_state = {
+					limit = {
+						is_core_of = KHI
+					}
+					add_claim_by = RUS
+				}
+				if = {
+					limit = { country_exists = KHI }
+				    create_wargoal = {
+					    target = KHI
+					    type = annex_everything
+				    }
+			    }
+				every_state = {
+					limit = {
+						is_core_of = BUK
+					}
+					add_claim_by = RUS
+				}
+				if = {
+					limit = { country_exists = BUK }
+				    create_wargoal = {
+					    target = BUK
+					    type = annex_everything
+				    }
+			    }
+				every_state = {
+					limit = {
+						is_core_of = STE
+					}
+					add_claim_by = RUS
+				}
+				if = {
+					limit = { country_exists = STE }
+				    create_wargoal = {
+					    target = STE
+					    type = annex_everything
+				    }
+			    }
+				if = {
+					limit = { country_exists = UZB is_faction_leader = yes }
+				    add_to_faction = UZB
+			    }
+			}
 		}
-	}
-
-	#"中央アジアを征服"
-	focus = {
-		id = RUS_Diplomacy_Focus1
-		icon = GFX_focus_SOV_bukharan_republic
-		x = 1
-		y = 7
-		cost = 10
-		available = {
-			is_subject = no
-
+		#フィンランドの問題
+		focus = {
+			id = RUS_Diplomacy_focus_10
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 3
+			y = 3
+			cost = 8
+			available = {
+				is_subject = no
+				is_neighbor_of = FIN
+					}
+			bypass = { NOT = { country_exists = FIN } }
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_8 }
+			completion_reward = {
+				722 = {
+					add_core_of = SOV
+				}
+                147 = {
+					add_core_of = SOV
+				}
+                146 = {
+					add_core_of = SOV
+				}
+			    create_wargoal = {
+				    target = FIN
+				    type = annex_everything
+			    }
+			}
 		}
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
+		#極東遠征
+		focus = {
+			id = RUS_Diplomacy_focus_11
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 0
+			y = 4
+			cost = 8
+			available = {
+				is_subject = no
+				is_neighbor_of = SIB
+				NOT = {has_war_with = USA }
+				NOT = {has_war_with = FRA }
+					}
+			bypass = { NOT = { country_exists = SIB } }
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_10 }
+			prerequisite = { focus = RUS_Diplomacy_focus_9 }
+			completion_reward = {
+				if = {
+					limit = { country_exists = SIB }
+				    create_wargoal = {
+					    target = SIB
+					    type = annex_everything
+				    }
+			    }
+				if = {
+					limit = { country_exists = JAP }
+				    create_wargoal = {
+					    target = JAP
+					    type = annex_everything
+				    }
+			    }
+			}
 		}
-		prerequisite = { focus = RUS_disiintanasiyonarunochuangshe focus = RUS_disanintanasiyonaruhenojiameng }
-		completion_reward = { 
-			407 = {
-		            add_core_of = RUS
-	            }
-			406 = {
-		            add_core_of = RUS
-	            }
-			add_state_claim = 402
-			add_state_claim = 587
-			add_state_claim = 583
-			add_state_claim = 590
-			add_state_claim = 404
-			add_state_claim = 588
-			add_state_claim = 589
-			add_state_claim = 586
-			add_state_claim = 585
-			add_state_claim = 732
-			add_state_claim = 742
-			add_state_claim = 405
-			add_state_claim = 584
-            create_wargoal = {
-	            target = KAZ
-	            type = annex_everything
-            }
-			create_wargoal = {
-	            target = STE
-	            type = annex_everything
-            }
-			create_wargoal = {
-	            target = KHI
-	            type = annex_everything
-            }
-			create_wargoal = {
-	            target = BUK
-	            type = annex_everything
-            }
-			create_wargoal = {
-	            target = UZB
-	            type = annex_everything
-            }
-        }
-    }
-
+		#イランの確保
+		focus = {
+			id = RUS_Diplomacy_focus_12
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 2
+			y = 4
+			cost = 8
+			available = {
+				is_subject = no
+				is_neighbor_of = PER
+					}
+			bypass = { NOT = { country_exists = PER } }
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_10 }
+			prerequisite = { focus = RUS_Diplomacy_focus_9 }
+			completion_reward = {
+				add_state_claim = 266
+				add_state_claim = 420
+				create_wargoal = {
+					target = PER
+					type = annex_everything
+				}
+			}
+		}
+		#黒海への出口
+		focus = {
+			id = RUS_Diplomacy_focus_13
+			icon = GFX_focus_SOV_proclaim_soviet_hegemony
+			x = 4
+			y = 4
+			cost = 8
+			available = {
+				is_subject = no
+				is_neighbor_of = TUR
+					}
+			bypass = { NOT = { country_exists = TUR } }
+			relative_position_id = RUS_Diplomacy_focus_1
+			search_filters = {
+				FOCUS_FILTER_POLITICAL
+			}
+			prerequisite = { focus = RUS_Diplomacy_focus_10 }
+			prerequisite = { focus = RUS_Diplomacy_focus_9 }
+			completion_reward = {
+				add_state_claim = 797
+				add_state_claim = 354
+				add_state_claim = 800
+				create_wargoal = {
+					target = TUR
+					type = annex_everything
+				}
+			}
+		}
 }
 

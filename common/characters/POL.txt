@@ -1,0 +1,611 @@
+characters = {
+	POL_Feliks_Dzierzynski = {
+		name=POL_Feliks_Dzierzynski
+		portraits = {
+			civilian = {
+				large="gfx/leaders/POL/Portrait_POL_Dzierzynski.tga"
+			}
+		}
+		country_leader = {
+			ideology=Jughashvilist_subtype
+			id=-1
+		}
+	}
+	POL_Karl_Radek = {
+		name=POL_Karl_Radek
+		portraits = {
+			civilian = {
+				large="gfx/leaders/POL/Portrait_POL_Radek.tga"
+			}
+		}
+		country_leader = {
+			ideology=Trotskyist_subtype
+			id=-1
+		}
+	}
+	POL_maria_koszutska = {
+		name=POL_maria_koszutska
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_maria_koszutska"
+			}
+		}
+		gender = female 
+		country_leader = {
+			ideology=Luxemburgist_subtype
+			traits = { leftist_independent }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_wladyslaw_gomulka = {
+		name=POL_wladyslaw_gomulka
+		portraits = {
+			civilian = {
+				large=GFX_portrait_POL_wladyslaw_gomulka
+			}
+		}
+		country_leader = {
+			ideology=Leninist_subtype
+			id=-1
+		}
+	}
+
+	POL_wladyslaw_raczkiewicz = {
+		name=POL_wladyslaw_raczkiewicz
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_wladyslaw_raczkiewicz"
+			}
+		}
+		country_leader = {
+			ideology=market_liberal_subtype
+			id=-1
+		}
+	}
+	POL_wincenty_witos = {
+		name=POL_wincenty_witos
+		portraits = {
+			civilian = {
+				large="GFX_POL_wincenty_witos"
+			}
+		}
+		country_leader = {
+			ideology=social_conservative_subtype
+			id=-1
+		}
+	}
+
+	POL_stanislaw_mikolajczyk = {
+		name=POL_stanislaw_mikolajczyk
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_stanislaw_mikolajczyk"
+			}
+		}
+		country_leader = {
+			ideology=social_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_witold_pilecki = {
+		name=POL_witold_pilecki
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_witold_pilecki"
+			}
+			army = {
+				large="GFX_portrait_POL_witold_pilecki"
+				small = "GFX_idea_POL_witold_pilecki"
+			}
+		}
+
+		corps_commander = {
+			traits = { cavalry_officer POL_sanation_left_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+		country_leader = {
+			ideology= authoritarian_democrat_subtype
+		}
+	}
+	POL_sejmik_regency = {
+		name=POL_sejmik_regency
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_Sejmik_Regency" 
+			}
+		}
+		country_leader = {
+			ideology= authoritarian_democrat_subtype
+			id=-1
+		}
+	}
+	POL_ignacy_moscicki = {
+		name=POL_ignacy_moscicki
+		portraits = {
+			army={
+				small=GFX_portrait_POL_ignacy_moscicki_small
+			}
+			civilian = {
+				large="GFX_portrait_POL_ignacy_moscicki"
+			}
+		}
+		
+		country_leader = {
+			ideology=paternal_autocrat_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_boleslaw_wieniawa_glugoszowski = {
+		name=POL_boleslaw_wieniawa_glugoszowski
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski"
+			}
+			army = {
+				large="GFX_portrait_POL_boleslaw_wieniawa_dlugoszowski"
+				small = "GFX_idea_POL_boleslaw_wieniawa_dlugoszowski"
+			}
+		}
+
+		corps_commander = {
+			traits = { cavalry_officer war_hero politically_connected }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+		country_leader = {
+			ideology= paternal_autocrat_subtype
+		}
+	}
+	POL_karl_albrecht = {
+		name=POL_karl_albrecht
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_karl_albrecht"
+			}
+		}
+		country_leader = {
+			ideology=paternal_autocrat_subtype
+			id=-1
+		}
+	}
+
+	POL_friedrich_christian = {
+		name=POL_friedrich_christian
+		portraits = {
+			civilian = {
+				large="GFX_portrait_POL_friedrich_christian"
+			}
+		}
+		country_leader = {
+			ideology=paternal_autocrat_subtype
+			id=-1
+		}
+	}
+
+	POL_wladyslaw_sikorski = {
+		name=POL_wladyslaw_sikorski
+		portraits = {
+			civilian = {
+				large=GFX_portrait_POL_wladyslaw_sikorski
+			}
+			army = {
+				large=GFX_portrait_POL_wladyslaw_sikorski
+				small = GFX_portrait_POL_wladyslaw_sikorski_small
+			}
+		}
+
+		field_marshal = {
+			traits = { POL_sanation_left_leader defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		country_leader = {
+			ideology=paternal_autocrat_subtype
+			id=-1
+		}
+	}
+
+	POL_roman_dmowski = {
+		name=POL_roman_dmowski
+		portraits={
+			civilian = {
+				large="GFX_portrait_POL_roman_dmowski"
+			}
+			army={
+				small=GFX_portrait_POL_roman_dmowski_small
+			}
+		}
+		
+		country_leader = {
+			ideology=national_populist_subtype
+			id=-1
+		}
+	}
+
+	POL_boleslaw_piasecki = {
+		name=POL_boleslaw_piasecki
+		portraits = {
+			civilian = {
+				large="GFX_POL_boleslaw_piasecki"
+			}
+		}
+		country_leader = {
+			ideology=national_populist_subtype
+			id=-1
+		}
+	}
+
+	POL_vladislav_korchits = {
+		name = POL_vladislav_korchits
+		portraits = {
+			army = {
+				large = GFX_portrait_POL_vladislav_korchits
+				small = GFX_portrait_POL_vladislav_korchits_small
+			}
+		}
+		corps_commander = {
+			traits = { JAP_communist_sympathizer old_guard }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+
+
+	POL_edward_rydzsmigly = {
+		name=POL_edward_rydz_smigly
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_edward_rydz_smigly"
+				small = "GFX_idea_POL_edward_rydz_smigly"
+			}
+			civilian = {
+				large="GFX_portrait_POL_edward_rydz_smigly"
+			}
+		}
+		field_marshal = {
+			traits = { old_guard POL_sanation_right_leader thorough_planner politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_wojtek = {
+		name = POL_wojtek
+		portraits = {
+			army = {
+				large = GFX_portrait_POL_wojtek
+				small = "GFX_idea_POL_wojtek"
+			}
+			civilian = {
+				large = "GFX_portrait_POL_king_woytek"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery }
+			visible = {
+				has_country_flag = POL_vojtek_commander
+			}
+			skill = 1
+		}
+		country_leader = {
+			ideology=Gnosticism_subtype
+			traits = { he_who_bears_the_throne }
+			expire="1966.1.1.1"
+		}
+	}
+
+
+	POL_wladyslaw_bortnowski = {
+		name=POL_wladyslaw_bortnowski
+		portraits = {
+			army = {
+				large="GFX_POL_wladyslaw_bortnowski"
+				small = GFX_portrait_POL_wladyslaw_bortnowski_small
+			}
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader thorough_planner }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_stanislaw_kopanski = {
+		name=POL_stanislaw_kopanski
+		portraits = {
+			army = {
+				large="GFX_POL_stanislav_kopanski"
+				small = GFX_portrait_POL_stanislaw_kopanski_small
+			}
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_marian_kukiel = {
+		name=POL_marian_kukiel
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_marian_kukiel"
+				small = "GFX_idea_POL_marian_kukiel"
+			}
+		}
+		corps_commander = {
+			traits = { infantry_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_jozef_haller = {
+		name=POL_jozef_haller
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_jozef_haller"
+				small="GFX_idea_POL_jozef_haller"
+			}
+		}
+		
+		corps_commander = {
+			traits = { old_guard POL_sanation_left_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_stanislaw_sosabowski = {
+		name=POL_stanislaw_sosabowski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_stanislaw_sosabowski"
+				small = "GFX_idea_POL_stanislaw_sosabowski"
+			}
+		}
+		corps_commander = {
+			traits = { commando POL_sanation_left_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	POL_lucjan_zeligowski = {
+		name=POL_lucjan_zeligowski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_lucjan_zeligowski"
+				small = "GFX_idea_POL_lucjan_zeligowski"
+			}
+		}
+		corps_commander = {
+			traits = { old_guard infantry_officer POL_sanation_left_leader }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_tadeusz_kutrzeba = {
+		name=POL_tadeusz_kutrzeba
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_tadeusz_kutrzeba"
+				small = "GFX_idea_POL_tadeusz_kutrzeba"
+			}
+		}
+		corps_commander = {
+			traits = { defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_wladyslaw_anders = {
+		name=POL_tadeusz_kutrzeba
+		portraits = {
+			army = {
+				large="GFX_POL_wladislaw_anders"
+				small = GFX_portrait_POL_wladyslaw_anders_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = POL_wladyslaw_anders
+			ledger = army
+			allowed = {
+				original_tag = POL
+			}
+			traits = {
+				army_cavalry_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+		
+		corps_commander = {
+			traits = { armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_roman_abraham = {
+		name="Roman Abraham"
+		portraits = {
+			army = {
+				large="GFX_POL_roman_abraham"
+				small = GFX_portrait_Roman_Abraham_small
+			}
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_wincenty_kowalski = {
+		name=POL_wincenty_kowalski
+		portraits = {
+			army = {
+				large="GFX_POL_wincenty_kowalski"
+				small = "GFX_idea_POL_wincenty_kowalski"
+			}
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader trickster }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	POL_kazimierz_sosnkowski = {
+		name=POL_kazimierz_sosnkowski
+		portraits = {
+			army = {
+				small="GFX_idea_POL_kazimierz_sosnkowski"
+				large="GFX_portrait_POL_kazimierz_sosnkowski"
+			}
+		}
+		corps_commander = {
+			traits = { defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+	### NAVY LEADERS ###
+
+	POL_stefan_frankowski = {
+		name=POL_stefan_frankowski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_Stefan_Frankowski"
+				small = "GFX_idea_POL_stefan_frankowski"
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+	POL_karol_korytowski = {
+		name=POL_karol_korytowski
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_karol_korytowski"
+				small = "GFX_idea_POL_karol_korytowski"
+			}
+		}
+		navy_leader = {
+			traits = { navy_career_officer superior_tactician }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+	POL_jozef_unrug = {
+		name=POL_josef_unrug
+		portraits = {
+			army = {
+				large="GFX_portrait_POL_jozef_unrug"
+				small = "GFX_idea_POL_jozef_unrug"
+			}
+		}
+		
+		navy_leader = {
+			traits = { war_hero }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+
+}

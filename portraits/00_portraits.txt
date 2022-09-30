@@ -130,7 +130,7 @@ continent = {
 			"GFX_Portrait_Europe_Generic_navy_1"
 			"GFX_Portrait_Europe_Generic_navy_2"
 			"GFX_Portrait_Europe_Generic_navy_3"
-			"GFX_Portrait_Kiyoshi_kazuya"
+			"GFX_Portrait_Billy_Herrington"
 		}
 	}
 
@@ -214,6 +214,7 @@ continent = {
 			"GFX_Portrait_South_America_Generic_land_3"
 			"GFX_Portrait_South_America_Generic_land_4"
 			"GFX_Portrait_South_America_Generic_land_5"
+			"GFX_Portrait_Billy_Herrington"
 		}
 	}
 	
@@ -781,6 +782,94 @@ JAP = {
 }
 
 SOV = {
+	army = {
+		male = {
+			"GFX_Portrait_Soviet_Generic_land_1"
+			"GFX_Portrait_Soviet_Generic_land_2"
+			"GFX_Portrait_Soviet_Generic_land_3"
+			"GFX_Portrait_Soviet_Generic_land_4"
+			"GFX_Portrait_Soviet_Generic_land_5"
+			"GFX_Portrait_Soviet_Magic_Winner"
+			"GFX_Portrait_RUS_putin"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Soviet_Generic_navy_1"
+			"GFX_Portrait_Soviet_Generic_navy_2"
+			"GFX_Portrait_Soviet_Generic_navy_3"
+		}
+	}
+}
+
+YAK = {
+	army = {
+		male = {
+			"GFX_Portrait_Soviet_Generic_land_1"
+			"GFX_Portrait_Soviet_Generic_land_2"
+			"GFX_Portrait_Soviet_Generic_land_3"
+			"GFX_Portrait_Soviet_Generic_land_4"
+			"GFX_Portrait_Soviet_Generic_land_5"
+			"GFX_Portrait_Soviet_Magic_Winner"
+			"GFX_Portrait_RUS_putin"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Soviet_Generic_navy_1"
+			"GFX_Portrait_Soviet_Generic_navy_2"
+			"GFX_Portrait_Soviet_Generic_navy_3"
+		}
+	}
+}
+
+SIB = {
+	army = {
+		male = {
+			"GFX_Portrait_Soviet_Generic_land_1"
+			"GFX_Portrait_Soviet_Generic_land_2"
+			"GFX_Portrait_Soviet_Generic_land_3"
+			"GFX_Portrait_Soviet_Generic_land_4"
+			"GFX_Portrait_Soviet_Generic_land_5"
+			"GFX_Portrait_Soviet_Magic_Winner"
+			"GFX_Portrait_RUS_putin"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Soviet_Generic_navy_1"
+			"GFX_Portrait_Soviet_Generic_navy_2"
+			"GFX_Portrait_Soviet_Generic_navy_3"
+		}
+	}
+}
+
+KAV = {
+	army = {
+		male = {
+			"GFX_Portrait_Soviet_Generic_land_1"
+			"GFX_Portrait_Soviet_Generic_land_2"
+			"GFX_Portrait_Soviet_Generic_land_3"
+			"GFX_Portrait_Soviet_Generic_land_4"
+			"GFX_Portrait_Soviet_Generic_land_5"
+			"GFX_Portrait_Soviet_Magic_Winner"
+			"GFX_Portrait_RUS_putin"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Soviet_Generic_navy_1"
+			"GFX_Portrait_Soviet_Generic_navy_2"
+			"GFX_Portrait_Soviet_Generic_navy_3"
+		}
+	}
+}
+
+GEO = {
 	army = {
 		male = {
 			"GFX_Portrait_Soviet_Generic_land_1"

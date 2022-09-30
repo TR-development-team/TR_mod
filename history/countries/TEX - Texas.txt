@@ -71,8 +71,6 @@ if = {
 		basic_torpedo = 1
 		sonar = 1
 		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		improved_secondary_battery = 1
 		basic_cruiser_armor_scheme = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
@@ -112,34 +110,9 @@ set_popularities = {
 	national_populist = 19
 }
 
-create_country_leader = {
-	name = "リンドン・ジョンソン"
-	desc = ""
-	picture = ""
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "河相達夫"
-	desc = ""
-	picture = "gfx/leaders/TEX/Portrait_JAP_Kawai_Tatsuo.png"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
 
-create_country_leader = {
-	name = "ドワイト・D・アイゼンハワー"
-	desc = ""
-	picture = "gfx/leaders/USA/Portrait_USA_Dwight_D_Eisenhower.dds"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = TEX_Kawai_Tatsuo
+recruit_character = TEX_Dwight_D_Eisenhower
 
 recruit_character = USA_dwight_d_eisenhower
 

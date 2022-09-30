@@ -1,0 +1,19 @@
+characters={
+	MAL_Yamanashi_Katsunoshin={
+		name=JAP_Yamanashi_Katsunoshin
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Yamanashi.tga"
+			}
+			navy={
+				large="gfx/leaders/JAP/Portrait_JAP_Yamanashi.tga"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
+		}
+	}
+}

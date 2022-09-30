@@ -231,6 +231,7 @@ focus_tree = {
 		y = 5
 		cost = 10
         available = {
+			is_subject = no
 			has_global_flag = German_Collapse
         }
 		bypass = {
@@ -243,7 +244,7 @@ focus_tree = {
 			factor = 75
 		}
 	completion_reward = {
-                set_capital = {state = 844}
+        set_capital = {state = 844}
 		}
 	}
 	#カイザーライヒの復活
@@ -254,6 +255,7 @@ focus_tree = {
 		y = 5
 		cost = 10
         available = {
+			is_subject = no
 			NOT = { has_global_flag = German_Collapse }
         }
 		bypass = {
@@ -265,7 +267,14 @@ focus_tree = {
 			factor = 75
 		}
 	completion_reward = {
-             set_cosmetic_tag = DDR_Kaiserreich
+		set_capital = {state = 844}
+        set_cosmetic_tag = DDR_Kaiserreich
+		every_state = {
+			limit = {
+				is_core_of = GER
+			}
+			add_core_of = DDR
+		}
 		}
 	}
 }

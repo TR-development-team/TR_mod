@@ -1,0 +1,124 @@
+characters={
+	PRC_mao_zedong={
+		name=PRC_mao_zedong
+		portraits={
+			army={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+			civilian={
+				large="GFX_portrait_prc_mao_zedong"
+				small=GFX_portrait_PRC_mao_zedong_small
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious politically_connected defensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+		country_leader={
+			ideology=Jughashvilist_subtype
+			id=-1
+		}
+	}
+	PRC_Chen_Tuhsiu={
+		name=PRC_Chen_Tuhsiu
+		portraits={
+			civilian={
+				large="gfx/leaders/PRC/Portrait_PRC_Chen_Tuhsiu.tga"
+			}
+		}
+		country_leader={
+			ideology=anarco_communist_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=Trotskyist_subtype
+			id=-1
+		}
+	}
+
+	PRC_zhu_de={
+		name=PRC_zhu_de
+		portraits={
+			army={
+				large="GFX_portrait_prc_zhu_de"
+				small="GFX_idea_PRC_zhu_de"
+			}
+		}
+		
+		corps_commander={
+			traits={ infantry_officer organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	PRC_chen_yi={
+		name=PRC_chen_yi
+		portraits={
+			army={
+				large="GFX_portrait_prc_chen_yi"
+				small=GFX_portrait_PRC_chen_yi_small
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	PRC_peng_dehuai={
+		name=PRC_peng_dehuai
+		portraits={
+			army={
+				large="GFX_portrait_prc_peng_dehuai"
+				small=GFX_portrait_PRC_peng_dehuai_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	PRC_lin_biao={
+		name=PRC_lin_biao
+		portraits={
+			army={
+				large=GFX_portrait_PRC_lin_biao
+				small=GFX_portrait_PRC_lin_biao_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+
+}

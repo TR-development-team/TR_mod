@@ -3,11 +3,11 @@ characters={
 		name=TUR_Enver_Pasha
 		portraits={
 			civilian={
-				large="gfx/leaders/TUR/Portrait_Turkey_Enver.tga"
+				large="gfx/leaders/TUR/Portrait_TUR_Enver_Pasha.png"
 			}
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=president_principle_subtype
 			id=-1
 		}
 	}
@@ -19,7 +19,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=absolute_monarchy_subtype
 			id=-1
 		}
 	}
@@ -31,7 +31,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
+			ideology=Dominant_party_system_subtype
 			id=-1
 		}
 	}
@@ -81,7 +81,7 @@ characters={
 		name=TUR_Enver_Pasha
 		portraits={
 			civilian={
-				large="gfx/leaders/TUR/Portrait_Turkey_Enver.tga"
+				large="gfx/leaders/TUR/Portrait_TUR_Enver_Pasha.png"
 			}
 		}
 		field_marshal={

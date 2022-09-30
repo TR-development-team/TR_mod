@@ -1,5 +1,6 @@
 ﻿capital = 461
 
+oob = "MOR_1936"
 # Starting tech
 set_cosmetic_tag = MOR_SPR
 set_convoys = 20
@@ -43,7 +44,6 @@ if = {
 		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_medium_battery = 1
-		basic_secondary_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		mtg_transport = 1
@@ -63,12 +63,7 @@ set_popularities = {
 	paternal_autocrat = 100
 }
 
-create_country_leader = {
-	name = "フランシスコ・フランコ"
-	desc = ""
-	picture = "gfx/leaders/SPR/Portrait_Spain_Franco.tga"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = MOR_Francisco_Franco
+
+recruit_character = SPR_mohamed_meziane
+

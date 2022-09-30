@@ -1,6 +1,6 @@
 add_namespace = TR_Ukraine
 
-#国軍参戦
+#黒軍参戦
 country_event = {
 	id = TR_Ukraine.1
 	title = TR_Ukraine.1.t
@@ -12,34 +12,7 @@ country_event = {
 
 	option = {
 		name = TR_Ukraine.1.a
-                add_ideas = UKR_RUS_CIVIL_WAR
-                declare_war_on = {
-			target = SOV
-			type = annex_everything
-		}
-                division_template = {
-				name = "Free Infantry"
-				division_names_group = UKR_GAR_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 203 }
-				create_unit = {
-					division = "division_template = \"Free Infantry\" start_experience_factor = 0.1"
-					owner = UKR
-					count = 6
-				}
-			}
+        add_ideas = UKR_RUS_CIVIL_WAR
 	}
 }
 #ウクライナ赤軍参戦
@@ -54,8 +27,7 @@ country_event = {
 
 	option = {
 		name = TR_Ukraine.2.a
-                RUS = { add_to_faction = UKS }
-                declare_war_on = {
+        declare_war_on = {
 			target = UKR
 			type = annex_everything
 		}

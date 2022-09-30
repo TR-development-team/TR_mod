@@ -3,25 +3,21 @@ state = {
 	name = "STATE_892" #Chukotka
 
 	history = {
-		owner = SOV
+		owner = YAK
+		add_core_of = YAK
 		victory_points = {
 			13063 1 
 		}
 		buildings = {
 			infrastructure = 1
-			13204 ={
-				naval_base = 1
-			}
 		}
-		add_core_of = SOV
-		add_core_of = RUS
 	}
 	##
 	impassable = yes
 	provinces = {
-		4744 5264 13062 13063 13204
+		4744 5264 13062 13063 
 	}
-	manpower = 34182
+	manpower = 31182
 	buildings_max_level_factor = 1
 	state_category = "pastoral"
 

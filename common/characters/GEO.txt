@@ -1,18 +1,36 @@
 characters={
 	GEO_Joseph_Stalin={
-		name=SOV_Joseph_Stalin
+		name=GEO_Joseph_Stalin
 		portraits={
 			civilian={
 				large="gfx/leaders/GEO/Portrait_GEO_Joseph_Stalin.png"
 			}
 		}
 		country_leader={
-			ideology=totalist_subtype
+			ideology=Jughashvilist_subtype
                         traits = { Stalin_traits }
 		}
+	}
+	GEO_Sergei_Kirov={
+		name=GEO_Sergei_Kirov
+		portraits={
+			civilian={
+				large="gfx/leaders/GEO/Portrait_GEO_Sergei_Kirov.png"
+			}
+		}
 		country_leader={
-			ideology=radical_socialist_subtype
-                        traits = { Stalin_traits }
+			ideology=Leninist_subtype
+		}
+	}
+	GEO_Vladimir_Mayakovsky={
+		name=GEO_Vladimir_Mayakovsky
+		portraits={
+			civilian={
+				large="gfx/leaders/GEO/Portrait_GEO_Vladimir_Mayakovsky.png"
+			}
+		}
+		country_leader={
+			ideology=Proletarian_culture_subtype
 		}
 	}
 	GEO_semyon_budyonny = {

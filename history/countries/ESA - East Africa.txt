@@ -43,15 +43,6 @@ set_popularities = {
 	authoritarian_democrat = 100
 }
 
-create_country_leader = {
-	name = "中村孝太郎"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_Nakamura_kotaro.tga"
-	expire = "1960.1.1"
-	ideology = authoritarian_democrat_subtype
-        traits = {
-		
-	}
-}
+recruit_character = ESA_Nakamura_kotaro
 
 

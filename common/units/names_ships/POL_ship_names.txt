@@ -133,6 +133,10 @@ POL_THEME_KINGS = {
 
 	for_countries = { POL }
 
+	can_use = { 
+		not = { has_government = radical_socialist }
+	}
+
 	type = ship
 	ship_types = { ship_hull_heavy battleship battle_cruiser ship_hull_carrier carrier }
 	
@@ -159,6 +163,10 @@ POL_THEME_HISTORICAL_FIGURES = {
 	name = NAME_THEME_HISTORICAL_FIGURES
 
 	for_countries = { POL }
+
+	can_use = { 
+		not = { has_government = radical_socialist }
+	}
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship battle_cruiser ship_hull_carrier carrier }

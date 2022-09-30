@@ -66,47 +66,6 @@ JAP_hate_china = {
 		value = 100
 	}
 }
-JAP_hate_russia = {
-        allowed = {
-		tag = SIB
-		tag = JAP
-	}
-	enable = {
-		is_in_faction_with = JAP
-	}
-
-	
-	ai_strategy = {
-		type = contain
-		id = "SOV"
-		value = 100
-	}
-	ai_strategy = {
-		type = conquer
-		id = "SOV"
-		value = 100
-	}
-	ai_strategy = {
-		type = antagonize
-		id = "SOV"
-		value = 100
-	}
-	ai_strategy = {
-		type = contain
-		id = "RUS"
-		value = 100
-	}
-	ai_strategy = {
-		type = conquer
-		id = "RUS"
-		value = 100
-	}
-	ai_strategy = {
-		type = antagonize
-		id = "RUS"
-		value = 100
-	}
-}
 
 strike_usa = {
 	enable = {

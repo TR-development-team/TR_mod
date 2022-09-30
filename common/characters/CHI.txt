@@ -7,13 +7,13 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=totalist_subtype
+			ideology=Totalist_Leninist_subtype
 		}
 		country_leader={
 			ideology=syndicalist_subtype
 		}
 		country_leader={
-			ideology=radical_socialist_subtype
+			ideology=Council_communist_subtype
 		}
 	}
 	CHI_Wang_Kemin={
@@ -60,7 +60,7 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=authoritarian_democrat_subtype
+                        ideology=dem_Military_junta_subtype
 		}
 	}
 	CHI_chiang_kaishek={
@@ -71,11 +71,11 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=paternal_autocrat_subtype
+                        ideology=militarism_subtype
 			traits={ generallissimo }
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=president_principle_subtype
 			traits={ generallissimo }
 		}
 	}
@@ -104,7 +104,7 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=paternal_autocrat_subtype
+                        ideology=militarism_subtype
 		}
 	}
 	CHI_Chen_Kuofu={
@@ -115,7 +115,7 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=national_populist_subtype
+                        ideology=president_principle_subtype
 		}
 	}
 	CHI_Zhang_Tianran={

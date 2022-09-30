@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
         continuous_focus_position = { x = 2500 y = 1300 }
-	#Focus for 強制労働工業区を拡張 - focus ID randomly generated due to title being in non-latin characters
+	#強制労働工業区を拡張
 	focus = {
 		id = AUS_UZoTutOv
 		icon = GFX_goal_generic_construct_mil_factory
@@ -115,7 +115,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 人種隔離政策 - focus ID randomly generated due to title being in non-latin characters
+	#人種隔離政策
 	focus = {
 		id = AUS_UQvKzFVT
 		icon = GFX_goal_continuous_restrict_freedom
@@ -134,7 +134,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 民族の牢獄 - focus ID randomly generated due to title being in non-latin characters
+	#民族の牢獄
 	focus = {
 		id = AUS_lsYFRofA
 		icon = GFX_focus_mex_arrest_general_cedillo
@@ -152,7 +152,7 @@ focus_tree = {
 	}
 
 
-	#Focus for 我々はドイツ人だ - focus ID randomly generated due to title being in non-latin characters
+	#我々はドイツ人だ
 	focus = {
 		id = AUS_ewUIGHrt
 		icon = GFX_focus_ger_revive_kaiserreich
@@ -176,7 +176,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 平等な連邦 - focus ID randomly generated due to title being in non-latin characters
+	#平等な連邦
 	focus = {
 		id = AUS_FZvPTIpA
 		icon = GFX_goal_support_democracy
@@ -200,7 +200,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 二重帝国の崩壊 - focus ID randomly generated due to title being in non-latin characters
+	#二重帝国の崩壊
 	focus = {
 		id = AUS_jYIJiNFV
 		icon = GFX_focus_rom_abdicate
@@ -213,64 +213,29 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-                       remove_ideas = AUS_MINZOKUMONDAI
-                       set_cosmetic_tag = AUS_GER
-                       end_puppet = BOS
-                       
-                        hidden_effect = {
-                             155 = {
-					remove_core_of = AUS
+        remove_ideas = AUS_MINZOKUMONDAI
+        set_cosmetic_tag = AUS_GER
+		hidden_effect = {
+            end_puppet = BOS   
+		    end_puppet = GAL      
+		    end_puppet = HUN           
+            BOS = { drop_cosmetic_tag = yes }
+			GAL = { drop_cosmetic_tag = yes }
+			HUN = { drop_cosmetic_tag = yes }
+            }
+			ITA = {
+				add_state_claim = 932
+				transfer_state = 932
 				}
-                             43 = {
-					remove_core_of = AUS
-				}
-                             154 = {
-					remove_core_of = AUS
-				}
-                             664 = {
-					remove_core_of = AUS
-				}
-                             73 = {
-					remove_core_of = AUS
-				}
-                             70 = {
-					remove_core_of = AUS
-				}
-                             71 = {
-					remove_core_of = AUS
-				}
-                             764 = {
-					remove_core_of = AUS
-				}
-                             45 = {
-					remove_core_of = AUS
-				}
-                             109 = {
-					remove_core_of = AUS
-				}
-                             103 = {
-					remove_core_of = AUS
-				}
-                      }
-                      release = HUN
-                      release = CRO
-                      release = SLO
-                      release = GAL
-                      hidden_effect = {
-                             HUN = {
-                                      transfer_state = 764
-                                     }
-                             country_event = {
+            country_event = {
 					id = TR_news.13
 					days = 1
 					
-				}
-                      }
-                      
+				}        
 		}
 	}
 
-	#Focus for 自治権の拡大 - focus ID randomly generated due to title being in non-latin characters
+	#自治権の拡大
 	focus = {
 		id = AUS_QxktSBGu
 		icon = GFX_goal_anschluss
@@ -284,63 +249,15 @@ focus_tree = {
 		}
 	completion_reward = {
                       remove_ideas = AUS_MINZOKUMONDAI
-                      set_cosmetic_tag = AUS_Austria
-                      hidden_effect = {
-                             155 = {
-					remove_core_of = AUS
-				}
-                             43 = {
-					remove_core_of = AUS
-				}
-                             154 = {
-					remove_core_of = AUS
-				}
-                             664 = {
-					remove_core_of = AUS
-				}
-                             73 = {
-					remove_core_of = AUS
-				}
-                             70 = {
-					remove_core_of = AUS
-				}
-                             71 = {
-					remove_core_of = AUS
-				}
-                             764 = {
-					remove_core_of = AUS
-				}
-                             45 = {
-					remove_core_of = AUS
-				}
-                             109 = {
-					remove_core_of = AUS
-				}
-                             103 = {
-					remove_core_of = AUS
-				}
-                      }
-                      release_puppet = HUN
-                      hidden_effect = {
-                             HUN = {
-			              transfer_state = 109
-			              transfer_state = 45
-                                      transfer_state = 764
-			              transfer_state = 103
-                                      transfer_state = 71
-                                      transfer_state = 70
-                                     }
                              country_event = {
 					id = TR_news.14
 					days = 1
 					
 				}
                       }
-                      
-		}
 	}
 
-	#Focus for ポーランド人の自治 - focus ID randomly generated due to title being in non-latin characters
+	#ポーランド人の自治
 	focus = {
 		id = AUS_PHuGmMnT
 		icon = GFX_focus_generic_polish_deal
@@ -357,7 +274,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for クロアチア人の自治 - focus ID randomly generated due to title being in non-latin characters
+	#クロアチア人の自治
 	focus = {
 		id = AUS_ySdfHVjK
 		icon = GFX_focus_YUG_banovina_of_croatia
@@ -375,7 +292,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ボヘミアに帝国復帰を勧告 - focus ID randomly generated due to title being in non-latin characters
+	#ボヘミアに帝国復帰を勧告
 	focus = {
 		id = AUS_JPLbTjOa
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -400,7 +317,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 最終戦争 - focus ID randomly generated due to title being in non-latin characters
+	#最終戦争
 	focus = {
 		id = AUS_hCErUGPQ
 		icon = GFX_focus_attack_japan
@@ -435,7 +352,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for バルカンを平定 - focus ID randomly generated due to title being in non-latin characters
+	#バルカンを平定
 	focus = {
 		id = AUS_przKkciI
 		icon = GFX_focus_BUL_bulgaria_on_the_three_seas
@@ -443,6 +360,7 @@ focus_tree = {
 		y = 15
 		cost = 10
                 available = {
+					has_war = no
 			is_subject = no
                         NOT = { has_war_with = FRA }
                         NOT = { has_war_with = RUS }
@@ -481,16 +399,17 @@ focus_tree = {
 		}
 	}
 
-	#Focus for フランスとの手切 - focus ID randomly generated due to title being in non-latin characters
+	#フランスとの手切
 	focus = {
 		id = AUS_FEByqxbm
 		icon = GFX_focus_attack_france
 		x = 5
 		y = 15
 		cost = 10
-                available = {
+        available = {
 			has_war = no
 			is_subject = no
+			OR = { is_neighbor_of = FRA is_neighbor_of = WGR }
 		}
 		available_if_capitulated = yes
 		prerequisite = { focus = AUS_JixKVTNY }
@@ -498,33 +417,48 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = { 
-                        diplomatic_relation = {
-                               country = FRA
-                               relation = guarantee
-                               active = no
-                             }
-			create_wargoal = {
-				target = FRA
-				type = annex_everything
+            diplomatic_relation = {
+                country = FRA
+                relation = guarantee
+                active = no
+            }
+			if = {
+				limit = { country_exists = FRA }
+				create_wargoal = {
+					target = FRA
+					type = annex_everything
+				}
 			}
-                        8 = {
-					add_core_of = AUS
+            8 = {
+				add_core_of = AUS
+			}
+            28 = {
+			    add_core_of = AUS
+			}
+            151 = {
+			    add_core_of = AUS
 				}
-                        28 = {
-					add_core_of = AUS
+            3 = {
+				add_core_of = AUS
 				}
-                        151 = {
-					add_core_of = AUS
+			hidden_effect = {   
+			every_state = {
+				limit = {
+					is_core_of = GER
 				}
-                        3 = {
-					add_core_of = AUS
+				add_claim_by = AUS
+			}
+			every_state = {
+				limit = {
+					is_core_of = DDR
 				}
-
-
+				add_claim_by = AUS
+			}
+		    }
 		}
 	}
 
-	#Focus for アーリア帝国 - focus ID randomly generated due to title being in non-latin characters
+	#アーリア帝国
 	focus = {
 		id = AUS_JixKVTNY
 		icon = GFX_goal_generic_territory_or_war
@@ -548,83 +482,20 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = { 
-		custom_effect_tooltip = "アーリア帝国建国宣言"
+		custom_effect_tooltip = AUS_Aryan_Empire_Proclaim
 		hidden_effect = {                
-                50 = {
-					add_core_of = AUS
+			every_state = {
+				limit = {
+					is_core_of = GER
 				}
-                65 = {
-					add_core_of = AUS
+				add_core_of = AUS
+			}
+			every_state = {
+				limit = {
+					is_core_of = DDR
 				}
-                60 = {
-					add_core_of = AUS
-				}
-                42 = {
-					add_core_of = AUS
-				}
-                51 = {
-					add_core_of = AUS
-				}
-                57 = {
-					add_core_of = AUS
-				}
-                56 = {
-					add_core_of = AUS
-				}
-                55 = {
-					add_core_of = AUS
-				}
-                59 = {
-					add_core_of = AUS
-				}
-                58 = {
-					add_core_of = AUS
-				}
-                61 = {
-					add_core_of = AUS
-				}
-                64 = {
-					add_core_of = AUS
-				}
-                844 = {
-					add_core_of = AUS
-				}
-                68 = {
-					add_core_of = AUS
-				}
-                63 = {
-					add_core_of = AUS
-				}       
-                86 = {
-					add_core_of = AUS
-				}
-                85 = {
-					add_core_of = AUS
-				}
-                763 = {
-					add_core_of = AUS
-				}
-                5 = {
-					add_core_of = AUS
-				}
-                188 = {
-					add_core_of = AUS
-				}
-                62 = {
-					add_core_of = AUS
-				}
-                850 = {
-					add_core_of = AUS
-				}
-                861 = {
-					add_core_of = AUS
-				}
-                875 = {
-					add_core_of = AUS
-				}
-                876 = {
-					add_core_of = AUS
-				}
+				add_core_of = AUS
+			}
 			}
             set_cosmetic_tag = AUS_Aryan
             add_ideas = AUS_Aryan_idea  
@@ -633,11 +504,39 @@ focus_tree = {
 				add_idea = AUS_Wotan
                                 
 			}	
+			if = {
+				limit = { country_exists = KIE }
+				create_wargoal = {
+					target = KIE
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = HAN }
+				create_wargoal = {
+					target = HAN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = MEK }
+				create_wargoal = {
+					target = MEK
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = HES }
+				create_wargoal = {
+					target = HES
+					type = annex_everything
+				}
+			}
 		}
 	}
 
 
-	#Focus for 聖戦 - focus ID randomly generated due to title being in non-latin characters
+	#聖戦
 	focus = {
 		id = AUS_yKTFPgqY
 		icon = GFX_focus_attack_soviet
@@ -665,10 +564,35 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = { 
+		if = {
+			limit = { country_exists = GER }
 			create_wargoal = {
 				target = GER
 				type = annex_everything
 			}
+		}
+		if = {
+			limit = { country_exists = DDR }
+			create_wargoal = {
+				target = DDR
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = { country_exists = BAY }
+			create_wargoal = {
+				target = BAY
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = { country_exists = WUR }
+			create_wargoal = {
+				target = WUR
+				type = annex_everything
+			}
+		}
+
                 52 = {
 					add_core_of = AUS
 				}
@@ -692,21 +616,20 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 人種隔離区を設置 - focus ID randomly generated due to title being in non-latin characters
+	#人種隔離区を設置
 	focus = {
 		id = AUS_ZMWTxgYi
 		icon = GFX_focus_CZE_german_puppet
 		x = 8
 		y = 12
         available = {
-                        owns_state = 43
-                        owns_state = 70
-                        owns_state = 109
-			NOT = { country_exists = HUN }
-                        NOT = { country_exists = BOS }
-                        NOT = { country_exists = CRO }
-                        NOT = { country_exists = SLO }
-                        NOT = { country_exists = GAL }
+			43 = { is_owned_by_ROOT_or_subject = yes }
+			70 = { is_owned_by_ROOT_or_subject = yes }
+			109 = { is_owned_by_ROOT_or_subject = yes }
+			929 = { is_owned_by_ROOT_or_subject = yes }
+			931 = { is_owned_by_ROOT_or_subject = yes }
+            OR = { GAL = { is_subject_of = AUS } NOT = {country_exists = GAL} }
+			OR = { BOS = { is_subject_of = AUS } NOT = {country_exists = BOS} }
 			is_subject = no
 		}
 		cost = 10
@@ -743,17 +666,68 @@ focus_tree = {
 					add_core_of = HUN
 				}
 				release_puppet = HUN
-				HUN  = { set_cosmetic_tag = HUN_AUS }
-				
-				HUN = {      country_event = TR_Austria.5
-							  add_ideas = AUS_Untermensch
-				
+
+				HUN = {      
+					set_cosmetic_tag = HUN_AUS
+					country_event = TR_Austria.5
+					add_ideas = AUS_Untermensch
+				}
+				if = {
+					limit = { SLO = { is_subject_of = AUS } }
+					HUN = { 
+					annex_country = {
+						target = SLO
+						transfer_troops = no
 					}
-                }
+				    }
+				}
+				if = {
+					limit = { CRO = { is_subject_of = AUS } }
+					HUN = { 
+					annex_country = {
+						target = CRO
+						transfer_troops = no
+					}
+				    }
+				}
+				if = {
+					limit = { BOS = { is_subject_of = AUS } }
+					HUN = { 
+					annex_country = {
+						target = BOS
+						transfer_troops = no
+					}
+				    }
+				}
+				if = {
+					limit = { SLV = { is_subject_of = AUS } }
+					AUS = { 
+					annex_country = {
+						target = SLV
+						transfer_troops = no
+					}
+				    }
+				}
+				if = {
+					limit = { GAL = { is_subject_of = AUS } }
+					AUS = { 
+					annex_country = {
+						target = GAL
+						transfer_troops = no
+					}
+				    }
+				}
+				AUS = {
+                    add_state_core = 929
+					transfer_state = 929
+					add_state_core = 931
+					transfer_state = 931
+				}
+            }
 		}
 	}
 
-	#Focus for アルマネン騎士団 - focus ID randomly generated due to title being in non-latin characters
+	#アルマネン騎士団
 	focus = {
 		id = AUS_DIpAcvBH
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -766,15 +740,14 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = { 
-                        swap_ideas = {
+            swap_ideas = {
 				remove_idea = AUS_Wotan
-				add_idea = AUS_Armanenschaft
-                                
+				add_idea = AUS_Armanenschaft                    
 			}	
 		}
 	}
 
-	#Focus for ドイツ性のための騎士団 - focus ID randomly generated due to title being in non-latin characters
+	#ドイツ性のための騎士団
 	focus = {
 		id = AUS_WhbsZqaT
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -792,7 +765,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 親衛騎士団 - focus ID randomly generated due to title being in non-latin characters
+	#親衛騎士団
 	focus = {
 		id = AUS_mLqAfYeI
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -810,7 +783,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ボヘミアを攻撃 - focus ID randomly generated due to title being in non-latin characters
+	#ボヘミアを攻撃
 	focus = {
 		id = AUS_BLtjdDiZ
 		icon = GFX_goal_demand_sudetenland
@@ -850,7 +823,7 @@ focus_tree = {
 	}
 
 
-	#Focus for フリーメイソンとユダヤ人の陰謀を宣伝 - focus ID randomly generated due to title being in non-latin characters
+	#フリーメイソンとユダヤ人の陰謀を宣伝
 	focus = {
 		id = AUS_SRhOevgr
 		icon = GFX_focus_TUR_purge_the_kemalists
@@ -869,7 +842,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 騎士団 - focus ID randomly generated due to title being in non-latin characters
+	#騎士団
 	focus = {
 		id = AUS_jBQnWEAM
 		icon = GFX_focus_ger_oppose_hitler
@@ -887,7 +860,7 @@ focus_tree = {
 	}
 
 
-	#Focus for チュートンの末裔 - focus ID randomly generated due to title being in non-latin characters
+	#チュートンの末裔
 	focus = {
 		id = AUS_dkGMfDmW
 		icon = GFX_focus_generic_support_the_left_right
@@ -905,7 +878,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ハンガリー人の不満を沈める - focus ID randomly generated due to title being in non-latin characters
+	#ハンガリー人の不満を沈める
 	focus = {
 		id = AUS_XRnybxjm
 		icon = GFX_focus_hun_elect_a_king
@@ -934,7 +907,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ドナウ連邦の形成 - focus ID randomly generated due to title being in non-latin characters
+	#ドナウ連邦の形成
 	focus = {
 		id = AUS_fkAmNCLn
 		icon = GFX_goal_support_democracy
@@ -1043,7 +1016,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ボスニアを編入 - focus ID randomly generated due to title being in non-latin characters
+	#ボスニアを編入
 	focus = {
 		id = AUS_TJuwXFGh
 		icon = GFX_focus_YUG_safeguard_bosnia
@@ -1074,7 +1047,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for トランシルヴァニアの回復 - focus ID randomly generated due to title being in non-latin characters
+	#トランシルヴァニアの回復
 	focus = {
 		id = AUS_uAZsTEPD
 		icon = GFX_focus_YUG_autonomous_transylvania
@@ -1102,7 +1075,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for バルカンの守護者 - focus ID randomly generated due to title being in non-latin characters
+	#バルカンの守護者
 	focus = {
 		id = AUS_fjDGiyNu
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
@@ -1125,7 +1098,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ブルガリアと対決 - focus ID randomly generated due to title being in non-latin characters
+	#ブルガリアと対決
 	focus = {
 		id = AUS_NHQjwXDY
 		icon = GFX_focus_generic_attack_bulgaria
@@ -1150,7 +1123,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ドイツ騎士団国 - focus ID randomly generated due to title being in non-latin characters
+	#ドイツ騎士団国
 	focus = {
 		id = AUS_ZINozFEe
 		icon = GFX_focus_ger_reichskommisariats
@@ -1172,7 +1145,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for アーリア民族至上主義 - focus ID randomly generated due to title being in non-latin characters
+	#アーリア民族至上主義
 	focus = {
 		id = AUS_wgYjCfOW
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -1190,7 +1163,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 聖別された国家 - focus ID randomly generated due to title being in non-latin characters
+	#聖別された国家
 	focus = {
 		id = AUS_yMBzSNak
 		icon = GFX_focus_por_concordat
@@ -1213,7 +1186,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for スロヴァキア人の自治 - focus ID randomly generated due to title being in non-latin characters
+	#スロヴァキア人の自治
 	focus = {
 		id = AUS_CLEceaid
 		icon = GFX_focus_generic_treaty
@@ -1231,7 +1204,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 劣等人種の強制労働 - focus ID randomly generated due to title being in non-latin characters
+	#劣等人種の強制労働
 	focus = {
 		id = AUS_GqWdLlEz
 		icon = GFX_focus_eng_move_to_secure_the_dominions
@@ -1249,7 +1222,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 優生人種の選別 - focus ID randomly generated due to title being in non-latin characters
+	#優生人種の選別
 	focus = {
 		id = AUS_vGOkstMi
 		icon = GFX_goal_generic_secret_weapon
@@ -1268,7 +1241,7 @@ focus_tree = {
 	}
 
 
-	#Focus for 劣等人種を去勢 - focus ID randomly generated due to title being in non-latin characters
+	#劣等人種を去勢
 	focus = {
 		id = AUS_RdgNFxfJ
 		icon = GFX_focus_CZE_german_puppet
@@ -1286,7 +1259,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for アーリア人同士の強制結婚 - focus ID randomly generated due to title being in non-latin characters
+	#アーリア人同士の強制結婚
 	focus = {
 		id = AUS_eosWhEjI
 		icon = GFX_focus_CZE_german_puppet
@@ -1304,7 +1277,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for オカルト国家 - focus ID randomly generated due to title being in non-latin characters
+	#オカルト国家
 	focus = {
 		id = AUS_ZbyMhfDU
 		icon = GFX_focus_generic_strike_at_democracy2
@@ -1323,7 +1296,7 @@ focus_tree = {
 	}
 
 
-	#Focus for 千年王国を樹立せよ - focus ID randomly generated due to title being in non-latin characters
+	#千年王国を樹立せよ
 	focus = {
 		id = AUS_DkIeLayz
 		icon = GFX_focus_por_concordat
@@ -1353,7 +1326,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 旧領を征服 - focus ID randomly generated due to title being in non-latin characters
+	#旧領を征服
 	focus = {
 		id = AUS_sOAjPQEd
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -1401,17 +1374,21 @@ focus_tree = {
 	}
 
 
-	#Focus for イタリアを挟撃 - focus ID randomly generated due to title being in non-latin characters
+	#イタリアを挟撃
 	focus = {
 		id = AUS_xOkmsWup
 		icon = GFX_focus_chi_reach_out_to_france
 		x = 5
 		y = 12
 		cost = 10
-                bypass = {
-			FRA = { is_in_faction_with = ITA }
+        bypass = {
+			OR = { FRA = { is_in_faction_with = ITA }
+			       NOT = { country_exists = ITA } }
 		}
-                available = { FRA = { has_war_with = ITA } }
+        available = { 
+			OR = { FRA = { has_war_with = ITA } 
+			       NOT = { has_war_with = HUN } }
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = AUS_sOAjPQEd }
 		ai_will_do = {
@@ -1442,7 +1419,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 東方を征服 - focus ID randomly generated due to title being in non-latin characters
+	#東方を征服
 	focus = {
 		id = AUS_qOFtuiRj
 		icon = GFX_focus_generic_black_sea_focus
@@ -1450,6 +1427,7 @@ focus_tree = {
 		y = 15
 		cost = 10
                 available = {
+					has_war = no
 			is_subject = no
                         NOT = { has_war_with = SOV }
                         NOT = { has_war_with = RUS }
@@ -1705,7 +1683,6 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = special_forces
 			add_tech_bonus = {
 				name = special_forces_bonus
 				bonus = 1.0

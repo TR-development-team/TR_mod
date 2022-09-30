@@ -1,0 +1,76 @@
+﻿capital = 202 #Kiev
+
+oob = "UKS_1936"
+
+set_research_slots = 3
+
+set_major = yes
+
+add_ideas = {
+        Democratic_centralism
+        limited_conscription
+        partial_economic_mobilisation
+}
+set_stability = 0.5
+country_event = { id = TR_Ukraine.2 days = 335 }
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1			
+	interwar_antiair = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		coastal_defense_ships = 1
+	}
+}
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1935.9.8"
+	election_frequency = 36
+	elections_allowed = yes
+}
+
+set_popularities = {	totalist = 12
+	syndicalist = 9
+	radical_socialist = 12
+	social_democrat = 21
+	social_liberal = 10
+	market_liberal = 8
+	social_conservative = 2
+	authoritarian_democrat = 3
+	paternal_autocrat = 3
+	national_populist = 9
+	Gnosticism = 11
+}
+
+recruit_character = UKS_Nestor_Makhno
+recruit_character = UKS_Nikita_Khrushchev
+recruit_character = UKS_Volodymyr_Vynnychenko
+
+recruit_character = UKS_ivan_chernyakhovsky
+recruit_character = UKS_grigory_kulik
+recruit_character = UKS_kirill_moskalenko
+recruit_character = UKS_dmitry_lelyushenko
+recruit_character = UKS_rodion_malinovsky
+recruit_character = UKS_vitaly_primakov
+

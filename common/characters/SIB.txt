@@ -1,0 +1,63 @@
+characters={
+	SIB_Konstantin_Chernenko={
+		name=SIB_Konstantin_Chernenko
+		portraits={
+			civilian={
+				large="gfx/leaders/SIB/Portrait_SIB_Konstantin_Chernenko.png"
+			}
+			army={
+				large="gfx/leaders/SIB/Portrait_SIB_Konstantin_Chernenko.png"
+			}
+		}
+		country_leader={
+			ideology=Totalist_Leninist_subtype
+		}
+		country_leader={
+			ideology=Leninist_subtype
+		}
+	}
+	SIB_Suzuki_Yorimichi={
+		name=SIB_Suzuki_Yorimichi
+		portraits={
+			civilian={
+				large="gfx/leaders/SIB/Portrait_SIB_Suzuki_Yorimichi.png"
+			}
+			army={
+				large="gfx/leaders/SIB/Portrait_SIB_Suzuki_Yorimichi.png"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+		}
+		corps_commander = {
+			traits = { brilliant_strategist career_officer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	SIB_Grigory_Semyonov={
+		name=SIB_Grigory_Semyonov
+		portraits={
+			civilian={
+				large="gfx/leaders/SIB/Portraits_SIB_Semyonov.tga"
+			}
+			army={
+				large="gfx/leaders/SIB/Portraits_SIB_Semyonov.tga"
+			}
+		}
+		country_leader={
+			ideology=Military_junta_subtype
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+}

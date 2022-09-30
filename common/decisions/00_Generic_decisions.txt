@@ -305,22 +305,6 @@ propaganda_efforts = {
 					has_offensive_war = yes
 				}
 			}
-			if = {
-				limit = {
-					tag = SPR
-					has_dlc = "La Resistance"
-				}
-				NOT = {
-					has_idea = SPR_political_violence
-				}
-			}
-			if = {
-				limit = {
-					original_tag = SPR
-					has_dlc = "La Resistance"
-				}
-				has_global_flag = scw_over
-			}
 			
 			# lower the cost for neighbors
 			if = {
@@ -421,6 +405,116 @@ propaganda_efforts = {
 				factor = 0
 				has_war_support > 0.9
 			}
+		}
+	}
+}
+TR_foreign_support = {
+	return_cores_to_ally = {
+		icon = generic_agreement
+
+		available = {
+			if = {
+				limit = { has_war = yes }
+				surrender_progress < 0.20
+			}
+			else = {
+				has_war = no
+			}
+		}
+		visible = {
+			is_in_faction_with = FROM
+			NOT = {
+				has_country_flag = returning_land
+			}
+			any_owned_state = {
+				is_claim_or_core_of_FROM = yes
+				is_claim_or_core_of_ROOT = no
+				OR = {
+					any_neighbor_state = { is_owned_by = FROM }
+					is_coastal = yes
+				}
+				NOT = { has_state_flag = keeping_state@ROOT }
+			}
+		}
+
+		target_root_trigger = {
+			is_in_faction = yes
+		}
+
+		target_array = faction_members
+
+		target_trigger = {
+			is_in_faction_with = FROM
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		ai_will_do = {
+			factor = 10
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision return_cores_to_ally target: [From.GetName]"
+			set_country_flag = returning_land
+     		FROM = { save_event_target_as = return_to }
+			country_event = TR_generic_event.1
+		}
+	}
+
+	return_cores_to_subject = {
+		icon = generic_agreement
+
+		available = {
+			if = {
+				limit = { has_war = yes }
+				surrender_progress < 0.20
+			}
+			else = {
+				has_war = no
+			}
+		}
+		visible = {
+			is_in_faction = no
+			num_subjects > 0
+			NOT = {
+				has_country_flag = returning_land
+			}
+			country_exists = FROM
+			has_subject = FROM
+			any_owned_state = {
+				is_claim_or_core_of_FROM = yes
+				is_claim_or_core_of_ROOT = no
+				OR = {
+					any_neighbor_state = { is_owned_by = FROM }
+					is_coastal = yes
+				}
+				NOT = { has_state_flag = keeping_state@ROOT }
+			}
+		}
+
+		target_root_trigger = {
+			is_in_faction = no
+			num_subjects > 0
+		}
+
+		target_array = subjects
+
+		target_trigger = {
+			has_subject = FROM
+		}
+
+		cost = 0
+
+		fire_only_once = no
+		ai_will_do = {
+			factor = 10
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision return_cores_to_subject target: [From.GetName]"
+			set_country_flag = returning_land
+			FROM = { save_event_target_as = return_to }
+			country_event = TR_generic_event.1
 		}
 	}
 }

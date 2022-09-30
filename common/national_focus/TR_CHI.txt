@@ -119,7 +119,7 @@ focus_tree = {
 	#清党運動
 	focus = {
 		id = CHI_hYsegJfG
-		icon = GFX_focus_TUR_purge_the_kemalists
+		icon = GFX_goal_generic_political_purge
 		x = 8
 		y = 3
 		cost = 6
@@ -143,7 +143,7 @@ focus_tree = {
 	#教育改革
 	focus = {
 		id = CHI_oHdpwUVZ
-		icon = GFX_focus_research2
+		icon = GFX_goal_generic_education
 		x = 6
 		y = 4
 		cost = 6
@@ -195,7 +195,7 @@ focus_tree = {
 	#警察の持ちたる国
 	focus = {
 		id = CHI_dmaknOol
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_goal_generic_police_state
 		x = 8
 		y = 5
 		cost = 8
@@ -336,7 +336,6 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-		add_stability = -0.1
         hidden_effect = { 
 			add_ideas = CHI_Chen_Cheng
 		    add_ideas = CHI_Chang_Chun
@@ -358,7 +357,7 @@ focus_tree = {
 	#憲兵司令部の設立
 	focus = {
 		id = CHI_Military_corps_2
-		icon = GFX_focus_generic_china1
+		icon = GFX_goal_generic_police_state
 		x = 14
 		y = 3
 		cost = 6
@@ -374,7 +373,7 @@ focus_tree = {
 	#赤匪の殲滅
 	focus = {
 		id = CHI_Military_corps_3
-		icon = GFX_focus_generic_china1
+		icon = GFX_goal_generic_Ban_Communism
 		x = 12
 		y = 4
 		cost = 6
@@ -406,7 +405,7 @@ focus_tree = {
 	#三民主義青年団
 	focus = {
 		id = CHI_Military_corps_4
-		icon = GFX_focus_generic_china1
+		icon = GFX_goal_generic_union_agreement
 		x = 14
 		y = 4
 		cost = 6
@@ -423,7 +422,7 @@ focus_tree = {
 	#民生第一
 	focus = {
 		id = CHI_Military_corps_5
-		icon = GFX_focus_generic_china1
+		icon = GFX_goal_generic_agrarian_reform
 		x = 16
 		y = 4
 		cost = 6
@@ -602,6 +601,9 @@ focus_tree = {
 		available = {
 			has_global_flag = CHI_Central_Plains_War
 		}
+		bypass = {
+		    NOT = {country_exists = KUO }
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = CHI_China_Unification_4 }
 		prerequisite = { focus = CHI_China_Unification_5 }
@@ -627,30 +629,35 @@ focus_tree = {
 		if = {
 			limit = {
 				NGX = { has_country_flag = CHI_Befriend_Wuhan }
+				country_exists = NGX
 			}
 			CHI= { add_to_faction = NGX }
 		}
 		if = {
 			limit = {
 				YNN = { has_country_flag = CHI_Befriend_Wuhan }
+				country_exists = YNN
 			}
 			CHI= { add_to_faction = YNN }
 		}
 		if = {
 			limit = {
 				GXC = { has_country_flag = CHI_Befriend_Wuhan }
+				country_exists = GXC
 			}
 			CHI= { add_to_faction = GXC }
 		}
 		if = {
 			limit = {
 				XSM = { has_country_flag = CHI_Befriend_Wuhan }
+				country_exists = XSM
 			}
 			CHI= { add_to_faction = XSM }
 		}
 		if = {
 			limit = {
 				SCH = { has_country_flag = CHI_Befriend_Wuhan }
+				country_exists = SCH
 			}
 			CHI= { add_to_faction = SCH }
 		}
@@ -696,6 +703,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
+			is_subject = no
 			owns_state = 613
 		}
 	completion_reward = {
@@ -731,6 +739,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		available = {
+			is_subject = no
+			owns_state = 613
+		}		
 	completion_reward = {
 		if = {
 			limit = {
@@ -837,6 +849,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		available = {
+			is_subject = no
+		}
 	completion_reward = {
 		add_ideas = CHI_war_of_resistance_prepare
 		}
@@ -853,6 +868,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
+		available = {
+			is_subject = no
+		}
 	completion_reward = {
 		add_war_support = 0.5
 		}
@@ -866,6 +884,9 @@ focus_tree = {
 		cost = 5
 		bypass = {
 		    NOT = {country_exists = YUN }
+		}
+		available = {
+			is_subject = no
 		}
 		available_if_capitulated = yes
 		prerequisite = { focus = CHI_China_Unification_12 }
@@ -893,6 +914,9 @@ focus_tree = {
 		x = 10
 		y = 14
 		cost = 5
+		available = {
+			is_subject = no
+		}
 		available_if_capitulated = yes
 		prerequisite = { focus = CHI_China_Unification_12 }
 		ai_will_do = {
@@ -959,6 +983,7 @@ focus_tree = {
 		y = 16
 		cost = 5
 		available = {
+			is_subject = no
 			has_global_flag = war_of_resistance_china_win
 		}
 		available_if_capitulated = yes
@@ -984,6 +1009,10 @@ focus_tree = {
 		prerequisite = { focus = CHI_China_Unification_17 }
 		ai_will_do = {
 			factor = 100
+		}
+		available = {
+			is_subject = no
+			has_global_flag = war_of_resistance_china_win
 		}
 	completion_reward = {
 		}

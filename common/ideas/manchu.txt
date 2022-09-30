@@ -126,10 +126,16 @@
 			allowed = {
 				original_tag = MAN
                                   }  
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Head_of_State
 				paternal_autocrat
@@ -146,10 +152,16 @@
 			allowed = {
 				original_tag = MAN
                                   }  
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Government_leaders
 				paternal_autocrat
@@ -167,9 +179,15 @@
 				original_tag = MAN
             }
 			available = {
-				always = no
-		    }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
 				national_populist
@@ -185,10 +203,16 @@
 			allowed = {
 				original_tag = MAN
                                   }  
-                        available = {
-                               always = no
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
 			}
-			removal_cost = -1
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
 				national_populist
@@ -206,15 +230,20 @@
 				original_tag = MAN
 			}
 			available = {
-				always = no
-		    }
-			removal_cost = -1
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Interior
 				paternal_autocrat
 				JAP_Tojo_traits
 			}
 		}
-               
-               }
+    }
 }

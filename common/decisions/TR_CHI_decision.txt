@@ -1,5 +1,54 @@
 CHI_united_policy = {
+	china_integrate_faction_members = {
+		icon = infiltrate_state
+		allowed = {
+			can_become_china = yes
+		}
+		available = {
+                        has_global_flag = war_of_resistance_china_win
+			is_neighbor_of = FROM
+			received_expeditionary_forces = { sender = FROM value < 1 }
+		}
+		visible = {
+			is_faction_leader = yes
+			FROM = { is_ally_with = ROOT }
+		}
 
+		target_array = faction_members
+		target_array = subjects
+		target_root_trigger = {
+			is_faction_leader = yes
+		}
+		target_trigger = {
+			is_neighbor_of = FROM
+			FROM = { is_chinese_tag = yes }
+		}
+
+		cost = 40
+		days_remove = 60
+
+		modifier = {
+			political_power_cost = 0.25
+		}
+
+		ai_will_do = {
+			factor = 1000
+			modifier = {
+				factor = 0
+				has_country_flag = integration_underway
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision china_integrate_faction_members target: [From.GetName]"
+			set_country_flag = { flag = integration_underway days = 62 value = 1 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove china_integrate_faction_members target: [From.GetName]"
+			FROM = { country_event = TR_China.34 }
+		}
+	}
 }
 CHI_militaly_reform = {
 	CHI_militaly_reform1 = {

@@ -32,7 +32,6 @@ if = {
 		early_battleship = 1
 		transport = 1
 	}
-	set_naval_oob = "BRA_1936_naval_legacy"
 }
 if = {
 	limit = { has_dlc = "Man the Guns"}
@@ -45,11 +44,9 @@ if = {
 		early_ship_hull_cruiser = 1
 		early_ship_hull_heavy = 1
 		basic_battery = 1
-		basic_secondary_battery = 1
 		basic_torpedo = 1
 		mtg_transport = 1
-	}
-	set_naval_oob = "BRA_1936_naval"	
+	}	
 }
 if = {
 	limit = {
@@ -81,82 +78,12 @@ set_popularities = {
 	national_populist = 10
         Gnosticism = 5
 }
+recruit_character = BRR_luis_carlos_prestes
+recruit_character = BRR_armando_sales
+recruit_character = BRR_getulio_vargas
+recruit_character = BRR_plinio_salgado
 
-create_country_leader = {
-	name = "ゼリオ・デ・モラエス"
-	desc = "POLITICS_MORAES_DESC"
-	picture = "gfx/leaders/BRA/Portrait_BRA_Zelio_de_moraes.tga"
-	expire = "1965.1.1"
-	ideology = Gnosticism_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "プリニオ・サルガード"
-	desc = "POLITICS_SALGADO_DESC"
-	picture = "gfx/leaders/BRA/Portrait_BRA_Plinio_Salgado.png"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "ジェトゥリオ・ヴァルガス"
-	desc = "POLITICS_GETULIO_VARGAS_DESC"
-	picture = "gfx/leaders/BRA/Portrait_BRA_Vargas.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "ジェトゥリオ・ヴァルガス"
-	desc = "POLITICS_GETULIO_VARGAS_DESC"
-	picture = "gfx/leaders/BRA/Portrait_BRA_Vargas.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
 set_convoys = 40
-
-
-
-create_corps_commander = {
-	name = "Eurico Gaspar Dutra"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_1.dds"
-	traits = { ranger  }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-
-create_corps_commander = {
-	name = "Mascarenhas de Morais"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_5.dds"
-	traits = {  jungle_rat }
-	skill = 4
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 4
-}
-
-create_navy_leader = {
-	name = "Augusto Rademaker"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_navy_3.dds"
-	traits = {  }
-	skill = 3
-}
 
 if = {
 	limit = {

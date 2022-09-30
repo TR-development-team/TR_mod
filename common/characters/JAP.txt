@@ -3,23 +3,23 @@ characters={
 		name=JAP_Kita_Ikki
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Kita_Ikki2.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Kita_Ikki2.png"
 			}
 		}
 		country_leader={
                         desc = "POLITICS_KITA_IKKI_DESC"
-			ideology=totalist_subtype
+			ideology=pure_socialism_subtype
 		}
 	}
 	JAP_oosugi_sakae={
 		name=JAP_oosugi_sakae
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_osugi.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_oosugi_sakae.png"
 			}
 		}
 		country_leader={
-			ideology=syndicalist_subtype
+			ideology=anarco_syndicalist_subtype
 		}
 	}
 	JAP_Tokuda_Kyuichi={
@@ -30,96 +30,96 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=radical_socialist_subtype
+			ideology=Leninist_subtype
 		}
 	}
 	JAP_Abe_Iso={
 		name=JAP_Abe_Iso
 		portraits={
 		    civilian={
-			        large="gfx/leaders/JAP/Portrait_JAP_Abeiso.tga"
+			        large="gfx/leaders/JAP/Portrait_JAP_Abeiso.png"
 		    }
 		}
 		country_leader={
-			ideology=social_democrat_subtype
+			ideology=Christian_socialism_subtype
 		}
 	}
 	JAP_Katayama_Tetsu={
 		name=JAP_Katayama_Tetsu
 		portraits={
 		    civilian={
-		        large="gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.tga"
+		        large="gfx/leaders/JAP/Portrait_JAP_Katayama_Tetsu.png"
 		    }
 		}
 		country_leader={
-			ideology=social_democrat_subtype
+			ideology=Christian_socialism_subtype
 		}
 	}
 	JAP_Inukai_Tsuyoshi={
 		name=JAP_Inukai_Tsuyoshi
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_inukai.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_inukai.png"
 			}
 		}
 		country_leader={
-			ideology=social_liberal_subtype
+			ideology=Pan_Asianism_subtype
 		}
 	}
 	JAP_Nakano_Seigo={
 		name=JAP_Nakano_Seigo
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_nakanoseigo.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_nakanoseigo.png"
 			}
 		}
 		country_leader={
-			ideology=social_liberal_subtype
+			ideology=Pan_Asianism_subtype
 		}
 	}
 	JAP_machida_chuji={
 		name=JAP_machida_chuji
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_machida.tga"
+				large="gfx/leaders/JAP/Portrait_Japan_machida.png"
 			}
 		}
 		country_leader={
                         desc = "POLITICS_MACHIDA_CHUJI_DESC"
-			ideology=market_liberal_subtype
+			ideology=parliamentarism_subtype
 		}
 	}
 	JAP_Suzuki_Kisaburo={
 		name=JAP_Suzuki_Kisaburo
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_suzukikisa.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_suzukikisa.png"
 			}
 		}
 		country_leader={
-			ideology=social_conservative_subtype
+			ideology=Royal_Centerism_subtype
 		}
 	}
 	JAP_Kuhara_Fusanosuke={
 		name=JAP_Kuhara_Fusanosuke
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Kuhara_Fusanosuke.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Kuhara_Fusanosuke.png"
 			}
 		}
 		country_leader={
-			ideology=social_conservative_subtype
+			ideology=Royal_Centerism_subtype
 		}
 	}
 	JAP_Hatoyama_Ichiro={
 		name=JAP_Hatoyama_Ichiro
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.png"
 			}
 		}
 		country_leader={
-			ideology=social_conservative_subtype
+			ideology=liberal_conservative_subtype
 		}
 	}
 	JAP_Tokonami_Takejiro={
@@ -137,34 +137,34 @@ characters={
 		name=JAP_Suzuki_Kisaburo
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_suzukikisa.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_suzukikisa.png"
 			}
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
+			ideology=national_coalition_subtype
 		}
 	}
 	JAP_machida_chuji_2={
 		name=JAP_machida_chuji
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_machida.tga"
+				large="gfx/leaders/JAP/Portrait_Japan_machida.png"
 			}
 		}
 		country_leader={
                         desc = "POLITICS_MACHIDA_CHUJI_DESC"
-			ideology=authoritarian_democrat_subtype
+			ideology=national_coalition_subtype
 		}
 	}
 	JAP_Daihonei={
 		name=JAP_Daihonei
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Daihonei.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Daihonei.png"
 			}
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
+			ideology=prussian_constitutionalism_subtype
                         traits={ Power_struggle }
 		}
 	}
@@ -172,55 +172,55 @@ characters={
 		name=JAP_Hatoyama_Ichiro
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.png"
 			}
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
+			ideology=national_coalition_subtype
 		}
 	}
 	JAP_Ugaki_Kazushige_2={
 		name=JAP_Ugaki_Kazushige
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.tga"
+				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.png"
 			}
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
+			ideology=national_coalition_subtype
 		}
 	}
 	JAP_Nagata_Tetsuzan={
 		name=JAP_Nagata_Tetsuzan
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_nagata.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_nagata.png"
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=militarism_subtype
 		}
 	}
 	JAP_Hideki_Tojo_2 ={
 		name=JAP_Hideki_Tojo_int
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_tojo.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_tojo.png"
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=militarism_subtype
 		}
 	}
 	JAP_Ugaki_Kazushige={
 		name=JAP_Ugaki_Kazushige
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.tga"
+				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.png"
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=militarism_subtype
 		}
 	}
 	JAP_Araki_Sadao={
@@ -231,7 +231,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=kokoku_shikan_subtype
 		}
 	}
 	JAP_Konoe_Fumimaro={
@@ -243,18 +243,18 @@ characters={
 		}
 		country_leader={
                         desc = "POLITICS_KONOE_FUMIMARO_DESC"
-			ideology=national_populist_subtype
+			ideology=president_principle_subtype
 		}
 	}
 	JAP_yasuhito={
 		name=JAP_yasuhito
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_titibu.tga"
+				large="gfx/leaders/JAP/Portrait_Japan_titibu.png"
 			}
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=kokoku_shikan_subtype
 		}
 	}
 	JAP_hirohito_1={
@@ -265,7 +265,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=kokoku_shikan_subtype
 		}
 	}
 	JAP_Takeuchi_Kiyomaro={
@@ -435,7 +435,7 @@ characters={
 		name=JAP_Nagata_Tetsuzan
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_nagata.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_nagata.png"
 				small=GFX_idea_JAP_Nagata_Tetsuzan
 			}
 		}
@@ -452,7 +452,7 @@ characters={
 		name=JAP_Hideki_Tojo_int
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_tojo.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_tojo.png"
 				small=GFX_idea_JAP_Hideki_Tojo
 			}
 		}
@@ -469,7 +469,7 @@ characters={
 		name=JAP_Obata_Toshiro
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Potraits_JAP_ObataToshiro.tga"
+				large="gfx/leaders/JAP/Potraits_JAP_ObataToshiro.png"
 				small=GFX_idea_JAP_Obata_Toshiro
 			}
 		}
@@ -642,7 +642,7 @@ characters={
 		name=JAP_rikichi_ando
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Ando_RIkichi.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Ando_RIkichi.png"
 				small="gfx/interface/ideas/idea_JAP_rikichi_ando.dds"
 			}
 		}

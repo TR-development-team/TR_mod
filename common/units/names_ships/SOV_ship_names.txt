@@ -1,4 +1,167 @@
 ﻿##### USSR NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+SOV_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	fallback_name = "Esminets %d"					
+
+	unique = {											
+		# Starting with Leningrad and Gnevny classes
+		"Leningrad" "Moskva" "Kharkov" 
+		"Gnevny" "Gordy" "Grozny" "Sokrushitelny" "Grozyashchy" "Stremitelny" "Bodry" "Bystry" "Bezuprechny" "Bditelny" "Boyky" "Gremyashchy" "Steregushchy" "Gromky" 
+		"Besposhchadny" "Rezvy" "Ryany" "Retivy" "Razyashchy" "Rastoropny" "Reshitelny" "Retivy" "Revnostny" "Rekordny" "Razumny" "Rezky" "Razyaryonny" 
+		"Minsk" "Tbilisi" "Baku" "Tashkent" 
+		"Smyshlyony" "Silny" "Storozhevoy" "Serdity" "Stoyky" "Slavny" "Smely" "Soobrazitelny" "Sposobny" "Svirepy" "Skory" "Statny" "Strogy" "Stroyny" "Sovershenny" "Svobodny" 
+		"Opytny" "Ognevoy" "Osmotritelny" "Vnushitelny" "Stalin" "Otlichny" "Vynoslivy" "Vlastny" "Ozornoy" "Obraztsovy" "Otvazhny" "Odaryonny" "Ognenny" "Ozhestochonny" 
+		"Ostry" "Oslepitelny" "Ostorozhny" "Otchotlivy" "Organizovanny" "Otborny" "Otrazhayushchy" "Otmenny" "Otchayanny" "Obshchitelny"  
+		"Smetlivy" "Sergo Ordzhonikidze" "Surovy" "Strashny" "Zharky" "Zhivoy" "Zhguchy" "Zhestoki" "Zhutki" "Vedushchi" "Vnezapny"
+		"Derzky" "Doblestny" "Dostoyny" "Druzhny" "Dyeyatelny" "Letuchy" "Likhoy" "Lyogky" "Lovky" "Prytky" "Pylky" "Prochny" "Provorny" 
+		"Kiyev" "Yerevan" "Stalinabad" "Petrozavodsk" "Ochakov" "Perekop" "Ashkhabad" "Alma-Ata" 			
+		# Fictional (and older) names start here
+		"Garibaldi" "Zheleznyakov" "Pospeshny" "Provorny" "Razvitoy" "Peredovoy" "Burny" "Boevoy" "Pronzitelny" "Porazhayushchy" "Tiflis" "Vitse Admiral Drozd" 
+		"Polezny" "Prozorlivy" "Podvizhny" "Besstrashny" "Besshumny" "Okhotnik" "Oporny" "Ognedyshachy" "Obkhodnoy" "Otryvisty" "Opustoshitelny" "Osnashchonny" "Obzhigayushchy" 
+		"Okhranyayushchy" "Ozabochenny"
+		"Volodarsky" "Uritsky" "Engels" "Artyom" "Lenin" "Voykov" "Spartak" "Kuybyshev" "Karl Liebknecht" "Karl Marx" "Kalinin" "Dzerzhinsky" "Zheleznyakov" "Nezamozhnik" "Shaumyan" 
+	}
+}
+
+### LIGHT CRUISER NAMES###
+SOV_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	fallback_name = "Lyogky Kreyser %d"
+
+	unique = {
+		"Chapayev" "Zheleznyakov" "Kuybyshev" "Chkalov" "Ordzhonikidze" "Sverdlov" "Frunze" "Murmansk" "Komintern" "Krasny Krym" "Chervona Ukrayna" "Krasny Kavkaz" 
+		# Fictional (postwar) names start here
+		"Dzerzhinsky" "Zhdanov" "Aleksandr Nevsky" "Admiral Nakhimov" "Admiral Ushakov" "Admiral Lazarev" "Aleksandr Suvorov" "Admiral Senyavin" 
+		"Dmitry Pozharsky" "Oktyabrskaya Revolutsiya" "Mikhail Kutuzov" "Grozny" "Profintern" "Grozneft" "Azneft" "Vitse Admiral Drozd" 
+		"Admiral Zozulya" "Vladivostok" "Sevastopol" "Admiral Isakov" "Admiral Makarov" "Marshal Voroshilov" "Admiral Oktyabrsky" "Admiral Isachenkov" "Marshal Budyonny" 
+		"Vasily Chapayev" "Admiral Yumashev" "Nikolayev" "Ochakov" "Kerch" "Azov" "Tashkent" "Tallin" "Admiral Flota Lobov" "Komsomolets" "Admiral Gorshkov" 
+	}
+}
+
+### HEAVY CRUISER NAMES###
+SOV_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	fallback_name = "Tyazhely Kreyser %d"
+
+	unique = {
+		"Kirov" "Voroshilov" "Maksim Gorky" "Molotov" "Kaganovich" "Kalinin" "Tallin" "Chapayev" "Zheleznyakov" "Kuybyshev" "Chkalov" "Frunze" "Ordzhonikidze" "Sverdlov"
+		# Fictional (postwar) names start here
+		"Komsomolets" "Dzerzhinsky" "Zhdanov" "Aleksandr Nevsky" "Admiral Nakhimov" "Admiral Ushakov" "Admiral Lazarev" "Aleksandr Suvorov" 
+		"Admiral Senyavin" "Dmitry Pozharsky" "Oktyabrskaya Revolutsiya" "Murmansk" "Mikhail Kutuzov" "Grozny" "Admiral Fokin" "Admiral Golovko" "Khabarovsk"
+	}
+}
+
+### MINELAYER NAMES###
+SOV_MINELAYERS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_MINELAYERS
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
+	
+	fallback_name = "Minny Zagraditel' %d"
+
+	unique = {
+		# Cruiser and DD Minelayers
+		"Bug" "Gidrograf" "Marti" "Murman" "Okean" "Okhotsk" "Zyuyd" "Don" "Katun" "Sukhona" "Vychegda" "Pripyat" 
+		# Older and smaller minelayer names
+		"Pervoye Maya" "Amur" "Yenisey" "Azimut" "Yanvarya" "Volga" "Voin" "Oko" 
+	}
+}
+
+### BATTLESHIP NAMES ###
+SOV_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	fallback_name = "Linkor %d"		
+
+	unique = {
+			"Arkhangelsk" "Novorossysk" "Sovyetsky Soyuz" "Sovyetskaya Ukrayna" "Sovyetskaya Byelorussiya" "Sovyetskaya Rossiya" "Oktyabrskaya Revolutsiya" "Marat" "Frunze" "Parizhskaya Kommuna" 											
+			# Fictional names start here
+			 "Murmansk" "Vladivostok" "Karl Marx" "Vladimir Lenin" "Iosif Stalin" "Volya" "Engels" "Aleksandr Nevsky" "Admiral Kuznetsov"  
+	}
+}
+
+### BATTLECRUISER NAMES ###
+SOV_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	fallback_name = "Lineyny Kreyser %d"		
+
+	unique = {
+			"Kronshtadt" "Sevastopol"
+			# Fictional names start here			
+			"Stalingrad" "Moskva" "Kirov" "Frunze" "Kalinin" "Oktyabrskaya Revolutsiya" "Dzerzhinsky" 		
+			"Admiral Ushakov" "Admiral Lazarev" "Admiral Nakhimov" "Yuri Andropov" "Admiral Kuznetsov" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+SOV_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	fallback_name = "Avianosets %d"	
+
+	unique = {
+			# Fictional names start here
+			"Moskva" "Leningrad" "Oryol" "Kiyev" "Minsk" "Novorossysk" "Kharkov" "Baku" "Riga" "Ulyanovsk" "Tblisi" "Admiral Gorshkov" "Leonid Brezhnev" "Admiral Kuznetsov" 
+	}
+}
 
 ### SUBMARINES ###
 SOV_SS_SHCHUKA = {
@@ -107,6 +270,80 @@ SOV_SS_SHCHUKA = {
 	}
 }
 
+SOV_SS_STALINETS = {
+	name = NAME_THEME_HISTORICAL_STALINETS
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	fallback_name = "S-%d"
+	
+	ordered = {
+		1 = {"S-%d"}
+		2 = {"S-%d"}
+		3 = {"S-%d"}
+		4 = {"S-%d"} 
+		5 = {"S-%d"} 
+		6 = {"S-%d"} 
+		7 = {"S-%d"}
+		8 = {"S-%d"}
+		9 = {"S-%d"}
+		10 = {"S-%d"}
+		11 = {"S-%d"}
+		12 = {"S-%d"}
+		13 = {"S-%d"}
+		14 = {"S-%d"}
+		15 = {"S-%d"}
+		16 = {"S-%d"}
+		17 = {"S-%d"}
+		18 = {"S-%d"}
+		19 = {"S-%d"}
+		20 = {"S-%d"}
+	}
+}
+
+SOV_SS_LENINETS = {
+	name = NAME_THEME_HISTORICAL_LENINETS
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	fallback_name = "L-%d"
+	
+	ordered = {
+		1 = {"L-%d"}
+		2 = {"L-%d"}
+		3 = {"L-%d"}
+		4 = {"L-%d"} 
+		5 = {"L-%d"} 
+		6 = {"L-%d"} 
+		7 = {"L-%d"}
+		8 = {"L-%d"}
+		9 = {"L-%d"}
+		10 = {"L-%d"}
+		11 = {"L-%d"}
+		12 = {"L-%d"}
+		13 = {"L-%d"}
+		14 = {"L-%d"}
+		15 = {"L-%d"}
+		16 = {"L-%d"}
+		17 = {"L-%d"}
+		18 = {"L-%d"}
+		19 = {"L-%d"}
+		20 = {"L-%d"}
+	}
+}
+
 SOV_SS_CLASS_K = {
 	name = NAME_THEME_HISTORICAL_CLASS_K
 
@@ -150,6 +387,65 @@ SOV_SS_CLASS_K = {
 	}
 }
 
+### THEME: SOVIET REGIONS ###
+SOV_STATES = {
+	name = NAME_THEME_STATES
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+
+	unique = {
+		"Sovyetsky Soyuz" "Sovyetskaya Rossiya" "Sovyetskaya Ukrayna" "Sovyetskaya Byelorussiya" "Sovyetskaya Gruzinskaya" "Sovyetskaya Armyanskaya" "Sovyetskaya Azerbaydzhanskaya" "Sovyetskaya Kazakhskaya" "Sovyetskaya Tadzhikskaya" "Sovyetskaya Uzbekskaya" "Sovyetskaya Turkmenskaya" "Sovyetskaya Kirgizskaya"
+		#RSFSR's ASSRs and few other ASSRs
+		"Sovyetskaya Bashkirskaya" "Sovyetskaya Dagestanskaya" "Sovyetskaya Krymskaya" "Sovyetskaya Tatarskaya" "Sovyetskaya Chuvashskaya" "Sovyetskaya Yakutskaya" "Sovyetskaya Buryat-Mongolskaya" "Sovyetskaya Karakalpakskaya" "Sovyetskaya Abkhazskaya" "Sovyetskaya Adzharskaya" "Sovyetskaya Nakhichevanskaya"
+		#OLD // NEW
+		"Sovyetskaya Zakavkazskaya" "Sovyetskaya Bukharskaya" "Sovyetskaya Turkestanskaya" "Sovyetskaya Khorezmskaya"
+		"Sovyetskaya Karelo-Finskaya" "Sovyetskaya Moldavskaya" "Sovyetskaya Litovskaya" "Sovyetskaya Latvyskaya" "Sovyetskaya Estonskaya"
+	}
+}
+
+## THEME: SOVIET CITIES ###
+SOV_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+
+	unique = {
+		"Moskva" "Leningrad" "Oryol" "Kiyev" "Minsk" "Stalingrad" "Sevastopol" "Novorossysk" "Rostov-na-Donu" "Tula" "Kharkov" "Baku" "Tblisi" "Arkhangelsk" "Vladivostok" "Kirov" "Astrakhan"
+		"Kalinin" "Murmansk" "Tashkent" "Ashkhabad" "Alma-Ata" "Kerch" "Azov" "Yekaterinburg" "Smolensk" "Kazan" "Gorky" "Chelyabinsk" "Omsk" "Yaroslavl"
+		"Novosibirsk" "Petrozavodsk" "Samara" "Petropavlovsk" "Ufa" "Perm" "Barnaul" "Orenburg" "Tomsk" "Kemerovo" "Ivanovo"
+		"Krasnoyarsk" "Samarkand" "Khabarovsk" "Ulan Ude" "Frunze" "Chita" "Irkutsk" "Krasnodar" "Izhevsk" "Ulyanovsk" "Novokuznetsk" "Penza" "Kursk" "Magnitogorsk"
+		"Tyumen" "Dushanbe" "Kyzyl" "Cheboksary" "Stavropol" "Bryansk" "Belgorod" "Novgorod" "Chernigov" "Voronezh" "Tambov" "Saratov" "Engels" "Tallin" "Riga" "Voroshilov"
+	}
+}
+
+## THEME: FAMOUS SOVIET LEADERS ###
+SOV_LEADERS = {
+	name = NAME_THEME_LEADERS
+
+	for_countries = { RUS }
+
+	can_use = {
+	}
+
+	type = ship
+
+	unique = {
+		"Karl Marx" "Vladimir Lenin" "Iosif Stalin" "Leonid Brezhnev" "Karl Liebknecht" "Mikhail Kutuzov" "Aleksandr Suvorov" "Yuri Andropov" "Dmitry Pozharsky" "Vasily Chapayev" 
+		"Admiral Kuznetsov" "Aleksandr Nevsky" "Admiral Nakhimov" "Admiral Ushakov" "Admiral Lazarev" "Admiral Senyavin" "Admiral Gorshkov" "Admiral Zozulya" 
+		"Admiral Yumashev" "Admiral Isakov" "Admiral Makarov" "Admiral Isachenkov"
+	}
+}
+
 ## THEME: RUSSIAN RIVERS ###
 SOV_RIVERS = {
 	name = NAME_THEME_RIVERS
@@ -179,6 +475,10 @@ SOV_DD_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_DD
 
 	for_countries = { SOV }
+
+	can_use = {
+
+	}
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
@@ -213,6 +513,10 @@ SOV_DE_IMPERIAL = {
 
 	for_countries = { SOV }
 
+	can_use = {
+
+	}
+
 	type = ship
 	ship_types = { ship_hull_light destroyer }			
 
@@ -235,6 +539,9 @@ SOV_CL_IMPERIAL = {
 
 	for_countries = { SOV }
 
+	can_use = {
+
+	}
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser }
 	
@@ -254,6 +561,11 @@ SOV_CA_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CA
 
 	for_countries = { SOV }
+
+	can_use = {
+
+	}
+
 	type = ship
 	ship_types = { ship_hull_cruiser heavy_cruiser }
 	
@@ -274,6 +586,10 @@ SOV_MINELAYERS_IMPERIAL = {
 
 	for_countries = { SOV }
 
+	can_use = {
+
+	}
+
 	type = ship
 	ship_types = { ship_hull_cruiser light_cruiser ship_hull_light destroyer }
 	
@@ -291,6 +607,10 @@ SOV_MINESWEEPERS_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_MINESWEEPERS
 
 	for_countries = { SOV }
+
+	can_use = {
+
+	}
 
 	type = ship
 	ship_types = { ship_hull_light destroyer }
@@ -311,6 +631,10 @@ SOV_BBBC_IMPERIAL = {
 
 	for_countries = { SOV }
 
+	can_use = {
+
+	}
+
 	type = ship
 	ship_types = { ship_hull_heavy battleship battle_cruiser }
 	
@@ -329,6 +653,11 @@ SOV_CV_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_CARRIERS
 
 	for_countries = { SOV }
+
+	can_use = {
+
+	}
+
 	type = ship
 	ship_types = { ship_hull_carrier carrier }
 	
@@ -345,6 +674,10 @@ SOV_SS_IMPERIAL = {
 	name = NAME_THEME_IMPERIAL_SUBMARINES
 
 	for_countries = { SOV }
+
+	can_use = {
+
+	}
 
 	type = ship
 	ship_types = { ship_hull_submarine submarine }
@@ -366,6 +699,10 @@ SOV_IMPERIAL_CITIES = {
 
 	for_countries = { SOV }
 
+	can_use = {
+
+	}
+
 	type = ship
 						
 	unique = {
@@ -381,6 +718,9 @@ SOV_IMPERIAL_GOVERNORATES = {
 
 	for_countries = { SOV }
 
+	can_use = {
+
+	}
 	type = ship
 					
 	unique = {
@@ -396,6 +736,10 @@ SOV_SAINTS = {
 	name = NAME_THEME_SAINTS
 
 	for_countries = { SOV }
+
+	can_use = {
+
+	}
 
 	type = ship
 

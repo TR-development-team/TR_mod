@@ -41,14 +41,4 @@ set_politics = {
 set_popularities = {
 	authoritarian_democrat = 100
 }
-
-create_country_leader = {
-	name = "前田利為"
-	
-	picture = "gfx/leaders/JAP/Portrait_JAP_Maeda.tga"
-	expire = "1960.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
+recruit_character = COG_Maeda_Toshinari

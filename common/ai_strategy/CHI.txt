@@ -15,7 +15,12 @@
 
 CHI_ignore_claims = {
 	allowed = {
-		tag = CHI
+		OR = {
+			original_tag = CHI
+			original_tag = YUN
+			original_tag = NAN
+			original_tag = KUO
+		}
 	}
 	enable = {
 		always = yes
@@ -119,120 +124,6 @@ CHI_ignore_claims = {
 	ai_strategy = {
 		type = ignore_claim
 		id = "ETR"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "TIB"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "MEN"
-		value = 1
-	}
-}
-YUN_ignore_claims = {
-	allowed = {
-		tag = YUN
-	}
-	enable = {
-		always = yes
-	}
-	abort = {
-		always = no
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = ignore_claim
-		id = "CHI"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "JAP"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "GUG"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "SHX"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "MIN"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "PRC"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "YUN"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "KUO"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "HNA"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "HEX"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "DTN"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "SCH"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "YNN"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "NAN"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "SIK"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "ETR"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "NGX"
-		value = 1
-	}
-	ai_strategy = {
-		type = ignore_claim
-		id = "MAN"
 		value = 1
 	}
 	ai_strategy = {

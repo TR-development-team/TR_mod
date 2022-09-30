@@ -1,0 +1,27 @@
+
+state={
+	id=929
+	name="STATE_929"
+	manpower = 105039
+	resources={
+	}
+	
+	state_category = rural
+	
+	history={
+		owner = HUN
+		victory_points = {
+			9661 1 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AUS
+		add_core_of = HUN
+	}
+
+	local_supplies=0.0 
+provinces={
+		3700 9661 11630
+	}
+}
