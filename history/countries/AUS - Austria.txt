@@ -1,7 +1,5 @@
 ﻿capital = 4
-
 oob = "AUS_1936"
-
 set_cosmetic_tag = AUS_Austria
 set_research_slots = 4
 starting_train_buffer = 1.5
@@ -10,22 +8,44 @@ set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
-	tech_support = 1		
+	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	strategic_bomber1 = 1
 	basic_train = 1
 }
+
 if = {
 	limit = {
-		NOT = { has_dlc = "No Step Back" }
+		has_dlc = "By Blood Alone"
+	}
+	set_technology = {
+		aa_lmg = 1
+		engines_1 = 1
+		early_bombs = 1
+		aircraft_construction = 1
+		iw_small_airframe = 1
+		iw_medium_airframe = 1
+		iw_large_airframe = 1
+	}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			tactical_bomber1 = 1
+			strategic_bomber1 = 1
+		}
+	}
+}
+
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
 	}
 	set_technology = {
 		gwtank = 1
@@ -33,6 +53,7 @@ if = {
 		improved_light_tank = 1
 	}
 }
+
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -43,16 +64,24 @@ if = {
 		improved_light_tank_chassis = 1
 	}
 }
+
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	set_technology = {
 		early_destroyer = 1
 		early_light_cruiser = 1
 		early_submarine = 1
 	}
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	set_technology = {
 		basic_naval_mines = 1
 		submarine_mine_laying = 1
@@ -66,18 +95,16 @@ if = {
 		basic_depth_charges = 1
 		coastal_defense_ships = 1
 	}
-       
 }
 
 add_ideas = {
-           Constitutional_monarchy
-           acceptable_minimum_wage
-           trinket_safety_regulations
-           trinket_Unemployment_subsidies
-           trinket_pensions
-           trinket_health_care
-           acceptable_school_system
-           AUS_MINZOKUMONDAI
+	Constitutional_monarchy
+	acceptable_minimum_wage
+	trinket_safety_regulations
+	trinket_Unemployment_subsidies
+	trinket_pensions
+	trinket_health_care
+	acceptable_school_system
 }
 
 set_politics = {
@@ -95,17 +122,15 @@ set_popularities = {
 	authoritarian_democrat = 10
 	paternal_autocrat = 2
 	national_populist = 10
-        Gnosticism = 20
+	Gnosticism = 20
 }
 
-set_stability = 0.50
-
+set_stability = 0.5
 recruit_character = AUS_Karl_Renner
 recruit_character = AUS_Richard_Coudenhove_Kalergi
 recruit_character = AUS_franz_josef_otto_von_habsburg
 recruit_character = AUS_Engelbert_Dollfuss
 recruit_character = AUS_Adolf_Joseph_Lanz
-
 recruit_character = AUS_Eugen_von_Osterreich
 recruit_character = AUS_Franz_Bohme
 recruit_character = AUS_Karl_Eglseer
@@ -114,9 +139,7 @@ recruit_character = AUS_Lothar_Rendulic
 recruit_character = AUS_Karl_Maria_Wiligut
 recruit_character = AUS_Heinrich_Himmler
 recruit_character = AUS_Adolf_Hitler
-
 ### VARIANTS ###
-
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -173,9 +196,14 @@ if = {
 		}
 	}
 }
+
 # 1936 Start #
 if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
+	limit = {
+		not = {
+			has_dlc = "Man the Guns"
+		}
+	}
 	### Ship Variants ###
 	create_equipment_variant = {
 		name = "Dubrovnik Class"
@@ -197,13 +225,15 @@ if = {
 			ship_gun_upgrade = 1
 		}
 	}
-
 }
+
 if = {
-	limit = { has_dlc = "Man the Guns" }
+	limit = {
+		has_dlc = "Man the Guns"
+	}
 	# Submarines #
 	create_equipment_variant = {
-		name = "U-107 Class"				
+		name = "U-107 Class"
 		type = ship_hull_submarine_2
 		parent_version = 0
 		modules = {
@@ -214,7 +244,7 @@ if = {
 	}
 	# Destroyers #
 	create_equipment_variant = {
-		name = "Radetzky Class"				
+		name = "Radetzky Class"
 		type = ship_hull_light_2
 		parent_version = 0
 		modules = {
@@ -230,7 +260,7 @@ if = {
 	}
 	# Cruisers #
 	create_equipment_variant = {
-		name = "Zenta Class"				
+		name = "Zenta Class"
 		type = ship_hull_cruiser_coastal_defense_ship
 		parent_version = 0
 		modules = {

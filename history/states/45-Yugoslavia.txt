@@ -1,25 +1,26 @@
-state={
-	id=45
-	name="STATE_45"
-
-	history={
-		victory_points = { 619 3 }
+state = {
+	id = 45
+	name = "STATE_45"
+	history = {
+		victory_points = {
+			619
+			3
+		}
 		owner = HUN
-                add_core_of = CRO
-                add_core_of = HUN
+		add_core_of = CRO
+		add_core_of = HUN
 		add_core_of = SER
 		buildings = {
 			infrastructure = 3
-
 		}
-
 	}
-
-	local_supplies=0.0 
-provinces={
-		619 3617 3623 9608 9621
+	provinces = {
+		619
+		3617
+		3623
+		9621
 	}
-	manpower=838621
-	buildings_max_level_factor=1.000
-	state_category=town
+	manpower = 838621
+	buildings_max_level_factor = 1
+	state_category = town
 }

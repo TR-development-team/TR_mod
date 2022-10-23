@@ -1,0 +1,27 @@
+
+state={
+	id=980
+	name="STATE_980"
+
+	history={
+		owner = GAL
+		add_core_of = POL
+		add_core_of = GAL
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			6522 3 
+		}
+
+	}
+
+	provinces={
+		466 3434 6522 9494 11507 
+	}
+	manpower=2097000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

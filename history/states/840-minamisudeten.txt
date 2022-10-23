@@ -1,23 +1,23 @@
-state={
-	id=840
-	name="STATE_840"
-	local_supplies=0.0 
-provinces={
-		543 557 5283 7857 11525 
-	}
-	state_category=large_town
-	manpower=1200000
-	history={
+state = {
+	id = 840
+	name = "STATE_840"
+	history = {
 		owner = CZE
-                add_core_of = AUS
-                add_core_of = CZE
+		add_core_of = CZE
 		buildings = {
-			infrastructure = 2
-
+			infrastructure = 3
+			industrial_complex = 1
 		}
-		
-
+		victory_points = {
+			9541
+			3
+		}
 	}
-	buildings_max_level_factor=1.000
+	provinces = {
+		9541
+		11525
+		11556
+	}
+	manpower = 626704
+	state_category = town
 }
-

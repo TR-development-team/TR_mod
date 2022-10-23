@@ -2,19 +2,26 @@
 state={
 	id=945
 	name="STATE_945"
-	manpower = 154354
-	state_category = pastoral
+
 	history={
 		owner = AUS
+		victory_points = {
+			6680 5 
+		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
 		add_core_of = AUS
+
 	}
+
 	provinces={
-		6678 6680 
+		6680 
 	}
+	manpower=546916
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

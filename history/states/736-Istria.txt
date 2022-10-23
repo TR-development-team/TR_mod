@@ -1,35 +1,25 @@
-state={
-	id=736
-	name="STATE_736"
-	
-	state_category = city
-
-	history={
+state = {
+	id = 736
+	name = "STATE_736"
+	history = {
 		victory_points = {
-			6626 1 
+			6626
+			5
 		}
 		owner = ITA
 		add_core_of = ITA
-                add_core_of = AUS
-		add_core_of = CRO
+		add_core_of = AUS
+		add_core_of = SLV
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 2
-			air_base = 4
 			6626 = {
 				naval_base = 5
-
 			}
-
 		}
-
 	}
-
-	local_supplies=0.0 
-provinces={
-		599 6626 11595 11735 
+	provinces = {
+		6626
 	}
-	manpower=2483159
-	buildings_max_level_factor=1.000
+	manpower = 232311
+	state_category = large_town
 }
