@@ -1,34 +1,41 @@
-
-state={
-	id=88
-	name="TR_STATE_88"
-	resources={
-		steel=5.000
-		oil=3.000
+state = {
+	id = 88
+	name = "STATE_88"
+	resources = {
+		steel = 5
+		oil = 3
 	}
-
-	history={
+	history = {
 		owner = GAL
 		victory_points = {
-			442 3 
+			442
+			3
 		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
 			air_base = 4
-
 		}
 		add_core_of = POL
 		add_core_of = GAL
-
+		set_province_name = {
+			id = 442
+			name = VICTORY_POINTS_442_TR
+		}
+		set_state_name = STATE_88_TR
 	}
-
-	provinces={
-		417 442 3410 6499 9412 11398 11413 13205 
+	provinces = {
+		417
+		442
+		3410
+		6499
+		9412
+		11398
+		11413
+		13205
 	}
-	manpower=4493094
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+	manpower = 4493094
+	buildings_max_level_factor = 1
+	state_category = large_town
 }
