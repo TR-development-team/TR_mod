@@ -71,9 +71,6 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= social_conservative_subtype
-		}
-		country_leader={
 			ideology= colonial_government_subtype
 		}
 		country_leader={
@@ -88,14 +85,16 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
+			ideology=oligarchy_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=Military_junta_subtype
 			expire="1965.1.1.1"
 			id=-1
 		}
 	}
-
-
-
 	LIT_karl_gero={
 		name=LIT_karl_gero
 		portraits={

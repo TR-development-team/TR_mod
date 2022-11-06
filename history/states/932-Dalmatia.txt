@@ -1,19 +1,17 @@
-
-state={
-	id=932
-	name="STATE_932" # Dalmatia
+state = {
+	id = 932
+	name = "STATE_932"	# Dalmatia
 	manpower = 1002939
-
 	state_category = large_town
-
-
-	history={
+	history = {
 		owner = AUS
 		victory_points = {
-			3868 3 
+			3868
+			3
 		}
 		victory_points = {
-			3924 3
+			3924
+			3
 		}
 		buildings = {
 			infrastructure = 3
@@ -28,10 +26,22 @@ state={
 		}
 		add_core_of = AUS
 		add_core_of = CRO
+		set_province_name = {
+			id = 3924
+			name = VICTORY_POINTS_3924_TR
+		}
+		set_province_name = {
+			id = 3868
+			name = VICTORY_POINTS_3868_TR
+		}
 	}
-
-	local_supplies=0.0 
-provinces={
-		984 3868 3924 3974 6889 11816 11901 
+	provinces = {
+		984
+		3868
+		3924
+		3974
+		6889
+		11816
+		11901
 	}
 }

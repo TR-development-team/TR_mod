@@ -47,33 +47,33 @@ characters={
 		name=GER_Eugen_Levine
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Eugen.tga"
+				large="gfx/leaders/GER/Portrait_GER_Eugen.png"
 			}
 		}
 		country_leader={
 			ideology=Luxemburgist_subtype
 		}
 	}
-	GER_Arthur_Crispien={
-		name=GER_Arthur_Crispien
+	GER_Kurt_Eisner={
+		name=GER_Kurt_Eisner
 		portraits={
 			civilian={
-				large=""
+				large="gfx/leaders/GER/Portrait_GER_Kurt_Eisner.png"
 			}
 		}
 		country_leader={
-			ideology= Democratic_socialism_subtype
+			ideology= Orthodox_Marxism_subtype
 		}
 	}
 	GER_Otto_Wels={
 		name=GER_Otto_Wels
 		portraits={
 			civilian={
-				large=""
+				large="gfx/leaders/GER/Portrait_GER_Otto_Wels.png"
 			}
 		}
 		country_leader={
-			ideology= social_liberal_subtype
+			ideology= Progressivism_subtype
 		}
 	}
 	GER_Reinhold_Maier={
@@ -124,7 +124,7 @@ characters={
 		name=DDR_Kurt_von_Schleicher
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Schleicher.tga"
+				large="gfx/leaders/DDR/Portrait_DDR_Kurt_von_Schleicher.png"
 			}
 		}
 		country_leader={
@@ -167,7 +167,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { media_personality politically_connected }
+			traits = { media_personality politically_connected organizer }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
@@ -184,7 +184,7 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { organizer logistics_wizard media_personality  }
+			traits = { organizer logistics_wizard media_personality politically_connected }
 			skill = 3
 			attack_skill = 4
 			defense_skill = 2
@@ -196,16 +196,16 @@ characters={
 		name=GER_Rohm
 		portraits={
 			army={
-				large = "gfx/leaders/GER/Portrait_GER_Rohm.tga"
+				large = "gfx/leaders/GER/Portrait_GER_Ernst_Rohm_old.png"
 				small=GFX_idea_GER_Rohm
 			}
 		}
 		field_marshal = {
-			traits = { politically_connected}
-			skill = 1
-			attack_skill = 1
+			traits = { politically_connected urban_assault_specialist }
+			skill = 2
+			attack_skill = 3
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 2
 			logistics_skill = 1
 		}
 	}
@@ -236,11 +236,68 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_reckless media_personality armor_officer war_hero trickster }
+			traits={ trait_reckless media_personality infantry_officer infantry_leader war_hero trickster }
 			skill=4
 			attack_skill=4
 			defense_skill=4
 			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	GER_Bode_Uhse={
+		name=GER_Bode_Uhse
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Bode_Uhse.png"
+				small="GFX_idea_GER_Bode_Uhse"
+			}
+		}
+		corps_commander={
+			traits={ trickster guerilla_fighter politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	GER_Erich_Hoepner={
+		name=GER_Erich_Hoepner
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Erich_Hoepner.png"
+				small="GFX_idea_GER_Erich_Hoepner"
+			}
+		}
+		corps_commander={
+			traits={ armor_officer panzer_leader career_officer brilliant_strategist }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	GER_Max_Hoelz={
+		name=GER_Max_Hoelz
+		portraits={
+			army={
+				large="gfx/leaders/GER/Portrait_GER_Max_Hoelz.png"
+				small="GFX_idea_GER_Max_Hoelz"
+			}
+		}
+		corps_commander={
+			traits={ trickster guerilla_fighter politically_connected trait_reckless urban_assault_specialist }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
 			logistics_skill=3
 			legacy_id=-1
 		}
@@ -337,24 +394,7 @@ characters={
 			legacy_id=18
 		}
 	}
-	GER_paul_hausser={
-		name=GER_paul_hausser
-		portraits={
-			army={
-				large=GFX_portrait_GER_paul_hausser
-				small=GFX_portrait_GER_paul_hausser_small
-			}
-		}
-		corps_commander={
-			traits={ armor_officer politically_connected }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=20
-		}
-	}
+
 
 	GER_friedrich_schulz={
 		name=GER_friedrich_schulz
@@ -413,8 +453,6 @@ characters={
 			legacy_id=32
 		}
 	}
-
-
 	GER_ernsteberhard_hell={
 		name=GER_ernsteberhard_hell
 		portraits={
@@ -557,17 +595,17 @@ characters={
 		name=GER_Walther_Stennes
 		portraits={
 			army={
-				large="gfx/leaders/GER/Portrait_GER_Walther_Stennes.tga"
+				large="gfx/leaders/GER/Portrait_GER_Walther_Stennes.png"
 			}
 		}
 		
 		corps_commander={
-			traits={ trait_reckless }
-			skill=3
-			attack_skill=3
+			traits={ trait_reckless politically_connected urban_assault_specialist }
+			skill=2
+			attack_skill=2
 			defense_skill=1
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 3
+			logistics_skill = 2
 		}
 	}
 	GER_Gregor_Strasser={
@@ -579,10 +617,10 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ politically_connected }
-			skill=2
-			attack_skill=2
-			defense_skill=1
+			traits={ politically_connected media_personality }
+			skill=1
+			attack_skill=1
+			defense_skill=2
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -591,18 +629,18 @@ characters={
 		name=GER_Ernst_von_Salomon
 		portraits={
 			army={
-				large="gfx/leaders/GER/Portrait_GER_Ernst_von_Salomon.tga"
+				large="gfx/leaders/GER/Portrait_GER_Ernst_von_Salomon.png"
 				small=GFX_idea_GER_Ernst_von_Salomon
 			}
 		}
 		
 		corps_commander={
-			traits={ politically_connected }
-			skill=3
+			traits={ trait_reckless politically_connected media_personality }
+			skill=2
 			attack_skill=3
 			defense_skill=1
-			planning_skill = 2
-			logistics_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	GER_Wolf_Heinrich_von_Helldorf={
@@ -616,8 +654,8 @@ characters={
 		corps_commander={
 			traits={ politically_connected }
 			skill=2
-			attack_skill=1
-			defense_skill=1
+			attack_skill=2
+			defense_skill=2
 			planning_skill = 1
 			logistics_skill = 1
 		}
@@ -632,12 +670,12 @@ characters={
 		}
 		
 		corps_commander={
-			traits={ politically_connected }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill = 2
-			logistics_skill = 2
+			traits={ trait_reckless politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill = 1
+			logistics_skill = 1
 		}
 	}
 	GER_Hermann_Ehrhardt={

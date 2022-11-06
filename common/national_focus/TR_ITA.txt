@@ -626,6 +626,7 @@ focus_tree = {
                    OR = { 
                           BUL = { has_country_flag = BUL_Surrender }
                           NOT = { country_exists = BUL }
+						  ITA = { is_in_faction = yes }
                         }
                      }
 		available = {
@@ -1017,6 +1018,7 @@ focus_tree = {
 			is_subject = no	
                         is_in_faction = no
 			}
+		bypass = { ITA = { is_in_faction = yes } }
 		relative_position_id = ITA_Politic_Focus_1
 		prerequisite = { focus = ITA_totalist_Focus_10 }
 		ai_will_do = {

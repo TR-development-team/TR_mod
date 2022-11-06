@@ -2,28 +2,35 @@ state={
 	id=813
 	name="STATE_813"
 	local_supplies=0.0 
-provinces={
-		11960 
+    provinces={
+		 1067 1136 11960 
 	}
-        state_category=metropolis
-	manpower=4389000
-        history={
+    state_category=metropolis
+	manpower=5189000
+    history={
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
 		
 			arms_factory = 2
-			industrial_complex = 5
-                        infrastructure = 5
+			industrial_complex = 3
+                        infrastructure = 4
+			dockyard = 3
+			1136 = {
+				naval_base = 10
 
+			}
+                        }
+			victory_points = {
+				1136 5
+			}	
+                        victory_points = {
+			        1067 3
+		        }	
+			victory_points = {
+				11960 20
+			}
+        }
 
-
-		}
-		
-		victory_points = {
-			11960 20
-		}
-
-	}
 	buildings_max_level_factor=1.000
 }

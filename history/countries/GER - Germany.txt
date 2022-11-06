@@ -166,11 +166,11 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 25
-	syndicalist = 12
-	radical_socialist = 42
+	totalist = 18
+	syndicalist = 16
+	radical_socialist = 32
 	social_democrat = 21
-	social_liberal = 0
+	social_liberal = 13
 	market_liberal = 0
 	social_conservative = 0
 	authoritarian_democrat = 0
@@ -202,12 +202,13 @@ add_ideas = {
             GER_Paul_Levi
             GER_Ernst_Junger_int
             GER_Lev_Trotsky_cos
+            GER_Ludwig_Renn_coa
 }
 
 recruit_character = GER_Otto_Strasser
 recruit_character = GER_Ernst_Junger
 recruit_character = GER_rosa_luxemburg
-recruit_character = GER_Arthur_Crispien
+recruit_character = GER_Kurt_Eisner
 recruit_character = GER_Otto_Wels
 recruit_character = GER_Reinhold_Maier
 recruit_character = GER_Konrad_Adenauer
@@ -224,12 +225,14 @@ recruit_character = GER_Ernst_Junger_marshal
 recruit_character = GER_Rohm
 recruit_character = GER_friedrich_paulus
 recruit_character = GER_erwin_rommel
+recruit_character = GER_Bode_Uhse
+recruit_character = GER_Erich_Hoepner
+recruit_character = GER_Max_Hoelz
 recruit_character = GER_walter_model
 recruit_character = GER_georghans_reinhardt
 recruit_character = GER_walter_kruger
 recruit_character = GER_kurt_student
 recruit_character = GER_hermann_hoth
-recruit_character = GER_paul_hausser
 recruit_character = GER_friedrich_schulz
 recruit_character = GER_sepp_dietrich
 recruit_character = GER_albert_kesselring

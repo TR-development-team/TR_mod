@@ -19,30 +19,7 @@ ENG_per_ardua_ad_astra_1 = {
 		}
 	}
 	enable = {
-		always = yes
-	}
-
-	ai_strategy = {
-		type = role_ratio
-		id = infantry
-		value = -10
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = fighter
-		value = 150
-	}
-}
-
-ENG_per_ardua_ad_astra_2 = {
-	allowed = {
-		OR = {
-			original_tag = ENR
-			original_tag = ENG
-		}
-	}
-	enable = {
-		date > 1938.1.1
+		date > 1937.1.1
 	}
 
 	ai_strategy = {
@@ -51,7 +28,7 @@ ENG_per_ardua_ad_astra_2 = {
 	}
 }
 
-ENG_per_ardua_ad_astra_3 = {
+ENG_per_ardua_ad_astra_2 = {
 	allowed = {
 		OR = {
 			original_tag = ENR
@@ -64,7 +41,7 @@ ENG_per_ardua_ad_astra_3 = {
 
 	ai_strategy = {
 		type = air_factory_balance
-		value = 125
+		value = 140
 	}
 }
 
@@ -158,3 +135,77 @@ ENG_invade_ireland = {
 	}
 }
 
+ENG_invade_ENR = {
+	allowed = {
+	    original_tag = ENG
+	}
+	enable = {
+		country_exists = ENR
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = area_priority
+		id = UK
+		value = 200
+	}
+	ai_strategy = {
+		type = invade
+		id = ENR
+		value = 200
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		tag = ENR
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ENR
+		value = 100
+	}
+}
+
+ENR_invade_ENG = {
+	allowed = {
+	    original_tag = ENR
+	}
+	enable = {
+		country_exists = ENG
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = area_priority
+		id = UK
+		value = 200
+	}
+	ai_strategy = {
+		type = invade
+		id = ENG
+		value = 200
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		tag = ENG
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = ENG
+		value = 100
+	}
+}
+
+ENG_civil_war_strategy = {
+	allowed = { tag = ENG }
+
+	enable = {
+		NOT = { has_country_flag = ENG_revolution_FLAG } 
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = UK
+		value = 200
+	}
+}

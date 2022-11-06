@@ -1,0 +1,35 @@
+
+add_namespace = TR_Hexi
+
+#馬仲英の勝利
+country_event = {
+	id = TR_Hexi.1
+	title = TR_Hexi.1.t
+	desc = TR_Hexi.1.d
+	picture = GFX_report_event_generic_rally
+
+
+    fire_only_once = yes
+    trigger = {
+        tag = HEX
+		SIK = { exists = no }
+        ETR = { exists = no }
+		KML = { is_subject_of = HEX }
+	}
+	
+
+    option = { 
+		name = TR_Hexi.1.a
+		every_state = {
+			limit = {
+				is_core_of = SIK
+			}
+			add_core_of = HEX
+		}
+		annex_country = {
+			target = KML
+			transfer_troops = yes
+		}
+		set_cosmetic_tag = HEX_Xinjiang
+	}
+}

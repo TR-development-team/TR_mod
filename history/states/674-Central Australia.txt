@@ -4,9 +4,10 @@ state={
 	name="STATE_674"
 	manpower = 30000
 	resources={
-                steel=35
+                
 	}
-	state_category = pastoral
+	impassable = yes
+	state_category = wasteland
 
 	history={
 		owner = AST

@@ -145,7 +145,6 @@ ideologies = {
 			can_join_factions = no
 			can_create_factions = no
 			can_send_volunteers = yes
-			can_create_collaboration_government = no
 		}
 		can_host_government_in_exile = yes
 		modifiers = {
@@ -183,7 +182,6 @@ ideologies = {
 			can_join_factions = no
 			can_create_factions = no
 			can_send_volunteers = yes
-			can_create_collaboration_government = no
 		}
 		can_host_government_in_exile = yes
 		modifiers = {
@@ -223,7 +221,6 @@ ideologies = {
 			can_join_factions = no
 			can_create_factions = no
 			can_send_volunteers = yes
-			can_create_collaboration_government = no
 		}
 		can_host_government_in_exile = yes
 		modifiers = {
@@ -262,7 +259,6 @@ ideologies = {
 			can_join_factions = no
 			can_create_factions = no
 			can_send_volunteers = yes
-			can_create_collaboration_government = no
 		}
 		can_host_government_in_exile = yes
 		modifiers = {
@@ -377,7 +373,7 @@ ideologies = {
 		}
 		color = { 142 57 0 }
 		rules = {
-			can_force_government = yes
+			can_force_government = no
 			can_puppet = yes
 			can_join_factions = no
 			can_create_factions = no
@@ -403,6 +399,10 @@ ideologies = {
             Neo_Paganism_subtype = {can_be_randomly_selected = no}
             Aryanism_subtype = {can_be_randomly_selected = no}
 			Proletarian_culture_subtype = {can_be_randomly_selected = no}
+			Tsarebozhiye_subtype = {can_be_randomly_selected = no}
+			Gno_Theocracy_subtype = {can_be_randomly_selected = no}
+			Rastafarianism_subtype = {can_be_randomly_selected = no}
+			theocratic_monarchy_subtype = {can_be_randomly_selected = no}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_Gnosticism_1"

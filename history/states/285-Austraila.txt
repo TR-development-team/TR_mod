@@ -2,7 +2,10 @@
 state={
 	id=285
 	name="STATE_285"
-
+	resources={
+		steel=30
+		aluminium=10
+	}
 	history={
 		owner = AST
 		buildings = {

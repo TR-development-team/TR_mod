@@ -1051,10 +1051,10 @@ country_event = {#エチオピア独立宣言
 			target = ETO
 			type = annex_everything
 		}
-		271 = {
-			add_claim_by = ESA
-		}
-		852 = {
+		every_state = {
+			limit = {
+				is_core_of = ETO
+			}
 			add_claim_by = ESA
 		}
     }

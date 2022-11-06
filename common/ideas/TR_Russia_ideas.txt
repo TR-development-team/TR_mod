@@ -876,6 +876,21 @@
 				resistance_target = -0.1
 			}
 		}
+		SOV_Okhrana_2 = {
+			allowed = {
+				always = no
+			}
+			picture = generic_Military_Police
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = 0.15
+				resistance_target = -0.1
+				resistance_growth = -0.05
+			}
+		}
 		SOV_Republic_Okhrana = {
 			allowed = {
 				always = no
@@ -989,15 +1004,15 @@
 			allowed = {
 				always = no
 			}
-                        
-
 			
 			removal_cost = -1
 			picture = generic_fascism_drift_2
 			removal_cost = -1
 			modifier = {
-                political_power_factor = -0.15
-                stability_factor = 0.25
+                political_power_factor = -0.1
+                stability_factor = 0.1
+				conscription_factor = 0.05
+				experience_gain_army = 0.05
 			}
 		}
 		SOV_CIVILWAR_MARKS = {
@@ -1183,6 +1198,122 @@
 				industrial_capacity_dockyard = -100.0
 				conscription_factor = -100.0
 				training_time_factor = 10000.0
+                                resistance_target = 1.0
+			}
+		}
+		RUS_red_Vozhd = {
+			allowed = {
+				always = no
+			}
+            picture = generic_communism_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = 0.1
+				totalist_drift = 0.10
+			}
+		}
+		RUS_Labour_Emperor = {
+			allowed = {
+				always = no
+			}
+            picture = generic_communism_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.03
+                stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		RUS_Eurasianism = {
+			allowed = {
+				always = no
+			}
+            picture = generic_communism_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				war_support_factor = 0.1
+				justify_war_goal_time = -0.25
+				non_core_manpower = 0.01
+			}
+		}
+		RUS_mind_Revolution = {
+			allowed = {
+				always = no
+			}
+            picture = generic_communism_drift_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_weekly = 0.002
+				production_speed_buildings_factor = 0.1
+				mobilization_speed = 0.1
+				war_support_factor = 0.1
+				surrender_limit= 0.1
+			}
+		}
+		SOV_loyalty_to_the_emperor = {
+			allowed = {
+				always = no
+			}
+            picture = ger_revive_the_kaiserreich
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				defensive_war_stability_factor = 0.05
+				offensive_war_stability_factor = 0.05
+			}
+		}
+		SOV_loyalty_to_the_emperor_1 = {
+			allowed = {
+				always = no
+			}
+            picture = ger_revive_the_kaiserreich
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				defensive_war_stability_factor = 0.05
+				offensive_war_stability_factor = 0.05   
+				surrender_limit= 0.1
+				army_core_defence_factor = 0.05
+			}
+		}
+		SOV_modernization = {
+			allowed = {
+				always = no
+			}
+            picture = man_five_year_plan_industry
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.2   
 			}
 		}
 }
@@ -1208,7 +1339,7 @@
 			traits = { 
 					Head_of_State
 					radical_socialist
-					TR_autocratic_charmer
+					Savinkov_traits
 					}
 				}
 		RUS_Viktor_Chernov = {
@@ -1255,7 +1386,7 @@
 			traits = { 
 					Head_of_State
 					authoritarian_democrat
-					TR_popular_figurehead
+					AlexeiII_traits
 					}
 				}
 		RUS_nikolai_ii = {
@@ -1279,7 +1410,7 @@
 		traits = { 
 			    Head_of_State
 				paternal_autocrat
-				TR_stern_imperialist
+				NikolaiII_traits
 				}
 			}
 		}
@@ -1305,7 +1436,7 @@
 				traits = { 
 						Government_leaders
 						totalist
-						TR_flamboyant_tough_guy
+						TR_kazembek_trait
 						}
 			}
 			RUS_Boris_Savinkov_GL = {
@@ -1497,7 +1628,7 @@
 			traits = { 
 				    Government_leaders
 					paternal_autocrat
-					TR_old_general
+					TR_Wrangel_trait
 					}
 				}
 			RUS_Anton_Denikin = {
@@ -1593,7 +1724,7 @@
 			traits = { 
 				    Government_leaders
 					Gnosticism
-					TR_powerhungry_demagogue
+					TR_taboritsky_trait
 					}
 				}
 			}

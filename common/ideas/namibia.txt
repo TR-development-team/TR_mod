@@ -40,7 +40,7 @@
 			removal_cost = -1
 			modifier = {
                                 justify_war_goal_time = -0.2
-				local_non_core_manpower = 0.1
+				non_core_manpower = 0.1
                                 war_support_factor = 0.1
                                 surrender_limit= 0.1
 			}

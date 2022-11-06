@@ -272,11 +272,42 @@ defined_text = {
 		}
 		localization_key = lib_Christian_democracy_subtype
 	}
+
 	text = {
 		trigger = {
 			has_country_leader_ideology = parliamentarism_subtype
 		}
 		localization_key = parliamentarism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Neo_Canton_system_subtype
+		}
+		localization_key = Neo_Canton_system_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = liberal_conservative_subtype
+		}
+		localization_key = liberal_conservative_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = National_conservative_subtype
+		}
+		localization_key = National_conservative_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = con_Christian_democracy_subtype
+		}
+		localization_key = con_Christian_democracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Royal_Centerism_subtype
+		}
+		localization_key = Royal_Centerism_subtype
 	}
 	text = {
 		trigger = {
@@ -427,5 +458,29 @@ defined_text = {
 			has_country_leader_ideology = Proletarian_culture_subtype
 		}
 		localization_key = Proletarian_culture_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Tsarebozhiye_subtype
+		}
+		localization_key = Tsarebozhiye_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Gno_Theocracy_subtype
+		}
+		localization_key = Gno_Theocracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Rastafarianism_subtype
+		}
+		localization_key = Rastafarianism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = theocratic_monarchy_subtype
+		}
+		localization_key = theocratic_monarchy_subtype
 	}
 } 

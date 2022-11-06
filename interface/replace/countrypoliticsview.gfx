@@ -437,6 +437,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ideology_Tsarebozhiye_subtype"
+		texturefile = "gfx/interface/ideologies/sub/Tsarebozhiye_subtype.png"
+	}
+
+	spriteType = {
 		name = "GFX_ideology_absolute_monarchy_subtype"
 		texturefile = "gfx/interface/ideologies/sub/absolute_monarchy_subtype.png"
 	}
@@ -604,6 +609,26 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_ideology_National_syndicalist_subtype"
 		texturefile = "gfx/interface/ideologies/sub/National_syndicalist_subtype.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_Theocracy_subtype"
+		texturefile = "gfx/interface/ideologies/sub/Theocracy_subtype.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_Gno_Theocracy_subtype"
+		texturefile = "gfx/interface/ideologies/sub/Theocracy_subtype.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_theocratic_monarchy_subtype"
+		texturefile = "gfx/interface/ideologies/sub/Theocracy_subtype.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_Rastafarianism_subtype"
+		texturefile = "gfx/interface/ideologies/sub/Rastafarianism_subtype.png"
 	}
 
 	spriteType = {

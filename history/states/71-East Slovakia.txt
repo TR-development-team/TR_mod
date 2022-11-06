@@ -8,7 +8,7 @@ state = {
 		}
 		victory_points = {
 			6573
-			1
+			3
 		}
 		owner = HUN
 		add_core_of = SLO
@@ -16,6 +16,14 @@ state = {
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+		}
+		set_province_name = {
+			id = 3581
+			name = VICTORY_POINTS_3581_TR
+		}
+		set_province_name = {
+			id = 6573
+			name = VICTORY_POINTS_6573_TR
 		}
 	}
 	provinces = {

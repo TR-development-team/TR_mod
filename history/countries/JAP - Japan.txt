@@ -88,6 +88,12 @@ set_technology = {
 }
 if = {
 	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = { bicycle_infantry = 1 }
+}
+if = {
+	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {

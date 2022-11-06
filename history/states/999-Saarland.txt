@@ -1,0 +1,22 @@
+state = {
+	id = 999
+	name = "STATE_999"
+	resources={
+		steel=59 # was: 100
+		aluminium=7 # was: 24
+	}
+	provinces = {
+		11531
+	}
+	history = {
+		owner = GER
+		victory_points = { 11531 5 }
+		buildings = {
+			infrastructure = 4
+                        industrial_complex = 1
+		}
+		add_core_of = GER
+	}
+	manpower = 1001222
+	state_category = city
+}

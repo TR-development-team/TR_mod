@@ -76,7 +76,7 @@ country_event = {
 				}
                 country_event = {
 					id = TR_news.16
-					days = 5
+					days = 1
 					
 				}
 		}
@@ -101,7 +101,7 @@ country_event = {
 			base = 20
 		}
 		add_ideas = Constitutional_monarchy
-		add_ideas = RUS_Alexander_Guchkov
+
         set_country_flag = SOV_RIKKEN
         add_popularity = {
 			ideology = social_democrat
@@ -123,6 +123,12 @@ country_event = {
 			ideology = authoritarian_democrat
 			popularity = 0.05
 		}
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.51
+		    	days = 1
+		    }
+	    }
 	}
         
     option = {
@@ -149,6 +155,10 @@ country_event = {
 					id = TR_russia.22
 					days = 14
 				}
+            country_event = {
+				id = TR_news.49
+				days = 1
+			}
 		}
 	}
         option = {
@@ -157,8 +167,8 @@ country_event = {
 			base = 20
 		}
 		add_ideas = Democratic_Republic
-		add_ideas = RUS_Vikotor_Chernov
-		add_ideas = RUS_Vikotor_Chernov_GL
+		add_ideas = RUS_Viktor_Chernov
+		add_ideas = RUS_Viktor_Chernov_GL
         set_cosmetic_tag = SOV_REP
         set_country_flag = SOV_MINSHU
         add_stability = -0.1
@@ -187,6 +197,12 @@ country_event = {
 			ideology = social_conservative
 			popularity = 0.05
 		}
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.52
+		    	days = 1
+		    }
+	    }
 	}
 }
 
@@ -322,41 +338,31 @@ country_event = {
 		set_global_flag = Russian_civil_war
         remove_ideas = SOV_revolution_1
 		hidden_effect = {
-		RUS = { 
-			drop_cosmetic_tag = yes
-			transfer_state = 195
-			transfer_state = 208
-            transfer_state = 263
-			transfer_state = 209
-            transfer_state = 246
-            transfer_state = 244
-            transfer_state = 210
-            transfer_state = 207
-			transfer_state = 926
-            transfer_state = 204
-			transfer_state = 194
-            transfer_state = 241
-            transfer_state = 243
-            transfer_state = 242
-            transfer_state = 205
-            transfer_state = 224
-			transfer_state = 247
-            transfer_state = 219
-			transfer_state = 223
-            transfer_state = 222
-			transfer_state = 96
-			transfer_state = 95
-			transfer_state = 94
-			set_capital = {
-				state = 219
-				remember_old_capital = no
-			}
-            }
+			195 = { set_demilitarized_zone = yes }
+			208 = { set_demilitarized_zone = yes }
+			263 = { set_demilitarized_zone = yes }
+			209 = { set_demilitarized_zone = yes }
+			246 = { set_demilitarized_zone = yes }
+			244 = { set_demilitarized_zone = yes }
+			210 = { set_demilitarized_zone = yes }
+			207 = { set_demilitarized_zone = yes }
+			926 = { set_demilitarized_zone = yes }
+			241 = { set_demilitarized_zone = yes }
+			243 = { set_demilitarized_zone = yes }
+			242 = { set_demilitarized_zone = yes }
+			205 = { set_demilitarized_zone = yes }
+			224 = { set_demilitarized_zone = yes }
+			247 = { set_demilitarized_zone = yes }
+			219 = { set_demilitarized_zone = yes }
+			223 = { set_demilitarized_zone = yes }
+			222 = { set_demilitarized_zone = yes }
+			96 = { set_demilitarized_zone = yes }
         BAL = {
 			drop_cosmetic_tag = yes
 			}
 		LIT = {
 			drop_cosmetic_tag = yes
+			country_event = TR_Lithuania.1
 			}
 		BUK = {
 			country_event = {
@@ -416,42 +422,32 @@ country_event = {
 				remember_old_capital = yes
 			}
 			hidden_effect = {
-			RUS = { 
-				drop_cosmetic_tag = yes
-				transfer_state = 195
-				transfer_state = 208
-				transfer_state = 263
-				transfer_state = 209
-				transfer_state = 246
-				transfer_state = 244
-				transfer_state = 210
-				transfer_state = 207
-				transfer_state = 926
-				transfer_state = 204
-				transfer_state = 194
-				transfer_state = 241
-				transfer_state = 243
-				transfer_state = 242
-				transfer_state = 205
-				transfer_state = 224
-				transfer_state = 247
-				transfer_state = 219
-				transfer_state = 223
-				transfer_state = 222
-				transfer_state = 96
-				transfer_state = 95
-				transfer_state = 94
-				set_capital = {
-					state = 219
-					remember_old_capital = no
-				}
-				}
+				195 = { set_demilitarized_zone = yes }
+				208 = { set_demilitarized_zone = yes }
+				263 = { set_demilitarized_zone = yes }
+				209 = { set_demilitarized_zone = yes }
+				246 = { set_demilitarized_zone = yes }
+				244 = { set_demilitarized_zone = yes }
+				210 = { set_demilitarized_zone = yes }
+				207 = { set_demilitarized_zone = yes }
+				926 = { set_demilitarized_zone = yes }
+				241 = { set_demilitarized_zone = yes }
+				243 = { set_demilitarized_zone = yes }
+				242 = { set_demilitarized_zone = yes }
+				205 = { set_demilitarized_zone = yes }
+				224 = { set_demilitarized_zone = yes }
+				247 = { set_demilitarized_zone = yes }
+				219 = { set_demilitarized_zone = yes }
+				223 = { set_demilitarized_zone = yes }
+				222 = { set_demilitarized_zone = yes }
+				96 = { set_demilitarized_zone = yes }
 			BAL = {
 				drop_cosmetic_tag = yes
 				}
-			LIT = {
-				drop_cosmetic_tag = yes
-				}
+		    LIT = {
+			    drop_cosmetic_tag = yes
+			    country_event = TR_Lithuania.1
+			    }
 			BUK = {
 				country_event = {
 					id = TR_central_asia.2
@@ -515,13 +511,35 @@ country_event = {
 		trigger = {
 			SOV = { NOT = { has_country_flag = SOV_Great_Purge_flag } }
 		}
-                hidden_effect = {
-                         country_event = {
-					id = TR_news.8
-					days = 2
-					
-				}
+		
+        hidden_effect = {
+            country_event = {
+				id = TR_news.8
+				days = 2
+			}
 		}
+		RUS = { 
+			drop_cosmetic_tag = yes
+			transfer_state = 195
+			transfer_state = 208
+            transfer_state = 263
+			transfer_state = 209
+            transfer_state = 246
+            transfer_state = 244
+            transfer_state = 210
+            transfer_state = 207
+			transfer_state = 926
+            transfer_state = 241
+            transfer_state = 243
+            transfer_state = 242
+            transfer_state = 205
+            transfer_state = 224
+			transfer_state = 247
+            transfer_state = 219
+			transfer_state = 223
+            transfer_state = 222
+			transfer_state = 96
+            }
 		create_faction = "Soviet_faction"
                 add_ideas = RUS_CIVIL_WAR
                 add_named_threat = { threat = 15 name = RUS_CIVIL_WAR }
@@ -943,6 +961,7 @@ country_event = {
 	
 	option = {
 		name = TR_russia.15.a
+		add_ideas = RUS_Alexander_Guchkov
 		set_politics = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = yes
@@ -974,17 +993,24 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		set_rule = { can_create_factions = no }
-		dismantle_faction = yes
+
 		set_country_flag = SOV_OCREVOLUTION_END
 		remove_ideas = SOV_CIVIL_WAR
 		add_ideas = SOV_CIVILWAR_MARKS
 		hidden_effect = {
+			set_rule = { can_create_factions = no }
+			dismantle_faction = yes
 			every_state = {
 				limit = {
 					is_core_of = RUS
 				}
 				add_core_of = SOV
+			}
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				remove_core_of = RUS
 			}
             country_event = {
 			id = TR_russia.17
@@ -1000,15 +1026,21 @@ country_event = {
 		ai_chance = {
 			base = 1
 		}
-		set_rule = { can_create_factions = no }
-		dismantle_faction = yes
 		set_country_flag = SOV_OCREVOLUTION_END
 		hidden_effect = {
+			set_rule = { can_create_factions = no }
+			dismantle_faction = yes
 			every_state = {
 				limit = {
 					is_core_of = RUS
 				}
 				add_core_of = SOV
+			}
+			every_state = {
+				limit = {
+					is_core_of = RUS
+				}
+				remove_core_of = RUS
 			}
 	    }
     }
@@ -1106,6 +1138,12 @@ country_event = {
 		}
 		add_ideas = RUS_Boris_Savinkov
 		add_ideas = RUS_Boris_Savinkov_GL
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.53
+		    	days = 1
+		    }
+	    }
 	}
 }
 #蒼ざめた馬
@@ -1198,6 +1236,12 @@ country_event = {
 		}
 		RUS_Pyotr_wrangel = { retire = yes }
 		RUS_Pyotr_wrangel_Army = { retire = yes }
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.50
+		    	days = 1
+		    }
+	    }
 	}
 }
 #反ヴラーンゲリ派の摘発
@@ -1245,6 +1289,12 @@ country_event = {
 			Ideology = president_principle_subtype
 		  }
 		}
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.54
+		    	days = 1
+		    }
+	    }
 	}
 	option = {
 		name = TR_russia.25.b
@@ -1273,7 +1323,12 @@ country_event = {
 			ruling_party = totalist
 			elections_allowed = no
 		}
-		
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.56
+		    	days = 1
+		    }
+	    }
 	}
 	option = {
 		name = TR_russia.26.b
@@ -1285,6 +1340,12 @@ country_event = {
 			ruling_party = Gnosticism
 			elections_allowed = no
 		}
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.55
+		    	days = 1
+		    }
+	    }
 	}
 }
 #純化
@@ -1528,6 +1589,7 @@ country_event = {
 			remove_ideas = RUS_genocide
 			remove_ideas = RUS_Spartanism
 			remove_ideas = SOV_Okhrana
+			remove_ideas = FRA_antisemitism
 			add_ideas = generic_Government_leaders_Vacancy
 			add_ideas = generic_Foreign_Affairs_Vacancy
 			add_ideas = generic_Economy_Vacancy
@@ -1566,5 +1628,37 @@ country_event = {
 		set_war_support = 0.5
 		add_ideas = Absolute_monarchy
 		remove_ideas = RUS_empire_collapse
+	}
+}
+#摂政評議会の設置
+country_event = {
+	id = TR_russia.40
+	title = TR_russia.40.t
+	desc = TR_russia.40.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.40.a
+	}
+}
+#ムラドロッシ
+country_event = {
+	id = TR_russia.41
+	title = TR_russia.41.t
+	desc = TR_russia.41.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.41.a
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.1
+		}
 	}
 }

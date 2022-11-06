@@ -151,7 +151,11 @@ has_left_democratic_government = {
 
 # Can be used in any country scope (to ensure the country has no owned state which it doesn't control)
 controls_all_owned_states = {
-	surrender_progress < 0.02
+	custom_trigger_tooltip = {
+		tooltip = TR_controls_all_owned_states
+		surrender_progress < 0.02
+	}
+	
 }
 
 # Checks if the country is in a faction or a puppet

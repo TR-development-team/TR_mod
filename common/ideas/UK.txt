@@ -16,10 +16,8 @@
 			removal_cost = -1
                      
 			modifier = {
-                              stability_factor = -0.20
-			      political_power_cost = 0.50
-			      production_factory_max_efficiency_factor = -0.2
-			      industrial_capacity_factory = -0.2
+                              stability_factor = -0.2
+			      political_power_cost = 0.3
 			}
 		}
                 ENG_depression = {
@@ -37,7 +35,7 @@
 				stability_factor = -0.3
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
-				industrial_capacity_factory = -0.1
+				industrial_capacity_factory = -0.2
 				consumer_goods_factor = 0.25
 				min_export = -0.15
 			}
@@ -86,6 +84,52 @@
 				TR_stern_imperialist
 				}
 			}
+		ENG_Edward_VIII = {
+		
+		picture = ENG_Edward_VIII
+		
+		allowed = {
+			original_tag = ENG
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+		
+		traits = { 
+			    Head_of_State
+				TR_autocratic_charmer
+				}
+			}
+		ENG_George_VI = {
+		
+		picture = ENG_George_VI
+		
+		allowed = {
+			original_tag = ENG
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+		
+		traits = { 
+			    Head_of_State
+				TR_benevolent_gentleman
+				}
+			}
 		}
 	Government_leaders = {	
 		ENG_Winston_Churchill = {
@@ -109,7 +153,7 @@
 		traits = { 
 			    Government_leaders
 				social_conservative
-				TR_flamboyant_tough_guy
+				TR_bulldog
 				}
 			}
 		}

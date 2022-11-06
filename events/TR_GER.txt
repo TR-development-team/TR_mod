@@ -643,3 +643,1298 @@ country_event = {
     }
 
 }
+#独仏開戦
+country_event = {
+	id = TR_germany.10
+	title = TR_germany.10.t
+	desc = TR_germany.10.d
+	picture = GFX_report_event_soldiers_in_france
+    fire_only_once = yes
+	trigger = {
+		tag = GER
+		has_war_with = FRA
+		
+	}
+	option = {
+		name = TR_germany.10.a
+		add_manpower = 100000
+        hidden_effect = {
+            country_event = {
+				id = TR_news.57
+				days = 3
+			}
+		}       
+	}
+}
+#全国レーテ大会の開始
+country_event = {
+	id = TR_germany.11
+	title = TR_germany.11.t
+	desc = TR_germany.11.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_germany.11.a
+		hidden_effect = {
+			country_event = { id = TR_germany.12 days = 6 }
+		}
+		#各政党の支持率
+		set_country_flag = { flag = GER_KPD value = 0 }
+		set_country_flag = { flag = GER_SPD value = 0 }
+		set_country_flag = { flag = GER_USPD value = 0 }
+		set_country_flag = { flag = GER_Black_front value = 0 }
+		set_country_flag = { flag = GER_Consul value = 0 }
+	}
+}
+#二人の同志の辞任
+country_event = {
+	id = TR_germany.12
+	title = TR_germany.12.t
+	desc = TR_germany.12.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	#ありがとう、同志ルクセンブルク！
+	option = {
+		name = TR_germany.12.a
+		hidden_effect = {
+			country_event = { id = TR_germany.13 days = 1 }
+		}
+	}
+}
+#共産党の指導者
+country_event = {
+	id = TR_germany.13
+	title = TR_germany.13.t
+	desc = TR_germany.13.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	#同志レヴィーネ、正統ルクセンブルク主義者
+	option = {
+		name = TR_germany.13.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.14 days = 6 }
+		}
+		set_country_flag = GER_KPD_Eugen_Levine
+		promote_character = GER_Eugen_Levine
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+	#同志トロツキー、レーニンの友
+	option = {
+		name = TR_germany.13.b
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.14 days = 6 }
+		}
+		set_country_flag = GER_KPD_Lev_Trotsky
+		promote_character = GER_Lev_Trotsky
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+}
+#国家主義派の論争
+country_event = {
+	id = TR_germany.14
+	title = TR_germany.14.t
+	desc = TR_germany.14.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	#ユンガーはシュトラッサーへの支持を約束した
+	option = {
+		name = TR_germany.14.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.15 days = 7 }
+		}
+		set_country_flag = GER_Black_front_1
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+	}
+	#シュトラッサーはユンガーに説き伏せられた
+	option = {
+		name = TR_germany.14.b
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.15 days = 7 }
+		}
+		set_country_flag = GER_Consul_1
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+	}
+	#国家主義派は決裂した
+	option = {
+		name = TR_germany.14.c
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.15 days = 7 }
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.02
+		}
+	}
+}
+#エアフルト会談
+country_event = {
+	id = TR_germany.15
+	title = TR_germany.15.t
+	desc = TR_germany.15.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	#SPDとUSPDは選挙協力を約束した
+	option = {
+		name = TR_germany.15.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.16 days = 7 }
+		}
+		set_country_flag = GER_SPD_USPD
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+	}
+	#会談は決裂した
+	option = {
+		name = TR_germany.15.b
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.16 days = 7 }
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.02
+		}
+	}
+}
+#選挙1日目-軍の問題
+country_event = {
+	id = TR_germany.16
+	title = TR_germany.16.t
+	desc = TR_germany.16.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	#大規模な大衆軍(KPD)
+	option = {
+		name = TR_germany.16.a
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = GER_Bodo_Uhse_army
+		hidden_effect = {
+			country_event = { id = TR_germany.17 days = 7 }
+		}
+		modify_country_flag = { flag = GER_KPD value = 1 }
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+	#中央司令部集権化(黒色戦線)
+	option = {
+		name = TR_germany.16.b
+		trigger = {
+			NOT = { has_country_flag = GER_Consul_1 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_government = GER_Black_front_1
+			}
+		}
+		set_country_flag = GER_Erwin_Rommel_army
+		hidden_effect = {
+			country_event = { id = TR_germany.17 days = 7 }
+		}
+		modify_country_flag = { flag = GER_Black_front value = 1 }
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+	}
+	#万人が国防を担う(コンスル)
+	option = {
+		name = TR_germany.16.c
+		trigger = {
+			NOT = { has_country_flag = GER_Black_front_1 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_government = GER_Consul_1
+			}
+		}
+		set_country_flag = GER_ernst_junger_army
+		hidden_effect = {
+			country_event = { id = TR_germany.17 days = 7 }
+		}
+		modify_country_flag = { flag = GER_Consul value = 1 }
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+	}
+	#機甲戦理論の採用(USPD=SPD)
+	option = {
+		name = TR_germany.16.e
+		trigger = {
+			has_country_flag = GER_SPD_USPD
+		}
+		ai_chance = {
+			base = 0 #40
+		}
+		set_country_flag = GER_Erich_Hoepner_army
+		hidden_effect = {
+			country_event = { id = TR_germany.17 days = 7 }
+		}
+		modify_country_flag = { flag = GER_USPD value = 1 }
+		modify_country_flag = { flag = GER_SPD value = 1 }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+	}
+	#大規模自動車化(USPD)
+	option = {
+		name = TR_germany.16.f
+		ai_chance = {
+			base = 0 #40
+		}
+		trigger = {
+			NOT = { has_country_flag = GER_SPD_USPD }
+		}
+		set_country_flag = GER_Erich_Hoepner_army
+		hidden_effect = {
+			country_event = { id = TR_germany.17 days = 7 }
+		}
+		modify_country_flag = { flag = GER_USPD value = 1 }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+	}
+}
+#選挙2日目-諜報機関
+country_event = {
+	id = TR_germany.17
+	title = TR_germany.17.t
+	desc = TR_germany.17.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	#国外諜報への特化(KPD)
+	option = {
+		name = TR_germany.17.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.18 days = 7 }
+		}
+		modify_country_flag = { flag = GER_KPD value = 1 }
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+	#国内諜報への特化(黒色戦線)
+	option = {
+		name = TR_germany.17.b
+		trigger = {
+			NOT = { has_country_flag = GER_Consul_1 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_government = GER_Black_front_1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.18 days = 7 }
+		}
+		modify_country_flag = { flag = GER_Black_front value = 1 }
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+	}
+	#軍事諜報への特化(コンスル)
+	option = {
+		name = TR_germany.17.c
+		trigger = {
+			NOT = { has_country_flag = GER_Black_front_1 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_government = GER_Consul_1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.18 days = 7 }
+		}
+		modify_country_flag = { flag = GER_Consul value = 1 }
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+	}
+	#防諜への特化(USPD=SPD)
+	option = {
+		name = TR_germany.17.e
+		trigger = {
+			has_country_flag = GER_SPD_USPD
+		}
+		ai_chance = {
+			base = 0 #40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.18 days = 7 }
+		}
+		modify_country_flag = { flag = GER_USPD value = 1 }
+		modify_country_flag = { flag = GER_SPD value = 1 }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+	}
+	#防諜への特化(USPD)
+	option = {
+		name = TR_germany.17.f
+		ai_chance = {
+			base = 0 #40
+		}
+		trigger = {
+			NOT = { has_country_flag = GER_SPD_USPD }
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.18 days = 7 }
+		}
+		modify_country_flag = { flag = GER_USPD value = 1 }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+	}
+}
+#選挙3日目-経済政策
+country_event = {
+	id = TR_germany.18
+	title = TR_germany.18.t
+	desc = TR_germany.18.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	#急速な工業化(KPD)
+	option = {
+		name = TR_germany.18.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.19 days = 7 }
+		}
+		modify_country_flag = { flag = GER_KPD value = 1 }
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+	#テクノクラートの役割を重視(黒色戦線)
+	option = {
+		name = TR_germany.18.b
+		trigger = {
+			NOT = { has_country_flag = GER_Consul_1 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_government = GER_Black_front_1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.19 days = 7 }
+		}
+		modify_country_flag = { flag = GER_Black_front value = 1 }
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+	}
+	#戦争産業と経済動員(コンスル)
+	option = {
+		name = TR_germany.18.c
+		trigger = {
+			NOT = { has_country_flag = GER_Black_front_1 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_government = GER_Consul_1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.19 days = 7 }
+		}
+		modify_country_flag = { flag = GER_Consul value = 1 }
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+	}
+	#資本主義の改良(USPD=SPD)
+	option = {
+		name = TR_germany.18.e
+		trigger = {
+			has_country_flag = GER_SPD_USPD
+		}
+		ai_chance = {
+			base = 0 #40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.19 days = 7 }
+		}
+		modify_country_flag = { flag = GER_USPD value = 1 }
+		modify_country_flag = { flag = GER_SPD value = 1 }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+	}
+	#混合経済政策(USPD)
+	option = {
+		name = TR_germany.18.f
+		ai_chance = {
+			base = 0 #40
+		}
+		trigger = {
+			NOT = { has_country_flag = GER_SPD_USPD }
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.19 days = 7 }
+		}
+		modify_country_flag = { flag = GER_USPD value = 1 }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+	}
+}
+#選挙4日目-外交政策
+country_event = {
+	id = TR_germany.19
+	title = TR_germany.19.t
+	desc = TR_germany.19.d
+	picture = GFX_report_event_hol_cabinet_gerbrandy
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	#世界革命(KPD)
+	option = {
+		name = TR_germany.19.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.20 days = 7 }
+		}
+		modify_country_flag = { flag = GER_KPD value = 1 }
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+	#汎ゲルマン主義(黒色戦線)
+	option = {
+		name = TR_germany.19.b
+		trigger = {
+			NOT = { has_country_flag = GER_Consul_1 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_government = GER_Black_front_1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.20 days = 7 }
+		}
+		modify_country_flag = { flag = GER_Black_front value = 1 }
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+	}
+	#対仏報復(コンスル)
+	option = {
+		name = TR_germany.19.c
+		trigger = {
+			NOT = { has_country_flag = GER_Black_front_1 }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 2
+				has_government = GER_Consul_1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.20 days = 7 }
+		}
+		modify_country_flag = { flag = GER_Consul value = 1 }
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+	}
+	#平和維持政策(USPD=SPD)
+	option = {
+		name = TR_germany.19.e
+		trigger = {
+			has_country_flag = GER_SPD_USPD
+		}
+		ai_chance = {
+			base = 0 #40
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.20 days = 7 }
+		}
+		modify_country_flag = { flag = GER_USPD value = 1 }
+		modify_country_flag = { flag = GER_SPD value = 1 }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.03
+		}
+	}
+	#平和維持政策(USPD)
+	option = {
+		name = TR_germany.19.f
+		ai_chance = {
+			base = 0 #40
+		}
+		trigger = {
+			NOT = { has_country_flag = GER_SPD_USPD }
+		}
+		hidden_effect = {
+			country_event = { id = TR_germany.20 days = 7 }
+		}
+		modify_country_flag = { flag = GER_USPD value = 1 }
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+	}
+}
+#結果判定
+country_event = {
+	id = TR_germany.20
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_germany.20 FROM = [From.GetName]" }
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		#KPD勝利
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = GER_KPD
+					value > 2
+				}
+			}
+			country_event = TR_germany.21
+		}
+		#BF勝利
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = GER_Black_front
+					value > 2
+				}
+			}
+			country_event = TR_germany.22
+		}
+		#コンスル勝利
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = GER_Consul
+					value > 2
+				}
+			}
+			country_event = TR_germany.23
+		}
+	    #USPD勝利
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = GER_USPD
+					value > 2
+				}
+				has_country_flag = {
+					flag = GER_SPD
+					value < 1
+				}
+			}
+			country_event = TR_germany.24
+		}
+		#USPD=SPD勝利
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = GER_USPD
+					value > 2
+				}
+				has_country_flag = {
+					flag = GER_SPD
+					value > 2
+				}
+			}
+			country_event = TR_germany.25
+		}
+		#勝者なし
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = GER_SPD
+					value < 3
+				}
+				has_country_flag = {
+					flag = GER_USPD
+					value < 3
+				}
+				has_country_flag = {
+					flag = GER_KPD
+					value < 3
+				}
+				has_country_flag = {
+					flag = GER_Consul
+					value < 3
+				}
+				has_country_flag = {
+					flag = GER_Black_front
+					value < 3
+				}
+			}
+			country_event = TR_germany.26
+		}
+	}
+}
+#KPDの勝利
+country_event = {
+	id = TR_germany.21
+	title = TR_germany.21.t
+	desc = TR_germany.21.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#おめでとう、同志レヴィーネ
+	option = {
+		name = TR_germany.21.a
+		trigger = {
+			has_country_flag = GER_KPD_Eugen_Levine
+		}
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_KPD_focus
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		} 
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+	}
+	#おめでとう、同志トロツキー
+	option = {
+		name = TR_germany.21.b
+		trigger = {
+			has_country_flag = GER_KPD_Lev_Trotsky
+		}
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_KPD_focus
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		} 
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+	}
+}
+#黒色戦線の勝利
+country_event = {
+	id = TR_germany.22
+	title = TR_germany.22.t
+	desc = TR_germany.22.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#おめでとう、同志シュトラッサー
+	option = {
+		name = TR_germany.22.a
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_Nationalist_focus
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		} 
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.1
+		}
+	}
+}
+#コンスルの勝利
+country_event = {
+	id = TR_germany.23
+	title = TR_germany.23.t
+	desc = TR_germany.23.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#おめでとう、同志ユンガー
+	option = {
+		name = TR_germany.23.a
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_Nationalist_focus
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		} 
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+	}
+}
+#USPDの勝利
+country_event = {
+	id = TR_germany.24
+	title = TR_germany.24.t
+	desc = TR_germany.24.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#おめでとう、同志アイスナー
+	option = {
+		name = TR_germany.24.a
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_social_democrat_focus
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		} 
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+	}
+}
+#USPD=SPDの勝利
+country_event = {
+	id = TR_germany.25
+	title = TR_germany.25.t
+	desc = TR_germany.25.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#おめでとう、同志アイスナー
+	option = {
+		name = TR_germany.25.a
+		ai_chance = {
+			base = 40
+		}
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_social_democrat_focus
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		} 
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+	}
+	#おめでとう、同志ヴェルス
+	option = {
+		name = TR_germany.25.b
+		ai_chance = {
+			base = 40
+		}
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_social_democrat_focus
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		} 
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+	}
+}
+#勝者なし
+country_event = {
+	id = TR_germany.26
+	title = TR_germany.26.t
+	desc = TR_germany.26.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#レーテは分裂した
+	option = {
+		name = TR_germany.26.a
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = { id = TR_germany.27 days = 7 }
+		}
+	}
+}
+#第二回投票
+country_event = {
+	id = TR_germany.27
+	title = TR_germany.27.t
+	desc = TR_germany.27.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#おめでとう、同志レヴィーネ
+	option = {
+		name = TR_germany.27.a
+		trigger = {
+			has_country_flag = GER_KPD_Eugen_Levine
+		}
+		ai_chance = {
+			base = 40
+		}
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_KPD_focus
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		} 
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+	}
+	#おめでとう、同志トロツキー
+	option = {
+		name = TR_germany.27.b
+		trigger = {
+			has_country_flag = GER_KPD_Lev_Trotsky
+		}
+		ai_chance = {
+			base = 40
+		}
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_KPD_focus
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		} 
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+	}
+	#おめでとう、同志シュトラッサー
+	option = {
+		name = TR_germany.27.c
+		ai_chance = {
+			base = 40
+		}
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_Nationalist_focus
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		} 
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.1
+		}
+	}
+	#おめでとう、同志ユンガー
+	option = {
+		name = TR_germany.27.e
+		ai_chance = {
+			base = 40
+		}
+        complete_national_focus = GER_start_focus_6
+		load_focus_tree = GER_Nationalist_focus
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		} 
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+	}
+}
+#ドイツ内戦の終結
+country_event = {
+	id = TR_germany.28
+	title = TR_germany.28.t
+	desc = TR_germany.28.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	option = {
+		name = TR_germany.28.a
+		set_country_flag = GER_CIVILWAR_END
+		add_ideas = GER_CIVILWAR_MARKS    
+		remove_ideas = GER_CIVIL_WAR
+		complete_national_focus = GER_start_focus_5
+		85 = {
+			add_manpower = -100000
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = dockyard
+				damage = 1
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		66 = {
+			add_manpower = -200000
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			damage_building = {
+				type = arms_factory
+				damage = 1
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+			remove_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		763 = {
+			add_manpower = -100000
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			damage_building = {
+				type = industrial_complex
+				damage = 1
+			}
+			remove_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+#『ドイツ的』な社会主義
+country_event = {
+	id = TR_germany.29
+	title = TR_germany.29.t
+	desc = TR_germany.29.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	option = {
+		name = TR_germany.29.a
+		if = {
+			limit = { has_government = totalist }
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+				}
+		}
+		if = {
+			limit = { has_government = syndicalist }
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
+				}
+		}
+	}
+}
+#『西洋の没落』
+country_event = {
+	id = TR_germany.30
+	title = TR_germany.30.t
+	desc = TR_germany.30.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	option = {
+		name = TR_germany.30.a
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
+				}
+	}
+}
+#独伊交渉
+country_event = {
+	id = TR_germany.31
+	title = TR_germany.31.t
+	desc = TR_germany.31.d
+	picture = GFX_
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#鋼鉄のような同盟を！
+	option = {
+		name = TR_germany.31.a
+		ai_chance = {
+			base = 80
+		}
+		ITA = { 
+			country_event = {
+			id = TR_germany.32
+			days = 1
+		}
+	}
+    }
+	#不可侵条約と共同防衛の約束を！
+	option = {
+		name = TR_germany.31.b
+		ai_chance = {
+			base = 40
+		}
+		ITA = { 
+			country_event = {
+			id = TR_germany.33
+			days = 1
+		}
+	    }
+    }
+	#必要ない
+	option = {
+		name = TR_germany.31.b
+		ai_chance = {
+			base = 5
+		}
+		add_opinion_modifier = {
+			target = ITA
+			modifier = medium_decrease
+		}
+	}
+}
+country_event = {#ドイツが同盟を提案(イタリア)
+	id = TR_germany.32
+	title = TR_germany.32.t
+	desc = TR_germany.32.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_germany.32.a
+		ai_chance = {
+		    base = 40
+			modifier = {
+				factor = 2
+				has_government = totalist
+			}
+		}
+		if = {
+			limit = { ITA = { is_faction_leader = yes }}
+		every_country = {
+			limit = {
+				is_in_faction_with = ITA
+				is_subject = no
+			}
+			ITA = {
+				remove_from_faction = PREV
+			}
+			GER = {
+				add_to_faction = PREV
+			}
+			ITA = {
+				dismantle_faction = yes
+			}
+		}
+	    }
+		GER = {
+			add_to_faction = ITA
+		}
+	}
+	option = { 
+		name = TR_germany.32.b
+		ai_chance = {
+			base = 40
+		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = medium_decrease
+		}
+	}
+}
+country_event = {#ドイツが不可侵条約を提案(イタリア)
+	id = TR_germany.33
+	title = TR_germany.33.t
+	desc = TR_germany.33.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_germany.33.a
+		ai_chance = {
+		    base = 80
+			modifier = {
+				factor = 2
+				has_government = totalist
+			}
+		}
+		give_guarantee = GER
+		GER = { give_guarantee = GER }
+		diplomatic_relation = {
+			country = GER
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+	option = { 
+		name = TR_germany.33.b
+		ai_chance = {
+			base = 40
+		}
+		add_opinion_modifier = {
+			target = GER
+			modifier = medium_decrease
+		}
+	}
+}
+

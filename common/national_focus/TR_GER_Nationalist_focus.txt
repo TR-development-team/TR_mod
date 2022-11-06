@@ -1,0 +1,1847 @@
+focus_tree = {
+	id = GER_Nationalist_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GER
+		}
+	}
+    continuous_focus_position = { x = 500 y = 1300 }
+
+
+	#コンスルの勝利
+	focus = {
+		id = GER_Consul_focus_1
+		icon = GFX_goal_GER_Ernst_junger
+		x = 2
+		y = 0
+		cost = 0
+        available = {
+			has_government = syndicalist
+            }
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_ideas = totalist_dictatorship
+			add_ideas = GER_Ernst_Junger
+			add_ideas = GER_Ernst_von_Salomon
+			add_ideas = GER_Ernst_Niekisch
+			add_ideas = GER_Ernst_Junger_int
+			hidden_effect = { 
+				country_event = {
+				id = TR_news.58
+				days = 1
+				}
+			}
+		}
+	}
+	#衰退する西洋の克服
+	focus = {
+		id = GER_Consul_focus_2
+		icon = GFX_goal_GER_Spengler_and_Europe
+		x = 2
+		y = 1
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_1 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			country_event = TR_germany.30
+		}
+	}
+	#民族の意志
+	focus = {
+		id = GER_Consul_focus_3
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_2 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#戦場での永劫回帰
+	focus = {
+		id = GER_Consul_focus_4
+		icon = GFX_goal_GER_heroic_nihilism
+		x = 2
+		y = 2
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_2 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_ideas = GER_Nihilism
+		}
+	}
+	#ロマン主義の復興
+	focus = {
+		id = GER_Consul_focus_5
+		icon = GFX_
+		x = 4
+		y = 2
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_2 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
+			}
+		}
+	}
+	#精神と心理の時代
+	focus = {
+		id = GER_Consul_focus_6
+		icon = GFX_
+		x = 2
+		y = 3
+		cost = 8
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_3 }
+		prerequisite = { focus =  GER_Consul_focus_4 }
+		prerequisite = { focus =  GER_Consul_focus_5 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = GER_CIVILWAR_MARKS
+				add_idea = GER_CIVILWAR_MARKS_1
+			}
+			swap_ideas = {
+				remove_idea = GER_Nihilism
+				add_idea = GER_Nihilism_1
+			}
+		}
+	}
+	#中世の復活
+	focus = {
+		id = GER_Consul_focus_7
+		icon = GFX_
+		x = 1
+		y = 4
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_6 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_ideas = GER_chivalry
+		}
+	}
+	#塹壕の経験
+	focus = {
+		id = GER_Consul_focus_8
+		icon = GFX_
+		x = 3
+		y = 4
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_6 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_ideas = GER_trench_experience
+		}
+	}
+	#軍隊式の国家
+	focus = {
+		id = GER_Consul_focus_9
+		icon = GFX_
+		x = 2
+		y = 5
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_7 }
+		prerequisite = { focus =  GER_Consul_focus_8 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			remove_ideas = GER_Paramilitary
+			swap_ideas = {
+				remove_idea = GER_trench_experience
+				add_idea = GER_trench_experience_1
+			}
+		}
+	}
+	#冷酷な闘争
+	focus = {
+		id = GER_Consul_focus_10
+		icon = GFX_
+		x = 1
+		y = 6
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_9 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_trench_experience_1
+				add_idea = GER_trench_experience_2
+			}
+		}
+	}
+	#愛国的アナキズム
+	focus = {
+		id = GER_Consul_focus_11
+		icon = GFX_
+		x = 3
+		y = 6
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_9 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Nihilism_1
+				add_idea = GER_Nihilism_2
+			}
+		}
+	}
+	#鋼鉄の嵐の中で
+	focus = {
+		id = GER_Consul_focus_12
+		icon = GFX_
+		x = 2
+		y = 7
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus =  GER_Consul_focus_10 }
+		prerequisite = { focus =  GER_Consul_focus_11 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.1
+			}
+			swap_ideas = {
+				remove_idea = GER_CIVILWAR_MARKS_1
+				add_idea = GER_CIVILWAR_MARKS_2
+			}
+			swap_ideas = {
+				remove_idea = GER_trench_experience_2
+				add_idea = GER_trench_experience_3
+			}
+		}
+	}
+	#黒色戦線の勝利
+	focus = {
+		id = GER_BF_focus_1
+		icon = GFX_goal_GER_Ottostrasser
+		x = 8
+		y = 0
+		cost = 0
+        available = {
+			has_government = totalist
+            }
+		ai_will_do = {
+			factor = 1000
+		}
+		completion_reward = {
+			add_ideas = totalist_dictatorship
+			add_ideas = GER_Otto_Strasser
+			add_ideas = GER_Gregor_Strasser
+			add_ideas = GER_joseph_goebbels_FA
+			add_ideas = GER_Speer
+			add_ideas = GER_Rohm
+			hidden_effect = { 
+				country_event = {
+				id = TR_news.35
+				days = 1
+				}
+			}
+		}
+	}
+	#国民社会主義の道
+	focus = {
+		id = GER_BF_focus_2
+		icon = GFX_
+		x = 8
+		y = 1
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_1 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+		}
+	}
+	#共産党を攻撃
+	focus = {
+		id = GER_BF_focus_3
+		icon = GFX_
+		x = 6
+		y = 2
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_2 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+            add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.1
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+		}
+	}
+	#突撃隊の国軍化
+	focus = {
+		id = GER_BF_focus_4
+		icon = GFX_
+		x = 8
+		y = 2
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_2 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_stability = -0.1
+            add_ideas = GER_Sturmabteilung
+		}
+	}
+	#右派分子の摘発
+	focus = {
+		id = GER_BF_focus_5
+		icon = GFX_
+		x = 10
+		y = 2
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_2 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+            add_popularity = {
+				ideology = social_democrat
+				popularity = -0.1
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}
+			random_owned_state = {
+				add_manpower = -10000
+			}	
+		}
+	}
+	#第二革命の開始
+	focus = {
+		id = GER_BF_focus_6
+		icon = GFX_goal_GER_german_second_revolution
+		x = 8
+		y = 3
+		cost = 8
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_3 }
+		prerequisite = { focus = GER_BF_focus_4 }
+		prerequisite = { focus = GER_BF_focus_5 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			remove_ideas = GER_Paramilitary
+			swap_ideas = {
+				remove_idea = GER_CIVILWAR_MARKS
+				add_idea = GER_CIVILWAR_MARKS_1
+			}
+			add_ideas = GER_secondrevolution
+		}
+	}
+	#ユンカーの解体
+	focus = {
+		id = GER_BF_focus_7
+		icon = GFX_
+		x = 7
+		y = 4
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_6 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = GER_agrarian_reform
+		}
+	}
+	#ギルド社会主義の受容
+	focus = {
+		id = GER_BF_focus_8
+		icon = GFX_
+		x = 9
+		y = 4
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_6 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.05
+			}
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+		}
+	}
+	#ユダヤ金融資本主義の破壊
+	focus = {
+		id = GER_BF_focus_9
+		icon = GFX_goal_generic_antisemitism_focus
+		x = 8
+		y = 5
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_7 }
+		prerequisite = { focus = GER_BF_focus_8 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_ideas = GER_crash_judea_capitalism
+		}
+	}
+	#ドイツ的道徳
+	focus = {
+		id = GER_BF_focus_10
+		icon = GFX_
+		x = 7
+		y = 6
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_9 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#身分制国家
+	focus = {
+		id = GER_BF_focus_11
+		icon = GFX_
+		x = 9
+		y = 6
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_9 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_ideas = GER_Caste
+		}
+	}
+	#反物質主義の文化大革命
+	focus = {
+		id = GER_BF_focus_12
+		icon = GFX_
+		x = 8
+		y = 7
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_BF_focus_10 }
+		prerequisite = { focus = GER_BF_focus_11 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = GER_secondrevolution
+				add_idea = GER_secondrevolution_1
+			}
+			swap_ideas = {
+				remove_idea = GER_CIVILWAR_MARKS_1
+				add_idea = GER_CIVILWAR_MARKS_2
+			}
+		}
+	}
+	#メラーとシュペングラーの遺産
+	focus = {
+		id = GER_Nationalist_focus_1
+		icon = GFX_goal_GER_Moeller_van_den_Bruck
+		x = 5
+		y = 4
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_Consul_focus_6 focus = GER_BF_focus_6 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			country_event = TR_germany.29
+		}
+	}
+	#ドイツ精神の復興
+	focus = {
+		id = GER_Nationalist_focus_2
+		icon = GFX_
+		x = 5
+		y = 5
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_Nationalist_focus_1 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#ドイツ的社会主義
+	focus = {
+		id = GER_Nationalist_focus_3
+		icon = GFX_
+		x = 5
+		y = 6
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_Nationalist_focus_2 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			add_ideas = GER_german_socialism
+		}
+	}
+	#血と土
+	focus = {
+		id = GER_Nationalist_focus_4
+		icon = GFX_
+		x = 5
+		y = 7
+		cost = 5
+        available = {
+            }
+		prerequisite = { focus = GER_Nationalist_focus_3 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+			add_stability = 0.1
+			swap_ideas = {
+				remove_idea = GER_german_socialism
+				add_idea = GER_german_socialism_1
+			}
+			
+		}
+	}
+	#血の共同体たるライヒ
+	focus = {
+		id = GER_Nationalist_focus_5
+		icon = GFX_
+		x = 5
+		y = 8
+		cost = 8
+        available = {
+            }
+		prerequisite = { focus = GER_Nationalist_focus_4 }
+		prerequisite = { focus = GER_Consul_focus_12 focus = GER_BF_focus_12 }
+		ai_will_do = {
+			factor = 160
+		}
+		completion_reward = {
+            add_ideas = GER_war_socialism
+			remove_ideas = GER_CIVILWAR_MARKS_2
+			remove_ideas = GER_WAR_HORROR
+		}
+	}
+	#戦争への道
+	focus = {
+		id = GER_Nationalist_War_focus_1
+		icon = GFX_
+		x = 14
+		y = 0
+		cost = 5
+        available = {
+			NOT = { 
+				has_idea = GER_CIVILWAR_MARKS
+				has_idea = GER_CIVILWAR_MARKS_1 
+				has_idea = GER_CIVILWAR_MARKS_2
+			}
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	#万人の闘争
+	focus = {
+		id = GER_Nationalist_War_focus_2
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_1 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_manpower = 300000
+		}
+	}
+	#産業動員
+	focus = {
+		id = GER_Nationalist_War_focus_3
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_1 }
+        available = {
+		}
+		bypass = { 	
+			OR = { 
+				has_idea = war_economy
+				has_idea = tot_economic_mobilisation
+				has_idea = tot_economic_mobilisation_1
+			}
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = war_economy
+		}
+	}
+	#同胞の解放
+	focus = {
+		id = GER_Nationalist_War_focus_4
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_1 }
+        available = {
+
+		}
+		bypass = { 
+
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = HOL
+				}
+				add_claim_by = GER
+			}
+			every_state = {
+				limit = {
+					is_core_of = SWI
+				}
+				add_claim_by = GER
+			}
+            #ルクセンブルク
+			add_state_claim = 8
+            #オーストリア
+			add_state_claim = 4
+			add_state_claim = 39
+			add_state_claim = 152
+			add_state_claim = 153
+			add_state_claim = 929
+			add_state_claim = 945
+			#ズデーテンラント
+			add_state_claim = 69
+			add_state_claim = 74
+			add_state_claim = 840
+		}
+	}
+	#エスターライヒの回復
+	focus = {
+		id = GER_Nationalist_War_focus_5
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_2 }
+		prerequisite = { focus = GER_Nationalist_War_focus_3 }
+		prerequisite = { focus = GER_Nationalist_War_focus_4 }
+		available = {
+			is_subject = no
+			is_neighbor_of = AUS
+			OR = {
+				FRA = { has_capitulated = yes }
+				is_in_faction_with = FRA
+				NOT = { country_exists = FRA }
+				}
+			}
+		bypass = {
+		OR = {
+			has_war_with = AUS
+			is_in_faction_with = AUS
+			NOT = { country_exists = AUS }
+			}
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			if = {
+				limit = { country_exists = AUS }
+				create_wargoal = {
+					target = AUS
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#ネーデルラントを攻撃
+	focus = {
+		id = GER_Nationalist_War_focus_6
+		icon = GFX_
+		x = -1
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_5 }
+		available = {
+			is_subject = no
+			}
+		bypass = { OR = { NOT = { country_exists = HOL } HOL = { is_in_faction_with = FRA } } }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_war_with = HOL } NOT = { is_in_faction_with = HOL } country_exists = HOL }
+				create_wargoal = {
+					target = HOL
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#ベーメンのドイツ人
+	focus = {
+		id = GER_Nationalist_War_focus_7
+		icon = GFX_
+		x = 1
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_5 }
+		available = {
+			is_subject = no
+			}
+		bypass = { NOT = { country_exists = CZE  } }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_war_with = CZE } NOT = { is_in_faction_with = CZE } country_exists = CZE }
+				create_wargoal = {
+					target = CZE
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#エルザス=ロートリンゲンか戦争か
+	focus = {
+		id = GER_Nationalist_War_focus_8
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 5
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_6 }
+		prerequisite = { focus = GER_Nationalist_War_focus_7 }
+		available = {
+			if = {
+				date > 1939.7.1
+			}
+			is_subject = no
+			is_neighbor_of = FRA 
+			}
+		bypass = {
+		OR = {
+			has_war_with = FRA 
+			is_in_faction_with = FRA
+			NOT = { country_exists = FRA}
+			}
+		}
+		ai_will_do = {
+			factor = 80
+			modifier = {
+				factor = 0
+				OR = {
+					any_neighbor_country = {
+						has_war_with = GER
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = GER
+							ratio > 0.6
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = FRA
+				type = puppet_wargoal_focus
+				}
+		}
+	}
+	#ドイツ民族を越えて
+	focus = {
+		id = GER_Nationalist_War_focus_9
+		icon = GFX_
+		x = 0
+		y = 5
+		cost = 8
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_8 }
+		available = {
+			is_subject = no
+			OR = {
+				FRA = { has_capitulated = yes }
+				is_in_faction_with = FRA
+				NOT = { country_exists = FRA }
+				}
+			}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_Greater_Germany
+			if = {
+				limit = { has_government = totalist }
+				set_cosmetic_tag = GER_Greater
+			}
+			if = {
+				limit = { has_government = syndicalist }
+				set_cosmetic_tag = GER_Greater_Junger
+			}
+		}
+	}
+	#西へ
+	focus = {
+		id = GER_Nationalist_War_focus_10
+		icon = GFX_
+		x = -2
+		y = 6
+		cost = 8
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_9 }
+		available = {
+			is_subject = no
+			}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			if = {
+				limit = { country_exists = SWI }
+				create_wargoal = {
+					target = SWI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = SPR }
+				create_wargoal = {
+					target = SPR
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = ADU }
+				create_wargoal = {
+					target = ADU
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = CAT }
+				create_wargoal = {
+					target = CAT
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = POR }
+				create_wargoal = {
+					target = POR
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	#東へ
+	focus = {
+		id = GER_Nationalist_War_focus_11
+		icon = GFX_
+		x = 2
+		y = 6
+		cost = 8
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_9 }
+		available = {
+			is_subject = no
+
+			}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			if = {
+				limit = { NOT = { is_in_faction_with = POL } country_exists = POL }
+				create_wargoal = {
+					target = POL
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = LIT } country_exists = LIT }
+				create_wargoal = {
+					target = LIT
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = BAL } country_exists = BAL }
+				create_wargoal = {
+					target = BAL
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = UKR } country_exists = UKR }
+				create_wargoal = {
+					target = UKR
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = UKS } country_exists = UKS }
+				create_wargoal = {
+					target = UKS
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	#南へ
+	focus = {
+		id = GER_Nationalist_War_focus_12
+		icon = GFX_
+		x = -1
+		y = 7
+		cost = 8
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_9 }
+		available = {
+			is_subject = no
+			}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			if = {
+				limit = { country_exists = HUN }
+				create_wargoal = {
+					target = HUN
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = BUL }
+				create_wargoal = {
+					target = BUL
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = ROM }
+				create_wargoal = {
+					target = ROM
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = SER }
+				create_wargoal = {
+					target = SER
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = BOS }
+				create_wargoal = {
+					target = BOS
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = GRE }
+				create_wargoal = {
+					target = GRE
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	#北へ
+	focus = {
+		id = GER_Nationalist_War_focus_13
+		icon = GFX_
+		x = 1
+		y = 7
+		cost = 8
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_9 }
+		available = {
+			is_subject = no
+			}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			if = {
+				limit = { country_exists = DEN }
+				create_wargoal = {
+					target = DEN
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = NOR }
+				create_wargoal = {
+					target = NOR
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = SWE}
+				create_wargoal = {
+					target = SWE
+					type = puppet_wargoal_focus
+				}
+			}
+		}
+	}
+	#鷲は欧州を統べる
+	focus = {
+		id = GER_Nationalist_War_focus_14
+		icon = GFX_
+		x = 0
+		y = 8
+		cost = 8
+		relative_position_id = GER_Nationalist_War_focus_1
+		prerequisite = { focus = GER_Nationalist_War_focus_10 }
+		prerequisite = { focus = GER_Nationalist_War_focus_11 }
+		prerequisite = { focus = GER_Nationalist_War_focus_12 }
+		prerequisite = { focus = GER_Nationalist_War_focus_13 }
+		available = {
+			is_subject = no
+			has_war = no
+			}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#鋼鉄条約
+	focus = {
+		id = GER_Nationalist_Diplomacy_focus_1
+		icon = GFX_
+		x = 21
+		y = 0
+		cost = 5
+        available = {
+			is_subject = no
+			is_faction_leader = yes
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_political_power = 50
+			set_faction_name = Stahlpakt
+		}
+	}
+	#同志モズレー
+	focus = {
+		id = GER_Nationalist_Diplomacy_focus_2
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 5
+		relative_position_id = GER_Nationalist_Diplomacy_focus_1
+		prerequisite = { focus = GER_Nationalist_Diplomacy_focus_1 }
+        available = {
+			is_subject = no
+			is_faction_leader = yes
+            }
+		bypass = {
+		OR = {
+			has_war_with = ENR
+			is_in_faction_with = ENR
+			NOT = { country_exists = ENR }
+			}
+		}
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			GER = { add_to_faction = ENR }
+		}
+	}
+	#イタリアの同志
+	focus = {
+		id = GER_Nationalist_Diplomacy_focus_3
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 5
+		relative_position_id = GER_Nationalist_Diplomacy_focus_1
+		prerequisite = { focus = GER_Nationalist_Diplomacy_focus_1 }
+        available = {
+			is_subject = no
+			is_faction_leader = yes
+			ITA = { OR = { has_government = totalist has_government = national_populist } }
+            }
+		bypass = {
+		OR = {
+			has_war_with = ITA
+			is_in_faction_with = ITA
+			NOT = { country_exists = ITA }
+			}
+			
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			country_event = TR_germany.31
+		}
+	}
+	#ボリシェヴィキとの接触
+	focus = {
+		id = GER_Nationalist_Diplomacy_focus_4
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 5
+		relative_position_id = GER_Nationalist_Diplomacy_focus_1
+		prerequisite = { focus = GER_Nationalist_Diplomacy_focus_1 }
+        available = {
+			is_subject = no
+			is_faction_leader = yes
+            }
+		ai_will_do = {
+			factor = 50
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = RUS
+				modifier = medium_increase
+			}
+		}
+	}
+	#フランス包囲網
+	focus = {
+		id = GER_Nationalist_Diplomacy_focus_5
+		icon = GFX_
+		x = -1
+		y = 2
+		cost = 5
+		relative_position_id = GER_Nationalist_Diplomacy_focus_1
+		prerequisite = { focus = GER_Nationalist_Diplomacy_focus_2 }
+		prerequisite = { focus = GER_Nationalist_Diplomacy_focus_3 }
+        available = {
+			is_subject = no
+			is_faction_leader = yes
+            }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+		}
+	}
+	#アンデス連合との接触
+	focus = {
+		id = GER_Nationalist_Diplomacy_focus_6
+		icon = GFX_
+		x = -1
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_Diplomacy_focus_1
+		prerequisite = { focus = GER_Nationalist_Diplomacy_focus_5 }
+        available = {
+			is_subject = no
+			is_faction_leader = yes
+            }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = PRU
+				modifier = medium_increase
+			}
+		}
+	}
+	#ポーランド問題
+	focus = {
+		id = GER_Nationalist_Diplomacy_focus_7
+		icon = GFX_
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = GER_Nationalist_Diplomacy_focus_1
+		prerequisite = { focus = GER_Nationalist_Diplomacy_focus_4 }
+        available = {
+			is_subject = no
+			is_faction_leader = yes
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_state_core = 86
+			add_state_core = 845
+			POL = { country_event = TR_poland.3 }
+		}
+	}
+	#カフカースとの接触
+	focus = {
+		id = GER_Nationalist_Diplomacy_focus_8
+		icon = GFX_
+		x = 2
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_Diplomacy_focus_1
+		prerequisite = { focus = GER_Nationalist_Diplomacy_focus_7 }
+        available = {
+			is_subject = no
+			is_faction_leader = yes
+            }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = GEO
+				modifier = medium_increase
+			}
+		}
+	}
+	#戦争経済の確立
+	focus = {
+		id = GER_Nationalist_Economy_focus_1
+		icon = GFX_
+		x = 22
+		y = 4
+		cost = 5
+        available = {
+            }
+		ai_will_do = {
+			factor = 120
+		}
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	#平時なき経済
+	focus = {
+		id = GER_Nationalist_Economy_focus_2
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 8
+		available = {
+			has_government = syndicalist
+            }
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_1 }
+		mutually_exclusive = { focus = GER_Nationalist_Economy_focus_3 }
+		ai_will_do = {
+			factor = 120
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -300
+			add_ideas = extensive_conscription
+			add_ideas = tot_economic_mobilisation
+		}
+	}
+	#テクノクラート経済
+	focus = {
+		id = GER_Nationalist_Economy_focus_3
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 8
+		available = {
+			has_government = totalist
+            }
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_1 }
+		mutually_exclusive = { focus = GER_Nationalist_Economy_focus_2 }
+		ai_will_do = {
+			factor = 120
+		}
+		completion_reward = {
+			add_ideas = GER_Technocracy
+		}
+	}
+	#更なる経済動員
+	focus = {
+		id = GER_Nationalist_Economy_focus_4
+		icon = GFX_
+		x = -4
+		y = 2
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_2 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_political_power = -100
+			add_ideas = tot_economic_mobilisation_1
+		}
+	}
+	#右手に槌を左手に剣を
+	focus = {
+		id = GER_Nationalist_Economy_focus_5
+		icon = GFX_
+		x = -4
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_4 }
+        available = {
+			has_idea = GER_worker_soldier
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_worker_soldier
+				add_idea = GER_worker_soldier_1
+			}
+		}
+	}
+	#失業者は軍へ！
+	focus = {
+		id = GER_Nationalist_Economy_focus_6
+		icon = GFX_
+		x = -2
+		y = 2
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_2 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_worker_soldier
+		}
+	}
+	#大軍需企業
+	focus = {
+		id = GER_Nationalist_Economy_focus_7
+		icon = GFX_
+		x = -2
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_6 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 1
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#軍用道路
+	focus = {
+		id = GER_Nationalist_Economy_focus_8
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 8
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_2 focus = GER_Nationalist_Economy_focus_3 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_WAR_COMMUNISM
+				add_idea = GER_Nat_WAR_COMMUNISM_1
+			}
+		}
+	}
+	#対空防衛網
+	focus = {
+		id = GER_Nationalist_Economy_focus_9
+		icon = GFX_
+		x = 0
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_8 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Nat_WAR_COMMUNISM_1
+				add_idea = GER_Nat_WAR_COMMUNISM_2
+			}
+		}
+	}
+	#富農の解体
+	focus = {
+		id = GER_Nationalist_Economy_focus_10
+		icon = GFX_
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_3 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_Nationalization
+		}
+	}
+	#企業国営化の推進
+	focus = {
+		id = GER_Nationalist_Economy_focus_11
+		icon = GFX_
+		x = 2
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_10 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Nationalization
+				add_idea = GER_Nationalization_1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = arms_factory
+										size > 0
+										include_locked = yes
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#工場の精神
+	focus = {
+		id = GER_Nationalist_Economy_focus_12
+		icon = GFX_
+		x = 4
+		y = 2
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_3 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Technocracy
+				add_idea = GER_Technocracy_1
+			}
+		}
+	}
+	#能力主義
+	focus = {
+		id = GER_Nationalist_Economy_focus_13
+		icon = GFX_
+		x = 4
+		y = 3
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_12 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Technocracy_1
+				add_idea = GER_Technocracy_2
+			}
+		}
+	}
+	#分権と自給自足
+	focus = {
+		id = GER_Nationalist_Economy_focus_14
+		icon = GFX_
+		x = -2
+		y = 4
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_5 }
+		prerequisite = { focus = GER_Nationalist_Economy_focus_7 }
+		prerequisite = { focus = GER_Nationalist_Economy_focus_9 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			set_country_flag = economic_isolation
+			add_ideas = closed_economy
+			add_ideas = GER_decentralization_aurarky
+		}
+	}
+	#軍国主義的教育
+	focus = {
+		id = GER_Nationalist_Economy_focus_15
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_5 focus = GER_Nationalist_Economy_focus_11 }
+		prerequisite = { focus = GER_Nationalist_Economy_focus_7 focus = GER_Nationalist_Economy_focus_13 }
+		prerequisite = { focus = GER_Nationalist_Economy_focus_9 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Nat_WAR_COMMUNISM_2
+				add_idea = GER_Nat_WAR_COMMUNISM_3
+			}
+		}
+	}
+	#中央集権的官僚機構
+	focus = {
+		id = GER_Nationalist_Economy_focus_16
+		icon = GFX_
+		x = 2
+		y = 4
+		cost = 5
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_11 }
+		prerequisite = { focus = GER_Nationalist_Economy_focus_13 }
+		prerequisite = { focus = GER_Nationalist_Economy_focus_9 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Technocracy_2
+				add_idea = GER_Technocracy_3
+			}
+		}
+	}
+	#フリードリヒ・ヴィルヘルム大学
+	focus = {
+		id = GER_Nationalist_Economy_focus_17
+		icon = GFX_
+		x = 0
+		y = 5
+		cost = 8
+		relative_position_id = GER_Nationalist_Economy_focus_1
+		prerequisite = { focus = GER_Nationalist_Economy_focus_14 focus = GER_Nationalist_Economy_focus_16 }
+		prerequisite = { focus = GER_Nationalist_Economy_focus_15 }
+        available = {
+            }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	shared_focus = GER_military_focus_1
+	shared_focus = GER_military_focus_2
+	shared_focus = GER_military_focus_3
+	shared_focus = GER_military_focus_4
+	shared_focus = GER_military_focus_5
+	shared_focus = GER_military_focus_6
+	shared_focus = GER_military_focus_7
+	shared_focus = GER_military_focus_8
+	shared_focus = GER_military_focus_9
+	shared_focus = GER_military_focus_10
+	shared_focus = GER_military_focus_11
+	shared_focus = GER_military_focus_12
+	shared_focus = GER_military_focus_13
+	shared_focus = GER_military_focus_14
+	shared_focus = GER_military_focus_15
+	shared_focus = GER_military_focus_16
+	shared_focus = GER_military_focus_17
+	shared_focus = GER_military_focus_18
+	shared_focus = GER_military_focus_19
+	shared_focus = GER_military_focus_20
+	shared_focus = GER_military_focus_21
+	shared_focus = GER_military_focus_22
+	shared_focus = GER_military_focus_23
+	shared_focus = GER_military_focus_24
+	shared_focus = GER_military_focus_25
+	shared_focus = GER_military_focus_26
+	shared_focus = GER_military_focus_27
+	
+	shared_focus = GER_Air_focus_1
+	shared_focus = GER_Air_focus_2
+	shared_focus = GER_Air_focus_3
+	shared_focus = GER_Air_focus_4
+	shared_focus = GER_Air_focus_5
+	shared_focus = GER_Air_focus_6
+	shared_focus = GER_Air_focus_7
+	shared_focus = GER_Air_focus_8
+	shared_focus = GER_Air_focus_9
+	shared_focus = GER_Air_focus_10
+	shared_focus = GER_Air_focus_11
+	shared_focus = GER_Air_focus_12
+	shared_focus = GER_Air_focus_13
+	shared_focus = GER_Air_focus_14
+
+	shared_focus = GER_navy_focus_1
+	shared_focus = GER_navy_focus_2
+	shared_focus = GER_navy_focus_3
+	shared_focus = GER_navy_focus_4
+	shared_focus = GER_navy_focus_5
+	shared_focus = GER_navy_focus_6
+	shared_focus = GER_navy_focus_7
+	shared_focus = GER_navy_focus_8
+	shared_focus = GER_navy_focus_9
+	shared_focus = GER_navy_focus_10
+	shared_focus = GER_navy_focus_11
+	shared_focus = GER_navy_focus_12
+	shared_focus = GER_navy_focus_13
+	shared_focus = GER_navy_focus_14
+	shared_focus = GER_navy_focus_15
+	shared_focus = GER_navy_focus_16
+	shared_focus = GER_navy_focus_17
+
+}
+
+	
+
+	
+
+
+ 

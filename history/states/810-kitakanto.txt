@@ -3,23 +3,23 @@ state={
 	name="STATE_810"
 	local_supplies=0.0 
 provinces={
-		1113 4000 7016 11908 
+		1113 4000 7016 11908 993 4100 
 	}
 	manpower=2823000
-	state_category=town
+	state_category=city
         history={
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
 		
 			industrial_complex = 3
+			arms_factory = 2
 			infrastructure = 3
                         air_base = 4
 
 		}
-		
+                victory_points = { 993 1 }		
 		victory_points = { 4000 1 }
-                victory_points = { 11908 1 }
                 victory_points = { 7016 1 }
 
 	}

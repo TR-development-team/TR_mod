@@ -90,7 +90,7 @@ news_event = {
 	id =TR_news.4
 	title = TR_news.4.t
 	desc = TR_news.4.d
-	picture = news_event_JAP_Ugaki_Sokaku
+	picture = GFX_news_event_JAP_Ugaki_Sokaku
 	
 	major = yes
 	
@@ -381,7 +381,7 @@ news_event = {
 	id =TR_news.17
 	title = TR_news.17.t
 	desc = TR_news.17.d
-	picture = GFX_news_event_african_soldiers
+	picture = GFX_news_event_maumau
 	
 	major = yes
 	
@@ -397,7 +397,7 @@ news_event = {
 	id =TR_news.18
 	title = TR_news.18.t
 	desc = TR_news.18.d
-	picture = GFX_news_event_african_soldiers
+	picture = GFX_news_event_Sokoto_empire
 	
 	major = yes
 	
@@ -412,7 +412,7 @@ news_event = {
 	id =TR_news.19
 	title = TR_news.19.t
 	desc = TR_news.19.d
-	picture = GFX_news_event_eng_decolonization
+	picture = GFX_news_event_elizabeth_ii_australia
 	
 	major = yes
 	
@@ -437,7 +437,7 @@ news_event = {
 	id =TR_news.20
 	title = TR_news.20.t
 	desc = TR_news.20.d
-	picture = GFX_news_event_turkey_affirms_interest_in_protecting_balkans
+	picture = GFX_news_event_ottoman_treaty_sign
 	
 	major = yes
 	
@@ -453,7 +453,7 @@ news_event = {
 	id =TR_news.21
 	title = TR_news.21.t
 	desc = TR_news.21.d
-	picture = GFX_news_event_chinese_soldiers_march
+	picture = GFX_news_event_nanking_Japanese_army
 	
 	major = yes
 	
@@ -464,7 +464,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = { TAG = JAP
-                                       TAG = SHX }
+                TAG = NAN }
 			}
 		}
 	}
@@ -474,7 +474,7 @@ news_event = {
 	}
 	option = {
 		name = TR_news.21.c
-		trigger = { TAG = SHX }
+		trigger = { TAG = NAN }
 	}
 
 }
@@ -810,7 +810,6 @@ news_event = {
 		name = TR_news.35.b
 		trigger = { TAG =GER }
 	}
-
 }
 
 news_event = {
@@ -873,7 +872,7 @@ news_event = {
 	id = TR_news.38
 	title = TR_news.38.t
 	desc = TR_news.38.d
-	picture = GFX_news_event_soldiers_marching
+	picture = GFX_news_event_Dwight_D_Eisenhower
 	
 	major = yes
 	
@@ -1130,4 +1129,365 @@ news_event = {
 		name = TR_news.46.b
 			trigger = { TAG = FRA }
     }
+}
+#アンデス連合がボリビアに侵攻
+news_event = {
+	id =TR_news.47
+	title = TR_news.47.t
+	desc = TR_news.47.d
+	picture = GFX_news_event_soldiers_marching
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_news.47.a
+        trigger = {
+			NOT = {
+				OR = { TAG = BOL TAG = PRU TAG = CHL TAG = ARG }
+			}
+		}
+	}
+	option = {
+		name = TR_news.47.b
+			trigger = { OR = { TAG = PRU TAG = CHL TAG = ARG } }
+    }
+	option = {
+		name = TR_news.47.c
+			trigger = { TAG = BOL }
+    }
+
+}
+#タシュケントで赤軍が蜂起
+news_event = {
+	id =TR_news.48
+	title = TR_news.48.t
+	desc = TR_news.48.d
+	picture = GFX_news_event_soldiers_marching
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.48.a
+        trigger = {
+			NOT = {
+				TAG = UZB
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.48.b
+			trigger = { TAG = UZB }
+    }
+}
+#ピョートル・ヴラーンゲリ将軍がロシアの首相に
+news_event = {
+	id =TR_news.49
+	title = TR_news.49.t
+	desc = TR_news.49.d
+	picture = GFX_news_event_Pyotr_Wrangel
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.49.a
+        trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.49.b
+			trigger = { TAG = SOV }
+    }
+}
+#ロシアで黒百人組のクーデター
+news_event = {
+	id =TR_news.50
+	title = TR_news.50.t
+	desc = TR_news.50.d
+	picture = GFX_news_event_black_hundreds
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.50.a
+        trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.50.b
+			trigger = { TAG = SOV }
+    }
+}
+#ロシアが立憲君主制へ移行
+news_event = {
+	id =TR_news.51
+	title = TR_news.51.t
+	desc = TR_news.51.d
+	picture = GFX_news_event_russian_republic
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.51.a
+        trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.51.b
+			trigger = { TAG = SOV }
+    }
+}
+#アレクセイ2世が退位に追い込まれる
+news_event = {
+	id =TR_news.52
+	title = TR_news.52.t
+	desc = TR_news.52.d
+	picture = GFX_news_event_russian_republic
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.52.a
+        trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.52.b
+			trigger = { TAG = SOV }
+    }
+}
+#ロシア共和国大統領ヴィクトル・チェルノフの死
+news_event = {
+	id =TR_news.53
+	title = TR_news.53.t
+	desc = TR_news.53.d
+	picture = GFX_news_event_Victor_Chernov
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.53.a
+        trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.53.b
+			trigger = { TAG = SOV }
+    }
+}
+#プリシケヴィチの死
+news_event = {
+	id =TR_news.54
+	title = TR_news.54.t
+	desc = TR_news.54.d
+	picture = GFX_news_event_Vladimir_Purishkevich
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.54.a
+        trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.54.b
+			trigger = { TAG = SOV }
+    }
+}
+#ツァーリ救済同胞団
+news_event = {
+	id =TR_news.55
+	title = TR_news.55.t
+	desc = TR_news.55.d
+	picture = GFX_news_event_Tsarebozhiye
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.55.a
+        trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.55.b
+			trigger = { TAG = SOV }
+    }
+}
+#ムラドロッシ
+news_event = {
+	id =TR_news.56
+	title = TR_news.56.t
+	desc = TR_news.56.d
+	picture = GFX_news_event_mladorossi
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.56.a
+        trigger = {
+			NOT = {
+				TAG = SOV
+			}
+		}
+
+	}
+	option = {
+		name = TR_news.56.b
+			trigger = { TAG = SOV }
+    }
+}
+#フランスとドイツが開戦
+news_event = {
+	id =TR_news.57
+	title = TR_news.57.t
+	desc = TR_news.57.d
+	picture = GFX_news_event_france_germany_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+
+	option = {
+		name = TR_news.57.a
+		NOT = {
+			OR = { TAG = GER TAG = FRA }
+		}
+    }
+	option = {
+		name = TR_news.57.b
+			trigger = { TAG = GER }
+    }
+	option = {
+		name = TR_news.57.c
+			trigger = { TAG = FRA }
+    }
+}
+#エルンスト・ユンガー
+news_event = {
+	id =TR_news.58
+	title = TR_news.58.t
+	desc = TR_news.58.d
+	picture = GFX_news_event_GER_ernst_junger
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+       option = {
+		name = TR_news.58.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = TR_news.58.b
+		trigger = { TAG =GER }
+	}
+}
+#オットー・ヴェルス
+news_event = {
+	id =TR_news.59
+	title = TR_news.59.t
+	desc = TR_news.59.d
+	picture = GFX_news_event_GER_SPD
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.59.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = TR_news.59.b
+		trigger = { TAG =GER }
+	}
+}
+#クルト・アイスナー
+news_event = {
+	id =TR_news.60
+	title = TR_news.60.t
+	desc = TR_news.60.d
+	picture = GFX_news_event_GER_kurt_eisner
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.60.a
+		trigger = {
+			NOT = {
+				TAG = GER
+			}
+		}
+	}
+	option = {
+		name = TR_news.60.b
+		trigger = { TAG =GER }
+	}
 }

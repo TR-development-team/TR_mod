@@ -3,7 +3,7 @@ state={
 	name="STATE_823"
 	local_supplies=0.0 
 provinces={
-		1024 4118 4122 4153 7169 
+		1024 4118 4122 7169 
 	}
 	state_category=large_city
 	manpower=2830000
@@ -18,12 +18,10 @@ provinces={
 
 		}
                 victory_points = {
-			7169 15 
+			7169 20
 		}
-                victory_points = { 4153 1 }
+                victory_points = { 1024 1 }
                 victory_points = { 4122 1 }
-		
-
 	}
 	buildings_max_level_factor=1.000
 }

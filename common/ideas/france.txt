@@ -103,7 +103,7 @@
 			}
             equipment_bonus = {
 				motorized_equipment = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.1
 					instant = yes
 				}
 			}
@@ -133,7 +133,7 @@
 			picture = FRA_catholicism
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.10
+				stability_factor = 0.1
 				paternal_autocrat_drift = 0.05
 				drift_defence_factor = 0.25
 			}
@@ -146,7 +146,6 @@
 			picture = FRA_catholicism
 			removal_cost = -1
 			modifier = {
-				stability_weekly = 0.002
 				stability_factor = 0.10
 				paternal_autocrat_drift = 0.05
 				drift_defence_factor = 0.25
@@ -164,7 +163,7 @@
 				consumer_goods_factor = -0.05
                 research_speed_factor = -0.05
 			    production_speed_buildings_factor = 0.1
-                political_power_cost = 0.2
+                political_power_cost = 0.25
 				local_resources_factor = 0.10
 			}
 		}
@@ -179,7 +178,7 @@
 				consumer_goods_factor = -0.1
                 research_speed_factor = -0.1
 			    production_speed_buildings_factor = 0.2
-                political_power_cost = 0.3
+                political_power_cost = 0.5
 				local_resources_factor = 0.2
 			}
 		}
@@ -219,8 +218,8 @@
 			picture = FRA_Fleur_de_lis
 			removal_cost = -1
 			modifier = {
-				stability_weekly = 0.003
-                war_support_weekly = 0.005
+				stability_weekly = 0.001
+                war_support_weekly = 0.003
                 political_power_factor = 0.2
 			}
 		}
@@ -232,8 +231,8 @@
 			picture = FRA_Fleur_de_lis
 			removal_cost = -1
 			modifier = {
-				stability_weekly = 0.003
-                war_support_weekly = 0.005
+				stability_weekly = 0.001
+                war_support_weekly = 0.003
                 political_power_factor = 0.2
 				max_command_power = 25
 				command_power_gain = 0.2
@@ -291,7 +290,7 @@
 			picture = Fascism_Constitution
 			removal_cost = -1
 			modifier = {
-                political_power_factor = 0.25
+                political_power_factor = 0.15
 			}
 		}
         FRA_People_Council = {
@@ -354,7 +353,7 @@
 			picture = FRA_ethnic_leader
 			removal_cost = -1
 			modifier = {
-                stability_weekly = 0.005
+                stability_weekly = 0.002
                 war_support_weekly = 0.005
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
@@ -544,7 +543,6 @@
 			modifier = {
 				political_power_factor = 0.05
 				stability_weekly = 0.001
-				stability_factor = 0.10
 				war_support_factor = 0.10
 				drift_defence_factor = 0.25
 				mobilization_speed = 0.1
@@ -563,7 +561,7 @@
 			removal_cost = -1
 			modifier = {
 				political_power_factor = 0.1
-				stability_weekly = 0.003
+				stability_weekly = 0.001
 				stability_factor = 0.1
 				war_support_factor = 0.2
 				drift_defence_factor = 0.5
@@ -980,7 +978,7 @@
 	        traits = { 
 				Head_of_State
                 national_populist
-				TR_ruthless_powermonger
+				Doriot_traits
 			}
 		}
 		}
@@ -1048,7 +1046,7 @@
 			traits = { 
 				Government_leaders
 				paternal_autocrat
-				TR_Popular_Politician
+				Maurras_trait
 			}
 		}
         FRA_Jacques_Doriot = {

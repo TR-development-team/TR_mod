@@ -87,6 +87,12 @@ country_event = {
 				type = annex_everything
 			} 
                 }
+                every_country = {
+                         limit = {
+                              has_war_with = POL
+                        }
+                        white_peace_with_ROOT = yes
+                    }
                
 	}
 }

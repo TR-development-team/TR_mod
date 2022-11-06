@@ -1,0 +1,207 @@
+focus_tree = {
+	id = german_start_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			tag = GER
+		}
+	}
+        continuous_focus_position = { x = 700 y = 0 }
+
+
+
+	#ドイツ内戦
+	focus = {
+		id = GER_start_focus_1
+		icon = GFX_focus_ger_revive_kaiserreich
+		x = 2
+		y = 0
+		cost = 10
+        available = {
+            always = no
+            }
+        bypass = {
+			has_country_flag = GER_CIVILWAR
+		}
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+
+
+	#武器をとれ
+	focus = {
+		id = GER_start_focus_2
+		icon = GFX_focus_focus_fra_maquis
+		x = 2
+		y = 1
+		cost = 3
+                
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_start_focus_1 }
+		ai_will_do = {
+			factor = 100
+		}
+	 completion_reward = {
+			division_template = {
+				name = "Red Militia"
+				division_names_group = GER_GAR_01
+				regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 64 }
+				create_unit = {
+					division = "division_template = \"Red Militia\" start_experience_factor = 0.1"
+					owner = GER
+					count = 2
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 51 }
+				create_unit = {
+					division = "division_template = \"Red Militia\" start_experience_factor = 0.1"
+					owner = GER
+					count = 2
+				}
+			}
+		}
+	}
+
+	#国際旅団を編成
+	focus = {
+		id = GER_start_focus_3
+		icon = GFX_focus_por_workers_of_iberia
+		x = 0
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_start_focus_1 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			division_template = {
+				name = "Red Infantry"
+				division_names_group = GER_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 64 }
+				create_unit = {
+					division = "division_template = \"Red Infantry\" start_experience_factor = 0.1"
+					owner = GER
+					count = 2
+				}
+			}
+		}
+	}
+
+	#戦時共産主義
+	focus = {
+		id = GER_start_focus_4
+		icon = GFX_focus_generic_soviet_politics
+		x = 4
+		y = 1
+		cost = 3
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_start_focus_1 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+			add_ideas = GER_WAR_COMMUNISM
+		}
+	}
+
+
+	#内戦の終結
+	focus = {
+		id = GER_start_focus_5
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 2
+		y = 2
+		cost = 1
+        available = {
+            NOT = {
+				has_war_with = DDR
+			}
+			NOT = {
+				country_exists = DDR
+			}
+        }
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = GER_start_focus_2
+		}
+		prerequisite = { 
+			focus = GER_start_focus_3
+		}
+		prerequisite = { 
+			focus = GER_start_focus_4
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		select_effect = {
+			country_event = {
+				id = TR_germany.28
+				days = 1
+			}	
+		}
+        completion_reward = {
+			
+
+		}
+	}
+
+    #全国レーテ大会
+	focus = {
+		id = GER_start_focus_6
+		icon = GFX_goal_support_communism
+		x = 2
+		y = 3
+		cost = 10
+        available = {
+            has_country_flag = GER_CIVILWAR_END
+        }
+		select_effect = {
+			country_event = {
+				id = TR_germany.11
+				days = 1
+			}	
+		}
+		available_if_capitulated = yes
+		prerequisite = { focus = GER_start_focus_5 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+            add_stability = 0.1	
+		}
+	}
+
+}
+
+	
+
+	
+
+
+ 

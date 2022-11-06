@@ -1751,7 +1751,6 @@ focus = {
 	prerequisite = { focus = FRA_DIP_4 }
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
-
 		country_event = TR_france.16
 	}
 }
@@ -1769,7 +1768,6 @@ focus = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
 		is_neighbor_of = ITA
-		owns_state = 34
 		}
     available_if_capitulated = no
     bypass = {
@@ -2124,6 +2122,7 @@ focus = {
 		add_named_threat = { threat = 15 name = FRA_GER_Europe_WAR }
 		add_state_claim = 42
 		add_state_claim = 51
+		add_state_claim = 999
         create_wargoal = {
             target = GER
             type = annex_everything
@@ -3201,7 +3200,7 @@ focus = {
 #陸軍改革
 focus = {
 	id = FRA_Army_1
-	icon = GFX_
+	icon = GFX_goal_generic_army_doctrines
 	x = 34
 	y = 0
 	cost = 1
@@ -3218,7 +3217,7 @@ focus = {
 #最高司令部の設立
 focus = {
 	id = FRA_Army_2
-	icon = GFX_
+	icon = GFX_goal_generic_military_deal
 	x = 0
 	y = 1
 	cost = 8
@@ -3234,7 +3233,7 @@ focus = {
 #機甲化軍に向けて
 focus = {
 	id = FRA_Army_3
-	icon = GFX_
+	icon = GFX_goal_generic_army_tanks
 	x = -2
 	y = 2
 	cost = 8
@@ -3253,7 +3252,7 @@ focus = {
 #将校の先導
 focus = {
 	id = FRA_Army_4
-	icon = GFX_
+	icon = GFX_focus_generic_military_mission
 	x = 0
 	y = 2
 	cost = 8
@@ -3272,7 +3271,7 @@ focus = {
 #大規模な国民軍
 focus = {
 	id = FRA_Army_5
-	icon = GFX_
+	icon = GFX_focus_SOV_mobilization_plan
 	x = 2
 	y = 2
 	cost = 8
@@ -3547,105 +3546,6 @@ focus = {
 	relative_position_id = FRA_Army_1
 	completion_reward = {
 		add_ideas = FRA_Grande_Armee
-	}
-}
-#総力戦への備え
-focus = {
-	id = FRA_Army_20
-	icon = GFX_
-	x = 6
-	y = 1
-	cost = 8
-	ai_will_do = {
-		factor = 30
-		modifier = {
-			factor = 2
-			has_war_with = GER
-		}
-	}
-	available = {
-		OR = { has_war_with = GER has_war_with = ENR has_war_with = ENG has_war_with = JAP }
-		}
-	prerequisite = { focus = FRA_Army_1 }
-	relative_position_id = FRA_Army_1
-	completion_reward = {
-	}
-}
-#労働への動員
-focus = {
-	id = FRA_Army_21
-	icon = GFX_
-	x = 5
-	y = 2
-	cost = 8
-	ai_will_do = {
-		factor = 30
-		modifier = {
-			factor = 2
-			has_war_with = GER
-		}
-	}
-	prerequisite = { focus = FRA_Army_20 }
-	relative_position_id = FRA_Army_1
-	completion_reward = {
-	}
-}
-#資源の管理
-focus = {
-	id = FRA_Army_22
-	icon = GFX_
-	x = 7
-	y = 2
-	cost = 8
-	ai_will_do = {
-		factor = 30
-		modifier = {
-			factor = 2
-			has_war_with = GER
-		}
-	}
-	prerequisite = { focus = FRA_Army_20 }
-	relative_position_id = FRA_Army_1
-	completion_reward = {
-	}
-}
-#国民総動員令
-focus = {
-	id = FRA_Army_23
-	icon = GFX_
-	x = 6
-	y = 3
-	cost = 8
-	ai_will_do = {
-		factor = 30
-		modifier = {
-			factor = 2
-			has_war_with = GER
-		}
-	}
-	prerequisite = { focus = FRA_Army_21 }
-	prerequisite = { focus = FRA_Army_22 }
-	relative_position_id = FRA_Army_1
-	completion_reward = {
-	}
-}
-#絶滅戦争
-focus = {
-	id = FRA_Army_24
-	icon = GFX_
-	x = 6
-	y = 4
-	cost = 8
-	ai_will_do = {
-		factor = 30
-		modifier = {
-			factor = 2
-			has_war_with = GER
-		}
-	}
-	prerequisite = { focus = FRA_Army_23 }
-	relative_position_id = FRA_Army_1
-	completion_reward = {
 	}
 }
 #フランス海軍

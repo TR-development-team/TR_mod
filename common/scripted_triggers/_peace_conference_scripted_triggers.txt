@@ -25,8 +25,1315 @@ is_important_state_china = {
 		state = 729 #マカオ
 	}
 }
-is_french_colonial_claim = {
+
+is_paired_impassable_state = {
 	OR = {
+		state = 273 #Fezzan
+		state = 332 #Labrador
+		state = 514 #Sahara
+		state = 678 #Rub Al Khali
+		state = 860 #Malian Desert
+		state = 862 #Darfur Desert
+		state = 910 #Niger Desert
+		state = 911 #Borkou-Ennedi
+		state = 926 #Sermersuaq
+		state = 967 #Mauritanian Desert
+		state = 1009 #Kufra
+		state = 1011 #Nubian Desert
+		state = 1030 #Western Amazonas
+		state = 1031 #Northern Amazonas
+		state = 1033 #Southern Amazonas
+		state = 1036 #Bolivar Jungle
+		state = 1037 #East Guyana Jungle
+		state = 1038 #Suriname Jungle
+		state = 1039 #West Guyana Jungle
+		state = 1040 #Acre Jungle
+		state = 1079 #Mabaruma Jungle
+		state = 1086 #Changtang
 	}
 }
+
+is_ambition_area_of_ROOT = {
+	OR = {
+		has_variable = ambition_area_@ROOT
+		AND = {
+			ROOT = {
+				is_actual_major = yes
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+					tag = FRA
+					tag = JAP
+				}
+			}
+			is_important_state = yes
+		}
+	}
+}
+
+is_ambition_area_of_PREV = {
+	OR = {
+		has_variable = ambition_area_@PREV
+		AND = {
+			PREV = {
+				is_actual_major = yes
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+					tag = FRA
+					tag = JAP
+				}
+			}
+			is_important_state = yes
+		}
+	}
+}
+
+is_claim_or_core_or_ambition_of_ROOT = {
+	OR = {
+		is_claimed_by = ROOT
+		is_core_of = ROOT
+		is_ambition_area_of_ROOT = yes
+	}
+}
+
+is_claim_or_core_or_ambition_of_PREV = {
+	OR = {
+		is_claimed_by = PREV
+		is_core_of = PREV
+		is_ambition_area_of_PREV = yes
+	}
+}
+
+is_owned_or_claimed_by_ROOT = {
+	OR = {
+		has_claimed_state_in_peace_conference = ROOT
+		is_owned_by = ROOT
+	}
+}
+
+is_owned_or_claimed_by_PREV = {
+	OR = {
+		has_claimed_state_in_peace_conference = PREV
+		is_owned_by = PREV
+	}
+}
+
+is_owned_or_claimed_by_PREVPREV = {
+	OR = {
+		has_claimed_state_in_peace_conference = PREV.PREV
+		is_owned_by = PREV.PREV
+	}
+}
+
+is_adjacent_to_ROOT_or_coastal = {
+	OR = {
+		any_neighbor_state = {
+			is_owned_or_claimed_by_ROOT = yes
+			is_impassable_to_PREV = no
+		}
+		AND = {
+			is_coastal = yes
+			ROOT = {
+				any_owned_state = { is_coastal = yes }
+			}
+		}
+	}
+}
+
+is_adjacent_to_PREV_or_coastal = {
+	OR = {
+		any_neighbor_state = {
+			is_owned_or_claimed_by_PREVPREV = yes
+			is_impassable_to_PREV = no
+		}
+		AND = {
+			is_coastal = yes
+			PREV = {
+				any_owned_state = { is_coastal = yes }
+			}
+		}
+	}
+}
+
+state_same_continent_as_state_FROM = {
+	OR = {
+		AND = {
+			OR = {
+				is_on_continent = asia
+				is_on_continent = india
+			}
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = india
+				}
+			}
+		}
+		AND = {
+			is_on_continent = europe
+			var:global.eval_state = { is_on_continent = europe }
+		}
+		AND = {
+			is_on_continent = africa
+			var:global.eval_state = { is_on_continent = africa }
+		}
+		AND = {
+			OR = {
+				is_on_continent = north_america
+				is_on_continent = central_america
+			}
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = north_america
+					is_on_continent = central_america
+				}
+			}
+		}
+		AND = {
+			is_on_continent = south_america
+			var:global.eval_state = { is_on_continent = south_america }
+		}
+		AND = {
+			is_on_continent = middle_east
+			var:global.eval_state = { is_on_continent = middle_east }
+		}
+		AND = {
+			is_on_continent = australia
+			var:global.eval_state = { is_on_continent = australia }
+		}
+	}
+}
+
+is_impassable_to_PREV = {
+	check_variable = { impassable_to_@PREV = 1 }
+}
+
+### in country scope
+build_peace_conference_temp_array = {
+	all_enemy_country = {
+		if = {
+			limit = { is_in_peace_conference = yes }
+			all_enemy_country = {
+				if = {
+					limit = {
+						is_in_peace_conference = yes
+						NOT = { has_variable = is_in_conference@THIS }
+					}
+					set_temp_variable = { is_in_conference@THIS = 1 }
+					add_to_temp_array = { global.conference = THIS }
+				}
+			}
+		}
+	}
+}
+
+at_conference_has_war_with_owner = {
+	AND = {
+		is_in_peace_conference = yes
+		any_enemy_country = {
+			var:global.eval_state = { is_owned_by = PREV }
+		}
+	}
+}
+
+at_conference_has_war_with_ROOT = {
+	AND = {
+		is_in_peace_conference = yes
+		has_war_with = ROOT
+	}
+}
+
+at_conference_no_war_with_ROOT = {
+	AND = {
+		is_in_peace_conference = yes
+		NOT = { has_war_with = ROOT }
+	}
+}
+
+at_conference_has_war_with_PREV = {
+	AND = {
+		is_in_peace_conference = yes
+		has_war_with = PREV
+	}
+}
+
+at_conference_no_war_with_PREV = {
+	AND = {
+		is_in_peace_conference = yes
+		NOT = { has_war_with = PREV }
+	}
+}
+
+
+
+restrict_territorial_ambitions_PREV = {
+	OR = {
+		# is a puppet
+		AND = {
+			is_subject = yes
+			overlord = { is_in_peace_conference = yes }
+		}
+		# is a faction member and leader is a major and at the conference
+		AND = {
+			is_in_faction = yes
+			is_faction_leader = no
+			faction_leader = {
+				is_actual_major = yes
+				at_conference_no_war_with_PREV = yes
+			}
+			NOT = {
+				# exception: European majors will still take states in Africa
+				AND = {
+					is_in_europe = yes
+					is_actual_major = yes
+					var:global.eval_state = { is_on_continent = africa }
+				}
+				# exception: major Austria will take states in its sphere of influence
+				AND = {
+					tag = AUS
+					is_actual_major = yes
+					var:global.eval_state = {
+						OR = {
+							region = 15 #Romania
+							region = 22 #Bohemia
+							region = 23 #Italy
+							region = 24 #Southern Balkans
+							region = 25 #Greece
+							region = 26 #Bulgaria
+							region = 27 #Hungary
+							region = 69 #Eastern Mediterranean
+							region = 129 #Anatolia
+							region = 131 #Switzerland
+							region = 143 #Northern Balkans
+							region = 144 #Transylvania
+							region = 169 #Tyrrhenian Sea
+							region = 181 #Po Valley
+							region = 223 #Aegean Sea
+						}
+					}
+				}
+			}
+		}
+		# is not a major and a major is at the conference
+		AND = {
+			is_actual_major = no
+			any_of_scopes = {
+				array = global.conference
+				NOT = { tag = PREV }
+				is_actual_major = yes
+				at_conference_has_war_with_owner = yes
+			}
+		}
+		# is not a major and no major is at the conference, but a much stronger minor is
+		AND = {
+			is_actual_major = no
+			NOT = {
+				any_of_scopes = {
+					array = global.conference
+					NOT = { tag = PREV }
+					is_actual_major = yes
+					at_conference_has_war_with_owner = yes
+				}
+			}
+
+			any_of_scopes = {
+				array = global.conference
+				NOT = { tag = PREV }
+				is_actual_major = no
+				is_subject = no
+				at_conference_no_war_with_PREV = yes
+				at_conference_has_war_with_owner = yes
+				PREV_is_restriction_exception = no
+
+				# country has more than 1.5 total number of factories/battalions
+				OR = {
+					strength_ratio = { tag = PREV ratio > 1.5 }
+					ic_ratio = { tag = PREV ratio > 1.5 }
+				}
+			}
+		}
+		# is an exception to the restriction rules
+		PREV_is_restriction_exception = yes
+	}
+}
+
+
+same_continent_as_state_FROM = {
+	OR = {
+		AND = {
+			is_in_asia = yes
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = india
+				}
+			}
+		}
+		AND = {
+			is_in_europe = yes
+			var:global.eval_state = { is_on_continent = europe }
+		}
+		AND = {
+			is_in_africa = yes
+			var:global.eval_state = { is_on_continent = africa }
+		}
+		AND = {
+			is_in_north_america = yes
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = north_america
+					is_on_continent = central_america
+				}
+			}
+		}
+		AND = {
+			is_in_south_america = yes
+			var:global.eval_state = { is_on_continent = south_america }
+		}
+		AND = {
+			is_in_middle_east = yes
+			var:global.eval_state = { is_on_continent = middle_east }
+		}
+		AND = {
+			is_in_australia = yes
+			var:global.eval_state = { is_on_continent = australia }
+		}
+	}
+}
+
+is_exception_to_taking_states_on_other_continents = {
+	OR = {
+		# European countries will always take states in Africa, Oceania, Asia, and the Middle East
+		AND = {
+			is_in_europe = yes
+			NOT = { tag = RUS }
+			NOT = { tag = SOV }
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = africa
+					is_on_continent = asia
+					is_on_continent = india
+					is_on_continent = australia
+					is_on_continent = middle_east
+				}
+			}
+		}
+		# European countries will take states in the Caribbean and Guyana
+		AND = {
+			is_in_europe = yes
+			NOT = { tag = RUS }
+			NOT = { tag = SOV }
+			var:global.eval_state = {
+				OR = {
+					state = 690 #Northern Bahamas
+					region = 53 #Caribbean
+					region = 200 #Guyana Plateau
+				}
+			}
+		}
+		# Russia will always take non-island states in Asia and the Middle East
+		AND = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = india
+					is_on_continent = middle_east
+				}
+				is_island_region = no
+			}
+		}
+		# Russia will take island regions in asia and oceania if it has an eastern port
+		AND = {
+			OR = {
+				tag = RUS
+				tag = SOV
+			}
+			any_owned_state = {
+				is_coastal = yes
+				OR = {
+					region = 148 #Amur
+					region = 191 #Korea
+					is_mainland_china = yes
+				}
+			}
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = asia
+					is_on_continent = australia
+				}
+				is_island_region = yes
+			}
+		}
+		# Middle Eastern countries will take states in northern India and North Africa
+		AND = {
+			is_in_middle_east = yes
+			var:global.eval_state = {
+				OR = {
+					state = 441 #Kashmir
+					state = 444 #Baluchistan
+					state = 443 #Sindh
+					state = 445 #Quetta
+					state = 442 #Peshawar
+					state = 891 #Lahore
+					region = 126 #Egypt
+					region = 189 #Maghreb
+					region = 128 #Sudan
+					region = 238 #Tripolitania
+					region = 17 #Horn of Africa
+					state = 183 #Cyprus
+					state = 862 #Darfur Desert
+					state = 273 #Fizzan
+					state = 1009 #Kufra
+					state = 1011 #Nubian Desert
+					state = 552 #Al Gharbia
+					region = 134 #Caucasus
+				}
+			}
+		}
+		# Countries in Central Asia will take states in European Russia and the Middle East
+		AND = {
+			capital_scope = {
+				OR = {
+					region = 136 #Central Asia
+					region = 162 #Afghanistan
+				}
+			}
+			var:global.eval_state = {
+				OR = {
+					region = 137 #Western Steppe
+					region = 135 #Kuban
+					is_on_continent = middle_east
+				}
+			}
+		}
+		# countries in North Africa will take states in the Middle East
+		AND = {
+			NOT = { tag = NFA }
+			capital_scope = {
+				OR = {
+					region = 126 #Egypt
+					region = 238 #Tripolitania
+					state = 273 #Fizzan
+					state = 1009 #Kufra
+					state = 552 #Al Gharbia
+					region = 189 #Maghreb
+				}
+			}
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = middle_east
+					state = 116 #Malta
+					state = 182 #Crete
+					state = 183 #Cyprus
+				}
+			}
+		}
+		# countries in India will take states in the middle east
+		AND = {
+			capital_scope = {
+				OR = {
+					region = 31 #Southern India
+					region = 141 #Eastern India
+					region = 153 #Central India
+					region = 245 #Indus Valley
+				}
+			}
+			var:global.eval_state = { is_on_continent = middle_east }
+		}
+		# Turkey/Ottomans will take states in the Balkans
+		AND = {
+			tag = TUR
+			var:global.eval_state = {
+				OR = {
+					region = 15 #Romania
+					region = 24 #Southern Balkans
+					region = 25 #Greece
+					region = 26 #Bulgaria
+					region = 143 #Northern Balkans
+					region = 223 #Aegean Sea
+				}
+			}
+		}
+		# Japan and countries in SE Asia will take states in oceania
+		AND = {
+			capital_scope = {
+				OR = {
+					region = 154 #Home Islands
+					is_southeast_asia = yes
+				}
+			}
+			var:global.eval_state = { is_on_continent = australia }
+		}
+		# Countries in Oceania will take states in SE Asia
+		AND = {
+			is_in_australia = yes
+			var:global.eval_state = { is_southeast_asia = yes }
+		}
+		# Spain will take states in South and Central America
+		AND = {
+			original_tag = SPR
+			var:global.eval_state = {
+				OR = {
+					is_on_continent = south_america
+					is_on_continent = central_america
+				}
+			}
+		}
+		# Portugal will take states in Brazil
+		AND = {
+			original_tag = POR
+			var:global.eval_state = { is_core_of = BRA }
+		}
+	}
+}
+
+can_reach_state = {
+	set_temp_variable = { global.taker = THIS.id }
+
+	#check every state owned by the country being annexed
+	var:global.eval_state = {
+		owner = {
+			all_owned_state = {
+				if = {
+					limit = {
+						#which are not already in the array
+						NOT = { is_in_array = { global.canreach = THIS } }
+						#and are not already claimed
+						NOT = {
+							any_of_scopes = {
+								array = global.conference
+								PREV = { has_claimed_state_in_peace_conference = PREV }
+							}
+						}
+						#any states which are claimed/cores/ambitions (meaning they will be taken)
+						OR = {
+							is_claimed_by = var:global.taker
+							is_core_of = var:global.taker
+							AND = {
+								has_variable = ambition_area_@PREV.PREV.PREV
+								NOT = {
+									any_of_scopes = {
+										array = global.conference
+										NOT = { tag = var:global.taker }
+										PREV = { is_claim_or_core_of_PREV = yes }
+										has_war_with = PREV.PREV
+										is_subject = no
+										is_in_faction_with = var:global.taker
+									}
+								}
+							}
+						}
+						#and either neighboring or coastal (for non-landlocked countries)
+						#or they are next to a state already in the array
+						OR = {
+							AND = {
+								is_coastal = yes
+								var:global.taker = {
+									any_owned_state = { is_coastal = yes }
+								}
+							}
+							any_neighbor_state = {
+								is_impassable_to_PREV = no
+								OR = {
+									is_in_array = { global.canreach = THIS }
+									is_owned_by = var:global.taker
+									has_claimed_state_in_peace_conference = var:global.taker
+								}
+							}
+						}
+					}
+					#add them all to the global array
+					add_to_temp_array = { global.canreach = THIS }
+				}
+			}
+		}
+	}
+
+	#then check if there are any more states that now fit this criteria
+	if = {
+		limit = {
+			var:global.eval_state = {
+				owner = {
+					any_owned_state = {
+						#which are not already in the array
+						NOT = { is_in_array = { global.canreach = THIS } }
+						#and are not already claimed
+						NOT = {
+							any_of_scopes = {
+								array = global.conference
+								PREV = { has_claimed_state_in_peace_conference = PREV }
+							}
+						}
+						#any states which are claimed/cores/ambitions (meaning they will be taken)
+						OR = {
+							is_claimed_by = var:global.taker
+							is_core_of = var:global.taker
+							AND = {
+								has_variable = ambition_area_@PREV.PREV.PREV
+								NOT = {
+									any_of_scopes = {
+										array = global.conference
+										NOT = { tag = var:global.taker }
+										PREV = { is_claim_or_core_of_PREV = yes }
+										has_war_with = PREV.PREV
+										is_subject = no
+										is_in_faction_with = var:global.taker
+									}
+								}
+							}
+						}
+						#and either neighboring or coastal (for non-landlocked countries)
+						#or they are next to a state already in the array
+						OR = {
+							AND = {
+								is_coastal = yes
+								var:global.taker = {
+									any_owned_state = { is_coastal = yes }
+								}
+							}
+							any_neighbor_state = {
+								is_impassable_to_PREV = no
+								OR = {
+									is_in_array = { global.canreach = THIS }
+									is_owned_by = var:global.taker
+									has_claimed_state_in_peace_conference = var:global.taker
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		#then start this trigger over
+		can_reach_state = yes
+	}
+	#otherwise check to see if FROM is in the array (meaning it can be reached by contiguous states)
+	else = {
+		is_in_array = { global.canreach = var:global.eval_state }
+		clear_temp_array = global.canreach
+	}
+}
+
+can_reach_state_direct = {
+	set_temp_variable = { global.taker = THIS.id }
+
+	#check every state owned by the country being annexed
+	var:global.eval_state = {
+		owner = {
+			all_owned_state = {
+				if = {
+					limit = {
+						#which are not already in the array
+						NOT = { is_in_array = { global.canreach = THIS } }
+						#and are not already claimed
+						NOT = {
+							any_of_scopes = {
+								array = global.conference
+								PREV = { has_claimed_state_in_peace_conference = PREV }
+							}
+						}
+						#any states which are claimed/cores/ambitions (meaning they will be taken)
+						OR = {
+							is_claimed_by = var:global.taker
+							is_core_of = var:global.taker
+							AND = {
+								has_variable = ambition_area_@PREV.PREV.PREV
+								NOT = {
+									any_of_scopes = {
+										array = global.conference
+										NOT = { tag = var:global.taker }
+										PREV = { is_claim_or_core_of_PREV = yes }
+										has_war_with = PREV.PREV
+										is_subject = no
+										is_in_faction_with = var:global.taker
+									}
+								}
+							}
+						}
+						#and either neighboring or they are next to a state already in the array
+						any_neighbor_state = {
+							is_impassable_to_PREV = no
+							OR = {
+								is_in_array = { global.canreach = THIS }
+								is_owned_by = var:global.taker
+								has_claimed_state_in_peace_conference = var:global.taker
+							}
+						}
+					}
+					#add them all to the global array
+					add_to_temp_array = { global.canreach = THIS }
+				}
+			}
+		}
+	}
+
+	#then check if there are any more states that now fit this criteria
+	if = {
+		limit = {
+			var:global.eval_state = {
+				owner = {
+					any_owned_state = {
+						#which are not already in the array
+						NOT = { is_in_array = { global.canreach = THIS } }
+						#and are not already claimed
+						NOT = {
+							any_of_scopes = {
+								array = global.conference
+								PREV = { has_claimed_state_in_peace_conference = PREV }
+							}
+						}
+						#any states which are claimed/cores/ambitions (meaning they will be taken)
+						OR = {
+							is_claimed_by = var:global.taker
+							is_core_of = var:global.taker
+							AND = {
+								has_variable = ambition_area_@PREV.PREV.PREV
+								NOT = {
+									any_of_scopes = {
+										array = global.conference
+										NOT = { tag = var:global.taker }
+										PREV = { is_claim_or_core_of_PREV = yes }
+										has_war_with = PREV.PREV
+										is_subject = no
+										is_in_faction_with = var:global.taker
+									}
+								}
+							}
+						}
+						#and either neighboring or they are next to a state already in the array
+						any_neighbor_state = {
+							is_impassable_to_PREV = no
+							OR = {
+								is_in_array = { global.canreach = THIS }
+								is_owned_by = var:global.taker
+								has_claimed_state_in_peace_conference = var:global.taker
+							}
+						}
+					}
+				}
+			}
+		}
+		#then start this trigger over
+		can_reach_state_direct = yes
+	}
+	#otherwise check to see if FROM is in the array (meaning it can be reached by contiguous states)
+	else = {
+		is_in_array = { global.canreach = var:global.eval_state }
+		clear_temp_array = global.canreach
+	}
+}
+
+### conference rules
+is_willing_to_take_state_ROOT = {
+	# general rules
+	rule_puppets_only_get_leftovers_ROOT = no
+	rule_dont_take_ally_claims_ROOT = no
+	rule_dont_take_ally_ambitions_ROOT = no
+	rule_dont_take_friend_claims_ROOT = no
+	rule_is_restricted_ROOT = no
+	rule_needs_connection_ROOT = no
+	rule_claims_needs_connection_ROOT = no
+	rule_look_for_direct_connection_ROOT = no
+	rule_dont_take_land_other_continents_ROOT = no
+	rule_dont_take_cheap_island_states_ROOT = no
+	rule_dont_take_impassable_states_ROOT = no
+
+	# country-specific rules
+	rule_dont_take_france_from_GER_NFA_ally_ROOT = no
+	rule_GER_split_up_france_ROOT = no
+	rule_NFA_split_up_france_ROOT = no
+	rule_stay_out_of_france_ROOT = no
+	rule_stay_out_of_britain_ROOT = no
+	rule_stay_out_of_scotland_ROOT = no
+	rule_stay_out_of_wales_ROOT = no
+	rule_stay_out_of_north_england_ROOT = no
+	rule_stay_out_of_england_ROOT = no
+	rule_leave_ireland_to_britain_ROOT = no
+	rule_GER_stay_out_of_balkans_ROOT = no
+	rule_CAN_only_neighboring_american_ROOT = no
+	rule_CAN_Minnesota_check_ROOT = no
+	rule_CAN_Idaho_check_ROOT = no
+	rule_CAN_Ohio_check_ROOT = no
+	rule_CAN_Illinois_check_ROOT = no
+	rule_CAN_Indiana_check_ROOT = no
+	rule_stay_out_of_america_ROOT = no
+	rule_stay_out_of_alands_ROOT = no
+	rule_HND_stay_out_of_siam_ROOT = no
+	rule_let_KUR_take_cores_ROOT = no
+	rule_SQI_split_up_LEP_ROOT = no
+	rule_ANQ_split_up_LEP_ROOT = no
+	rule_CHI_split_up_LEP_ROOT = no
+	rule_POR_stay_out_of_spain_ROOT = no
+	rule_leave_UKR_to_RUS_ROOT = no
+	rule_stay_out_of_western_russia_ROOT = no
+	rule_stay_out_of_siberia_ROOT = no
+	rule_RUS_stay_out_of_west_europe_ROOT = no
+	rule_RUS_stay_out_of_spain_ROOT = no
+	rule_RUS_stay_out_of_italy_ROOT = no
+	rule_RUS_stay_out_of_ireland_ROOT = no
+	rule_RUS_stay_out_of_SE_asia_ROOT = no
+	rule_TRM_border_only_ROOT = no
+	rule_JAP_leave_russian_coast_to_TRM_ROOT = no
+	rule_AUS_stay_out_of_northern_germany_ROOT = no
+	rule_AUS_stay_out_of_eastern_germany_ROOT = no
+	rule_stay_out_of_eastern_germany_ROOT = no
+	rule_stay_out_of_southern_germany_ROOT = no
+	rule_TUR_stay_out_of_northern_europe_ROOT = no
+	rule_leave_italy_to_italy_ROOT = no
+	rule_leave_america_to_americans_ROOT = no
+	rule_leave_india_to_india_ROOT = no
+	rule_3I_stay_out_of_asia_ROOT = no
+	rule_Cernauti_neighbor_ROOT = no
+	rule_leave_Suceava_to_Moldavia_ROOT = no
+	rule_no_Jutland_without_Sjaelland_ROOT = no
+	rule_leave_INS_to_DEI_ROOT = no
+	rule_AUS_split_hungary_with_belgrade_pact_ROOT = no
+	rule_belgrade_pact_split_hungary_with_austria_ROOT = no
+	rule_leave_HOL_to_DEI_ROOT = no
+	rule_leave_italy_balkans_to_austria_ROOT = no
+}
+
+is_willing_to_take_state_PREV = {
+	# general rules
+	rule_puppets_only_get_leftovers_PREV = no
+	rule_dont_take_ally_claims_PREV = no
+	rule_dont_take_ally_ambitions_PREV = no
+	rule_dont_take_friend_claims_PREV = no
+	rule_is_restricted_PREV = no
+	rule_dont_take_land_other_continents_PREV = no
+	rule_dont_take_cheap_island_states_PREV = no
+	rule_dont_take_impassable_states_PREV = no
+
+	# country-specific rules
+	rule_dont_take_france_from_GER_NFA_ally_PREV = no
+	rule_GER_split_up_france_PREV = no
+	rule_NFA_split_up_france_PREV = no
+	rule_stay_out_of_france_PREV = no
+	rule_stay_out_of_britain_PREV = no
+	rule_stay_out_of_scotland_PREV = no
+	rule_stay_out_of_wales_PREV = no
+	rule_stay_out_of_north_england_PREV = no
+	rule_stay_out_of_england_PREV = no
+	rule_leave_ireland_to_britain_PREV = no
+	rule_GER_stay_out_of_balkans_PREV = no
+	rule_CAN_Minnesota_check_PREV = no
+	rule_CAN_Idaho_check_PREV = no
+	rule_CAN_Ohio_check_PREV = no
+	rule_CAN_Illinois_check_PREV = no
+	rule_CAN_Indiana_check_PREV = no
+	rule_stay_out_of_america_PREV = no
+	rule_stay_out_of_alands_PREV = no
+	rule_HND_stay_out_of_siam_PREV = no
+	rule_let_KUR_take_cores_PREV = no
+	rule_SQI_split_up_LEP_PREV = no
+	rule_ANQ_split_up_LEP_PREV = no
+	rule_CHI_split_up_LEP_PREV = no
+	rule_POR_stay_out_of_spain_PREV = no
+	rule_leave_UKR_to_RUS_PREV = no
+	rule_stay_out_of_western_russia_PREV = no
+	rule_stay_out_of_siberia_PREV = no
+	rule_RUS_stay_out_of_west_europe_PREV = no
+	rule_RUS_stay_out_of_spain_PREV = no
+	rule_RUS_stay_out_of_italy_PREV = no
+	rule_RUS_stay_out_of_ireland_PREV = no
+	rule_RUS_stay_out_of_SE_asia_PREV = no
+	rule_TRM_border_only_PREV = no
+	rule_JAP_leave_russian_coast_to_TRM_PREV = no
+	rule_AUS_stay_out_of_northern_germany_PREV = no
+	rule_AUS_stay_out_of_eastern_germany_PREV = no
+	rule_stay_out_of_eastern_germany_PREV = no
+	rule_stay_out_of_southern_germany_PREV = no
+	rule_TUR_stay_out_of_northern_europe_PREV = no
+	rule_leave_italy_to_italy_PREV = no
+	rule_leave_america_to_americans_PREV = no
+	rule_leave_india_to_india_PREV = no
+	rule_3I_stay_out_of_asia_PREV = no
+	rule_Cernauti_neighbor_PREV = no
+	rule_leave_Suceava_to_Moldavia_PREV = no
+	rule_no_Jutland_without_Sjaelland_PREV = no
+	rule_leave_INS_to_DEI_PREV = no
+	rule_AUS_split_hungary_with_belgrade_pact_PREV = no
+	rule_belgrade_pact_split_hungary_with_austria_PREV = no
+	rule_leave_HOL_to_DEI_PREV = no
+	rule_leave_italy_balkans_to_austria_PREV = no
+}
+
+# general rules
+rule_take_bordering_first = {
+	FROM = {
+		is_important_state = no
+		NOT = {
+			any_neighbor_state = {
+				is_owned_or_claimed_by_ROOT = yes
+				is_impassable_to_PREV = no
+			}
+		}
+		owner = {
+			any_owned_state = {
+				any_neighbor_state = {
+					is_owned_or_claimed_by_ROOT = yes
+					is_impassable_to_PREV = no
+				}
+				set_temp_variable = { global.eval_state = THIS.id }
+				NOT = {
+					owner = {
+						any_enemy_country = {
+							var:global.eval_state = {
+								OR = {
+									has_claimed_state_in_peace_conference = PREV
+									is_controlled_by = PREV
+								}
+							}
+						}
+					}
+				}
+				ROOT = { is_willing_to_take_state_ROOT = yes }
+			}
+		}
+	}
+}
+
+rule_puppets_only_get_leftovers_ROOT = {
+	is_subject = yes
+	var:global.eval_state = { is_claim_or_core_of_ROOT = no }
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = ROOT }
+		is_subject = no
+		at_conference_has_war_with_owner = yes
+		var:global.eval_state = { is_claim_or_core_or_ambition_of_PREV = yes }
+		is_willing_to_take_state_PREV = yes
+	}
+}
+
+rule_puppets_only_get_leftovers_PREV = {
+	is_subject = yes
+	var:global.eval_state = { is_claim_or_core_of_PREV = no }
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = PREV }
+		is_subject = no
+		at_conference_has_war_with_owner = yes
+		var:global.eval_state = { is_claim_or_core_or_ambition_of_PREV = yes }
+	}
+}
+
+rule_dont_take_ally_claims_ROOT = {
+	var:global.eval_state = { is_claim_or_core_of_ROOT = no }
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = ROOT }
+		var:global.eval_state = { is_claim_or_core_of_PREV = yes }
+		at_conference_has_war_with_owner = yes
+		is_ally_with = ROOT
+		is_willing_to_take_state_PREV = yes
+		can_reach_state = yes
+	}
+}
+
+rule_dont_take_ally_claims_PREV = {
+	var:global.eval_state = { is_claim_or_core_of_PREV = no }
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = PREV }
+		var:global.eval_state = { is_claim_or_core_of_PREV = yes }
+		at_conference_has_war_with_owner = yes
+		is_ally_with = PREV
+
+		# Exception: Japan taking China
+	}
+}
+
+rule_dont_take_ally_ambitions_ROOT = {
+	is_in_faction = yes
+	var:global.eval_state = {
+		is_claim_or_core_or_ambition_of_ROOT = no
+		is_important_state = no
+	}
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = ROOT }
+		is_ai = yes
+		is_in_faction_with = ROOT
+		at_conference_has_war_with_owner = yes
+		NOT = { has_war_with = ROOT }
+		var:global.eval_state = {
+			is_claim_or_core_of_PREV = no
+			is_ambition_area_of_PREV = yes
+		}
+		is_willing_to_take_state_PREV = yes
+		if = {
+			limit = {
+				var:global.eval_state = { is_island_region = yes }
+			}
+			can_reach_state = yes
+		}
+		else = {
+			can_reach_state_direct = yes
+		}
+	}
+}
+
+rule_dont_take_ally_ambitions_PREV = {
+	is_in_faction = yes
+	var:global.eval_state = {
+		is_claim_or_core_or_ambition_of_PREV = no
+		is_important_state = no
+	}
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = PREV }
+		is_ai = yes
+		is_in_faction_with = PREV
+		at_conference_has_war_with_owner = yes
+		var:global.eval_state = {
+			is_claim_or_core_of_PREV = no
+			is_ambition_area_of_PREV = yes
+		}
+	}
+}
+
+rule_dont_take_friend_claims_ROOT = {
+	var:global.eval_state = {
+		is_claim_or_core_or_ambition_of_ROOT = no
+		is_important_state = no
+	}
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = ROOT }
+		at_conference_has_war_with_owner = yes
+		NOT = { has_war_with = ROOT }
+		var:global.eval_state = { is_claim_or_core_of_PREV = yes }
+		ROOT = { has_opinion = { target = PREV value > 0 } }
+		is_willing_to_take_state_PREV = yes
+		if = {
+			limit = {
+				var:global.eval_state = {
+					OR = {
+						is_island_region = yes
+						is_core_of = PREV
+					}
+				}
+			}
+			can_reach_state = yes
+		}
+		else = {
+			can_reach_state_direct = yes
+		}
+	}
+}
+
+rule_dont_take_friend_claims_PREV = {
+	var:global.eval_state = {
+		is_claim_or_core_or_ambition_of_PREV = no
+		is_important_state = no
+	}
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = PREV }
+		at_conference_has_war_with_owner = yes
+		NOT = { has_war_with = PREV }
+		var:global.eval_state = { is_claim_or_core_of_PREV = yes }
+		PREV = { has_opinion = { target = PREV value > 0 } }
+		if = {
+			limit = {
+				var:global.eval_state = {
+					OR = {
+						is_island_region = yes
+						is_core_of = PREV
+					}
+				}
+			}
+			can_reach_state = yes
+		}
+		else = {
+			can_reach_state_direct = yes
+		}
+	}
+}
+
+rule_is_restricted_ROOT = {
+	restrict_territorial_ambitions_ROOT = yes
+	var:global.eval_state = {
+		impassable = no
+		is_claim_or_core_or_ambition_of_ROOT = no
+	}
+}
+
+rule_is_restricted_PREV = {
+	restrict_territorial_ambitions_PREV = yes
+	var:global.eval_state = {
+		impassable = no
+		is_claim_or_core_or_ambition_of_PREV = no
+	}
+}
+
+rule_needs_connection_ROOT = {
+	var:global.eval_state = {
+		is_claim_or_core_or_ambition_of_ROOT = no
+		is_adjacent_to_ROOT_or_coastal = no
+	}
+	# exception: we're unrestricted and there's nobody else who can and will take it
+	NOT = {
+		AND = {
+			restrict_territorial_ambitions_ROOT = no
+			NOT = {
+				any_of_scopes = {
+					array = global.conference
+					NOT = { tag = ROOT }
+					at_conference_has_war_with_owner = yes
+					OR = {
+						AND = {
+							var:global.eval_state = { is_claim_or_core_or_ambition_of_PREV = yes }
+							can_reach_state = yes
+						}
+						AND = {
+							restrict_territorial_ambitions_PREV = no
+							var:global.eval_state = { is_adjacent_to_PREV_or_coastal = yes }
+						}
+					}
+					is_willing_to_take_state_PREV = yes
+				}
+			}
+		}
+	}
+}
+
+rule_claims_needs_connection_ROOT = {
+	var:global.eval_state = {
+		is_claim_or_core_or_ambition_of_ROOT = yes
+		is_important_state = no
+	}
+	can_reach_state = no
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = ROOT }
+		at_conference_has_war_with_owner = yes
+		OR = {
+			AND = {
+				var:global.eval_state = { is_claim_or_core_or_ambition_of_PREV = yes }
+				can_reach_state = yes
+			}
+			restrict_territorial_ambitions_PREV = no
+		}
+		is_willing_to_take_state_PREV = yes
+	}
+
+}
+
+rule_look_for_direct_connection_ROOT = {
+	# don't take a state that isn't bordering or next to a claimed state
+	var:global.eval_state = {
+		NOT = {
+			any_neighbor_state = {
+				is_owned_or_claimed_by_ROOT = yes
+				is_impassable_to_PREV = no
+			}
+			# unless it's an important state, an island, or a coastal state in an island region (like Britain)
+			is_important_state = yes
+			AND = {
+				is_island_region = yes
+				is_coastal = yes
+			}
+		}
+	}
+	# when there's another country who can and will take that state through a direct connection
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = ROOT }
+		at_conference_has_war_with_owner = yes
+		OR = {
+			var:global.eval_state = { is_claim_or_core_or_ambition_of_PREV = yes }
+			restrict_territorial_ambitions_PREV = no
+		}
+		is_willing_to_take_state_PREV = yes
+		can_reach_state_direct = yes
+	}
+	# exception: this is GER, for many countries
+	NOT = {
+		AND = {
+			OR = {
+				tag = ENR
+				tag = ENG
+				tag = FRA
+				tag = CAN
+				tag = RUS
+				tag = SOV
+			}
+			var:global.eval_state = { is_full_germany = yes }
+		}
+	}
+	# exception: this is JAP in Asia
+	NOT = {
+		AND = {
+			tag = JAP
+			var:global.eval_state = { is_on_continent = asia }
+		}
+	}
+	# exception: this is America, for ACW
+	NOT = {
+		AND = {
+			tag = USA
+			var:global.eval_state = { is_mainland_america = yes }
+		}
+	}
+}
+
+rule_dont_take_land_other_continents_ROOT = {
+	same_continent_as_state_FROM = no
+	var:global.eval_state = { is_claim_or_core_or_ambition_of_ROOT = no }
+	is_exception_to_taking_states_on_other_continents = no
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = ROOT }
+		at_conference_has_war_with_owner = yes
+		OR = {
+			same_continent_as_state_FROM = yes
+			is_exception_to_taking_states_on_other_continents = yes
+			AND = {
+				restrict_territorial_ambitions_PREV = no
+				ROOT = { restrict_territorial_ambitions_ROOT = yes }
+			}
+		}
+		OR = {
+			restrict_territorial_ambitions_PREV = no
+			var:global.eval_state = { is_claim_or_core_or_ambition_of_PREV = yes }
+		}
+		# exceptions: look for states the other country won't take, even if they can
+		is_willing_to_take_state_PREV = yes
+	}
+}
+
+rule_dont_take_land_other_continents_PREV = {
+	same_continent_as_state_FROM = no
+	var:global.eval_state = { is_claim_or_core_or_ambition_of_PREV = no }
+	is_exception_to_taking_states_on_other_continents = no
+	any_of_scopes = {
+		array = global.conference
+		NOT = { tag = PREV }
+		at_conference_has_war_with_owner = yes
+		OR = {
+			same_continent_as_state_FROM = yes
+			is_exception_to_taking_states_on_other_continents = yes
+			AND = {
+				restrict_territorial_ambitions_PREV = no
+				PREV = { restrict_territorial_ambitions_PREV = yes }
+			}
+		}
+		OR = {
+			restrict_territorial_ambitions_PREV = no
+			var:global.eval_state = { is_claim_or_core_or_ambition_of_PREV = yes }
+		}
+	}
+}
+
 

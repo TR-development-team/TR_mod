@@ -1,0 +1,415 @@
+characters = {
+	#### COUNTRY LEADERS 
+
+	#TODO_ASD: add new portrait
+	ETH_prov_mil_admin = {
+		name = ETH_prov_mil_admin
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ETH_military_communists
+			}
+		}
+
+		country_leader = {
+			ideology = Jughashvilist_subtype
+			expire = "1965.1.1.1"
+			traits = {  }
+			id = -1
+		}
+	}
+	ETH_alemework_beyene = {
+		name = ETH_alemework_beyene
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ETH_alemework_beyene
+			}
+			army = {
+				small = GFX_portrait_ETH_alemework_beyene_small
+			}
+		}
+
+		country_leader = {
+			ideology = anarco_communist_subtype
+			expire = "1965.1.1.1"
+			id = -1
+		}
+	}
+
+
+	ETH_ras_imru_haile_selassie = {
+		instance = {
+			allowed = { has_dlc = "By Blood Alone"}
+			name = ETH_ras_imru_haile_selassie
+			portraits={
+				civilian = {
+					large = GFX_portrait_ETH_ras_imru_haile_selassie
+				}
+				army = {
+					small = "GFX_portrait_ETH_ras_imru_haile_selassie_small"
+				}
+			}
+			country_leader = {
+				ideology = social_democrat_subtype
+				expire = "1965.1.1.1"
+				traits = { }
+				id = -1
+			}
+
+			corps_commander = {
+				traits = { infantry_officer }
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 2
+				legacy_id = 0
+			}
+		}
+		instance = {
+			allowed = { NOT = { has_dlc = "By Blood Alone" } }
+			country_leader = {
+				ideology = social_democrat_subtype
+				expire = "1965.1.1.1"
+				id = -1
+			}
+			name = ETH_ras_imru_haile_selassie
+			portraits={
+				civilian = {
+					large = GFX_portrait_ETH_ras_imru_haile_selassie
+				}
+				army={
+					small="GFX_idea_generic_political_advisor_arab_1"
+				}
+			}
+		}
+	}
+	ETH_haile_selassie = {
+		name = ETH_haile_selassie
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/Africa/Portrait_ETH_Selassie.tga"
+				small = GFX_portrait_ETH_haile_selassie_imprisoned_small
+			}
+			 army = {
+			 	large = "gfx/leaders/Africa/Portrait_ETH_Selassie.tga"
+			 	#small = GFX_portrait_ETH_seyoum_mengesha_small
+
+			 }
+		}
+		country_leader = {
+			ideology = social_conservative_subtype
+			expire = "1965.1.1.1"
+			traits = { Rastafari_traits }
+			id = -1
+		}
+		country_leader = {
+			ideology = prussian_constitutionalism_subtype
+			expire = "1965.1.1.1"
+			traits = { Rastafari_traits }
+			id = -1
+		}
+		country_leader = {
+			ideology = absolute_monarchy_subtype
+			expire = "1965.1.1.1"
+			traits = { Rastafari_traits }
+			id = -1
+		}
+		country_leader = {
+			ideology = Nationalism_subtype
+			expire = "1965.1.1.1"
+			traits = { Rastafari_traits }
+			id = -1
+		}
+		country_leader = {
+			ideology = Rastafarianism_subtype
+			expire = "1965.1.1.1"
+			traits = { Rastafari_traits }
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { 
+				has_country_leader =  {
+					ruling_only = yes 
+					character = ETH_haile_selassie
+				}
+			}
+		}
+	}
+
+	ETH_haile_selassie_gugsa = {
+		name = ETH_haile_selassie_gugsa
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ETH_haile_selassie_gugsa
+			}
+			 army = {
+			 	large = GFX_portrait_ETH_haile_selassie_gugsa
+			 	small = GFX_portrait_ETH_seyoum_mengesha_small
+			 }
+		}
+		country_leader = {
+			ideology = Nationalism_subtype
+			expire = "1965.1.1.1"
+			traits = { }
+			id = -1
+		}
+		field_marshal = {
+			traits = { }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = {
+			}
+		}
+	}
+
+	ETH_hailu_tekle_haymanot = {
+		name = ETH_hailu_tekle_haymanot
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ETH_hailu_tekle_haymanot
+			}
+			army = {
+				large = GFX_portrait_ETH_hailu_tekle_haymanot
+				small = GFX_portrait_ETH_hailu_tekle_hayamot_small
+			}
+		}
+
+		field_marshal = {
+			traits = { hill_fighter }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			visible = { 
+			}
+		}
+	}
+
+	ETH_abba_jofir = {
+		name = ETH_abba_jofir
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ETH_abba_jofir
+			}
+			army = {
+				small = GFX_portrait_ETH_abba_jofir_small
+			}
+		}
+
+		field_marshal = {
+			traits = { desert_fox }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			visible = {
+			}
+		}
+	}
+
+	#### Military Commanders 
+	ETH_seyoum_mengesha = {
+		name = ETH_seyoum_mengesha
+		allowed_civil_war = {
+		}
+		portraits = {
+			army = {
+				large=GFX_portrait_ETH_seyoum_mengesha
+				small=GFX_portrait_ETH_seyoum_mengesha_small
+			}
+		}
+		corps_commander = {
+			traits = { old_guard }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+
+	ETH_desta_damtew = {
+			allowed = {
+				has_dlc = "By Blood Alone"
+			}
+			name = ETH_desta_damtew
+			portraits = {
+				army = {
+					large = GFX_portrait_ETH_desta_damtew
+					small = GFX_portrait_ETH_desta_damtew_small
+				}
+			}
+			corps_commander = {
+				traits = { trait_reckless }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 1
+				planning_skill = 2
+				logistics_skill = 2
+				legacy_id = -1
+				visible = { }
+			}
+	}
+
+	ETH_mulugeta_yeggazu_of_illubabor = {
+		name = ETH_mulugeta_yeggazu_of_illubabor
+		portraits = {
+			army = {
+				large = GFX_portrait_ETH_mulugeta_yeggazu_of_illubabor
+				small = GFX_portrait_ETH_mulugeta_yeggazu_of_illubabor_small
+			}
+		}
+		corps_commander = {
+			traits = { politically_connected infantry_leader }
+			skill = 2
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+	}
+
+	ETH_ras_kassa = {
+			allowed = {
+				has_dlc = "By Blood Alone"
+			}
+			name = ETH_ras_kassa
+			portraits = {
+				army = {
+					large = GFX_portrait_ETH_kassa_haile_darge
+					small = GFX_portrait_ETH_kassa_haile_darge_small
+				}
+			}
+			
+			corps_commander = {
+				traits = { trait_cautious}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+				legacy_id = -1
+				visible = {  }
+			}
+		
+	}
+
+	ETH_abebe_aregai = {
+		name = ETH_abebe_aregai
+		portraits = {
+			army = {
+				large=GFX_portrait_ETH_abebe_aregai
+				small=GFX_portrait_ETH_abebe_aregai_small
+			}
+		}
+		corps_commander = {
+			traits = { trickster}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+		}
+
+	}
+
+	ETH_ayalew_birru = {
+		name = ETH_ayalew_birru
+		allowed_civil_war = {
+			has_government = neutrality
+		}
+		portraits = {
+			army = {
+				large=GFX_portrait_ETH_ayalew_birru
+				small=GFX_portrait_ETH_ayalew_birru_small
+			}
+		}
+		
+		corps_commander = {
+			traits = { trait_mountaineer }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+			
+			}
+		}
+
+	}
+	ETH_beyene_merid = {
+		name = ETH_beyene_merid
+		portraits = {
+			army = {
+				large=GFX_portrait_ETH_beyene_merid
+				small=GFX_portrait_ETH_beyene_merid_small
+			}
+		}
+		
+		corps_commander = {
+			traits = { desert_fox }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+
+	}
+
+
+	ETH_nasibu_zeamanuel = {
+		name = ETH_nasibu_zeamanuel
+		portraits = {
+			army = {
+				large=GFX_portrait_ETH_nasibu_zeamanuel
+				small=GFX_portrait_ETH_nasibu_zeamanuel_small
+			}
+		}
+		corps_commander = {
+			traits = { hill_fighter }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+			legacy_id = -1
+		}
+	}
+
+	ETH_balcho_safo = {
+		name = ETH_balcho_safo
+		portraits = {
+			army = {
+				large=GFX_portrait_ETH_balcha_safo
+				small=GFX_portrait_ETH_balcha_safo_small
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless cavalry_leader}
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = -1
+		}
+	}
+}

@@ -1222,7 +1222,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 50
+			factor = 400
 		}
 	completion_reward = {
 		custom_effect_tooltip = JAP_Korean_focus_1_text
@@ -1252,7 +1252,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 50
+			factor = 400
 		}
 	completion_reward = {
 			custom_effect_tooltip = JAP_Korean_focus_2_text
@@ -1276,7 +1276,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 50
+			factor = 400
 		}
 	completion_reward = {
 			custom_effect_tooltip = JAP_Korean_focus_3_text
@@ -1497,7 +1497,7 @@ focus_tree = {
 			focus = JAP_SHUGIIN_1940
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 3
 		y = 9
@@ -1523,7 +1523,7 @@ focus_tree = {
 			focus = JAP_Taishuto_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 2
 		y = 10
@@ -1553,7 +1553,7 @@ focus_tree = {
 			focus = JAP_Taishuto_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 4
 		y = 10
@@ -1582,7 +1582,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_Taishuto_focus_2 }
 		prerequisite = { focus = JAP_Taishuto_focus_3 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 3
 		y = 11
@@ -1602,7 +1602,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Taishuto_focus_4 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 3
 		y = 12
@@ -1622,7 +1622,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Taishuto_focus_5 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 2
 		y = 13
@@ -1642,7 +1642,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Taishuto_focus_5 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 4
 		y = 13
@@ -1663,7 +1663,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_Taishuto_focus_6 }
 		prerequisite = { focus = JAP_Taishuto_focus_7 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 3
 		y = 14
@@ -1683,7 +1683,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Taishuto_focus_8 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 3
 		y = 15
@@ -1711,7 +1711,7 @@ focus_tree = {
 			focus = JAP_Taishuto_focus_1
 	    }  
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 7
 		y = 9
@@ -1737,7 +1737,7 @@ focus_tree = {
 			focus = JAP_Kakushinto_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 6
 		y = 10
@@ -1767,7 +1767,7 @@ focus_tree = {
 			focus = JAP_Kakushinto_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 8
 		y = 10
@@ -1791,7 +1791,7 @@ focus_tree = {
 			focus = JAP_Kakushinto_focus_3
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 7
 		y = 11
@@ -1812,7 +1812,7 @@ focus_tree = {
 			focus = JAP_Kakushinto_focus_4
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 7
 		y = 12
@@ -1831,7 +1831,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Kakushinto_focus_5 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 6
 		y = 13
@@ -1851,7 +1851,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Kakushinto_focus_5 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 8
 		y = 13
@@ -1872,7 +1872,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_Kakushinto_focus_6 }
 		prerequisite = { focus = JAP_Kakushinto_focus_7 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 7
 		y = 14
@@ -1892,7 +1892,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Kakushinto_focus_8 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 7
 		y = 15
@@ -1920,7 +1920,7 @@ focus_tree = {
 			focus = JAP_Taishuto_focus_1
 	    }  
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 11
 		y = 9
@@ -1946,7 +1946,7 @@ focus_tree = {
 			focus = JAP_Minseito_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 10
 		y = 10
@@ -1972,7 +1972,7 @@ focus_tree = {
 			focus = JAP_Minseito_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 12
 		y = 10
@@ -2001,7 +2001,7 @@ focus_tree = {
 			focus = JAP_Minseito_focus_3
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 11
 		y = 11
@@ -2029,7 +2029,7 @@ focus_tree = {
 			focus = JAP_Seiyukai_focus_5
 	    } 
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 13
 		y = 12
@@ -2049,7 +2049,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Minseito_focus_5 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 12
 		y = 13
@@ -2069,7 +2069,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Minseito_focus_5 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 14
 		y = 13
@@ -2090,7 +2090,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_Minseito_focus_6 }
 		prerequisite = { focus = JAP_Minseito_focus_7 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 13
 		y = 14
@@ -2110,7 +2110,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Minseito_focus_8 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 13
 		y = 15
@@ -2138,7 +2138,7 @@ focus_tree = {
 			focus = JAP_Taishuto_focus_1
 	    }  
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 15
 		y = 9
@@ -2160,7 +2160,7 @@ focus_tree = {
 			focus = JAP_Dairenritu_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 14
 		y = 10
@@ -2181,7 +2181,7 @@ focus_tree = {
 			focus = JAP_Dairenritu_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 16
 		y = 10
@@ -2205,7 +2205,7 @@ focus_tree = {
 			focus = JAP_Dairenritu_focus_3
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 15
 		y = 11
@@ -2232,7 +2232,7 @@ focus_tree = {
 			focus = JAP_Taishuto_focus_1
 	    }  
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 19
 		y = 9
@@ -2257,7 +2257,7 @@ focus_tree = {
 			focus = JAP_Seiyukai_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 18
 		y = 10
@@ -2282,7 +2282,7 @@ focus_tree = {
 			focus = JAP_Seiyukai_focus_1
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 20
 		y = 10
@@ -2310,7 +2310,7 @@ focus_tree = {
 			focus = JAP_Seiyukai_focus_3
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 19
 		y = 11
@@ -2335,7 +2335,7 @@ focus_tree = {
 			focus = JAP_Minseito_focus_5
 	    } 
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 17
 		y = 12
@@ -2354,7 +2354,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Seiyukai_focus_5 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 16
 		y = 13
@@ -2374,7 +2374,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Seiyukai_focus_5 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 18
 		y = 13
@@ -2395,7 +2395,7 @@ focus_tree = {
 		prerequisite = { focus = JAP_Seiyukai_focus_6 }
 		prerequisite = { focus = JAP_Seiyukai_focus_7 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 17
 		y = 14
@@ -2415,7 +2415,7 @@ focus_tree = {
             }
 		prerequisite = { focus = JAP_Seiyukai_focus_8 }
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 17
 		y = 15
@@ -2440,7 +2440,7 @@ focus_tree = {
 		    focus = JAP_Seiyukai_focus_9 
 		}
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 		x = 11
 		y = 16
@@ -2463,7 +2463,7 @@ focus_tree = {
 		cost = 2
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 3
+			factor = 40
 				}
 		available = {
 			has_completed_focus = JAP_WOFBuHbq
@@ -2488,8 +2488,8 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = JAP_TruqXPet }
 		ai_will_do = {
-			factor = 3
-			}
+			factor = 40
+				}
 		completion_reward = {
 			add_political_power = 50		
 		}
@@ -2501,12 +2501,12 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 30
 		y = 13
-		cost = 6
+		cost = 8
 		prerequisite = { focus = JAP_TruqXPet }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 3
-			}
+			factor = 40
+				}
 		completion_reward = {
 						random_owned_controlled_state = {
 					limit = {
@@ -2576,11 +2576,11 @@ focus_tree = {
 			icon = GFX_goal_generic_construct_mil_factory
 			x = 34
 			y = 13
-			cost = 6
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_TruqXPet }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 				random_owned_controlled_state = {
@@ -2656,7 +2656,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_YBPVRknb }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 			completion_reward = {
 				add_timed_idea = {
@@ -2677,7 +2677,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_IClXveKW }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 			completion_reward = {
 				add_timed_idea = {
@@ -2694,7 +2694,7 @@ focus_tree = {
 			icon = GFX_focus_generic_industry_3
 			x = 28
 			y = 15
-			cost = 10
+			cost = 5
 			available_if_capitulated = yes
 			prerequisite = { 
 				focus = JAP_MnREbgYL 
@@ -2703,7 +2703,7 @@ focus_tree = {
 				focus = JAP_IClXveKW 
 			}
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 			completion_reward = {
 				add_political_power = 50		
@@ -2721,9 +2721,11 @@ focus_tree = {
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_IClXveKW }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
-	
+			completion_reward = {
+				add_ideas = JAP_Pacific_BELT
+			}
 		}
 	
 	
@@ -2733,12 +2735,12 @@ focus_tree = {
 			icon = GFX_focus_prc_agrarian_socialism
 			x = 26
 			y = 14
-			cost = 6
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_EvHNbpzl }
 			ai_will_do = {
-				factor = 3
-			}
+				factor = 40
+					}
 		completion_reward = {
 						  add_ideas = JAP_agricultural
 					
@@ -2750,11 +2752,11 @@ focus_tree = {
 			icon = GFX_goal_generic_production2
 			x = 26
 			y = 15
-			cost = 6
+			cost = 8
 					prerequisite = { focus = JAP_MnREbgYL }
 			available_if_capitulated = yes
 			ai_will_do = {
-				factor = 1
+				factor = 40
 			}
 		completion_reward = {
 						  swap_ideas = {
@@ -2771,11 +2773,11 @@ focus_tree = {
 			icon = GFX_goal_generic_production2
 			x = 24
 			y = 16
-			cost = 6
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_SXKNOVdi }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 				swap_ideas = {
@@ -2796,7 +2798,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_IVORrole }
 			ai_will_do = {
-				factor = 3
+				factor = 1
 			}
 	
 		}
@@ -2808,7 +2810,7 @@ focus_tree = {
 			icon = GFX_focus_generic_industry_3
 			x = 32
 			y = 16
-			cost = 5
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { 
 				focus = JAP_srDXjRVm 
@@ -2817,9 +2819,54 @@ focus_tree = {
 				focus = JAP_jcQGTlAO 
 			}
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
-	
+			completion_reward = {
+				808 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+				809 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+				282 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+				810 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+			}
 		}
 	
 	
@@ -2829,7 +2876,7 @@ focus_tree = {
 			icon = GFX_focus_generic_industry_3
 			x = 34
 			y = 16
-			cost = 5
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { 
 				focus = JAP_srDXjRVm 
@@ -2838,9 +2885,54 @@ focus_tree = {
 				focus = JAP_jcQGTlAO 
 			}
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
-	
+			completion_reward = {
+				807 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+				813 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+				812 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+				531 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+			}
 		}
 	
 	
@@ -2850,7 +2942,7 @@ focus_tree = {
 			icon = GFX_focus_generic_industry_3
 			x = 36
 			y = 16
-			cost = 5
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { 
 				focus = JAP_srDXjRVm 
@@ -2859,9 +2951,43 @@ focus_tree = {
 				focus = JAP_jcQGTlAO 
 			}
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
-	
+			completion_reward = {
+				822 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+				811 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+				532 = {
+					if = {
+						limit = { is_controlled_by = ROOT }
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				    }
+				}
+			}
 		}
 	
 	
@@ -2875,7 +3001,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_rfvNaiJD }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 					random_owned_controlled_state = {
@@ -2947,7 +3073,7 @@ focus_tree = {
 				focus = JAP_YBPVRknb 
 			}
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 						 add_ideas = JAP_Military_industrial_complex
@@ -2965,7 +3091,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_PmCNaHds }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 					available = {
 								NOT = {
@@ -2999,7 +3125,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_pKHYnXif }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 			activate_decision = Integrate_Foreign_land_decision
@@ -3017,7 +3143,7 @@ focus_tree = {
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_mzVJeSun }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 				810 = { add_extra_state_shared_building_slots = 2 }    
@@ -3035,11 +3161,11 @@ focus_tree = {
 			icon = GFX_goal_generic_intelligence_exchange
 			x = 24
 			y = 15
-			cost = 5
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_MnREbgYL }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 						  add_ideas = JAP_agriculture_1
@@ -3053,11 +3179,11 @@ focus_tree = {
 			icon = GFX_goal_generic_trade
 			x = 24
 			y = 17
-			cost = 5
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_NdZGmARP }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 						  remove_ideas = JAP_food_import
@@ -3076,11 +3202,11 @@ focus_tree = {
 			icon = GFX_goal_generic_demand_territory
 			x = 26
 			y = 16
-			cost = 5
+			cost = 8
 			available_if_capitulated = yes
 			prerequisite = { focus = JAP_eGVsDCBz }
 			ai_will_do = {
-				factor = 3
+				factor = 40
 			}
 		completion_reward = {
 						  swap_ideas = {
@@ -3109,7 +3235,13 @@ focus_tree = {
 				focus = JAP_kcBtGOvX 
 			}
 			ai_will_do = {
-				factor = 3
+				factor = 40
+			}
+			completion_reward = {
+				swap_ideas = {
+					remove_idea = JAP_Pacific_BELT
+					add_idea = JAP_income_doubling_plan
+				}	
 			}
 		}
 	#大東亜縦貫鉄道構想
@@ -3122,7 +3254,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = JAP_TezXPUYC }
 		ai_will_do = {
-			factor = 3
+			factor = 1
 		}
 	completion_reward = {   
                                    
@@ -3136,7 +3268,7 @@ focus_tree = {
 		icon = GFX_goal_generic_propaganda
 		x = 26
 		y = 17
-		cost = 6
+		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
 			focus = JAP_pKHYnXif 
@@ -3145,7 +3277,7 @@ focus_tree = {
 			focus = JAP_VdkEGTRv 
 		}
 		ai_will_do = {
-			factor = 3
+			factor = 40
 		}
 	completion_reward = {   
                                 remove_ideas = JAP_Toshikamitu
@@ -3187,7 +3319,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		prerequisite = { focus = JAP_PmCNaHds }
 		ai_will_do = {
-			factor = 3
+			factor = 40
 		}
 	completion_reward = {
 			random_owned_controlled_state = {
@@ -3354,7 +3486,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 5
+			factor = 40
 		}
 	completion_reward = {
 
@@ -6152,7 +6284,11 @@ focus_tree = {
 			factor = 3
 		}
 	completion_reward = {
-              add_ideas = JAP_TO_Kikan
+		create_intelligence_agency = {
+			name = JAP_TO_Kikan
+			icon = GFX_intelligence_agency_logo_jap
+		}
+        add_ideas = JAP_TO_Kikan
 		}
 	}
 	#情報機関の統率

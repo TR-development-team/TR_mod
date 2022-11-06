@@ -1,0 +1,20 @@
+state = {
+	id = 998
+	name = "STATE_998"
+	provinces = {
+		13259
+	}
+	history = {
+		owner = GER
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			13259 1 
+		}
+		add_core_of = GER
+		add_claim_by = BEL
+	}
+	manpower = 80000
+	state_category = rural
+}

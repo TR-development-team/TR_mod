@@ -3,7 +3,7 @@ state={
 	name="STATE_824"
 	local_supplies=0.0 
 provinces={
-		1063 3848 4067 9865 12056 
+		1063 3848 4067 4153 9865 12056 
 	}
 	state_category=town
 	manpower=3360000
@@ -16,7 +16,8 @@ provinces={
                         dockyard = 1
                         air_base = 1
 		}
-		 victory_points = { 9865 5 }
+		victory_points = { 1063 3 }
+                victory_points = { 4153 1 }
 
 
 	}

@@ -1,27 +1,25 @@
-
-state={
-	id=945
-	name="STATE_945"
-
-	history={
+state = {
+	id = 945
+	name = "STATE_945"
+	history = {
 		owner = AUS
 		victory_points = {
-			6680 5 
+			6680
+			5
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
 			industrial_complex = 1
-
 		}
 		add_core_of = AUS
-
+		set_province_name = {
+			id = 6680
+			name = VICTORY_POINTS_6680_TR
+		}
 	}
-
-	provinces={
-		6680 
+	provinces = {
+		6680
 	}
-	manpower=546916
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	manpower = 546916
+	buildings_max_level_factor = 1
 }

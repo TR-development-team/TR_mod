@@ -324,6 +324,12 @@ focus_tree = {
 				FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = RCG
+				}
+				add_claim_by = NMB
+			}
 			create_wargoal = {
 				target = RCG
 				type = annex_everything
@@ -376,6 +382,12 @@ focus_tree = {
 				target = CMR
 				type = annex_everything
 			}
+			every_state = {
+				limit = {
+					is_core_of = CMR
+				}
+				add_claim_by = NMB
+			}
 		}
 	}
 
@@ -400,6 +412,24 @@ focus_tree = {
 				FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = ETO
+				}
+				add_claim_by = NMB
+			}
+			every_state = {
+				limit = {
+					is_core_of = SKT
+				}
+				add_claim_by = NMB
+			}
+			every_state = {
+				limit = {
+					is_core_of = MAU
+				}
+				add_claim_by = NMB
+			}
 			create_wargoal = {
 				target = ETO
 				type = annex_everything

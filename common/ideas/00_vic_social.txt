@@ -210,8 +210,8 @@ ideas = {
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
 				production_factory_max_efficiency_factor = 0.2
-                                production_factory_efficiency_gain_factor = 0.1
-                                production_factory_start_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.1
+                production_factory_start_efficiency_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -237,7 +237,7 @@ ideas = {
 			allowed = { always = yes }
 			
 			modifier = {
-				production_speed_buildings_factor = 0.2
+				production_speed_buildings_factor = 0.1
 				monthly_population = -0.2
 				conscription_factor = -0.1
 			}
@@ -256,7 +256,7 @@ ideas = {
 			allowed = { always = yes }
 			
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				production_speed_buildings_factor = 0.05
 				monthly_population = -0.1
 				conscription_factor = -0.05
 			}
@@ -296,7 +296,7 @@ ideas = {
 			allowed = { always = yes }
 			
 			modifier = {
-				production_speed_buildings_factor = -0.1
+				production_speed_buildings_factor = -0.05
 				monthly_population = 0.25
 				conscription_factor = 0.05
 			}
@@ -317,7 +317,7 @@ ideas = {
 			allowed = { always = yes }
 			
 			modifier = {
-				production_speed_buildings_factor = -0.15
+				production_speed_buildings_factor = -0.1
 				monthly_population = 0.5
 				conscription_factor = 0.1
 			}
@@ -609,7 +609,7 @@ ideas = {
 			modifier = {
 				compliance_gain = 0.01
 				required_garrison_factor = -0.1
-				political_power_factor = -0.1
+				political_power_factor = -0.05
 			}
 			
 			cancel_if_invalid = no
@@ -630,7 +630,7 @@ ideas = {
 			modifier = {
 				compliance_gain = 0.02
 				required_garrison_factor = -0.15
-				political_power_factor = -0.15
+				political_power_factor = -0.1
 			}
 			
 			cancel_if_invalid = no

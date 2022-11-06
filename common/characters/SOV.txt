@@ -138,7 +138,7 @@ characters={
 		name=RUS_Pyotr_wrangel
 		portraits={
 		    civilian={
-			large="gfx/leaders/SOV/RUS_wrangel2.tga"
+			large="gfx/leaders/SOV/RUS_wrangel2.png"
 		    }
 		}
 		country_leader={
@@ -149,7 +149,7 @@ characters={
 		name=RUS_Pyotr_wrangel_1
 		portraits={
 		    civilian={
-			large="gfx/leaders/SOV/RUS_wrangel.tga"
+			large="gfx/leaders/SOV/RUS_wrangel.png"
 		    }
 		}
 		country_leader={
@@ -189,7 +189,7 @@ characters={
 		    }
 		}
 		country_leader={
-			ideology=Gnosticism_subtype
+			ideology=Tsarebozhiye_subtype
 		}
 	}
 	RUS_alexei_ii_portrait ={
@@ -200,14 +200,14 @@ characters={
 		    }
 		}
 		country_leader={
-			ideology=Gnosticism_subtype
+			ideology=Tsarebozhiye_subtype
 		}
 	}
 	RUS_Pyotr_wrangel_Army={
 		name=RUS_Pyotr_wrangel
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/RUS_wrangel2.tga"
+				large="gfx/leaders/SOV/RUS_wrangel2.png"
 			}
 		}
 		field_marshal = {

@@ -83,7 +83,7 @@ characters={
 		name=DDR_Kurt_von_Schleicher
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Schleicher.tga"
+				large="gfx/leaders/DDR/Portrait_DDR_Kurt_von_Schleicher.png"
 			}
 		}
 		country_leader={
@@ -94,7 +94,7 @@ characters={
 		name=DDR_Erich_Ludendorff
 		portraits={
 			civilian={
-				large="gfx/leaders/DDR/Portrait_Ludendorff.tga"
+				large="gfx/leaders/DDR/Portrait_DDR_Erich_Ludendorff.png"
 			}
 		}
 		country_leader={
@@ -105,7 +105,7 @@ characters={
 		name=DDR_Erich_Ludendorff
 		portraits={
 			army={
-				large="gfx/leaders/DDR/Portrait_Ludendorff.tga"
+				large="gfx/leaders/DDR/Portrait_DDR_Erich_Ludendorff.png"
 			}
 		}
 		field_marshal = {
@@ -157,7 +157,7 @@ characters={
 		name=DDR_Kurt_von_Schleicher
 		portraits={
 			army={
-				large="gfx/leaders/GER/Portrait_GER_Schleicher.tga"
+				large="gfx/leaders/DDR/Portrait_DDR_Kurt_von_Schleicher.png"
 			}
 		}
 		field_marshal = {
@@ -370,7 +370,24 @@ characters={
 			logistics_skill=2
 		}
 	}
-
+	DDR_paul_hausser={
+		name=GER_paul_hausser
+		portraits={
+			army={
+				large=GFX_portrait_GER_paul_hausser
+				small=GFX_portrait_GER_paul_hausser_small
+			}
+		}
+		corps_commander={
+			traits={ armor_officer politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=20
+		}
+	}
 
 	DDR_karl_donitz={
 		name=GER_karl_donitz
@@ -397,7 +414,7 @@ characters={
 		name=DDR_Reinhard_Heydrich
 		portraits={
 			army={
-				large="gfx/leaders/GER/Portrait_GER_Heydrich.tga"
+				large="gfx/leaders/DDR/Portrait_DDR_Heydrich.png"
 			}
 		}
 		navy_leader={

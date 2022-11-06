@@ -1,18 +1,6 @@
 ﻿capital = 126
 
-set_oob = "ENG_1936"
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_naval_oob = "ENG_1936_Naval"
-	else = {
-		set_naval_oob = "ENG_1936_Naval_Legacy"
-	}
-}
 country_event = { id = TR_UK.2 days = 7 }
-
-load_oob = "ENG_Motorized"
 
 set_research_slots = 4
 
@@ -29,14 +17,7 @@ set_technology = {
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	CAS1 = 1
 	basic_train = 1
-	trench_warfare = 1
 	fleet_in_being = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
@@ -44,6 +25,7 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
@@ -62,6 +44,7 @@ if = {
 		basic_light_tank_chassis = 1
 	}
 }
+
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
@@ -111,6 +94,7 @@ if = {
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
 		basic_fire_control_system = 1
+		basic_dp_light_battery = 1
 	}
 }
 
@@ -123,7 +107,6 @@ if = {
 	}
 }
 
-set_variable = { var = eng_gateway_to_europe_influence value = 0 }
 
 add_ideas = {
 	totalist_dictatorship
@@ -848,6 +831,94 @@ if = {
 		}
 	}
 	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "Hawker Fury" #also covers Gloster Gauntlet, Hawker Demon
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+		}
+
+		create_equipment_variant = {
+			name = "Hawker Nimrod" 
+			type = cv_small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+		}
+
+		create_equipment_variant = {
+			name = "Gloster Gladiator" 
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+		}
+
+		create_equipment_variant = {
+			name = "Fairey Gordon" 
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+			icon = "GFX_ENG_CAS1_medium"
+		}
+		create_equipment_variant = {
+			name = "Vickers Vildebeest" 
+			type = small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
+		}
+		create_equipment_variant = {
+			name = "Blackburn Shark" 
+			type = cv_small_plane_naval_bomber_airframe_0
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_1_1x
+				special_type_slot_1 = empty
+			}
+			icon = "GFX_ENG_naval_bomber1_medium"
+		}
+		create_equipment_variant = {
+			name = "Handley Page Heyford" 
+			type = medium_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_1_2x
+				special_type_slot_1 = empty
+			}
+			obsolete = yes
+		}
+		create_equipment_variant = {
+			name = "Bristol Blenheim" 
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = lmg_defense_turret
+			}
+			icon = "GFX_ENG_heavy_fighter1_medium"
+		}
+	}
+if = {
 		limit = {
 			has_dlc = "By Blood Alone"
 		}

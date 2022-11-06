@@ -49,6 +49,7 @@ country_event = {
 			inherit_technology = STE
             }
 		}
+
 	}
 	option = { 
 		name = TR_central_asia.2.b
@@ -115,5 +116,11 @@ country_event = {
 			target = STE
 			type = annex_everything
 		}
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.48
+		    	days = 1
+		    }
+	    }
 	}
 }

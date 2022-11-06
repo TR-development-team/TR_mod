@@ -1,0 +1,1442 @@
+#militaly_focus
+	#軍の改革
+	shared_focus = {
+		id = GER_military_focus_1
+		icon = GFX_focus_SOV_the_glory_of_the_red_army_communism
+		
+		x = 19
+		y = 10
+		
+		cost = 3
+		
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 80
+		}
+		
+		completion_reward = {
+			army_experience = 25
+		}
+	}
+	#同志ヘプナーの機甲戦理論
+	shared_focus = {
+		id = GER_military_focus_2
+		icon = GFX_
+		x = -4
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = { has_country_flag = GER_Erich_Hoepner_army }
+		prerequisite = { focus = GER_military_focus_1 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = GER_REVOLUTION_ARMY
+				add_idea = GER_New_Army
+			}	
+		}
+	}
+	#同志ウーゼの人民軍理論
+	shared_focus = {
+		id = GER_military_focus_3
+		icon = GFX_	
+		x = -1
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = { has_country_flag = GER_Bodo_Uhse_army }
+		prerequisite = { focus = GER_military_focus_1 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = GER_REVOLUTION_ARMY
+				add_idea = GER_New_Army
+			}
+		}
+	}
+	#同志ユンガーの闘争理論
+	shared_focus = {
+		id = GER_military_focus_4
+		icon = GFX_	
+		x = 1
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = { has_country_flag = GER_ernst_junger_army }
+		prerequisite = { focus = GER_military_focus_1 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = GER_REVOLUTION_ARMY
+				add_idea = GER_New_Army
+			}
+		}
+	}
+	#同志ロンメルの歩兵戦理論
+	shared_focus = {
+		id = GER_military_focus_5
+		icon = GFX_	
+		x = 3
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = { has_country_flag = GER_Erwin_Rommel_army }
+		prerequisite = { focus = GER_military_focus_1 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			swap_ideas = {
+				remove_idea = GER_REVOLUTION_ARMY
+				add_idea = GER_New_Army
+			}
+		}
+	}
+	#戦車の改良
+	shared_focus = {
+		id = GER_military_focus_6
+		icon = GFX_
+		x = -4
+		y = 2
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_2 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_New_Army
+				add_idea = GER_Army_Hoepner
+			}
+		}
+	}
+	#戦車士官学校
+	shared_focus = {
+		id = GER_military_focus_7
+		icon = GFX_
+		x = -5
+		y = 3
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_6 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Army_Hoepner
+				add_idea = GER_Army_Hoepner_1
+			}
+		}
+	}
+	#航空支援
+	shared_focus = {
+		id = GER_military_focus_8
+		icon = GFX_
+		x = -3
+		y = 3
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_6 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_Army_Hoepner_3
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 0.5
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	#革命的戦車生産ライン
+	shared_focus = {
+		id = GER_military_focus_9
+		icon = GFX_
+		x = -4
+		y = 4
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_7 }
+		prerequisite = { focus = GER_military_focus_8 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_Senshaseisan
+		}
+	}
+	#共和国地上軍
+	shared_focus = {
+		id = GER_military_focus_10
+		icon = GFX_
+		x = -4
+		y = 5
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_9 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Army_Hoepner_1
+				add_idea = GER_Army_Hoepner_2
+			}
+		}
+	}
+	#銃火器生産ライン
+	shared_focus = {
+		id = GER_military_focus_11
+		icon = GFX_
+		x = -2
+		y = 2
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_3 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_Hoheiju
+		}
+	}
+	#大量動員
+	shared_focus = {
+		id = GER_military_focus_12
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_3 focus = GER_military_focus_4 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_TAIRYODOUIN
+		}
+	}
+	#砲兵火力による圧倒
+	shared_focus = {
+		id = GER_military_focus_13
+		icon = GFX_
+		x = -1
+		y = 3
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_11 }
+		prerequisite = { focus = GER_military_focus_12 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_New_Army
+				add_idea = GER_Army_Uhse
+			}
+		}
+	}
+	#民兵の強化
+	shared_focus = {
+		id = GER_military_focus_14
+		icon = GFX_
+		x = -1
+		y = 4
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_13 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Army_Uhse
+				add_idea = GER_Army_Uhse_1
+			}		
+		}
+	}
+	#赤色人民軍
+	shared_focus = {
+		id = GER_military_focus_15
+		icon = GFX_
+		x = -1
+		y = 5
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_14 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Army_Uhse_1
+				add_idea = GER_Army_Uhse_2
+			}	
+		}
+	}
+	#突撃大隊の改良
+	shared_focus = {
+		id = GER_military_focus_16
+		icon = GFX_
+		x = 2
+		y = 2
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_4 focus = GER_military_focus_5 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_Stormtroopers
+		}
+	}
+	#軍事教練
+	shared_focus = {
+		id = GER_military_focus_17
+		icon = GFX_
+		x = 1
+		y = 3
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_12 }
+		prerequisite = { focus = GER_military_focus_16 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_New_Army
+				add_idea = GER_Army_Junger
+			}
+		}
+	}
+	#戦う労働者
+	shared_focus = {
+		id = GER_military_focus_18
+		icon = GFX_
+		x = 1
+		y = 4
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_17 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Army_Junger
+				add_idea = GER_Army_Junger_1
+			}
+		}
+	}
+	#黒色人民軍
+	shared_focus = {
+		id = GER_military_focus_19
+		icon = GFX_
+		x = 1
+		y = 5
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_18 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Army_Junger_1
+				add_idea = GER_Army_Junger_2
+			}		
+		}
+	}
+	#自動車化計画
+	shared_focus = {
+		id = GER_military_focus_20
+		icon = GFX_
+		x = 4
+		y = 2
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_5 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			add_ideas = GER_Automobile
+		}
+	}
+	#歩兵機動
+	shared_focus = {
+		id = GER_military_focus_21
+		icon = GFX_
+		x = 3
+		y = 3
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_16 }
+		prerequisite = { focus = GER_military_focus_20 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_New_Army
+				add_idea = GER_Army_Rommel
+			}	
+		}
+	}
+	#要塞の破壊
+	shared_focus = {
+		id = GER_military_focus_22
+		icon = GFX_
+		x = 3
+		y = 4
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_21 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Army_Rommel
+				add_idea = GER_Army_Rommel_1
+			}	
+		}
+	}
+	#ドイツ国防軍
+	shared_focus = {
+		id = GER_military_focus_23
+		icon = GFX_
+		x = 3
+		y = 5
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_22 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_Army_Rommel_1
+				add_idea = GER_Army_Rommel_2
+			}			
+		}
+	}
+	#陸軍兵器局
+	shared_focus = {
+		id = GER_military_focus_24
+		icon = GFX_
+		x = 6
+		y = 1
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_1 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 2
+				category = infantry_weapons
+				category = artillery
+				category = support_tech
+			}
+		}
+	}
+	#銃の改良
+	shared_focus = {
+		id = GER_military_focus_25
+		icon = GFX_
+		x = 6
+		y = 2
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_24 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	#砲の改良
+	shared_focus = {
+		id = GER_military_focus_26
+		icon = GFX_
+		x = 6
+		y = 3
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_25 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	#支援装備
+	shared_focus = {
+		id = GER_military_focus_27
+		icon = GFX_
+		x = 6
+		y = 4
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {  }
+		prerequisite = { focus = GER_military_focus_26 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 40
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = support_tech
+			}
+		}
+	}
+	#空軍改革
+	shared_focus = {
+		id = GER_Air_focus_1
+		icon = GFX_
+		
+		x = 8
+		y = 0
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			air_experience = 50
+		}
+	}
+	#空軍士官学校
+	shared_focus = {
+		id = GER_Air_focus_2
+		icon = GFX_
+		
+		x = 8
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_1 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#航空理論の研究
+	shared_focus = {
+		id = GER_Air_focus_3
+		icon = GFX_
+		
+		x = 8
+		y = 2
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_2 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = air_doctrine
+			}	
+		}
+	}
+	#航空機会社の再編
+	shared_focus = {
+		id = GER_Air_focus_4
+		icon = GFX_
+		
+		x = 10
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_1 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#ブレーメン航空公社
+	shared_focus = {
+		id = GER_Air_focus_5
+		icon = GFX_
+		
+		x = 10
+		y = 2
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_4 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#急降下爆撃機
+	shared_focus = {
+		id = GER_Air_focus_6
+		icon = GFX_
+		
+		x = 8
+		y = 3
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_5 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = CAS_bonus
+				bonus = 1.0
+				uses = 1
+				category = cas_bomber
+			}
+		}
+	}
+	#戦闘機の開発
+	shared_focus = {
+		id = GER_Air_focus_7
+		icon = GFX_
+		
+		x = 10
+		y = 3
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_5 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}	
+		}
+	}
+	#海軍機の開発
+	shared_focus = {
+		id = GER_Air_focus_8
+		icon = GFX_
+		
+		x = 12
+		y = 3
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_5 }
+		prerequisite = { focus = GER_navy_focus_3 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = naval_air
+			}	
+		}
+	}
+	#計算機の開発
+	shared_focus = {
+		id = GER_Air_focus_9
+		icon = GFX_
+		
+		x = 8
+		y = 4
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_military_focus_26 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = electronics
+			}	
+		}
+	}
+	#爆撃機の開発
+	shared_focus = {
+		id = GER_Air_focus_10
+		icon = GFX_
+		
+		x = 10
+		y = 4
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_7 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = tactical_bomber
+			}
+		}
+	}
+	#戦略爆撃機の開発
+	shared_focus = {
+		id = GER_Air_focus_11
+		icon = GFX_
+		
+		x = 12
+		y = 4
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_7 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1 
+				category = cat_strategic_bomber
+			}
+		}
+	}
+	#最高の物理学者
+	shared_focus = {
+		id = GER_Air_focus_12
+		icon = GFX_
+		
+		x = 8
+		y = 5
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_9 }
+		prerequisite = { focus = GER_Air_focus_10 }
+		prerequisite = { focus = GER_Air_focus_11 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1 
+				category = nuclear
+			}
+		}
+	}
+	#液体燃料ロケット
+	shared_focus = {
+		id = GER_Air_focus_13
+		icon = GFX_
+		
+		x = 10
+		y = 5
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_9 }
+		prerequisite = { focus = GER_Air_focus_10 }
+		prerequisite = { focus = GER_Air_focus_11 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1 
+				category = rocketry
+			}
+		}
+	}
+	#赤色空軍
+	shared_focus = {
+		id = GER_Air_focus_14
+		icon = GFX_
+		
+		x = 12
+		y = 5
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_Air_focus_10 }
+		prerequisite = { focus = GER_Air_focus_11 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#海軍改革
+	shared_focus = {
+		id = GER_navy_focus_1
+		icon = GFX_
+		
+		x = 15
+		y = 0
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			navy_experience = 50
+		}
+	}
+	#赤色大洋艦隊
+	shared_focus = {
+		id = GER_navy_focus_2
+		icon = GFX_
+		
+		x = 14
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_1 }
+		mutually_exclusive = { focus = GER_navy_focus_8 }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#空母の開発
+	shared_focus = {
+		id = GER_navy_focus_3
+		icon = GFX_
+		
+		x = 12
+		y = 2
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_2 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cv_tech
+			}
+		}
+	}
+	#巡洋艦の開発
+	shared_focus = {
+		id = GER_navy_focus_4
+		icon = GFX_
+		
+		x = 14
+		y = 2
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_2 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+			}
+		}
+	}
+	#戦艦の開発
+	shared_focus = {
+		id = GER_navy_focus_5
+		icon = GFX_
+		
+		x = 14
+		y = 3
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_4 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
+			}
+		}
+	}
+	#輸送艦の近代化
+	shared_focus = {
+		id = GER_navy_focus_6
+		icon = GFX_
+		
+		x = 14
+		y = 4
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_5 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = tp_tech
+			}
+		}
+	}
+	#赤色海兵大隊
+	shared_focus = {
+		id = GER_navy_focus_7
+		icon = GFX_
+		
+		x = 14
+		y = 5
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_6 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#沿岸重視
+	shared_focus = {
+		id = GER_navy_focus_8
+		icon = GFX_
+		
+		x = 16
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_1 }
+		mutually_exclusive = { focus = GER_navy_focus_2 }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#Uボートの開発
+	shared_focus = {
+		id = GER_navy_focus_9
+		icon = GFX_
+		
+		x = 16
+		y = 2
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_8 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	#駆逐艦の開発
+	shared_focus = {
+		id = GER_navy_focus_10
+		icon = GFX_
+		
+		x = 16
+		y = 3
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_9 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	#沿岸要塞
+	shared_focus = {
+		id = GER_navy_focus_11
+		icon = GFX_
+		
+		x = 16
+		y = 4
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_10 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#赤い群狼
+	shared_focus = {
+		id = GER_navy_focus_12
+		icon = GFX_
+		
+		x = 16
+		y = 5
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_11 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#造船計画
+	shared_focus = {
+		id = GER_navy_focus_13
+		icon = GFX_
+		
+		x = 18
+		y = 1
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		available = {}
+		prerequisite = { focus = GER_navy_focus_1 }
+		mutually_exclusive = {}
+		
+		ai_will_do = {
+			factor = 40
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	#キールの整備
+	shared_focus = {
+		id = GER_navy_focus_14
+		icon = GFX_
+		
+		x = 18
+		y = 2
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		prerequisite = { focus = GER_navy_focus_13 }
+		mutually_exclusive = { }
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			owns_state = 58
+			controls_state = 58
+		}
+		completion_reward = {
+			58 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#マルクスハーフェンの整備
+	shared_focus = {
+		id = GER_navy_focus_15
+		icon = GFX_
+		
+		x = 18
+		y = 3
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		prerequisite = { focus = GER_navy_focus_14 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			owns_state = 56
+			controls_state = 56
+		}
+		completion_reward = {
+			56 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#ダンツィヒの整備
+	shared_focus = {
+		id = GER_navy_focus_16
+		icon = GFX_
+		
+		x = 18
+		y = 4
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		prerequisite = { focus = GER_navy_focus_15 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			owns_state = 85
+			controls_state = 85
+		}
+		completion_reward = {
+			85 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#メーメルの整備
+	shared_focus = {
+		id = GER_navy_focus_17
+		icon = GFX_
+		
+		x = 18
+		y = 5
+		
+		cost = 5
+		relative_position_id = GER_military_focus_1
+		available_if_capitulated = no
+		prerequisite = { focus = GER_navy_focus_16 }
+		mutually_exclusive = { }
+		
+		ai_will_do = {
+			factor = 40
+		}
+		available = {
+			owns_state = 188
+			controls_state = 188
+		}
+		completion_reward = {
+			188 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}

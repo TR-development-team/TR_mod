@@ -29,5 +29,11 @@ country_event = {
                 688 = {
 					add_core_of = PRU
 				}
+		hidden_effect = { 
+		    country_event = {
+		    	id = TR_news.47
+		    	days = 1
+		    }
+	    }
 	}
 }

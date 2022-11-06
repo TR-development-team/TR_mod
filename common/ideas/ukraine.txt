@@ -14,6 +14,7 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+				resistance_target = -0.5
 				global_building_slots_factor = 0.2
 				production_speed_buildings_factor = 0.1
 				conscription_factor = 1.0

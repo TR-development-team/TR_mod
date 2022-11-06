@@ -238,7 +238,16 @@ units = {
 		start_experience_factor = 0.3
 
 	}
-	
+        division= {	# "48th 'South Midland' Infantry Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 6351
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+
+	}
 	
 	#Gibraltar
 	division= {	
@@ -297,24 +306,5 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_0
-			creator = "ENG" 
-		}
-		requested_factories = 1
-		progress = 0.1
-		efficiency = 50
-	}
 }
 	#####################

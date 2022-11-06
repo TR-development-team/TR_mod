@@ -3,9 +3,9 @@ state={
 	name="STATE_811"
 	local_supplies=0.0 
 provinces={
-		1051 1133 4054 7113 
+		1051 1133 7113 
 	}
-	manpower=6220000
+	manpower=4220000
 	state_category=city
         history={
 		owner = JAP
@@ -15,16 +15,16 @@ provinces={
 			arms_factory = 1
 			industrial_complex = 1
 			infrastructure = 3
-			dockyard = 1
-                        air_base = 2
+
+                        air_base = 1
 
 		}
 		
 		victory_points = {
-			1051 3
+			1051 5
 		}
-                victory_points = { 4054 1 }
-                victory_points = { 7113 1 }
+
+                victory_points = { 7113 3 }
 
 	}
 	buildings_max_level_factor=1.000

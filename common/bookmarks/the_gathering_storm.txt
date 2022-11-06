@@ -21,18 +21,18 @@ bookmarks = {
                                 JAP_KAKUMEI_SUC
 			}			
 		}
-                "GER"={
+        "GER"={
 			history = "TR_GER_GATHERING_STORM_DESC"
 			ideology = radical_socialist
 			ideas = {
-				 GER_Junker_resistance
-                                 GER_WAR_HORROR
-                                 GER_REVOLUTION_ARMY
+				GER_Junker_resistance
+                GER_WAR_HORROR
+                GER_REVOLUTION_ARMY
 			}
 			focuses = {
-				GER_GAhrJsSY
-                                GER_EdZvUSLo
-                                GER_KomYGTQh
+				GER_Levine_focus_8
+                GER_BF_focus_6
+                GER_Consul_focus_4
 			}
 		}
 		
@@ -67,8 +67,7 @@ bookmarks = {
 			ideology = social_conservative
 			ideas = {
 				ENG_LOSE_IN_INDIA
-                                ENG_revolution
-				george_v
+                ENG_revolution
 			}
 			focuses = {
 				

@@ -350,7 +350,7 @@ ideas = {
                                 production_speed_industrial_complex_factor = -0.05
 			}
 		}
-                JAP_Comprehensive_Development_Plan = {
+        JAP_Comprehensive_Development_Plan = {
 			allowed = {
 				always = no
 			}
@@ -360,8 +360,44 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.05
-                                political_power_cost = 0.2
-                                production_speed_buildings_factor = 0.2
+                political_power_cost = 0.3
+                production_speed_buildings_factor = 0.2
+			}
+		}
+        JAP_Pacific_BELT = {
+			allowed = {
+				always = no
+			}
+
+			picture = man_five_year_plan_industry
+
+			removal_cost = -1
+			modifier = {
+                political_power_cost = 0.25
+                production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				industry_air_damage_factor = 0.3
+			}
+		}
+        JAP_income_doubling_plan = {
+			allowed = {
+				always = no
+			}
+
+			picture = man_five_year_plan_industry
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+                political_power_cost = 0.25
+                production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				industry_air_damage_factor = 0.3
 			}
 		}
 

@@ -11,7 +11,7 @@ focus_tree = {
 
         continuous_focus_position = { x = 2500 y = 1300 }
 
-	#Focus for スミス大統領 - focus ID randomly generated due to title being in non-latin characters
+	#スミス大統領
 	focus = {
 		id = USA_sQHwileF
 		icon = GFX_goal_support_fascism
@@ -41,7 +41,7 @@ focus_tree = {
 	 }
        
 	}
-	#Focus for ユダヤ人から財産を没収 - focus ID randomly generated due to title being in non-latin characters
+	#ユダヤ人から財産を没収
 	focus = {
 		id = USA_jRcyXnMo
 		icon = GFX_focus_CZE_german_puppet
@@ -63,7 +63,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 日系人の強制収容 - focus ID randomly generated due to title being in non-latin characters
+	#日系人の強制収容
 	focus = {
 		id = USA_SnUBlwoN
 		icon = GFX_focus_attack_japan
@@ -81,7 +81,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 徹底的な白人至上主義 - focus ID randomly generated due to title being in non-latin characters
+	#徹底的な白人至上主義
 	focus = {
 		id = USA_qgVGWoea
 		icon = GFX_focus_usa_honor_the_confederacy
@@ -98,7 +98,7 @@ focus_tree = {
                       
 		}
 	}
-	#Focus for ジム・クロウは永遠の物である - focus ID randomly generated due to title being in non-latin characters
+	#ジム・クロウは永遠の物である
 	focus = {
 		id = USA_HyprNmZO
 		icon = GFX_focus_generic_strike_at_democracy2
@@ -115,7 +115,7 @@ focus_tree = {
 
 		}
 	}
-	#Focus for 黒人奴隷の復活 - focus ID randomly generated due to title being in non-latin characters
+	#黒人奴隷の復活
 	focus = {
 		id = USA_tTvOWKaA
 		icon = GFX_goal_tfv_saf_support_german_coup
@@ -138,7 +138,7 @@ focus_tree = {
 		}
 	}
 
-        #Focus for 社会の強制的同一化 - focus ID randomly generated due to title being in non-latin characters
+        #社会の強制的同一化
 	focus = {
 		id = USA_jMZNCITr
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
@@ -158,7 +158,7 @@ focus_tree = {
 			}	
 		}
 	}
-	#Focus for アメリカ国家保護のための大統領令 - focus ID randomly generated due to title being in non-latin characters
+	#アメリカ国家保護のための大統領令
 	focus = {
 		id = USA_aWxNZkjo
 		icon = GFX_focus_usa_voter_registration_act
@@ -179,7 +179,7 @@ focus_tree = {
                         add_political_power = -50
 		    }
 	        }
-	#Focus for 警察権力の強化 - focus ID randomly generated due to title being in non-latin characters
+	#警察権力の強化
 	focus = {
 		id = USA_KdfwcYIP
 		icon = GFX_goal_generic_political_pressure
@@ -196,7 +196,7 @@ focus_tree = {
 
 		}
 	}
-	#Focus for 指導者への忠誠 - focus ID randomly generated due to title being in non-latin characters
+	#指導者への忠誠
 	focus = {
 		id = USA_YFkstPSp
 		icon = GFX_focus_ger_reichskommisariats
@@ -218,7 +218,7 @@ focus_tree = {
                       
 		}
 	}
-	#Focus for 歓喜力行団 - focus ID randomly generated due to title being in non-latin characters
+	#歓喜力行団
 	focus = {
 		id = USA_MwtAajXK
 		icon = GFX_focus_smiling_buddha
@@ -235,7 +235,7 @@ focus_tree = {
                       
 		}
 	}
-	#Focus for 国家奉仕団 - focus ID randomly generated due to title being in non-latin characters
+	#国家奉仕団
 	focus = {
 		id = USA_GVHlJNyi
 		icon = GFX_goal_generic_production
@@ -253,7 +253,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 州政府の権限縮小 - focus ID randomly generated due to title being in non-latin characters
+	#州政府の権限縮小
 	focus = {
 		id = USA_PYEweGly
 		icon = GFX_focus_focus_fra_fascist_threat
@@ -271,7 +271,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for アメリカは再び前進する - focus ID randomly generated due to title being in non-latin characters
+	#アメリカは再び前進する
 	focus = {
 		id = USA_IsaufKzL
 		icon = GFX_goal_molotov_ribbentrop_pact
@@ -299,7 +299,7 @@ focus_tree = {
 			}	
 		}
 	}
-	#Focus for 経済集団の設立 - focus ID randomly generated due to title being in non-latin characters
+	#経済集団の設立
 	focus = {
 		id = USA_ctWMaSkF
 		icon = GFX_goal_generic_consumer_goods
@@ -317,7 +317,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 全労働組合の統合 - focus ID randomly generated due to title being in non-latin characters
+	#全労働組合の統合
 	focus = {
 		id = USA_DWRgsMjz
 		icon = GFX_goal_generic_construction2
@@ -335,7 +335,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for アメリカ自給自足経済 - focus ID randomly generated due to title being in non-latin characters
+	#アメリカ自給自足経済
 	focus = {
 		id = USA_UpNGgLkH
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
@@ -350,10 +350,11 @@ focus_tree = {
 	completion_reward = {
                         add_ideas = USA_ZIKYU
                         add_ideas = closed_economy
+                        set_country_flag = economic_isolation
 		}
 	}
 
-	#Focus for 経済の回復 - focus ID randomly generated due to title being in non-latin characters
+	#経済の回復
 	focus = {
 		id = USA_FLDXGltc
 		icon = GFX_focus_generic_industry_3
@@ -371,7 +372,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for アメリカ拡張主義 - focus ID randomly generated due to title being in non-latin characters
+	#アメリカ拡張主義
 	focus = {
 		id = USA_HIFLSvqT
 		icon = GFX_focus_spa_the_war_of_vengeance
@@ -398,7 +399,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for カナダを要求 - focus ID randomly generated due to title being in non-latin characters
+	#カナダを要求
 	focus = {
 		id = USA_RzDCJZQW
 		icon = GFX_focus_attack_canada
@@ -427,7 +428,7 @@ focus_tree = {
 	             }
 		}
 
-	#Focus for 十字軍連盟を結成 - focus ID randomly generated due to title being in non-latin characters
+	#十字軍連盟を結成
 	focus = {
 		id = USA_seIVYTQB
 		icon = GFX_focus_generic_strike_at_democracy1
@@ -451,7 +452,7 @@ focus_tree = {
 	             }
 		}
 
-	#Focus for 反共十字軍 - focus ID randomly generated due to title being in non-latin characters
+	#反共十字軍
 	focus = {
 		id = USA_vbazLwOQ
 		icon = GFX_focus_attack_soviet
@@ -479,7 +480,7 @@ focus_tree = {
 	             }
 		}
 
-	#Focus for 米仏相互援助条約 - focus ID randomly generated due to title being in non-latin characters
+	#米仏相互援助条約
 	focus = {
 		id = USA_whCWVZIR
 		icon = GFX_focus_chi_reach_out_to_france
@@ -516,7 +517,7 @@ focus_tree = {
                         }
 		}  
 	}
-	#Focus for 五ヵ年計画 - focus ID randomly generated due to title being in non-latin characters
+	#五ヵ年計画
 	focus = {
 		id = USA_NOkqVDsx
 		icon = GFX_goal_generic_soviet_construction
@@ -566,7 +567,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for アジアへの十字軍 - focus ID randomly generated due to title being in non-latin characters
+	#アジアへの十字軍
 	focus = {
 		id = USA_tuxVSBOf
 		icon = GFX_focus_attack_japan

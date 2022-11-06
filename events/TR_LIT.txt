@@ -1,0 +1,40 @@
+add_namespace = TR_Lithuania
+
+#リトアニアの独立
+country_event = {
+	id = TR_Lithuania.1
+	title = TR_Lithuania.1.t
+	desc = TR_Lithuania.1.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Lithuania.1.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.1
+		set_cosmetic_tag = LIT_Republic
+		add_ideas = Democratic_Republic
+        hidden_effect = { 
+		    LIT_antanas_smetona = {
+		    	promote_character = {
+			    Ideology = oligarchy_subtype
+			  }
+		    }
+			LIT_antanas_smetona = {
+		    	promote_character = {
+			    Ideology = Military_junta_subtype
+			  }
+		    }
+	    }
+	}
+	option = {
+		name = TR_Lithuania.1.b
+		ai_chance = { factor = 0 }
+		add_stability = -0.1
+		add_ideas = Constitutional_monarchy
+	}
+}

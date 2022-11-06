@@ -139,20 +139,42 @@ country_event = {
 				is_in_faction_with = SIB
 			}
 		}
-                add_timed_idea = {
-				idea = GER_CIVILWAR_MARKS
-				days = 365
-				} 
-                remove_ideas = RUS_CIVIL_WAR
-                set_rule = { can_create_factions = no }
-                set_global_flag = Soviet_Win_flag
+		set_capital = {
+			state = 219
+			remember_old_capital = no
+		}
+        add_timed_idea = {
+			idea = GER_CIVILWAR_MARKS
+			days = 365
+			} 
+        remove_ideas = RUS_CIVIL_WAR
 		add_stability = 0.1
-		dismantle_faction = yes
+		hidden_effect = { 
+			set_rule = { can_create_factions = no }
+			set_global_flag = Soviet_Win_flag
+			dismantle_faction = yes
+		    every_state = {
+		    	limit = {
+			    	is_core_of = SOV
+		    	}
+			    add_core_of = RUS
+		    }
+		    every_state = {
+			    limit = {
+				    is_core_of = SOV
+			    }
+			    remove_core_of = SOV
+		    }
+	    }
 	}
 	option = { 
 		name = TR_Soviet.3.b
 		trigger = {
 				is_in_faction_with = SIB
+		}
+		set_capital = {
+			state = 219
+			remember_old_capital = no
 		}
                 add_timed_idea = {
 				idea = GER_CIVILWAR_MARKS

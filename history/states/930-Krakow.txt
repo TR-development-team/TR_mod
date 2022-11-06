@@ -16,6 +16,11 @@ state = {
 		}
 		add_core_of = POL
 		add_core_of = GAL
+		set_province_name = {
+			id = 9427
+			name = VICTORY_POINTS_9427_TR
+		}
+		set_state_name = STATE_930_TR
 	}
 	provinces = {
 		9427
