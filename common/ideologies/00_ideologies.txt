@@ -1,16 +1,29 @@
-
 ideologies = {
-
 	totalist = {
 		types = {
-			totalist_subtype = {} #generic
-			National_syndicalist_subtype = {can_be_randomly_selected = no}
-			Neo_Jacobinist_subtype = {can_be_randomly_selected = no}
-			Jughashvilist_subtype = {can_be_randomly_selected = no}
-			Totalist_Leninist_subtype = {can_be_randomly_selected = no}
-			national_bolshevist_subtype = {can_be_randomly_selected = no}
-			Strasserism_subtype = {can_be_randomly_selected = no}
-			pure_socialism_subtype = {can_be_randomly_selected = no}
+			totalist_subtype = {
+			}			#generic
+			National_syndicalist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Neo_Jacobinist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Jughashvilist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Totalist_Leninist_subtype = {
+				can_be_randomly_selected = no
+			}
+			national_bolshevist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Strasserism_subtype = {
+				can_be_randomly_selected = no
+			}
+			pure_socialism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_TOTALIST_1"
@@ -20,7 +33,11 @@ ideologies = {
 			"FACTION_NAME_TOTALIST_5"
 			"FACTION_NAME_TOTALIST_6"
 		}
-		color = { 127 0 0 }
+		color = {
+			127
+			0
+			0
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -32,7 +49,7 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.5
 			guarantee_tension = 0.5
-			civilian_intel_to_others = 10.0
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
@@ -40,18 +57,34 @@ ideologies = {
 		ai_communist = yes
 		can_be_boosted = no
 	}
-
 	syndicalist = {
 		types = {
-			syndicalist_subtype = {} #generic
-			orthodox_syndicalist_subtype = {can_be_randomly_selected = no}
-			anarchism_subtype = {can_be_randomly_selected = no}
-			anarco_syndicalist_subtype = {can_be_randomly_selected = no}
-			anarco_communist_subtype = {can_be_randomly_selected = no}
-			left_libertarianist_subtype = {can_be_randomly_selected = no}
-			Tolstoyist_subtype = {can_be_randomly_selected = no}
-			agricultural_anarchist_subtype = {can_be_randomly_selected = no}
-			Conservative_Revolution_subtype = {can_be_randomly_selected = no}
+			syndicalist_subtype = {
+			}			#generic
+			orthodox_syndicalist_subtype = {
+				can_be_randomly_selected = no
+			}
+			anarchism_subtype = {
+				can_be_randomly_selected = no
+			}
+			anarco_syndicalist_subtype = {
+				can_be_randomly_selected = no
+			}
+			anarco_communist_subtype = {
+				can_be_randomly_selected = no
+			}
+			left_libertarianist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Tolstoyist_subtype = {
+				can_be_randomly_selected = no
+			}
+			agricultural_anarchist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Conservative_Revolution_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SYNDICALIST_1"
@@ -61,7 +94,11 @@ ideologies = {
 			"FACTION_NAME_SYNDICALIST_5"
 			"FACTION_NAME_SYNDICALIST_6"
 		}
-		color = { 255 0 0 }
+		color = {
+			255
+			0
+			0
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -73,24 +110,36 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.5
 			guarantee_tension = 0.5
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 10.0
+			civilian_intel_to_others = 15
+			army_intel_to_others = 10
+			navy_intel_to_others = 10
+			airforce_intel_to_others = 10
 		}
 		ai_communist = yes
 		can_be_boosted = no
 	}
-
 	radical_socialist = {
 		types = {
-			radical_socialist_subtype = {} #generic
-			Trotskyist_subtype = {can_be_randomly_selected = no}
-			Luxemburgist_subtype = {can_be_randomly_selected = no}
-			Leninist_subtype = {can_be_randomly_selected = no}
-			Council_communist_subtype = {can_be_randomly_selected = no}
-			Narodniki_subtype = {can_be_randomly_selected = no}
-			military_socialism_subtype = {can_be_randomly_selected = no}
+			radical_socialist_subtype = {
+			}			#generic
+			Trotskyist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Luxemburgist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Leninist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Council_communist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Narodniki_subtype = {
+				can_be_randomly_selected = no
+			}
+			military_socialism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_RADICAL_SOCIALIST_1"
@@ -100,7 +149,11 @@ ideologies = {
 			"FACTION_NAME_RADICAL_SOCIALIST_5"
 			"FACTION_NAME_RADICAL_SOCIALIST_6"
 		}
-		color = { 233 58 58 }
+		color = {
+			233
+			58
+			58
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -112,23 +165,33 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.5
 			guarantee_tension = 0.5
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 		ai_communist = yes
 		can_be_boosted = no
 	}
-
 	social_democrat = {
 		types = {
-			social_democrat_subtype = {}
-			Democratic_socialism_subtype = {can_be_randomly_selected = no}
-			Democratic_socialism_left_subtype = {can_be_randomly_selected = no}
-            Fabianism_subtype = {can_be_randomly_selected = no}
-            Orthodox_Marxism_subtype = {can_be_randomly_selected = no}
-			Christian_socialism_subtype = {can_be_randomly_selected = no}
+			social_democrat_subtype = {
+			}
+			Democratic_socialism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Democratic_socialism_left_subtype = {
+				can_be_randomly_selected = no
+			}
+			Fabianism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Orthodox_Marxism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Christian_socialism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_DEMOCRAT_1"
@@ -138,7 +201,11 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_DEMOCRAT_5"
 			"FACTION_NAME_SOCIAL_DEMOCRAT_6"
 		}
-		color = { 194 30 86 }
+		color = {
+			194
+			30
+			86
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -150,22 +217,30 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.75
 			guarantee_tension = 0.75
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-
 	social_liberal = {
 		types = {
-			social_liberal_subtype = {}
-			Pan_Asianism_subtype = {can_be_randomly_selected = no}
-			Progressivism_subtype = {can_be_randomly_selected = no}
-			SL_Narodniki_subtype = {can_be_randomly_selected = no}
-			Pan_Europeanism_subtype = {can_be_randomly_selected = no}
+			social_liberal_subtype = {
+			}
+			Pan_Asianism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Progressivism_subtype = {
+				can_be_randomly_selected = no
+			}
+			SL_Narodniki_subtype = {
+				can_be_randomly_selected = no
+			}
+			Pan_Europeanism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_LIBERAL_1"
@@ -175,7 +250,11 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_LIBERAL_5"
 			"FACTION_NAME_SOCIAL_LIBERAL_6"
 		}
-		color = { 255 170 0 }
+		color = {
+			255
+			170
+			0
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -187,24 +266,36 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.75
 			guarantee_tension = 0.75
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-
 	market_liberal = {
 		types = {
-			market_liberal_subtype = {}
-			libertarian_subtype = {can_be_randomly_selected = no}
-			classical_liberalism_subtype = {can_be_randomly_selected = no}
-			conservative_liberalism_subtype = {can_be_randomly_selected = no}
-			National_liberalism_subtype = {can_be_randomly_selected = no}
-			lib_Christian_democracy_subtype = {can_be_randomly_selected = no}
-			parliamentarism_subtype = {can_be_randomly_selected = no}
+			market_liberal_subtype = {
+			}
+			libertarian_subtype = {
+				can_be_randomly_selected = no
+			}
+			classical_liberalism_subtype = {
+				can_be_randomly_selected = no
+			}
+			conservative_liberalism_subtype = {
+				can_be_randomly_selected = no
+			}
+			National_liberalism_subtype = {
+				can_be_randomly_selected = no
+			}
+			lib_Christian_democracy_subtype = {
+				can_be_randomly_selected = no
+			}
+			parliamentarism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_MARKET_LIBERAL_1"
@@ -214,7 +305,11 @@ ideologies = {
 			"FACTION_NAME_MARKET_LIBERAL_5"
 			"FACTION_NAME_MARKET_LIBERAL_6"
 		}
-		color = { 255 216 0 }
+		color = {
+			255
+			216
+			0
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -226,23 +321,33 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.75
 			guarantee_tension = 0.75
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-
 	social_conservative = {
 		types = {
-			social_conservative_subtype = {}
-			liberal_conservative_subtype = {can_be_randomly_selected = no}
-			Neo_Canton_system_subtype = {can_be_randomly_selected = no}
-			National_conservative_subtype = {can_be_randomly_selected = no}
-			con_Christian_democracy_subtype = {can_be_randomly_selected = no}
-            Royal_Centerism_subtype = {can_be_randomly_selected = no}
+			social_conservative_subtype = {
+			}
+			liberal_conservative_subtype = {
+				can_be_randomly_selected = no
+			}
+			Neo_Canton_system_subtype = {
+				can_be_randomly_selected = no
+			}
+			National_conservative_subtype = {
+				can_be_randomly_selected = no
+			}
+			con_Christian_democracy_subtype = {
+				can_be_randomly_selected = no
+			}
+			Royal_Centerism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_1"
@@ -252,7 +357,11 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_5"
 			"FACTION_NAME_SOCIAL_CONSERVATIVE_6"
 		}
-		color = { 0 0 255 }
+		color = {
+			0
+			0
+			255
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -264,24 +373,36 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.75
 			guarantee_tension = 0.75
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 5.0
-			navy_intel_to_others = 20.0
+			civilian_intel_to_others = 20
+			army_intel_to_others = 5
+			navy_intel_to_others = 20
 			airforce_intel_to_others = 5
 		}
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-
 	authoritarian_democrat = {
 		types = {
-			authoritarian_democrat_subtype = {}
-			oligarchy_subtype = {can_be_randomly_selected = no}
-			colonial_government_subtype = {can_be_randomly_selected = no}
-			dem_Military_junta_subtype = {can_be_randomly_selected = no}
-			prussian_constitutionalism_subtype = {can_be_randomly_selected = no}
-            Dominant_party_system_subtype = {can_be_randomly_selected = no}
-            national_coalition_subtype = {can_be_randomly_selected = no}
+			authoritarian_democrat_subtype = {
+			}
+			oligarchy_subtype = {
+				can_be_randomly_selected = no
+			}
+			colonial_government_subtype = {
+				can_be_randomly_selected = no
+			}
+			dem_Military_junta_subtype = {
+				can_be_randomly_selected = no
+			}
+			prussian_constitutionalism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Dominant_party_system_subtype = {
+				can_be_randomly_selected = no
+			}
+			national_coalition_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_1"
@@ -291,7 +412,11 @@ ideologies = {
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_5"
 			"FACTION_NAME_AUTHORITARIAN_DEMOCRAT_6"
 		}
-		color = { 110 110 110 }
+		color = {
+			110
+			110
+			110
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -303,25 +428,39 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.75
 			guarantee_tension = 0.75
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 10.0
+			civilian_intel_to_others = 15
+			army_intel_to_others = 10
+			navy_intel_to_others = 10
+			airforce_intel_to_others = 10
 		}
 		ai_neutral = yes
 		can_be_boosted = no
 	}
-
 	paternal_autocrat = {
 		types = {
-			paternal_autocrat_subtype = {}
-			Catholic_Integralism_subtype = {can_be_randomly_selected = no}
-			militarism_subtype = {can_be_randomly_selected = no}
-			Military_junta_subtype = {can_be_randomly_selected = no}
-			mil_colonial_government_subtype = {can_be_randomly_selected = no}
-			absolute_monarchy_subtype = {can_be_randomly_selected = no}
-			Theocracy_subtype = {can_be_randomly_selected = no}
-			pat_Islamism_subtype = {can_be_randomly_selected = no}
+			paternal_autocrat_subtype = {
+			}
+			Catholic_Integralism_subtype = {
+				can_be_randomly_selected = no
+			}
+			militarism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Military_junta_subtype = {
+				can_be_randomly_selected = no
+			}
+			mil_colonial_government_subtype = {
+				can_be_randomly_selected = no
+			}
+			absolute_monarchy_subtype = {
+				can_be_randomly_selected = no
+			}
+			Theocracy_subtype = {
+				can_be_randomly_selected = no
+			}
+			pat_Islamism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_PATERNAL_AUTOCRAT_1"
@@ -331,7 +470,11 @@ ideologies = {
 			"FACTION_NAME_PATERNAL_AUTOCRAT_5"
 			"FACTION_NAME_PATERNAL_AUTOCRAT_6"
 		}
-		color = { 45 45 45 }
+		color = {
+			45
+			45
+			45
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -343,25 +486,39 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.5
 			guarantee_tension = 0.5
-			civilian_intel_to_others = 15.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 10.0
+			civilian_intel_to_others = 15
+			army_intel_to_others = 10
+			navy_intel_to_others = 10
+			airforce_intel_to_others = 10
 		}
 		ai_fascist = yes
 		can_be_boosted = no
 	}
-
 	national_populist = {
 		types = {
-			national_populist_subtype = {}
-			Fascist_subtype = {can_be_randomly_selected = no}
-			Integralism_subtype = {can_be_randomly_selected = no}
-			Nationalism_subtype = {can_be_randomly_selected = no}
-			kokoku_shikan_subtype = {can_be_randomly_selected = no}
-			president_principle_subtype = {can_be_randomly_selected = no}
-			asian_monroe_subtype = {can_be_randomly_selected = no}
-			Islamism_subtype = {can_be_randomly_selected = no}
+			national_populist_subtype = {
+			}
+			Fascist_subtype = {
+				can_be_randomly_selected = no
+			}
+			Integralism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Nationalism_subtype = {
+				can_be_randomly_selected = no
+			}
+			kokoku_shikan_subtype = {
+				can_be_randomly_selected = no
+			}
+			president_principle_subtype = {
+				can_be_randomly_selected = no
+			}
+			asian_monroe_subtype = {
+				can_be_randomly_selected = no
+			}
+			Islamism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_NATIONAL_POPULIST_1"
@@ -371,7 +528,11 @@ ideologies = {
 			"FACTION_NAME_NATIONAL_POPULIST_5"
 			"FACTION_NAME_NATIONAL_POPULIST_6"
 		}
-		color = { 142 57 0 }
+		color = {
+			142
+			57
+			0
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -383,7 +544,7 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.5
 			guarantee_tension = 0.5
-			civilian_intel_to_others = 10.0
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 12.5
 			airforce_intel_to_others = 7.5
@@ -391,18 +552,37 @@ ideologies = {
 		ai_fascist = yes
 		can_be_boosted = no
 	}
-      Gnosticism = {
+	Gnosticism = {
 		types = {
-			Gnosticism_subtype = {}
-			esotericism_subtype = {can_be_randomly_selected = no}
-            occultism_subtype = {can_be_randomly_selected = no}
-            Neo_Paganism_subtype = {can_be_randomly_selected = no}
-            Aryanism_subtype = {can_be_randomly_selected = no}
-			Proletarian_culture_subtype = {can_be_randomly_selected = no}
-			Tsarebozhiye_subtype = {can_be_randomly_selected = no}
-			Gno_Theocracy_subtype = {can_be_randomly_selected = no}
-			Rastafarianism_subtype = {can_be_randomly_selected = no}
-			theocratic_monarchy_subtype = {can_be_randomly_selected = no}
+			Gnosticism_subtype = {
+			}
+			esotericism_subtype = {
+				can_be_randomly_selected = no
+			}
+			occultism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Neo_Paganism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Aryanism_subtype = {
+				can_be_randomly_selected = no
+			}
+			Proletarian_culture_subtype = {
+				can_be_randomly_selected = no
+			}
+			Tsarebozhiye_subtype = {
+				can_be_randomly_selected = no
+			}
+			Gno_Theocracy_subtype = {
+				can_be_randomly_selected = no
+			}
+			Rastafarianism_subtype = {
+				can_be_randomly_selected = no
+			}
+			theocratic_monarchy_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_Gnosticism_1"
@@ -412,7 +592,11 @@ ideologies = {
 			"FACTION_NAME_Gnosticism_5"
 			"FACTION_NAME_Gnosticism_6"
 		}
-		color = { 248 248 248 }
+		color = {
+			248
+			248
+			248
+		}
 		rules = {
 			can_force_government = no
 			can_puppet = yes
@@ -424,7 +608,7 @@ ideologies = {
 		modifiers = {
 			generate_wargoal_tension = 0.5
 			guarantee_tension = 0.5
-			civilian_intel_to_others = 10.0
+			civilian_intel_to_others = 10
 			army_intel_to_others = 7.5
 			navy_intel_to_others = 7.5
 			airforce_intel_to_others = 7.5
