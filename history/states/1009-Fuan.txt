@@ -1,0 +1,25 @@
+state= {
+	id=1009
+	name="STATE_1009"
+	manpower = 3097203
+	state_category = town
+	history=
+	{
+		owner = FUJ
+                add_core_of = FUJ
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 2
+			
+		}
+		victory_points = { 
+			10069 1
+		}
+
+
+	}
+	local_supplies=0.0 
+provinces={
+		1138 1094 4070 4113 4169 10012 10042 10069 
+	}
+}

@@ -1,10 +1,21 @@
 characters={
-	FUJ_Chen_ShaoKuan={
-		name=CHI_Chen_Shaokuan
+	FUJ_Sun_Chuanfang={
+		name=FUJ_Sun_Chuanfang
 		portraits={
 			civilian={
-				large="gfx/leaders/CHI/Portrait_China_Chen_ShaoKuan.png"
+				large="gfx/leaders/FUJ/Portrait_FUJ_Sun_Chuanfang.png"
 			}
+			army={
+				large="gfx/leaders/FUJ/Portrait_FUJ_Sun_Chuanfang.png"
+			}
+		}
+		field_marshal = {
+			traits = { organizer politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
 		}
 		country_leader={
 			ideology= social_conservative_subtype
@@ -14,6 +25,14 @@ characters={
 		}
 		country_leader={
 			ideology= Military_junta_subtype
+		}
+	}
+	FUJ_Chen_ShaoKuan={
+		name=CHI_Chen_Shaokuan
+		portraits={
+			civilian={
+				large="gfx/leaders/CHI/Portrait_China_Chen_ShaoKuan.png"
+			}
 		}
 		country_leader={
 			ideology=national_populist_subtype

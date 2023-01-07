@@ -1,4 +1,4 @@
-﻿capital = 595
+﻿capital = 864
 
 oob = "FUJ_1936"
 
@@ -32,23 +32,21 @@ if = {
 set_stability = 0.4
 set_war_support = 0.4
 
-
-
-
-JAP = { 
+ANQ = { 
         set_autonomy = {
 	   target = FUJ
-	   autonomous_state = imperial_protectorate
+	   autonomous_state = autonomy_satellite
         }
       }
+
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 100
+	paternal_autocrat = 100
 }
 
 add_ideas = {
@@ -64,6 +62,7 @@ add_timed_idea = {
 		days = 500
                  }  
 
+recruit_character = FUJ_Sun_Chuanfang
 recruit_character = FUJ_Chen_ShaoKuan
 recruit_character = CHI_Chen_ShaoKuan
 

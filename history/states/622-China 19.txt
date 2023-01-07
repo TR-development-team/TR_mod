@@ -14,7 +14,7 @@ state={
 		add_claim_by = YUN
 
 		victory_points = {
-			7314 1 
+			7314 3 
 		}
 		buildings = {
 			infrastructure = 1
@@ -25,9 +25,9 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		517 1458 4939 7314 7659 10733 10880 12156
+		1458 7314 7659 10880
 	}
-	manpower=6003200
+	manpower=5303200
 	buildings_max_level_factor=1.000
 	state_category=town
 }

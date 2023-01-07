@@ -1,0 +1,33 @@
+
+state={
+	id=1012
+	name="STATE_1012"
+
+	history={
+		owner = SHA
+		add_claim_by = CHI
+		add_core_of = SHA
+                add_core_of = MIN
+		victory_points = {
+			1104 5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			1104 = {
+				naval_base = 2
+
+			}
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1104 1184 1200 4157 4186 7089 7105 10018
+	}
+	manpower=8123893
+	buildings_max_level_factor=1.000
+	state_category=town
+}

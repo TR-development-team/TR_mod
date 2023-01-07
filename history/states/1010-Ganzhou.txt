@@ -1,0 +1,27 @@
+state= {
+	id=1010
+	name="STATE_1010"
+	manpower = 550394
+	state_category = rural
+	history=
+	{
+		owner = HNA
+		add_core_of = HNA
+                add_core_of = PRC
+		add_claim_by = CHI
+		add_claim_by = YUN
+		buildings = {
+			infrastructure = 1
+			
+		}
+		victory_points = { 
+			4156 1
+		}
+
+
+	}
+	local_supplies=0.0 
+provinces={
+		4156 9942 10057 
+	}
+}

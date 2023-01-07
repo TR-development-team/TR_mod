@@ -24,6 +24,7 @@ set_war_support = 0.3
 starting_train_buffer = 5
 set_research_slots = 4
 set_fuel_ratio = 1.0
+set_country_flag = { flag = JAP_Political_Distrust_flag value = 10 }
 add_ideas = {
         #法律
         Constitutional_monarchy
@@ -48,26 +49,28 @@ add_ideas = {
         JAP_asian_leader
 	JAP_Shading_sun
         JAP_black_thursday
+        JAP_Political_Distrust_1
         JAP_ugaki_gunshuku
         JAP_food_import
         JAP_Toshikamitu
         JAP_colony_deficit
         JAP_Korean_Question
 }
-country_event = { id = TR_news.36 days = 1 }
-country_event = { id = TR_japan.2 days = 56 }
-country_event = { id = TR_japan.5 days = 120 }
-country_event = { id = TR_japan.9 days = 12 }
-country_event = { id = TR_japan.10 days = 302 }
-country_event = { id = TR_japan.19 days = 382 }
-country_event = { id = TR_japan.30 days = 1491 }
-country_event = { id = TR_japfed.1 days = 75 }
-country_event = { id = TR_japfed.22 days = 276 }
-country_event = { id = TR_jap_flavor.1 days = 1460 }
-country_event = { id = TR_jap_flavor.2 days = 1243 }
-country_event = { id = TR_jap_flavor.3 days = 2713 }
-country_event = { id = TR_jap_flavor.4 days = 2125 }
-country_event = { id = TR_jap_flavor.5 days = 484 }
+country_event = { id = TR_news.36 days = 1 }#暗黒の木曜日
+country_event = { id = TR_japan.9 days = 12 }#東北飢饉
+country_event = { id = TR_japan.58 days = 30 }#昭和研究会の発足
+country_event = { id = TR_japan.2 days = 56 }#1936年衆院選
+country_event = { id = TR_japfed.1 days = 75 }#1936年度帝国会議
+country_event = { id = TR_japan.5 days = 120 }#血のメーデー事件
+country_event = { id = TR_japfed.22 days = 276 }#アフリカ植民地の整理
+country_event = { id = TR_japan.19 days = 382 }#朝鮮問題
+country_event = { id = TR_japan.30 days = 1491 }#1940年度衆院選
+country_event = { id = TR_jap_flavor.5 days = 484 }#ヒサトモ
+country_event = { id = TR_jap_flavor.1 days = 1460 }#紀元2600年
+country_event = { id = TR_jap_flavor.2 days = 1243 }#クモハタ
+country_event = { id = TR_jap_flavor.3 days = 2713 }#クリフジ
+country_event = { id = TR_jap_flavor.4 days = 2125 }#セントライト
+
 
 set_technology = {
 	infantry_weapons = 1
@@ -245,6 +248,8 @@ BRM = { give_military_access = JAP }
 SIA = { give_military_access = JAP }
 GXC = { give_military_access = JAP }
 TEX = { give_military_access = JAP }
+FUJ = { give_military_access = JAP }
+ANQ = { give_military_access = JAP }
 create_faction = Japanese_Commonwealth
 add_to_faction = JAP 
 add_to_faction = MAN

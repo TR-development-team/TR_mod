@@ -1,0 +1,27 @@
+
+state={
+	id=1003
+	name="STATE_1003"
+	manpower = 890000
+	state_category = pastoral
+	resources={
+		chromium = 1
+	}
+
+	history={
+		owner = GUG
+		add_core_of = GUG
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 
+			9997 1
+		}
+	}
+
+	local_supplies=0.0 
+provinces={
+		7210 9997 10121 10080 12014
+	}
+}

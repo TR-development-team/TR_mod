@@ -4,18 +4,17 @@ state={
 	name="STATE_597"
 
 	history={
-		owner = SHX
+		owner = SHA
 		add_claim_by = CHI
-		add_core_of = SHX
+		add_core_of = SHA
                 add_core_of = MIN
 		victory_points = {
 			1069 10 
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 1
-			dockyard = 1
 			air_base = 3
 
 
@@ -25,9 +24,9 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		1069 1084 1104 1124 1154 1184 1200 4037 4071 4089 4157 4181 4186 7055 7089 7105 7160 7189 9971 9987 10018 10043 10072 10102 11933 11962 12015 12045 12069 12074 12093 
+		1069 1124 1154 4037 4071 4089 4181 7055 9971 10043 10072 10102 12015 12045 12069 12074 
 	}
-	manpower=38373200
+	manpower=23853200
 	buildings_max_level_factor=1.000
 	state_category=large_city
 }

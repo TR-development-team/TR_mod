@@ -1,0 +1,24 @@
+state={
+	id=1004
+	name="STATE_1004"
+	local_supplies=0.0 
+provinces={
+		4041 5030 10757 12414
+	}
+	manpower=1000000
+	buildings_max_level_factor=1.000
+	state_category = pastoral
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_claim_by = YUN
+
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			5030 1 
+		}
+
+	}
+}

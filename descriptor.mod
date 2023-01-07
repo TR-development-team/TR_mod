@@ -1,12 +1,11 @@
-name = "Tennoreich"version="0.2"
-picture="thumbnail.png"
-dependencies={
-}
+version="0.2"
 tags={
 	"Alternative History"
 	"Events"
 	"National Focuses"
 }
+name="Tennoreich_making"
+picture="thumbnail.png"
 replace_path="common/abilities"
 replace_path="common/ai_areas"
 replace_path="common/ai_equipment"
@@ -59,3 +58,4 @@ replace_path="map/terrain"
 #replace_path="music"
 replace_path="portraits"
 supported_version = "1.12.*"
+remote_file_id="2484567771"

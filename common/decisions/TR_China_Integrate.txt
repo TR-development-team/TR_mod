@@ -1,9 +1,9 @@
 #####中国ステート地域別
 #湖北
 # 620 武昌
-# 750 常徳
 # 908 漢口
 # 909 漢陽
+# 1004 恩施
 
 #陝西
 # 622 陝西
@@ -18,6 +18,7 @@
 # 607 河南
 # 906 南陽
 # 907 安陽
+# 1005 四川
 
 #四川
 # 605 四川
@@ -38,20 +39,30 @@
 
 #湖南
 # 602 湖南
+# 750 常徳
 # 872 湘贛
 
 #江西
-# 600 江西
+# 600 贛西北
 # 871 贛南
+# 1007 贛東
+# 1010 贛西南
 
 #福建
 # 595 福建
+# 864 福州
 # 873 竜岩
+# 1008 漳州
+# 1009 福安
 
 #広東
+# 326 香港
 # 592 嶺南
 # 593 広東
 # 863 広州
+# 1001 雷州
+# 1002 欽州
+# 1003 連州
 
 #広西
 # 594 南寧
@@ -69,6 +80,7 @@
 # 283 甘粛
 # 756 酒泉
 # 913 河西回廊
+# 1006 慶陽
 
 #寧夏
 # 616 寧夏
@@ -107,13 +119,11 @@
 # 609 東河北
 
 #日本租借地
-# 326 香港
 # 591 海南
 # 728 広州湾
 # 743 青島
 # 745 関東州
 # 842 威海衛
-# 864 福州
 # 865 厦門
 # 920 天津
 
@@ -169,19 +179,19 @@ CHI_integrate_policy = {
 			}
 			OR = {
 				620 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				750 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				908 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				909 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1004 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
 			has_full_control_of_state = 620
-			has_full_control_of_state = 750
 			has_full_control_of_state = 908
 			has_full_control_of_state = 909
+			has_full_control_of_state = 1004
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 620 state = 750 state = 908 state = 909 }
+			highlight_state_targets = { state = 620 state = 908 state = 909 state = 1004 }
 		}
 		cost = 75
 		fire_only_once = yes
@@ -192,9 +202,9 @@ CHI_integrate_policy = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_hubei_province"
 			620 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-			750 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			908 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			909 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1004 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
 			factor = 50
@@ -375,15 +385,17 @@ CHI_integrate_policy = {
 				605 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				751 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				753 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1005 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
 			has_full_control_of_state = 605
 			has_full_control_of_state = 751
 			has_full_control_of_state = 753
+			has_full_control_of_state = 1005
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 605 state = 751 state = 753 }
+			highlight_state_targets = { state = 605 state = 751 state = 753 state = 1005 }
 		}
 		cost = 60
 		fire_only_once = yes
@@ -396,6 +408,7 @@ CHI_integrate_policy = {
 			605 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			751 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			753 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1005 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
 			factor = 50
@@ -568,15 +581,17 @@ CHI_integrate_policy = {
 			}
 			OR = {
 				602 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				750 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				872 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
 			has_full_control_of_state = 602
+			has_full_control_of_state = 750
 			has_full_control_of_state = 872
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 602 state = 872 }
+			highlight_state_targets = { state = 602 state = 750 state = 872 }
 		}
 		cost = 50
 		fire_only_once = yes
@@ -587,6 +602,7 @@ CHI_integrate_policy = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Hunan_province"
 			602 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			750 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			872 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
@@ -617,14 +633,18 @@ CHI_integrate_policy = {
 			OR = {
 				600 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				871 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1007 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1010 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
 			has_full_control_of_state = 600
 			has_full_control_of_state = 871
+			has_full_control_of_state = 1007
+			has_full_control_of_state = 1010
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 600 state = 871 }
+			highlight_state_targets = { state = 600 state = 871 state = 1007 state = 1010 }
 		}
 		cost = 50
 		fire_only_once = yes
@@ -636,6 +656,8 @@ CHI_integrate_policy = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Jiangxi_province"
 			600 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			871 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1007 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1010 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
 			factor = 50
@@ -664,26 +686,35 @@ CHI_integrate_policy = {
 			}
 			OR = {
 				595 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				864 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				873 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1008 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1009 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
 			has_full_control_of_state = 595
+			has_full_control_of_state = 864
 			has_full_control_of_state = 873
+			has_full_control_of_state = 1008
+			has_full_control_of_state = 1009
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 595 state = 873 }
+			highlight_state_targets = { state = 595 state = 864 state = 873 state = 1008 state = 1009 }
 		}
-		cost = 50
+		cost = 75
 		fire_only_once = yes
 		modifier = {
 			political_power_gain = -0.20
 		}
-		days_remove = 60
+		days_remove = 90
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Fujian_province"
 			595 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			864 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			873 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1008 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1009 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
 			factor = 50
@@ -711,30 +742,42 @@ CHI_integrate_policy = {
  				tag = NAN
 			}
 			OR = {
+				326 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				592 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				593 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				863 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1001 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1002 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1003 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
+			has_full_control_of_state = 326
 			has_full_control_of_state = 592
 			has_full_control_of_state = 593
 			has_full_control_of_state = 863
+			has_full_control_of_state = 1001
+			has_full_control_of_state = 1002
+			has_full_control_of_state = 1003
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 592 state = 593 state = 863 }
+			highlight_state_targets = { state = 326 state = 592 state = 593 state = 863 state = 1001 state = 1002 state = 1003 }
 		}
-		cost = 50
+		cost = 100
 		fire_only_once = yes
 		modifier = {
 			political_power_gain = -0.20
 		}
-		days_remove = 60
+		days_remove = 120
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Guangdong_province"
+			326 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			592 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			593 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			863 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1001 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1002 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1003 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
 			factor = 50
@@ -909,15 +952,17 @@ CHI_integrate_policy = {
 				283 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				756 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				913 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				1006 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
 			has_full_control_of_state = 283
 			has_full_control_of_state = 756
 			has_full_control_of_state = 913
+			has_full_control_of_state = 1006
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 283 state = 756 state = 913 }
+			highlight_state_targets = { state = 283 state = 756 state = 913 state = 1006 }
 		}
 		cost = 50
 		fire_only_once = yes
@@ -930,6 +975,7 @@ CHI_integrate_policy = {
 			283 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			756 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			913 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			1006 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
 			factor = 50

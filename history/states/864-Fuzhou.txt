@@ -10,13 +10,14 @@ state={
 	}
 
 	history={
-		owner = JAP
+		owner = FUJ
 		victory_points = { 
 			4196 3 
 		}
 		buildings = {
 			infrastructure = 3
                         dockyard = 1
+			arms_factory = 1
                         4196 = {
 				naval_base = 3
 				coastal_bunker = 1
@@ -24,6 +25,7 @@ state={
 			}
 			air_base = 1
 		}
+		add_core_of = FUJ
 		add_claim_by = CHI
 	}
 

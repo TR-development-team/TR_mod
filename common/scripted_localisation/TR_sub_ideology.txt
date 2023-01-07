@@ -154,6 +154,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = Conservative_Revolution_subtype
+		}
+		localization_key = Conservative_Revolution_subtype
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = Trotskyist_subtype
 		}
 		localization_key = Trotskyist_subtype

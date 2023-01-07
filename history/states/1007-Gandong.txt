@@ -1,0 +1,29 @@
+state={
+	id=1007
+	name="STATE_1007"
+
+	history={
+		owner = PRC
+		add_core_of = HNA
+                add_core_of = PRC
+		add_claim_by = CHI
+		add_claim_by = YUN
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			1066 1 
+		}
+
+
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1066 1110 4038 4185 7054 9984 11961 
+	}
+	manpower=2020400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

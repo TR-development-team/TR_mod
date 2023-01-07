@@ -21,6 +21,7 @@ GER_integrate_policy = {
 				945 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
                                 978 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
                                 986 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+                                987 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
                                 990 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
@@ -32,11 +33,12 @@ GER_integrate_policy = {
 			has_full_control_of_state = 945
 			has_full_control_of_state = 978
 			has_full_control_of_state = 986
+			has_full_control_of_state = 987
 			has_full_control_of_state = 990
 
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 4 state = 152 state = 153 state = 929 state = 945 state = 978 state = 986 state = 990  }
+			highlight_state_targets = { state = 4 state = 152 state = 153 state = 929 state = 945 state = 978 state = 986 state = 987 state = 990  }
 		}
 		cost = 150
 		fire_only_once = yes
@@ -56,6 +58,7 @@ GER_integrate_policy = {
 			945 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
                         978 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
                         986 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+                        987 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
                         990 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 
 		}

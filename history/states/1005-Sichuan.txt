@@ -1,0 +1,30 @@
+state={
+	id=1005
+	name="STATE_1005"
+	local_supplies=0.0 
+	resources={
+		steel=14.000
+	}
+provinces={
+		1367 1395 4925 7256 8026 10132 12705 12767 
+	}
+	manpower=31210000
+	buildings_max_level_factor=1.000
+	state_category = city
+	history={
+		owner = YUN
+		add_core_of = YUN
+		add_core_of = SCH
+		add_claim_by = CHI
+
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+		}
+		victory_points = {
+			4925 5 
+		}
+
+	}
+}

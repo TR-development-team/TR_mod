@@ -1,8 +1,7 @@
 state={
 	id=605
-	name="STATE_605"
+	name="TR_STATE_605"
 	resources={
-		steel=14.000
 	}
 
 	history={
@@ -12,35 +11,22 @@ state={
 		add_claim_by = CHI
 
 		buildings = {
-			infrastructure = 2
-			arms_factory = 3
-			industrial_complex = 2
+			infrastructure = 4
+			arms_factory = 2
+			industrial_complex = 3
 			air_base = 2
 		}
 		victory_points = {
-			4925 5 
-		}
-		victory_points = {
 			6999 20 
-		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 6
-				infrastructure = 3
-				air_base = 3
-				arms_factory = 3
-
-			}
-
 		}
 
 	}
 
 	local_supplies=0.0 
 provinces={
-		1367 1395 1893 2030 2091 4925 5048 6999 7240 7256 8026 10132 10144 11865 12274 12705 12767 
+		1893 2030 2091 4141 4431 5048 6999 7240 10144 10304 11865 12274  
 	}
-	manpower=51963300
+	manpower=20733300
 	buildings_max_level_factor=1.000
 	state_category = metropolis
 }

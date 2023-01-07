@@ -1,0 +1,31 @@
+state={
+	id=815
+	name="STATE_815"
+	local_supplies=0.0 
+provinces={
+		1025 4164 
+	}
+         resources={
+		steel=63
+	}
+        state_category=metropolis
+	manpower=4280000
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			industrial_complex = 3
+			arms_factory = 2
+			dockyard = 1
+			infrastructure = 5
+                        air_base = 5
+		}
+		
+		victory_points = {
+			1025 20
+                        
+		}
+
+	}
+	buildings_max_level_factor=1.000
+}

@@ -184,9 +184,7 @@ country_event = {
 	
 	option = {
 		name = TR_China.6.a
-		         JAP = { end_puppet = ANQ }
-                 JAP = { end_puppet = FUJ }
-                 JAP = { end_puppet = NAN }
+		 ANQ = { end_puppet = FUJ }
                  ANQ = {
                        remove_ideas = YUN_jap_economic
                        leave_faction = yes

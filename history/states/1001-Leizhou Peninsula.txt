@@ -1,0 +1,26 @@
+
+state={
+	id=1001
+	name="STATE_1001" # 
+	manpower = 1200000
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = GUG
+		add_core_of = GUG
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		4160 7135 10105
+	}
+}

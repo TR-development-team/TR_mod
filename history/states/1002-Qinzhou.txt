@@ -1,0 +1,29 @@
+
+state={
+	id=1002
+	name="STATE_1002"
+	manpower = 2210000
+	state_category = rural
+	resources={
+		tungsten=3
+		steel = 2 
+		chromium = 1
+	}
+
+	history={
+		owner = GUG
+		add_core_of = GUG
+		add_claim_by = CHI
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = { 
+			1018 3 
+		}
+	}
+
+	local_supplies=0.0 
+provinces={
+		1018 4023 10004 11926
+	}
+}
