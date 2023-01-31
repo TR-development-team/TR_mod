@@ -1,40 +1,27 @@
 spriteTypes = {
-	SpriteType = {
-		##
+
+	SpriteType = {	##
 		name = "GFX_report_event_JAP_2600th_Anniversary"
 		texturefile = "gfx/event_pictures/report_event_JAP_2600th_Anniversary.dds"
 	}
-	SpriteType = {
-		##
+	SpriteType = {	##
 		name = "GFX_report_event_JAP_Kumohata"
 		texturefile = "gfx/event_pictures/report_event_JAP_Kumohata.dds"
 	}
-	SpriteType = {
-		##
+	SpriteType = {	##
 		name = "GFX_report_event_JAP_Kurifuji"
 		texturefile = "gfx/event_pictures/report_event_JAP_Kurifuji.dds"
 	}
-	SpriteType = {
-		##
+	SpriteType = {	##
 		name = "GFX_report_event_JAP_Stlite"
 		texturefile = "gfx/event_pictures/report_event_JAP_Stlite.dds"
 	}
-	SpriteType = {
-		##
+	SpriteType = {	##
 		name = "GFX_report_event_JAP_hisatomo"
 		texturefile = "gfx/event_pictures/report_event_JAP_hisatomo.dds"
 	}
-	SpriteType = {
-		##
+	SpriteType = {	##
 		name = "GFX_report_event_Chambre_des_Deputes"
 		texturefile = "gfx/event_pictures/FRA/Chambre_des_Deputes.png"
-	}
-	SpriteType = {
-		name = "GFX_report_event_AUS_hyperinflation"
-		texturefile = "gfx/event_pictures/report/report_event_AUS_hyperinflation.png"
-	}
-	SpriteType = {
-		name = "GFX_report_event_AUS_creditanstalt"
-		texturefile = "gfx/event_pictures/report/report_event_AUS_creditanstalt.png"
 	}
 }

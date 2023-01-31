@@ -1,199 +1,41 @@
 ﻿l_japanese:
-
-### Categories ###
-
-AUS_foreign_policy:0 "外交政策"
-AUS_debug_category:0 "デバッグ用カテゴリ"
-AUS_development_project:0 "開発計画"
-AUS_great_osaka_plunge_category:0 "大阪大暴落"
-
-### Decisions ###
-
-#AUS_debug_category
-
-AUS_debug_decision:0 "デバッグ用ディシジョン"
-AUS_debug_unite:0 "二重帝国の統合"
-AUS_1836:0 "1836年をもう一度"
-AUS_1914:0 "1914年をもう一度"
-
-#AUS_great_osaka_plunge_category
-
-AUS_great_osaka_plunge_category_desc:0 "大日本帝国での大阪大暴落は、彼らから見たら遠い異国の我が帝国へも影響をもたらしている。\n特に、近年のこの国の経済状況はひどく、帝国の経済はこの恐慌によって壊滅的な打撃を受ける可能性が高い。我々は何らかの策を打たなければならない…\n\nこの画面では、現在の恐慌の影響レベルとそれによる影響、影響レベルへの関与ができます。"
-aus_plunge_escalation_text:0 "£stability_texticon 恐慌の影響レベル：§Y[?AUS_plunge_escalation_level]§!"
-aus_plunge_escalation_level_tt:0 "§Y現在の恐慌の影響レベル§!\n影響レベルは我々の政策によって変動していく。大半は良い方向へ向かうが、無策は壊滅的な結果を招くかもしれない。"
-aus_plunge_escalation_1_tt:0 "レベル1\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y3.0%§!\n安定度: §R-3.00%§!\n建設速度: §R-2.00%§!\n£prod_eff_cap 生産効率上限: §R-1.00%§!\n工場出力: §R-3.00%§!\n造船所: §R-3.00%§!"
-aus_plunge_escalation_2_tt:0 "レベル2\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y6.0%§!\n安定度: §R-6.00%§!\n建設速度: §R-4.00%§!\n£prod_eff_cap 生産効率上限: §R-2.00%§!\n工場出力: §R-6.00%§!\n造船所: §R-6.00%§!"
-aus_plunge_escalation_3_tt:0 "レベル3\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y9.0%§!\n安定度: §R-9.00%§!\n建設速度: §R-6.00%§!\n£prod_eff_cap 生産効率上限: §R-3.00%§!\n工場出力: §R-9.00%§!\n造船所: §R-9.00%§!"
-aus_plunge_escalation_4_tt:0 "レベル4\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y12.0%§!\n安定度: §R-12.00%§!\n建設速度: §R-8.00%§!\n£prod_eff_cap 生産効率上限: §R-4.00%§!\n工場出力: §R-12.00%§!\n造船所: §R-12.00%§!"
-aus_plunge_escalation_5_tt:0 "レベル5\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y15.0%§!\n安定度: §R-15.00%§!\n建設速度: §R-10.00%§!\n£prod_eff_cap 生産効率上限: §R-5.00%§!\n工場出力: §R-15.00%§!\n造船所: §R-15.00%§!"
-aus_plunge_escalation_6_tt:0 "レベル6\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y18.0%§!\n安定度: §R-18.00%§!\n建設速度: §R-12.00%§!\n£prod_eff_cap 生産効率上限: §R-6.00%§!\n工場出力: §R-18.00%§!\n造船所: §R-18.00%§!"
-aus_plunge_escalation_7_tt:0 "レベル7\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y21.0%§!\n安定度: §R-21.00%§!\n建設速度: §R-14.00%§!\n£prod_eff_cap 生産効率上限: §R-7.00%§!\n工場出力: §R-21.00%§!\n造船所: §R-21.00%§!"
-aus_plunge_escalation_8_tt:0 "レベル8\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y24.0%§!\n安定度: §R-24.00%§!\n建設速度: §R-16.00%§!\n£prod_eff_cap 生産効率上限: §R-8.00%§!\n工場出力: §R-24.00%§!\n造船所: §R-24.00%§!"
-aus_plunge_escalation_9_tt:0 "レベル9\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y27.0%§!\n安定度: §R-27.00%§!\n建設速度: §R-18.00%§!\n£prod_eff_cap 生産効率上限: §R-9.00%§!\n工場出力: §R-27.00%§!\n造船所: §R-27.00%§!"
-aus_plunge_escalation_10_tt:0 "レベル10\n§Y大阪大暴落の余波§!は以下の基礎修正: \n消費財工場: §Y30.0%§!\n安定度: §R-30.00%§!\n建設速度: §R-20.00%§!\n£prod_eff_cap 生産効率上限: §R-10.00%§!\n工場出力: §R-30.00%§!\n造船所: §R-30.00%§!"
-
-AUS_creditanstalt_bankruptcy_crisis_mission_1:0 "クレディタンシュタルト危機"
-AUS_creditanstalt_bankruptcy_crisis_mission_2:0 "クレディタンシュタルト破綻"
-
-AUS_forced_cartel_establishment_law:0 "強制カルテル設立法"
-AUS_correction_of_agricultural_purchase_prices:0 "農作物価格の是正"
-AUS_rescuing_rural_finance:0 "地方金融の救済"
-
-#AUS_development_project
-
-AUS_mountain_infrastructure_develop:0 "[FROM.GetName]での山岳インフラ"
-
-#AUS_foreign_policy
-
-AUS_retention_of_the_prague_schule:0 "プラハ学派の支援"
-
-### Puppets ###
-
-### Scripted Effects ###
-
-AUS_dep_inc_tt:0 "恐慌の影響レベルが§R1§!上がる。"
-AUS_dep_dec_tt:0 "恐慌の影響レベルが§G1§!下がる。"
-
-### BoP ###
-
-AUS_power_balance:0 "国家の勢力均衡"
-AUS_rassist_side:0 "ドイツ人至上主義勢力"
-AUS_multikulturalismus_side:0 "多文化主義勢力"
-AUS_konservatismus_range:0 "保守主義が優勢"
-AUS_rassist_low_control_range:0 "至上主義者が動きを見せている"
-AUS_rassist_medium_control_range:0 "至上主義者の発言力が増している"
-AUS_rassist_high_control_range:0 "至上主義者が国会を襲撃"
-AUS_rassist_total_control_range:0 "至上主義者が国家を掌握"
-AUS_multikulturalismus_low_control_range:0 "多文化主義が保守主義に干渉"
-AUS_multikulturalismus_medium_control_range:0 "多文化主義が支持を拡大"
-AUS_multikulturalismus_high_control_range:0 "多文化主義が大衆に受け入れられる"
-AUS_multikulturalismus_total_control_range:0 "多文化主義が至上主義を鎮圧"
-
-### Events ###
-
-TR_Austria.1.t:0 "大阪大暴落が我が国へ到達"
-TR_Austria.1.desc:0 "大阪での事件は遂に我が国へも到来した！\n我が国のいたるところでその影響は即座に見られるだろう…"
-TR_Austria.1.a:0 "どうにかしなければ…"
-TR_Austria.1.a.tt:0 "§Y大阪大暴落の余波§!を追加する。\n\n§Y大阪大暴落の余波§!ディシジョンが解禁される。"
-
-TR_Austria.2.t:0 "ハイパーインフレーション"
-TR_Austria.2.desc:0 "大阪大暴落による国内の大規模な混乱の末、遂にハイパーインフレーションが勃発してしまった。とある話では、店に入る前と出る前で価格が倍も違っていたという話だ。\n恐慌に加え、これにも対処を行わないといけない。"
-TR_Austria.2.a:0 "災厄だ"
-
-TR_Austria.3.t:0 "ハイパーインフレーションの影響"
-TR_Austria.3.desc:0 "クローネの廃止により、国内の通貨は安定してきたようだ。新たに導入された通貨であるシリングは予想よりインフレの抑制を出来ていないようではあるが、それでも効果は表れている。\n今やオーストリア経済は順調な復活を見せている。"
-TR_Austria.3.a:0 "まあ良いだろう"
-
-TR_Austria.4.t:0 "ハイパーインフレーションの影響"
-TR_Austria.4.desc:0 "政府はハイパーインフレーションに対してあまり積極的に働き掛けなかったが、シリングの制定はやはり大きかったようで、時間の経過とともに一時的なイベントであるハイパーインフレーションは遂に終結したといえるような状況といえる。\nまた、経済というものが生きた自己調整システムに他ならないことが実証された。"
-TR_Austria.4.a:0 "素晴らしい"
-
-TR_Austria.5.t:0 "クレディタンシュタルトでの危機"
-TR_Austria.5.desc:0 "大阪大暴落とハイパーインフレーションの結果、数多くの金融機関が危機に瀕している。脱落したものも多くあるが、クレディタンシュタルトはその危機に瀕している金融機関の一つだ。\nクレディタンシュタルトはオーストリアの銀行であり、主に軍需企業などに融資してきた。最近ではその癒着性が問題になっていたのだが、この銀行の崩壊は、オーストリア全体の軍需関連企業の連鎖的な崩壊のリスクすら招いている。\n我々はこの問題に対処しないと間違いなく国家としての体をなせなくなるが、もしかしたらこの機会にクレディタンシュタルトの体質を変えることができるかもしれない。"
-TR_Austria.5.a:0 "これは最悪だ！"
-
-TR_Austria.6.t:0 "クレディタンシュタルト破綻目前"
-TR_Austria.6.desc:0 "クレディタンシュタルトは今や誰の目から見ても倒産したようなものである。もともと競争力のなかった軍需産業は大阪の恐慌とこの一件で瀕死である。あと数十日もすればクレディタンシュタルトは完全に破綻すると見られており、何らかの救済策を行わなければならない。"
-TR_Austria.6.a:0 "弾丸一つですらまともに調達できない…"
-
-TR_Austria.7.t:0 "クレディタンシュタルトの破綻"
-TR_Austria.7.desc:0 "クレディタンシュタルトは今や完全に崩壊し、それに連鎖するように関連企業等も次々と崩壊していっている。いまや帝国の軍需産業は今後十年まともな火砲すら造れないほどの痛手を負ってしまった。"
-TR_Austria.7.a:0 "ああ、神よ…"
-
-TR_Austria.8.t:0 "クレディタンシュタルト問題"
-TR_Austria.8.desc:0 "クレディタンシュタルトは、帝国の軍需産業に対する融資を数多く行ってきた古い銀行である。近年は関連産業や政府との癒着が問題になっていたが、長らくその問題は放置されたままだった。\nそのような状況の中、クレディタンシュタルトも含めた金融関連機関は大阪での事件によってあまりにも大きい影響を受けてしまった。今やクレディタンシュタルトも倒産の危機に陥っている。この銀行の倒産はなんとしても防がなければならない。\nそこで、政府内でこの銀行を救済する二つのプランが提示された。一つは、政府がこの銀行を国有化し、順次解体していくクレディタンシュタルト解体案、もう一つはクレディタンシュタルトを半官半民企業とし、政府の監視の元で新しく出発するというクレディタンシュタルト復興案である。"
-TR_Austria.8.a:0 "クレディタンシュタルトを解体しよう"
-TR_Austria.8.a.tt:0 "クレディタンシュタルト解体計画が実行に移され、段階的に銀行は解体されていくだろう。\nこの場合、帝国内の軍需産業は一時的な停滞を見るかもしれない。"
-TR_Austria.8.b:0 "クレディタンシュタルトを復興しよう"
-TR_Austria.8.b.tt:0 "クレディタンシュタルト復興計画が実行に移され、順次銀行は復興されていくだろう。\nこの場合、政府は恐慌対策に割ける時間を多く失うかもしれない。"
-
-TR_Austria.9.t:0 "国有化の完了"
-TR_Austria.9.desc:0 "進められていたクレディタンシュタルトの国有化が完了した。現在官僚は、クレディタンシュタルトが残した遺産の処理に追われており、完全な解体まではまだ時間がかかる。"
-TR_Austria.9.a:0 "了解した"
-
-TR_Austria.10.t:0 "クレディタンシュタルト解体"
-TR_Austria.10.desc:0 "クレディタンシュタルト関係の必要な後始末はおおむね終了した。帝国の初期から存在した銀行は、恐慌の混乱の中でひっそりと息を引き取ることになった。"
-TR_Austria.10.a:0 "Auf Wiedersehen (また会う日まで)"
-
-TR_Austria.11.t:0 "半官半民化が完了"
-TR_Austria.11.desc:0 "クレディタンシュタルトの半官半民化に必要な様々な行政処置が完了した。未だクレディタンシュタルトは危機的状況にあるが、時間をかけて回復していくだろう。"
-TR_Austria.11.a:0 "いい傾向だ"
-
-TR_Austria.12.t:0 "業績の回復"
-TR_Austria.12.desc:0 "クレディタンシュタルトの半官半民化が功を奏し、業績は回復傾向にある。帝国の軍需産業は他の産業に比べて早期に恐慌の影響から脱しているが、この事業によるところも大きいのかもしれない。"
-TR_Austria.12.a:0 "素晴らしい結果だ"
-
-TR_Austria.13.t:0 "クレディタンシュタルト問題"
-TR_Austria.13.desc:0 "クレディタンシュタルトは、帝国の軍需産業に対する融資を数多く行ってきた古い銀行である。近年は関連産業や政府との癒着が問題になっていたが、長らくその問題は放置されたままだった。\nそのような状況の中、クレディタンシュタルトも含めた金融関連機関は大阪での事件によってあまりにも大きい影響を受けてしまった。今やクレディタンシュタルトも倒産の危機に陥っている。この銀行の倒産はなんとしても防がなければならない。\nそこで、政府内でこの銀行を救済する二つのプランが提示された。一つは、政府がこの銀行を国有化し、順次解体していくクレディタンシュタルト解体案、もう一つはクレディタンシュタルトを半官半民企業とし、政府の監視の元で新しく出発するというクレディタンシュタルト復興案である。クレディタンシュタルトは短期間であるが救済の手が差し伸べられてこなかったため、後者の案を実行するのは非常にコストがかかってしまうとの意見もある。"
-TR_Austria.13.a:0 "クレディタンシュタルトを解体しよう"
-TR_Austria.13.a.tt:0 "クレディタンシュタルト解体計画が実行に移され、段階的に銀行は解体されていくだろう。\nこの場合、帝国内の軍需産業は一時的な停滞を見るかもしれない。"
-TR_Austria.13.b:0 "クレディタンシュタルトを復興しよう"
-TR_Austria.13.b.tt:0 "クレディタンシュタルト復興計画が実行に移され、順次銀行は復興されていくだろう。\nこの場合、政府は恐慌対策などに割ける時間の多くを失うかもしれない。"
-
-TR_Austria.14.t:0 "国有化の完了"
-TR_Austria.14.desc:0 "進められていたクレディタンシュタルトの国有化が完了した。現在官僚は、クレディタンシュタルトが残した遺産の処理に追われており、完全な解体まではまだ時間がかかる。"
-TR_Austria.14.a:0 "了解した"
-
-TR_Austria.15.t:0 "クレディタンシュタルト解体"
-TR_Austria.15.desc:0 "クレディタンシュタルト関係の必要な後始末はおおむね終了した。帝国の初期から存在した銀行は、恐慌の混乱の中でひっそりと息を引き取ることになった。"
-TR_Austria.15.a:0 "いい厄介払いだ！"
-
-TR_Austria.16.t:0 "半官半民化が完了"
-TR_Austria.16.desc:0 "当初の予定より大幅に遅延したが、クレディタンシュタルトの半官半民化に必要な様々な行政処置が暫定的に完了した。未だクレディタンシュタルトは危機的状況にあるが、長い時間をかけて回復していくだろう。"
-TR_Austria.16.a:0 "非常に多くのコストが費やされたな…"
-
-TR_Austria.17.t:0 "経営の持ち直し"
-TR_Austria.17.desc:0 "クレディタンシュタルトの半官半民化が終ったあと、この銀行は何とか倒産せずに今まで維持されている。帝国の軍需産業はまだ恐慌の影響を脱するまでには至っていないが、この事業をしていなかった際の被害を考えたら安いのかもしれない。"
-TR_Austria.17.a:0 "これでよかったのだ"
-
+###Puppets###
+### event ###
+TR_Austria.1.t:0 "連邦法案の審議"
+TR_Austria.1.d:0 "ドイツに敗れ、弱体化した現在の帝国は諸民族の自治欲求を満たさぬ限り存続することはないだろう。皇帝とその政府はハンガリー人を始めとする帝国諸民族に対し高度な自治を与える事を保障する帝国連邦化法案を議会に提出。しかし、ドイツ民族主義者らはこの法案に反発している。ドイツ人はアウスグライヒ以降、ハンガリー人等の他民族に権利を譲渡する事を余儀なくているというのが彼らの主張であり、純粋なドイツ人国家をオーストリアに樹立することを求めている。"
+TR_Austria.1.a:0 "連邦法案は国会を通過した"
+TR_Austria.1.b:0 "ドイツ民族主義者がウィーンを占拠し、政府を転覆させた"
+TR_Austria.2.t:0 "オーストリアが帝国への再加入を要求"
+TR_Austria.2.d:0 ""
+TR_Austria.2.a:0 "アカの脅威から逃れるにはそれしかない"
+TR_Austria.2.b:0 "拒否する！チェコは独立国なのだ！"
+TR_Austria.3.t:0 "ボヘミアが我が国の提案を受諾"
+TR_Austria.3.d:0 ""
+TR_Austria.3.a:0 "素晴らしい！"
+TR_Austria.4.t:0 "ボヘミアが我が国の提案を拒否"
+TR_Austria.4.d:0 ""
+TR_Austria.4.a:0 "ならば戦争だ"
+###tooltip###
+AUS_Aryan_Empire_Proclaim:0 "§Gアーリア帝国を宣言する！§!…§R欧州のすべてはウィーンから統治されるだろう…§!"
 ### Ideas ###
-
-AUS_reichs_agriculture:0 "帝国の農業"
-AUS_reichs_agriculture_desc:0 "帝国の農業事情は芳しくはない。生産がハンガリーに集中しており、穀物はほとんどそれらに依存している状態だ。また、旧来の農法を捨てきれておらず、非生産的な方法によって農業は行われている。我々は何らかの対処を行わないといけない。さもなくば、窮地に陥ったときの追い打ちとなる可能性がある…"
-AUS_reichs_agriculture_buff:0 "帝国の農業"
-AUS_reichs_agriculture_buff_desc:0 "帝国の農業事情はここ数年で大幅に改善された！食糧生産は1936年と比べて数倍以上となっており、食料供給先の分散も達成された。今や我々の農業は非常に高い効率性を誇っており、先進国の農業形態の見本となるようなものばかりである。"
-AUS_reichs_industry:0 "帝国の工業"
-AUS_reichs_industry_desc:0 "帝国の工業化の進展は未だ立ち遅れている。ほかの列強諸国に比べて帝国の工業は未だ発展途上といったところで、この地政学的立地で独立を維持することは非常に困難だ。我々は、何らかの対処を行う必要がある。"
-AUS_reichs_industry_buff:0 "帝国の工業"
-AUS_reichs_industry_buff_desc:0 "帝国の工業は恐慌の後、ばねのように飛躍的な成長を果たした！ウィーン郊外には新たなビルが立ち並び、チロルの工業は元の十倍以上に拡張されている。"
-AUS_great_depression:0 "大阪大暴落の余波"
-AUS_great_depression_desc:0 "大阪での事件は我が国にも飛来した！"
-AUS_hyperinflation_1_idea:0 "ハイパーインフレーションの影響"
-AUS_hyperinflation_1_idea_desc:0 "現在、この国はハイパーインフレーションの影響を受けているが、その影響は無くなりつつある。"
-AUS_hyperinflation_2_idea:0 "ハイパーインフレーションの影響"
-AUS_hyperinflation_2_idea_desc:0 "現在、この国はハイパーインフレーションの影響を受けている。通貨の刷新などにより、その影響を取り除こうという努力が見られる。"
-AUS_hyperinflation_3_idea:0 "ハイパーインフレーションの影響"
-AUS_hyperinflation_3_idea_desc:0 "現在、この国はハイパーインフレーションの影響を大幅に受けている。この国のいたるところで物々交換が当たり前になり、紙幣は紙切れと化している。"
-AUS_creditanstalt_crisis_1_idea:0 "クレディタンシュタルト破綻危機"
-AUS_creditanstalt_crisis_1_idea_desc:0 "帝国の軍需産業に対する融資を数多く行い、現在では各軍需産業との癒着が問題になっていたクレディタンシュタルトが、恐慌の余波を受け破綻寸前となっている。この銀行の破綻は間違いなく帝国の軍需産業に大きな影響を与えるが、この銀行を改革するチャンスになり得るかもしれない。"
-AUS_creditanstalt_crisis_2_idea:0 "クレディタンシュタルト破綻危機"
-AUS_creditanstalt_crisis_2_idea_desc:0 "帝国の軍需産業に対する融資を数多く行い、現在では各軍需産業との癒着が問題になっていたクレディタンシュタルトが、恐慌の余波を受け破綻寸前となっている。専門家は、このまま行けば今すぐにでもこの銀行は破綻するだろうと予測しており、既に大規模な混乱が巻き起こっている。"
-AUS_creditanstalt_crisis_3_idea:0 "クレディタンシュタルト破綻の影響"
-AUS_creditanstalt_crisis_3_idea_desc:0 "クレディタンシュタルトは遂に何の支援も得ることができず、破綻してしまった。これが帝国の軍事産業にもたらした影響は計り知れない…"
-AUS_creditanstalt_semigovernmentalization_idea:0 "クレディタンシュタルトの半政府化"
-AUS_creditanstalt_semigovernmental_idea:0 "半官半民のクレディタンシュタルト"
-AUS_creditanstalt_semigovernmental_idea_desc:0 "現在、クレディタンシュタルトは半官半民の状態で運営されており、業績は回復傾向にある。"
-AUS_creditanstalt_semigovernmental_low_idea:0 "半官半民のクレディタンシュタルト"
-AUS_creditanstalt_semigovernmental_low_idea_desc:0 "現在、クレディタンシュタルトは半官半民の状態で運営されている。"
-AUS_geteiltes_reich_idea:0 "分かたれし帝国"
-AUS_geteiltes_reich_idea_desc:0 "神聖ローマ解体直前に成立したハプスブルク君主国の後継国、オーストリア帝国。この国は成立以来、絶えず衰退への歩みを進めた。その分断は独墺戦争後に最も顕著となり、現在の帝国はもう維持することすら困難だ。このような事情により、帝国全体は動揺し政情は非常に不安定化している。"
-AUS_wiener_kreis_idea:0 "ウィーン学団"
-AUS_wiener_kreis_idea_desc:0 "ウィーン学団は、論理実証主義を標榜する二十世紀でも特に著名な研究グループである。科学哲学と分析哲学に大きな影響を与えることになるこの組織は、未だその活動を継続している。彼らは弾圧されない限りこの地で活動を続けるだろう。"
-AUS_prager_schule_idea:0 "プラハ学派"
-AUS_prager_schule_idea_desc:0 "プラハ学派は、プラハを拠点に置いた音韻論をはじめとする言語学派である。機能主義言語学の始祖であると言われる理論を構築している。"
-AUS_hungarian_scientist_idea:0 "ハンガリー人の人材的土壌"
-AUS_hungarian_scientist_idea_desc:0 "マジャル人が？"
-AUS_hungarian_research_institution_idea:0 "ハンガリーの研究機関"
-AUS_hungarian_research_institution_idea_desc:0 "ハンガリー人のために作られた数多くの研究機関や大学は、我々の想像をはるかに上回る成果を出している。ヨーロッパにおけるマジャル人の存在はやはり例外的なのだろうか？"
-AUS_modern_population_census_idea:0 "近代的戸籍制度"
-AUS_loss_of_hungarian_initiative:0 "開発主導権の喪失"
-AUS_loss_of_hungarian_initiative_desc:0 "オーストリア帝国によるトランスライタニエンの主導開発事業により、我々ハンガリー人の地域における主導権は喪失しつつある。"
-AUS_effects_of_job_creation_idea:0 "雇用創出の副次的効果"
-AUS_effects_of_job_creation_idea_desc:0 "市場の状態がいくらか安定した。"
-AUS_banking_network_idea:0 "大規模銀行ネットワーク"
-
-### Ministers ###
-
+AUS_depression:0 "大恐慌"
+AUS_MINZOKUMONDAI:0 "民族紛争"
+AUS_Apartheid:0 "人種衛生"
+AUS_Aryan_idea:0 "アーリア帝国"
+AUS_Wotan:0 "ヴォータン信仰"
+AUS_Armanenschaft:0 "アルマネン結社"
+AUS_Thule_Gesellschaft:0 "トゥーレ協会"
+AUS_SSorden:0 "武装親衛騎士団"
+AUS_antisemitism:0 "反ユダヤ主義"
+AUS_HUN_FUMAN:0 "ハンガリー人を懐柔"
+AUS_donau:0 "連邦維持費"
+AUS_Forced_Labor:0 "強制労働"
+AUS_Sparta:0 "選民社会"
+AUS_Kyosei:0 "劣等種族の去勢"
+AUS_kyoseikekkon:0 "アーリア人繁殖計画"
+AUS_Thousand_Kingdom:0 "千年王国思想"
+AUS_Untermensch:0 "強制収容区"
+###大臣####
 AUS_Adolf_Hitler:0 "アドルフ・ヒトラー"
 AUS_Heinrich_Himmler:0 "ハインリヒ・ヒムラー"
 AUS_Erik_Jan_Hanussen:0 "エリック・ヤン・ハヌッセン"
@@ -205,22 +47,22 @@ AUS_Franz_Bohme:0 "フランツ・ベーメ"
 AUS_Eugen_von_Osterreich:0 "オイゲン・フォン・エスターライヒ"
 AUS_Adolf_Joseph_Lanz:0 "アドルフ・ヨーゼフ・ランツ"
 AUS_Engelbert_Dollfuss:0 "エンゲルベルト・ドルフース"
-AUS_franz_josef_otto_von_habsburg:0 "フランツ＝ヨーゼフ2世"
+AUS_franz_josef_otto_von_habsburg:0 "フランツ=ヨーゼフ2世"
 AUS_Karl_Renner:0 "カール・レンナー"
 AUS_Richard_Coudenhove_Kalergi:0 "リヒャルト・クーデンホーフ＝カレルギー"
-
-### Traits ###
-
+###特性####
 AUS_Wiligut_traits:0 "イルミン教の継承者"
 AUS_Hanussen_traits:0 "不気味な怪人物"
 AUS_Himmler_traits:0 "秘密警察長官"
 AUS_Hitler_traits:0 "演説の名手"
-
+###脅威###
+Ordensstaat_Threat:0 "ドイツ騎士団国宣言"
+AUS_GER_Europe_WAR:0 "ドイツ統一戦争"
+AUS_ITA_WAR_THREAT:0 "イタリア分割"
 ### NF ###
-
 AUS_abolition_of_krone:0 "クローネの廃止"
 AUS_abolition_of_krone_desc:0 "クローネ…正式にはオーストリア＝ハンガリー・クローネは、アウスグライヒの頃からあった帝国の基底通貨だったが、いまやクローネはハイパーインフレーションに陥り、まともな通貨として機能していない。\nここで下手に100兆クローネなどを発行するのは明らかに悪手だ。様々なデメリットも抱えているが、クローネを廃止し新たにオーストリア＝ハンガリー・シリングを発行することが、この混乱への最も効果的な対応である。"
-
+AUS_abolition_of_krone_tt:0 "この国家方針を取得すると、§Yクローネ§!による§Yハイパーインフレーション§!の影響が段階的に軽減されていく。"
 AUS_financial_assistance:0 "OeUBの金融支援"
 AUS_financial_assistance_desc:0 "OeUB(eine-Öesterreichisch-Ungarische-Bank)は今から約100年前に創設された帝国初の中央銀行である。長らくクローネの発行権を持つ通貨発行銀行として活躍してきたが、極東の帝国での「暗黒の木曜日」により、オーストリア経済全体とともに最大の危機に直面している。クレディタンシュタルトを筆頭に、帝国全土の銀行は数年前の独墺戦争によって大幅に弱体してしまった。\n最悪の結果を防ぐためにも、帝国経済の総力を結して破綻を阻止しなければならない。"
 AUS_creditanstalt_issue:0 "クレディタンシュタルト問題"
@@ -364,8 +206,8 @@ AUS_invasion_and_landing_desc:0 "遠くの大陸や島国を攻略する唯一�
 
 ### air ###
 
-AUS_silver_wings:0 "帝立航空部隊の拡張"
-AUS_silver_wings_desc:0 "我が国は、航空機の出現以降他国と同様に陸海軍とは別の立ち位置の部隊として航空隊を編成してきた。しかし近年、航空機の性能はより上昇し戦争への影響も高くなることが予想されて来ている。我が国にある帝立航空部隊も、その役割を拡張した帝国空軍として再編していくべきだ。"
+AUS_silver_wings:0 "銀の翼"
+AUS_silver_wings_desc:0 "エズュシュト・ニールは、大日本帝国によって生み出された人類の夢である。我々はこれの軍を生み出す程の工業力を有していなかった。いまこそ我々も、これを主軸にした新たな軍を設立すべきだ。"
 AUS_foreign_air_force_officers:0 "外国の空軍士官"
 AUS_foreign_air_force_officers_desc:0 "我々の空軍に関する知見は驚くほど不足している。そこで、新たに創設された空軍の指導部は、外国の空軍士官を招致して、その技術力の向上に励もうとしている。どれ程が了承するかは未知数だが、得られるものは多いだろう。"
 AUS_airport_maintenance:0 "空港の整備"
@@ -482,32 +324,4 @@ AUS_draft_for_local_defense_desc:0 "プロパガンダは大いなる成功を�
 AUS_divisionalizable_border_guards:0 "展開可能な国境警備隊"
 AUS_divisionalizable_border_guards_desc:0 "強化されたとはいえ、国境警備隊は所詮は国境警備隊だ。しかし、帝国中の国境警備隊を速やかに輸送・組織化をすることによって、神出鬼没な防衛師団を錬成する試みがある。"
 
-### state modifier ###
 
-AUS_industrialised_tyrol_effect:0 "工業化された山岳地帯"
-AUS_industrialised_effect:0 "高度な工業地帯"
-
-### tooltip ###
-
-AUS_external_duty_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y2.5%§!\n\n§Y帝国の工業§!に以下の修正:\n消費財工場: §Y2.5%§!\n\n§Y大阪大暴落の余波§!に以下の修正:\n産出資源の海外市場への放出: §Y-20%§!\n禁輸コスト補正: §G-80.0%§!\n禁輸の国際緊張値: §G-1000.0%§!\n\n"
-AUS_external_duty_trt:0 "国民精神§Y大阪大暴落の余波§!を有している"
-AUS_abolition_of_krone_tt:0 "この国家方針を取得すると、§Yクローネ§!による§Yハイパーインフレーション§!の影響が段階的に軽減されていく。"
-AUS_reichs_autobahn_tt:0 "§Yツィスライタニエン§!の§Yウィーン§!と陸続きの全ての領有州の§Yインフラ§! レベルを§G1§!上昇させる。\n\n§Y帝国の工業§!に以下の修正:\n§Yインフラ§!建設速度: §G+20.0%§!\n\n"
-AUS_site_reform_tt:0 "§Y帝国の工業§!に以下の修正:\n全州の最大工場立地数: §G+25.00%§!\n\n"
-AUS_liberate_habsburg_lands_tt:0 "§Y帝国の工業§!に以下の修正:\n全州の最大工場立地数: §G+15.00%§!\n建設速度: §G+25.00%§!\n§Y民需工場§!建設速度: §G+25.00%§!\n\n"
-AUS_improved_industrial_space_tt:0 "§Y帝国の工業§!に以下の修正:\n建設速度: §G+10.00%§!\n£prod_eff 生産効率成長率: §G+20.00%§!\n生産効率基本値: §G+20.00%§!\n資源不足ペナルティ: §G-10.00%§!\n工場出力: §G+20.00%§!\n\n"
-AUS_development_of_translytanien_tt:0 "§Y帝国の工業§!に以下の修正:\n建築速度: §G+10.00%§!\n\n"
-AUS_finish_plunge:0 "§Y恐慌§!が終結した"
-AUS_resource_competitiveness_tt:0 "§Y帝国の工業§!の資源系デバフを解除する。\nまた、既に研究し終えているものも含め、§Y掘削§!系の技術を研究する度、効果の§Y50%§!が§Y帝国の工業§!に効果として上乗せされる。"
-AUS_mountain_infrastructure_tt:0 "山岳地域のインフラを改善する為の§Yディシジョン§!が解禁される。"
-AUS_three_ri_goods_tt:0 "\n§Y帝国の工業§!に以下の修正:\n消費財工場: §Y-2.5%§!\n\n"
-AUS_financial_assistance_tt:0 "§Y恐慌§!の影響を軽減するためのディシジョン群が解禁される。"
-AUS_creditanstalt_bankruptcy_crisis_mission_1_tt:0 "誰の目から見ても明らかなほど§Yクレディタンシュタルト§!の状況は悪化し、破綻まで秒読みとなる。"
-AUS_creditanstalt_bankruptcy_crisis_mission_2_tt:0 "§Yクレディタンシュタルト§!は倒産し、帝国の軍需産業は今後数十年停滞する。"
-
-### flags ###
-
-AUS_creditanstalt_rescued_1:0 "クレディタンシュタルトは救済された"
-AUS_creditanstalt_rescued_2:0 "クレディタンシュタルトは延命された"
-AUS_developing_mountain_infrastructure:0 "山岳インフラを開発中である"
-AUS_addressing_plunge:0 "恐慌に対処中"

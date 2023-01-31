@@ -6,169 +6,186 @@ bookmarks = {
 		picture = "GFX_select_date_1936"
 		default_country = "JAP"
 		default = yes
-		"JAP" = {
+
+                "JAP"={
 			history = "TR_JAP_GATHERING_STORM_DESC"
 			ideology = market_liberal
 			ideas = {
 				JAP_asian_leader
 				JAP_black_thursday
 				JAP_ugaki_gunshuku
-			}
+			}	
 			focuses = {
 				JAP_KAIGEN_KEIZOKU_NF
-				JAP_KAIGEN_TEPPAI_NF
-				JAP_KAKUMEI_SUC
-			}
+                                JAP_KAIGEN_TEPPAI_NF
+                                JAP_KAKUMEI_SUC
+			}			
 		}
-		"GER" = {
+        "GER"={
 			history = "TR_GER_GATHERING_STORM_DESC"
 			ideology = radical_socialist
 			ideas = {
 				GER_Junker_resistance
-				GER_WAR_HORROR
-				GER_REVOLUTION_ARMY
+                GER_WAR_HORROR
+                GER_REVOLUTION_ARMY
 			}
 			focuses = {
 				GER_Levine_focus_8
-				GER_BF_focus_6
-				GER_Consul_focus_4
+                GER_BF_focus_6
+                GER_Consul_focus_4
 			}
 		}
-		"FRA" = {
+		
+		"FRA"={
 			history = "TR_FRA_GATHERING_STORM_DESC"
 			ideology = national_populist
 			ideas = {
-				FRA_revenge
-				FRA_black_thursday
-			}
+                                FRA_revenge
+                                FRA_black_thursday
+	                }
 			focuses = {
 				FRA_AF_1
-				FRA_PPF_1
-				FRA_RNP_1
+                                FRA_PPF_1
+                                FRA_RNP_1
 			}
 		}
-		"USA" = {
+		"USA"={
 			history = "TR_USA_GATHERING_STORM_DESC"
 			ideology = social_democrat
 			ideas = {
 				USA_LOSE_IN_CALIFORNIA
-				USA_depression
-				USA_treaty_of_Tokyo
+                                USA_depression
+                                USA_treaty_of_Tokyo
 			}
 			focuses = {
 				USA_sQHwileF
-				USA_HIFLSvqT
+                                USA_HIFLSvqT
 			}
 		}
-		"ENG" = {
+		"ENG"={
 			history = "TR_ENG_GATHERING_STORM_DESC"
 			ideology = social_conservative
 			ideas = {
 				ENG_LOSE_IN_INDIA
-				ENG_revolution
+                ENG_revolution
 			}
 			focuses = {
+				
 			}
 		}
-		"ITA" = {
+		
+		"ITA"={
 			history = "TR_ITA_GATHERING_STORM_DESC"
 			ideology = social_democrat
 			ideas = {
 				ITA_MAFIA_CORRUPT
-				ITA_Squadrismo
-				ITA_weak_Socialism
-			}
+                                ITA_Squadrismo
+                                ITA_weak_Socialism
+			}	
 			focuses = {
-			}
+				
+			}		
 		}
-		"SOV" = {
+		
+		"SOV"={
 			history = "TR_SOV_GATHERING_STORM_DESC"
 			ideology = paternal_autocrat
 			ideas = {
-				SOV_army_disband
-				SOV_depression
-				SOV_revolution
+                                SOV_army_disband
+                                SOV_depression
+                                SOV_revolution
 			}
 			focuses = {
-				SOV_Autocrat_focus_1
+                                SOV_Autocrat_focus_1
 				SOV_Democracy_focus_1
-				SOV_Democracy_focus_2
-			}
+                                SOV_Democracy_focus_2
+			}	
 		}
-		"---" = {
+
+		"---"={
 			history = "TR_OTHER_GATHERING_STORM_DESC"
 		}
-		"AUS" = {
+
+                "AUS" = {
 			minor = yes
 			history = "TR_AUS_GATHERING_STORM_DESC"
 			ideology = social_conservative
 			ideas = {
-				AUS_geteiltes_reich_idea
-				AUS_wiener_kreis_idea
-				AUS_hungarian_scientist_idea
+				AUS_MINZOKUMONDAI
+                                AUS_Aryan_idea
+                                AUS_donau
 			}
+
 			focuses = {
 				AUS_ewUIGHrt
 				AUS_lsYFRofA
 				AUS_FZvPTIpA
 			}
 		}
-		"CHI" = {
+                "CHI" = {
 			minor = yes
 			history = "TR_CHI_GATHERING_STORM_DESC"
 			ideology = national_populist
 			ideas = {
 				CHI_hikoritunatouti
-				CHI_fuannteinakokka
-				CHI_Shading_sun
+	                        CHI_fuannteinakokka
+                                CHI_Shading_sun
 			}
+
 			focuses = {
 				CHI_Military_corps_1
 				CHI_XMCAoyjQ
 				CHI_GnWQctLH
 			}
 		}
-		"BUL" = {
+                "BUL" = {
 			minor = yes
 			history = "TR_BUL_GATHERING_STORM_DESC"
 			ideology = paternal_autocrat
 			ideas = {
 				BUL_Foutrh_Roma
-				BUL_YABOU
-				BUL_KHANATE_IDEA
+                                BUL_YABOU
+                                BUL_KHANATE_IDEA
 			}
+
 			focuses = {
 				BUL_ElpxumRY
 				BUL_naKgcXxB
 				BUL_DynMWbim
 			}
 		}
-		"TUR" = {
+                "TUR" = {
 			minor = yes
 			history = "TR_TUR_GATHERING_STORM_DESC"
 			ideology = paternal_autocrat
 			ideas = {
 				TUR_Bagdadrailway
-				TUR_SAIMUKANRI
-				TUR_Jubyounin
+	                        TUR_SAIMUKANRI
+                                TUR_Jubyounin
 			}
+
 			focuses = {
 				TUR_YFxLpbEB
-				TUR_EYAINjyc
-				TUR_tROgPzvG
+	                        TUR_EYAINjyc
+                                TUR_tROgPzvG
 			}
 		}
-		"RUS" = {
+                "RUS" = {
 			minor = yes
 			history = "TR_RUS_GATHERING_STORM_DESC"
 			ideology = radical_socialist
 			ideas = {
 			}
+
 			focuses = {
 			}
 		}
+
+
+		
+		
 		effect = {
-			randomize_weather = 22345			# <- Obligatory in every bookmark !
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
 			#123 = { rain_light = yes }
 		}
 	}

@@ -1,5 +1,7 @@
 ﻿capital = 9
+
 oob = "CZE_1936"
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -14,12 +16,9 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 }
-
 if = {
 	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
+		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
 		gwtank = 1
@@ -27,7 +26,6 @@ if = {
 		improved_light_tank = 1
 	}
 }
-
 if = {
 	limit = {
 		has_dlc = "No Step Back"
@@ -38,14 +36,13 @@ if = {
 		improved_light_tank_chassis = 1
 	}
 }
-
 add_ideas = {
-	Constitutional_monarchy
-	trinket_minimum_wage
-	AUS_prager_schule_idea
+        Constitutional_monarchy
+        trinket_minimum_wage
 }
-
+	
 set_research_slots = 3
+
 set_politics = {
 	ruling_party = market_liberal
 	last_election = "1935.5.19"
@@ -64,9 +61,8 @@ set_popularities = {
 	authoritarian_democrat = 0
 	paternal_autocrat = 0
 	national_populist = 5
-	Gnosticism = 7
+        Gnosticism = 7
 }
-
 create_country_leader = {
 	name = "オスカー1世"
 	desc = ""
@@ -88,7 +84,6 @@ create_country_leader = {
 		#
 	}
 }
-
 create_country_leader = {
 	name = "オスカー1世"
 	desc = ""
@@ -125,55 +120,45 @@ create_country_leader = {
 create_field_marshal = {
 	name = "Vojtěch Luža"
 	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
-	traits = {
-		fast_planner
-		offensive_doctrine
-	}
+	traits = { fast_planner offensive_doctrine }
 	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 1
+    attack_skill = 4
+    defense_skill = 2
+    planning_skill = 3
+    logistics_skill = 1
 }
 
 create_field_marshal = {
 	name = "Josef Šnejdárek"
 	gfx = "GFX_Portrait_czechoslovakia_josef_snejdarek"
-	traits = {
-		thorough_planner
-		defensive_doctrine
-	}
+	traits = { thorough_planner defensive_doctrine }
 	skill = 3
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 1
+    attack_skill = 3
+    defense_skill = 4
+    planning_skill = 2
+    logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Richard Tesařík"
 	gfx = "GFX_Portrait_czechoslovakia_richard_tesarik"
-	traits = {
-		armor_officer
-	}
+	traits = { armor_officer }
 	skill = 2
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+    attack_skill = 4
+    defense_skill = 1
+    planning_skill = 1
+    logistics_skill = 1
 }
 
 create_corps_commander = {
 	name = "Sergej Vojcechovský"
 	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
-	traits = {
-		winter_specialist
-	}
+	traits = { winter_specialist }
 	skill = 3
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
+    attack_skill = 4
+    defense_skill = 3
+    planning_skill = 2
+    logistics_skill = 1
 }
 
 if = {
@@ -232,3 +217,6 @@ if = {
 		}
 	}
 }
+
+
+
