@@ -3,10 +3,7 @@ state={
 	id=336
 	name="STATE_336"
 	resources={
-		rubber=42.000
-		steel=15.000
-		tungsten=20.000
-		aluminium=5.000
+		steel=5.000
 	}
 
 	history={
@@ -29,13 +26,13 @@ state={
 			
 
 		}
-		add_core_of = JAP
+		add_core_of = MAL
 
 	}
 
 	local_supplies=0.0 
 provinces={
-		12299 
+		12113 12299 
 	}
 	manpower=873200
 	buildings_max_level_factor=1.000

@@ -1,10 +1,10 @@
-JAP_Imperialisation_policy = {
+JAP_Imperialisation_policy = {#皇民化政策(外地中核化ディシジョン)
 	icon = generic_political_actions
 	allowed = {
 		original_tag = JAP
 	}
 }
-JAP_Power_Struggle_Policy = {
+JAP_Power_Struggle_Policy = {#権力闘争(独裁ルート)
 	priority = 10
 	icon = power_struggle
 	picture = GFX_decision_cat_picture_chi_political_support
@@ -18,31 +18,45 @@ JAP_Power_Struggle_Policy = {
 		original_tag = JAP
 	}
 }
-JAP_Five_Year_Plan_Policy = {
+JAP_Five_Year_Plan_Policy = {#近衞ルート新体制運動
 	icon = generic_political_actions
 
 	allowed = {
 		original_tag = JAP
 	}
 }
-JAP_National_Reform_Plan_Policy = {
+JAP_National_Reform_Plan_Policy = {#皇道派ルート昭和維新
 	icon = generic_political_actions
 
 	allowed = {
 		original_tag = JAP
 	}
 }
-JAP_Japan_Reform_Plan_Policy = {
+JAP_Japan_Reform_Plan_Policy = {#北一輝ルート日本改造
 	icon = generic_political_actions
 
 	allowed = {
 		original_tag = JAP
 	}
 } 
-JAP_fully_armed_state_Policy = {
+JAP_fully_armed_state_Policy = {#宇垣＝永田ルート高度国防国家
 	icon = generic_political_actions
 
 	allowed = {
 		original_tag = JAP
 	}
 } 
+JAP_Military_reform_Policy = {#民主ルート軍部改革
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = JAP
+	}
+}  
+JAP_election_manifesto_Policy = {#民主ルート政権公約実行
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = JAP
+	}
+}  

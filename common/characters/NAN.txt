@@ -51,12 +51,12 @@ characters={
 			}
 		}
 		field_marshal = {
-			traits = { old_guard war_hero }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			traits = { old_guard war_hero infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}		
 	}
 	JAP_Ishiwara_Kanji={
@@ -67,12 +67,12 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { JAP_samurai_lineage }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 1
+			traits = { JAP_samurai_lineage media_personality trait_reckless inflexible_strategist }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
 			planning_skill = 3
-			logistics_skill = 2
+			logistics_skill = 3
 		}		
 	}
 	JAP_Kohinata_Hakuro={
@@ -84,10 +84,10 @@ characters={
 		}
 		corps_commander = {
 			traits = { }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 2
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
 			logistics_skill = 2
 		}		
 	}

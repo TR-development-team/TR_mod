@@ -3,11 +3,13 @@ state={
 	name="STATE_835"
         resources={
 		rubber=120.000
-		tungsten=89.000
+		tungsten=100.000
+		aluminium=5.000
+                steel=5.000
 	}
 	local_supplies=0.0 
 provinces={
-		1376 4367 4384 4412 4424 7427 10297 10313 12255 12271 12113
+		1376 4367 4384 4412 4424 7427 10297 10313 12255 12271 
 	}
 	state_category=city
 	manpower=1200000
@@ -15,7 +17,8 @@ provinces={
                 victory_points = {
 			10297 10 
 		}
-		owner = MAL
+		owner = JSE
+		add_core_of = JSE
 		add_core_of = MAL
 		buildings = {
                         industrial_complex = 2

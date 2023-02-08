@@ -1,0 +1,39 @@
+
+state={
+	id=1039
+	name="STATE_1039"
+	manpower = 2193898
+	
+	state_category = rural
+	
+	resources={
+		steel=15
+		tungsten=12 # was: 38
+	}
+
+
+	history={
+		add_core_of = JSE
+                add_core_of = VIN
+		owner = JSE
+		victory_points = {
+			4119 3
+		}
+		victory_points = {
+			12048 1
+		}
+		buildings = {
+			infrastructure = 1
+			4119 = {
+				naval_base = 5
+
+			}
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1073 1157 4119 7015 7093 7518 9948 12008 12048 12065
+	}
+}

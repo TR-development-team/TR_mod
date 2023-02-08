@@ -1,16 +1,16 @@
 state={
 	id=670
-	name="STATE_670"
-	manpower = 1118000
+	name="TR_STATE_670"
+	manpower = 708000
 	
 	state_category = town
 
 	history={
-		owner = MAL
+		owner = JSE
 		add_core_of = LAO
-                add_core_of = MAL
+                add_core_of = JSE
 		victory_points = {
-			1464 1
+			1464 3
 		}
 		buildings = {
 			infrastructure = 1
@@ -20,6 +20,6 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		1362 1374 1390 1464 1507 1520 1563 1577 1592 4260 4339 4539 4554 4568 4613 7075 7103 7218 7356 7426 9961 10195 10238 10326 10453 10496 12210 12332 12392 12433 
+		1362 1374 1390 1464 1520 1563 1577 1592 4260 4539 4554 7426 10195 10238 10326 10453 12210 12332 
 	}
 }

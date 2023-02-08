@@ -18,10 +18,13 @@ division_template = {
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 }
 division_template = {
@@ -82,10 +85,10 @@ units = {
 	}
 	division = {
 		name = "1 Hunan Jingbei"
-		location = 4083
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		location = 7101
+		division_template =  "Sanjiao Jun"	# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 	}
 	###### Kuomintang Army (CO: Chang Kai-shek) ######
 	### Capital Garrison Force (CO: ) ###
@@ -94,7 +97,7 @@ units = {
 		location = 7097
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 	}
 	division = { # "Peixun Shi"
 		division_name = {
@@ -112,17 +115,15 @@ units = {
 		location = 7159
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 	}
-	
-	###### Kuomintang Army (CO: Chang Kai-shek) ######
 	### Capital Garrison Force (CO: ) ###
 	division = {
 		name = "5 Lujun Shi"
 		location = 11918
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 	}
 	division = { # "Peixun Shi"
 		division_name = {
@@ -140,7 +141,7 @@ units = {
 		location = 12495
 		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
 		start_equipment_factor = 0.7
-		start_experience_factor = 0.1
+		start_experience_factor = 0.3
 	}
 	
 	

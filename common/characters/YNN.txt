@@ -3,11 +3,11 @@ characters={
 		name=YUN_long_yun
 		portraits={
 			civilian={
-				large="gfx/leaders/CHI/Portrait_china_Lung_yun.tga"
+				large="gfx/leaders/YUN/Portrait_china_Lung_yun.png"
 			}
 			army = {
 				small=GFX_portrait_YUN_long_yun_small
-				large="gfx/leaders/CHI/Portrait_china_Lung_yun.tga"
+				large="gfx/leaders/YUN/Portrait_china_Lung_yun.png"
 			}
 		}
 		country_leader={
@@ -18,6 +18,14 @@ characters={
 		}
 		country_leader={
 			ideology=Nationalism_subtype
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
 

@@ -1,0 +1,32 @@
+
+state={
+	id=1026
+	name="STATE_1026"
+	manpower = 1101105
+	
+	state_category = rural
+	
+	resources={
+		rubber=5
+	}
+
+
+	history={
+		add_core_of = JSE
+                add_core_of = VIN
+		owner = JSE
+		victory_points = {
+			10309 3
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1300 4255 4334 4405 7229 10137 10162 10309  
+	}
+}

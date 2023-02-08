@@ -15,7 +15,7 @@ characters={
 		name=JAP_oosugi_sakae
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_oosugi_sakae.png"
+				large="gfx/leaders/JAP/Portrait_JAP_Osugi_sakae.png"
 			}
 		}
 		country_leader={
@@ -989,7 +989,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious media_personality }
+			traits={ infantry_officer trait_cautious media_personality }
 			skill=2
 			attack_skill=2
 			defense_skill=2
@@ -1371,8 +1371,8 @@ characters={
 		}
 		navy_leader={
 			traits={ bold navy_career_officer aviation_enthusiast blockade_runner superior_tactician }
-			skill=5
-			attack_skill=5
+			skill=4
+			attack_skill=4
 			defense_skill=3
 			maneuvering_skill=3
 			coordination_skill=4
@@ -1578,6 +1578,24 @@ characters={
 		}
 	}
 
+
+	JAP_Hori_Teikichi={
+		name=JAP_Hori_Teikichi
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Hori_Teikichi.png"
+			}
+		}
+		navy_leader={
+			traits={ bold aviation_enthusiast superior_tactician air_controller }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=5
+			coordination_skill=5
+			legacy_id=0
+		}
+	}
 	### THEORISTS ###
 
 	# Yamashita up there

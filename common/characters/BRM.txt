@@ -1,0 +1,20 @@
+characters={
+	BRM_Ba_Maw={
+		name=BRM_Ba_Maw
+		portraits={
+			civilian={
+				large="gfx/leaders/BRM/Portrait_BRM_Ba_Maw.png"
+			}
+		}
+		country_leader={
+			ideology=Democratic_socialism_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=oligarchy_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

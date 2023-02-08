@@ -4,57 +4,208 @@
      country = {
 
 		### Starting ###
-                 HNA_PRC_partisan = {
+        HNA_PRC_partisan = {
 			allowed = {
 				always = no
-			}
-                        
-
-			targeted_modifier = {
-				tag = PRC
-				attack_bonus_against = -0.05
-                                defense_bonus_against = -0.05
 			}
 			removal_cost = -1
                      
 			picture = chi_war_of_resistance3
+			cancel = {
+                                has_socialist_government = yes
+			}
+			modifier = {
+                              stability_factor = -0.05
+                              resistance_target = 0.1
+                              radical_socialist_drift = 0.01
+			}
+		}
+        HNA_PRC_partisan_1 = {
+            name = HNA_PRC_partisan
+			allowed = {
+				always = no
+			}
 			removal_cost = -1
+                     
+			picture = chi_war_of_resistance3
+			cancel = {
+                                has_socialist_government = yes
+			}
 			modifier = {
                               stability_factor = -0.1
-                              resistance_target = 0.1
+                              resistance_target = 0.2
+                              totalist_drift = 0.03
+                              radical_socialist_drift = 0.03
 			}
 		}
 		HNA_Constitution = {
 			allowed = {
 				always = no
 			}
-                        picture = chi_chinese_unity
+            picture = generic_democratic_drift_bonus
 			
 			removal_cost = -1
             
 			modifier = {
-                              political_power_cost = -0.25
-                              stability_factor = 0.1
+                political_power_cost = -0.25
+                stability_factor = 0.1
 			}
 		}
-                HNA_Ichigo_Ikko = {
+		HNA_Constitution_Zhili = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_research_bonus
+            picture = generic_democratic_drift_bonus
 			
 			removal_cost = -1
             
 			modifier = {
-                              research_speed_factor = 0.05
+				political_power_factor = 0.1
+				stability_factor = -0.05
 			}
 		}
-                HNA_Crime_control = {
+		HNA_black_thursday = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_spy_political
+                        picture = great_depression
+			
+			removal_cost = -1
+            
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		HNA_black_thursday_1 = {
+			name = HNA_black_thursday
+			allowed = {
+				always = no
+			}
+                        picture = great_depression
+			
+			removal_cost = -1
+            
+			modifier = {
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		HNA_black_thursday_2 = {
+			name = HNA_black_thursday
+			allowed = {
+				always = no
+			}
+                        picture = great_depression
+			
+			removal_cost = -1
+            
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+		}
+		HNA_opium_trade = {
+			allowed = {
+				always = no
+			}
+            picture = prc_permit_opium_trade
 
+			
+			removal_cost = -1
+			modifier = {
+				war_support_factor = -0.10
+				political_power_factor = -0.1
+                consumer_goods_factor = -0.03
+			}
+		}
+		HNA_opium_trade_ban = {
+			allowed = {
+				always = no
+			}
+            picture = prc_permit_opium_trade
+
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+                consumer_goods_factor = 0.05
+			}
+		}
+		HNA_opium_trade_Gradual_ban = {
+			allowed = {
+				always = no
+			}
+            picture = prc_permit_opium_trade
+
+			
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.05
+                consumer_goods_factor = -0.01
+			}
+		}
+		HNA_resource_development = {
+			allowed = {
+				always = no
+			}
+            picture = generic_exploit_mines
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+		HNA_Planned_economy= {
+			allowed = {
+				always = no
+			}
+            picture = man_five_year_plan_industry
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = 0.2
+			}
+		}
+		HNA_capitalist_economy = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+        HNA_Confucian_Modernization = {
+			allowed = {
+				always = no
+			}
+            picture = generic_research_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = -0.1
+			}
+		}
+        HNA_police_reform = {
+			allowed = {
+				always = no
+			}
+            picture = generic_Military_Police
 			
 			removal_cost = -1
                      
@@ -63,104 +214,927 @@
 				resistance_target = -0.1
 			}
 		}
-                HNA_Free_Trade_ideas = {
+        HNA_administrative_efficiency = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_production_bonus
-
+            picture = generic_democratic_drift_bonus
 			
 			removal_cost = -1
                      
 			modifier = {
-                              consumer_goods_factor = -0.05
-                              production_factory_max_efficiency_factor = 0.05
-		              production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				mobilization_speed = 0.1
+				political_advisor_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
 			}
 		}
-                HNA_Decentralization = {
+		HNA_agricultural_policy = {			
+		    allowed = {
+			    always = no
+		    }
+			picture = generic_production_bonus
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				consumer_goods_factor = -0.02
+			    MONTHLY_POPULATION = 0.1
+		    }
+	    }  
+		HNA_agricultural_policy_1 = {			
+		    allowed = {
+			    always = no
+		    }
+			picture = generic_production_bonus
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				consumer_goods_factor = -0.05
+			    MONTHLY_POPULATION = 0.1
+				industry_air_damage_factor = -0.1
+		    }
+	    }  
+		HNA_agricultural_policy_2 = {			
+		    allowed = {
+			    always = no
+		    }
+			picture = generic_production_bonus
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				consumer_goods_factor = -0.05
+			    MONTHLY_POPULATION = 0.1
+				industry_air_damage_factor = -0.1
+				global_building_slots_factor = 0.10
+		    }
+	    }  
+		HNA_agricultural_policy_3 = {			
+		    allowed = {
+			    always = no
+		    }
+			picture = generic_production_bonus
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				consumer_goods_factor = -0.07
+			    MONTHLY_POPULATION = 0.2
+				industry_air_damage_factor = -0.25
+				global_building_slots_factor = 0.15
+		    }
+	    } 
+		HNA_Militarism = {			
+			name = HNA_Militarism
+		    allowed = {
+			    always = no
+		    }
+			picture = warrior_traditions_idea
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				research_speed_factor = -0.05
+				mobilization_speed = 0.1
+	            war_support_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+		    }
+	    }  
+		HNA_Militarism_1 = {			
+			name = HNA_Militarism
+		    allowed = {
+			    always = no
+		    }
+			picture = warrior_traditions_idea
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				research_speed_factor = -0.05
+				mobilization_speed = 0.1
+	            war_support_factor = 0.1
+				weekly_casualties_war_support = 0.005
+				weekly_bombing_war_support = 0.005
+				war_stability_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = -0.2
+		    }
+	    }  
+		HNA_Militarism_2 = {			
+			name = HNA_Militarism
+		    allowed = {
+			    always = no
+		    }
+			picture = warrior_traditions_idea
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				research_speed_factor = -0.05
+				mobilization_speed = 0.1
+	            war_support_factor = 0.1
+				weekly_casualties_war_support = 0.005
+				weekly_bombing_war_support = 0.005
+				war_stability_factor = 0.1
+				production_speed_arms_factory_factor = 0.3
+				production_speed_industrial_complex_factor = -0.3
+				army_core_defence_factor = 0.1
+				industry_air_damage_factor = -0.2
+		    }
+	    }  
+		HNA_modern_conscription_law= {			
+		    allowed = {
+			    always = no
+		    }
+			picture = generic_manpower_bonus
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				conscription_factor = 0.1
+		    }
+	    }  
+		HNA_enlightenment= {			
+		    allowed = {
+			    always = no
+		    }
+			picture = chi_chinese_unity
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				political_power_cost = 0.1
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.10
+				war_support_factor = -0.10
+		    }
+	    }  
+		HNA_enlightenment_1= {			
+		    allowed = {
+			    always = no
+		    }
+			picture = chi_chinese_unity
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				political_power_cost = 0.2
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.10
+				war_support_factor = -0.10
+		    }
+	    }  
+		HNA_enlightenment_2= {	
+			name = HNA_enlightenment_1		
+		    allowed = {
+			    always = no
+		    }
+			picture = chi_chinese_unity
+
+		
+		    removal_cost = -1
+
+
+		    modifier = {
+				political_power_cost = 0.2
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.10
+				war_support_factor = -0.10
+				research_speed_factor = 0.05
+		    }
+	    }  
+        HNA_Confucian_Movement = {
+			name = HNA_Confucian_Movement
 			allowed = {
 				always = no
 			}
-                        picture = generic_exploit_mines
+            picture = generic_research_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+				stability_factor = 0.05
+				political_power_cost = -0.1
+			}
+		}
+        HNA_Confucian_Movement_1 = {
+			name = HNA_Confucian_Movement
+			allowed = {
+				always = no
+			}
+            picture = generic_research_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+				stability_factor = 0.1
+				political_power_cost = -0.1
+			}
+		}
+		HNA_Confucian_Movement_2 = {
+			name = HNA_Confucian_Movement
+			allowed = {
+				always = no
+			}
+            picture = generic_research_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+				stability_factor = 0.15
+				political_power_cost = -0.1
+			}
+		}
+		HNA_army_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {    
+			}
+		}
+		HNA_Professional_army = {
+			allowed = {
+				always = no
+			}
+            picture = tur_kemalist_officers
 
 			
 			removal_cost = -1
-	
 
 			modifier = {
-                                 political_power_cost = 0.1
-                                 stability_factor = 0.05
-                                 global_building_slots_factor = 0.1
+				army_org_Factor = 0.1
 			}
-		} 
-                HNA_Civilian_Focus = {
+		}
+		HNA_Professional_army_1 = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_exploit_mines
+            picture = tur_kemalist_officers
 
 			
 			removal_cost = -1
-	
 
 			modifier = {
-                                production_speed_arms_factory_factor = -0.1
-				production_speed_industrial_complex_factor = 0.15
+				army_org_Factor = 0.1
+				military_leader_cost_factor = -0.50
+				army_leader_start_planning_level= 1
+				army_leader_start_logistics_level= 1
 			}
-		} 
-                HNA_Kougyouka = {
+		}
+		HNA_Professional_army_2 = {
 			allowed = {
 				always = no
 			}
-                        picture = man_five_year_plan_industry
+            picture = tur_kemalist_officers
 
 			
 			removal_cost = -1
-	
 
 			modifier = {
-                                production_speed_buildings_factor = 0.07
+				army_org_Factor = 0.1
+				army_morale_factor = 0.1
+				planning_speed = 0.1
+				military_leader_cost_factor = -0.50
+				army_leader_start_planning_level= 1
+				army_leader_start_logistics_level= 1
 			}
-		} 
-                HNA_Arms_Equipment = {
+		}
+		HNA_Professional_army_3 = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_infantry_equipment_manufacturer_2
+            picture = tur_kemalist_officers
 
 			
 			removal_cost = -1
-                        equipment_bonus = {
+
+			modifier = {
+				army_org_Factor = 0.1
+				army_morale_factor = 0.1
+				planning_speed = 0.2
+				training_time_factor = -0.1
+				military_leader_cost_factor = -0.50
+				army_leader_start_planning_level= 1
+				army_leader_start_logistics_level= 1
+			}
+		}
+		HNA_fire_superiority = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}
+
+
+			picture = generic_artillery_regiments
+			
+			modifier = {
+				army_artillery_attack_factor = 0.1
+			}
+		}
+		HNA_material_warfare = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {    
+				supply_consumption_factor = -0.1
+			}
+		}
+		HNA_material_warfare_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {    
+				conscription = 0.02
+				supply_consumption_factor = -0.1
+			}
+		}
+		HNA_material_warfare_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = 0.05
+					build_cost_ic = -0.15
 					instant = yes
-                                        soft_attack = 0.05
-				        reliability = 0.05
-
 				}
 			}
-	
-	
-
-			modifier = {
-                                
+			modifier = {    
+				conscription = 0.02
+				supply_consumption_factor = -0.1
 			}
-		} 
-                HNA_doctrines = {
+		}
+		HNA_material_warfare_3 = {
 			allowed = {
 				always = no
 			}
-                        picture = cze_planning_bonus
-
-			
 			removal_cost = -1
-	
-
-			modifier = {
-                                max_planning = 0.15
+                     
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
 			}
-		} 
+			modifier = {    
+				conscription = 0.02
+				supply_consumption_factor = -0.1
+				attrition = -0.1
+			}
+		}
+		HNA_material_warfare_4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					instant = yes
+				}
+			}
+			modifier = {    
+				conscription = 0.02
+				supply_consumption_factor = -0.1
+				attrition = -0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		HNA_Mobile_Warfare = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = MEX_revolutionary_army
+			removal_cost = -1
+			modifier = {    
+				army_speed_factor = 0.1
+			}
+		}
+		HNA_Mobile_Warfare_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = MEX_revolutionary_army
+			removal_cost = -1
+			modifier = {    
+				planning_speed = 0.10
+				max_planning = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+		HNA_Mobile_Warfare_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = MEX_revolutionary_army
+			removal_cost = -1
+			modifier = {    
+				planning_speed = 0.10
+				max_planning = 0.1
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.2
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		HNA_Mobile_Warfare_3 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = MEX_revolutionary_army
+			removal_cost = -1
+			modifier = {    
+				conscription = 0.02
+				planning_speed = 0.10
+				max_planning = 0.1
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.2
+				terrain_penalty_reduction = 0.1
+			}
+		}
+		HNA_Mobile_Warfare_4 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = MEX_revolutionary_army
+			removal_cost = -1
+			modifier = {    
+				conscription = 0.02
+				planning_speed = 0.10
+				max_planning = 0.1
+				army_morale_factor = 0.15
+				army_speed_factor = 0.1
+				org_loss_when_moving = -0.2
+				terrain_penalty_reduction = 0.1
+			}
+		}
+	}
+	Head_of_State = { 
+		HNA_Mao_Zedong = {
+			picture = HNA_Mao_Zedong
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Head_of_State
+				radical_socialist
+				TR_pig_headed_isolationist
+			}
+		}
+		HNA_Chen_Chiungming = {
+			picture = HNA_Chen_Chiungming
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Head_of_State
+				social_democrat
+				TR_die_hard_reformer
+			}
+		}
+		HNA_Tang_Shengzhi = {
+			picture = HNA_Tang_Shengzhi
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Head_of_State
+				social_liberal
+				TR_Local_tyrant2
+			}
+		}
+		HNA_Zhao_Hengti = {
+			picture = HNA_Zhao_Hengti
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Head_of_State
+				social_conservative
+				TR_autocratic_charmer
+			}
+		}
+		HNA_Liang_Qichao = {
+			picture = HNA_Liang_Qichao
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Head_of_State
+				authoritarian_democrat
+				TR_popular_figurehead
+			}
+		}
+		HNA_He_Jian = {
+			picture = HNA_He_Jian
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Head_of_State
+				national_populist
+				TR_weary_stiffneck
+			}
+		}
+	}
+	Government_leaders = { 
+		HNA_He_Yaozu= {
+			picture = HNA_He_Yaozu
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+			    hidden_trigger = {
+				    has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				social_conservative
+				TR_political_protege
+			    }
+			}
+			HNA_Cao_Kun = {
+				picture = HNA_Cao_Kun
+					
+				allowed = {
+					original_tag = HNA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = head_of_state_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				traits = { 
+					Head_of_State
+					Government_leaders
+					TR_old_general
+					TR_crooked_kleptocrat
+				}
+			}
+		}
+		Minister_of_Foreign_Affairs = { 
+			HNA_Yi_Peiji = {
+				picture = HNA_Yi_Peiji
+				
+				allowed = {
+					original_tag = HNA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Foreign_Affairs_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				traits = { 
+					Minister_of_Foreign_Affairs
+					social_conservative
+					TR_biased_intellectual
+				}
+			}
+		}
+		Minister_of_Economy = { 
+			HNA_Hu_Shuhua = {
+				picture = HNA_Hu_Shuhua
+				
+				allowed = {
+					original_tag = HNA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				traits = { 
+					Minister_of_Economy
+					social_conservative
+					TR_steel_magnate
+				}
+			}
+		}
+		Minister_of_Interior = { 
+			HNA_Zhang_Shizhao = {
+				picture = HNA_Zhang_Shizhao
+				
+				allowed = {
+					original_tag = HNA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Interior_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				traits = { 
+					Minister_of_Interior
+					social_conservative
+					TR_crime_fighter
+				}
+			}
+		}
+		chief_of_staff = { 
+			HNA_Zhao_Hengti_cos = {
+				name = HNA_Zhao_Hengti
+				picture = HNA_Zhao_Hengti
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA
+					has_socialist_government = no
+				}
+				available = { 
+					NOT = { has_country_flag = HNA_Hunan_clique_lose }
+				}
+				traits = { 
+					chief_of_staff
+					cos_school_of_fire_support
+				}
+			}
+			HNA_Wu_Peifu = {
+				picture = HNA_Wu_Peifu
+					
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA
 
-    }
+					}
+				available = { 
+					OR = { 
+						has_country_leader = {
+							character = HNA_Wu_Peifu
+							ruling_only = yes
+						}
+						has_country_leader = {
+							character = HNA_Liang_Qichao
+							ruling_only = yes
+						}
+					}
+				}
+				traits = { 
+					chief_of_staff
+					TR_resigned_generalissimo
+					cos_school_of_psychology
+				}
+			}
+			HNA_Mao_Zedong_cos = {
+				name = HNA_Mao_Zedong
+				picture = HNA_Mao_Zedong
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA	
+					}
+				available = { 
+					has_socialist_government = yes
+				}
+				traits = { 
+					chief_of_staff
+					cos_school_of_mass_combat
+				}
+			}
+			HNA_Tang_Shengzhi_cos = {
+				name = HNA_Tang_Shengzhi
+				picture = HNA_Tang_Shengzhi
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA		
+					}
+				available = { 
+					NOT = { has_country_flag = HNA_Kuomintang_lose }
+				}
+				traits = { 
+					chief_of_staff
+					cos_school_of_mass_combat
+				}
+			}
+			HNA_He_Jian_cos = {
+				name = HNA_He_Jian
+				picture = HNA_He_Jian
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA
+					has_socialist_government = no
+					}
+				available = { 
+					NOT = { has_country_flag = HNA_Kuomintang_lose }
+				}
+				traits = { 
+					chief_of_staff
+					cos_school_of_manoeuvre
+				}
+			}
+		}
+		chief_of_army = { 
+			HNA_He_Yaozu_coa = {
+				name = HNA_He_Yaozu
+				picture = HNA_He_Yaozu
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA				
+							}
+				available = { 
+					NOT = { has_country_flag = HNA_Hunan_clique_lose }
+				}
+				traits = { 
+					chief_of_army
+					carm_decisive_battle_doctrine
+				}
+			}
+			HNA_Jiang_Baili = {
+				picture = HNA_Jiang_Baili
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA		
+							}
+				available = { 
+					has_socialist_government = no
+				}
+				traits = { 
+					chief_of_army
+					carm_doctrine_of_autonomy
+				}
+			}
+			HNA_Mao_Zedong_coa = {
+				name = HNA_Mao_Zedong
+				picture = HNA_Mao_Zedong
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA
+					}
+				available = { 
+					has_socialist_government = yes
+				}
+				traits = { 
+					chief_of_staff
+					carm_commando_doctrine
+				}
+			}
+			HNA_He_Jian_coa = {
+				name = HNA_He_Jian
+				picture = HNA_He_Jian
+				cancel_if_invalid = yes			
+				allowed = {
+					original_tag = HNA	
+					}
+				available = { 
+					has_socialist_government = no
+					NOT = { has_country_flag = HNA_Kuomintang_lose }
+				}
+				traits = { 
+					chief_of_army
+					carm_static_defence_doctrine
+				}
+			}
+		}
+		chief_of_navy = { 
+		}
+		chief_of_air_force = { 
+		}
 }

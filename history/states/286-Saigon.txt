@@ -1,0 +1,44 @@
+state={
+	id=286
+	name="TR_STATE_286"
+	resources={
+		rubber=30
+	}
+
+	history={
+		add_core_of = JSE
+                add_core_of = VIN
+		owner = JSE
+		victory_points = {
+			4401 10
+		}
+ 		victory_points = {
+			1285 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			air_base = 2
+			4401 = {
+				naval_base = 4
+
+			}
+			1285 = {
+				naval_base = 6
+
+			}
+
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1285 4401 7238 7347 10232 10261 12204 12232 
+	}
+	manpower=2362235
+	buildings_max_level_factor=1.000
+	state_category=city
+}

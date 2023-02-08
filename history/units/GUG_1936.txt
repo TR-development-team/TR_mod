@@ -1,12 +1,14 @@
 ﻿division_template = {
-	name = "Shubitai"				# Represents: two-division infantry corps (generally poorly-equipped militias), and local militia groups
-	division_names_group = JAP_INF_01
+	name = "Chuton-chi Shidan" 	
+	division_names_group = JAP_GAR_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 0 }	
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 	}
 }
 division_template = {
@@ -28,42 +30,106 @@ division_template = {
 		engineer = { x = 0 y = 0 }
 	}
 }
-
+division_template = {
+	name = "Kihei Shidan" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+                cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+                cavalry = { x = 1 y = 2 }
+                cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+                cavalry = { x = 2 y = 2 }
+	}
+}
 
 ### OOB ###
 units = {
-	#Guangdong/Guangxi units - 21 divisions
-	division = { # "62 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 62
+			name_order = 1
 		}
 		location = 1047
 		start_experience_factor = 0.1
-		division_template = "Shubitai"
+		division_template = "Chuton-chi Shidan" 	
 		start_equipment_factor = 0.7
 
 	}
-	division = { # "63 Juntuán"
+	division = {
 		division_name = {
 			is_name_ordered = yes
-			name_order = 63
+			name_order = 2
+		}
+		location = 10062
+		start_experience_factor = 0.1
+		division_template = "Chuton-chi Shidan" 	
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1018
+		start_experience_factor = 0.1
+		division_template = "Chuton-chi Shidan" 	
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9938
+		start_experience_factor = 0.1
+		division_template = "Chuton-chi Shidan" 	
+		start_equipment_factor = 0.7
+
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
 		}
 		location = 7108
 		division_template = "Hohei Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
 
 	}
-	division = { # "64 Juntuán"
+	division = { #
 		division_name = {
 			is_name_ordered = yes
-			name_order = 64
+			name_order = 2
 		}
-		location = 1047
+		location = 10121
 		division_template = "Hohei Shidan"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
+
+	}
+	division = { #
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10105
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+
+	}
+	division = { #
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9970
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
 
 	}
 

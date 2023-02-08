@@ -8,14 +8,24 @@
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 0 y = 3 }
 		infantry = { x = 0 y = 4 }
+	}
+}
+division_template = {
+	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
+	division_names_group = CHI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
 		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
 	}
 }
-
 
 ### OOB ###
 units = {
@@ -34,7 +44,76 @@ units = {
 		start_experience_factor = 0.3
 
 	}
-	
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 4469
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 7571
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1575
+		division_template = "Sanjiao Jun"	
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1034
+		division_template = "Sanjiao Jun"	
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1519
+		division_template = "Sanjiao Jun"	
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 4634
+		division_template = "Sanjiao Jun"	
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 10367
+		division_template = "Sanjiao Jun"	
+		start_experience_factor = 0.3
+
+	}
 }
 
 ### STARTING PRODUCTION ###

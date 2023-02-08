@@ -774,8 +774,8 @@ country_event = {#アフリカ植民地の整理
 			              days = 180
 	                   }  
 					}
-		JAP = { end_puppet = ETO}
-	    ETO = { leave_faction = yes 
+		JAP = { end_puppet = ETH}
+	    ETH = { leave_faction = yes 
 		          add_timed_idea = {
 			              idea = Nippon_Tettai_Africa
 			              days = 180
@@ -786,7 +786,7 @@ country_event = {#アフリカ植民地の整理
 			NGA = { country_event = { id = TR_japfed.21 days = 26 } }
 			COG = { country_event = { id = TR_japfed.23 days = 12 } }
 			NMB = { country_event = { id = TR_japfed.24 days = 17 } }
-			ETO = { country_event = { id = TR_japfed.25 days = 22 } }
+			ETH = { country_event = { id = TR_japfed.25 days = 22 } }
 			    country_event = {
 	                    id = TR_news.40
 	                    days = 1
@@ -847,8 +847,8 @@ country_event = {#アフリカ植民地の整理
 					days = 365
 				}  
 	          }
-		JAP = { end_puppet = ETO}
-	    ETO = { leave_faction = yes 
+		JAP = { end_puppet = ETH}
+	    ETH = { leave_faction = yes 
 		        add_timed_idea = {
 			              idea = Nippon_Tettai_Africa
 			              days = 365
@@ -860,7 +860,7 @@ country_event = {#アフリカ植民地の整理
 			NGA = { country_event = { id = TR_japfed.21 days = 26 } }
 			COG = { country_event = { id = TR_japfed.23 days = 17 } }
 			NMB = { country_event = { id = TR_japfed.24 days = 17 } }
-			ETO = { country_event = { id = TR_japfed.26 days = 22 } }
+			ETH = { country_event = { id = TR_japfed.26 days = 22 } }
 			country_event = {
 				id = TR_news.41
 				days = 1
@@ -1048,12 +1048,12 @@ country_event = {#エチオピア独立宣言
 	option = { 
 		name = TR_japfed.27.a
 		declare_war_on = {
-			target = ETO
+			target = ETH
 			type = annex_everything
 		}
 		every_state = {
 			limit = {
-				is_core_of = ETO
+				is_core_of = ETH
 			}
 			add_claim_by = ESA
 		}

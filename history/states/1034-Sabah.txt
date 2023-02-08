@@ -1,0 +1,42 @@
+state=
+{
+	id=1034
+	name="STATE_1034"
+	manpower = 385849
+	resources={
+		rubber=12
+		oil=6
+	}
+	
+	state_category = rural
+
+	history=
+	{
+		owner = BOR
+                add_core_of = BOR
+
+		victory_points = {
+			10199 1
+		}
+		victory_points = {
+			10212 1
+		}
+		buildings = {
+			infrastructure = 2
+                        arms_factory = 1
+			10199 = {
+				naval_base = 2
+			}
+			10212 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = MAL
+		add_claim_by = PHI
+	}
+
+	local_supplies=0.0 
+provinces={
+		1306 1335 4282 4338 7358 10143 10199 10212 10240 12171 12186 12228 
+	}
+}

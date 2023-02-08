@@ -1,0 +1,28 @@
+characters={
+	BOR_Kobayashi_Seizo={
+		name=JAP_Kobayashi_Seizo
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Kobayashi_Seizo.png"
+			}
+			navy={
+				large="gfx/leaders/JAP/Portrait_JAP_Kobayashi_Seizo.png"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
+		}
+		navy_leader={
+			traits={  }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=0
+		}
+	}
+}

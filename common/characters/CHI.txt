@@ -24,10 +24,10 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_democrat_subtype
+			ideology=San_min_Doctrine_left_subtype
 		}
 		country_leader={
-			ideology=social_liberal_subtype
+			ideology=San_min_Doctrine_left_SL_subtype
 		}
 	}
 	CHI_San_Ko={
@@ -60,7 +60,7 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=dem_Military_junta_subtype
+                        ideology=San_min_Doctrine_Sanseidan_subtype
 		}
 	}
 	CHI_chiang_kaishek={
@@ -71,11 +71,11 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=militarism_subtype
+                        ideology=San_min_Doctrine_Blue_shirts_subtype
 			traits={ generallissimo }
 		}
 		country_leader={
-			ideology=president_principle_subtype
+			ideology=San_min_Doctrine_CC_subtype
 			traits={ generallissimo }
 		}
 	}
@@ -88,11 +88,11 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=paternal_autocrat_subtype
+                        ideology=San_min_Doctrine_Blue_shirts_subtype
                         traits={ CHI_Power_struggle }
 		}
 		country_leader={
-			ideology=national_populist_subtype
+			ideology=San_min_Doctrine_CC_subtype
                         traits={ CHI_Power_struggle }
 		}
 	}
@@ -104,7 +104,7 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=militarism_subtype
+                        ideology=San_min_Doctrine_Blue_shirts_subtype
 		}
 	}
 	CHI_Chen_Kuofu={
@@ -115,7 +115,7 @@ characters={
 			}
 		}
 		country_leader={
-                        ideology=president_principle_subtype
+                        ideology=San_min_Doctrine_CC_subtype
 		}
 	}
 	CHI_Zhang_Tianran={

@@ -3,6 +3,11 @@ state={
 	name="STATE_591"
 	manpower = 3150000
 	state_category = town
+	resources={
+		steel=5
+		tungsten = 6
+		rubber=12
+	}
 
 	history={
 		owner = JAP
@@ -10,14 +15,14 @@ state={
 
 		
 		victory_points = {
-			1070 1 
+			1070 3 
 		}
 		
 		buildings = {
 			infrastructure = 2
-			air_base = 2
+			air_base = 3
 			1070 = {
-				naval_base = 2
+				naval_base = 6
 			}
 
 		}

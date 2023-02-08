@@ -1,0 +1,29 @@
+
+state={
+	id=1036
+	name="STATE_1036"
+	resources={
+		tungsten=30.000
+	}
+
+	history={
+		add_core_of = BRM
+		owner = BRM
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			4425 1 
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1082 1197 1934 4318 4425 4996 8063 10920 
+	}
+	manpower=844600
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

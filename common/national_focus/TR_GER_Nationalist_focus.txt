@@ -766,11 +766,6 @@ focus_tree = {
 		available = {
 			is_subject = no
 			is_neighbor_of = AUS
-			OR = {
-				FRA = { has_capitulated = yes }
-				is_in_faction_with = FRA
-				NOT = { country_exists = FRA }
-				}
 			}
 		bypass = {
 		OR = {

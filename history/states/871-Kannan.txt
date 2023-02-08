@@ -11,7 +11,7 @@ state={
 	history={
 		owner = PRC
 		add_core_of = PRC
-                add_core_of = HNA
+                add_core_of = FUJ
 		add_claim_by = CHI
 		add_claim_by = YUN
 		buildings = {
@@ -27,7 +27,7 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		12030 10112 1053 7199 7172 11945 4081 13261
+		1110 12030 10112 1053 7199 7172 11945 4081
 	}
 	manpower=4812093
 	buildings_max_level_factor=1.000

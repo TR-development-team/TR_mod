@@ -9,7 +9,7 @@ if = {
 	}
 }
 add_ideas = {
-      Absolute_monarchy
+      Constitutional_monarchy
       trinket_minimum_wage
       trinket_max_workhours
       trinket_health_care
@@ -127,22 +127,20 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 62
-        social_conservative = 18
-        national_populist = 10
-        paternal_autocrat = 10
+	totalist = 7
+	syndicalist = 6
+	radical_socialist = 3
+	social_democrat = 11
+	social_liberal = 8
+	market_liberal = 6
+	social_conservative = 7
+	authoritarian_democrat = 24
+	paternal_autocrat = 12
+	national_populist = 11
+        Gnosticism = 5
 }
 
-create_country_leader = {
-	name = "ラーマ8世"
-	desc = ""
-	picture = "gfx/leaders/SIA/Portrait_Anand_Mahidol.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = SIA_phraya_phahon
 
 
 

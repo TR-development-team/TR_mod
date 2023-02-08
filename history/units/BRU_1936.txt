@@ -1,0 +1,30 @@
+﻿division_template = {
+	name = "Askar Melayu Brunei"		
+	division_names_group = BRENGL_INF_01					
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+                infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "Askar Melayu Brunei"		
+		location = 7371
+		division_template = "Askar Melayu Brunei"		
+		start_experience_factor = 0.3
+
+	}
+}
+
+### No notable air forces ###
+
+instant_effect = {
+}

@@ -27,42 +27,22 @@ set_convoys = 5
 
 
 set_politics = {
-	ruling_party = market_liberal
+	ruling_party = social_conservative
 	last_election = "1935.9.15"
 	election_frequency = 72
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 0
-	syndicalist = 3
-	radical_socialist = 12
-	social_democrat = 10
-	social_liberal = 10
-	market_liberal = 35
-	social_conservative = 8
-	authoritarian_democrat = 12
-	paternal_autocrat = 10
-	national_populist = 0
+	totalist = 8
+	syndicalist = 6
+	radical_socialist = 11
+	social_democrat = 8
+	social_liberal = 7
+	market_liberal = 12
+	social_conservative = 22
+	authoritarian_democrat = 7
+	paternal_autocrat = 8
+	national_populist = 11
 }
-
-create_country_leader = {
-	name = "ホセ・ラウレル"
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Jose_Laurel.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Pedro P. Baguisa"
-	desc = "POLITICS_PEDRO_BAGUISA_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = PHI_Jose_Laurel
+recruit_character = PHI_manuel_luis_quezon

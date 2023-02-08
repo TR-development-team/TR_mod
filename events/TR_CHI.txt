@@ -19,12 +19,12 @@ country_event = {
                 remove_ideas = CHI_Chiang_Kaishek
 		    CHI_kokumin_seifu = {
 			    promote_character = {
-			      Ideology = national_populist_subtype
+			      Ideology = San_min_Doctrine_Blue_shirts_subtype
 			    }
 		    }
 		    CHI_kokumin_seifu = {
 		    	promote_character = {
-			    Ideology = paternal_autocrat_subtype
+			    Ideology = San_min_Doctrine_CC_subtype
 			  }
 		    }
                  hidden_effect = {
@@ -185,6 +185,7 @@ country_event = {
 	option = {
 		name = TR_China.6.a
 		 ANQ = { end_puppet = FUJ }
+		 JAP = { end_puppet = NAN }
                  ANQ = {
                        remove_ideas = YUN_jap_economic
                        leave_faction = yes

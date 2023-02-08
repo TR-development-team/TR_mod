@@ -489,4 +489,35 @@ defined_text = {
 		}
 		localization_key = theocratic_monarchy_subtype
 	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = San_min_Doctrine_left_subtype
+		}
+		localization_key = San_min_Doctrine_left_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = San_min_Doctrine_left_SL_subtype
+		}
+		localization_key = San_min_Doctrine_left_SL_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = San_min_Doctrine_Sanseidan_subtype
+		}
+		localization_key = San_min_Doctrine_Sanseidan_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = San_min_Doctrine_Blue_shirts_subtype
+		}
+		localization_key = San_min_Doctrine_Blue_shirts_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = San_min_Doctrine_CC_subtype
+		}
+		localization_key = San_min_Doctrine_CC_subtype
+	}
 } 

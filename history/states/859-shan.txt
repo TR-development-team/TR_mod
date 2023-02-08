@@ -2,12 +2,18 @@ state={
 	id=859
 	name="STATE_859"
 	local_supplies=0.0 
+	resources={
+		tungsten=20
+	}
 provinces={
-		1170 1566 1607 2061 4175 4210 4654 7400 7603 7909 7974 12363 
+		1170 1566 1607 2061 4210 4654 7603 12363 
 	}
 	history={
                 add_core_of = BRM
 		owner = BRM
+		victory_points = {
+			1607 1 
+		}
 		buildings = {
 			infrastructure = 1
 
@@ -15,7 +21,7 @@ provinces={
 
 	}
 
-	manpower=1444876
+	manpower=844876
 	buildings_max_level_factor=1.000
-	state_category=pastoral
+	state_category=rural
 }

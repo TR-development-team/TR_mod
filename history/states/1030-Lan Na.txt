@@ -1,0 +1,29 @@
+
+state={
+	id=1030
+	name="STATE_1030"
+	manpower = 2312400
+	
+	state_category = town
+	
+	resources={
+		rubber=8
+	}
+
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			1488 3 
+		}
+		add_core_of = SIA
+	}
+
+	local_supplies=0.0 
+provinces={
+		1253 1488 1990 4496 4566 7312 7353 7492 7531 7544 7559 7572 7675 8045 10371 10398 10411 12345
+	}
+}

@@ -1,0 +1,33 @@
+characters={
+	SIA_phraya_phahon={
+		name=SIA_phraya_phahon
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_SIA_Phraya_Phahon_Phonphayuhasena.png"
+			}
+			army={
+				large="gfx/leaders/SIA/Portrait_SIA_Phraya_Phahon_Phonphayuhasena.png"
+			}
+		}
+		country_leader={
+			ideology=dem_Military_junta_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=Military_junta_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			traits = { old_guard career_officer organizer }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+
+}

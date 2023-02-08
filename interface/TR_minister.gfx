@@ -603,8 +603,101 @@ spriteTypes = {
 		name = "GFX_idea_CHI_Wu_Zhongxin"
 		texturefile = "gfx/interface/ideas/minister/CHI/Wu_Zhongxin.png"
 	}
+###湖南###
+    SpriteType = {	
+	    name = "GFX_idea_HNA_Cao_Kun"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Cao_Kun.png"
+    }
+    SpriteType = {	
+	    name = "GFX_idea_HNA_Chen_Chiungming"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Chen_Chiungming.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_HNA_He_Jian"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_He_Jian.png"
+    }
+    SpriteType = {	
+	    name = "GFX_idea_HNA_He_Yaozu"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_He_Yaozu.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_HNA_Hu_Shuhua"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Hu_Shuhua.png"
+    }
+    SpriteType = {	
+	    name = "GFX_idea_HNA_Jiang_Baili"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Jiang_Baili.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_HNA_Liang_Qichao"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Liang_Qichao.png"
+    }
+    SpriteType = {	
+	    name = "GFX_idea_HNA_Mao_Zedong"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Mao_Zedong.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_HNA_Tang_Shengzhi"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Tang_Shengzhi.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_HNA_Wu_Peifu"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Wu_Peifu.png"
+    }
+    SpriteType = {	
+	    name = "GFX_idea_HNA_Yi_Peiji"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Yi_Peiji.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_HNA_Zhang_Shizhao"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Zhang_Shizhao.png"
+    }
+    SpriteType = {	
+	    name = "GFX_idea_HNA_Zhao_Hengti"
+	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Zhao_Hengti.png"
+    }
+###河西
+###河西###
 
+      SpriteType = {	
+		name = "GFX_idea_HEX_Ma_Zhongying"
+		texturefile = "gfx/interface/ideas/minister/HEX/Ma_Zhongying.png"
+	}
 
+      SpriteType = {	
+		name = "GFX_idea_HEX_Ma_Hushan"
+		texturefile = "gfx/interface/ideas/minister/HEX/Ma_Hushan.png"
+	}
+###国民軍###
+
+      SpriteType = {	
+		name = "GFX_idea_KUO_Feng_Yuxiang"
+		texturefile = "gfx/interface/ideas/minister/KUO/Feng_Yuxiang.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_KUO_Liu_Ji"
+		texturefile = "gfx/interface/ideas/minister/KUO/Liu_Ji.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_KUO_Liu_Yufen"
+		texturefile = "gfx/interface/ideas/minister/KUO/Liu_Yufen.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_KUO_Lu_Zhonglin"
+		texturefile = "gfx/interface/ideas/minister/KUO/Lu_Zhonglin.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_KUO_Song_Zheyuan"
+		texturefile = "gfx/interface/ideas/minister/KUO/Song_Zheyuan.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_KUO_Zhang_Zhijiang"
+		texturefile = "gfx/interface/ideas/minister/KUO/Zhang_Zhijiang.png"
+	}
+      SpriteType = {	
+		name = "GFX_idea_KUO_Zheng_Jinsheng"
+		texturefile = "gfx/interface/ideas/minister/KUO/Zheng_Jinsheng.png"
+	}
 ###ロシア###
       SpriteType = {	
 		name = "GFX_idea_RUS_nikolai_ii"
@@ -959,47 +1052,6 @@ spriteTypes = {
 		name = "GFX_idea_CAL_Kuribayashi_Tadamichi"
 		texturefile = "gfx/interface/ideas/minister/CAL/Kuribayashi_Tadamichi.png"
 	}
-###河西###
-
-      SpriteType = {	
-		name = "GFX_idea_HEX_Ma_Zhongying"
-		texturefile = "gfx/interface/ideas/minister/HEX/Ma_Zhongying.png"
-	}
-
-      SpriteType = {	
-		name = "GFX_idea_HEX_Ma_Hushan"
-		texturefile = "gfx/interface/ideas/minister/HEX/Ma_Hushan.png"
-	}
-###国民軍###
-
-      SpriteType = {	
-		name = "GFX_idea_KUO_Feng_Yuxiang"
-		texturefile = "gfx/interface/ideas/minister/KUO/Feng_Yuxiang.png"
-	}
-      SpriteType = {	
-		name = "GFX_idea_KUO_Liu_Ji"
-		texturefile = "gfx/interface/ideas/minister/KUO/Liu_Ji.png"
-	}
-      SpriteType = {	
-		name = "GFX_idea_KUO_Liu_Yufen"
-		texturefile = "gfx/interface/ideas/minister/KUO/Liu_Yufen.png"
-	}
-      SpriteType = {	
-		name = "GFX_idea_KUO_Lu_Zhonglin"
-		texturefile = "gfx/interface/ideas/minister/KUO/Lu_Zhonglin.png"
-	}
-      SpriteType = {	
-		name = "GFX_idea_KUO_Song_Zheyuan"
-		texturefile = "gfx/interface/ideas/minister/KUO/Song_Zheyuan.png"
-	}
-      SpriteType = {	
-		name = "GFX_idea_KUO_Zhang_Zhijiang"
-		texturefile = "gfx/interface/ideas/minister/KUO/Zhang_Zhijiang.png"
-	}
-      SpriteType = {	
-		name = "GFX_idea_KUO_Zheng_Jinsheng"
-		texturefile = "gfx/interface/ideas/minister/KUO/Zheng_Jinsheng.png"
-	}
 ###アメリカ###
 
       SpriteType = {	
@@ -1163,7 +1215,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/minister/RUS/Yakov_Alksnis.png"
 	}
 ###ザカフカース/ジョージア###
-
       SpriteType = {	
 		name = "GFX_idea_GEO_Ioseb_jugashvili"
 		texturefile = "gfx/interface/ideas/minister/GEO/Ioseb_jugashvili.png"
@@ -1172,4 +1223,5 @@ spriteTypes = {
 		name = "GFX_idea_GEO_Lavrentiy_Beria"
 		texturefile = "gfx/interface/ideas/minister/GEO/Lavrentiy_Beria.png"
 	}
+
 }

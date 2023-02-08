@@ -36,48 +36,8 @@ set_popularities = {
 	paternal_autocrat = 100
 }
 
-create_country_leader = {
-	name = "閻錫山"
-	desc = "POLITICS_YAN XISHAN_DESC"
-	picture = "gfx/leaders/CHI/Portrait_china_Yan_Xishan.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = SAN_yan_xishan
 
-create_field_marshal = {
-	name = "閻錫山"
-	portrait_path = "gfx/leaders/CHI/Portrait_china_Yan_Xishan.tga"
-	traits = { defensive_doctrine  }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
+recruit_character = SAN_wang_jingguo
+recruit_character = SAN_fu_zuoyi
 
-
-create_corps_commander = {
-	name = "王靖国"
-	portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_2.dds"
-	traits = { politically_connected }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
-}
-
-
-create_corps_commander = {
-	name = "傅作義"
-	portrait_path = "gfx/leaders/CHI/GFX_portrait_chi_fu_zuoyi"
-	traits = { }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
