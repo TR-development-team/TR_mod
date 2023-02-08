@@ -1,11 +1,20 @@
 #reload countrycolors
 
+
 JAP = {
-	color = rgb { 252 201 185 }
-	color_ui = rgb { 252 201 185 }
+	color = rgb { 252 150 120 }
+	color_ui = rgb { 252 150 120 }
 }
 
+#JAP = {
+#	color = rgb { 252 201 185 }
+#	color_ui = rgb { 252 201 185 }
+#}
 JPR = {
+	color = rgb { 54 167 156 }
+	color_ui = rgb { 54 167 156 }
+}
+JSE = {
 	color = rgb { 54 167 156 }
 	color_ui = rgb { 54 167 156 }
 }
@@ -184,8 +193,8 @@ CAN = {
 	color_ui = rgb { 155 62 51 }
 }
 CHI = {
-	color = hsv { 0.18 0.6 0.9 } #255 244 190
-	color_ui = hsv { 0.18 0.3 0.9 }
+	color = rgb { 8 99 156 }
+	color_ui = rgb { 8 99 156 }
 }
 CHL = {
 	color = rgb { 155 101 107 }
@@ -207,7 +216,7 @@ ELS = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
 }
-ETO = {
+ETH = {
 	color = rgb { 152 130 191 }
 	color_ui = rgb { 198 169 248 }
 }
@@ -233,8 +242,8 @@ IRQ = {
 }
 
 SPO = {
-	color = rgb { 252 201 185 }
-	color_ui = rgb { 252 201 185 }
+	color = rgb { 252 150 120 }
+	color_ui = rgb { 252 150 120 }
 }
 LIB = {
 	color = rgb { 152 130 191 }
@@ -277,8 +286,8 @@ SAF = {
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
-	color = rgb { 252 201 185 }
-	color_ui = rgb { 252 201 185 }
+	color = rgb { 252 150 120 }
+	color_ui = rgb { 252 150 120 }
 }
 SIA = {
 	color = rgb { 171 190 152 }
@@ -383,13 +392,13 @@ GXC = {
 }
 
 SHX = {
-	color = rgb { 252 201 185 }
-	color_ui = rgb { 252 201 185 }
+	color = rgb { 252 150 120 }
+	color_ui = rgb { 252 150 120 }
 }
 
 SHA = {
-	color = rgb { 232 201 185 }
-	color_ui = rgb { 232 201 185 }
+	color = rgb { 252 150 120 }
+	color_ui = rgb { 252 150 120 }
 }
 
 XSM = {
@@ -484,8 +493,8 @@ CAM = {
 }
 
 MAL = {
-	color = rgb { 197  96  100 }
-	color_ui = rgb { 213  169  121 }
+	color = rgb { 255 40 95 }
+	color_ui = rgb { 255 40 95 }
 }
 
 MNT = {
@@ -791,10 +800,6 @@ MEK = {
 	color = rgb { 186 245 86 }
 	color_ui = rgb { 186 245 86 }
 }
-PRE = {
-	color = rgb { 160  160  160 }
-	color_ui = rgb { 160  160  160 }
-}
 SAX = {
 	color = rgb { 102 102 0 }
 	color_ui = rgb { 102 102 0 }
@@ -812,16 +817,16 @@ SHL = {
 	color_ui = rgb { 51 51 255 }
 }
 CAL = {
-	color = rgb { 252 201 185 }
-	color_ui = rgb { 252 201 185 }
+	color = rgb { 252 150 120 }
+	color_ui = rgb { 252 150 120 }
 }
 SIB = {
-	color = rgb { 252 201 185 }
-	color_ui = rgb { 252 201 185 }
+	color = rgb { 252 150 120 }
+	color_ui = rgb { 252 150 120 }
 }
 SRL = {
-	color = rgb { 252 201 185 }
-	color_ui = rgb { 252 201 185 }
+	color = rgb { 252 150 120 }
+	color_ui = rgb { 252 150 120 }
 }
 NMB = {
 	color = rgb { 0 149 67 }
@@ -868,8 +873,8 @@ MIN = {
 	color_ui = rgb { 255 255 255 }
 }
 NAN = {
-	color = rgb { 8 99 156 }
-	color_ui = rgb { 8 99 156 }
+	color = rgb { 188 166 66 }
+	color_ui = rgb { 188 166 66 }
 }
 FUJ = {
 	color = rgb { 127  104  92 }
@@ -1104,6 +1109,10 @@ SCO = {
 	color = rgb { 232 232 0 }
 	color_ui = rgb { 232 232 0 }
 }
+TUN = {
+	color = rgb { 146 134 57 }
+	color_ui = rgb { 146 134 57 }
+}
 KAV = {
 	color = rgb { 0 120 0  }
 	color_ui = rgb { 0 120 0  }
@@ -1119,4 +1128,16 @@ JAM = {
 KUR = {
 	color = rgb { 80 120 230 }
 	color_ui = rgb { 80 120 230 }
+}
+CEY = {
+	color = rgb { 252 186 3 }
+	color_ui = rgb { 252 186 3 }
+}
+BRU = {
+	color = rgb { 41  89  174 }
+	color_ui = rgb { 41  89  174 }
+}
+BOR = {
+	color = rgb { 141  89  174 }
+	color_ui = rgb { 141  89  174 }
 }

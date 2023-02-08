@@ -2,7 +2,7 @@ state={
 	id=866
 	name="STATE_866"
         resources={
-		rubber=3
+		rubber=5
 	}
 	history = {
 		add_core_of = SIA
@@ -18,9 +18,9 @@ state={
 	}
 	local_supplies=0.0 
 provinces={
-		4251 4302 12460 10177 10134 1353 5236 10467
+		1353 4251 4302 4359 5236 7404 10134 10467 10177 12191 12460 
 	}
-	manpower=445000
+	manpower=1445000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 }

@@ -9,91 +9,29 @@ set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_support = 1
+	tech_support = 1		
 	tech_recon = 1
-	tech_mountaineers = 1
-	motorised_infantry = 1
 	gw_artillery = 1
-	interwar_antiair = 1
-	gwtank = 1
-	basic_light_tank = 1
-	improved_light_tank = 1
-	early_fighter = 1
-	naval_bomber1 = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	CAS1 = 1
-	trench_warfare = 1
-	fleet_in_being = 1
 }
-
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_submarine = 1
-		basic_submarine = 1
-		early_destroyer = 1
-		early_light_cruiser = 1
-		basic_light_cruiser = 1
-		early_heavy_cruiser = 1
-		basic_heavy_cruiser = 1
-		early_battleship = 1
-		early_battlecruiser = 1
-		early_carrier = 1
-		transport = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		early_ship_hull_submarine = 1
-		basic_ship_hull_submarine = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
-		early_ship_hull_carrier = 1
-		mtg_transport = 1
-		basic_battery = 1
-		basic_torpedo = 1
-	}
-}
-
 set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1935.6.9"
-	election_frequency = 12
-	elections_allowed = no # none after offset 1
+	ruling_party = social_liberal
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
+
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 20
+	syndicalist = 13
+	radical_socialist = 5
+	social_democrat = 10
+	social_liberal = 24
+	market_liberal = 3
+	social_conservative = 1
+	authoritarian_democrat = 8
+	paternal_autocrat = 5
+	national_populist = 9
+        Gnosticism = 2
 }
-#NOTICE# please watch out for spelling, im using Vietnamese names as they spell them, game might not support these characters!
-
-create_country_leader = {
-	name = "Phan Bôi Châu" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_warlord2.dds"
-	expire = "1953.3.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = {
-	name = "Ho Chí Minh" 
-	desc = ""
-	picture = "gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
-	expire = "1953.3.1"
-	ideology = totalist_subtype
-	traits = {
-		
-	}
-}
+recruit_character = VIN_Ho_Chi_Minh
+recruit_character = VIN_Phan_Boi_Chau

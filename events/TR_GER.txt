@@ -425,6 +425,12 @@ country_event = {
 		FRA = {
 			puppet = BAD
 			puppet = WGR
+			transfer_state = 999
+			add_state_claim = 999
+        }
+		BEL = {
+			transfer_state = 998
+			add_state_core = 998
         }
 	}
 

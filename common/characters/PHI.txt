@@ -1,0 +1,33 @@
+characters={
+	PHI_Jose_Laurel={
+		name=PHI_Jose_Laurel
+		portraits={
+			civilian={
+				large="gfx/leaders/PHI/Portrait_PHI_Jose_Laurel.png"
+			}
+		}
+		country_leader={
+			ideology=National_liberalism_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=National_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PHI_manuel_luis_quezon={
+		name=PHI_manuel_luis_quezon
+		portraits={
+			civilian={
+				large=GFX_portrait_Manuel_Luis_Quezon
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

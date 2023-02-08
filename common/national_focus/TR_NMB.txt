@@ -365,7 +365,7 @@ focus_tree = {
 			is_subject = no	
                         NOT = { country_exists = RCG }
                         NOT = { country_exists = CAR }
-                        NOT = { has_war_with = ETO }
+                        NOT = { has_war_with = ETH }
 			OR = { 
                            NMB = { is_neighbor_of = CMR }
                            COG = { is_neighbor_of = CMR }
@@ -414,7 +414,7 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_core_of = ETO
+					is_core_of = ETH
 				}
 				add_claim_by = NMB
 			}
@@ -431,7 +431,7 @@ focus_tree = {
 				add_claim_by = NMB
 			}
 			create_wargoal = {
-				target = ETO
+				target = ETH
 				type = annex_everything
 			}
 			create_wargoal = {
@@ -460,7 +460,7 @@ focus_tree = {
 			is_faction_leader = yes
 			JAP = { is_faction_leader = yes }
 			NOT = { country_exists = RCG }
-            NOT = { country_exists = ETO }
+            NOT = { country_exists = ETH }
             NOT = { country_exists = KIS }
             NOT = { country_exists = KAT }
             NOT = { country_exists = KIV }

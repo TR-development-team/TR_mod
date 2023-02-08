@@ -1515,7 +1515,7 @@ JAP_fully_armed_state_Policy = {
 	}
 	JAP_fully_armed_state_decision_6 = {
 		icon = eng_trade_unions_demand
-        allowed = { always = no } #イベントorNFで解禁
+                allowed = { always = no } #イベントorNFで解禁
 		available = {
                         
 		}
@@ -1539,6 +1539,35 @@ JAP_fully_armed_state_Policy = {
 		remove_effect = {
 			remove_ideas = JAP_Danganressya_Plan
 			remove_ideas = JAP_Toshikamitu
+		}
+
+	}
+}
+JAP_Military_reform_Policy = {
+	
+	JAP_Military_reform_Policy_1 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+            
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_gain = -0.20
+		}
+		cost = 50
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+
+		}
+		remove_effect = {
+
 		}
 
 	}

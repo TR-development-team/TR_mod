@@ -30,9 +30,6 @@ if = {
 		coastal_defense_ships = 1
 	}
 }
-set_stability = 0.4
-set_war_support = 0.4
-set_research_slots = 3
 
 
 
@@ -40,7 +37,7 @@ set_research_slots = 3
 
 set_politics = {
 	ruling_party = social_conservative
-	last_election = "1935.8.7"
+	last_election = "1932.3.1"
 	election_frequency = 48
 	elections_allowed = yes
 }
@@ -64,16 +61,31 @@ add_ideas = {
          trinket_Unemployment_subsidies
          trinket_school_system
          trinket_pensions
+
+         HNA_Zhao_Hengti
+         HNA_He_Yaozu
+         HNA_Yi_Peiji
+         HNA_Hu_Shuhua
+         HNA_Zhang_Shizhao
+         HNA_Zhao_Hengti_cos
+         HNA_He_Yaozu_coa
+
          CHI_late_army
          HNA_Constitution
          HNA_PRC_partisan
+         HNA_black_thursday
+         HNA_opium_trade
 }
 recruit_character = HNA_Mao_Zedong
 recruit_character = HNA_Chen_Chiungming
+recruit_character = HNA_Tang_Shengzhi
 recruit_character = HNA_Zhao_Hengti
+recruit_character = HNA_Wu_Peifu
+recruit_character = HNA_Liang_Qichao
+recruit_character = HNA_He_Jian
 
-recruit_character = HNA_Zhao_Hengti_marshal
-recruit_character = HNA_Chen_Chiungming_marshal
+recruit_character = HNA_Jiang_Baili
+recruit_character = HNA_peng_dehuai
 
 
 ### VARIANTS ###

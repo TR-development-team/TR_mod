@@ -6,9 +6,12 @@ state={
 	}
 
 	history={
-		add_core_of = MAL
+		add_core_of = JSE
                 add_core_of = VIN
-		owner = MAL
+		owner = JSE
+		victory_points = {
+			12133 1
+		}
 		buildings = {
 			infrastructure = 2
                         industrial_complex = 1
@@ -21,7 +24,7 @@ state={
 provinces={
 		4223 4284 4341 7331 7303 12133 1423 1396
 	}
-	manpower=1284897
+	manpower=984897
 	buildings_max_level_factor=1.000
 	state_category=rural
 }

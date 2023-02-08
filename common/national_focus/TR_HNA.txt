@@ -1,6 +1,5 @@
 focus_tree = {
 	id = Hunan_focus
-        continuous_focus_position = { x = 1000 y = 1200 } 
 	country = {
 		factor = 0
 		modifier = {
@@ -8,594 +7,3423 @@ focus_tree = {
 			tag = HNA
 		}
 	}
-        default = no
-	#革命根拠地の破壊
+    default = no
+	continuous_focus_position = { x = 1950 y = 0 }
+	#憲政が根付く土地
 	focus = {
-		id = HNA_WAR_Communism
-		icon = GFX_focus_attack_soviet
-		x = 7
+		id = HNA_Political_focus_1
+		icon = GFX_
+		x = 14
 		y = 0
-		cost = 10
-                available = {
-                          
-                       }
-		available_if_capitulated = yes
+		cost = 1
+        available = {
+        }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		declare_war_on = {
-				target = PRC type = annex_everything
-			}	
-
+		country_event = {
+			id = TR_Hunan.1
+			days = 1
+		}	
 		}
-	}
-	#武漢との条約
+	}	
+	#省憲法の再確認
 	focus = {
-		id = HNA_CHI_Treatment
-		icon = GFX_focus_chi_cooperation_with_the_nationalists
-		x = 0
-		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_WAR_Communism }
-		available_if_capitulated = yes
-		relative_position_id = HNA_WAR_Communism
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		diplomatic_relation = {
-			country = CHI
-			relation = non_aggression_pact
-			active = yes
-			}
-		}
-	}
-	#重慶との条約
-	focus = {
-		id = HNA_YUN_Treatment
-		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		id = HNA_Political_focus_2
+		icon = GFX_
 		x = -2
 		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_WAR_Communism }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		cost = 3
+        available = {
+        }
+		prerequisite = { focus = HNA_Political_focus_1 }
+		relative_position_id = HNA_Political_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		diplomatic_relation = {
-			country = YUN
-			relation = non_aggression_pact
-			active = yes
-			}
-
+		country_event = {
+			id = TR_Hunan.2
+			days = 1
+		}	
 		}
-	}
-	#反共主義者の支援
+	}	
+	#連省自治の大義
 	focus = {
-		id = HNA_COM_Treatment
-		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		id = HNA_Political_focus_3
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 3
+        available = {
+        }
+		prerequisite = { focus = HNA_Political_focus_1 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = {
+			id = TR_Hunan.3
+			days = 1
+		}	  
+		}
+	}	
+	#議会での演説
+	focus = {
+		id = HNA_Political_focus_4
+		icon = GFX_
 		x = 2
 		y = 1
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_WAR_Communism }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		cost = 3
+        available = {
+        }
+		prerequisite = { focus = HNA_Political_focus_1 }
+		relative_position_id = HNA_Political_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_equipment_to_stockpile = {
-			type = infantry_equipment
-			amount = 2000
-			producer = HNA
-			}
+		add_stability = 0.02
+        add_political_power = 25
 		}
-	}
-	#共産党勢力の根絶
+	}	
+	#選挙の日
 	focus = {
-		id = HNA_WAR_Communism1
-		icon = GFX_focus_chi_army_reform
+		id = HNA_Political_focus_5
+		icon = GFX_
 		x = 0
 		y = 2
-		cost = 5
-		available = {
-		    NOT = {
-				country_exists = PRC
-	        }
+		cost = 15
+        available = {
+        }
+		select_effect = {
+			country_event = {
+				id = TR_Hunan.4
+				days = 1
+			}	
+			country_event = {
+				id = TR_Hunan.101
+				days = 40
+			}	
 		}
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_COM_Treatment }
-		prerequisite = { focus = HNA_YUN_Treatment }
-		prerequisite = { focus = HNA_CHI_Treatment }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		prerequisite = { focus = HNA_Political_focus_2 }
+		prerequisite = { focus = HNA_Political_focus_3 }
+		prerequisite = { focus = HNA_Political_focus_4 }
+		relative_position_id = HNA_Political_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		remove_ideas = HNA_PRC_partisan
-		army_experience = 20
-		add_tech_bonus = {
-			bonus = 0.5
-			uses = 1
-			category = land_doctrine
+		custom_effect_tooltip = HNA_Election_NF
 		}
-
-
-
-		}
-	}
-
-	#聯省自治
+	}	
+	#湖南派の勝利
 	focus = {
-		id = HNA_Political_focus1
-		icon = GFX_goal_support_democracy
-		x = -3
+		id = HNA_Hunan_Clique_focus_1
+		icon = GFX_
+		x = 0
 		y = 3
 		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_WAR_Communism1 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+        available = {
+			has_country_flag = HNA_hunan_clique_win
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		relative_position_id = HNA_Political_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_political_power = 50
-
+		custom_effect_tooltip = NF_event_complete
 		}
-	}
-
-    #趙恒惕が主導権を維持
+	}	
+	#民生三大綱領
 	focus = {
-		id = HNA_Political_focus2
-		icon = GFX_goal_support_democracy
-		x = -1
+		id = HNA_Hunan_Clique_focus_2
+		icon = GFX_
+		x = 0
 		y = 4
 		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_focus1 }
-		relative_position_id = HNA_WAR_Communism
-		mutually_exclusive = { focus = HNA_Political_focus3 }
-		available_if_capitulated = yes
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_1 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_political_power = 100
+		}
+	}	
+	#農業振興
+	focus = {
+		id = HNA_Hunan_Clique_focus_3
+		icon = GFX_
+		x = -2
+		y = 5
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_2 }
+		relative_position_id = HNA_Political_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
 		add_stability = 0.1
-
+        add_ideas = HNA_agricultural_policy
+		}
+	}	
+	#教育政策
+	focus = {
+		id = HNA_Hunan_Clique_focus_4
+		icon = GFX_
+		x = 0
+		y = 5
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_2 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_stability = 0.1
+		increase_school_system = yes
+		}
+	}	
+	#治安の回復
+	focus = {
+		id = HNA_Hunan_Clique_focus_5
+		icon = GFX_
+		x = 2
+		y = 5
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_2 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           remove_ideas = HNA_PRC_partisan
+		   add_stability = 0.05
+		}
+	}	
+	#治水事業
+	focus = {
+		id = HNA_Hunan_Clique_focus_6
+		icon = GFX_
+		x = -3
+		y = 6
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_3 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		602 = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}	
+	#近代的農法
+	focus = {
+		id = HNA_Hunan_Clique_focus_7
+		icon = GFX_
+		x = -1
+		y = 6
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_3 }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_4 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_agricultural_policy
+			add_idea = HNA_agricultural_policy_1
+		}
+		}
+	}	
+	#儒教思想の近代化
+	focus = {
+		id = HNA_Hunan_Clique_focus_8
+		icon = GFX_
+		x = 1
+		y = 6
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_4 }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_5 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = HNA_Confucian_Modernization
+		}
+	}	
+	#司法の独立
+	focus = {
+		id = HNA_Hunan_Clique_focus_9
+		icon = GFX_
+		x = 3
+		y = 6
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_5 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_stability = 0.05
+		}
+	}	
+	#農業投資
+	focus = {
+		id = HNA_Hunan_Clique_focus_10
+		icon = GFX_
+		x = -2
+		y = 7
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_6 }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_7 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_agricultural_policy_1
+			add_idea = HNA_agricultural_policy_2
+		}
+		}
+	}	
+	#魚米の郷
+	focus = {
+		id = HNA_Hunan_Clique_focus_11
+		icon = GFX_
+		x = -2
+		y = 8
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_10 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_agricultural_policy_2
+			add_idea = HNA_agricultural_policy_3
+		}
 		}
 	}
-
-	
-    #陳炯明率いる左派が主導権を掌握
+	#湖南大学
 	focus = {
-		id = HNA_Political_focus3
-		icon = GFX_focus_prc_social_democracy
-		x = -5
+		id = HNA_Hunan_Clique_focus_12
+		icon = GFX_
+		x = 0
+		y = 7
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		bypass = { 
+			amount_research_slots > 5 
+		}
+		prerequisite = { focus = HNA_Hunan_Clique_focus_7 }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_8 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_research_slot = 1
+		increase_school_system = yes
+		}
+	}	
+	#効率的行政
+	focus = {
+		id = HNA_Hunan_Clique_focus_13
+		icon = GFX_
+		x = 0
+		y = 8
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_12 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = HNA_administrative_efficiency
+		}
+	}
+	#警察機構の改革
+	focus = {
+		id = HNA_Hunan_Clique_focus_14
+		icon = GFX_
+		x = 2
+		y = 7
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_8 }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_9 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           add_ideas = HNA_police_reform
+		}
+	}	
+	#密売網への対処
+	focus = {
+		id = HNA_Hunan_Clique_focus_15
+		icon = GFX_
+		x = 2
+		y = 8
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Zhao_Hengti
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Hunan_Clique_focus_14 }
+		relative_position_id = HNA_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = {
+			id = TR_Hunan.29
+			days = 1
+		}	
+		}
+	}
+	#唐生智の反乱
+	focus = {
+		id = HNA_Kuomintang_focus_1
+		icon = GFX_
+		x = 6
+		y = 0
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Tang_Shengzhi
+				ruling_only = yes
+			}
+        }
+		ai_will_do = {
+			factor = 400
+		}
+	completion_reward = {
+		custom_effect_tooltip = NF_event_complete
+		}
+	}	
+	#仏教将軍の統治
+	focus = {
+		id = HNA_Kuomintang_focus_2
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Tang_Shengzhi
+				ruling_only = yes
+			}
+        }
+		mutually_exclusive = { focus = HNA_Kuomintang_focus_3 }
+		prerequisite = { focus = HNA_Kuomintang_focus_1 }
+		relative_position_id = HNA_Kuomintang_focus_1
+		ai_will_do = {
+			factor = 400
+		}
+	completion_reward = {
+		country_event = {
+			id = TR_Hunan.30
+			days = 1
+		}
+		}
+	}
+	#何鍵によるクーデター
+	focus = {
+		id = HNA_Kuomintang_focus_3
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_He_Jian
+				ruling_only = yes
+			}
+        }
+		mutually_exclusive = { focus = HNA_Kuomintang_focus_2 }
+		prerequisite = { focus = HNA_Kuomintang_focus_1 }
+		relative_position_id = HNA_Kuomintang_focus_1
+		ai_will_do = {
+			factor = 400
+		}
+	completion_reward = {
+		country_event = {
+			id = TR_Hunan.32
+			days = 1
+		}
+		}
+	}
+	#呉佩孚の再起
+	focus = {
+		id = HNA_Zhili_focus_1
+		icon = GFX_
+		x = 6
+		y = 2
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Wu_Peifu
+				ruling_only = yes
+			}
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		custom_effect_tooltip = NF_event_complete
+		}
+	}	
+	#笑虎将軍に働きかける
+	focus = {
+		id = HNA_Zhili_focus_2
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 6
+        available = {
+			country_exists = FUJ
+			has_country_leader = {
+				character = HNA_Wu_Peifu
+				ruling_only = yes
+			}
+			FUJ = { 
+				has_country_leader = {
+					character = FUJ_Sun_Chuanfang
+					ruling_only = yes
+				}
+			}
+			
+        }
+		bypass = { 
+		OR= { 
+			FUJ = { 
+				NOT = { 
+				    has_country_leader = {
+				    	character = FUJ_Sun_Chuanfang
+				    	ruling_only = yes
+				    }
+			    }
+			}
+			NOT = { country_exists = FUJ }
+		}
+		}
+		prerequisite = { focus = HNA_Zhili_focus_1 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+        FUJ = {
+		country_event = {
+			id = TR_Hunan.34
+			days = 1
+		}
+	    }
+		}
+	}	
+	#パルチザンの破壊
+	focus = {
+		id = HNA_Zhili_focus_3
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Wu_Peifu
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Zhili_focus_1 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		remove_ideas = HNA_PRC_partisan_1
+		declare_war_on = {
+			target = PRC
+			type = annex_everything
+		}
+		}
+	}	
+	#外国資産の接収
+	focus = {
+		id = HNA_Zhili_focus_4
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Wu_Peifu
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Zhili_focus_1 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_offsite_building = { type = industrial_complex level = 1 }
+		add_offsite_building = { type = arms_factory level = 1 }
+		reverse_add_opinion_modifier = {
+			target = FRA
+			modifier = medium_decrease
+		}
+		reverse_add_opinion_modifier = {
+			target = SOV
+			modifier = medium_decrease
+		}
+		reverse_add_opinion_modifier = {
+			target = ENG
+			modifier = medium_decrease
+		}
+		reverse_add_opinion_modifier = {
+			target = JAP
+			modifier = large_decrease
+		}
+		}
+	}	
+	#長沙政府の樹立
+	focus = {
+		id = HNA_Zhili_focus_5
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Wu_Peifu
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Zhili_focus_2 }
+		prerequisite = { focus = HNA_Zhili_focus_3 }
+		prerequisite = { focus = HNA_Zhili_focus_4 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = {
+			id = TR_Hunan.37
+			days = 1
+		}
+           
+		}
+	}	
+	#新憲法
+	focus = {
+		id = HNA_Zhili_focus_6
+		icon = GFX_
+		x = -2
+		y = 3
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_5 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           add_ideas = HNA_Constitution_Zhili
+		}
+	}	
+	#軍事化政策
+	focus = {
+		id = HNA_Zhili_focus_7
+		icon = GFX_
+		x = 0
+		y = 3
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_5 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           add_ideas = HNA_Militarism
+		}
+	}	
+	#開明専制
+	focus = {
+		id = HNA_Zhili_focus_8
+		icon = GFX_
+		x = 2
+		y = 3
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_5 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = HNA_enlightenment
+		}
+	}	
+	#国民党勢力を攻撃
+	focus = {
+		id = HNA_Zhili_focus_9
+		icon = GFX_
+		x = -4
 		y = 4
 		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_focus1 }
-		relative_position_id = HNA_WAR_Communism
-		mutually_exclusive = { focus = HNA_Political_focus2 }
-		available_if_capitulated = yes
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_6 }
+		relative_position_id = HNA_Zhili_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
+		add_political_power = -50
+		add_stability = 0.05
 		add_popularity = {
-			ideology = social_democrat
-			popularity = 0.25
-		}
-         set_politics = {
-			ruling_party = social_democrat
-			elections_allowed = yes
-		}
-		
-
-		}
-	}
-	#一郷一校
-	focus = {
-		id = HNA_Political_left1
-		icon = GFX_goal_support_democracy
-		x = -6
-		y = 5
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_focus3 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_ideas = HNA_Ichigo_Ikko
-		}
-	}
-	#犯罪取締の強化
-	focus = {
-		id = HNA_Political_left2
-		icon = GFX_goal_support_democracy
-		x = -6
-		y = 6
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_left1 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_ideas = HNA_Crime_control
-		}
-	}
-	#アナキストとの連携
-	focus = {
-		id = HNA_Political_left3
-		icon = GFX_goal_support_democracy
-		x = -4
-		y = 5
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_focus3 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_popularity = {
-			ideology = social_democrat
-			popularity = 0.15
+			ideology = social_1liberal
+			popularity = -0.1
 		}
 		add_popularity = {
-			ideology = syndicalist
-			popularity = 0.15
+			ideology = national_populist
+			popularity = -0.1
 		}
-		
-
 		}
-	}
-	#自由な商取引の奨励
+	}	
+	#野党なき立法院
 	focus = {
-		id = HNA_Political_left4
-		icon = GFX_goal_support_democracy
-		x = -4
-		y = 6
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_left3 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_ideas = free_trade
-        add_ideas = HNA_Free_Trade_ideas
-		}
-	}
-	#廃督裁兵
-	focus = {
-		id = HNA_Political_right1
-		icon = GFX_goal_support_democracy
+		id = HNA_Zhili_focus_10
+		icon = GFX_
 		x = -2
-		y = 5
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_focus2 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		y = 4
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_6 }
+		relative_position_id = HNA_Zhili_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
+		add_political_power = -100
+		add_stability = 0.1
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = -0.1
+		}
+
 		add_popularity = {
 			ideology = market_liberal
-			popularity = 0.05
+			popularity = -0.1
 		}
 		add_popularity = {
 			ideology = social_conservative
-			popularity = 0.05
+			popularity = -0.1
 		}
-		add_popularity = {
-			ideology = authoritarian_democrat
-			popularity = -0.05
 		}
-		add_popularity = {
-			ideology = paternal_autocrat
-			popularity = -0.05
-		}
-		
-
-		}
-	}
-	#都市から村に至るまで
+	}	
+	#中華維新
 	focus = {
-		id = HNA_Political_right2
-		icon = GFX_goal_support_democracy
-		x = -2
-		y = 6
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_right1 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		id = HNA_Zhili_focus_11
+		icon = GFX_
+		x = 1
+		y = 4
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_8 }
+		relative_position_id = HNA_Zhili_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_ideas = HNA_Decentralization
+		swap_ideas = {
+			remove_idea = HNA_enlightenment
+			add_idea = HNA_enlightenment_1
+		}
+		}
+	}	
+	#儒教的徳治
+	focus = {
+		id = HNA_Zhili_focus_12
+		icon = GFX_
+		x = 3
+		y = 4
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_8 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = HNA_Confucian_Movement
 		}
 	}
-
-	#軍より民を
+	#社会主義者鎮圧法
 	focus = {
-		id = HNA_Political_right3
-		icon = GFX_goal_support_democracy
+		id = HNA_Zhili_focus_13
+		icon = GFX_
+		x = -4
+		y = 5
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_9 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_political_power = -100
+		add_stability = 0.1
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.5
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.5
+		}
+		}
+	}	
+	#国民の組織化
+	focus = {
+		id = HNA_Zhili_focus_14
+		icon = GFX_
+		x = -2
+		y = 5
+		cost = 6
+        available = {
+			has_idea = HNA_Militarism
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_10 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Militarism
+			add_idea = HNA_Militarism_1
+		}
+		}
+	}	
+	#軍需産業の近代化
+	focus = {
+		id = HNA_Zhili_focus_15
+		icon = GFX_
 		x = 0
 		y = 5
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_focus2 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_7 }
+		prerequisite = { focus = HNA_Zhili_focus_11 }
+		relative_position_id = HNA_Zhili_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_ideas = HNA_Civilian_Focus
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
 		}
-	}
-
-	#工業化の推進
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}	
+	#教育による啓蒙
 	focus = {
-		id = HNA_Political_right4
-		icon = GFX_goal_support_democracy
+		id = HNA_Zhili_focus_16
+		icon = GFX_
+		x = 2
+		y = 5
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_11 }
+		prerequisite = { focus = HNA_Zhili_focus_12 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_enlightenment_1
+			add_idea = HNA_enlightenment_2
+		}
+		
+		}
+	}	
+	#孔教運動
+	focus = {
+		id = HNA_Zhili_focus_17
+		icon = GFX_
+		x = 4
+		y = 5
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_12 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		swap_ideas = {
+			remove_idea = HNA_Confucian_Movement
+			add_idea = HNA_Confucian_Movement_1
+		}
+		}
+	}	
+	#アヘン密売網の排除
+	focus = {
+		id = HNA_Zhili_focus_18
+		icon = GFX_
+		x = -4
+		y = 6
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_13 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = {
+			id = TR_Hunan.29
+			days = 1
+		}	
+		}
+	}	
+	#国防国家
+	focus = {
+		id = HNA_Zhili_focus_19
+		icon = GFX_
+		x = -2
+		y = 6
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_14 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Militarism_1
+			add_idea = HNA_Militarism_2
+		} 
+		}
+	}	
+	#近代的徴兵制度
+	focus = {
+		id = HNA_Zhili_focus_20
+		icon = GFX_
 		x = 0
 		y = 6
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_right3 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_15 }
+		relative_position_id = HNA_Zhili_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_ideas = HNA_Kougyouka
+           add_ideas = HNA_modern_conscription_law
 		}
-	}
-	#分権的連邦への道
+	}	
+	#新たなる学校
 	focus = {
-		id = HNA_Political_focus4
-		icon = GFX_goal_support_democracy
-		x = -3
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_Political_left4 focus = HNA_Political_right4 }
-		prerequisite = { focus = HNA_Political_left2 focus = HNA_Political_right2 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		id = HNA_Zhili_focus_21
+		icon = GFX_
+		x = 2
+		y = 6
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		bypass = { 
+			amount_research_slots > 5 
+		}
+		prerequisite = { focus = HNA_Zhili_focus_16 }
+		relative_position_id = HNA_Zhili_focus_1
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		create_faction = "United_Provinces_of_China"
-		set_major = yes
-		set_cosmetic_tag = HNA_China
-		
-
+		increase_school_system = yes
+		add_research_slot = 1
 		}
-	}
-
-	#湖南軍の再編
+	}	
+	#勤勉の奨励
 	focus = {
-		id = HNA_army_focus1
-		icon = GFX_focus_chi_army_reform
+		id = HNA_Zhili_focus_22
+		icon = GFX_
+		x = 4
+		y = 6
+		cost = 6
+        available = {
+			OR = { 
+			    has_country_leader = {
+				    character = HNA_Liang_Qichao
+			    	ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_Wu_Peifu
+					ruling_only = yes
+				}
+		    }
+        }
+		prerequisite = { focus = HNA_Zhili_focus_17 }
+		relative_position_id = HNA_Zhili_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		swap_ideas = {
+			remove_idea = HNA_Confucian_Movement_1
+			add_idea = HNA_Confucian_Movement_2
+		}  
+		}
+	}	
+	#致公党の勝利
+	focus = {
+		id = HNA_Socialist_focus_1
+		icon = GFX_
+		x = 20
+		y = 3
+		cost = 6
+        available = {
+			has_country_flag = HNA_canton_clique_win
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		custom_effect_tooltip = NF_event_complete
+		}
+	}	
+	#湖南共産党の勝利
+	focus = {
+		id = HNA_Socialist_focus_2
+		icon = GFX_
+		x = 6
+		y = 0
+		cost = 6
+        available = {
+			has_country_flag = HNA_Communist_win
+			has_socialist_government = yes
+        }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		custom_effect_tooltip = NF_event_complete
+		}
+	}	
+	#黄興の遺産
+	focus = {
+		id = HNA_Socialist_focus_3
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_1 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#瑞金との交渉
+	focus = {
+		id = HNA_Socialist_focus_4
+		icon = GFX_
+		x = 3
+		y = 1
+		cost = 6
+        available = {
+			is_neighbor_of = PRC
+			OR = { 
+				has_country_leader = {
+					character = HNA_Chen_Chiungming
+					ruling_only = yes
+				}
+				has_socialist_government = yes
+			}
+        }
+		bypass = {
+			PRC = { exists = no }
+        }
+		prerequisite = { focus = HNA_Socialist_focus_1 focus = HNA_Socialist_focus_2 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		remove_ideas = HNA_PRC_partisan
+		}
+	}	
+	#由省建国への道
+	focus = {
+		id = HNA_Socialist_focus_5
+		icon = GFX_
+		x = 6
+		y = 1
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_2 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#アナキストとの合作
+	focus = {
+		id = HNA_Socialist_focus_6
+		icon = GFX_
+		x = -2
+		y = 2
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_3 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#地方分権
+	focus = {
+		id = HNA_Socialist_focus_7
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_3 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#陳独秀の起用
+	focus = {
+		id = HNA_Socialist_focus_8
+		icon = GFX_
+		x = 2
+		y = 2
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_3 }
+		prerequisite = { focus = HNA_Socialist_focus_4 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#自治機構の整備
+	focus = {
+		id = HNA_Socialist_focus_9
+		icon = GFX_
+		x = -1
+		y = 3
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_6 }
+		prerequisite = { focus = HNA_Socialist_focus_7 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#民間企業の支援
+	focus = {
+		id = HNA_Socialist_focus_10
+		icon = GFX_
+		x = -2
+		y = 4
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_9 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#タバコ税の導入
+	focus = {
+		id = HNA_Socialist_focus_11
+		icon = GFX_
+		x = -2
+		y = 5
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_10 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#教育への注力
+	focus = {
+		id = HNA_Socialist_focus_12
+		icon = GFX_
+		x = 1
+		y = 3
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_7 }
+		prerequisite = { focus = HNA_Socialist_focus_8 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#アヘンの取締
+	focus = {
+		id = HNA_Socialist_focus_13
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_12 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = {
+			id = TR_Hunan.29
+			days = 1
+		}	
+		}
+	}	
+	#賭博の禁止
+	focus = {
+		id = HNA_Socialist_focus_14
+		icon = GFX_
+		x = 0
+		y = 5
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_13 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#一郷一校
+	focus = {
+		id = HNA_Socialist_focus_15
+		icon = GFX_
+		x = 2
+		y = 4
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		bypass = { 
+			amount_research_slots > 5 
+		}
+		prerequisite = { focus = HNA_Socialist_focus_12 }
+		prerequisite = { focus = HNA_Socialist_focus_17 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_research_slot = 1
+		increase_school_system = yes
+		}
+	}	
+	#人民自治
+	focus = {
+		id = HNA_Socialist_focus_16
+		icon = GFX_
+		x = 2
+		y = 5
+		cost = 6
+        available = {
+			has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			}
+        }
+		prerequisite = { focus = HNA_Socialist_focus_15 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}	
+	#新文化運動
+	focus = {
+		id = HNA_Socialist_focus_17
+		icon = GFX_
 		x = 3
 		y = 3
 		cost = 6
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_WAR_Communism1 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+        available = {
+        }
+		bypass = {
+        }
+		prerequisite = { focus = HNA_Socialist_focus_8 focus = HNA_Socialist_focus_18 }
+		relative_position_id = HNA_Socialist_focus_1
 		ai_will_do = {
-			factor = 50
+			factor = 100
 		}
 	completion_reward = {
-		army_experience = 50
+		set_country_flag = HNA_Political_stable
 		}
-	}
-
-	#武器工場の整備
+	}	
+	#周恩来の起用
 	focus = {
-		id = HNA_army_focus2
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 2
-		y = 4
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_army_focus1 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		id = HNA_Socialist_focus_18
+		icon = GFX_
+		x = 4
+		y = 2
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_4 }
+		prerequisite = { focus = HNA_Socialist_focus_5 }
+		relative_position_id = HNA_Socialist_focus_1
 		ai_will_do = {
-			factor = 50
+			factor = 100
 		}
 	completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
+           
 		}
 	}
-
-	#更なる拡張
+	#農民革命
 	focus = {
-		id = HNA_army_focus3
-		icon = GFX_goal_generic_construct_mil_factory
-		x = 2
-		y = 5
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_army_focus2 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		id = HNA_Socialist_focus_19
+		icon = GFX_
+		x = 6
+		y = 2
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_5 }
+		relative_position_id = HNA_Socialist_focus_1
 		ai_will_do = {
-			factor = 50
+			factor = 100
 		}
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
+	completion_reward = {
+           
 		}
 	}
-
-	#銃の質を重視
+	#インターナショナルとの接触
 	focus = {
-		id = HNA_army_focus4
-		icon = GFX_goal_generic_small_arms
+		id = HNA_Socialist_focus_20
+		icon = GFX_
+		x = 8
+		y = 2
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_5 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}
+	#新式学校
+	focus = {
+		id = HNA_Socialist_focus_21
+		icon = GFX_
+		x = 5
+		y = 3
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_18 }
+		prerequisite = { focus = HNA_Socialist_focus_19 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}
+	#人民独裁の確立
+	focus = {
+		id = HNA_Socialist_focus_22
+		icon = GFX_
+		x = 7
+		y = 3
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_19 }
+		prerequisite = { focus = HNA_Socialist_focus_20 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}
+	#社会主義教育
+	focus = {
+		id = HNA_Socialist_focus_23
+		icon = GFX_
 		x = 4
 		y = 4
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_army_focus1 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		bypass = { 
+			amount_research_slots > 5 
+		}
+		prerequisite = { focus = HNA_Socialist_focus_17 }
+		prerequisite = { focus = HNA_Socialist_focus_21 }
+		relative_position_id = HNA_Socialist_focus_1
 		ai_will_do = {
-			factor = 50
-		}
-	completion_reward = {
-        add_ideas = HNA_Arms_Equipment
-		}
-	}
-
-	#兵器研究の強化
-	focus = {
-		id = HNA_army_focus5
-		icon = GFX_goal_generic_army_artillery
-		x = 4
-		y = 5
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_army_focus4 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 50
-		}
-	completion_reward = {
-		add_tech_bonus = {
-			name = infantry_artillery_bonus
-			bonus = 1.0
-			uses = 2
-			category = infantry_weapons
-			category = artillery
-		}
-		}
-	}
-
-	#戦術の確立
-	focus = {
-		id = HNA_army_focus6
-		icon = GFX_goal_generic_army_doctrines
-		x = 3
-		y = 6
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_army_focus3 }
-		prerequisite = { focus = HNA_army_focus5 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 50
-		}
-	completion_reward = {
-		add_ideas = HNA_doctrines
-		}
-	}
-
-	#研究枠の追加
-	focus = {
-		id = HNA_army_focus7
-		icon = GFX_focus_research
-		x = 3
-		y = 7
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = HNA_army_focus6 }
-		relative_position_id = HNA_WAR_Communism
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 50
+			factor = 100
 		}
 	completion_reward = {
 		add_research_slot = 1
 		}
 	}
+	#湖南の紅い太陽
+	focus = {
+		id = HNA_Socialist_focus_24
+		icon = GFX_
+		x = 4
+		y = 5
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_23 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}
+	#アヘンの管理
+	focus = {
+		id = HNA_Socialist_focus_25
+		icon = GFX_
+		x = 6
+		y = 4
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_22 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = {
+			id = TR_Hunan.29
+			days = 1
+		}	
+		}
+	}
+	#三反運動
+	focus = {
+		id = HNA_Socialist_focus_26
+		icon = GFX_
+		x = 6
+		y = 5
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_25 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}
+	#土地革命
+	focus = {
+		id = HNA_Socialist_focus_27
+		icon = GFX_
+		x = 8
+		y = 4
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_22 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}
+	#五反運動
+	focus = {
+		id = HNA_Socialist_focus_28
+		icon = GFX_
+		x = 8
+		y = 5
+		cost = 6
+        available = {
+			has_socialist_government = yes
+        }
+		prerequisite = { focus = HNA_Socialist_focus_27 }
+		relative_position_id = HNA_Socialist_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+           
+		}
+	}
+	#湘軍の改革
+	focus = {
+		id = HNA_army_focus_1
+		icon = GFX_
+		x = 6
+		y = 10
+		cost = 6
+        available = {
+			has_country_flag = HNA_Political_stable
+			has_completed_focus = HNA_Political_focus_5
+        }
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		army_experience = 25
+		add_ideas = HNA_army_idea
+		}
+	}	
+	#専門的軍隊
+	focus = {
+		id = HNA_army_focus_2
+		icon = GFX_
+		x = -4
+		y = 1
+		cost = 6
+        available = {
+			has_socialist_government = no
+        }
+		mutually_exclusive = { focus = HNA_army_focus_3 }
+		mutually_exclusive = { focus = HNA_army_focus_4 }
+		prerequisite = { focus = HNA_army_focus_1 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_army_idea
+			add_idea = HNA_Professional_army
+		}
+		}
+	}	
+	#物量の重視
+	focus = {
+		id = HNA_army_focus_3
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 6
+        available = {
+			has_socialist_government = no
+        }
+		mutually_exclusive = { focus = HNA_army_focus_2 }
+		mutually_exclusive = { focus = HNA_army_focus_4 }
+		prerequisite = { focus = HNA_army_focus_1 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_army_idea
+			add_idea = HNA_material_warfare
+		}
+		}
+	}	
+	#運動戦
+	focus = {
+		id = HNA_army_focus_4
+		icon = GFX_
+		x = 4
+		y = 1
+		cost = 6
+        available = {
+		    has_socialist_government = yes
+        }
+		mutually_exclusive = { focus = HNA_army_focus_2 }
+		mutually_exclusive = { focus = HNA_army_focus_3 }
+		prerequisite = { focus = HNA_army_focus_1 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_army_idea
+			add_idea = HNA_Mobile_Warfare
+		}
+		}
+	}	
+	#航空演習
+	focus = {
+		id = HNA_army_focus_5
+		icon = GFX_
+		x = -6
+		y = 2
+		cost = 6
+        available = {
 
+        }
+		prerequisite = { focus = HNA_army_focus_2 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		air_experience = 25
+		add_doctrine_cost_reduction = {
+			name = air_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = air_doctrine
+		}
+		}
+	}	
+	#戦闘機の輸入
+	focus = {
+		id = HNA_army_focus_6
+		icon = GFX_
+		x = -6
+		y = 3
+		cost = 6
+        available = {
 
+        }
+		prerequisite = { focus = HNA_army_focus_5 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 1.0
+			uses = 1
+			technology = early_fighter
+			technology = fighter1
+			technology = fighter2
+			technology = fighter3
+			technology = heavy_fighter1
+			technology = heavy_fighter2
+			technology = heavy_fighter3
+		}
+		}
+	}	
+	#戦車の輸入
+	focus = {
+		id = HNA_army_focus_7
+		icon = GFX_
+		x = -6
+		y = 4
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_6 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 1
+			category = armor
+		}
+		}
+	}	
+	#西洋戦術の探求
+	focus = {
+		id = HNA_army_focus_8
+		icon = GFX_
+		x = -4
+		y = 2
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_2 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+		}
+	}	
+	#士官学校の拡大
+	focus = {
+		id = HNA_army_focus_9
+		icon = GFX_
+		x = -4
+		y = 3
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_8 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Professional_army
+			add_idea = HNA_Professional_army_1
+		}
+		}
+	}	
+	#精鋭将校団
+	focus = {
+		id = HNA_army_focus_10
+		icon = GFX_
+		x = -4
+		y = 4
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_9 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Professional_army_1
+			add_idea = HNA_Professional_army_2
+		}
+		}
+	}	
+	#陸軍演習
+	focus = {
+		id = HNA_army_focus_11
+		icon = GFX_
+		x = -2
+		y = 2
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_2 focus = HNA_army_focus_3 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		army_experience = 75
+		}
+	}	
+	#火砲の更新
+	focus = {
+		id = HNA_army_focus_12
+		icon = GFX_
+		x = -2
+		y = 3
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_11 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = artillery
+		}
+		}
+	}	
+	#更なる火力
+	focus = {
+		id = HNA_army_focus_13
+		icon = GFX_
+		x = -2
+		y = 4
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_12 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = HNA_fire_superiority
+		}
+	}	
+	#新たなる徴兵法
+	focus = {
+		id = HNA_army_focus_14
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_3 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_material_warfare
+			add_idea = HNA_material_warfare_1
+		}
+		}
+	}	
+	#工廠の改善
+	focus = {
+		id = HNA_army_focus_15
+		icon = GFX_
+		x = 0
+		y = 3
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_14 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_material_warfare_1
+			add_idea = HNA_material_warfare_2
+		}
+		}
+	}	
+	#兵站の改善
+	focus = {
+		id = HNA_army_focus_16
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_15 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_material_warfare_2
+			add_idea = HNA_material_warfare_3
+		}
+		}
+	}	
+	#小銃の更新
+	focus = {
+		id = HNA_army_focus_17
+		icon = GFX_
+		x = 2
+		y = 2
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_3 focus = HNA_army_focus_4 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = infantry_weapons
+		}
+		}
+	}	
+	#工兵隊
+	focus = {
+		id = HNA_army_focus_18
+		icon = GFX_
+		x = 2
+		y = 3
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_17 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = engineers_tech
+		}
+		}
+	}	
+	#山岳での戦い
+	focus = {
+		id = HNA_army_focus_19
+		icon = GFX_
+		x = 2
+		y = 4
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_18 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = mountaineers_tech
+		}
+		}
+	}	
+	#司令部への集権
+	focus = {
+		id = HNA_army_focus_20
+		icon = GFX_
+		x = 4
+		y = 2
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_4 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Mobile_Warfare
+			add_idea = HNA_Mobile_Warfare_1
+		}
+		}
+	}	
+	#分散的進撃
+	focus = {
+		id = HNA_army_focus_21
+		icon = GFX_
+		x = 4
+		y = 3
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_20 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Mobile_Warfare_1
+			add_idea = HNA_Mobile_Warfare_2
+		}
+		}
+	}	
+	#人民の動員
+	focus = {
+		id = HNA_army_focus_22
+		icon = GFX_
+		x = 4
+		y = 4
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_21 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Mobile_Warfare_2
+			add_idea = HNA_Mobile_Warfare_3
+		}
+		}
+	}	
+	#病院の改良
+	focus = {
+		id = HNA_army_focus_23
+		icon = GFX_
+		x = 6
+		y = 2
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_4 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = hospital_tech
+		}
+		}
+	}	
+	#軍隊の再編
+	focus = {
+		id = HNA_army_focus_24
+		icon = GFX_
+		x = 6
+		y = 3
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_23 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		army_experience = 50
+		}
+	}	
+	#潜伏訓練
+	focus = {
+		id = HNA_army_focus_25
+		icon = GFX_
+		x = 6
+		y = 4
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_24 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		}
+	}	
+	#統率のとれた軍隊
+	focus = {
+		id = HNA_army_focus_26
+		icon = GFX_
+		x = -4
+		y = 5
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_10 }
+		prerequisite = { focus = HNA_army_focus_7 focus = HNA_army_focus_13 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Professional_army_2
+			add_idea = HNA_Professional_army_3
+		}
+		}
+	}
+	#死を恐れぬ軍隊
+	focus = {
+		id = HNA_army_focus_27
+		icon = GFX_
+		x = 0
+		y = 5
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_16 }
+		prerequisite = { focus = HNA_army_focus_13 focus = HNA_army_focus_19 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_material_warfare_3
+			add_idea = HNA_material_warfare_4
+		}
+		}
+	}
+	#人民の軍隊
+	focus = {
+		id = HNA_army_focus_28
+		icon = GFX_
+		x = 4
+		y = 5
+		cost = 6
+        available = {
+
+        }
+		prerequisite = { focus = HNA_army_focus_22 }
+		prerequisite = { focus = HNA_army_focus_19 focus = HNA_army_focus_25 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_Mobile_Warfare_3
+			add_idea = HNA_Mobile_Warfare_4
+		}
+		}
+	}
+	#兵器研究局
+	focus = {
+		id = HNA_army_focus_29
+		icon = GFX_
+		x = 0
+		y = 6
+		cost = 6
+        available = {
+
+        }
+		bypass = { 
+			amount_research_slots > 5 
+		}
+		prerequisite = { focus = HNA_army_focus_26 focus = HNA_army_focus_27 focus = HNA_army_focus_28 }
+		relative_position_id = HNA_army_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#統一への道
+	focus = {
+		id = HNA_Diplomacy_focus_1
+		icon = GFX_
+		x = 16
+		y = 10
+		cost = 6
+        available = {
+			has_country_flag = HNA_Political_stable
+			custom_trigger_tooltip = HNA_Political_stable_tooltip
+			NOT = { 			
+				has_country_leader = {
+				    character = HNA_Tang_Shengzhi
+				    ruling_only = yes
+			    }
+				has_country_leader = {
+					character = HNA_He_Jian
+					ruling_only = yes
+				}
+		    }
+        }
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		add_war_support = 0.1
+		if = {
+			limit = {
+				OR = { 
+					has_country_leader = {
+						character = HNA_Zhao_Hengti
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = HNA_Chen_Chiungming
+						ruling_only = yes
+					}
+				}
+			}
+		    create_faction = United_Provinces_of_China
+	    }
+		if = {
+			limit = {
+				has_socialist_government = yes
+			}
+		    create_faction = People_Provinces_of_China
+	    }
+		if = {
+			limit = {
+				OR = { 
+					has_country_leader = {
+						character = HNA_Liang_Qichao
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = HNA_Wu_Peifu
+						ruling_only = yes
+					}
+				}
+			}
+		    create_faction = Zhili_faction
+	    }
+		}
+	}	
+	#孤立した軍閥を撃破
+	focus = {
+		id = HNA_Diplomacy_focus_2
+		icon = GFX_
+		x = -2
+		y = 1
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_1 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#外国顧問団
+	focus = {
+		id = HNA_Diplomacy_focus_3
+		icon = GFX_
+		x = 0
+		y = 1
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_1 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#武器の購入
+	focus = {
+		id = HNA_Diplomacy_focus_4
+		icon = GFX_
+		x = 2
+		y = 1
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_1 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#重慶を焚き付ける
+	focus = {
+		id = HNA_Diplomacy_focus_5
+		icon = GFX_
+		x = -2
+		y = 2
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_2 }
+		prerequisite = { focus = HNA_Diplomacy_focus_3 }
+		prerequisite = { focus = HNA_Diplomacy_focus_4 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#安内の達成
+	focus = {
+		id = HNA_Diplomacy_focus_6
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_2 }
+		prerequisite = { focus = HNA_Diplomacy_focus_3 }
+		prerequisite = { focus = HNA_Diplomacy_focus_4 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#武漢への先制攻撃
+	focus = {
+		id = HNA_Diplomacy_focus_7
+		icon = GFX_
+		x = 2
+		y = 2
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_2 }
+		prerequisite = { focus = HNA_Diplomacy_focus_3 }
+		prerequisite = { focus = HNA_Diplomacy_focus_4 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#広東工作
+	focus = {
+		id = HNA_Diplomacy_focus_8
+		icon = GFX_
+		x = 4
+		y = 2
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_2 }
+		prerequisite = { focus = HNA_Diplomacy_focus_3 }
+		prerequisite = { focus = HNA_Diplomacy_focus_4 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#旭日を撃て
+	focus = {
+		id = HNA_Diplomacy_focus_9
+		icon = GFX_
+		x = 0
+		y = 3
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_6 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}
+	#国家総動員
+	focus = {
+		id = HNA_Diplomacy_focus_10
+		icon = GFX_
+		x = -2
+		y = 4
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_9 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#中華民族の団結
+	focus = {
+		id = HNA_Diplomacy_focus_11
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_9 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#降伏か死か！
+	focus = {
+		id = HNA_Diplomacy_focus_12
+		icon = GFX_
+		x = 2
+		y = 4
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_9 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#絶望的な防衛
+	focus = {
+		id = HNA_Diplomacy_focus_13
+		icon = GFX_
+		x = 4
+		y = 4
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_9 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}		
+	#民族の勝利
+	focus = {
+		id = HNA_Diplomacy_focus_14
+		icon = GFX_
+		x = 0
+		y = 5
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_Diplomacy_focus_11 }
+		relative_position_id = HNA_Diplomacy_focus_1
+	completion_reward = {
+		
+		}
+	}	
+	#湖南産業
+	focus = {
+		id = HNA_industrial_focus_1
+		icon = GFX_
+		x = 25
+		y = 10
+		cost = 6
+        available = {
+			has_country_flag = HNA_Political_stable
+			has_completed_focus = HNA_Political_focus_5
+        }
+		ai_will_do = {
+			factor = 80
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+		}
+	}	
+	#軽工業への支援
+	focus = {
+		id = HNA_industrial_focus_2
+		icon = GFX_
+		x = -3
+		y = 1
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_1 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_black_thursday
+			add_idea = HNA_black_thursday_1
+		}	
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}	
+	#繊維工場
+	focus = {
+		id = HNA_industrial_focus_3
+		icon = GFX_
+		x = -3
+		y = 2
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_2 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = HNA_black_thursday_1
+			add_idea = HNA_black_thursday_2
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}	
+	#広東系企業家
+	focus = {
+		id = HNA_industrial_focus_4
+		icon = GFX_
+		x = -3
+		y = 3
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_3 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		remove_ideas = HNA_black_thursday_2
+		add_offsite_building = { type = industrial_complex level = 1 }
+		add_offsite_building = { type = arms_factory level = 1 }
+		}
+	}	
+	#資源開発の展望
+	focus = {
+		id = HNA_industrial_focus_5
+		icon = GFX_
+		x = -1
+		y = 1
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_1 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		add_ideas = HNA_resource_development
+		}
+	}	
+	#錫鉱山の開発
+	focus = {
+		id = HNA_industrial_focus_6
+		icon = GFX_
+		x = -1
+		y = 2
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_5 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+			add_resource = {
+				type = tungsten
+				amount = 32
+				state = 602
+			}
+		}
+	}	
+	#更なる資源開発
+	focus = {
+		id = HNA_industrial_focus_7
+		icon = GFX_
+		x = -1
+		y = 3
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_6 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		add_resource = {
+			type = steel
+			amount = 6
+			state = 602
+		}
+		add_resource = {
+			type = tungsten
+			amount = 12
+			state = 602
+		}
+		add_resource = {
+			type = aluminium
+			amount = 5
+			state = 602
+		}
+		}
+	}	
+	#民間資本の育成
+	focus = {
+		id = HNA_industrial_focus_8
+		icon = GFX_
+		x = 1
+		y = 1
+		cost = 6
+        available = {
+			has_socialist_government = no
+        }
+		mutually_exclusive = { focus = HNA_industrial_focus_11 }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_1 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		add_ideas = HNA_capitalist_economy
+		}
+	}	
+	#セメント工場
+	focus = {
+		id = HNA_industrial_focus_9
+		icon = GFX_
+		x = 1
+		y = 2
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_8 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}	
+	#製鋼工場
+	focus = {
+		id = HNA_industrial_focus_10
+		icon = GFX_
+		x = 2
+		y = 3
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_9 focus = HNA_industrial_focus_12 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		add_resource = {
+			type = steel
+			amount = 12
+			state = 602
+		}
+		add_resource = {
+			type = steel
+			amount = 6
+			state = 750
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}	
+	#計画された産業
+	focus = {
+		id = HNA_industrial_focus_11
+		icon = GFX_
+		x = 3
+		y = 1
+		cost = 6
+        available = {
+			OR = { has_socialist_government = yes has_authoritarian_government = yes }
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		mutually_exclusive = { focus = HNA_industrial_focus_8 }
+		prerequisite = { focus = HNA_industrial_focus_1 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		add_ideas = HNA_Planned_economy
+		}
+	}	
+	#工業区の形成
+	focus = {
+		id = HNA_industrial_focus_12
+		icon = GFX_
+		x = 3
+		y = 2
+		cost = 6
+        available = {
+			
+        }
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_11 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}	
+	#湖南工業大学
+	focus = {
+		id = HNA_industrial_focus_13
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 6
+        available = {
+			num_of_factories > 50
+        }
+		bypass = { 
+			amount_research_slots > 5 
+		}
+		ai_will_do = {
+			factor = 80
+		}
+		prerequisite = { focus = HNA_industrial_focus_4 }
+		prerequisite = { focus = HNA_industrial_focus_7 }
+		prerequisite = { focus = HNA_industrial_focus_10 }
+		relative_position_id = HNA_industrial_focus_1
+	completion_reward = {
+		add_research_slot = 1
+		}
+	}	
 }

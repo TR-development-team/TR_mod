@@ -246,9 +246,7 @@ focus_tree = {
 		y = 5
 		cost = 5
         available = {
-			CHI = {owns_state = 600 }
-			CHI = {owns_state = 602 }
-			CHI = {owns_state = 871 }
+			CHI = {owns_state = 607 }
         }
 		prerequisite = { 
 			focus = KUO_Diplomatic_focus_8

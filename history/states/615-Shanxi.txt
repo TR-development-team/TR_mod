@@ -17,12 +17,36 @@ state=
 		add_claim_by = YUN
 
 		victory_points = {
-			1519 3 
+			1519 5 
+		}
+		victory_points = {
+			1575 1 
 		}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 3
 			industrial_complex = 3
+			1519 = {
+				bunker = 3
+			}
+			10507 = {
+				bunker = 1
+			}
+			4469 = {
+				bunker = 1
+			}
+			4174 = {
+				bunker = 1
+			}
+			4634 = {
+				bunker = 1
+			}
+			7571 = {
+				bunker = 1
+			}
+			1575 = {
+				bunker = 3
+			}
 		}
 
 

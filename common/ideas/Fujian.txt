@@ -1,0 +1,33 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+        FUJ_PRC_partisan = {
+			allowed = {
+				always = no
+			}
+                        
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = -0.05
+                                defense_bonus_against = -0.05
+			}
+			removal_cost = -1
+                     
+			picture = chi_war_of_resistance3
+			cancel = {
+                OR = { 
+				PRC = { exists = no }
+                has_socialist_government = yes
+                }
+			}
+			modifier = {
+				ai_call_ally_desire_factor = -2000
+			}
+		}
+
+    }
+}

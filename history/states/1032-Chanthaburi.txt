@@ -1,0 +1,27 @@
+
+state={
+	id=1032
+	name="STATE_1032"
+	manpower = 1093849
+	
+	state_category = rural
+	
+	resources={
+	}
+
+	history={
+		owner = SIA
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			7225 1
+		}
+		add_core_of = SIA
+	}
+
+	local_supplies=0.0 
+provinces={
+		1244 4433 7225 7292 10293 12224
+	}
+}

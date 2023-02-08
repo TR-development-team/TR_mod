@@ -70,12 +70,14 @@
 			modifier = {
 				ai_call_ally_desire_factor = -2000
                                 war_support_factor = -0.15
+                                conscription_factor = 0.1
 			}
 		}
                 NMB_JAP_colony = {
 			picture = jap_militarism_showa
 			modifier = {
 				ai_call_ally_desire_factor = -2000
+                                conscription_factor = 0.2
 			}
 		}
                 NMB_JAP_Africa = {

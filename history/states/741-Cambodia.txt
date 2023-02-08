@@ -1,13 +1,13 @@
 state={
 	id=741
-	name="STATE_741"
+	name="TR_STATE_741"
         resources={
-		rubber=10
+		rubber=15
 	}
 	history = {
 		add_core_of = CAM
-                add_core_of = MAL
-		owner = MAL
+                add_core_of = JSE
+		owner = JSE
 		victory_points = {
 			7376 3
 		}
@@ -21,9 +21,9 @@ state={
 	}
 	local_supplies=0.0 
 provinces={
-		1324 1620 4330 4359 4596 4639 7319 7376 7404 7432 7645 10204 10289 10317 12167 12191 12260 12288 12447 12475 
+		1324 4639 7319 7376 7432 10289 10317 12475 12447 
 	}
-	manpower=4842300
+	manpower=2642300
 	buildings_max_level_factor=1.000
 	state_category=town
 }

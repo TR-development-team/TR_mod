@@ -3,13 +3,17 @@ state={
 	name="STATE_1007"
 
 	history={
-		owner = PRC
-		add_core_of = HNA
+		owner = FUJ
                 add_core_of = PRC
+                add_core_of = FUJ
 		add_claim_by = CHI
 		add_claim_by = YUN
 		buildings = {
-			infrastructure = 1
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			3992 5 
 		}
 		victory_points = {
 			1066 1 
@@ -21,9 +25,9 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		1066 1110 4038 4185 7054 9984 11961 
+		1066 3992 4038 4083 4185 7054 9984 11961 13141 
 	}
-	manpower=2020400
+	manpower=6220400
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_town
 }
