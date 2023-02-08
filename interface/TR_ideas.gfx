@@ -1,157 +1,173 @@
 spriteTypes = {
-
-
-#####日本#####
-
-
-	SpriteType = {	
+	#####日本#####
+	SpriteType = {
 		name = "GFX_idea_JAP_Shading_sun"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Shading_sun.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_Korean_question"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Korean_question.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_to_kikan"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_to_kikan.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_Japan"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Japan.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_food_import"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_food_import.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_industrial_standard"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_industrial_standard.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_dispersed_industry"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_dispersed_industry.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_disaster_stricken_country"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_disaster_stricken_country.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_4th_fleet_incident"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_4th_fleet_incident.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_naval_escort_battle"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_naval_escort_battle.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_night_vision"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_night_vision.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_sea_power"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_sea_power.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_share_shell"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_share_shell.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_type_91_AP"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_type_91_AP.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_type_93_torpedo"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_type_93_torpedo.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_co_prosper"
 		texturefile = "gfx/interface/ideas/JAP/JAP_co_prosper.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_ugaki_gunshuku"
 		texturefile = "gfx/interface/ideas/JAP/ugaki_gunshuku.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_trade"
 		texturefile = "gfx/interface/ideas/JAP/JAP_trade.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_japanese_loyalism"
 		texturefile = "gfx/interface/ideas/JAP/japanese_loyalism.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_democracy"
 		texturefile = "gfx/interface/ideas/JAP/JAP_democracy.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_yen"
 		texturefile = "gfx/interface/ideas/JAP/JAP_yen.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_JAP_Japan_Kiku"
 		texturefile = "gfx/interface/ideas/JAP/Japan_Kiku.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_revanchism"
 		texturefile = "gfx/interface/ideas/FRA/FRA_revanchism.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_Automobile_factory"
 		texturefile = "gfx/interface/ideas/FRA/Automobile_factory.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_catholicism"
 		texturefile = "gfx/interface/ideas/FRA/FRA_catholicism.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_Fleur_de_lis"
 		texturefile = "gfx/interface/ideas/FRA/FRA_Fleur_de_lis.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_feudalism"
 		texturefile = "gfx/interface/ideas/FRA/FRA_feudalism.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_decentralization"
 		texturefile = "gfx/interface/ideas/FRA/FRA_decentralization.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_camelots_du_roi"
 		texturefile = "gfx/interface/ideas/FRA/FRA_camelots_du_roi.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_expansion"
 		texturefile = "gfx/interface/ideas/FRA/FRA_expansion.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_En_Avant"
 		texturefile = "gfx/interface/ideas/FRA/FRA_En_Avant.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_FRA_ethnic_leader"
 		texturefile = "gfx/interface/ideas/FRA/FRA_ethnic_leader.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_Fascism_Constitution"
 		texturefile = "gfx/interface/ideas/Fascism_Constitution.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_Fascism_Council"
 		texturefile = "gfx/interface/ideas/Fascism_Council.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_generic_Military_Police"
 		texturefile = "gfx/interface/ideas/generic_Military_Police.png"
 	}
-	SpriteType = {	
+	SpriteType = {
 		name = "GFX_idea_befriend_usa"
 		texturefile = "gfx/interface/ideas/befriend_usa.png"
 	}
-#企業
-	SpriteType = {	
+	#企業
+	SpriteType = {
 		name = "GFX_idea_JAP_toyota"
 		texturefile = "gfx/interface/ideas/JAP/toyota.png"
 	}
-
+	### Austria ###
+	SpriteType = {
+		name = "GFX_idea_AUS_wiener_kreis"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_wiener_kreis.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_AUS_hungarian_research_institution"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_hungarian_research_institution.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_AUS_geteiltes_reich"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_geteiltes_reich.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_AUS_prager_schule"
+		texturefile = "gfx/interface/ideas/AUS/idea_AUS_prager_schule.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_generic_agrarian_society_green"
+		texturefile = "gfx/interface/ideas/AUS/idea_generic_agrarian_society_green.png"
+	}
 }

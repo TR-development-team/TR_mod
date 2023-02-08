@@ -1,0 +1,433 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = HUN
+						tag = CZE
+						tag = BOS
+						tag = GAL
+					}
+				}
+				every_owned_state = {
+					set_temp_variable = {
+						AUS_temp_man = THIS.state_population_k
+					}
+					multiply_temp_variable = {
+						AUS_temp_man = 360
+					}
+					add_manpower = AUS_temp_man
+				}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						state = 39
+						state = 76
+						state = 80
+						state = 82
+						state = 83
+						state = 84
+						state = 163
+						state = 736
+						state = 946
+						state = 948
+						state = 991
+						state = 992
+					}
+				}
+				set_temp_variable = {
+					AUS_temp_man = THIS.state_population_k
+				}
+				multiply_temp_variable = {
+					AUS_temp_man = 360
+				}
+				add_manpower = AUS_temp_man
+			}
+			987 = {
+				add_dynamic_modifier = {
+					modifier = AUS_industrialised_effect
+				}
+			}
+			#build_railway = {
+			#	level = 3
+			#	fallback = yes
+			#	path = {
+			#		9527
+			#		6739
+			#		11666
+			#	}
+			#	start_province = 9527
+			#	target_province = 11666
+			#}
+		}
+	}
+	on_weekly_AUS = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = AUS_resource_competitiveness
+				}
+				if = {
+					limit = {
+						count_triggers = {
+							amount = 5
+							has_tech = excavation1
+							has_tech = excavation2
+							has_tech = excavation3
+							has_tech = excavation4
+							has_tech = excavation5
+						}
+					}
+					set_variable = {
+						AUS_ri_local_resources_factor_modifier = 0.25
+					}
+				}
+				else_if = {
+					limit = {
+						count_triggers = {
+							amount = 4
+							has_tech = excavation1
+							has_tech = excavation2
+							has_tech = excavation3
+							has_tech = excavation4
+							has_tech = excavation5
+						}
+					}
+					set_variable = {
+						AUS_ri_local_resources_factor_modifier = 0.2
+					}
+				}
+				else_if = {
+					limit = {
+						count_triggers = {
+							amount = 3
+							has_tech = excavation1
+							has_tech = excavation2
+							has_tech = excavation3
+							has_tech = excavation4
+							has_tech = excavation5
+						}
+					}
+					set_variable = {
+						AUS_ri_local_resources_factor_modifier = 0.15
+					}
+				}
+				else_if = {
+					limit = {
+						count_triggers = {
+							amount = 2
+							has_tech = excavation1
+							has_tech = excavation2
+							has_tech = excavation3
+							has_tech = excavation4
+							has_tech = excavation5
+						}
+					}
+					set_variable = {
+						AUS_ri_local_resources_factor_modifier = 0.1
+					}
+				}
+				else_if = {
+					limit = {
+						count_triggers = {
+							amount = 1
+							has_tech = excavation1
+							has_tech = excavation2
+							has_tech = excavation3
+							has_tech = excavation4
+							has_tech = excavation5
+						}
+					}
+					set_variable = {
+						AUS_ri_local_resources_factor_modifier = 0.05
+					}
+				}
+				else = {
+					set_variable = {
+						AUS_ri_local_resources_factor_modifier = 0
+					}
+				}
+			}
+		}
+	}
+	on_daily_AUS = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						AUS = {
+							has_country_flag = AUS_finish_plunge
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 0
+						}
+					}
+					AUS = {
+						remove_dynamic_modifier = {
+							modifier = AUS_great_depression
+						}
+						set_country_flag = AUS_finish_plunge
+						clr_country_flag = AUS_great_depression_flag
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 1
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.03
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.02
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.03
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.01
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.03
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.03
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 2
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.06
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.04
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.06
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.02
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.06
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.06
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 3
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.09
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.06
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.09
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.03
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.09
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.09
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 4
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.12
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.08
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.12
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.04
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.12
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.12
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 5
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.15
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.1
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.15
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.05
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.15
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.15
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 6
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.18
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.12
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.18
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.06
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.18
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.18
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 7
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.21
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.14
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.21
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.07
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.21
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.21
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 8
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.24
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.16
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.24
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.08
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.24
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.24
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 9
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.27
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.18
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.27
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.09
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.27
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.27
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_plunge_escalation_level = 10
+						}
+					}
+					set_variable = {
+						AUS_gd_consumer_goods_factor_modifier = 0.3
+					}
+					set_variable = {
+						AUS_gd_production_speed_buildings_factor_modifier = -0.2
+					}
+					set_variable = {
+						AUS_gd_stability_factor_modifier = -0.3
+					}
+					set_variable = {
+						AUS_gd_production_factory_max_efficiency_factor_modifier = -0.1
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_factory_modifier = -0.3
+					}
+					set_variable = {
+						AUS_gd_industrial_capacity_dockyard_modifier = -0.3
+					}
+				}
+			}
+		}
+	}
+}

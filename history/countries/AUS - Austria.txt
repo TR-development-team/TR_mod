@@ -17,6 +17,159 @@ set_technology = {
 	basic_train = 1
 }
 
+set_power_balance = {
+	id = AUS_power_balance
+}
+
+###Events
+country_event = {
+	id = TR_Austria.1
+	days = 5
+}
+
+###Dynamic_modifier
+#reichs agriculture
+set_variable = {
+	AUS_ra_min_export_modifier = 0
+}
+
+set_variable = {
+	AUS_ra_war_stability_factor_modifier = -0.1
+}
+
+set_variable = {
+	AUS_ra_attrition_modifier = 0.2
+}
+
+set_variable = {
+	AUS_ra_consumer_goods_factor_modifier = 0.1
+}
+
+set_variable = {
+	AUS_ra_conscription_factor_modifier = -0.25
+}
+
+set_variable = {
+	AUS_ra_monthly_population_modifier = -0.5
+}
+
+set_variable = {
+	AUS_ra_embargo_threshold_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ra_embargo_cost_factor_modifier = 0
+}
+
+add_dynamic_modifier = {
+	modifier = AUS_reichs_agriculture
+}
+
+#reichs industry
+set_variable = {
+	AUS_ri_local_resources_factor_modifier = -0.2
+}
+
+set_variable = {
+	AUS_ri_min_export_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_social_democrat_drift_modifier = 0.02
+}
+
+set_variable = {
+	AUS_ri_syndicalist_drift_modifier = 0.02
+}
+
+set_variable = {
+	AUS_ri_radical_socialist_drift_modifier = 0.02
+}
+
+set_variable = {
+	AUS_ri_production_factory_efficiency_gain_factor_modifier = -0.2
+}
+
+set_variable = {
+	AUS_ri_production_factory_max_efficiency_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_production_factory_start_efficiency_factor_modifier = -0.1
+}
+
+set_variable = {
+	AUS_ri_production_lack_of_resource_penalty_factor_modifier = 0.1
+}
+
+set_variable = {
+	AUS_ri_consumer_goods_factor_modifier = 0.05
+}
+
+set_variable = {
+	AUS_ri_production_speed_industrial_complex_factor_modifier = -0.25
+}
+
+set_variable = {
+	AUS_ri_production_speed_infrastructure_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_production_speed_arms_factory_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_production_speed_dockyard_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_production_speed_synthetic_refinery_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_global_building_slots_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_production_speed_buildings_factor_modifier = -0.25
+}
+
+set_variable = {
+	AUS_ri_industrial_capacity_factory_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_industrial_capacity_dockyard_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_industry_free_repair_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_industry_repair_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_production_oil_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_industry_air_damage_factor_modifier = 0
+}
+
+add_dynamic_modifier = {
+	modifier = AUS_reichs_industry
+}
+
+#great depression
+set_variable = {
+	AUS_plunge_escalation_level = 10
+}
+
+#add_dynamic_modifier = {
+#	modifier = AUS_great_depression
+#}
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"
@@ -105,6 +258,9 @@ add_ideas = {
 	trinket_pensions
 	trinket_health_care
 	acceptable_school_system
+	AUS_geteiltes_reich_idea
+	AUS_wiener_kreis_idea
+	AUS_hungarian_scientist_idea
 }
 
 set_politics = {
@@ -115,17 +271,18 @@ set_politics = {
 }
 
 set_popularities = {
-	social_democrat = 10
-	social_liberal = 10
-	market_liberal = 15
-	social_conservative = 23
-	authoritarian_democrat = 10
-	paternal_autocrat = 2
-	national_populist = 10
+	social_democrat = 27
+	social_liberal = 2
+	market_liberal = 2
+	social_conservative = 30
+	authoritarian_democrat = 1
+	paternal_autocrat = 10
+	national_populist = 8
 	Gnosticism = 20
 }
 
 set_stability = 0.5
+set_war_support = 0.3
 recruit_character = AUS_Karl_Renner
 recruit_character = AUS_Richard_Coudenhove_Kalergi
 recruit_character = AUS_franz_josef_otto_von_habsburg
@@ -166,15 +323,16 @@ if = {
 		type = light_tank_chassis_1
 		parent_version = 1
 		modules = {
-			main_armament_slot = tank_high_velocity_cannon
+			main_armament_slot = tank_small_cannon
 			turret_type_slot = tank_light_two_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 2
+			tank_nsb_engine_upgrade = 4
 			tank_nsb_armor_upgrade = 2
 		}
 	}
@@ -189,9 +347,11 @@ if = {
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = additional_machine_guns
+			special_type_slot_3 = smoke_launchers
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 2
+			tank_nsb_engine_upgrade = 5
 			tank_nsb_armor_upgrade = 3
 		}
 	}
@@ -224,6 +384,22 @@ if = {
 			ship_armor_upgrade = 1
 			ship_gun_upgrade = 1
 		}
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "Phönix D.IV"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = no
 	}
 }
 

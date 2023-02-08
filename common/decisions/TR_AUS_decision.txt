@@ -1,0 +1,658 @@
+AUS_debug_category = {
+	AUS_debug_decision = {
+		icon = generic_decision
+		fire_only_once = no
+		available = {
+		}
+		complete_effect = {
+			end_puppet = HUN
+			end_puppet = GAL
+			end_puppet = BOS
+			HUN = {
+				set_country_flag = HUN
+			}
+			GAL = {
+				set_country_flag = GAL
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = HUN
+						tag = SLO
+						tag = GAL
+						tag = CRO
+						tag = SLV
+						tag = BOS
+						tag = UKS
+						tag = MOL
+						tag = CZE
+						tag = ROM
+						tag = SER
+					}
+				}
+				division_template = {
+					name = "Salvation Militia"
+					is_locked = no
+					division_names_group = USA_INF_01
+					priority = 0
+					template_counter = 0
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 0
+							y = 3
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+						infantry = {
+							x = 2
+							y = 0
+						}
+						infantry = {
+							x = 2
+							y = 1
+						}
+						infantry = {
+							x = 2
+							y = 2
+						}
+					}
+				}
+				set_variable = {
+					THIS.num_of_create_division_starting = THIS.num_of_factories
+				}
+				add_to_variable = {
+					THIS.num_of_create_division_starting = THIS.num_core_states
+				}
+				add_to_variable = {
+					THIS.num_of_create_division_starting = THIS.num_of_military_factories
+				}
+				capital_scope = {
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+					create_unit = {
+						division = "division_template = \"Salvation Militia\" start_experience_factor = 0.1"
+						owner = PREV
+						count = PREV.num_of_create_division_starting
+					}
+				}
+			}
+		}
+	}
+	AUS_debug_unite = {
+		icon = generic_form_nation
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					is_puppet_of = ROOT
+				}
+				ROOT = {
+					annex_country = {
+						target = PREV
+						transfer_troops = yes
+					}
+				}
+			}
+			every_owned_state = {
+				add_core_of = ROOT
+			}
+		}
+	}
+	#AUS_1836 = {
+	#	icon = generic_form_nation
+	#	complete_effect = {
+	#		#CZE
+	#		annex_country = {
+	#			target = CZE
+	#			transfer_troops = yes
+	#		}
+	#		#HUN
+	#		annex_country = {
+	#			target = HUN
+	#			transfer_troops = yes
+	#		}
+	#		#GAL
+	#		annex_country = {
+	#			target = GAL
+	#			transfer_troops = yes
+	#		}
+	#		#BOS
+	#		release = BOS
+	#		end_puppet = BOS
+	#		BOS = {
+	#			set_cosmetic_tag = BOS
+	#		}
+	#		#ROM
+	#		transfer_state = 76
+	#		transfer_state = 80
+	#		transfer_state = 82
+	#		transfer_state = 83
+	#		transfer_state = 84
+	#		#ITA
+	#		transfer_state = 39
+	#		transfer_state = 159
+	#		transfer_state = 160
+	#		transfer_state = 163
+	#		transfer_state = 736
+	#		transfer_state = 946
+	#		transfer_state = 948
+	#		transfer_state = 991
+	#		transfer_state = 992
+	#		#
+	#		every_owned_state = {
+	#			add_core_of = ROOT
+	#		}
+	#	}
+	#}
+	#AUS_1914 = {
+	#	icon = generic_form_nation
+	#	complete_effect = {
+	#		every_other_country = {
+	#			limit = {
+	#				is_puppet_of = ROOT
+	#			}
+	#			ROOT = {
+	#				annex_country = {
+	#					target = PREV
+	#					transfer_troops = yes
+	#				}
+	#			}
+	#		}
+	#		#CZE
+	#		annex_country = {
+	#			target = CZE
+	#			transfer_troops = yes
+	#		}
+	#		#ROM
+	#		transfer_state = 76
+	#		transfer_state = 80
+	#		transfer_state = 82
+	#		transfer_state = 83
+	#		transfer_state = 84
+	#		#ITA
+	#		transfer_state = 39
+	#		transfer_state = 163
+	#		transfer_state = 736
+	#		transfer_state = 946
+	#		transfer_state = 948
+	#		transfer_state = 991
+	#		transfer_state = 992
+	#		#
+	#		every_owned_state = {
+	#			add_core_of = ROOT
+	#		}
+	#	}
+	#}
+}
+
+AUS_development_project = {
+	AUS_mountain_infrastructure_develop = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = AUS_mountain_infrastructure_dec
+			FROM = {
+				is_owned_by = ROOT
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_trigger = {
+			FROM = {
+				OR = {
+					state = 3
+					state = 39
+					state = 76
+					state = 84
+					state = 105
+					state = 151
+					state = 153
+					state = 172
+					state = 663
+					state = 735
+					state = 792
+					state = 804
+					state = 843
+					state = 943
+					state = 944
+					state = 945
+					state = 946
+					state = 978
+					state = 986
+				}
+			}
+		}
+		available = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+			}
+			NOT = {
+				has_country_flag = AUS_developing_mountain_infrastructure
+			}
+		}
+		days_remove = 45
+		complete_effect = {
+			set_country_flag = AUS_developing_mountain_infrastructure
+		}
+		remove_effect = {
+			FROM = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			clr_country_flag = AUS_developing_mountain_infrastructure
+		}
+	}
+}
+
+AUS_great_osaka_plunge_category = {
+	AUS_creditanstalt_bankruptcy_crisis_mission_1 = {
+		allowed = {
+			always = no
+		}
+		available = {
+			has_country_flag = AUS_creditanstalt_rescued_1
+		}
+		is_good = no
+		days_mission_timeout = 120
+		icon = generic_fundraising
+		timeout_effect = {
+			custom_effect_tooltip = AUS_creditanstalt_bankruptcy_crisis_mission_1_tt
+			hidden_effect = {
+				activate_mission = AUS_creditanstalt_bankruptcy_crisis_mission_2
+				swap_ideas = {
+					remove_idea = AUS_creditanstalt_crisis_1_idea
+					add_idea = AUS_creditanstalt_crisis_2_idea
+				}
+				country_event = {
+					id = TR_Austria.6
+					hours = 6
+				}
+			}
+		}
+	}
+	AUS_creditanstalt_bankruptcy_crisis_mission_2 = {
+		allowed = {
+			always = no
+		}
+		available = {
+			has_country_flag = AUS_creditanstalt_rescued_2
+		}
+		is_good = no
+		days_mission_timeout = 80
+		icon = generic_fundraising
+		timeout_effect = {
+			custom_effect_tooltip = AUS_creditanstalt_bankruptcy_crisis_mission_2_tt
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = AUS_creditanstalt_crisis_2_idea
+					add_idea = AUS_creditanstalt_crisis_3_idea
+				}
+				country_event = {
+					id = TR_Austria.7
+					hours = 6
+				}
+			}
+		}
+	}
+	AUS_forced_cartel_establishment_law = {
+		icon = eng_trade_unions_demand
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = AUS_addressing_plunge
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 70
+		modifier = {
+			political_power_cost = 0.5
+			stability_weekly = -0.001
+		}
+		complete_effect = {
+			set_country_flag = AUS_addressing_plunge
+		}
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			add_stability = 0.03
+			clr_country_flag = AUS_addressing_plunge
+		}
+	}
+	AUS_correction_of_agricultural_purchase_prices = {
+		icon = gre_paying_ifc_debt
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = AUS_addressing_plunge
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 100
+		modifier = {
+			political_power_cost = 0.5
+		}
+		complete_effect = {
+			set_country_flag = AUS_addressing_plunge
+		}
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			add_stability = 0.05
+			clr_country_flag = AUS_addressing_plunge
+		}
+	}
+	AUS_rescuing_rural_finance = {
+		icon = hol_attract_foreign_investors
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = AUS_addressing_plunge
+			}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 50
+		modifier = {
+			political_power_cost = 1
+		}
+		complete_effect = {
+			set_country_flag = AUS_addressing_plunge
+		}
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			add_stability = 0.02
+			clr_country_flag = AUS_addressing_plunge
+		}
+	}
+	AUS_rescuing_rural_finance = {
+		icon = hol_attract_foreign_investors
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = AUS_addressing_plunge
+			}
+			has_completed_focus = AUS_banking_network
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 50
+		modifier = {
+			political_power_cost = 1
+		}
+		complete_effect = {
+			set_country_flag = AUS_addressing_plunge
+		}
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			add_stability = 0.02
+			clr_country_flag = AUS_addressing_plunge
+		}
+	}
+	AUS_cooperation_with_major_banks = {
+		icon = SOV_place_hq
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = AUS_addressing_plunge
+			}
+			has_completed_focus = AUS_banking_network
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 30
+		modifier = {
+			political_power_cost = 1.5
+		}
+		complete_effect = {
+			set_country_flag = AUS_addressing_plunge
+		}
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			add_stability = -0.01
+			clr_country_flag = AUS_addressing_plunge
+		}
+	}
+	AUS_job_creation_through_military_procurement = {
+		icon = generic_merge_plant_materiel
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = AUS_addressing_plunge
+			}
+			has_completed_focus = AUS_job_creation
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 100
+		modifier = {
+			political_power_cost = 0.5
+			production_factory_max_efficiency_factor = 0.3
+			production_factory_start_efficiency_factor = 0.5
+			industrial_capacity_factory = 0.33
+			industrial_capacity_dockyard = 0.33
+		}
+		complete_effect = {
+			set_country_flag = AUS_addressing_plunge
+		}
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			clr_country_flag = AUS_addressing_plunge
+		}
+	}
+	AUS_job_creation_through_private_demand = {
+		icon = generic_construction
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = AUS_addressing_plunge
+			}
+			has_completed_focus = AUS_job_creation
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 100
+		modifier = {
+			political_power_cost = 0.5
+			consumer_goods_factor = -1
+			production_speed_buildings_factor = 0.33
+		}
+		complete_effect = {
+			set_country_flag = AUS_addressing_plunge
+		}
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			clr_country_flag = AUS_addressing_plunge
+		}
+	}
+	AUS_autobahn_expansion = {
+		icon = generic_trucks
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = AUS_addressing_plunge
+			}
+			has_completed_focus = AUS_reichs_autobahn
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 100
+		modifier = {
+			political_power_cost = 0.5
+			production_speed_infrastructure_factor = 0.66
+		}
+		complete_effect = {
+			set_country_flag = AUS_addressing_plunge
+		}
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			HUN = {
+				every_owned_state = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			clr_country_flag = AUS_addressing_plunge
+		}
+	}
+}
+
+AUS_foreign_policy = {
+	AUS_retention_of_the_prague_schule = {
+		icon = generic_research
+		visible = {
+			OR = {
+				9 = {
+					is_fully_controlled_by = ROOT
+				}
+				CZE = {
+					is_puppet_of = ROOT
+				}
+			}
+			NOT = {
+				has_idea = AUS_prager_schule_idea
+			}
+			NOT = {
+				has_government = Gnosticism
+			}
+			NOT = {
+				has_government = national_populist
+			}
+		}
+		available = {
+			OR = {
+				AND = {
+					9 = {
+						is_core_of = ROOT
+					}
+					NOT = {
+						country_exists = CZE
+					}
+				}
+				CZE = {
+					has_autonomy_state = autonomy_integrated_puppet
+				}
+				CZE = {
+					has_autonomy_state = autonomy_collaboration_government
+				}
+				CZE = {
+					has_autonomy_state = autonomy_personal_union
+				}
+			}
+		}
+		cost = 100
+		complete_effect = {
+			effect_tooltip = {
+				add_ideas = AUS_prager_schule_idea
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						has_idea = AUS_hungarian_scientist_idea
+					}
+					remove_ideas = AUS_wiener_kreis_idea
+					remove_ideas = AUS_hungarian_scientist_idea
+					add_ideas = AUS_wiener_kreis_idea
+					add_ideas = AUS_hungarian_scientist_idea
+					add_ideas = AUS_prager_schule_idea
+				}
+				else_if = {
+					limit = {
+						has_idea = AUS_hungarian_research_institution_idea
+					}
+					remove_ideas = AUS_wiener_kreis_idea
+					remove_ideas = AUS_hungarian_research_institution_idea
+					add_ideas = AUS_wiener_kreis_idea
+					add_ideas = AUS_hungarian_research_institution_idea
+					add_ideas = AUS_prager_schule_idea
+				}
+				else = {
+					add_ideas = AUS_prager_schule_idea
+				}
+			}
+		}
+	}
+}
