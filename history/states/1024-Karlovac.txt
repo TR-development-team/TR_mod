@@ -1,0 +1,28 @@
+state = {
+	id = 1024
+	name = "STATE_1024"
+	provinces = {
+		3592
+		3596
+	}
+	history = {
+		owner = HUN
+		add_core_of = CRO
+		add_core_of = HUN
+		set_state_name = STATE_1024_TR
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			3596
+			1
+		}
+		set_province_name = {
+			id = 3596
+			name = VICTORY_POINTS_3596_TR
+		}
+	}
+	manpower = 128899
+	state_category = rural
+	local_supplies = 0
+}

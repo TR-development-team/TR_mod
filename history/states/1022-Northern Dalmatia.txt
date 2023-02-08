@@ -1,0 +1,20 @@
+state = {
+	id = 1022
+	name = "STATE_1022"
+	provinces = {
+		984
+		3974
+		11901
+	}
+	history = {
+		owner = AUS
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AUS
+		add_core_of = CRO
+	}
+	manpower = 100000
+	state_category = rural
+	local_supplies = 0
+}

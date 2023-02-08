@@ -1,25 +1,12 @@
 state = {
 	id = 983
 	name = "STATE_983"
-	provinces = {
-		679
-		6670
-		6700
-		9656
-		11625
-		11644
-		11646
-	}
 	history = {
 		owner = HUN
 		add_core_of = HUN
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-		}
-		victory_points = {
-			6700
-			3
 		}
 		victory_points = {
 			9656
@@ -30,7 +17,14 @@ state = {
 			10
 		}
 	}
-	manpower = 1262936
+	provinces = {
+		679
+		9656
+		11644
+		11646
+	}
+	manpower = 757334
 	buildings_max_level_factor = 1
-	state_category = city
+	state_category = large_town
+	local_supplies = 0
 }
