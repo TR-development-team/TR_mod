@@ -1,0 +1,22 @@
+state = {
+	id = 1019
+	name = "STATE_1019"
+	provinces = {
+		746
+		9687
+		9704
+		11676
+	}
+	history = {
+		owner = HUN
+		add_core_of = ROM
+		add_core_of = HUN
+		add_core_of = TRA
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	manpower = 845641
+	state_category = town
+	local_supplies = 0
+}

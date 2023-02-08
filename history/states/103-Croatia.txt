@@ -6,12 +6,19 @@ state = {
 	history = {
 		owner = HUN
 		victory_points = {
-			11564
-			3
+			13252
+			1
+		}
+		set_province_name = {
+			id = 13252
+			name = VICTORY_POINTS_13252_TR
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			13252 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = HUN
 		add_core_of = CRO

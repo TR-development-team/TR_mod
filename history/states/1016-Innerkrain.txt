@@ -1,0 +1,18 @@
+state = {
+	id = 1016
+	name = "STATE_1016"
+	provinces = {
+		9627
+	}
+	history = {
+		owner = AUS
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = AUS
+		add_core_of = SLV
+	}
+	manpower = 120000
+	state_category = rural
+	local_supplies = 0
+}

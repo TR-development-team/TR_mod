@@ -1,8 +1,6 @@
 state = {
 	id = 947
 	name = "STATE_947"
-	manpower = 333250	# 336279 in 1942 # was 1144300 before Ljubljana split
-	state_category = town
 	history = {
 		owner = AUS
 		buildings = {
@@ -11,18 +9,22 @@ state = {
 			industrial_complex = 1
 		}
 		victory_points = {
-			9627
+			6650
 			5
 		}
 		add_core_of = AUS
 		add_core_of = SLV
 		set_province_name = {
-			id = 9627
-			name = VICTORY_POINTS_9627_TR
+			id = 6650
+			name = VICTORY_POINTS_6650_TR
 		}
 	}
 	provinces = {
 		6650
-		9627
+		13257
 	}
+	manpower = 313250
+	buildings_max_level_factor = 1
+	state_category = town
+	local_supplies = 0
 }

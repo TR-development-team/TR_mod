@@ -12,12 +12,20 @@ state = {
 			665
 			3
 		}
+		victory_points = {
+			3654
+			3
+		}
 		add_core_of = AUS
 		add_core_of = SLV
 		set_state_name = STATE_102_Einheitlich
 		set_province_name = {
 			id = 665
 			name = VICTORY_POINTS_665_TR
+		}
+		set_province_name = {
+			id = 3654
+			name = VICTORY_POINTS_3654_TR
 		}
 	}
 	provinces = {
