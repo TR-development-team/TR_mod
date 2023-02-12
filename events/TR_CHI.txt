@@ -1077,23 +1077,25 @@ country_event = {
         tag = JAP
 		is_subject = no
 		is_faction_leader = yes
-		has_war_with = CHI
-		817 = { is_fully_controlled_by = CHI }#ソウル
-		818 = { is_fully_controlled_by = CHI }#釜山
-		829 = { is_fully_controlled_by = CHI }#平壌
-		328 = { is_fully_controlled_by = CHI }#新京
-		608 = { is_fully_controlled_by = CHI }#北京
-		816 = { is_fully_controlled_by = CHI }#上海
-		863 = { is_fully_controlled_by = CHI }#広州
-		916 = { is_fully_controlled_by = CHI }#ウラジオストク
+		FROM = { 
+			is_chinese_tag = yes
+			is_faction_leader = yes
+			controls_all_owned_states = yes
+			has_war_with = JAP
+			controls_state = 817 #ソウル
+			controls_state = 818 #釜山
+			controls_state = 829 #平壌
+			controls_state = 328 #新京
+			controls_state = 608 #北京
+			controls_state = 816 #上海
+			controls_state = 863 #広州
+			controls_state = 916 #ウラジオストク
+		}
 		MAN = { OR = { has_capitulated = yes exists = no } }
 		SHX = { OR = { has_capitulated = yes exists = no } }
 		GUG = { OR = { has_capitulated = yes exists = no } }
 		NAN = { OR = { has_capitulated = yes exists = no } }
-		CHI = { 
-			is_faction_leader = yes
-			controls_all_owned_states = yes
-		}
+
 	}
     fire_only_once = yes
 
@@ -1104,7 +1106,7 @@ country_event = {
 		ai_chance = {
 			base = 99
 		}
-		CHI = { country_event = TR_China.33 }
+		FROM = { country_event = TR_China.33 }
 
 	}
 	#我々は断じて降伏しない！
@@ -1140,16 +1142,16 @@ country_event = {
 		set_global_flag = war_of_resistance_china_win
 		every_state = {
 			limit = {
-				OR = { is_core_of = CHI is_claimed_by = CHI }
+				OR = { is_core_of = ROOT is_claimed_by = ROOT }
 				is_owned_by = JAP
 			}
-			transfer_state_to = CHI
+			transfer_state_to = ROOT
 		}	
 		if = {
 			limit = {
 				MAN = { exists = yes has_capitulated = yes }
 			}
-			CHI = {
+			ROOT = {
 			    annex_country = {
 				    target = MAN
 				    transfer_troops = no
@@ -1160,7 +1162,7 @@ country_event = {
 			limit = {
 				KOR = { exists = yes has_capitulated = yes }
 			}
-			CHI = {
+			ROOT = {
 			    annex_country = {
 				    target = KOR
 				    transfer_troops = no
@@ -1171,7 +1173,7 @@ country_event = {
 			limit = {
 				SHX = { exists = yes has_capitulated = yes }
 			}
-			CHI = {
+			ROOT = {
 			    annex_country = {
 				    target = SHX
 				    transfer_troops = no
@@ -1182,7 +1184,7 @@ country_event = {
 			limit = {
 				GUG = { exists = yes has_capitulated = yes }
 			}
-			CHI = {
+			ROOT = {
 			    annex_country = {
 				    target = GUG
 				    transfer_troops = no
@@ -1193,7 +1195,7 @@ country_event = {
 			limit = {
 				NAN = { exists = yes has_capitulated = yes }
 			}
-			CHI = {
+			ROOT = {
 			    annex_country = {
 				    target = NAN
 				    transfer_troops = no
@@ -1211,7 +1213,7 @@ country_event = {
 				}
 				transfer_state_to = KOR
 			}	
-			CHI = {
+			ROOT = {
 			    puppet = KOR
 		    }
 		}

@@ -474,6 +474,182 @@
 				political_power_cost = -0.1
 			}
 		}
+		HNA_decentralization = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = chi_chinese_unity
+			cancel = {
+               
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+                global_building_slots_factor = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		HNA_decentralization_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = chi_chinese_unity
+			cancel = {
+               
+			}
+			modifier = {
+				political_power_factor = -0.05
+                global_building_slots_factor = 0.2
+				consumer_goods_factor = -0.05
+			}
+		}
+		HNA_People_autonomy = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = chi_chinese_unity
+			cancel = {
+               
+			}
+			modifier = {
+				stability_factor = 0.1
+				non_core_manpower = 0.05
+				MONTHLY_POPULATION = 0.25
+				autonomy_gain = 0.3
+			}
+		}
+		HNA_tobacco_tax = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = chi_chinese_unity
+			cancel = {
+               
+			}
+			modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = -0.05
+			}
+		}
+		HNA_Prohibition_of_gambling = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = chi_chinese_unity
+			cancel = {
+               
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+				stability_factor = 0.1
+			}
+		}
+		HNA_New_Culture_Movement_chen = {
+			allowed = {
+				always = no
+			}
+            picture = generic_research_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.1
+				syndicalist_drift = 0.03
+				social_democrat_drift = 0.06
+			}
+		}
+		HNA_New_Culture_Movement_mao = {
+			allowed = {
+				always = no
+			}
+            picture = generic_research_bonus
+			
+			removal_cost = -1
+            
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.2
+				radical_socialist_drift = 0.05
+				totalist_drift = 0.05
+			}
+		}
+		HNA_peasant_revolution = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = chi_chinese_unity
+			cancel = {
+               
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+			}
+		}
+		HNA_peasant_revolution_1 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+			picture = chi_chinese_unity
+			cancel = {
+               
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				MONTHLY_POPULATION = 0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		HNA_Five_anti_Campaigns = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+            picture = eng_tackle_capitalism
+
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = 0.05
+                industrial_capacity_factory = -0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		HNA_Three_anti_Campaigns = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+                     
+            picture = eng_tackle_capitalism
+
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = -0.1
+				consumer_goods_factor = -0.05
+			}
+		}
 		HNA_army_idea = {
 			allowed = {
 				always = no
@@ -863,6 +1039,52 @@
 		}
 	}
 	Government_leaders = { 
+		HNA_Chen_Tuhsiu = {
+			name = PRC_Chen_Tuhsiu
+			picture = PRC_Chen_Tuhsiu
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				radical_socialist
+				TR_ambitious_union_boss
+			}
+		}
+		HNA_Zhou_Enlai = {
+			name = PRC_Zhou_Enlai
+			picture = PRC_Zhou_Enlai
+				
+			allowed = {
+				original_tag = HNA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				radical_socialist
+				TR_silent_workhorse
+			}
+		}
 		HNA_He_Yaozu= {
 			picture = HNA_He_Yaozu
 				
@@ -893,7 +1115,7 @@
 				}
 				available = {
 					custom_trigger_tooltip = {
-						tooltip = head_of_state_available
+						tooltip = Government_leaders_available
 						always = no
 					}
 					hidden_trigger = {
@@ -902,8 +1124,8 @@
 				}
 				cancel_if_invalid = no
 				traits = { 
-					Head_of_State
 					Government_leaders
+					authoritarian_democrat
 					TR_old_general
 					TR_crooked_kleptocrat
 				}

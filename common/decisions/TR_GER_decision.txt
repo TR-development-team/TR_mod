@@ -199,3 +199,23 @@ GER_integrate_policy = {
 		}
 	}
 }
+annexation_decisions = {
+	GER_annexation_France = {
+		icon = generic_form_nation
+		selectable_mission = yes
+		is_good = no
+        visible = {
+			tag = GER
+			FRA = { exists = no }
+		}
+		available = {
+			16 = { is_owned_by_ROOT_or_subject = yes }
+		}
+		complete_effect = {
+            country_event = TR_gerfor.1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

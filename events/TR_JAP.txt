@@ -619,6 +619,7 @@ country_event = {#犬養毅=ファン・ボイ・チャウ会談
 		name = TR_japan.13.a
 		add_political_power = 25
         add_ideas = JAP_Autonomy_increase
+		JSE = { country_event = { id = TR_indochina.2 days = 7 } }
 	}
 }
 

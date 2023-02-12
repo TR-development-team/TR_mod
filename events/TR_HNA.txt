@@ -545,6 +545,7 @@ country_event = {
 			has_country_flag = HNA_Coimmunist_win
 		}
 		set_country_flag = HNA_Political_stable
+		872 = { set_demilitarized_zone = no }
 		add_ideas = HNA_Mao_Zedong
 		add_ideas = HNA_Mao_Zedong_cos
 		add_popularity = {
@@ -1123,6 +1124,7 @@ country_event = {
 		ai_chance = {
 			base = 20
 		}
+		set_country_flag = HNA_Political_stable
 		add_stability = 0.1
 		add_popularity = {
 			ideology = social_1liberal
@@ -1221,7 +1223,8 @@ country_event = {
 	option = {
 		name = TR_Hunan.29.a
 		add_stability = 0.1
-		YUN = {
+		set_country_flag = HNA_Political_stable
+		CHI = {
 			country_event = {
 				id = TR_Hunan.33
 				days = 1
@@ -1246,13 +1249,12 @@ country_event = {
 		ai_chance = {
 			base = 40
 		}
-		CHI = {		
-			set_autonomy = {
+		set_autonomy = {
 			target = HNA
 			autonomy_state = China_provincial_government
-		    } 
-	    }
+		} 
 		hidden_effect = {
+		HNA = {		
 		set_politics = {
 			ruling_party = national_populist
 			elections_allowed = no
@@ -1269,7 +1271,8 @@ country_event = {
 			paternal_autocrat = 7
 			national_populist = 46
 			Gnosticism = 4
-		}
+		    }
+	    }
 	    }
 	}
 }
@@ -1438,6 +1441,217 @@ country_event = {
 		hidden_effect = {
 		    add_ideas = HNA_Liang_Qichao
 		    add_ideas = HNA_Cao_Kun
+		}
+	}
+}
+#二人の陳が出会う時
+country_event = {
+	id = TR_Hunan.38
+	title = TR_Hunan.38.t
+	desc = TR_Hunan.38.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#素晴らしい提案だ
+	option = {
+		name = TR_Hunan.38.a
+		ai_chance = {
+			base = 80
+		}
+		HNA= {		
+			country_event = {
+			id = TR_Hunan.40
+			days = 1
+			}
+		}
+	}
+	#いや、反動とは結べない
+	option = {
+		name = TR_Hunan.38.b
+		ai_chance = {
+			base = 20
+		}
+		HNA= {		
+			country_event = {
+			id = TR_Hunan.41
+			days = 1
+			}
+		}
+	}
+}
+#湘贛共産党の合流
+country_event = {
+	id = TR_Hunan.39
+	title = TR_Hunan.39.t
+	desc = TR_Hunan.39.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#長沙の指導権を認めざるを得ない…
+	option = {
+		name = TR_Hunan.39.a
+		ai_chance = {
+			base = 80
+		}
+		HNA= {		
+			country_event = {
+			id = TR_Hunan.42
+			days = 1
+			}
+		}
+	}
+	#なぜ農民風情に従わざるを得ないのかね？
+	option = {
+		name = TR_Hunan.39.b
+		ai_chance = {
+			base = 10
+		}
+		HNA= {		
+			country_event = {
+			id = TR_Hunan.43
+			days = 1
+			}
+		}
+	}
+}
+#湘贛連合政府の成立！
+country_event = {
+	id = TR_Hunan.40
+	title = TR_Hunan.40.t
+	desc = TR_Hunan.40.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.40.a
+		add_political_power = 50
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		annex_country = {
+			target = PRC
+			transfer_troops = yes
+		}
+		if = {
+			limit = { 			
+				country_exists = FUJ
+			} 
+			declare_war_on = {
+				target = FUJ
+				type = annex_everything
+			}
+	    }
+		set_cosmetic_tag = HNA_Canton
+	}
+}
+#瑞金の拒否！
+country_event = {
+	id = TR_Hunan.41
+	title = TR_Hunan.41.t
+	desc = TR_Hunan.41.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.41.a
+		create_wargoal = {
+			type = annex_everything
+			target = PRC
+		}
+	}
+}
+#瑞金が我々の指導権を認める！
+country_event = {
+	id = TR_Hunan.42
+	title = TR_Hunan.42.t
+	desc = TR_Hunan.42.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.42.a
+		add_political_power = 50
+		annex_country = {
+			target = PRC
+			transfer_troops = yes
+		}
+		if = {
+			limit = { 			
+				country_exists = FUJ
+			} 
+			declare_war_on = {
+				target = FUJ
+				type = annex_everything
+			}
+	    }
+	}
+}
+#瑞金が我々との合流を拒否！
+country_event = {
+	id = TR_Hunan.43
+	title = TR_Hunan.43.t
+	desc = TR_Hunan.43.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.43.a
+		create_wargoal = {
+			type = annex_everything
+			target = PRC
+		}
+	}
+}
+#陳独秀の起用
+country_event = {
+	id = TR_Hunan.44
+	title = TR_Hunan.44.t
+	desc = TR_Hunan.44.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.44.a
+		add_ideas = HNA_Chen_Tuhsiu
+		add_stability = 0.05
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+}
+#周恩来の起用
+country_event = {
+	id = TR_Hunan.45
+	title = TR_Hunan.45.t
+	desc = TR_Hunan.45.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.45.a
+		add_ideas = HNA_Zhou_Enlai
+		add_stability = 0.05
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
 		}
 	}
 }

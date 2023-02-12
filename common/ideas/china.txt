@@ -613,7 +613,7 @@
                                 military_leader_cost_factor = -0.50
 			}
 		}
-                CHI_USA_Collaborate = {
+        CHI_USA_Collaborate = {
 			removal_cost = -1
 			
 			allowed = {
@@ -624,8 +624,22 @@
 			picture = tur_kemalist_officers
 			removal_cost = -1
 			modifier = {
-                                land_doctrine_cost_factor = -0.15
-                                army_org_factor = 0.1
+                land_doctrine_cost_factor = -0.15
+                army_org_factor = 0.1
+			}
+		}
+		foreign_advisory_group = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no 
+			}                    
+			picture = tur_kemalist_officers
+			removal_cost = -1
+			modifier = {
+                land_doctrine_cost_factor = -0.05
+				max_planning = 0.1
+                army_org_factor = 0.1
 			}
 		}
 }

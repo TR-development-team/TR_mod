@@ -1,0 +1,172 @@
+
+
+### For use in decisions ###
+setup_decision_attack_AI = {
+	if = {
+		limit = { has_country_flag = imminent_war }
+		modify_country_flag = { flag = imminent_war value = 1 }
+	}
+	else = {
+		set_country_flag = { flag = imminent_war value = 1 days = 50 }
+	}
+	hidden_effect = {
+		if = {
+			limit = { FROM = { has_civil_war = yes } }
+			every_country_with_original_tag = {
+				original_tag_to_check = FROM
+				limit = { NOT = { has_country_flag = preparing_for_war_with_@ROOT } }
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = 100
+				}
+				set_country_flag = preparing_for_war_with_@ROOT
+				ROOT = {
+					add_to_array = { preparing_for_war_with_@FROM = PREV }
+					add_ai_strategy = {
+						type = prepare_for_war
+						id = FROM
+						value = 100
+					}
+				}
+				if = {
+					limit = {
+						is_in_faction = yes #shouldn't ever happen, but just in case
+						is_faction_leader = no
+						faction_leader = { NOT = { has_country_flag = preparing_for_war_with_@ROOT } }
+					}
+					faction_leader = {
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = 100
+						}
+						set_country_flag = preparing_for_war_with_@ROOT
+						ROOT = {
+							add_to_array = { preparing_for_war_with_@FROM = PREV }
+							add_ai_strategy = {
+								type = prepare_for_war
+								id = PREV
+								value = 100
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_subject = yes #shouldn't ever happen, but just in case
+						overlord = { NOT = { has_country_flag = preparing_for_war_with_@ROOT } }
+					}
+					overlord = {
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = 100
+						}
+						set_country_flag = preparing_for_war_with_@ROOT
+						ROOT = {
+							add_to_array = { preparing_for_war_with_@FROM = PREV }
+							add_ai_strategy = {
+								type = prepare_for_war
+								id = PREV
+								value = 100
+							}
+						}
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { NOT = { FROM = { has_country_flag = preparing_for_war_with_@ROOT } } }
+			add_to_array = { preparing_for_war_with_@FROM = FROM }
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = FROM
+				value = 100
+			}
+			FROM = {
+				set_country_flag = preparing_for_war_with_@ROOT
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = ROOT
+					value = 100
+				}
+				if = {
+					limit = {
+						is_in_faction = yes
+						is_faction_leader = no
+						faction_leader = { NOT = { has_country_flag = preparing_for_war_with_@ROOT } }
+					}
+					faction_leader = {
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = 100
+						}
+						set_country_flag = preparing_for_war_with_@ROOT
+						ROOT = {
+							add_to_array = { preparing_for_war_with_@FROM = PREV }
+							add_ai_strategy = {
+								type = prepare_for_war
+								id = PREV
+								value = 100
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						is_subject = yes
+						overlord = { NOT = { has_country_flag = preparing_for_war_with_@ROOT } }
+					}
+					overlord = {
+						add_ai_strategy = {
+							type = prepare_for_war
+							id = ROOT
+							value = 100
+						}
+						set_country_flag = preparing_for_war_with_@ROOT
+						ROOT = {
+							add_to_array = { preparing_for_war_with_@FROM = PREV }
+							add_ai_strategy = {
+								type = prepare_for_war
+								id = PREV
+								value = 100
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+clear_decision_attack_AI = {
+	if = {
+		limit = { has_country_flag = { flag = imminent_war value > 1 } }
+		modify_country_flag = { flag = imminent_war value = -1 }
+	}
+	else = {
+		clr_country_flag = imminent_war
+	}
+	hidden_effect = {
+		for_each_scope_loop = {
+			array = preparing_for_war_with_@FROM
+			clr_country_flag = preparing_for_war_with_@ROOT
+			add_ai_strategy = {
+				type = prepare_for_war
+				id = ROOT
+				value = -100
+			}
+			ROOT = {
+				add_ai_strategy = {
+					type = prepare_for_war
+					id = PREV
+					value = -100
+				}
+			}
+		}
+		clear_array = preparing_for_war_with_@FROM
+	}
+}
+

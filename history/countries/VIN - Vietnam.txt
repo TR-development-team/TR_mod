@@ -2,10 +2,10 @@
 
 oob = "VIN_1936"
 
-set_research_slots = 3
+set_research_slots = 2
+
 
 # Starting tech
-# clone of France
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -35,3 +35,6 @@ set_popularities = {
 }
 recruit_character = VIN_Ho_Chi_Minh
 recruit_character = VIN_Phan_Boi_Chau
+recruit_character = VIN_Bao_Dai
+recruit_character = VIN_Cuong_De
+

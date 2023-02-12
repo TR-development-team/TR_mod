@@ -3,10 +3,10 @@
 #####################################
 is_chinese_tag = {
 	OR = {
+	tag = ANQ
 	tag = CHI
 	tag = MIN 
         tag = PRC
-        tag = ANQ
         tag = YUN
 	tag = SIK
 	tag = XSM 
@@ -14,7 +14,6 @@ is_chinese_tag = {
         tag = FUJ
 	tag = SAN
         tag = KUO
-        tag = FUJ
         tag = HNA
         tag = GXC
         tag = HEX
@@ -27,6 +26,7 @@ is_chinese_tag = {
 }
 can_become_china = {
 	OR = {
+	tag = ANQ
 	tag = CHI
 	tag = MIN 
         tag = PRC

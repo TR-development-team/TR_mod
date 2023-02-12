@@ -656,7 +656,15 @@ spriteTypes = {
 	    name = "GFX_idea_HNA_Zhao_Hengti"
 	    texturefile = "gfx/interface/ideas/minister/HNA/HNA_Zhao_Hengti.png"
     }
-###河西
+###中国共産党###
+SpriteType = {	
+	name = "GFX_idea_PRC_Chen_Tuhsiu"
+	texturefile = "gfx/interface/ideas/minister/PRC/PRC_Chen_Tuhsiu.png"
+}
+SpriteType = {	
+	name = "GFX_idea_PRC_Zhou_Enlai"
+	texturefile = "gfx/interface/ideas/minister/PRC/PRC_Zhou_Enlai.png"
+}
 ###河西###
 
       SpriteType = {	
