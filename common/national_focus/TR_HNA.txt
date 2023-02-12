@@ -228,6 +228,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
+		   872 = { set_demilitarized_zone = no }
            remove_ideas = HNA_PRC_partisan
 		   add_stability = 0.05
 		}
@@ -847,7 +848,7 @@ focus_tree = {
 		add_political_power = -50
 		add_stability = 0.05
 		add_popularity = {
-			ideology = social_1liberal
+			ideology = social_1iberal
 			popularity = -0.1
 		}
 		add_popularity = {
@@ -1406,7 +1407,11 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+
 		}
 	}	
 	#瑞金との交渉
@@ -1435,7 +1440,40 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-		remove_ideas = HNA_PRC_partisan
+		872 = { set_demilitarized_zone = no }
+		if = {
+			limit = { has_idea = HNA_PRC_partisan }
+			remove_ideas = HNA_PRC_partisan
+		}
+		if = {
+			limit = { has_idea = HNA_PRC_partisan_1 }
+			remove_ideas = HNA_PRC_partisan_1
+		}	
+		if = {
+			limit = { 			
+				has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			    } 
+		    }
+			PRC= {		
+				country_event = {
+				id = TR_Hunan.38
+				days = 1
+			    }
+		    }
+	    }
+		if = {
+			limit = { 			
+				has_socialist_government = yes
+			} 
+			PRC= {		
+				country_event = {
+				id = TR_Hunan.39
+				days = 1
+			    }
+		    }
+	    }
 		}
 	}	
 	#由省建国への道
@@ -1454,7 +1492,14 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
 		}
 	}	
 	#アナキストとの合作
@@ -1476,7 +1521,12 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		add_stability = 0.05
+		add_political_power = 50
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
 		}
 	}	
 	#地方分権
@@ -1498,7 +1548,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+        add_ideas = HNA_decentralization
 		}
 	}	
 	#陳独秀の起用
@@ -1521,7 +1571,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		country_event = TR_Hunan.44
 		}
 	}	
 	#自治機構の整備
@@ -1544,7 +1594,11 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		add_stability = 0.1
+		swap_ideas = {
+			remove_idea = HNA_decentralization
+			add_idea = HNA_decentralization_1
+		}
 		}
 	}	
 	#民間企業の支援
@@ -1566,7 +1620,66 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}  
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
 		}
 	}	
 	#タバコ税の導入
@@ -1588,7 +1701,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+           add_ideas = HNA_tobacco_tax
 		}
 	}	
 	#教育への注力
@@ -1611,7 +1724,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		increase_school_system = yes
 		}
 	}	
 	#アヘンの取締
@@ -1658,7 +1771,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		add_ideas = HNA_Prohibition_of_gambling
 		}
 	}	
 	#一郷一校
@@ -1685,7 +1798,6 @@ focus_tree = {
 		}
 	completion_reward = {
 		add_research_slot = 1
-		increase_school_system = yes
 		}
 	}	
 	#人民自治
@@ -1707,7 +1819,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+        add_ideas = HNA_People_autonomy
 		}
 	}	
 	#新文化運動
@@ -1728,6 +1840,21 @@ focus_tree = {
 		}
 	completion_reward = {
 		set_country_flag = HNA_Political_stable
+		if = {
+			limit = { 			
+				has_country_leader = {
+				character = HNA_Chen_Chiungming
+				ruling_only = yes
+			    } 
+		    }
+			add_ideas = HNA_New_Culture_Movement_chen
+	    }
+		if = {
+			limit = { 			
+				has_socialist_government = yes
+			} 
+			add_ideas = HNA_New_Culture_Movement_mao
+	    }
 		}
 	}	
 	#周恩来の起用
@@ -1747,7 +1874,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		country_event = TR_Hunan.45
 		}
 	}
 	#農民革命
@@ -1766,7 +1893,11 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		add_ideas = HNA_peasant_revolution
 		}
 	}
 	#インターナショナルとの接触
@@ -1805,7 +1936,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		increase_school_system = yes
 		}
 	}
 	#人民独裁の確立
@@ -1825,7 +1956,19 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		add_stability = 0.1
+		set_popularities = {
+			totalist = 28
+			syndicalist = 16
+			radical_socialist = 56
+			social_democrat = 0
+			social_liberal = 0
+			market_liberal = 0
+			social_conservative = 0
+			authoritarian_democrat = 0
+			paternal_autocrat = 0
+			national_populist = 0
+		}
 		}
 	}
 	#社会主義教育
@@ -1867,7 +2010,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+        add_ideas = HNA_Red_Sun
 		}
 	}
 	#アヘンの管理
@@ -1908,7 +2051,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+        add_ideas = HNA_Three_anti_Campaigns
 		}
 	}
 	#土地革命
@@ -1927,7 +2070,10 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+		swap_ideas = {
+			remove_idea = HNA_peasant_revolution
+			add_idea = HNA_peasant_revolution_1
+		}
 		}
 	}
 	#五反運動
@@ -1946,7 +2092,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-           
+        add_ideas = HNA_Five_anti_Campaigns
 		}
 	}
 	#湘軍の改革
@@ -2685,8 +2831,9 @@ focus_tree = {
 		}
 		prerequisite = { focus = HNA_Diplomacy_focus_1 }
 		relative_position_id = HNA_Diplomacy_focus_1
-	completion_reward = {
-		
+	    completion_reward = {
+			custom_effect_tooltip = attack_Independent_warlord_tooltip
+		    set_country_flag = attack_Independent_warlord_allowed
 		}
 	}	
 	#外国顧問団
@@ -2704,8 +2851,12 @@ focus_tree = {
 		}
 		prerequisite = { focus = HNA_Diplomacy_focus_1 }
 		relative_position_id = HNA_Diplomacy_focus_1
-	completion_reward = {
-		
+		complete_tooltip = {
+
+		}
+	    completion_reward = {
+			custom_effect_tooltip = foreign_advisory_group_allowed_tooltip
+		    set_country_flag = foreign_advisory_group_allowed
 		}
 	}	
 	#武器の購入
@@ -2723,8 +2874,11 @@ focus_tree = {
 		}
 		prerequisite = { focus = HNA_Diplomacy_focus_1 }
 		relative_position_id = HNA_Diplomacy_focus_1
-	completion_reward = {
-		
+		complete_tooltip = {
+		}
+	    completion_reward = {
+			custom_effect_tooltip = Weapon_purchase_allowed_tooltip
+		    set_country_flag = Weapon_purchase_allowed 
 		}
 	}	
 	#重慶を焚き付ける
@@ -2734,18 +2888,54 @@ focus_tree = {
 		x = -2
 		y = 2
 		cost = 6
-        available = {
-			
+		available = {
+			is_subject = no
         }
+		bypass = {
+		    OR = {  
+				NOT = { country_exists = YUN }
+		        has_war_with = YUN
+		    }  
+		}
 		ai_will_do = {
 			factor = 80
+			modifier = {
+				factor = 0
+				OR = {
+					YUN = {
+						strength_ratio = {
+							tag = HNA
+							ratio > 1.5
+						}
+					}
+					any_neighbor_country = {
+						has_war_with = HNA
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = HNA
+							ratio > 0.6
+						}
+					}
+				}
+			}
 		}
 		prerequisite = { focus = HNA_Diplomacy_focus_2 }
 		prerequisite = { focus = HNA_Diplomacy_focus_3 }
 		prerequisite = { focus = HNA_Diplomacy_focus_4 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = YUN }
+				country_exists = YUN
+			}
+			YUN = { 
+			    create_wargoal = {
+				    target = HNA
+				    type = annex_everything
+			    }
+		    } 
+		}
 		}
 	}	
 	#安内の達成
@@ -2756,7 +2946,12 @@ focus_tree = {
 		y = 2
 		cost = 6
         available = {
-			
+			has_war = no
+			is_subject = no
+			owns_state = 613
+			owns_state = 620
+			owns_state = 605
+			owns_state = 914
         }
 		ai_will_do = {
 			factor = 80
@@ -2766,7 +2961,42 @@ focus_tree = {
 		prerequisite = { focus = HNA_Diplomacy_focus_4 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		add_stability = 0.1
+		add_timed_idea = {
+			idea = CHI_war_of_resistance_prepare
+			days = 180
+		}
+		if = {
+			limit = {
+				OR = { 
+					has_country_leader = {
+						character = HNA_Zhao_Hengti
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = HNA_Chen_Chiungming
+						ruling_only = yes
+					}
+					has_socialist_government = yes
+				}
+			}
+			set_cosmetic_tag = HNA_China
+		}
+		if = {
+			limit = {
+				OR = { 
+					has_country_leader = {
+						character = HNA_Liang_Qichao
+						ruling_only = yes
+					}
+					has_country_leader = {
+						character = HNA_Wu_Peifu
+						ruling_only = yes
+					}
+				}
+			}
+			set_cosmetic_tag = HNA_Zhili_china
+		}
 		}
 	}	
 	#武漢への先制攻撃
@@ -2777,17 +3007,51 @@ focus_tree = {
 		y = 2
 		cost = 6
         available = {
-			
+			is_subject = no
         }
+		bypass = {
+		    OR = {  
+				NOT = { country_exists = CHI }
+		        has_war_with = CHI
+		    }  
+		}
 		ai_will_do = {
 			factor = 80
+			modifier = {
+				factor = 0
+				OR = {
+					CHI = {
+						strength_ratio = {
+							tag = HNA
+							ratio > 1.5
+						}
+					}
+					any_neighbor_country = {
+						has_war_with = HNA
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = HNA
+							ratio > 0.6
+						}
+					}
+				}
+			}
 		}
 		prerequisite = { focus = HNA_Diplomacy_focus_2 }
 		prerequisite = { focus = HNA_Diplomacy_focus_3 }
 		prerequisite = { focus = HNA_Diplomacy_focus_4 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = CHI }
+				country_exists = CHI
+			}
+			create_wargoal = {
+				target = CHI
+				type = annex_everything
+			}
+		}
 		}
 	}	
 	#広東工作
@@ -2819,7 +3083,10 @@ focus_tree = {
 		y = 3
 		cost = 6
         available = {
-			
+			has_war = no
+			is_subject = no
+			has_army_manpower = { size > 999999 }
+			NOT = { has_idea = CHI_war_of_resistance_prepare }
         }
 		ai_will_do = {
 			factor = 80
@@ -2827,7 +3094,30 @@ focus_tree = {
 		prerequisite = { focus = HNA_Diplomacy_focus_6 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		add_ideas = CHI_war_of_resistance_1
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = SAN }
+				country_exists = SAN
+			}
+			HNA = { add_to_faction = SAN }
+		}
+		create_wargoal = {
+		    target = JAP
+		    type = annex_everything
+	    }
+		create_wargoal = {
+		    target = SHX
+		    type = annex_everything
+	    }
+		create_wargoal = {
+		    target = GUG
+		    type = annex_everything
+	    }
+		create_wargoal = {
+		    target = NAN
+		    type = annex_everything
+	    }
 		}
 	}
 	#国家総動員
@@ -2838,7 +3128,8 @@ focus_tree = {
 		y = 4
 		cost = 6
         available = {
-			
+			is_subject = no
+			has_war_with = JAP
         }
 		ai_will_do = {
 			factor = 80
@@ -2846,7 +3137,8 @@ focus_tree = {
 		prerequisite = { focus = HNA_Diplomacy_focus_9 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		add_ideas = tot_economic_mobilisation
+		add_ideas = extensive_conscription
 		}
 	}	
 	#中華民族の団結
@@ -2856,7 +3148,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		cost = 6
-        available = {
+        available = {	
 			
         }
 		ai_will_do = {
@@ -2865,7 +3157,7 @@ focus_tree = {
 		prerequisite = { focus = HNA_Diplomacy_focus_9 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		add_war_support = 0.2
 		}
 	}	
 	#降伏か死か！
@@ -2876,7 +3168,9 @@ focus_tree = {
 		y = 4
 		cost = 6
         available = {
-			
+			is_subject = no
+			surrender_progress > 0.1
+			has_war_with = JAP
         }
 		ai_will_do = {
 			factor = 80
@@ -2884,7 +3178,7 @@ focus_tree = {
 		prerequisite = { focus = HNA_Diplomacy_focus_9 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		add_war_support = 0.3
 		}
 	}	
 	#絶望的な防衛
@@ -2895,7 +3189,9 @@ focus_tree = {
 		y = 4
 		cost = 6
         available = {
-			
+			is_subject = no
+			surrender_progress > 0.5
+			has_war_with = JAP
         }
 		ai_will_do = {
 			factor = 80
@@ -2903,7 +3199,10 @@ focus_tree = {
 		prerequisite = { focus = HNA_Diplomacy_focus_9 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = CHI_war_of_resistance_1
+			add_idea = CHI_war_of_resistance_2
+		}
 		}
 	}		
 	#民族の勝利
@@ -2914,7 +3213,9 @@ focus_tree = {
 		y = 5
 		cost = 6
         available = {
-			
+			is_subject = no
+			has_global_flag = war_of_resistance_china_win
+			is_faction_leader = yes
         }
 		ai_will_do = {
 			factor = 80
@@ -2922,7 +3223,10 @@ focus_tree = {
 		prerequisite = { focus = HNA_Diplomacy_focus_11 }
 		relative_position_id = HNA_Diplomacy_focus_1
 	completion_reward = {
-		
+		add_political_power = 1000
+		add_stability = 0.1
+		remove_ideas = CHI_war_of_resistance_1
+		remove_ideas = CHI_war_of_resistance_2
 		}
 	}	
 	#湖南産業

@@ -2,8 +2,9 @@
 
 oob = "JSE_1936"
 
+set_cosmetic_tag = JSE_JAP
 set_research_slots = 2
-
+country_event = { id = TR_indochina.1 days = 30 }#独立運動の激化
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -112,6 +113,8 @@ set_popularities = {
 recruit_character = JSE_Ho_Chi_Minh
 recruit_character = JSE_Phan_Boi_Chau
 recruit_character = JSE_Yamanashi_Katsunoshin
+recruit_character = JSE_Cuong_De
+
 recruit_character = JAP_Tuji_Masanobu
 recruit_character = JAP_Cho_Isamu
 

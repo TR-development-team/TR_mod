@@ -707,6 +707,7 @@ focus_tree = {
 			owns_state = 613
 		}
 	completion_reward = {
+		add_stability = 0.1
 		set_cosmetic_tag = CHI_united
 		set_capital = {state = 613}
 		}
@@ -853,7 +854,10 @@ focus_tree = {
 			is_subject = no
 		}
 	completion_reward = {
-		add_ideas = CHI_war_of_resistance_prepare
+		add_timed_idea = {
+			idea = CHI_war_of_resistance_prepare
+			days = 180
+		}
 		}
 	}
 	#抗日精神の鼓舞
@@ -937,6 +941,7 @@ focus_tree = {
 			has_war = no
 			is_subject = no
 			has_army_manpower = { size > 999999 }
+			NOT = { has_idea = CHI_war_of_resistance_prepare }
 		}
 		available_if_capitulated = yes
 		prerequisite = { focus = CHI_China_Unification_13 }
@@ -946,10 +951,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-		swap_ideas = {
-			remove_idea = CHI_war_of_resistance_prepare
-			add_idea = CHI_war_of_resistance_1
-		}
+	    add_ideas = CHI_war_of_resistance_1
 		if = {
 			limit = {
 				NOT = { is_in_faction_with = SAN }
@@ -984,6 +986,7 @@ focus_tree = {
 		cost = 5
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			has_global_flag = war_of_resistance_china_win
 		}
 		available_if_capitulated = yes

@@ -4,7 +4,7 @@ state={
 	name="STATE_619" # Yarkand
 	manpower = 1430700
 	
-	state_category = pastoral
+	state_category = rural
 	
 	resources={
 		aluminium=2 # was: 2
@@ -29,6 +29,6 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		1766 1970 2015 4828 5016 5087 7790 7949 8112 12119 
+		1766 1970 2015 4828 4973 5087 7949 8112 10911 12119 
 	}
 }

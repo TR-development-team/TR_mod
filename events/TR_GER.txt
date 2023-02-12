@@ -1,5 +1,6 @@
 ﻿
 add_namespace = TR_germany
+add_namespace = TR_gerfor
 
 #ドイツ内戦
 country_event = {
@@ -1941,6 +1942,517 @@ country_event = {#ドイツが不可侵条約を提案(イタリア)
 			target = GER
 			modifier = medium_decrease
 		}
+	}
+}
+
+
+
+country_event = {#フランス統治問題
+	id = TR_gerfor.1
+	title = TR_gerfor.1.t
+	desc = TR_gerfor.1.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_gerfor.1.a
+		trigger = {
+			is_in_faction_with = ENR
+			NOT = { is_in_faction_with = ITA }
+		}
+		ai_chance = {
+		    base = 80
+		}
+		add_state_claim = 8
+		add_state_claim = 862
+		hidden_effect = {
+		every_state = {
+			limit = {
+				is_core_of = BEL
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = LUX
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = HOL
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = GER
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = SPR
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+		every_state = {
+			limit = {
+				is_core_of = ITA
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+		every_state = {
+			limit = {
+				is_core_of = SWI
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+
+		BRI = { 
+			add_state_core = 14
+		    add_state_core = 15
+		    add_state_core = 30
+			}
+		ENR = { 
+			add_state_claim = 19
+			every_owned_state = {
+				limit = {
+					is_core_of = BRI
+					NOT = { is_core_of = ENR is_claimed_by = ENR }
+				}
+				transfer_state_to = BRI
+			}
+			}
+		every_owned_state = {
+			limit = {
+				is_claimed_by = ENR
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = ENR
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = BRI
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = BRI
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = FRA
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = FRA
+		}
+		FRA = { 
+			set_cosmetic_tag = FRA_REP
+		}
+		BRI = { 
+			set_cosmetic_tag = BRI_ENR
+		}
+	    }
+		set_autonomy = {
+			target = FRA
+			autonomy_state = autonomy_puppet
+		}
+		ENR = { 
+			set_autonomy = {
+				target = BRI
+				autonomy_state = autonomy_puppet
+			}
+		}
+
+	}
+	option = { 
+		name = TR_gerfor.1.b
+		trigger = {
+			is_in_faction_with = ENR
+			is_in_faction_with = ITA
+		}
+		ai_chance = {
+		    base = 80
+		}
+		add_state_claim = 8
+		add_state_claim = 862
+		hidden_effect = {
+		every_state = {
+			limit = {
+				is_core_of = BEL
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = LUX
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = HOL
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = GER
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = SPR
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+		every_state = {
+			limit = {
+				is_core_of = ITA
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+		every_state = {
+			limit = {
+				is_core_of = SWI
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+
+		BRI = { 
+			add_state_core = 14
+		    add_state_core = 15
+		    add_state_core = 30
+			}
+		ENR = { 
+			add_state_claim = 19
+			every_owned_state = {
+				limit = {
+					is_core_of = BRI
+					NOT = { is_core_of = ENR is_claimed_by = ENR }
+				}
+				transfer_state_to = BRI
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = OCC
+					NOT = { is_core_of = ENR is_claimed_by = ENR }
+				}
+				transfer_state_to = OCC
+			}
+			}
+		ITA = { 
+			add_state_claim = 1
+			add_state_claim = 843
+			every_owned_state = {
+				limit = {
+					is_core_of = OCC
+					NOT = { is_core_of = ITA is_claimed_by = ITA }
+				}
+				transfer_state_to = OCC
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = BRI
+					NOT = { is_core_of = ITA is_claimed_by = ITA }
+				}
+				transfer_state_to = BRI
+			}
+			}
+		every_owned_state = {
+			limit = {
+				is_claimed_by = ENR
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = ENR
+		}
+		every_owned_state = {
+			limit = {
+				is_claimed_by = ITA
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = ITA
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = BRI
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = BRI
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = OCC
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = OCC
+		}
+		every_owned_state = {
+			limit = {
+				is_core_of = FRA
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = FRA
+		}
+		FRA = { 
+			set_cosmetic_tag = FRA_REP
+		}
+		BRI = { 
+			set_cosmetic_tag = BRI_ENR
+		}
+		OCC = { 
+			set_cosmetic_tag = OCC_ITA
+		}
+	    }
+		set_autonomy = {
+			target = FRA
+			autonomy_state = autonomy_puppet
+		}
+		ENR = { 
+			set_autonomy = {
+				target = BRI
+				autonomy_state = autonomy_puppet
+			}
+		}
+		ITA = { 
+			set_autonomy = {
+				target = OCC
+				autonomy_state = autonomy_puppet
+			}
+		}
+	}
+	option = { 
+		name = TR_gerfor.1.c
+		trigger = {
+			NOT = { 
+				is_in_faction_with = ITA 
+				is_in_faction_with = ENR
+			}
+		}
+		ai_chance = {
+		    base = 80
+		}
+		add_state_claim = 8
+		add_state_claim = 862
+		hidden_effect = {
+		every_state = {
+			limit = {
+				is_core_of = BEL
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = LUX
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = HOL
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = GER
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}
+		every_state = {
+			limit = {
+				is_core_of = SPR
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+		every_state = {
+			limit = {
+				is_core_of = ITA
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+		every_state = {
+			limit = {
+				is_core_of = SWI
+			}
+			if = {
+				limit = { is_claimed_by = FRA }
+				remove_claim_by = FRA
+			}
+			if = {
+				limit = { is_core_of = FRA }
+				remove_core_of = FRA
+			}
+		}		
+
+		every_owned_state = {
+			limit = {
+				is_core_of = FRA
+				NOT = { is_claim_or_core_of_ROOT = yes }
+			}
+			transfer_state_to = FRA
+		}
+		FRA = { 
+			set_cosmetic_tag = FRA_REP
+		}
+	    }
+		set_autonomy = {
+			target = FRA
+			autonomy_state = autonomy_puppet
+		}
+
+	}
+	option = { 
+		name = TR_gerfor.1.e
+		ai_chance = {
+		    base = 0
+		}
+		add_political_power = -300
+        add_stability = -0.2
 	}
 }
 

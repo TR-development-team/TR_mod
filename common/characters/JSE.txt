@@ -47,4 +47,18 @@ characters={
 			legacy_id=0
 		}
 	}
+	JSE_Cuong_De={
+		name=VIN_Cuong_De
+		portraits={
+			civilian={
+				large="gfx/leaders/VIN/Portrait_VIN_Cuong_De.png"
+			}
+		}
+		country_leader={
+			ideology=Pan_Asianism_subtype
+		}
+		country_leader={
+			ideology= asian_monroe_subtype
+		}
+	}
 }

@@ -38,6 +38,14 @@ FRA = {
 	color = rgb {  0  18  93 }
 	color_ui = rgb {  0  18  93 }
 }
+OCC = {
+	color = rgb { 96 130 182 }
+	color_ui = rgb { 96 130 182 }
+}
+BRI = {
+	color = rgb { 118 99 151 }
+	color_ui = rgb { 118 99 151 }
+}
 WGR = {
 	color = rgb {  0  18  93 }
 	color_ui = rgb {  0  18  93 }
@@ -311,8 +319,8 @@ VEN = {
 	color_ui = rgb { 222 247 198 }
 }
 YUN = {
-	color = rgb { 143 20 20 }
-	color_ui = rgb { 143 40 40 }
+	color = rgb { 143 20 60 }
+	color_ui = rgb { 143 20 60 }
 }
 USA = {
 	color = rgb { 20 133 237 }
@@ -387,7 +395,7 @@ PRC = {
 	color_ui = rgb { 222 41 16 }
 }
 GXC = {
-	color = rgb { 67 140 180 }
+	color = rgb { 67 180 180 }
 	color_ui = rgb { 85 228 233 }
 }
 
