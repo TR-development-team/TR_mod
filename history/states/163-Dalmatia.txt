@@ -1,12 +1,9 @@
-state=
-{
-	id=163
-	name="STATE_163"
+state = {
+	id = 163
+	name = "STATE_163"
 	manpower = 278000
-	
 	state_category = enclave
-	
-	history={
+	history = {
 		owner = ITA
 		buildings = {
 			infrastructure = 3
@@ -14,11 +11,12 @@ state=
 				naval_base = 1
 			}
 		}
-		add_core_of = CRO
-                add_claim_by = AUS
-	} 
-	local_supplies=0.0 
-provinces={	
-		3943 
+		add_claim_by = CRO
+		add_claim_by = AUS
+		add_core_of = DAL
+	}
+	local_supplies = 0
+	provinces = {
+		3943
 	}
 }
