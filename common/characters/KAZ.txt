@@ -1,4 +1,79 @@
 characters={
+	KAZ_Vlazimir_Kappel={
+		name=SOV_Vlazimir_Kappel
+		portraits={
+			civilian={
+				large="gfx/leaders/RUS/Portrait_RUS_Vladimir_Kappel.png"
+			}
+			army={
+				large="gfx/leaders/RUS/Portrait_RUS_Vladimir_Kappel.png"
+			}
+		}
+		country_leader={
+			ideology=totalist_subtype
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology= mil_colonial_government_subtype
+		}
+		field_marshal={
+			traits={ infantry_officer infantry_leader career_officer brilliant_strategist }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	KAZ_Konstantin_Petrovich_Nechaev={
+		name=KAZ_Konstantin_Petrovich_Nechaev
+		portraits={
+			civilian={
+				large="gfx/leaders/KAZ/Portrait_KAZ_Konstantin_Petrovich_Nechaev.png"
+			}
+			civilian={
+				large="gfx/leaders/KAZ/Portrait_KAZ_Konstantin_Petrovich_Nechaev.png"
+			}
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+		corps_commander={
+			traits={ career_officer cavalry_leader cavalry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+}
+characters={
 	KAZ_Akhmet_Baitursynov={
 		name=KAZ_Akhmet_Baitursynov
 		portraits={

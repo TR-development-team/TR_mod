@@ -1,0 +1,72 @@
+characters={
+	SCC_Joseph_Stalin={
+		name=SCC_Joseph_Stalin
+		portraits={
+			civilian={
+				large="gfx/leaders/SCC/Portrait_SCC_Joseph_Stalin.png"
+			}
+		}
+		country_leader={
+			ideology=Jughashvilist_subtype
+                        traits = { Stalin_traits }
+		}
+	}
+	SCC_Sergei_Kirov={
+		name=SCC_Sergei_Kirov
+		portraits={
+			civilian={
+				large="gfx/leaders/SCC/Portrait_SCC_Sergei_Kirov.png"
+			}
+		}
+		country_leader={
+			ideology=Leninist_subtype
+		}
+	}
+	SCC_Vladimir_Mayakovsky={
+		name=SCC_Vladimir_Mayakovsky
+		portraits={
+			civilian={
+				large="gfx/leaders/SCC/Portrait_SCC_Vladimir_Mayakovsky.png"
+			}
+		}
+		country_leader={
+			ideology=Proletarian_culture_subtype
+		}
+	}
+	SCC_semyon_budyonny = {
+		name = RUS_semyon_budyonny
+		portraits = {
+			army = {
+				large = "GFX_portrait_RUS_semyon_budyonny"
+				small=GFX_portrait_RUS_semyon_budyonny_small
+			}
+		}
+		field_marshal = {
+			traits = { old_guard inflexible_strategist politically_connected cavalry_officer cavalry_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			legacy_id = 0
+		}
+	}
+	SCC_issa_pliyev = {
+		name = RUS_issa_pliyev
+		portraits = {
+			army = {
+				large = "GFX_portrait_RUS_issa_pliyev"
+				small= "GFX_idea_RUS_issa_pliyev"
+			}
+		}
+		corps_commander = {
+			traits = { cavalry_officer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = 0
+		}
+	}
+}

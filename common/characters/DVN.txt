@@ -1,0 +1,30 @@
+characters={
+	DVN_Mutaguchi_Renya={
+		name=JAP_Mutaguchi_Renya
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_mutaguchi.tga"
+			}
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology= kokoku_shikan_subtype
+		}
+	}
+	DVN_Indian_Emperor_Mutaguchi_Renya={
+		name=JAP_Mutaguchi_Renya
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_IndianEmperor_Mutaguchi.tga"
+			}
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology= kokoku_shikan_subtype
+		}
+	}
+}

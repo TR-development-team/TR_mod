@@ -1,0 +1,57 @@
+﻿capital = 613
+
+oob = "ANH_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+set_stability = 0.4
+set_war_support = 0.4
+add_ideas = {
+        militaly_dictatorship
+}
+
+
+
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 5
+	syndicalist = 5
+	radical_socialist = 5
+	social_democrat = 2
+	social_liberal = 1
+	market_liberal = 2
+	social_conservative = 20
+	authoritarian_democrat = 35
+	paternal_autocrat = 10
+	national_populist = 15
+        Gnosticism = 0
+}
+add_ideas = {
+         WHN_late_army
+         CNK_jap_economic
+}
+
+
+
+add_timed_idea = {
+		idea = JAPCO_black_thursday
+		days = 500
+                 }  
+
+
+recruit_character = ANH_Duan_Qirui
+recruit_character = ANH_Liang_Hongzhi
+

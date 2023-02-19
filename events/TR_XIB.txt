@@ -1,0 +1,387 @@
+add_namespace = TR_Guominjun
+
+#国民軍からの調査
+country_event = {
+	id = TR_Guominjun.1
+	title = TR_Guominjun.1.t
+	desc = TR_Guominjun.1.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+    #賄賂を渡して追い返せ
+	option = {
+		name = TR_Guominjun.1.a
+		ai_chance = {
+			base = 90
+		}
+		add_political_power = -50
+		set_country_flag = WHN_Befriend_Wuhan
+		XIB = {
+			country_event = {
+				id = TR_Guominjun.4
+				days = 2
+			}
+		}
+	}
+	#誠実に答えよう
+	option = {
+		name = TR_Guominjun.1.b
+		ai_chance = {
+			base = 10
+		}
+		set_country_flag = WHN_Dislike_Wuhan
+		add_opinion_modifier = {
+			target = XIB
+			modifier = medium_increase
+		}
+		XIB = {
+			country_event = {
+				id = TR_Guominjun.5
+				days = 2
+			}
+		}
+	}
+}
+#国民軍からの使節
+country_event = {
+	id = TR_Guominjun.2
+	title = TR_Guominjun.2.t
+	desc = TR_Guominjun.2.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+    #武漢を倒すため、手を結ぼうではないか
+	option = {
+		name = TR_Guominjun.2.a
+		ai_chance = {
+			base = 95
+		}
+		set_country_flag = WHN_Dislike_Wuhan
+		add_opinion_modifier = {
+			target = XIB
+			modifier = medium_increase
+		}
+		XIB = {
+			country_event = {
+				id = TR_Guominjun.6
+				days = 2
+			}
+		}
+	}
+	#彼らとは手を組まない
+	option = {
+		name = TR_Guominjun.2.b
+		ai_chance = {
+			base = 5
+		}
+		add_opinion_modifier = {
+			target = XIB
+			modifier = medium_decrease
+		}
+		XIB = {
+			country_event = {
+				id = TR_Guominjun.7
+				days = 2
+			}
+		}
+	}
+}
+#国民軍からの使節
+country_event = {
+	id = TR_Guominjun.3
+	title = TR_Guominjun.3.t
+	desc = TR_Guominjun.3.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+    #彼らと協力する必要は全くない
+	option = {
+		name = TR_Guominjun.3.a
+		ai_chance = {
+			base = 95
+		}
+		add_opinion_modifier = {
+			target = XIB
+			modifier = medium_decrease
+		}
+		set_country_flag = WHN_Befriend_Wuhan
+		XIB = {
+			country_event = {
+				id = TR_Guominjun.8
+				days = 2
+			}
+		}
+	}
+	#今こそ、武漢に反旗を翻す時だ
+	option = {
+		name = TR_Guominjun.3.b
+		ai_chance = {
+			base = 5
+		}
+		set_country_flag = WHN_Dislike_Wuhan
+		add_opinion_modifier = {
+			target = XIB
+			modifier = medium_increase
+		}
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_decrease
+		}
+		XIB = {
+			country_event = {
+				id = TR_Guominjun.9
+				days = 2
+			}
+		}
+	}
+}
+#寧夏への調査成功？
+country_event = {
+	id = TR_Guominjun.4
+	title = TR_Guominjun.4.t
+	desc = TR_Guominjun.4.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Guominjun.4.a 
+		add_political_power = 5
+		add_opinion_modifier = {
+			target = NIG
+			modifier = small_decrease
+		}
+	}
+}
+#寧夏への調査成功
+country_event = {
+	id = TR_Guominjun.5
+	title = TR_Guominjun.5.t
+	desc = TR_Guominjun.5.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Guominjun.5.a 
+		add_political_power = 20
+		add_opinion_modifier = {
+			target = NIG
+			modifier = small_increase
+		}
+	}
+}
+#重慶との交渉に成功
+country_event = {
+	id = TR_Guominjun.6
+	title = TR_Guominjun.6.t
+	desc = TR_Guominjun.6.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Guominjun.6.a 
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = CNK
+			modifier = small_increase
+		}
+
+	}
+}
+#重慶との交渉に失敗
+country_event = {
+	id = TR_Guominjun.7
+	title = TR_Guominjun.7.t
+	desc = TR_Guominjun.7.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Guominjun.5.a 
+		add_political_power = -25
+		add_opinion_modifier = {
+			target = CNK
+			modifier = small_decrease
+		}
+	}
+}
+#青海との交渉失敗
+country_event = {
+	id = TR_Guominjun.8
+	title = TR_Guominjun.8.t
+	desc = TR_Guominjun.8.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Guominjun.8.a 
+		add_political_power = -25
+		add_opinion_modifier = {
+			target = QIG
+			modifier = small_decrease
+		}
+	}
+}
+#青海との交渉成功
+country_event = {
+	id = TR_Guominjun.9
+	title = TR_Guominjun.9.t
+	desc = TR_Guominjun.9.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Guominjun.9.a 
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = QIG
+			modifier = small_increase
+		}
+	}
+}
+#中原大戦
+country_event = {
+	id = TR_Guominjun.10
+	title = TR_Guominjun.10.t
+	desc = TR_Guominjun.10.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Guominjun.10.a 
+		set_global_flag = WHN_Central_Plains_War
+		declare_war_on = {
+			target = WHN
+			type = annex_everything
+		}
+		if = {
+			limit = {
+				CNK = { has_country_flag = WHN_Dislike_Wuhan }
+			}
+			XIB= { add_to_faction = CNK }
+		}
+		if = {
+			limit = {
+				NIG = { has_country_flag = WHN_Dislike_Wuhan }
+			}
+			XIB= { add_to_faction = NIG }
+		}
+		if = {
+			limit = {
+				YUN = { has_country_flag = WHN_Dislike_Wuhan }
+			}
+			XIB= { add_to_faction = YUN }
+		}
+		if = {
+			limit = {
+				GXC = { has_country_flag = WHN_Dislike_Wuhan }
+			}
+			XIB= { add_to_faction = GXC }
+		}
+		if = {
+			limit = {
+				QIG = { has_country_flag = WHN_Dislike_Wuhan }
+			}
+			XIB= { add_to_faction = QIG }
+		}
+		if = {
+			limit = {
+				SCH = { has_country_flag = WHN_Dislike_Wuhan }
+			}
+			XIB= { add_to_faction = SCH }
+		}
+		WHN = {
+			country_event = {
+				id = TR_Guominjun.11
+				days = 1
+			}
+		}
+	}
+}
+
+#中原大戦
+country_event = {
+	id = TR_Guominjun.11
+	title = TR_Guominjun.11.t
+	desc = TR_Guominjun.11.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Guominjun.11.a 
+		complete_national_focus = WHN_China_Unification_6
+		if = {
+			limit = {
+				NIG = { has_country_flag = WHN_Befriend_Wuhan }
+			}
+			WHN= { add_to_faction = NIG }
+		}
+		if = {
+			limit = {
+				YUN = { has_country_flag = WHN_Befriend_Wuhan }
+			}
+			WHN= { add_to_faction = YUN }
+		}
+		if = {
+			limit = {
+				GXC = { has_country_flag = WHN_Befriend_Wuhan }
+			}
+			WHN= { add_to_faction = GXC }
+		}
+		if = {
+			limit = {
+				QIG = { has_country_flag = WHN_Befriend_Wuhan }
+			}
+			WHN= { add_to_faction = QIG }
+		}
+		if = {
+			limit = {
+				SCH = { has_country_flag = WHN_Befriend_Wuhan }
+			}
+			WHN= { add_to_faction = SCH }
+		}
+
+	hidden_effect = {
+		country_event = {
+			id = TR_news.43
+			days = 2
+			
+		}
+	}
+}
+}
+

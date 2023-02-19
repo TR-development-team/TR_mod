@@ -51,7 +51,7 @@ annexation_decisions = {
                 visible = {
 			
                                 tag = FRA
-                                DDR = { exists = no }
+                                PRE = { exists = no }
                                 GER = { exists = no }
 				FRA = {
 				       owns_state = 64
@@ -59,14 +59,14 @@ annexation_decisions = {
 		}
 		available = {
                                 tag = FRA
-                                DDR = { exists = no }
+                                PRE = { exists = no }
                                 GER = { exists = no }
 				FRA = {
 				       owns_state = 64
 			              } 
 		}
 		complete_effect = {
-	                release_puppet = DDR
+	                release_puppet = PRE
 		}
 		ai_will_do = {
 			factor = 100
@@ -79,7 +79,7 @@ annexation_decisions = {
                 visible = {
 			tag = FRA
                         ENR = { exists = no }
-                                ENG = { exists = no }
+                                GBR = { exists = no }
                                 SCO = { exists = no }
                                 WLS = { exists = no }
 				FRA = {
@@ -91,7 +91,7 @@ annexation_decisions = {
 		available = {
                                 tag = FRA
                                 ENR = { exists = no }
-                                ENG = { exists = no }
+                                GBR = { exists = no }
                                 SCO = { exists = no }
                                 WLS = { exists = no }
 				FRA = {

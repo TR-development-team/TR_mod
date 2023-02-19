@@ -1,0 +1,1157 @@
+
+ideas = {
+       
+     country = {
+
+
+       SOV_Panic = {
+			allowed = {
+				always = no
+			}
+                        
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+                political_power_cost = 0.5
+				stability_factor = -0.15
+			}
+		}
+		SOV_Panic_1 = {
+			allowed = {
+				always = no
+			}
+                        
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+                political_power_cost = 0.3
+				stability_factor = -0.1
+			}
+		}
+		SOV_Panic_2 = {
+			allowed = {
+				always = no
+			}
+                        
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+			modifier = {
+                political_power_cost = 0.15
+				stability_factor = -0.05
+			}
+		}
+        SOV_red_army = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    army_org_factor = -0.1
+			        army_morale_factor = 0.1
+                    army_core_defence_factor = 0.05
+			}
+		}
+
+        SOV_red_army_1 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    army_org_factor = 0.1
+                    army_core_defence_factor = 0.1
+			}
+		}
+
+        SOV_red_army_T = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    army_org_factor = 0.1
+                    army_speed_factor = 0.1
+			}
+		}
+		SOV_red_army_T_1 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    army_org_factor = 0.1
+                    army_attack_factor = 0.1
+                    army_speed_factor = 0.1
+			}
+		}
+		SOV_red_army_T_2 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    army_org_factor = 0.1
+                    army_attack_factor = 0.1
+                    army_speed_factor = 0.1
+					supply_consumption_factor = -0.1
+					planning_speed = 0.10
+			}
+		}
+        SOV_red_army_S = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    planning_speed = 0.10
+                    max_planning = 0.25
+                    army_org = 5
+			}
+		}
+		SOV_red_army_S_1 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+                    planning_speed = 0.10
+                    max_planning = 0.25
+                    army_org = 5
+					army_defence_factor = 0.1
+			}
+		}
+        SOV_red_army_S_2 = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = saf_soviet_advisers
+
+			removal_cost = -1
+			modifier = {
+				planning_speed = 0.10
+				max_planning = 0.25
+				army_org = 5
+				army_defence_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+        
+		SOV_Gosplan = {
+			allowed = {
+				always = no
+			}
+            picture = man_five_year_plan_industry
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                production_speed_buildings_factor = 0.1
+			}
+		}  
+		SOV_Labour_Union = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}  
+		SOV_Gosbank = {
+			allowed = {
+				always = no
+			}
+            picture = man_five_year_plan_industry
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}  
+        SOV_WAR_COMMUNISM = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_factor = -0.2
+                industrial_capacity_factory = 0.2
+				local_resources_factor = 0.1
+				stability_factor = -0.25
+				war_support_factor = -0.1
+				resistance_damage_to_garrison = 0.1
+			}
+		}
+		SOV_NEW_ECONOMIC_POLICY = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                                political_power_factor = -0.05
+                                stability_factor = -0.05
+                                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		SOV_NEW_ECONOMIC_POLICY_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_factor = -0.1
+                stability_factor = -0.1
+				consumer_goods_factor = -0.05
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}	
+		SOV_NEW_ECONOMIC_POLICY_2 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_factor = -0.15
+                stability_factor = -0.15
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}	
+		SOV_NEW_ECONOMIC_POLICY_3 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_factor = -0.2
+                stability_factor = -0.2
+				consumer_goods_factor = -0.07
+				production_speed_industrial_complex_factor = 0.1
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				MONTHLY_POPULATION = 0.1
+				local_resources_factor = 0.10
+			}
+		}	
+		SOV_NEW_ECONOMIC_POLICY_4 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_factor = -0.25
+                stability_factor = -0.25
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+                production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				MONTHLY_POPULATION = 0.1
+				local_resources_factor = 0.10
+				production_speed_infrastructure_factor = 0.15
+			}
+		}
+		SOV_Five_Years_Plan = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_infrastructure_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}	
+		SOV_Five_Years_Plan_1 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.05
+				production_speed_infrastructure_factor = 0.15
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		SOV_Five_Years_Plan_2 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				production_speed_industrial_complex_factor = -0.3
+				production_speed_arms_factory_factor = 0.3
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.3
+			}
+		}	
+		SOV_Five_Years_Plan_3 = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				conscription_factor = -0.1
+				political_power_cost = 0.2
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				local_resources_factor = 0.10
+				production_factory_max_efficiency_factor = 0.1
+	            production_factory_efficiency_gain_factor = 0.1
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+				conversion_cost_civ_to_mil_factor = -0.3
+			}
+		}	
+		SOV_concentration_camp = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		SOV_concentration_camp_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_factor = -0.1
+				MONTHLY_POPULATION = -0.2
+				industrial_capacity_factory = 0.2
+			}
+		}
+		SOV_grain_requisition = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_weekly = -0.005
+				consumer_goods_factor = -0.05
+			}
+		}
+		SOV_political_officer = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_spy_political
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				command_power_gain_mult = 0.3
+				army_morale_factor = 0.1
+			}
+		}
+		SOV_Cheka = {
+			allowed = {
+				always = no
+			}
+            picture = generic_Military_Police
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_weekly = 0.005
+				resistance_target = -0.1
+				subversive_activites_upkeep = -0.1
+			}
+		}
+
+		
+		SOV_Cheka_1 = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_Military_Police
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				stability_weekly = 0.005
+				resistance_target = -0.2
+				subversive_activites_upkeep = -0.2
+			}
+		}
+
+		SOV_NKVD = {
+			allowed = {
+				always = no
+			}
+                        picture = generic_Military_Police
+
+			
+			removal_cost = -1
+                     
+			modifier = {
+				army_morale_factor = 0.05
+				stability_weekly = 0.005
+				resistance_target = -0.3
+				subversive_activites_upkeep = -0.3
+			}
+		}
+
+
+	    SOV_GER_COLLAB = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = tur_kemalist_officers
+			removal_cost = -1
+			modifier = {
+                                army_org_factor = 0.1
+                                land_doctrine_cost_factor = -0.1
+			}
+		}
+		SOV_Kyouiku = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = jap_supremacy_of_technology
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+
+		SOV_Eiseikanri = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_economic_increase
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.02
+                MONTHLY_POPULATION = 0.1
+			}
+		}
+		SOV_great_purge = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_purge
+			removal_cost = -1
+            research_bonus = {
+				land_doctrine = -0.5
+			}
+			modifier = {
+				conscription_factor = -0.25
+				research_speed_factor = -0.1
+				 MONTHLY_POPULATION = -0.7
+                 army_org_factor = -0.2
+                 industrial_capacity_factory = -0.2
+				 production_speed_buildings_factor = -0.2
+			}
+		}
+		SOV_Stalin_Constitution = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+                stability_factor = 0.05
+                political_power_factor = 0.15
+			}
+		}
+        SOV_Stalin_Tsar = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.25
+                stability_factor = 0.25
+			}
+		}
+		SOV_Cultural_Revolution = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				Gnosticism_drift = 0.1
+				political_power_cost = 0.5
+				stability_factor = -0.2
+			}
+		}
+		SOV_Syudantekisintai = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                    
+			picture = generic_production_bonus
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.03
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.05
+                production_factory_start_efficiency_factor = 0.05
+                production_speed_buildings_factor = 0.1
+			}
+		}
+		SOV_Academy = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = jap_supremacy_of_technology
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.1
+			}
+		}
+		SOV_New_God = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_speed_buildings_factor = 0.1
+				war_support_factor = 0.2
+			}
+		}
+		SOV_New_Social = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = jap_supremacy_of_technology
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = 0.05
+				research_speed_factor = 0.05
+				army_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				
+			}
+		}
+		SOV_Proletaria_Humanism = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+                stability_factor = 0.1
+                political_power_factor = 0.05
+			}
+		}		
+		SOV_Market_socialism = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+                consumer_goods_factor = -0.03
+                production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		SOV_nouchikaikaku = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_economic_increase
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+                MONTHLY_POPULATION = 0.1
+			}
+		}	
+		SOV_Revolutionary_agriculturism = {
+			allowed = {
+				always = no
+			}
+                        
+
+			
+			removal_cost = -1
+                     
+			picture = generic_economic_increase
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+                MONTHLY_POPULATION = 0.1
+			}
+		}	
+		SOV_Ethnic_autonomy = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.15
+				stability_factor = 0.2
+			}
+		}
+		SOV_Lenin_is_God = {
+			allowed = {
+				always = no
+			}
+                        
+
+			removal_cost = -1
+                     
+			picture = generic_communism_drift_bonus
+			removal_cost = -1
+			modifier = {
+                stability_factor = 0.2
+                political_power_factor = 0.2
+			}
+		}		
+}
+	#minister
+	Head_of_State = {	
+		RUS_Mikhail_Kalinin = {
+			picture = RUS_Mikhail_Kalinin
+			
+			allowed = {
+				original_tag = SOV
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = head_of_state_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+					Head_of_State
+					radical_socialist
+					TR_popular_figurehead
+					}
+				}
+		}
+		Government_leaders = {	
+			RUS_Vyacheslav_Molotov = {
+			
+				picture = RUS_Vyacheslav_Molotov
+				
+				allowed = {
+					original_tag = SOV
+					}
+					available = {
+						custom_trigger_tooltip = {
+							tooltip = Government_leaders_available
+							always = no
+						}
+						hidden_trigger = {
+							has_country_flag = can_change_minister
+						}
+					}
+					cancel_if_invalid = no
+				
+				traits = { 
+						Government_leaders
+						totalist
+						TR_political_protege
+						}
+				}
+			RUS_Alexander_Shliapnikov = {
+			
+			picture = RUS_Alexander_Shliapnikov
+			
+			allowed = {
+				original_tag = SOV
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Government_leaders_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Government_leaders
+					syndicalist
+					TR_silent_workhorse
+					}
+				}
+			RUS_Lev_Kamenev = {
+			
+			picture = RUS_Lev_Kamenev
+			
+			allowed = {
+				original_tag = SOV
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Government_leaders_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Government_leaders
+					radical_socialist
+					TR_silent_workhorse
+					}
+				}
+			RUS_Grigory_Zinoviev = {
+			
+			picture = RUS_Grigory_Zinoviev
+			
+			allowed = {
+				original_tag = SOV
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Government_leaders_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Government_leaders
+					radical_socialist
+					TR_flamboyant_tough_guy
+					}
+				}
+			RUS_Nikolai_Bukharin = {
+			
+			picture = RUS_Nikolai_Bukharin
+			
+			allowed = {
+				original_tag = SOV
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Government_leaders_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Government_leaders
+					radical_socialist
+					TR_ambitious_union_boss
+					}
+				}
+			RUS_Alexander_Bogdanov = {
+			
+			picture = RUS_Alexander_Bogdanov
+			
+			allowed = {
+				original_tag = SOV
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Government_leaders_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Government_leaders
+					Gnosticism
+					TR_bogdanov_trait
+					}
+				}
+		}
+        Minister_of_Foreign_Affairs = {	
+			RUS_Vyacheslav_Molotov_FA = {
+			    name = RUS_Vyacheslav_Molotov
+				picture = RUS_Vyacheslav_Molotov
+				
+				allowed = {
+					original_tag = SOV
+					}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+				
+				traits = { 
+						Minister_of_Foreign_Affairs
+						totalist
+						TR_ideological_crusader
+						}
+				}
+			RUS_Nikolai_Bukharin_FA = {
+				name = RUS_Nikolai_Bukharin			
+			    picture = RUS_Nikolai_Bukharin
+			
+			allowed = {
+				original_tag = SOV
+				}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				    Minister_of_Foreign_Affairs
+					radical_socialist
+					TR_ideological_crusader
+					}
+			}
+		}
+		Minister_of_Economy = {	
+			RUS_Grigory_Zinoviev_ME = {
+			name = RUS_Grigory_Zinoviev
+			picture = RUS_Grigory_Zinoviev
+			
+			allowed = {
+				original_tag = SOV
+				}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = { 
+				    Minister_of_Economy
+					radical_socialist
+					TR_planned_economy_proponent
+					}
+				}
+			}
+		Minister_of_Interior = {	
+			RUS_Alexei_Rikov = {
+			
+			picture = RUS_Alexei_Rikov
+				
+			allowed = {
+				original_tag = SOV
+				}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+				
+			traits = { 
+				    Minister_of_Interior
+					radical_socialist
+					TR_man_of_the_people
+					}
+				}
+			}
+		chief_of_staff = {	
+			RUS_Alexander_Svechin = {
+			
+			picture = RUS_Alexander_Svechin
+				
+			allowed = {
+				original_tag = SOV
+				}
+				
+			traits = { 
+				chief_of_staff
+				cos_school_of_manoeuvre
+				}
+			}
+			}
+		chief_of_army = {	
+			RUS_Mikhail_Tukhachevskii = {
+			picture = RUS_Mikhail_Tukhachevskii
+					
+			allowed = {
+				original_tag = SOV
+				}
+					
+			traits = { 
+				chief_of_army
+				carm_armoured_spearhead_doctrine
+				}
+			}		
+		}
+		chief_of_navy = {	
+			RUS_Pavel_Dybenko = {
+			picture = RUS_Pavel_Dybenko
+					
+			allowed = {
+				original_tag = SOV
+				}
+					
+			traits = { 
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+				}
+			}		
+		}
+		chief_of_air_force = {	
+			RUS_Yakov_Alksnis = {
+			picture = RUS_Yakov_Alksnis
+					
+			allowed = {
+				original_tag = SOV
+				}
+					
+			traits = { 
+				chief_of_air_force
+				cair_air_superiority_doctrine
+				}
+			}		
+		}
+}

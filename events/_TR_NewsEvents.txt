@@ -180,7 +180,7 @@ news_event = {
 	id =TR_news.7
 	title = TR_news.7.t
 	desc = TR_news.7.d
-	picture = GFX_news_event_ENG_general_strike
+	picture = GFX_news_event_GBR_general_strike
 	
 	major = yes
 	
@@ -190,13 +190,13 @@ news_event = {
 		name = TR_news.7.a
 		trigger = {
 			NOT = {
-				TAG = ENG
+				TAG = GBR
 			}
 		}
 	}
 	option = {
 		name = TR_news.7.b
-		trigger = { TAG = ENG }
+		trigger = { TAG = GBR }
 	}
 
 }
@@ -214,15 +214,15 @@ news_event = {
 		name = TR_news.8.a
 		trigger = {
 			NOT = {
-				OR = { TAG = SOV 
-                                       TAG = RUS }
+				OR = { TAG = RUS 
+                                       TAG = SOV }
 			}
 		}
 	}
 	option = {
 		name = TR_news.8.b
-		trigger = { OR = { TAG = SOV 
-                                       TAG = RUS } 
+		trigger = { OR = { TAG = RUS 
+                                       TAG = SOV } 
                           }
 	}
 
@@ -284,14 +284,14 @@ news_event = {
 		name = TR_news.11.a
 		trigger = {
 			NOT = {
-				TAG = CHI 
+				TAG = WHN 
                                     }
 			}
 		}
 
 	option = {
 		name = TR_news.11.b
-		trigger = { TAG = CHI
+		trigger = { TAG = WHN
                           }
 	}
 
@@ -464,7 +464,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = { TAG = JAP
-                TAG = NAN }
+                TAG = SGH }
 			}
 		}
 	}
@@ -474,7 +474,7 @@ news_event = {
 	}
 	option = {
 		name = TR_news.21.c
-		trigger = { TAG = NAN }
+		trigger = { TAG = SGH }
 	}
 
 }
@@ -518,13 +518,13 @@ news_event = {
 		name = TR_news.23.a
 		trigger = {
 			NOT = {
-				TAG = BRA
+				TAG = EQB
 			}
 		}
 	}
 	option = {
 		name = TR_news.23.b
-		trigger = { TAG = BRA }
+		trigger = { TAG = EQB }
 	}
 
 }
@@ -543,13 +543,13 @@ news_event = {
 		name = TR_news.24.a
 		trigger = {
 			NOT = {
-				TAG = BRR
+				TAG = BRA
 			}
 		}
 	}
 	option = {
 		name = TR_news.24.b
-		trigger = { TAG = BRR }
+		trigger = { TAG = BRA }
 	}
 
 }
@@ -593,13 +593,13 @@ news_event = {
 		name = TR_news.26.a
 		trigger = {
 			NOT = {
-				TAG = SPO
+				TAG = SBR
 			}
 		}
 	}
 	option = {
 		name = TR_news.26.b
-		trigger = { TAG = SPO }
+		trigger = { TAG = SBR }
 	}
 
 }
@@ -709,13 +709,13 @@ news_event = {
 		name = TR_news.31.a
 		trigger = {
 			NOT = {
-				TAG = TUR
+				TAG = OTT
 			}
 		}
 	}
 	option = {
 		name = TR_news.31.b
-		trigger = { TAG = TUR }
+		trigger = { TAG = OTT }
 	}
 
 }
@@ -1027,7 +1027,7 @@ news_event = {
 	id =TR_news.43
 	title = TR_news.43.t
 	desc = TR_news.43.d
-	picture = GFX_news_event_CHI_KUO
+	picture = GFX_news_event_WHN_XIB
 	
 	major = yes
 	
@@ -1038,19 +1038,19 @@ news_event = {
 		name = TR_news.43.a
         trigger = {
 			NOT = {
-				TAG = CHI
-				TAG = KUO
+				TAG = WHN
+				TAG = XIB
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.43.b
-			trigger = { TAG = CHI }
+			trigger = { TAG = WHN }
     }
 	option = {
 		name = TR_news.43.c
-			trigger = { TAG = KUO }
+			trigger = { TAG = XIB }
 	}
 }
 #シャルル・モーラス
@@ -1200,14 +1200,14 @@ news_event = {
 		name = TR_news.49.a
         trigger = {
 			NOT = {
-				TAG = SOV
+				TAG = RUS
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.49.b
-			trigger = { TAG = SOV }
+			trigger = { TAG = RUS }
     }
 }
 #ロシアで黒百人組のクーデター
@@ -1226,14 +1226,14 @@ news_event = {
 		name = TR_news.50.a
         trigger = {
 			NOT = {
-				TAG = SOV
+				TAG = RUS
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.50.b
-			trigger = { TAG = SOV }
+			trigger = { TAG = RUS }
     }
 }
 #ロシアが立憲君主制へ移行
@@ -1252,14 +1252,14 @@ news_event = {
 		name = TR_news.51.a
         trigger = {
 			NOT = {
-				TAG = SOV
+				TAG = RUS
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.51.b
-			trigger = { TAG = SOV }
+			trigger = { TAG = RUS }
     }
 }
 #アレクセイ2世が退位に追い込まれる
@@ -1278,14 +1278,14 @@ news_event = {
 		name = TR_news.52.a
         trigger = {
 			NOT = {
-				TAG = SOV
+				TAG = RUS
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.52.b
-			trigger = { TAG = SOV }
+			trigger = { TAG = RUS }
     }
 }
 #ロシア共和国大統領ヴィクトル・チェルノフの死
@@ -1304,14 +1304,14 @@ news_event = {
 		name = TR_news.53.a
         trigger = {
 			NOT = {
-				TAG = SOV
+				TAG = RUS
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.53.b
-			trigger = { TAG = SOV }
+			trigger = { TAG = RUS }
     }
 }
 #プリシケヴィチの死
@@ -1330,14 +1330,14 @@ news_event = {
 		name = TR_news.54.a
         trigger = {
 			NOT = {
-				TAG = SOV
+				TAG = RUS
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.54.b
-			trigger = { TAG = SOV }
+			trigger = { TAG = RUS }
     }
 }
 #ツァーリ救済同胞団
@@ -1356,14 +1356,14 @@ news_event = {
 		name = TR_news.55.a
         trigger = {
 			NOT = {
-				TAG = SOV
+				TAG = RUS
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.55.b
-			trigger = { TAG = SOV }
+			trigger = { TAG = RUS }
     }
 }
 #ムラドロッシ
@@ -1382,14 +1382,14 @@ news_event = {
 		name = TR_news.56.a
         trigger = {
 			NOT = {
-				TAG = SOV
+				TAG = RUS
 			}
 		}
 
 	}
 	option = {
 		name = TR_news.56.b
-			trigger = { TAG = SOV }
+			trigger = { TAG = RUS }
     }
 }
 #フランスとドイツが開戦

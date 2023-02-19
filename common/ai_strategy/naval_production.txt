@@ -81,7 +81,7 @@ default_role_ratios_minors = {
 		NOT = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
@@ -127,7 +127,7 @@ default_role_ratios_majors = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
@@ -176,13 +176,13 @@ naval_unit_role_ratios_minors = {
 		NOT = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = { num_of_naval_factories > 0 }
@@ -232,13 +232,13 @@ naval_unit_role_ratios_GER = {
 	}
 }
 
-### ENG ###
+### GBR ###
 
-naval_unit_role_ratios_ENG = {
+naval_unit_role_ratios_GBR = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		OR = {
-			tag = ENG
+			tag = GBR
 			tag = ENR
 		}
 	}
@@ -312,14 +312,14 @@ naval_unit_role_ratios_CAN = {
 	}
 }
 
-### RUS ###
+### SOV ###
 
-naval_unit_role_ratios_RUS = {
+naval_unit_role_ratios_SOV = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		OR = {
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = {
@@ -419,12 +419,12 @@ naval_unit_role_ratios_majors_lategame = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = { date > 1942.1.1 }
@@ -462,13 +462,13 @@ high_convoy_threat = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = {
@@ -527,13 +527,13 @@ high_mine_threat_1 = {
 		OR = {			
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = {
@@ -556,13 +556,13 @@ high_mine_threat_2 = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = {
@@ -587,13 +587,13 @@ we_need_convoys_minors = {
 			OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 			}
 		}
 	}
@@ -612,13 +612,13 @@ we_need_convoys_majors1 = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = { stockpile_ratio = { archetype = convoy ratio < 75 } }
@@ -636,13 +636,13 @@ we_need_convoys_majors2 = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = { stockpile_ratio = { archetype = convoy ratio < 150 } }
@@ -658,7 +658,7 @@ we_need_convoys_majors2 = {
 we_need_convoys_majors3 = {
 	allowed = {
 		OR = {
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
@@ -678,7 +678,7 @@ we_need_convoys_majors3 = {
 we_need_convoys_majors4 = {
 	allowed = {
 		OR = {
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
@@ -701,13 +701,13 @@ we_dont_need_convoys_1 = {
 			OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 			}
 		}
 	}
@@ -726,13 +726,13 @@ we_dont_need_convoys_2 = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
 			tag = AST
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = { stockpile_ratio = { archetype = convoy ratio > 500 } }

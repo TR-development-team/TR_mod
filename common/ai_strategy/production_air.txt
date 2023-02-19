@@ -15,7 +15,7 @@ no_air_for_small_countries = {
 		NOT = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 		}
@@ -132,12 +132,12 @@ strategic_bombers_strategy1 = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = {
@@ -166,12 +166,12 @@ strategic_bombers_strategy2 = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = ENG
+			tag = GBR
 			tag = ENR
 			tag = JAP
 			tag = USA
-			tag = RUS
 			tag = SOV
+			tag = RUS
 		}
 	}
 	enable = {

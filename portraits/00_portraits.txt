@@ -638,7 +638,7 @@ GER = {
 	}
 }
 
-ENG = {
+GBR = {
 	army = {
 		male = {
 			"GFX_Portrait_Britain_Generic_land_1"
@@ -781,7 +781,7 @@ JAP = {
 	}
 }
 
-SOV = {
+RUS = {
 	army = {
 		male = {
 			"GFX_Portrait_Soviet_Generic_land_1"
@@ -790,7 +790,7 @@ SOV = {
 			"GFX_Portrait_Soviet_Generic_land_4"
 			"GFX_Portrait_Soviet_Generic_land_5"
 			"GFX_Portrait_Soviet_Magic_Winner"
-			"GFX_Portrait_RUS_putin"
+			"GFX_Portrait_SOV_putin"
 		}
 	}
 	
@@ -803,7 +803,7 @@ SOV = {
 	}
 }
 
-YAK = {
+SKH = {
 	army = {
 		male = {
 			"GFX_Portrait_Soviet_Generic_land_1"
@@ -812,7 +812,7 @@ YAK = {
 			"GFX_Portrait_Soviet_Generic_land_4"
 			"GFX_Portrait_Soviet_Generic_land_5"
 			"GFX_Portrait_Soviet_Magic_Winner"
-			"GFX_Portrait_RUS_putin"
+			"GFX_Portrait_SOV_putin"
 		}
 	}
 	
@@ -834,7 +834,7 @@ SIB = {
 			"GFX_Portrait_Soviet_Generic_land_4"
 			"GFX_Portrait_Soviet_Generic_land_5"
 			"GFX_Portrait_Soviet_Magic_Winner"
-			"GFX_Portrait_RUS_putin"
+			"GFX_Portrait_SOV_putin"
 		}
 	}
 	
@@ -847,7 +847,7 @@ SIB = {
 	}
 }
 
-KAV = {
+CCS = {
 	army = {
 		male = {
 			"GFX_Portrait_Soviet_Generic_land_1"
@@ -856,7 +856,7 @@ KAV = {
 			"GFX_Portrait_Soviet_Generic_land_4"
 			"GFX_Portrait_Soviet_Generic_land_5"
 			"GFX_Portrait_Soviet_Magic_Winner"
-			"GFX_Portrait_RUS_putin"
+			"GFX_Portrait_SOV_putin"
 		}
 	}
 	
@@ -869,7 +869,7 @@ KAV = {
 	}
 }
 
-GEO = {
+SCC = {
 	army = {
 		male = {
 			"GFX_Portrait_Soviet_Generic_land_1"
@@ -878,7 +878,7 @@ GEO = {
 			"GFX_Portrait_Soviet_Generic_land_4"
 			"GFX_Portrait_Soviet_Generic_land_5"
 			"GFX_Portrait_Soviet_Magic_Winner"
-			"GFX_Portrait_RUS_putin"
+			"GFX_Portrait_SOV_putin"
 		}
 	}
 	
@@ -959,7 +959,7 @@ SAF_COM = {
 	}
 }
 
-RAJ_UK = {
+IND_UK = {
 	army = {
 		male = {
 			"GFX_Portrait_Britain_Generic_land_1"
@@ -1002,7 +1002,7 @@ MAL_UK = {
 }
 
 
-RAJ = {
+IND = {
 	army = {
 		male = {
 			"GFX_Portrait_The_Raj_Army_Generic"
@@ -1070,7 +1070,7 @@ RAJ = {
 	}
 }
 
-PAK = {
+PJB = {
 	army = {
 		male = {
 			"GFX_Portrait_The_Raj_Army_Generic"
@@ -1255,7 +1255,7 @@ MEX = {
 	}	
 }
 
-INS_HOL = {
+INS_NTL = {
 	army = {
 		male = {
 			"GFX_Portrait_Europe_Generic_land_1"
@@ -1275,7 +1275,7 @@ INS_HOL = {
 	}
 }
 
-HOL = {
+NTL = {
 	army = {
 		male = {
 			"GFX_Portrait_Europe_Generic_land_1"
@@ -1297,7 +1297,7 @@ HOL = {
 
 }
 
-TUR = {
+OTT = {
 	army = {
 		male = {
 			"GFX_Portrait_South_America_Generic_land_1"

@@ -9,12 +9,12 @@ state={
 		rubber=5 # was: 5
 	}
 	history={
-		owner = COG
+		owner = CAR
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = COG
-		add_core_of = RCG
+		add_core_of = CAR
+		add_core_of = MCG
 	}
 
 	local_supplies=0.0 

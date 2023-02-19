@@ -58,11 +58,11 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 
 	add_to_tech_sharing_group = commonwealth_research
-	add_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
+	add_opinion_modifier = { target = GBR modifier = SAF_anti_british_sentiment }
 }
 
 set_cosmetic_tag = SAF_UK
-ENG = { 
+GBR = { 
         set_autonomy = {
 	  target = SAF
 		autonomous_state = autonomy_dominion

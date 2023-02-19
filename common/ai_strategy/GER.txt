@@ -15,28 +15,28 @@
 
 
 
-GER_invade_DDR = {
+GER_invade_PRE = {
 	allowed = {
 			original_tag = GER
 	}
 	enable = {
-		has_war_with = DDR
+		has_war_with = PRE
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = invade
-		id = DDR
+		id = PRE
 		value = 200
 	}
 	ai_strategy = {
 		type = invasion_unit_request
-		tag = DDR
+		tag = PRE
 		value = 200
 	}
 	ai_strategy = {
 		type = front_unit_request
-		tag = DDR
+		tag = PRE
 		value = 200
 	}
 }
@@ -85,23 +85,23 @@ GER_extra_focus_on_france = {
 	}
 }
 
-GER_extra_focus_on_HOL = {
+GER_extra_focus_on_NTL = {
 	allowed = {
 		original_tag = GER
 	}
 	enable = {
-		HOL = { is_in_faction_with = FRA }
+		NTL = { is_in_faction_with = FRA }
 	}
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = front_unit_request
-		tag = HOL
+		tag = NTL
 		value = 50
 	}
 	ai_strategy = {
 		type = conquer
-		id = HOL
+		id = NTL
 		value = 100
 	}
 }
@@ -114,26 +114,26 @@ Germany_likes_soviet = {
                 GER = { is_faction_leader = yes }
 	}
 	enable = {
-		country_exists = RUS
-                RUS = { has_war_with = SOV }
-		NOT = { has_war_with = RUS }
+		country_exists = SOV
+                SOV = { has_war_with = RUS }
+		NOT = { has_war_with = SOV }
 	}
 
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = befriend
-		id = RUS
+		id = SOV
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = RUS
+		id = SOV
 		value = 100
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = RUS
+		id = SOV
 		value = 100
 	}
 }

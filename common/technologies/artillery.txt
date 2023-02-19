@@ -433,13 +433,13 @@ technologies = {
 
 		artillery_brigade = {
 			mountain = {
-				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
+				movement = 0.15 #If you change this - Change the custom tooltip too: IND_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
 			}
 		}
 
 		anti_tank_brigade = {
 			mountain = {
-				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
+				movement = 0.15 #If you change this - Change the custom tooltip too: IND_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
 			}
 		}
 	}
@@ -477,7 +477,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 
@@ -520,7 +520,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 
@@ -563,7 +563,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 
@@ -597,7 +597,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 
@@ -645,13 +645,13 @@ technologies = {
 				factor = 0.5
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
+					tag = WHN
+					tag = RJN
+					tag = QIG
 					tag = SIK
 					tag = GXC
-					tag = SHX
-					tag = YUN
+					tag = ZHI
+					tag = CNK
 				}
 			}
 			modifier = {
@@ -709,13 +709,13 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = JAP
-					tag = ENG
+					tag = GBR
 					tag = USA
 				}
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 				factor = 5
 			}
@@ -760,13 +760,13 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = JAP
-					tag = ENG
+					tag = GBR
 					tag = USA
 				}
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 				factor = 5
 			}
@@ -815,13 +815,13 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = JAP
-					tag = ENG
+					tag = GBR
 					tag = USA
 				}
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 				factor = 5
 			}
@@ -866,13 +866,13 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = JAP
-					tag = ENG
+					tag = GBR
 					tag = USA
 				}
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 				factor = 5
 			}
@@ -913,13 +913,13 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = JAP
-					tag = ENG
+					tag = GBR
 					tag = USA
 				}
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 				factor = 5
 			}
@@ -962,20 +962,20 @@ technologies = {
 				factor = 0.2
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
+					tag = WHN
+					tag = RJN
+					tag = QIG
 					tag = SIK
 					tag = GXC
-					tag = SHX
-					tag = YUN
+					tag = ZHI
+					tag = CNK
 				}
 			}
 			modifier = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1084,7 +1084,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1146,7 +1146,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1246,7 +1246,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1342,7 +1342,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}
@@ -1401,7 +1401,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = SOV
+						has_War_with = RUS
 						has_war_with = USA
 					}
 				}

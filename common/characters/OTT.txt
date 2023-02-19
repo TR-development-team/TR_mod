@@ -1,0 +1,336 @@
+characters={
+	OTT_Enver_Pasha={
+		name=OTT_Enver_Pasha
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Enver_Pasha.png"
+			}
+		}
+		country_leader={
+			ideology=president_principle_subtype
+			id=-1
+		}
+	}
+	OTT_AbdulmecidII={
+		name=OTT_AbdulmecidII
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/portrait_OTT_Abdulmecid.tga"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy_subtype
+			id=-1
+		}
+	}
+	OTT_Mustafa_Kemal={
+		name=OTT_Mustafa_Kemal
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_Turkey_kemal.tga"
+			}
+		}
+		country_leader={
+			ideology=Dominant_party_system_subtype
+			id=-1
+		}
+	}
+	OTT_Shakib_Arslan={
+		name=OTT_Shakib_Arslan
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_Ottoman_Shakib_Arslan.tga"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			id=-1
+		}
+	}
+	OTT_Sabahaddin={
+		name=OTT_Sabahaddin
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_Ottoman_Sabahaddin.tga"
+			}
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+			id=-1
+		}
+	}
+
+	OTT_Mustafa_Kemal_marshal={
+		name=OTT_Mustafa_Kemal
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_Turkey_kemal.tga"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected media_personality war_hero organizer logistics_wizard }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=3
+		}
+	}
+
+	OTT_Enver_Pasha_marshal={
+		name=OTT_Enver_Pasha
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Enver_Pasha.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected media_personality war_hero offensive_doctrine }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+
+	OTT_izzettin_chalishlar={
+		name=OTT_izzettin_chalishlar
+		portraits={
+			army={
+				large="GFX_portrait_tur_izzettin_calislar"
+				small=GFX_portrait_OTT_izzettin_chalishlar_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer war_hero trait_OTT_kemalist_champion trait_mountaineer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=905
+		}
+	}
+
+	OTT_kazim_karabekir={
+		name=OTT_kazim_karabekir
+		portraits={
+			army={
+				large="GFX_portrait_tur_kazim_karabekir"
+				small="GFX_idea_tur_kazim_karabekir"
+			}
+		}
+
+		corps_commander={
+			traits={ trait_cautious politically_connected desert_fox }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	OTT_mustafa_muglali={
+		name=OTT_mustafa_muglali
+		portraits={
+			army={
+				large="GFX_portrait_tur_mustafa_mugali"
+				small=GFX_portrait_OTT_mustafa_muglali_small
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader }
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	OTT_mehmet_salih_omurtak={
+                        name=OTT_mehmet_salih_omurtak
+			portraits={
+				army={
+					small="GFX_idea_tur_salih_omurtak"
+					large="GFX_portrait_tur_salih_omurtak"
+				}
+			}
+			corps_commander={
+				traits={ harsh_leader infantry_officer politically_connected trait_OTT_kemalist_champion }
+				skill=2
+				attack_skill=2
+				defense_skill=1
+				planning_skill=2
+				logistics_skill=2
+				legacy_id=906
+			}
+		}
+
+	OTT_hayrullah_fisek={
+		name=OTT_hayrullah_fisek
+		portraits={
+			army={
+				large="GFX_portrait_tur_hayrullah_fisek"
+				small=GFX_portrait_OTT_hayrullah_fisek_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer trickster }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	OTT_mehmet_nuri_yamut={
+		name=OTT_mehmet_nuri_yamut
+		portraits={
+			army={
+				large="GFX_portrait_tur_mehmet_nuri_yamut"
+				small=GFX_portrait_OTT_mehmet_nuri_yamut_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer trait_reckless }
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	OTT_mehmet_ali_ulgen={
+			name=OTT_mehmet_ali_ulgen
+			portraits={
+				army={
+					small="GFX_idea_tur_mehmet_ali_ulgen"
+					large="GFX_portrait_tur_mehmet_ali_ulgen"
+				}
+			}
+
+			navy_leader={
+				traits={ career_officer gunnery_expert }
+				skill=3
+				attack_skill=3
+				defense_skill=2
+				maneuvering_skill=2
+				coordination_skill=2
+				legacy_id=-1
+			}
+
+	}
+
+	OTT_sukru_okan={
+		name=OTT_sukru_okan
+		portraits={
+			army={
+				small="GFX_idea_tur_sukru_okan"
+				large="GFX_portrait_tur_sukru_okan"
+			}
+		}
+
+		navy_leader={
+			traits={ media_personality gentlemanly trait_OTT_kemalist_champion }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=907
+		}
+	}
+	
+	OTT_fevzi_cakmak={
+			name=OTT_fevzi_cakmak
+			portraits={
+				army={
+					small="GFX_idea_tur_fevzi_cakmak"
+					large="GFX_portrait_tur_fevzi_cakmak"
+				}
+				civilian = {
+					large="GFX_portrait_tur_fevzi_cakmak" #Can become country leader later
+				}
+			}
+			field_marshal={
+				traits={ old_guard media_personality war_hero desert_fox logistics_wizard defensive_doctrine }
+				skill=3
+				attack_skill=2
+				defense_skill=2
+				planning_skill=3
+				logistics_skill=3
+				legacy_id=901
+			}
+		}
+	OTT_ahmet_fevzi_pasha = {
+		name=OTT_ahmet_fevzi_pasha
+		portraits={
+			army={
+				large="GFX_portrait_tur_ahmet_fevzi_pasha"
+				small = GFX_portrait_OTT_ahmet_fevzi_pasha_small
+			}
+		}
+		corps_commander = {
+			traits = { war_hero trait_cautious trait_mountaineer }
+			skill = 3 #10
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 2
+			visible = { has_country_flag = OTT_PROVISIONARY_flag }
+		}
+	}
+
+	OTT_refet_pasha = {
+		name=OTT_refet_pasha
+		portraits={
+			army={
+				large="GFX_portrait_tur_refe_pasha"
+				small = GFX_portrait_OTT_refet_pasha_small
+			}
+			civilian = {
+				large="GFX_portrait_tur_refe_pasha"
+			}
+		}
+		corps_commander = {
+			traits = { harsh_leader war_hero brilliant_strategist trickster }
+			skill = 3 #10
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+			visible = { has_country_flag = OTT_PROVISIONARY_flag }
+		}
+	}
+
+	OTT_mehmet_esat_pasha = {
+		name=OTT_mehmet_esat_pasha
+		portraits={
+			army={
+				large="GFX_portrait_tur_mehmed_esad_pasha"
+				small=GFX_portrait_OTT_mehmet_esat_pasha_small
+			}
+			civilian = {
+				large="GFX_portrait_tur_mehmed_esad_pasha"
+			}
+		}
+		corps_commander = {
+			traits = { war_hero inflexible_strategist media_personality trickster hill_fighter }
+			skill = 4 #13
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 3
+			visible = { has_country_flag = OTT_PROVISIONARY_flag }
+		}
+	}
+
+}

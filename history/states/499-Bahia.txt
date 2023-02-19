@@ -7,7 +7,7 @@ state={
 	state_category = large_town
 
 	history={
-		owner = BRA
+		owner = EQB
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -16,10 +16,10 @@ state={
 				naval_base = 1
 			}
 		}
-		add_core_of = BRR
-                add_core_of = SPO
-                add_core_of = AMZ
 		add_core_of = BRA
+                add_core_of = SBR
+                add_core_of = AMZ
+		add_core_of = EQB
 		victory_points = {
 			10946 1 
 		}

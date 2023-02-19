@@ -14,8 +14,8 @@ country_event = {#1936年帝国会議
 	option = {
 		name = TR_japfed.1.a
                 CAL = { country_event = TR_japfed.2 }
-                SAU = { country_event = TR_japfed.3 }
-                CEN = { country_event = TR_japfed.4 }
+                ARB = { country_event = TR_japfed.3 }
+                CAC = { country_event = TR_japfed.4 }
                 SIB = { country_event = TR_japfed.5 }
                 hidden_effect = {
 			country_event = {
@@ -126,8 +126,8 @@ country_event = {#1936年帝国会議-恐慌
 					days = 365
 				}   
                 CAL = { country_event = TR_japfed.7 }
-                SAU = { country_event = TR_japfed.8 }
-                CEN = { country_event = TR_japfed.9 }
+                ARB = { country_event = TR_japfed.8 }
+                CAC = { country_event = TR_japfed.9 }
                 SIB = { country_event = TR_japfed.10 }
                 hidden_effect = {
 			country_event = {
@@ -247,15 +247,15 @@ country_event = {#1936年帝国会議-自治領の主権
 	
 	option = {
 		name = TR_japfed.11.a
-                end_puppet = SAU
-                end_puppet = CEN
+                end_puppet = ARB
+                end_puppet = CAC
                 end_puppet = SIB
-                JAP = { add_to_faction = SAU }
-                JAP = { add_to_faction = CEN }
+                JAP = { add_to_faction = ARB }
+                JAP = { add_to_faction = CAC }
                 JAP = { add_to_faction = SIB }
                 CAL = { country_event = TR_japfed.12 }
-                SAU = { country_event = TR_japfed.13 }
-                CEN = { country_event = TR_japfed.14 }
+                ARB = { country_event = TR_japfed.13 }
+                CAC = { country_event = TR_japfed.14 }
                 SIB = { country_event = TR_japfed.15 }
                 hidden_effect = {
 			country_event = {
@@ -303,8 +303,8 @@ country_event = {#1936年帝国会議-自治領の主権
                 ai_chance = {
 			base = 50
 		}
-                set_cosmetic_tag = SAU_IND
-                JAP = { add_to_faction = SAU }
+                set_cosmetic_tag = ARB_IND
+                JAP = { add_to_faction = ARB }
 
 		
 	}
@@ -315,7 +315,7 @@ country_event = {#1936年帝国会議-自治領の主権
 		}
 		add_ideas = Absolute_monarchy
                 remove_ideas = Tiyoda_Kensho
-                set_cosmetic_tag = SAU_CALIPHATE
+                set_cosmetic_tag = ARB_CALIPHATE
                 leave_faction = yes
                 add_popularity = {
 			ideology = national_populist
@@ -357,7 +357,7 @@ country_event = {#アラビア反目
 		}
         add_political_power = -100
 		create_wargoal = {
-			target = SAU
+			target = ARB
 			type = annex_everything
 		}
 	}
@@ -376,8 +376,8 @@ country_event = {#1936年帝国会議-自治領の主権
 	
 	option = {
 		name = TR_japfed.14.a
-                set_cosmetic_tag = CEN
-                JAP = { add_to_faction = CEN }
+                set_cosmetic_tag = CAC
+                JAP = { add_to_faction = CAC }
 
 		
 	}
@@ -540,7 +540,7 @@ country_event = {#マウマウ団
 	option = { 
 		name = TR_japfed.18.a
         remove_ideas = African_Independence_movement
-            MAU = {
+            KEN = {
 			transfer_state = 848
                          country_event = {
 					id = TR_japfed.19
@@ -570,7 +570,7 @@ country_event = {#マウマウ団
 		name = TR_japfed.19.a
                 division_template = {
 				name = "Mau Mau Infantry"
-				division_names_group = UKR_GAR_01
+				division_names_group = MHN_GAR_01
 				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }
@@ -587,11 +587,11 @@ country_event = {#マウマウ団
 				prioritize = { 1939 }
 				create_unit = {
 					division = "division_template = \"Mau Mau Infantry\" start_experience_factor = 0.1"
-					owner = MAU
+					owner = KEN
 					count = 6
 				}
 			}
-                KEN = {
+                EAF = {
                          country_event = {
 					id = TR_japfed.20
 					days = 2
@@ -618,7 +618,7 @@ country_event = {#マウマウ団
 		name = TR_japfed.20.a
 
         declare_war_on = {
-			target = MAU
+			target = KEN
 			type = annex_everything
 		}
                
@@ -662,7 +662,7 @@ country_event = {#ソコト王国
 			target = SKT
 			type = annex_everything
 		}
-		EWA = {
+		WAF = {
 			transfer_state = 776
             transfer_state = 777
 		}
@@ -701,8 +701,8 @@ country_event = {#アフリカ植民地の整理
 			idea = Nippon_Tettai_JAPAN
 			days = 90
 		}  
-		JAP = { end_puppet = ESA }
-	    ESA = { leave_faction = yes 
+		JAP = { end_puppet = SOM }
+	    SOM = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
@@ -714,9 +714,9 @@ country_event = {#アフリカ植民地の整理
 					days = 365
 				}  
 			  }
-		JAP = { end_puppet = KEN }
-	    KEN = { leave_faction = yes }
-		KEN = { leave_faction = yes 
+		JAP = { end_puppet = EAF }
+	    EAF = { leave_faction = yes }
+		EAF = { leave_faction = yes 
 		drop_cosmetic_tag = yes
 		remove_ideas = Tiyoda_Kensho
 		remove_ideas = JAP_colony
@@ -728,8 +728,8 @@ country_event = {#アフリカ植民地の整理
 			days = 365
 		    }  
 	    }
-		JAP = { end_puppet = COG }
-	    COG = { leave_faction = yes 
+		JAP = { end_puppet = CAR }
+	    CAR = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
@@ -782,9 +782,9 @@ country_event = {#アフリカ植民地の整理
 	                }  
 				}
 		hidden_effect = {
-			KEN = { country_event = { id = TR_japfed.18 days = 31 } }
+			EAF = { country_event = { id = TR_japfed.18 days = 31 } }
 			NGA = { country_event = { id = TR_japfed.21 days = 26 } }
-			COG = { country_event = { id = TR_japfed.23 days = 12 } }
+			CAR = { country_event = { id = TR_japfed.23 days = 12 } }
 			NMB = { country_event = { id = TR_japfed.24 days = 17 } }
 			ETH = { country_event = { id = TR_japfed.25 days = 22 } }
 			    country_event = {
@@ -807,8 +807,8 @@ country_event = {#アフリカ植民地の整理
 			remove_idea = JAP_colony_deficit
 			add_idea = JAP_colony_deficit_1
 		}	
-		JAP = { end_puppet = COG }
-        COG = { leave_faction = yes 
+		JAP = { end_puppet = CAR }
+        CAR = { leave_faction = yes 
 		       	drop_cosmetic_tag = yes
 				   remove_ideas = Tiyoda_Kensho
 				   remove_ideas = Tiyoda_Kensho
@@ -855,10 +855,10 @@ country_event = {#アフリカ植民地の整理
 		            }  
 				}
 		hidden_effect = {
-			ESA = { remove_ideas = African_Independence_movement }
-		    KEN = { remove_ideas = African_Independence_movement }
+			SOM = { remove_ideas = African_Independence_movement }
+		    EAF = { remove_ideas = African_Independence_movement }
 			NGA = { country_event = { id = TR_japfed.21 days = 26 } }
-			COG = { country_event = { id = TR_japfed.23 days = 17 } }
+			CAR = { country_event = { id = TR_japfed.23 days = 17 } }
 			NMB = { country_event = { id = TR_japfed.24 days = 17 } }
 			ETH = { country_event = { id = TR_japfed.26 days = 22 } }
 			country_event = {
@@ -874,10 +874,10 @@ country_event = {#アフリカ植民地の整理
 		}
 		add_political_power = -200
 		hidden_effect = {
-			COG = { remove_ideas = African_Independence_movement }
-			ESA = { remove_ideas = African_Independence_movement }
+			CAR = { remove_ideas = African_Independence_movement }
+			SOM = { remove_ideas = African_Independence_movement }
 			NGA = { remove_ideas = African_Independence_movement }
-			KEN = { remove_ideas = African_Independence_movement }
+			EAF = { remove_ideas = African_Independence_movement }
 			NGA = { annex_country = {
 				            target = SKT
 				            transfer_troops = no
@@ -916,7 +916,7 @@ country_event = {#中央アフリカ崩壊
 		release = KIS
 		release = KIV
 		release = CAR
-		release = RCG
+		release = MCG
 		release = CMR
 		country_event = {
 			id = TR_news.42
@@ -979,7 +979,7 @@ country_event = {#汎アフリカ宣言
 			elections_allowed = no
 		}
 		declare_war_on = {
-			target = ESA
+			target = SOM
 			type = annex_everything
 		}
     }
@@ -1055,7 +1055,7 @@ country_event = {#エチオピア独立宣言
 			limit = {
 				is_core_of = ETH
 			}
-			add_claim_by = ESA
+			add_claim_by = SOM
 		}
     }
 
@@ -1071,14 +1071,14 @@ country_event = {#東アフリカが日本再建同盟に加盟
 
     fire_only_once = yes
        trigger = {
-        tag = KEN
+        tag = EAF
 		is_subject = no
 		is_in_faction = no
         NMB = { is_faction_leader = yes }
 	   }
 	option = { 
 		name = TR_japfed.28.a
-        NMB = { add_to_faction = KEN }
+        NMB = { add_to_faction = EAF }
     }
 
 }

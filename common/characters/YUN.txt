@@ -1,19 +1,51 @@
 characters={
-	YUN_Wang_Jingwei={
-		name=YUN_Wang_Jingwei
+	YUN_long_yun={
+		name=CNK_long_yun
 		portraits={
 			civilian={
-				large="gfx/leaders/CHI/Portrait_CHI_Wang.png"
+				large="gfx/leaders/CNK/Portrait_china_Lung_yun.png"
+			}
+			army = {
+				small=GFX_portrait_CNK_long_yun_small
+				large="gfx/leaders/CNK/Portrait_china_Lung_yun.png"
 			}
 		}
 		country_leader={
-			ideology= anarco_communist_subtype
+			ideology= dem_Military_junta_subtype
 		}
 		country_leader={
-			ideology= San_min_Doctrine_left_subtype
+			ideology= Military_junta_subtype
 		}
 		country_leader={
-			ideology= San_min_Doctrine_left_SL_subtype
+			ideology=Nationalism_subtype
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
 		}
 	}
+
+	YUN_lu_han={
+		name=CNK_lu_han
+		portraits={
+			army={
+				small=GFX_portrait_CNK_lu_han_small
+				large=GFX_portrait_CNK_lu_han
+			}
+		}
+
+		corps_commander={
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
 }

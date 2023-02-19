@@ -1,0 +1,57 @@
+﻿capital = 816
+
+oob = "SGH_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+set_research_slots = 2
+set_convoys = 20
+set_cosmetic_tag = SGH_JAP
+
+add_ideas = {
+        militaly_dictatorship
+}
+country_event = { id = TR_China.6 days = 50 }
+JAP = { 
+        set_autonomy = {
+	   target = SGH
+	   autonomous_state = imperial_colony
+        }
+      }
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1935.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+		totalist = 4
+	syndicalist = 4
+	radical_socialist = 2
+	social_democrat = 10
+	social_liberal = 10
+	market_liberal = 5
+	social_conservative = 8
+	authoritarian_democrat = 4
+	paternal_autocrat = 29
+	national_populist = 22
+        Gnosticism = 2
+}
+
+recruit_character = SGH_Kohinata_Hakuro
+recruit_character = SGH_Honjo_Shigeru
+recruit_character = SGH_Ishiwara_Kanji
+recruit_character = SGH_Qsaku
+recruit_character = JAP_Honjo_Shigeru
+recruit_character = JAP_Ishiwara_Kanji
+recruit_character = JAP_Kohinata_Hakuro
+recruit_character = JAP_seishiro_itagaki
+

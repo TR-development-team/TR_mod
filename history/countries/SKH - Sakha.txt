@@ -1,0 +1,86 @@
+﻿capital = 571#オムスク
+
+oob = "SKH_1936"
+
+set_research_slots = 3
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
+	tech_support = 1		
+	tech_engineers = 1
+	tech_military_police = 1
+	tech_mountaineers = 1
+	gw_artillery = 1
+
+
+	early_fighter = 1
+	fighter1 = 1
+	early_bomber = 1
+	strategic_bomber1 = 1
+	naval_bomber1 = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+if = {
+	limit = {
+		NOT = {
+			has_dlc = "No Step Back"
+		}
+	}
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+	}
+}
+if = {
+	limit = {
+		
+		has_dlc = "No Step Back"
+		
+	}
+	set_technology = {
+		gwtank_chassis = 1
+		basic_light_tank_chassis = 1
+	}
+}
+
+set_cosmetic_tag = SKH_Russia
+RUS = { 
+        set_autonomy = {
+	  target = SKH
+	  autonomous_state = autonomy_colony
+        }
+      }
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 8
+	syndicalist = 6
+	radical_socialist = 8
+	social_democrat = 3
+	social_liberal = 3
+	market_liberal = 5
+	social_conservative = 6
+	authoritarian_democrat = 5
+	paternal_autocrat = 34
+	national_populist = 14
+        Gnosticism = 8
+}
+
+
+recruit_character = SKH_pavel_pevznyak
+recruit_character = SKH_anatoly_pepelyayev
+recruit_character = SKH_Roman_Ungern
+
+
+
+
+
+

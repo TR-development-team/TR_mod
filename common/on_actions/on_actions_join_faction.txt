@@ -3,13 +3,13 @@ on_actions = {
 	#FROM is country getting invited.
 	on_offer_join_faction = {
 		effect = {
-			clr_global_flag = JF_ANQ
+			clr_global_flag = JF_ANH
 			clr_global_flag = JF_AUS
 			clr_global_flag = JF_ARG
 			clr_global_flag = JF_BEL
 			clr_global_flag = JF_USA
 			clr_global_flag = JF_COS
-			clr_global_flag = JF_CSA
+			clr_global_flag = JF_DXL
 			clr_global_flag = JF_FIN
 			clr_global_flag = JF_FRA
 			clr_global_flag = JF_GER
@@ -21,12 +21,12 @@ on_actions = {
 			clr_global_flag = JF_JAP
 			clr_global_flag = JF_ROM
 			clr_global_flag = JF_BUL
-			clr_global_flag = JF_SHX
+			clr_global_flag = JF_ZHI
 			clr_global_flag = JF_SWE
 			clr_global_flag = JF_SWI
 			clr_global_flag = JF_TIB
 			clr_global_flag = JF_USA
-			clr_global_flag = JF_RKMT_YUN
+			clr_global_flag = JF_RKMT_CNK
 			clr_global_flag = JF_RKMT_GXC
 			save_global_event_target_as = faction_leader
 			#Faction LEADER
@@ -74,10 +74,10 @@ on_actions = {
 			}
 			else_if = {
 				limit = {
-					tag = YUN
+					tag = CNK
 					has_government = social_liberal
 				}
-				set_global_flag = JF_RKMT_YUN
+				set_global_flag = JF_RKMT_CNK
 			}
 			else_if = {
 				limit = {
@@ -145,9 +145,9 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
-						tag = CSA
+						tag = DXL
 					}
-					set_global_flag = JF_CSA
+					set_global_flag = JF_DXL
 				}
 				else_if = {
 					limit = {
@@ -181,15 +181,15 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
-						tag = SHX
+						tag = ZHI
 					}
-					set_global_flag = JF_SHX
+					set_global_flag = JF_ZHI
 				}
 				else_if = {
 					limit = {
-						tag = ANQ
+						tag = ANH
 					}
-					set_global_flag = JF_ANQ
+					set_global_flag = JF_ANH
 				}
 				else_if = {
 					limit = {
@@ -212,10 +212,10 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
-						tag = YUN
+						tag = CNK
 						has_government = social_liberal
 					}
-					set_global_flag = JF_RKMT_YUN
+					set_global_flag = JF_RKMT_CNK
 				}
 			}
 			if = {

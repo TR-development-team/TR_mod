@@ -11,11 +11,11 @@ state={
 	}
 
 	history={
-		owner = BRR
-               add_core_of = BRR
-                add_core_of = SPO
+		owner = BRA
+               add_core_of = BRA
+                add_core_of = SBR
                 add_core_of = AMZ
-		add_core_of = BRA
+		add_core_of = EQB
 		victory_points = {
 			7476 3
 		}
@@ -29,7 +29,7 @@ state={
 				naval_base = 1
 			}
 		}
-                add_core_of = SPO
+                add_core_of = SBR
 	}
 
 	local_supplies=0.0 

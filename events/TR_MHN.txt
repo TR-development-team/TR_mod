@@ -1,0 +1,35 @@
+add_namespace = TR_Ukraine
+
+#黒軍参戦
+country_event = {
+	id = TR_Ukraine.1
+	title = TR_Ukraine.1.t
+	desc = TR_Ukraine.1.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+	option = {
+		name = TR_Ukraine.1.a
+        add_ideas = MHN_SOV_CIVIL_WAR
+	}
+}
+#ウクライナ赤軍参戦
+country_event = {
+	id = TR_Ukraine.2
+	title = TR_Ukraine.2.t
+	desc = TR_Ukraine.2.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+	option = {
+		name = TR_Ukraine.2.a
+        declare_war_on = {
+			target = MHN
+			type = annex_everything
+		}
+	}
+}

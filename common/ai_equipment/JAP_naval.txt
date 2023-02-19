@@ -241,7 +241,7 @@ JAP_destroyers = {
 			modifier = {
 				OR = {
 					has_war_with = USA
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 				factor = 10
 			}
@@ -836,7 +836,7 @@ JAP_naval_light_AA_cruiser = {
 			factor = 200
 			OR = {
 				has_war_with = USA
-				has_war_with = ENG
+				has_war_with = GBR
 			}
 		}
 	}

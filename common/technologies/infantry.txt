@@ -76,7 +76,7 @@ technologies = {
 			
 			modifier = {
 				factor = 10
-				tag = CHI
+				tag = WHN
 				
 				OR = {
 					date > "1937.1.1"
@@ -135,13 +135,13 @@ technologies = {
 				factor = 5
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
+					tag = WHN
+					tag = RJN
+					tag = QIG
 					tag = SIK
 					tag = GXC
 					tag = SHX
-					tag = YUN
+					tag = CNK
 				}
 			}
 
@@ -191,7 +191,7 @@ technologies = {
 			}
 			#modifier = {
 			#	factor = 0
-			#	tag = SOV
+			#	tag = RUS
 			#	OR = {
 			#		date < "1944.1.1" # stock up on lots of rifles, we got the manpower
 			#		AND = {
@@ -483,7 +483,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = GBR
 			}
 		}
 	}
@@ -527,7 +527,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = GBR
 			}
 		}
 	}
@@ -566,7 +566,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = GBR
 			}
 		}
 	}
@@ -1009,7 +1009,7 @@ technologies = {
 
 
 		#If you change these
-		#Change the custom tooltip too: RAJ_jungle_training_effect
+		#Change the custom tooltip too: IND_jungle_training_effect
 		marine = {
 			jungle = {
 				attack = 0.05 
@@ -1265,13 +1265,13 @@ technologies = {
 				factor = 15
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
+					tag = WHN
+					tag = RJN
+					tag = QIG
 					tag = SIK
 					tag = GXC
 					tag = SHX
-					tag = YUN
+					tag = CNK
 				}
 			}
 			modifier = {
@@ -1357,13 +1357,13 @@ technologies = {
 				factor = 5
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
+					tag = WHN
+					tag = RJN
+					tag = QIG
 					tag = SIK
 					tag = GXC
 					tag = SHX
-					tag = YUN
+					tag = CNK
 				}
 			}
 			modifier = {
@@ -1652,7 +1652,7 @@ technologies = {
 			
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 		
@@ -2062,7 +2062,7 @@ technologies = {
 		}		
 	}
 
-	######### FROM SOVIET FOCUS ##########
+	######### FROM RUSIET FOCUS ##########
 	penal_infantry = {
 		
 		allow = {

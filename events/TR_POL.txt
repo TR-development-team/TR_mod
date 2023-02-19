@@ -13,7 +13,7 @@ country_event = {
 
     trigger = {
         tag = POL
-		GER = { has_war_with = DDR }
+		GER = { has_war_with = PRE }
 		FRA = { owns_state = 28 }
 		is_subject = no
 	}
@@ -22,7 +22,7 @@ country_event = {
 	option = { 
 		name = TR_poland.1.a
         declare_war_on = {
-			target = DDR
+			target = PRE
 			type = annex_everything
 		}
         GER = { country_event = TR_poland.2 }

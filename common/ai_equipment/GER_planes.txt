@@ -519,8 +519,8 @@ GER_heavy_fighter = {
 	priority = {
 		factor = 500
 		modifier = {
-			has_war_with = ENG
-			NOT = { has_war_with = SOV }
+			has_war_with = GBR
+			NOT = { has_war_with = RUS }
 			factor = 2
 		}
 	}
@@ -621,7 +621,7 @@ GER_strategic_bomber = {
 		}
 		modifier = { #beat the Soviets already
 			has_War = yes
-			SOV = {
+			RUS = {
 				OR = {
 					exists = no
 					is_subject_of = GER

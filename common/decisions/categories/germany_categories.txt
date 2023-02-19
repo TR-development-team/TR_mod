@@ -4,13 +4,13 @@ GER_integrate_policy = {
 	allowed = {
         OR = {
 	tag = GER
-        tag = DDR
+        tag = PRE
 	}
         }
 	visible = {
         OR = {
 	tag = GER
-        tag = DDR
+        tag = PRE
 	}
 	}
 }

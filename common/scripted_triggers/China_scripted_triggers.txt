@@ -3,42 +3,42 @@
 #####################################
 is_chinese_tag = {
 	OR = {
-	tag = ANQ
-	tag = CHI
-	tag = MIN 
-        tag = PRC
-        tag = YUN
+	tag = ANH
+	tag = WHN
+	tag = HEN 
+        tag = RJN
+        tag = CNK
 	tag = SIK
-	tag = XSM 
-        tag = YNN
+	tag = QIG 
+        tag = YUN
         tag = FUJ
-	tag = SAN
-        tag = KUO
-        tag = HNA
+	tag = SHX
+        tag = XIB
+        tag = HNN
         tag = GXC
-        tag = HEX
-        tag = NGX
-        tag = DTN
+        tag = GAN
+        tag = NIG
+        tag = SHA
         tag = ETR
-        tag = KML
+        tag = KUM
         tag = SCH
 	}
 }
 can_become_china = {
 	OR = {
-	tag = ANQ
-	tag = CHI
-	tag = MIN 
-        tag = PRC
-        tag = YUN 
-        tag = YNN
-	tag = SAN
-        tag = KUO
-        tag = HNA
-        tag = HEX
-        tag = DTN
+	tag = ANH
+	tag = WHN
+	tag = HEN 
+        tag = RJN
+        tag = CNK 
+        tag = YUN
+	tag = SHX
+        tag = XIB
+        tag = HNN
+        tag = GAN
+        tag = SHA
         tag = SCH
-        tag = NAN
+        tag = SGH
 	}
 }
 
@@ -60,12 +60,12 @@ is_ruled_by_right_kmt = {
 				is_in_faction = yes
 				is_faction_leader = no
 			}
-			faction_leader = { original_tag = CHI }
+			faction_leader = { original_tag = WHN }
 		}
 		### overlords override puppets' alignments
 		else_if = {
 			limit = { is_subject = yes }
-			overlord = { original_tag = CHI }
+			overlord = { original_tag = WHN }
 		}
 		### if not in faction, check tag-specific conditions
 		else = {
@@ -83,7 +83,7 @@ is_ruled_by_right_kmt = {
 					has_government = paternal_autocrat
 				}
 				AND = {
-					original_tag = XSM
+					original_tag = QIG
 					has_government = paternal_autocrat
 				}
 			}
@@ -101,12 +101,12 @@ is_ruled_by_federalists = {
 				is_in_faction = yes
 				is_faction_leader = no
 			}
-			faction_leader = { original_tag = HNA }
+			faction_leader = { original_tag = HNN }
 		}
 		### overlords override puppets' alignments
 		else_if = {
 			limit = { is_subject = yes }
-			overlord = { original_tag = HNA }
+			overlord = { original_tag = HNN }
 		}
 		else = {
 			OR = {
@@ -119,11 +119,11 @@ is_ruled_by_federalists = {
 					has_government = social_conservative
 				}
 				AND = {
-					original_tag = YNN
+					original_tag = YUN
 					has_government = social_conservative
 				}
 				AND = {
-					original_tag = XSM
+					original_tag = QIG
 					has_government = social_conservative
 				}
 			}
@@ -136,28 +136,28 @@ is_ruled_by_federalists = {
 
 is_core_china_tag = {
 	OR = {
-	tag = CHI
-	tag = MIN 
-        tag = PRC
-        tag = ANQ
-        tag = YUN
+	tag = WHN
+	tag = HEN 
+        tag = RJN
+        tag = ANH
+        tag = CNK
 	tag = SIK
-	tag = XSM 
-        tag = YNN
+	tag = QIG 
+        tag = YUN
         tag = FUJ
-	tag = SAN
-        tag = KUO
+	tag = SHX
+        tag = XIB
         tag = FUJ
-        tag = HNA
+        tag = HNN
         tag = GXC
-        tag = HEX
-        tag = NGX
-        tag = DTN
+        tag = GAN
+        tag = NIG
+        tag = SHA
         tag = ETR
-        tag = KML
+        tag = KUM
         tag = SCH
-        tag = GUG
-        tag = NAN
-        tag = SHX
+        tag = GND
+        tag = SGH
+        tag = ZHI
 	}
 }

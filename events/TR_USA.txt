@@ -398,10 +398,10 @@ country_event = {
 				target = ENR type = annex_everything
 			}
                 declare_war_on = {
-				target = RUS type = annex_everything
+				target = SOV type = annex_everything
 			}
                 declare_war_on = {
-				target = SOV type = annex_everything
+				target = RUS type = annex_everything
 			}
                 declare_war_on = {
 				target = MEX type = annex_everything
@@ -506,7 +506,7 @@ country_event = {
                 remove_ideas = USA_Extremism
                 reverse_add_opinion_modifier = {
 				target = JAP
-				modifier = TUR_Treatment_Revoke
+				modifier = OTT_Treatment_Revoke
 			}
                 388 = { set_demilitarized_zone = no }
                 381 = { set_demilitarized_zone = no }
@@ -548,7 +548,7 @@ country_event = {
                 ai_chance = {
 			base = 100
 		} 
-                remove_ideas = YUN_jap_economic
+                remove_ideas = CNK_jap_economic
                 drop_cosmetic_tag = yes
                 add_popularity = {
 			ideology = paternal_autocrat
@@ -734,10 +734,10 @@ country_event = {
 		}
                 add_political_power = -50
                 reverse_add_opinion_modifier = {
-				target = CHI
+				target = WHN
 				modifier = medium_increase
 			}
-                CHI = { country_event = TR_USA.20 }
+                WHN = { country_event = TR_USA.20 }
 
 	}
         option = { 
@@ -746,7 +746,7 @@ country_event = {
 			base = 0
 		}
                reverse_add_opinion_modifier = {
-				target = CHI
+				target = WHN
 				modifier = medium_decrease
 			}
 
@@ -767,7 +767,7 @@ country_event = {
 	
 	option = { 
 		name = TR_USA.20.a
-                add_ideas = CHI_USA_Collaborate
+                add_ideas = WHN_USA_Collaborate
 
 	}
 }

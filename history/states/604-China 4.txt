@@ -3,11 +3,11 @@ state={
 	name="STATE_604"
 
 	history={
-		owner = XSM
-		add_core_of = XSM
+		owner = QIG
+		add_core_of = QIG
 		add_core_of = TIB
-		add_claim_by = CHI
-		add_claim_by = YUN
+		add_claim_by = WHN
+		add_claim_by = CNK
 
 		victory_points = {
 			7940 10 
@@ -25,7 +25,7 @@ state={
 					}
 
 				}
-				CHI = {
+				WHN = {
 					transfer_state = PREV
 
 				}

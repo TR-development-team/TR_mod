@@ -295,11 +295,11 @@ focus_tree = {
                  
 	completion_reward = { 
 			create_wargoal = {
-				target = RUS
+				target = SOV
 				type = annex_everything
 			}
                         create_wargoal = {
-				target = SOV
+				target = RUS
 				type = annex_everything
 			}
 		}
@@ -335,7 +335,7 @@ focus_tree = {
 		}
 	completion_reward = { 
 			create_wargoal = {
-				target = UKR
+				target = MHN
 				type = annex_everything
 			}
 
@@ -707,7 +707,7 @@ focus_tree = {
 		}
 	completion_reward = { 
 			create_wargoal = {
-				target = TUR
+				target = OTT
 				type = annex_everything
 			}
                        add_state_claim = 340
@@ -1768,12 +1768,12 @@ focus = {
 				OR = { 
 					# we dont want chinese minors to go crazy on slots early since they get eaten
 					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
+					tag = CNK
+					tag = ZHI
+					tag = QIG
 					tag = BEL
 					tag = LUX
-					tag = HOL
+					tag = NTL
 					tag = DEN
 
 					# we also dont want tiny nations to go crazy with slots right away

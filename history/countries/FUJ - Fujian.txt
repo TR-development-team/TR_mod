@@ -32,7 +32,7 @@ if = {
 set_stability = 0.4
 set_war_support = 0.6
 
-ANQ = { 
+ANH = { 
         set_autonomy = {
 	   target = FUJ
 	   autonomous_state = autonomy_satellite
@@ -44,7 +44,7 @@ if = {
 	}
 
 	declare_war_on = {
-		target = PRC
+		target = RJN
 		type = annex_everything
 	}
 }
@@ -60,14 +60,14 @@ set_popularities = {
 
 add_ideas = {
          militaly_dictatorship
-         CHI_late_army
-         YUN_jap_economic
-         FUJ_PRC_partisan
+         WHN_late_army
+         CNK_jap_economic
+         FUJ_RJN_partisan
 }
 
 recruit_character = FUJ_Sun_Chuanfang
 recruit_character = FUJ_Chen_ShaoKuan
-recruit_character = CHI_Chen_ShaoKuan
+recruit_character = WHN_Chen_ShaoKuan
 
 
 ### VARIANTS ###
@@ -81,7 +81,7 @@ if = {
 	create_equipment_variant = {
 		name = "Jianwei Class"			
 		type = ship_hull_light_1
-		name_group = CHI_DD_HISTORICAL
+		name_group = WHN_DD_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_battery_1
@@ -98,7 +98,7 @@ if = {
 	create_equipment_variant = {
 		name = "Hairong Class"					# Hairong protected cruisers and Zhaohe, Yingrui training cruisers
 		type = ship_hull_cruiser_coastal_defense_ship
-		name_group = CHI_CL_HISTORICAL
+		name_group = WHN_CL_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1
@@ -116,7 +116,7 @@ if = {
 	create_equipment_variant = {
 		name = "Haiqi Class"
 		type = ship_hull_cruiser_coastal_defense_ship
-		name_group = CHI_CL_HISTORICAL
+		name_group = WHN_CL_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_medium_battery_1
@@ -135,7 +135,7 @@ if = {
 	create_equipment_variant = {
 		name = "Ninghai Class"
 		type = ship_hull_cruiser_1
-		name_group = CHI_CL_HISTORICAL
+		name_group = WHN_CL_HISTORICAL
 		parent_version = 0
 		modules = {
 			fixed_ship_battery_slot = ship_light_medium_battery_1

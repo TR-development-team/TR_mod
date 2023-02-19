@@ -4,13 +4,13 @@ GER_integrate_policy = {
 		icon = infiltrate_state
 		allowed = {
 			OR = {
-				tag = DDR
+				tag = PRE
 				tag = GER
 			}
 		}
 		visible = {
 			OR = {
-				tag = DDR
+				tag = PRE
 				tag = GER
 			}
 			OR = {
@@ -71,13 +71,13 @@ GER_integrate_policy = {
 		icon = infiltrate_state
 		allowed = {
 			OR = {
-				tag = DDR
+				tag = PRE
 				tag = GER
 			}
 		}
 		visible = {
 			OR = {
-				tag = DDR
+				tag = PRE
 				tag = GER
 			}
 			OR = {
@@ -121,13 +121,13 @@ GER_integrate_policy = {
 		icon = infiltrate_state
 		allowed = {
 			OR = {
-				tag = DDR
+				tag = PRE
 				tag = GER
 			}
 		}
 		visible = {
 			OR = {
-				tag = DDR
+				tag = PRE
 				tag = GER
 			}
 			OR = {
@@ -161,13 +161,13 @@ GER_integrate_policy = {
 		icon = infiltrate_state
 		allowed = {
 			OR = {
-				tag = DDR
+				tag = PRE
 				tag = GER
 			}
 		}
 		visible = {
 			OR = {
-				tag = DDR
+				tag = PRE
 				tag = GER
 			}
 			OR = {

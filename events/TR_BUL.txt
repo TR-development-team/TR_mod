@@ -66,16 +66,16 @@ country_event = {
 			ITA = { remove_from_faction = BUL }
 		}
 		if = {
-			limit = { SOV = { has_war_with = ITA } }
-			ITA = { white_peace = SOV }
-		}
-		if = {
 			limit = { RUS = { has_war_with = ITA } }
 			ITA = { white_peace = RUS }
 		}
 		if = {
-			limit = { UKR = { has_war_with = ITA } }
-			ITA = { white_peace = UKR }
+			limit = { SOV = { has_war_with = ITA } }
+			ITA = { white_peace = SOV }
+		}
+		if = {
+			limit = { MHN = { has_war_with = ITA } }
+			ITA = { white_peace = MHN }
 		}
 
 
@@ -129,28 +129,28 @@ country_event = {
 		}
                 if = {
 			limit = { 
-                               has_war_with = TUR
+                               has_war_with = OTT
                                owns_state = 187
                               }
-			TUR = { 
+			OTT = { 
                                 transfer_state = 187
                               }
 		}
                 if = {
 			limit = { 
-                               has_war_with = TUR
+                               has_war_with = OTT
                                owns_state = 164
                               }
-			TUR = { 
+			OTT = { 
                                 transfer_state = 164
                               }
 		}
                 if = {
 			limit = { 
-                               has_war_with = TUR
+                               has_war_with = OTT
                                owns_state = 182
                               }
-			TUR = { 
+			OTT = { 
                                 transfer_state = 182
                               }
 		}
@@ -165,9 +165,9 @@ country_event = {
                 if = {
 			limit = { 
                                NOT = { country_exists = ROM }
-                               NOT = { has_war_with = SOV }
                                NOT = { has_war_with = RUS }
-                               NOT = { has_war_with = UKR }
+                               NOT = { has_war_with = SOV }
+                               NOT = { has_war_with = MHN }
                                NOT = { has_war_with = AUS }
                               }
                         release = ROM
@@ -194,26 +194,12 @@ country_event = {
                 if = {
 			limit = { 
                                NOT = { country_exists = ROM }
-                               has_war_with = UKR
+                               has_war_with = MHN
                                owns_state = 78
                                owns_state = 768
                               }
                         release = ROM
-                        UKR = { 
-                                transfer_state = 78 
-                                transfer_state = 768
-                              }
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = ROM }
-                               has_war_with = RUS
-                               NOT = { has_war_with = UKR }
-                               owns_state = 78
-                               owns_state = 768
-                              }
-                        release = ROM
-                        RUS = { 
+                        MHN = { 
                                 transfer_state = 78 
                                 transfer_state = 768
                               }
@@ -222,13 +208,27 @@ country_event = {
 			limit = { 
                                NOT = { country_exists = ROM }
                                has_war_with = SOV
-                               NOT = { has_war_with = UKR }
-                               NOT = { has_war_with = RUS }
+                               NOT = { has_war_with = MHN }
                                owns_state = 78
                                owns_state = 768
                               }
                         release = ROM
                         SOV = { 
+                                transfer_state = 78 
+                                transfer_state = 768
+                              }
+		}
+                if = {
+			limit = { 
+                               NOT = { country_exists = ROM }
+                               has_war_with = RUS
+                               NOT = { has_war_with = MHN }
+                               NOT = { has_war_with = SOV }
+                               owns_state = 78
+                               owns_state = 768
+                              }
+                        release = ROM
+                        RUS = { 
                                 transfer_state = 78 
                                 transfer_state = 768
                               }

@@ -2,7 +2,7 @@
 ideas = {
        
      country = {
-               DDR_Prussianarmy = {
+               PRE_Prussianarmy = {
 			allowed = {
 				always = no
 			}
@@ -18,18 +18,18 @@ ideas = {
                         army_attack_factor = 0.1
 			}
 		}
-               DDR_anti_communism_Partisan = {
+               PRE_anti_communism_Partisan = {
 			allowed = {
 				always = no
 			}
 			available = {
-				has_war_with = DDR
+				has_war_with = PRE
 			}
                         picture = idea_chi_war_of_resistance2
 
 			
                         targeted_modifier = {
-				tag = DDR
+				tag = PRE
 				attack_bonus_against = -0.05
                                 defense_bonus_against = -0.05
 			}
@@ -40,18 +40,18 @@ ideas = {
 
 			}
 		}
-               DDR_anti_communism_Partisan_2 = {
+               PRE_anti_communism_Partisan_2 = {
 			allowed = {
 				always = no
 			}
 			available = {
-				has_war_with = DDR
+				has_war_with = PRE
 			}
                         picture = idea_chi_war_of_resistance2
 
 			
                         targeted_modifier = {
-				tag = DDR
+				tag = PRE
 				attack_bonus_against = -0.1
                                 defense_bonus_against = -0.1
 			}
@@ -64,10 +64,10 @@ ideas = {
 		}
       }
 	Head_of_State = {
-		DDR_Wilhelm_II = {
-			picture = DDR_Wilhelm_II
+		PRE_Wilhelm_II = {
+			picture = PRE_Wilhelm_II
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -85,10 +85,10 @@ ideas = {
                 TR_stern_imperialist
 			}
 		}
-		DDR_Wilhelm_III = {
-			picture = DDR_Wilhelm_III
+		PRE_Wilhelm_III = {
+			picture = PRE_Wilhelm_III
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -108,10 +108,10 @@ ideas = {
 		}
     }
 	Government_leaders = {
-		DDR_Otto_von_Bismarck = {
-			picture = DDR_Otto_von_Bismarck
+		PRE_Otto_von_Bismarck = {
+			picture = PRE_Otto_von_Bismarck
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -129,10 +129,10 @@ ideas = {
                 TR_silent_workhorse
 			}
 		}
-		DDR_Alfred_Hugenberg = {
-			picture = DDR_Alfred_Hugenberg
+		PRE_Alfred_Hugenberg = {
+			picture = PRE_Alfred_Hugenberg
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -150,10 +150,10 @@ ideas = {
                 TR_corporate_suit
 			}
 		}
-		DDR_Franz_von_Papen = {
-			picture = DDR_Franz_von_Papen
+		PRE_Franz_von_Papen = {
+			picture = PRE_Franz_von_Papen
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -171,10 +171,10 @@ ideas = {
                 TR_political_protege
 			}
 		}
-		DDR_Kurt_von_Schleicher = {
-			picture = DDR_Kurt_von_Schleicher
+		PRE_Kurt_von_Schleicher = {
+			picture = PRE_Kurt_von_Schleicher
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -192,10 +192,10 @@ ideas = {
                 TR_flamboyant_tough_guy
 			}
 		}
-		DDR_Erich_Ludendorff = {
-			picture = DDR_Erich_Ludendorff
+		PRE_Erich_Ludendorff = {
+			picture = PRE_Erich_Ludendorff
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -216,10 +216,10 @@ ideas = {
     }
 	Minister_of_Foreign_Affairs = {
 
-		DDR_Konstantin_von_Neurath = {
-			picture = DDR_Konstantin_von_Neurath
+		PRE_Konstantin_von_Neurath = {
+			picture = PRE_Konstantin_von_Neurath
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -237,11 +237,11 @@ ideas = {
                 TR_great_compromiser
 			}
 		}
-        DDR_Ribbentrop = {
+        PRE_Ribbentrop = {
 
-			picture = DDR_Ribbentrop
+			picture = PRE_Ribbentrop
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -261,10 +261,10 @@ ideas = {
 		}
     }
 	Minister_of_Economy = {
-		DDR_Hjalmar_Schacht = {
-			picture = DDR_Hjalmar_Schacht
+		PRE_Hjalmar_Schacht = {
+			picture = PRE_Hjalmar_Schacht
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -282,11 +282,11 @@ ideas = {
                 TR_bank_president
 			}
 		}
-		DDR_Wilhelm_Groener_MoE = {
-			name = DDR_Wilhelm_Groener
-			picture = DDR_Wilhelm_Groener
+		PRE_Wilhelm_Groener_MoE = {
+			name = PRE_Wilhelm_Groener
+			picture = PRE_Wilhelm_Groener
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -304,11 +304,11 @@ ideas = {
                 TR_railway_magnate
 			}
 		}
-		DDR_Alfred_Hugenberg_MoE = {
-			name = DDR_Alfred_Hugenberg
-			picture = DDR_Alfred_Hugenberg
+		PRE_Alfred_Hugenberg_MoE = {
+			name = PRE_Alfred_Hugenberg
+			picture = PRE_Alfred_Hugenberg
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -328,11 +328,11 @@ ideas = {
 		}
     }
 	Minister_of_Interior = {
-		DDR_Wilhelm_Groener_MoI = {
-			name = DDR_Wilhelm_Groener
-			picture = DDR_Wilhelm_Groener
+		PRE_Wilhelm_Groener_MoI = {
+			name = PRE_Wilhelm_Groener
+			picture = PRE_Wilhelm_Groener
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -350,11 +350,11 @@ ideas = {
                 TR_compassionate_gentleman
 			}
 		}
-		DDR_Alfred_Hugenberg_MoI = {
-			name = DDR_Alfred_Hugenberg
-			picture = DDR_Alfred_Hugenberg
+		PRE_Alfred_Hugenberg_MoI = {
+			name = PRE_Alfred_Hugenberg
+			picture = PRE_Alfred_Hugenberg
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -372,10 +372,10 @@ ideas = {
                 TR_media_magnate
 			}
 		}
-		DDR_Otto_Meissner = {
-			picture = DDR_Otto_Meissner
+		PRE_Otto_Meissner = {
+			picture = PRE_Otto_Meissner
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -394,10 +394,10 @@ ideas = {
 			}
 		}
 
-		DDR_Reinhard_Heydrich = {
-			picture = DDR_Reinhard_Heydrich
+		PRE_Reinhard_Heydrich = {
+			picture = PRE_Reinhard_Heydrich
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -417,11 +417,11 @@ ideas = {
 		}
     }
 	chief_of_staff = {
-		DDR_Wilhelm_Groener_cos = {
-			name = DDR_Wilhelm_Groener
-			picture = DDR_Wilhelm_Groener
+		PRE_Wilhelm_Groener_cos = {
+			name = PRE_Wilhelm_Groener
+			picture = PRE_Wilhelm_Groener
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -429,10 +429,10 @@ ideas = {
                 cos_school_of_defence
 			}
 		}
-		DDR_Werner_von_Blomberg = {
-			picture = DDR_Werner_von_Blomberg
+		PRE_Werner_von_Blomberg = {
+			picture = PRE_Werner_von_Blomberg
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -440,10 +440,10 @@ ideas = {
                 cos_school_of_psychology
 			}
 		}
-		DDR_von_Hammerstein_Equord = {
-			picture = DDR_von_Hammerstein_Equord
+		PRE_von_Hammerstein_Equord = {
+			picture = PRE_von_Hammerstein_Equord
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -451,10 +451,10 @@ ideas = {
                 cos_school_of_mass_combat
 			}
 		}
-		DDR_Erich_von_Manstein = {
-			picture = DDR_Erich_von_Manstein
+		PRE_Erich_von_Manstein = {
+			picture = PRE_Erich_von_Manstein
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -462,10 +462,10 @@ ideas = {
                 cos_school_of_manoeuvre
 			}
 		}
-		DDR_Heinz_Guderian = {
-			picture = DDR_Heinz_Guderian
+		PRE_Heinz_Guderian = {
+			picture = PRE_Heinz_Guderian
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -475,10 +475,10 @@ ideas = {
 		}
     }
 	chief_of_army = {
-		DDR_Werner_von_Fritsch = {
-			picture = DDR_Werner_von_Fritsch
+		PRE_Werner_von_Fritsch = {
+			picture = PRE_Werner_von_Fritsch
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -486,10 +486,10 @@ ideas = {
                 carm_doctrine_of_autonomy
 			}
 		}
-		DDR_Walther_von_Brauchitsch = {
-			picture = DDR_Walther_von_Brauchitsch
+		PRE_Walther_von_Brauchitsch = {
+			picture = PRE_Walther_von_Brauchitsch
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -497,11 +497,11 @@ ideas = {
                 carm_armoured_spearhead_doctrine
 			}
 		}
-		DDR_Kurt_von_Schleicher_coa = {
-			name = DDR_Kurt_von_Schleicher
-			picture = DDR_Kurt_von_Schleicher
+		PRE_Kurt_von_Schleicher_coa = {
+			name = PRE_Kurt_von_Schleicher
+			picture = PRE_Kurt_von_Schleicher
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -509,10 +509,10 @@ ideas = {
                 carm_guns_and_butter_doctrine
 			}
 		}
-		DDR_Fedor_von_Bock = {
-			picture = DDR_Kurt_von_Schleicher
+		PRE_Fedor_von_Bock = {
+			picture = PRE_Kurt_von_Schleicher
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 
@@ -520,11 +520,11 @@ ideas = {
                 carm_decisive_battle_doctrine
 			}
 		}
-		DDR_Erwin_von_Witzleben_coa = {
-			name = DDR_Erwin_von_Witzleben
-			picture = DDR_Erwin_von_Witzleben
+		PRE_Erwin_von_Witzleben_coa = {
+			name = PRE_Erwin_von_Witzleben
+			picture = PRE_Erwin_von_Witzleben
 			allowed = {
-				original_tag = DDR
+				original_tag = PRE
 			}
 			cancel_if_invalid = yes	
 			traits = { 

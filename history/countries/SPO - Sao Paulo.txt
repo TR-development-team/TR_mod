@@ -1,11 +1,11 @@
 capital = 501
 
 
-oob = "SPO_1936"
+oob = "SBR_1936"
 add_ideas = {
         Democratic_Republic
 	BRA_CIVIL_WAR
-        SPO_jap_economic
+        SBR_jap_economic
         low_school_system
         low_minimum_wage
 }
@@ -54,7 +54,7 @@ if = {
 	}
 
 	declare_war_on = {
-		target = BRR
+		target = BRA
 		type = annex_everything
 	}
         declare_war_on = {
@@ -80,7 +80,7 @@ set_popularities = {
 	paternal_autocrat = 5
 	national_populist = 5
 }
-recruit_character = SPO_Mizuno_Ryo
+recruit_character = SBR_Mizuno_Ryo
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

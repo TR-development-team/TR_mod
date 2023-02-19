@@ -100,25 +100,25 @@ France_likes_russia = {
 	}
 	enable = {
 		country_exists = FRA
-                SOV = { has_war_with = RUS }
-		NOT = { has_war_with = SOV }
+                RUS = { has_war_with = SOV }
+		NOT = { has_war_with = RUS }
 	}
 
 	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = befriend
-		id = "SOV"
+		id = "RUS"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "SOV"
+		id = "RUS"
 		value = 100
 	}
 	ai_strategy = {
 		type = send_volunteers_desire
-		id = "SOV"
+		id = "RUS"
 		value = 100
 	}
 }

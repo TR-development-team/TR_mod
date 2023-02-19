@@ -52,11 +52,11 @@ country_event = {
 			base = 100
 		}
                 trigger = {
-                        country_exists = BRA
+                        country_exists = EQB
 			is_subject = no	
                         is_in_faction = no
 		}
-                USA = { add_to_faction = BRA }
+                USA = { add_to_faction = EQB }
 
 	}
         option = { 

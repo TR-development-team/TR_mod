@@ -90,7 +90,7 @@ dense_rural_infrastructure = { #State Modifier
 	enable = { always = yes }
 	remove_trigger = { infrastructure > 4 }
 
-	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	icon = GFX_modifiers_RUS_civilian_labor_in_defense
 	
 	local_non_core_supply_impact_factor = 0.35
 }
@@ -385,7 +385,7 @@ POL_anti_german_offensive = {
 POL_peasant_communities = {
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	icon = GFX_modifiers_RUS_civilian_labor_in_defense
 
 	state_production_speed_rail_way_factor = 0.1
 	state_production_speed_supply_node_factor = 0.05
@@ -411,13 +411,13 @@ unplanned_offensive = {
 
 
 ####
-#### SOVIET STATE MODIFIERS ####
+#### RUSIET STATE MODIFIERS ####
 ####
 
-SOV_defend_moscow = { #STATE MODIFIER
+RUS_defend_moscow = { #STATE MODIFIER
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_defend_moscow
+	icon = GFX_modifiers_RUS_defend_moscow
 	
 	recruitable_population_factor = 0.25
 	army_core_defence_factor = 0.1
@@ -425,21 +425,21 @@ SOV_defend_moscow = { #STATE MODIFIER
 	supply_factor = 0.15
 }
 
-SOV_increased_metals_production = { #STATE MODIFIER
+RUS_increased_metals_production = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_increased_metal_production
 
-	state_resource_aluminium = SOV_aluminium_bonus
-	state_resource_tungsten = SOV_tungsten_bonus
-	state_resource_steel = SOV_steel_bonus
-	state_resource_chromium = SOV_chromium_bonus
+	state_resource_aluminium = RUS_aluminium_bonus
+	state_resource_tungsten = RUS_tungsten_bonus
+	state_resource_steel = RUS_steel_bonus
+	state_resource_chromium = RUS_chromium_bonus
 }
 
-SOV_invaders_must_die = { #STATE MODIFIER
+RUS_invaders_must_die = { #STATE MODIFIER
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_invaders_must_die
+	icon = GFX_modifiers_RUS_invaders_must_die
 	
 	compliance_growth = -0.05
 	resistance_growth = 0.05
@@ -449,10 +449,10 @@ SOV_invaders_must_die = { #STATE MODIFIER
 	disable_strategic_redeployment = 1
 }
 
-SOV_seraya_loshad_battery = { #STATE MODIFIER
+RUS_seraya_loshad_battery = { #STATE MODIFIER
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_armored_battery
+	icon = GFX_modifiers_RUS_armored_battery
 	
 	army_defence_factor = 0.1
 	cas_damage_reduction = 0.1
@@ -461,10 +461,10 @@ SOV_seraya_loshad_battery = { #STATE MODIFIER
 	pocket_penalty = -0.15
 }
 
-SOV_krasnaya_gorka_battery = { #STATE MODIFIER
+RUS_krasnaya_gorka_battery = { #STATE MODIFIER
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_armored_battery
+	icon = GFX_modifiers_RUS_armored_battery
 	
 	army_defence_factor = 0.1
 	cas_damage_reduction = 0.1
@@ -473,10 +473,10 @@ SOV_krasnaya_gorka_battery = { #STATE MODIFIER
 	pocket_penalty = -0.15
 }
 
-SOV_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
+RUS_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_armored_battery
+	icon = GFX_modifiers_RUS_armored_battery
 	
 	army_defence_factor = 0.1
 	cas_damage_reduction = 0.1
@@ -485,10 +485,10 @@ SOV_armored_battery_35 = { #STATE MODIFIER #German designation Maksim Gorky
 	pocket_penalty = -0.15
 }
 
-SOV_factory_worker_militias_raised = { #STATE MODIFIER
+RUS_factory_worker_militias_raised = { #STATE MODIFIER
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_factory_worker_militias
+	icon = GFX_modifiers_RUS_factory_worker_militias
 	
 	army_core_defence_factor = 0.05
 	local_org_regain = 0.1
@@ -496,10 +496,10 @@ SOV_factory_worker_militias_raised = { #STATE MODIFIER
 	local_resources_factor = -0.5
 }
 
-SOV_civilian_labor_in_defense_mod = { #STATE MODIFIER
+RUS_civilian_labor_in_defense_mod = { #STATE MODIFIER
 	enable = { always = yes }
 
-	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	icon = GFX_modifiers_RUS_civilian_labor_in_defense
 	
 	army_core_defence_factor = 0.05
 	state_production_speed_bunker_factor = 0.6
@@ -509,7 +509,7 @@ SOV_civilian_labor_in_defense_mod = { #STATE MODIFIER
 	local_resources_factor = -0.5
 }
 
-SOV_soviet_military_offensive = { #STATE MODIFIER
+RUS_soviet_military_offensive = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_generic_military_plans
@@ -518,7 +518,7 @@ SOV_soviet_military_offensive = { #STATE MODIFIER
 	army_attack_factor = 0.1
 }
 
-SOV_soviet_imports = { #STATE MODIFIER
+RUS_soviet_imports = { #STATE MODIFIER
 	enable = { always = yes }
 
 	icon = GFX_modifiers_increased_metal_production

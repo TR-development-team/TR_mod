@@ -4,14 +4,14 @@
      country = {
 
 		### Starting ###
-        FUJ_PRC_partisan = {
+        FUJ_RJN_partisan = {
 			allowed = {
 				always = no
 			}
                         
 
 			targeted_modifier = {
-				tag = PRC
+				tag = RJN
 				attack_bonus_against = -0.05
                                 defense_bonus_against = -0.05
 			}
@@ -20,7 +20,7 @@
 			picture = chi_war_of_resistance3
 			cancel = {
                 OR = { 
-				PRC = { exists = no }
+				RJN = { exists = no }
                 has_socialist_government = yes
                 }
 			}

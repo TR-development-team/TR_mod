@@ -865,8 +865,8 @@ NZL_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
-RAJ_ai_behavior = {
-	name = "RAJ_AI_BEHAVIOR"
+IND_ai_behavior = {
+	name = "IND_AI_BEHAVIOR"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	required_dlc = "Together for Victory"
 	default = {
@@ -877,18 +877,18 @@ RAJ_ai_behavior = {
 	option = {
 		name = COMMUNIST
 		text = "RULE_OPTION_COMMUNIST"
-		desc = "RULE_OPTION_COMMUNIST_RAJ_AI_DESC"
+		desc = "RULE_OPTION_COMMUNIST_IND_AI_DESC"
 	}
 	option = {
 		name = DEMOCRATIC_HISTORICAL
 		text = "RULE_OPTION_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_RAJ_AI_DESC"
+		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_IND_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
 		name = FASCIST
 		text = "RULE_OPTION_FASCIST"
-		desc = "RULE_FASCIST_RAJ_AI_DESC"
+		desc = "RULE_FASCIST_IND_AI_DESC"
 	}
 	option = {
 		name = RANDOM
@@ -1081,8 +1081,8 @@ CHI_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
-PRC_ai_behavior = {
-	name = "PRC_AI_BEHAVIOR"
+RJN_ai_behavior = {
+	name = "RJN_AI_BEHAVIOR"
 	required_dlc = "Waking the Tiger"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
@@ -1093,13 +1093,13 @@ PRC_ai_behavior = {
 	option = {
 		name = HISTORICAL
 		text = "RULE_OPTION_HISTORICAL"
-		desc = "RULE_OPTION_HISTORICAL_PRC_AI_DESC"
+		desc = "RULE_OPTION_HISTORICAL_RJN_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
 		name = ALTERNATE
 		text = "RULE_OPTION_ALTERNATE"
-		desc = "RULE_OPTION_ALTERNATE_PRC_AI_DESC"
+		desc = "RULE_OPTION_ALTERNATE_RJN_AI_DESC"
 	}
 	option = {
 		name = RANDOM
@@ -1133,8 +1133,8 @@ MAN_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
-ENG_ai_behavior = {
-	name = "ENG_AI_BEHAVIOR"
+GBR_ai_behavior = {
+	name = "GBR_AI_BEHAVIOR"
 	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
@@ -1145,28 +1145,28 @@ ENG_ai_behavior = {
 	option = {
 		name = DEMOCRATIC_HISTORICAL
 		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_ENG_AI_DESC"
+		desc = "RULE_OPTION_DEMOCRATIC_GBR_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
 		name = DEMOCRATIC_ALTERNATE
 		text = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT"
-		desc = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT_ENG_AI_DESC"
+		desc = "RULE_OPTION_DEMOCRATIC_NO_MORE_APPEASEMENT_GBR_AI_DESC"
 	}
 	option = {
 		name = COMMUNIST
 		text = "RULE_OPTION_TRADE_UNIONS"
-		desc = "RULE_OPTION_TRADE_UNIONS_ENG_AI_DESC"
+		desc = "RULE_OPTION_TRADE_UNIONS_GBR_AI_DESC"
 	}
 	option = {
 		name = NEUTRALITY
 		text = "RULE_OPTION_THE_KINGS_PARTY"
-		desc = "RULE_OPTION_THE_KINGS_PARTY_ENG_AI_DESC"
+		desc = "RULE_OPTION_THE_KINGS_PARTY_GBR_AI_DESC"
 	}
 	option = {
 		name = FASCIST
 		text = "RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS"
-		desc = "RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS_ENG_AI_DESC"
+		desc = "RULE_OPTION_ORGANIZE_THE_BLACKSHIRTS_GBR_AI_DESC"
 	}
 	option = {
 		name = RANDOM
@@ -1212,8 +1212,8 @@ USA_ai_behavior = {
 	}
 }
 
-HOL_ai_behavior = {
-	name = "HOL_AI_BEHAVIOR"
+NTL_ai_behavior = {
+	name = "NTL_AI_BEHAVIOR"
 	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
@@ -1224,38 +1224,38 @@ HOL_ai_behavior = {
 	option = {
 		name = DEMOCRATIC_HISTORICAL
 		text = "RULE_OPTION_DEMOCRATIC_HISTORICAL"
-		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_HOL_AI_DESC"
+		desc = "RULE_OPTION_DEMOCRATIC_HISTORICAL_NTL_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
 		name = DEMOCRATIC_ALTERNATE_1
 		text = "RULE_OPTION_DEMOCRATIC_CONTINUE_THE_WAR_IN_BATAVIA"
-		desc = "RULE_DEMOCRATIC_CONTINUE_THE_WAR_IN_BATAVIA_HOL_AI_DESC"
+		desc = "RULE_DEMOCRATIC_CONTINUE_THE_WAR_IN_BATAVIA_NTL_AI_DESC"
 	}
 	option = {
 		name = DEMOCRATIC_ALTERNATE_2
 		text = "RULE_OPTION_DEMOCRATIC_CONTINUE_THE_ZUIDERZEE_WORKS"
-		desc = "RULE_DEMOCRATIC_CONTINUE_THE_ZUIDERZEE_WORKS_HOL_AI_DESC"
+		desc = "RULE_DEMOCRATIC_CONTINUE_THE_ZUIDERZEE_WORKS_NTL_AI_DESC"
 	}
 	option = {
 		name = DEMOCRATIC_ALTERNATE_3
 		text = "RULE_OPTION_DEMOCRATIC_LEAD_THE_MINOR_DEMOCRACIES"
-		desc = "RULE_DEMOCRATIC_LEAD_THE_MINOR_DEMOCRACIES_HOL_AI_DESC"
+		desc = "RULE_DEMOCRATIC_LEAD_THE_MINOR_DEMOCRACIES_NTL_AI_DESC"
 	}
 	option = {
 		name = COMMUNIST
 		text = "RULE_OPTION_LEGACY_OF_THE_DE_ZEVEN_PROVINCIEN_MUTINY"
-		desc = "RULE_OPTION_LEGACY_OF_THE_DE_ZEVEN_PROVINCIEN_MUTINY_HOL_AI_DESC"
+		desc = "RULE_OPTION_LEGACY_OF_THE_DE_ZEVEN_PROVINCIEN_MUTINY_NTL_AI_DESC"
 	}
 	option = {
 		name = NEUTRALITY
 		text = "RULE_OPTION_ORANJE_BOVEN"
-		desc = "RULE_OPTION_ORANJE_BOVEN_HOL_AI_DESC"
+		desc = "RULE_OPTION_ORANJE_BOVEN_NTL_AI_DESC"
 	}
 	option = {
 		name = FASCIST
 		text = "RULE_OPTION_CAVE_TO_THE_GERMANS"
-		desc = "RULE_CAVE_TO_THE_GERMANS_HOL_AI_DESC"
+		desc = "RULE_CAVE_TO_THE_GERMANS_NTL_AI_DESC"
 	}
 	option = {
 		name = RANDOM
@@ -1524,8 +1524,8 @@ BUL_ai_behavior = {
 	}
 }
 
-TUR_ai_behavior = {
-	name = "TUR_AI_BEHAVIOR"
+OTT_ai_behavior = {
+	name = "OTT_AI_BEHAVIOR"
 	required_dlc = "Battle for the Bosporus"
 	group = "RULE_GROUP_AI_BEHAVIOR"
 	default = {
@@ -1536,7 +1536,7 @@ TUR_ai_behavior = {
 	option = {
 		name = HISTORICAL
 		text = "RULE_OPTION_HISTORICAL"
-		desc = "RULE_OPTION_HISTORICAL_TUR_AI_DESC"
+		desc = "RULE_OPTION_HISTORICAL_OTT_AI_DESC"
 		allow_achievements = yes
 	}
 	option = {
@@ -1545,34 +1545,34 @@ TUR_ai_behavior = {
 		desc = "RULE_OPTION_ALTERNATE_KEMALIST_AI_DESC"
 	}
 	option = {
-		name = TUR_DEMOCRATIC_KEMALIST
-		text = "RULE_OPTION_TUR_DEMOCRATIC_KEMALIST"
-		desc = "RULE_OPTION_TUR_DEMOCRATIC_KEMALIST_DESC"
+		name = OTT_DEMOCRATIC_KEMALIST
+		text = "RULE_OPTION_OTT_DEMOCRATIC_KEMALIST"
+		desc = "RULE_OPTION_OTT_DEMOCRATIC_KEMALIST_DESC"
 	}
 	option = {
-		name = TUR_DEMOCRATIC_ALTERNATE
-		text = "RULE_OPTION_TUR_DEMOCRATIC_ALTERNATE"
-		desc = "RULE_OPTION_TUR_DEMOCRATIC_ALTERNATE_DESC"
+		name = OTT_DEMOCRATIC_ALTERNATE
+		text = "RULE_OPTION_OTT_DEMOCRATIC_ALTERNATE"
+		desc = "RULE_OPTION_OTT_DEMOCRATIC_ALTERNATE_DESC"
 	}
 	option = {
-		name = FASCISM_TUR_AI
-		text = "RULE_OPTION_FASCISM_TUR_AI"
-		desc = "RULE_OPTION_FASCISM_TUR_AI_DESC"
+		name = FASCISM_OTT_AI
+		text = "RULE_OPTION_FASCISM_OTT_AI"
+		desc = "RULE_OPTION_FASCISM_OTT_AI_DESC"
 	}
 	option = {
-		name = TUR_FASCISM_ALTERNATE
-		text = "RULE_OPTION_TUR_FASCISM_ALTERNATE"
-		desc = "RULE_OPTION_TUR_FASCISM_ALTERNATE_DESC"
+		name = OTT_FASCISM_ALTERNATE
+		text = "RULE_OPTION_OTT_FASCISM_ALTERNATE"
+		desc = "RULE_OPTION_OTT_FASCISM_ALTERNATE_DESC"
 	}
 	option = {
-		name = COMMUNIST_TUR_AI
-		text = "RULE_OPTION_COMMUNIST_TUR_AI"
-		desc = "RULE_OPTION_COMMUNIST_TUR_AI_DESC"
+		name = COMMUNIST_OTT_AI
+		text = "RULE_OPTION_COMMUNIST_OTT_AI"
+		desc = "RULE_OPTION_COMMUNIST_OTT_AI_DESC"
 	}
 	option = {
-		name = TUR_COMMUNISM_ALTERNATE
-		text = "RULE_OPTION_ALTERNATE_COMMUNIST_TUR_AI"
-		desc = "RULE_OPTION_ALTERNATE_COMMUNIST_TUR_AI_DESC"
+		name = OTT_COMMUNISM_ALTERNATE
+		text = "RULE_OPTION_ALTERNATE_COMMUNIST_OTT_AI"
+		desc = "RULE_OPTION_ALTERNATE_COMMUNIST_OTT_AI_DESC"
 	}
 	option = {
 		name = BALKAN_ENTENTE
@@ -1664,7 +1664,7 @@ oceania_colonization_status = {
 	}
 }
 eng_fragmentation_status = {
-	name = "ENG_FRAGMENTATION_STATUS"
+	name = "GBR_FRAGMENTATION_STATUS"
 	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_GAME_SETUP"
 	default = {
@@ -1673,9 +1673,9 @@ eng_fragmentation_status = {
 		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
 	}
 	option = {
-		name = ENG_FRAGMENTED
-		text = "RULE_OPTION_ENG_FRAGMENTED"
-		desc = "RULE_OPTION_ENG_FRAGMENTED_DESC"
+		name = GBR_FRAGMENTED
+		text = "RULE_OPTION_GBR_FRAGMENTED"
+		desc = "RULE_OPTION_GBR_FRAGMENTED_DESC"
 	}
 }
 spr_fragmentation_status = {
@@ -1744,7 +1744,7 @@ sov_fragmentation_status = {
 	}
 }
 raj_fragmentation_status = {
-	name = "RAJ_FRAGMENTATION_STATUS"
+	name = "IND_FRAGMENTATION_STATUS"
 	required_dlc = "Man the Guns"
 	group = "RULE_GROUP_GAME_SETUP"
 	default = {
@@ -1753,9 +1753,9 @@ raj_fragmentation_status = {
 		desc = "RULE_OPTION_DEFAULT_FRAGMENTATION_DESC"
 	}
 	option = {
-		name = RAJ_FRAGMENTED
-		text = "RULE_OPTION_RAJ_FRAGMENTED"
-		desc = "RULE_OPTION_RAJ_FRAGMENTED_DESC"
+		name = IND_FRAGMENTED
+		text = "RULE_OPTION_IND_FRAGMENTED"
+		desc = "RULE_OPTION_IND_FRAGMENTED_DESC"
 	}
 }
 eth_fragmentation_status = {

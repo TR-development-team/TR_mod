@@ -38,7 +38,7 @@ GER = {
 		}
 	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
-DDR = {
+PRE = {
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
@@ -54,7 +54,7 @@ DDR = {
 		}
 	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
-BAD = {
+BDN = {
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
@@ -86,7 +86,7 @@ HES = {
 		}
 	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
-KIE = {
+KIL = {
 	male = {
 		names = {  Maximilian Felix Erich Gerhard Gunther Otto Walter Wilhelm Heinz Hermann Heinrich 
 			Theodor Hans Anton Joachim Max Emil Peter Fritz Otto Adolf Tobias Staffan Marco Karl
@@ -102,7 +102,7 @@ KIE = {
 		}
 	callsigns = { "Bubi" "Assi" "The Black Devil" "The Blond Knight Of Germany" "Dolfo" "Fighter of Libau" "Petit Rouge" "Pritzl" "The Red Baron" "The Red Battle-flyer" "The Red Knight" "Reeste" }
 }
-ENG = {
+GBR = {
 	male = {
 		names = { Albert Alexander Alfred Archibald Arthur Bernard Charles Colbert
 			Colin Cyril David Donald Douglas Edmund Edward Fairfax  Francis
@@ -145,7 +145,7 @@ ENR = {
 		}
 	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
 }
-EWA = {
+WAF = {
 	male = {
 		names = { Albert Alexander Alfred Archibald Arthur Bernard Charles Colbert
 			Colin Cyril David Donald Douglas Edmund Edward Fairfax  Francis
@@ -166,7 +166,7 @@ EWA = {
 		}
 	callsigns = { Stubborn Arrow "The King" Eagle Hangover Striker Chase "One Wing" Pickle Thief Thunder Lightning Storm Target Hawk Fox Dog Sparrow Sunrise "Night Owl" Butcher Cocky Hawkeye Killer Mick Brandy "The Baron" }
 }
-SOV = {
+RUS = {
 	male = {
 		names = { 
 			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
@@ -189,7 +189,7 @@ SOV = {
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
 }
 
-RUS = {
+SOV = {
 	male = {
 		names = { 
 			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
@@ -234,7 +234,7 @@ SIB = {
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
 }
 
-YAK = {
+SKH = {
 	male = {
 		names = { 
 			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
@@ -257,7 +257,7 @@ YAK = {
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
 }
 
-KAV = {
+CCS = {
 	male = {
 		names = { 
 			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
@@ -280,7 +280,7 @@ KAV = {
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
 }
 
-STE = {
+KAZ = {
 	male = {
 		names = { 
 			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
@@ -326,7 +326,7 @@ DON = {
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
 }
 
-UKR = {
+MHN = {
 	male = {
 		names = { 
 			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
@@ -349,7 +349,7 @@ UKR = {
 	callsigns = { Anvil Hammer Fury Arrow Storm Bear "White Lily" Devil Eagle Falcon Fox Snowflake Greasy Guardian Gunman Hawk Hardball Howl Blizzard Husky Ice Killer Steel Iron Skull Striker Thunder Warrior Wardog Vodka }
 }
 
-UKS = {
+UKR = {
 	male = {
 		names = { 
 			Aleksander Alexei Andrei Anton Boris Dmitry Fyodor Gennady 
@@ -417,7 +417,7 @@ FRA = {
 	}
 	callsigns = { "Draco" "Fast" "Tiger" "Sparrow" "Ripper" "Sundance" "Toad" "Twitch" "Farmer" "Weasel" "Target Practice" "Invisible" "Beach Boy" "Princess" "The Mute" "Carpenter"}
 }
-FNA = {
+NAF = {
 	male = {
 		names = {  
 			Achille Adolphe Adrien Aimable Alphonse Amédée Antoine Armand August Augustin
@@ -463,31 +463,6 @@ ITA = {
 	 }
 	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
 }
-INA = {
-	male = {
-		names = { 
-			Alessandro Alfonso Ambrogio Amedeo Andrea Angelo Antonio Benito Camillo Carlo
-			Cesare Costanzo Davide Enrico Ettore Fabrizio Faustino Federico Felice Ferdinando
-			Fiorenzo Francesco Gaetano Gennaro Girolamo Giulio Giuseppe Guglielmo Innocenzo Leopoldo
-			Luigi Marco Massimo Matteo Nicola Oreste Paolo Pasquale Pietro Prospero
-			Raffaele Roberto Ruggiero Silvio Simone Tancredi Ugo Umberto Vincenzo Vittorio
-		
-		  }
-	}
-	female = {
-		names = { Maria Anna Sara Laura Sofia Stella Angela Giovanna Guiseppina Gianna Giulia Valentina }
-	}
-	surnames = {
-		Acton Albricci Badoglio Baldissera Baratieri Bava-Beccaris Cadorna Cagni Canevaro Capello
-		Caviglia Ceccherini Cialdini Cusani Dezza "di Robilant" "di Savoia"
-		Emo Fanti Fara Filomarino Garibaldi Giardino Govone "La Màrmora" Mambretti 
-		Menabrea Orengo Pallavicino Pecori-Giraldi  Pelloux Perruchetti Pianelli Porro
-		Presbitero Ramorino Ricotti-Magnani Sacchi Saletta Sanna Solari Vaccari Zupelli
-	
-	 }
-	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
-}
-
 USA = {
 	male = {
 		names = { 
@@ -566,7 +541,7 @@ USB = {
 	callsigns = { "Goose" "Iceman" "Maverick" "Apollo" "Animal" "Boom-Boom" "Badger" "Brick" "Cajun" "Challenger" "Chip" "Eagle" "Ghost" "Hawk" "Jaws" "Moses" "Mad Dog"}
 }
 
-CSA = {
+DXL = {
 	male = {
 		names = { 
 		
@@ -718,7 +693,7 @@ CAL = {
 	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
 }
 
-CEN = {
+CAC = {
 	male = {
 		names = { 
 			Aritomo
@@ -755,7 +730,7 @@ CEN = {
 	}
 	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
 }
-JSE = {
+INC = {
 	male = {
 		names = { 
 			Aritomo
@@ -792,45 +767,7 @@ JSE = {
 	}
 	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
 }
-ESA = {
-	male = {
-		names = { 
-			Aritomo
-			Goro Gentaro Gonnohyoe
-			Heihachiro Hiroshi Hikonojo Hyoe Hayao
-			Iwao
-			Jiro Jinzaburo
-			Kiyotaka Kuranosuke Kozo Kantaro Koichiro Kagenori Kageaki Kotohito Keisuke Kazushige Kenkichi
-			Maresuke Masujiro Michisura Masatake Mitsuomi Mitsue Mineo
-			Nariaki Nobuyoshi
-			Rokuro
-			Sukeyuki Sukenori Shoin Sumiyoshi Samata Soroku Shichiro Shigeto Sotokichi Shigeru Sadao Shinsaku
-			Takayoshi Takamori Toshimichi Tsugumichi Tadakuni Tomonosuke Taro Toshiyoshi Tetsutaro Taruhito Takeaki Tamemoto Tomasaburo
-			Yoshika Yoshinobu Yoshimichi Yoshida Yasukata Yahachi Yusaku Yoshifuru Yoshinori Yasuyoshi
-		}
-	}
-	female = {
-		names = { Aimi Asami Asuka Ai Aki Fujiko Kaori Kimiko Haruno Hanako Kotoe Masae Junko Itsumi Chie Chitose Chiyo Mai Maki Nodoka Ruri Sae Sachie Yae Nami Ritsuko }
-	}
-	surnames = { 
-		Arisugawa Arichi Akiyama Araki
-		Dewa
-		Enomoto
-		Hasegawa Honjo
-		Ito Inoue Ichinohe Itagaki
-		Kido Kuroda Katsura Kodama Kabayama Kawamura Kuroki Kawakami Kamimura Kataoka Kamio Kato Kanin Katsu
-		Makino Muto Minami Masaki Matsudaira
-		Nakamuta Nogi Nire Nozu
-		Okubo Oyama Omura Oku Okada Osumi
-		Saigo Suzuki Sato Sakura Shibayama Shimamura Shirakawa
-		Togo Takashima Tsuboi Tachibana Terauchi Tamon Takasugi Tokugawa
-		Uehara Uryu Ugaki Ueda
-		Yamagata Yamamoto Yamakawa Yashiro Yui Yamashita Yamaya
-	}
-	callsigns = { Viper Lightning Devil Dragon Fury Bat Beer Sake Demon Dirty Lance Panther Shogun Vampire "War Lord" }
-}
-
-COG = {
+CAR = {
 	male = {
 		names = { 
 			Aritomo
@@ -980,7 +917,7 @@ LIT = {
 	}
 	callsigns = { }
 }
-BAL = {
+BLT = {
 	male = {
 		names = { Aadu Alar Aleksander Andrus Artur August Bernard Dmitri Eduard Eerik
 		Elmar Ernst Georg Gustav Haman Harri Heino Hendrik Hjalmar Ivari
@@ -1518,7 +1455,7 @@ BEL = {
 	callsigns = { }
 }
 
-HOL = {
+NTL = {
 	male = {
 		names = { 
 			Adriaan Albert Anthony Antonius Berend Bodo Carsten Christiaan Cornelis Dirk Ferdinand Freek Frits Gerard Godfried Govert Hendrik Henri Jacob Jacobus Jan "Jan Willem" Johan Johannes Laurens Mathias Matthijs Nicolaas Peter Petrus Philippus Pieter Quirinus Sijmen Theodorus Tjerk Willem
@@ -2143,7 +2080,7 @@ PER = {
 	}
 	callsigns = { }
 }
-SAU = {
+ARB = {
 	male = {
 		names = {  
 			"Abd Allah" "Abd al-Karim" "Abd al-Malik" "Abd al-Qadir" "Abd al-Rahman" "Abu Bakr" Ahmad Ali 
@@ -2171,7 +2108,7 @@ SAU = {
 	}
 	callsigns = { }
 }
-TUR = {
+OTT = {
 	male = {
 		names = {  
 			Abdullah Abdulhamid Abdulkerim Abdulrahim Ahmet Akif Ali Arif 
@@ -2364,7 +2301,7 @@ KUW = {
 	callsigns = { }
 }
 
-UAE = {
+TRC = {
 	male = {
 		names = {  
 			Aali "Abd Al-Latif"  Abdul "Abdul-Rahman" Abu Adnan Ahmed Ali Amir Ammar Ashfaq Ayuub Baqi Bassem Danyal Esmail Fadil Fareed Fawzi Gabir George Ghufran Haider Hakeem Hamid Hanif Hatim Houssam Husain Ibrahim
@@ -2521,7 +2458,7 @@ NZL = {
 	callsigns = { }
 }
 
-INS_HOL = {
+INS_NTL = {
 	male = {
 		names = { 
 			Adriaan Albert Anthony Antonius Berend Bodo Carsten Christiaan Cornelis Dirk Ferdinand Freek Frits Gerard Godfried Govert Hendrik Henri Jacob Jacobus Jan "Jan Willem" Johan Johannes Laurens Mathias Matthijs Nicolaas Peter Petrus Philippus Pieter Quirinus Sijmen Theodorus Tjerk Willem
@@ -2741,7 +2678,7 @@ PNG = {
 	callsigns = { }
 }
 
-SRL = {
+DVN = {
 	male = {
 		names = {
 			Ahlad Aish Aishik Akhed Amith Amul Aneech Arag Arjan Arosha Aruddh Asela Asisri Asith Avan Avilop Awadh Bis Bisala Chak Chaminda Chandika Chathura Dahuk Dammika Davith Dewil Dilen Dimbh Dimuth Dishan Dith Divyae Dorak
@@ -2767,7 +2704,7 @@ SRL = {
 	callsigns = { }
 }
 
-RAJ_UK = {
+IND_UK = {
 	male = {
 		names = { Albert Alexander Alfred Archibald Arthur Bernard Charles Colbert
 			Colin Cyril David Donald Douglas Edmund Edward Fairfax  Francis
@@ -2811,7 +2748,7 @@ MAL_UK = {
 	callsigns = { }
 }
 
-RAJ = {
+IND = {
 	male = {
 		names = { 
 			Mohandas Narenda Dalbir Bipin Subrata Amarjeet Sanijv Ravi Praveen Surinder Balwant Sarath Amit Bimal Kumar Ranbir Manoj Suresh Sunil Sushila Meena Velu Aniruddha Shokin Ashwani Ashok Abhay Devraj Rudramurti Punita Anand Dipankar Ramnath Bahadur Atan Syed Kesur Bana Chain Ganga Gian Jadunath Mukund Surinder Triveni Varinder Sonam Ram Yogendra
@@ -2839,7 +2776,7 @@ HYD = {
 		}
 	callsigns = { }
 }
-PAK = {
+PJB = {
 	male = {
 		names = { 
 			Syad Ahmad Muhammed Aga Nawab Maulvi Karamat Abdul Nasir Maulana Ibraheem Bhai Hussain Malik Raees Choudhry Rahmat
@@ -2886,7 +2823,7 @@ SIA = {
 	 }
 	callsigns = { }
 }
-CHI = {
+WHN = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -2896,7 +2833,7 @@ CHI = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-GUG = {
+GND = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -2916,7 +2853,7 @@ FUJ = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-HNA = {
+HNN = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -2926,7 +2863,7 @@ HNA = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-MIN = {
+HEN = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -2936,87 +2873,7 @@ MIN = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-DTN = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-SAN = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-YNN = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-ANQ = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-NAN = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-GXC = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-PRC = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-SCH = {
-	male = {
-		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
-	}
-	female = {
-		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
-	}
-	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
-	callsigns = { }
-}
-KUO = {
+SHA = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -3036,7 +2893,7 @@ SHX = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-XSM = {
+YUN = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -3046,7 +2903,7 @@ XSM = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-KML = {
+ANH = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -3056,7 +2913,7 @@ KML = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-HEX = {
+SGH = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -3066,7 +2923,87 @@ HEX = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-NGX = {
+GXC = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+RJN = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+SCH = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+XIB = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+ZHI = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+QIG = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+KUM = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+GAN = {
+	male = {
+		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
+	}
+	female = {
+		names = { Li Bao Mulan Lanfen Mingzhu Qingling Mei Yingtai Feng "Zhi Ruo" Fei "Ru Shi" Yuying Yuantong Yanxiang Xiurong Shouying Fuyuan Luzhen Ruirong Suzhen Xiaoying Xiaoyuan Xiaoji Xiaolou }
+	}
+	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
+	callsigns = { }
+}
+NIG = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -3086,7 +3023,7 @@ SIK = {
 	surnames = { Zhao Wu Sun Ma Hu Peng Dong Ye Lü Tian Jiang Wei Ting Shen Fang Jin Qiu }
 	callsigns = { }
 }
-YUN = {
+CNK = {
 	male = {
 		names = { Wang Li Zhang Liu Chen Huang Liang Luo Kwong Hsia Zhu Mao Hu Liao Tan Deng Cheng Yang Gao Xie Ma Kong Dong Pan Yu  }
 	}
@@ -3126,7 +3063,7 @@ MAN = {
 	surnames = { Zhanshan Tiemei Shangzhi Linge Xiangying Xingde Kang'an }
 	callsigns = { }
 }
-TAN = {
+TUV = {
 	male = {
 		names = {  Ma Deng Zhao Tong Guan Oboi Sonin Songgotu Suksaha Mingzhu Nalan Fu Hesehn Changlin  }
 	}
@@ -3446,7 +3383,7 @@ KAT = {
 	 }
 	callsigns = { }
 }
-KEN = {
+EAF = {
 	male = {
 		names = { 
 			Uhuru William Ekwee Justin Githu Dedan Jomo Warũhiũ Koitalel Kango Onyango Musa
@@ -3460,7 +3397,7 @@ KEN = {
 	 }
 	callsigns = { }
 }
-MAU = {
+KEN = {
 	male = {
 		names = { 
 			Uhuru William Ekwee Justin Githu Dedan Jomo Warũhiũ Koitalel Kango Onyango Musa
@@ -3877,7 +3814,7 @@ GAB = {
 }
 
 #Congo
-RCG = {
+MCG = {
 	male = {
 		names = { 
 			 Mobutu Joseph Patrice Antoine Laurent Albert Moise Etienne Nzimbi Ngbale Jérôme
@@ -4291,7 +4228,7 @@ GAM = {
 }
 
 #Niger
-NGR = {
+NGE = {
 	male = {
 		names = {  
 			Abdou Abdoulaye Aboubacar Adamou Albade Alhassane Ali Aliou Amadou Ambroise Aminatou Andre Badie Barcourgne Boubou Boukary Brigi Damoure Dary Daouda Djibo Falke Foumakoye Garba Gremah Habi Hama Hamani Hamid Hamidou 
@@ -4739,6 +4676,29 @@ HAI = {
 ###############################################################
 # South America
 ###############################################################
+EQB = {
+	male = {
+		names = { 
+			Afonso Antônio Artur Augusto Aurélio Benjamin Cândido Carlos Celso Custódio
+			Delfim Deodoro Eduardo Emílio Epitácio Ernesto Fábio Fernando Filipe Floriano
+			"Francisco de Paula" "Francisco Xavier" Federico Gaspar Gastão Getúlio Henrique Hermes Humberto Isaías
+			João Joaquim José Júlio Juscelino Luís Manuel "Marco Antônio" Mário Miguel
+			Nereu Nilo Paulo Pedro Prudente Silviano Tancredo Urbano Venceslau Vital
+		  }
+	}
+	female = {
+		names = { Aldara Beatriz Berengaria Branca Blanche Constance Estevainha Stephania Fruilhe Guiomar Joana Leonor Margarida Maria Sancha Teresa Constança }
+	}
+	surnames = { 
+		Barreto Bernardes Bittencourt Brandão Bras "Cabral da Silva" Caldwell Constant Costa "da Camara"
+		"da Costa" "da Fonseca" "de Aguiar" "de Barros" "de Beaurepaire-Rohan" "de Bragança" "de Carvalho" "de Itapevi" "de Lima e Silva" "de Melo"
+		"de Noronha" "de Oliveira" "de Orleans" "de Souza Neto" "de Suruf" Dutra Fragoso Frontin Galvão Jordão
+		Labatut Lopes Maciel Mallet Marques "Marques de Sousa" Maurity Moreira Osório Peixoto
+		Pena Pessoa Pinto Rondon "Saldanha da Gama" Santos Soares Tavares Vargas Wandenkolk
+	}
+	callsigns = { }
+}
+
 BRA = {
 	male = {
 		names = { 
@@ -4762,30 +4722,7 @@ BRA = {
 	callsigns = { }
 }
 
-BRR = {
-	male = {
-		names = { 
-			Afonso Antônio Artur Augusto Aurélio Benjamin Cândido Carlos Celso Custódio
-			Delfim Deodoro Eduardo Emílio Epitácio Ernesto Fábio Fernando Filipe Floriano
-			"Francisco de Paula" "Francisco Xavier" Federico Gaspar Gastão Getúlio Henrique Hermes Humberto Isaías
-			João Joaquim José Júlio Juscelino Luís Manuel "Marco Antônio" Mário Miguel
-			Nereu Nilo Paulo Pedro Prudente Silviano Tancredo Urbano Venceslau Vital
-		  }
-	}
-	female = {
-		names = { Aldara Beatriz Berengaria Branca Blanche Constance Estevainha Stephania Fruilhe Guiomar Joana Leonor Margarida Maria Sancha Teresa Constança }
-	}
-	surnames = { 
-		Barreto Bernardes Bittencourt Brandão Bras "Cabral da Silva" Caldwell Constant Costa "da Camara"
-		"da Costa" "da Fonseca" "de Aguiar" "de Barros" "de Beaurepaire-Rohan" "de Bragança" "de Carvalho" "de Itapevi" "de Lima e Silva" "de Melo"
-		"de Noronha" "de Oliveira" "de Orleans" "de Souza Neto" "de Suruf" Dutra Fragoso Frontin Galvão Jordão
-		Labatut Lopes Maciel Mallet Marques "Marques de Sousa" Maurity Moreira Osório Peixoto
-		Pena Pessoa Pinto Rondon "Saldanha da Gama" Santos Soares Tavares Vargas Wandenkolk
-	}
-	callsigns = { }
-}
-
-SPO = {
+SBR = {
 	male = {
 		names = { 
 			Afonso Antônio Artur Augusto Aurélio Benjamin Cândido Carlos Celso Custódio
@@ -5238,7 +5175,7 @@ GDL = {
 }
 
 #British Antilles
-BAS = {
+WIN = {
 	male = {
 		names = { 
 			Alfred Anil Arthur Ato Carson Darrel David Dwayne Ellis Everald Garfield George Hasely Ian Inshan Isaiah Learie Leroy Leslie Lloyd Marc Marlon Marvin "Michel-Jean" Pat Ravi Rodill Rudranath Stephen Stokely Tubal Ulric
@@ -5471,7 +5408,7 @@ COR = {
 	callsigns = { Buzzard Dusty Falcon Hawk Hammer Viper Banshee "The Baron" Lightning Duce Raven "Two Shot" Rosso }
 }
 ### Caucasus
-GEO = {
+SCC = {
    	male = {
    		names = {  
 			Aleksandre Avtandil Besarion Butchu Datiko Davit Egnate Evgeni Filipp Giorgi Grigol Gulichino Iakob Ioseb Iosef Irakli Kalenike Kale Karlo Lavrenti Mikheil Niko Nikoloz Noe Pavel Polikarp Kandid Radjeb Shalva Semon Sergo Silibistro Tamaz Varlam Valiko Zurab 

@@ -1,0 +1,1275 @@
+add_namespace = TR_China
+
+
+country_event = {
+	id = TR_China.1
+	title = TR_China.1.t
+	desc = TR_China.1.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.1.a
+                set_country_flag = WHN_ChiangAnsatu
+                effect_tooltip = { retire_country_leader = yes }
+                remove_ideas = WHN_Chiang_Kaishek
+		    WHN_kokumin_seifu = {
+			    promote_character = {
+			      Ideology = San_min_Doctrine_Blue_shirts_subtype
+			    }
+		    }
+		    WHN_kokumin_seifu = {
+		    	promote_character = {
+			    Ideology = San_min_Doctrine_CC_subtype
+			  }
+		    }
+                 hidden_effect = {
+                         country_event = {
+					id = TR_news.11
+					days = 1
+					
+				}
+		}
+                 
+		
+	}
+}
+
+
+country_event = {
+	id = TR_China.2
+	title = TR_China.2.t
+	desc = TR_China.2.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.2.a
+                 ai_chance = { factor = 100 }
+                 SHA = {
+			transfer_state = 622
+    		
+		
+		}
+                 
+		
+	}
+        option = {
+		name = TR_China.2.b
+                ai_chance = { factor = 0 }
+                 SHA = {
+                        change_tag_from = WHN
+			transfer_state = 622
+		
+		
+		}
+                 
+		
+	}
+}
+
+country_event = {
+	id = TR_China.3
+	title = TR_China.3.t
+	desc = TR_China.3.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.3.a
+                 ai_chance = { factor = 100 }
+                 end_puppet = YUN
+                 YUN = {
+		        country_event = {
+					id = TR_China.4
+					days = 1
+					
+				}
+		}
+                 
+		
+	}
+}
+
+country_event = {
+	id = TR_China.4
+	title = TR_China.4.t
+	desc = TR_China.4.d
+	picture = GFX_report_event_france_parade
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_China.4.a
+                division_template = {
+				name = "Yunnan Infantry"
+				division_names_group = WHN_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 325 }
+				create_unit = {
+					division = "division_template = \"Yunnan Infantry\" start_experience_factor = 0.1"
+					owner = YUN
+					count = 2
+				}
+			}
+                CNK = {
+                         country_event = {
+					id = TR_China.5
+					days = 1
+			}		
+		}
+               
+
+	}
+
+}
+
+country_event = {
+	id = TR_China.5
+	title = TR_China.5.t
+	desc = TR_China.5.d
+	picture = GFX_report_event_france_parade
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_China.5.a
+
+                declare_war_on = {
+			target = YUN
+			type = annex_everything
+		}
+               
+
+}
+}
+
+country_event = {
+	id = TR_China.6
+	title = TR_China.6.t
+	desc = TR_China.6.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.6.a
+		 ANH = { end_puppet = FUJ }
+		 JAP = { end_puppet = SGH }
+                 ANH = {
+                       remove_ideas = CNK_jap_economic
+                       leave_faction = yes
+		 }
+                 FUJ = {
+                       remove_ideas = CNK_jap_economic
+                       leave_faction = yes
+		 }
+                 hidden_effect = {
+                        country_event = {
+					id = TR_news.21
+					days = 2
+					
+				}
+		}
+
+                 SGH = {
+                        leave_faction = yes
+                        drop_cosmetic_tag = yes
+    		        country_event = {
+					id = TR_China.7
+					days = 3
+					
+				}
+		
+		}
+                 
+		
+	}
+
+}
+
+country_event = {
+	id = TR_China.7
+	title = TR_China.7.t
+	desc = TR_China.7.d
+	picture = GFX_report_event_france_parade
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_China.7.a
+		add_ideas = totalist_dictatorship
+                ai_chance = { factor = 70 }
+                add_ideas = Fetus_dream
+                set_cosmetic_tag = SGH_WU
+                add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.3
+		}
+		set_politics = {
+			ruling_party = Gnosticism
+			elections_allowed = no
+		}
+                declare_war_on = {
+				target = ANH type = annex_everything
+			}
+			add_state_core = 606
+                        add_state_core = 749
+                        add_state_core = 915
+ 			add_state_core = 596
+                        add_state_core = 613
+                        add_state_core = 598
+                division_template = {
+				name = "Nanjing Infantry"
+				division_names_group = WHN_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 613 }
+				create_unit = {
+					division = "division_template = \"Nanjing Infantry\" start_experience_factor = 0.1"
+					owner = SGH
+					count = 4
+				}
+			}
+                
+               
+
+	}
+        option = { 
+		name = TR_China.7.b
+                ai_chance = { factor = 30 }
+                declare_war_on = {
+				target = ANH type = annex_everything
+			}
+			add_state_core = 606
+                        add_state_core = 749
+                        add_state_core = 915
+ 			add_state_core = 596
+                        add_state_core = 613
+                        add_state_core = 598
+                division_template = {
+				name = "Nanjing Infantry"
+				division_names_group = WHN_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 613 }
+				create_unit = {
+					division = "division_template = \"Nanjing Infantry\" start_experience_factor = 0.1"
+					owner = SGH
+					count = 4
+				}
+			}
+               
+
+	}
+
+}
+
+#武漢からの使節(広西)
+country_event = {
+	id = TR_China.8
+	title = TR_China.8.t
+	desc = TR_China.8.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.8.a 
+		ai_chance = { factor = 25 }
+		diplomatic_relation = {
+			country = WHN
+			relation = non_aggression_pact
+			active = yes
+		}
+		set_country_flag = WHN_Befriend_Wuhan
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_increase
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.13
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = TR_China.8.b
+		ai_chance = { factor = 75 }
+		set_country_flag = WHN_Dislike_Wuhan
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_decrease
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.14
+				days = 2
+			}
+		}
+	}
+}
+#武漢からの使節(四川)
+country_event = {
+	id = TR_China.9
+	title = TR_China.9.t
+	desc = TR_China.9.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.9.a 
+		ai_chance = { factor = 100 }
+		diplomatic_relation = {
+			country = WHN
+			relation = non_aggression_pact
+			active = yes
+		}
+		set_country_flag = WHN_Befriend_Wuhan
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_increase
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.15
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = TR_China.9.b
+		ai_chance = { factor = 0 }
+		set_country_flag = WHN_Dislike_Wuhan
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_decrease
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.16
+				days = 2
+			}
+		}
+	}
+}
+#武漢からの使節(雲南)
+country_event = {
+	id = TR_China.10
+	title = TR_China.10.t
+	desc = TR_China.10.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.10.a 
+		ai_chance = { factor = 100 }
+		diplomatic_relation = {
+			country = WHN
+			relation = non_aggression_pact
+			active = yes
+		}
+		set_country_flag = WHN_Befriend_Wuhan
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_increase
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.17
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = TR_China.10.b
+		ai_chance = { factor = 0 }
+		set_country_flag = WHN_Dislike_Wuhan
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_decrease
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.18
+				days = 2
+			}
+		}
+	}
+}
+#武漢からの使節(山西)
+country_event = {
+	id = TR_China.11
+	title = TR_China.11.t
+	desc = TR_China.11.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.11.a 
+		ai_chance = { factor = 100 }
+		diplomatic_relation = {
+			country = WHN
+			relation = non_aggression_pact
+			active = yes
+		}
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_increase
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.19
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = TR_China.11.b
+		ai_chance = { factor = 0 }
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_decrease
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.20
+				days = 2
+			}
+		}
+	}
+}
+#武漢からの使節(青海)
+country_event = {
+	id = TR_China.12
+	title = TR_China.12.t
+	desc = TR_China.12.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.12.a 
+		ai_chance = { 
+			factor = 95 
+			modifier = {
+				factor = 0
+				has_country_flag = WHN_Dislike_Wuhan
+			}
+		}
+		diplomatic_relation = {
+			country = WHN
+			relation = non_aggression_pact
+			active = yes
+		}
+		set_country_flag = WHN_Befriend_Wuhan
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_increase
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.21
+				days = 2
+			}
+		}		
+	}
+	option = {
+		name = TR_China.12.b
+		ai_chance = { 
+			factor = 5
+			modifier = {
+				factor = 0
+				has_country_flag = WHN_Befriend_Wuhan
+			}
+		}
+		set_country_flag = WHN_Dislike_Wuhan
+		add_opinion_modifier = {
+			target = WHN
+			modifier = medium_decrease
+		}
+		WHN = {
+			country_event = {
+				id = TR_china.22
+				days = 2
+			}
+		}
+	}
+}
+#武漢からの使節-交渉成功(広西)
+country_event = {
+	id = TR_China.13
+	title = TR_China.13.t
+	desc = TR_China.13.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.13.a 
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = GXC
+			modifier = medium_increase
+		}
+	}
+}
+#武漢からの使節-交渉失敗(広西)
+country_event = {
+	id = TR_China.14
+	title = TR_China.14.t
+	desc = TR_China.14.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.14.a 
+		add_political_power = -25
+		add_opinion_modifier = {
+			target = GXC
+			modifier = medium_decrease
+		}
+	}
+}
+#武漢からの使節-交渉成功(四川)
+country_event = {
+	id = TR_China.15
+	title = TR_China.15.t
+	desc = TR_China.15.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.15.a 
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = SCH
+			modifier = medium_increase
+		}
+	}
+}
+#武漢からの使節-交渉失敗(四川)
+country_event = {
+	id = TR_China.16
+	title = TR_China.16.t
+	desc = TR_China.16.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.16.a 
+		add_political_power = -25
+		add_opinion_modifier = {
+			target = SCH
+			modifier = medium_decrease
+		}
+	}
+}
+#武漢からの使節-交渉成功(雲南)
+country_event = {
+	id = TR_China.17
+	title = TR_China.17.t
+	desc = TR_China.17.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.17.a 
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = YUN
+			modifier = medium_increase
+		}
+	}
+}
+#武漢からの使節-交渉失敗(雲南)
+country_event = {
+	id = TR_China.18
+	title = TR_China.18.t
+	desc = TR_China.18.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.18.a 
+		add_political_power = -25
+		add_opinion_modifier = {
+			target = YUN
+			modifier = medium_decrease
+		}
+	}
+}
+#武漢からの使節-交渉成功(山西)
+country_event = {
+	id = TR_China.19
+	title = TR_China.19.t
+	desc = TR_China.19.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.19.a 
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = SHX
+			modifier = medium_increase
+		}
+	}
+}
+#武漢からの使節-交渉失敗(山西)
+country_event = {
+	id = TR_China.20
+	title = TR_China.20.t
+	desc = TR_China.20.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.20.a 
+		add_political_power = -25
+		add_opinion_modifier = {
+			target = SHX
+			modifier = medium_decrease
+		}
+	}
+}
+#武漢からの使節-交渉成功(青海)
+country_event = {
+	id = TR_China.21
+	title = TR_China.21.t
+	desc = TR_China.21.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.21.a 
+		add_political_power = 50
+		add_opinion_modifier = {
+			target = QIG
+			modifier = medium_increase
+		}
+	}
+}
+#武漢からの使節-交渉失敗(青海)
+country_event = {
+	id = TR_China.22
+	title = TR_China.22.t
+	desc = TR_China.22.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.22.a 
+		add_political_power = -25
+		add_opinion_modifier = {
+			target = QIG
+			modifier = medium_decrease
+		}
+	}
+}
+#党大会の開始
+country_event = {
+	id = TR_China.23
+	title = TR_China.23.t
+	desc = TR_China.23.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_China.23.a
+		hidden_effect = {
+			country_event = { id = TR_China.24 days = 7 }
+		}
+		#軍統およびCC団の影響力
+		set_country_flag = { flag = WHN_MIB value = 0 }
+		set_country_flag = { flag = WHN_CCC value = 0 }
+	}
+}
+#宋美齢の演説
+country_event = {
+	id = TR_China.24
+	title = TR_China.24.t
+	desc = TR_China.24.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#宋美鈴は軍統を批判した
+	option = {
+		name = TR_China.24.a
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = { id = TR_China.25 days = 7 }
+		}
+		modify_country_flag = { flag = WHN_CCC value = 1 }
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.05
+		}
+	}
+	#宋美鈴はCC団を批判した
+	option = {
+		name = TR_China.24.b
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = { id = TR_China.25 days = 7 }
+		}
+		modify_country_flag = { flag = WHN_MIB value = 1 }
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.05
+		}
+	}	
+}
+#国民革命軍司令官の選任
+country_event = {
+	id = TR_China.25
+	title = TR_China.25.t
+	desc = TR_China.25.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#CC団派に要職を与える
+	option = {
+		name = TR_China.25.a
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = { id = TR_China.26 days = 7 }
+		}
+		modify_country_flag = { flag = WHN_CCC value = 1 }
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.05
+		}
+	}
+	#軍統の軍に対する権限を強化する
+	option = {
+		name = TR_China.25.b
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = { id = TR_China.26 days = 7 }
+		}
+		modify_country_flag = { flag = WHN_MIB value = 1 }
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+	}	
+}
+#反体制派に対する対処
+country_event = {
+	id = TR_China.26
+	title = TR_China.26.t
+	desc = TR_China.26.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#共産党への対処を優先する
+	option = {
+		name = TR_China.26.a
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = { id = TR_China.27 days = 7 }
+		}
+		modify_country_flag = { flag = WHN_CCC value = 1 }
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.05
+		}
+	}
+	#親日派に対する対処を優先する
+	option = {
+		name = TR_China.26.b
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = { id = TR_China.27 days = 7 }
+		}
+		modify_country_flag = { flag = WHN_MIB value = 1 }
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+	}	
+}
+#経済対策
+country_event = {
+	id = TR_China.27
+	title = TR_China.27.t
+	desc = TR_China.27.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#経済的自立を成し遂げる
+	option = {
+		name = TR_China.27.a
+		ai_chance = {
+			base = 50
+		}
+		modify_country_flag = { flag = WHN_CCC value = 1 }
+		hidden_effect = {
+			country_event = { id = TR_China.28 days = 7 }
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.05
+		}
+	}
+	#腐敗の排除を優先する
+	option = {
+		name = TR_China.27.b
+		ai_chance = {
+			base = 50
+		}
+		modify_country_flag = { flag = WHN_MIB value = 1 }
+		hidden_effect = {
+			country_event = { id = TR_China.28 days = 7 }
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+	}	
+}
+#権力闘争の結果判定
+country_event = {
+	id = TR_China.28
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_China.28 FROM = [From.GetName]" }
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = WHN_CCC
+					value > 2
+				}
+			}
+			country_event = TR_China.29
+		}
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = WHN_MIB
+					value > 2
+				}
+			}
+			country_event = TR_China.30
+		}
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = WHN_MIB
+					value < 3
+				}
+				has_country_flag = {
+					flag = WHN_CCC
+					value < 3
+				}
+			}
+			country_event = TR_China.31
+		}
+	}
+}
+#CC団による党内掌握
+country_event = {
+	id = TR_China.29
+	title = TR_China.29.t
+	desc = TR_China.29.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#新たな総統に万歳！
+	option = {
+		name = TR_China.29.a
+		set_country_flag = WHN_CCC_WIN
+        complete_national_focus = WHN_rHbtxkBC
+	}
+}
+#戴笠による党内掌握
+country_event = {
+	id = TR_China.30
+	title = TR_China.30.t
+	desc = TR_China.30.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#新たな総統に万歳！
+	option = {
+		name = TR_China.30.a
+		set_country_flag = WHN_MIB_WIN
+        complete_national_focus = WHN_rHbtxkBC
+	}
+}
+#国民革命軍によるクーデター
+country_event = {
+	id = TR_China.31
+	title = TR_China.31.t
+	desc = TR_China.31.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#なんということだ！
+	option = {
+		name = TR_China.31.a
+		add_stability = -0.15
+		set_country_flag = WHN_GGJ_WIN
+        complete_national_focus = WHN_rHbtxkBC
+	}
+}
+#落日
+country_event = {
+	id = TR_China.32
+	title = TR_China.32.t
+	desc = TR_China.32.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+    trigger = {
+        tag = JAP
+		is_subject = no
+		is_faction_leader = yes
+		FROM = { 
+			is_chinese_tag = yes
+			is_faction_leader = yes
+			controls_all_owned_states = yes
+			has_war_with = JAP
+			controls_state = 817 #ソウル
+			controls_state = 818 #釜山
+			controls_state = 829 #平壌
+			controls_state = 328 #新京
+			controls_state = 608 #北京
+			controls_state = 816 #上海
+			controls_state = 863 #広州
+			controls_state = 916 #ウラジオストク
+		}
+		MAN = { OR = { has_capitulated = yes exists = no } }
+		ZHI = { OR = { has_capitulated = yes exists = no } }
+		GND = { OR = { has_capitulated = yes exists = no } }
+		SGH = { OR = { has_capitulated = yes exists = no } }
+
+	}
+    fire_only_once = yes
+
+
+	#降伏だ！残された領土だけでも守らねば
+	option = {
+		name = TR_China.32.a
+		ai_chance = {
+			base = 99
+		}
+		FROM = { country_event = TR_China.33 }
+
+	}
+	#我々は断じて降伏しない！
+	option = {
+		name = TR_China.32.b
+		ai_chance = {
+			base = 1
+		modifier = {
+			factor = 2
+			has_country_flag = JAP_KAIGEN_KEIZOKU
+		}
+	}
+		add_stability = -0.2
+	}	
+}
+#日本の降伏
+country_event = {
+	id = TR_China.33
+	title = TR_China.33.t
+	desc = TR_China.33.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+	is_triggered_only = yes
+        fire_only_once = yes
+
+
+	#中国は今、100年の屈辱を晴らしたのだ
+	option = {
+		name = TR_China.33.a
+		ai_chance = {
+			base = 100
+		}
+		set_global_flag = war_of_resistance_china_win
+		every_state = {
+			limit = {
+				OR = { is_core_of = ROOT is_claimed_by = ROOT }
+				is_owned_by = JAP
+			}
+			transfer_state_to = ROOT
+		}	
+		if = {
+			limit = {
+				MAN = { exists = yes has_capitulated = yes }
+			}
+			ROOT = {
+			    annex_country = {
+				    target = MAN
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				KOR = { exists = yes has_capitulated = yes }
+			}
+			ROOT = {
+			    annex_country = {
+				    target = KOR
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				ZHI = { exists = yes has_capitulated = yes }
+			}
+			ROOT = {
+			    annex_country = {
+				    target = ZHI
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				GND = { exists = yes has_capitulated = yes }
+			}
+			ROOT = {
+			    annex_country = {
+				    target = GND
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				SGH = { exists = yes has_capitulated = yes }
+			}
+			ROOT = {
+			    annex_country = {
+				    target = SGH
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				KOR = { exists = no }
+			}
+			every_state = {
+				limit = {
+					OR = { is_core_of = KOR }
+					is_owned_by = JAP
+				}
+				transfer_state_to = KOR
+			}	
+			ROOT = {
+			    puppet = KOR
+		    }
+		}
+		every_country = {
+				limit = {
+					OR = { tag = JAP is_in_faction_with = JAP }
+				}
+				white_peace_with_ROOT = yes
+		}	
+
+	}
+	#降伏は認めない。日本を地図から消し去るまでは
+	option = {
+		name = TR_China.33.b
+		ai_chance = {
+			base = 0
+		}
+		add_stability = -0.3
+	}	
+}
+country_event = { #軍閥併合ディシジョン用イベント
+	id = TR_China.34
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_China.34 FROM = [From.GetName]" }
+	title = TR_China.34.t
+	desc = TR_China.34.d
+
+	picture = GFX_report_event_WHN_beijing_beiyang_flag
+
+	is_triggered_only = yes
+
+	option = {
+		name = TR_China.34.a #yes
+		ai_chance = {
+			base = 100
+			modifier = {
+				tag = GAN
+				factor = 0
+			}
+		}
+		china_integrate_ally_effect = yes
+	}
+	option = {
+		name = TR_China.34.b #no
+		ai_chance = {
+			base = 0
+			modifier = {
+				tag = GAN
+				add = 100
+			}
+		}
+		leave_faction = yes
+		FROM = {
+			create_wargoal = {
+				target = ROOT
+				type = annex_everything
+			}
+		}
+	}
+}

@@ -1943,7 +1943,7 @@ leader_traits = {
 		modifier = {
 			spotting_chance = 0.1
 		}
-		custom_gain_xp_trigger_tooltip = SPOTTER_TRIGGER_TT
+		custom_gain_xp_trigger_tooltip = SBRTTER_TRIGGER_TT
 		
 		ai_will_do = {
 			factor = 1
@@ -3108,13 +3108,13 @@ leader_traits = {
 
 	}
 
-	trait_TUR_kemalist_champion = {
+	trait_OTT_kemalist_champion = {
 
 		type = all
 		trait_type = personality_trait
 
 		allowed = {
-			FROM = { original_tag = TUR }
+			FROM = { original_tag = OTT }
 		}
 
 		new_commander_weight = {

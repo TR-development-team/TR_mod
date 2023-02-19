@@ -2778,7 +2778,7 @@ technologies = {
 				factor = 0.8
 			}
 			modifier = {
-				tag = SOV
+				tag = RUS
 				factor = 2
 			}
 
@@ -2786,13 +2786,13 @@ technologies = {
 				factor = 0.4
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
+					tag = WHN
+					tag = RJN
+					tag = QIG
 					tag = SIK
 					tag = GXC
 					tag = SHX
-					tag = YUN
+					tag = CNK
 				}
 			}
 			modifier = {
@@ -3200,13 +3200,13 @@ technologies = {
 				factor = 0.6
 
 				OR = {
-					tag = CHI
-					tag = PRC
-					tag = XSM
+					tag = WHN
+					tag = RJN
+					tag = QIG
 					tag = SIK
 					tag = GXC
 					tag = SHX
-					tag = YUN
+					tag = CNK
 				}
 			}
 

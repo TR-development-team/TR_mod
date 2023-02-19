@@ -1,0 +1,108 @@
+
+WHN_Warlord_diplomatic_decisions = {
+	WHN_visit_GXC = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { GXC = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove WHN_visit_GXC target: [From.GetName]"
+			GXC = {
+				country_event = {
+					id = TR_china.8
+					days = 2
+				}
+			}
+		}
+	}
+	WHN_visit_SCH = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { SCH = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove WHN_visit_SCH target: [From.GetName]"
+			SCH = {
+				country_event = {
+					id = TR_china.9
+					days = 2
+				}
+			}
+		}
+	}
+	WHN_visit_CNK = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { YUN = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove WHN_visit_CNK target: [From.GetName]"
+			YUN = {
+				country_event = {
+					id = TR_china.10
+					days = 2
+				}
+			}
+		}
+	}
+	WHN_visit_SHX = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { SHX = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove WHN_visit_SHX target: [From.GetName]"
+			SHX = {
+				country_event = {
+					id = TR_china.11
+					days = 2
+				}
+			}
+		}
+	}
+	WHN_visit_QIG = {
+		icon = generic_form_nation
+		allowed = { always = no }					
+		visible = { QIG = { exists = yes }}
+
+		cost = 20
+		fire_only_once = yes
+		days_remove = 10
+		ai_will_do = {
+			factor = 25
+		}
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove WHN_visit_QIG target: [From.GetName]"
+			QIG = {
+				country_event = {
+					id = TR_china.12
+					days = 2
+				}
+			}
+		}
+	}
+}

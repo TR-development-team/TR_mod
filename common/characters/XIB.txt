@@ -1,0 +1,128 @@
+characters={
+	XIB_Feng_Yuxiang={
+		name=XIB_Feng_Yuxiang
+		portraits={
+			civilian={
+				large="gfx/leaders/XIB/Portrait_XIB_Feng_Yuxiang.png"
+			}
+		}
+		country_leader={
+			ideology=Totalist_Leninist_subtype
+		}
+		country_leader={
+			ideology=syndicalist_subtype
+		}
+		country_leader={
+			ideology=military_socialism_subtype
+		}
+		country_leader={
+			ideology= Christian_socialism_subtype
+		}
+		country_leader={
+			ideology= Progressivism_subtype
+		}
+		country_leader={
+			ideology= lib_Christian_democracy_subtype
+		}
+		country_leader={
+			ideology= con_Christian_democracy_subtype
+		}
+		country_leader={
+			ideology= dem_Military_junta_subtype
+		}
+		country_leader={
+			ideology= Military_junta_subtype
+		}
+		country_leader={
+			ideology=Fascist_subtype
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+	}
+	XIB_Feng_Yuxiang_marshal={
+		name=XIB_Feng_Yuxiang
+		portraits={
+			army={
+				large="gfx/leaders/XIB/Portrait_XIB_Feng_Yuxiang.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer brilliant_strategist }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	XIB_Lu_Zhonglin={
+		name=XIB_Lu_Zhonglin
+		portraits={
+			army={
+				large="gfx/leaders/XIB/Portrait_XIB_Lu_Zhonglin.png"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	XIB_Shi_Yousan={
+		name=XIB_Shi_Yousan
+		portraits={
+			army={
+				large="gfx/leaders/XIB/Portrait_XIB_Shi_Yousan.png"
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader trait_reckless } 
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	XIB_Song_Zheyuan={
+		name=XIB_Song_Zheyuan
+		portraits={
+			army={
+				large="gfx/leaders/XIB/Portrait_XIB_Song_Zheyuan.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious	career_officer } 
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	XIB_Han_Fuchu={
+		name=XIB_Han_Fuchu
+		portraits={
+			army={
+				large="gfx/leaders/XIB/Portrait_XIB_Han_Fuchu.png"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

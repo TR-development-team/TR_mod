@@ -1,0 +1,82 @@
+characters={
+	RJN_Chen_Tuhsiu={
+		name=RJN_Chen_Tuhsiu
+		portraits={
+			civilian={
+				large="gfx/leaders/RJN/Portrait_RJN_Chen_Tuhsiu.png"
+			}
+		}
+
+		country_leader={
+			ideology=anarco_communist_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=Trotskyist_subtype
+			id=-1
+		}
+	}
+
+	RJN_zhu_de={
+		name=RJN_zhu_de
+		portraits={
+			army={
+				large="GFX_portrait_prc_zhu_de"
+				small="GFX_idea_RJN_zhu_de"
+			}
+		}
+		
+		corps_commander={
+			traits={ infantry_officer organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+	RJN_chen_yi={
+		name=RJN_chen_yi
+		portraits={
+			army={
+				large="GFX_portrait_prc_chen_yi"
+				small=GFX_portrait_RJN_chen_yi_small
+			}
+		}
+
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+
+	RJN_lin_biao={
+		name=RJN_lin_biao
+		portraits={
+			army={
+				large=GFX_portrait_RJN_lin_biao
+				small=GFX_portrait_RJN_lin_biao_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer trait_mountaineer }
+			skill=5
+			attack_skill=4
+			defense_skill=5
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+
+
+}

@@ -1,7 +1,7 @@
 ﻿capital = 113
 
 oob = "IRE_1936"
-set_cosmetic_tag = IRE_ENG
+set_cosmetic_tag = IRE_GBR
 set_research_slots = 3
 
 set_technology = {
@@ -21,7 +21,7 @@ add_ideas = {
         good_pensions
         good_health_care
 }
-ENG = { 
+GBR = { 
         set_autonomy = {
 		target = IRE
 		autonomous_state = autonomy_dominion

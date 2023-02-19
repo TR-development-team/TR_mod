@@ -140,10 +140,10 @@ focus_tree = {
 		cost = 1
         available = {
             NOT = {
-				has_war_with = DDR
+				has_war_with = PRE
 			}
 			NOT = {
-				country_exists = DDR
+				country_exists = PRE
 			}
         }
 		available_if_capitulated = yes

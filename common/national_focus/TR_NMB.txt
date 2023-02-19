@@ -301,7 +301,7 @@ focus_tree = {
 				FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			NMB = { add_to_faction = COG }
+			NMB = { add_to_faction = CAR }
 			NMB = { add_to_faction = NGA }
 		}
 	}
@@ -326,12 +326,12 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_core_of = RCG
+					is_core_of = MCG
 				}
 				add_claim_by = NMB
 			}
 			create_wargoal = {
-				target = RCG
+				target = MCG
 				type = annex_everything
 			}
 			create_wargoal = {
@@ -363,12 +363,12 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_subject = no	
-                        NOT = { country_exists = RCG }
+                        NOT = { country_exists = MCG }
                         NOT = { country_exists = CAR }
                         NOT = { has_war_with = ETH }
 			OR = { 
                            NMB = { is_neighbor_of = CMR }
-                           COG = { is_neighbor_of = CMR }
+                           CAR = { is_neighbor_of = CMR }
                           }
 			}
 		ai_will_do = {
@@ -401,7 +401,7 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_subject = no	
-                        NOT = { country_exists = RCG }
+                        NOT = { country_exists = MCG }
                         NOT = { country_exists = CAR }
                         NOT = { has_war_with = CMR }
 			}
@@ -426,7 +426,7 @@ focus_tree = {
 			}
 			every_state = {
 				limit = {
-					is_core_of = MAU
+					is_core_of = KEN
 				}
 				add_claim_by = NMB
 			}
@@ -439,7 +439,7 @@ focus_tree = {
 				type = annex_everything
 			}
 			create_wargoal = {
-				target = MAU
+				target = KEN
 				type = annex_everything
 			}
 		}
@@ -459,13 +459,13 @@ focus_tree = {
 			has_war = no
 			is_faction_leader = yes
 			JAP = { is_faction_leader = yes }
-			NOT = { country_exists = RCG }
+			NOT = { country_exists = MCG }
             NOT = { country_exists = ETH }
             NOT = { country_exists = KIS }
             NOT = { country_exists = KAT }
             NOT = { country_exists = KIV }
 			NOT = { country_exists = SKT }
-			NOT = { country_exists = MAU }
+			NOT = { country_exists = KEN }
 			}
 		ai_will_do = {
 				factor = 100
@@ -494,11 +494,11 @@ focus_tree = {
 		    add_state_core = 268           
 		    add_state_core = 547
 			annex_country = {
-				target = COG
+				target = CAR
 				transfer_troops = yes
 				}
 			annex_country = {
-				target = KEN
+				target = EAF
 				transfer_troops = yes
 				}
 			annex_country = {
@@ -1461,12 +1461,12 @@ focus_tree = {
 				OR = { 
 					# we dont want chinese minors to go crazy on slots early since they get eaten
 					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
+					tag = CNK
+					tag = ZHI
+					tag = QIG
 					tag = BEL
 					tag = LUX
-					tag = HOL
+					tag = NTL
 					tag = DEN
 
 					# we also dont want tiny nations to go crazy with slots right away

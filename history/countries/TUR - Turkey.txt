@@ -103,38 +103,6 @@ set_popularities = {
 	national_populist = 13
         Gnosticism = 8
 }
-recruit_character = TUR_Enver_Pasha
-recruit_character = TUR_AbdulmecidII
-recruit_character = TUR_Mustafa_Kemal
-recruit_character = TUR_Shakib_Arslan
-recruit_character = TUR_Sabahaddin
-
-recruit_character = TUR_Mustafa_Kemal_marshal
-recruit_character = TUR_Enver_Pasha_marshal
-recruit_character = TUR_izzettin_chalishlar
-recruit_character = TUR_kazim_karabekir
-recruit_character = TUR_mustafa_muglali
-recruit_character = TUR_mehmet_salih_omurtak
-recruit_character = TUR_hayrullah_fisek
-recruit_character = TUR_mehmet_nuri_yamut
-recruit_character = TUR_mehmet_ali_ulgen
-recruit_character = TUR_sukru_okan
-recruit_character = TUR_fevzi_cakmak
-recruit_character = TUR_ahmet_fevzi_pasha
-recruit_character = TUR_refet_pasha
-recruit_character = TUR_mehmet_esat_pasha
- 
-	create_operative_leader = {
-		name = "Ruzi Nazar"
-		GFX = "GFX_portrait_tur_ruzi_nazar"
-		traits = { operative_tough operative_commando }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		female = no
-		nationalities = { TUR SOV KAZ }
-	}
-
-
 ### VARIANTS ###
 # 1936 Start #
 if = {

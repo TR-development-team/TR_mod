@@ -9,10 +9,10 @@ provinces={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = YNN
-		add_core_of = YUN
-		add_claim_by = CHI
-                add_core_of = YNN
+		owner = YUN
+		add_core_of = CNK
+		add_claim_by = WHN
+                add_core_of = YUN
 		victory_points = {
 			7965 3 
 		}
@@ -27,7 +27,7 @@ provinces={
 					}
 
 				}
-				CHI = {
+				WHN = {
 					transfer_state = PREV
 
 				}

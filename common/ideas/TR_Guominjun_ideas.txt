@@ -2,7 +2,7 @@
 ideas = {
        
     country = {
-		KUO_Hui_repulsion = {
+		XIB_Hui_repulsion = {
 			allowed = {
 				always = no
 			}
@@ -14,7 +14,7 @@ ideas = {
 				war_support_factor = -0.15
 			}
 		}
-		KUO_Hui_repulsion_1 = {
+		XIB_Hui_repulsion_1 = {
 			allowed = {
 				always = no
 			}
@@ -26,7 +26,7 @@ ideas = {
 				war_support_factor = -0.10
 			}
 		}
-		KUO_Hui_repulsion_2 = {
+		XIB_Hui_repulsion_2 = {
 			allowed = {
 				always = no
 			}
@@ -37,7 +37,7 @@ ideas = {
 				war_support_factor = -0.05
 			}
 		}
-		KUO_Freedom_religion = {
+		XIB_Freedom_religion = {
 			allowed = {
 				always = no
 			}
@@ -48,7 +48,7 @@ ideas = {
                 stability_factor = 0.10
 			}
 		}
-		KUO_Divine_Right = {
+		XIB_Divine_Right = {
 			allowed = {
 				always = no
 			}
@@ -60,7 +60,7 @@ ideas = {
 				war_support_factor = 0.10
 			}
 		}
-		KUO_Feng_Yuxiang_Thought = {
+		XIB_Feng_Yuxiang_Thought = {
 			allowed = {
 				always = no
 			}
@@ -72,7 +72,7 @@ ideas = {
 				war_support_factor = 0.2
 			}
 		}
-		KUO_Anti_Japan = {
+		XIB_Anti_Japan = {
 			allowed = {
 				always = no
 			}
@@ -83,21 +83,21 @@ ideas = {
 				attack_bonus_against = 0.1
 			}
             targeted_modifier = {
-				tag = YUN
+				tag = CNK
 				attack_bonus_against = 0.1
 			}
             targeted_modifier = {
-				tag = SHX
+				tag = ZHI
 				attack_bonus_against = 0.1
 			}
             targeted_modifier = {
-				tag = GUG
+				tag = GND
 				attack_bonus_against = 0.1
 			}
 			modifier = {
 			}
 		}
-		KUO_Modern_rule = {
+		XIB_Modern_rule = {
 			allowed = {
 				always = no
 			}
@@ -108,7 +108,7 @@ ideas = {
                 stability_factor = 0.05
 			}
 		}
-		KUO_Modern_rule_1 = {
+		XIB_Modern_rule_1 = {
 			allowed = {
 				always = no
 			}
@@ -120,7 +120,7 @@ ideas = {
 				command_power_gain = 0.5
 			}
 		}
-		KUO_Industrial_enlightenment_campaign = {
+		XIB_Industrial_enlightenment_campaign = {
 			allowed = {
 				always = no
 			}
@@ -132,7 +132,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 			}
 		}
-		KUO_Rural_community = {
+		XIB_Rural_community = {
 			allowed = {
 				always = no
 			}
@@ -143,7 +143,7 @@ ideas = {
 				industry_air_damage_factor = -0.1
 			}
 		}
-		KUO_Rural_community_1 = {
+		XIB_Rural_community_1 = {
 			allowed = {
 				always = no
 			}
@@ -155,7 +155,7 @@ ideas = {
 				industry_air_damage_factor = -0.2
 			}
 		}
-		KUO_Army_reorganization = {
+		XIB_Army_reorganization = {
 			allowed = {
 				always = no
 			}
@@ -166,7 +166,7 @@ ideas = {
                 war_support_factor = 0.10
 			}
 		}
-		KUO_Railway_maintenance = {
+		XIB_Railway_maintenance = {
 			allowed = {
 				always = no
 			}
@@ -177,7 +177,7 @@ ideas = {
 				production_speed_supply_node_factor = 0.2
 			}
 		}
-		KUO_Trade_revitalization = {
+		XIB_Trade_revitalization = {
 			allowed = {
 				always = no
 			}
@@ -188,7 +188,7 @@ ideas = {
 				trade_opinion_factor = 0.1
 			}
 		}
-		KUO_Start_modernization = {
+		XIB_Start_modernization = {
 			allowed = {
 				always = no
 			}
@@ -199,7 +199,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-		KUO_Investing_in_rural = {
+		XIB_Investing_in_rural = {
 			allowed = {
 				always = no
 			}
@@ -210,7 +210,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-		KUO_Investing_in_rural_1 = {
+		XIB_Investing_in_rural_1 = {
 			allowed = {
 				always = no
 			}
@@ -222,7 +222,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-		KUO_Opium_ban = {
+		XIB_Opium_ban = {
 			allowed = {
 				always = no
 			}
@@ -233,7 +233,7 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
-		KUO_Opium_cultivation = {
+		XIB_Opium_cultivation = {
 			allowed = {
 				always = no
 			}
@@ -244,7 +244,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
-		KUO_Logistics = {
+		XIB_Logistics = {
 			allowed = {
 				always = no
 			}
@@ -255,7 +255,7 @@ ideas = {
 				attrition = -0.1
 			}
 		}
-		KUO_Fortress_construction = {
+		XIB_Fortress_construction = {
 			allowed = {
 				always = no
 			}
@@ -265,7 +265,7 @@ ideas = {
 				production_speed_bunker_factor = 0.1
 			}
 		}
-		KUO_Fortress_construction_1 = {
+		XIB_Fortress_construction_1 = {
 			allowed = {
 				always = no
 			}
@@ -276,7 +276,7 @@ ideas = {
 				army_core_defence_factor = 0.15
 			}
 		}
-		KUO_Fortress_construction_2 = {
+		XIB_Fortress_construction_2 = {
 			allowed = {
 				always = no
 			}
@@ -289,7 +289,7 @@ ideas = {
 				army_core_defence_factor = 0.15
 			}
 		}
-		KUO_Mobile_Army = {
+		XIB_Mobile_Army = {
 			allowed = {
 				always = no
 			}
@@ -299,7 +299,7 @@ ideas = {
 				army_speed_factor = 0.1
 			}
 		}
-		KUO_Mobile_Army_1 = {
+		XIB_Mobile_Army_1 = {
 			allowed = {
 				always = no
 			}
@@ -310,7 +310,7 @@ ideas = {
 				planning_speed = 0.15
 			}
 		}
-		KUO_Mobile_Army_2 = {
+		XIB_Mobile_Army_2 = {
 			allowed = {
 				always = no
 			}
@@ -323,7 +323,7 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
-		KUO_Weapon_Production = {
+		XIB_Weapon_Production = {
 			allowed = {
 				always = no
 			}
@@ -342,10 +342,10 @@ ideas = {
     }
 #大臣
     Head_of_State = {	
-        KUO_Feng_Yuxiang = {
-			picture = KUO_Feng_Yuxiang
+        XIB_Feng_Yuxiang = {
+			picture = XIB_Feng_Yuxiang
 			allowed = {
-				original_tag = KUO
+				original_tag = XIB
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -368,10 +368,10 @@ ideas = {
 		}
     }
     Government_leaders = {	  
-		KUO_Liu_Ji = {
-			picture = KUO_Liu_Ji
+		XIB_Liu_Ji = {
+			picture = XIB_Liu_Ji
 			allowed = {
-				original_tag = KUO
+				original_tag = XIB
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -393,11 +393,11 @@ ideas = {
 		}  
     }
     Minister_of_Foreign_Affairs = { 
-		KUO_Zhang_Zhijiang = {
-			picture = KUO_Zhang_Zhijiang
+		XIB_Zhang_Zhijiang = {
+			picture = XIB_Zhang_Zhijiang
 			
 			allowed = {
-				original_tag = KUO
+				original_tag = XIB
             }
 			available = {
 				custom_trigger_tooltip = {
@@ -418,12 +418,12 @@ ideas = {
 		}
 		}
         Minister_of_Economy = {	
-            KUO_Song_Zheyuan = {
+            XIB_Song_Zheyuan = {
 			
-			picture = KUO_Song_Zheyuan
+			picture = XIB_Song_Zheyuan
 			
 			allowed = {
-				original_tag = KUO
+				original_tag = XIB
                 }  
 				available = {
 					custom_trigger_tooltip = {
@@ -445,11 +445,11 @@ ideas = {
                
                }
     Minister_of_Interior = {	
-		KUO_Lu_Zhonglin = {
-			picture = KUO_Lu_Zhonglin
+		XIB_Lu_Zhonglin = {
+			picture = XIB_Lu_Zhonglin
 			
 			allowed = {
-				original_tag = KUO
+				original_tag = XIB
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -470,11 +470,11 @@ ideas = {
 		}          
     }
 	chief_of_staff = { 
-		KUO_Liu_Ji_cos = {
-			picture = KUO_Liu_Ji
-			name = KUO_Liu_Ji
+		XIB_Liu_Ji_cos = {
+			picture = XIB_Liu_Ji
+			name = XIB_Liu_Ji
 			allowed = {
-				original_tag = KUO
+				original_tag = XIB
 			}
 
 			removal_cost = -1
@@ -486,11 +486,11 @@ ideas = {
 		}
 	}
 	chief_of_army = { 
-        KUO_Feng_Yuxiang_coa = {
-			picture = KUO_Feng_Yuxiang
-			name = KUO_Feng_Yuxiang
+        XIB_Feng_Yuxiang_coa = {
+			picture = XIB_Feng_Yuxiang
+			name = XIB_Feng_Yuxiang
 			allowed = {
-				original_tag = KUO
+				original_tag = XIB
 			}
 
 			removal_cost = -1
@@ -500,10 +500,10 @@ ideas = {
 				carm_doctrine_of_autonomy
 			}
 		}
-		KUO_Zheng_Jinsheng = {
-			picture = KUO_Zheng_Jinsheng
+		XIB_Zheng_Jinsheng = {
+			picture = XIB_Zheng_Jinsheng
 			allowed = {
-				original_tag = KUO
+				original_tag = XIB
 			}
 
 			removal_cost = -1

@@ -1,0 +1,75 @@
+﻿### DECAN OOB ###
+
+division_template = {
+	name = "Infantry Division"		
+	division_names_group = JAP_INF_01			
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+                infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+                infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+                infantry = { x = 2 y = 2 }
+	}
+}
+
+
+
+units = {
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1349
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+        division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10278
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+        division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8011
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+}
+
+
+### No air forces (small handful of various aircraft in 1935) ###
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "DVN"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+}
+
+#################################

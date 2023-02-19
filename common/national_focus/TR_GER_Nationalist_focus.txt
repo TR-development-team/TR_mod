@@ -727,7 +727,7 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_core_of = HOL
+					is_core_of = NTL
 				}
 				add_claim_by = GER
 			}
@@ -799,15 +799,15 @@ focus_tree = {
 		available = {
 			is_subject = no
 			}
-		bypass = { OR = { NOT = { country_exists = HOL } HOL = { is_in_faction_with = FRA } } }
+		bypass = { OR = { NOT = { country_exists = NTL } NTL = { is_in_faction_with = FRA } } }
 		ai_will_do = {
 			factor = 80
 		}
 		completion_reward = {
 			if = {
-				limit = { NOT = { has_war_with = HOL } NOT = { is_in_faction_with = HOL } country_exists = HOL }
+				limit = { NOT = { has_war_with = NTL } NOT = { is_in_faction_with = NTL } country_exists = NTL }
 				create_wargoal = {
-					target = HOL
+					target = NTL
 					type = annex_everything
 				}
 			}
@@ -1003,9 +1003,16 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { NOT = { is_in_faction_with = BAL } country_exists = BAL }
+				limit = { NOT = { is_in_faction_with = BLT } country_exists = BLT }
 				create_wargoal = {
-					target = BAL
+					target = BLT
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = MHN } country_exists = MHN }
+				create_wargoal = {
+					target = MHN
 					type = puppet_wargoal_focus
 				}
 			}
@@ -1013,13 +1020,6 @@ focus_tree = {
 				limit = { NOT = { is_in_faction_with = UKR } country_exists = UKR }
 				create_wargoal = {
 					target = UKR
-					type = puppet_wargoal_focus
-				}
-			}
-			if = {
-				limit = { NOT = { is_in_faction_with = UKS } country_exists = UKS }
-				create_wargoal = {
-					target = UKS
 					type = puppet_wargoal_focus
 				}
 			}
@@ -1240,7 +1240,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier = {
-				target = RUS
+				target = SOV
 				modifier = medium_increase
 			}
 		}
@@ -1328,7 +1328,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier = {
-				target = GEO
+				target = SCC
 				modifier = medium_increase
 			}
 		}

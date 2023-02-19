@@ -1,0 +1,54 @@
+characters={
+	MHN_Nestor_Makhno={
+		name=MHN_Nestor_Makhno
+		portraits={
+			civilian={
+				large="gfx/leaders/MHN/Portrait_MHN_Nestor_Makhno.png"
+			}
+		}
+		country_leader={
+			ideology= anarco_communist_subtype
+		}
+	}
+	MHN_Nikita_Khrushchev={
+		name=MHN_Nikita_Khrushchev
+		portraits={
+			civilian={
+				large="gfx/leaders/MHN/Portrait_MHN_Khrushchev.png"
+			}
+		}
+		country_leader={
+			ideology= Leninist_subtype
+		}
+		country_leader={
+			ideology= Totalist_Leninist_subtype
+		}
+	}
+	MHN_Volodymyr_Vynnychenko={
+		name=MHN_Volodymyr_Vynnychenko
+		portraits={
+			civilian={
+				large="gfx/leaders/MHN/Portrait_MHN_Volodymyr_Vynnychenko.png"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+	}
+	MHN_Nestor_Makhno_corps={
+		name=MHN_Nestor_Makhno
+		portraits={
+			civilian={
+				large="gfx/leaders/MHN/Portrait_MHN_Nestor_Makhno.png"
+			}
+		}
+		field_marshal = {
+			traits = { media_personality politically_connected trickster guerilla_fighter organizer }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}
+}

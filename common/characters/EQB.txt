@@ -1,0 +1,63 @@
+characters={
+	EQB_luis_carlos_prestes={
+		name=EQB_luis_carlos_prestes
+		portraits={
+			civilian={
+				large=GFX_portrait_EQB_luis_carlos_prestes
+			}
+		}
+		country_leader={
+			ideology=Totalist_Leninist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	EQB_armando_sales={
+		name=EQB_armando_sales
+		portraits={
+			civilian={
+				large=GFX_portrait_EQB_armando_sales
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	EQB_getulio_vargas={
+		name=EQB_getulio_vargas
+		portraits={
+			civilian={
+				large="gfx/leaders/EQB/Portrait_EQB_Getulio_Vargas.png"
+			}
+		}
+		country_leader={
+			ideology=oligarchy_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=Military_junta_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	EQB_plinio_salgado={
+		name=EQB_plinio_salgado
+		portraits={
+			civilian={
+				large="gfx/leaders/EQB/Portrait_EQB_Plinio_Salgado.png"
+			}
+		}
+		country_leader={
+			ideology=Integralism_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

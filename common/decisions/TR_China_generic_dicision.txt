@@ -1,4 +1,4 @@
-CHI_united_policy = {
+WHN_united_policy = {
 	china_attack_Independent_warlord = {
 		icon = generic_nationalism
         allowed = { can_become_china = yes } 
@@ -111,8 +111,8 @@ CHI_united_policy = {
 		}
 	}
 }
-CHI_militaly_reform = {
-	CHI_militaly_reform1 = {
+WHN_militaly_reform = {
+	WHN_militaly_reform1 = {
 
 		icon = generic_prepare_civil_war
 
@@ -358,11 +358,11 @@ CHI_militaly_reform = {
 		}
 		visible = {
 			NOT = { has_war_with = JAP }
-			NOT = { has_war_with = GUG }
+			NOT = { has_war_with = GND }
 		}
-		targets = { GUG }
+		targets = { GND }
 		target_trigger = {
-			GUG = { 
+			GND = { 
 			    has_equipment = {
 				    infantry_equipment > 1000
 			    } 
@@ -381,7 +381,7 @@ CHI_militaly_reform = {
 			set_country_flag = { flag = Weapon_purchase_underway days = 32 value = 1 }
 		}
 		remove_effect = {
-            GUG = { 
+            GND = { 
 				add_political_power = 50 
 				send_equipment = {
 					equipment = infantry_equipment

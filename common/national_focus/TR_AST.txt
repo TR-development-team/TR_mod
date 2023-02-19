@@ -119,7 +119,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
 
 			
 		}
@@ -142,7 +142,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
                         has_country_flag = AST_Democratic_Hold
 		}
 		prerequisite = { focus = AST_yingguowangmingzhengfu  }
@@ -163,7 +163,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
                         has_country_flag = AST_MAGUS
 			
 		}
@@ -343,7 +343,7 @@ focus_tree = {
             is_subject = no
             owns_state = 126
             NOT = {
-				country_exists = ENG
+				country_exists = GBR
 			}
             NOT = {
 				country_exists = ENR
@@ -617,7 +617,7 @@ focus_tree = {
 		x = 3
 		y = 8
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
                         has_country_flag = AST_Democratic_Hold
 			
 		}
@@ -687,7 +687,7 @@ focus_tree = {
 		y = 8
 
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
                         has_country_flag = AST_MAGUS
 			
 		}

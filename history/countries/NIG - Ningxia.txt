@@ -1,0 +1,33 @@
+﻿capital = 616
+
+oob = "NIG_1936"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}
+add_ideas = {
+         militaly_dictatorship
+         WHN_late_army
+}
+
+XIB = { 
+        set_autonomy = {
+	   target = NIG
+	   autonomous_state = autonomy_satellite
+        }
+      }
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	paternal_autocrat = 100
+}
+recruit_character = NIG_Ma_Hongkui
+recruit_character = NIG_Ma_Hongkui_marshal
+recruit_character = NIG_Ma_Hongbin

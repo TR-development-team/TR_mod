@@ -79,7 +79,7 @@ focus_tree = {
 				modifier = JAP_blockeconomy_1
 			}
                         reverse_add_opinion_modifier = {
-				target = SOV
+				target = RUS
 				modifier = JAP_blockeconomy_1
 			}
                         reverse_add_opinion_modifier = {
@@ -87,7 +87,7 @@ focus_tree = {
 				modifier = JAP_blockeconomy_1
 			}
                         reverse_add_opinion_modifier = {
-				target = ENG
+				target = GBR
 				modifier = JAP_blockeconomy_1
 			}
                         reverse_add_opinion_modifier = {
@@ -861,7 +861,7 @@ focus_tree = {
 	#インドを訪れる
 	focus = {
 		id = JAP_FzHbvhst
-		icon = GFX_goal_RAJ_dominion_of_india
+		icon = GFX_goal_IND_dominion_of_india
 		x = 7
 		y = 5
 		cost = 10

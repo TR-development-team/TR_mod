@@ -1,0 +1,42 @@
+characters={
+	
+	ZHI_Doihara_Kenji={
+		name=JAP_Doihara_Kenji
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology= mil_colonial_government_subtype
+		}
+	}
+	ZHI_Pu_Yi={
+		name=ZHI_Pu_Yi
+		portraits={
+			civilian={
+				large="gfx/leaders/ZHI/Portrait_Qing_PuYi.tga"
+			}
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+	}
+	ZHI_Minoda_Muneki={
+		name=ZHI_Minoda_Muneki
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_minoda_Muneki.tga"
+			}
+		}
+		country_leader={
+			ideology= asian_monroe_subtype
+		}
+	}
+}

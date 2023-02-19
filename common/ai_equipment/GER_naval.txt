@@ -1405,9 +1405,9 @@ GER_naval_submarine = {
 			factor = 50
 			modifier = {
 				factor = 15
-				has_war_with = SOV
+				has_war_with = RUS
 				has_war_with = USA
-				has_war_with = ENG
+				has_war_with = GBR
 			}
 		}
 		role_icon_index = 6

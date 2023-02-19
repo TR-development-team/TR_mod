@@ -1,12 +1,6 @@
 ﻿capital = 440
 
 oob = "PAK_1936"
-add_ideas = {
-        Absolute_monarchy
-        low_school_system
-        trinket_health_care
-        trinket_minimum_wage
-}
 set_research_slots = 3
 # Starting tech
 set_technology = {
@@ -22,12 +16,6 @@ set_technology = {
 	early_fighter = 1
 	fuel_silos = 1
 	fuel_refining = 1
-}
-
-if = {
-	limit = { has_dlc = "Together for Victory" }
-
-	add_to_tech_sharing_group = commonwealth_research
 }
 
 set_convoys = 20
@@ -46,5 +34,3 @@ set_popularities = {
 	paternal_autocrat = 0
 	national_populist = 100
 }
-
-recruit_character = PAK_Victor_Duleep_Singh
