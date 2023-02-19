@@ -5,113 +5,12 @@ AUS_debug_category = {
 		available = {
 		}
 		complete_effect = {
-			end_puppet = HUN
-			end_puppet = GAL
-			end_puppet = BOS
-			HUN = {
-				set_country_flag = HUN
+			set_autonomy = {
+				autonomous_state = autonomy_cisleithanien
+				target = CZE
 			}
-			GAL = {
-				set_country_flag = GAL
-			}
-			every_country = {
-				limit = {
-					OR = {
-						tag = AUS
-						tag = HUN
-						tag = SLO
-						tag = GAL
-						tag = CRO
-						tag = SLV
-						tag = BOS
-						tag = UKS
-						tag = MOL
-						tag = CZE
-						tag = ROM
-						tag = SER
-					}
-				}
-				division_template = {
-					name = "Salvation Militia"
-					is_locked = no
-					division_names_group = USA_INF_01
-					priority = 0
-					template_counter = 0
-					regiments = {
-						infantry = {
-							x = 0
-							y = 0
-						}
-						infantry = {
-							x = 0
-							y = 1
-						}
-						infantry = {
-							x = 0
-							y = 2
-						}
-						infantry = {
-							x = 0
-							y = 3
-						}
-						infantry = {
-							x = 1
-							y = 0
-						}
-						infantry = {
-							x = 1
-							y = 1
-						}
-						infantry = {
-							x = 1
-							y = 2
-						}
-						infantry = {
-							x = 2
-							y = 0
-						}
-						infantry = {
-							x = 2
-							y = 1
-						}
-						infantry = {
-							x = 2
-							y = 2
-						}
-					}
-				}
-				set_variable = {
-					THIS.num_of_create_division_starting = THIS.num_of_factories
-				}
-				add_to_variable = {
-					THIS.num_of_create_division_starting = THIS.num_core_states
-				}
-				add_to_variable = {
-					THIS.num_of_create_division_starting = THIS.num_of_military_factories
-				}
-				capital_scope = {
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = arms_factory
-						level = 2
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 3
-						instant_build = yes
-					}
-					create_unit = {
-						division = "division_template = \"Salvation Militia\" start_experience_factor = 0.1"
-						owner = PREV
-						count = PREV.num_of_create_division_starting
-					}
-				}
+			set_rule = {
+				can_declare_war_without_wargoal_when_in_war = yes
 			}
 		}
 	}
@@ -222,6 +121,145 @@ AUS_debug_category = {
 }
 
 AUS_development_project = {
+	AUS_development_of_upper_hungary_farms = {
+		icon = generic_operation
+		visible = {
+			has_country_flag = AUS_dev_slo_dec
+			FROM = {
+				owns_or_subject_of = yes
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 49
+		}
+		custom_cost_text = decision_cost_PP_50
+		fire_only_once = yes
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_trigger = {
+			FROM = {
+				is_core_of = SLO
+				NOT = {
+					state = 993
+				}
+			}
+		}
+		available = {
+			FROM = {
+				owns_or_subject_of = yes
+			}
+		}
+		days_remove = 210
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -50
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_manpower = 100000
+				set_state_flag = AUS_farms_already_developed
+			}
+			add_to_variable = {
+				AUS_ra_war_stability_factor_modifier = 0.03
+			}
+			add_to_variable = {
+				AUS_ra_consumer_goods_factor_modifier = -0.015
+			}
+			add_to_variable = {
+				AUS_ra_monthly_population_modifier = 0.02
+			}
+			add_to_variable = {
+				AUS_ra_conscription_factor_modifier = 0.01
+			}
+			add_to_variable = {
+				AUS_ra_attrition_modifier = -0.02
+			}
+			custom_effect_tooltip = AUS_development_of_upper_hungary_farms_tt
+		}
+	}
+	AUS_mechanization_of_hungarian_agriculture = {
+		icon = generic_wreckers
+		visible = {
+			has_country_flag = AUS_mec_hun_dec
+			FROM = {
+				owns_or_subject_of = yes
+			}
+		}
+		custom_cost_trigger = {
+			has_political_power > 19
+		}
+		custom_cost_text = decision_cost_PP_20
+		fire_only_once = yes
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		target_trigger = {
+			FROM = {
+				OR = {
+					state = 43
+					state = 45
+					state = 70
+					state = 71
+					state = 73
+					state = 82
+					state = 83
+					state = 154
+					state = 664
+					state = 979
+					state = 983
+					state = 989
+					state = 1020
+					state = 1021
+					state = 1023
+				}
+			}
+		}
+		available = {
+			FROM = {
+				owns_or_subject_of = yes
+				custom_trigger_tooltip = {
+					tooltip = AUS_mechanization_of_hungarian_agriculture_a_tt
+					OR = {
+						state = 43
+						state = 45
+						state = 82
+						state = 83
+						state = 154
+						state = 983
+						state = 989
+						state = 1020
+						state = 1021
+						state = 1023
+						has_state_flag = AUS_farms_already_developed
+					}
+				}
+			}
+		}
+		days_remove = 70
+		modifier = {
+			civilian_factory_use = 1
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -20
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				AUS_ra_consumer_goods_factor_modifier = -0.01
+			}
+			add_to_variable = {
+				AUS_ra_monthly_population_modifier = 0.04
+			}
+			add_to_variable = {
+				AUS_ra_conscription_factor_modifier = 0.02
+			}
+			add_to_variable = {
+				AUS_ra_attrition_modifier = -0.01
+			}
+			custom_effect_tooltip = AUS_mechanization_of_hungarian_agriculture_tt
+		}
+	}
 	AUS_mountain_infrastructure_develop = {
 		icon = generic_construction
 		visible = {
@@ -621,6 +659,9 @@ AUS_foreign_policy = {
 				CZE = {
 					has_autonomy_state = autonomy_personal_union
 				}
+				CZE = {
+					has_autonomy_state = autonomy_cisleithanien
+				}
 			}
 		}
 		cost = 100
@@ -655,4 +696,8 @@ AUS_foreign_policy = {
 			}
 		}
 	}
+}
+
+AUS_reorganizing_public_finances = {
+	
 }

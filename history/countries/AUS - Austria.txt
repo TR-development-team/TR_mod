@@ -1,6 +1,6 @@
 ﻿capital = 4
 oob = "AUS_1936"
-set_cosmetic_tag = AUS_Austria
+set_cosmetic_tag = AUS_Cisleithanien
 set_research_slots = 4
 starting_train_buffer = 1.5
 set_major = yes
@@ -20,6 +20,13 @@ set_technology = {
 set_power_balance = {
 	id = AUS_power_balance
 }
+
+add_to_tech_sharing_group = austria_hungarian_empire_tech_share
+HUN = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+CRO = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+DAL = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+GAL = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+BOS = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
 
 ###Events
 country_event = {
@@ -112,6 +119,10 @@ set_variable = {
 
 set_variable = {
 	AUS_ri_production_speed_infrastructure_factor_modifier = 0
+}
+
+set_variable = {
+	AUS_ri_production_speed_rail_way_factor_modifier = 0
 }
 
 set_variable = {
@@ -259,6 +270,7 @@ add_ideas = {
 	trinket_health_care
 	acceptable_school_system
 	AUS_geteiltes_reich_idea
+	AUS_financial_difficulties_idea
 	AUS_wiener_kreis_idea
 	AUS_hungarian_scientist_idea
 }

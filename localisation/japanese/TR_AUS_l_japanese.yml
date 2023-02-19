@@ -6,6 +6,7 @@ AUS_foreign_policy:0 "外交政策"
 AUS_debug_category:0 "デバッグ用カテゴリ"
 AUS_development_project:0 "開発計画"
 AUS_great_osaka_plunge_category:0 "大阪大暴落"
+AUS_reorganizing_public_finances:0 "財政難の立て直し"
 
 ### Decisions ###
 
@@ -46,12 +47,21 @@ AUS_autobahn_expansion:0 "アウトバーンをライタ川の向こうへ"
 #AUS_development_project
 
 AUS_mountain_infrastructure_develop:0 "[FROM.GetName]での山岳インフラ"
+AUS_development_of_upper_hungary_farms:0 "[FROM.GetName]での農場開発"
+AUS_mechanization_of_hungarian_agriculture:0 "[FROM.GetName]の農業の機械化"
 
 #AUS_foreign_policy
 
 AUS_retention_of_the_prague_schule:0 "プラハ学派の支援"
 
+#AUS_reorganizing_public_finances
+
+
+
 ### Puppets ###
+
+autonomy_cisleithanien:0 "オーストリア帝冠領"
+autonomy_transleithanien:0 "ハンガリー王冠領"
 
 ### Scripted Effects ###
 
@@ -150,8 +160,13 @@ TR_Austria.17.t:0 "経営の持ち直し"
 TR_Austria.17.desc:0 "クレディタンシュタルトの半官半民化が終ったあと、この銀行は何とか倒産せずに今まで維持されている。帝国の軍需産業はまだ恐慌の影響を脱するまでには至っていないが、この事業をしていなかった際の被害を考えたら安いのかもしれない。"
 TR_Austria.17.a:0 "これでよかったのだ"
 
+TR_Austria.18.t:0 "自動車の広域な普及"
+TR_Austria.18.desc:0 "自動車は、ここ数年で民間の間に多く普及し、自動車関連企業の成長も目覚ましい。また、徴兵において一般成人男性の免許取得率が大幅に上昇しており、トラックの運用が非常に容易になっている。"
+TR_Austria.18.a:0 "自動車産業の成果だ！"
+
 ### Ideas ###
 
+AUS_more_cost_nf:0 "選択中の国家方針により"
 AUS_reichs_agriculture:0 "帝国の農業"
 AUS_reichs_agriculture_desc:0 "帝国の農業事情は芳しくはない。生産がハンガリーに集中しており、穀物はほとんどそれらに依存している状態だ。また、旧来の農法を捨てきれておらず、非生産的な方法によって農業は行われている。我々は何らかの対処を行わないといけない。さもなくば、窮地に陥ったときの追い打ちとなる可能性がある…"
 AUS_reichs_agriculture_buff:0 "帝国の農業"
@@ -195,6 +210,12 @@ AUS_loss_of_hungarian_initiative_desc:0 "オーストリア帝国によるトラ
 AUS_effects_of_job_creation_idea:0 "雇用創出の副次的効果"
 AUS_effects_of_job_creation_idea_desc:0 "市場の状態がいくらか安定した。"
 AUS_banking_network_idea:0 "大規模銀行ネットワーク"
+AUS_widespread_use_of_automobiles_idea:0 "自動車の普及"
+AUS_hungary_uran_idea:0 "メクセク・ウラン鉱山"
+AUS_hungary_uran_idea_desc:0 "ハンガリーのペーチ近郊で、少量のウラン鉱床が発見された。鉱山ではこの貴重な資源の採掘が行われており、新しく強力な軍事兵器の開発に欠かせないものとなっている。"
+AUS_computer_idea:0 "原始的・コンピューター"
+AUS_financial_difficulties_idea:0 "財政難"
+AUS_financial_difficulties_idea_desc:0 "オーストリア・ハンガリー帝国は致命的な財政赤字に苦しんでいる。現在のところ解決の見通しは立っていない…"
 
 ### Ministers ###
 
@@ -212,6 +233,11 @@ AUS_Engelbert_Dollfuss:0 "エンゲルベルト・ドルフース"
 AUS_franz_josef_otto_von_habsburg:0 "フランツ＝ヨーゼフ2世"
 AUS_Karl_Renner:0 "カール・レンナー"
 AUS_Richard_Coudenhove_Kalergi:0 "リヒャルト・クーデンホーフ＝カレルギー"
+
+### tech_share ###
+
+austria_hungarian_empire_tech_share_name:0 "オーストリア・ハンガリー帝国の技術共有"
+austria_hungarian_empire_tech_share_desc:0 "オーストリア・ハンガリー帝国内はある程度の技術共有が行われている。"
 
 ### Traits ###
 
@@ -409,8 +435,8 @@ AUS_large_military_academies:0 "大規模な士官学校"
 AUS_large_military_academies_desc:0 "良い軍には様々な要素が含まれているが、優秀な現場士官もその一つである。帝国中に優秀な士官を見つけ学ばせる士官学校を作り、現代陸軍への道を歩むのだ。"
 AUS_strengthening_discipline:0 "規律の強化"
 AUS_strengthening_discipline_desc:0 "帝国軍は、全体的に規律が低い傾向にあるようだ。というのも、国民国家ではないうえ多民族で構成されており、軍隊へ憧れを抱くものも少ないのがその一因であろう。近代陸軍は規律が重要であるのは明らかなので、規律は攻城させなければならない。"
-AUS_officer_education_programme:0 "効率化された士官教育"
-AUS_officer_education_programme_desc:0 "ほかの列強各国は、既に有能な士官を多く保持しているが、我々は0からのスタートといっても過言ではない。戦争はすぐそこまで迫っているかもしれないのに、他国と同じペースで士官を育成していたら、実戦で必要な数とレベルの士官を育成しきることは不可能だ。「ある程度優秀な」現場士官を「効率よく」排出するための、堅実な士官プログラムが必要になってくる。"
+AUS_integration_of_chain_of_command:0 "指揮系統の統合"
+AUS_integration_of_chain_of_command_desc:0 "現在、オーストリア＝ハンガリー帝国を構成する陸軍の指揮系統は杜撰な状態で放置されている。その一つに帝国内には「（オーストリア）帝国陸軍」と「ハンガリー王立陸戦隊」という二つの軍が別々に存在しているのだ。「共通軍」と呼称される帝国全体の軍も存在はしているが、未だすべては統合されておらず、両国間の利害関係などの影響をもろに受けている。近代軍として在り得ないこの旧態依然とした指揮系統は血を伴う改革によって全て取っ払わなければならい。"
 AUS_absorption_of_modern_military_technology:0 "近代軍事技術の吸収"
 AUS_absorption_of_modern_military_technology_desc:0 "我々に不足しているものは、人材だけではない。軍事技術に関しても他国に大きく後れを取っている。我々は、これらの技術も他国から吸収し、我々独自の技術基盤を形成することで、この問題を解決することができるだろう。"
 AUS_purge_of_the_old_guard:0 "守旧派の粛清"
@@ -493,13 +519,26 @@ AUS_industrialised_effect:0 "高度な工業地帯"
 
 ### tooltip ###
 
+AUS_focus_select_effect_tt:0 "国家方針開始時の即時の影響:"
+AUS_focus_selection_effect_tt:0 "国家方針選択中の影響:"
+AUS_focus_complete_effect_tt:0 "\n国家方針完了時の影響:"
+
+AUS_political_cost_tt:0 "日毎の政治力コスト: §R+1.00§!\n"
+
+decision_cost_PP_20:0 "£pol_power  §Y20§!"
+decision_cost_PP_20_blocked:0 "£pol_power  §R20§!"
+decision_cost_PP_20_tooltip:0 "このディシジョンを実行するには、£pol_power  §Y20§!が必要"
+decision_cost_PP_50:0 "£pol_power  §Y50§!"
+decision_cost_PP_50_blocked:0 "£pol_power  §R50§!"
+decision_cost_PP_50_tooltip:0 "このディシジョンを実行するには、£pol_power  §Y50§!が必要"
+
 AUS_external_duty_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y2.5%§!\n\n§Y帝国の工業§!に以下の修正:\n消費財工場: §Y2.5%§!\n\n§Y大阪大暴落の余波§!に以下の修正:\n産出資源の海外市場への放出: §Y-20%§!\n禁輸コスト補正: §G-80.0%§!\n禁輸の国際緊張値: §G-1000.0%§!\n\n"
 AUS_external_duty_trt:0 "国民精神§Y大阪大暴落の余波§!を有している"
 AUS_abolition_of_krone_tt:0 "この国家方針を取得すると、§Yクローネ§!による§Yハイパーインフレーション§!の影響が段階的に軽減されていく。"
 AUS_reichs_autobahn_tt:0 "§Yツィスライタニエン§!の§Yウィーン§!と陸続きの全ての領有州の§Yインフラ§! レベルを§G1§!上昇させる。\n\n§Y帝国の工業§!に以下の修正:\n§Yインフラ§!建設速度: §G+20.0%§!\n\n"
 AUS_site_reform_tt:0 "§Y帝国の工業§!に以下の修正:\n全州の最大工場立地数: §G+25.00%§!\n\n"
 AUS_liberate_habsburg_lands_tt:0 "§Y帝国の工業§!に以下の修正:\n全州の最大工場立地数: §G+15.00%§!\n建設速度: §G+25.00%§!\n§Y民需工場§!建設速度: §G+25.00%§!\n\n"
-AUS_improved_industrial_space_tt:0 "§Y帝国の工業§!に以下の修正:\n建設速度: §G+10.00%§!\n£prod_eff 生産効率成長率: §G+20.00%§!\n生産効率基本値: §G+20.00%§!\n資源不足ペナルティ: §G-10.00%§!\n工場出力: §G+20.00%§!\n\n"
+AUS_improved_industrial_space_tt:0 "§Y帝国の工業§!に以下の修正:\n建設速度: §G+10.00%§!\n£prod_eff 生産効率成長率: §G+20.00%§!\n生産効率基本値: §G+10.00%§!\n資源不足ペナルティ: §G-10.00%§!\n工場出力: §G+20.00%§!\n造船所出力: §G+20.00%§!\n"
 AUS_development_of_translytanien_tt:0 "§Y帝国の工業§!に以下の修正:\n建築速度: §G+10.00%§!\n\n"
 AUS_finish_plunge:0 "§Y恐慌§!が終結した"
 AUS_resource_competitiveness_tt:0 "§Y帝国の工業§!の資源系デバフを解除する。\nまた、既に研究し終えているものも含め、§Y掘削§!系の技術を研究する度、効果の§Y50%§!が§Y帝国の工業§!に効果として上乗せされる。"
@@ -508,6 +547,18 @@ AUS_three_ri_goods_tt:0 "\n§Y帝国の工業§!に以下の修正:\n消費財�
 AUS_financial_assistance_tt:0 "§Y恐慌§!の影響を軽減するためのディシジョン群が解禁される。"
 AUS_creditanstalt_bankruptcy_crisis_mission_1_tt:0 "誰の目から見ても明らかなほど§Yクレディタンシュタルト§!の状況は悪化し、破綻まで秒読みとなる。"
 AUS_creditanstalt_bankruptcy_crisis_mission_2_tt:0 "§Yクレディタンシュタルト§!は倒産し、帝国の軍需産業は今後数十年停滞する。"
+AUS_empire_and_railways_tt:0 "\n§Y帝国の工業§!に以下の修正:\n§Y鉄道§!建設速度: §G+20.0%§!\n\n"
+AUS_popularisation_of_cars_tt:0 "\n数年後、この取り組みは全くの§Y別分野§!で効力を発揮するかもしれない…"
+#AUS_decentralisation_of_food_production_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y-7.5%§!\n月毎の人口: §G+25.0%§!\n戦争ペナルティによる安定度補正: §G+15.00%§!\n"
+#AUS_great_plains_with_gold_fertile_soil_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y-15.0%§!\n月毎の人口: §G+25.0%§!\n徴兵可能人口補正: §G+25%§!\n師団消耗: §G-20.0%§!\n"
+AUS_decentralisation_of_food_production_tt:0 "§Y上ハンガリー§!での大規模農場の§Y整備ディシジョン§!が解禁される。"
+AUS_great_plains_with_gold_fertile_soil_tt:0 "§Yハンガリー§!での§Y農業機械化ディシジョン§!が解禁される。"
+AUS_development_of_upper_hungary_farms_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y-1.5%§!\n月毎の人口: §G+2.0%§!\n戦争ペナルティによる安定度補正: §G+3.00%§!\n徴兵可能人口補正: §G+1%§!\n師団消耗: §G-2.0%§!\n"
+AUS_mechanization_of_hungarian_agriculture_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y-1.0%§!\n月毎の人口: §G+4.0%§!\n徴兵可能人口補正: §G+2%§!\n師団消耗: §G-1.0%§!\n"
+AUS_sophisticated_light_industry_tt:0 "§Y帝国の工業§!に以下の修正:\n消費財工場: §Y-5.0%§!\n\n"
+AUS_enduring_economy_tt:0 "帝国の§Y財政§!の立て直しに関するディシジョンが解禁される。"
+AUS_new_industrial_structures_tt:0 "§Y帝国の工業§!に以下の修正:\n£prod_eff 生産効率成長率: §G+20.00%§!\n日毎のサンディカリズムへの支援: §R-0.02§!\n日毎の急進社会主義への支援: §R-0.02§!\n日毎の社会民主主義への支援: §R-0.02§!\n"
+AUS_developing_petrochemical_industry_tt:0 "\n§Y帝国の工業§!に以下の修正:\n§Y合成精製所§!建設速度: §G+33.3%§!"
 
 ### flags ###
 
@@ -515,7 +566,38 @@ AUS_creditanstalt_rescued_1:0 "クレディタンシュタルトは救済され�
 AUS_creditanstalt_rescued_2:0 "クレディタンシュタルトは延命された"
 AUS_developing_mountain_infrastructure:0 "山岳インフラを開発中である"
 AUS_addressing_plunge:0 "恐慌に対処中"
+AUS_mechanization_of_hungarian_agriculture_a_tt:0 "農場がすでに開発されている"
 
 ### faction ###
 
 FACTION_NAME_SOCIAL_CONSERVATIVE_3:0 "ハンガリー包囲網"
+
+### cosmic tag ###
+
+AUS_Cisleithanien:0 "オーストリア諸邦"
+AUS_Cisleithanien_ADJ:0 "オーストリア"
+AUS_Cisleithanien_DEF:0 "オーストリア諸邦"
+
+HUN_Transleithanien:0 "ハンガリー王冠領"
+HUN_Transleithanien_ADJ:0 "ハンガリー"
+HUN_Transleithanien_DEF:0 "聖イシュトヴァーン王冠の諸邦"
+
+GAL_AUS:0 "ガリツィア・ロドメリア王国"
+GAL_AUS_ADJ:0 "ガリツィア・ロドメリア"
+GAL_AUS_DEF:0 "ガリツィア・ロドメリア王国及びクラカウ大公国・アウシュヴィッツ公国・ザトル公国"
+
+CZE_AUS:0 "ボヘミア王冠領"
+CZE_AUS_ADJ:0 "ボヘミア"
+CZE_AUS_DEF:0 "ボヘミア王国の王冠"
+
+DAL_AUS:0 "ダルマティア王国"
+DAL_AUS_ADJ:0 "ダルマチア"
+DAL_AUS_DEF:0 "ダルマティア王国"
+
+BOS_AUS:0 "共同統治国ボスニア・ヘルツェゴヴィナ"
+BOS_AUS_ADJ:0 "ボスニア・ヘルツェゴヴィナ"
+BOS_AUS_DEF:0 "ボスニア・ヘルツェゴヴィナ"
+
+CRO_HUN:0 "クロアチア＝スラヴォニア王国"
+CRO_HUN_ADJ:0 "クロアチア＝スラヴォニア"
+CRO_HUN_DEF:0 "クロアチア・スラヴォニア及びダルマチア三重王国"

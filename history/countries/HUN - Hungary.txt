@@ -64,12 +64,25 @@ if = {
 	}
 }
 
-set_cosmetic_tag = HUN_AUS_kingdom
+set_cosmetic_tag = HUN_Transleithanien
 AUS = {
 	set_autonomy = {
 		target = HUN
 		autonomous_state = autonomy_personal_union
 	}
+}
+
+set_autonomy = {
+	autonomous_state = autonomy_transleithanien
+	target = CRO
+}
+
+AUS = {
+	give_guarantee = CRO
+}
+
+CRO = {
+	give_military_access = AUS
 }
 
 add_ideas = {
@@ -81,6 +94,7 @@ add_ideas = {
 	trinket_health_care
 	acceptable_school_system
 	AUS_hungarian_scientist_idea
+	AUS_HUN_gemeinsames_ministerium
 }
 
 set_politics = {

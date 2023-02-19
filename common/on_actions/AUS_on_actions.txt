@@ -68,6 +68,28 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					has_completed_focus = AUS_great_plains_with_gold_fertile_soil
+				}
+				if = {
+					limit = {
+						check_variable = {
+							AUS_ra_attrition_modifier = -0.05
+						}
+						NOT = {
+							has_country_flag = AUS_nice_farm
+						}
+					}
+					remove_dynamic_modifier = {
+						modifier = AUS_reichs_agriculture
+					}
+					add_dynamic_modifier = {
+						modifier = AUS_reichs_agriculture_buff
+					}
+					set_country_flag = AUS_nice_farm
+				}
+			}
+			if = {
+				limit = {
 					has_completed_focus = AUS_resource_competitiveness
 				}
 				if = {

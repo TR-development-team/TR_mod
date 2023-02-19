@@ -330,3 +330,17 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = TR_Austria.18
+	title = TR_Austria.18.t
+	desc = TR_Austria.18.desc
+	picture = GFX_report_event_generic_truck
+	is_triggered_only = yes
+	option = {
+		name = TR_Austria.18.a
+		add_ideas = AUS_widespread_use_of_automobiles_idea
+	}
+}
+
+

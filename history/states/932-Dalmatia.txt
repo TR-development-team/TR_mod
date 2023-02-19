@@ -2,14 +2,14 @@ state = {
 	id = 932
 	name = "STATE_932"
 	history = {
-		owner = AUS
+		owner = DAL
 		victory_points = {
 			3868
 			3
 		}
 		victory_points = {
 			3924
-			3
+			5
 		}
 		buildings = {
 			infrastructure = 3
@@ -22,8 +22,8 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = AUS
-		add_core_of = CRO
+		add_core_of = DAL
+		add_claim_by = CRO
 		set_province_name = {
 			id = 3924
 			name = VICTORY_POINTS_3924_TR

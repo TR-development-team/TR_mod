@@ -128,5 +128,58 @@ ideas = {
 				economy_cost_factor = -0.33
 			}
 		}
+		AUS_widespread_use_of_automobiles_idea = {
+			picture = generic_supply_lines
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					build_cost_ic = -0.6
+					maximum_speed = 0.2
+				}
+			}
+			modifier = {
+				truck_attrition_factor = -0.25
+				supply_consumption_factor = -0.2
+			}
+		}
+		AUS_hungary_uran_idea = {
+			picture = ast_all_in
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.15
+				nuclear_production_factor = 0.15
+			}
+			research_bonus = {
+				nuclear = 0.1
+			}
+		}
+		AUS_computer_idea = {
+			picture = generic_research_bonus
+			modifier = {
+				research_speed_factor = 0.2
+			}
+			research_bonus = {
+				nuclear = 0.2
+			}
+		}
+		AUS_financial_difficulties_idea = {
+			picture = usa_great_depression_3
+			modifier = {
+				political_power_cost = 1
+				stability_weekly = -0.001
+				consumer_goods_factor = 0.1
+			}
+		}
+	}
+	hidden_ideas = {
+		AUS_HUN_gemeinsames_ministerium = {
+			modifier = {
+				ai_call_ally_desire_factor = 10000
+			}
+		}
+		AUS_more_cost_nf = {
+			modifier = {
+				political_power_cost = 1
+			}
+		}
 	}
 }

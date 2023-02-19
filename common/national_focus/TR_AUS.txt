@@ -157,7 +157,7 @@ focus_tree = {
 	focus = {
 		id = AUS_enduring_economy
 		icon = GFX_focus_AUS_enduring_economy
-		cost = 5
+		cost = 2
 		relative_position_id = AUS_financial_assistance
 		x = 0
 		y = 2
@@ -170,7 +170,12 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_creditanstalt_issue
 		}
+		available = {
+			has_country_flag = AUS_finish_plunge
+		}
 		completion_reward = {
+			custom_effect_tooltip = AUS_enduring_economy_tt
+			set_country_flag = AUS_commencement_of_financial_restructuring
 		}
 	}
 	### ###
@@ -212,7 +217,7 @@ focus_tree = {
 	focus = {
 		id = AUS_site_reform
 		icon = GFX_focus_AUS_site_reform
-		cost = 5
+		cost = 12
 		relative_position_id = AUS_external_duty
 		x = 0
 		y = 1
@@ -241,7 +246,7 @@ focus_tree = {
 	focus = {
 		id = AUS_family_registration_system
 		icon = GFX_focus_AUS_family_registration_system
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_site_reform
 		x = 0
 		y = 1
@@ -250,13 +255,12 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = AUS_modern_population_census_idea
-			add_political_power = 80
 		}
 	}
 	focus = {
 		id = AUS_liberate_habsburg_lands
 		icon = GFX_focus_AUS_liberate_habsburg_lands
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_family_registration_system
 		x = 0
 		y = 1
@@ -264,14 +268,16 @@ focus_tree = {
 			focus = AUS_family_registration_system
 		}
 		cancelable = no
-		continue_if_invalid = yes
-		available = {
-			has_political_power > 49.999
-		}
 		select_effect = {
-			add_political_power = -50
+			add_ideas = AUS_more_cost_nf
 		}
 		completion_reward = {
+			hidden_effect = {
+				remove_ideas = AUS_more_cost_nf
+			}
+			custom_effect_tooltip = AUS_focus_selection_effect_tt
+			custom_effect_tooltip = AUS_political_cost_tt
+			custom_effect_tooltip = AUS_focus_complete_effect_tt
 			add_to_variable = {
 				AUS_ri_production_speed_buildings_factor_modifier = 0.25
 			}
@@ -287,12 +293,12 @@ focus_tree = {
 	focus = {
 		id = AUS_improved_industrial_space
 		icon = GFX_focus_generic_industry_3
-		cost = 5
+		cost = 15
 		relative_position_id = AUS_liberate_habsburg_lands
 		x = 0
 		y = 2
 		prerequisite = {
-			focus = AUS_liberate_habsburg_lands
+			focus = AUS_new_industrial_structures
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -302,7 +308,7 @@ focus_tree = {
 				AUS_ri_production_factory_efficiency_gain_factor_modifier = 0.2
 			}
 			add_to_variable = {
-				AUS_ri_production_factory_start_efficiency_factor_modifier = 0.2
+				AUS_ri_production_factory_start_efficiency_factor_modifier = 0.1
 			}
 			add_to_variable = {
 				AUS_ri_production_lack_of_resource_penalty_factor_modifier = -0.1
@@ -325,7 +331,7 @@ focus_tree = {
 	focus = {
 		id = AUS_new_industrial_structures
 		icon = GFX_focus_SOV_organize_wreckers
-		cost = 5
+		cost = 8
 		x = 2
 		y = 4
 		prerequisite = {
@@ -334,13 +340,31 @@ focus_tree = {
 		prerequisite = {
 			focus = AUS_enduring_economy
 		}
+		available = {
+			NOT = {
+				has_idea = AUS_financial_difficulties_idea
+			}
+		}
 		completion_reward = {
+			add_to_variable = {
+				AUS_ri_radical_socialist_drift_modifier = -0.02
+			}
+			add_to_variable = {
+				AUS_ri_social_democrat_drift_modifier = -0.02
+			}
+			add_to_variable = {
+				AUS_ri_syndicalist_drift_modifier = -0.02
+			}
+			add_to_variable = {
+				AUS_ri_production_factory_efficiency_gain_factor_modifier = 0.2
+			}
+			custom_effect_tooltip = AUS_new_industrial_structures_tt
 		}
 	}
 	focus = {
 		id = AUS_developing_petrochemical_industry
 		icon = GFX_focus_AUS_developing_petrochemical_industry
-		cost = 5
+		cost = 6
 		relative_position_id = AUS_new_industrial_structures
 		x = -2
 		y = 1
@@ -348,17 +372,31 @@ focus_tree = {
 			focus = AUS_new_industrial_structures
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 6
+				category = synth_resources
+			}
+			add_to_variable = {
+				AUS_ri_production_speed_synthetic_refinery_factor_modifier = 0.33
+			}
+			custom_effect_tooltip = AUS_developing_petrochemical_industry_tt
 		}
 	}
 	focus = {
 		id = AUS_reichs_specialisation
 		icon = GFX_focus_AUS_reichs_specialisation
-		cost = 5
+		cost = 7
 		relative_position_id = AUS_new_industrial_structures
 		x = 0
 		y = 2
 		prerequisite = {
 			focus = AUS_new_industrial_structures
+		}
+		available = {
+			NOT = {
+				has_idea = AUS_geteiltes_reich_idea
+			}
 		}
 		completion_reward = {
 		}
@@ -367,7 +405,7 @@ focus_tree = {
 	focus = {
 		id = AUS_karnten_development
 		icon = GFX_focus_AUS_karnten_development
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_external_duty
 		x = 3
 		y = 1
@@ -423,7 +461,7 @@ focus_tree = {
 	focus = {
 		id = AUS_tirol_development
 		icon = GFX_focus_AUS_tirol_development
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_external_duty
 		x = 5
 		y = 1
@@ -470,7 +508,7 @@ focus_tree = {
 	focus = {
 		id = AUS_resource_competitiveness
 		icon = GFX_focus_AUS_resource_competitiveness
-		cost = 5
+		cost = 6
 		relative_position_id = AUS_karnten_development
 		x = 0
 		y = 1
@@ -568,7 +606,7 @@ focus_tree = {
 	focus = {
 		id = AUS_mountain_infrastructure
 		icon = GFX_focus_AUS_mountain_infrastructure
-		cost = 5
+		cost = 6
 		relative_position_id = AUS_tirol_development
 		x = 0
 		y = 1
@@ -586,7 +624,7 @@ focus_tree = {
 	focus = {
 		id = AUS_development_of_niederosterreich
 		icon = GFX_focus_AUS_development_of_niederosterreich
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_resource_competitiveness
 		x = -1
 		y = 1
@@ -629,7 +667,7 @@ focus_tree = {
 	focus = {
 		id = AUS_development_of_oberosterreich
 		icon = GFX_focus_AUS_development_of_oberosterreich
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_mountain_infrastructure
 		x = 1
 		y = 1
@@ -672,7 +710,7 @@ focus_tree = {
 	focus = {
 		id = AUS_slovenias_advanced_industrialisation
 		icon = GFX_focus_AUS_slovenias_advanced_industrialisation
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_resource_competitiveness
 		x = 1
 		y = 1
@@ -690,39 +728,42 @@ focus_tree = {
 			997 = {
 				is_fully_controlled_by = ROOT
 			}
+			1016 = {
+				is_fully_controlled_by = ROOT
+			}
 		}
 		completion_reward = {
-			102 = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 102
+						state = 947
+						state = 997
+						state = 1016
+					}
+				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
 					level = 1
 				}
-				set_state_category = large_city
-				add_dynamic_modifier = {
-					modifier = AUS_industrialised_effect
+				if = {
+					limit = {
+						state = 102
+					}
+					set_state_category = large_city
+					add_dynamic_modifier = {
+						modifier = AUS_industrialised_effect
+					}
 				}
-			}
-			947 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
+				else_if = {
+					limit = {
+						state = 947
+					}
+					set_state_category = large_town
 				}
-				set_state_category = city
-				add_dynamic_modifier = {
-					modifier = AUS_industrialised_effect
-				}
-			}
-			997 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-				}
-				set_state_category = city
-				add_dynamic_modifier = {
-					modifier = AUS_industrialised_effect
+				else = {
+					set_state_category = town
 				}
 			}
 			add_to_variable = {
@@ -763,7 +804,7 @@ focus_tree = {
 	focus = {
 		id = AUS_extension_tu_wien
 		icon = GFX_focus_research
-		cost = 5
+		cost = 10
 		relative_position_id = AUS_slovenias_advanced_industrialisation
 		x = 0
 		y = 1
@@ -863,7 +904,7 @@ focus_tree = {
 	focus = {
 		id = AUS_development_of_translytanien
 		icon = GFX_focus_AUS_development_of_translytanien
-		cost = 5
+		cost = 3
 		x = 15
 		y = 0
 		available = {
@@ -882,7 +923,7 @@ focus_tree = {
 	focus = {
 		id = AUS_empire_and_railways
 		icon = GFX_focus_generic_railroad
-		cost = 5
+		cost = 4
 		relative_position_id = AUS_reichs_autobahn
 		x = 2
 		y = 1
@@ -893,12 +934,75 @@ focus_tree = {
 			focus = AUS_development_of_translytanien
 		}
 		completion_reward = {
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				fallback = yes
+				path = {
+					3675
+					13261
+					11634
+					673
+				}
+				start_province = 3675
+				target_province = 673
+			}
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				fallback = yes
+				path = {
+					6687
+					9679
+				}
+				start_province = 6687
+				target_province = 9679
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				fallback = yes
+				path = {
+					6983
+					9588
+					9595
+				}
+				start_province = 6983
+				target_province = 9595
+			}
+			build_railway = {
+				level = 2
+				build_only_on_allied = yes
+				fallback = yes
+				path = {
+					3601
+					6611
+					984
+				}
+				start_province = 3601
+				target_province = 984
+			}
+			build_railway = {
+				level = 1
+				build_only_on_allied = yes
+				fallback = yes
+				path = {
+					3924
+					11816
+				}
+				start_province = 3924
+				target_province = 11816
+			}
+			add_to_variable = {
+				AUS_ri_production_speed_rail_way_factor_modifier = 0.2
+			}
+			custom_effect_tooltip = AUS_empire_and_railways_tt
 		}
 	}
 	focus = {
 		id = AUS_popularisation_of_cars
 		icon = GFX_focus_generic_truck
-		cost = 5
+		cost = 6
 		relative_position_id = AUS_empire_and_railways
 		x = -2
 		y = 1
@@ -906,12 +1010,43 @@ focus_tree = {
 			focus = AUS_empire_and_railways
 		}
 		completion_reward = {
+			4 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			152 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			987 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = TR_Austria.18
+					days = 1826
+				}
+			}
+			custom_effect_tooltip = AUS_popularisation_of_cars_tt
 		}
 	}
 	focus = {
 		id = AUS_decentralisation_of_food_production
 		icon = GFX_focus_AUS_decentralisation_of_food_production
-		cost = 5
+		cost = 4
 		relative_position_id = AUS_empire_and_railways
 		x = 0
 		y = 1
@@ -919,12 +1054,23 @@ focus_tree = {
 			focus = AUS_empire_and_railways
 		}
 		completion_reward = {
+			#add_to_variable = {
+			#	AUS_ra_consumer_goods_factor_modifier = -0.075
+			#}
+			#add_to_variable = {
+			#	AUS_ra_monthly_population_modifier = 0.25
+			#}
+			#add_to_variable = {
+			#	AUS_ra_war_stability_factor_modifier = 0.15
+			#}
+			custom_effect_tooltip = AUS_decentralisation_of_food_production_tt
+			set_country_flag = AUS_dev_slo_dec
 		}
 	}
 	focus = {
 		id = AUS_great_plains_with_gold_fertile_soil
 		icon = GFX_focus_AUS_great_plains_with_gold_fertile_soil
-		cost = 5
+		cost = 4
 		relative_position_id = AUS_decentralisation_of_food_production
 		x = 0
 		y = 1
@@ -932,12 +1078,34 @@ focus_tree = {
 			focus = AUS_decentralisation_of_food_production
 		}
 		completion_reward = {
+			#hidden_effect = {
+			#	remove_dynamic_modifier = {
+			#		modifier = AUS_reichs_agriculture
+			#	}
+			#	add_dynamic_modifier = {
+			#		modifier = AUS_reichs_agriculture_buff
+			#	}
+			#}
+			#add_to_variable = {
+			#	AUS_ra_consumer_goods_factor_modifier = -0.15
+			#}
+			#add_to_variable = {
+			#	AUS_ra_monthly_population_modifier = 0.25
+			#}
+			#add_to_variable = {
+			#	AUS_ra_attrition_modifier = -0.2
+			#}
+			#add_to_variable = {
+			#	AUS_ra_conscription_factor_modifier = 0.25
+			#}
+			set_country_flag = AUS_mec_hun_dec
+			custom_effect_tooltip = AUS_great_plains_with_gold_fertile_soil_tt
 		}
 	}
 	focus = {
 		id = AUS_galicia_security_forces
 		icon = GFX_focus_AUS_galicia_security_forces
-		cost = 5
+		cost = 2
 		relative_position_id = AUS_empire_and_railways
 		x = 2
 		y = 1
@@ -950,7 +1118,7 @@ focus_tree = {
 	focus = {
 		id = AUS_galicia_livelihood_base
 		icon = GFX_focus_AUS_galicia_livelihood_base
-		cost = 5
+		cost = 7
 		relative_position_id = AUS_galicia_security_forces
 		x = 0
 		y = 1
@@ -963,7 +1131,7 @@ focus_tree = {
 	focus = {
 		id = AUS_aluminium_in_veszpreme
 		icon = GFX_focus_generic_aluminum
-		cost = 5
+		cost = 7
 		relative_position_id = AUS_development_of_translytanien
 		x = 2
 		y = 1
@@ -971,25 +1139,50 @@ focus_tree = {
 			focus = AUS_development_of_translytanien
 		}
 		completion_reward = {
+			155 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_resource = {
+					type = aluminium
+					amount = 68
+				}
+			}
 		}
 	}
 	focus = {
 		id = AUS_sophisticated_light_industry
 		icon = GFX_focus_generic_industry_1
-		cost = 5
+		cost = 10
 		relative_position_id = AUS_aluminium_in_veszpreme
 		x = 0
 		y = 1
 		prerequisite = {
 			focus = AUS_aluminium_in_veszpreme
 		}
+		cancelable = no
+		select_effect = {
+			add_ideas = AUS_more_cost_nf
+		}
 		completion_reward = {
+			hidden_effect = {
+				remove_ideas = AUS_more_cost_nf
+			}
+			custom_effect_tooltip = AUS_focus_selection_effect_tt
+			custom_effect_tooltip = AUS_political_cost_tt
+			custom_effect_tooltip = AUS_focus_complete_effect_tt
+			add_to_variable = {
+				AUS_ri_consumer_goods_factor_modifier = -0.05
+			}
+			custom_effect_tooltip = AUS_sophisticated_light_industry_tt
 		}
 	}
 	focus = {
 		id = AUS_research_institutions_in_magyar
 		icon = GFX_focus_research2
-		cost = 5
+		cost = 9
 		relative_position_id = AUS_sophisticated_light_industry
 		x = 0
 		y = 1
@@ -1027,7 +1220,7 @@ focus_tree = {
 	focus = {
 		id = AUS_martian
 		icon = GFX_focus_AUS_martian
-		cost = 5
+		cost = 2
 		relative_position_id = AUS_development_of_translytanien
 		x = 0
 		y = 4
@@ -1044,7 +1237,7 @@ focus_tree = {
 	focus = {
 		id = AUS_reichs_institute
 		icon = GFX_focus_AUS_reichs_institute
-		cost = 5
+		cost = 10
 		relative_position_id = AUS_extension_tu_wien
 		x = 0
 		y = 1
@@ -1061,7 +1254,7 @@ focus_tree = {
 	focus = {
 		id = AUS_nuclear_technology
 		icon = GFX_focus_wonderweapons
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_reichs_institute
 		x = 0
 		y = 1
@@ -1069,12 +1262,17 @@ focus_tree = {
 			focus = AUS_reichs_institute
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = nuclear
+			}
 		}
 	}
 	focus = {
 		id = AUS_hungary_uran
 		icon = GFX_goal_generic_construction2
-		cost = 5
+		cost = 8
 		relative_position_id = AUS_reichs_institute
 		x = -2
 		y = 1
@@ -1082,12 +1280,13 @@ focus_tree = {
 			focus = AUS_reichs_institute
 		}
 		completion_reward = {
+			add_ideas = AUS_hungary_uran_idea
 		}
 	}
 	focus = {
 		id = AUS_originator_of_the_computer
 		icon = GFX_focus_AUS_originator_of_the_computer
-		cost = 5
+		cost = 15
 		relative_position_id = AUS_reichs_institute
 		x = 2
 		y = 1
@@ -1095,6 +1294,12 @@ focus_tree = {
 			focus = AUS_reichs_institute
 		}
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 4
+				uses = 2
+				category = electronics
+			}
+			add_ideas = AUS_computer_idea
 		}
 	}
 	##............................................................................................
@@ -1813,7 +2018,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = AUS_officer_education_programme
+		id = AUS_integration_of_chain_of_command
 		icon = GFX_focus_AUS_officer_education_programme
 		cost = 5
 		relative_position_id = AUS_large_military_academies
@@ -1836,7 +2041,7 @@ focus_tree = {
 			focus = AUS_strengthening_discipline
 		}
 		prerequisite = {
-			focus = AUS_officer_education_programme
+			focus = AUS_integration_of_chain_of_command
 		}
 		completion_reward = {
 		}
