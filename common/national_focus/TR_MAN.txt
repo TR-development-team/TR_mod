@@ -51,7 +51,7 @@ focus_tree = {
                      JAP = { end_puppet = MAN }
                      leave_faction = yes
                      set_major = yes
-                     set_cosmetic_tag = MAN_ANA
+                     set_cosmetic_tag = MAN_liberated_area
                      add_stability = -0.1
 	             JAP = { country_event = TR_japfed.17 }
                   }
@@ -84,7 +84,7 @@ focus_tree = {
                      remove_ideas = JAP_colony
                      JAP = { end_puppet = MAN }
                      set_major = yes
-                     set_cosmetic_tag = MAN_GASSYUKOKU
+                     set_cosmetic_tag = MAN_united_states
                      add_stability = 0.25
                      JAP = { add_to_faction = MAN }
 	

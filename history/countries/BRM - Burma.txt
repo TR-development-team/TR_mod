@@ -1,17 +1,7 @@
 ﻿capital = 288
-
 oob = "BRM_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-add_ideas = {
-        Democratic_Republic
-        trinket_minimum_wage
-}
-set_convoys = 5
-
+set_cosmetic_tag = BRM_republic
 
 set_politics = {
 	ruling_party = social_democrat
@@ -21,7 +11,7 @@ set_politics = {
 }
 set_popularities = {
 	totalist = 15
-        radical_socialist = 10
+	radical_socialist = 10
 	social_democrat = 28
 	social_liberal = 7
 	market_liberal = 5
@@ -30,4 +20,15 @@ set_popularities = {
 	paternal_autocrat = 7
 	national_populist = 13
 }
+
 recruit_character = BRM_Ba_Maw
+
+add_ideas = {
+	Democratic_Republic
+	trinket_minimum_wage
+}
+
+set_convoys = 5
+set_technology = {
+	infantry_weapons = 1
+}

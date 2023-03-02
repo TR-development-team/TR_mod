@@ -1,6 +1,8 @@
 ﻿capital = 784
-
 oob = "LIT_1936"
+
+RUS = {	set_autonomy = {	target = LIT	autonomous_state =junior_partner_state 	}	}
+set_cosmetic_tag = LIT_grand_duchy_RUS
 
 set_research_slots = 3
 
@@ -36,13 +38,6 @@ if = {
 	}
 }
 
-set_cosmetic_tag = LIT_Russia
-RUS = { 
-        set_autonomy = {
-	  target = LIT
-	  autonomous_state = autonomy_colony
-        }
-      }
 set_convoys = 10
 
 set_politics = {

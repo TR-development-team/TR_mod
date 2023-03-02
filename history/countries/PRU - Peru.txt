@@ -1,5 +1,4 @@
 ﻿capital = 303
-
 oob = "PRU_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,6 +7,9 @@ if = {
 		set_naval_oob = "PRU_1936_naval_legacy"
 	}
 }
+
+set_cosmetic_tag = PRU_socialist_republic
+
 country_event = { id = TR_Peru.1 days = 245 }
 set_research_slots = 3
 

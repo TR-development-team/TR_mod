@@ -6,7 +6,7 @@ AUS_debug_category = {
 		}
 		complete_effect = {
 			set_autonomy = {
-				autonomous_state = autonomy_cisleithanien
+				autonomous_state = AUS_crown_land
 				target = CZE
 			}
 			set_rule = {
@@ -660,7 +660,7 @@ AUS_foreign_policy = {
 					has_autonomy_state = autonomy_personal_union
 				}
 				CZE = {
-					has_autonomy_state = autonomy_cisleithanien
+					has_autonomy_state = AUS_crown_land
 				}
 			}
 		}

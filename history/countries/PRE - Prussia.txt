@@ -1,27 +1,79 @@
 ﻿capital = 890
 
-add_ideas = {
-        Constitutional_monarchy
-        acceptable_minimum_wage
-        good_max_workhours
-        good_safety_regulations
-        good_Unemployment_subsidies
-        acceptable_school_system
-        good_pensions
-        good_health_care
-	limited_conscription
-	partial_economic_mobilisation
-        PRE_Prussianarmy
-        PRE_Wilhelm_II
-        PRE_Franz_von_Papen
-        PRE_Konstantin_von_Neurath
-        PRE_Alfred_Hugenberg_MoE
-        PRE_Otto_Meissner
-        PRE_Wilhelm_Groener_cos
-        PRE_Werner_von_Fritsch
+set_cosmetic_tag = PRE_kingdom
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+
+}
+set_popularities = {
+	authoritarian_democrat = 15
+	paternal_autocrat = 60
+	national_populist = 12
+        Gnosticism = 13
 }
 
-# Starting tech
+### country_leader ###
+recruit_character = PRE_Otto_Strasser
+recruit_character = PRE_Ernst_Junger
+recruit_character = PRE_rosa_luxemburg
+recruit_character = PRE_Arthur_Crispien
+recruit_character = PRE_Lettow_Vorbeck
+recruit_character = PRE_Otto_von_Bismarck
+recruit_character = PRE_Willhelm_II
+recruit_character = PRE_Kurt_von_Schleicher
+recruit_character = PRE_Erich_Ludendorff
+
+### corps_commander ###
+recruit_character = PRE_gerd_von_rundstedt
+recruit_character = PRE_gunther_von_kluge
+recruit_character = PRE_Erich_Ludendorff_marshal
+recruit_character = PRE_Kurt_von_Schleicher_marshal
+recruit_character = PRE_Erich_von_Manstein
+recruit_character = PRE_Heinz_Guderian
+recruit_character = PRE_fedor_von_bock
+recruit_character = PRE_erwin_von_witzleben
+recruit_character = PRE_georg_von_kuchler
+recruit_character = PRE_ewald_von_kleist
+recruit_character = PRE_hasso_von_manteuffel
+recruit_character = PRE_gotthard_heinrici
+recruit_character = PRE_johannes_blaskowitz
+recruit_character = PRE_alexander_von_falkenhausen
+recruit_character = PRE_paul_hausser
+
+### admiral ###
+recruit_character = PRE_karl_donitz
+recruit_character = PRE_Reinhard_Heydrich_Navy
+
+country_event = { id = TR_germany.2 days = 5 }
+
+add_ideas = {
+	Constitutional_monarchy
+	acceptable_minimum_wage
+	good_max_workhours
+	good_safety_regulations
+	good_Unemployment_subsidies
+	acceptable_school_system
+	good_pensions
+	good_health_care
+	limited_conscription
+	partial_economic_mobilisation
+	PRE_Prussianarmy
+	PRE_Wilhelm_II
+	PRE_Franz_von_Papen
+	PRE_Konstantin_von_Neurath
+	PRE_Alfred_Hugenberg_MoE
+	PRE_Otto_Meissner
+	PRE_Wilhelm_Groener_cos
+	PRE_Werner_von_Fritsch
+}
+
+set_research_slots = 4
+set_convoys = 50
+set_stability = 0.5
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -123,61 +175,6 @@ if = {
 		armored_car1 = 1
 	}
 }
-
-
-
-set_research_slots = 4
-set_convoys = 50
-set_stability = 0.5
-
-country_event = { id = TR_germany.2 days = 5 }
-
-set_politics = {
-	ruling_party = paternal_autocrat
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-
-}
-set_popularities = {
-	authoritarian_democrat = 15
-	paternal_autocrat = 60
-	national_populist = 12
-        Gnosticism = 13
-}
-
-### country_leader ###
-recruit_character = PRE_Otto_Strasser
-recruit_character = PRE_Ernst_Junger
-recruit_character = PRE_rosa_luxemburg
-recruit_character = PRE_Arthur_Crispien
-recruit_character = PRE_Lettow_Vorbeck
-recruit_character = PRE_Otto_von_Bismarck
-recruit_character = PRE_Willhelm_II
-recruit_character = PRE_Kurt_von_Schleicher
-recruit_character = PRE_Erich_Ludendorff
-
-### corps_commander ###
-recruit_character = PRE_gerd_von_rundstedt
-recruit_character = PRE_gunther_von_kluge
-recruit_character = PRE_Erich_Ludendorff_marshal
-recruit_character = PRE_Kurt_von_Schleicher_marshal
-recruit_character = PRE_Erich_von_Manstein
-recruit_character = PRE_Heinz_Guderian
-recruit_character = PRE_fedor_von_bock
-recruit_character = PRE_erwin_von_witzleben
-recruit_character = PRE_georg_von_kuchler
-recruit_character = PRE_ewald_von_kleist
-recruit_character = PRE_hasso_von_manteuffel
-recruit_character = PRE_gotthard_heinrici
-recruit_character = PRE_johannes_blaskowitz
-recruit_character = PRE_alexander_von_falkenhausen
-recruit_character = PRE_paul_hausser
-
-### admiral ###
-recruit_character = PRE_karl_donitz
-recruit_character = PRE_Reinhard_Heydrich_Navy
-
 
 if = {
 	limit = {

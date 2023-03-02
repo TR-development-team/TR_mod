@@ -142,7 +142,7 @@ country_event = {
 	option = {
 		name = TR_Turkey.4.a
                 set_capital = {state = 49}
-                set_cosmetic_tag = OTT_REP
+                set_cosmetic_tag = TUR_republic
                 effect_tooltip = { retire_country_leader = yes }
 		hidden_effect = { kill_ideology_leader = paternal_autocrat }
                 create_country_leader = {

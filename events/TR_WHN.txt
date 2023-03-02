@@ -205,6 +205,7 @@ country_event = {
                  SGH = {
                         leave_faction = yes
                         drop_cosmetic_tag = yes
+						set_cosmetic_tag = SGH_military_clique
     		        country_event = {
 					id = TR_China.7
 					days = 3
@@ -234,7 +235,7 @@ country_event = {
 		add_ideas = totalist_dictatorship
                 ai_chance = { factor = 70 }
                 add_ideas = Fetus_dream
-                set_cosmetic_tag = SGH_WU
+                set_cosmetic_tag = WU_state
                 add_popularity = {
 			ideology = Gnosticism
 			popularity = 0.3

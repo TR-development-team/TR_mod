@@ -19,7 +19,7 @@ country_event = {
 		}
         set_country_flag = CAL_Federation
 		promote_character = CAL_Arima_Yoriyasu
-		set_cosmetic_tag = CAL_IND
+		set_cosmetic_tag = EASTPACIFICCOAST_federation
 	}
 	option = {
 		name = TR_California.1.b
@@ -28,7 +28,7 @@ country_event = {
 		}
 		add_political_power = -100
 		set_country_flag = CAL_Shogunate
-		set_cosmetic_tag = CAL_SHOGUNATE
+		set_cosmetic_tag = SACRAMENT_shogunate
 	}
 }
 
@@ -130,6 +130,7 @@ country_event = {
 		clr_country_flag = CAL_Socialism
 		hidden_effect = {
 		    drop_cosmetic_tag = yes
+			set_cosmetic_tag = EASTPACIFICCOAST_naval_military_government
 			country_event = {
 				id = TR_California.5
 				days = 1

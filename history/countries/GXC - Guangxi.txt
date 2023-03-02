@@ -1,31 +1,7 @@
 ﻿capital = 594
-
 oob = "GXC_1936"
 
-set_stability = 0.6
-set_war_support = 0.4
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-        tech_support = 1		
-	tech_engineers = 1
-        mass_assault = 1
-}
-
-
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-                 }  
-set_convoys = 20
-
-add_ideas = {
-         militaly_dictatorship
-         CNK_jap_economic
-         WHN_late_army
-}
-
-set_convoys = 5
+set_cosmetic_tag = GXC_military_clique
 
 set_politics = {
 	ruling_party = paternal_autocrat
@@ -46,3 +22,19 @@ recruit_character = GXC_li_zongren_marshal
 recruit_character = GXC_Liu_Chen_fuan_marshal
 recruit_character = GXC_chen_jitang
 
+add_ideas = {
+	militaly_dictatorship
+	CNK_jap_economic
+	WHN_late_army
+}
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+
+set_convoys = 20
+set_stability = 0.6
+set_war_support = 0.4
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	mass_assault = 1
+}

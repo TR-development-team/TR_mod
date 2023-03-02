@@ -1,8 +1,10 @@
 ﻿capital = 461
-
 oob = "MOR_1936"
-# Starting tech
+
+SPR = {	set_autonomy = {	target = MOR	autonomous_state = protected_territory	}	}
 set_cosmetic_tag = MOR_SPR
+
+# Starting tech
 set_convoys = 20
 set_technology = {
 	infantry_weapons = 1

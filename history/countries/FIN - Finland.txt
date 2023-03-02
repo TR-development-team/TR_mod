@@ -1,62 +1,12 @@
 ﻿capital = 111
-
 oob = "FIN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "FIN_1936_naval_mtg"
-	else = {
-		set_naval_oob = "FIN_1936_naval_legacy"
-	}
+	set_naval_oob = "FIN_1936_naval_mtg"
+	else = {	set_naval_oob = "FIN_1936_naval_legacy"	}
 }
 
-set_research_slots = 3
-
-add_ideas = {
-	limited_conscription
-        acceptable_minimum_wage
-        acceptable_max_workhours
-        acceptable_safety_regulations
-        acceptable_Unemployment_subsidies
-        low_school_system
-        acceptable_pensions
-        acceptable_health_care
-}
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1			
-	interwar_antiair = 1
-	tech_support = 1		
-	tech_recon = 1
-	tech_engineers = 1
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-		early_heavy_cruiser = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		early_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		basic_battery = 1
-		coastal_defense_ships = 1
-	}
-}
-
-set_convoys = 5
-
-add_ideas = {
-	limited_conscription
-}
-
+set_cosmetic_tag = FIN_republic
 
 set_politics = {
 	ruling_party = market_liberal
@@ -85,6 +35,49 @@ recruit_character = FIN_vilho_annala
 recruit_character = FIN_carl_mannerheim
 recruit_character = FIN_erik_heinrichs
 recruit_character = FIN_vilho_petter_nenonen
+
+add_ideas = {
+	limited_conscription
+	acceptable_minimum_wage
+	acceptable_max_workhours
+	acceptable_safety_regulations
+	acceptable_Unemployment_subsidies
+	low_school_system
+	acceptable_pensions
+	acceptable_health_care
+	limited_conscription
+}
+
+set_research_slots = 3
+set_convoys = 5
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1			
+	interwar_antiair = 1
+	tech_support = 1		
+	tech_recon = 1
+	tech_engineers = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		early_heavy_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		submarine_mine_laying = 1
+		early_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		coastal_defense_ships = 1
+	}
+}
 
 ### VARIANTS ###
 # 1936 Start #

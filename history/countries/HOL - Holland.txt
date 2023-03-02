@@ -1,22 +1,4 @@
 ﻿capital = 7
 
-oob = "HOL_1936"
-set_politics = {
-	ruling_party = national_populist
-	last_election = "1933.4.26"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	totalist = 3
-	syndicalist = 3
-	radical_socialist = 0
-	social_democrat = 5
-	social_liberal = 7
-	market_liberal = 10
-	social_conservative = 20
-	authoritarian_democrat = 0
-	paternal_autocrat = 15
-	national_populist = 28
-        Gnosticism = 9
-}
+set_cosmetic_tag = HOL_kingdom
+set_dictatorship = yes

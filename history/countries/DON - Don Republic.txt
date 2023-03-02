@@ -1,12 +1,26 @@
 ﻿capital = 218
-
 oob = "DON_1936"
 
-set_research_slots = 2
-add_ideas = {
-        Colonical_system
+RUS = {	set_autonomy = {	target = DON	autonomous_state = overseas_territory	}	}
+set_cosmetic_tag = COUNTRY_RUS
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1935.5.21"
+	election_frequency = 48
+	elections_allowed = no
 }
-# Starting tech
+set_popularities = {
+	paternal_autocrat = 100
+}
+
+recruit_character = DON_Pyotr_Krasnov
+
+add_ideas = {
+	Colonical_system
+}
+
+set_research_slots = 2
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
@@ -62,24 +76,3 @@ if = {
 		basic_torpedo = 1
 	}
 }
-
-set_cosmetic_tag = DON_Russia
-RUS = { 
-        set_autonomy = {
-	  target = DON
-	  autonomous_state = autonomy_colony
-        }
-      }
-
-set_politics = {
-	ruling_party = paternal_autocrat
-	last_election = "1935.5.21"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	paternal_autocrat = 100
-}
-
-
-recruit_character = DON_Pyotr_Krasnov

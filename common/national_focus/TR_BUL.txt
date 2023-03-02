@@ -145,7 +145,7 @@ focus_tree = {
 			ideology = national_populist
 			popularity = 1.0
 		       }
-                       set_cosmetic_tag = BUL_KHANATE
+                       set_cosmetic_tag = BUL_khanate
                        add_state_claim = 46
                        add_state_claim = 81
                        add_state_claim = 79
@@ -496,7 +496,7 @@ focus_tree = {
                 completion_reward = {
                        add_named_threat = { threat = 5 name = BUL_EMPIRE_Threat }
                        set_major = yes
-                       set_cosmetic_tag = BUL_EMPIRE
+                       set_cosmetic_tag = BUL_tsardom
                        add_research_slot = 1
                        add_state_claim = 802
                        add_state_claim = 108
@@ -749,7 +749,7 @@ focus_tree = {
                         remove_ideas = BUL_ARMY
                         add_ideas = BUL_Foutrh_Roma
                         add_research_slot = 1
-                        set_cosmetic_tag = BUL_BIZANTINE
+                        set_cosmetic_tag = BUL-RME_tsardom
                         
                                 185 = {
 					add_core_of = BUL

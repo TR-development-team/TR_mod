@@ -1,18 +1,7 @@
 ﻿capital = 607
-
 oob = "HEN_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-        mass_assault = 1
-}
-set_stability = 0.4
-set_war_support = 0.4
-
-
-
-
+set_cosmetic_tag = GREATMING_state
 
 set_politics = {
 	ruling_party = Gnosticism
@@ -24,12 +13,16 @@ set_popularities = {
 	Gnosticism = 100
 }
 
-add_ideas = {
-        Absolute_monarchy
-        WHN_late_army
-}
-
-
 recruit_character = HEN_Zhu_Emperor
 
+add_ideas = {
+	Absolute_monarchy
+	WHN_late_army
+}
 
+set_stability = 0.4
+set_war_support = 0.4
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}

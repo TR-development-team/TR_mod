@@ -1,5 +1,4 @@
 ﻿capital = 797
-
 oob = "OTT_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,6 +7,8 @@ if = {
 		set_naval_oob = "OTT_1936_naval_legacy"
 	}
 }
+
+set_cosmetic_tag = OTT_sublime_state
 
 ###################
 #### 3D MODELS ####

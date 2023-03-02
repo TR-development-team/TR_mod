@@ -1,17 +1,47 @@
 ﻿capital = 278
-
 oob = "ARG_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "ARG_1936_naval_mtg"
-	else = {
-		set_naval_oob = "ARG_1936_naval_legacy"
-	}
+	set_naval_oob = "ARG_1936_naval_mtg"
+	else = {	set_naval_oob = "ARG_1936_naval_legacy"	}
 }
+
+set_cosmetic_tag = ARG_republic
+
+set_politics = {
+	ruling_party = totalist
+	last_election = "1934.11.8"
+	election_frequency = 72
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 37
+	syndicalist = 10
+	radical_socialist = 14
+	social_democrat = 3
+	social_liberal = 5
+	market_liberal = 5
+	social_conservative = 5
+	authoritarian_democrat = 3
+	paternal_autocrat = 6
+	national_populist = 12
+}
+
+recruit_character = ARG_Juan_Peron
+recruit_character = ARG_fanny_edelman
+recruit_character = ARG_marcelo_t_de_alvear
+recruit_character = ARG_roberto_maria_ortiz
+recruit_character = ARG_agustin_pedro_justo
+recruit_character = ARG_nimo_de_anquin
+recruit_character = ARG_arturo_rawson
+recruit_character = ARG_juan_pistarini
+recruit_character = ARG_alberto_teisaire
+
 add_ideas = {
-        totalist_dictatorship
+	totalist_dictatorship
 }
-# Starting tech
+
+set_convoys = 120
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
@@ -50,42 +80,6 @@ if = {
 	}
 }
 
-
-set_convoys = 120
-set_politics = {
-	ruling_party = totalist
-	last_election = "1934.11.8"
-	election_frequency = 72
-	elections_allowed = no
-}
-set_popularities = {
-	totalist = 37
-	syndicalist = 10
-	radical_socialist = 14
-	social_democrat = 3
-	social_liberal = 5
-	market_liberal = 5
-	social_conservative = 5
-	authoritarian_democrat = 3
-	paternal_autocrat = 6
-	national_populist = 12
-}
-recruit_character = ARG_Juan_Peron
-recruit_character = ARG_fanny_edelman
-recruit_character = ARG_marcelo_t_de_alvear
-recruit_character = ARG_roberto_maria_ortiz
-recruit_character = ARG_agustin_pedro_justo
-recruit_character = ARG_nimo_de_anquin
-
-recruit_character = ARG_arturo_rawson
-recruit_character = ARG_juan_pistarini
-recruit_character = ARG_alberto_teisaire
-
-
-
-
-### VARIANTS ###
-# 1936 Start #
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###

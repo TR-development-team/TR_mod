@@ -1,5 +1,4 @@
 ﻿capital = 112
-
 oob = "POR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,6 +7,9 @@ if = {
 		set_naval_oob = "POR_1936_naval_legacy"
 	}
 }
+
+set_cosmetic_tag = POR_kingdom
+
 add_ideas = {
         Absolute_monarchy
 }

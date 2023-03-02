@@ -1,7 +1,7 @@
 ﻿division_template = {
 	name = "Strelkovaya Polk"		# Army was a single infantry regiment of militia	
 
-	division_names_group = TAN_INF_01
+	division_names_group = TUV_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -25,7 +25,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "TAN"
+			creator = "TUV"
 		}
 		requested_factories = 1
 		progress = 0.31

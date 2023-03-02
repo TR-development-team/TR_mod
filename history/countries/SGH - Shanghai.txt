@@ -1,6 +1,8 @@
 ﻿capital = 816
-
 oob = "SGH_1936"
+
+JAP = {	set_autonomy = {	target = SGH	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
 
 # Starting tech
 set_technology = {
@@ -13,18 +15,11 @@ set_technology = {
 }
 set_research_slots = 2
 set_convoys = 20
-set_cosmetic_tag = SGH_JAP
 
 add_ideas = {
         militaly_dictatorship
 }
 country_event = { id = TR_China.6 days = 50 }
-JAP = { 
-        set_autonomy = {
-	   target = SGH
-	   autonomous_state = imperial_colony
-        }
-      }
 
 set_politics = {
 	ruling_party = paternal_autocrat

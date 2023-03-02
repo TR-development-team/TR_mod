@@ -1,7 +1,7 @@
-﻿
-capital = 206
+﻿capital = 206
 
 oob = "SOV_1936"
+set_cosmetic_tag = BLR_SOV_socialist_republic
 
 set_major = yes
 add_ideas = {
@@ -25,7 +25,6 @@ add_ideas = {
         RUS_Yakov_Alksnis
 }
 
-set_cosmetic_tag = SOV_Minsk
 country_event = { id = TR_russia.6 days = 326 }
 
 set_research_slots = 3

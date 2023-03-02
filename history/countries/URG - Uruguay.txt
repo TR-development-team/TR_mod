@@ -1,5 +1,4 @@
 ﻿capital = 300
-
 oob = "URG_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,6 +7,8 @@ if = {
 		set_naval_oob = "URG_1936_naval_legacy"
 	}
 }
+
+set_cosmetic_tag = URG_oriental_republic
 
 # Starting tech
 set_technology = {

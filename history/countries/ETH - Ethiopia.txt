@@ -1,26 +1,9 @@
 ﻿capital = 271
-
 oob = "ETH_1936"
-add_ideas = {
-      Absolute_monarchy
-      ETH_Rastafarianism
-}
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	tech_mountaineers = 1
-}
 
-set_convoys = 5
+JAP = {	set_autonomy = {	target = ETH	autonomous_state = imperial_protectorate	}	}
+set_cosmetic_tag = ETH_empire
 
-
-
-JAP = { 
-        set_autonomy = {
-	   target = ETH
-	   autonomous_state = imperial_protectorate
-        }
-      }
 set_politics = {
 	ruling_party = paternal_autocrat
 	last_election = "1935.1.1"
@@ -38,7 +21,7 @@ set_popularities = {
 	authoritarian_democrat = 0
 	paternal_autocrat = 23
 	national_populist = 5
-        Gnosticism = 28
+	Gnosticism = 28
 }
 
 recruit_character = ETH_prov_mil_admin
@@ -58,3 +41,14 @@ recruit_character = ETH_ayalew_birru
 recruit_character = ETH_beyene_merid
 recruit_character = ETH_nasibu_zeamanuel
 recruit_character = ETH_balcho_safo
+
+add_ideas = {
+	Absolute_monarchy
+	ETH_Rastafarianism
+}
+
+set_convoys = 5
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+}

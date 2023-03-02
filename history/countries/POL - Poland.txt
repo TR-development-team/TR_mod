@@ -1,5 +1,4 @@
 ﻿capital = 10
-
 oob = "POL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,8 +7,11 @@ if = {
 		set_naval_oob = "POL_1936_naval_legacy"
 	}
 }
+
+set_cosmetic_tag = POL_rada_republic
+
 add_ideas = {
-        Democratic_centralism
+	Democratic_centralism
 }
 set_research_slots = 3
 

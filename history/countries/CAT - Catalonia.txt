@@ -1,12 +1,45 @@
 ﻿capital = 165
-
 #oob = "CAT_1936"
 
-# Starting tech
-set_research_slots = 3
-add_ideas = {
-        Council_communism
+set_cosmetic_tag = IBE_anarchist_federation
+
+set_politics = {
+	ruling_party = syndicalist
+	last_election = "1933.2.16"
+	election_frequency = 36
+	elections_allowed = no
 }
+set_popularities = {
+	totalist = 25
+	syndicalist = 30
+	radical_socialist = 25
+	social_democrat = 12
+	social_liberal = 8
+}
+
+recruit_character = CAT_Jose_Diaz
+recruit_character = CAT_Juan_Garcia_Oliver
+recruit_character = CAT_Andreu_Nin
+recruit_character = CAT_Niceto_Alcala_Zamora
+recruit_character = CAT_Xavier_I
+recruit_character = CAT_jose_antonio_primo_de_rivera
+recruit_character = CAT_Federico_Garcia_Lorca
+recruit_character = CAT_Salvador_Dali
+recruit_character = SPR_valentin_gonzalez
+recruit_character = SPR_enrique_lister
+recruit_character = SPR_juan_modesto
+recruit_character = SPR_antonio_cordon_garcia
+recruit_character = SPR_janos_galicz
+
+add_ideas = {
+	Council_communism
+	CAT_communism_1
+	SPR_depression
+}
+
+set_convoys = 150
+set_stability = 0.5
+set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -52,43 +85,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-add_ideas = {
-	CAT_communism_1
-        SPR_depression
-}
-set_convoys = 150
-set_stability = 0.5
-set_politics = {
-	ruling_party = syndicalist
-	last_election = "1933.2.16"
-	election_frequency = 36
-	elections_allowed = no
-}
-
-set_popularities = {
-	totalist = 25
-	syndicalist = 30
-	radical_socialist = 25
-	social_democrat = 12
-	social_liberal = 8
-}
-
-recruit_character = CAT_Jose_Diaz
-recruit_character = CAT_Juan_Garcia_Oliver
-recruit_character = CAT_Andreu_Nin
-recruit_character = CAT_Niceto_Alcala_Zamora
-recruit_character = CAT_Xavier_I
-recruit_character = CAT_jose_antonio_primo_de_rivera
-recruit_character = CAT_Federico_Garcia_Lorca
-
-recruit_character = CAT_Salvador_Dali
-
-recruit_character = SPR_valentin_gonzalez
-recruit_character = SPR_enrique_lister
-recruit_character = SPR_juan_modesto
-recruit_character = SPR_antonio_cordon_garcia
-recruit_character = SPR_janos_galicz
-
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	# Submarines #

@@ -1,38 +1,9 @@
 ﻿capital = 546
-
 oob = "EAF_1936"
 
-set_cosmetic_tag = EAF_JAP
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	tech_support = 1		
-	tech_engineers = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	early_fighter = 1
-	CAS1 = 1
-	
-}
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-                 }  
-add_ideas = {
-        Colonical_system
-        African_Independence_movement
-        Tiyoda_Kensho
-        JAP_colony
-}
+JAP = {	set_autonomy = {	target = EAF	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
 
-set_convoys = 50
-
-JAP = { 
-        set_autonomy = {
-	   target = EAF
-	   autonomous_state = imperial_colony
-        }
-      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
@@ -44,3 +15,24 @@ set_popularities = {
 }
 
 recruit_character = EAF_Koiso_Kuniaki
+
+
+add_ideas = {
+	Colonical_system
+	African_Independence_movement
+	Tiyoda_Kensho
+	JAP_colony
+}
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+
+set_convoys = 50
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	CAS1 = 1
+	
+}

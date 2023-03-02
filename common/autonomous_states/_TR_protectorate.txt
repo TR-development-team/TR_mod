@@ -1,0 +1,62 @@
+autonomy_state = {
+	id = protected_state
+	
+	min_freedom_level = 0.75
+	manpower_influence = 0.2
+	use_overlord_color = yes
+	
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = no
+	}
+	
+	modifier = {
+		autonomy_manpower_share = 0
+		extra_trade_to_overlord_factor = 0.25
+		overlord_trade_cost_factor = -0.25
+		license_subject_master_purchase_cost = -0.25
+		cic_to_overlord_factor = 0.25
+		mic_to_overlord_factor = 0.25
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {	protected_state	protected_territory	}
+	
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+}
+autonomy_state = {
+	id = protected_territory
+	
+	min_freedom_level = 0.0
+	manpower_influence = 0.2
+	use_overlord_color = yes
+	
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = yes
+	}
+	
+	modifier = {
+		autonomy_manpower_share = 0.75
+		extra_trade_to_overlord_factor = 0.75
+		overlord_trade_cost_factor = -0.75
+		license_subject_master_purchase_cost = -0.75
+		cic_to_overlord_factor = 0.75
+		mic_to_overlord_factor = 0.75
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {	protected_state	protected_territory	}
+	
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+}

@@ -1,8 +1,9 @@
 ﻿capital = 286 #Saigon
-
 oob = "INC_1936"
 
-set_cosmetic_tag = INC_JAP
+JAP = {	set_autonomy = {	target = INC	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
+
 set_research_slots = 2
 country_event = { id = TR_indochina.1 days = 30 }#独立運動の激化
 # Starting tech
@@ -84,12 +85,6 @@ if = {
 }
 set_convoys = 300
 
-JAP = { 
-        set_autonomy = {
-	   target = INC
-	   autonomous_state = imperial_colony
-        }
-      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"

@@ -1,14 +1,46 @@
 ﻿capital = 500
-
-
 oob = "BRA_1936"
-add_ideas = {
-        militaly_dictatorship
-	BRA_CIVIL_WAR
-        low_school_system
-        low_minimum_wage
+
+set_cosmetic_tag = BRA_united_states
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = no
 }
-# Starting tech
+set_popularities = {
+	totalist = 12
+	syndicalist = 8
+	radical_socialist = 5
+	social_democrat = 7
+	social_liberal = 5
+	market_liberal = 10
+	social_conservative = 3
+	authoritarian_democrat = 5
+	paternal_autocrat = 30
+	national_populist = 10
+	Gnosticism = 5
+}
+recruit_character = BRA_luis_carlos_prestes
+recruit_character = BRA_armando_sales
+recruit_character = BRA_getulio_vargas
+recruit_character = BRA_plinio_salgado
+
+if = {
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = {	target = EQB	type = civil_war	}
+	add_civil_war_target = EQB
+}
+
+add_ideas = {
+	militaly_dictatorship
+	BRA_CIVIL_WAR
+	low_school_system
+	low_minimum_wage
+}
+
+set_convoys = 40
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
@@ -48,43 +80,6 @@ if = {
 		mtg_transport = 1
 	}	
 }
-if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-
-	declare_war_on = {
-		target = BRA
-		type = annex_everything
-	}
-}
-
-set_politics = {
-	ruling_party = paternal_autocrat
-	last_election = "1932.5.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	totalist = 12
-	syndicalist = 8
-	radical_socialist = 5
-	social_democrat = 7
-	social_liberal = 5
-	market_liberal = 10
-	social_conservative = 3
-	authoritarian_democrat = 5
-	paternal_autocrat = 30
-	national_populist = 10
-        Gnosticism = 5
-}
-recruit_character = BRA_luis_carlos_prestes
-recruit_character = BRA_armando_sales
-recruit_character = BRA_getulio_vargas
-recruit_character = BRA_plinio_salgado
-
-set_convoys = 40
-
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

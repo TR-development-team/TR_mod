@@ -1,5 +1,4 @@
 ﻿capital = 279
-
 oob = "CHL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -9,7 +8,42 @@ if = {
 	}
 }
 
-# Starting tech
+set_cosmetic_tag = CHL_socialist_republic
+
+set_politics = {
+	ruling_party = radical_socialist
+	last_election = "1932.6.30"
+	election_frequency = 72  
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 20
+	syndicalist = 12
+	radical_socialist = 39
+	social_democrat = 21
+	social_liberal = 3
+	market_liberal = 0
+	social_conservative = 0
+	authoritarian_democrat = 0
+	paternal_autocrat = 0
+	national_populist = 5
+}
+
+recruit_character = CHL_carlos_contreras_labarca
+recruit_character = CHL_Marmaduke_Grove
+recruit_character = CHL_pedro_aguirre_cerda
+recruit_character = CHL_arturo_alessandri
+recruit_character = CHL_domingo_blanco
+recruit_character = CHL_jorge_gonzalez_von_marees
+recruit_character = CHL_escudero_oscar_otarola
+
+add_ideas  = { 
+	Council_communism 
+	trinket_health_care
+	low_school_system
+}
+
+set_convoys = 20
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
@@ -45,43 +79,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-
-
-
-set_convoys = 20
-
-add_ideas  = { 
-        Council_communism 
-        trinket_health_care
-        low_school_system
-}
-set_convoys = 5
-set_politics = {
-	ruling_party = radical_socialist
-	last_election = "1932.6.30"
-	election_frequency = 72  
-	elections_allowed = no
-}
-set_popularities = {
-	totalist = 20
-	syndicalist = 12
-	radical_socialist = 39
-	social_democrat = 21
-	social_liberal = 3
-	market_liberal = 0
-	social_conservative = 0
-	authoritarian_democrat = 0
-	paternal_autocrat = 0
-	national_populist = 5
-}
-recruit_character = CHL_carlos_contreras_labarca
-recruit_character = CHL_Marmaduke_Grove
-recruit_character = CHL_pedro_aguirre_cerda
-recruit_character = CHL_arturo_alessandri
-recruit_character = CHL_domingo_blanco
-recruit_character = CHL_jorge_gonzalez_von_marees
-
-recruit_character = CHL_escudero_oscar_otarola
 
 ### VARIANTS ###
 # 1936 Start #

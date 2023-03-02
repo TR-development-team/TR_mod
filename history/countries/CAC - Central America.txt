@@ -2,18 +2,75 @@
 
 oob = "HON_1936"
 
-set_cosmetic_tag = CAC_JAP
-add_ideas = {
-        Constitutional_monarchy
-	Dainihon_Seito
-        trinket_school_system
-        trinket_health_care
+JAP = {	set_autonomy = {	target = CAC	autonomous_state = imperial_dominion	}	}
+set_cosmetic_tag = CAC_JAP_imperial_dominion
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
 }
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-                 }  
-# Starting tech
+set_popularities = {
+	totalist = 5
+	syndicalist = 5
+	radical_socialist = 5
+	social_democrat = 5
+	social_liberal = 18
+	market_liberal = 15
+	social_conservative = 37
+	authoritarian_democrat = 5
+	paternal_autocrat = 2
+	national_populist = 3
+}
+
+create_country_leader = {
+	name = "志田重男"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_JAP_Shida_Shigeo.tga"
+	expire = "1965.1.1"
+	ideology = totalist_subtype
+        traits = {
+		
+	}
+	
+}
+create_country_leader = {
+	name = "藤山愛一郎"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_JAP_Fujiyama_Aiichiro.tga"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+        traits = {
+		
+	}
+	
+}
+create_country_leader = {
+	name = "賀来佐賀太郎"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_JAP_Sagataro.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+        traits = {
+		
+	}
+	
+}
+
+add_ideas = {
+	Tiyoda_Kensho
+	Constitutional_monarchy
+	Dainihon_Seito
+	trinket_school_system
+	trinket_health_care
+}
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+
+set_convoys = 250
+set_research_slots = 4
+set_stability = 0.5
+set_war_support = 0.4
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -87,77 +144,3 @@ if = {
 	}
 
 }
-
-add_ideas = {
-        Tiyoda_Kensho
-}
-
-set_convoys = 250
-
-set_research_slots = 4
-set_stability = 0.5
-set_war_support = 0.4
-
-
-JAP = { 
-        set_autonomy = {
-	   target = CAC
-	   autonomous_state = imperial_dominion
-        }
-      }
-set_politics = {
-	ruling_party = social_conservative
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-set_popularities = {
-	totalist = 5
-	syndicalist = 5
-	radical_socialist = 5
-	social_democrat = 5
-	social_liberal = 18
-	market_liberal = 15
-	social_conservative = 37
-	authoritarian_democrat = 5
-	paternal_autocrat = 2
-	national_populist = 3
-}
-create_country_leader = {
-	name = "志田重男"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_Shida_Shigeo.tga"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-        traits = {
-		
-	}
-	
-}
-
-create_country_leader = {
-	name = "藤山愛一郎"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_Fujiyama_Aiichiro.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-        traits = {
-		
-	}
-	
-}
-
-create_country_leader = {
-	name = "賀来佐賀太郎"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_Sagataro.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-        traits = {
-		
-	}
-	
-}
-
-

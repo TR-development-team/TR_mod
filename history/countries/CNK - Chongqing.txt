@@ -1,35 +1,7 @@
 ﻿capital = 605
 oob = "CNK_1936"
 
-set_research_slots = 2
-set_major = yes
-country_event = { id = TR_China.3 days = 120 }
-set_technology = {
-	infantry_weapons = 1
-	interwar_antiair = 1
-	early_fighter = 1
-	early_bomber = 1
-	mass_assault = 1
-	fleet_in_being = 1
-}
-
-
-add_ideas = {
-        Democratic_Republic
-        trinket_minimum_wage
-        trinket_Unemployment_subsidies
-        trinket_school_system
-        trinket_pensions
-        CNK_jap_economic
-	WHN_late_army
-	}
-
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-                 }  
-
-
+set_cosmetic_tag = CNK_nationalist_government
 
 set_politics = {
 	ruling_party = social_democrat
@@ -46,3 +18,27 @@ set_popularities = {
 }
 
 recruit_character = CNK_Wang_Jingwei
+
+country_event = {	id = TR_China.3	days = 120	}
+
+add_ideas = {
+	Democratic_Republic
+	trinket_minimum_wage
+	trinket_Unemployment_subsidies
+	trinket_school_system
+	trinket_pensions
+	CNK_jap_economic
+	WHN_late_army
+}
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+
+set_major = yes
+set_research_slots = 2
+set_technology = {
+	infantry_weapons = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}

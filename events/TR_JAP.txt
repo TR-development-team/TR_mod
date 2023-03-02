@@ -730,7 +730,7 @@ country_event = {#京城合意
 			transfer_state = 832
 			transfer_state = 833
 			transfer_state = 834
-			set_cosmetic_tag = KOR_JAP_autonomy
+			set_cosmetic_tag = GREATKOREA_empire
 			}
 		JAP = { 
 			set_autonomy = {
@@ -1130,7 +1130,7 @@ country_event = {#京城での戴冠式
 		name = TR_japan.29.a
 		add_political_power = 25
 		add_stability = 0.05
-		set_cosmetic_tag = JAP_KOR_UNION
+		set_cosmetic_tag = GREATEREASTASIA_union
 		add_state_core = 525
 		add_state_core = 527
 		add_state_core = 830

@@ -1,25 +1,4 @@
 ﻿capital = 422
 
-#oob = ""
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-
-set_convoys = 5
-
-
-set_politics = {
-	ruling_party = social_conservative
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = yes
-}
-
-set_popularities = {
-	social_conservative = 50
-	national_populist = 0
-	totalist = 10
-	authoritarian_democrat = 40
-}
+set_cosmetic_tag = SRL_republic
+set_dictatorship = yes

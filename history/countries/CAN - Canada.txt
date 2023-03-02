@@ -1,5 +1,4 @@
 ﻿capital = 276
-
 oob = "CAN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,21 +7,58 @@ if = {
 		set_naval_oob = "CAN_1936_naval_legacy"
 	}
 }
-add_ideas = {
-        Constitutional_monarchy
-        acceptable_minimum_wage
-        good_max_workhours
-        good_safety_regulations
-        good_Unemployment_subsidies
-        acceptable_school_system
-        good_pensions
-        good_health_care
+
+GBR = {	set_autonomy = {	target = CAN	autonomous_state = dominion	}	}
+set_cosmetic_tag = CAN_GBRandIREbyENG
+
+set_politics = {
+	ruling_party = social_liberal
+	last_election = "1935.10.14"
+	election_frequency = 60
+	elections_allowed = yes
 }
+set_popularities = {
+	totalist = 8
+	syndicalist = 5
+	radical_socialist = 3
+	social_democrat = 5
+	social_liberal = 31  
+	market_liberal = 19 
+	social_conservative = 15 
+	authoritarian_democrat = 3 
+	paternal_autocrat = 4
+	national_populist = 4 
+	Gnosticism = 3
+}
+
+recruit_character = CAN_tim_buck
+recruit_character = CAN_j_s_woodsworth
+recruit_character = CAN_mackenzie_king
+recruit_character = CAN_adrien_arcand
+recruit_character = CAN_thomas_victor_anderson
+recruit_character = CAN_charles_foulkes
+recruit_character = CAN_percival_john_montague
+recruit_character = CAN_bert_hoffmeister
+recruit_character = CAN_leonard_w_murray
+recruit_character = CAN_ht_bailliegrohman
+recruit_character = CAN_james_d_prentice
+recruit_character = CAN_harry_dewolf
+
+add_ideas = {
+	Constitutional_monarchy
+	acceptable_minimum_wage
+	good_max_workhours
+	good_safety_regulations
+	good_Unemployment_subsidies
+	acceptable_school_system
+	good_pensions
+	good_health_care
+}
+
+set_convoys = 100
 set_research_slots = 3
 set_stability = 0.8
 set_war_support = 0.1
-
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -60,56 +96,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-
-
-set_cosmetic_tag = CAN_UK
-GBR = { 
-        set_autonomy = {
-	  target = CAN
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-        }
-      }
-
-
-set_politics = {
-	ruling_party = social_liberal
-	last_election = "1935.10.14"
-	election_frequency = 60
-	elections_allowed = yes
-}
-
-set_popularities = {
-	totalist = 8
-	syndicalist = 5
-	radical_socialist = 3
-	social_democrat = 5
-	social_liberal = 31  
-	market_liberal = 19 
-	social_conservative = 15 
-	authoritarian_democrat = 3 
-	paternal_autocrat = 4
-	national_populist = 4 
-        Gnosticism = 3
-}
-
-
-recruit_character = CAN_tim_buck
-recruit_character = CAN_j_s_woodsworth
-recruit_character = CAN_mackenzie_king
-recruit_character = CAN_adrien_arcand
-
-recruit_character = CAN_thomas_victor_anderson
-recruit_character = CAN_charles_foulkes
-recruit_character = CAN_percival_john_montague
-recruit_character = CAN_bert_hoffmeister
-recruit_character = CAN_leonard_w_murray
-recruit_character = CAN_ht_bailliegrohman
-recruit_character = CAN_james_d_prentice
-recruit_character = CAN_harry_dewolf
-
-set_convoys = 100
-set_stability = 0.75
 
 ### VARIANTS ###
 # 1936 Start #

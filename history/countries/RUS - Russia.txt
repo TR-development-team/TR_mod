@@ -1,7 +1,8 @@
-﻿
-capital = 195
-
+﻿capital = 195
 oob = "RUS_1936"
+
+set_cosmetic_tag = RUS_empire
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "RUS_1936_naval_mtg"

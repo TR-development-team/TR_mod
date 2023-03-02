@@ -1188,11 +1188,11 @@ focus_tree = {
 			add_ideas = GER_international_republic
 			if = {
 				limit = { has_country_flag = GER_KPD_Lev_Trotsky }
-				set_cosmetic_tag = GER_Rate_trotsky
+				set_cosmetic_tag = RAT_international_republic
 			}
 			if = {
 				limit = { has_country_flag = GER_KPD_Eugen_Levine }
-				set_cosmetic_tag = GER_Rate_luxemburg
+				set_cosmetic_tag = RAT_socialist_republics_union
 			}
 		}
 	}

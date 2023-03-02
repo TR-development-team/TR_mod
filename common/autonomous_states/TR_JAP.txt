@@ -1,0 +1,87 @@
+autonomy_state = {	#帝国保護国
+	id = imperial_protectorate
+	default = yes
+	
+	min_freedom_level = 0.75
+	use_overlord_color = yes
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = yes
+		can_be_spymaster = yes
+	}
+	modifier = {
+		autonomy_manpower_share = 0
+		extra_trade_to_overlord_factor = 1.0
+		overlord_trade_cost_factor = -0.5
+		autonomy_gain_global_factor = -0.3
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed = {	OVERLORD = {	original_tag = JAP	}	}
+	allowed_levels_filter = {	imperial_protectorate	}
+	
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = can_raise_autonomy_level	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = can_lower_autonomy_level	always = no	}	}
+}
+autonomy_state = {	#帝国自治領
+	id = imperial_dominion
+	
+	min_freedom_level = 0.75
+	use_overlord_color = yes
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = yes
+		can_create_collaboration_government = no
+	}
+	modifier = {
+		autonomy_manpower_share = 0
+		extra_trade_to_overlord_factor = 0.25
+		overlord_trade_cost_factor = -0.25
+		autonomy_gain_global_factor = -0.3
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed = {	OVERLORD = {	original_tag = JAP	}	}
+	allowed_levels_filter = {	imperial_dominion	imperial_colony	}
+	
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = can_raise_autonomy_level	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = can_lower_autonomy_level	always = no	}	}
+}
+autonomy_state = {	#帝国植民地
+	id = imperial_colony
+	
+	min_freedom_level = 0.0
+	use_overlord_color = yes
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = yes
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+	}
+	
+	modifier = {
+		autonomy_manpower_share = 0
+		can_master_build_for_us = 1
+		extra_trade_to_overlord_factor = 1.0
+		overlord_trade_cost_factor = -0.9
+		license_subject_master_purchase_cost = -1
+		autonomy_gain_global_factor = -0.3
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed = {	OVERLORD = {	original_tag = JAP	}	}
+	allowed_levels_filter = {	imperial_dominion	imperial_colony	}
+	
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = can_raise_autonomy_level	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = can_lower_autonomy_level	always = no	}	}
+}

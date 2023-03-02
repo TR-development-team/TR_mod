@@ -2,7 +2,9 @@
 
 oob = "SOM_1936"
 
-set_cosmetic_tag = SOM_JAP
+JAP = {	set_autonomy = {	target = SOM	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -20,12 +22,6 @@ add_ideas = {
         Tiyoda_Kensho
         JAP_JAP_colony
 }
-JAP = { 
-        set_autonomy = {
-	   target = SOM
-	   autonomous_state = imperial_colony
-        }
-      }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
 		days = 500

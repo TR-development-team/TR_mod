@@ -1,24 +1,7 @@
 ﻿capital = 613
-
 oob = "ANH_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	interwar_antiair = 1
-	early_fighter = 1
-	early_bomber = 1
-	mass_assault = 1
-	fleet_in_being = 1
-}
-set_stability = 0.4
-set_war_support = 0.4
-add_ideas = {
-        militaly_dictatorship
-}
-
-
-
+set_cosmetic_tag = DONGNAN_five_provinces_united_army
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -37,21 +20,26 @@ set_popularities = {
 	authoritarian_democrat = 35
 	paternal_autocrat = 10
 	national_populist = 15
-        Gnosticism = 0
+	Gnosticism = 0
 }
-add_ideas = {
-         WHN_late_army
-         CNK_jap_economic
-}
-
-
-
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-                 }  
-
 
 recruit_character = ANH_Duan_Qirui
 recruit_character = ANH_Liang_Hongzhi
 
+add_ideas = {
+	militaly_dictatorship
+	WHN_late_army
+	CNK_jap_economic
+}
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+
+set_stability = 0.4
+set_war_support = 0.4
+set_technology = {
+	infantry_weapons = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}

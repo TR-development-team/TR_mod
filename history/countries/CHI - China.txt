@@ -1,22 +1,4 @@
-﻿capital = 620 #武漢
+﻿capital = 620
 
-set_politics = {
-	ruling_party = national_populist
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-set_popularities = {
-	totalist = 8
-	syndicalist = 4
-	radical_socialist = 5
-	social_democrat = 5
-	social_liberal = 4
-	market_liberal = 5
-	social_conservative = 9
-	authoritarian_democrat = 12
-	paternal_autocrat = 17
-	national_populist = 31
-        Gnosticism = 0
-}
+set_cosmetic_tag = CHI_minguo
+set_dictatorship = yes

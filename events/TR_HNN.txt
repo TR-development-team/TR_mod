@@ -1186,7 +1186,7 @@ country_event = {
 		CNK = {		
 			set_autonomy = {
 			target = HNN
-			autonomy_state = China_provincial_government
+			autonomy_state = CHI_provincial_government
 		    } 
 	    }
 		hidden_effect = {
@@ -1251,7 +1251,7 @@ country_event = {
 		}
 		set_autonomy = {
 			target = HNN
-			autonomy_state = China_provincial_government
+			autonomy_state = CHI_provincial_government
 		} 
 		hidden_effect = {
 		HNN = {		
@@ -1295,7 +1295,7 @@ country_event = {
 		HNN = {		
 			set_autonomy = {
 			target = FUJ
-			autonomy_state = China_provincial_government
+			autonomy_state = CHI_provincial_government
 		    } 
 	    }
 		hidden_effect = {
@@ -1395,7 +1395,7 @@ country_event = {
 			base = 80
 		}
 		set_country_flag = HNN_Political_stable
-		set_cosmetic_tag = HNN_Zhili
+		set_cosmetic_tag = CHANGSHA_government
 		HNN_Liang_Qichao = {
 			promote_character = {
 			ideology= oligarchy_subtype
@@ -1425,7 +1425,7 @@ country_event = {
 			base = 80
 		}
 		set_country_flag = HNN_Political_stable
-		set_cosmetic_tag = HNN_Zhili
+		set_cosmetic_tag = CHANGSHA_government
 		set_party_name = {
 			ideology = authoritarian_democrat
 			long_name =HNN_Constitutional_Association_party_long
@@ -1548,7 +1548,7 @@ country_event = {
 				type = annex_everything
 			}
 	    }
-		set_cosmetic_tag = HNN_Canton
+		set_cosmetic_tag = HNN-JIA_union_government
 	}
 }
 #瑞金の拒否！

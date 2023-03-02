@@ -1,8 +1,37 @@
 ﻿capital = 864
-
 oob = "FUJ_1936"
 
-# Starting tech
+ANH = {	set_autonomy = {	target = FUJ	autonomous_state = autonomy_satellite	}	}
+set_cosmetic_tag = FUJ_military_clique
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	paternal_autocrat = 100
+}
+
+recruit_character = FUJ_Sun_Chuanfang
+recruit_character = FUJ_Chen_ShaoKuan
+recruit_character = WHN_Chen_ShaoKuan
+
+if = {
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = {	target = RJN	type = annex_everything	}
+}
+
+add_ideas = {
+	militaly_dictatorship
+	WHN_late_army
+	CNK_jap_economic
+	FUJ_RJN_partisan
+}
+
+set_stability = 0.4
+set_war_support = 0.6
 set_technology = {
 	infantry_weapons = 1
 	interwar_antiair = 1
@@ -29,46 +58,6 @@ if = {
 		coastal_defense_ships = 1
 	}
 }
-set_stability = 0.4
-set_war_support = 0.6
-
-ANH = { 
-        set_autonomy = {
-	   target = FUJ
-	   autonomous_state = autonomy_satellite
-        }
-      }
-if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-
-	declare_war_on = {
-		target = RJN
-		type = annex_everything
-	}
-}
-set_politics = {
-	ruling_party = paternal_autocrat
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	paternal_autocrat = 100
-}
-
-add_ideas = {
-         militaly_dictatorship
-         WHN_late_army
-         CNK_jap_economic
-         FUJ_RJN_partisan
-}
-
-recruit_character = FUJ_Sun_Chuanfang
-recruit_character = FUJ_Chen_ShaoKuan
-recruit_character = WHN_Chen_ShaoKuan
-
 
 ### VARIANTS ###
 # 1936 Start #

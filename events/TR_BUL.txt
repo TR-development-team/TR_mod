@@ -50,7 +50,6 @@ country_event = {
                 surrender_progress > 0.8
 		is_subject = no
 		is_faction_leader = no
-                                
 	}
         fire_only_once = yes
 
@@ -58,9 +57,7 @@ country_event = {
 	
 	option = { 
 		name = TR_Bulgaria.2.a
-                ai_chance = {
-			base = 100
-		}
+		ai_chance = {	base = 100	}
 		if = {
 			limit = { is_in_faction_with = ITA }
 			ITA = { remove_from_faction = BUL }
@@ -77,35 +74,34 @@ country_event = {
 			limit = { MHN = { has_war_with = ITA } }
 			ITA = { white_peace = MHN }
 		}
-
-
-                remove_state_core = 106
-                remove_state_core = 803
-                remove_state_core = 841
-                remove_state_core = 184
-                remove_state_core = 731
-                remove_ideas = BUL_ARMY
-                remove_ideas = BUL_economic
-                remove_ideas = BUL_Foutrh_Roma
-                remove_ideas = BUL_YABOU
-                remove_ideas = BUL_ARMY
-                remove_ideas = BUL_BANZOKU
-                remove_ideas = BUL_METAL_HORSE
-                remove_ideas = BUL_KHANATE_IDEA
-                add_ideas = BUL_Neutral_IDEA
-                drop_cosmetic_tag = yes
-                set_country_flag = BUL_Surrender
-                if = {
+		remove_state_core = 106
+		remove_state_core = 803
+		remove_state_core = 841
+		remove_state_core = 184
+		remove_state_core = 731
+		remove_ideas = BUL_ARMY
+		remove_ideas = BUL_economic
+		remove_ideas = BUL_Foutrh_Roma
+		remove_ideas = BUL_YABOU
+		remove_ideas = BUL_ARMY
+		remove_ideas = BUL_BANZOKU
+		remove_ideas = BUL_METAL_HORSE
+		remove_ideas = BUL_KHANATE_IDEA
+		add_ideas = BUL_Neutral_IDEA
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = BUL_principality
+		set_country_flag = BUL_Surrender
+		if = {
 			limit = { 
-                               country_exists = ROM
-                               has_war_with = ROM
-                              }
+				country_exists = ROM
+				has_war_with = ROM
+			}
 			ROM = { 
-                                transfer_state = 841 
-                                transfer_state = 77
-                              }
+				transfer_state = 841 
+				transfer_state = 77
+			}
 		}
-                if = {
+		if = {
 			limit = { 
                                country_exists = GRE
                                has_war_with = GRE

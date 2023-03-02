@@ -1,28 +1,114 @@
 ﻿capital = 126
-
 if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
+	limit = {	NOT = {	has_dlc = "No Step Back"	}	}
 	set_oob = "GBR_1936"
 }
 if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
+	limit = {	has_dlc = "No Step Back"	}
 	set_oob = "GBR_1936_nsb"
 }
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
+	limit = {	has_dlc = "Man the Guns"	}
 	set_naval_oob = "GBR_1936_Naval"
-	else = {
-		set_naval_oob = "GBR_1936_Naval_Legacy"
-	}
+	else = {	set_naval_oob = "GBR_1936_Naval_Legacy"	}
 }
+
+set_cosmetic_tag = GBRandIREbyENG_united_kingdom
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1935.11.14"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	totalist = 15
+	syndicalist = 9
+	radical_socialist = 10
+	social_democrat = 15
+	social_liberal = 6
+	market_liberal = 5
+	social_conservative = 16
+	authoritarian_democrat = 4
+	paternal_autocrat = 4
+	national_populist = 11
+        Gnosticism = 5
+}
+
+recruit_character = GBR_oswald_mosley
+recruit_character = GBR_winston_churchill
+recruit_character = GBR_winston_churchill_2
+recruit_character = GBR_Aleister_Crowley
+recruit_character = GBR_alan_brooke
+recruit_character = GBR_bernard_montgomery
+recruit_character = GBR_alan_cunningham
+recruit_character = GBR_harold_alexander
+recruit_character = GBR_thomas_jacomb_hutton
+recruit_character = GBR_arthur_percival
+recruit_character = GBR_merton_beckwithsmith
+recruit_character = GBR_henry_pownall
+recruit_character = GBR_john_vereker
+recruit_character = GBR_henry_wilson
+recruit_character = GBR_oliver_leese
+recruit_character = GBR_miles_dempsey
+recruit_character = GBR_brian_horrocks
+recruit_character = GBR_archibald_wavell
+recruit_character = GBR_thomas_moore
+recruit_character = GBR_james_fownes_somerville
+recruit_character = GBR_henry_harwood
+recruit_character = GBR_andrew_cunningham
+recruit_character = GBR_john_tovey
+recruit_character = GBR_bernard_rawlings
+recruit_character = GBR_john_cunningham
+recruit_character = GBR_charles_forbes
+
+country_event = { id = TR_UK.1 days = 82 }
+
+add_ideas = {
+	Constitutional_monarchy
+	acceptable_minimum_wage
+	good_max_workhours
+	good_safety_regulations
+	good_Unemployment_subsidies
+	acceptable_school_system
+	good_pensions
+	good_health_care
+	#大臣
+	GBR_George_V
+	GBR_Winston_Churchill
+	GBR_Anthony_Eden
+	GBR_Neville_Chamberlain
+	GBR_John_Simon
+	GBR_Montgomery_Massingberd
+	GBR_Bernard_Montgomery
+	#初期国家精神
+	GBR_LOSE_IN_INDIA
+	GBR_depression
+	GBR_revolution
+}
+
+set_convoys = 800
+set_stability = 0.4
+set_war_support = 0.3
+set_research_slots = 4
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	tech_recon = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	basic_train = 1
+	fleet_in_being = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "GBR_1936_air_bba"
@@ -49,31 +135,6 @@ if = {
 			CAS1 = 1
 		}
 	}
-}
-country_event = { id = TR_UK.1 days = 82 }
-
-set_research_slots = 4
-
-set_stability = 0.4
-set_war_support = 0.3
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1
-	tech_engineers = 1
-	tech_recon = 1
-	motorised_infantry = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	basic_train = 1
-	fleet_in_being = 1
-	electronic_mechanical_engineering = 1
-	radio = 1
-	radio_detection = 1
-	fuel_silos = 1
-	fuel_refining = 1
 }
 
 if = {
@@ -156,88 +217,6 @@ if = {
 		armored_car1 = 1
 	}
 }
-
-
-add_ideas = {
-        Constitutional_monarchy
-        acceptable_minimum_wage
-        good_max_workhours
-        good_safety_regulations
-        good_Unemployment_subsidies
-        acceptable_school_system
-        good_pensions
-        good_health_care
-        #大臣
-	GBR_George_V
-	GBR_Winston_Churchill
-	GBR_Anthony_Eden
-	GBR_Neville_Chamberlain
-	GBR_John_Simon
-	GBR_Montgomery_Massingberd
-	GBR_Bernard_Montgomery
-        #初期国家精神
-        GBR_LOSE_IN_INDIA
-        GBR_depression
-        GBR_revolution
-
-}
-	
-
-set_convoys = 800
-
-
-
-
-
-
-set_politics = {
-	ruling_party = social_conservative
-	last_election = "1935.11.14"
-	election_frequency = 60
-	elections_allowed = yes
-}
-set_popularities = {
-	totalist = 15
-	syndicalist = 9
-	radical_socialist = 10
-	social_democrat = 15
-	social_liberal = 6
-	market_liberal = 5
-	social_conservative = 16
-	authoritarian_democrat = 4
-	paternal_autocrat = 4
-	national_populist = 11
-        Gnosticism = 5
-}
-
-
-recruit_character = GBR_oswald_mosley
-recruit_character = GBR_winston_churchill
-recruit_character = GBR_winston_churchill_2
-recruit_character = GBR_Aleister_Crowley
-
-recruit_character = GBR_alan_brooke
-recruit_character = GBR_bernard_montgomery
-recruit_character = GBR_alan_cunningham
-recruit_character = GBR_harold_alexander
-recruit_character = GBR_thomas_jacomb_hutton
-recruit_character = GBR_arthur_percival
-recruit_character = GBR_merton_beckwithsmith
-recruit_character = GBR_henry_pownall
-recruit_character = GBR_john_vereker
-recruit_character = GBR_henry_wilson
-recruit_character = GBR_oliver_leese
-recruit_character = GBR_miles_dempsey
-recruit_character = GBR_brian_horrocks
-recruit_character = GBR_archibald_wavell
-recruit_character = GBR_thomas_moore
-recruit_character = GBR_james_fownes_somerville
-recruit_character = GBR_henry_harwood
-recruit_character = GBR_andrew_cunningham
-recruit_character = GBR_john_tovey
-recruit_character = GBR_bernard_rawlings
-recruit_character = GBR_john_cunningham
-recruit_character = GBR_charles_forbes
 
 if = {
 	limit = {

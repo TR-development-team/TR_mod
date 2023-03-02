@@ -46,10 +46,6 @@ country_event = {
 						is_important_state_china = yes
 					}
 					AND = {
-						ROOT = { tag = ENR }
-						is_important_state_china = yes
-					}
-					AND = {
 						ROOT = { tag = PRE }
 						is_important_state_china = yes
 					}
@@ -102,10 +98,6 @@ country_event = {
 							is_important_state_china = yes
 						}
 						AND = {
-							ROOT = { tag = ENR }
-							is_important_state_china = yes
-						}
-						AND = {
 							ROOT = { tag = PRE }
 							is_important_state_china = yes
 						}
@@ -155,10 +147,6 @@ country_event = {
 							}
 							AND = {
 								ROOT = { tag = GBR }
-								is_important_state_china = yes
-							}
-							AND = {
-								ROOT = { tag = ENR }
 								is_important_state_china = yes
 							}
 							AND = {
@@ -292,10 +280,6 @@ country_event = {
 								is_important_state_china = yes
 							}
 							AND = {
-								FROM = { tag = ENR }
-								is_important_state_china = yes
-							}
-							AND = {
 								FROM = { tag = PRE }
 								is_important_state_china = yes
 							}
@@ -342,10 +326,6 @@ country_event = {
 							}
 							AND = {
 								FROM = { tag = GBR }
-								is_important_state_china = yes
-							}
-							AND = {
-								FROM = { tag = ENR }
 								is_important_state_china = yes
 							}
 							AND = {

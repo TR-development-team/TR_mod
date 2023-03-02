@@ -504,7 +504,7 @@ focus = {
 			ideology = national_populist
 			popularity = 0.1
 		    }
-			set_cosmetic_tag = FRA_RNP
+			set_cosmetic_tag = FRA_jacobinist_republic
 	}
 	
 }
@@ -996,7 +996,7 @@ focus = {
 		promote_character = FRA_Jean_dOrleans
 		set_country_flag = FRA_Seijiantei
 		add_ideas = FRA_Ancien
-		set_cosmetic_tag = FRA_KING
+		set_cosmetic_tag = HOLYFRANCE_kingdom
 	}
 }
 #カムロ・デュ・ロア
@@ -1410,7 +1410,7 @@ focus = {
 	relative_position_id = FRA_PPF_1
 	completion_reward = {
 		add_ideas = FRA_En_Avant
-		set_cosmetic_tag = FRA_PPF
+		set_cosmetic_tag = GREATGAUL_empire
 		set_country_flag = FRA_Seijiantei
 		hidden_effect = { 
 			add_ideas = FRA_Jacques_Doriot

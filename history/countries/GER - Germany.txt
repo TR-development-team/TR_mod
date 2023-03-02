@@ -1,22 +1,116 @@
 ﻿capital = 844
 if = {
-	limit = {
-		NOT = {
-			has_dlc = "No Step Back"
-		}
-	}
+	limit = {	NOT = {	has_dlc = "No Step Back"	}	}
 	set_oob = "GER_1936"
 }
 if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
+	limit = {	has_dlc = "No Step Back"	}
 	set_oob = "GER_1936_nsb"
 }
 
+set_cosmetic_tag = GER_rate_republic
+
+set_politics = {
+	ruling_party = radical_socialist
+	last_election = "1935.12.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 18
+	syndicalist = 16
+	radical_socialist = 32
+	social_democrat = 21
+	social_liberal = 13
+	market_liberal = 0
+	social_conservative = 0
+	authoritarian_democrat = 0
+	paternal_autocrat = 0
+	national_populist = 0
+}
+
+### country_leader ###
+recruit_character = GER_Otto_Strasser
+recruit_character = GER_Ernst_Junger
+recruit_character = GER_rosa_luxemburg
+recruit_character = GER_Kurt_Eisner
+recruit_character = GER_Otto_Wels
+recruit_character = GER_Reinhold_Maier
+recruit_character = GER_Konrad_Adenauer
+recruit_character = GER_Alfred_Hugenberg
+recruit_character = GER_Willhelm_II
+recruit_character = GER_Kurt_von_Schleicher
+recruit_character = GER_Heinrich_Himmler
+
+recruit_character = GER_Lev_Trotsky
+recruit_character = GER_Eugen_Levine
+
+### corps_commander ###
+recruit_character = GER_Lev_Trotsky_marshal
+recruit_character = GER_Ernst_Junger_marshal
+recruit_character = GER_Rohm
+recruit_character = GER_friedrich_paulus
+recruit_character = GER_erwin_rommel
+recruit_character = GER_Bode_Uhse
+recruit_character = GER_Erich_Hoepner
+recruit_character = GER_Max_Hoelz
+recruit_character = GER_walter_model
+recruit_character = GER_georghans_reinhardt
+recruit_character = GER_walter_kruger
+recruit_character = GER_kurt_student
+recruit_character = GER_hermann_hoth
+recruit_character = GER_friedrich_schulz
+recruit_character = GER_sepp_dietrich
+recruit_character = GER_albert_kesselring
+recruit_character = GER_felix_steiner
+recruit_character = GER_Walther_Stennes
+recruit_character = GER_Gregor_Strasser
+recruit_character = GER_Ernst_von_Salomon
+recruit_character = GER_Wolf_Heinrich_von_Helldorf
+recruit_character = GER_Edmund_Heines
+
+### admiral ###
+recruit_character = GER_erich_raeder
+recruit_character = GER_alfred_saalwachter
+recruit_character = GER_hermann_boehm
+recruit_character = GER_wilhelm_marschall
+recruit_character = GER_gunther_lutjens
+recruit_character = GER_Hermann_Ehrhardt
+
+create_faction = International
+add_to_faction = GER
+give_guarantee = POL
+
+country_event = { id = TR_germany.1 days = 20 }
+
+add_ideas = {
+	Council_communism
+	acceptable_minimum_wage
+	good_max_workhours
+	good_safety_regulations
+	good_Unemployment_subsidies
+	acceptable_school_system
+	good_pensions
+	good_health_care
+	GER_Junker_resistance
+	GER_WAR_HORROR
+	GER_REVOLUTION_ARMY
+	GER_Paramilitary
+	GER_rosa_luxemburg
+	GER_Karl_Liebknecht
+	GER_ernst_thalmann
+	GER_Paul_Levi
+	GER_Ernst_Junger_int
+	GER_Lev_Trotsky_cos
+	GER_Ludwig_Renn_coa
+}
+
+set_research_slots = 4
+set_convoys = 200
+set_stability = 0.2
+set_war_support = 0.5
 set_fuel_ratio = 0.8
 starting_train_buffer = 1
-# Starting tech
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -34,7 +128,6 @@ set_technology = {
 	fuel_refining = 1
         mass_assault = 1
 	basic_train = 1
-
 }
 if = {
 	limit = {
@@ -146,113 +239,6 @@ if = {
 		}
 	}
 }
-
-
-set_research_slots = 4
-set_convoys = 200
-set_stability = 0.2
-set_war_support = 0.5
-
-country_event = { id = TR_germany.1 days = 20 }
-
-
-
-
-
-set_politics = {
-	ruling_party = radical_socialist
-	last_election = "1935.12.21"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	totalist = 18
-	syndicalist = 16
-	radical_socialist = 32
-	social_democrat = 21
-	social_liberal = 13
-	market_liberal = 0
-	social_conservative = 0
-	authoritarian_democrat = 0
-	paternal_autocrat = 0
-	national_populist = 0
-}
-
-create_faction = International
-add_to_faction = GER
-
-give_guarantee = POL
-
-add_ideas = {
-            Council_communism
-            acceptable_minimum_wage
-            good_max_workhours
-            good_safety_regulations
-            good_Unemployment_subsidies
-            acceptable_school_system
-            good_pensions
-            good_health_care
-            GER_Junker_resistance
-            GER_WAR_HORROR
-            GER_REVOLUTION_ARMY
-            GER_Paramilitary
-            GER_rosa_luxemburg
-            GER_Karl_Liebknecht
-            GER_ernst_thalmann
-            GER_Paul_Levi
-            GER_Ernst_Junger_int
-            GER_Lev_Trotsky_cos
-            GER_Ludwig_Renn_coa
-}
-
-### country_leader ###
-recruit_character = GER_Otto_Strasser
-recruit_character = GER_Ernst_Junger
-recruit_character = GER_rosa_luxemburg
-recruit_character = GER_Kurt_Eisner
-recruit_character = GER_Otto_Wels
-recruit_character = GER_Reinhold_Maier
-recruit_character = GER_Konrad_Adenauer
-recruit_character = GER_Alfred_Hugenberg
-recruit_character = GER_Willhelm_II
-recruit_character = GER_Kurt_von_Schleicher
-recruit_character = GER_Heinrich_Himmler
-
-recruit_character = GER_Lev_Trotsky
-recruit_character = GER_Eugen_Levine
-
-### corps_commander ###
-recruit_character = GER_Lev_Trotsky_marshal
-recruit_character = GER_Ernst_Junger_marshal
-recruit_character = GER_Rohm
-recruit_character = GER_friedrich_paulus
-recruit_character = GER_erwin_rommel
-recruit_character = GER_Bode_Uhse
-recruit_character = GER_Erich_Hoepner
-recruit_character = GER_Max_Hoelz
-recruit_character = GER_walter_model
-recruit_character = GER_georghans_reinhardt
-recruit_character = GER_walter_kruger
-recruit_character = GER_kurt_student
-recruit_character = GER_hermann_hoth
-recruit_character = GER_friedrich_schulz
-recruit_character = GER_sepp_dietrich
-recruit_character = GER_albert_kesselring
-recruit_character = GER_felix_steiner
-recruit_character = GER_Walther_Stennes
-recruit_character = GER_Gregor_Strasser
-recruit_character = GER_Ernst_von_Salomon
-recruit_character = GER_Wolf_Heinrich_von_Helldorf
-recruit_character = GER_Edmund_Heines
-
-### admiral ###
-recruit_character = GER_erich_raeder
-recruit_character = GER_alfred_saalwachter
-recruit_character = GER_hermann_boehm
-recruit_character = GER_wilhelm_marschall
-recruit_character = GER_gunther_lutjens
-recruit_character = GER_Hermann_Ehrhardt
-
 
 if = {
 	limit = {

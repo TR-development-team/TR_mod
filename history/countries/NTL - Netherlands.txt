@@ -1,6 +1,8 @@
 ﻿capital = 7
-
 oob = "NTL_1936"
+
+set_cosmetic_tag = NTL_state
+
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "NTL_1936_naval_mtg"

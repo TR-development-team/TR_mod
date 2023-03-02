@@ -303,7 +303,7 @@ country_event = {#1936年帝国会議-自治領の主権
                 ai_chance = {
 			base = 50
 		}
-                set_cosmetic_tag = ARB_IND
+                set_cosmetic_tag = ARB_federation
                 JAP = { add_to_faction = ARB }
 
 		
@@ -315,7 +315,7 @@ country_event = {#1936年帝国会議-自治領の主権
 		}
 		add_ideas = Absolute_monarchy
                 remove_ideas = Tiyoda_Kensho
-                set_cosmetic_tag = ARB_CALIPHATE
+                set_cosmetic_tag = ALYABANIARABIA_caliphate
                 leave_faction = yes
                 add_popularity = {
 			ideology = national_populist
@@ -376,7 +376,7 @@ country_event = {#1936年帝国会議-自治領の主権
 	
 	option = {
 		name = TR_japfed.14.a
-                set_cosmetic_tag = CAC
+                set_cosmetic_tag = CAC_federation_JAP
                 JAP = { add_to_faction = CAC }
 
 		
@@ -401,7 +401,7 @@ country_event = {#1936年帝国会議-自治領の主権
                 ai_chance = {
 			base = 50
 		}
-                set_cosmetic_tag = SIB_IND
+                set_cosmetic_tag = SIB_state_JAP
                 add_popularity = {
 			ideology = paternal_autocrat
 			popularity = 0.3
@@ -422,7 +422,7 @@ country_event = {#1936年帝国会議-自治領の主権
 		}
 		add_ideas = Council_communism
                 remove_ideas = Tiyoda_Kensho
-                set_cosmetic_tag = SIB_IND
+                set_cosmetic_tag = SIB_socialist_republic
                 leave_faction = yes
                 add_popularity = {
 			ideology = radical_socialist
@@ -704,6 +704,7 @@ country_event = {#アフリカ植民地の整理
 		JAP = { end_puppet = SOM }
 	    SOM = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
+				set_cosmetic_tag = SOM_federation
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
 				remove_ideas = JAP_JAP_colony
@@ -718,6 +719,7 @@ country_event = {#アフリカ植民地の整理
 	    EAF = { leave_faction = yes }
 		EAF = { leave_faction = yes 
 		drop_cosmetic_tag = yes
+		set_cosmetic_tag = EAF_federation
 		remove_ideas = Tiyoda_Kensho
 		remove_ideas = JAP_colony
 		remove_ideas = JAP_JAP_colony
@@ -731,6 +733,7 @@ country_event = {#アフリカ植民地の整理
 		JAP = { end_puppet = CAR }
 	    CAR = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
+				set_cosmetic_tag = CAR_republic
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
 				remove_ideas = JAP_JAP_colony
@@ -744,6 +747,7 @@ country_event = {#アフリカ植民地の整理
 		JAP = { end_puppet = NGA }
 	    NGA = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
+				set_cosmetic_tag = NGA_federal_republic
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
 				remove_ideas = JAP_JAP_colony
@@ -757,6 +761,7 @@ country_event = {#アフリカ植民地の整理
 		JAP = { end_puppet = NMB }
 	    NMB = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
+				set_cosmetic_tag = NMB_republic
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
 				remove_ideas = JAP_JAP_colony
@@ -769,6 +774,7 @@ country_event = {#アフリカ植民地の整理
 	          }
 		JAP = { end_puppet = EGY}
 	    EGY = { leave_faction = yes 
+			  set_cosmetic_tag = EGY_kingdom
 		             add_timed_idea = {
 			              idea = Nippon_Tettai_Africa
 			              days = 180
@@ -810,6 +816,7 @@ country_event = {#アフリカ植民地の整理
 		JAP = { end_puppet = CAR }
         CAR = { leave_faction = yes 
 		       	drop_cosmetic_tag = yes
+				set_cosmetic_tag = CAR_republic
 				   remove_ideas = Tiyoda_Kensho
 				   remove_ideas = Tiyoda_Kensho
 				   remove_ideas = JAP_colony
@@ -824,6 +831,7 @@ country_event = {#アフリカ植民地の整理
 		JAP = { end_puppet = NGA }
 	    NGA = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
+				set_cosmetic_tag = NGA_federal_republic
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
 				remove_ideas = JAP_JAP_colony
@@ -837,6 +845,7 @@ country_event = {#アフリカ植民地の整理
 		JAP = { end_puppet = NMB }
 	    NMB = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
+				set_cosmetic_tag = NMB_republic
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
 				remove_ideas = JAP_JAP_colony
@@ -913,11 +922,34 @@ country_event = {#中央アフリカ崩壊
 		remove_state_core = 774
 		remove_state_core = 775
         release = KAT
-		release = KIS
+		release = NKR
 		release = KIV
 		release = CAR
-		release = MCG
+		release = COG
 		release = CMR
+		CMR = {
+			set_cosmetic_tag = EQUATOR_peoples_liberation_league
+			add_ideas = Council_communism
+			set_politics = {
+				ruling_party = radical_socialist
+				last_election = "1936.1.1"
+				election_frequency = 48
+				elections_allowed = no
+			}
+			set_popularities = {
+				totalist = 20
+				syndicalist = 15
+				radical_socialist = 50
+				social_democrat = 15
+			}
+			create_country_leader = {
+				name = "渡辺政之輔"
+				desc = ""
+				picture = "gfx/leaders/JAP/Portrait_Japan_Watanabe_Masanosuke.tga"
+				expire = "1981.3.6"
+				ideology = radical_socialist_subtype
+			}
+		}
 		country_event = {
 			id = TR_news.42
 			days = 1

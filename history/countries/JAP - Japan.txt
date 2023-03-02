@@ -1,5 +1,4 @@
 ﻿capital = 808
-
 if = {
 	limit = {
 		NOT = {
@@ -15,8 +14,8 @@ if = {
 	set_oob = "JAP_1936_nsb"
 }
 
+set_cosmetic_tag = GREATERJAPAN_empire
 
-	
 set_major = yes
 
 set_stability = 0.3

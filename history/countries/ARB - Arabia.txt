@@ -1,12 +1,82 @@
 ﻿capital = 658
 oob = "ARB_1936"
 
-set_cosmetic_tag = ARB_JAP
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 365
-                 }  
-# Starting tech
+JAP = {	set_autonomy = {	target = ARB	autonomous_state = imperial_dominion	}	}
+set_cosmetic_tag = ARB_JAP_imperial_dominon
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	social_democrat = 10
+	social_liberal = 10
+	market_liberal = 20
+	social_conservative = 50
+	authoritarian_democrat = 5
+	paternal_autocrat = 2
+	national_populist = 3
+}
+
+create_country_leader = {
+	name = "林博太郎"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_JAP_hirotaro.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {}
+}
+create_country_leader = {
+	name = "寺内寿一"
+	desc = ""
+	picture = "gfx/leaders/JAP/Portrait_Japan_Hisaichi_Terauchi.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {}
+}
+create_country_leader = {
+	name = "モハマッド・アリー・ビン・アブドラー"
+	desc = "POLITICS_HARIMAU_DESC"
+	picture = "Portrait_ARB_harimau.tga"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {}
+}
+
+create_corps_commander = {
+	name = "谷豊"
+	picture = "Portrait_ARB_harimau.tga"
+	traits = {}
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 3
+	logistics_skill = 2
+}
+create_corps_commander = {
+	name = "神本利男"
+	picture = "Portrait_ARB_kamoto.tga"
+	traits = {}
+	skill = 2
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+add_ideas = {
+	Constitutional_monarchy
+	low_safety_regulations
+	low_Unemployment_subsidies
+	low_school_system
+	low_pensions
+	low_health_care
+	Tiyoda_Kensho
+}
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 365	}
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -30,7 +100,11 @@ set_technology = {
 	fuel_refining = 1
 	marines = 1
 }
-
+set_convoys = 5
+if = {
+	limit = {	has_dlc = "Battle for the Bosporus"	}
+	set_technology = { camelry = 1 }
+}
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -59,7 +133,6 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
 	}
-
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -78,102 +151,6 @@ if = {
 		basic_carrier = 1
 		transport = 1
 	}
-
-}
-add_ideas = {
-        Constitutional_monarchy
-        low_safety_regulations
-        low_Unemployment_subsidies
-        low_school_system
-        low_pensions
-        low_health_care
-        Tiyoda_Kensho
-}
-
-if = {
-	limit = {
-		has_dlc = "Battle for the Bosporus"
-	}
-	set_technology = { camelry = 1 }
-}
-
-set_convoys = 5
-
-JAP = { 
-        set_autonomy = {
-	   target = ARB
-	   autonomous_state = imperial_dominion
-        }
-      }
-set_politics = {
-	ruling_party = social_conservative
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	social_democrat = 10
-	social_liberal = 10
-	market_liberal = 20
-	social_conservative = 50
-	authoritarian_democrat = 5
-	paternal_autocrat = 2
-	national_populist = 3
-}
-
-create_country_leader = {
-	name = "林博太郎"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_hirotaro.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-        traits = {
-		
-	}
-	
-}
-
-
-create_country_leader = {
-	name = "寺内寿一"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_Japan_Hisaichi_Terauchi.dds"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "モハマッド・アリー・ビン・アブドラー"
-	desc = "POLITICS_HARIMAU_DESC"
-	picture = "Portrait_ARB_harimau.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "谷豊"
-	picture = "Portrait_ARB_harimau.tga"
-	traits = {  }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "神本利男"
-	picture = "Portrait_ARB_kamoto.tga"
-	traits = {  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
 }
 if = {
 	limit = {

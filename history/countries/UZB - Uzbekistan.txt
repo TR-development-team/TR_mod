@@ -1,33 +1,4 @@
 ﻿capital = 405
 
-#oob = ""
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-add_ideas = {
-	Democratic_centralism
-}
-set_cosmetic_tag = UZB_Turkestan
-set_convoys = 5
-set_politics = {
-	ruling_party = radical_socialist
-	last_election = "1935.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	totalist = 30
-	syndicalist = 8
-	radical_socialist = 32
-	social_democrat = 8
-	social_liberal = 2
-	market_liberal = 5
-	social_conservative = 5
-	authoritarian_democrat = 4
-	paternal_autocrat = 1
-	national_populist = 5
-}
-
-recruit_character = UZB_mikhail_frunze
+set_cosmetic_tag = UZB_republic
+set_dictatorship = yes

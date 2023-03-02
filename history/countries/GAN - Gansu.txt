@@ -1,43 +1,8 @@
 ﻿capital = 756
-
 oob = "GAN_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	mass_assault = 1
-}
-add_ideas = {
-         militaly_dictatorship
-	 extensive_conscription
-	 partial_economic_mobilisation
-         WHN_late_army
-         GAN_Ma_Zhongying
-         GAN_Ma_Zhongying_cos
-         GAN_Ma_Hushan
-         GAN_Ma_Hushan_coa
-}
+set_cosmetic_tag = GAN_ma_military_clique
 
-GAN = { 
-        set_autonomy = {
-	   target = KUM
-	   autonomous_state = autonomy_satellite
-        }
-      }
-if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-
-	declare_war_on = {
-		target = SIK
-		type = annex_everything
-	}
-	declare_war_on = {
-		target = ETR
-		type = annex_everything
-	}
-}
 set_politics = {
 	ruling_party = national_populist
 	last_election = "1936.1.1"
@@ -50,3 +15,27 @@ set_popularities = {
 
 recruit_character = GAN_Ma_Zhongying
 recruit_character = GAN_Ma_Zhongying_marshal
+
+if = {
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = {	target = SIK	type = civil_war	}
+	declare_war_on = {	target = ETR	type = civil_war	}
+	add_civil_war_target = ETR
+	add_civil_war_target = SIK
+}
+
+add_ideas = {
+	militaly_dictatorship
+	extensive_conscription
+	partial_economic_mobilisation
+	WHN_late_army
+	GAN_Ma_Zhongying
+	GAN_Ma_Zhongying_cos
+	GAN_Ma_Hushan
+	GAN_Ma_Hushan_coa
+}
+
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}

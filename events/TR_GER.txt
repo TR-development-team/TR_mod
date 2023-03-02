@@ -412,8 +412,8 @@ country_event = {
 	
 	option = {
 		name = TR_germany.5.a
-		WGR = { inherit_technology = GER
-			set_cosmetic_tag = WGR_FRA
+		RHI = { inherit_technology = GER
+			set_cosmetic_tag = RHI_protectorate
 			transfer_state = 42
             transfer_state = 51
 			add_state_core = 51
@@ -425,7 +425,7 @@ country_event = {
         }
 		FRA = {
 			puppet = BDN
-			puppet = WGR
+			puppet = RHI
 			transfer_state = 999
 			add_state_claim = 999
         }
@@ -2099,10 +2099,10 @@ country_event = {#フランス統治問題
 			transfer_state_to = FRA
 		}
 		FRA = { 
-			set_cosmetic_tag = FRA_REP
+			set_cosmetic_tag = FRA_republic
 		}
 		BRI = { 
-			set_cosmetic_tag = BRI_ENR
+			set_cosmetic_tag = BRI_BRITANNIA
 		}
 	    }
 		set_autonomy = {
@@ -2112,7 +2112,7 @@ country_event = {#フランス統治問題
 		ENR = { 
 			set_autonomy = {
 				target = BRI
-				autonomy_state = autonomy_puppet
+				autonomy_state = overseas_territory
 			}
 		}
 
@@ -2297,10 +2297,10 @@ country_event = {#フランス統治問題
 			transfer_state_to = FRA
 		}
 		FRA = { 
-			set_cosmetic_tag = FRA_REP
+			set_cosmetic_tag = FRA_republic
 		}
 		BRI = { 
-			set_cosmetic_tag = BRI_ENR
+			set_cosmetic_tag = BRI_BRITANNIA
 		}
 		OCC = { 
 			set_cosmetic_tag = OCC_ITA
@@ -2313,13 +2313,13 @@ country_event = {#フランス統治問題
 		ENR = { 
 			set_autonomy = {
 				target = BRI
-				autonomy_state = autonomy_puppet
+				autonomy_state = overseas_territory
 			}
 		}
 		ITA = { 
 			set_autonomy = {
 				target = OCC
-				autonomy_state = autonomy_puppet
+				autonomy_state = overseas_territory
 			}
 		}
 	}
@@ -2437,7 +2437,7 @@ country_event = {#フランス統治問題
 			transfer_state_to = FRA
 		}
 		FRA = { 
-			set_cosmetic_tag = FRA_REP
+			set_cosmetic_tag = FRA_republic
 		}
 	    }
 		set_autonomy = {

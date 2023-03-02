@@ -1,14 +1,7 @@
 ﻿capital = 316
-
 oob = "COS_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-set_country_flag = monroe_doctrine
-set_war_support = 0.1
-set_convoys = 10
+set_cosmetic_tag = COS_republic
 
 set_politics = {
 	ruling_party = social_democrat
@@ -18,4 +11,11 @@ set_politics = {
 }
 set_popularities = {
 	social_democrat = 100
+}
+
+set_country_flag = monroe_doctrine
+set_war_support = 0.1
+set_convoys = 10
+set_technology = {
+	infantry_weapons = 1
 }

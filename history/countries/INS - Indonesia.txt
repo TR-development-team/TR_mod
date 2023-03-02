@@ -1,8 +1,9 @@
 ﻿capital = 335 #Jakarta
-
 oob = "INS_1936"
 
-set_cosmetic_tag = INS_JAP
+JAP = {	set_autonomy = {	target = INS	autonomous_state = imperial_protectorate	}	}
+set_cosmetic_tag = INS_military_government
+
 add_ideas = {
         Colonical_system
         Tiyoda_Kensho
@@ -51,12 +52,7 @@ if = {
 		basic_battery = 1
 	}
 }
-JAP = { 
-        set_autonomy = {
-	   target = INS
-	   autonomous_state = imperial_protectorate
-        }
-      }
+
 give_resource_rights = {
     receiver = JAP
     state = 672

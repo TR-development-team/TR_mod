@@ -1,13 +1,29 @@
 ﻿capital = 91
 set_oob = "GAL_1936"
-set_research_slots = 3
-set_cosmetic_tag = GAL_AUS
-AUS = {
-	set_autonomy = {
-		target = GAL
-		autonomous_state = autonomy_cisleithanien
-	}
+
+AUS = {	set_autonomy = {	target = GAL	autonomous_state = AUS_crown_land	}	}
+set_cosmetic_tag = GALandLOD_kingdom
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1935.9.8"
+	election_frequency = 36
+	elections_allowed = no
 }
+set_popularities = {
+	totalist = 5
+	syndicalist = 10
+	radical_socialist = 5
+	social_democrat = 5
+	social_liberal = 5
+	market_liberal = 5
+	social_conservative = 5
+	authoritarian_democrat = 50
+	paternal_autocrat = 5
+	national_populist = 5
+}
+
+recruit_character = GAL_Karl_Albrecht_von_Osterreich
 
 add_ideas = {
 	Constitutional_monarchy
@@ -19,7 +35,8 @@ add_ideas = {
 	acceptable_school_system
 }
 
-# Starting tech
+set_convoys = 10
+set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -82,26 +99,3 @@ if = {
 		basic_depth_charges = 1
 	}
 }
-
-set_convoys = 10
-set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1935.9.8"
-	election_frequency = 36
-	elections_allowed = no
-}
-
-set_popularities = {
-	totalist = 5
-	syndicalist = 10
-	radical_socialist = 5
-	social_democrat = 5
-	social_liberal = 5
-	market_liberal = 5
-	social_conservative = 5
-	authoritarian_democrat = 50
-	paternal_autocrat = 5
-	national_populist = 5
-}
-
-recruit_character = GAL_Karl_Albrecht_von_Osterreich

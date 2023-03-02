@@ -1,6 +1,8 @@
 ﻿capital = 597
-
 oob = "SHD_1936"
+
+JAP = {	set_autonomy = {	target = SHD	autonomous_state = imperial_protectorate	}	}
+set_cosmetic_tag = SHD_military_clique
 
 set_research_slots = 2
 # Starting tech
@@ -16,13 +18,7 @@ add_ideas = {
          militaly_dictatorship
          WHN_late_army
 }
-  
-JAP = { 
-        set_autonomy = {
-	   target = SHD
-	   autonomous_state = imperial_protectorate
-        }
-      }
+
 set_politics = {
 	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"

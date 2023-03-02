@@ -1,6 +1,7 @@
 ﻿capital = 914
-
 oob = "SHA_1936"
+
+set_cosmetic_tag = GREATTIAN_state
 
 # Starting tech
 set_technology = {
@@ -11,14 +12,9 @@ set_war_support = 0.4
 
 
 if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-
-	declare_war_on = {
-		target = XIB
-		type = annex_everything
-	}
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = {	target = XIB	type = civil_war	}
+	add_civil_war_target = XIB
 }
 
 

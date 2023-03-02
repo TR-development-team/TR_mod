@@ -5,7 +5,7 @@ annexation_decisions = {
 		is_good = no
                 visible = {
 			tag = FRA
-                                WGR = { exists = no }
+                                RHI = { exists = no }
                                 GER = { exists = no }
 				FRA = {
 				       owns_state = 51
@@ -15,7 +15,7 @@ annexation_decisions = {
 		}
 		available = {
                                 tag = FRA
-                                WGR = { exists = no }
+                                RHI = { exists = no }
                                 GER = { exists = no }
 				FRA = {
 				       owns_state = 51
@@ -25,7 +25,7 @@ annexation_decisions = {
 		}
 		complete_effect = {
                    hidden_effect = { 
-                        WGR = {
+                        RHI = {
 			    add_state_core = 50
                             add_state_core = 52
                             add_state_core = 55
@@ -38,7 +38,7 @@ annexation_decisions = {
 			    add_state_core = 861
 			} 
                       } 
-	                release_puppet = WGR
+	                release_puppet = RHI
 		}
 		ai_will_do = {
 			factor = 100

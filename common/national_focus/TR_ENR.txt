@@ -687,10 +687,7 @@ focus_tree = {
 			NOT = { has_war_with = JAP }
 			is_subject = no
 		}
-	        completion_reward = {  
-                     set_cosmetic_tag = ENR_OCE
-                        	
-		}
+		completion_reward = {	set_cosmetic_tag = OCEANIA	}
 	}
 
 

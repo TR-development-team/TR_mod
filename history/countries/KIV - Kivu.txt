@@ -1,5 +1,7 @@
 ﻿capital = 869
 
+set_cosmetic_tag = KIV_liberation_front
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -15,8 +17,6 @@ set_technology = {
 }
 
 set_convoys = 20
-
-
 
 set_politics = {
 	ruling_party = radical_socialist

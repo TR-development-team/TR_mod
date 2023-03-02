@@ -1,11 +1,57 @@
 ﻿capital = 285
-
 oob = "AST_1936"
+
+GBR = {	set_autonomy = {	target = AST	autonomous_state = dominion	}	}
+set_cosmetic_tag = AST_GBRandIREbyENG
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1934.9.15"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	social_democrat = 32
+	social_liberal = 20
+	market_liberal = 18
+	social_conservative = 15
+	national_populist = 8
+	Gnosticism = 7
+}
+
+recruit_character = AST_richard_dixon
+recruit_character = AST_john_curtin
+recruit_character = AST_earle_page
+recruit_character = AST_eric_campbell
+recruit_character = AST_Elizabeth_II
+recruit_character = AST_leslie_morshead
+recruit_character = AST_thomas_blamey
+recruit_character = AST_henry_wynter
+recruit_character = AST_alan_vasey
+recruit_character = AST_horace_robertson
+recruit_character = AST_john_northcott
+recruit_character = AST_harold_farncomb
+recruit_character = AST_victor_crutchley
+
+add_ideas = {
+	Constitutional_monarchy
+	acceptable_minimum_wage
+	good_max_workhours
+	good_safety_regulations
+	good_Unemployment_subsidies
+	acceptable_school_system
+	good_pensions
+	good_health_care
+	AST_White_Australia
+	AST_Immigrants
+	AST_depression
+}
+
 set_stability = 0.5
 set_war_support = 0.5
 set_research_slots = 4
 set_major = yes
-# Starting tech
+set_convoys = 100
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -67,61 +113,6 @@ if = {
 
 	add_to_tech_sharing_group = commonwealth_research
 }
-add_ideas = {
-        Constitutional_monarchy
-        acceptable_minimum_wage
-        good_max_workhours
-        good_safety_regulations
-        good_Unemployment_subsidies
-        acceptable_school_system
-        good_pensions
-        good_health_care
-	AST_White_Australia
-        AST_Immigrants
-        AST_depression
-}
-set_cosmetic_tag = AST_UK
-GBR = { 
-        set_autonomy = {
-	  target = AST
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-        }
-      }
-set_politics = {
-	ruling_party = social_democrat
-	last_election = "1934.9.15"
-	election_frequency = 36
-	elections_allowed = yes
-}
-
-set_popularities = {
-	social_democrat = 32
-	social_liberal = 20
-	market_liberal = 18
-	social_conservative = 15
-        national_populist = 8
-        Gnosticism = 7
-}
-
-set_convoys = 100
-
-recruit_character = AST_richard_dixon
-recruit_character = AST_john_curtin
-recruit_character = AST_earle_page
-recruit_character = AST_eric_campbell
-
-recruit_character = AST_Elizabeth_II
-
-recruit_character = AST_leslie_morshead
-recruit_character = AST_thomas_blamey
-recruit_character = AST_henry_wynter
-recruit_character = AST_alan_vasey
-recruit_character = AST_horace_robertson
-recruit_character = AST_john_northcott
-recruit_character = AST_harold_farncomb
-recruit_character = AST_victor_crutchley
-
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###

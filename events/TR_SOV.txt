@@ -169,7 +169,7 @@ country_event = {
 		add_ideas = Democratic_Republic
 		add_ideas = SOV_Viktor_Chernov
 		add_ideas = SOV_Viktor_Chernov_GL
-		set_cosmetic_tag = RUS_REP
+		set_cosmetic_tag = RUS_republic
 		set_country_flag = RUS_MINSHU
 		add_stability = -0.1
 		add_political_power = -100
@@ -351,9 +351,13 @@ country_event = {
 			223 = { set_demilitarized_zone = yes }
 			222 = { set_demilitarized_zone = yes }
 			96 = { set_demilitarized_zone = yes }
-			BLT = {	drop_cosmetic_tag = yes	}
+			BLT = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BLT_united_republic
+			}
 			LIT = {
 				drop_cosmetic_tag = yes
+				set_cosmetic_tag = LIT_republic
 				country_event = TR_Lithuania.1
 			}
 			BUK = {	country_event = {	id = TR_central_asia.2	days = 3	}	}
@@ -418,9 +422,13 @@ country_event = {
 			223 = { set_demilitarized_zone = yes }
 			222 = { set_demilitarized_zone = yes }
 			96 = { set_demilitarized_zone = yes }
-			BLT = {	drop_cosmetic_tag = yes	}
+			BLT = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BLT_united_republic
+			}
 			LIT = {
-				drop_cosmetic_tag = yes	
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = LIT_republic
 				country_event = TR_Lithuania.1
 			}
 			BUK = {	country_event = {	id = TR_central_asia.2	days = 3	}	}
@@ -483,6 +491,7 @@ country_event = {
 		}
 		SOV = { 
 			drop_cosmetic_tag = yes
+			set_cosmetic_tag = RUSandBLR_SOV_socialist_republic
 			transfer_state = 195
 			transfer_state = 208
 			transfer_state = 263

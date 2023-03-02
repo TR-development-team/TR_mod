@@ -1,6 +1,9 @@
 ﻿capital = 571#オムスク
-
 oob = "SKH_1936"
+
+RUS = {	set_autonomy = {	target = SKH	autonomous_state = overseas_territory	}	}
+set_cosmetic_tag = SIB_RUS
+
 
 set_research_slots = 3
 
@@ -47,13 +50,6 @@ if = {
 	}
 }
 
-set_cosmetic_tag = SKH_Russia
-RUS = { 
-        set_autonomy = {
-	  target = SKH
-	  autonomous_state = autonomy_colony
-        }
-      }
 set_politics = {
 	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"

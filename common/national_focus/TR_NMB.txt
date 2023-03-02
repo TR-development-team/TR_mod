@@ -326,12 +326,12 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_core_of = MCG
+					is_core_of = COG
 				}
 				add_claim_by = NMB
 			}
 			create_wargoal = {
-				target = MCG
+				target = COG
 				type = annex_everything
 			}
 			create_wargoal = {
@@ -343,7 +343,7 @@ focus_tree = {
 				type = annex_everything
 			}
 			create_wargoal = {
-				target = KIS
+				target = NKR
 				type = annex_everything
 			}
                         create_wargoal = {
@@ -363,7 +363,7 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_subject = no	
-                        NOT = { country_exists = MCG }
+                        NOT = { country_exists = COG }
                         NOT = { country_exists = CAR }
                         NOT = { has_war_with = ETH }
 			OR = { 
@@ -401,7 +401,7 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_subject = no	
-                        NOT = { country_exists = MCG }
+                        NOT = { country_exists = COG }
                         NOT = { country_exists = CAR }
                         NOT = { has_war_with = CMR }
 			}
@@ -459,9 +459,9 @@ focus_tree = {
 			has_war = no
 			is_faction_leader = yes
 			JAP = { is_faction_leader = yes }
-			NOT = { country_exists = MCG }
+			NOT = { country_exists = COG }
             NOT = { country_exists = ETH }
-            NOT = { country_exists = KIS }
+            NOT = { country_exists = NKR }
             NOT = { country_exists = KAT }
             NOT = { country_exists = KIV }
 			NOT = { country_exists = SKT }
@@ -475,13 +475,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			set_major = yes
-            set_cosmetic_tag = NMB_EMPIRE_JAP
+            set_cosmetic_tag = AFR_JAP
             add_research_slot = 1
 			dismantle_faction = yes
 			JAP = { 
 				set_autonomy = {
 				target = NMB
-				autonomous_state = imperial_colony
+				autonomous_state = junior_partner_colony
 			          } 
 		    }
                     add_state_core = 772
