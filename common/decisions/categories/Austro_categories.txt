@@ -59,3 +59,14 @@ AUS_foreign_policy = {
 		original_tag = AUS
 	}
 }
+
+AUS_reorganizing_public_finances = {
+	icon = GFX_decision_category_generic_economy
+	allowed = {
+		original_tag = AUS
+	}
+	priority = 0
+	visible = {
+		original_tag = AUS
+	}
+}

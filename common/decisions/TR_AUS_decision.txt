@@ -5,32 +5,431 @@ AUS_debug_category = {
 		available = {
 		}
 		complete_effect = {
-			set_autonomy = {
-				autonomous_state = autonomy_cisleithanien
-				target = CZE
+			every_state = {
+				limit = {
+					is_on_continent = europe
+				}
+				ROOT = {
+					transfer_state = PREV
+				}
 			}
-			set_rule = {
-				can_declare_war_without_wargoal_when_in_war = yes
+			every_owned_state = {
+				limit = {
+					NOT = {
+						is_on_continent = europe
+					}
+				}
+				random_other_country = {
+					transfer_state = PREV
+				}
 			}
 		}
 	}
 	AUS_debug_unite = {
 		icon = generic_form_nation
 		complete_effect = {
-			every_other_country = {
-				limit = {
-					is_puppet_of = ROOT
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						OR = {
+							tag = HUN
+							tag = GAL
+							tag = CRO
+							tag = DAL
+							tag = BOS
+						}
+					}
+					ROOT = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
 				}
-				ROOT = {
-					annex_country = {
-						target = PREV
-						transfer_troops = yes
+				every_owned_state = {
+					add_core_of = ROOT
+				}
+			}
+			custom_effect_tooltip = "All Austro-Hungarian Empire constituent states at the start of the game will be annexed and nucleated."
+			set_country_flag = AUS_debug_unite
+		}
+	}
+	AUS_debug_1914 = {
+		icon = generic_form_nation
+		complete_effect = {
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						OR = {
+							tag = HUN
+							tag = GAL
+							tag = CRO
+							tag = DAL
+							tag = BOS
+							tag = CZE
+						}
+					}
+					ROOT = {
+						annex_country = {
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+				}
+				#ITA
+				transfer_state = 39
+				transfer_state = 163
+				transfer_state = 736
+				transfer_state = 946
+				transfer_state = 948
+				transfer_state = 991
+				transfer_state = 992
+				#ROM
+				transfer_state = 76
+				transfer_state = 80
+				transfer_state = 84
+				transfer_state = 1014
+				
+				every_owned_state = {
+					add_core_of = ROOT
+				}
+			}
+			custom_effect_tooltip = "All Austro-Hungarian Empire territories as of 1914 in the history are annexed and nucleated."
+			set_country_flag = AUS_debug_1914
+		}
+	}
+	AUS_debug_imperial_dismantling = {
+		icon = generic_independence
+		complete_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = AUS_debug_1914
+					}
+					ITA = {
+						transfer_state = 39
+						transfer_state = 736
+						transfer_state = 946
+					}
+					ROM = {
+						transfer_state = 76
+						transfer_state = 80
+						transfer_state = 82
+						transfer_state = 83
+						transfer_state = 84
+						transfer_state = 1014
+						transfer_state = 1017
+						transfer_state = 1018
+						transfer_state = 1019
+					}
+					SER = {
+						transfer_state = 45
+						transfer_state = 764
+						transfer_state = 988
+					}
+					BOS = {
+						drop_cosmetic_tag = yes
+						transfer_state = 104
+					}
+					HRZ = {
+						drop_cosmetic_tag = yes
+						transfer_state = 804
+					}
+					DAL = {
+						drop_cosmetic_tag = yes
+						transfer_state = 163
+						transfer_state = 932
+						transfer_state = 1022
+					}
+					GAL = {
+						drop_cosmetic_tag = yes
+						transfer_state = 88
+						transfer_state = 89
+						transfer_state = 91
+						transfer_state = 930
+						transfer_state = 980
+					}
+					CRO = {
+						drop_cosmetic_tag = yes
+						transfer_state = 103
+						transfer_state = 109
+						transfer_state = 948
+						transfer_state = 985
+						transfer_state = 989
+						transfer_state = 992
+						transfer_state = 1024
+					}
+					SLV = {
+						drop_cosmetic_tag = yes
+						transfer_state = 102
+						transfer_state = 931
+						transfer_state = 947
+						transfer_state = 991
+						transfer_state = 997
+						transfer_state = 1016
+					}
+					SLO = {
+						drop_cosmetic_tag = yes
+						transfer_state = 70
+						transfer_state = 71
+						transfer_state = 73
+						transfer_state = 664
+						transfer_state = 979
+						transfer_state = 993
+					}
+					CZE = {
+						drop_cosmetic_tag = yes
+						transfer_state = 9
+						transfer_state = 69
+						transfer_state = 72
+						transfer_state = 74
+						transfer_state = 75
+						transfer_state = 840
+						transfer_state = 976
+						transfer_state = 977
+						transfer_state = 990
+						transfer_state = 994
+						transfer_state = 995
+						transfer_state = 996
+					}
+					HUN = {
+						drop_cosmetic_tag = yes
+						transfer_state = 43
+						transfer_state = 154
+						transfer_state = 155
+						transfer_state = 981
+						transfer_state = 982
+						transfer_state = 983
+						transfer_state = 984
+						transfer_state = 1020
+						transfer_state = 1021
+						transfer_state = 1023
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = AUS_debug_unite
+					}
+					ITA = {
+						transfer_state = 39
+						transfer_state = 163
+						transfer_state = 736
+						transfer_state = 946
+						transfer_state = 948
+						transfer_state = 991
+						transfer_state = 992
+					}
+					ROM = {
+						transfer_state = 76
+						transfer_state = 80
+						transfer_state = 82
+						transfer_state = 83
+						transfer_state = 84
+						transfer_state = 1014
+						transfer_state = 1017
+						transfer_state = 1018
+						transfer_state = 1019
+					}
+					SER = {
+						transfer_state = 45
+						transfer_state = 764
+						transfer_state = 988
+					}
+					BOS = {
+						drop_cosmetic_tag = yes
+						transfer_state = 104
+					}
+					HRZ = {
+						drop_cosmetic_tag = yes
+						transfer_state = 804
+					}
+					DAL = {
+						drop_cosmetic_tag = yes
+						transfer_state = 932
+						transfer_state = 1022
+					}
+					GAL = {
+						drop_cosmetic_tag = yes
+						transfer_state = 88
+						transfer_state = 89
+						transfer_state = 91
+						transfer_state = 930
+						transfer_state = 980
+					}
+					CRO = {
+						drop_cosmetic_tag = yes
+						transfer_state = 103
+						transfer_state = 109
+						transfer_state = 985
+						transfer_state = 989
+						transfer_state = 1024
+					}
+					SLV = {
+						drop_cosmetic_tag = yes
+						transfer_state = 102
+						transfer_state = 931
+						transfer_state = 947
+						transfer_state = 997
+						transfer_state = 1016
+					}
+					SLO = {
+						drop_cosmetic_tag = yes
+						transfer_state = 70
+						transfer_state = 71
+						transfer_state = 73
+						transfer_state = 664
+						transfer_state = 979
+						transfer_state = 993
+					}
+					CZE = {
+						drop_cosmetic_tag = yes
+						transfer_state = 9
+						transfer_state = 69
+						transfer_state = 72
+						transfer_state = 74
+						transfer_state = 75
+						transfer_state = 840
+						transfer_state = 976
+						transfer_state = 977
+						transfer_state = 990
+						transfer_state = 994
+						transfer_state = 995
+						transfer_state = 996
+					}
+					HUN = {
+						drop_cosmetic_tag = yes
+						transfer_state = 43
+						transfer_state = 154
+						transfer_state = 155
+						transfer_state = 981
+						transfer_state = 982
+						transfer_state = 983
+						transfer_state = 984
+						transfer_state = 1020
+						transfer_state = 1021
+						transfer_state = 1023
+					}
+				}
+				else = {
+					every_other_country = {
+						limit = {
+							OR = {
+								tag = HUN
+								tag = GAL
+								tag = CRO
+								tag = DAL
+								tag = BOS
+							}
+						}
+						ROOT = {
+							annex_country = {
+								target = PREV
+								transfer_troops = no
+							}
+						}
+					}
+					ITA = {
+						transfer_state = 39
+						transfer_state = 163
+						transfer_state = 736
+						transfer_state = 946
+						transfer_state = 948
+						transfer_state = 991
+						transfer_state = 992
+					}
+					ROM = {
+						transfer_state = 76
+						transfer_state = 80
+						transfer_state = 82
+						transfer_state = 83
+						transfer_state = 84
+						transfer_state = 1014
+						transfer_state = 1017
+						transfer_state = 1018
+						transfer_state = 1019
+					}
+					SER = {
+						transfer_state = 45
+						transfer_state = 764
+						transfer_state = 988
+					}
+					BOS = {
+						drop_cosmetic_tag = yes
+						transfer_state = 104
+					}
+					HRZ = {
+						drop_cosmetic_tag = yes
+						transfer_state = 804
+					}
+					DAL = {
+						drop_cosmetic_tag = yes
+						transfer_state = 932
+						transfer_state = 1022
+					}
+					GAL = {
+						drop_cosmetic_tag = yes
+						transfer_state = 88
+						transfer_state = 89
+						transfer_state = 91
+						transfer_state = 930
+						transfer_state = 980
+					}
+					CRO = {
+						drop_cosmetic_tag = yes
+						transfer_state = 103
+						transfer_state = 109
+						transfer_state = 985
+						transfer_state = 989
+						transfer_state = 1024
+					}
+					SLV = {
+						drop_cosmetic_tag = yes
+						transfer_state = 102
+						transfer_state = 931
+						transfer_state = 947
+						transfer_state = 997
+						transfer_state = 1016
+					}
+					SLO = {
+						drop_cosmetic_tag = yes
+						transfer_state = 70
+						transfer_state = 71
+						transfer_state = 73
+						transfer_state = 664
+						transfer_state = 979
+						transfer_state = 993
+					}
+					CZE = {
+						drop_cosmetic_tag = yes
+						transfer_state = 9
+						transfer_state = 69
+						transfer_state = 72
+						transfer_state = 74
+						transfer_state = 75
+						transfer_state = 840
+						transfer_state = 976
+						transfer_state = 977
+						transfer_state = 990
+						transfer_state = 994
+						transfer_state = 995
+						transfer_state = 996
+					}
+					HUN = {
+						drop_cosmetic_tag = yes
+						transfer_state = 43
+						transfer_state = 154
+						transfer_state = 155
+						transfer_state = 981
+						transfer_state = 982
+						transfer_state = 983
+						transfer_state = 984
+						transfer_state = 1020
+						transfer_state = 1021
+						transfer_state = 1023
 					}
 				}
 			}
-			every_owned_state = {
-				add_core_of = ROOT
-			}
+			custom_effect_tooltip = "Completely dismantle the empire (in its territory)."
 		}
 	}
 	#AUS_1836 = {
@@ -699,5 +1098,4 @@ AUS_foreign_policy = {
 }
 
 AUS_reorganizing_public_finances = {
-	
 }

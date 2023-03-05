@@ -1,5 +1,21 @@
 ﻿l_japanese:
 
+##...................................................................................................
+##.DDDDDDDDDD....DEEEEEEEEEE...CCCCCCCCC.CIIIIIII..SSSSSSSSSS.SIIIIIIII..OOOOOOOOO....ONNNN....NNNN..
+##.DDDDDDDDDDDD..DEEEEEEEEEE..CCCCCCCCCCCCIIIIIII.ISSSSSSSSSS.SIIIIIIII.OOOOOOOOOOO...ONNNNN...NNNN..
+##.DDDD.DDDDDDD..DEEEE.......CCCCCC.CCCCC..IIII...ISSSSSSSSSS...IIIII..IOOOOOOOOOOOO..ONNNNNN..NNNN..
+##.DDDD....DDDDD.DEEEE......ECCCCC....CCC..IIII...ISSS....SSS...IIIII..IOOOO...OOOOOO.ONNNNNN..NNNN..
+##.DDDD....DDDDD.DEEEE......ECCCC..........IIII...ISSSSS........IIIII..IOOO.....OOOOO.ONNNNNNN.NNNN..
+##.DDDD.....DDDD.DEEEEEEEEE.ECCCC..........IIII...ISSSSSSSSS....IIIII..IOOO.....OOOOO.ONNNNNNN.NNNN..
+##.DDDD.....DDDD.DEEEEEEEEE.ECCCC..........IIII...ISSSSSSSSSS...IIIII..IOOO.....OOOOO.ONNNNNNNNNNNN..
+##.DDDD.....DDDD.DEEEE......ECCCC..........IIII.....SSSSSSSSSS..IIIII..IOOO.....OOOOO.ONNN.NNNNNNNN..
+##.DDDD....DDDDD.DEEEE......ECCCC..........IIII.........SSSSSS..IIIII..IOOO.....OOOOO.ONNN.NNNNNNNN..
+##.DDDD....DDDDD.DEEEE......ECCCCC....CCC..IIII...ISS....SSSSS..IIIII..IOOOO...OOOOOO.ONNN..NNNNNNN..
+##.DDDD.DDDDDDD..DEEEE.......CCCCCC.CCCCC..IIII...ISSSS.SSSSSS..IIIII..IOOOOOOOOOOOO..ONNN...NNNNNN..
+##.DDDDDDDDDDDD..DEEEEEEEEEE..CCCCCCCCCCCCIIIIIII.ISSSSSSSSSS.SIIIIIIII.OOOOOOOOOOO...ONNN...NNNNNN..
+##.DDDDDDDDDD....DEEEEEEEEEE...CCCCCCCCC.CIIIIIII.ISSSSSSSSS..SIIIIIIII..OOOOOOOOO....ONNN....NNNNN..
+##...................................................................................................
+
 ### Categories ###
 
 AUS_foreign_policy:0 "外交政策"
@@ -13,9 +29,9 @@ AUS_reorganizing_public_finances:0 "財政難の立て直し"
 #AUS_debug_category
 
 AUS_debug_decision:0 "デバッグ用ディシジョン"
-AUS_debug_unite:0 "二重帝国の統合"
-AUS_1836:0 "1836年をもう一度"
-AUS_1914:0 "1914年をもう一度"
+#AUS_debug_unite:0 "二重帝国の統合"
+#AUS_1836:0 "1836年をもう一度"
+#AUS_1914:0 "1914年をもう一度"
 
 #AUS_great_osaka_plunge_category
 
@@ -56,19 +72,40 @@ AUS_retention_of_the_prague_schule:0 "プラハ学派の支援"
 
 #AUS_reorganizing_public_finances
 
-
-
-### Puppets ###
-
-autonomy_cisleithanien:0 "オーストリア帝冠領"
-autonomy_transleithanien:0 "ハンガリー王冠領"
-
-### Scripted Effects ###
+##................................................................................
+##...SSSSSSSSSS...CCCCCCCCC.RRRRRRRRRRR.........EEEEEEEEEEE.FFFFFFFFFF.FFFFFFFFF..
+##..SSSSSSSSSSS..CCCCCCCCCCCRRRRRRRRRRRR........EEEEEEEEEEE.FFFFFFFFFF.FFFFFFFFF..
+##.SSSSSS.SSSSS.CCCCCCCCCCCCRRRRR.RRRRRR........EEEE........FFFF.......FFFF.......
+##.SSSSS....SSS.CCCCC....CCCRRRRR...RRRR........EEEE........FFFF.......FFFF.......
+##.SSSSSS......SCCCC........RRRRR..RRRRR........EEEE........FFFF.......FFFF.......
+##.SSSSSSSSSS..SCCCC........RRRRR.RRRRRR........EEEEEEEEEE..FFFFFFFFFF.FFFFFFFFF..
+##..SSSSSSSSSSSSCCCC........RRRRRRRRRRR.........EEEEEEEEEE..FFFFFFFFFF.FFFFFFFFF..
+##...SSSSSSSSSSSCCCC........RRRRRRRRRR..........EEEE........FFFF.......FFFF.......
+##........SSSSSSCCCC........RRRRRRRRRRR.........EEEE........FFFF.......FFFF.......
+##.SSS.....SSSS.CCCCC....CCCRRRRR.RRRRRR........EEEE........FFFF.......FFFF.......
+##.SSSSSSSSSSSS.CCCCCCCCCCCCRRRRR..RRRRR........EEEE........FFFF.......FFFF.......
+##.SSSSSSSSSSSS..CCCCCCCCCCCRRRRR..RRRRRR.......EEEEEEEEEEE.FFFF.......FFFF.......
+##..SSSSSSSSS.....CCCCCCCCC.RRRRR...RRRRRR......EEEEEEEEEEE.FFFF.......FFFF.......
+##................................................................................
 
 AUS_dep_inc_tt:0 "恐慌の影響レベルが§R1§!上がる。"
 AUS_dep_dec_tt:0 "恐慌の影響レベルが§G1§!下がる。"
 
-### BoP ###
+##.......................................
+##.BBBBBBBBBB...............PPPPPPPPPP...
+##.BBBBBBBBBBB..............PPPPPPPPPPP..
+##.BBBB..BBBBB..............PPPP.PPPPPP..
+##.BBBB...BBBB...oooooooo...PPPP...PPPP..
+##.BBBB..BBBBB..oooooooooo..PPPP...PPPP..
+##.BBBBBBBBBB...ooooooooooo.PPPP.PPPPPP..
+##.BBBBBBBBBBBBooooo..ooooo.PPPPPPPPPPP..
+##.BBBB..BBBBBBoooo....oooo.PPPPPPPPPP...
+##.BBBB....BBBBoooo....oooo.PPPP.........
+##.BBBB....BBBBooooo..ooooo.PPPP.........
+##.BBBB..BBBBBB.ooooooooooo.PPPP.........
+##.BBBBBBBBBBBB.oooooooooo..PPPP.........
+##.BBBBBBBBBBB...oooooooo...PPPP.........
+##.......................................
 
 AUS_power_balance:0 "国家の勢力均衡"
 AUS_rassist_side:0 "ドイツ人至上主義勢力"
@@ -83,7 +120,21 @@ AUS_multikulturalismus_medium_control_range:0 "多文化主義が支持を拡大
 AUS_multikulturalismus_high_control_range:0 "多文化主義が大衆に受け入れられる"
 AUS_multikulturalismus_total_control_range:0 "多文化主義が至上主義を鎮圧"
 
-### Events ###
+##.................................................................
+##.EEEEEEEEEEEEVVV.....VVVVVEEEEEEEEEE..NNNNN...NNNNNNNTTTTTTTTTT..
+##.EEEEEEEEEEEEVVV....VVVVV.EEEEEEEEEE..NNNNNN..NNNNNNNTTTTTTTTTT..
+##.EEEE.......EVVVV...VVVVV.EEEE........NNNNNN..NNNNN....TTTTT.....
+##.EEEE.......EVVVV...VVVV..EEEE........NNNNNNN.NNNNN....TTTTT.....
+##.EEEE........VVVVV.VVVVV..EEEE........NNNNNNNNNNNNN....TTTTT.....
+##.EEEEEEEEEE..VVVVV.VVVVV..EEEEEEEEEE..NNNNNNNNNNNNN....TTTTT.....
+##.EEEEEEEEEE..VVVVV.VVVV...EEEEEEEEEE..NNNNNNNNNNNNN....TTTTT.....
+##.EEEE.........VVVVVVVVV...EEEE........NNNN.NNNNNNNN....TTTTT.....
+##.EEEE.........VVVVVVVVV...EEEE........NNNN.NNNNNNNN....TTTTT.....
+##.EEEE..........VVVVVVV....EEEE........NNNN..NNNNNNN....TTTTT.....
+##.EEEE..........VVVVVVV....EEEE........NNNN..NNNNNNN....TTTTT.....
+##.EEEEEEEEEEE...VVVVVV.....EEEEEEEEEE..NNNN...NNNNNN....TTTTT.....
+##.EEEEEEEEEEE....VVVVV.....EEEEEEEEEE..NNNN....NNNNN....TTTTT.....
+##.................................................................
 
 TR_Austria.1.t:0 "大阪大暴落が我が国へ到達"
 TR_Austria.1.desc:0 "大阪での事件は遂に我が国へも到来した！\n我が国のいたるところでその影響は即座に見られるだろう…"
@@ -164,7 +215,21 @@ TR_Austria.18.t:0 "自動車の広域な普及"
 TR_Austria.18.desc:0 "自動車は、ここ数年で民間の間に多く普及し、自動車関連企業の成長も目覚ましい。また、徴兵において一般成人男性の免許取得率が大幅に上昇しており、トラックの運用が非常に容易になっている。"
 TR_Austria.18.a:0 "自動車産業の成果だ！"
 
-### Ideas ###
+##...................................................
+##.IIIIIIIII.DDDDDDDDDDD...EEEEEEEEEEE....AAAAAA.....
+##.IIIIIIIII.DDDDDDDDDDDD..EEEEEEEEEEE....AAAAAA.....
+##...IIIII...DDDDD.DDDDDDD.EEEEE..........AAAAAA.....
+##...IIIII...DDDDD...DDDDD.EEEEE.........AAAAAAAA....
+##...IIIII...DDDDD....DDDDDEEEEE.........AAAAAAAA....
+##...IIIII...DDDDD....DDDDDEEEEEEEEEEE..AAAAAAAAAA...
+##...IIIII...DDDDD....DDDDDEEEEEEEEEEE..AAAAAAAAAA...
+##...IIIII...DDDDD....DDDDDEEEEE........AAAA..AAAA...
+##...IIIII...DDDDD....DDDD.EEEEE.......AAAAAAAAAAAA..
+##...IIIII...DDDDD...DDDDD.EEEEE.......AAAAAAAAAAAA..
+##...IIIII...DDDDD.DDDDDDD.EEEEE......EAAAA....AAAA..
+##.IIIIIIIII.DDDDDDDDDDDD..EEEEEEEEEEEEAAAA....AAAA..
+##.IIIIIIIII.DDDDDDDDDDD...EEEEEEEEEEEEAAA.....AAAA..
+##...................................................
 
 AUS_more_cost_nf:0 "選択中の国家方針により"
 AUS_reichs_agriculture:0 "帝国の農業"
@@ -216,8 +281,25 @@ AUS_hungary_uran_idea_desc:0 "ハンガリーのペーチ近郊で、少量の�
 AUS_computer_idea:0 "原始的・コンピューター"
 AUS_financial_difficulties_idea:0 "財政難"
 AUS_financial_difficulties_idea_desc:0 "オーストリア・ハンガリー帝国は致命的な財政赤字に苦しんでいる。現在のところ解決の見通しは立っていない…"
+AUS_reichs_autobahn_idea:0 "ライヒスアウトバーン"
+AUS_empire_and_railways_idea:0 "広大な帝国と鉄道"
+AUS_development_of_the_petrochemical_industry_idea:0 "石油化学工業の発展"
 
-### Ministers ###
+##....................................................................................................
+##.MMMMM....MMMMMM.MIIIIIII.INNNNN...NNNN.NNIIIIIII..SSSSSSSSSSSSTTTTTTTTTTTTEEEEEEEEEE.ERRRRRRRRR....
+##.MMMMM....MMMMMM.MIIIIIII.INNNNN...NNNN.NNIIIIIII.ISSSSSSSSSSSSTTTTTTTTTTTTEEEEEEEEEE.ERRRRRRRRRR...
+##.MMMMMM..MMMMMMM...IIII...INNNNNN..NNNN...IIIII...ISSSSSSSSSS....TTTT.....TEEE........ERRR.RRRRRR...
+##.MMMMMM..MMMMMMM...IIII...INNNNNNN.NNNN...IIIII...ISSS....SSS....TTTT.....TEEE........ERRR...RRRR...
+##.MMMMMMMMMMMMMMM...IIII...INNNNNNN.NNNN...IIIII...ISSSSS.........TTTT.....TEEE........ERRR...RRRR...
+##.MMMMMMMMMMMMMMM...IIII...INNNNNNNNNNNN...IIIII...ISSSSSSSSS.....TTTT.....TEEEEEEEEE..ERRR.RRRRRR...
+##.MMMMMMMMMMMMMMM...IIII...INNNNNNNNNNNN...IIIII...ISSSSSSSSSS....TTTT.....TEEEEEEEEE..ERRRRRRRRRR...
+##.MMMMMMMMMMMMMMM...IIII...INNNNNNNNNNNN...IIIII.....SSSSSSSSS....TTTT.....TEEE........ERRRRRRRR.....
+##.MMMMMMMMMMMMMMM...IIII...INNNN.NNNNNNN...IIIII.........SSSSSS...TTTT.....TEEE........ERRRRRRRRR....
+##.MMMM.MMMM.MMMMM...IIII...INNNN..NNNNNN...IIIII..IIS.....SSSSS...TTTT.....TEEE........ERRR.RRRRRR...
+##.MMMM......MMMMM...IIII...INNNN..NNNNNN...IIIII..IISSSS.SSSSS....TTTT.....TEEE........ERRR..RRRRRR..
+##.MMMM......MMMMM.MIIIIIII.INNNN...NNNNN.NNIIIIIIIIISSSSSSSSSS....TTTT.....TEEEEEEEEEE.ERRR...RRRRR..
+##.MMMM......MMMMM.MIIIIIII.INNNN...NNNNN.NNIIIIIII.ISSSSSSSSS.....TTTT.....TEEEEEEEEEE.ERRR....RRRR..
+##....................................................................................................
 
 AUS_Adolf_Hitler:0 "アドルフ・ヒトラー"
 AUS_Heinrich_Himmler:0 "ハインリヒ・ヒムラー"
@@ -234,19 +316,63 @@ AUS_franz_josef_otto_von_habsburg:0 "フランツ＝ヨーゼフ2世"
 AUS_Karl_Renner:0 "カール・レンナー"
 AUS_Richard_Coudenhove_Kalergi:0 "リヒャルト・クーデンホーフ＝カレルギー"
 
-### tech_share ###
+##............................................................................................................................
+##.TTTTTTTTTTTTEEEEEEEEEEEE...CCCCCCCCC.HHHH....HHHHH........SSSSSSSSSS..HHHH....HHHHH....AAAAAA....RRRRRRRRRRR...EEEEEEEEEE..
+##.TTTTTTTTTTTTEEEEEEEEEEEE.CCCCCCCCCCC.HHHH....HHHHH.......SSSSSSSSSSS..HHHH....HHHHH....AAAAAA....RRRRRRRRRRRR..EEEEEEEEEE..
+##.....TTTT.....EEEE........CCCCCC.CCCC.HHHH....HHHHH.......SSSSSSSSSSS..HHHH....HHHHH....AAAAAA....RRRRR.RRRRRR..EEEE........
+##.....TTTT.....EEEE.......CCCCC.....CC.HHHH....HHHHH.......SSSS....SSS..HHHH....HHHHH...AAAAAAAA...RRRRR...RRRR..EEEE........
+##.....TTTT.....EEEE.......CCCCC........HHHH....HHHHH.......SSSSSS.......HHHH....HHHHH...AAAAAAAA...RRRRR..RRRRR..EEEE........
+##.....TTTT.....EEEEEEEEEE.CCCCC........HHHHHHHHHHHHH.......SSSSSSSSSS...HHHHHHHHHHHHH..AAAAAAAAAA..RRRRR.RRRRRR..EEEEEEEEEE..
+##.....TTTT.....EEEEEEEEEE.CCCC.........HHHHHHHHHHHHH.......SSSSSSSSSSS..HHHHHHHHHHHHH..AAAAAAAAAA..RRRRRRRRRRR...EEEEEEEEEE..
+##.....TTTT.....EEEE.......CCCCC........HHHH....HHHHH.........SSSSSSSSSS.HHHH....HHHHH..AAAA..AAAA..RRRRRRRRRR....EEEE........
+##.....TTTT.....EEEE.......CCCCC........HHHH....HHHHH.............SSSSSS.HHHH....HHHHH.AAAAAAAAAAAA.RRRRRRRRRRR...EEEE........
+##.....TTTT.....EEEE.......CCCCC.....CC.HHHH....HHHHH.......SSS....SSSSS.HHHH....HHHHH.AAAAAAAAAAAA.RRRRR.RRRRRR..EEEE........
+##.....TTTT.....EEEE........CCCCCC.CCCC.HHHH....HHHHH.......SSSSS.SSSSSS.HHHH....HHHHHHAAAA....AAAAARRRRR..RRRRR..EEEE........
+##.....TTTT.....EEEEEEEEEEE.CCCCCCCCCCC.HHHH....HHHHH.......SSSSSSSSSSS..HHHH....HHHHHHAAAA....AAAAARRRRR..RRRRRR.EEEEEEEEEE..
+##.....TTTT.....EEEEEEEEEEE...CCCCCCCCC.HHHH....HHHHH.......SSSSSSSSSS...HHHH....HHHHHHAAA.....AAAAARRRRR...RRRRREEEEEEEEEEE..
+##............................................................................................................................
 
 austria_hungarian_empire_tech_share_name:0 "オーストリア・ハンガリー帝国の技術共有"
 austria_hungarian_empire_tech_share_desc:0 "オーストリア・ハンガリー帝国内はある程度の技術共有が行われている。"
 
-### Traits ###
+##..............................................................
+##.TTTTTTTTTTTTRRRRRRRRRRR......AAAAAA....IIIIIIIIITTTTTTTTTTT..
+##.TTTTTTTTTTTTRRRRRRRRRRRR.....AAAAAA....IIIIIIIIITTTTTTTTTTT..
+##.....TTTT.....RRRR..RRRRRR....AAAAAAA.....IIIII......TTTT.....
+##.....TTTT.....RRRR...RRRRR...AAAAAAAA.....IIIII......TTTT.....
+##.....TTTT.....RRRR...RRRRR...AAAAAAAA.....IIIII......TTTT.....
+##.....TTTT.....RRRR.RRRRRR....AAAAAAAAA....IIIII......TTTT.....
+##.....TTTT.....RRRRRRRRRRR...AAAAAAAAAA....IIIII......TTTT.....
+##.....TTTT.....RRRRRRRRR.....AAAA..AAAAA...IIIII......TTTT.....
+##.....TTTT.....RRRR.RRRRR...AAAAAAAAAAAA...IIIII......TTTT.....
+##.....TTTT.....RRRR.RRRRRR..AAAAAAAAAAAA...IIIII......TTTT.....
+##.....TTTT.....RRRR..RRRRRR.AAAA....AAAAA..IIIII......TTTT.....
+##.....TTTT.....RRRR...RRRRRRAAAA....AAAAAIIIIIIIII....TTTT.....
+##.....TTTT.....RRRR....RRRRRAAAA.....AAAAIIIIIIIII....TTTT.....
+##..............................................................
 
 AUS_Wiligut_traits:0 "イルミン教の継承者"
 AUS_Hanussen_traits:0 "不気味な怪人物"
 AUS_Himmler_traits:0 "秘密警察長官"
 AUS_Hitler_traits:0 "演説の名手"
 
-### NF ###
+##...........................
+##.NNNNN....NNNN.NFFFFFFFFF..
+##.NNNNNN...NNNN.NFFFFFFFFF..
+##.NNNNNNN..NNNN.NFFFF.......
+##.NNNNNNN..NNNN.NFFFF.......
+##.NNNNNNNN.NNNN.NFFFF.......
+##.NNNNNNNN.NNNN.NFFFFFFFFF..
+##.NNNNNNNNNNNNN.NFFFFFFFFF..
+##.NNNN.NNNNNNNN.NFFFF.......
+##.NNNN.NNNNNNNN.NFFFF.......
+##.NNNN..NNNNNNN.NFFFF.......
+##.NNNN...NNNNNN.NFFFF.......
+##.NNNN...NNNNNN.NFFFF.......
+##.NNNN....NNNNN.NFFFF.......
+##...........................
+
+# AFFAIRS
 
 AUS_abolition_of_krone:0 "クローネの廃止"
 AUS_abolition_of_krone_desc:0 "クローネ…正式にはオーストリア＝ハンガリー・クローネは、アウスグライヒの頃からあった帝国の基底通貨だったが、いまやクローネはハイパーインフレーションに陥り、まともな通貨として機能していない。\nここで下手に100兆クローネなどを発行するのは明らかに悪手だ。様々なデメリットも抱えているが、クローネを廃止し新たにオーストリア＝ハンガリー・シリングを発行することが、この混乱への最も効果的な対応である。"
@@ -392,10 +518,10 @@ AUS_operations_in_mediterranean_desc:0 "地中海は、我々にってより広�
 AUS_invasion_and_landing:0 "強襲上陸戦術"
 AUS_invasion_and_landing_desc:0 "遠くの大陸や島国を攻略する唯一の手段は、強襲上陸だ。我々の軍は強襲上陸をすることなしに海軍の真の利用価値を見出すことはできない。水兵"
 
-### air ###
+# AIRFORCE
 
-AUS_silver_wings:0 "帝立航空部隊の拡張"
-AUS_silver_wings_desc:0 "我が国は、航空機の出現以降他国と同様に陸海軍とは別の立ち位置の部隊として航空隊を編成してきた。しかし近年、航空機の性能はより上昇し戦争への影響も高くなることが予想されて来ている。我が国にある帝立航空部隊も、その役割を拡張した帝国空軍として再編していくべきだ。"
+AUS_erweiterung_der_luftwaffe:0 "帝立航空部隊の拡張"
+AUS_erweiterung_der_luftwaffe_desc:0 "我が国は、航空機の出現以降他国と同様に陸海軍とは別の立ち位置の部隊として航空隊を編成してきた。しかし近年、航空機の性能はより上昇し戦争への影響も高くなることが予想されて来ている。我が国にある帝立航空部隊も、その役割を拡張した帝国空軍として再編していくべきだ。"
 AUS_foreign_air_force_officers:0 "外国の空軍士官"
 AUS_foreign_air_force_officers_desc:0 "我々の空軍に関する知見は驚くほど不足している。そこで、新たに創設された空軍の指導部は、外国の空軍士官を招致して、その技術力の向上に励もうとしている。どれ程が了承するかは未知数だが、得られるものは多いだろう。"
 AUS_airport_maintenance:0 "空港の整備"
@@ -425,7 +551,7 @@ AUS_breaking_through_flak_desc:0 "爆撃機は、運用していく過程で新�
 AUS_airs_tank:0 "空の戦車"
 AUS_airs_tank_desc:0 "近接航空支援機は、運用開始以降、良い戦果を挙げ続けている。この航空機をより驚異的な存在にするべく、一つの案が浮上した。それは、戦闘機との戦闘でも機体がびくともしない重装近接航空支援機である。重装爆撃機と似た設計思想だが、実現したらもはやこの航空機は天上の戦車と化すだろう。"
 
-### army ###
+# ARMY
 
 AUS_reform_of_reichswehr:0 "帝国軍改革"
 AUS_reform_of_reichswehr_desc:0 "帝国軍は、伝統的に非常に弱いことで有名である。こんな不名誉なことは許されないのだが、ハプスブルク家は外交に注力してきたため、それでも問題はなかった。しかし、現代では政略結婚を含め彼らの行う外交は、もはや意味をなさなくなってきた。しかし、帝国軍は改革もしてこなかったし、多民族で構成されているという明確な弱点が存在している。だが、腹をくくってでもこの退廃的な軍を改革しなければならない。"
@@ -444,7 +570,7 @@ AUS_purge_of_the_old_guard_desc:0 "改革には犠牲を伴う…現在のわが
 AUS_becoming_modern_army:0 "近代陸軍への昇華"
 AUS_becoming_modern_army_desc:0 "我々の普段の近代化の努力によって、帝国軍は世界レベルの陸軍を編成する用意ができた。これにて、我々が他国に追いつく時代は終焉を迎え、我々が世界をリードする陸軍を設立していくのだ。"
 
-### new army ###
+# NEW ARMY
 
 AUS_multidimensional_expansion:0 "多方面展開"
 AUS_multidimensional_expansion_desc:0 "我が帝国は広大なだけではなく、外交をすべき隣国が非常に多く存在しており、そのすべてに敵対された場合、最初から包囲されるような格好になってしまう。外交で解決できるならそれが一番なのだが、万一帝国の多方面で敵勢力が出現したとしても、我々は対処しなければいけない。そのため、この広大な帝国を防衛しきるすべを考えなくてはならない。"
@@ -512,12 +638,40 @@ AUS_draft_for_local_defense_desc:0 "プロパガンダは大いなる成功を�
 AUS_divisionalizable_border_guards:0 "展開可能な国境警備隊"
 AUS_divisionalizable_border_guards_desc:0 "強化されたとはいえ、国境警備隊は所詮は国境警備隊だ。しかし、帝国中の国境警備隊を速やかに輸送・組織化をすることによって、神出鬼没な防衛師団を錬成する試みがある。"
 
-### state modifier ###
+##...............................................................................................................
+##...SSSSSSSSSSSTTTTTTTTTTT..AAAAAA..AAAATTTTTTTTTTTTEEEEEEEE....... MMM....MMMMM....MOOOOOOOO...OOODDDDDDDD....
+##..SSSSSSSSSSSSTTTTTTTTTTT..AAAAAA..AAAATTTTTTTTTTTTEEEEEEEE....... MMM....MMMMM...MMOOOOOOOOO..OOODDDDDDDDD...
+##.SSSSSS.SSSSS....TTTT......AAAAAA......TTTTT....TTTE.............. MMMM..MMMMMM..MMMOOO.OOOOOO.OOODD.DDDDDDD..
+##.SSSSS....SSS....TTTT.....AAAAAAAA.....TTTTT....TTTE.............. MMMM..MMMMMM..MMMOO...OOOOO.OOODD...DDDDD..
+##.SSSSSS..........TTTT.....AAAAAAAA.....TTTTT....TTTE.............. MMMMMMMMMMMM.MMMMO.....OOOOOOOODD....DDDD..
+##.SSSSSSSSSS......TTTT....TAAAAAAAAA....TTTTT....TTTEEEEEEE........ MMMMMMMMMMMM.MMMMO.....OOOOOOOODD....DDDD..
+##..SSSSSSSSSSS....TTTT....TAAAAAAAAA....TTTTT....TTTEEEEEEE........ MMMMMMMMMMMM.MMMMO.....OOOOOOOODD....DDDD..
+##...SSSSSSSSSS....TTTT....TAAA..AAAA....TTTTT....TTTE.............. MMMMMMMMMMMM.MMMMO.....OOOOOOOODD....DDDD..
+##........SSSSS....TTTT...TTAAAAAAAAAA...TTTTT....TTTE.............. MMMMMMMMMMMM.MMMMO.....OOOOOOOODD....DDDD..
+##.SSS.....SSSS....TTTT...TTAAAAAAAAAA...TTTTT....TTTE.............. MM.MMMM.MMMM..MMMOO...OOOOO.OOODD...DDDDD..
+##.SSSSSSSSSSSS....TTTT..TTTAA....AAAAA..TTTTT....TTTE.............. MM......MMMM..MMMOOO.OOOOOO.OOODD.DDDDDDD..
+##.SSSSSSSSSSSS....TTTT..TTTAA....AAAAA..TTTTT....TTTEEEEEEEE....... MM......MMMM...MMOOOOOOOOO..OOODDDDDDDDD...
+##..SSSSSSSSS......TTTT..TTTA.....AAAAA..TTTTT....TTTEEEEEEEE....... MM......MMMM....MOOOOOOOO...OOODDDDDDDD....
+##...............................................................................................................
 
 AUS_industrialised_tyrol_effect:0 "工業化された山岳地帯"
 AUS_industrialised_effect:0 "高度な工業地帯"
 
-### tooltip ###
+##.....................................................................................
+##.TTTTTTTTTTTTO.OOOOOOOOO......OOOOOOOOO...LLLLL...LLLTTTTTTTTTTTTIIIIII.IIPPPPPPPPP..
+##.TTTTTTTTTTTTOOOOOOOOOOOO...OOOOOOOOOOOO..LLLLL...LLLTTTTTTTTTTTTIIIIII.IIPPPPPPPPP..
+##.....TTTT....OOOOOO.OOOOOO..OOOOOOOOOOOO..LLLLL.......TTTTT......IIII...IIPPP.PPPPP..
+##.....TTTT....OOOOO...OOOOO.OOOOO....OOOOO.LLLLL.......TTTTT......IIII...IIPPP..PPPP..
+##.....TTTT...TOOOO.....OOOOOOOOOO....OOOOO.LLLLL.......TTTTT......IIII...IIPPP..PPPP..
+##.....TTTT...TOOOO.....OOOOOOOOOO.....OOOO.LLLLL.......TTTTT......IIII...IIPPP.PPPPP..
+##.....TTTT...TOOOO.....OOOOOOOOO......OOOO.LLLLL.......TTTTT......IIII...IIPPPPPPPPP..
+##.....TTTT...TOOOO.....OOOOOOOOOO.....OOOO.LLLLL.......TTTTT......IIII...IIPPPPPPPP...
+##.....TTTT...TOOOO.....OOOOOOOOOO....OOOOO.LLLLL.......TTTTT......IIII...IIPPP........
+##.....TTTT....OOOOO...OOOOO.OOOOO....OOOOO.LLLLL.......TTTTT......IIII...IIPPP........
+##.....TTTT....OOOOOO.OOOOOO..OOOOOOOOOOOO..LLLLL.......TTTTT......IIII...IIPPP........
+##.....TTTT.....OOOOOOOOOOO...OOOOOOOOOOOO..LLLLLLLLLLL.TTTTT....TTIIIIII.IIPPP........
+##.....TTTT......OOOOOOOOO......OOOOOOOOO...LLLLLLLLLLL.TTTTT....TTIIIIII.IIPPP........
+##.....................................................................................
 
 AUS_focus_select_effect_tt:0 "国家方針開始時の即時の影響:"
 AUS_focus_selection_effect_tt:0 "国家方針選択中の影響:"
@@ -535,10 +689,10 @@ decision_cost_PP_50_tooltip:0 "このディシジョンを実行するには、�
 AUS_external_duty_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y2.5%§!\n\n§Y帝国の工業§!に以下の修正:\n消費財工場: §Y2.5%§!\n\n§Y大阪大暴落の余波§!に以下の修正:\n産出資源の海外市場への放出: §Y-20%§!\n禁輸コスト補正: §G-80.0%§!\n禁輸の国際緊張値: §G-1000.0%§!\n\n"
 AUS_external_duty_trt:0 "国民精神§Y大阪大暴落の余波§!を有している"
 AUS_abolition_of_krone_tt:0 "この国家方針を取得すると、§Yクローネ§!による§Yハイパーインフレーション§!の影響が段階的に軽減されていく。"
-AUS_reichs_autobahn_tt:0 "§Yツィスライタニエン§!の§Yウィーン§!と陸続きの全ての領有州の§Yインフラ§! レベルを§G1§!上昇させる。\n\n§Y帝国の工業§!に以下の修正:\n§Yインフラ§!建設速度: §G+20.0%§!\n\n"
+AUS_reichs_autobahn_tt:0 "§Yツィスライタニエン§!の§Yウィーン§!と陸続きの全ての領有州の§Yインフラ§! レベルを§G1§!上昇させる。\n"
 AUS_site_reform_tt:0 "§Y帝国の工業§!に以下の修正:\n全州の最大工場立地数: §G+25.00%§!\n\n"
 AUS_liberate_habsburg_lands_tt:0 "§Y帝国の工業§!に以下の修正:\n全州の最大工場立地数: §G+15.00%§!\n建設速度: §G+25.00%§!\n§Y民需工場§!建設速度: §G+25.00%§!\n\n"
-AUS_improved_industrial_space_tt:0 "§Y帝国の工業§!に以下の修正:\n建設速度: §G+10.00%§!\n£prod_eff 生産効率成長率: §G+20.00%§!\n生産効率基本値: §G+10.00%§!\n資源不足ペナルティ: §G-10.00%§!\n工場出力: §G+20.00%§!\n造船所出力: §G+20.00%§!\n"
+AUS_improved_industrial_space_tt:0 "§Y帝国の工業§!に以下の修正:\n建設速度: §G+10.00%§!\n資源不足ペナルティ: §G-10.00%§!\n工場出力: §G+20.00%§!\n造船所出力: §G+20.00%§!\n"
 AUS_development_of_translytanien_tt:0 "§Y帝国の工業§!に以下の修正:\n建築速度: §G+10.00%§!\n\n"
 AUS_finish_plunge:0 "§Y恐慌§!が終結した"
 AUS_resource_competitiveness_tt:0 "§Y帝国の工業§!の資源系デバフを解除する。\nまた、既に研究し終えているものも含め、§Y掘削§!系の技術を研究する度、効果の§Y50%§!が§Y帝国の工業§!に効果として上乗せされる。"
@@ -557,10 +711,24 @@ AUS_development_of_upper_hungary_farms_tt:0 "§Y帝国の農業§!に以下の�
 AUS_mechanization_of_hungarian_agriculture_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y-1.0%§!\n月毎の人口: §G+4.0%§!\n徴兵可能人口補正: §G+2%§!\n師団消耗: §G-1.0%§!\n"
 AUS_sophisticated_light_industry_tt:0 "§Y帝国の工業§!に以下の修正:\n消費財工場: §Y-5.0%§!\n\n"
 AUS_enduring_economy_tt:0 "帝国の§Y財政§!の立て直しに関するディシジョンが解禁される。"
-AUS_new_industrial_structures_tt:0 "§Y帝国の工業§!に以下の修正:\n£prod_eff 生産効率成長率: §G+20.00%§!\n日毎のサンディカリズムへの支援: §R-0.02§!\n日毎の急進社会主義への支援: §R-0.02§!\n日毎の社会民主主義への支援: §R-0.02§!\n"
+AUS_new_industrial_structures_tt:0 "§Y帝国の工業§!に以下の修正:\n£prod_eff 生産効率成長率: §G+40.00%§!\n生産効率基本値: §G+10.00%§!\n"
 AUS_developing_petrochemical_industry_tt:0 "\n§Y帝国の工業§!に以下の修正:\n§Y合成精製所§!建設速度: §G+33.3%§!"
 
-### flags ###
+##...................................................
+##.FFFFFFFFFFFFLLL..........AAAAA.......GGGGGGGGGG...
+##.FFFFFFFFFFFFLLL..........AAAAAA.....GGGGGGGGGGGG..
+##.FFFF.......FLLL.........AAAAAAA....AGGGGGGGGGGGG..
+##.FFFF.......FLLL.........AAAAAAAA..AAGGGG.....GGG..
+##.FFFF.......FLLL........AAAAAAAAA..AAGGG...........
+##.FFFFFFFFFF.FLLL........AAAAAAAAA..AAGGG...........
+##.FFFFFFFFFF.FLLL........AAAA.AAAAA.AAGGG.GGGGGGGG..
+##.FFFF.......FLLL.......AAAAA.AAAAA.AAGGG.GGGGGGGG..
+##.FFFF.......FLLL.......AAAAAAAAAAA.AAGGG....GGGGG..
+##.FFFF.......FLLL.......AAAAAAAAAAAAAAGGGG...GGGGG..
+##.FFFF.......FLLL......LAAAA...AAAAA.AGGGGGG.GGGGG..
+##.FFFF.......FLLLLLLLLLLAAA.....AAAAA.GGGGGGGGGGGG..
+##.FFFF.......FLLLLLLLLLLAAA.....AAAAA..GGGGGGGGGG...
+##...................................................
 
 AUS_creditanstalt_rescued_1:0 "クレディタンシュタルトは救済された"
 AUS_creditanstalt_rescued_2:0 "クレディタンシュタルトは延命された"
@@ -568,36 +736,18 @@ AUS_developing_mountain_infrastructure:0 "山岳インフラを開発中であ�
 AUS_addressing_plunge:0 "恐慌に対処中"
 AUS_mechanization_of_hungarian_agriculture_a_tt:0 "農場がすでに開発されている"
 
-### faction ###
-
-FACTION_NAME_SOCIAL_CONSERVATIVE_3:0 "ハンガリー包囲網"
-
-### cosmic tag ###
-
-AUS_Cisleithanien:0 "オーストリア諸邦"
-AUS_Cisleithanien_ADJ:0 "オーストリア"
-AUS_Cisleithanien_DEF:0 "オーストリア諸邦"
-
-HUN_Transleithanien:0 "ハンガリー王冠領"
-HUN_Transleithanien_ADJ:0 "ハンガリー"
-HUN_Transleithanien_DEF:0 "聖イシュトヴァーン王冠の諸邦"
-
-GAL_AUS:0 "ガリツィア・ロドメリア王国"
-GAL_AUS_ADJ:0 "ガリツィア・ロドメリア"
-GAL_AUS_DEF:0 "ガリツィア・ロドメリア王国及びクラカウ大公国・アウシュヴィッツ公国・ザトル公国"
-
-CZE_AUS:0 "ボヘミア王冠領"
-CZE_AUS_ADJ:0 "ボヘミア"
-CZE_AUS_DEF:0 "ボヘミア王国の王冠"
-
-DAL_AUS:0 "ダルマティア王国"
-DAL_AUS_ADJ:0 "ダルマチア"
-DAL_AUS_DEF:0 "ダルマティア王国"
-
-BOS_AUS:0 "共同統治国ボスニア・ヘルツェゴヴィナ"
-BOS_AUS_ADJ:0 "ボスニア・ヘルツェゴヴィナ"
-BOS_AUS_DEF:0 "ボスニア・ヘルツェゴヴィナ"
-
-CRO_HUN:0 "クロアチア＝スラヴォニア王国"
-CRO_HUN_ADJ:0 "クロアチア＝スラヴォニア"
-CRO_HUN_DEF:0 "クロアチア・スラヴォニア及びダルマチア三重王国"
+##.......................................................................................
+##.FFFFFFFFFFF..AAAAAA......CCCCCCCCCCCCTTTTTTTTTTTTIIIIIII..OOOOOOOOO....OONNN....NNNN..
+##.FFFFFFFFFFF..AAAAAA.....ACCCCCCCCCCCCTTTTTTTTTTTTIIIIIII.IOOOOOOOOOO...OONNNN...NNNN..
+##.FFFF.........AAAAAA....AACCCCCCCCCC....TTTT......IIIII..IIOOOOOOOOOOO..OONNNNN..NNNN..
+##.FFFF........AAAAAAAA...AACCC....CCC....TTTT......IIIII..IIOOO...OOOOOO.OONNNNN..NNNN..
+##.FFFF........AAAAAAAA...AACCC...........TTTT......IIIII..IIOO.....OOOOO.OONNNNNN.NNNN..
+##.FFFFFFFFFF.FAAAAAAAAA..AACC............TTTT......IIIII..IIOO.....OOOOO.OONNNNNN.NNNN..
+##.FFFFFFFFFF.FAAAAAAAAA..AACC............TTTT......IIIII..IIOO.....OOOOO.OONNNNNNNNNNN..
+##.FFFF.......FAAA..AAAA..AACC............TTTT......IIIII..IIOO.....OOOOO.OONN.NNNNNNNN..
+##.FFFF......FFAAAAAAAAAA.AACCC...........TTTT......IIIII..IIOO.....OOOOO.OONN.NNNNNNNN..
+##.FFFF......FFAAAAAAAAAA.AACCC....CCC....TTTT......IIIII..IIOOO...OOOOOO.OONN..NNNNNNN..
+##.FFFF.....FFFAA....AAAAAAACCCCCCCCCC....TTTT......IIIII..IIOOOOOOOOOOO..OONN...NNNNNN..
+##.FFFF.....FFFAA....AAAAA.ACCCCCCCCCC....TTTT....TTIIIIIII.IOOOOOOOOOO...OONN...NNNNNN..
+##.FFFF.....FFFA.....AAAAA..CCCCCCCCC.....TTTT....TTIIIIIII..OOOOOOOOO....OONN....NNNNN..
+##.......................................................................................

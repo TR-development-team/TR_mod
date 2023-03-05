@@ -305,12 +305,6 @@ focus_tree = {
 				AUS_ri_production_speed_buildings_factor_modifier = 0.1
 			}
 			add_to_variable = {
-				AUS_ri_production_factory_efficiency_gain_factor_modifier = 0.2
-			}
-			add_to_variable = {
-				AUS_ri_production_factory_start_efficiency_factor_modifier = 0.1
-			}
-			add_to_variable = {
 				AUS_ri_production_lack_of_resource_penalty_factor_modifier = -0.1
 			}
 			add_to_variable = {
@@ -347,16 +341,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_to_variable = {
-				AUS_ri_radical_socialist_drift_modifier = -0.02
+				AUS_ri_production_factory_efficiency_gain_factor_modifier = 0.4
 			}
 			add_to_variable = {
-				AUS_ri_social_democrat_drift_modifier = -0.02
-			}
-			add_to_variable = {
-				AUS_ri_syndicalist_drift_modifier = -0.02
-			}
-			add_to_variable = {
-				AUS_ri_production_factory_efficiency_gain_factor_modifier = 0.2
+				AUS_ri_production_factory_start_efficiency_factor_modifier = 0.1
 			}
 			custom_effect_tooltip = AUS_new_industrial_structures_tt
 		}
@@ -377,10 +365,12 @@ focus_tree = {
 				uses = 6
 				category = synth_resources
 			}
-			add_to_variable = {
-				AUS_ri_production_speed_synthetic_refinery_factor_modifier = 0.33
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 1
 			}
-			custom_effect_tooltip = AUS_developing_petrochemical_industry_tt
+			add_ideas = AUS_development_of_the_petrochemical_industry_idea
 		}
 	}
 	focus = {
@@ -827,8 +817,9 @@ focus_tree = {
 		cancelable = no
 		completion_reward = {
 			custom_effect_tooltip = AUS_reichs_autobahn_tt
-			add_to_variable = {
-				AUS_ri_production_speed_infrastructure_factor_modifier = 0.2
+			add_timed_idea = {
+				idea = AUS_reichs_autobahn_idea
+				days = 1826
 			}
 			AUS_decreased_impact_of_the_depression_effect = yes
 			hidden_effect = {
@@ -993,10 +984,10 @@ focus_tree = {
 				start_province = 3924
 				target_province = 11816
 			}
-			add_to_variable = {
-				AUS_ri_production_speed_rail_way_factor_modifier = 0.2
+			add_timed_idea = {
+				idea = AUS_empire_and_railways_idea
+				days = 1826
 			}
-			custom_effect_tooltip = AUS_empire_and_railways_tt
 		}
 	}
 	focus = {
@@ -1737,7 +1728,7 @@ focus_tree = {
 	##.AAAA.....AAAAAIIIIIIII.RRRRR...RRRRRFFFFF.........OOOOOOOOO...RRRRR...RRRRRC..CCCCCCCCC.EEEEEEEEEEE..
 	##......................................................................................................
 	focus = {
-		id = AUS_silver_wings
+		id = AUS_erweiterung_der_luftwaffe
 		icon = GFX_goal_generic_air_fighter2
 		cost = 5
 		x = 10
@@ -1752,11 +1743,11 @@ focus_tree = {
 		id = AUS_foreign_air_force_officers
 		icon = GFX_focus_generic_military_academy
 		cost = 5
-		relative_position_id = AUS_silver_wings
+		relative_position_id = AUS_erweiterung_der_luftwaffe
 		x = 0
 		y = 1
 		prerequisite = {
-			focus = AUS_silver_wings
+			focus = AUS_erweiterung_der_luftwaffe
 		}
 		completion_reward = {
 		}
@@ -1765,11 +1756,11 @@ focus_tree = {
 		id = AUS_airport_maintenance
 		icon = GFX_goal_generic_position_armies
 		cost = 5
-		relative_position_id = AUS_silver_wings
+		relative_position_id = AUS_erweiterung_der_luftwaffe
 		x = 2
 		y = 1
 		prerequisite = {
-			focus = AUS_silver_wings
+			focus = AUS_erweiterung_der_luftwaffe
 		}
 		completion_reward = {
 		}
@@ -1914,7 +1905,7 @@ focus_tree = {
 			focus = AUS_regional_sea_control
 		}
 		prerequisite = {
-			focus = AUS_silver_wings
+			focus = AUS_erweiterung_der_luftwaffe
 		}
 		completion_reward = {
 		}
@@ -2521,4 +2512,20 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+
+	##..........................................................................................................
+	##.PPPPPPPPPP....OOOOOOOOO....LLLL......LIIIIIIIIITTTTTTTTTTTTIIIIIIII..CCCCCCCCCC....AAAAA.....ALLLL.......
+	##.PPPPPPPPPPP..OOOOOOOOOOO...LLLL......LIIIIIIIIITTTTTTTTTTTTIIIIIIII.CCCCCCCCCCC....AAAAAA....ALLLL.......
+	##.PPPP.PPPPPP.POOOOO.OOOOOO..LLLL........IIIII......TTTT......IIIII..ICCCCCCCCCCC...AAAAAAA....ALLLL.......
+	##.PPPP...PPPPPPOOOO...OOOOO..LLLL........IIIII......TTTT......IIIII..ICCCC....CCC...AAAAAAAA...ALLLL.......
+	##.PPPP...PPPPPPOOO.....OOOOO.LLLL........IIIII......TTTT......IIIII..ICCCC.........AAAAAAAAA...ALLLL.......
+	##.PPPP.PPPPPPPPOOO.....OOOOO.LLLL........IIIII......TTTT......IIIII..ICCC..........AAAAAAAAA...ALLLL.......
+	##.PPPPPPPPPPPPPOOO.....OOOOO.LLLL........IIIII......TTTT......IIIII..ICCC..........AAAA.AAAAA..ALLLL.......
+	##.PPPPPPPPPP.PPOOO.....OOOOO.LLLL........IIIII......TTTT......IIIII..ICCC.........CAAAA.AAAAA..ALLLL.......
+	##.PPPP.......PPOOO.....OOOOO.LLLL........IIIII......TTTT......IIIII..ICCCC........CAAAAAAAAAA..ALLLL.......
+	##.PPPP........POOOO...OOOOO..LLLL........IIIII......TTTT......IIIII..ICCCC....CCC.CAAAAAAAAAAA.ALLLL.......
+	##.PPPP........POOOOO.OOOOOO..LLLL........IIIII......TTTT......IIIII..ICCCCCCCCCCCCCAAA...AAAAA.ALLLL.......
+	##.PPPP.........OOOOOOOOOOO...LLLLLLLLLLLIIIIIIII....TTTT....TIIIIIIII.CCCCCCCCCCCCCAA.....AAAAAALLLLLLLLL..
+	##.PPPP..........OOOOOOOOO....LLLLLLLLLLLIIIIIIII....TTTT....TIIIIIIII..CCCCCCCCCCCCAA.....AAAAAALLLLLLLLL..
+	##..........................................................................................................
 }

@@ -50,13 +50,13 @@ ideas = {
 		AUS_wiener_kreis_idea = {
 			picture = AUS_wiener_kreis
 			modifier = {
-				research_speed_factor = 0.1
+				research_speed_factor = 0.06
 			}
 		}
 		AUS_hungarian_scientist_idea = {
 			picture = AUS_hungarian_research_institution
 			modifier = {
-				research_speed_factor = 0.03
+				research_speed_factor = 0.01
 			}
 		}
 		AUS_hungarian_research_institution_idea = {
@@ -83,7 +83,7 @@ ideas = {
 		AUS_prager_schule_idea = {
 			picture = AUS_prager_schule
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.02
 			}
 		}
 		AUS_loss_of_hungarian_initiative = {
@@ -167,6 +167,31 @@ ideas = {
 				political_power_cost = 1
 				stability_weekly = -0.001
 				consumer_goods_factor = 0.1
+			}
+		}
+		AUS_reichs_autobahn_idea = {
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		AUS_reichs_autobahn_idea = {
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.2
+			}
+		}
+		AUS_empire_and_railways_idea = {
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_rail_way_factor = 0.2
+				production_speed_supply_node_factor = 0.1
+			}
+		}
+		AUS_development_of_the_petrochemical_industry_idea = {
+			picture = generic_stockpile_fuel
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.33
 			}
 		}
 	}
