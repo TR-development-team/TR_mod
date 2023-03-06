@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 50
-			tag = GER
+			tag = RAT
 		}
 	}
         continuous_focus_position = { x = 700 y = 0 }
@@ -59,7 +59,7 @@ focus_tree = {
 				prioritize = { 64 }
 				create_unit = {
 					division = "division_template = \"Red Militia\" start_experience_factor = 0.1"
-					owner = GER
+					owner = RAT
 					count = 2
 				}
 			}
@@ -67,7 +67,7 @@ focus_tree = {
 				prioritize = { 51 }
 				create_unit = {
 					division = "division_template = \"Red Militia\" start_experience_factor = 0.1"
-					owner = GER
+					owner = RAT
 					count = 2
 				}
 			}
@@ -106,7 +106,7 @@ focus_tree = {
 				prioritize = { 64 }
 				create_unit = {
 					division = "division_template = \"Red Infantry\" start_experience_factor = 0.1"
-					owner = GER
+					owner = RAT
 					count = 2
 				}
 			}

@@ -185,3 +185,18 @@ has_large_ally_not_pick_closed_economy = {
 		num_of_military_factories > 30
 	}
 }
+
+ETH_is_horn_of_africa_original_tag = {
+	OR = {
+		original_tag = ETH
+		original_tag = SOM
+		original_tag = ERI
+		original_tag = DJI
+	}
+}
+
+ITA_is_italian_tag_for_music = {
+	OR = {
+		original_tag = ITA
+	}
+}

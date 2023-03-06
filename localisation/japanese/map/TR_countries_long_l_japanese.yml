@@ -36,6 +36,8 @@
  CHI_council_republic_DEF:0 "中華評議会共和国"
  CHI_minguo:0 "中華民国"
  CHI_minguo_DEF:0 "中華民国"
+ CHI_united_provinces:0 "中華連合省"
+ CHI_united_provinces_DEF:0 "中華連合省"
  
  CKK_republic:0 "チュクチ共和国"
  CKK_republic_DEF:0 "チュクチ共和国"
@@ -47,6 +49,8 @@
  GXC_military_clique:0 "広西軍閥"
  GXC_military_clique_DEF:0 "広西軍閥"
  
+ IND_republic:0 "インド共和国"
+ IND_republic_DEF:0 "インド共和国"
  
  INS_military_government:0 "インドネシア軍政府"
  INS_military_government_DEF:0 "インドネシア軍政府"
@@ -87,6 +91,8 @@
  
  MAN_federation:0 "満州聯邦"
  MAN_federation_DEF:0 "満州聯邦"
+ MAN_liberated_area:0 "満州自由地区"
+ MAN_liberated_area_DEF:0 "満州自由地区"
  MAN_united_states:0 "満州合衆国"
  MAN_united_states_DEF:0 "満州合衆国"
  
@@ -130,6 +136,8 @@
  SIA_kingdom:0 "シャム王国"
  SIA_kingdom_DEF:0 "シャム王国"
  
+ SIK_ma_military_clique:0 "新疆馬軍閥"
+ SIK_ma_military_clique_DEF:0 "新疆馬軍閥"
  SIK_military_clique:0 "新疆軍閥"
  SIK_military_clique_DEF:0 "新疆軍閥"
  
@@ -284,6 +292,8 @@
  HUN_crown_lands_DEF:0 "神聖なるハンガリーの聖イシュトヴァーン王冠の諸邦"
  
  
+ IRE_republic:0 "アイルランド共和国"
+ IRE_republic_DEF:0 "アイルランド共和国"
  
  ITA_social_republic:0 "イタリア社会共和国"
  ITA_social_republic_DEF:0 "イタリア社会共和国"
@@ -293,6 +303,8 @@
  KBK_republic:0 "カバルダ＝バルカル共和国"
  KBK_republic_DEF:0 "カバルダ＝バルカル共和国"
  
+ KHA_republic:0 "ハカス共和国"
+ KHA_republic_DEF:0 "ハカス共和国"
  
  KOM_republic:0 "コミ共和国"
  KOM_republic_DEF:0 "コミ共和国"
@@ -309,6 +321,8 @@
  LAT_republic:0 "ラトビア共和国"
  LAT_republic_DEF:0 "ラトビア共和国"
  
+ LIT_republic:0 "リトアニア共和国"
+ LIT_republic_DEF:0 "リトアニア共和国"
  
  LUX_grand_duchy:0 "ルクセンブルク大公国"
  LUX_grand_duchy_DEF:0 "ルクセンブルク大公国"
@@ -386,6 +400,8 @@
  SPR_kingdom:0 "スペイン王国"
  SPR_kingdom_DEF:0 "スペイン王国"
  
+ SRD_kingdom:0 "サルディーニャ王国"
+ SRD_kingdom_DEF:0 "サルディーニャ王国"
  
  
  SWI_confederation:0 "スイス連邦"
@@ -397,6 +413,8 @@
  TRA_principality:0 "トランシルヴァニア公国"
  TRA_principality_DEF:0 "トランシルヴァニア公国"
  
+ TUS_grand_duchy:0 "トスカーナ大公国"
+ TUS_grand_duchy_DEF:0 "トスカーナ大公国"
  
  UDM_republic:0 "ウドムルト共和国"
  UDM_republic_DEF:0 "ウドムルト共和国"
@@ -406,10 +424,14 @@
  UKR_peoples_republic:0 "ウクライナ人民共和国"
  UKR_peoples_republic_DEF:0 "ウクライナ人民共和国"
  
+ VAT_city_state:0 "バチカン市国"
+ VAT_city_state_DEF:0 "バチカン市国"
  
  VLG_republic:0 "ヴォルガ共和国"
  VLG_republic_DEF:0 "ヴォルガ共和国"
  
+ VNC_most_serene_republic:0 "晴朗極まる共和国ヴェネツィア"
+ VNC_most_serene_republic_DEF:0 "晴朗極まる共和国ヴェネツィア"
  
  
  
@@ -418,14 +440,20 @@
  YUG_kingdom_DEF:0 "ユーゴスラビア王国"
  
 #アフリカ
+ AFA_republic:0 "アファール共和国"
+ AFA_republic_DEF:0 "アファール共和国"
  
  ALG_peoples_democratic_republic:0 "アルジェリア人民民主共和国"
  ALG_peoples_democratic_republic_DEF:0 "アルジェリア人民民主共和国"
  
+ AMH_republic:0 "アムハラ共和国"
+ AMH_republic_DEF:0 "アムハラ共和国"
  
  ANG_peoples_republic:0 "アンゴラ人民共和国"
  ANG_peoples_republic_DEF:0 "アンゴラ人民共和国"
  
+ BEG_republic:0 "ベニシャングル＝グムズ共和国"
+ BEG_republic_DEF:0 "ベニシャングル＝グムズ共和国"
  
  BOT_republic:0 "ボツワナ共和国"
  BOT_republic_DEF:0 "ボツワナ共和国"
@@ -433,6 +461,8 @@
  BRD_kingdom:0 "ブルンジ王国"
  BRD_kingdom_DEF:0 "ブルンジ王国"
  
+ CAR_republic:0 "中央アフリカ共和国"
+ CAR_republic_DEF:0 "中央アフリカ共和国"
  
  CHA_republic:0 "チャド共和国"
  CHA_republic_DEF:0 "チャド共和国"
@@ -449,7 +479,11 @@
  DJI_republic:0 "ジブチ共和国"
  DJI_republic_DEF:0 "ジブチ共和国"
  
+ EAF_federation:0 "東アフリカ連邦"
+ EAF_federation_DEF:0 "東アフリカ連邦"
  
+ EGY_kingdom:0 "エジプト王国"
+ EGY_kingdom_DEF:0 "エジプト王国"
  EGY_sultanate:0 "エジプト・スルタン国"
  EGY_sultanate_DEF:0 "エジプト・スルタン国"
  
@@ -468,6 +502,8 @@
  GAM_republic:0 "ガンビア共和国"
  GAM_republic_DEF:0 "ガンビア共和国"
  
+ GBA_republic:0 "ガンベラ共和国"
+ GBA_republic_DEF:0 "ガンベラ共和国"
  
  GHA_republic:0 "ガーナ共和国"
  GHA_republic_DEF:0 "ガーナ共和国"
@@ -478,6 +514,8 @@
  GNB_republic:0 "ギニアビサウ共和国"
  GNB_republic_DEF:0 "ギニアビサウ共和国"
  
+ HAR_republic:0 "ハラール共和国"
+ HAR_republic_DEF:0 "ハラール共和国"
  
  IVO_republic:0 "コートジボワール共和国"
  IVO_republic_DEF:0 "コートジボワール共和国"
@@ -510,28 +548,44 @@
  
  NGA_federal_republic:0 "ナイジェリア連邦共和国"
  NGA_federal_republic_DEF:0 "ナイジェリア連邦共和国"
+ NGA_federal_republic:0 "ナイジェリア連邦共和国"
+ NGA_federal_republic_DEF:0 "ナイジェリア連邦共和国"
  
  NGE_republic:0 "ニジェール共和国"
  NGE_republic_DEF:0 "ニジェール共和国"
  
+ NMB_republic:0 "ナミビア共和国"
+ NMB_republic_DEF:0 "ナミビア共和国"
  
+ ORO_republic:0 "オロミア共和国"
+ ORO_republic_DEF:0 "オロミア共和国"
  
+ RIF_tribes_confederated_republic:0 "リーフ部族連合共和国"
+ RIF_tribes_confederated_republic_DEF:0 "リーフ部族連合共和国"
  
  RWA_kingdom:0 "ルワンダ王国"
  RWA_kingdom_DEF:0 "ルワンダ王国"
  
+ SAF_republic:0 "南アフリカ共和国"
+ SAF_republic_DEF:0 "南アフリカ共和国"
  
  SEN_republic:0 "セネガル共和国"
  SEN_republic_DEF:0 "セネガル共和国"
  
+ SID_republic:0 "シダマ共和国"
+ SID_republic_DEF:0 "シダマ共和国"
  
  SIE_republic:0 "シエラレオネ共和国"
  SIE_republic_DEF:0 "シエラレオネ共和国"
  
+ SOM_federation:0 "ソマリア連邦"
+ SOM_federation_DEF:0 "ソマリア連邦"
  
  SUD_republic:0 "スーダン共和国"
  SUD_republic_DEF:0 "スーダン共和国"
  
+ TIG_republic:0 "ティグレ共和国"
+ TIG_republic_DEF:0 "ティグレ共和国"
  
  TOG_republic:0 "トーゴ共和国"
  TOG_republic_DEF:0 "トーゴ共和国"
@@ -571,6 +625,8 @@
  BRA_united_states:0 "ブラジル合衆国"
  BRA_united_states_DEF:0 "ブラジル合衆国"
  
+ CAN_commonwealth:0 "カナダ連邦"
+ CAN_commonwealth_DEF:0 "カナダ連邦"
  
  CAY_republic:0 "カイエンヌ共和国"
  CAY_republic_DEF:0 "カイエンヌ共和国"
@@ -647,6 +703,8 @@
  
  
 #大洋州
+ AST_commonwealth:0 "オーストラリア連邦"
+ AST_commonwealth_DEF:0 "オーストラリア連邦"
  
  FIJ_kingdom:0 "フィジー王国"
  FIJ_kingdom_DEF:0 "フィジー王国"
@@ -660,6 +718,8 @@
  HAW_kingdom:0 "ハワイ王国"
  HAW_kingdom_DEF:0 "ハワイ王国"
  
+ NZL_republic:0 "ニュージーランド共和国"
+ NZL_republic_DEF:0 "ニュージーランド共和国"
  
  PNG_independent_state:0 "パプアニューギニア独立国"
  PNG_independent_state_DEF:0 "パプアニューギニア独立国"
@@ -728,6 +788,8 @@
  SCH_military_clique:0 "四川軍閥"
  SCH_military_clique_DEF:0 "四川軍閥"
  
+ SGH_military_clique:0 "上海軍閥"
+ SGH_military_clique_DEF:0 "上海軍閥"
  
  SHD_military_clique:0 "山東軍閥"
  SHD_military_clique_DEF:0 "山東軍閥"
@@ -743,6 +805,8 @@
  BDN_reich:0 "バーデン国"
  BDN_reich_DEF:0 "バーデン国"
  
+ BLT_united_republic:0 "バルト連合共和国"
+ BLT_united_republic_DEF:0 "バルト連合共和国"
  
  DAL_kingdom:0 "ダルマチア王国"
  DAL_kingdom_DEF:0 "ダルマチア王国"
@@ -755,11 +819,20 @@
  NTL_state:0 "ネーデルラント国"
  NTL_state_DEF:0 "ネーデルラント国"
  
+ RAT_international_republic:0 "国際レーテ共和国"
+ RAT_international_republic_DEF:0 "国際レーテ共和国"
+ RAT_socialist_republics_union:0 "レーテ社会主義共和国連邦"
+ RAT_socialist_republics_union_DEF:0 "レーテ社会主義共和国連邦"
+ 
  RHI_confederation:0 "ライン連邦"
  RHI_confederation_DEF:0 "ライン連邦"
+ RHI_protectorate:0 "ライン保護領"
+ RHI_protectorate_DEF:0 "ライン保護領"
  
  RUS_empire:0 "ロシア帝国"
  RUS_empire_DEF:0 "ロシア帝国"
+ RUS_federal_empire:0 "ロシア連邦帝国"
+ RUS_federal_empire_DEF:0 "ロシア連邦帝国"
  RUS_republic:0 "ロシア共和国"
  RUS_republic_DEF:0 "ロシア共和国"
  
@@ -783,12 +856,16 @@
  
 #新大陸
  
+ CAC_federation:0 "中央アメリカ連邦"
+ CAC_federation_DEF:0 "中央アメリカ連邦"
  
  
  
  
  TEX_administrative_committee:0 "テキサス施政委員会"
  TEX_administrative_committee_DEF:0 "テキサス施政委員会"
+ TEX_emergency_government:0 "テキサス緊急政府"
+ TEX_emergency_government_DEF:0 "テキサス緊急政府"
  
 #大洋州
 #アメリカ諸州

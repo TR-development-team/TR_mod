@@ -277,9 +277,9 @@ country_event = {
 	option = { 
 		name = TR_Soviet.7.a
         add_political_power = 25
-		add_opinion_modifier = { target = GER modifier = large_increase }
+		add_opinion_modifier = { target = RAT modifier = large_increase }
 		diplomatic_relation = {
-			country = GER
+			country = RAT
 			relation = non_aggression_pact
 			active = yes
 		}

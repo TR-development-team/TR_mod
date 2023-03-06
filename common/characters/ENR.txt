@@ -1,44 +1,4 @@
 characters={
-	ENR_oswald_mosley={
-		name=GBR_oswald_mosley
-		portraits={
-			civilian={
-				large="gfx/leaders/GBR/Portrait_GBR_mosley.png"
-			}
-		}
-		country_leader={
-			ideology=National_syndicalist_subtype
-		}
-	}
-
-	ENR_winston_churchill={
-		name=GBR_winston_churchill
-		portraits={
-			civilian={
-				large="gfx/leaders/GBR/Portrait_GBR_Winston_Churchill.tga"
-			}
-		}
-		country_leader={
-			ideology=liberal_conservative_subtype
-			traits = {
-				british_bulldog
-			}
-		}
-	}
-
-
-	ENR_Aleister_Crowley={
-		name=GBR_Aleister_Crowley
-		portraits={
-			civilian={
-				large="gfx/leaders/GBR/Portrait_GBR_Crowley.tga"
-			}
-		}
-		country_leader={
-			ideology=Gnosticism_subtype
-		}
-	}
-
 	GBR_claude_auchinleck={
 		name=GBR_claude_auchinleck
 		portraits={

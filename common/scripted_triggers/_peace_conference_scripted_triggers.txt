@@ -60,7 +60,7 @@ is_ambition_area_of_ROOT = {
 			ROOT = {
 				is_actual_major = yes
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = USA
 					tag = GBR
 					tag = RUS
@@ -80,7 +80,7 @@ is_ambition_area_of_PREV = {
 			PREV = {
 				is_actual_major = yes
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = USA
 					tag = GBR
 					tag = RUS
@@ -1125,11 +1125,10 @@ rule_look_for_direct_connection_ROOT = {
 		is_willing_to_take_state_PREV = yes
 		can_reach_state_direct = yes
 	}
-	# exception: this is GER, for many countries
+	# exception: this is RAT, for many countries
 	NOT = {
 		AND = {
 			OR = {
-				tag = ENR
 				tag = GBR
 				tag = FRA
 				tag = CAN
@@ -1203,4 +1202,55 @@ rule_dont_take_land_other_continents_PREV = {
 	}
 }
 
+is_mainland_china = {	#エラー除去
+	always = no
+}
+is_mainland_america = {	#エラー除去
+	always = no
+}
+is_in_asia = {	#エラー除去
+	always = no
+}
+is_southeast_asia = {	#エラー除去
+	always = no
+}
+is_in_middle_east = {	#エラー除去
+	always = no
+}
+is_in_europe = {	#エラー除去
+	always = no
+}
+is_in_africa = {	#エラー除去
+	always = no
+}
+is_in_north_america = {	#エラー除去
+	always = no
+}
+is_in_south_america = {	#エラー除去
+	always = no
+}
+is_in_australia = {	#エラー除去
+	always = no
+}
+is_island_region = {	#エラー除去
+	always = no
+}
+is_full_germany = {	#エラー除去
+	always = no
+}
+is_french_colonial_claim = {	#エラー除去
+	always = no
+}
 
+PREV_is_restriction_exception = {	#エラー除去
+	always = no
+}
+is_willing_to_take_state_ROOT = {	#エラー除去
+	always = no
+}
+is_willing_to_take_state_PREV = {	#エラー除去
+	always = no
+}
+restrict_territorial_ambitions_ROOT = {	#エラー除去
+	always = no
+}

@@ -603,8 +603,11 @@ we_need_convoys_majors1 = {
 		OR = {
 			tag = GER
 			tag = FRA
-			tag = GBRstockpile_ratio = { archetype = convoy ratio < 75 } }
-	abort = { stockpile_ratio = { archetype = convoy ratio > 125 } }
+			tag = GBR
+			stockpile_ratio = { archetype = convoy ratio < 75 }
+		}
+		abort = { stockpile_ratio = { archetype = convoy ratio > 125 }
+	}
 
 	ai_strategy = {
 		type = equipment_production_min_factories

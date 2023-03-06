@@ -12,9 +12,9 @@ country_event = {
        trigger = {
                 tag = AST
 		is_subject = no
-                country_exists = ENR
+                country_exists = GB1
                 NOT = {
-				country_exists = GBR
+				country_exists = GB0
 			}
                
 		

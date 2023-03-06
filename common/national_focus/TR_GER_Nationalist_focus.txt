@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = GER
+			tag = RAT
 		}
 	}
     continuous_focus_position = { x = 500 y = 1300 }
@@ -729,13 +729,13 @@ focus_tree = {
 				limit = {
 					is_core_of = NTL
 				}
-				add_claim_by = GER
+				add_claim_by = RAT
 			}
 			every_state = {
 				limit = {
 					is_core_of = SWI
 				}
-				add_claim_by = GER
+				add_claim_by = RAT
 			}
             #ルクセンブルク
 			add_state_claim = 8
@@ -869,10 +869,10 @@ focus_tree = {
 				factor = 0
 				OR = {
 					any_neighbor_country = {
-						has_war_with = GER
+						has_war_with = RAT
 						NOT = { has_capitulated = yes }
 						strength_ratio = {
-							tag = GER
+							tag = RAT
 							ratio > 0.6
 						}
 					}
@@ -1181,16 +1181,16 @@ focus_tree = {
             }
 		bypass = {
 		OR = {
-			has_war_with = ENR
-			is_in_faction_with = ENR
-			NOT = { country_exists = ENR }
+			has_war_with = GB1
+			is_in_faction_with = GB1
+			NOT = { country_exists = GB1 }
 			}
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		completion_reward = {
-			GER = { add_to_faction = ENR }
+			RAT = { add_to_faction = GB1 }
 		}
 	}
 	#イタリアの同志

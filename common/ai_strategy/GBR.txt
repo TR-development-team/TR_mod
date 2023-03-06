@@ -47,7 +47,8 @@ GBR_per_ardua_ad_astra_2 = {
 
 ENR_protect_Germany = {
 	allowed = {
-		tag = ENR
+		tag = GBR
+		GBR = {	has_country_flag = GBR_revolutionary_faction_flag	}
 	}
 	enable = {
 		has_war_with = FRA
@@ -76,7 +77,8 @@ ENR_protect_Germany = {
 
 ENR_protect_italy = {
 	allowed = {
-		tag = ENR
+		tag = GBR
+		GBR = {	has_country_flag = GBR_revolutionary_faction_flag	}
 	}
 	enable = {
 		has_war_with = FRA
@@ -107,8 +109,7 @@ ENR_protect_italy = {
 GBR_invade_ireland = {
 	allowed = {
 		OR = {
-			original_tag = ENR
-			original_tag = GBR
+			tag = GBR
 		}
 	}
 	enable = {
@@ -135,10 +136,10 @@ GBR_invade_ireland = {
 
 GBR_invade_ENR = {
 	allowed = {
-	    original_tag = GBR
+		tag = GBR
 	}
 	enable = {
-		country_exists = ENR
+		country_exists = GB1
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -148,24 +149,24 @@ GBR_invade_ENR = {
 	}
 	ai_strategy = {
 		type = invade
-		id = ENR
+		id = GB1
 		value = 200
 	}
-	ai_strategy = {
-		type = invasion_unit_request
-		tag = ENR
-		value = 100
-	}
-	ai_strategy = {
-		type = front_unit_request
-		tag = ENR
-		value = 100
-	}
+	# ai_strategy = {
+	# 	type = invasion_unit_request
+	# 	tag = GB1
+	# 	value = 100
+	# }
+	# ai_strategy = {
+	# 	type = front_unit_request
+	# 	tag = GB1
+	# 	value = 100
+	# }
 }
 
 ENR_invade_GBR = {
 	allowed = {
-	    original_tag = ENR
+	    tag = GB1
 	}
 	enable = {
 		country_exists = GBR

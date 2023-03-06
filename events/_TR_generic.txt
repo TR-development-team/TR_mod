@@ -171,7 +171,6 @@ country_event = {
 							}
 							ROOT = { is_ai = no }
 						}
-						}
 						OR = {
 							is_core_of = event_target:return_to
 							is_claimed_by = event_target:return_to

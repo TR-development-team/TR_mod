@@ -108,7 +108,7 @@ ideas = {
 		generic_TR_silent_workhorse = {
 			
 			allowed = {
-				NOT = { OR = { tag = GER  tag = JAP tag = BUL tag = WHN tag = AST tag = USA  } }
+				NOT = { OR = { tag = RAT  tag = JAP tag = BUL tag = WHN tag = AST tag = USA  } }
 
 			}
 
@@ -146,7 +146,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -170,7 +170,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -194,7 +194,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -213,7 +213,7 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -232,7 +232,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 			
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -251,7 +251,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -273,7 +273,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -296,7 +296,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			modifier = {
@@ -322,7 +322,7 @@ ideas = {
 			picture = generic_motorized_equipment_manufacturer_3
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -341,7 +341,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			
@@ -360,7 +360,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = GER tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
 
 			}
 			

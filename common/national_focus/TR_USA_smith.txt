@@ -464,7 +464,7 @@ focus_tree = {
 	
 				date > 1942.1.1
 			}
-			can_declare_war_on = GER
+			can_declare_war_on = RAT
 			is_subject = no
 		}
 		available_if_capitulated = yes
@@ -474,7 +474,7 @@ focus_tree = {
 		}
 	completion_reward = { 
 			create_wargoal = {
-				target = GER
+				target = RAT
 				type = annex_everything
 			}
 	             }

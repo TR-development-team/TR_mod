@@ -18,7 +18,7 @@ focus_tree = {
 		y = 0
 		cost = 1
         available = {
-            has_war_with = GER
+            has_war_with = RAT
         }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -36,10 +36,10 @@ focus_tree = {
 		y = 1
 		cost = 5
         available = {
-            has_war_with = GER
+            has_war_with = RAT
         }
 		bypass = {
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = RAT }
 		}
 		available_if_capitulated = yes
 		prerequisite = { focus = PRE_Civil_war_1 }
@@ -51,7 +51,7 @@ focus_tree = {
 		add_equipment_to_stockpile = {
 			type = infantry_equipment
 			amount = 10000
-			producer = GER
+			producer = RAT
 			}
 		}
 	}
@@ -63,10 +63,10 @@ focus_tree = {
 		y = 1
 		cost = 5
         available = {
-            has_war_with = GER
+            has_war_with = RAT
         }
 		bypass = {
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = RAT }
 		}		
 		available_if_capitulated = yes
 		prerequisite = { focus = PRE_Civil_war_1 }
@@ -74,7 +74,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-        GER = { add_ideas = PRE_anti_communism_Partisan }
+        RAT = { add_ideas = PRE_anti_communism_Partisan }
 		}
 	}
 	#武器の供給路を確保
@@ -85,10 +85,10 @@ focus_tree = {
 		y = 1
 		cost = 5
         available = {
-            has_war_with = GER
+            has_war_with = RAT
         }
 		bypass = {
-			NOT = { has_war_with = GER }
+			NOT = { has_war_with = RAT }
 		}
 		available_if_capitulated = yes
 		prerequisite = { focus = PRE_Civil_war_1 }
@@ -108,7 +108,7 @@ focus_tree = {
 		y = 2
 		cost = 1
         available = {
-            NOT = { has_war_with = GER }
+            NOT = { has_war_with = RAT }
         }
 		bypass = {
 			
@@ -133,7 +133,7 @@ focus_tree = {
 		y = 1
 		cost = 10
         available = {
-            has_war_with = GER
+            has_war_with = RAT
         }
 		bypass = {
 			
@@ -155,8 +155,8 @@ focus_tree = {
 		y = 2
 		cost = 10
         available = {
-			GER = { has_idea = PRE_anti_communism_Partisan }
-            has_war_with = GER
+			RAT = { has_idea = PRE_anti_communism_Partisan }
+            has_war_with = RAT
         }
 		bypass = {
 			
@@ -167,7 +167,7 @@ focus_tree = {
 			factor = 75
 		}
 	completion_reward = {
-		GER = { 
+		RAT = { 
 		swap_ideas = {
 			remove_idea = PRE_anti_communism_Partisan
 			add_idea = PRE_anti_communism_Partisan_2
@@ -183,7 +183,7 @@ focus_tree = {
 		y = 3
 		cost = 10
         available = {
-			has_war_with = GER
+			has_war_with = RAT
         }
 		bypass = {
 			
@@ -194,7 +194,7 @@ focus_tree = {
 			factor = 75
 		}
 	completion_reward = {
-		GER = { 
+		RAT = { 
 			add_stability = -0.05
 	       }
 		}
@@ -207,7 +207,7 @@ focus_tree = {
 		y = 4
 		cost = 15
         available = {
-			has_war_with = GER
+			has_war_with = RAT
         }
 		bypass = {
 			
@@ -218,7 +218,7 @@ focus_tree = {
 			factor = 75
 		}
 	completion_reward = {
-		GER = { 
+		RAT = { 
 			country_event = TR_germany.3
 	       }
 		}
@@ -271,7 +271,7 @@ focus_tree = {
         set_cosmetic_tag = GERbyPRE_reich
 		every_state = {
 			limit = {
-				is_core_of = GER
+				is_core_of = RAT
 			}
 			add_core_of = PRE
 		}

@@ -1,16 +1,17 @@
-
 GER_integrate_policy = {
 	icon = generic_political_actions
 	allowed = {
-        OR = {
-	tag = GER
-        tag = PRE
+		OR = {
+			tag = GER
+			tag = RAT
+			tag = PRE
+		}
 	}
-        }
 	visible = {
-        OR = {
-	tag = GER
-        tag = PRE
-	}
+		OR = {
+			tag = GER
+			tag = RAT
+			tag = PRE
+		}
 	}
 }

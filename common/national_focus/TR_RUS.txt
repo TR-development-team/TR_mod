@@ -3317,8 +3317,8 @@ focus_tree = {
 		cost = 8
 		available = {
 			is_subject = no
-			RUS = { has_country_flag =RUS_OCREVOLUTION_END OR = { has_war_with = JAP has_war_with = GER } is_in_faction = no }
-			FRA = { OR = { has_war_with = JAP has_war_with = GER } is_faction_leader = yes }
+			RUS = { has_country_flag =RUS_OCREVOLUTION_END OR = { has_war_with = JAP has_war_with = RAT } is_in_faction = no }
+			FRA = { OR = { has_war_with = JAP has_war_with = RAT } is_faction_leader = yes }
 			NOT = { has_country_flag = RUS_SR_Dictator }
 			}
 		bypass = {is_in_faction_with = FRA}

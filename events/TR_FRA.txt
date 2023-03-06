@@ -33,7 +33,7 @@ country_event = {
 				name = FRA_province_9559
 			}
             hidden_effect = {
-                GER = {
+                RAT = {
                 country_event = {
 					id = TR_Germany.9
 					days = 1	
@@ -510,7 +510,7 @@ country_event = {#オランダとの外交
 			modifier = medium_increase
 		}
 		add_opinion_modifier = {
-			target = GER
+			target = RAT
 			modifier = medium_decrease
 		}
 	}

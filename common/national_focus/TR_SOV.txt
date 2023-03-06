@@ -113,7 +113,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			GER = { country_event = TR_Soviet.1 }
+			RAT = { country_event = TR_Soviet.1 }
 		}
 	}
 	#改革の布告
@@ -1864,7 +1864,7 @@ focus_tree = {
 				NOT = { has_country_flag = RUS_Bukharin_Win has_country_flag = RUS_Stalin_Win }
                 is_in_faction = no
 			    threat > 0.8
-                GER = { 
+                RAT = { 
 			        is_subject = no	
 			        is_faction_leader = yes
 			    } 
@@ -1876,7 +1876,7 @@ focus_tree = {
 			}
 			prerequisite = { focus = SOV_Diplomacy_focus_2 }
 			completion_reward = {
-				GER = { add_to_faction = SOV }
+				RAT = { add_to_faction = SOV }
 			}
 		}
 		#一国社会主義

@@ -1,0 +1,102 @@
+GBR_civil_war_start = {
+	remove_ideas = GBR_revolution
+	
+	set_country_flag = GBR_revolution_FLAG
+	set_rule = {	can_join_factions = no	}
+	leave_faction = yes
+	
+	hidden_effect = {
+		country_event = {	id = TR_news.7	days = 2	}
+		add_popularity = {	ideology = totalist	popularity = -0.2	}
+		add_popularity = {	ideology = syndicalist	popularity = -0.1	}
+		add_popularity = {	ideology = radical_socialist	popularity = -0.1	}
+		
+		AST = {	#オーストラリア独立
+			GBR = {	end_puppet = PREV	}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = AST_commonwealth
+		}
+		CAN = {
+			GBR = {	end_puppet = PREV	}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = CAN_commonwealth
+			transfer_state = 331
+			transfer_state = 332
+		}
+		IRE = {	#アイルランド独立
+			GBR = {	end_puppet = PREV	}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = IRE_republic
+		}
+		NZL = {	#ニュージーランド独立
+			GBR = {	end_puppet = PREV	}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = NZL_republic
+		}
+		SAF = {	#南アフリカ独立
+			GBR = {	end_puppet = PREV	}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = SAF_republic
+		}
+		WAF = {
+			GBR = {	end_puppet = PREV	}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = COUNTRY_FRA
+		}
+		ITA = {	transfer_state = 116	}
+		MEX = {	transfer_state = 311	}
+		SPR = {	transfer_state = 118	}
+		ARG = {
+			transfer_state = 720
+			transfer_state = 299
+		}
+		JAP = {
+			transfer_state = 270
+			transfer_state = 703
+			transfer_state = 704 
+			transfer_state = 709
+		}
+		USA = {
+			transfer_state = 693
+			transfer_state = 690
+			transfer_state = 696
+			transfer_state = 689
+		}
+		FRA = {
+			set_autonomy = {	target = WAF	autonomous_state = colony	}
+			transfer_state = 687
+			transfer_state = 691
+			transfer_state = 692
+			transfer_state = 308
+			transfer_state = 707
+		}
+	}
+}
+
+set_BRITANNIA_union = {
+	set_cosmetic_tag = BRITANNIA_socialist_republics_union
+	set_country_flag = GBR_revolutionary_faction_flag
+	set_politics = {
+		ruling_party = totalist
+		last_election = "1935.11.14"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		totalist = 68
+		syndicalist = 12
+		radical_socialist = 20
+	}
+	add_ideas = {
+		totalist_dictatorship
+		acceptable_minimum_wage
+		good_max_workhours
+		good_safety_regulations
+		good_Unemployment_subsidies
+		acceptable_school_system
+		good_pensions
+		good_health_care
+	}
+	
+	country_event = { id = GBR_civil_war.2 days = 7 }
+}

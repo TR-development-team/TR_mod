@@ -7,6 +7,7 @@ annexation_decisions = {
 			tag = FRA
                                 RHI = { exists = no }
                                 GER = { exists = no }
+                                RAT = { exists = no }
 				FRA = {
 				       owns_state = 51
                                        owns_state = 57
@@ -17,6 +18,7 @@ annexation_decisions = {
                                 tag = FRA
                                 RHI = { exists = no }
                                 GER = { exists = no }
+                                RAT = { exists = no }
 				FRA = {
 				       owns_state = 51
                                        owns_state = 57
@@ -53,6 +55,7 @@ annexation_decisions = {
                                 tag = FRA
                                 PRE = { exists = no }
                                 GER = { exists = no }
+                                RAT = { exists = no }
 				FRA = {
 				       owns_state = 64
 			              } 
@@ -61,6 +64,7 @@ annexation_decisions = {
                                 tag = FRA
                                 PRE = { exists = no }
                                 GER = { exists = no }
+                                RAT = { exists = no }
 				FRA = {
 				       owns_state = 64
 			              } 
@@ -78,7 +82,7 @@ annexation_decisions = {
 		is_good = no
                 visible = {
 			tag = FRA
-                        ENR = { exists = no }
+                        ENG = { exists = no }
                                 GBR = { exists = no }
                                 SCO = { exists = no }
                                 WLS = { exists = no }
@@ -90,7 +94,7 @@ annexation_decisions = {
 		}
 		available = {
                                 tag = FRA
-                                ENR = { exists = no }
+                                ENG = { exists = no }
                                 GBR = { exists = no }
                                 SCO = { exists = no }
                                 WLS = { exists = no }
@@ -101,9 +105,9 @@ annexation_decisions = {
 			              } 
 		}
 		complete_effect = {
-	                release_puppet = SCO
-                        release_puppet = WLS
-                        release_puppet = ENR
+			release_puppet = SCO
+			release_puppet = WLS
+			release_puppet = ENG
 		}
 		ai_will_do = {
 			factor = 100

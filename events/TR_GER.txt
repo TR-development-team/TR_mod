@@ -154,7 +154,7 @@ hidden_effect = {
                         transfer_state = 68
                         transfer_state = 66
                         transfer_state = 63
-                        change_tag_from = GER
+                        change_tag_from = RAT
                       }
         hidden_effect = {
 			PRE = {
@@ -283,7 +283,7 @@ country_event = {
 		name = TR_germany.2.a
                 add_ideas = GER_CIVIL_WAR
                 declare_war_on = {
-			target = GER
+			target = RAT
 			type = annex_everything
 		}
 
@@ -362,7 +362,7 @@ country_event = {
 		name = TR_germany.4.a
 		ai_chance = { factor = 0 }
 		add_ideas = anarchism_society
-		HAN = { inherit_technology = GER
+		HAN = { inherit_technology = RAT
 			add_state_core = 59
 			add_state_core = 57
 			add_state_core = 56
@@ -373,7 +373,7 @@ country_event = {
             transfer_state = 56
 			transfer_state = 877
 			transfer_state = 861
-			change_tag_from = GER
+			change_tag_from = RAT
         }
 		set_global_flag = German_Collapse
 	}
@@ -381,7 +381,7 @@ country_event = {
 		name = TR_germany.4.b
 		ai_chance = { factor = 100 }
 		add_ideas = anarchism_society
-		HAN = { inherit_technology = GER
+		HAN = { inherit_technology = RAT
 			add_state_core = 59
 			add_state_core = 57
 			add_state_core = 56
@@ -412,14 +412,14 @@ country_event = {
 	
 	option = {
 		name = TR_germany.5.a
-		RHI = { inherit_technology = GER
+		RHI = { inherit_technology = RAT
 			set_cosmetic_tag = RHI_protectorate
 			transfer_state = 42
             transfer_state = 51
 			add_state_core = 51
 			add_state_core = 42
         }
-		BDN = { inherit_technology = GER
+		BDN = { inherit_technology = RAT
 			add_state_core = 876
 			transfer_state = 876
         }
@@ -451,7 +451,7 @@ country_event = {
 	option = {
 		name = TR_germany.6.a
 		annex_country = {
-			target = GER
+			target = RAT
 			transfer_troops = no
 			}
 		if = {
@@ -486,14 +486,14 @@ country_event = {
 	option = {
 		name = TR_germany.7.a
 		ai_chance = { factor = 0 }
-		MEK = { inherit_technology = GER
-			change_tag_from = GER
+		MEK = { inherit_technology = RAT
+			change_tag_from = RAT
 			add_state_core = 61
 			transfer_state = 61
-			change_tag_from = GER
+			change_tag_from = RAT
         }
 		KIL = {
-                        inherit_technology = GER
+                        inherit_technology = RAT
 			add_state_core = 58
 			transfer_state = 58
 			add_state_core = 850
@@ -506,11 +506,11 @@ country_event = {
 	option = {
 		name = TR_germany.7.b
 		ai_chance = { factor = 100 }
-		MEK = { inherit_technology = GER
+		MEK = { inherit_technology = RAT
 			add_state_core = 61
 			transfer_state = 61
         }
-		KIL = { inherit_technology = GER
+		KIL = { inherit_technology = RAT
 			add_state_core = 58
 			transfer_state = 58
 			add_state_core = 850
@@ -539,15 +539,15 @@ country_event = {
 	option = {
 		name = TR_germany.8.a
 		ai_chance = { factor = 50 }
-		BAY = { inherit_technology = GER
+		BAY = { inherit_technology = RAT
 			add_state_core = 53
 			transfer_state = 53
 			add_state_core = 52
 			transfer_state = 52
 			add_state_core = 54
-			change_tag_from = GER
+			change_tag_from = RAT
         }
-		WUR = {	inherit_technology = GER		
+		WUR = {	inherit_technology = RAT		
 			add_state_core = 50
 		    transfer_state = 50
 			add_state_core = 54
@@ -555,7 +555,7 @@ country_event = {
 			add_state_core = 52
             add_state_core = 53
 		}
-		HES = { inherit_technology = GER
+		HES = { inherit_technology = RAT
 			add_state_core = 55
 			transfer_state = 55
 			add_state_core = 60
@@ -567,14 +567,14 @@ country_event = {
 	option = {
 		name = TR_germany.8.b
 		ai_chance = { factor = 30 }
-		BAY = { inherit_technology = GER
+		BAY = { inherit_technology = RAT
 			add_state_core = 53
 			transfer_state = 53
 			add_state_core = 52
 			transfer_state = 52
 			add_state_core = 54
         }
-		WUR = {	inherit_technology = GER		
+		WUR = {	inherit_technology = RAT		
 			add_state_core = 50
 		    transfer_state = 50
 			add_state_core = 54
@@ -582,14 +582,14 @@ country_event = {
 			add_state_core= 52
             add_state_core = 53
 		}
-		HES = { inherit_technology = GER
+		HES = { inherit_technology = RAT
 			add_state_core = 55
 			transfer_state = 55
 			add_state_core = 60
 			transfer_state = 60
 			add_state_core = 875
 			transfer_state = 875
-			change_tag_from = GER
+			change_tag_from = RAT
         }
 		
 	}
@@ -598,26 +598,26 @@ country_event = {
 		ai_chance = { factor = 20 }
 
 		BAY = {
-		inherit_technology = GER
+		inherit_technology = RAT
 			add_state_core = 53
 			transfer_state = 53
 			add_state_core = 52
 			transfer_state = 52
 			add_state_core = 54
-			change_tag_from = GER
+			change_tag_from = RAT
         }
 		WUR = {		
-                         inherit_technology = GER	
+                         inherit_technology = RAT	
 			add_state_core = 50
 		    transfer_state = 50
 			add_state_core = 54
 			transfer_state = 54
 			add_state_core = 52
             add_state_core = 53
-			change_tag_from = GER
+			change_tag_from = RAT
 		}
 		HES = {
-                        inherit_technology = GER
+                        inherit_technology = RAT
 			transfer_state = 55
 			add_state_core = 60
 			transfer_state = 60
@@ -658,7 +658,7 @@ country_event = {
 	picture = GFX_report_event_soldiers_in_france
     fire_only_once = yes
 	trigger = {
-		tag = GER
+		tag = RAT
 		has_war_with = FRA
 		
 	}
@@ -1882,7 +1882,7 @@ country_event = {#ドイツが同盟を提案(イタリア)
 			ITA = {
 				remove_from_faction = PREV
 			}
-			GER = {
+			RAT = {
 				add_to_faction = PREV
 			}
 			ITA = {
@@ -1890,7 +1890,7 @@ country_event = {#ドイツが同盟を提案(イタリア)
 			}
 		}
 	    }
-		GER = {
+		RAT = {
 			add_to_faction = ITA
 		}
 	}
@@ -1900,7 +1900,7 @@ country_event = {#ドイツが同盟を提案(イタリア)
 			base = 40
 		}
 		add_opinion_modifier = {
-			target = GER
+			target = RAT
 			modifier = medium_decrease
 		}
 	}
@@ -1925,10 +1925,10 @@ country_event = {#ドイツが不可侵条約を提案(イタリア)
 				has_government = totalist
 			}
 		}
-		give_guarantee = GER
-		GER = { give_guarantee = GER }
+		give_guarantee = RAT
+		RAT = { give_guarantee = RAT }
 		diplomatic_relation = {
-			country = GER
+			country = RAT
 			relation = non_aggression_pact
 			active = yes
 		}
@@ -1939,7 +1939,7 @@ country_event = {#ドイツが不可侵条約を提案(イタリア)
 			base = 40
 		}
 		add_opinion_modifier = {
-			target = GER
+			target = RAT
 			modifier = medium_decrease
 		}
 	}
@@ -1961,7 +1961,7 @@ country_event = {#フランス統治問題
 	option = { 
 		name = TR_gerfor.1.a
 		trigger = {
-			is_in_faction_with = ENR
+			is_in_faction_with = GB1
 			NOT = { is_in_faction_with = ITA }
 		}
 		ai_chance = {
@@ -2011,7 +2011,7 @@ country_event = {#フランス統治問題
 		}
 		every_state = {
 			limit = {
-				is_core_of = GER
+				is_core_of = RAT
 			}
 			if = {
 				limit = { is_claimed_by = FRA }
@@ -2067,22 +2067,22 @@ country_event = {#フランス統治問題
 		    add_state_core = 15
 		    add_state_core = 30
 			}
-		ENR = { 
+		GB1 = { 
 			add_state_claim = 19
 			every_owned_state = {
 				limit = {
 					is_core_of = BRI
-					NOT = { is_core_of = ENR is_claimed_by = ENR }
+					NOT = { is_core_of = GB1 is_claimed_by = GB1 }
 				}
 				transfer_state_to = BRI
 			}
 			}
 		every_owned_state = {
 			limit = {
-				is_claimed_by = ENR
+				is_claimed_by = GB1
 				NOT = { is_claim_or_core_of_ROOT = yes }
 			}
-			transfer_state_to = ENR
+			transfer_state_to = GB1
 		}
 		every_owned_state = {
 			limit = {
@@ -2109,7 +2109,7 @@ country_event = {#フランス統治問題
 			target = FRA
 			autonomy_state = autonomy_puppet
 		}
-		ENR = { 
+		GB1 = { 
 			set_autonomy = {
 				target = BRI
 				autonomy_state = overseas_territory
@@ -2120,7 +2120,7 @@ country_event = {#フランス統治問題
 	option = { 
 		name = TR_gerfor.1.b
 		trigger = {
-			is_in_faction_with = ENR
+			is_in_faction_with = GB1
 			is_in_faction_with = ITA
 		}
 		ai_chance = {
@@ -2170,7 +2170,7 @@ country_event = {#フランス統治問題
 		}
 		every_state = {
 			limit = {
-				is_core_of = GER
+				is_core_of = RAT
 			}
 			if = {
 				limit = { is_claimed_by = FRA }
@@ -2226,19 +2226,19 @@ country_event = {#フランス統治問題
 		    add_state_core = 15
 		    add_state_core = 30
 			}
-		ENR = { 
+		GB1 = { 
 			add_state_claim = 19
 			every_owned_state = {
 				limit = {
 					is_core_of = BRI
-					NOT = { is_core_of = ENR is_claimed_by = ENR }
+					NOT = { is_core_of = GB1 is_claimed_by = GB1 }
 				}
 				transfer_state_to = BRI
 			}
 			every_owned_state = {
 				limit = {
 					is_core_of = OCC
-					NOT = { is_core_of = ENR is_claimed_by = ENR }
+					NOT = { is_core_of = GB1 is_claimed_by = GB1 }
 				}
 				transfer_state_to = OCC
 			}
@@ -2263,10 +2263,10 @@ country_event = {#フランス統治問題
 			}
 		every_owned_state = {
 			limit = {
-				is_claimed_by = ENR
+				is_claimed_by = GB1
 				NOT = { is_claim_or_core_of_ROOT = yes }
 			}
-			transfer_state_to = ENR
+			transfer_state_to = GB1
 		}
 		every_owned_state = {
 			limit = {
@@ -2310,7 +2310,7 @@ country_event = {#フランス統治問題
 			target = FRA
 			autonomy_state = autonomy_puppet
 		}
-		ENR = { 
+		GB1 = { 
 			set_autonomy = {
 				target = BRI
 				autonomy_state = overseas_territory
@@ -2328,7 +2328,7 @@ country_event = {#フランス統治問題
 		trigger = {
 			NOT = { 
 				is_in_faction_with = ITA 
-				is_in_faction_with = ENR
+				is_in_faction_with = GB1
 			}
 		}
 		ai_chance = {
@@ -2378,7 +2378,7 @@ country_event = {#フランス統治問題
 		}
 		every_state = {
 			limit = {
-				is_core_of = GER
+				is_core_of = RAT
 			}
 			if = {
 				limit = { is_claimed_by = FRA }

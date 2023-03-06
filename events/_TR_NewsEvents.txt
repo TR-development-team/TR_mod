@@ -135,13 +135,13 @@ news_event = {
 		name = TR_news.5.a
 		trigger = {
 			NOT = {
-				TAG = GER
+				TAG = RAT
 			}
 		}
 	}
 	option = {
 		name = TR_news.5.b
-		trigger = { TAG = GER }
+		trigger = { TAG = RAT }
 	}
 
 }
@@ -160,7 +160,7 @@ news_event = {
 		trigger = {
 			NOT = {
 				OR = { TAG = FRA
-				       TAG = GER
+				       TAG = RAT
                                       }
 			}
 		}
@@ -171,7 +171,7 @@ news_event = {
 	}
 	option = {
 		name = TR_news.6.c
-		trigger = { TAG = GER }
+		trigger = { TAG = RAT }
 	}
 
 }
@@ -752,13 +752,13 @@ news_event = {
 		name = TR_news.33.a
 		trigger = {
 			NOT = {
-				TAG = GER
+				TAG = RAT
 			}
 		}
 	}
 	option = {
 		name = TR_news.33.b
-		trigger = { TAG =GER }
+		trigger = { TAG =RAT }
 	}
 
 }
@@ -777,13 +777,13 @@ news_event = {
 		name = TR_news.34.a
 		trigger = {
 			NOT = {
-				TAG = GER
+				TAG = RAT
 			}
 		}
 	}
 	option = {
 		name = TR_news.34.b
-		trigger = { TAG =GER }
+		trigger = { TAG =RAT }
 	}
 
 }
@@ -802,13 +802,13 @@ news_event = {
 		name = TR_news.35.a
 		trigger = {
 			NOT = {
-				TAG = GER
+				TAG = RAT
 			}
 		}
 	}
 	option = {
 		name = TR_news.35.b
-		trigger = { TAG =GER }
+		trigger = { TAG =RAT }
 	}
 }
 
@@ -1407,12 +1407,12 @@ news_event = {
 	option = {
 		name = TR_news.57.a
 		NOT = {
-			OR = { TAG = GER TAG = FRA }
+			OR = { TAG = RAT TAG = FRA }
 		}
     }
 	option = {
 		name = TR_news.57.b
-			trigger = { TAG = GER }
+			trigger = { TAG = RAT }
     }
 	option = {
 		name = TR_news.57.c
@@ -1434,13 +1434,13 @@ news_event = {
 		name = TR_news.58.a
 		trigger = {
 			NOT = {
-				TAG = GER
+				TAG = RAT
 			}
 		}
 	}
 	option = {
 		name = TR_news.58.b
-		trigger = { TAG =GER }
+		trigger = { TAG =RAT }
 	}
 }
 #オットー・ヴェルス
@@ -1458,13 +1458,13 @@ news_event = {
 		name = TR_news.59.a
 		trigger = {
 			NOT = {
-				TAG = GER
+				TAG = RAT
 			}
 		}
 	}
 	option = {
 		name = TR_news.59.b
-		trigger = { TAG =GER }
+		trigger = { TAG =RAT }
 	}
 }
 #クルト・アイスナー
@@ -1482,12 +1482,12 @@ news_event = {
 		name = TR_news.60.a
 		trigger = {
 			NOT = {
-				TAG = GER
+				TAG = RAT
 			}
 		}
 	}
 	option = {
 		name = TR_news.60.b
-		trigger = { TAG =GER }
+		trigger = { TAG =RAT }
 	}
 }

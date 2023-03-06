@@ -180,7 +180,7 @@ WHN_militaly_reform = {
 		visible = {
                         NOT = { has_idea = foreign_advisory_group }
 		}
-		targets = { GER }
+		targets = { RAT }
 		fire_only_once = yes
 		cost = 50
 		ai_will_do = {
@@ -199,17 +199,17 @@ WHN_militaly_reform = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment_0
 				amount = 500
-				producer = GER
+				producer = RAT
 			}
 			add_equipment_to_stockpile = {
 				type = support_equipment
 				amount = 50
-				producer = GER
+				producer = RAT
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
 				amount = 50
-				producer = GER
+				producer = RAT
 			}
 		}		
 	}

@@ -33,8 +33,7 @@ is_actual_major = {
 			check_variable = { num_of_factories > global.factory_average }
 			# is in the list of "always acts like a major" countries
 			tag = JAP
-			tag = JPR
-			tag = GER
+			tag = RAT
 			tag = PRE
 			tag = AUS
 			tag = FRA

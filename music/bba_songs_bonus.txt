@@ -1,0 +1,30 @@
+
+music_station = "base_music"
+
+music = {
+	song = "bella_ciao"
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0.05
+			NOT = {
+				original_tag = ITA
+			}
+		}
+		modifier = {
+			factor = 0
+			is_fascism_government = yes
+		}	
+		modifier = {
+			factor = 5
+			tag = ITA
+			is_communism_government = yes
+		}
+		modifier = {
+			factor = 1.5
+			any_enemy_country = {
+				is_fascism_government = yes
+			}
+		}
+	}
+}

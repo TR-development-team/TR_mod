@@ -6,12 +6,14 @@ GER_integrate_policy = {
 			OR = {
 				tag = PRE
 				tag = GER
+				tag = RAT
 			}
 		}
 		visible = {
 			OR = {
 				tag = PRE
 				tag = GER
+				tag = RAT
 			}
 			OR = {
 				4 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -73,12 +75,14 @@ GER_integrate_policy = {
 			OR = {
 				tag = PRE
 				tag = GER
+				tag = RAT
 			}
 		}
 		visible = {
 			OR = {
 				tag = PRE
 				tag = GER
+				tag = RAT
 			}
 			OR = {
 				69 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -123,12 +127,14 @@ GER_integrate_policy = {
 			OR = {
 				tag = PRE
 				tag = GER
+				tag = RAT
 			}
 		}
 		visible = {
 			OR = {
 				tag = PRE
 				tag = GER
+				tag = RAT
 			}
 			OR = {
 				8 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -163,12 +169,14 @@ GER_integrate_policy = {
 			OR = {
 				tag = PRE
 				tag = GER
+				tag = RAT
 			}
 		}
 		visible = {
 			OR = {
 				tag = PRE
 				tag = GER
+				tag = RAT
 			}
 			OR = {
 				8 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -206,6 +214,7 @@ annexation_decisions = {
 		is_good = no
         visible = {
 			tag = GER
+				tag = RAT
 			FRA = { exists = no }
 		}
 		available = {

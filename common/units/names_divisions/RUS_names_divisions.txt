@@ -1549,7 +1549,7 @@ RUS_CAV_02 =
 
 	for_countries = { RUS MHN UKR DON CCS }
 
-	can_use = {{ always = yes }}
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 

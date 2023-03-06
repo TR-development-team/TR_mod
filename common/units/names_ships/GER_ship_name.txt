@@ -2,7 +2,7 @@
 GER_BB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BB
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship battle_cruiser }
@@ -62,7 +62,7 @@ GER_BB_HISTORICAL = {
 GER_BC_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_BC
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	type = ship
 	ship_types = { ship_hull_heavy battleship battle_cruiser }
@@ -87,7 +87,7 @@ GER_BC_HISTORICAL = {
 GER_TB_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_TB
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -130,7 +130,7 @@ GER_TB_HISTORICAL = {
 GER_SS_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_SUBMARINES
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -174,7 +174,7 @@ GER_SS_HISTORICAL = {
 GER_CA_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CA
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -222,7 +222,7 @@ GER_CA_HISTORICAL = {
 GER_CL_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CL
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -357,7 +357,7 @@ GER_CL_HISTORICAL = {
 GER_DD_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_DESTROYERS
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -398,7 +398,7 @@ GER_DD_HISTORICAL = {
 GER_CV_HISTORICAL = {
 	name = NAME_THEME_HISTORICAL_CARRIERS
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 	}
@@ -425,7 +425,7 @@ GER_CV_HISTORICAL = {
 GER_THEME_FISH = {
 	name = NAME_THEME_FISH
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -467,7 +467,7 @@ GER_THEME_FISH = {
 GER_THEME_ANIMALS = {
 	name = NAME_THEME_ANIMALS
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -534,7 +534,7 @@ GER_THEME_ANIMALS = {
 GER_THEME_RIVERS = {
 	name = NAME_THEME_RIVERS
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -580,7 +580,7 @@ GER_THEME_RIVERS = {
 GER_THEME_GERMANIC = {
 	name = NAME_THEME_GERMANIC_MYTHOLOGY
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 
@@ -626,7 +626,7 @@ GER_THEME_GERMANIC = {
 GER_THEME_BATTLE = {
 	name = NAME_THEME_BATTLES
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { 
 	}

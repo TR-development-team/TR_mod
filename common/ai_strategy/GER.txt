@@ -109,13 +109,14 @@ GER_extra_focus_on_NTL = {
 Germany_likes_soviet = {
 	allowed = {
 		tag = GER
-                tag = ENR
-                is_subject = no
-                GER = { is_faction_leader = yes }
+		tag = GBR
+		is_subject = no
+		GER = { is_faction_leader = yes }
+		GBR = {	has_country_flag = GBR_revolutionary_faction_flag	}
 	}
 	enable = {
 		country_exists = SOV
-                SOV = { has_war_with = RUS }
+		SOV = { has_war_with = RUS }
 		NOT = { has_war_with = SOV }
 	}
 
