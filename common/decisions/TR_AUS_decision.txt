@@ -3,26 +3,10 @@ AUS_debug_category = {
 		icon = generic_decision
 		fire_only_once = no
 		available = {
+			has_country_flag = AUS_finish_plunge
 		}
 		complete_effect = {
-			every_state = {
-				limit = {
-					is_on_continent = europe
-				}
-				ROOT = {
-					transfer_state = PREV
-				}
-			}
-			every_owned_state = {
-				limit = {
-					NOT = {
-						is_on_continent = europe
-					}
-				}
-				random_other_country = {
-					transfer_state = PREV
-				}
-			}
+			remove_ideas = AUS_financial_difficulties_idea
 		}
 	}
 	AUS_debug_unite = {
@@ -1073,9 +1057,9 @@ AUS_foreign_policy = {
 					limit = {
 						has_idea = AUS_hungarian_scientist_idea
 					}
-					remove_ideas = AUS_wiener_kreis_idea
+					remove_ideas = AUS_frohlichen_apokalypse_idea
 					remove_ideas = AUS_hungarian_scientist_idea
-					add_ideas = AUS_wiener_kreis_idea
+					add_ideas = AUS_frohlichen_apokalypse_idea
 					add_ideas = AUS_hungarian_scientist_idea
 					add_ideas = AUS_prager_schule_idea
 				}
@@ -1083,9 +1067,9 @@ AUS_foreign_policy = {
 					limit = {
 						has_idea = AUS_hungarian_research_institution_idea
 					}
-					remove_ideas = AUS_wiener_kreis_idea
+					remove_ideas = AUS_frohlichen_apokalypse_idea
 					remove_ideas = AUS_hungarian_research_institution_idea
-					add_ideas = AUS_wiener_kreis_idea
+					add_ideas = AUS_frohlichen_apokalypse_idea
 					add_ideas = AUS_hungarian_research_institution_idea
 					add_ideas = AUS_prager_schule_idea
 				}

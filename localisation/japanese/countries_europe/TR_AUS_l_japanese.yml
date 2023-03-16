@@ -58,7 +58,7 @@ AUS_rescuing_rural_finance:0 "地方金融の救済"
 AUS_cooperation_with_major_banks:0 "主要銀行との連携"
 AUS_job_creation_through_military_procurement:0 "軍需による雇用創出"
 AUS_job_creation_through_private_demand:0 "民需による雇用創出"
-AUS_autobahn_expansion:0 "アウトバーンをライタ川の向こうへ"
+AUS_autobahn_expansion:0 "トランスライタニエンでの公共事業"
 
 #AUS_development_project
 
@@ -261,8 +261,8 @@ AUS_creditanstalt_semigovernmental_low_idea:0 "半官半民のクレディタン
 AUS_creditanstalt_semigovernmental_low_idea_desc:0 "現在、クレディタンシュタルトは半官半民の状態で運営されている。"
 AUS_geteiltes_reich_idea:0 "分かたれし帝国"
 AUS_geteiltes_reich_idea_desc:0 "神聖ローマ解体直前に成立したハプスブルク君主国の後継国、オーストリア帝国。この国は成立以来、絶えず衰退への歩みを進めた。その分断は独墺戦争後に最も顕著となり、現在の帝国はもう維持することすら困難だ。このような事情により、帝国全体は動揺し政情は非常に不安定化している。"
-AUS_wiener_kreis_idea:0 "ウィーン学団"
-AUS_wiener_kreis_idea_desc:0 "ウィーン学団は、論理実証主義を標榜する二十世紀でも特に著名な研究グループである。科学哲学と分析哲学に大きな影響を与えることになるこの組織は、未だその活動を継続している。彼らは弾圧されない限りこの地で活動を続けるだろう。"
+AUS_frohlichen_apokalypse_idea:0 "陽気な黙示録"
+AUS_frohlichen_apokalypse_idea_desc:0 "帝国の版図の縮小と反比例するように、世紀末からウィーンに端を発した様々な政治的・経済的諸事象や学芸における諸潮流が勃興している。陰りゆく帝国の影を作り出している張本人である爛熟したウィーンの灯は、この帝国を維持するに足る威信を担保している。ただ、この流れはある日突然終わりを告げるかもしれない…"
 AUS_prager_schule_idea:0 "プラハ学派"
 AUS_prager_schule_idea_desc:0 "プラハ学派は、プラハを拠点に置いた音韻論をはじめとする言語学派である。機能主義言語学の始祖であると言われる理論を構築している。"
 AUS_hungarian_scientist_idea:0 "ハンガリー人の人材的土壌"
@@ -455,6 +455,8 @@ AUS_hungary_uran:0 "ハンガリーのウラン鉱"
 AUS_hungary_uran_desc:0 "少量ながら、ハンガリーにてウランが採取可能なことに地質学者たちは気づいた。今後利用用途の増えるであろうウラン鉱は、今開発するべきである。"
 AUS_originator_of_the_computer:0 "コンピューターの始祖"
 AUS_originator_of_the_computer_desc:0 "ノイマン型コンピューターを作った彼であったが、コンピューターの計算速度よりも彼の計算速度の方が早かった。"
+AUS_develop_LD_converter_slags:0 "LD転炉の開発"
+AUS_develop_LD_converter_slags_desc:0 "工学分野への積極的な支援策の中でも、特に興味深い成果が上がっている。リンツとドナヴィッツの製鉄所で「純酸素上吹転炉」と呼称される最新の転炉の運用が始まったようだ。\nこの炉は、高圧の純酸素を必要とする以外には特に必要な希少資源も無く、かつ従来の転炉に比べ生産効率と純度が飛躍的に向上している。早速、この新技術を国内に普及させよう。"
 
 # RECOVER
 
@@ -713,6 +715,7 @@ AUS_sophisticated_light_industry_tt:0 "§Y帝国の工業§!に以下の修正:\
 AUS_enduring_economy_tt:0 "帝国の§Y財政§!の立て直しに関するディシジョンが解禁される。"
 AUS_new_industrial_structures_tt:0 "§Y帝国の工業§!に以下の修正:\n£prod_eff 生産効率成長率: §G+40.00%§!\n生産効率基本値: §G+10.00%§!\n"
 AUS_developing_petrochemical_industry_tt:0 "\n§Y帝国の工業§!に以下の修正:\n§Y合成精製所§!建設速度: §G+33.3%§!"
+AUS_develop_LD_converter_slags_tt:0 "国内の全ての§Y転炉§!の稼働効率が§G2§!倍になる。"
 
 ##...................................................
 ##.FFFFFFFFFFFFLLL..........AAAAA.......GGGGGGGGGG...

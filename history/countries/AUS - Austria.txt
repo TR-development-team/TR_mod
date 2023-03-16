@@ -137,7 +137,7 @@ set_variable = {
 }
 
 set_variable = {
-	AUS_ri_global_building_slots_factor_modifier = -0.15
+	AUS_ri_global_building_slots_factor_modifier = -0.2
 }
 
 set_variable = {
@@ -270,10 +270,49 @@ add_ideas = {
 	acceptable_school_system
 	AUS_geteiltes_reich_idea
 	AUS_financial_difficulties_idea
-	AUS_wiener_kreis_idea
+	AUS_frohlichen_apokalypse_idea
 	AUS_hungarian_scientist_idea
 }
 
+<<<<<<< Updated upstream
+=======
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1935.11.9"
+	election_frequency = 60
+	elections_allowed = yes
+}
+
+set_popularities = {
+	totalist = 0
+	syndicalist = 2
+	radical_socialist = 1
+	social_democrat = 22
+	social_liberal = 6
+	market_liberal = 3
+	social_conservative = 25
+	authoritarian_democrat = 10
+	paternal_autocrat = 5
+	national_populist = 1
+	Gnosticism = 25
+}
+
+set_stability = 0.5
+set_war_support = 0.3
+recruit_character = AUS_Karl_Renner
+recruit_character = AUS_Richard_Coudenhove_Kalergi
+recruit_character = AUS_franz_josef_otto_von_habsburg
+recruit_character = AUS_Engelbert_Dollfuss
+recruit_character = AUS_Adolf_Joseph_Lanz
+recruit_character = AUS_Eugen_von_Osterreich
+recruit_character = AUS_Franz_Bohme
+recruit_character = AUS_Karl_Eglseer
+recruit_character = AUS_Otto_Skorzeny
+recruit_character = AUS_Lothar_Rendulic
+recruit_character = AUS_Karl_Maria_Wiligut
+recruit_character = AUS_Heinrich_Himmler
+recruit_character = AUS_Adolf_Hitler
+>>>>>>> Stashed changes
 ### VARIANTS ###
 if = {
 	limit = {

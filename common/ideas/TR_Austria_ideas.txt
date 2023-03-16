@@ -47,10 +47,17 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
-		AUS_wiener_kreis_idea = {
+		AUS_frohlichen_apokalypse_idea = {
 			picture = AUS_wiener_kreis
 			modifier = {
-				research_speed_factor = 0.06
+				research_speed_factor = 0.12
+				political_power_gain = 0.3
+				stability_weekly = 0.001
+				drift_defence_factor = -0.1
+				power_balance_daily = 0.001
+				production_speed_buildings_factor = 0.06
+				consumer_goods_factor = -0.05
+				ai_focus_peaceful_factor = 0.25
 			}
 		}
 		AUS_hungarian_scientist_idea = {
@@ -62,13 +69,13 @@ ideas = {
 		AUS_hungarian_research_institution_idea = {
 			picture = AUS_hungarian_research_institution
 			modifier = {
-				research_speed_factor = 0.15
+				research_speed_factor = 0.16
 			}
 		}
 		AUS_modern_population_census_idea = {
 			picture = generic_pp_unity_bonus
 			modifier = {
-				conscription_factor = 0.33
+				conscription = 0.02
 			}
 		}
 		AUS_geteiltes_reich_idea = {
@@ -77,7 +84,8 @@ ideas = {
 				stability_factor = -0.3
 				war_support_factor = -0.3
 				political_power_cost = 0.5
-				Gnosticism_drift = 0.1
+				authoritarian_democrat_drift = 0.05
+				Gnosticism_drift = 0.05
 			}
 		}
 		AUS_prager_schule_idea = {
@@ -164,7 +172,7 @@ ideas = {
 		AUS_financial_difficulties_idea = {
 			picture = usa_great_depression_3
 			modifier = {
-				political_power_cost = 1
+				political_power_cost = 0.4
 				stability_weekly = -0.001
 				consumer_goods_factor = 0.1
 			}
