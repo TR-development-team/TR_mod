@@ -1,0 +1,128 @@
+characters={
+
+	IND_p_krishna_pillai={
+		name=IND_p_krishna_pillai
+		portraits={
+			civilian={
+				large="GFX_IND_krishna_pillai"
+			}
+		}
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+	}
+
+	IND_Jawaharlal_Nehru={
+		name=IND_Jawaharlal_Nehru
+		portraits={
+			civilian={
+				large="gfx/leaders/IND/Portrait_IND_Nehru.tga"
+			}
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+		}
+	}
+
+	IND_Behari_Bose={
+		name=IND_Behari_Bose
+		portraits={
+			civilian={
+				large="gfx/leaders/IND/Portrait_IND_Behari_Bose.tga"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+		}
+	}
+
+	IND_Jiddu_Krishnamurti={
+		name=IND_Jiddu_Krishnamurti
+		portraits={
+			civilian={
+				large="gfx/leaders/IND/Portrait_IND_Krishnamurti.tga"
+			}
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+	}
+
+	IND_noel_beresfordpeirse={
+		name=IND_noel_beresfordpeirse
+		portraits={
+			army={
+				large="GFX_IND_noel_beresford_peirse"
+				small=GFX_portrait_IND_noel_beresfordpeirse_small
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	IND_frank_messervy={
+		name=IND_frank_messervy
+		portraits={
+			army={
+				large="GFX_IND_frank_messervy"
+				small=GFX_portrait_IND_frank_messervy_small
+			}
+		}
+		corps_commander={
+			traits={ hill_fighter }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	IND_douglas_gracey={
+		name=IND_douglas_gracey
+		portraits={
+			army={
+				large="GFX_IND_douglas_gracey"
+				small=GFX_portrait_IND_douglas_gracey_small
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	IND_herbert_fitzherbert={
+		name=IND_herbert_fitzherbert
+		portraits={
+			army={
+				large="GFX_IND_herbert_fitzherbert"
+				small=GFX_portrait_IND_herbert_fitzherbert_small
+			}
+		}
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+
+
+}

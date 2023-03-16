@@ -60,10 +60,10 @@ is_ambition_area_of_ROOT = {
 			ROOT = {
 				is_actual_major = yes
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = GBR
+					tag = RUS
 					tag = FRA
 					tag = JAP
 				}
@@ -80,10 +80,10 @@ is_ambition_area_of_PREV = {
 			PREV = {
 				is_actual_major = yes
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = GBR
+					tag = RUS
 					tag = FRA
 					tag = JAP
 				}
@@ -411,8 +411,8 @@ is_exception_to_taking_states_on_other_continents = {
 		# European countries will always take states in Africa, Oceania, Asia, and the Middle East
 		AND = {
 			is_in_europe = yes
-			NOT = { tag = RUS }
 			NOT = { tag = SOV }
+			NOT = { tag = RUS }
 			var:global.eval_state = {
 				OR = {
 					is_on_continent = africa
@@ -426,8 +426,8 @@ is_exception_to_taking_states_on_other_continents = {
 		# European countries will take states in the Caribbean and Guyana
 		AND = {
 			is_in_europe = yes
-			NOT = { tag = RUS }
 			NOT = { tag = SOV }
+			NOT = { tag = RUS }
 			var:global.eval_state = {
 				OR = {
 					state = 690 #Northern Bahamas
@@ -439,8 +439,8 @@ is_exception_to_taking_states_on_other_continents = {
 		# Russia will always take non-island states in Asia and the Middle East
 		AND = {
 			OR = {
-				tag = RUS
 				tag = SOV
+				tag = RUS
 			}
 			var:global.eval_state = {
 				OR = {
@@ -454,8 +454,8 @@ is_exception_to_taking_states_on_other_continents = {
 		# Russia will take island regions in asia and oceania if it has an eastern port
 		AND = {
 			OR = {
-				tag = RUS
 				tag = SOV
+				tag = RUS
 			}
 			any_owned_state = {
 				is_coastal = yes
@@ -551,7 +551,7 @@ is_exception_to_taking_states_on_other_continents = {
 		}
 		# Turkey/Ottomans will take states in the Balkans
 		AND = {
-			tag = TUR
+			tag = OTT
 			var:global.eval_state = {
 				OR = {
 					region = 15 #Romania
@@ -1125,16 +1125,15 @@ rule_look_for_direct_connection_ROOT = {
 		is_willing_to_take_state_PREV = yes
 		can_reach_state_direct = yes
 	}
-	# exception: this is GER, for many countries
+	# exception: this is RAT, for many countries
 	NOT = {
 		AND = {
 			OR = {
-				tag = ENR
-				tag = ENG
+				tag = GBR
 				tag = FRA
 				tag = CAN
-				tag = RUS
 				tag = SOV
+				tag = RUS
 			}
 			var:global.eval_state = { is_full_germany = yes }
 		}
@@ -1203,4 +1202,55 @@ rule_dont_take_land_other_continents_PREV = {
 	}
 }
 
+is_mainland_china = {	#エラー除去
+	always = no
+}
+is_mainland_america = {	#エラー除去
+	always = no
+}
+is_in_asia = {	#エラー除去
+	always = no
+}
+is_southeast_asia = {	#エラー除去
+	always = no
+}
+is_in_middle_east = {	#エラー除去
+	always = no
+}
+is_in_europe = {	#エラー除去
+	always = no
+}
+is_in_africa = {	#エラー除去
+	always = no
+}
+is_in_north_america = {	#エラー除去
+	always = no
+}
+is_in_south_america = {	#エラー除去
+	always = no
+}
+is_in_australia = {	#エラー除去
+	always = no
+}
+is_island_region = {	#エラー除去
+	always = no
+}
+is_full_germany = {	#エラー除去
+	always = no
+}
+is_french_colonial_claim = {	#エラー除去
+	always = no
+}
 
+PREV_is_restriction_exception = {	#エラー除去
+	always = no
+}
+is_willing_to_take_state_ROOT = {	#エラー除去
+	always = no
+}
+is_willing_to_take_state_PREV = {	#エラー除去
+	always = no
+}
+restrict_territorial_ambitions_ROOT = {	#エラー除去
+	always = no
+}

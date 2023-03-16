@@ -504,7 +504,7 @@ focus = {
 			ideology = national_populist
 			popularity = 0.1
 		    }
-			set_cosmetic_tag = FRA_RNP
+			set_cosmetic_tag = FRA_jacobinist_republic
 	}
 	
 }
@@ -996,7 +996,7 @@ focus = {
 		promote_character = FRA_Jean_dOrleans
 		set_country_flag = FRA_Seijiantei
 		add_ideas = FRA_Ancien
-		set_cosmetic_tag = FRA_KING
+		set_cosmetic_tag = HOLYFRANCE_kingdom
 	}
 }
 #カムロ・デュ・ロア
@@ -1410,7 +1410,7 @@ focus = {
 	relative_position_id = FRA_PPF_1
 	completion_reward = {
 		add_ideas = FRA_En_Avant
-		set_cosmetic_tag = FRA_PPF
+		set_cosmetic_tag = GREATGAUL_empire
 		set_country_flag = FRA_Seijiantei
 		hidden_effect = { 
 			add_ideas = FRA_Jacques_Doriot
@@ -1854,7 +1854,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
-		HOL= { is_neighbor_of = GER }
+		NTL= { is_neighbor_of = RAT }
 		}
 	prerequisite = { focus = FRA_DIP_9 }
 	relative_position_id = FRA_DIP_1
@@ -1918,7 +1918,7 @@ focus = {
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
 		add_opinion_modifier = {
-			target = SOV
+			target = RUS
 			modifier = small_increase
 		}
 	}
@@ -1936,10 +1936,10 @@ focus = {
 	available = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
-		SOV = { has_country_flag =SOV_OCREVOLUTION }
-		NOT = { has_global_flag = FRA_RUS_Friendship }
+		RUS = { has_country_flag =RUS_OCREVOLUTION }
+		NOT = { has_global_flag = FRA_SOV_Friendship }
 		}
-	bypass = { has_global_flag = FRA_RUS_Friendship }
+	bypass = { has_global_flag = FRA_SOV_Friendship }
 	prerequisite = { focus = FRA_DIP_13 }
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
@@ -1959,14 +1959,14 @@ focus = {
 	available = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
-		SOV = { has_country_flag =SOV_OCREVOLUTION_END OR = { has_war_with = JAP has_war_with = GER } is_in_faction = no NOT = { has_country_flag = SOV_SR_Dictator }}
-		FRA = { OR = { has_war_with = JAP has_war_with = GER } is_faction_leader = yes }
+		RUS = { has_country_flag =RUS_OCREVOLUTION_END OR = { has_war_with = JAP has_war_with = RAT } is_in_faction = no NOT = { has_country_flag = RUS_SR_Dictator }}
+		FRA = { OR = { has_war_with = JAP has_war_with = RAT } is_faction_leader = yes }
 		}
-		bypass = {is_in_faction_with = SOV}
+		bypass = {is_in_faction_with = RUS}
 	prerequisite = { focus = FRA_DIP_14 }
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
-		SOV = { country_event = TR_france.27 }
+		RUS = { country_event = TR_france.27 }
 	}
 }
 #米仏相互援助条約
@@ -2016,7 +2016,7 @@ focus = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
 		USA = { has_war_with = JAP is_faction_leader = yes }
-		FRA = { has_war_with = GER is_faction_leader = yes }
+		FRA = { has_war_with = RAT is_faction_leader = yes }
 		}
 	prerequisite = { focus = FRA_DIP_16 }
 	relative_position_id = FRA_DIP_1
@@ -2038,7 +2038,7 @@ focus = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
 		FRA = { has_war_with = JAP is_faction_leader = yes }
-		CHI = { has_war_with = JAP is_faction_leader = yes }
+		WHN = { has_war_with = JAP is_faction_leader = yes }
 		}
 	prerequisite = { focus = FRA_DIP_17 }
 	relative_position_id = FRA_DIP_1
@@ -2086,15 +2086,15 @@ focus = {
 	}
 	available = {
         is_subject = no
-        is_neighbor_of = GER 
+        is_neighbor_of = RAT 
         NOT = { has_war_with = ITA }
 		NOT = { has_global_flag = German_Collapse }
         }
 	bypass = {
 	OR = {
-		has_war_with = GER
-		is_in_faction_with = GER
-		NOT = { country_exists = GER }
+		has_war_with = RAT
+		is_in_faction_with = RAT
+		NOT = { country_exists = RAT }
 		}
 		NOT = { has_global_flag = German_Collapse }
 	}
@@ -2124,7 +2124,7 @@ focus = {
 		add_state_claim = 51
 		add_state_claim = 999
         create_wargoal = {
-            target = GER
+            target = RAT
             type = annex_everything
             }
 	}
@@ -2138,7 +2138,7 @@ focus = {
 	cost = 5
 	available = {
         is_subject = no
-        NOT = { country_exists = GER }
+        NOT = { country_exists = RAT }
         }
 	ai_will_do = {
 		factor = 5
@@ -2207,7 +2207,7 @@ focus = {
             type = annex_everything
             }
 		create_wargoal = {
-            target = HOL
+            target = NTL
             type = annex_everything
             }
 	    create_wargoal = {
@@ -2234,13 +2234,13 @@ focus = {
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
 		create_wargoal = {
-            target = ENG
+            target = GBR
             type = annex_everything
             }
 		create_wargoal = {
-            target = ENR
-            type = annex_everything
-            }
+			target = GBR
+			type = annex_everything
+		}
 	}
 }
 #経済ツリー

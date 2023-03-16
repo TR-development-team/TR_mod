@@ -1,0 +1,28 @@
+characters={
+	EWA_George_Giffard={
+		name=GBR_George_Giffard
+		portraits={
+			civilian={
+				large="gfx/leaders/EWA/Portrait_GBR_George_Giffard.png"
+			}
+			army={
+				large="gfx/leaders/EWA/Portrait_GBR_George_Giffard.png"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
+		}
+		field_marshal={
+			traits={ organizer old_guard war_hero career_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+}

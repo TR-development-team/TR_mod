@@ -1,42 +1,69 @@
 characters={
-	
-	SHX_Doihara_Kenji={
-		name=JAP_Doihara_Kenji
+	SHX_yan_xishan={
+		name=SHX_yan_xishan
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
+				large="gfx/leaders/WHN/Portrait_china_Yan_Xishan.tga"
+			}
+			army={
+				small=GFX_portrait_SHX_yan_xishan_small
+				large="gfx/leaders/WHN/Portrait_china_Yan_Xishan.tga"
 			}
 		}
 		country_leader={
-			ideology= social_conservative_subtype
+			ideology= dem_Military_junta_subtype
 		}
 		country_leader={
-			ideology= colonial_government_subtype
+			ideology= Military_junta_subtype
 		}
 		country_leader={
-			ideology= mil_colonial_government_subtype
+			ideology=Nationalism_subtype
+		}
+		field_marshal={
+			traits={ politically_connected media_personality war_hero organizer logistics_wizard }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=3
 		}
 	}
-	SHX_Pu_Yi={
-		name=SHX_Pu_Yi
+
+	SHX_wang_jingguo={
+		name=SHX_wang_jingguo
 		portraits={
-			civilian={
-				large="gfx/leaders/SHX/Portrait_Qing_PuYi.tga"
+			army={ #These two portraits match
+				large=GFX_portrait_SHX_wang_jingguo
+				small="GFX_idea_generic_army_asia_1"
 			}
 		}
-		country_leader={
-			ideology= absolute_monarchy_subtype
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
 		}
 	}
-	SHX_Minoda_Muneki={
-		name=SHX_Minoda_Muneki
+
+	SHX_fu_zuoyi={
+		name=CHI_fu_zuoyi
 		portraits={
-			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_minoda_Muneki.tga"
+			army={
+				large="GFX_portrait_chi_fu_zuoyi"
+				small="GFX_idea_CHI_fu_zuoyi"
 			}
 		}
-		country_leader={
-			ideology= asian_monroe_subtype
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
 		}
 	}
+
 }

@@ -1,6 +1,7 @@
 ﻿capital = 291
-
 oob = "IRQ_1936"
+
+set_cosmetic_tag = IRQ_hashemite_kingdom
 
 # Starting tech
 set_technology = {
@@ -26,7 +27,7 @@ if = {
 set_convoys = 5
 
 add_ideas = {
-        TUR_Bagdadrailway
+        OTT_Bagdadrailway
 }
 
 set_politics = {

@@ -1,52 +1,12 @@
 characters={
-	ENR_oswald_mosley={
-		name=ENG_oswald_mosley
-		portraits={
-			civilian={
-				large="gfx/leaders/ENG/Portrait_ENG_mosley.png"
-			}
-		}
-		country_leader={
-			ideology=National_syndicalist_subtype
-		}
-	}
-
-	ENR_winston_churchill={
-		name=ENG_winston_churchill
-		portraits={
-			civilian={
-				large="gfx/leaders/ENG/Portrait_ENG_Winston_Churchill.tga"
-			}
-		}
-		country_leader={
-			ideology=liberal_conservative_subtype
-			traits = {
-				british_bulldog
-			}
-		}
-	}
-
-
-	ENR_Aleister_Crowley={
-		name=ENG_Aleister_Crowley
-		portraits={
-			civilian={
-				large="gfx/leaders/ENG/Portrait_ENG_Crowley.tga"
-			}
-		}
-		country_leader={
-			ideology=Gnosticism_subtype
-		}
-	}
-
-	ENG_claude_auchinleck={
-		name=ENG_claude_auchinleck
+	GBR_claude_auchinleck={
+		name=GBR_claude_auchinleck
 		portraits={
 			army={
 				small="GFX_idea_claude_auchinleck"
 			}
 			army={
-				large=GFX_portrait_ENG_claude_auchinleck
+				large=GFX_portrait_GBR_claude_auchinleck
 			}
 		}
 		corps_commander={
@@ -60,12 +20,12 @@ characters={
 		}
 	}
 
-	ENG_neil_ritchie={
-		name=ENG_neil_ritchie
+	GBR_neil_ritchie={
+		name=GBR_neil_ritchie
 		portraits={
 			army={
-				large=GFX_portrait_ENG_neil_ritchie
-				small=GFX_portrait_ENG_neil_ritchie_small
+				large=GFX_portrait_GBR_neil_ritchie
+				small=GFX_portrait_GBR_neil_ritchie_small
 			}
 		}
 		corps_commander={
@@ -79,12 +39,12 @@ characters={
 		}
 	}
 
-	ENG_william_slim={
-		name=ENG_william_slim
+	GBR_william_slim={
+		name=GBR_william_slim
 		portraits={
 			army={
-				large=GFX_portrait_ENG_william_slim
-				small=GFX_portrait_ENG_william_slim_small
+				large=GFX_portrait_GBR_william_slim
+				small=GFX_portrait_GBR_william_slim_small
 			}
 		}
 		corps_commander={
@@ -98,12 +58,12 @@ characters={
 		}
 	}
 
-	ENG_richard_oconnor={
-		name=ENG_richard_oconnor
+	GBR_richard_oconnor={
+		name=GBR_richard_oconnor
 		portraits={
 			army={
-				large=GFX_portrait_ENG_richard_oconnor
-				small=GFX_portrait_ENG_richard_oconnor_small
+				large=GFX_portrait_GBR_richard_oconnor
+				small=GFX_portrait_GBR_richard_oconnor_small
 			}
 		}
 		corps_commander={
@@ -116,12 +76,12 @@ characters={
 		}
 	}
 
-	ENG_william_platt={
-		name=ENG_william_platt
+	GBR_william_platt={
+		name=GBR_william_platt
 		portraits={
 			army={
-				large=GFX_portrait_ENG_william_platt
-				small=GFX_portrait_ENG_william_platt_small
+				large=GFX_portrait_GBR_william_platt
+				small=GFX_portrait_GBR_william_platt_small
 			}
 		}
 		corps_commander={
@@ -134,12 +94,12 @@ characters={
 		}
 	}
 
-	ENG_george_giffard={
-		name=ENG_george_giffard
+	GBR_george_giffard={
+		name=GBR_george_giffard
 		portraits={
 			army={
-				large=GFX_portrait_ENG_george_giffard
-				small=GFX_portrait_ENG_george_giffard_small
+				large=GFX_portrait_GBR_george_giffard
+				small=GFX_portrait_GBR_george_giffard_small
 			}
 		}
 		corps_commander={
@@ -153,12 +113,12 @@ characters={
 		}
 	}
 
-	ENG_jackie_smyth={
-		name=ENG_jackie_smyth
+	GBR_jackie_smyth={
+		name=GBR_jackie_smyth
 		portraits={
 			army={
-				large=GFX_portrait_ENG_jackie_smyth
-				small=GFX_portrait_ENG_jackie_smyth_small
+				large=GFX_portrait_GBR_jackie_smyth
+				small=GFX_portrait_GBR_jackie_smyth_small
 			}
 		}
 		corps_commander={
@@ -172,12 +132,12 @@ characters={
 		}
 	}
 
-	ENG_william_gott={
-		name=ENG_william_gott
+	GBR_william_gott={
+		name=GBR_william_gott
 		portraits={
 			army={
-				large=GFX_portrait_ENG_william_gott
-				small=GFX_portrait_ENG_william_gott_small
+				large=GFX_portrait_GBR_william_gott
+				small=GFX_portrait_GBR_william_gott_small
 			}
 		}
 		corps_commander={
@@ -191,12 +151,12 @@ characters={
 		}
 	}
 
-	ENG_jock_campbell={
-		name=ENG_jock_campbell
+	GBR_jock_campbell={
+		name=GBR_jock_campbell
 		portraits={
 			army={
-				large=GFX_portrait_ENG_jock_campbell
-				small=GFX_portrait_ENG_jock_campbell_small
+				large=GFX_portrait_GBR_jock_campbell
+				small=GFX_portrait_GBR_jock_campbell_small
 			}
 		}
 		corps_commander={
@@ -210,12 +170,12 @@ characters={
 		}
 	}
 
-	ENG_bruce_fraser={
-		name=ENG_bruce_fraser
+	GBR_bruce_fraser={
+		name=GBR_bruce_fraser
 		portraits={
 			army={
-				large=GFX_portrait_ENG_bruce_fraser
-				small=GFX_portrait_ENG_bruce_fraser_small
+				large=GFX_portrait_GBR_bruce_fraser
+				small=GFX_portrait_GBR_bruce_fraser_small
 			}
 		}
 		navy_leader={
@@ -229,12 +189,12 @@ characters={
 		}
 	}
 
-	ENG_algernon_willis={
-		name=ENG_algernon_willis
+	GBR_algernon_willis={
+		name=GBR_algernon_willis
 		portraits={
 			army={
-				large=GFX_portrait_ENG_algernon_willis
-				small=GFX_portrait_ENG_algernon_willis_small
+				large=GFX_portrait_GBR_algernon_willis
+				small=GFX_portrait_GBR_algernon_willis_small
 			}
 		}
 		navy_leader={
@@ -248,12 +208,12 @@ characters={
 		}
 	}
 
-	ENG_arthur_power={
-		name=ENG_arthur_power
+	GBR_arthur_power={
+		name=GBR_arthur_power
 		portraits={
 			army={
-				large=GFX_portrait_ENG_arthur_power
-				small=GFX_portrait_ENG_arthur_power_small
+				large=GFX_portrait_GBR_arthur_power
+				small=GFX_portrait_GBR_arthur_power_small
 			}
 		}
 		navy_leader={

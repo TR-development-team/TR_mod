@@ -1,0 +1,121 @@
+﻿##### ARBDI ARABIA NAME LISTS #####
+### REGULAR DESTROYER NAMES###
+ARB_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { ARB }
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }			
+
+	prefix = "HMS "							
+	fallback_name = "Destroyer %d"					
+
+	unique = {											
+		"Al Riyadh" "Makkah" "Al Damman" "Al Madinah" "Hofouf" "Abha" "Taif"
+	}
+}
+
+
+### LIGHT CRUISER NAMES###
+ARB_CL_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CL
+
+	for_countries = { ARB }
+
+	type = ship
+	ship_types = { ship_hull_cruiser light_cruiser }
+	
+	prefix = "HMS "							
+	fallback_name = "Light Cruiser %d"
+
+	unique = {
+		"Jiddah" "Ad Damman" "Al Hufüf" "At Tä'if" "Najran" 
+	}
+}
+
+### HEAVY CRUISER NAMES###
+ARB_CA_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CA
+
+	for_countries = { ARB }
+
+	type = ship
+	ship_types = { ship_hull_cruiser heavy_cruiser }
+	
+	prefix = "HMS "							
+	fallback_name = "Heavy Cruiser %d"
+
+	unique = {
+		"Jiddah" "Ad Damman" "Al Hufüf" "At Tä'if" "Najran" 
+	}
+}
+
+### BATTLESHIP NAMES ###
+ARB_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { ARB }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+	
+	prefix = "HMS "							
+	fallback_name = "Battleship %d"		
+
+	unique = {
+		"Makkah" "al Madinah" 
+	}
+}
+
+### BATTLECRUISER NAMES ###
+ARB_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { ARB }
+
+	type = ship
+	ship_types = { ship_hull_heavy battle_cruiser }
+	
+	prefix = "HMS "							
+	fallback_name = "Battlecruiser %d"		
+
+	unique = {
+		"Makkah" "al Madinah" 
+	}
+}
+
+### AIRCRAFT CARRIER NAMES ###
+ARB_CV_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_CARRIERS
+
+	for_countries = { ARB }
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	prefix = "HMS "							
+	fallback_name = "Carrier %d"		
+
+	unique = {
+		"Al 'Arabiyah as Su'udiyah" "Aziz ibn Saud" 
+	}
+}
+
+
+### SUBMARINES ###
+ARB_SS_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_SUBMARINES
+
+	for_countries = { ARB }
+
+	type = ship
+	ship_types = { ship_hull_submarine submarine }
+	
+	prefix = "HMS "							
+	fallback_name = "Submarine %d"
+	
+	unique = {
+		"Al Riyadh" "Makkah" "Al Damman" "Al Madinah" "Hofouf" "Abha" "Taif"
+	}
+}

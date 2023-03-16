@@ -46,7 +46,7 @@ country_event = {
 			id = TR_central_asia.4
 			days = 2
 			}
-			inherit_technology = STE
+			inherit_technology = KAZ
             }
 		}
 
@@ -66,7 +66,7 @@ country_event = {
 			id = TR_central_asia.4
 			days = 2
 			}
-			inherit_technology = STE
+			inherit_technology = KAZ
             }
 		}
 	}
@@ -113,7 +113,7 @@ country_event = {
 			type = annex_everything
 		}
 		declare_war_on = {
-			target = STE
+			target = KAZ
 			type = annex_everything
 		}
 		hidden_effect = { 

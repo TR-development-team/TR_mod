@@ -1,0 +1,41 @@
+﻿capital = 756
+oob = "GAN_1936"
+
+set_cosmetic_tag = GAN_ma_military_clique
+
+set_politics = {
+	ruling_party = national_populist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	national_populist = 100
+}
+
+recruit_character = GAN_Ma_Zhongying
+recruit_character = GAN_Ma_Zhongying_marshal
+
+if = {
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = {	target = SIK	type = civil_war	}
+	declare_war_on = {	target = ETR	type = civil_war	}
+	add_civil_war_target = ETR
+	add_civil_war_target = SIK
+}
+
+add_ideas = {
+	militaly_dictatorship
+	extensive_conscription
+	partial_economic_mobilisation
+	WHN_late_army
+	GAN_Ma_Zhongying
+	GAN_Ma_Zhongying_cos
+	GAN_Ma_Hushan
+	GAN_Ma_Hushan_coa
+}
+
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}

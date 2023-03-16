@@ -1,7 +1,9 @@
 ﻿capital = 113
-
 oob = "IRE_1936"
-set_cosmetic_tag = IRE_ENG
+
+GBR = {	set_autonomy = {	target = IRE	autonomous_state = dominion	}	}
+set_cosmetic_tag = IRE_GBRandIREbyENG
+
 set_research_slots = 3
 
 set_technology = {
@@ -20,13 +22,7 @@ add_ideas = {
         acceptable_school_system
         good_pensions
         good_health_care
-}
-ENG = { 
-        set_autonomy = {
-		target = IRE
-		autonomous_state = autonomy_dominion
-	}
-      } 
+} 
 set_politics = {
 	ruling_party = social_conservative
 	last_election = "1933.1.24"

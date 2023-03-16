@@ -1,0 +1,36 @@
+characters={
+	KUM_Yulbars_Khan={
+		name=KUM_Yulbars_Khan
+		portraits={
+			civilian={
+				large="gfx/leaders/KUM/Portrait_KUM_Yulbars_Khan.png"
+			}
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+	}
+	KUM_Yulbars_Khan_marshal={
+		name=KUM_Yulbars_Khan
+		portraits={
+			army={
+				large="gfx/leaders/KUM/Portrait_KUM_Yulbars_Khan.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

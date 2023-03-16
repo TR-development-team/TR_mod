@@ -550,7 +550,7 @@ country_event = {#オスマンが同盟を提案
             is_faction_leader = yes
 		}
         JAP = {
-            add_to_faction = TUR
+            add_to_faction = OTT
         }
 	}
     option = { 
@@ -583,7 +583,7 @@ country_event = {#安部首相のインド訪問
 			modifier = small_increase
 		}
 		reverse_add_opinion_modifier = {
-			target = RAJ
+			target = IND
 			modifier = small_decrease
 		}
 	}
@@ -594,7 +594,7 @@ country_event = {#安部首相のインド訪問
 		}
         add_political_power = 25
 		reverse_add_opinion_modifier = {
-			target = RAJ
+			target = IND
 			modifier = small_increase
 		}
 		reverse_add_opinion_modifier = {
@@ -619,7 +619,7 @@ country_event = {#犬養毅=ファン・ボイ・チャウ会談
 		name = TR_japan.13.a
 		add_political_power = 25
         add_ideas = JAP_Autonomy_increase
-		JSE = { country_event = { id = TR_indochina.2 days = 7 } }
+		INC = { country_event = { id = TR_indochina.2 days = 7 } }
 	}
 }
 
@@ -730,7 +730,7 @@ country_event = {#京城合意
 			transfer_state = 832
 			transfer_state = 833
 			transfer_state = 834
-			set_cosmetic_tag = KOR_JAP_autonomy
+			set_cosmetic_tag = GREATKOREA_empire
 			}
 		JAP = { 
 			set_autonomy = {
@@ -1130,7 +1130,7 @@ country_event = {#京城での戴冠式
 		name = TR_japan.29.a
 		add_political_power = 25
 		add_stability = 0.05
-		set_cosmetic_tag = JAP_KOR_UNION
+		set_cosmetic_tag = GREATEREASTASIA_union
 		add_state_core = 525
 		add_state_core = 527
 		add_state_core = 830
@@ -1470,7 +1470,7 @@ country_event = {
 	id = TR_japan.36
 	title = TR_japan.36.t
 	desc = TR_japan.36.d
-	picture = GFX_report_event_SOV_negotiations_japan_rodzaevsky
+	picture = GFX_report_event_RUS_negotiations_japan_rodzaevsky
         fire_only_once = yes
 	trigger = {
 		tag = JAP

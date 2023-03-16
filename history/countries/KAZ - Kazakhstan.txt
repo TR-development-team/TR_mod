@@ -1,8 +1,25 @@
-﻿capital = 652 #オレンブルク
+﻿capital = 590
+oob = "KAZ_1936"
 
-set_research_slots = 3
+RUS = {	set_autonomy = {	target = KAZ	autonomous_state = overseas_territory	}	}
+set_cosmetic_tag = COUNTRY_RUS
 
-# Starting tech
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1935.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	paternal_autocrat = 100
+}
+
+recruit_character = KAZ_Vlazimir_Kappel
+recruit_character = KAZ_Konstantin_Petrovich_Nechaev
+
+add_ideas = {	Colonical_system	}
+
+set_research_slots = 2
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -12,29 +29,3 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 }
-set_cosmetic_tag = KAZ_Alash
-set_politics = {
-	ruling_party = social_democrat
-	last_election = "1936.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-set_popularities = {
-	totalist = 13
-	syndicalist = 5
-	radical_socialist = 12
-	social_democrat = 27
-	social_liberal = 10
-	market_liberal = 8
-	social_conservative = 8
-	authoritarian_democrat = 7
-	paternal_autocrat = 5
-	national_populist = 5
-}
-
-recruit_character = KAZ_Akhmet_Baitursynov
-
-
-
-

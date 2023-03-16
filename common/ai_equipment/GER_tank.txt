@@ -776,7 +776,7 @@ GER_medium_tanks = {
 			modifier = {
 				OR = { 
 					is_historical_focus_on = no
-					has_war_with = SOV
+					has_war_with = RUS
 				}
 				factor = 0
 			}
@@ -836,7 +836,7 @@ GER_medium_tanks = {
 			modifier = {
 				is_historical_focus_on = yes
 				NOT = {
-					has_war_with = SOV
+					has_war_with = RUS
 				}
 				factor = 0
 			}
@@ -898,8 +898,8 @@ GER_medium_tanks = {
 			factor = 400
 			modifier = {
 				has_war_with = USA
-				has_war_with = SOV
-				has_war_with = ENG
+				has_war_with = RUS
+				has_war_with = GBR
 				factor = 10
 			}
 		}
@@ -987,7 +987,7 @@ GER_medium_tank_destroyer = {
 		priority = {
 			factor = 70
 			modifier = {
-				has_war_with = SOV
+				has_war_with = RUS
 				factor = 3
 			}
 			modifier = {
@@ -1790,7 +1790,7 @@ GER_heavy_tank_destroyer = {
 					}
 					modifier = {
 						add = 4
-						has_war_with = SOV
+						has_war_with = RUS
 					}
 				}
 			}

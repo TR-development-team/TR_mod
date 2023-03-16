@@ -1,9 +1,5 @@
 ﻿capital = 302
-
 oob = "BOL_1936"
-add_ideas = {
-        militaly_dictatorship
-}
 if = {
 	limit = { has_dlc = "By Blood Alone" }
 		set_air_oob = "BOL_1936_air_bba"
@@ -15,14 +11,7 @@ if = {
 	}
 }
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	tech_support = 1		
-	tech_engineers = 1
-	gw_artillery = 1
-	fuel_silos = 1
-}
+set_cosmetic_tag = BOL_republic
 
 set_politics = {
 	ruling_party = radical_socialist
@@ -30,7 +19,6 @@ set_politics = {
 	election_frequency = 72
 	elections_allowed = no
 }
-
 set_popularities = {
 	totalist = 10
 	syndicalist = 8
@@ -42,7 +30,7 @@ set_popularities = {
 	authoritarian_democrat = 8
 	paternal_autocrat = 9
 	national_populist = 6
-        Gnosticism = 0
+	Gnosticism = 0
 }
 recruit_character = BOL_severino_ruiztagle
 recruit_character = BOL_jorge_blanco
@@ -51,3 +39,14 @@ recruit_character = BOL_David_Toro
 recruit_character = BOL_German_Busch
 recruit_character = BOL_Oscar_Unzaga_de_la_vega
 
+add_ideas = {
+	militaly_dictatorship
+}
+
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	fuel_silos = 1
+}

@@ -1,0 +1,139 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# send_volunteers_desire
+
+
+
+WHN_ignore_claims = {
+	allowed = {
+		OR = {
+			original_tag = WHN
+			original_tag = CNK
+			original_tag = SGH
+			original_tag = XIB
+		}
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "CNK"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "JAP"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "GND"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "ZHI"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "SHX"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "HEN"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "RJN"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "CNK"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "XIB"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "HNN"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "GAN"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "SHA"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "SCH"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "NIG"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "MAN"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "YUN"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "SGH"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "SIK"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "ETR"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "TIB"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore_claim
+		id = "MEN"
+		value = 1
+	}
+}

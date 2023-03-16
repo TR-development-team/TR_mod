@@ -1,0 +1,144 @@
+﻿### SCC OOB ###
+
+division_template = {
+	name = "Infantry Division"		
+	division_names_group = SCC_INF_01		# Uses generic English templates
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Cavalry Division"		
+	division_names_group = SCC_CAV_01		# Uses generic English templates
+	
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+
+units = {
+	division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 772
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 6692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 666
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 11645
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 3698
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 7661
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 772
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 6692
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 9
+		}
+		location = 666
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 11645
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 3698
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 12
+		}
+		location = 7661
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+	}
+}
+
+

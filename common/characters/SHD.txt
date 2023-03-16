@@ -1,0 +1,29 @@
+characters={
+	SHD_Date_Junnosuke = {
+		name = SHD_Date_Junnosuke
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SHD/Portrait_SHD_Date_Junnosuke.png"
+			}
+			army = {
+				large = "gfx/leaders/SHD/Portrait_SHD_Date_Junnosuke.png"
+			}
+		}
+		country_leader={
+			ideology= dem_Military_junta_subtype
+		}
+		country_leader={
+			ideology= Military_junta_subtype
+		}
+		field_marshal = {
+			traits = { cavalry_officer career_officer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+
+}
+	

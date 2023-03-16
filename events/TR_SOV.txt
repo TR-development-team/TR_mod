@@ -1,287 +1,1636 @@
-﻿
-add_namespace = TR_Soviet
-
+add_namespace = TR_russia
 
 country_event = {
-	id = TR_Soviet.1
-	title = TR_Soviet.1.t
-	desc = TR_Soviet.1.d
-	picture = GFX_report_event_france_parade
+	id = TR_russia.1
+	title = TR_russia.1.t
+	desc = TR_russia.1.d
+	picture = GFX_report_event_soviet_in_riga
 
+	is_triggered_only = yes
+		fire_only_once = yes
 
-        is_triggered_only = yes
-        fire_only_once = yes
 
 	
-	option = { 
-		name = TR_Soviet.1.a
-                ai_chance = {
-			base = 100
+	option = {
+		name = TR_russia.1.a
+		add_stability = -0.1
+		add_war_support = -0.1
+		effect_tooltip = { retire_country_leader = yes }
+		promote_character = SOV_alexei_ii
+		add_ideas = SOV_alexei_ii
+		hidden_effect = {
+				country_event = {
+					id = TR_news.15
+					days = 1
+					
+				}
 		}
-                add_political_power = -50
-                RUS = { add_ideas = RUS_GER_COLLAB }
-                reverse_add_opinion_modifier = {
-				target = RUS
-				modifier = RUS_GER_SUPPORT
-			}
 	}
-	option = { 
-		name = TR_Soviet.1.b
-                ai_chance = {
+}
+
+country_event = {
+	id = TR_russia.2
+	title = TR_russia.2.t
+	desc = TR_russia.2.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+		fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_russia.2.a
+		set_country_flag = RUS_FEBREVOLUTION
+		add_political_power = -50
+		add_stability = -0.1
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+				add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+				add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+				add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+				add_popularity = {
+			ideology = social_liberal
+			popularity = 0.05
+		}
+				add_popularity = {
+			ideology = market_liberal
+			popularity = 0.05
+		}
+		hidden_effect = {
+			country_event = {
+					id = TR_russia.3
+					days = 3
+					
+				}
+				country_event = {
+					id = TR_news.16
+					days = 1
+					
+				}
+		}
+
+	}
+}
+
+country_event = {
+	id = TR_russia.3
+	title = TR_russia.3.t
+	desc = TR_russia.3.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+		fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_russia.3.a
+				ai_chance = {
+			base = 20
+		}
+		add_ideas = Constitutional_monarchy
+
+		set_country_flag = RUS_RIKKEN
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.05
+		}
+		hidden_effect = { 
+			country_event = {
+				id = TR_news.51
+				days = 1
+			}
+		}
+	}
+		
+	option = {
+		name = TR_russia.3.b
+				ai_chance = {
+			base = 40
+		}
+		
+		set_country_flag = RUS_DOKUSAI
+		add_ideas = SOV_Pyotr_wrangel
+		add_stability = -0.1
+		add_political_power = -50
+		promote_character = SOV_Pyotr_wrangel
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.05
+		}
+		hidden_effect = {
+			country_event = {
+					id = TR_russia.22
+					days = 14
+				}
+			country_event = {
+				id = TR_news.49
+				days = 1
+			}
+		}
+	}
+		option = {
+		name = TR_russia.3.c
+		ai_chance = {
+			base = 20
+		}
+		add_ideas = Democratic_Republic
+		add_ideas = SOV_Viktor_Chernov
+		add_ideas = SOV_Viktor_Chernov_GL
+		set_cosmetic_tag = RUS_republic
+		set_country_flag = RUS_MINSHU
+		add_stability = -0.1
+		add_political_power = -100
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.05
+		}
+		hidden_effect = { 
+			country_event = {
+				id = TR_news.52
+				days = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = TR_russia.4
+	title = TR_russia.4.t
+	desc = TR_russia.4.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+		fire_only_once = yes
+
+	   
+	
+	option = {
+		name = TR_russia.4.a
+		ai_chance = {
+			base = 20
+		}
+		add_ideas = SOV_Pavel_Milyukov
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+	}
+
+
+	option = {
+		name = TR_russia.4.b
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 2
+				has_government = social_liberal
+			}
+		}
+		add_ideas = SOV_Viktor_Chernov_GL
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+	}
+
+	option = {
+		name = TR_russia.4.c
+		ai_chance = {
+			base = 20
+		}
+		add_ideas = SOV_Yuliy_martov
+				add_popularity = {
+			ideology = social_democrat
+			popularity = 0.2
+		}
+				set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+
+	}
+	option = {
+		name = TR_russia.4.e
+		ai_chance = {
+			base = 20
+		}
+		add_ideas = SOV_Nikolai_Trubetzkoy
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+
+	}
+	option = {
+		name = TR_russia.4.f
+		ai_chance = {
+			base = 20
+			modifier = {
+				factor = 2
+				has_government = authoritarian_democrat
+			}
+		}
+		add_ideas = SOV_Alexander_Guchkov
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+		}
+
+	}
+}
+
+country_event = {
+	id = TR_russia.5
+	title = TR_russia.5.t
+	desc = TR_russia.5.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+		fire_only_once = yes
+	
+	option = {
+		name = TR_russia.5.a
+		trigger = {	NOT = {	has_country_flag = RUS_Great_Purge_flag	}	}
+		ai_chance = {	base = 100	}
+		end_puppet = BUK
+		end_puppet = KHI
+		end_puppet = KAZ
+		end_puppet = BLT
+		end_puppet = LIT
+		end_puppet = SKH
+		create_faction = "russianwhite_faction"
+		add_ideas = RUS_CIVIL_WAR
+		set_country_flag = RUS_OCREVOLUTION
+		set_global_flag = Russian_civil_war
+		remove_ideas = RUS_revolution_1
+		hidden_effect = {
+			195 = { set_demilitarized_zone = yes }
+			208 = { set_demilitarized_zone = yes }
+			263 = { set_demilitarized_zone = yes }
+			209 = { set_demilitarized_zone = yes }
+			246 = { set_demilitarized_zone = yes }
+			244 = { set_demilitarized_zone = yes }
+			210 = { set_demilitarized_zone = yes }
+			207 = { set_demilitarized_zone = yes }
+			926 = { set_demilitarized_zone = yes }
+			241 = { set_demilitarized_zone = yes }
+			243 = { set_demilitarized_zone = yes }
+			242 = { set_demilitarized_zone = yes }
+			205 = { set_demilitarized_zone = yes }
+			224 = { set_demilitarized_zone = yes }
+			247 = { set_demilitarized_zone = yes }
+			219 = { set_demilitarized_zone = yes }
+			223 = { set_demilitarized_zone = yes }
+			222 = { set_demilitarized_zone = yes }
+			96 = { set_demilitarized_zone = yes }
+			BLT = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BLT_united_republic
+			}
+			LIT = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = LIT_republic
+				country_event = TR_Lithuania.1
+			}
+			BUK = {	country_event = {	id = TR_central_asia.2	days = 3	}	}
+			KAZ = {	country_event = {	id = TR_central_asia.3	days = 3	}	}
+			create_dynamic_country = {
+				original_tag = KAZ
+				transfer_state = 652
+				transfer_state = 406
+				transfer_state = 407
+				transfer_state = 402
+				transfer_state = 402
+				transfer_state = 587
+				transfer_state = 583
+				transfer_state = 582
+				transfer_state = 893
+				country_event = {	id = TR_central_asia.1	days = 1	}
+				recruit_character = KAZ_Akhmet_Baitursynov
+			}
+			set_capital = {	state = 249	remember_old_capital = yes	}
+		}
+	}
+	option = {
+		name = TR_russia.5.b
+		trigger = {
+			NOT = { has_country_flag = RUS_Great_Purge_flag }
+		}
+				ai_chance = {
 			base = 0
 		}
-                reverse_add_opinion_modifier = {
-				target = RUS
-				modifier = RUS_GER_SUPPORT_deny
+		end_puppet = BUK
+		end_puppet = KHI
+		end_puppet = KAZ
+		end_puppet = BLT
+		end_puppet = LIT
+		end_puppet = SKH
+		create_faction = "russianwhite_faction"
+		remove_ideas = RUS_revolution_1
+		add_ideas = RUS_CIVIL_WAR
+		set_country_flag = RUS_OCREVOLUTION
+		set_global_flag = Russian_civil_war
+		set_capital = {
+			state = 249
+			remember_old_capital = yes
+		}
+		hidden_effect = {
+			195 = { set_demilitarized_zone = yes }
+			208 = { set_demilitarized_zone = yes }
+			263 = { set_demilitarized_zone = yes }
+			209 = { set_demilitarized_zone = yes }
+			246 = { set_demilitarized_zone = yes }
+			244 = { set_demilitarized_zone = yes }
+			210 = { set_demilitarized_zone = yes }
+			207 = { set_demilitarized_zone = yes }
+			926 = { set_demilitarized_zone = yes }
+			241 = { set_demilitarized_zone = yes }
+			243 = { set_demilitarized_zone = yes }
+			242 = { set_demilitarized_zone = yes }
+			205 = { set_demilitarized_zone = yes }
+			224 = { set_demilitarized_zone = yes }
+			247 = { set_demilitarized_zone = yes }
+			219 = { set_demilitarized_zone = yes }
+			223 = { set_demilitarized_zone = yes }
+			222 = { set_demilitarized_zone = yes }
+			96 = { set_demilitarized_zone = yes }
+			BLT = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = BLT_united_republic
+			}
+			LIT = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = LIT_republic
+				country_event = TR_Lithuania.1
+			}
+			BUK = {	country_event = {	id = TR_central_asia.2	days = 3	}	}
+			KAZ = {	country_event = {	id = TR_central_asia.3	days = 3	}	}
+			create_dynamic_country = {
+				original_tag = KAZ
+				change_tag_from = RUS
+				transfer_state = 652
+				transfer_state = 406
+				transfer_state = 407
+				transfer_state = 402
+				transfer_state = 402
+				transfer_state = 587
+				transfer_state = 583
+				transfer_state = 582
+				transfer_state = 893
+				country_event = {	id = TR_central_asia.1	days = 1	}
+				recruit_character = KAZ_Akhmet_Baitursynov
+			}
+		}
+	}
+	option = {
+		name = TR_russia.5.c
+		trigger = {
+			has_country_flag = RUS_Great_Purge_flag
+		}
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = RUS_OCREVOLUTION
+		set_global_flag = Russian_civil_war
+		remove_ideas = RUS_revolution_1
+		declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+	}
+}
+
+country_event = {
+	id = TR_russia.6
+	title = TR_russia.6.t
+	desc = TR_russia.6.d
+	picture = GFX_report_event_soviet_soldiers
+
+	is_triggered_only = yes
+		fire_only_once = yes
+
+	option = {
+		name = TR_russia.6.a
+		trigger = {
+			RUS = { NOT = { has_country_flag = RUS_Great_Purge_flag } }
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = TR_news.8
+				days = 2
+			}
+		}
+		SOV = { 
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = RUSandBLR_SOV_socialist_republic
+			transfer_state = 195
+			transfer_state = 208
+			transfer_state = 263
+			transfer_state = 209
+			transfer_state = 246
+			transfer_state = 244
+			transfer_state = 210
+			transfer_state = 207
+			transfer_state = 926
+			transfer_state = 241
+			transfer_state = 243
+			transfer_state = 242
+			transfer_state = 205
+			transfer_state = 224
+			transfer_state = 247
+			transfer_state = 219
+			transfer_state = 223
+			transfer_state = 222
+			transfer_state = 96
+			}
+		create_faction = "Soviet_faction"
+				add_ideas = SOV_CIVIL_WAR
+				add_named_threat = { threat = 15 name = SOV_CIVIL_WAR }
+				declare_war_on = {
+			target = RUS
+			type = annex_everything
+		}
+				division_template = {
+				name = "Soviet Infantry"
+				division_names_group = RUS_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 208 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 6
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 205 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 3
+				}
+			}
+						random_owned_controlled_state = {
+				prioritize = { 223 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 3
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 244 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 3
+				}
+			}
+						random_owned_controlled_state = {
+				prioritize = { 207 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 3
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 205 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 3
+				}
+			}
+						random_owned_controlled_state = {
+				prioritize = { 223 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 3
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 219 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\"  start_experience_factor = 0.1"
+					owner = SOV
+					count = 5
+				}
+			}
+						random_owned_controlled_state = {
+				prioritize = { 195 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 5
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 195 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 5
+				}
+			}
+	}
+	option = {
+		name = TR_russia.6.b
+		trigger = {
+			RUS = { has_country_flag = RUS_Great_Purge_flag }
+		}
+		create_faction = "Soviet_faction"
+				add_ideas = SOV_CIVIL_WAR
+				division_template = {
+				name = "Soviet Infantry"
+				division_names_group = RUS_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 206 }
+				create_unit = {
+					division = "division_template = \"Soviet Infantry\" start_experience_factor = 0.1"
+					owner = SOV
+					count = 6
+				}
+			}
+	}
+}
+#未使用
+country_event = {
+	id = TR_russia.7
+	title = TR_russia.7.t
+	desc = TR_russia.7.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+		fire_only_once = yes
+
+	option = {
+		name = TR_russia.7.a
+				add_ideas = MHN_SOV_CIVIL_WAR
+				declare_war_on = {
+			target = SOV
+			type = annex_everything
+		}
+				declare_war_on = {
+			target = RUS
+			type = annex_everything
+		}
+				division_template = {
+				name = "Free Infantry"
+				division_names_group = MHN_GAR_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 203 }
+				create_unit = {
+					division = "division_template = \"Free Infantry\" start_experience_factor = 0.1"
+					owner = MHN
+					count = 6
+				}
 			}
 	}
 }
 
+
 country_event = {
-	id = TR_Soviet.2
-	title = TR_Soviet.2.t
-	desc = TR_Soviet.2.d
-	picture = GFX_report_event_france_parade
+	id = TR_russia.8
+	title = TR_russia.8.t
+	desc = TR_russia.8.d
+	picture = GFX_report_event_stalin_01
 
+	is_triggered_only = yes
+		fire_only_once = yes
 
-        is_triggered_only = yes
-        fire_only_once = yes
-
-	
-	option = { 
-		name = TR_Soviet.2.a
-        ai_chance = {
-			base = 30
-		}
-		set_country_flag = SOV_Congress_END
-        set_country_flag = SOV_Stalin_Win
-		add_ideas = SOV_Vyacheslav_Molotov
-		set_politics = {
-			ruling_party = totalist
-			elections_allowed = no
-		}		
-	}
-	option = { 
-		name = TR_Soviet.2.b
-        ai_chance = {
-			base = 30
-		}
-		set_country_flag = SOV_Congress_END
-		set_country_flag = SOV_Bukharin_Win
-		add_ideas = SOV_Nikolai_Bukharin
-		set_politics = {
-			ruling_party = radical_socialist
-			elections_allowed = no
-		}
-		effect_tooltip = { retire_country_leader = yes }
-		promote_character = SOV_Nikolai_bukharin
-		create_wargoal = {
-			target = GEO
+	option = {
+		name = TR_russia.8.a
+		add_ideas = SOV_CIVIL_WAR
+		SOV = { add_to_faction = SCC }
+		declare_war_on = {
+			target = RUS
 			type = annex_everything
-		}       
-	}
-	option = { 
-		name = TR_Soviet.2.c
-        ai_chance = {
-			base = 20
 		}
-		set_country_flag = SOV_Congress_END
-		set_country_flag = SOV_Bogdanov_Win
-		add_ideas = SOV_Alexander_Bogdanov
-		set_politics = {
-			ruling_party = Gnosticism
-			elections_allowed = no
-		}
-		create_wargoal = {
-			target = GEO
-			type = annex_everything
-		}       
-	}
-	option = { 
-		name = TR_Soviet.2.e
-        ai_chance = {
-			base = 20
-		}
-		set_country_flag = SOV_Congress_END
-		set_country_flag = SOV_Zinoviev_Win
-		add_ideas = SOV_Grigory_Zinoviev
-		set_politics = {
-			ruling_party = radical_socialist
-			elections_allowed = no
-		}
-		effect_tooltip = { retire_country_leader = yes }
-		promote_character = SOV_Grigory_Zinoviev
-		create_wargoal = {
-			target = GEO
-			type = annex_everything
-		}      
 	}
 }
 
 country_event = {
-	id = TR_Soviet.3
-	title = TR_Soviet.3.t
-	desc = TR_Soviet.3.d
-	picture = GFX_report_event_france_parade
+	id = TR_russia.9
+	title = TR_russia.9.t
+	desc = TR_russia.9.d
+	picture = GFX_report_event_france_tank_production
+
+	is_triggered_only = yes
+		fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_russia.9.a
+		add_ideas = RUS_FRA_COLLAB
+	}
+}
+
+country_event = {
+	id = TR_russia.10
+	title = TR_russia.10.t
+	desc = TR_russia.10.d
+	picture = GFX_report_event_stalin_01
+
+	
+		fire_only_once = yes
+		
 	trigger = {
-		tag = RUS
-        SOV = { exists = no }
-        }
-
-
-        fire_only_once = yes
-
-	
-	option = { 
-		name = TR_Soviet.3.a
-		trigger = {
-			NOT = {
-				is_in_faction_with = SIB
-			}
-		}
-		set_capital = {
-			state = 219
-			remember_old_capital = no
-		}
-        add_timed_idea = {
-			idea = GER_CIVILWAR_MARKS
-			days = 365
-			} 
-        remove_ideas = RUS_CIVIL_WAR
-		add_stability = 0.1
-		hidden_effect = { 
-			set_rule = { can_create_factions = no }
-			set_global_flag = Soviet_Win_flag
-			dismantle_faction = yes
-		    every_state = {
-		    	limit = {
-			    	is_core_of = SOV
-		    	}
-			    add_core_of = RUS
-		    }
-		    every_state = {
-			    limit = {
-				    is_core_of = SOV
-			    }
-			    remove_core_of = SOV
-		    }
-	    }
+				tag = SIB
+				has_war = no
+		SOV = { has_war_with = RUS }
+		is_subject = no
+		has_government = radical_socialist
+		NOT = { RUS = {	has_country_flag = RUS_Great_Purge_flag } }
 	}
-	option = { 
-		name = TR_Soviet.3.b
-		trigger = {
-				is_in_faction_with = SIB
-		}
-		set_capital = {
-			state = 219
-			remember_old_capital = no
-		}
-                add_timed_idea = {
-				idea = GER_CIVILWAR_MARKS
-				days = 365
-				} 
-                remove_ideas = RUS_CIVIL_WAR
-                set_global_flag = Soviet_Win_flag
-		add_stability = 0.1
-                set_rule = { can_create_factions = no }
-		dismantle_faction = yes
-		annex_country = {
-			target = SIB
-			transfer_troops = yes
+
+	option = {
+		name = TR_russia.10.a
+		every_state = {
+			limit = {
+				is_core_of = SKH
 			}
+			add_core_of = SIB
+		}	
 		every_state = {
 			limit = {
 				is_core_of = SIB
 			}
-			add_core_of = RUS
-		}
-
-	}
-
-}
-#ミンスクソビエトについて
-country_event = {
-	id = TR_Soviet.4
-	title = TR_Soviet.4.t
-	desc = TR_Soviet.4.d
-	picture = GFX_
-
-
-        is_triggered_only = yes
-        fire_only_once = yes
-
-	
-	option = { 
-		name = TR_Soviet.4.a
-        add_political_power = 25
-	}
-}
-#同志ジュガシヴィリ
-country_event = {
-	id = TR_Soviet.5
-	title = TR_Soviet.5.t
-	desc = TR_Soviet.5.d
-	picture = GFX_
-
-
-        is_triggered_only = yes
-        fire_only_once = yes
-
-	
-	option = { 
-		name = TR_Soviet.5.a
-        add_political_power = 25
-		add_opinion_modifier = { target = GEO modifier = large_increase }
-		diplomatic_relation = {
-			country = GEO
-			relation = non_aggression_pact
-			active = yes
+			add_core_of = SKH
+		}	
+		declare_war_on = {
+			target = SKH
+			type = annex_everything
 		}
 	}
 }
-#同志ラデック
+
 country_event = {
-	id = TR_Soviet.6
-	title = TR_Soviet.6.t
-	desc = TR_Soviet.6.d
-	picture = GFX_
-
-
-        is_triggered_only = yes
-        fire_only_once = yes
+	id = TR_russia.11
+	title = TR_russia.11.t
+	desc = TR_russia.11.d
+	picture = GFX_report_event_stalin_01
 
 	
-	option = { 
-		name = TR_Soviet.6.a
-        add_political_power = 25
-		add_opinion_modifier = { target = POL modifier = large_increase }
-		diplomatic_relation = {
-			country = POL
-			relation = non_aggression_pact
-			active = yes
+		fire_only_once = yes
+		
+	trigger = {
+				tag = SIB
+				has_war = no
+		SOV = { has_war_with = RUS }
+		is_subject = no
+		NOT = { has_government = radical_socialist }
+		NOT = { RUS = {	has_country_flag = RUS_Great_Purge_flag } }
+	}
+
+	option = {
+		name = TR_russia.11.a
+		leave_faction = yes
+		set_country_flag = SIB_SOVSIANCIVILWAR
+		declare_war_on = {
+			target = SKH
+			type = annex_everything
+		}
+		every_state = {
+			limit = {
+				is_core_of = SKH
+			}
+			add_core_of = SIB
+		}	
+		every_state = {
+			limit = {
+				is_core_of = SIB
+			}
+			add_core_of = SKH
 		}
 	}
 }
-#同志ルクセンブルク
+
 country_event = {
-	id = TR_Soviet.7
-	title = TR_Soviet.7.t
-	desc = TR_Soviet.7.d
-	picture = GFX_
+	id = TR_russia.12
+	title = TR_russia.12.t
+	desc = TR_russia.12.d
+	picture = GFX_report_event_stalin_01
 
+	
+		fire_only_once = yes
+		
+	trigger = {
+		tag = SIB
+		NOT = { has_war_with = SKH }
+		is_subject = no
+		has_country_flag = SIB_SOVSIANCIVILWAR
+	}
 
-        is_triggered_only = yes
-        fire_only_once = yes
+	option = {
+		name = TR_russia.12.a
+		remove_ideas = SIB_CIVIL_WAR_2
+		JAP = { add_to_faction = SIB }
+	}
+}
+
+#country_event = {
+#	id = TR_russia.13
+#	title = TR_russia.13.t
+#	desc = TR_russia.13.d
+#	picture = GFX_report_event_stalin_01
+#
+#	
+#fire_only_once = yes
+#        
+#	trigger = {
+#        tag = RUS
+#        surrender_progress > 0.25
+#		has_war_with = SIB
+#		is_subject = no
+#        SIB = { has_government = authoritarian_democrat }
+#		
+#	}
+#
+#	option = {
+#		name = TR_russia.13.a
+#               ai_chance = {
+#			base = 100
+#		}
+#    white_peace = SIB
+#    SIB = {
+#		transfer_state = 570
+#		transfer_state = 576
+#        transfer_state = 575
+#		transfer_state = 644
+#        transfer_state = 574
+#        transfer_state = 516
+#        transfer_state = 578
+#        transfer_state = 577
+#		transfer_state = 571
+#        transfer_state = 403
+#		transfer_state = 579
+#       transfer_state = 580
+#       transfer_state = 653
+#       transfer_state = 572
+#       transfer_state = 892
+#      transfer_state = 894
+#       }        
+#	}
+#   option = {
+#		name = TR_russia.13.b
+ #               ai_chance = {
+#			base = 0
+#		}
+ #       add_stability = -0.15               
+	#}
+#}
+#テロリスト群像
+country_event = {
+	id = TR_russia.14
+	title = TR_russia.14.t
+	desc = TR_russia.14.d
+	picture = GFX_report_event_spr_anarchist_uprising
+	is_triggered_only = yes
+		fire_only_once = yes
+
+	   
+	
+	option = {
+		name = TR_russia.14.a
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = RUS_SR_Dictator
+		add_stability = -0.1
+		add_political_power = -50
+		hidden_effect = {
+			country_event = {
+			id = TR_russia.20
+			days = 1
+			}
+		}
+	}
+	option = {
+		name = TR_russia.14.b
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = 20
+	}
+}
+#立憲君主
+country_event = {
+	id = TR_russia.15
+	title = TR_russia.15.t
+	desc = TR_russia.15.d
+	picture = GFX_report_event_spr_anarchist_uprising
+	is_triggered_only = yes
+		fire_only_once = yes
+
+	   
+	
+	option = {
+		name = TR_russia.15.a
+		add_ideas = SOV_Alexander_Guchkov
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+	}
+}
+country_event = {
+	id = TR_russia.16
+	title = TR_russia.16.t
+	desc = TR_russia.16.d
+	picture = GFX_report_event_france_parade
+	trigger = {
+		has_country_flag = RUS_OCREVOLUTION
+		tag = RUS
+		SOV = { exists = no }
+		}
+		fire_only_once = yes
 
 	
 	option = { 
-		name = TR_Soviet.7.a
-        add_political_power = 25
-		add_opinion_modifier = { target = GER modifier = large_increase }
-		diplomatic_relation = {
-			country = GER
-			relation = non_aggression_pact
-			active = yes
+		name = TR_russia.16.a
+		trigger = {
+			NOT = { has_country_flag = RUS_Great_Purge_flag }
+		}
+		ai_chance = {
+			base = 1
+		}
+
+		set_country_flag = RUS_OCREVOLUTION_END
+		remove_ideas = RUS_CIVIL_WAR
+		add_ideas = RUS_CIVILWAR_MARKS
+		hidden_effect = {
+			set_rule = { can_create_factions = no }
+			dismantle_faction = yes
+			every_state = {
+				limit = {
+					is_core_of = SOV
+				}
+				add_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_core_of = SOV
+				}
+				remove_core_of = SOV
+			}
+			country_event = {
+			id = TR_russia.17
+			days = 200
+			}
+		}
+	}
+	option = { 
+		name = TR_russia.16.b
+		trigger = {
+			has_country_flag = RUS_Great_Purge_flag
+		}
+		ai_chance = {
+			base = 1
+		}
+		set_country_flag = RUS_OCREVOLUTION_END
+		hidden_effect = {
+			set_rule = { can_create_factions = no }
+			dismantle_faction = yes
+			every_state = {
+				limit = {
+					is_core_of = SOV
+				}
+				add_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_core_of = SOV
+				}
+				remove_core_of = SOV
+			}
+		}
+	}
+}
+country_event = {
+	id = TR_russia.17
+	title = TR_russia.17.t
+	desc = TR_russia.17.d
+	picture = GFX_report_event_france_parade
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = { 
+		name = TR_russia.17.a
+		swap_ideas = {
+			remove_idea = RUS_CIVILWAR_MARKS
+			add_idea = RUS_CIVILWAR_MARKS_1
+		}
+		hidden_effect = {
+			country_event = {
+			id = TR_russia.18
+			days = 200
+		}
+		}
+	}
+}
+country_event = {
+	id = TR_russia.18
+	title = TR_russia.18.t
+	desc = TR_russia.18.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.18.a
+		swap_ideas = {
+			remove_idea = RUS_CIVILWAR_MARKS_1
+			add_idea = RUS_CIVILWAR_MARKS_2
+		} 
+		hidden_effect = {
+			country_event = {
+			id = TR_russia.19
+			days = 300
+			}
+		}
+	}
+}
+country_event = {
+	id = TR_russia.19
+	title = TR_russia.19.t
+	desc = TR_russia.19.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.19.a
+		remove_ideas = RUS_CIVILWAR_MARKS_2
+	}
+}
+country_event = {
+	id = TR_russia.20
+	title = TR_russia.20.t
+	desc = TR_russia.20.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.20.a
+		set_party_name = {
+			ideology = radical_socialist
+			long_name = RUS_SR_long
+			name = RUS_SR_a
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		promote_character = {
+			character = SOV_Boris_Savinkov
+			ideology = Narodniki_subtype
+		}
+		promote_character = {
+			character = SOV_Boris_Savinkov
+			ideology = social_liberal_subtype
+		}
+		add_ideas = SOV_Boris_Savinkov
+		add_ideas = SOV_Boris_Savinkov_GL
+		hidden_effect = { 
+			country_event = {
+				id = TR_news.53
+				days = 1
+			}
+		}
+	}
+}
+#蒼ざめた馬
+country_event = {
+	id = TR_russia.21
+	title = TR_russia.21.t
+	desc = TR_russia.21.d
+	picture = GFX_report_event_spr_anarchist_uprising
+	is_triggered_only = yes
+		fire_only_once = yes
+
+	   
+	
+	option = {
+		name = TR_russia.21.a
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = RUS_Great_Purge_flag
+		add_timed_idea = {
+			idea = RUS_Grand_Terror
+			days = 900
+			} 
+	}
+	option = {
+		name = TR_russia.21.b
+		ai_chance = {
+			base = 20
+		}
+		add_timed_idea = {
+			idea = RUS_Grand_Terror
+			days = 300
+			} 
+
+	}
+}
+#ヴラーンゲリに対する陰謀
+country_event = {
+	id = TR_russia.22
+	title = TR_russia.22.t
+	desc = TR_russia.22.d
+	picture = GFX_report_event_spr_anarchist_uprising
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TR_russia.22.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = {
+					id = TR_russia.23
+					days = 5
+				}
+		}
+	}
+	option = {
+		name = TR_russia.22.b
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = {
+					id = TR_russia.24
+					days = 5
+				}
+		}
+	}
+}
+#黒百人組のクーデター
+country_event = {
+	id = TR_russia.23
+	title = TR_russia.23.t
+	desc = TR_russia.23.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.23.a
+		add_ideas = SOV_Vladimir_Purishkevich
+		set_country_flag = RUS_Monarchist
+		add_stability = -0.1
+		add_political_power = -100
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		SOV_Pyotr_wrangel = { retire = yes }
+		SOV_Pyotr_wrangel_Army = { retire = yes }
+		hidden_effect = { 
+			country_event = {
+				id = TR_news.50
+				days = 1
+			}
+		}
+	}
+}
+#反ヴラーンゲリ派の摘発
+country_event = {
+	id = TR_russia.24
+	title = TR_russia.24.t
+	desc = TR_russia.24.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.24.a
+		set_country_flag = RUS_Wrangel
+		add_stability = 0.05
+		add_manpower = -1000
+		add_political_power = -50
+		SOV_Vladimir_Purishkevich = { retire = yes }
+		SOV_Pavel_Bermont_Avalov = { retire = yes }
+		hidden_effect = { promote_character = SOV_Regent_Council }
+	}
+}
+#摂政閣下が撃たれる！
+country_event = {
+	id = TR_russia.25
+	title = TR_russia.25.t
+	desc = TR_russia.25.d
+	picture = GFX_report_event_spr_anarchist_uprising
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TR_russia.25.a
+		ai_chance = {
+			base = 80
+		}
+		add_stability = -0.2
+		add_ideas = generic_Government_leaders_Vacancy
+		set_country_flag = RUS_Purishkevich_die
+		effect_tooltip = { kill_ideology_leader = national_populist }
+		hidden_effect = {  SOV_Vladimir_Purishkevich = { retire = yes } }
+		SOV_Regent_Council = {
+			promote_character = {
+			Ideology = president_principle_subtype
+		  }
+		}
+		hidden_effect = { 
+			country_event = {
+				id = TR_news.54
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = TR_russia.25.b
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = 25
+	}
+}
+#摂政評議会
+country_event = {
+	id = TR_russia.26
+	title = TR_russia.26.t
+	desc = TR_russia.26.d
+	picture = GFX_report_event_spr_anarchist_uprising
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = TR_russia.26.a
+		ai_chance = {
+			base = 40
+		}
+		add_ideas = SOV_Alexander_Kazembek
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		hidden_effect = { 
+			country_event = {
+				id = TR_news.56
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = TR_russia.26.b
+		ai_chance = {
+			base = 40
+		}
+		add_ideas = SOV_Sergey_Taboritsky
+		set_politics = {
+			ruling_party = Gnosticism
+			elections_allowed = no
+		}
+		hidden_effect = { 
+			country_event = {
+				id = TR_news.55
+				days = 1
+			}
+		}
+	}
+}
+#純化
+country_event = {
+	id = TR_russia.27
+	title = TR_russia.27.t
+	desc = TR_russia.27.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.27.a
+		add_ideas = SOV_purification
+		add_ideas = SOV_genocide
+		add_ideas = SOV_Spartanism
+	}
+}
+#修道士アベルの予言
+country_event = {
+	id = TR_russia.28
+	title = TR_russia.28.t
+	desc = TR_russia.28.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.28.a
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.1
+		}
+	}
+}
+#贖い主アレクセイ
+country_event = {
+	id = TR_russia.29
+	title = TR_russia.29.t
+	desc = TR_russia.29.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.29.a
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.1
+		}
+	}
+}
+#贖罪の儀式
+country_event = {
+	id = TR_russia.30
+	title = TR_russia.30.t
+	desc = TR_russia.30.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.30.a
+		custom_effect_tooltip = RUS_Alexei_dead
+		custom_effect_tooltip = RUS_redemption_Complete
+		add_stability = -0.1
+		add_ideas = RUS_redemption
+		hidden_effect = { 
+			add_ideas = generic_Head_of_State_Vacancy 
+			promote_character = SOV_alexei_ii_portrait
+		}
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 1.0
+		}
+		hidden_effect = {
+			country_event = { id = TR_russia.32 days = 150 }
+		}
+	}
+}
+#復活
+country_event = {
+	id = TR_russia.31
+	title = TR_russia.31.t
+	desc = TR_russia.31.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.31.a
+		
+	}
+}
+#摂政は失敗したのか
+country_event = {
+	id = TR_russia.32
+	title = TR_russia.32.t
+	desc = TR_russia.32.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.32.a
+		add_stability = -0.1
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = { id = TR_russia.34 days = 7 }
+		}
+	}
+}
+#異端者の登場
+country_event = {
+	id = TR_russia.33
+	title = TR_russia.33.t
+	desc = TR_russia.33.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.33.a
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.1
+		}
+	}
+}
+#失敗
+country_event = {
+	id = TR_russia.34
+	title = TR_russia.34.t
+	desc = TR_russia.34.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	
+	option = { 
+		name = TR_russia.34.a
+		add_stability = -0.02
+		hidden_effect = {
+			country_event = { id = TR_russia.37 days = 1 }
+		}
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = -0.04
+		}
+	}
+}
+#ツァーリ救済同胞団
+country_event = {
+	id = TR_russia.35
+	title = TR_russia.35.t
+	desc = TR_russia.35.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.35.a
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.03
+			}
+	}
+}
+#ムラドロッシ連合
+country_event = {
+	id = TR_russia.36
+	title = TR_russia.36.t
+	desc = TR_russia.36.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.36.a
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+				}
+	}
+}
+#失敗
+country_event = {
+	id = TR_russia.37
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_russia.37 FROM = [From.GetName]" }
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_stability > 0.0 
+			}
+			country_event = TR_russia.34
+		}
+		if = {
+			limit = {
+				has_stability < 0.01
+			}
+			country_event = TR_russia.38
+		}
+	}
+}
+#終わり
+country_event = {
+	id = TR_russia.38
+	title = TR_russia.38.t
+	desc = TR_russia.38.d
+	picture = GFX_report_event_france_parade
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = TR_russia.38.a
+		custom_effect_tooltip = RUS_dead_Regency_taboritsky
+		add_ideas = anarchism_society
+		add_ideas = SOV_empire_collapse
+		hidden_effect = {
+			dismantle_faction = yes
+			leave_faction = yes
+			country_event = { id = TR_russia.39 days = 365 }
+			remove_ideas = RUS_feudalism
+			remove_ideas = RUS_feudalism_1
+			remove_ideas = SOV_purification
+			remove_ideas = SOV_genocide
+			remove_ideas = SOV_Spartanism
+			remove_ideas = RUS_Okhrana
+			remove_ideas = FRA_antisemitism
+			add_ideas = generic_Government_leaders_Vacancy
+			add_ideas = generic_Foreign_Affairs_Vacancy
+			add_ideas = generic_Economy_Vacancy
+			add_ideas = generic_Interior_Vacancy
+			every_country = { 
+				limit = {
+					is_puppet_of = RUS
+				}
+				end_puppet = ROOT
+			}
+		}
+	}
+}
+#光
+country_event = {
+	id = TR_russia.39
+	title = TR_russia.39.t
+	desc = TR_russia.39.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.39.a
+		promote_character = SOV_Anastasia
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		set_stability = 0.5
+		set_war_support = 0.5
+		add_ideas = Absolute_monarchy
+		remove_ideas = SOV_empire_collapse
+	}
+}
+#摂政評議会の設置
+country_event = {
+	id = TR_russia.40
+	title = TR_russia.40.t
+	desc = TR_russia.40.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.40.a
+	}
+}
+#ムラドロッシ
+country_event = {
+	id = TR_russia.41
+	title = TR_russia.41.t
+	desc = TR_russia.41.d
+	picture = GFX_report_event_france_parade
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { 
+		name = TR_russia.41.a
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.1
 		}
 	}
 }

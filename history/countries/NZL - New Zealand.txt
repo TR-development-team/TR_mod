@@ -1,6 +1,8 @@
 ﻿capital = 284
-
 oob = "NZL_1936"
+
+GBR = {	set_autonomy = {	target = NZL	autonomous_state = dominion	}	}
+set_cosmetic_tag = NZL_GBRandIREbyENG
 
 # Starting tech
 set_stability = 0.8
@@ -41,14 +43,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-set_cosmetic_tag = NZL_UK
-ENG = { 
-        set_autonomy = {
-	  target = NZL
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.2
-        }
-      }
 
 set_politics = {
 	ruling_party = social_democrat

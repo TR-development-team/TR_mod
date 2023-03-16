@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = GER
+			tag = RAT
 		}
 	}
     continuous_focus_position = { x = 500 y = 1300 }
@@ -727,15 +727,15 @@ focus_tree = {
 		completion_reward = {
 			every_state = {
 				limit = {
-					is_core_of = HOL
+					is_core_of = NTL
 				}
-				add_claim_by = GER
+				add_claim_by = RAT
 			}
 			every_state = {
 				limit = {
 					is_core_of = SWI
 				}
-				add_claim_by = GER
+				add_claim_by = RAT
 			}
             #ルクセンブルク
 			add_state_claim = 8
@@ -799,15 +799,15 @@ focus_tree = {
 		available = {
 			is_subject = no
 			}
-		bypass = { OR = { NOT = { country_exists = HOL } HOL = { is_in_faction_with = FRA } } }
+		bypass = { OR = { NOT = { country_exists = NTL } NTL = { is_in_faction_with = FRA } } }
 		ai_will_do = {
 			factor = 80
 		}
 		completion_reward = {
 			if = {
-				limit = { NOT = { has_war_with = HOL } NOT = { is_in_faction_with = HOL } country_exists = HOL }
+				limit = { NOT = { has_war_with = NTL } NOT = { is_in_faction_with = NTL } country_exists = NTL }
 				create_wargoal = {
-					target = HOL
+					target = NTL
 					type = annex_everything
 				}
 			}
@@ -869,10 +869,10 @@ focus_tree = {
 				factor = 0
 				OR = {
 					any_neighbor_country = {
-						has_war_with = GER
+						has_war_with = RAT
 						NOT = { has_capitulated = yes }
 						strength_ratio = {
-							tag = GER
+							tag = RAT
 							ratio > 0.6
 						}
 					}
@@ -910,11 +910,11 @@ focus_tree = {
 			add_ideas = GER_Greater_Germany
 			if = {
 				limit = { has_government = totalist }
-				set_cosmetic_tag = GER_Greater
+				set_cosmetic_tag = GREATERGERMANIC_socialist_republic
 			}
 			if = {
 				limit = { has_government = syndicalist }
-				set_cosmetic_tag = GER_Greater_Junger
+				set_cosmetic_tag = GERMANIC_civilisation
 			}
 		}
 	}
@@ -1003,9 +1003,16 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { NOT = { is_in_faction_with = BAL } country_exists = BAL }
+				limit = { NOT = { is_in_faction_with = BLT } country_exists = BLT }
 				create_wargoal = {
-					target = BAL
+					target = BLT
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { NOT = { is_in_faction_with = MHN } country_exists = MHN }
+				create_wargoal = {
+					target = MHN
 					type = puppet_wargoal_focus
 				}
 			}
@@ -1013,13 +1020,6 @@ focus_tree = {
 				limit = { NOT = { is_in_faction_with = UKR } country_exists = UKR }
 				create_wargoal = {
 					target = UKR
-					type = puppet_wargoal_focus
-				}
-			}
-			if = {
-				limit = { NOT = { is_in_faction_with = UKS } country_exists = UKS }
-				create_wargoal = {
-					target = UKS
 					type = puppet_wargoal_focus
 				}
 			}
@@ -1181,16 +1181,16 @@ focus_tree = {
             }
 		bypass = {
 		OR = {
-			has_war_with = ENR
-			is_in_faction_with = ENR
-			NOT = { country_exists = ENR }
+			has_war_with = GB1
+			is_in_faction_with = GB1
+			NOT = { country_exists = GB1 }
 			}
 		}
 		ai_will_do = {
 			factor = 40
 		}
 		completion_reward = {
-			GER = { add_to_faction = ENR }
+			RAT = { add_to_faction = GB1 }
 		}
 	}
 	#イタリアの同志
@@ -1240,7 +1240,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier = {
-				target = RUS
+				target = SOV
 				modifier = medium_increase
 			}
 		}
@@ -1328,7 +1328,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_opinion_modifier = {
-				target = GEO
+				target = SCC
 				modifier = medium_increase
 			}
 		}

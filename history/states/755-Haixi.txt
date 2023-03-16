@@ -9,10 +9,10 @@ provinces={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		owner = XSM
-		add_core_of = XSM
-		add_claim_by = CHI
-		add_claim_by = YUN
+		owner = QIG
+		add_core_of = QIG
+		add_claim_by = WHN
+		add_claim_by = CNK
 
 		buildings = {
 			infrastructure = 1
@@ -27,7 +27,7 @@ provinces={
 					}
 
 				}
-				CHI = {
+				WHN = {
 					transfer_state = PREV
 
 				}

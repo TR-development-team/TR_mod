@@ -1,44 +1,70 @@
-﻿capital = 772
+﻿capital = 295
 
-oob = "COG_1936"
-set_cosmetic_tag = COG_JAP
-# Starting tech
+set_cosmetic_tag = EQAbyJAP_emergency_government
+
 set_technology = {
 	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_recon = 1
 	tech_support = 1		
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	gwtank = 1
 	early_fighter = 1
-	CAS1 = 1
-	
+	early_bomber = 1
 }
-add_ideas = {
-        Colonical_system
-        African_Independence_movement
-        Tiyoda_Kensho
-        JAP_JAP_colony
-}
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-                 }  
-set_convoys = 5
 
+set_convoys = 20
 
-JAP = { 
-        set_autonomy = {
-	   target = COG
-	   autonomous_state = imperial_colony
-        }
-      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 12
+	syndicalist = 5
+	radical_socialist = 11
+	social_democrat = 5
+	social_liberal = 5
+	market_liberal = 15
+	social_conservative = 12
+	authoritarian_democrat = 27
+	paternal_autocrat = 5
+	national_populist = 3
 }
-recruit_character = COG_Maeda_Toshinari
+
+create_country_leader = {
+	
+	name = "ジョセフ・カサブブ"
+	picture = "gfx/leaders/MCG//Portrait_Congo_Kasavubu.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	
+	name = "Lumumba Lomendja"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_1.dds"
+	expire = "1965.1.1"
+	ideology = radical_socialist_subtype
+	traits = {
+	
+	}
+}
+
+create_country_leader = {
+	
+	name = "David Manera"
+	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_Land_3.dds"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		
+	}
+}

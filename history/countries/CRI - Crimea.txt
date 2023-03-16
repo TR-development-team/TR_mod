@@ -1,21 +1,10 @@
-﻿capital = 137 #Sevastopol, should really be Simferopol but that would require more states so Sevastopol will do
-
+﻿capital = 137
 #oob = "CRI_1936"
 
-set_research_slots = 3
+set_cosmetic_tag = CRI_peoples_republic
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	gw_artillery = 1			
-	interwar_antiair = 1
-	tech_support = 1		
-	tech_recon = 1
-	tech_engineers = 1
-}
 set_politics = {
-	ruling_party =social_democrat
+	ruling_party = social_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes
@@ -32,10 +21,19 @@ set_popularities = {
 	authoritarian_democrat = 3
 	paternal_autocrat = 2
 	national_populist = 7
-        Gnosticism = 5
+	Gnosticism = 5
 }
-
 
 recruit_character = CRI_ilyas_tarkhan
 recruit_character = CRI_Noman_Chelebicihan
 
+set_research_slots = 3
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+}

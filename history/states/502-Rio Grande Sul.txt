@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = SPO
+		owner = SBR
 		buildings = {
 			infrastructure = 3
 			air_base = 2
@@ -17,10 +17,10 @@ state={
 				naval_base = 3
 			}
 		}
-               add_core_of = BRR
-                add_core_of = SPO
+               add_core_of = BRA
+                add_core_of = SBR
                 add_core_of = AMZ
-		add_core_of = BRA
+		add_core_of = EQB
 		victory_points = {
 			10447 3 
 		}

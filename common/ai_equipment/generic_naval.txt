@@ -7,7 +7,7 @@ destroyers = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}
@@ -170,7 +170,7 @@ generic_escorts = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}
@@ -283,7 +283,7 @@ naval_light_cruiser = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}
@@ -521,7 +521,7 @@ naval_cruiser_heavy = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}
@@ -706,7 +706,7 @@ naval_capital_battleship = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}
@@ -974,7 +974,7 @@ naval_capital_bc = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}
@@ -1116,7 +1116,7 @@ naval_carrier = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}
@@ -1295,7 +1295,7 @@ naval_submarine = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}
@@ -1312,7 +1312,7 @@ naval_submarine = {
 		modifier = {
 			factor = 10
 			OR = {
-				has_war_with = ENG
+				has_war_with = GBR
 				has_war_with = USA
 				has_war_with = JAP
 			}
@@ -1453,7 +1453,7 @@ naval_mine_sweeper = {
 		GER
 		USA
 		JAP
-		ENG
+		GBR
 		FRA
 		ITA
 	}

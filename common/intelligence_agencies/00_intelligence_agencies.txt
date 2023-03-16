@@ -16,8 +16,8 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_uk
 	names = { "MI6" "SIS" }
 	
-	default = { tag = ENG }
-	available = { original_tag = ENG }
+	default = { tag = GBR }
+	available = { original_tag = GBR }
 }
 
 intelligence_agency = {
@@ -25,16 +25,16 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_sov
 	names = { "NKVD" }
 	
-	default = { tag = RUS }
-	available = { original_tag = RUS }
+	default = { tag = SOV }
+	available = { original_tag = SOV }
 }
 intelligence_agency = {
 	
 	picture = GFX_intelligence_agency_logo_generic_8
 	names = { "Okhrana" }
 	
-	default = { tag = SOV }
-	available = { original_tag = SOV }
+	default = { tag = RUS }
+	available = { original_tag = RUS }
 }
 intelligence_agency = {
 
@@ -50,8 +50,8 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_ger
 	names = { "Ministerium für Staatssicherheit" }
 	
-	default = { tag = GER }
-	available = { original_tag = GER }
+	default = { tag = RAT }
+	available = { original_tag = RAT }
 }
 
 intelligence_agency = {
@@ -59,8 +59,8 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_ger
 	names = { "Abteilung III b" }
 	
-	default = { tag = DDR }
-	available = { original_tag = DDR }
+	default = { tag = PRE }
+	available = { original_tag = PRE }
 }
 
 intelligence_agency = {
@@ -121,8 +121,8 @@ intelligence_agency = {
 	picture = GFX_intelligence_agency_logo_hol
 	names = { "Bureau Inlichtingen" }
 	
-	default = { tag = HOL }
-	available = { original_tag = HOL}
+	default = { tag = NTL }
+	available = { original_tag = NTL}
 }
 
 intelligence_agency = {
@@ -143,8 +143,8 @@ intelligence_agency = {
 	
 	available = { always = yes }
 	
-	default = { tag = PRC }
-	available = { original_tag = PRC }
+	default = { tag = RJN }
+	available = { original_tag = RJN }
 }
 
 intelligence_agency = {
@@ -154,8 +154,8 @@ intelligence_agency = {
 	
 	available = { always = yes }
 	
-	default = { tag = CHI }
-	available = { original_tag = CHI }
+	default = { tag = WHN }
+	available = { original_tag = WHN }
 }
 
 intelligence_agency = {
@@ -241,8 +241,8 @@ intelligence_agency = {
 	
 	available = { always = yes }
 	
-	default = { tag = TUR }
-	available = { original_tag = TUR }
+	default = { tag = OTT }
+	available = { original_tag = OTT }
 }
 
 intelligence_agency = {

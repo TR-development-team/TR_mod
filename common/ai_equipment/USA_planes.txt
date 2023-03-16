@@ -327,7 +327,7 @@ USA_naval_bomber = {
 USA_cv_fighter = {
 	category = air
 
-	#blocked_for = {  ENG USA FRA JAP }
+	#blocked_for = {  GBR USA FRA JAP }
 
 	available_for = {USA}
 
@@ -482,7 +482,7 @@ USA_cv_fighter = {
 USA_cv_cas = {
 	category = air
 
-	#blocked_for = { ENG USA FRA JAP }
+	#blocked_for = { GBR USA FRA JAP }
 
 	available_for = {USA}
 
@@ -580,7 +580,7 @@ USA_cv_cas = {
 USA_cv_naval_bomber = {
 	category = air
 
-	#blocked_for = {  ENG USA FRA JAP }
+	#blocked_for = {  GBR USA FRA JAP }
 
 	available_for = {USA}
 

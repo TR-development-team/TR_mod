@@ -1,0 +1,88 @@
+
+ideas = {
+       
+    country = {
+
+    }
+#大臣
+    Head_of_State = {	
+        GAN_Ma_Zhongying = {
+			picture = GAN_Ma_Zhongying
+			allowed = {
+				original_tag = GAN
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = {
+				Head_of_State
+                national_populist
+				Ma_Zhongying_traits
+			}
+		}
+    }
+    Government_leaders = {	    
+        GAN_Ma_Hushan = {
+			picture = GAN_Ma_Hushan
+			allowed = {
+				original_tag = GAN
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = {
+				Government_leaders
+                national_populist
+				TR_political_protege
+			}
+		}
+    }
+	chief_of_staff = { 
+		GAN_Ma_Zhongying_cos = {
+			name = GAN_Ma_Zhongying
+			picture = GAN_Ma_Zhongying
+			allowed = {
+				original_tag = GAN
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+	}
+	chief_of_army = { 
+		GAN_Ma_Hushan_coa = {
+			name = GAN_Ma_Hushan
+			picture = GAN_Ma_Hushan
+			allowed = {
+				original_tag = GAN
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+		}
+	}
+}

@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = GER
+			tag = RAT
 		}
 	}
     continuous_focus_position = { x = 500 y = 1300 }
@@ -769,10 +769,10 @@ focus_tree = {
 				factor = 0
 				OR = {
 					any_neighbor_country = {
-						has_war_with = GER
+						has_war_with = RAT
 						NOT = { has_capitulated = yes }
 						strength_ratio = {
-							tag = GER
+							tag = RAT
 							ratio > 0.6
 						}
 					}
@@ -810,9 +810,9 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { NOT = { has_war_with = HOL } NOT = { is_in_faction_with = HOL } country_exists = HOL }
+				limit = { NOT = { has_war_with = NTL } NOT = { is_in_faction_with = NTL } country_exists = NTL }
 				create_wargoal = {
-					target = HOL
+					target = NTL
 					type = puppet_wargoal_focus
 				}
 			}
@@ -1077,9 +1077,9 @@ focus_tree = {
 			}
 		bypass = {
 		    OR = {
-			    has_war_with = ENG
-			    is_in_faction_with = ENG
-			    NOT = { country_exists = ENG }
+			    has_war_with = GBR
+			    is_in_faction_with = GBR
+			    NOT = { country_exists = GBR }
 			}
 		}
 		ai_will_do = {
@@ -1088,10 +1088,10 @@ focus_tree = {
 				factor = 0
 				OR = {
 					any_neighbor_country = {
-						has_war_with = GER
+						has_war_with = RAT
 						NOT = { has_capitulated = yes }
 						strength_ratio = {
-							tag = GER
+							tag = RAT
 							ratio > 0.6
 						}
 					}
@@ -1109,9 +1109,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-				limit = { country_exists = ENG }
+				limit = { country_exists = GBR }
 				create_wargoal = {
-					target = ENG
+					target = GBR
 					type = puppet_wargoal_focus
 				}
 			}
@@ -1138,9 +1138,9 @@ focus_tree = {
 			}
 		bypass = {
 		    OR = {
-			    has_war_with = SOV
-			    is_in_faction_with = SOV
-			    NOT = { country_exists = SOV }
+			    has_war_with = RUS
+			    is_in_faction_with = RUS
+			    NOT = { country_exists = RUS }
 			}
 		}
 		ai_will_do = {
@@ -1149,10 +1149,10 @@ focus_tree = {
 				factor = 0
 				OR = {
 					any_neighbor_country = {
-						has_war_with = GER
+						has_war_with = RAT
 						NOT = { has_capitulated = yes }
 						strength_ratio = {
-							tag = GER
+							tag = RAT
 							ratio > 0.6
 						}
 					}
@@ -1161,9 +1161,9 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-				limit = { country_exists = SOV }
+				limit = { country_exists = RUS }
 				create_wargoal = {
-					target = SOV
+					target = RUS
 					type = puppet_wargoal_focus
 				}
 			}
@@ -1188,11 +1188,11 @@ focus_tree = {
 			add_ideas = GER_international_republic
 			if = {
 				limit = { has_country_flag = GER_KPD_Lev_Trotsky }
-				set_cosmetic_tag = GER_Rate_trotsky
+				set_cosmetic_tag = RAT_international_republic
 			}
 			if = {
 				limit = { has_country_flag = GER_KPD_Eugen_Levine }
-				set_cosmetic_tag = GER_Rate_luxemburg
+				set_cosmetic_tag = RAT_socialist_republics_union
 			}
 		}
 	}
@@ -1397,7 +1397,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			every_country = { 
-                limit = { is_in_faction_with = GER has_socialist_government = yes }
+                limit = { is_in_faction_with = RAT has_socialist_government = yes }
                 add_ideas = Internationaler_Kommunistischer_Kulturverein
             }
 		}
@@ -1418,7 +1418,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			every_country = { 
-                limit = { is_in_faction_with = GER has_socialist_government = yes }
+                limit = { is_in_faction_with = RAT has_socialist_government = yes }
                 add_to_tech_sharing_group = International_research
             }
 		}

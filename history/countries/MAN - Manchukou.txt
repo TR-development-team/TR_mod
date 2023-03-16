@@ -1,8 +1,10 @@
 ﻿capital = 328
-
 oob = "MAN_1936"
+
+JAP = {	set_autonomy = {	target = MAN	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
+
 starting_train_buffer = 1
-set_cosmetic_tag = MAN_FED
 set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
@@ -72,12 +74,6 @@ add_ideas = {
         MAN_Hideki_Tojo_int#東條英機
 }
 set_convoys = 5
-JAP = { 
-        set_autonomy = {
-	   target = MAN
-	   autonomous_state = imperial_colony
-        }
-      }
 
 set_politics = {
 	ruling_party = authoritarian_democrat

@@ -10,7 +10,7 @@ state={
 	state_category = town
 
 	history={
-		owner = TUR
+		owner = OTT
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -23,7 +23,7 @@ state={
 		victory_points = {
 			9799 5
 		}
-		add_core_of = TUR
+		add_core_of = OTT
 		if = {
 			limit = { has_dlc = "Battle for the Bosporus" }
 			set_demilitarized_zone = yes

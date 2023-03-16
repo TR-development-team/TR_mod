@@ -1,34 +1,7 @@
 ﻿capital = 6
-
 oob = "BEL_1936"
 
-set_research_slots = 3
-set_stability = 0.8
-set_war_support = 0.3 #we see what you are doing there Adolf
-add_ideas = {
-        Constitutional_monarchy
-        acceptable_minimum_wage
-        good_max_workhours
-        good_safety_regulations
-        good_Unemployment_subsidies
-        acceptable_school_system
-        good_pensions
-        good_health_care
-}
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1
-	tech_recon = 1
-	tech_engineers = 1
-	motorised_infantry = 1
-	early_fighter = 1
-	trench_warfare = 1
-	fuel_silos = 1
-	fuel_refining = 1
-	basic_train = 1
-}
-
+set_cosmetic_tag = BEL_kingdom
 
 set_politics = {
 	ruling_party = social_democrat
@@ -47,16 +20,42 @@ set_popularities = {
 	authoritarian_democrat = 3
 	paternal_autocrat = 2
 	national_populist = 15
-        Gnosticism = 7
+	Gnosticism = 7
 }
-
-set_convoys = 80
-set_stability = 0.75
 
 recruit_character = BEL_joseph_jacquemotte
 recruit_character = BEL_Paul_Henri_Spaak
 recruit_character = BEL_hubert_pierlot
 recruit_character = BEL_leon_degrelle
-
 recruit_character = BEL_mcl_keyaerts
 recruit_character = BEL_georges_timmermans
+
+add_ideas = {
+	Constitutional_monarchy
+	acceptable_minimum_wage
+	good_max_workhours
+	good_safety_regulations
+	good_Unemployment_subsidies
+	acceptable_school_system
+	good_pensions
+	good_health_care
+}
+
+set_convoys = 80
+set_stability = 0.75
+set_research_slots = 3
+set_stability = 0.8
+set_war_support = 0.3
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	early_fighter = 1
+	trench_warfare = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	basic_train = 1
+}

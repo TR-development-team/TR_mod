@@ -1,0 +1,101 @@
+WHN_united_policy = {
+	icon = generic_political_actions
+	allowed = {
+        can_become_china = yes
+        }
+	visible = {
+        can_become_china = yes
+	}
+}
+WHN_integrate_policy = {
+	icon = generic_political_actions
+	allowed = {
+        OR = {
+	tag = WHN
+	tag = HEN 
+        tag = RJN
+        tag = CNK
+        tag = XIB
+        tag = HNN
+        tag = GAN
+        tag = SHA
+        tag = SCH
+        tag = YUN
+        tag = SGH
+	}
+        }
+	visible = {
+        OR = {
+	tag = WHN
+	tag = HEN 
+        tag = RJN
+        tag = CNK
+        tag = XIB
+        tag = HNN
+        tag = GAN
+        tag = SHA
+        tag = SCH
+        tag = YUN
+        tag = SGH
+	}
+	}
+}
+WHN_militaly_reform = {
+	icon = army_reform
+	allowed = {
+        OR = {
+	tag = WHN
+	tag = HEN 
+        tag = RJN
+        tag = ANH
+        tag = CNK
+	tag = SIK
+	tag = QIG 
+        tag = YUN
+        tag = FUJ
+	tag = SHX
+        tag = XIB
+        tag = FUJ
+        tag = HNN
+        tag = GXC
+        tag = GAN
+        tag = NIG
+        tag = SHA
+        tag = ETR
+        tag = KUM
+        tag = SCH
+        tag = SHD
+	}
+        }
+	visible = {
+        OR = {
+	tag = WHN
+	tag = HEN 
+        tag = RJN
+        tag = ANH
+        tag = CNK
+	tag = SIK
+	tag = QIG 
+        tag = YUN
+        tag = FUJ
+	tag = SHX
+        tag = XIB
+        tag = FUJ
+        tag = HNN
+        tag = GXC
+        tag = GAN
+        tag = NIG
+        tag = SHA
+        tag = ETR
+        tag = KUM
+        tag = SCH
+        tag = SHD
+	}
+	}
+}
+WHN_Warlord_diplomatic_decisions = {
+	icon = generic_political_actions
+	allowed = {
+              original_tag = WHN
+	}
+}

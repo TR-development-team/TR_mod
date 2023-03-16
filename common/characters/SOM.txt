@@ -1,0 +1,19 @@
+characters={
+	SOM_Nakamura_kotaro={
+		name=JAP_Nakamura_kotaro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Nakamura_kotaro.tga"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Nakamura_kotaro.tga"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
+		}
+	}
+}

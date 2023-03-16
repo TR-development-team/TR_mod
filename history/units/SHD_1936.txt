@@ -1,0 +1,102 @@
+﻿division_template = {
+	name = "Juntuán"				# Represents local militia groups (generally poorly-equipped )
+	division_names_group = ZHI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
+	division_names_group = WHN_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+### OOB ###
+units = {
+	### Provincial Forces ###
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1069
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1069
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1104
+		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
+		start_experience_factor = 0.2
+
+	}
+		division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1069
+		division_template = "Qibing Jun"	
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 1069
+		division_template = "Qibing Jun"	
+		start_experience_factor = 0.3
+
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1104
+		division_template = "Qibing Jun"	
+		start_experience_factor = 0.3
+
+	}
+}
+
+### STARTING PRODUCTION ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "SHX"
+		}
+		requested_factories = 1
+		progress = 0.78
+		efficiency = 100
+	}
+}

@@ -1,6 +1,8 @@
 ﻿capital = 901
-
 oob = "KHI_1936"
+
+RUS = {	set_autonomy = {	target = KHI	autonomous_state = protected_state	}	}
+set_cosmetic_tag = KHI_khanate
 
 set_research_slots = 2
 add_ideas = {
@@ -10,12 +12,7 @@ add_ideas = {
 set_technology = {
 	infantry_weapons = 1
 }
-SOV = { 
-        set_autonomy = {
-		target = KHI
-		autonomous_state = autonomy_colony
-	}
-	}
+
 set_politics = {
 	ruling_party = paternal_autocrat
 	last_election = "1935.1.1"

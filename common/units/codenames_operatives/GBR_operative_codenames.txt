@@ -1,0 +1,33 @@
+﻿#British Operative list
+GBR_OPERATIVE_CODENAME_HISTORICAL = {
+	name = GBR_HISTORICAL_OPERATIVES
+
+	# for all English countries
+	for_countries = { GBR SCO WLS NIR }
+
+	type = codename
+
+	fallback_name = "Agent %d"
+
+	unique = {
+		"Helge"
+		"Lise"
+		"Snow"
+		"Rain"
+		"Tingling"
+		"Lahlum"
+		"Hansen"
+		"Archduke"
+		"Intrepid"
+		"Mr Fox"
+		"Fleming"
+		"Niven"
+		"Lazenby"
+		"Dalton"
+		"Moore"
+		"Brosnan"
+		"Connery"
+		"Craig"
+		"Sweep"
+	}
+}

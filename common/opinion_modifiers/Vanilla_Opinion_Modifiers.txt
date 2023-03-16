@@ -194,7 +194,7 @@ opinion_modifiers = {
 	IRE_befriend_GER = {value = 50}
 	IRE_befriend_CAN = {value = 50}
 	IRE_befriend_USA = {value = 50}
-	IRE_befriend_ENG = {value = 50}
+	IRE_befriend_GBR = {value = 50}
 	IRE_befriend_FRA = {value = 50}
 	IRE_befriend_trade = {value = 25}
 
@@ -203,7 +203,7 @@ opinion_modifiers = {
 
 	### CENTROAMERICA FOCUS TREE ###
 
-	CEN_Trade = {
+	CAC_Trade = {
 		trade = yes
 		value = 40
 	}

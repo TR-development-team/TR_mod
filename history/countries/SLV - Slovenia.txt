@@ -1,29 +1,4 @@
 ﻿capital = 102
 
-set_research_slots = 3
-
-# Starting tech
-# clone of Yugoslavia
-set_technology = {
-	tech_support = 1
-	tech_engineers = 1
-	tech_mountaineers = 1
-	early_fighter = 1
-	gwtank = 1
-	basic_light_tank = 1
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	early_destroyer = 1
-	early_light_cruiser = 1
-	early_submarine = 1
-}
-
-set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1935.6.9"
-	election_frequency = 12
-	elections_allowed = no # none after offset 1
-}
-set_popularities = {
-	authoritarian_democrat = 100
-}
+set_cosmetic_tag = SLV_republic
+set_dictatorship = yes

@@ -1,33 +1,13 @@
 ﻿capital = 619
-
 oob = "ETR_1936"
 
-set_technology = {
-	infantry_weapons = 1
-	
-}
-
-add_ideas = {
-         CHI_late_army
-         limited_conscription
-         partial_economic_mobilisation
-}
+set_cosmetic_tag = ETR_islamic_republic
 
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1935.8.7"
 	election_frequency = 48
 	elections_allowed = no
-}
-if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-
-	declare_war_on = {
-		target = SIK
-		type = annex_everything
-	}
 }
 set_popularities = {
 	totalist = 9
@@ -45,4 +25,18 @@ set_popularities = {
 
 recruit_character = ETR_Khoja_Niyaz
 
+if = {
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = {	target = SIK	type = civil_war	}
+	add_civil_war_target = SIK
+}
 
+add_ideas = {
+	WHN_late_army
+	limited_conscription
+	partial_economic_mobilisation
+}
+
+set_technology = {
+	infantry_weapons = 1
+}

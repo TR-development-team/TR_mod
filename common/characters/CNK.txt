@@ -1,0 +1,19 @@
+characters={
+	CNK_Wang_Jingwei={
+		name=CNK_Wang_Jingwei
+		portraits={
+			civilian={
+				large="gfx/leaders/WHN/Portrait_CHI_Wang.png"
+			}
+		}
+		country_leader={
+			ideology= anarco_communist_subtype
+		}
+		country_leader={
+			ideology= San_min_Doctrine_left_subtype
+		}
+		country_leader={
+			ideology= San_min_Doctrine_left_SL_subtype
+		}
+	}
+}

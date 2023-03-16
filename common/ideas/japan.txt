@@ -78,7 +78,7 @@ country = {
 	}
 	
 
-                SHX_hirohito = {
+                ZHI_hirohito = {
 			allowed = {
 				always = no
 			}
@@ -1702,7 +1702,7 @@ country = {
 			allowed = {
 				always = no
 			}
-                        picture = SOV_war_heroes
+                        picture = RUS_war_heroes
 
 			
 			removal_cost = -1
@@ -2032,7 +2032,7 @@ country = {
 
 			removal_cost = -1
 
-			picture = SOV_scientist_defect
+			picture = RUS_scientist_defect
 			
 			modifier = {
                                 stability_factor = -0.05

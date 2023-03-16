@@ -255,7 +255,7 @@ FRA_destroyers = {
 				OR = {
 					has_war_with = USA
 					has_war_with = JAP
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 				factor = 2
 			}
@@ -625,7 +625,7 @@ FRA_naval_light_AA_cruiser = {
 			factor = 10
 			OR = {
 				has_war_with = USA
-				has_war_with = ENG
+				has_war_with = GBR
 				has_war_with = JAP
 			}
 		}

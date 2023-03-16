@@ -1,0 +1,42 @@
+﻿capital = 615
+oob = "SHX_1936"
+
+set_cosmetic_tag = SHX_military_clique
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+        tech_support = 1		
+	tech_engineers = 1
+        mass_assault = 1
+}
+set_convoys = 20
+
+add_ideas = {
+         militaly_dictatorship
+         partial_economic_mobilisation
+         trinket_minimum_wage
+         trinket_Unemployment_subsidies
+         trinket_school_system
+         trinket_pensions
+         WHN_late_army
+         SHX_monroe_doctrine
+         SHX_Anti_Japanese_front
+}
+	
+
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	paternal_autocrat = 100
+}
+
+recruit_character = SHX_yan_xishan
+
+recruit_character = SHX_wang_jingguo
+recruit_character = SHX_fu_zuoyi

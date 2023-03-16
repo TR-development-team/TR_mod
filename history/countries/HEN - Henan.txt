@@ -1,0 +1,28 @@
+﻿capital = 607
+oob = "HEN_1936"
+
+set_cosmetic_tag = GREATMING_state
+
+set_politics = {
+	ruling_party = Gnosticism
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Gnosticism = 100
+}
+
+recruit_character = HEN_Zhu_Emperor
+
+add_ideas = {
+	Absolute_monarchy
+	WHN_late_army
+}
+
+set_stability = 0.4
+set_war_support = 0.4
+set_technology = {
+	infantry_weapons = 1
+	mass_assault = 1
+}

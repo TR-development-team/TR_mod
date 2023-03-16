@@ -1,0 +1,147 @@
+﻿add_namespace = GBR
+
+country_event = {	#ジョージ5世の崩御
+	id = GBR.0
+	title = GBR.0.t
+	desc = GBR.0.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		tag = GBR
+		date > 1936.1.19
+		has_start_date < 1936.01.02
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = GBR.0.0
+		add_ideas = GBR_Edward_VIII
+	}
+}
+
+add_namespace = GBR_civil_war
+country_event = {	#暴動
+	id = GBR_civil_war.1
+	title = GBR_civil_war.1.t
+	desc = GBR_civil_war.1.d
+	picture = GFX_report_event_eng_mosley_march_on_downing_street
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = GBR_civil_war.1.0
+		ai_chance = {	factor = 100	}
+		GBR_civil_war_start = yes
+		hidden_effect = {
+			create_dynamic_country = {
+				original_tag = GBR
+				set_BRITANNIA_union = yes
+				transfer_state = 130
+				transfer_state = 132
+				transfer_state = 128
+				transfer_state = 129
+				transfer_state = 122
+				transfer_state = 131
+				transfer_state = 338
+				GBR = {
+					every_character = {
+						limit = {	is_character = GBR_oswald_mosley	}
+						set_nationality = PREV.PREV
+					}
+				}
+				promote_character = GBR_oswald_mosley
+			}
+			GBR = {
+				set_country_flag = GBR_royalist_faction_flag
+				transfer_units_fraction= {
+					target = GB1
+					size = 0.5
+					stockpile_ratio = 0.0
+					army_ratio = 0.0
+					navy_ratio = 0.4
+					air_ratio = 0.0
+					keep_unit_leaders_trigger = { always = yes }
+				}
+			}
+		}
+	}
+	option = { 
+		name = GBR_civil_war.1.1
+		ai_chance = {	factor = 0	}
+		GBR_civil_war_start = yes
+		hidden_effect = {
+			transfer_units_fraction= {
+				target = GB0
+				size = 0.5
+				stockpile_ratio = 0.0
+				army_ratio = 0.0
+				navy_ratio = 0.4
+				air_ratio = 0.0
+				keep_unit_leaders_trigger = { always = yes }
+			}
+			create_dynamic_country = {
+				original_tag = GBR
+				set_cosmetic_tag = GBRandIREbyENG_united_kingdom
+				set_country_flag = GBR_royalist_faction_flag
+				GBR = {
+					every_owned_state = {
+						limit = {
+							NOT = {
+								state = 130
+								state = 132
+								state = 128
+								state = 129
+								state = 122
+								state = 131
+								state = 338
+							}
+						}
+						transfer_state_to = PREV.PREV
+					}
+					every_character = {
+						limit = {	NOT = {	is_character = GBR_oswald_mosley	}	}
+						set_nationality = PREV.PREV
+					}
+				}
+				promote_character = GBR_oswald_mosley
+			}
+			GBR = {	set_BRITANNIA_union = yes	}
+		}
+	}
+}
+
+country_event = {	#英国国民革命
+	id = GBR_civil_war.2
+	title = GBR_civil_war.2.t
+	desc = GBR_civil_war.2.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = GBR_civil_war.2.0
+		add_ideas = ENR_REVOLUTION
+		load_oob = "ENR_Civil_war"
+		declare_war_on = {	target = GB0	type = civil_war	}
+	}
+}
+
+country_event = {	#王党派の勝利
+	id = GBR_civil_war.3
+	title = GBR_civil_war.3.t
+	desc = GBR_civil_war.3.d
+	picture = GFX_report_event_france_parade
+	trigger = {
+	has_country_flag = GBR_revolution_FLAG
+		tag = GBR
+		GB1 = { exists = no }
+	}
+	fire_only_once = yes
+	
+	option = { 
+		name = GBR_civil_war.3.0
+		set_country_flag = GBR_revolution_end
+	}
+}

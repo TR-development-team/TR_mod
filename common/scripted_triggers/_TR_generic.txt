@@ -1,0 +1,27 @@
+is_communism_government = {
+	OR = {
+		has_government = totalist
+		has_government = syndicalist
+		has_government = radical_socialist
+	}
+}
+is_democratic_government = {
+	OR = {
+		has_government = totalist
+		has_government = national_populist
+		has_government = Gnosticism
+	}
+}
+is_fascism_government = {
+	OR = {
+		has_government = totalist
+		has_government = national_populist
+		has_government = Gnosticism
+	}
+}
+is_neutrality_government = {
+	OR = {
+		has_government = authoritarian_democrat
+		has_government = paternal_autocrat
+	}
+}

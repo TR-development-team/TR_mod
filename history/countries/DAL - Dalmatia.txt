@@ -1,14 +1,22 @@
 ﻿capital = 109
-set_research_slots = 2
 oob = "DAL_1936"
-set_cosmetic_tag = DAL_AUS
-AUS = {
-	set_autonomy = {
-		autonomous_state = autonomy_cisleithanien
-		target = ROOT
-	}
+
+AUS = {	set_autonomy = {	autonomous_state = AUS_crown_land	target = ROOT	}	}
+set_cosmetic_tag = DAL_kingdom
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1935.6.9"
+	election_frequency = 12
+	elections_allowed = no	# none after offset 1
 }
 
+set_popularities = {
+	authoritarian_democrat = 100
+}
+
+set_convoys = 5
+set_research_slots = 2
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -16,7 +24,6 @@ set_technology = {
 	tech_support = 1
 	tech_recon = 1
 }
-
 if = {
 	limit = {
 		not = {
@@ -30,7 +37,6 @@ if = {
 		transport = 1
 	}
 }
-
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
@@ -44,25 +50,3 @@ if = {
 		mtg_transport = 1
 	}
 }
-
-set_convoys = 5
-set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1935.6.9"
-	election_frequency = 12
-	elections_allowed = no	# none after offset 1
-}
-
-set_popularities = {
-	authoritarian_democrat = 100
-}
-
-#create_country_leader = {
-#	name = "Vladko Maček"
-#	picture = "portrait_CRO_vladko_macek.dds"
-#	expire = "1965.1.1"
-#	ideology = authoritarian_democrat_subtype
-#	traits = {
-#		#
-#	}
-#}

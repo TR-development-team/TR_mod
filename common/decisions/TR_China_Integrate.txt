@@ -159,7 +159,7 @@
 # 434 アルナーチャル・プラデーシュ
 
 
-CHI_integrate_policy = {
+WHN_integrate_policy = {
 #湖北
 	tr_integrate_hubei_province = {
 		icon = infiltrate_state
@@ -168,18 +168,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				620 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -222,18 +222,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				622 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -273,18 +273,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				615 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -321,18 +321,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				607 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -372,18 +372,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				605 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -426,18 +426,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				603 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -474,18 +474,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				325 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -522,18 +522,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				601 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -570,18 +570,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				602 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -621,18 +621,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				600 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -675,18 +675,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				595 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -732,18 +732,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				326 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -798,18 +798,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				594 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -846,18 +846,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				621 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -894,18 +894,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				611 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -942,18 +942,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				283 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -996,18 +996,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				611 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1044,18 +1044,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				604 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1095,18 +1095,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				287 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1161,18 +1161,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				606 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1209,18 +1209,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				596 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1257,18 +1257,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				598 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1305,18 +1305,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				608 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1358,18 +1358,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				328 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1425,18 +1425,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				597 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1476,18 +1476,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				816 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1521,18 +1521,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				849 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1566,18 +1566,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				591 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1611,18 +1611,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				728 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1656,18 +1656,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				729 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1701,18 +1701,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				743 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1746,18 +1746,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				745 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1791,18 +1791,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				842 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1836,18 +1836,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				865 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -1881,18 +1881,18 @@ CHI_integrate_policy = {
 		}
 		visible = {
 			OR = {
-				tag = CHI
-				tag = MIN 
-				tag = PRC
-				tag = YUN 
-				tag = YNN
-				tag = SAN
-				tag = KUO
-				tag = HNA
-				tag = HEX
-				tag = DTN
+				tag = WHN
+				tag = HEN 
+				tag = RJN
+				tag = CNK 
+				tag = YUN
+				tag = SHX
+				tag = XIB
+				tag = HNN
+				tag = GAN
+				tag = SHA
 				tag = SCH
- 				tag = NAN
+ 				tag = SGH
 			}
 			OR = {
 				920 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }

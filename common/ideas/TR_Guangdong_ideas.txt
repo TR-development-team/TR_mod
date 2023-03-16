@@ -1,7 +1,7 @@
 ideas = {
        
     country = {
-		GUG_Zaibatsu = {
+		GND_Zaibatsu = {
 			allowed = {
 				always = no
 			}
@@ -16,7 +16,7 @@ ideas = {
                     industrial_capacity_dockyard = -0.1
 			}
 		}
-		GUG_opium_trade = {
+		GND_opium_trade = {
 			allowed = {
 				always = no
 			}
@@ -29,7 +29,7 @@ ideas = {
                 consumer_goods_factor = -0.05
 			}
 		}
-		GUG_Chinese_labor_system = {
+		GND_Chinese_labor_system = {
 			allowed = {
 				always = no
 			}

@@ -1,15 +1,8 @@
 ﻿capital = 430
-
 #oob = ""
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-add_ideas = {
-        Council_communism
-}
-set_convoys = 5
+set_cosmetic_tag = BENGAL_peoples_republic
+
 set_politics = {
 	ruling_party = radical_socialist
 	last_election = "1933.3.5"
@@ -25,6 +18,11 @@ set_popularities = {
 
 recruit_character = BAN_Chandra_Bose
 
+add_ideas = {
+	Council_communism
+}
 
-
-
+set_convoys = 5
+set_technology = {
+	infantry_weapons = 1
+}

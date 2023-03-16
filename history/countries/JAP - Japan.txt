@@ -1,5 +1,4 @@
 ﻿capital = 808
-
 if = {
 	limit = {
 		NOT = {
@@ -15,8 +14,8 @@ if = {
 	set_oob = "JAP_1936_nsb"
 }
 
+set_cosmetic_tag = GREATERJAPAN_empire
 
-	
 set_major = yes
 
 set_stability = 0.3
@@ -238,29 +237,29 @@ set_popularities = {
 }
 
 ### Diplomacy ###
-add_opinion_modifier = { target = CHI modifier = embargo }
+add_opinion_modifier = { target = WHN modifier = embargo }
 give_guarantee = TEX
-give_guarantee = YUN
+give_guarantee = CNK
 MEN = { give_military_access = JAP }
-YUN = { give_military_access = JAP }
-RAJ = { give_military_access = JAP }
+CNK = { give_military_access = JAP }
+IND = { give_military_access = JAP }
 BRM = { give_military_access = JAP }
 SIA = { give_military_access = JAP }
 GXC = { give_military_access = JAP }
 TEX = { give_military_access = JAP }
 FUJ = { give_military_access = JAP }
-ANQ = { give_military_access = JAP }
+ANH = { give_military_access = JAP }
 create_faction = Japanese_Commonwealth
 add_to_faction = JAP 
 add_to_faction = MAN
-add_to_faction = SAU
+add_to_faction = ARB
 add_to_faction = CAL
 add_to_faction = ETH
-add_to_faction = JSE
+add_to_faction = INC
 add_to_faction = PHI
 add_to_faction = INS
 add_to_faction = BOR
-add_to_faction = BRU
+add_to_faction = BRN
 
 
 

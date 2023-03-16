@@ -247,8 +247,8 @@ spriteTypes = {
 	}		
 	
 	spriteType = {
-		name = "GFX_idea_SOV_scientist_defect"
-		texturefile = "gfx/interface/ideas/SOV_scientist_defect.dds"
+		name = "GFX_idea_RUS_scientist_defect"
+		texturefile = "gfx/interface/ideas/RUS_scientist_defect.dds"
 	}	
 	
 	spriteType = {
@@ -315,7 +315,7 @@ spriteTypes = {
 	}	
 	
 	spriteType = {
-		name = "GFX_idea_ENG_the_war_to_end_all_wars"
+		name = "GFX_idea_GBR_the_war_to_end_all_wars"
 		texturefile = "gfx/interface/ideas/the_war_to_end_all_wars.dds"
 	}		
 	
@@ -1997,27 +1997,27 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_english_electric.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ENG_david_stirling"
-		texturefile = "gfx/interface/ideas/idea_ENG_david_stirling.dds"
+		name = "GFX_idea_GBR_david_stirling"
+		texturefile = "gfx/interface/ideas/idea_GBR_david_stirling.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ENG_leslie_hore_belisha"
+		name = "GFX_idea_GBR_leslie_hore_belisha"
 		texturefile = "gfx/interface/ideas/idea_eng_leslie_hore_belisha.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ENG_maxwell_aitken"
+		name = "GFX_idea_GBR_maxwell_aitken"
 		texturefile = "gfx/interface/ideas/idea_eng_maxwell_aitken.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ENG_nevile_henderson"
+		name = "GFX_idea_GBR_nevile_henderson"
 		texturefile = "gfx/interface/ideas/idea_eng_nevile_henderson.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ENG_philip_kerr"
+		name = "GFX_idea_GBR_philip_kerr"
 		texturefile = "gfx/interface/ideas/idea_eng_philip_kerr.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_ENG_ernest_bevin"
+		name = "GFX_idea_GBR_ernest_bevin"
 		texturefile = "gfx/interface/ideas/idea_eng_ernest_bevin.dds"
 	}
 	
@@ -2682,7 +2682,7 @@ spriteTypes = {
 	}
 	
 	
-	### PRC
+	### RJN
 	
 	spriteType = {
 		name = "GFX_idea_prc_permit_opium_trade"
@@ -3860,7 +3860,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_mex_banco_de_mexico.dds"
 	}
 	
-	### ENG
+	### GBR
 	
 	spriteType = {
 		name = "GFX_idea_eng_special_air_service"
@@ -3927,7 +3927,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_eng_guided_by_britain.dds"
 	}	
 
-	### HOL
+	### NTL
 
 	spriteType = {
 		name = "GFX_idea_hol_wilhelmina"

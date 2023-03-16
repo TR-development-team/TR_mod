@@ -1,0 +1,1657 @@
+add_namespace = TR_Hunan
+
+#湖南の歴史
+country_event = {
+	id = TR_Hunan.1
+	title = TR_Hunan.1.t
+	desc = TR_Hunan.1.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Hunan.1.a
+		add_stability = 0.01
+		add_political_power = 10
+	}
+}
+#湖南省憲法
+country_event = {
+	id = TR_Hunan.2
+	title = TR_Hunan.2.t
+	desc = TR_Hunan.2.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_Hunan.2.a
+		add_stability = 0.05
+	}
+}
+#連省自治運動
+country_event = {
+	id = TR_Hunan.3
+	title = TR_Hunan.3.t
+	desc = TR_Hunan.3.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	
+	option = {
+		name = TR_Hunan.3.a
+		add_political_power = 50
+	}
+}
+#選挙に向けて！
+country_event = {
+	id = TR_Hunan.4
+	title = TR_Hunan.4.t
+	desc = TR_Hunan.4.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	
+	option = {
+		name = TR_Hunan.4.a
+		#各政党支持率
+		set_country_flag = { flag = HNN_Hunan_clique_support value = 0 }
+		set_country_flag = { flag = HNN_Canton_clique_support value = 0 }
+		set_country_flag = { flag = HNN_KMT_support value = 0 }
+		set_country_flag = { flag = HNN_Comunist_support value = 0 }
+        
+		#不正選挙度
+		set_country_flag = { flag = HNN_rigged_election value = 0 }
+
+		hidden_effect = {
+			country_event = { id = TR_Hunan.5 days = 7 }
+			country_event = { id = TR_Hunan.6 days = 14 }
+			country_event = { id = TR_Hunan.7 days = 21 }
+			country_event = { id = TR_Hunan.8 days = 28 }
+		}
+	}
+}
+#国民党特務の策謀
+country_event = {
+	id = TR_Hunan.5
+	title = TR_Hunan.5.t
+	desc = TR_Hunan.5.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	
+	option = {
+		name = TR_Hunan.5.a
+		ai_chance = {
+			base = 40
+		}
+		modify_country_flag = { flag = HNN_KMT_support value = 1 }
+		add_stability = -0.03
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+	}
+	option = {
+		name = TR_Hunan.5.b
+		ai_chance = {
+			base = 80
+		}
+		add_stability = 0.03
+	}
+	option = {
+		name = TR_Hunan.5.c
+		ai_chance = {
+			base = 80
+		}
+		add_political_power = -25
+		set_country_flag = { flag = HNN_KMT_support value = 0 }
+		modify_country_flag = { flag = HNN_Hunan_clique_support value = 1 }
+		set_country_flag = HNN_Rigged_election
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.10 days = 28 }
+	    }
+	}
+}
+#農村での選挙戦
+country_event = {
+	id = TR_Hunan.6
+	title = TR_Hunan.6.t
+	desc = TR_Hunan.6.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	
+	option = {
+		name = TR_Hunan.6.a
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		modify_country_flag = { flag = HNN_Comunist_support value = 1 }
+	}
+	option = {
+		name = TR_Hunan.6.b
+		ai_chance = {
+			base = 80
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		modify_country_flag = { flag = HNN_Canton_clique_support value = 1 }
+	}
+	option = {
+		name = TR_Hunan.6.c
+		ai_chance = {
+			base = 80
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.05
+		}
+		modify_country_flag = { flag = HNN_Hunan_clique_support value = 1 }
+	}
+	option = {
+		name = TR_Hunan.6.e
+		ai_chance = {
+			base = 80
+		}
+		add_political_power = -25
+		add_stability = -0.05
+		set_country_flag = { flag = HNN_Comunist_support value = 0 }
+		set_country_flag = HNN_Communist_Ban
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.9 days = 10 }
+	    }
+	}
+}
+#都市での選挙戦
+country_event = {
+	id = TR_Hunan.7
+	title = TR_Hunan.7.t
+	desc = TR_Hunan.7.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	
+	option = {
+		name = TR_Hunan.7.a
+		ai_chance = {
+			base = 80
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		modify_country_flag = { flag = HNN_Canton_clique_support value = 1 }
+	}
+	option = {
+		name = TR_Hunan.7.b
+		trigger = {
+			NOT = { has_country_flag = HNN_Rigged_election }
+		}
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+		modify_country_flag = { flag = HNN_KMT_support value = 1 }
+	}
+	option = {
+		name = TR_Hunan.7.c
+		
+		ai_chance = {
+			base = 80
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.05
+		}
+		modify_country_flag = { flag = HNN_Hunan_clique_support value = 1 }
+	}
+	option = {
+		name = TR_Hunan.7.e
+		ai_chance = {
+			base = 40
+		}
+		trigger = {
+			NOT = { has_country_flag = HNN_Communist_Ban }
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		modify_country_flag = { flag = HNN_Comunist_support value = 1 }
+	}
+}
+#都市での選挙戦
+country_event = {
+	id = TR_Hunan.8
+	title = TR_Hunan.8.t
+	desc = TR_Hunan.8.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.8.a
+		trigger = {
+			NOT = { has_country_flag = HNN_Rigged_election }
+		}
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+		modify_country_flag = { flag = HNN_KMT_support value = 1 }
+	}
+	option = {
+		name = TR_Hunan.8.b
+		
+		ai_chance = {
+			base = 80
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.05
+		}
+		modify_country_flag = { flag = HNN_Hunan_clique_support value = 1 }
+	}
+	option = {
+		name = TR_Hunan.8.c
+		ai_chance = {
+			base = 80
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		modify_country_flag = { flag = HNN_Canton_clique_support value = 1 }
+	}
+}
+#共産党の抗議
+country_event = {
+	id = TR_Hunan.9
+	title = TR_Hunan.9.t
+	desc = TR_Hunan.9.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.9.a
+		ai_chance = {
+			base = 80
+		}
+		add_stability = -0.1
+	}
+	option = {
+		name = TR_Hunan.9.b		
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -50
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		set_country_flag = { flag = HNN_Comunist_support value = 2 }
+		modify_country_flag = { flag = HNN_Hunan_clique_support value = -1 }
+		clr_country_flag = HNN_Communist_Ban
+	}
+}
+#不正の発覚
+country_event = {
+	id = TR_Hunan.10
+	title = TR_Hunan.10.t
+	desc = TR_Hunan.10.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.10.a
+		ai_chance = {
+			base = 80
+		}
+		add_stability = -0.1
+	}
+	option = {
+		name = TR_Hunan.10.b		
+		ai_chance = {
+			base = 10
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+		modify_country_flag = { flag = HNN_KMT_support value = 2 }
+		modify_country_flag = { flag = HNN_Hunan_clique_support value = -1 }
+		clr_country_flag = HNN_Rigged_election
+	}
+}
+#権力闘争の結果判定
+country_event = {
+	id = TR_Hunan.101
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_Hunan.101 FROM = [From.GetName]" }
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_country_flag = HNN_Rigged_election }
+				NOT = { has_country_flag = HNN_Communist_Ban }
+				has_country_flag = {
+					flag = HNN_Hunan_clique_support
+					value > 2
+				}
+			}
+			set_country_flag = HNN_Hunan_clique_win
+			country_event = { id = TR_Hunan.11 days = 1 }
+			
+		}
+		if = {
+			limit = {
+			NOT = { has_country_flag = HNN_Rigged_election }
+			NOT = { has_country_flag = HNN_Communist_Ban }
+				has_country_flag = {
+					flag = HNN_KMT_support
+					value > 2
+				}
+			}
+			set_country_flag = HNN_KMT_win
+			country_event = { id = TR_Hunan.11 days = 1 }
+			
+		}
+		if = {
+			limit = {
+			NOT = { has_country_flag = HNN_Rigged_election }
+			NOT = { has_country_flag = HNN_Communist_Ban }
+				has_country_flag = {
+					flag = HNN_Comunist_support
+					value > 2
+				}
+			}
+			set_country_flag = HNN_Communist_win
+			ccountry_event = { id = TR_Hunan.11 days = 1 }
+			
+		}
+		if = {
+			limit = {
+			NOT = { has_country_flag = HNN_Rigged_election }
+			NOT = { has_country_flag = HNN_Communist_Ban }
+				has_country_flag = {
+					flag = HNN_Canton_clique_support
+					value > 2
+				}
+			}
+			set_country_flag = HNN_canton_clique_win
+			country_event = { id = TR_Hunan.11 days = 1 }
+
+		}
+		if = {
+			limit = {
+				OR = { has_country_flag = HNN_Rigged_election has_country_flag = HNN_Communist_Ban }
+			}
+			country_event = TR_Hunan.12
+		}
+		if = {
+			limit = {
+				NOT = { has_country_flag = HNN_Rigged_election }
+				NOT = { has_country_flag = HNN_Communist_Ban }
+				has_country_flag = {
+					flag = HNN_Canton_clique_support
+					value < 3
+				}
+				has_country_flag = {
+					flag = HNN_Comunist_support
+					value < 3
+				}
+				has_country_flag = {
+					flag = HNN_Hunan_clique_support
+					value < 3
+				}
+				has_country_flag = {
+					flag = HNN_KMT_support
+					value < 3
+				}
+			}
+			set_country_flag = HNN_inconclusive
+			country_event = { id = TR_Hunan.11 days = 1 }
+			
+		}
+	}
+}
+#選挙結果
+country_event = {
+	id = TR_Hunan.11
+	title = TR_Hunan.11.t
+	desc = TR_Hunan.11.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#湖南連省派
+	option = {
+		name = TR_Hunan.11.a
+		trigger = {
+			has_country_flag = HNN_Hunan_clique_win
+		}
+		set_country_flag = HNN_Political_stable
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+		complete_national_focus = HNN_Political_focus_5
+		complete_national_focus = HNN_Hunan_Clique_focus_1
+	}
+	#致公党
+	option = {
+		name = TR_Hunan.11.b
+		trigger = {
+			has_country_flag = HNN_canton_clique_win
+		}
+		set_country_flag = HNN_Political_stable
+		add_ideas = HNN_Chen_Chiungming
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		complete_national_focus = HNN_Political_focus_5
+		complete_national_focus = HNN_Socialist_focus_1
+	}
+	#国民党
+	option = {
+		name = TR_Hunan.11.c
+		trigger = {
+			has_country_flag = HNN_KMT_win
+		}
+		set_country_flag = HNN_Political_stable
+		add_ideas = HNN_Tang_Shengzhi
+		add_ideas = HNN_Tang_Shengzhi_cos
+		add_ideas = HNN_He_Jian_coa
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		complete_national_focus = HNN_Political_focus_5
+		complete_national_focus = HNN_Kuomintang_focus_1
+	}
+	#湖南共産党
+	option = {
+		name = TR_Hunan.11.e
+		trigger = {
+			has_country_flag = HNN_Coimmunist_win
+		}
+		set_country_flag = HNN_Political_stable
+		872 = { set_demilitarized_zone = no }
+		add_ideas = HNN_Mao_Zedong
+		add_ideas = HNN_Mao_Zedong_cos
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = yes
+		}
+		complete_national_focus = HNN_Political_focus_5
+		complete_national_focus = HNN_Socialist_focus_2
+	}
+	#決着つかず
+	option = {
+		name = TR_Hunan.11.f
+		trigger = {
+			has_country_flag = HNN_inconclusive
+		}
+		add_stability = -0.1
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.19 days = 7 }
+	    }
+	}
+}
+#憲政の終焉
+country_event = {
+	id = TR_Hunan.12
+	title = TR_Hunan.12.t
+	desc = TR_Hunan.12.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#なんてこった
+	option = {
+		name = TR_Hunan.12.a
+		remove_ideas = HNN_Constitution
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.13 days = 4 }
+			country_event = { id = TR_Hunan.14 days = 2 }
+			country_event = { id = TR_Hunan.17 days = 7 }
+	    }
+	}
+}
+#唐生智が蜂起
+country_event = {
+	id = TR_Hunan.13
+	title = TR_Hunan.13.t
+	desc = TR_Hunan.13.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#奴を叩き潰せ
+	option = {
+		name = TR_Hunan.13.a
+		add_stability = -0.05
+		750 = { set_demilitarized_zone = yes }
+	}
+}
+#共産党が蜂起
+country_event = {
+	id = TR_Hunan.14
+	title = TR_Hunan.14.t
+	desc = TR_Hunan.14.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#奴を叩き潰せ
+	option = {
+		name = TR_Hunan.14.a
+		872 = { set_demilitarized_zone = yes }
+		1010 = { set_demilitarized_zone = yes }
+		swap_ideas = {
+			remove_idea = HNN_RJN_partisan
+			add_idea = HNN_RJN_partisan_1
+		}
+	}
+}
+#唐が長沙を占領
+country_event = {
+	id = TR_Hunan.15
+	title = TR_Hunan.15.t
+	desc = TR_Hunan.15.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#三民主義に万歳！
+	option = {
+		name = TR_Hunan.15.a
+		add_ideas = HNN_Tang_Shengzhi
+		add_ideas = HNN_Tang_Shengzhi_cos
+		add_ideas = HNN_He_Jian_coa
+		add_ideas = militaly_dictatorship
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		}
+		complete_national_focus = HNN_Political_focus_5
+		complete_national_focus = HNN_Kuomintang_focus_1
+		750 = { set_demilitarized_zone = no }
+	}
+}
+#紅軍が長沙を占領
+country_event = {
+	id = TR_Hunan.16
+	title = TR_Hunan.16.t
+	desc = TR_Hunan.16.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#革命万歳！
+	option = {
+		name = TR_Hunan.16.a
+		add_ideas = HNN_Mao_Zedong
+		add_ideas = HNN_Mao_Zedong_cos
+		add_ideas = Council_communism
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		complete_national_focus = HNN_Political_focus_5
+		complete_national_focus = HNN_Socialist_focus_2
+		600 = { set_demilitarized_zone = no }
+		872 = { set_demilitarized_zone = no }
+		1010 = { set_demilitarized_zone = no }
+	}
+}
+#事態の収拾
+country_event = {
+	id = TR_Hunan.17
+	title = TR_Hunan.17.t
+	desc = TR_Hunan.17.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#呉佩孚を頼ろう！
+	option = {
+		name = TR_Hunan.17.a
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = -50
+		hidden_effect = {
+			country_event = { id = TR_Hunan.18 days = 2 }
+			country_event = { id = TR_Hunan.20 days = 5 }
+			country_event = { id = TR_Hunan.23 days = 7 }
+	    }
+	}
+	#何もできん…
+	option = {
+		ai_chance = {
+			base = 40
+		}
+		name = TR_Hunan.17.b
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = { id = TR_Hunan.20 days = 5 }
+			country_event = { id = TR_Hunan.23 days = 7 }
+	    }
+	}
+}
+#呉佩孚が湖南の軍権を掌握
+country_event = {
+	id = TR_Hunan.18
+	title = TR_Hunan.18.t
+	desc = TR_Hunan.18.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#今すぐ、賊を叩き潰せ。
+	option = {
+		name = TR_Hunan.18.a
+		add_ideas = militaly_dictatorship
+		add_ideas = HNN_Wu_Peifu
+		add_ideas = HNN_Jiang_Baili
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		HNN_Wu_Peifu = {
+			promote_character = {
+			ideology= dem_Military_junta_subtype
+			}
+			promote_character = {
+			ideology= Military_junta_subtype
+			}
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = HNN_Zhili_party_long
+			name = HNN_Zhili_party
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = HNN_Zhili_party_long
+			name = HNN_Zhili_party
+		}
+		complete_national_focus = HNN_Political_focus_5
+		complete_national_focus = HNN_Zhili_focus_1
+	}
+}
+#選挙の失敗
+country_event = {
+	id = TR_Hunan.19
+	title = TR_Hunan.19.t
+	desc = TR_Hunan.19.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#政治は停滞した
+	option = {
+		name = TR_Hunan.19.a
+		remove_ideas = HNN_Constitution
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.13 days = 4 }
+			country_event = { id = TR_Hunan.14 days = 2 }
+			country_event = { id = TR_Hunan.17 days = 7 }
+	    }
+	}
+}
+#紅軍との交戦
+country_event = {
+	id = TR_Hunan.20
+	title = TR_Hunan.20.t
+	desc = TR_Hunan.20.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#包囲を解いて一斉攻撃せよ！
+	option = {
+		name = TR_Hunan.20.a
+		ai_chance = {
+			base = 20
+		}
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.21 days = 3 }
+	    }
+	}
+	#更に兵力を投入して物量で押しつぶせ
+	option = {
+		name = TR_Hunan.20.b
+		ai_chance = {
+			base = 20
+		}
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.21 days = 3 }
+	    }
+	}
+	#トーチカを建設しながら包囲を続けろ
+	option = {
+		name = TR_Hunan.20.c
+		trigger = {
+			has_country_leader = {
+				character = HNN_Wu_Peifu
+				ruling_only = yes
+			}
+		}
+		ai_chance = {
+			base = 120
+		}
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.22 days = 7 }
+	    }
+	}
+}
+#紅軍に敗北
+country_event = {
+	id = TR_Hunan.21
+	title = TR_Hunan.21.t
+	desc = TR_Hunan.21.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.21.a
+		army_experience = 5
+		add_political_power = -25
+		add_manpower = -2000
+		add_stability = -0.05
+		600 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+			set_country_flag = HNN_Communist_army_win
+		    country_event = { id = TR_Hunan.26 days = 7 }
+	    }
+	}
+}
+#紅軍に勝利
+country_event = {
+	id = TR_Hunan.22
+	title = TR_Hunan.22.t
+	desc = TR_Hunan.22.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.22.a
+		army_experience = 15
+		add_political_power = 25
+		add_manpower = -1000
+		add_stability = 0.05
+		872 = { set_demilitarized_zone = no }
+		1010 = { set_demilitarized_zone = no }
+	}
+}
+#国民党軍との交戦
+country_event = {
+	id = TR_Hunan.23
+	title = TR_Hunan.23.t
+	desc = TR_Hunan.23.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#包囲を解いて一斉攻撃せよ！
+	option = {
+		name = TR_Hunan.23.a
+		ai_chance = {
+			base = 20
+		}
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.24 days = 3 }
+	    }
+	}
+	#更に兵力を投入して物量で押しつぶせ
+	option = {
+		name = TR_Hunan.23.b
+		ai_chance = {
+			base = 20
+		}
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.24 days = 3 }
+	    }
+	}
+	#トーチカを建設しながら包囲を続けろ
+	option = {
+		name = TR_Hunan.23.c
+		trigger = {
+			has_country_leader = {
+				character = HNN_Wu_Peifu
+				ruling_only = yes
+			}
+		}
+		ai_chance = {
+			base = 120
+		}
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.25 days = 7 }
+	    }
+	}
+}
+#国民党軍に敗北
+country_event = {
+	id = TR_Hunan.24
+	title = TR_Hunan.24.t
+	desc = TR_Hunan.24.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.24.a
+		army_experience = 5
+		add_political_power = -25
+		add_manpower = -2000
+		add_stability = -0.05
+		hidden_effect = {
+			set_country_flag = HNN_Kuomintang_army_win
+		    country_event = { id = TR_Hunan.26 days = 7 }
+	    }
+	}
+}
+#国民党軍に勝利
+country_event = {
+	id = TR_Hunan.25
+	title = TR_Hunan.25.t
+	desc = TR_Hunan.25.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.25.a
+		set_country_flag = HNN_Kuomintang_lose
+		army_experience = 15
+		add_political_power = 25
+		add_manpower = -1000
+		add_stability = 0.05
+		750 = { set_demilitarized_zone = no }
+	}
+}
+
+#長沙の戦い
+country_event = {
+	id = TR_Hunan.26
+	title = TR_Hunan.26.t
+	desc = TR_Hunan.26.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#国民党が長沙を占領した
+	option = {
+		name = TR_Hunan.26.a
+		trigger = {
+			has_country_flag = HNN_Kuomintang_army_win
+		}
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = HNN_Hunan_clique_lose
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.15 days = 1 }
+			country_event = { id = TR_Hunan.27 days = 10 }
+	    }
+	}
+	#紅軍が長沙を占領した
+	option = {
+		name = TR_Hunan.26.b
+		trigger = {
+			has_country_flag = HNN_Communist_army_win
+		}
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = HNN_Hunan_clique_lose
+		hidden_effect = {
+		    country_event = { id = TR_Hunan.16 days = 1 }
+			country_event = { id = TR_Hunan.28 days = 10 }
+	    }
+	}
+}
+#国民党、南方へ進出
+country_event = {
+	id = TR_Hunan.27
+	title = TR_Hunan.27.t
+	desc = TR_Hunan.27.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.27.a
+		army_experience = 15
+		add_political_power = 25
+		add_manpower = -1000
+		add_stability = 0.05
+		600 = { set_demilitarized_zone = no }
+		872 = { set_demilitarized_zone = no }
+		1010 = { set_demilitarized_zone = no }
+		remove_ideas = HNN_RJN_partisan_1
+	}
+}
+#紅軍、沅江を渡る
+country_event = {
+	id = TR_Hunan.28
+	title = TR_Hunan.28.t
+	desc = TR_Hunan.28.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.28.a
+		set_country_flag = HNN_Kuomintang_lose
+		army_experience = 15
+		add_political_power = 25
+		add_manpower = -1000
+		add_stability = 0.05
+		750 = { set_demilitarized_zone = no }
+	}
+}
+#アヘンへの対処
+country_event = {
+	id = TR_Hunan.29
+	title = TR_Hunan.29.t
+	desc = TR_Hunan.29.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#全面禁止だ！
+	option = {
+		name = TR_Hunan.29.a
+		ai_chance = {
+			base = 40
+		}
+		swap_ideas = {
+			remove_idea = HNN_opium_trade
+			add_idea = HNN_opium_trade_ban
+		}
+	}
+	#漸禁政策をとるべきだ
+	option = {
+		name = TR_Hunan.29.b
+		ai_chance = {
+			base = 40
+		}
+		swap_ideas = {
+			remove_idea = HNN_opium_trade
+			add_idea = HNN_opium_trade_Gradual_ban
+		}
+	}
+	#黙認せよ
+	option = {
+		name = TR_Hunan.29.c
+		trigger = {
+			has_country_leader = {
+				character = HNN_Zhao_Hengti
+				ruling_only = yes
+			}
+		}
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = 50
+	}
+}
+#国民党の内部紛争
+country_event = {
+	id = TR_Hunan.29
+	title = TR_Hunan.29.t
+	desc = TR_Hunan.29.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#重慶
+	option = {
+		name = TR_Hunan.29.a
+		ai_chance = {
+			base = 20
+		}
+		set_country_flag = HNN_Political_stable
+		add_stability = 0.1
+		add_popularity = {
+			ideology = social_1liberal
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.2
+		}
+		CNK = {
+			country_event = {
+				id = TR_Hunan.30
+				days = 1
+			}
+		}
+
+	}
+	#武漢
+	option = {
+		name = TR_Hunan.29.b
+		ai_chance = {
+			base = 80
+		}
+		uncomplete_national_focus = {
+			focus = HNN_Kuomintang_focus_2
+			uncomplete_children = no
+			refund_political_power = no
+		  }
+		add_popularity = {
+			ideology = social_1liberal
+			popularity = -0.2
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+	}
+}
+#湖南が我々の陣営への参加を希望(重慶)
+country_event = {
+	id = TR_Hunan.30
+	title = TR_Hunan.30.t
+	desc = TR_Hunan.30.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#ようこそ！
+	option = {
+		name = TR_Hunan.30.a
+		ai_chance = {
+			base = 40
+		}
+		CNK = {		
+			set_autonomy = {
+			target = HNN
+			autonomy_state = CHI_provincial_government
+		    } 
+	    }
+		hidden_effect = {
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = no
+		}
+		set_popularities = {
+			totalist = 9
+			syndicalist = 4
+			radical_socialist = 7
+			social_democrat = 10
+			social_liberal = 46
+			market_liberal = 5
+			social_conservative = 5
+			authoritarian_democrat = 3
+			paternal_autocrat = 7
+			national_populist = 0
+			Gnosticism = 4
+		}
+	    }
+	}
+}
+#武漢との連携
+country_event = {
+	id = TR_Hunan.32
+	title = TR_Hunan.32.t
+	desc = TR_Hunan.32.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.29.a
+		add_stability = 0.1
+		set_country_flag = HNN_Political_stable
+		WHN = {
+			country_event = {
+				id = TR_Hunan.33
+				days = 1
+			}
+		}
+
+	}
+}
+#湖南が我々の陣営への参加を希望(武漢)
+country_event = {
+	id = TR_Hunan.33
+	title = TR_Hunan.33.t
+	desc = TR_Hunan.33.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#ようこそ！
+	option = {
+		name = TR_Hunan.33.a
+		ai_chance = {
+			base = 40
+		}
+		set_autonomy = {
+			target = HNN
+			autonomy_state = CHI_provincial_government
+		} 
+		hidden_effect = {
+		HNN = {		
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		set_popularities = {
+			totalist = 9
+			syndicalist = 4
+			radical_socialist = 7
+			social_democrat = 10
+			social_liberal = 0
+			market_liberal = 5
+			social_conservative = 5
+			authoritarian_democrat = 3
+			paternal_autocrat = 7
+			national_populist = 46
+			Gnosticism = 4
+		    }
+	    }
+	    }
+	}
+}
+#直隷派の結集！
+country_event = {
+	id = TR_Hunan.34
+	title = TR_Hunan.34.t
+	desc = TR_Hunan.34.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#素晴らしい提案だ
+	option = {
+		name = TR_Hunan.34.a
+		ai_chance = {
+			base = 120
+		}
+		HNN = {		
+			set_autonomy = {
+			target = FUJ
+			autonomy_state = CHI_provincial_government
+		    } 
+	    }
+		hidden_effect = {
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		set_popularities = {
+			totalist = 9
+			syndicalist = 4
+			radical_socialist = 2
+			social_democrat = 10
+			social_liberal = 5
+			market_liberal = 5
+			social_conservative = 5
+			authoritarian_democrat = 33
+			paternal_autocrat = 14
+			national_populist = 9
+			Gnosticism = 4
+		}
+	    }
+		HNN ={ 
+			country_event = {
+				id = TR_Hunan.35
+				days = 1
+			}
+		}
+
+	}
+	#福建は誰にも従わない!
+	option = {
+		name = TR_Hunan.34.b
+		ai_chance = {
+			base = 20
+		}
+		HNN ={ 
+		    country_event = {
+		    	id = TR_Hunan.36
+		    	days = 1
+		    }
+	    }
+	}
+}
+#福建が承諾
+country_event = {
+	id = TR_Hunan.35
+	title = TR_Hunan.35.t
+	desc = TR_Hunan.35.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.35.a
+		add_political_power = 50
+	}
+}
+#福建が拒否
+country_event = {
+	id = TR_Hunan.36
+	title = TR_Hunan.36.t
+	desc = TR_Hunan.36.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.36.a
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = FUJ }
+				country_exists = FUJ
+			}
+			create_wargoal = {
+				target = FUJ
+				type = annex_everything
+			}
+		}
+	}
+}
+#中華民国長沙政府
+country_event = {
+	id = TR_Hunan.37
+	title = TR_Hunan.37.t
+	desc = TR_Hunan.37.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#文民政府を尊重しよう
+	option = {
+		name = TR_Hunan.37.a
+		ai_chance = {
+			base = 80
+		}
+		set_country_flag = HNN_Political_stable
+		set_cosmetic_tag = CHANGSHA_government
+		HNN_Liang_Qichao = {
+			promote_character = {
+			ideology= oligarchy_subtype
+			}
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name =HNN_Constitutional_Association_party_long
+			name = HNN_Constitutional_Association_party
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		add_political_power = 50
+		add_stability = 0.1
+		add_war_support = 0.1
+		hidden_effect = {
+		    add_ideas = HNN_Liang_Qichao
+		    add_ideas = HNN_Cao_Kun
+		}
+	}
+	#いや、この国は呉佩孚と直隷派のものだ
+	option = {
+		name = TR_Hunan.37.b
+		ai_chance = {
+			base = 80
+		}
+		set_country_flag = HNN_Political_stable
+		set_cosmetic_tag = CHANGSHA_government
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name =HNN_Constitutional_Association_party_long
+			name = HNN_Constitutional_Association_party
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		add_political_power = 150
+		add_stability = 0.05
+		add_war_support = -0.05
+		hidden_effect = {
+		    add_ideas = HNN_Liang_Qichao
+		    add_ideas = HNN_Cao_Kun
+		}
+	}
+}
+#二人の陳が出会う時
+country_event = {
+	id = TR_Hunan.38
+	title = TR_Hunan.38.t
+	desc = TR_Hunan.38.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#素晴らしい提案だ
+	option = {
+		name = TR_Hunan.38.a
+		ai_chance = {
+			base = 80
+		}
+		HNN= {		
+			country_event = {
+			id = TR_Hunan.40
+			days = 1
+			}
+		}
+	}
+	#いや、反動とは結べない
+	option = {
+		name = TR_Hunan.38.b
+		ai_chance = {
+			base = 20
+		}
+		HNN= {		
+			country_event = {
+			id = TR_Hunan.41
+			days = 1
+			}
+		}
+	}
+}
+#湘贛共産党の合流
+country_event = {
+	id = TR_Hunan.39
+	title = TR_Hunan.39.t
+	desc = TR_Hunan.39.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#長沙の指導権を認めざるを得ない…
+	option = {
+		name = TR_Hunan.39.a
+		ai_chance = {
+			base = 80
+		}
+		HNN= {		
+			country_event = {
+			id = TR_Hunan.42
+			days = 1
+			}
+		}
+	}
+	#なぜ農民風情に従わざるを得ないのかね？
+	option = {
+		name = TR_Hunan.39.b
+		ai_chance = {
+			base = 10
+		}
+		HNN= {		
+			country_event = {
+			id = TR_Hunan.43
+			days = 1
+			}
+		}
+	}
+}
+#湘贛連合政府の成立！
+country_event = {
+	id = TR_Hunan.40
+	title = TR_Hunan.40.t
+	desc = TR_Hunan.40.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.40.a
+		add_political_power = 50
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.1
+		}
+		annex_country = {
+			target = RJN
+			transfer_troops = yes
+		}
+		if = {
+			limit = { 			
+				country_exists = FUJ
+			} 
+			declare_war_on = {
+				target = FUJ
+				type = annex_everything
+			}
+	    }
+		set_cosmetic_tag = HNN-JIA_union_government
+	}
+}
+#瑞金の拒否！
+country_event = {
+	id = TR_Hunan.41
+	title = TR_Hunan.41.t
+	desc = TR_Hunan.41.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.41.a
+		create_wargoal = {
+			type = annex_everything
+			target = RJN
+		}
+	}
+}
+#瑞金が我々の指導権を認める！
+country_event = {
+	id = TR_Hunan.42
+	title = TR_Hunan.42.t
+	desc = TR_Hunan.42.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.42.a
+		add_political_power = 50
+		annex_country = {
+			target = RJN
+			transfer_troops = yes
+		}
+		if = {
+			limit = { 			
+				country_exists = FUJ
+			} 
+			declare_war_on = {
+				target = FUJ
+				type = annex_everything
+			}
+	    }
+	}
+}
+#瑞金が我々との合流を拒否！
+country_event = {
+	id = TR_Hunan.43
+	title = TR_Hunan.43.t
+	desc = TR_Hunan.43.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.43.a
+		create_wargoal = {
+			type = annex_everything
+			target = RJN
+		}
+	}
+}
+#陳独秀の起用
+country_event = {
+	id = TR_Hunan.44
+	title = TR_Hunan.44.t
+	desc = TR_Hunan.44.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.44.a
+		add_ideas = HNN_Chen_Tuhsiu
+		add_stability = 0.05
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+}
+#周恩来の起用
+country_event = {
+	id = TR_Hunan.45
+	title = TR_Hunan.45.t
+	desc = TR_Hunan.45.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Hunan.45.a
+		add_ideas = HNN_Zhou_Enlai
+		add_stability = 0.05
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+	}
+}

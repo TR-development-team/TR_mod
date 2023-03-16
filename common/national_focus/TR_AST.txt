@@ -119,7 +119,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
 
 			
 		}
@@ -142,7 +142,7 @@ focus_tree = {
 			FOCUS_FILTER_POLITICAL
 		}
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
                         has_country_flag = AST_Democratic_Hold
 		}
 		prerequisite = { focus = AST_yingguowangmingzhengfu  }
@@ -163,7 +163,7 @@ focus_tree = {
 			factor = 100
 		}
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
                         has_country_flag = AST_MAGUS
 			
 		}
@@ -315,21 +315,18 @@ focus_tree = {
                         NOT = { has_war_with = USA }
 		}
                 bypass = {
-			has_war_with = ENR
+			has_war_with = GB1
 		}
 		search_filters = {
 			FOCUS_FILTER_ANNEXATION
 		}
 		prerequisite = { focus = AST_daxiyangzhanzheng  focus = AST_xijinlun  }
-	completion_reward = { 
-			create_wargoal = {
-				target = ENR
-				type = annex_everything
-			}
-
+		completion_reward = { 
+			create_wargoal = {	target = GB1	type = civil_war	}
+			add_civil_war_target = GB1
 		}
 	}
-
+	
 	#ロンドンへの帰還
 	focus = {
 		id = AST_rondonhenoguihuan
@@ -343,10 +340,8 @@ focus_tree = {
             is_subject = no
             owns_state = 126
             NOT = {
-				country_exists = ENG
-			}
-            NOT = {
-				country_exists = ENR
+				country_exists = GB0
+				country_exists = GB1
 			}
 		}
 		cost = 10
@@ -617,7 +612,7 @@ focus_tree = {
 		x = 3
 		y = 8
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
                         has_country_flag = AST_Democratic_Hold
 			
 		}
@@ -687,7 +682,7 @@ focus_tree = {
 		y = 8
 
 		available = {
-			has_global_flag = AST_ENG_Exile
+			has_global_flag = AST_GBR_Exile
                         has_country_flag = AST_MAGUS
 			
 		}

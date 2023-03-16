@@ -1,6 +1,9 @@
 ﻿capital = 275
-
 oob = "SAF_1936"
+
+GBR = {	set_autonomy = {	target = SAF	autonomous_state = dominion	}	}
+set_cosmetic_tag = SAF
+
 add_ideas = {
         acceptable_minimum_wage
         good_max_workhours
@@ -58,17 +61,9 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 
 	add_to_tech_sharing_group = commonwealth_research
-	add_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
+	add_opinion_modifier = { target = GBR modifier = SAF_anti_british_sentiment }
 }
 
-set_cosmetic_tag = SAF_UK
-ENG = { 
-        set_autonomy = {
-	  target = SAF
-		autonomous_state = autonomy_dominion
-		freedom_level = 0.4
-        }
-      }
 set_convoys = 25
 set_politics = {
 	ruling_party = social_conservative

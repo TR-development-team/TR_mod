@@ -1,7 +1,9 @@
 ﻿capital = 558
-
 oob = "NGA_1936"
-set_cosmetic_tag = NGA_JAP
+
+JAP = {	set_autonomy = {	target = NGA	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = WAF_JAP_imperial_colony
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -14,12 +16,11 @@ set_technology = {
 	
 }
 
-
 add_ideas = {
-        Colonical_system
-        African_Independence_movement
-        Tiyoda_Kensho
-        JAP_colony
+	Colonical_system
+	African_Independence_movement
+	Tiyoda_Kensho
+	JAP_colony
 }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
@@ -28,12 +29,6 @@ add_timed_idea = {
 
 set_convoys = 20
 
-JAP = { 
-        set_autonomy = {
-	   target = NGA
-	   autonomous_state = imperial_colony
-        }
-      }
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"

@@ -4,7 +4,7 @@ focus_tree = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = ENR
+			tag = GB1
 		}
 	}
         continuous_focus_position = { x = 2500 y = 1300 }
@@ -183,7 +183,7 @@ focus_tree = {
 		prerequisite = { focus = ENR_vNHJmZRb }
 		available = { 
 		NOT = {
-			has_war_with = ENG
+			has_war_with = GBR
 		}
 			is_subject = no
 	    }
@@ -475,7 +475,7 @@ focus_tree = {
 			factor = 1
 		}
 	completion_reward = {
-			GER = { add_to_faction = ENR }
+			RAT = { add_to_faction = GB1 }
 		}  
 	}
 
@@ -513,7 +513,7 @@ focus_tree = {
                         add_state_claim = 134
                         add_state_claim = 135
                         119 = {
-					add_core_of = ENR
+					add_core_of = GB1
 				}
 			create_wargoal = {
 				target = IRE
@@ -687,10 +687,7 @@ focus_tree = {
 			NOT = { has_war_with = JAP }
 			is_subject = no
 		}
-	        completion_reward = {  
-                     set_cosmetic_tag = ENR_OCE
-                        	
-		}
+		completion_reward = {	set_cosmetic_tag = OCEANIA	}
 	}
 
 

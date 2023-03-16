@@ -1,0 +1,42 @@
+﻿capital = 597
+oob = "SHD_1936"
+
+JAP = {	set_autonomy = {	target = SHD	autonomous_state = imperial_protectorate	}	}
+set_cosmetic_tag = SHD_military_clique
+
+set_research_slots = 2
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+        tech_support = 1		
+	tech_engineers = 1
+        mass_assault = 1
+}
+set_convoys = 20
+
+add_ideas = {
+         militaly_dictatorship
+         WHN_late_army
+}
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 4
+	syndicalist = 4
+	radical_socialist = 2
+	social_democrat = 5
+	social_liberal = 7
+	market_liberal = 5
+	social_conservative = 8
+	authoritarian_democrat = 9
+	paternal_autocrat = 31
+	national_populist = 15
+        Gnosticism = 10
+}
+recruit_character = SHD_Date_Junnosuke
+

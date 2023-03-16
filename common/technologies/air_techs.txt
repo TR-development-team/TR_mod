@@ -519,11 +519,11 @@ technologies = {
 			
 			modifier = {
 				factor = 100
-				tag = SOV
+				tag = RUS
 			}
 			modifier = {
 				has_war_with = GER
-				tag = SOV
+				tag = RUS
 				factor = 2
 			}
 
@@ -627,13 +627,13 @@ technologies = {
 				factor = 2
 				OR = {
 					has_war_with = GER
-					has_war_with = SOV
+					has_war_with = RUS
 				}
 			}
 			
 			modifier = {
 				factor = 3
-				tag = SOV
+				tag = RUS
 			}
 		}
 	}
@@ -733,12 +733,12 @@ technologies = {
 				factor = 2
 				OR = {
 					has_war_with = GER
-					has_war_with = SOV
+					has_war_with = RUS
 				}
 			}
 			modifier = {
 				factor = 2
-				tag = SOV
+				tag = RUS
 			}
 		}
 	}
@@ -817,7 +817,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					has_war_with = ENG
+					has_war_with = GBR
 					has_war_with = USA
 					has_war_with = JAP
 				}
@@ -916,7 +916,7 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					has_war_with = ENG
+					has_war_with = GBR
 					has_war_with = USA
 					has_war_with = JAP
 				}
@@ -977,7 +977,7 @@ technologies = {
 				OR = {
 					has_war_with = USA
 					has_war_with = JAP
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 			}
 			modifier = {
@@ -1023,7 +1023,7 @@ technologies = {
 			factor = 1.5
 			modifier = {
 				OR = {
-					has_war_with = ENG
+					has_war_with = GBR
 					has_war_with = USA
 					has_war_with = JAP
 				}
@@ -1547,7 +1547,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = GBR
 			}
 			
 			modifier = {
@@ -1587,7 +1587,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = GBR
 			}
 			
 			modifier = {
@@ -1627,7 +1627,7 @@ technologies = {
 			
 			modifier = {
 				factor = 5
-				tag = ENG
+				tag = GBR
 			}
 			
 			modifier = {

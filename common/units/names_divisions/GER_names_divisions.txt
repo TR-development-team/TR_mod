@@ -35,7 +35,7 @@ GER_Inf_01 =
 {
 	name = "Infantry Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -378,7 +378,7 @@ GER_ALTINF_01 =
 {
 	name = "Late/Alternate Infantry Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -463,7 +463,7 @@ GER_LTINF_01 =
 {
 	name = "Light Infantry Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -498,7 +498,7 @@ GER_MOT_01 =
 {
 	name = "Motorized Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 
 	division_types = { "motorized"  }
@@ -537,7 +537,7 @@ GER_MOT_02 =
 {
 	name = "Motorized Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 
 	division_types = { "motorized"  }
@@ -576,7 +576,7 @@ GER_MEC_01 =
 {
 	name = "Panzergrenadier Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -615,7 +615,7 @@ GER_Mnt_01 =
 {
 	name = "Mountain Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -647,7 +647,7 @@ GER_MAR_01 =
 {
 	name = "Marine Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -673,7 +673,7 @@ GER_PAR_01 =
 {
 	name = "Paratrooper Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -707,7 +707,7 @@ GER_GAR_01 =
 {
 	name = "Garrison Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -820,7 +820,7 @@ GER_Arm_01 =
 {
 	name = "Panzer Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -884,7 +884,7 @@ GER_LTARM_01 =
 {
 	name = "Light Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -912,7 +912,7 @@ GER_Cav_01 =
 {
 	name = "Cavalry Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 	can_use = { always = yes }
 
@@ -938,7 +938,7 @@ GER_SS_01 =
 {
 	name = "SS Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 
 	division_types = { "infantry" "motorized" "medium_armor" "mechanized" }
@@ -991,7 +991,7 @@ GER_MONINF_01 =
 {
 	name = "Monarchist Infantry Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 
 	division_types = { "infantry" "mechanized" "mountaineers" "paratrooper" "marine" }
@@ -1221,7 +1221,7 @@ GER_MONMOB_01 =
 {
 	name = "Monarchist Mobile Divisions"
 
-	for_countries = { GER }
+	for_countries = { GER RAT }
 
 
 	division_types = {  "cavalry" "light_armor" "medium_armor" "heavy_armor" "modern_armor"  }

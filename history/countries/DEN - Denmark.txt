@@ -1,5 +1,4 @@
 ﻿capital = 37
-
 oob = "DEN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,16 +7,50 @@ if = {
 		set_naval_oob = "DEN_1936_naval_legacy"
 	}
 }
-add_ideas = {
-        Constitutional_monarchy
-        acceptable_minimum_wage
-        good_max_workhours
-        good_safety_regulations
-        good_Unemployment_subsidies
-        acceptable_school_system
-        good_pensions
-        good_health_care
+
+set_cosmetic_tag = DEN_kingdom
+
+set_politics = {
+	ruling_party = social_democrat
+	last_election = "1935.11.11"
+	election_frequency = 48
+	elections_allowed = yes
 }
+set_popularities = {
+	social_democrat = 45
+	social_liberal = 15
+	market_liberal = 25
+	social_conservative = 15
+}
+
+create_country_leader = {
+	name = "クリスチャン10世"
+	desc = ""
+	picture = "gfx/leaders/Europa/Portrait_Christian_X.tga"
+	expire = "1965.1.1"
+	ideology = social_conservative_subtype
+	traits = {
+	
+	}
+}
+recruit_character = DEN_aksel_larsen
+recruit_character = DEN_thorvald_stauning
+recruit_character = DEN_peter_rochegune_munch
+recruit_character = DEN_frits_clausen
+recruit_character = DEN_wilhelm_wain_prior
+
+add_ideas = {
+	Constitutional_monarchy
+	acceptable_minimum_wage
+	good_max_workhours
+	good_safety_regulations
+	good_Unemployment_subsidies
+	acceptable_school_system
+	good_pensions
+	good_health_care
+}
+
+set_convoys = 40
 set_research_slots = 3
 set_stability = 0.9
 set_war_support = 0.1
@@ -56,45 +89,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-
-
-
-
-
-set_politics = {
-	ruling_party = social_democrat
-	last_election = "1935.11.11"
-	election_frequency = 48
-	elections_allowed = yes
-}
-set_popularities = {
-	social_democrat = 45
-	social_liberal = 15
-	market_liberal = 25
-	social_conservative = 15
-}
-
-
-
-
-set_convoys = 40
-
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Christian_X.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-	
-	}
-}
-recruit_character = DEN_aksel_larsen
-recruit_character = DEN_thorvald_stauning
-recruit_character = DEN_peter_rochegune_munch
-recruit_character = DEN_frits_clausen
-
-recruit_character = DEN_wilhelm_wain_prior
 
 ### VARIANTS ###
 # 1936 Start #

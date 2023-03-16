@@ -811,7 +811,7 @@ focus_tree = {
 		completion_reward = {
 			add_stability = -0.05
 			remove_ideas = victor_emmanuel
-			set_cosmetic_tag = ITA_REP
+			set_cosmetic_tag = ITA_social_republic
 		}
 	}
 
@@ -1001,7 +1001,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = ITA_Anti_International
 			reverse_add_opinion_modifier = {
-				target = GER
+				target = RAT
 				modifier = medium_decrease
 			}
 		}
@@ -2030,12 +2030,12 @@ focus = {
 				OR = { 
 					# we dont want chinese minors to go crazy on slots early since they get eaten
 					tag = GXC 
-					tag = YUN
-					tag = SHX
-					tag = XSM
+					tag = CNK
+					tag = ZHI
+					tag = QIG
 					tag = BEL
 					tag = LUX
-					tag = HOL
+					tag = NTL
 					tag = DEN
 
 					# we also dont want tiny nations to go crazy with slots right away

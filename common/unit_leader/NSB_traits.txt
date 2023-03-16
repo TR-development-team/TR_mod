@@ -119,13 +119,13 @@ leader_traits = {
 		}
 	}
 
-	trait_SOV_cowed_by_stalin_army = {
+	trait_RUS_cowed_by_stalin_army = {
 
 		type = { land }
 		trait_type = personality_trait
 
 		allowed = {
-			FROM = { original_tag = SOV }
+			FROM = { original_tag = RUS }
 		}
 
 		new_commander_weight = {
@@ -136,19 +136,19 @@ leader_traits = {
 		defense_skill = -2
 		
 		modifier = {
-			custom_modifier_tooltip = SOV_cowed_by_stalin_trait_tt
+			custom_modifier_tooltip = RUS_cowed_by_stalin_trait_tt
 			army_morale_factor = -0.1
 			land_reinforce_rate = -0.02
 		}
 	}
 
-	trait_SOV_cowed_by_stalin_navy = {
+	trait_RUS_cowed_by_stalin_navy = {
 
 		type = { navy }
 		trait_type = personality_trait
 
 		allowed = {
-			FROM = { original_tag = SOV }
+			FROM = { original_tag = RUS }
 		}
 
 		new_commander_weight = {
@@ -163,7 +163,7 @@ leader_traits = {
 		}
 	}
 
-	trait_SOV_determined = {
+	trait_RUS_determined = {
 
 		type = { land navy }
 		trait_type = status_trait
@@ -172,13 +172,13 @@ leader_traits = {
 		defense_skill = 1
 	}
 
-	trait_SOV_monarchist_sympathizer = {
+	trait_RUS_monarchist_sympathizer = {
 
 		type = { land navy }
 		trait_type = personality_trait
 
 		allowed = {
-			FROM = { original_tag = SOV }
+			FROM = { original_tag = RUS }
 		}
 
 		new_commander_weight = {
@@ -186,31 +186,31 @@ leader_traits = {
 		}
 	}
 
-	trait_SOV_stalinist = {
+	trait_RUS_stalinist = {
 
 		type = { land navy }
 		trait_type = personality_trait
 
 		allowed = {
-			FROM = { original_tag = SOV }
+			FROM = { original_tag = RUS }
 		}
 
 		new_commander_weight = {
 			factor = 0
 			modifier = {
 				add = 1
-				FROM = { has_country_flag = SOV_stalinist_military_flag } #New Generals have more chances of being Stalinists after this
+				FROM = { has_country_flag = RUS_stalinist_military_flag } #New Generals have more chances of being Stalinists after this
 			}
 		}
 	}
 
-	trait_SOV_trotskyist = {
+	trait_RUS_trotskyist = {
 
 		type = { land navy }
 		trait_type = personality_trait
 
 		allowed = {
-			FROM = { original_tag = SOV }
+			FROM = { original_tag = RUS }
 		}
 
 		new_commander_weight = {
@@ -218,13 +218,13 @@ leader_traits = {
 		}
 	}
 
-	trait_SOV_bukharinist = {
+	trait_RUS_bukharinist = {
 
 		type = { land navy }
 		trait_type = personality_trait
 
 		allowed = {
-			FROM = { original_tag = SOV }
+			FROM = { original_tag = RUS }
 		}
 
 		new_commander_weight = {
@@ -233,7 +233,7 @@ leader_traits = {
 	}
 
 
-	trait_SOV_foreign_military_advisor = {
+	trait_RUS_foreign_military_advisor = {
 
 		type = { land navy }
 		trait_type = personality_trait

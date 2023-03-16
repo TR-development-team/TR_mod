@@ -1,0 +1,19 @@
+characters={
+	PJB_Victor_Duleep_Singh={
+		name=PJB_Victor_Duleep_Singh
+		portraits={
+			civilian={
+				large="gfx/leaders/PJB/Portrait_PJB_Prince_Victor_Duleep_Singh.png"
+			}
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+		country_leader={
+			ideology= Nationalism_subtype
+		}
+	}
+}

@@ -1,22 +1,40 @@
 ﻿capital = 874
 
+set_cosmetic_tag = BLI_artist_state
 
-add_ideas = {
-        totalist_dictatorship
+set_politics = {
+	ruling_party = Gnosticism
+	last_election = "1934.12.20"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	Gnosticism = 100
 }
 
-# Starting tech
+create_country_leader = {
+	name = "アントナン・アルトー"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_FRA_Artaud.tga"
+	expire = "1964.3.1"
+	ideology = Gnosticism_subtype
+	traits = {}
+}
+
+add_ideas = {
+	totalist_dictatorship
+}
+
+set_convoys = 75
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
 	tech_recon = 1
 	early_fighter = 1
 	early_bomber = 1
-	
 	transport = 1
 	fuel_silos = 1
 }
-
 if = {
 	limit = {
 		not = { has_dlc = "Man the Guns" }
@@ -44,32 +62,3 @@ if = {
 		basic_battery = 1
 	}
 }
-
-set_convoys = 75
-set_politics = {
-	ruling_party = Gnosticism
-	last_election = "1934.12.20"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	Gnosticism = 100
-}
-
-create_country_leader = {
-	name = "アントナン・アルトー"
-	desc = ""
-	picture = "gfx/leaders/FRA/Portrait_FRA_Artaud.tga"
-	expire = "1964.3.1"
-	ideology = Gnosticism_subtype
-	traits = {
-		
-	}
-}
-
-
-
-
-
-
-

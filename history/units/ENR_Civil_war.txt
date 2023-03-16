@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
-	division_names_group = ENG_INF_01
+	division_names_group = GBR_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -20,7 +20,7 @@
 }
 division_template = {
 	name = "Cavalry Brigade"
-	division_names_group = ENG_CAV_02
+	division_names_group = GBR_CAV_02
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -34,7 +34,7 @@ division_template = {
 }
 division_template = {
 	name = "Tank Brigade"
-	division_names_group = ENG_ARM_02
+	division_names_group = GBR_ARM_02
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -43,7 +43,7 @@ division_template = {
 }
 division_template = {
 	name = "Colonial Garrison"
-	division_names_group = ENG_COL_01
+	division_names_group = GBR_COL_01
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -261,7 +261,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
-			creator = "ENG"
+			creator = "GBR"
 		}
 		requested_factories = 3
 		progress = 0.1
@@ -270,7 +270,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
-			creator = "ENG"
+			creator = "GBR"
 		}
 		requested_factories = 2
 		progress = 0.1
@@ -280,7 +280,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "ENG" 
+			creator = "GBR" 
 		}
 		requested_factories = 1
 		progress = 0.3
@@ -290,7 +290,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_0
-			creator = "ENG" 
+			creator = "GBR" 
 		}
 		requested_factories = 1
 		progress = 0.15
@@ -300,7 +300,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = tac_bomber_equipment_0
-			creator = "ENG" 
+			creator = "GBR" 
 		}
 		requested_factories = 1
 		progress = 0.1

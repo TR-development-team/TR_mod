@@ -7,16 +7,16 @@ state={
 	state_category = rural
 
 	history={
-		owner = SPO
+		owner = SBR
 
 		buildings = {
 			infrastructure = 3
 			air_base = 1
 		}
-               add_core_of = BRR
-                add_core_of = SPO
+               add_core_of = BRA
+                add_core_of = SBR
                 add_core_of = AMZ
-		add_core_of = BRA
+		add_core_of = EQB
                 
 	}
 

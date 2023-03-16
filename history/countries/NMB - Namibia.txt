@@ -2,7 +2,9 @@
 
 oob = "NMB_1936"
 
-set_cosmetic_tag = NMB_JAP
+JAP = {	set_autonomy = {	target = NMB	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
+
 set_research_slots = 3
 # Starting tech
 set_technology = {
@@ -30,13 +32,6 @@ add_timed_idea = {
 		days = 500
                  }  
 set_convoys = 20
-
-JAP = { 
-        set_autonomy = {
-	   target = NMB
-	   autonomous_state = imperial_colony
-        }
-      }
 
 set_politics = {
 	ruling_party = authoritarian_democrat

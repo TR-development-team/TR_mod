@@ -1,6 +1,48 @@
 ﻿capital = 4
 oob = "AUS_1936"
-set_cosmetic_tag = AUS_Cisleithanien
+
+set_cosmetic_tag = AUS_lands
+
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1935.11.9"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	social_democrat = 27
+	social_liberal = 2
+	market_liberal = 2
+	social_conservative = 30
+	authoritarian_democrat = 1
+	paternal_autocrat = 10
+	national_populist = 8
+	Gnosticism = 20
+}
+
+recruit_character = AUS_Karl_Renner
+recruit_character = AUS_Richard_Coudenhove_Kalergi
+recruit_character = AUS_franz_josef_otto_von_habsburg
+recruit_character = AUS_Engelbert_Dollfuss
+recruit_character = AUS_Adolf_Joseph_Lanz
+recruit_character = AUS_Eugen_von_Osterreich
+recruit_character = AUS_Franz_Bohme
+recruit_character = AUS_Karl_Eglseer
+recruit_character = AUS_Otto_Skorzeny
+recruit_character = AUS_Lothar_Rendulic
+recruit_character = AUS_Karl_Maria_Wiligut
+recruit_character = AUS_Heinrich_Himmler
+recruit_character = AUS_Adolf_Hitler
+
+add_to_tech_sharing_group = austria_hungarian_empire_tech_share
+HUN = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+CRO = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+DAL = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+GAL = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+BOS = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+
+set_stability = 0.5
+set_war_support = 0.3
 set_research_slots = 4
 starting_train_buffer = 1.5
 set_major = yes
@@ -17,70 +59,27 @@ set_technology = {
 	basic_train = 1
 }
 
-set_power_balance = {
-	id = AUS_power_balance
-}
-
-add_to_tech_sharing_group = austria_hungarian_empire_tech_share
-HUN = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
-CRO = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
-DAL = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
-GAL = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
-BOS = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
+set_power_balance = {	id = AUS_power_balance	}
 
 ###Events
-country_event = {
-	id = TR_Austria.1
-	days = 5
-}
+country_event = {	id = TR_Austria.1	days = 5	}
 
 ###Dynamic_modifier
 #reichs agriculture
-set_variable = {
-	AUS_ra_min_export_modifier = 0
-}
+set_variable = {	AUS_ra_min_export_modifier = 0	}
+set_variable = {	AUS_ra_war_stability_factor_modifier = -0.1	}
+set_variable = {	AUS_ra_attrition_modifier = 0.2	}
+set_variable = {	AUS_ra_consumer_goods_factor_modifier = 0.1	}
+set_variable = {	AUS_ra_conscription_factor_modifier = -0.25	}
+set_variable = {	AUS_ra_monthly_population_modifier = -0.5	}
+set_variable = {	AUS_ra_embargo_threshold_factor_modifier = 0	}
+set_variable = {	AUS_ra_embargo_cost_factor_modifier = 0	}
 
-set_variable = {
-	AUS_ra_war_stability_factor_modifier = -0.1
-}
-
-set_variable = {
-	AUS_ra_attrition_modifier = 0.2
-}
-
-set_variable = {
-	AUS_ra_consumer_goods_factor_modifier = 0.1
-}
-
-set_variable = {
-	AUS_ra_conscription_factor_modifier = -0.25
-}
-
-set_variable = {
-	AUS_ra_monthly_population_modifier = -0.5
-}
-
-set_variable = {
-	AUS_ra_embargo_threshold_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ra_embargo_cost_factor_modifier = 0
-}
-
-add_dynamic_modifier = {
-	modifier = AUS_reichs_agriculture
-}
+add_dynamic_modifier = {	modifier = AUS_reichs_agriculture	}
 
 #reichs industry
-set_variable = {
-	AUS_ri_local_resources_factor_modifier = -0.2
-}
-
-set_variable = {
-	AUS_ri_min_export_modifier = 0
-}
-
+set_variable = {	AUS_ri_local_resources_factor_modifier = -0.2	}
+set_variable = {	AUS_ri_min_export_modifier = 0	}
 set_variable = {
 	AUS_ri_social_democrat_drift_modifier = 0.00
 }
@@ -275,39 +274,6 @@ add_ideas = {
 	AUS_hungarian_scientist_idea
 }
 
-set_politics = {
-	ruling_party = social_conservative
-	last_election = "1935.11.9"
-	election_frequency = 60
-	elections_allowed = yes
-}
-
-set_popularities = {
-	social_democrat = 27
-	social_liberal = 2
-	market_liberal = 2
-	social_conservative = 30
-	authoritarian_democrat = 1
-	paternal_autocrat = 10
-	national_populist = 8
-	Gnosticism = 20
-}
-
-set_stability = 0.5
-set_war_support = 0.3
-recruit_character = AUS_Karl_Renner
-recruit_character = AUS_Richard_Coudenhove_Kalergi
-recruit_character = AUS_franz_josef_otto_von_habsburg
-recruit_character = AUS_Engelbert_Dollfuss
-recruit_character = AUS_Adolf_Joseph_Lanz
-recruit_character = AUS_Eugen_von_Osterreich
-recruit_character = AUS_Franz_Bohme
-recruit_character = AUS_Karl_Eglseer
-recruit_character = AUS_Otto_Skorzeny
-recruit_character = AUS_Lothar_Rendulic
-recruit_character = AUS_Karl_Maria_Wiligut
-recruit_character = AUS_Heinrich_Himmler
-recruit_character = AUS_Adolf_Hitler
 ### VARIANTS ###
 if = {
 	limit = {

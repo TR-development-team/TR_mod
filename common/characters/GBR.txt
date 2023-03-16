@@ -1,0 +1,487 @@
+characters={
+	GBR_oswald_mosley={
+		name=GBR_oswald_mosley
+		portraits={
+			civilian={
+				large="gfx/leaders/GBR/Portrait_GBR_mosley.png"
+			}
+		}
+		country_leader={
+			ideology=National_syndicalist_subtype
+		}
+	}
+
+	GBR_winston_churchill={
+		name=GBR_winston_churchill
+		portraits={
+			civilian={
+				large="gfx/leaders/GBR/Portrait_GBR_Winston_Churchill.tga"
+			}
+		}
+		country_leader={
+			ideology=liberal_conservative_subtype
+		}
+	}
+	GBR_winston_churchill_2={
+		name=GBR_winston_churchill
+		portraits={
+			civilian={
+				large="gfx/leaders/GBR/Portrait_GBR_Winston_Churchill_2.png"
+			}
+		}
+		country_leader={
+			ideology=militarism_subtype
+		}
+	}
+
+	GBR_Aleister_Crowley={
+		name=GBR_Aleister_Crowley
+		portraits={
+			civilian={
+				large="gfx/leaders/GBR/Portrait_GBR_Crowley.tga"
+			}
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+		}
+	}
+
+
+	GBR_alan_brooke={
+		name=GBR_alan_brooke
+		portraits={
+			army={
+				small="GFX_idea_alan_brooke"
+			}
+			army={
+				large=GFX_portrait_GBR_alan_brooke
+			}
+		}
+		
+		field_marshal={
+			traits={ career_officer trait_cautious defensive_doctrine }
+			skill=5
+			attack_skill=3
+			defense_skill=5
+			planning_skill=5
+			logistics_skill=3
+			legacy_id=997
+		}
+	}
+
+	GBR_bernard_montgomery={
+		name=GBR_bernard_montgomery
+		portraits={
+			army={
+				small="GFX_idea_bernard_montgomery"
+			}
+			army={
+				large=GFX_portrait_GBR_bernard_montgomery
+			}
+		}
+		
+		field_marshal={
+			traits={ inflexible_strategist trait_cautious media_personality organizer logistics_wizard offensive_doctrine }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=996
+		}
+	}
+
+	GBR_alan_cunningham={
+		name=GBR_alan_cunningham
+		portraits={
+			army={
+				large=GFX_portrait_GBR_alan_cunningham
+				small=GFX_portrait_GBR_alan_cunningham_small
+			}
+		}
+		corps_commander={
+			skill=4
+			attack_skill=4
+			defense_skill=1
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=0
+		}
+	}
+
+	GBR_harold_alexander={
+		name=GBR_harold_alexander
+		portraits={
+			army={
+				small="GFX_idea_harold_alexander"
+			}
+			army={
+				large=GFX_portrait_GBR_harold_alexander
+			}
+		}
+		
+		corps_commander={
+			traits={ politically_connected }
+			skill=5
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=5
+			legacy_id=995
+		}
+	}
+
+	GBR_thomas_jacomb_hutton={
+		name=GBR_thomas_jacomb_hutton
+		portraits={
+			army={
+				large=GFX_portrait_GBR_thomas_jacomb_hutton
+				small=GFX_portrait_GBR_thomas_jacomb_hutton_small
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	GBR_arthur_percival={
+		name=GBR_arthur_percival
+		portraits={
+			army={
+				large=GFX_portrait_GBR_arthur_percival
+				small=GFX_portrait_GBR_arthur_percival_small
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	GBR_merton_beckwithsmith={
+		name=GBR_merton_beckwithsmith
+		portraits={
+			army={
+				large=GFX_portrait_GBR_merton_beckwithsmith
+				small=GFX_portrait_GBR_merton_beckwithsmith_small
+			}
+		}
+		corps_commander={
+			traits={ commando }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	GBR_henry_pownall={
+		name=GBR_henry_pownall
+		portraits={
+			army={
+				large=GFX_portrait_GBR_henry_pownall
+				small=GFX_portrait_GBR_henry_pownall_small
+			}
+		}
+		corps_commander={
+			traits={ trickster }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	GBR_john_vereker={
+		name=GBR_john_vereker
+		portraits={
+			army={
+				large=GFX_portrait_GBR_john_vereker
+				small="GFX_idea_john_vereker"
+			}
+		}
+
+		corps_commander={
+			traits={ trait_cautious politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=994
+		}
+	}
+
+	GBR_henry_wilson={
+		name=GBR_henry_wilson
+		portraits={
+			army={
+				large=GFX_portrait_GBR_henry_wilson
+				small=GFX_portrait_GBR_henry_wilson_small
+			}
+		}
+		corps_commander={
+			traits={ old_guard politically_connected }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	GBR_oliver_leese={
+		name=GBR_oliver_leese
+		portraits={
+			army={
+				large=GFX_portrait_GBR_oliver_leese
+				small=GFX_portrait_GBR_oliver_leese_small
+			}
+		}
+		corps_commander={
+			traits={ harsh_leader armor_officer politically_connected }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=993
+		}
+	}
+
+	GBR_miles_dempsey={
+		name=GBR_miles_dempsey
+		portraits={
+			army={
+				large=GFX_portrait_GBR_miles_dempsey
+				small=GFX_portrait_GBR_miles_dempsey_small
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist career_officer infantry_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+
+	GBR_brian_horrocks={
+		name=GBR_brian_horrocks
+		portraits={
+			army={
+				large=GFX_portrait_GBR_brian_horrocks
+				small=GFX_portrait_GBR_brian_horrocks_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer armor_officer war_hero }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+
+	GBR_archibald_wavell={
+		name=GBR_archibald_wavell
+		portraits={
+			army={
+				small="GFX_idea_archibald_wavell"
+			}
+			army={
+				large=GFX_portrait_GBR_archibald_wavell
+			}
+		}
+		
+		corps_commander={
+			traits={ career_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=998
+		}
+	}
+
+	GBR_thomas_moore = {
+		name = GBR_thomas_moore
+		portraits={
+			army={
+				large=GFX_portrait_GBR_thomas_moore
+				small=GFX_portrait_GBR_thomas_moore_small
+			}
+		}
+		corps_commander = {
+			traits = { jungle_rat }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+
+	GBR_james_fownes_somerville={
+		name=GBR_james_fownes_somerville
+		portraits={
+			army={
+				large=GFX_portrait_GBR_james_fownes_somerville
+				small=GFX_portrait_GBR_james_fownes_somerville_small
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer aviation_enthusiast superior_tactician }
+			skill=5
+			attack_skill=4
+			defense_skill=3
+			maneuvering_skill=4
+			coordination_skill=5
+			legacy_id=983
+		}
+	}
+
+	GBR_henry_harwood={
+		name=GBR_henry_harwood
+		portraits={
+			navy={
+				small="GFX_idea_henry_harwood"
+			}
+			army={
+				large=GFX_portrait_GBR_henry_harwood
+			}
+		}
+		
+		navy_leader={
+			traits={ old_guard_navy bold }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=984
+		}
+	}
+
+	GBR_andrew_cunningham={
+		name=GBR_andrew_cunningham
+		portraits={
+			navy={
+				small="GFX_idea_andrew_cunningham"
+			}
+			army={
+				large=GFX_portrait_GBR_andrew_cunningham
+			}
+		}
+		
+		navy_leader={
+			traits={ gunnery_expert bold navy_career_officer blockade_runner superior_tactician }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			maneuvering_skill=3
+			coordination_skill=4
+			legacy_id=985
+		}
+	}
+
+
+
+	GBR_john_tovey={
+		name=GBR_john_tovey
+		portraits={
+			army={
+				large=GFX_portrait_GBR_john_tovey
+				small=GFX_portrait_GBR_john_tovey_small
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly naval_lineage superior_tactician }
+			skill=4
+			attack_skill=3
+			defense_skill=3
+			maneuvering_skill=2
+			coordination_skill=5
+			legacy_id=987
+		}
+	}
+
+	GBR_bernard_rawlings={
+		name=GBR_bernard_rawlings
+		portraits={
+			army={
+				large=GFX_portrait_GBR_bernard_rawlings
+				small=GFX_portrait_GBR_bernard_rawlings_small
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=2
+			legacy_id=988
+		}
+	}
+
+	GBR_john_cunningham={
+		name=GBR_john_cunningham
+		portraits={
+			army={
+				large=GFX_portrait_GBR_john_cunningham
+				small=GFX_portrait_GBR_john_cunningham_small
+			}
+		}
+		navy_leader={
+			traits={ navy_career_officer green_water_expert }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			maneuvering_skill=4
+			coordination_skill=3
+			legacy_id=989
+		}
+	}
+
+	GBR_charles_forbes={
+		name=GBR_charles_forbes
+		portraits={
+			army={
+				large=GFX_portrait_GBR_charles_forbes
+				small=GFX_portrait_GBR_charles_forbes_small
+			}
+		}
+		navy_leader={
+			traits={ gunnery_expert fly_swatter }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=990
+		}
+	}
+
+}

@@ -1,7 +1,7 @@
 ﻿capital = 41
-
 oob = "SPR_1936"
 
+set_cosmetic_tag = SPR_kingdom
 
 set_research_slots = 3
 country_event = { id = TR_spain.1 days = 199 }
@@ -49,10 +49,6 @@ if = {
 		basic_depth_charges = 1
 		mtg_transport = 1
 	}
-}
-set_autonomy = {
-	target = MOR
-	autonomous_state = autonomy_colony
 }
 set_politics = {
 	ruling_party = paternal_autocrat

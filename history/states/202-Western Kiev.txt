@@ -11,7 +11,7 @@ state={
 	state_category = large_city
 
 	history={
-		owner = UKS
+		owner = UKR
 		victory_points = {
 			525 25
 		}
@@ -22,8 +22,8 @@ state={
 			fuel_silo = 1
 			air_base = 8
 		}
+		add_core_of = MHN
 		add_core_of = UKR
-		add_core_of = UKS
 	}
 
 	local_supplies=0.0 

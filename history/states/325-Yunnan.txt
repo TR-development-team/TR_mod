@@ -6,10 +6,10 @@ state={
 	}
 
 	history={
-		owner = YNN
-		add_core_of = YUN
-		add_claim_by = CHI
-                add_core_of = YNN
+		owner = YUN
+		add_core_of = CNK
+		add_claim_by = WHN
+                add_core_of = YUN
 
 		victory_points = {
 			1319 10 
@@ -28,7 +28,7 @@ state={
 					}
 
 				}
-				CHI = {
+				WHN = {
 					transfer_state = PREV
 
 				}

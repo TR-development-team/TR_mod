@@ -4,8 +4,8 @@
      country = {
 
 		### Starting ###
-		JSE_independent_movement = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JSE_colonial_question" }
+		INC_independent_movement = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea INC_colonial_question" }
 			picture = chi_war_of_resistance3
 			allowed = { always = no }
 			modifier = {
@@ -18,8 +18,8 @@
                 resistance_growth = 0.25
 			}
 		}
-		JSE_Governance_reform = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea JSE_Governance_reform" }
+		INC_Governance_reform = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea INC_Governance_reform" }
 			picture = generic_democratic_drift_bonus
 			allowed = { always = no }
 			modifier = {

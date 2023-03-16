@@ -42,8 +42,8 @@ JAP_hate_usa = {
 
 JAP_hate_china = {
         allowed = {
-		tag = SHX
-                tag = GUG
+		tag = ZHI
+                tag = GND
 	}
 	enable = {
 		is_in_faction_with = JAP
@@ -52,17 +52,17 @@ JAP_hate_china = {
 	
 	ai_strategy = {
 		type = contain
-		id = "CHI"
+		id = "WHN"
 		value = 100
 	}
 	ai_strategy = {
 		type = conquer
-		id = "CHI"
+		id = "WHN"
 		value = 100
 	}
 	ai_strategy = {
 		type = antagonize
-		id = "CHI"
+		id = "WHN"
 		value = 100
 	}
 }
@@ -113,9 +113,9 @@ JAP_USA_VS_CALIFORNIA = {
 		NOT = {
 			tag = CAL
 			tag = JAP
-			tag = CEN
+			tag = CAC
                         tag = AST
-                        tag = SPO
+                        tag = SBR
 		}
 	}
 	enable = {
@@ -135,20 +135,20 @@ JAP_USA_VS_CALIFORNIA = {
 	}
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "CEN"
+		id = "CAC"
 		value = 1000
 	}
 }
 
-JAP_KEN_VS_MAU = {
+JAP_EAF_VS_KEN = {
 	allowed = {
 		NOT = {
-			tag = KEN
+			tag = EAF
 		}
 	}
 	enable = {
-		is_in_faction_with = KEN
-		MAU = { 
+		is_in_faction_with = EAF
+		KEN = { 
 			exists = yes
 			has_capitulated = no
 		}
@@ -158,7 +158,7 @@ JAP_KEN_VS_MAU = {
 
 	ai_strategy = {
 		type = dont_defend_ally_borders
-		id = "KEN"
+		id = "EAF"
 		value = 1000
 	}
 }
@@ -431,7 +431,7 @@ JAP_USA_we_love_islands = {
 		}
 		OR = {
 			JAP = { has_war_with = USA }
-			CHI = { is_subject_of = JAP }
+			WHN = { is_subject_of = JAP }
 		}
 	}
 
@@ -450,9 +450,9 @@ JAP_love_China_Puppets = {
 
 	}
 	enable = {
-		country_exists = YUN
+		country_exists = CNK
 		is_faction_leader = yes
-                NOT = { has_war_with = YUN }
+                NOT = { has_war_with = CNK }
 
 	}
 
@@ -460,12 +460,12 @@ JAP_love_China_Puppets = {
 
 	ai_strategy = {
 		type = befriend
-		id = "YUN"
+		id = "CNK"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "YUN"
+		id = "CNK"
 		value = 100
 	}
 }
@@ -476,9 +476,9 @@ JAP_love_India_Puppets = {
 
 	}
 	enable = {
-		country_exists = RAJ
+		country_exists = IND
 		is_faction_leader = yes
-                NOT = { has_war_with = RAJ }
+                NOT = { has_war_with = IND }
 
 	}
 
@@ -486,12 +486,12 @@ JAP_love_India_Puppets = {
 
 	ai_strategy = {
 		type = befriend
-		id = "RAJ"
+		id = "IND"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "RAJ"
+		id = "IND"
 		value = 100
 	}
 }
@@ -502,9 +502,9 @@ JAP_love_SaoPaulo = {
 
 	}
 	enable = {
-		country_exists = SPO
+		country_exists = SBR
 		is_faction_leader = yes
-                NOT = { has_war_with = SPO }
+                NOT = { has_war_with = SBR }
 
 	}
 
@@ -512,12 +512,12 @@ JAP_love_SaoPaulo = {
 
 	ai_strategy = {
 		type = befriend
-		id = "SPO"
+		id = "SBR"
 		value = 100
 	}
 	ai_strategy = {
 		type = alliance
-		id = "SPO"
+		id = "SBR"
 		value = 100
 	}
 }

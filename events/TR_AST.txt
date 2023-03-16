@@ -12,9 +12,9 @@ country_event = {
        trigger = {
                 tag = AST
 		is_subject = no
-                country_exists = ENR
+                country_exists = GB1
                 NOT = {
-				country_exists = ENG
+				country_exists = GB0
 			}
                
 		
@@ -24,9 +24,9 @@ country_event = {
         
         option = {
 		name = TR_Australia.1.a
-                set_cosmetic_tag = AST_ENG
+                set_cosmetic_tag = GBRandAUSTRALASIAandIREbyENG_united_kingdom
                 add_ideas = AST_Exile_Hanpatsu
-                set_global_flag = AST_ENG_Exile
+                set_global_flag = AST_GBR_Exile
 		hidden_effect = { 
                 AST_Elizabeth_II = {
 			promote_character = {
@@ -91,7 +91,7 @@ country_event = {
 
 		create_field_marshal = {
 			name = "Bernard Montgomery" 
-			portrait_path = "gfx/leaders/ENG/Portrait_Britain_Bernard_Montgomery.dds"
+			portrait_path = "gfx/leaders/GBR/Portrait_Britain_Bernard_Montgomery.dds"
 			traits = { logistics_wizard offensive_doctrine media_personality trait_cautious inflexible_strategist organizer }
 			skill = 4 
 			attack_skill = 2
@@ -101,7 +101,7 @@ country_event = {
 		}
 		create_field_marshal = {
 			name = "Alan Brooke" 
-			portrait_path = "gfx/leaders/ENG/Portrait_Britain_Alan_Brooke.dds"
+			portrait_path = "gfx/leaders/GBR/Portrait_Britain_Alan_Brooke.dds"
 			traits = { defensive_doctrine trait_cautious career_officer }
 			skill = 5
 			attack_skill = 3
@@ -111,7 +111,7 @@ country_event = {
 		}
 create_corps_commander = {
 	name = "Alan Cunningham"
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Alan_Cunningham.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_Alan_Cunningham.dds"
 	traits = {}
 	skill = 4
 	attack_skill = 4
@@ -122,7 +122,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Harold Alexander" # Aristocrat
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Harold_Alexander.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_Harold_Alexander.dds"
 	traits = { politically_connected }
 	skill = 5
 	attack_skill = 4
@@ -133,7 +133,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 	name = "Thomas Jacomb Hutton"
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Thomas_Jacomb_Hutton.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_Thomas_Jacomb_Hutton.dds"
 	traits = { old_guard }
 	skill = 2
 	attack_skill = 2
@@ -144,7 +144,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "John Vereker Lord Gort" # Aristocrat
 
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_John_Vereker.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_John_Vereker.dds"
 	traits = { politically_connected trait_cautious }
 	skill = 4
 	attack_skill = 3
@@ -156,7 +156,7 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Archibald Wavell" # Aristocrat
 
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Archibald_Wavell.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_Archibald_Wavell.dds"
 	traits = { career_officer }
 	skill = 4
 	attack_skill = 4
@@ -168,7 +168,7 @@ create_corps_commander = {
 create_navy_leader = {
 	name = "James Fownes Somerville" # Aristocrat
 
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_James_Fownes_Somerville.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_James_Fownes_Somerville.dds"
 	traits = { superior_tactician aviation_enthusiast navy_career_officer }
 	skill = 5
 	attack_skill = 4
@@ -180,7 +180,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Henry Harwood" # Aristocrat
 
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Henry_Harwood.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_Henry_Harwood.dds"
 	traits = { old_guard_navy bold }
 	skill = 3
 	attack_skill = 3
@@ -192,7 +192,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Andrew Cunningham"
 
-	portrait_path =  "gfx/leaders/ENG/Portrait_Britain_Andrew_Cunningham.dds"
+	portrait_path =  "gfx/leaders/GBR/Portrait_Britain_Andrew_Cunningham.dds"
 	traits = { blockade_runner superior_tactician navy_career_officer bold gunnery_expert}
 	skill = 5
 	attack_skill = 5
@@ -203,7 +203,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "John Tovey" # Aristocrat
 
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_John_Tovey.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_John_Tovey.dds"
 	traits = { gentlemanly naval_lineage superior_tactician }
 	skill = 4
 	attack_skill = 3
@@ -214,7 +214,7 @@ create_navy_leader = {
 create_navy_leader = {
 	name = "Bernard Rawlings" # Aristocrat
 
-	portrait_path = "gfx/leaders/ENG/Portrait_Britain_Bernard_Rawlings.dds"
+	portrait_path = "gfx/leaders/GBR/Portrait_Britain_Bernard_Rawlings.dds"
 	traits = { gentlemanly }
 	skill = 3
 	attack_skill = 3
@@ -428,9 +428,9 @@ country_event = {
                 remove_state_claim = 133
                 remove_state_claim = 136
                 remove_state_claim = 338	
-                release_puppet = ENG
+                release_puppet = GBR
 
-                ENG = { 
+                GBR = { 
                        change_tag_from =AST
                        country_event = {
 					id = TR_Australia.7
@@ -461,8 +461,8 @@ country_event = {
                 remove_state_claim = 133
                 remove_state_claim = 136
                 remove_state_claim = 338	
-                release_puppet = ENG
-               ENG = { 
+                release_puppet = GBR
+               GBR = { 
                      country_event = {
 					id = TR_Australia.7
 					days = 1
@@ -533,12 +533,12 @@ country_event = {
 			ideology = Gnosticism_subtype
                         traits = { AST_Elisabeth_Terror }
 		}
-                remove_ideas = ENG_LOSE_IN_INDIA
+                remove_ideas = GBR_LOSE_IN_INDIA
                 remove_ideas = george_v
-                remove_ideas = ENG_depression
-                remove_ideas = ENG_revolution
+                remove_ideas = GBR_depression
+                remove_ideas = GBR_revolution
                 remove_ideas = ENR_REVOLUTION    
-                AST = { end_puppet = ENG }    
+                AST = { end_puppet = GBR }    
               }
 	}
 

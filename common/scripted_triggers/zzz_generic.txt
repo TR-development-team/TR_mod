@@ -40,7 +40,7 @@ ai_land_doctrine_tier_2_trigger = {
 anti_submarine_strategy_required_trigger = {
 	OR = {
 		AND = {
-			tag = ENG
+			tag = GBR
 			not = { is_in_faction_with = GER }
 			GER = {
 				has_navy_size = {
@@ -183,5 +183,20 @@ has_large_ally_not_pick_closed_economy = {
 		
 		NOT = { tag = PREV }
 		num_of_military_factories > 30
+	}
+}
+
+ETH_is_horn_of_africa_original_tag = {
+	OR = {
+		original_tag = ETH
+		original_tag = SOM
+		original_tag = ERI
+		original_tag = DJI
+	}
+}
+
+ITA_is_italian_tag_for_music = {
+	OR = {
+		original_tag = ITA
 	}
 }

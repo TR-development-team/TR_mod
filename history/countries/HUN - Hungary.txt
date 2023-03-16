@@ -1,5 +1,59 @@
 ﻿capital = 43
 oob = "HUN_1936"
+
+AUS = {	set_autonomy = {	target = HUN	autonomous_state = junior_partner_state	}	}
+set_cosmetic_tag = HUN_crown_lands
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1935.12.11"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 8
+	syndicalist = 4
+	radical_socialist = 3
+	social_democrat = 12
+	social_liberal = 3
+	market_liberal = 6
+	social_conservative = 8
+	authoritarian_democrat = 31
+	paternal_autocrat = 8
+	national_populist = 12
+	Gnosticism = 5
+}
+
+recruit_character = HUN_matyas_rakosi
+recruit_character = HUN_arpad_szakasits
+recruit_character = HUN_miklos_horthy
+recruit_character = HUN_istvan_szechenyi
+recruit_character = HUN_Adolf_Hitler
+recruit_character = HUN_Joseph_August_von_Osterreich
+recruit_character = HUN_geza_lakatos
+recruit_character = HUN_ivan_hindy
+recruit_character = HUN_karoly_beregfy
+recruit_character = HUN_lajos_veress
+recruit_character = HUN_ferenc_feketehalmyczeydner
+
+set_autonomy = {	autonomous_state = HUN_crown_land	target = CRO	}
+
+AUS = {	give_guarantee = CRO	}
+CRO = {	give_military_access = AUS	}
+
+add_ideas = {
+	Constitutional_monarchy
+	acceptable_minimum_wage
+	trinket_safety_regulations
+	trinket_Unemployment_subsidies
+	trinket_pensions
+	trinket_health_care
+	acceptable_school_system
+	AUS_hungarian_scientist_idea
+	AUS_HUN_gemeinsames_ministerium
+}
+
 set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1
@@ -63,69 +117,3 @@ if = {
 		basic_depth_charges = 1
 	}
 }
-
-set_cosmetic_tag = HUN_Transleithanien
-AUS = {
-	set_autonomy = {
-		target = HUN
-		autonomous_state = autonomy_personal_union
-	}
-}
-
-set_autonomy = {
-	autonomous_state = autonomy_transleithanien
-	target = CRO
-}
-
-AUS = {
-	give_guarantee = CRO
-}
-
-CRO = {
-	give_military_access = AUS
-}
-
-add_ideas = {
-	Constitutional_monarchy
-	acceptable_minimum_wage
-	trinket_safety_regulations
-	trinket_Unemployment_subsidies
-	trinket_pensions
-	trinket_health_care
-	acceptable_school_system
-	AUS_hungarian_scientist_idea
-	AUS_HUN_gemeinsames_ministerium
-}
-
-set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1935.12.11"
-	election_frequency = 72
-	elections_allowed = no
-}
-
-set_popularities = {
-	totalist = 8
-	syndicalist = 4
-	radical_socialist = 3
-	social_democrat = 12
-	social_liberal = 3
-	market_liberal = 6
-	social_conservative = 8
-	authoritarian_democrat = 31
-	paternal_autocrat = 8
-	national_populist = 12
-	Gnosticism = 5
-}
-
-recruit_character = HUN_matyas_rakosi
-recruit_character = HUN_arpad_szakasits
-recruit_character = HUN_miklos_horthy
-recruit_character = HUN_istvan_szechenyi
-recruit_character = HUN_Adolf_Hitler
-recruit_character = HUN_Joseph_August_von_Osterreich
-recruit_character = HUN_geza_lakatos
-recruit_character = HUN_ivan_hindy
-recruit_character = HUN_karoly_beregfy
-recruit_character = HUN_lajos_veress
-recruit_character = HUN_ferenc_feketehalmyczeydner

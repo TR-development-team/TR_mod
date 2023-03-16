@@ -7137,7 +7137,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
-	### PRC
+	### RJN
 	
 	SpriteType = {
 		name = "GFX_focus_prc_proclaim_the_peoples_republic_shine"
@@ -7976,7 +7976,7 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
-	### ENG
+	### GBR
 	
 	SpriteType = {
 		name = "GFX_focus_eng_special_air_service_shine"
@@ -9228,7 +9228,7 @@ spriteTypes = {
 	}
 	
 	
-	### HOL
+	### NTL
 	
 	
 	SpriteType = {
@@ -20489,11 +20489,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RAJ_dominion_of_india_shine"
-		texturefile = "gfx/interface/goals/RAJ_dominion_of_india.png"
+		name = "GFX_goal_IND_dominion_of_india_shine"
+		texturefile = "gfx/interface/goals/IND_dominion_of_india.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/RAJ_dominion_of_india.png"
+			animationmaskfile = "gfx/interface/goals/IND_dominion_of_india.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -20506,7 +20506,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/RAJ_dominion_of_india.png"
+			animationmaskfile = "gfx/interface/goals/IND_dominion_of_india.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -20768,11 +20768,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_spirit_of_revolution_shine"
-		texturefile = "gfx/interface/goals/RUS_spirit_of_revolution.png"
+		name = "GFX_goal_SOV_spirit_of_revolution_shine"
+		texturefile = "gfx/interface/goals/SOV_spirit_of_revolution.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/RUS_spirit_of_revolution.png"
+			animationmaskfile = "gfx/interface/goals/SOV_spirit_of_revolution.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -20785,7 +20785,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile = "gfx/interface/goals/RUS_spirit_of_revolution.png"
+			animationmaskfile = "gfx/interface/goals/SOV_spirit_of_revolution.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22765,11 +22765,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_RUS_romanov_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_romanov.png"
+		name = "GFX_goal_SOV_romanov_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_romanov.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_romanov.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_romanov.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22782,7 +22782,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_romanov.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_romanov.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22796,11 +22796,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Alexei_Constitutional_monarchy_shine"
-		texturefile =  "gfx/interface/goals/SOV/Alexei_Constitutional_monarchy.png"
+		name = "GFX_goal_SOV_Alexei_Constitutional_monarchy_shine"
+		texturefile =  "gfx/interface/goals/RUS/Alexei_Constitutional_monarchy.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/Alexei_Constitutional_monarchy.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/Alexei_Constitutional_monarchy.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22813,7 +22813,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/Alexei_Constitutional_monarchy.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/Alexei_Constitutional_monarchy.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22827,11 +22827,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Pyotr_Wrangel_shine"
-		texturefile =  "gfx/interface/goals/SOV/Pyotr_Wrangel.png"
+		name = "GFX_goal_SOV_Pyotr_Wrangel_shine"
+		texturefile =  "gfx/interface/goals/RUS/Pyotr_Wrangel.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/Pyotr_Wrangel.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/Pyotr_Wrangel.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22844,7 +22844,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/Pyotr_Wrangel.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/Pyotr_Wrangel.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22858,11 +22858,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Republic_Russia_shine"
-		texturefile =  "gfx/interface/goals/SOV/Republic_Russia.png"
+		name = "GFX_goal_SOV_Republic_Russia_shine"
+		texturefile =  "gfx/interface/goals/RUS/Republic_Russia.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/Republic_Russia.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/Republic_Russia.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22875,7 +22875,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/Republic_Russia.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/Republic_Russia.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22889,11 +22889,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Mladorossi_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_Mladorossi.png"
+		name = "GFX_goal_SOV_Mladorossi_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_Mladorossi.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Mladorossi.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Mladorossi.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22906,7 +22906,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Mladorossi.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Mladorossi.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22920,11 +22920,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Saint_Alexei_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_Saint_Alexei.png"
+		name = "GFX_goal_SOV_Saint_Alexei_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_Saint_Alexei.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Saint_Alexei.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Saint_Alexei.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -22937,7 +22937,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Saint_Alexei.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Saint_Alexei.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23077,11 +23077,11 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_goal_RUS_Corporate_Orthodox_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_Corporate_Orthodox.png"
+		name = "GFX_goal_SOV_Corporate_Orthodox_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_Corporate_Orthodox.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Corporate_Orthodox.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Corporate_Orthodox.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23094,7 +23094,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Corporate_Orthodox.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Corporate_Orthodox.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23108,11 +23108,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_February_Revolution_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_February_Revolution.png"
+		name = "GFX_goal_SOV_February_Revolution_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_February_Revolution.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_February_Revolution.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_February_Revolution.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23125,7 +23125,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_February_Revolution.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_February_Revolution.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23139,11 +23139,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Mladorossi_kazembek_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_Mladorossi_kazembek.png"
+		name = "GFX_goal_SOV_Mladorossi_kazembek_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_Mladorossi_kazembek.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Mladorossi_kazembek.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Mladorossi_kazembek.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23156,7 +23156,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Mladorossi_kazembek.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Mladorossi_kazembek.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23170,11 +23170,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_regency_council_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_regency_council.png"
+		name = "GFX_goal_SOV_regency_council_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_regency_council.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_regency_council.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_regency_council.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23187,7 +23187,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_regency_council.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_regency_council.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23201,11 +23201,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Savinkov_Terror_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_Savinkov_Terror.png"
+		name = "GFX_goal_SOV_Savinkov_Terror_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_Savinkov_Terror.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Savinkov_Terror.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Savinkov_Terror.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23218,7 +23218,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Savinkov_Terror.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Savinkov_Terror.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23232,11 +23232,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Alexei_Taboritsky_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_Alexei_Taboritsky.png"
+		name = "GFX_goal_SOV_Alexei_Taboritsky_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_Alexei_Taboritsky.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Alexei_Taboritsky.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Alexei_Taboritsky.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23249,7 +23249,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Alexei_Taboritsky.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Alexei_Taboritsky.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23263,11 +23263,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_goal_RUS_Taboritsky_Pure_shine"
-		texturefile =  "gfx/interface/goals/SOV/RUS_Taboritsky_Pure.png"
+		name = "GFX_goal_SOV_Taboritsky_Pure_shine"
+		texturefile =  "gfx/interface/goals/RUS/SOV_Taboritsky_Pure.png"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Taboritsky_Pure.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Taboritsky_Pure.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)
@@ -23280,7 +23280,7 @@ spriteTypes = {
 		}
 
 		animation = {
-			animationmaskfile =  "gfx/interface/goals/SOV/RUS_Taboritsky_Pure.png"
+			animationmaskfile =  "gfx/interface/goals/RUS/SOV_Taboritsky_Pure.png"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
 			animationrotation = 90.0		# -90 clockwise 90 counterclockwise(by default)
 			animationlooping = no			# yes or no ;)

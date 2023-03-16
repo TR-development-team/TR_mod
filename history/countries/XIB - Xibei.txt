@@ -1,0 +1,87 @@
+﻿capital = 621
+oob = "XIB_1936"
+
+set_cosmetic_tag = XIB_military_clique
+
+complete_national_focus = XIB_Diplomatic_focus_1
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	early_bomber = 1
+	mass_assault = 1
+	fleet_in_being = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_destroyer = 1
+		early_light_cruiser = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		basic_naval_mines = 1
+		early_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_battery = 1
+		basic_torpedo = 1
+		coastal_defense_ships = 1
+	}
+}
+set_research_slots = 2
+set_convoys = 20
+
+
+	
+
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1935.8.7"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 9
+	syndicalist = 4
+	radical_socialist = 12
+	social_democrat = 10
+	social_liberal = 15
+	market_liberal = 5
+	social_conservative = 11
+	authoritarian_democrat = 17
+	paternal_autocrat = 7
+	national_populist = 6
+        Gnosticism = 4
+}
+add_ideas = {
+         WHN_late_army
+         XIB_Hui_repulsion_1
+
+         militaly_dictatorship
+         trinket_minimum_wage
+         trinket_Unemployment_subsidies
+         trinket_school_system
+         trinket_pensions
+         limited_conscription
+         partial_economic_mobilisation
+         XIB_Feng_Yuxiang
+         XIB_Liu_Ji
+         XIB_Zhang_Zhijiang
+         XIB_Song_Zheyuan
+         XIB_Lu_Zhonglin
+         XIB_Liu_Ji_cos
+         XIB_Zheng_Jinsheng
+}
+
+recruit_character = XIB_Feng_Yuxiang
+
+recruit_character = XIB_Feng_Yuxiang_marshal
+recruit_character = XIB_Lu_Zhonglin
+recruit_character = XIB_Song_Zheyuan
+recruit_character = XIB_Han_Fuchu
+recruit_character = XIB_Shi_Yousan

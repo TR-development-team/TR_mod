@@ -1,5 +1,4 @@
 ﻿capital = 47
-
 oob = "GRE_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -9,21 +8,47 @@ if = {
 	}
 }
 
-###################
-#### 3D MODELS ####
-###################
+set_cosmetic_tag = GRE_kingdom
 
-#Cosmetic tags used (3D models will look for these cosmetic tags when hooking themselves):
-#GRE_communism
-#GRE_democratic
-#GRE_fascism
-#GRE_neutrality
-set_cosmetic_tag = GRE_neutrality
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1935.6.9"
+	election_frequency = 7
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 16
+	syndicalist = 3
+	radical_socialist = 7
+	social_democrat = 3
+	social_liberal = 3
+	market_liberal = 5
+	social_conservative = 5
+	authoritarian_democrat = 25
+	paternal_autocrat = 17
+	national_populist = 2
+	Gnosticism = 14
+}
 
+create_country_leader = {
+	name = "ゲオルギオス2世"
+	desc = "POLITICS_IOANNIS_Georgios_DESC"
+	picture = "gfx/leaders/GRE/Portrait_GRE_Georgios.tga"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		
+	}
+}
 
+add_ideas = {
+	Constitutional_monarchy
+}
 
+set_stability = 0.72
+set_war_support = 0.23
+set_convoys = 80
 set_research_slots = 3
-
 set_technology = {
 	infantry_weapons = 1
 	tech_mountaineers = 1
@@ -67,47 +92,6 @@ if = {
 		mtg_transport = 1
 	}
 }
-
-set_convoys = 10
-
-add_ideas = {
-        Constitutional_monarchy
-}
-
-set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1935.6.9"
-	election_frequency = 7
-	elections_allowed = no
-}
-set_popularities = {
-	totalist = 16
-	syndicalist = 3
-	radical_socialist = 7
-	social_democrat = 3
-	social_liberal = 3
-	market_liberal = 5
-	social_conservative = 5
-	authoritarian_democrat = 25
-	paternal_autocrat = 17
-	national_populist = 2
-	Gnosticism = 14
-}
-
-set_stability = 0.72
-set_war_support = 0.23
-set_convoys = 80
-
-	create_country_leader = {
-		name = "ゲオルギオス2世"
-		desc = "POLITICS_IOANNIS_Georgios_DESC"
-		picture = "gfx/leaders/GRE/Portrait_GRE_Georgios.tga"
-		expire = "1965.1.1"
-		ideology = authoritarian_democrat_subtype
-		traits = {
-			
-		}
-	}
 
 if = { 
 	limit = { has_dlc = "Battle for the Bosporus" }
@@ -186,7 +170,7 @@ if = {
 		bypass_recruitment = no
 		available_to_spy_master = yes
 		female = no
-		nationalities = { ENG GRE }
+		nationalities = { GBR GRE }
 	}
 }
 

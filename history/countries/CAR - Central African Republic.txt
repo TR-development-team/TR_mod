@@ -1,71 +1,37 @@
-﻿capital = 660
+﻿capital = 772
+oob = "CAR_1936"
 
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
+JAP = {	set_autonomy = {	target = CAR	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
 
-set_convoys = 0
-
-add_ideas = {
-        militaly_dictatorship
-}
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
-	totalist = 10
-	syndicalist = 8
-	radical_socialist = 8
-	social_democrat = 4
-	social_liberal = 7
-	market_liberal = 8
-	social_conservative = 17
-	authoritarian_democrat = 27
-	paternal_autocrat = 2
-	national_populist = 9
+	authoritarian_democrat = 100
 }
-create_country_leader = {
-	
-	name = "バルテレミー・ボガンダ"
-	picture = "gfx/leaders/RCG//Portrait_CentralAfrica_Boganda.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		
-	}
+
+recruit_character = CAR_Maeda_Toshinari
+
+add_ideas = {
+	Colonical_system
+	African_Independence_movement
+	Tiyoda_Kensho
+	JAP_JAP_colony
 }
-create_country_leader = {
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+
+set_convoys = 5
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	CAS1 = 1
 	
-	name = "バルテレミー・ボガンダ"
-	picture = "gfx/leaders/RCG//Portrait_CentralAfrica_Boganda.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	
-	name = "バルテレミー・ボガンダ"
-	picture = "gfx/leaders/RCG//Portrait_CentralAfrica_Boganda.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		
-	}
-}
-create_country_leader = {
-	
-	name = "ボガンダ1世"
-	picture = "gfx/leaders/RCG//Portrait_CentralAfrica_Boganda.tga"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		
-	}
 }

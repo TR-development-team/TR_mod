@@ -13,7 +13,7 @@ country_event = {
 
     trigger = {
         tag = POL
-		GER = { has_war_with = DDR }
+		RAT = { has_war_with = PRE }
 		FRA = { owns_state = 28 }
 		is_subject = no
 	}
@@ -22,10 +22,10 @@ country_event = {
 	option = { 
 		name = TR_poland.1.a
         declare_war_on = {
-			target = DDR
+			target = PRE
 			type = annex_everything
 		}
-        GER = { country_event = TR_poland.2 }
+        RAT = { country_event = TR_poland.2 }
 	}
 }
 
@@ -41,12 +41,12 @@ country_event = {
 	
 	option = { 
 		name = TR_poland.2.a
-                GER = { add_to_faction = POL }
+                RAT = { add_to_faction = POL }
                                 86 = {
-					remove_core_of = GER
+					remove_core_of = RAT
 				}
 				845 = {
-					remove_core_of = GER
+					remove_core_of = RAT
 				}
                
 	}
@@ -68,7 +68,7 @@ country_event = {
                 ai_chance = {
 			base = 80
 		}
-                GER = { puppet = POL 
+                RAT = { puppet = POL 
 			transfer_state = 85
 			transfer_state = 86
                         transfer_state = 762
@@ -82,7 +82,7 @@ country_event = {
 			base = 20
 		}
                 leave_faction = yes
-                GER = { create_wargoal = {
+                RAT = { create_wargoal = {
 				target = POL
 				type = annex_everything
 			} 

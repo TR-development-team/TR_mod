@@ -1,0 +1,44 @@
+﻿capital = 429
+oob = "DVN_1936"
+
+JAP = {	set_autonomy = {	target = DVN	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authoritarian_democrat = 100
+}
+
+###country_leader###
+recruit_character = DVN_Mutaguchi_Renya
+recruit_character = DVN_Indian_Emperor_Mutaguchi_Renya
+
+###corps_commander###
+recruit_character = JAP_Mutaguchi_Renya
+recruit_character = JAP_Obata_Hideyoshi
+recruit_character = JAP_Miyazaki_Shigesaburo
+
+add_ideas = {
+	Colonical_system
+	Tiyoda_Kensho
+	JAP_colony
+}
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+
+set_research_slots = 3
+set_convoys = 5
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	early_fighter = 1
+	CAS1 = 1
+	
+}

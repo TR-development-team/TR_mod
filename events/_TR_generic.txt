@@ -38,19 +38,15 @@ country_event = {
 						is_important_state_china = yes
 					}
 					AND = {
-						ROOT = { tag = SOV }
+						ROOT = { tag = RUS }
 						is_important_state_china = yes
 					}
 					AND = {
-						ROOT = { tag = ENG }
+						ROOT = { tag = GBR }
 						is_important_state_china = yes
 					}
 					AND = {
-						ROOT = { tag = ENR }
-						is_important_state_china = yes
-					}
-					AND = {
-						ROOT = { tag = DDR }
+						ROOT = { tag = PRE }
 						is_important_state_china = yes
 					}
 					AND = {
@@ -94,19 +90,15 @@ country_event = {
 							is_important_state_china = yes
 						}
 						AND = {
-							ROOT = { tag = SOV }
+							ROOT = { tag = RUS }
 							is_important_state_china = yes
 						}
 						AND = {
-							ROOT = { tag = ENG }
+							ROOT = { tag = GBR }
 							is_important_state_china = yes
 						}
 						AND = {
-							ROOT = { tag = ENR }
-							is_important_state_china = yes
-						}
-						AND = {
-							ROOT = { tag = DDR }
+							ROOT = { tag = PRE }
 							is_important_state_china = yes
 						}
 						AND = {
@@ -150,19 +142,15 @@ country_event = {
 								is_important_state_china = yes
 							}
 							AND = {
-								ROOT = { tag = SOV }
+								ROOT = { tag = RUS }
 								is_important_state_china = yes
 							}
 							AND = {
-								ROOT = { tag = ENG }
+								ROOT = { tag = GBR }
 								is_important_state_china = yes
 							}
 							AND = {
-								ROOT = { tag = ENR }
-								is_important_state_china = yes
-							}
-							AND = {
-								ROOT = { tag = DDR }
+								ROOT = { tag = PRE }
 								is_important_state_china = yes
 							}
 							AND = {
@@ -182,7 +170,6 @@ country_event = {
 								is_french_colonial_claim = yes
 							}
 							ROOT = { is_ai = no }
-						}
 						}
 						OR = {
 							is_core_of = event_target:return_to
@@ -284,19 +271,15 @@ country_event = {
 								is_important_state_china = yes
 							}
 							AND = {
-								FROM = { tag = SOV }
+								FROM = { tag = RUS }
 								is_important_state_china = yes
 							}
 							AND = {
-								FROM = { tag = ENG }
+								FROM = { tag = GBR }
 								is_important_state_china = yes
 							}
 							AND = {
-								FROM = { tag = ENR }
-								is_important_state_china = yes
-							}
-							AND = {
-								FROM = { tag = DDR }
+								FROM = { tag = PRE }
 								is_important_state_china = yes
 							}
 							AND = {
@@ -337,19 +320,15 @@ country_event = {
 								is_important_state_china = yes
 							}
 							AND = {
-								FROM = { tag = SOV }
+								FROM = { tag = RUS }
 								is_important_state_china = yes
 							}
 							AND = {
-								FROM = { tag = ENG }
+								FROM = { tag = GBR }
 								is_important_state_china = yes
 							}
 							AND = {
-								FROM = { tag = ENR }
-								is_important_state_china = yes
-							}
-							AND = {
-								FROM = { tag = DDR }
+								FROM = { tag = PRE }
 								is_important_state_china = yes
 							}
 							AND = {

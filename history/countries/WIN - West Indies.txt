@@ -1,0 +1,42 @@
+﻿capital = 689
+#oob = ""
+
+set_cosmetic_tag = LIBERTALIA_independent_free_state
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+set_convoys = 5
+
+set_politics = {
+	ruling_party = market_liberal
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 0
+	syndicalist = 16
+	radical_socialist = 0
+	social_democrat = 2
+	social_liberal = 7
+	market_liberal = 48
+	social_conservative = 7
+	authoritarian_democrat = 9
+	paternal_autocrat = 2
+	national_populist = 9
+}
+
+
+create_country_leader = {
+	
+	name = "マックス・イーストマン"
+	picture = "gfx//leaders//USA//Portrait_USA_Eastman.tga"
+	expire = "1965.1.1"
+	ideology = libertarian_subtype
+	traits = {
+		#
+	}
+}

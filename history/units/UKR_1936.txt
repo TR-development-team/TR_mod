@@ -1,8 +1,8 @@
-﻿### GEO OOB ###
+﻿### SCC OOB ###
 
 division_template = {
 	name = "Infantry Division"		
-	division_names_group = UKR_INF_01		# Uses generic English templates
+	division_names_group = MHN_INF_01		# Uses generic English templates
 	# Note: Represents both regular infantry and militia units
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -21,7 +21,7 @@ division_template = {
 
 division_template = {
 	name = "Cavalry Division"		
-	division_names_group = UKR_CAV_01		# Uses generic English templates
+	division_names_group = MHN_CAV_01		# Uses generic English templates
 	
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -45,7 +45,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 418
+		location = 6232
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
@@ -54,7 +54,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 11405
+		location = 525
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
@@ -63,7 +63,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 3757
+		location = 525
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
@@ -72,7 +72,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 4
 		}
-		location = 11504
+		location = 525
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
@@ -81,7 +81,7 @@ units = {
 				is_name_ordered = yes
 				name_order = 5
 		}
-		location = 11504
+		location = 9423
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 	}
@@ -90,61 +90,52 @@ units = {
 				is_name_ordered = yes
 				name_order = 6
 		}
-		location = 11561
+		location = 9466
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 	}
         division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 7
 		}
-		location = 11437
+		location = 3392
 		division_template = "Infantry Division"
-		start_experience_factor = 0.2
+		start_experience_factor = 0.3
 	}
         division= {	
 		division_name = {
 				is_name_ordered = yes
 				name_order = 8
 		}
-		location = 721
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-	}
-        division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 9
-		}
-		location = 11405
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-	}
-        division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 10
-		}
-		location = 488
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-	}
-        division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 11
-		}
-		location = 11405
+		location = 3457
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
 	}
         division= {	
 		division_name = {
 				is_name_ordered = yes
-				name_order = 12
+				name_order = 9
 		}
-		location = 418
+		location = 476
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.3
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 10
+		}
+		location = 513
+		division_template = "Cavalry Division"
+		start_experience_factor = 0.3
+	}
+        division= {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 11
+		}
+		location = 6557
 		division_template = "Cavalry Division"
 		start_experience_factor = 0.3
 	}

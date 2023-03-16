@@ -1,29 +1,60 @@
 characters={
-	SHA_Date_Junnosuke = {
-		name = SHA_Date_Junnosuke
-		portraits = {
-			civilian = {
-				large = "gfx/leaders/SHA/Portrait_SHA_Date_Junnosuke.png"
-			}
-			army = {
-				large = "gfx/leaders/SHA/Portrait_SHA_Date_Junnosuke.png"
+	SHA_Zhang_Tianran={
+		name=CHI_Zhang_Tianran
+		portraits={
+			civilian={
+				large="gfx/leaders/WHN/Portrait_China_Zhang_Tianran.tga"
 			}
 		}
 		country_leader={
-			ideology= dem_Military_junta_subtype
+			ideology=totalist_subtype
 		}
 		country_leader={
-			ideology= Military_junta_subtype
+			ideology=syndicalist_subtype
 		}
-		field_marshal = {
-			traits = { cavalry_officer career_officer }
-			skill = 2
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 2
+		country_leader={
+			ideology=radical_socialist_subtype
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= market_liberal_subtype
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= oligarchy_subtype
+		}
+		country_leader={
+			ideology= Theocracy_subtype
+		}
+		country_leader={
+			ideology= Nationalism_subtype
+		}
+		country_leader={
+			ideology=Gno_Theocracy_subtype
 		}
 	}
-
+	SHA_Zhang_Tianran_marshal={
+		name=CHI_Zhang_Tianran
+		portraits={
+			army={
+				large="gfx/leaders/WHN/Portrait_China_Zhang_Tianran.tga"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
 }
-	

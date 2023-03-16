@@ -6,7 +6,7 @@
 
 		### Starting ###
 
-		ENG_LOSE_IN_INDIA = {
+		GBR_LOSE_IN_INDIA = {
 			allowed = {
 				always = no
 			}
@@ -20,7 +20,7 @@
 			      political_power_cost = 0.3
 			}
 		}
-                ENG_depression = {
+                GBR_depression = {
 			allowed = {
 				always = no
 			}
@@ -41,7 +41,7 @@
 			}
 		}
 
-        ENG_revolution = {
+        GBR_revolution = {
 			allowed = {
 				always = no
 			}
@@ -61,12 +61,12 @@
     }
 	#minister
 	Head_of_State = {	
-		ENG_George_V = {
+		GBR_George_V = {
 		
-		picture = ENG_George_V
+		picture = GBR_George_V
 		
 		allowed = {
-			original_tag = ENG
+			original_tag = GBR
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -84,12 +84,12 @@
 				TR_stern_imperialist
 				}
 			}
-		ENG_Edward_VIII = {
+		GBR_Edward_VIII = {
 		
-		picture = ENG_Edward_VIII
+		picture = GBR_Edward_VIII
 		
 		allowed = {
-			original_tag = ENG
+			original_tag = GBR
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -107,12 +107,12 @@
 				TR_autocratic_charmer
 				}
 			}
-		ENG_George_VI = {
+		GBR_George_VI = {
 		
-		picture = ENG_George_VI
+		picture = GBR_George_VI
 		
 		allowed = {
-			original_tag = ENG
+			original_tag = GBR
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -132,12 +132,12 @@
 			}
 		}
 	Government_leaders = {	
-		ENG_Winston_Churchill = {
+		GBR_Winston_Churchill = {
 			
-		picture = ENG_Winston_Churchill
+		picture = GBR_Winston_Churchill
 			
 		allowed = {
-			original_tag = ENG
+			original_tag = GBR
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -158,12 +158,12 @@
 			}
 		}
     Minister_of_Foreign_Affairs = {	
-		ENG_Anthony_Eden = {
+		GBR_Anthony_Eden = {
 			
-		picture = ENG_Anthony_Eden
+		picture = GBR_Anthony_Eden
 			
 		allowed = {
-			original_tag = ENG
+			original_tag = GBR
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -184,12 +184,12 @@
 			}
 		}
 	Minister_of_Economy = {	
-		ENG_Neville_Chamberlain = {
+		GBR_Neville_Chamberlain = {
 			
-		picture = ENG_Neville_Chamberlain
+		picture = GBR_Neville_Chamberlain
 			
 		allowed = {
-			original_tag = ENG
+			original_tag = GBR
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -210,12 +210,12 @@
 			}
 		}
 	Minister_of_Interior = {	
-		ENG_John_Simon = {
+		GBR_John_Simon = {
 		
-		picture = ENG_John_Simon
+		picture = GBR_John_Simon
 			
 		allowed = {
-				original_tag = ENG
+				original_tag = GBR
 			}
 			available = {
 				custom_trigger_tooltip = {
@@ -236,12 +236,12 @@
 			}
 		}
 		chief_of_staff = {	
-			ENG_Montgomery_Massingberd = {
+			GBR_Montgomery_Massingberd = {
 			
-			picture = ENG_Montgomery_Massingberd
+			picture = GBR_Montgomery_Massingberd
 				
 			allowed = {
-				original_tag = ENG
+				original_tag = GBR
 				}
 				
 			traits = { 
@@ -251,11 +251,11 @@
 			}
 			}
 		chief_of_army = {	
-			ENG_Bernard_Montgomery = {
-			picture = ENG_Bernard_Montgomery
+			GBR_Bernard_Montgomery = {
+			picture = GBR_Bernard_Montgomery
 					
 			allowed = {
-				original_tag = ENG
+				original_tag = GBR
 				}
 					
 			traits = { 

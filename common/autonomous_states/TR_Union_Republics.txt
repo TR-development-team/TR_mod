@@ -1,5 +1,5 @@
 autonomy_state = {
-	id = Union_Republics
+	id = constituent_republic
 	is_puppet = yes
         use_overlord_color = yes
 	
@@ -32,8 +32,8 @@ autonomy_state = {
 
 	allowed = {
              OR = { 
-		OVERLORD = { original_tag = RUS }
-		OVERLORD = { original_tag = GER has_government = radical_socialist }
+		OVERLORD = { original_tag = SOV }
+		OVERLORD = { original_tag = RAT has_government = radical_socialist }
                 }
 	}
         can_take_level = {

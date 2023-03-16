@@ -33,7 +33,7 @@ country_event = {
 				name = FRA_province_9559
 			}
             hidden_effect = {
-                GER = {
+                RAT = {
                 country_event = {
 					id = TR_Germany.9
 					days = 1	
@@ -63,13 +63,13 @@ country_event = {
                 ai_chance = {
 			base = 100
 		}
-		set_global_flag = FRA_RUS_Friendship
+		set_global_flag = FRA_SOV_Friendship
                 add_political_power = -50
                 reverse_add_opinion_modifier = {
-				target = SOV
-				modifier = SOV_FRA_SUPPORT
+				target = RUS
+				modifier = RUS_FRA_SUPPORT
 			}
-                SOV = { country_event = TR_russia.9 }
+                RUS = { country_event = TR_russia.9 }
 
 	}
         option = { 
@@ -77,10 +77,10 @@ country_event = {
                 ai_chance = {
 			base = 0
 		}
-		set_global_flag = FRA_RUS_Friendship
+		set_global_flag = FRA_SOV_Friendship
                reverse_add_opinion_modifier = {
-				target = SOV
-				modifier = SOV_FRA_SUPPORT_DENY
+				target = RUS
+				modifier = RUS_FRA_SUPPORT_DENY
 			}
 
 	}
@@ -127,7 +127,7 @@ country_event = {#トルコが同盟を提案
                         is_faction_leader = yes
 		}
                 FRA = {
-                   add_to_faction = TUR
+                   add_to_faction = OTT
                     }
                 
 
@@ -492,7 +492,7 @@ country_event = {#オランダとの外交
 		ai_chance = {
 			base = 80
 		}
-		HOL = { 
+		NTL = { 
 			country_event = {
 			id = TR_france.15
 			days = 1
@@ -504,13 +504,13 @@ country_event = {#オランダとの外交
 		ai_chance = {
 			base = 40
 		}
-		give_guarantee = HOL
+		give_guarantee = NTL
 		add_opinion_modifier = {
-			target = HOL
+			target = NTL
 			modifier = medium_increase
 		}
 		add_opinion_modifier = {
-			target = GER
+			target = RAT
 			modifier = medium_decrease
 		}
 	}
@@ -520,7 +520,7 @@ country_event = {#オランダとの外交
 			base = 1
 		}
 		create_wargoal = {
-			target = HOL
+			target = NTL
 			type = annex_everything
 		}
 		add_political_power = -100
@@ -549,7 +549,7 @@ country_event = {#フランスが同盟を提案(オランダ)
 			}
 		}
 		FRA = {
-			add_to_faction = HOL
+			add_to_faction = NTL
 		}
 	}
 	option = { 
@@ -1025,7 +1025,7 @@ country_event = {#フランスが同盟を提案
 			}
 		}
 		FRA = {
-			add_to_faction = SOV
+			add_to_faction = RUS
 		}
 	}
 	option = { 
@@ -1073,7 +1073,7 @@ country_event = {#王を巡る問題
 			popularity = -0.05
 		    }
 		add_stability = -0.1
-		set_cosmetic_tag = FRA_REP
+		set_cosmetic_tag = FRA_republic
 	}
 }
 country_event = {#ジャンは如何なる刑を科されるべきか
@@ -1096,6 +1096,6 @@ country_event = {#ジャンは如何なる刑を科されるべきか
 			ideology = totalist
 			popularity = -0.05
 		    }
-		set_cosmetic_tag = FRA_REP
+		set_cosmetic_tag = FRA_republic
 	}
 }

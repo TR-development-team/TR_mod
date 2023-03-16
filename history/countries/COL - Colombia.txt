@@ -1,5 +1,4 @@
 ﻿capital = 306
-
 oob = "COL_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,10 +7,76 @@ if = {
 		set_naval_oob = "COL_1936_naval_legacy"
 	}
 }
-add_ideas = {
-        totalist_dictatorship
+
+set_cosmetic_tag = COL_republic
+
+set_politics = {
+	ruling_party = national_populist
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
 }
-# Starting tech
+set_popularities = {
+	totalist = 10
+	syndicalist = 10
+	radical_socialist = 5
+	social_democrat = 7
+	social_liberal = 3
+	market_liberal = 5
+	social_conservative = 10
+	authoritarian_democrat = 5
+	paternal_autocrat = 5
+	national_populist = 30
+	Gnosticism = 10
+}
+
+create_country_leader = {
+	name = "ラウレアーノ・ゴメス"
+	desc = ""
+	picture = "gfx/leaders/COL/Portrait_COL_Laureano_Gomez.png"
+	expire = "1965.1.1"
+	ideology = national_populist_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Alfonso López Pumarejo"
+	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
+	picture = "GFX_Portrait_columbia_alfonso_lopez"
+	expire = "1965.1.1"
+	ideology = market_liberal_subtype
+	traits = {
+		#
+	}
+}
+create_country_leader = {
+	name = "Mariano Ospina Pérez"
+	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
+	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
+	expire = "1965.1.1"
+	ideology = authoritarian_democrat_subtype
+	traits = {
+		#
+	}
+}
+create_corps_commander = {
+	name = "Gustavo Rojas Pinilla"
+	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
+	traits = {  trickster urban_assault_specialist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+add_ideas = {
+	totalist_dictatorship
+}
+
+set_country_flag = monroe_doctrine
+set_convoys = 10
 set_technology = {
 	infantry_weapons = 1
 	tech_support = 1		
@@ -38,80 +103,6 @@ if = {
 		basic_depth_charges = 1
 	}
 }
-
-set_country_flag = monroe_doctrine
-
-set_convoys = 10
-
-
-
-set_convoys = 5
-set_politics = {
-	ruling_party = national_populist
-	last_election = "1935.11.14"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	totalist = 10
-	syndicalist = 10
-	radical_socialist = 5
-	social_democrat = 7
-	social_liberal = 3
-	market_liberal = 5
-	social_conservative = 10
-	authoritarian_democrat = 5
-	paternal_autocrat = 5
-	national_populist = 30
-        Gnosticism = 10
-}
-
-create_country_leader = {
-	name = "ラウレアーノ・ゴメス"
-	desc = ""
-	picture = "gfx/leaders/COL/Portrait_COL_Laureano_Gomez.png"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Alfonso López Pumarejo"
-	desc = "POLITICS_ALFONSO_LOPEZ_PUMAREJO_DESC"
-	picture = "GFX_Portrait_columbia_alfonso_lopez"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Mariano Ospina Pérez"
-	desc = "POLITICS_MARIANO_OSPINA_PEREZ_DESC"
-	picture = "gfx/leaders/South America/Portrait_South_America_Generic_land_2.dds"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		#
-	}
-}
-
-
-
-
-create_corps_commander = {
-	name = "Gustavo Rojas Pinilla"
-	portrait_path = "gfx/leaders/South America/Portrait_South_America_Generic_land_3.dds"
-	traits = {  trickster urban_assault_specialist }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
-
 
 ### VARIANTS ###
 # 1936 Start #

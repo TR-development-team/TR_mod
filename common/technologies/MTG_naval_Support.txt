@@ -742,7 +742,7 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
+					tag = GBR
 					tag = USA
 					tag = JAP
 				}
@@ -785,7 +785,7 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
+					tag = GBR
 					tag = USA
 					tag = JAP
 				}
@@ -823,7 +823,7 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
+					tag = GBR
 					tag = USA
 					tag = JAP
 				}
@@ -860,7 +860,7 @@ technologies = {
 			factor = 2
 			modifier = {
 				OR = {
-					tag = ENG
+					tag = GBR
 					tag = USA
 					tag = JAP
 				}
@@ -1507,8 +1507,8 @@ technologies = {
 				OR = {
 					tag = GER
 					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = GBR
+					tag = RUS
 				}
 				factor = 6
 			}
@@ -1555,8 +1555,8 @@ technologies = {
 				OR = {
 					tag = GER
 					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = GBR
+					tag = RUS
 				}
 				factor = 6
 			}
@@ -1591,8 +1591,8 @@ technologies = {
 				OR = {
 					tag = GER
 					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = GBR
+					tag = RUS
 				}
 				factor = 6
 			}
@@ -1636,8 +1636,8 @@ technologies = {
 				OR = {
 					tag = GER
 					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = GBR
+					tag = RUS
 				}
 				factor = 6
 			}
@@ -1677,8 +1677,8 @@ technologies = {
 				OR = {
 					tag = GER
 					tag = USA
-					tag = ENG
-					tag = SOV
+					tag = GBR
+					tag = RUS
 				}
 				factor = 5
 			}
@@ -1722,7 +1722,7 @@ technologies = {
 			modifier = {
 				OR = {
 					tag = USA
-					tag = ENG
+					tag = GBR
 				}
 				factor = 5
 			}
@@ -1765,7 +1765,7 @@ technologies = {
 				OR = {
 					tag = GER
 					tag = USA
-					tag = ENG
+					tag = GBR
 				}
 				factor = 7
 			}
@@ -1802,7 +1802,7 @@ technologies = {
 				OR = {
 					tag = GER
 					tag = USA
-					tag = ENG
+					tag = GBR
 				}
 				factor = 7
 			}
@@ -1955,7 +1955,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = GBR
 			}
 		}
 
@@ -2011,7 +2011,7 @@ technologies = {
 				tag = JAP
 				OR = {
 					has_war_with = USA
-					CHI = {
+					WHN = {
 						OR = {
 							has_capitulated = yes
 							exists = no
@@ -2023,17 +2023,17 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = GBR
 			}
 
 			modifier = {
 				factor = 10
 				OR = {
-					tag = ENG
+					tag = GBR
 					tag = USA
 				}
 				has_war_with = GER
-				GER = { has_war_with = SOV }
+				GER = { has_war_with = RUS }
 			}
 		}
 
@@ -2079,7 +2079,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = ENG
+				tag = GBR
 			}
 		}
 

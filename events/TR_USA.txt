@@ -389,19 +389,19 @@ country_event = {
 				target = CAL type = annex_everything
 			}
                 declare_war_on = {
-				target = GER type = annex_everything
+				target = RAT type = annex_everything
 			}
                 declare_war_on = {
 				target = CAN type = annex_everything
 			}
                 declare_war_on = {
-				target = ENR type = annex_everything
-			}
-                declare_war_on = {
-				target = RUS type = annex_everything
+				target = GBR type = annex_everything
 			}
                 declare_war_on = {
 				target = SOV type = annex_everything
+			}
+                declare_war_on = {
+				target = RUS type = annex_everything
 			}
                 declare_war_on = {
 				target = MEX type = annex_everything
@@ -424,7 +424,7 @@ country_event = {
 	
 	option = {
 		name = TR_USA.11.a
-                JAM = {
+                WIN = {
 			transfer_state = 690
 			transfer_state = 689
                         transfer_state = 693
@@ -432,7 +432,7 @@ country_event = {
 
                       }
                 hidden_effect = {
-                         JAM = { country_event = {
+                         WIN = { country_event = {
 					id =  TR_USA.12
 					days = 2
 					
@@ -478,7 +478,7 @@ country_event = {
 				prioritize = { 689 }
 				create_unit = {
 					division = "division_template = \"Libertarian Infantry\" start_experience_factor = 0.1"
-					owner = JAM
+					owner = WIN
 					count = 6
 				}
 			}
@@ -506,7 +506,7 @@ country_event = {
                 remove_ideas = USA_Extremism
                 reverse_add_opinion_modifier = {
 				target = JAP
-				modifier = TUR_Treatment_Revoke
+				modifier = OTT_Treatment_Revoke
 			}
                 388 = { set_demilitarized_zone = no }
                 381 = { set_demilitarized_zone = no }
@@ -548,8 +548,9 @@ country_event = {
                 ai_chance = {
 			base = 100
 		} 
-                remove_ideas = YUN_jap_economic
+                remove_ideas = CNK_jap_economic
                 drop_cosmetic_tag = yes
+				set_cosmetic_tag = TEX_emergency_government
                 add_popularity = {
 			ideology = paternal_autocrat
 			popularity = 0.3
@@ -712,7 +713,8 @@ country_event = {
 
         option = { 
 		name = TR_USA.18.a
-                drop_cosmetic_tag = yes
+		drop_cosmetic_tag = yes
+		set_cosmetic_tag = AMERICA_united_states_41
 	}
 }
 #米中合作
@@ -734,10 +736,10 @@ country_event = {
 		}
                 add_political_power = -50
                 reverse_add_opinion_modifier = {
-				target = CHI
+				target = WHN
 				modifier = medium_increase
 			}
-                CHI = { country_event = TR_USA.20 }
+                WHN = { country_event = TR_USA.20 }
 
 	}
         option = { 
@@ -746,7 +748,7 @@ country_event = {
 			base = 0
 		}
                reverse_add_opinion_modifier = {
-				target = CHI
+				target = WHN
 				modifier = medium_decrease
 			}
 
@@ -767,7 +769,7 @@ country_event = {
 	
 	option = { 
 		name = TR_USA.20.a
-                add_ideas = CHI_USA_Collaborate
+                add_ideas = WHN_USA_Collaborate
 
 	}
 }
