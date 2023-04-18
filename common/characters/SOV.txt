@@ -1,141 +1,141 @@
 characters={
-	RUS_Vyacheslav_Molotov={
-		name=RUS_Vyacheslav_Molotov
+	SOV_Vyacheslav_Molotov={
+		name=SOV_Vyacheslav_Molotov
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_RUS_Vyacheslav_Molotov.png"
+				large="gfx/leaders/SOV/Portrait_SOV_Vyacheslav_Molotov.png"
 			}
 		}
 		country_leader={
 			ideology=Jughashvilist_subtype
 		}
 	}
-	RUS_Alexander_Shliapnikov={
-		name=RUS_Alexander_Shliapnikov
+	SOV_Alexander_Shliapnikov={
+		name=SOV_Alexander_Shliapnikov
 		portraits={
 			civilian={
-				large="gfx/leaders/MHN/Portrait_RUS_Alexander_Shliapnikov.png"
+				large="gfx/leaders/SOV/Portrait_SOV_Alexander_Shliapnikov.png"
 			}
 		}
 		country_leader={
 			ideology=orthodox_syndicalist_subtype
 		}
 	}
-	RUS_Lev_Kamenev={
-		name=RUS_Lev_Kamenev
+	SOV_Lev_Kamenev={
+		name=SOV_Lev_Kamenev
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_RUS_Lev_Kamenev.png"
+				large="gfx/leaders/SOV/Portrait_SOV_Lev_Kamenev_TR.png"
 			}
 		}
 		country_leader={
 			ideology=Leninist_subtype
 		}
 	}
-	RUS_Nikolai_bukharin={
-		name=RUS_Nikolai_Bukharin
+	SOV_Nikolai_bukharin={
+		name=SOV_Nikolai_Bukharin
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_RUS_Nikolai_bukharin.png"
+				large="gfx/leaders/SOV/Portrait_SOV_Nikolai_bukharin.png"
 			}
 		}
 		country_leader={
 			ideology=Leninist_subtype
 		}
 	}
-	RUS_Grigory_Zinoviev={
-		name=RUS_Grigory_Zinoviev
+	SOV_Grigory_Zinoviev={
+		name=SOV_Grigory_Zinoviev
 		portraits={
 			civilian={
-				large="gfx/leaders/SOV/Portrait_RUS_Grigory_Zinoviev.png"
+				large="gfx/leaders/SOV/Portrait_SOV_Grigory_Zinoviev.png"
 			}
 		}
 		country_leader={
 			ideology=Leninist_subtype
 		}
 	}
-	RUS_Yuliy_martov={
+	SOV_Yuliy_martov={
 		name=SOV_Yuliy_martov
 		portraits={
 		    civilian={
-			        large="gfx/leaders/RUS/Portrait_RUS_Yuli_Martov.png"
+			        large="gfx/leaders/SOV/Portrait_SOV_Yuli_Martov.png"
 		    }
 		}
 		country_leader={
 			ideology=social_democrat_subtype
 		}
 	}
-	RUS_Boris_Savinkov={
+	SOV_Boris_Savinkov={
 		name=SOV_Boris_Savinkov
 		portraits={
 		    civilian={
-			large="gfx/leaders/RUS/Portrait_SOV_Boris_Savinkov.png"
+			large="gfx/leaders/SOV/Portrait_SOV_Boris_Savinkov.png"
 		    }
 		}
 		country_leader={
 			ideology=SL_Narodniki_subtype
 		}
 	}
-	RUS_Pavel_Milyukov={
+	SOV_Pavel_Milyukov={
 		name=SOV_Pavel_Milyukov
 		portraits={
 		    civilian={
-			large="gfx/leaders/RUS/SOV_milyukov.tga"
+			large="gfx/leaders/SOV/SOV_milyukov.tga"
 		    }
 		}
 		country_leader={
 			ideology=market_liberal_subtype
 		}
 	}
-	RUS_Nikolai_Trubetzkoy={
+	SOV_Nikolai_Trubetzkoy={
 		name=SOV_Nikolai_Trubetzkoy
 		portraits={
 		    civilian={
-			large="gfx/leaders/RUS/Portrait_RUS_Nikolai_Trubetzkoy.png"
+			large="gfx/leaders/SOV/Portrait_SOV_Nikolai_Trubetzkoy.png"
 		    }
 		}
 		country_leader={
 			ideology=social_conservative_subtype
 		}
 	}
-	RUS_Alexander_Guchkov={
+	SOV_Alexander_Guchkov={
 		name=SOV_Alexander_Guchkov
 		portraits={
 		    civilian={
-			large="gfx/leaders/RUS/Portrait_SOV_Alexander_Guchkov.png"
+			large="gfx/leaders/SOV/Portrait_SOV_Alexander_Guchkov.png"
 		    }
 		}
 		country_leader={
 			ideology=prussian_constitutionalism_subtype
 		}
 	}
-	RUS_Pyotr_wrangel={
+	SOV_Pyotr_wrangel={
 		name=SOV_Pyotr_wrangel
 		portraits={
 		    civilian={
-			large="gfx/leaders/RUS/SOV_wrangel2.png"
+			large="gfx/leaders/SOV/SOV_wrangel2.png"
 		    }
 		}
 		country_leader={
 			ideology=militarism_subtype
 		}
 	}
-	RUS_Pavel_Bermont_Avalov={
+	SOV_Pavel_Bermont_Avalov={
 		name=SOV_Pavel_Bermont_Avalov
 		portraits={
 			civilian = {
-				large = "gfx/leaders/RUS/Portrait_SOV_Pavel_Bermont_Avalov.png"
+				large = "gfx/leaders/SOV/Portrait_SOV_Pavel_Bermont_Avalov.png"
 			}
 		}
 		country_leader={
 			ideology=national_populist_subtype
 		}
 	}
-	RUS_Alexander_Bogdanov={
-		name=RUS_Alexander_Bogdanov
+	SOV_Alexander_Bogdanov={
+		name=SOV_Alexander_Bogdanov
 		portraits={
 		    civilian={
-			large="gfx/leaders/SOV/Portrait_RUS_Alexander_Bogdanov.png"
+			large="gfx/leaders/SOV/Portrait_SOV_Alexander_Bogdanov.png"
 		    }
 		}
 		country_leader={
@@ -146,13 +146,13 @@ characters={
 ######################
 #### ARMY LEADRES ####
 ######################
-	RUS_georgy_zhukov = {
-		name = RUS_georgy_zhukov
+	SOV_georgy_zhukov = {
+		name = SOV_georgy_zhukov
 
 		portraits = {
 			army = {
 				small = "GFX_idea_georgy_zhukov"
-				large = GFX_portrait_RUS_georgy_zhukov
+				large = GFX_portrait_SOV_georgy_zhukov
 			}
 		}
 
@@ -164,17 +164,17 @@ characters={
 			planning_skill = 4
 			logistics_skill = 5
 			legacy_id = 410
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}		
 	}
 
-	RUS_konstantin_rokossovsky = {
-		name = RUS_konstantin_rokossovsky
+	SOV_konstantin_rokossovsky = {
+		name = SOV_konstantin_rokossovsky
 
 		portraits = {
 			army = {
 				small = "GFX_idea_konstantin_rokossovsky"
-				large = GFX_portrait_RUS_konstantin_rokossovsky
+				large = GFX_portrait_SOV_konstantin_rokossovsky
 			}
 		}
 
@@ -186,16 +186,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 4
 			legacy_id = 402
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}	
 	}
 
-	RUS_aleksandr_vasilevsky = {
-		name = RUS_aleksandr_vasilevsky
+	SOV_aleksandr_vasilevsky = {
+		name = SOV_aleksandr_vasilevsky
 		portraits = {
 			army = {
-				small = "GFX_idea_RUS_aleksandr_vasilevsky"
-				large = "GFX_portrait_RUS_aleksandr_vasilevsky"
+				small = "GFX_idea_SOV_aleksandr_vasilevsky"
+				large = "GFX_portrait_SOV_aleksandr_vasilevsky"
 			}
 		}
 		corps_commander = {
@@ -206,16 +206,16 @@ characters={
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 407
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_boris_shaposhnikov = {
-		name = RUS_boris_shaposhnikov
+	SOV_boris_shaposhnikov = {
+		name = SOV_boris_shaposhnikov
 		portraits = {
 			army = {
 				small = "GFX_idea_boris_shaposhnikov"
-				large = GFX_portrait_RUS_boris_shaposhnikov
+				large = GFX_portrait_SOV_boris_shaposhnikov
 			}
 		}
 
@@ -227,16 +227,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_nikolay_vatutin = {
-		name = RUS_nikolay_vatutin
+	SOV_nikolay_vatutin = {
+		name = SOV_nikolay_vatutin
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_nikolay_vatutin
-				small=GFX_portrait_RUS_nikolay_vatutin_small
+				large = GFX_portrait_SOV_nikolay_vatutin
+				small=GFX_portrait_SOV_nikolay_vatutin_small
 			}
 		}
 		corps_commander = {
@@ -247,16 +247,16 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_ivan_konev = {
-		name = RUS_ivan_konev
+	SOV_ivan_konev = {
+		name = SOV_ivan_konev
 		portraits = {
 			army = {
-				small = "GFX_idea_RUS_ivan_konev"
-				large = "GFX_portrait_RUS_ivan_konev"
+				small = "GFX_idea_SOV_ivan_konev"
+				large = "GFX_portrait_SOV_ivan_konev"
 			}
 		}
 		corps_commander = {
@@ -267,16 +267,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 5
 			legacy_id = 408
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_semyon_timoshenko = {
-		name = RUS_semyon_timoshenko
+	SOV_semyon_timoshenko = {
+		name = SOV_semyon_timoshenko
 		portraits = {
 			army = {
 				small = "GFX_idea_semyon_timoshenko"
-				large = "GFX_portrait_RUS_semyon_timoshenko"
+				large = "GFX_portrait_SOV_semyon_timoshenko"
 			}
 		}
 
@@ -288,38 +288,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 404
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_kliment_voroshilov = {
-		name = RUS_kliment_voroshilov
-
-		portraits = {
-			army = {
-				small = "GFX_idea_kliment_voroshilov"
-				large = GFX_portrait_RUS_kliment_voroshilov
-			}
-		}
-
-		field_marshal = {
-			traits = { old_guard inflexible_strategist politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 405
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
-		}
-	}
-
-	RUS_mikhail_tukhachevsky = {
-		name = RUS_mikhail_tukhachevsky
+	SOV_mikhail_tukhachevsky = {
+		name = SOV_mikhail_tukhachevsky
 		portraits = {
 			army = {
 				small = "GFX_idea_mikhail_tukhachevsky"
-				large = GFX_portrait_RUS_mikhail_tukhachevsky
+				large = GFX_portrait_SOV_mikhail_tukhachevsky
 			}
 		}
 
@@ -331,16 +309,16 @@ characters={
 			planning_skill = 4
 			logistics_skill = 2
 			legacy_id = 401
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_leonid_govorov = {
-		name = RUS_leonid_govorov
+	SOV_leonid_govorov = {
+		name = SOV_leonid_govorov
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_leonid_govorov"
-				small= "GFX_idea_RUS_leonid_govorov"
+				large = "GFX_portrait_SOV_leonid_govorov"
+				small= "GFX_idea_SOV_leonid_govorov"
 			}
 		}
 		corps_commander = {
@@ -350,16 +328,16 @@ characters={
 			planning_skill = 3
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_kirill_meretskov = {
-		name = RUS_kirill_meretskov
+	SOV_kirill_meretskov = {
+		name = SOV_kirill_meretskov
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_kirill_meretskov
-				small=GFX_portrait_RUS_kirill_meretskov_small
+				large = GFX_portrait_SOV_kirill_meretskov
+				small=GFX_portrait_SOV_kirill_meretskov_small
 			}
 		}
 		corps_commander = {
@@ -370,16 +348,16 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_filipp_golikov = {
-		name = RUS_filipp_golikov
+	SOV_filipp_golikov = {
+		name = SOV_filipp_golikov
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_filipp_golikov"
-				small= "GFX_idea_RUS_filipp_golikov"
+				large = "GFX_portrait_SOV_filipp_golikov"
+				small= "GFX_idea_SOV_filipp_golikov"
 			}
 		}
 		corps_commander = {
@@ -390,16 +368,16 @@ characters={
 			planning_skill = 3
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_andrey_yeryomenko = {
-		name = RUS_andrey_yeryomenko
+	SOV_andrey_yeryomenko = {
+		name = SOV_andrey_yeryomenko
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_andrey_yeryomenko"
-				small= GFX_portrait_RUS_andrey_yeryomenko_small
+				large = "GFX_portrait_SOV_andrey_yeryomenko"
+				small= GFX_portrait_SOV_andrey_yeryomenko_small
 			}
 		}
 		corps_commander = {
@@ -410,16 +388,16 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 412
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_georgy_zakharov = {
-		name = RUS_georgy_zakharov
+	SOV_georgy_zakharov = {
+		name = SOV_georgy_zakharov
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_georgy_zakharov
-				small=GFX_portrait_RUS_georgy_zakharov_small
+				large = GFX_portrait_SOV_georgy_zakharov
+				small=GFX_portrait_SOV_georgy_zakharov_small
 			}
 		}
 		corps_commander = {
@@ -430,16 +408,16 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_yakov_cherevichenko = {
-		name = RUS_yakov_cherevichenko
+	SOV_yakov_cherevichenko = {
+		name = SOV_yakov_cherevichenko
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_yakov_cherevichenko"
-				small= "GFX_idea_RUS_yakov_cherevichenko"
+				large = "GFX_portrait_SOV_yakov_cherevichenko"
+				small= "GFX_idea_SOV_yakov_cherevichenko"
 			}
 		}
 		corps_commander = {
@@ -450,16 +428,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_maks_reyter = {
-		name = RUS_maks_reyter
+	SOV_maks_reyter = {
+		name = SOV_maks_reyter
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_maks_reyter"
-				small=GFX_portrait_RUS_maks_reyter_small
+				large = "GFX_portrait_SOV_maks_reyter"
+				small=GFX_portrait_SOV_maks_reyter_small
 			}
 		}
 		corps_commander = {
@@ -470,16 +448,16 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_nikandr_chibisov = {
-		name = RUS_nikandr_chibisov
+	SOV_nikandr_chibisov = {
+		name = SOV_nikandr_chibisov
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_nikandr_chibisov
-				small=GFX_portrait_RUS_nikandr_chibisov_small
+				large = GFX_portrait_SOV_nikandr_chibisov
+				small=GFX_portrait_SOV_nikandr_chibisov_small
 			}
 		}
 		corps_commander = {
@@ -490,16 +468,16 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_vasily_kuznetsov = {
-		name = RUS_vasily_kuznetsov
+	SOV_vasily_kuznetsov = {
+		name = SOV_vasily_kuznetsov
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_vasily_kuznetsov"
-				small= "GFX_idea_RUS_vasily_kuznetsov"
+				large = "GFX_portrait_SOV_vasily_kuznetsov"
+				small= "GFX_idea_SOV_vasily_kuznetsov"
 			}
 		}
 		corps_commander = {
@@ -510,16 +488,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_andrey_vlasov = {
-		name = RUS_andrey_vlasov
+	SOV_andrey_vlasov = {
+		name = SOV_andrey_vlasov
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_andrey_vlasov
-				small=GFX_portrait_RUS_andrey_vlasov_small
+				large = GFX_portrait_SOV_andrey_vlasov
+				small=GFX_portrait_SOV_andrey_vlasov_small
 			}
 		}
 		corps_commander = {
@@ -530,16 +508,16 @@ characters={
 			planning_skill = 1
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_ivan_fedyuninsky = {
-		name = RUS_ivan_fedyuninsky
+	SOV_ivan_fedyuninsky = {
+		name = SOV_ivan_fedyuninsky
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_ivan_fedyuninsky
-				small=GFX_portrait_RUS_ivan_fedyuninsky_small
+				large = GFX_portrait_SOV_ivan_fedyuninsky
+				small=GFX_portrait_SOV_ivan_fedyuninsky_small
 			}
 		}
 		corps_commander = {
@@ -550,16 +528,16 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_maksim_purkayev = {
-		name = RUS_maksim_purkayev
+	SOV_maksim_purkayev = {
+		name = SOV_maksim_purkayev
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_maksim_purkayev
-				small=GFX_portrait_RUS_maksim_purkayev_small
+				large = GFX_portrait_SOV_maksim_purkayev
+				small=GFX_portrait_SOV_maksim_purkayev_small
 			}
 		}
 		corps_commander = {
@@ -570,16 +548,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_kuzma_galitsky = {
-		name = RUS_kuzma_galitsky
+	SOV_kuzma_galitsky = {
+		name = SOV_kuzma_galitsky
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_kuzma_galitsky
-				small=GFX_portrait_RUS_kuzma_galitsky_small
+				large = GFX_portrait_SOV_kuzma_galitsky
+				small=GFX_portrait_SOV_kuzma_galitsky_small
 			}
 		}
 		corps_commander = {
@@ -590,16 +568,16 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_markian_popov = {
-		name = RUS_markian_popov
+	SOV_markian_popov = {
+		name = SOV_markian_popov
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_markian_popov
-				small=GFX_portrait_RUS_markian_popov_small
+				large = GFX_portrait_SOV_markian_popov
+				small=GFX_portrait_SOV_markian_popov_small
 			}
 		}
 		corps_commander = {
@@ -610,16 +588,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_nikolay_berzarin = {
-		name = RUS_nikolay_berzarin
+	SOV_nikolay_berzarin = {
+		name = SOV_nikolay_berzarin
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_nikolay_berzarin
-				small=GFX_portrait_RUS_nikolay_berzarin_small
+				large = GFX_portrait_SOV_nikolay_berzarin
+				small=GFX_portrait_SOV_nikolay_berzarin_small
 			}
 		}
 		corps_commander = {
@@ -630,16 +608,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_aleksandr_gorbatov = {
-		name = RUS_aleksandr_gorbatov
+	SOV_aleksandr_gorbatov = {
+		name = SOV_aleksandr_gorbatov
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_aleksandr_gorbatov
-				small=GFX_portrait_RUS_aleksandr_gorbatov_small
+				large = GFX_portrait_SOV_aleksandr_gorbatov
+				small=GFX_portrait_SOV_aleksandr_gorbatov_small
 			}
 		}
 		corps_commander = {
@@ -650,16 +628,16 @@ characters={
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_andrey_grechko = {
-		name = RUS_andrey_grechko
+	SOV_andrey_grechko = {
+		name = SOV_andrey_grechko
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_andrey_grechko"
-				small= "GFX_idea_RUS_andrey_grechko"
+				large = "GFX_portrait_SOV_andrey_grechko"
+				small= "GFX_idea_SOV_andrey_grechko"
 			}
 		}
 		corps_commander = {
@@ -670,16 +648,16 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_vasily_chuykov = {
-		name = RUS_vasily_chuykov
+	SOV_vasily_chuykov = {
+		name = SOV_vasily_chuykov
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_vasily_chuykov
-				small=GFX_portrait_RUS_vasily_chuykov_small
+				large = GFX_portrait_SOV_vasily_chuykov
+				small=GFX_portrait_SOV_vasily_chuykov_small
 			}
 		}
 		corps_commander = {
@@ -690,15 +668,15 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-	RUS_aleksandr_yegorov = {
-		name = RUS_aleksandr_yegorov
+	SOV_aleksandr_yegorov = {
+		name = SOV_aleksandr_yegorov
 		portraits = {
 			army = {
 				small = "GFX_idea_aleksandr_yegorov"
-				large = "GFX_portrait_RUS_aleksandr_yegorov"
+				large = "GFX_portrait_SOV_aleksandr_yegorov"
 			}
 		}
 
@@ -710,16 +688,16 @@ characters={
 			planning_skill = 4
 			logistics_skill = 2
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}	
 	}
 
-	RUS_vasily_blyukher = {
-		name = RUS_vasily_blyukher
+	SOV_vasily_blyukher = {
+		name = SOV_vasily_blyukher
 		portraits = {
 			army = {
-				small = "GFX_portrait_RUS_blyukher_small" #"gfx/interface/ideas/idea_RUS_blyukher.dds"
-				large = "GFX_portrait_RUS_blyukher"
+				small = "GFX_portrait_SOV_blyukher_small" #"gfx/interface/ideas/idea_SOV_blyukher.dds"
+				large = "GFX_portrait_SOV_blyukher"
 			}
 		}
 
@@ -731,7 +709,7 @@ characters={
 			planning_skill = 3
 			logistics_skill = 4
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
@@ -740,12 +718,12 @@ characters={
 #### NAVY LEADRES ####
 ######################
 
-	RUS_filipp_oktyabrsky = {
-		name = RUS_filipp_oktyabrsky
+	SOV_filipp_oktyabrsky = {
+		name = SOV_filipp_oktyabrsky
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_filipp_oktyabrsky
-				small=GFX_portrait_RUS_filipp_oktyabrsky_small
+				large = GFX_portrait_SOV_filipp_oktyabrsky
+				small=GFX_portrait_SOV_filipp_oktyabrsky_small
 			}
 		}
 		navy_leader = {
@@ -756,18 +734,18 @@ characters={
 			maneuvering_skill = 1
 			coordination_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_sergey_gorshkov = {
-		name = RUS_sergey_gorshkov
+	SOV_sergey_gorshkov = {
+		name = SOV_sergey_gorshkov
 		portraits = {
 			navy = {
 				small = "GFX_idea_sergey_gorshkov"
 			}
 			army = {
-				large = GFX_portrait_RUS_sergey_gorshkov
+				large = GFX_portrait_SOV_sergey_gorshkov
 			}
 		}
 		navy_leader = {
@@ -778,18 +756,18 @@ characters={
 			maneuvering_skill = 3
 			coordination_skill = 2
 			legacy_id = 411
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_gordey_levchenko = {
-		name = RUS_gordey_levchenko
+	SOV_gordey_levchenko = {
+		name = SOV_gordey_levchenko
 		portraits = {
 			navy = {
 				small = "GFX_idea_gordey_levchenko"
 			}
 			army = {
-				large = GFX_portrait_RUS_gordey_levchenko
+				large = GFX_portrait_SOV_gordey_levchenko
 			}
 		}
 		navy_leader = {
@@ -800,18 +778,18 @@ characters={
 			maneuvering_skill = 1
 			coordination_skill = 2
 			legacy_id = 406
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_arseny_golovko = {
-		name = RUS_arseny_golovko
+	SOV_arseny_golovko = {
+		name = SOV_arseny_golovko
 		portraits = {
 			navy = {
 				small = "GFX_idea_arseniy_golovko"
 			}
 			army = {
-				large = GFX_portrait_RUS_arseny_golovko
+				large = GFX_portrait_SOV_arseny_golovko
 			}
 		}
 
@@ -823,18 +801,18 @@ characters={
 			maneuvering_skill = 3
 			coordination_skill = 3
 			legacy_id = 409
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	RUS_vladimir_kasatonov = {
-		name = RUS_vladimir_kasatonov
+	SOV_vladimir_kasatonov = {
+		name = SOV_vladimir_kasatonov
 		portraits = {
 			navy = {
 				small = "GFX_idea_vladimir_kasatonov"
 			}
 			army = {
-				large = GFX_portrait_RUS_vladimir_kasatonov
+				large = GFX_portrait_SOV_vladimir_kasatonov
 			}
 		}
 		navy_leader = {
@@ -845,7 +823,7 @@ characters={
 			maneuvering_skill = 2
 			coordination_skill = 2
 			legacy_id = 403
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 }

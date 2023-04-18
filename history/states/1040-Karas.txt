@@ -1,0 +1,24 @@
+state={
+	id=1040
+	name="STATE_1040"
+	manpower = 46200
+	state_category = rural
+
+	history={
+		owner = NMB
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+		add_core_of = NMB
+
+	}
+
+	provinces={
+		2229 5154 5189 7605 10963 
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

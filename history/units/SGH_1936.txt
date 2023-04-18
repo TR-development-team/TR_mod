@@ -123,6 +123,15 @@ units = {
 		division_template = "Kihei Shidan"
 		start_experience_factor = 0.3
 	}
+        division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 9974
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.3
+	}
 }
 
 ### STARTING PRODUCTION ###

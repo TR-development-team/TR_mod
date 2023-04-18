@@ -21,7 +21,7 @@ focus_tree = {
 			has_government = syndicalist
             }
 		ai_will_do = {
-			factor = 1000
+			factor = 500
 		}
 		completion_reward = {
 			add_ideas = totalist_dictatorship
@@ -57,7 +57,7 @@ focus_tree = {
 	#民族の意志
 	focus = {
 		id = GER_Consul_focus_3
-		icon = GFX_
+		icon = GFX_goal_GER_Eagle_Fire_hand
 		x = 0
 		y = 2
 		cost = 5
@@ -91,7 +91,7 @@ focus_tree = {
 	#ロマン主義の復興
 	focus = {
 		id = GER_Consul_focus_5
-		icon = GFX_
+		icon = GFX_goal_GER_Johann_Gottlieb_Fichte
 		x = 4
 		y = 2
 		cost = 5
@@ -111,7 +111,7 @@ focus_tree = {
 	#精神と心理の時代
 	focus = {
 		id = GER_Consul_focus_6
-		icon = GFX_
+		icon = GFX_goal_GER_Junger_another_star
 		x = 2
 		y = 3
 		cost = 8
@@ -136,12 +136,13 @@ focus_tree = {
 				remove_idea = GER_Nihilism
 				add_idea = GER_Nihilism_1
 			}
+			set_cosmetic_tag = GER_kampf_reich
 		}
 	}
 	#中世の復活
 	focus = {
 		id = GER_Consul_focus_7
-		icon = GFX_
+		icon = GFX_goal_GER_Crusader_Kings
 		x = 1
 		y = 4
 		cost = 5
@@ -158,7 +159,7 @@ focus_tree = {
 	#塹壕の経験
 	focus = {
 		id = GER_Consul_focus_8
-		icon = GFX_
+		icon = GFX_goal_GER_memory_of_trenches
 		x = 3
 		y = 4
 		cost = 5
@@ -175,7 +176,7 @@ focus_tree = {
 	#軍隊式の国家
 	focus = {
 		id = GER_Consul_focus_9
-		icon = GFX_
+		icon = GFX_goal_GER_Militarism
 		x = 2
 		y = 5
 		cost = 5
@@ -197,7 +198,7 @@ focus_tree = {
 	#冷酷な闘争
 	focus = {
 		id = GER_Consul_focus_10
-		icon = GFX_
+		icon = GFX_goal_GER_ruthless
 		x = 1
 		y = 6
 		cost = 5
@@ -217,7 +218,7 @@ focus_tree = {
 	#愛国的アナキズム
 	focus = {
 		id = GER_Consul_focus_11
-		icon = GFX_
+		icon = GFX_goal_GER_National_anarchism
 		x = 3
 		y = 6
 		cost = 5
@@ -237,10 +238,10 @@ focus_tree = {
 	#鋼鉄の嵐の中で
 	focus = {
 		id = GER_Consul_focus_12
-		icon = GFX_
+		icon = GFX_goal_GER_In_Stahlgewittern
 		x = 2
 		y = 7
-		cost = 5
+		cost = 8
         available = {
             }
 		prerequisite = { focus =  GER_Consul_focus_10 }
@@ -274,14 +275,14 @@ focus_tree = {
 			has_government = totalist
             }
 		ai_will_do = {
-			factor = 1000
+			factor = 500
 		}
 		completion_reward = {
 			add_ideas = totalist_dictatorship
 			add_ideas = GER_Otto_Strasser
 			add_ideas = GER_Gregor_Strasser
 			add_ideas = GER_joseph_goebbels_FA
-			add_ideas = GER_Speer
+			add_ideas = GER_todt
 			add_ideas = GER_Rohm
 			hidden_effect = { 
 				country_event = {
@@ -294,7 +295,7 @@ focus_tree = {
 	#国民社会主義の道
 	focus = {
 		id = GER_BF_focus_2
-		icon = GFX_
+		icon = GFX_goal_GER_Strasserism
 		x = 8
 		y = 1
 		cost = 5
@@ -421,6 +422,7 @@ focus_tree = {
 				add_idea = GER_CIVILWAR_MARKS_1
 			}
 			add_ideas = GER_secondrevolution
+			set_cosmetic_tag = GER_national_socialist_republic
 		}
 	}
 	#ユンカーの解体
@@ -528,7 +530,7 @@ focus_tree = {
 		icon = GFX_
 		x = 8
 		y = 7
-		cost = 5
+		cost = 8
         available = {
             }
 		prerequisite = { focus = GER_BF_focus_10 }
@@ -568,7 +570,7 @@ focus_tree = {
 	#ドイツ精神の復興
 	focus = {
 		id = GER_Nationalist_focus_2
-		icon = GFX_
+		icon = GFX_goal_GER_German_spirit
 		x = 5
 		y = 5
 		cost = 5
@@ -585,7 +587,7 @@ focus_tree = {
 	#ドイツ的社会主義
 	focus = {
 		id = GER_Nationalist_focus_3
-		icon = GFX_
+		icon = GFX_goal_GER_German_Socialism
 		x = 5
 		y = 6
 		cost = 5
@@ -603,7 +605,7 @@ focus_tree = {
 	#血と土
 	focus = {
 		id = GER_Nationalist_focus_4
-		icon = GFX_
+		icon = GFX_goal_GER_Blut_und_Boden
 		x = 5
 		y = 7
 		cost = 5
@@ -628,7 +630,7 @@ focus_tree = {
 		icon = GFX_
 		x = 5
 		y = 8
-		cost = 8
+		cost = 15
         available = {
             }
 		prerequisite = { focus = GER_Nationalist_focus_4 }
@@ -725,6 +727,13 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
+			set_country_flag = RAT_Greater_germany
+			every_state = {
+				limit = {
+					is_greater_germany = yes
+				}
+				add_claim_by = RAT
+			}
 			every_state = {
 				limit = {
 					is_core_of = NTL
@@ -737,19 +746,12 @@ focus_tree = {
 				}
 				add_claim_by = RAT
 			}
-            #ルクセンブルク
-			add_state_claim = 8
-            #オーストリア
-			add_state_claim = 4
-			add_state_claim = 39
-			add_state_claim = 152
-			add_state_claim = 153
-			add_state_claim = 929
-			add_state_claim = 945
 			#ズデーテンラント
 			add_state_claim = 69
 			add_state_claim = 74
-			add_state_claim = 840
+			add_state_claim = 976
+			add_state_claim = 977
+			add_state_claim = 994
 		}
 	}
 	#エスターライヒの回復

@@ -1,82 +1,126 @@
 ﻿division_template = {
-	name = "Juntuán"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
-	division_names_group = RJN_INF_01
-									#	RJN divisions were well-trained in guerilla mountain tactics.
-	regiments = {
-		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+	name = "Yiguandao Jingbei"				
+	division_names_group = SHA_MIL_01
+									
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
 	}
-	priority = 0
+        is_locked = yes
 }
 division_template = {
-	name = "Renmin Jundui"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
-	division_names_group = RJN_GAR_01
+	name = "Yiguandao Jun"			
+	division_names_group = SHA_INF_01
+
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
+		irregular_infantry = { x = 2 y = 0 }
+		irregular_infantry = { x = 2 y = 1 }
+		irregular_infantry = { x = 2 y = 2 }
+	}
+        is_locked = yes
+}
+division_template = {
+	name = "Bubing Shi"
+	division_names_group = SHA_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
-	priority = 1
 }
+division_template = {
+	name = "Qibing Jun"		
+	division_names_group = SHA_CAV_01
 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
 units = {
-	
-	### Provincial Forces ###
-	division = { #  "1 Shensi Juntuán"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 12356
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.5
-
+		division_template = "Yiguandao Jun"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
 	}
-	division = { #  "2 Shensi Juntuán"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
 		location = 8049
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.5
-
+		division_template = "Yiguandao Jun"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.3
 	}
-	division = { #  "3 Shensi Juntuán"
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5007
+		division_template = "Yiguandao Jingbei"	
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7208
+		division_template = "Yiguandao Jingbei"	
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.2
+	}
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 7208
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
+		location = 12356
+		division_template = "Yiguandao Jingbei"	
 		start_equipment_factor = 0.5
-
 	}
-	division = { #  "4 Shensi Juntuán"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 5007
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.5
-
+		location = 8049
+		division_template = "Yiguandao Jingbei"	
+		start_equipment_factor = 0.8
 	}
-	division = { #  "5 Shensi Juntuán"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 12356
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.5
-
+		location = 7208
+		division_template = "Yiguandao Jingbei"	
+		start_equipment_factor = 0.6
 	}
 }
 
@@ -85,9 +129,9 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "RJN"
+			creator = "SHA"
 		}
-		requested_factories = 2
+		requested_factories = 1
 		progress = 0.33
 		efficiency = 100
 	}

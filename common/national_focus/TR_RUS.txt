@@ -12,7 +12,7 @@ focus_tree = {
 	#二月革命
 	focus = {
 		id = RUS_Political_focus_1
-		icon = GFX_goal_SOV_February_Revolution
+		icon = GFX_goal_RUS_February_Revolution
 		x = 14
 		y = 0
 		cost = 5
@@ -73,7 +73,7 @@ focus_tree = {
 	#立憲君主制への移行
 	focus = {
 		id = RUS_Democracy_focus_1
-		icon = GFX_goal_SOV_Alexei_Constitutional_monarchy
+		icon = GFX_goal_RUS_Alexei_Constitutional_monarchy
 		x = 5
 		y = 2
 		cost = 3
@@ -96,7 +96,7 @@ focus_tree = {
 	#皇帝の退位
 	focus = {
 		id = RUS_Democracy_focus_2
-		icon = GFX_goal_SOV_Republic_Russia
+		icon = GFX_goal_RUS_Republic_Russia
 		x = 9
 		y = 2
 		cost = 3
@@ -405,7 +405,7 @@ focus_tree = {
 	#大テロル
 	focus = {
 		id = RUS_Terror_focus_1
-		icon = GFX_goal_SOV_Savinkov_Terror
+		icon = GFX_goal_RUS_Savinkov_Terror
 		x = 8
 		y = 5
 		cost = 5
@@ -594,7 +594,7 @@ focus_tree = {
 	#黒男爵の独裁
 	focus = {
 		id = RUS_Autocrat_focus_1
-		icon = GFX_goal_SOV_Pyotr_Wrangel
+		icon = GFX_goal_RUS_Pyotr_Wrangel
 		x = -11
 		y = 2
 		cost = 5
@@ -616,7 +616,7 @@ focus_tree = {
 				add_idea = RUS_revolution_1
 			}
             set_country_flag = RUS_FEBREVO_II
-			promote_character = SOV_Pyotr_wrangel
+			promote_character = RUS_Pyotr_wrangel
             add_popularity = {
 			ideology = paternal_autocrat
 			popularity = 0.1
@@ -786,7 +786,7 @@ focus_tree = {
 	#永遠のツァーリズム
 	focus = {
 		id = RUS_Autocrat_focus_8
-		icon = GFX_focus_SOV_zemsky_sobor
+		icon = GFX_focus_RUS_zemsky_sobor
 		x = -11
 		y = 5
 		cost = 5
@@ -1006,7 +1006,7 @@ focus_tree = {
 	#君主主義者の結集
 	focus = {
 		id = RUS_Monarchism_focus_1
-		icon = GFX_goal_SOV_romanov
+		icon = GFX_goal_RUS_romanov
 		x = -3
 		y = 2
 		cost = 5
@@ -1061,7 +1061,7 @@ focus_tree = {
 	#正教会との協力
 	focus = {
 		id = RUS_Monarchism_focus_3
-		icon = GFX_goal_SOV_Corporate_Orthodox
+		icon = GFX_goal_RUS_Corporate_Orthodox
 		x = -3
 		y = 3
 		cost = 5
@@ -1085,7 +1085,7 @@ focus_tree = {
 	#ムラドロッシとの協力
 	focus = {
 		id = RUS_Monarchism_focus_4
-		icon = GFX_goal_SOV_Mladorossi_kazembek
+		icon = GFX_goal_RUS_Mladorossi_kazembek
 		x = -1
 		y = 3
 		cost = 5
@@ -1155,7 +1155,7 @@ focus_tree = {
 	#聖人皇帝
 	focus = {
 		id = RUS_Monarchism_focus_6
-		icon = GFX_goal_SOV_Saint_Alexei
+		icon = GFX_goal_RUS_Saint_Alexei
 		x = -3
 		y = 4
 		cost = 5
@@ -1198,7 +1198,7 @@ focus_tree = {
 	#摂政評議会
 	focus = {
 		id = RUS_Monarchism_focus_8
-		icon = GFX_goal_SOV_regency_council
+		icon = GFX_goal_RUS_regency_council
 		x = -3
 		y = 5
 		cost = 5
@@ -1231,7 +1231,7 @@ focus_tree = {
 	#神聖なる帝国
 	focus = {
 		id = RUS_Messianism_focus_1
-		icon = GFX_goal_SOV_Alexei_Taboritsky
+		icon = GFX_goal_RUS_Alexei_Taboritsky
 		x = -5
 		y = 6
 		cost = 5
@@ -1270,7 +1270,7 @@ focus_tree = {
 	#正統か死か！
 	focus = {
 		id = RUS_Messianism_focus_3
-		icon = GFX_focus_SOV_patriarch_of_all_russia
+		icon = GFX_focus_RUS_patriarch_of_all_russia
 		x = -4
 		y = 7
 		cost = 8
@@ -1314,7 +1314,7 @@ focus_tree = {
 	#帝国の純化
 	focus = {
 		id = RUS_Messianism_focus_5
-		icon = GFX_goal_SOV_Taboritsky_Pure
+		icon = GFX_goal_RUS_Taboritsky_Pure
 		x = -5
 		y = 8
 		cost = 8
@@ -1462,7 +1462,7 @@ focus_tree = {
 	#皇帝とソビエト
 	focus = {
 		id = RUS_Mladorossi_focus_1
-		icon = GFX_goal_SOV_Mladorossi
+		icon = GFX_goal_RUS_Mladorossi
 		x = -1
 		y = 6
 		cost = 5
@@ -1495,7 +1495,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_Mladorossi_focus_1 }
 		relative_position_id = RUS_Political_focus_1
 		completion_reward = {
-			add_ideas = SOV_red_Vozhd
+			add_ideas = RUS_red_Vozhd
 		}
 	}
 	#党による支配
@@ -1532,7 +1532,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_Mladorossi_focus_3 }
 		relative_position_id = RUS_Political_focus_1
 		completion_reward = {
-			add_ideas = SOV_Labour_Emperor
+			add_ideas = RUS_Labour_Emperor
 		}
 	}
 	#正教原理主義
@@ -1571,7 +1571,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_Messianism_focus_6 }
 		relative_position_id = RUS_Political_focus_1
 		completion_reward = {
-			add_ideas = SOV_Eurasianism
+			add_ideas = RUS_Eurasianism
 			add_popularity = {
 				ideology = totalist
 				popularity = 0.05
@@ -1597,7 +1597,7 @@ focus_tree = {
 		prerequisite = { focus = RUS_Messianism_focus_6 }
 		relative_position_id = RUS_Political_focus_1
 		completion_reward = {
-			add_ideas = SOV_mind_Revolution
+			add_ideas = RUS_mind_Revolution
 		}
 	}
 	#連邦的帝国
@@ -1671,7 +1671,7 @@ focus_tree = {
 			has_country_flag = RUS_Great_Purge_flag
 		}
 		available = {
-			NOT = { has_global_flag = FRA_SOV_Friendship }
+			NOT = { has_global_flag = FRA_RUS_Friendship }
 			}
 		prerequisite = { focus = RUS_Military_focus_1 }
 		relative_position_id = RUS_Military_focus_1
@@ -3317,8 +3317,8 @@ focus_tree = {
 		cost = 8
 		available = {
 			is_subject = no
-			RUS = { has_country_flag =RUS_OCREVOLUTION_END OR = { has_war_with = JAP has_war_with = RAT } is_in_faction = no }
-			FRA = { OR = { has_war_with = JAP has_war_with = RAT } is_faction_leader = yes }
+			RUS = { has_country_flag = RUS_OCREVOLUTION_END is_in_faction = no }
+			FRA = { is_faction_leader = yes }
 			NOT = { has_country_flag = RUS_SR_Dictator }
 			}
 		bypass = {is_in_faction_with = FRA}
@@ -3420,7 +3420,7 @@ focus_tree = {
 	#大国としての地位を主張
 	focus = {
 		id = RUS_Diplomacy_focus_9
-		icon = GFX_focus_SOV_third_rome
+		icon = GFX_focus_RUS_third_rome
 		x = 0
 		y = 4
 		cost = 8
@@ -3906,7 +3906,7 @@ focus_tree = {
 	#ポーランドを粉砕
 	focus = {
 		id = RUS_Diplomacy_focus_17
-		icon = GFX_goal_GER_attack_poland
+		icon = GFX_goal_RAT_attack_poland
 		x = 5
 		y = 4
 		cost = 8

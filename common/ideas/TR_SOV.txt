@@ -826,8 +826,8 @@ ideas = {
 }
 	#minister
 	Head_of_State = {	
-		RUS_Mikhail_Kalinin = {
-			picture = RUS_Mikhail_Kalinin
+		SOV_Mikhail_Kalinin = {
+			picture = SOV_Mikhail_Kalinin
 			
 			allowed = {
 				original_tag = SOV
@@ -851,9 +851,9 @@ ideas = {
 				}
 		}
 		Government_leaders = {	
-			RUS_Vyacheslav_Molotov = {
+			SOV_Vyacheslav_Molotov = {
 			
-				picture = RUS_Vyacheslav_Molotov
+				picture = SOV_Vyacheslav_Molotov
 				
 				allowed = {
 					original_tag = SOV
@@ -875,9 +875,9 @@ ideas = {
 						TR_political_protege
 						}
 				}
-			RUS_Alexander_Shliapnikov = {
+			SOV_Alexander_Shliapnikov = {
 			
-			picture = RUS_Alexander_Shliapnikov
+			picture = SOV_Alexander_Shliapnikov
 			
 			allowed = {
 				original_tag = SOV
@@ -899,9 +899,9 @@ ideas = {
 					TR_silent_workhorse
 					}
 				}
-			RUS_Lev_Kamenev = {
+			SOV_Lev_Kamenev = {
 			
-			picture = RUS_Lev_Kamenev
+			picture = SOV_Lev_Kamenev
 			
 			allowed = {
 				original_tag = SOV
@@ -923,9 +923,9 @@ ideas = {
 					TR_silent_workhorse
 					}
 				}
-			RUS_Grigory_Zinoviev = {
+			SOV_Grigory_Zinoviev = {
 			
-			picture = RUS_Grigory_Zinoviev
+			picture = SOV_Grigory_Zinoviev
 			
 			allowed = {
 				original_tag = SOV
@@ -947,9 +947,9 @@ ideas = {
 					TR_flamboyant_tough_guy
 					}
 				}
-			RUS_Nikolai_Bukharin = {
+			SOV_Nikolai_Bukharin = {
 			
-			picture = RUS_Nikolai_Bukharin
+			picture = SOV_Nikolai_Bukharin
 			
 			allowed = {
 				original_tag = SOV
@@ -971,9 +971,9 @@ ideas = {
 					TR_ambitious_union_boss
 					}
 				}
-			RUS_Alexander_Bogdanov = {
+			SOV_Alexander_Bogdanov = {
 			
-			picture = RUS_Alexander_Bogdanov
+			picture = SOV_Alexander_Bogdanov
 			
 			allowed = {
 				original_tag = SOV
@@ -997,9 +997,9 @@ ideas = {
 				}
 		}
         Minister_of_Foreign_Affairs = {	
-			RUS_Vyacheslav_Molotov_FA = {
-			    name = RUS_Vyacheslav_Molotov
-				picture = RUS_Vyacheslav_Molotov
+			SOV_Vyacheslav_Molotov_FA = {
+			    name = SOV_Vyacheslav_Molotov
+				picture = SOV_Vyacheslav_Molotov
 				
 				allowed = {
 					original_tag = SOV
@@ -1021,9 +1021,9 @@ ideas = {
 						TR_ideological_crusader
 						}
 				}
-			RUS_Nikolai_Bukharin_FA = {
-				name = RUS_Nikolai_Bukharin			
-			    picture = RUS_Nikolai_Bukharin
+			SOV_Nikolai_Bukharin_FA = {
+				name = SOV_Nikolai_Bukharin			
+			    picture = SOV_Nikolai_Bukharin
 			
 			allowed = {
 				original_tag = SOV
@@ -1046,9 +1046,9 @@ ideas = {
 			}
 		}
 		Minister_of_Economy = {	
-			RUS_Grigory_Zinoviev_ME = {
-			name = RUS_Grigory_Zinoviev
-			picture = RUS_Grigory_Zinoviev
+			SOV_Grigory_Zinoviev_ME = {
+			name = SOV_Grigory_Zinoviev
+			picture = SOV_Grigory_Zinoviev
 			
 			allowed = {
 				original_tag = SOV
@@ -1072,9 +1072,9 @@ ideas = {
 				}
 			}
 		Minister_of_Interior = {	
-			RUS_Alexei_Rikov = {
+			SOV_Alexei_Rikov = {
 			
-			picture = RUS_Alexei_Rikov
+			picture = SOV_Alexei_Rikov
 				
 			allowed = {
 				original_tag = SOV
@@ -1098,9 +1098,9 @@ ideas = {
 				}
 			}
 		chief_of_staff = {	
-			RUS_Alexander_Svechin = {
+			SOV_Alexander_Svechin = {
 			
-			picture = RUS_Alexander_Svechin
+			picture = SOV_Alexander_Svechin
 				
 			allowed = {
 				original_tag = SOV
@@ -1113,8 +1113,8 @@ ideas = {
 			}
 			}
 		chief_of_army = {	
-			RUS_Mikhail_Tukhachevskii = {
-			picture = RUS_Mikhail_Tukhachevskii
+			SOV_Mikhail_Tukhachevskii = {
+			picture = SOV_Mikhail_Tukhachevskii
 					
 			allowed = {
 				original_tag = SOV
@@ -1127,8 +1127,8 @@ ideas = {
 			}		
 		}
 		chief_of_navy = {	
-			RUS_Pavel_Dybenko = {
-			picture = RUS_Pavel_Dybenko
+			SOV_Pavel_Dybenko = {
+			picture = SOV_Pavel_Dybenko
 					
 			allowed = {
 				original_tag = SOV
@@ -1141,8 +1141,8 @@ ideas = {
 			}		
 		}
 		chief_of_air_force = {	
-			RUS_Yakov_Alksnis = {
-			picture = RUS_Yakov_Alksnis
+			SOV_Yakov_Alksnis = {
+			picture = SOV_Yakov_Alksnis
 					
 			allowed = {
 				original_tag = SOV

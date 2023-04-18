@@ -1,20 +1,47 @@
 ﻿division_template = {
-	name = "Juntuán"				# Represents local militia groups (generally poorly-equipped )
-	division_names_group = ZHI_INF_01
+	name = "Juntuán"				
+	division_names_group = SHD_INF_01
+									
+	regiments = {					
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 0 # garrison
+}
+division_template = {
+	name = "Jingbei"				
+	division_names_group = SHD_MIL_01
+							
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+        is_locked = yes
+}
+division_template = {
+	name = "Bubing Shi"
+	division_names_group = SHD_INF_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
-	division_names_group = WHN_CAV_01
+	division_names_group = SHD_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -23,6 +50,7 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 	}
 }
+
 ### OOB ###
 units = {
 	### Provincial Forces ###
@@ -32,8 +60,8 @@ units = {
 				name_order = 1
 		}
 		location = 1069
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
-		start_experience_factor = 0.2
+		division_template = "Bubing Shi"
+		start_experience_factor = 0.3
 
 	}
 	division = {
@@ -41,9 +69,9 @@ units = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 1069
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
-		start_experience_factor = 0.2
+		location = 1200
+		division_template = "Bubing Shi"
+		start_experience_factor = 0.3
 
 	}
 	division = {
@@ -51,40 +79,72 @@ units = {
 				is_name_ordered = yes
 				name_order = 3
 		}
-		location = 1104
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
-		start_experience_factor = 0.2
-
+		location = 12045
+		division_template = "Jingbei"
+		start_experience_factor = 0.1
 	}
-		division = {
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 9971
+		division_template = "Jingbei"
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 12015
+		division_template = "Jingbei"
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 7105
+		division_template = "Jingbei"
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 12069
+		division_template = "Jingbei"
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 4186
+		division_template = "Jingbei"
+		start_experience_factor = 0.1
+	}
+	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 1
 		}
-		location = 1069
-		division_template = "Qibing Jun"	
-		start_experience_factor = 0.3
-
+		location = 10043
+		division_template = "Jingbei"
+		start_experience_factor = 0.1
 	}
 	division = {
 		division_name = {
 				is_name_ordered = yes
 				name_order = 2
 		}
-		location = 1069
-		division_template = "Qibing Jun"	
-		start_experience_factor = 0.3
-
-	}
-	division = {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 1104
-		division_template = "Qibing Jun"	
-		start_experience_factor = 0.3
-
+		location = 10102
+		division_template = "Jingbei"
+		start_experience_factor = 0.1
 	}
 }
 
@@ -93,7 +153,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "SHX"
+			creator = "SHD"
 		}
 		requested_factories = 1
 		progress = 0.78

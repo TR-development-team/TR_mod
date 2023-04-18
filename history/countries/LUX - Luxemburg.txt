@@ -43,36 +43,3 @@ recruit_character = LUX_joseph_bech
 recruit_character = LUX_jean_pirson
 recruit_character = LUX_frédéric_nagelmackers
 
-
-create_country_leader = {
-	name = "シャルロッテ"
-	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "gfx/leaders/Europa/Portrait_Charlotte.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "シャルロッテ"
-	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "gfx/leaders/Europa/Portrait_Charlotte.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-	
-	}
-}
-
-create_country_leader = {
-	name = "シャルロッテ"
-	desc = "POLITICS_JOSEPH_BECH_DESC"
-	picture = "gfx/leaders/Europa/Portrait_Charlotte.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-	
-	}
-}

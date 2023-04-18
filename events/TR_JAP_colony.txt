@@ -733,7 +733,7 @@ country_event = {#アフリカ植民地の整理
 		JAP = { end_puppet = CAR }
 	    CAR = { leave_faction = yes 
 		        drop_cosmetic_tag = yes
-				set_cosmetic_tag = CAR_republic
+				set_cosmetic_tag = EQAbyJAP_emergency_government
 				remove_ideas = Tiyoda_Kensho
 				remove_ideas = JAP_colony
 				remove_ideas = JAP_JAP_colony

@@ -132,15 +132,15 @@ opinion_modifiers = {
 	}
 
 	same_ruling_party = {
-		value = 0
+		value = 25
 	}
 
 	similar_ruling_party = {
-		value = 20
+		value = 15
 	}
 
 	different_party_types = {
-		value = 0
+		value = -10
 	}
 
 	long_term_trade_partner = {

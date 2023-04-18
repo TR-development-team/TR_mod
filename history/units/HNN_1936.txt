@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Juntuán"				# Represents: German-trained divisions (better equipment than rest),
-	division_names_group = WHN_INF_01
+	division_names_group = HNN_INF_01
 									# 	as well as two-division infantry corps (generally poorly-equipped militias),
 	regiments = {					#	and local militia groups.
 		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
@@ -12,8 +12,20 @@
 	priority = 0 # garrison
 }
 division_template = {
-	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
-	division_names_group = WHN_INF_01
+	name = "Jingbei"				
+	division_names_group = HNN_MIL_01
+							
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+        is_locked = yes
+}
+division_template = {
+	name = "Bubing Shi"			# Represents three-division infantry corps (generally poorly-equipped militias)
+	division_names_group = HNN_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -29,7 +41,7 @@ division_template = {
 }
 division_template = {
 	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
-	division_names_group = WHN_CAV_01
+	division_names_group = HNN_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -41,10 +53,11 @@ division_template = {
 
 ### OOB ###
 units = {
-	###### Kuomintang Army (CO: Chang Kai-shek) ######
-	### Capital Garrison Force (CO: ) ###
 	division = {
-		name = "2 Lujun Shi"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
 		location = 7097
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
@@ -53,21 +66,10 @@ units = {
 	division = { # "Peixun Shi"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 497
-		}
-		location = 4156
-		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
-		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
-
-	}
-	division = { # "Peixun Shi"
-		division_name = {
-			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 11918
-		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		location = 4156
+		division_template = "Bubing Shi"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 
@@ -75,25 +77,40 @@ units = {
 	division = { # "Peixun Shi"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 3
+		}
+		location = 11918
+		division_template = "Bubing Shi"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+
+	}
+	division = { # "Peixun Shi"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
 		}
 		location = 12378
-		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Bubing Shi"		
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 
 	}
 	division = {
-		name = "1 Hunan Jingbei"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
 		location = 7101
-		division_template =  "Sanjiao Jun"	# Garrison unit (poor equipment and training)
+		division_template =  "Bubing Shi"	
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.3
 	}
-	###### Kuomintang Army (CO: Chang Kai-shek) ######
-	### Capital Garrison Force (CO: ) ###
 	division = {
-		name = "3 Lujun Shi"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
 		location = 7097
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
@@ -102,24 +119,30 @@ units = {
 	division = { # "Peixun Shi"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 3
+			name_order = 7
 		}
 		location = 7502
-		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Bubing Shi"		
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 
 	}
 	division = {
-		name = "4 Hunan Jingbei"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
 		location = 7159
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Juntuán"		
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.3
 	}
 	### Capital Garrison Force (CO: ) ###
 	division = {
-		name = "5 Lujun Shi"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
 		location = 11918
 		division_template = "Juntuán"
 		start_equipment_factor = 0.7
@@ -128,23 +151,91 @@ units = {
 	division = { # "Peixun Shi"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 498
+			name_order = 10
 		}
 		location = 10501
-		division_template = "Sanjiao Jun"		# Reorganized German-trained division (frontline infantry, better equipment and highest experience)
+		division_template = "Bubing Shi"		
 		start_experience_factor = 0.3
 		start_equipment_factor = 1.0
 
 	}
 	division = {
-		name = "6 Hunan Jingbei"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
 		location = 12495
-		division_template = "Juntuán"		# Garrison unit (poor equipment and training)
+		division_template = "Juntuán"		
 		start_equipment_factor = 0.7
 		start_experience_factor = 0.3
 	}
-	
-	
+        division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7101
+		division_template = "Jingbei"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.2
+	}
+        division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7665
+		division_template = "Jingbei"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.2
+	}
+        division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12378
+		division_template = "Jingbei"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.2
+	}
+        division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 9999
+		division_template = "Jingbei"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.2
+	}
+        division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1640
+		division_template = "Jingbei"
+		start_equipment_factor = 0.5
+		start_experience_factor = 0.2
+	}
+        division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 7653
+		division_template = "Jingbei"
+	}
+        division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 7502
+		division_template = "Jingbei"
+	}
+		
 }
 
 
@@ -153,4 +244,13 @@ units = {
 
 
 instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "HNN"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
 }

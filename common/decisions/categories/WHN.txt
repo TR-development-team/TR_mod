@@ -1,43 +1,19 @@
 WHN_united_policy = {
 	icon = generic_political_actions
 	allowed = {
-        can_become_china = yes
+            can_become_china = yes
         }
 	visible = {
-        can_become_china = yes
+            can_become_china = yes
 	}
 }
 WHN_integrate_policy = {
 	icon = generic_political_actions
 	allowed = {
-        OR = {
-	tag = WHN
-	tag = HEN 
-        tag = RJN
-        tag = CNK
-        tag = XIB
-        tag = HNN
-        tag = GAN
-        tag = SHA
-        tag = SCH
-        tag = YUN
-        tag = SGH
-	}
+            is_chinese_tag = yes
         }
 	visible = {
-        OR = {
-	tag = WHN
-	tag = HEN 
-        tag = RJN
-        tag = CNK
-        tag = XIB
-        tag = HNN
-        tag = GAN
-        tag = SHA
-        tag = SCH
-        tag = YUN
-        tag = SGH
-	}
+            is_chinese_tag = yes
 	}
 }
 WHN_militaly_reform = {

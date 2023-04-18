@@ -481,7 +481,7 @@
       
 		}
    }
-              RUS_JYUKOUGYO = {
+        RUS_JYUKOUGYO = {
 			allowed = {
 				always = no
 			}
@@ -504,13 +504,12 @@
                          conscription_factor = -0.05
                          consumer_goods_factor = 0.03
 			}
-   }
-        SOV_CIVIL_WAR = {
+       }
+        RUS_CIVIL_WAR = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_communism_drift_bonus
-
+            picture = generic_communism_drift_bonus
 			
 			removal_cost = -1
 	
@@ -528,8 +527,7 @@
 			allowed = {
 				always = no
 			}
-                        picture = generic_communism_drift_bonus
-
+            picture = generic_communism_drift_bonus
 			
 			removal_cost = -1
 	
@@ -543,12 +541,11 @@
 			    ai_focus_aggressive_factor = 0.5
 			}
 		}
-                SIB_CIVIL_WAR = {
+        SIB_CIVIL_WAR = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_communism_drift_bonus
-
+            picture = generic_communism_drift_bonus
 			
 			removal_cost = -1
 	
@@ -1088,7 +1085,7 @@
                 drift_defence_factor = 0.2
 			}
 		}
-		SOV_purification = {
+		RUS_purification = {
 			allowed = {
 				always = no
 			}
@@ -1105,7 +1102,7 @@
 				political_power_cost = 0.2
 			}
 		}
-		SOV_genocide = {
+		RUS_genocide = {
 			allowed = {
 				always = no
 			}
@@ -1121,7 +1118,7 @@
 				political_power_cost = 0.2
 			}
 		}
-		SOV_Spartanism = {
+		RUS_Spartanism = {
 			allowed = {
 				always = no
 			}
@@ -1176,7 +1173,7 @@
 				industrial_capacity_dockyard = -0.1
 			}
 		}
-		SOV_empire_collapse = {
+		RUS_empire_collapse = {
 			allowed = {
 				always = no
 			}
@@ -1201,7 +1198,7 @@
                                 resistance_target = 1.0
 			}
 		}
-		SOV_red_Vozhd = {
+		RUS_red_Vozhd = {
 			allowed = {
 				always = no
 			}
@@ -1216,7 +1213,7 @@
 				totalist_drift = 0.10
 			}
 		}
-		SOV_Labour_Emperor = {
+		RUS_Labour_Emperor = {
 			allowed = {
 				always = no
 			}
@@ -1232,7 +1229,7 @@
 				industrial_capacity_factory = 0.1
 			}
 		}
-		SOV_Eurasianism = {
+		RUS_Eurasianism = {
 			allowed = {
 				always = no
 			}
@@ -1248,7 +1245,7 @@
 				non_core_manpower = 0.01
 			}
 		}
-		SOV_mind_Revolution = {
+		RUS_mind_Revolution = {
 			allowed = {
 				always = no
 			}
@@ -1319,8 +1316,8 @@
 }
 	#minister
 	Head_of_State = {	
-		SOV_Boris_Savinkov = {
-			picture = SOV_Boris_Savinkov
+		RUS_Boris_Savinkov = {
+			picture = RUS_Boris_Savinkov
 			
 			allowed = {
 				original_tag = RUS
@@ -1342,8 +1339,8 @@
 					Savinkov_traits
 					}
 				}
-		SOV_Viktor_Chernov = {
-			picture = SOV_Viktor_Chernov
+		RUS_Viktor_Chernov = {
+			picture = RUS_Viktor_Chernov
 			
 			allowed = {
 				original_tag = RUS
@@ -1365,9 +1362,9 @@
 					TR_benevolent_gentleman
 					}
 				}
-		SOV_alexei_ii = {
+		RUS_alexei_ii = {
 		
-			picture = SOV_alexei_ii
+			picture = RUS_alexei_ii
 			
 			allowed = {
 				original_tag = RUS
@@ -1389,9 +1386,9 @@
 					AlexeiII_traits
 					}
 				}
-		SOV_nikolai_ii = {
+		RUS_nikolai_ii = {
 		
-		picture = SOV_nikolai_ii
+		picture = RUS_nikolai_ii
 		
 		allowed = {
 			original_tag = RUS
@@ -1415,9 +1412,9 @@
 			}
 		}
 		Government_leaders = {	
-			SOV_Alexander_Kazembek = {
+			RUS_Alexander_Kazembek = {
 			
-				picture = SOV_Alexander_Kazembek
+				picture = RUS_Alexander_Kazembek
 				
 				allowed = {
 					original_tag = RUS
@@ -1439,9 +1436,9 @@
 						TR_kazembek_trait
 						}
 			}
-			SOV_Boris_Savinkov_GL = {
-				name = SOV_Boris_Savinkov
-				picture = SOV_Boris_Savinkov
+			RUS_Boris_Savinkov_GL = {
+				name = RUS_Boris_Savinkov
+				picture = RUS_Boris_Savinkov
 				
 				allowed = {
 					original_tag = RUS
@@ -1463,9 +1460,9 @@
 						TR_silent_workhorse
 						}
 			}
-			SOV_Yuliy_martov = {
+			RUS_Yuliy_martov = {
 			
-				picture = SOV_Yuliy_martov
+				picture = RUS_Yuliy_martov
 				
 				allowed = {
 					original_tag = RUS
@@ -1487,9 +1484,9 @@
 						TR_silent_workhorse
 						}
 			}
-			SOV_Viktor_Chernov_GL = {
-				name = SOV_Viktor_Chernov
-				picture = SOV_Viktor_Chernov
+			RUS_Viktor_Chernov_GL = {
+				name = RUS_Viktor_Chernov
+				picture = RUS_Viktor_Chernov
 				
 				allowed = {
 					original_tag = RUS
@@ -1511,9 +1508,9 @@
 						TR_silent_workhorse
 						}
 			}
-			SOV_Pavel_Milyukov = {
+			RUS_Pavel_Milyukov = {
 			
-				picture = SOV_Pavel_Milyukov
+				picture = RUS_Pavel_Milyukov
 				
 				allowed = {
 					original_tag = RUS
@@ -1535,9 +1532,9 @@
 						TR_flamboyant_tough_guy
 						}
 			}
-			SOV_Nikolai_Trubetzkoy = {
+			RUS_Nikolai_Trubetzkoy = {
 			
-				picture = SOV_Nikolai_Trubetzkoy
+				picture = RUS_Nikolai_Trubetzkoy
 				
 				allowed = {
 					original_tag = RUS
@@ -1559,9 +1556,9 @@
 						TR_flamboyant_tough_guy
 						}
 			}
-			SOV_Alexander_Guchkov = {
+			RUS_Alexander_Guchkov = {
 			
-				picture = SOV_Alexander_Guchkov
+				picture = RUS_Alexander_Guchkov
 				
 				allowed = {
 					original_tag = RUS
@@ -1583,9 +1580,9 @@
 					TR_silent_workhorse
 					}
 			}
-			SOV_Pavel_Ignatiev = {
+			RUS_Pavel_Ignatiev = {
 			
-			picture = SOV_Pavel_Ignatiev
+			picture = RUS_Pavel_Ignatiev
 			
 			allowed = {
 				original_tag = RUS
@@ -1607,9 +1604,9 @@
 					TR_happy_amateur
 					}
 				}
-			SOV_Pyotr_wrangel = {
+			RUS_Pyotr_wrangel = {
 			
-			picture = SOV_Pyotr_wrangel
+			picture = RUS_Pyotr_wrangel
 			
 			allowed = {
 				original_tag = RUS
@@ -1631,9 +1628,9 @@
 					TR_Wrangel_trait
 					}
 				}
-			SOV_Anton_Denikin = {
+			RUS_Anton_Denikin = {
 			
-			picture = SOV_Anton_Denikin
+			picture = RUS_Anton_Denikin
 			
 			allowed = {
 				original_tag = RUS
@@ -1655,9 +1652,9 @@
 					TR_old_general
 					}
 				}
-			SOV_Vladimir_Purishkevich = {
+			RUS_Vladimir_Purishkevich = {
 			
-			picture = SOV_Vladimir_Purishkevich
+			picture = RUS_Vladimir_Purishkevich
 			
 			allowed = {
 				original_tag = RUS
@@ -1679,9 +1676,9 @@
 					TR_flamboyant_tough_guy
 					}
 				}
-			SOV_Pavel_Bermont_Avalov = {
+			RUS_Pavel_Bermont_Avalov = {
 			
-			picture = SOV_Pavel_Bermont_Avalov
+			picture = RUS_Pavel_Bermont_Avalov
 			
 			allowed = {
 				original_tag = RUS
@@ -1703,9 +1700,9 @@
 					TR_old_general
 					}
 				}
-			SOV_Sergey_Taboritsky = {
+			RUS_Sergey_Taboritsky = {
 			
-			picture = SOV_Sergey_Taboritsky
+			picture = RUS_Sergey_Taboritsky
 			
 			allowed = {
 				original_tag = RUS
@@ -1729,9 +1726,9 @@
 				}
 			}
         Minister_of_Foreign_Affairs = {	
-			SOV_Nikolai_Pokrovsky= {
+			RUS_Nikolai_Pokrovsky= {
 			
-			picture = SOV_Nikolai_Pokrovsky
+			picture = RUS_Nikolai_Pokrovsky
 			
 			allowed = {
 				original_tag = RUS
@@ -1755,9 +1752,9 @@
 				}
 			}
 		Minister_of_Economy = {	
-			SOV_Pyotr_Bark = {
+			RUS_Pyotr_Bark = {
 			
-			picture = SOV_Pyotr_Bark
+			picture = RUS_Pyotr_Bark
 			
 			allowed = {
 				original_tag = RUS
@@ -1781,9 +1778,9 @@
 				}
 			}
 		Minister_of_Interior = {	
-			SOV_Alexandr_Protopopov = {
+			RUS_Alexandr_Protopopov = {
 			
-			picture = SOV_Alexandr_Protopopov
+			picture = RUS_Alexandr_Protopopov
 				
 			allowed = {
 				original_tag = RUS
@@ -1807,9 +1804,9 @@
 				}
 			}
 		chief_of_staff = {	
-			SOV_Lavr_Kornilov = {
+			RUS_Lavr_Kornilov = {
 			
-			picture = SOV_Lavr_Kornilov
+			picture = RUS_Lavr_Kornilov
 				
 			allowed = {
 				original_tag = RUS
@@ -1820,9 +1817,9 @@
 					cos_school_of_psychology
 				}
 			}
-			SOV_Pyotr_wrangel_cos = {
-			name = SOV_Pyotr_wrangel
-			picture = SOV_Pyotr_wrangel
+			RUS_Pyotr_wrangel_cos = {
+			name = RUS_Pyotr_wrangel
+			picture = RUS_Pyotr_wrangel
 				
 			allowed = {
 				original_tag = RUS
@@ -1835,9 +1832,9 @@
 				}
 			}
 		chief_of_army = {	
-			SOV_Lavr_Kornilov_coa = {
-			name = SOV_Lavr_Kornilov	
-			picture = SOV_Lavr_Kornilov
+			RUS_Lavr_Kornilov_coa = {
+			name = RUS_Lavr_Kornilov	
+			picture = RUS_Lavr_Kornilov
 					
 			allowed = {
 				original_tag = RUS
@@ -1848,9 +1845,9 @@
 				carm_elastic_defence_doctrine
 				}
 			}
-			SOV_Pyotr_wrangel_coa = {
-			name = SOV_Pyotr_wrangel
-			picture = SOV_Pyotr_wrangel
+			RUS_Pyotr_wrangel_coa = {
+			name = RUS_Pyotr_wrangel
+			picture = RUS_Pyotr_wrangel
 				
 			allowed = {
 				original_tag = RUS

@@ -10,7 +10,7 @@ focus_tree = {
 	}
 	#蒋介石の暗殺
 	focus = {
-		id = CHI_DVWwgiOM
+		id = WHN_DVWwgiOM
 		icon = GFX_focus_prc_remove_chiang_kai_shek
 		x = 8
 		y = 0
@@ -18,7 +18,7 @@ focus_tree = {
                             always = no
                        }
                 bypass = {
-			has_country_flag = CHI_ChiangAnsatu
+			has_country_flag = WHN_ChiangAnsatu
 		}
 		cost = 10
 		available_if_capitulated = yes
@@ -28,14 +28,14 @@ focus_tree = {
 	}
 	#臨時党大会
 	focus = {
-		id = CHI_rHbtxkBC
+		id = WHN_rHbtxkBC
 		icon = GFX_focus_generic_china1
 		x = 8
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
 		cancel_if_invalid = no
-		prerequisite = { focus = CHI_DVWwgiOM }
+		prerequisite = { focus = WHN_DVWwgiOM }
 		ai_will_do = {
 			factor = 100
 		}
@@ -47,35 +47,35 @@ focus_tree = {
 		}
 	    completion_reward = {
 			swap_ideas = {
-				remove_idea = CHI_fuannteinakokka
-				add_idea = CHI_fuannteinakokka_1
+				remove_idea = WHN_fuannteinakokka
+				add_idea = WHN_fuannteinakokka_1
 			}	
 		}
 	}
 	#戴笠が権力を掌握
 	focus = {
-		id = CHI_XMCAoyjQ
-		icon = GFX_goal_CHI_Taili
+		id = WHN_XMCAoyjQ
+		icon = GFX_goal_WHN_Taili
 		x = 8
 		y = 2
 		cost = 4
 		available_if_capitulated = yes
 		available = {
-			has_country_flag = CHI_MIB_WIN
+			has_country_flag = WHN_MIB_WIN
 		   }
-		prerequisite = { focus = CHI_rHbtxkBC }
-		mutually_exclusive = { focus = CHI_GnWQctLH }
-		mutually_exclusive = { focus = CHI_Military_corps_1 }
+		prerequisite = { focus = WHN_rHbtxkBC }
+		mutually_exclusive = { focus = WHN_GnWQctLH }
+		mutually_exclusive = { focus = WHN_Military_corps_1 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
         hidden_effect = { 
-		    add_ideas = CHI_Dai_Li
-			add_ideas = CHI_He_Yingqin_MoE
-		    add_ideas = CHI_Dai_Li_MoI
-			promote_character = CHI_Dai_Li
-			promote_character = CHI_Chen_Kuofu
+		    add_ideas = WHN_Dai_Li
+			add_ideas = WHN_He_Yingqin_MoE
+		    add_ideas = WHN_Dai_Li_MoI
+			promote_character = WHN_Dai_Li
+			promote_character = WHN_Chen_Kuofu
 		}
         set_politics = {
 			ruling_party = paternal_autocrat
@@ -85,30 +85,30 @@ focus_tree = {
 }
 	#陳兄弟が権力を掌握
 	focus = {
-		id = CHI_GnWQctLH
-		icon = GFX_goal_CHI_Chen_Guofu
+		id = WHN_GnWQctLH
+		icon = GFX_goal_WHN_Chen_Guofu
 		x = 2
 		y = 2
 		cost = 4
 		available_if_capitulated = yes
 		available = {
-			has_country_flag = CHI_CCC_WIN
+			has_country_flag = WHN_CCC_WIN
 		   }
-		prerequisite = { focus = CHI_rHbtxkBC }
-		mutually_exclusive = { focus = CHI_XMCAoyjQ }
-		mutually_exclusive = { focus = CHI_Military_corps_1 }
+		prerequisite = { focus = WHN_rHbtxkBC }
+		mutually_exclusive = { focus = WHN_XMCAoyjQ }
+		mutually_exclusive = { focus = WHN_Military_corps_1 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
         hidden_effect = { 
-			add_ideas = CHI_Sung_Meiling
-			add_ideas = CHI_Chen_Kuofu
-			add_ideas = CHI_Sung_Tzuwen_FA
-		    add_ideas = CHI_Chen_Lifu
-			add_ideas = CHI_Wu_Zhongxin_MoE
-			promote_character = CHI_Dai_Li
-			promote_character = CHI_Chen_Kuofu
+			add_ideas = WHN_Sung_Meiling
+			add_ideas = WHN_Chen_Kuofu
+			add_ideas = WHN_Sung_Tzuwen_FA
+		    add_ideas = WHN_Chen_Lifu
+			add_ideas = WHN_Wu_Zhongxin_MoE
+			promote_character = WHN_Dai_Li
+			promote_character = WHN_Chen_Kuofu
 		}
         set_politics = {
 			ruling_party = national_populist
@@ -118,13 +118,13 @@ focus_tree = {
 }
 	#清党運動
 	focus = {
-		id = CHI_hYsegJfG
+		id = WHN_hYsegJfG
 		icon = GFX_goal_generic_political_purge
 		x = 8
 		y = 3
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_XMCAoyjQ }
+		prerequisite = { focus = WHN_XMCAoyjQ }
 		ai_will_do = {
 			factor = 100
 		}
@@ -134,7 +134,7 @@ focus_tree = {
 			popularity = 0.4
 		}
         add_timed_idea = {
-			idea = CHI_purge
+			idea = WHN_purge
 			days = 365
 		}                         
 		}
@@ -142,13 +142,13 @@ focus_tree = {
 
 	#教育改革
 	focus = {
-		id = CHI_oHdpwUVZ
+		id = WHN_oHdpwUVZ
 		icon = GFX_goal_generic_education
 		x = 6
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_hYsegJfG }
+		prerequisite = { focus = WHN_hYsegJfG }
 		ai_will_do = {
 			factor = 100
 		}
@@ -159,73 +159,73 @@ focus_tree = {
 
 	#恐怖政治
 	focus = {
-		id = CHI_nRygtFBK
+		id = WHN_nRygtFBK
 		icon = GFX_focus_CZE_german_puppet
 		x = 8
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_hYsegJfG }
+		prerequisite = { focus = WHN_hYsegJfG }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-			add_ideas = CHI_terror     
+			add_ideas = WHN_terror     
 		}
 	}
 
 	#殺絶貪官汚吏
 	focus = {
-		id = CHI_CepgEOHd
+		id = WHN_CepgEOHd
 		icon = GFX_goal_generic_forceful_treaty
 		x = 10
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_hYsegJfG }
+		prerequisite = { focus = WHN_hYsegJfG }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
         add_stability = -0.2	
-		remove_ideas = CHI_hikoritunatouti             
+		remove_ideas = WHN_hikoritunatouti             
 		}
 	}
 
 	#警察の持ちたる国
 	focus = {
-		id = CHI_dmaknOol
+		id = WHN_dmaknOol
 		icon = GFX_goal_generic_police_state
 		x = 8
 		y = 5
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = CHI_CepgEOHd 
+			focus = WHN_CepgEOHd 
 		}
 		prerequisite = { 
-			focus = CHI_nRygtFBK 
+			focus = WHN_nRygtFBK 
 		}
 		prerequisite = { 
-			focus = CHI_oHdpwUVZ 
+			focus = WHN_oHdpwUVZ 
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-            add_ideas = CHI_police   
+            add_ideas = WHN_police   
 		}
 	}
 
 	#党国体制
 	focus = {
-		id = CHI_iDXnjyQm
+		id = WHN_iDXnjyQm
 		icon = GFX_focus_chi_whampoa_military_academy
 		x = 2
 		y = 3
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_GnWQctLH }
+		prerequisite = { focus = WHN_GnWQctLH }
 		ai_will_do = {
 			factor = 100
 		}
@@ -239,18 +239,18 @@ focus_tree = {
 
 	#三民主義は絶対である
 	focus = {
-		id = CHI_UJCBPsed
+		id = WHN_UJCBPsed
 		icon = GFX_focus_generic_china1
 		x = 2
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_iDXnjyQm }
+		prerequisite = { focus = WHN_iDXnjyQm }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-        add_ideas = CHI_sanmin           
+        add_ideas = WHN_sanmin           
 		}
 	}
 
@@ -258,91 +258,91 @@ focus_tree = {
 
 	#指導者は絶対である
 	focus = {
-		id = CHI_FpoLQXVT
+		id = WHN_FpoLQXVT
 		icon = GFX_goal_support_fascism
 		x = 0
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_iDXnjyQm }
+		prerequisite = { focus = WHN_iDXnjyQm }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-        add_ideas = CHI_strongleader            
+        add_ideas = WHN_strongleader            
 		}
 	}
 
 	#党は絶対である
 	focus = {
-		id = CHI_giatkGBe
+		id = WHN_giatkGBe
 		icon = GFX_focus_focus_fra_fascist_threat
 		x = 4
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_iDXnjyQm }
+		prerequisite = { focus = WHN_iDXnjyQm }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-        add_ideas = CHI_strongparty   
+        add_ideas = WHN_strongparty   
 		}
 	}
 
 	#蔣中正の遺志を継げ
 	focus = {
-		id = CHI_tyKcFSIl
+		id = WHN_tyKcFSIl
 		icon = GFX_focus_prc_remove_chiang_kai_shek
 		x = 2
 		y = 5
 		cost = 8
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = CHI_UJCBPsed 
+			focus = WHN_UJCBPsed 
 		}
 		prerequisite = { 
-			focus = CHI_FpoLQXVT 
+			focus = WHN_FpoLQXVT 
 		}
 		prerequisite = { 
-			focus = CHI_giatkGBe 
+			focus = WHN_giatkGBe 
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
             swap_ideas = {
-				remove_idea = CHI_hikoritunatouti
-				add_idea = CHI_kaiseki_legacy
+				remove_idea = WHN_hikoritunatouti
+				add_idea = WHN_kaiseki_legacy
 			}	
 		}
 	}
 
 	#国民革命軍によるクーデター
 	focus = {
-		id = CHI_Military_corps_1
-		icon = GFX_goal_CHI_Chen_Cheng
+		id = WHN_Military_corps_1
+		icon = GFX_goal_WHN_Chen_Cheng
 		x = 14
 		y = 2
 		cost = 4
 		available_if_capitulated = yes
 		available = {
-			has_country_flag = CHI_GGJ_WIN
+			has_country_flag = WHN_GGJ_WIN
 		   }
-		prerequisite = { focus = CHI_rHbtxkBC }
-		mutually_exclusive = { focus = CHI_XMCAoyjQ }
-		mutually_exclusive = { focus = CHI_GnWQctLH }
+		prerequisite = { focus = WHN_rHbtxkBC }
+		mutually_exclusive = { focus = WHN_XMCAoyjQ }
+		mutually_exclusive = { focus = WHN_GnWQctLH }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
         hidden_effect = { 
-			add_ideas = CHI_Chen_Cheng
-		    add_ideas = CHI_Chang_Chun
-			add_ideas = CHI_He_Yingqin_MoE
-			add_ideas = CHI_Chiang_Chingkuo_MoI
-			promote_character = CHI_Dai_Li
-			promote_character = CHI_Chen_Kuofu
+			add_ideas = WHN_Chen_Cheng
+		    add_ideas = WHN_Chang_Chun
+			add_ideas = WHN_He_Yingqin_MoE
+			add_ideas = WHN_Chiang_Chingkuo_MoI
+			promote_character = WHN_Dai_Li
+			promote_character = WHN_Chen_Kuofu
 		}
         set_politics = {
 			ruling_party = authoritarian_democrat
@@ -356,29 +356,29 @@ focus_tree = {
     }
 	#憲兵司令部の設立
 	focus = {
-		id = CHI_Military_corps_2
+		id = WHN_Military_corps_2
 		icon = GFX_goal_generic_police_state
 		x = 14
 		y = 3
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_Military_corps_1 }
+		prerequisite = { focus = WHN_Military_corps_1 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_ideas = CHI_Military_Police
+		add_ideas = WHN_Military_Police
 	    }
     }
 	#赤匪の殲滅
 	focus = {
-		id = CHI_Military_corps_3
+		id = WHN_Military_corps_3
 		icon = GFX_goal_generic_Ban_Communism
 		x = 12
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_Military_corps_2 }
+		prerequisite = { focus = WHN_Military_corps_2 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -404,126 +404,126 @@ focus_tree = {
     }
 	#三民主義青年団
 	focus = {
-		id = CHI_Military_corps_4
+		id = WHN_Military_corps_4
 		icon = GFX_goal_generic_union_agreement
 		x = 14
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_Military_corps_2 }
+		prerequisite = { focus = WHN_Military_corps_2 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
 		add_stability = 0.05
-		add_ideas = CHI_Youth_group
+		add_ideas = WHN_Youth_group
 	    }
     }
 	#民生第一
 	focus = {
-		id = CHI_Military_corps_5
+		id = WHN_Military_corps_5
 		icon = GFX_goal_generic_agrarian_reform
 		x = 16
 		y = 4
 		cost = 6
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_Military_corps_2 }
+		prerequisite = { focus = WHN_Military_corps_2 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
 		add_stability = 0.05
-		add_ideas = CHI_Minsei_first
+		add_ideas = WHN_Minsei_first
 	    }
     }
 	#大衆の動員
 	focus = {
-		id = CHI_Military_corps_6
+		id = WHN_Military_corps_6
 		icon = GFX_focus_generic_china1
 		x = 14
 		y = 5
 		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_Military_corps_3 }
-		prerequisite = { focus = CHI_Military_corps_4 }
-		prerequisite = { focus = CHI_Military_corps_5 }
+		prerequisite = { focus = WHN_Military_corps_3 }
+		prerequisite = { focus = WHN_Military_corps_4 }
+		prerequisite = { focus = WHN_Military_corps_5 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		remove_ideas = CHI_hikoritunatouti
+		remove_ideas = WHN_hikoritunatouti
 	    }
     }
 	#安内攘外
 	focus = {
-		id = CHI_EdLpbBiD
+		id = WHN_EdLpbBiD
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 6
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = CHI_tyKcFSIl 
-			focus = CHI_dmaknOol 
-			focus = CHI_Military_corps_6
+			focus = WHN_tyKcFSIl 
+			focus = WHN_dmaknOol 
+			focus = WHN_Military_corps_6
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-            set_country_flag = CHI_expand
-			remove_ideas = CHI_fuannteinakokka_1
+            set_country_flag = WHN_expand
+			remove_ideas = WHN_fuannteinakokka_1
 		}
 	}
 	#抗日プロパガンダ
 	focus = {
-		id = CHI_China_Unification_1
+		id = WHN_China_Unification_1
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 7
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = CHI_EdLpbBiD
+			focus = WHN_EdLpbBiD
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
 		swap_ideas = {
-			remove_idea = CHI_Shading_sun
-			add_idea = CHI_Shading_sun_1
+			remove_idea = WHN_Shading_sun
+			add_idea = WHN_Shading_sun_1
 		}
 		}
 	}
 	#革命根拠地の破壊
 	focus = {
-		id = CHI_China_Unification_2
+		id = WHN_China_Unification_2
 		icon = GFX_focus_chi_legislative_yuan
 		x = 6
 		y = 7
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = CHI_EdLpbBiD
+			focus = WHN_EdLpbBiD
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_ideas = CHI_Anti_Communist
+		add_ideas = WHN_Anti_Communist
 		}
 	}
 	#軍閥との連携の模索
 	focus = {
-		id = CHI_China_Unification_3
+		id = WHN_China_Unification_3
 		icon = GFX_focus_chi_legislative_yuan
 		x = 10
 		y = 7
 		cost = 5
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = CHI_EdLpbBiD
+			focus = WHN_EdLpbBiD
 		}
 		ai_will_do = {
 			factor = 100
@@ -538,7 +538,7 @@ focus_tree = {
 	}
 	#湘漢戦争
 	focus = {
-		id = CHI_China_Unification_4
+		id = WHN_China_Unification_4
 		icon = GFX_focus_chi_legislative_yuan
 		x = 7
 		y = 8
@@ -552,8 +552,8 @@ focus_tree = {
 		    NOT = {country_exists = RJN }
 		}
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_1 }
-		prerequisite = { focus = CHI_China_Unification_2 }
+		prerequisite = { focus = WHN_China_Unification_1 }
+		prerequisite = { focus = WHN_China_Unification_2 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -570,7 +570,7 @@ focus_tree = {
 	}
 	#河南の白蓮教徒を鎮める
 	focus = {
-		id = CHI_China_Unification_5
+		id = WHN_China_Unification_5
 		icon = GFX_focus_chi_legislative_yuan
 		x = 9
 		y = 8
@@ -579,8 +579,8 @@ focus_tree = {
 		    NOT = {country_exists = HEN }
 		}
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_1 }
-		prerequisite = { focus = CHI_China_Unification_3 }
+		prerequisite = { focus = WHN_China_Unification_1 }
+		prerequisite = { focus = WHN_China_Unification_3 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -593,20 +593,20 @@ focus_tree = {
 	}
 	#中原大戦
 	focus = {
-		id = CHI_China_Unification_6
+		id = WHN_China_Unification_6
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 9
 		cost = 5
 		available = {
-			has_global_flag = CHI_Central_Plains_War
+			has_global_flag = WHN_Central_Plains_War
 		}
 		bypass = {
 		    NOT = {country_exists = XIB }
 		}
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_4 }
-		prerequisite = { focus = CHI_China_Unification_5 }
+		prerequisite = { focus = WHN_China_Unification_4 }
+		prerequisite = { focus = WHN_China_Unification_5 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -615,48 +615,48 @@ focus_tree = {
 	}
 	#国民党勢力の結集
 	focus = {
-		id = CHI_China_Unification_7
+		id = WHN_China_Unification_7
 		icon = GFX_focus_chi_legislative_yuan
 		x = 7
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_6 }
+		prerequisite = { focus = WHN_China_Unification_6 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
 		if = {
 			limit = {
-				NIG = { has_country_flag = CHI_Befriend_Wuhan }
+				NIG = { has_country_flag = WHN_Befriend_Wuhan }
 				country_exists = NIG
 			}
 			WHN= { add_to_faction = NIG }
 		}
 		if = {
 			limit = {
-				YUN = { has_country_flag = CHI_Befriend_Wuhan }
+				YUN = { has_country_flag = WHN_Befriend_Wuhan }
 				country_exists = YUN
 			}
 			WHN= { add_to_faction = YUN }
 		}
 		if = {
 			limit = {
-				GXC = { has_country_flag = CHI_Befriend_Wuhan }
+				GXC = { has_country_flag = WHN_Befriend_Wuhan }
 				country_exists = GXC
 			}
 			WHN= { add_to_faction = GXC }
 		}
 		if = {
 			limit = {
-				QIG = { has_country_flag = CHI_Befriend_Wuhan }
+				QIG = { has_country_flag = WHN_Befriend_Wuhan }
 				country_exists = QIG
 			}
 			WHN= { add_to_faction = QIG }
 		}
 		if = {
 			limit = {
-				SCH = { has_country_flag = CHI_Befriend_Wuhan }
+				SCH = { has_country_flag = WHN_Befriend_Wuhan }
 				country_exists = SCH
 			}
 			WHN= { add_to_faction = SCH }
@@ -665,13 +665,13 @@ focus_tree = {
 	}
 	#南京問題
 	focus = {
-		id = CHI_China_Unification_8
+		id = WHN_China_Unification_8
 		icon = GFX_focus_chi_legislative_yuan
 		x = 9
 		y = 10
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_6 }
+		prerequisite = { focus = WHN_China_Unification_6 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -691,14 +691,14 @@ focus_tree = {
 	}
 	#首都の移転
 	focus = {
-		id = CHI_China_Unification_9
+		id = WHN_China_Unification_9
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 11
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_7 }
-		prerequisite = { focus = CHI_China_Unification_8 }
+		prerequisite = { focus = WHN_China_Unification_7 }
+		prerequisite = { focus = WHN_China_Unification_8 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -708,19 +708,19 @@ focus_tree = {
 		}
 	completion_reward = {
 		add_stability = 0.1
-		set_cosmetic_tag = CHI_minguo
+		set_cosmetic_tag = WHN_minguo
 		set_capital = {state = 613}
 		}
 	}
 	#高まる支持
 	focus = {
-		id = CHI_China_Unification_10
+		id = WHN_China_Unification_10
 		icon = GFX_focus_chi_legislative_yuan
 		x = 7
 		y = 12
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_9 }
+		prerequisite = { focus = WHN_China_Unification_9 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -730,13 +730,13 @@ focus_tree = {
 	}
 	#残った軍閥を処罰する
 	focus = {
-		id = CHI_China_Unification_11
+		id = WHN_China_Unification_11
 		icon = GFX_focus_chi_legislative_yuan
 		x = 9
 		y = 12
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_9 }
+		prerequisite = { focus = WHN_China_Unification_9 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -839,14 +839,14 @@ focus_tree = {
 	}
 	#最後の敵に対処するために
 	focus = {
-		id = CHI_China_Unification_12
+		id = WHN_China_Unification_12
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 13
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_10 }
-		prerequisite = { focus = CHI_China_Unification_11 }
+		prerequisite = { focus = WHN_China_Unification_10 }
+		prerequisite = { focus = WHN_China_Unification_11 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -855,20 +855,20 @@ focus_tree = {
 		}
 	completion_reward = {
 		add_timed_idea = {
-			idea = CHI_war_of_resistance_prepare
+			idea = WHN_war_of_resistance_prepare
 			days = 180
 		}
 		}
 	}
 	#抗日精神の鼓舞
 	focus = {
-		id = CHI_China_Unification_13
+		id = WHN_China_Unification_13
 		icon = GFX_focus_chi_legislative_yuan
 		x = 6
 		y = 14
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_12 }
+		prerequisite = { focus = WHN_China_Unification_12 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -881,7 +881,7 @@ focus_tree = {
 	}
 	#重慶を孤立化させる
 	focus = {
-		id = CHI_China_Unification_14
+		id = WHN_China_Unification_14
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 14
@@ -893,7 +893,7 @@ focus_tree = {
 			is_subject = no
 		}
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_12 }
+		prerequisite = { focus = WHN_China_Unification_12 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -913,7 +913,7 @@ focus_tree = {
 	}
 	#ゲリラ戦ドクトリン
 	focus = {
-		id = CHI_China_Unification_15
+		id = WHN_China_Unification_15
 		icon = GFX_focus_chi_legislative_yuan
 		x = 10
 		y = 14
@@ -922,17 +922,17 @@ focus_tree = {
 			is_subject = no
 		}
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_12 }
+		prerequisite = { focus = WHN_China_Unification_12 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_ideas = CHI_guerrilla
+		add_ideas = WHN_guerrilla
 		}
 	}
 	#大抗戦の開始
 	focus = {
-		id = CHI_China_Unification_16
+		id = WHN_China_Unification_16
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 15
@@ -941,17 +941,17 @@ focus_tree = {
 			has_war = no
 			is_subject = no
 			has_army_manpower = { size > 999999 }
-			NOT = { has_idea = CHI_war_of_resistance_prepare }
+			NOT = { has_idea = WHN_war_of_resistance_prepare }
 		}
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_13 }
-		prerequisite = { focus = CHI_China_Unification_14 }
-		prerequisite = { focus = CHI_China_Unification_15 }
+		prerequisite = { focus = WHN_China_Unification_13 }
+		prerequisite = { focus = WHN_China_Unification_14 }
+		prerequisite = { focus = WHN_China_Unification_15 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-	    add_ideas = CHI_war_of_resistance_1
+	    add_ideas = WHN_war_of_resistance_1
 		if = {
 			limit = {
 				NOT = { is_in_faction_with = SHX }
@@ -979,7 +979,7 @@ focus_tree = {
 	}
 	#偉大なる勝利
 	focus = {
-		id = CHI_China_Unification_17
+		id = WHN_China_Unification_17
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 16
@@ -990,26 +990,26 @@ focus_tree = {
 			has_global_flag = war_of_resistance_china_win
 		}
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_16 }
+		prerequisite = { focus = WHN_China_Unification_16 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
 		add_political_power = 1000
 		add_stability = 0.1
-		remove_ideas = CHI_war_of_resistance_1
-		remove_ideas = CHI_war_of_resistance_2
+		remove_ideas = WHN_war_of_resistance_1
+		remove_ideas = WHN_war_of_resistance_2
 		}
 	}
 	#華夏は再び一つになった
 	focus = {
-		id = CHI_China_Unification_18
+		id = WHN_China_Unification_18
 		icon = GFX_focus_chi_legislative_yuan
 		x = 8
 		y = 17
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_17 }
+		prerequisite = { focus = WHN_China_Unification_17 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -1022,7 +1022,7 @@ focus_tree = {
 	}
 	#我々は最後まで抵抗する
 	focus = {
-		id = CHI_China_Unification_19
+		id = WHN_China_Unification_19
 		icon = GFX_focus_chi_legislative_yuan
 		x = 6
 		y = 16
@@ -1031,26 +1031,26 @@ focus_tree = {
 		available = {
 			surrender_progress > 0.25
 		}
-		prerequisite = { focus = CHI_China_Unification_16 }
+		prerequisite = { focus = WHN_China_Unification_16 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
 		swap_ideas = {
-			remove_idea = CHI_war_of_resistance_1
-			add_idea = CHI_war_of_resistance_2
+			remove_idea = WHN_war_of_resistance_1
+			add_idea = WHN_war_of_resistance_2
 		}
 		}
 	}
 	#内陸への移転
 	focus = {
-		id = CHI_China_Unification_20
+		id = WHN_China_Unification_20
 		icon = GFX_focus_chi_legislative_yuan
 		x = 10
 		y = 16
 		cost = 5
 		available_if_capitulated = yes
-		prerequisite = { focus = CHI_China_Unification_16 }
+		prerequisite = { focus = WHN_China_Unification_16 }
 		ai_will_do = {
 			factor = 100
 		}
@@ -1059,13 +1059,13 @@ focus_tree = {
 	}
 	#国民革命軍
 	focus = {
-		id = CHI_Military_effort
+		id = WHN_Military_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 25
 		y = 0
 		cost = 8
 		available = {
-			has_country_flag = CHI_expand
+			has_country_flag = WHN_expand
 	    }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		ai_will_do = {
@@ -1081,12 +1081,12 @@ focus_tree = {
 	}
 	#陸軍部
 	focus = {
-		id = CHI_army_effort
+		id = WHN_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 20
 		y = 1
 		cost = 8
-		prerequisite = { focus = CHI_Military_effort }
+		prerequisite = { focus = WHN_Military_effort }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		ai_will_do = {
 			factor = 50
@@ -1105,12 +1105,12 @@ focus_tree = {
 	}
 	#軍官学校の再建
 	focus = {
-		id = CHI_army_effort_1
+		id = WHN_army_effort_1
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 20
 		y = 2
 		cost = 8
-		prerequisite = { focus = CHI_army_effort }
+		prerequisite = { focus = WHN_army_effort }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		ai_will_do = {
 			factor = 50
@@ -1118,17 +1118,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = CHI_Military_school
+			add_ideas = WHN_Military_school
 		}
 	}
     #銃火器の量産
 	focus = {
-		id = CHI_equipment_effort
+		id = WHN_equipment_effort
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = CHI_army_effort }
+		prerequisite = { focus = WHN_army_effort }
 		x = -2
 		y = 1
-		relative_position_id = CHI_army_effort
+		relative_position_id = WHN_army_effort
 		cost = 8
 		ai_will_do = {
 			factor = 50
@@ -1139,19 +1139,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = CHI_Equipment_Idea
+			add_ideas = WHN_Equipment_Idea
 		}
 	}
 
 
     #米中合作
 	focus = {
-		id = CHI_doctrine_effort_1
+		id = WHN_doctrine_effort_1
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = CHI_army_effort }
+		prerequisite = { focus = WHN_army_effort }
 		x = 2
 		y = 1
-		relative_position_id = CHI_army_effort
+		relative_position_id = WHN_army_effort
 		cost = 8
 		ai_will_do = {
 			factor = 50
@@ -1174,13 +1174,13 @@ focus_tree = {
 	}
     #督戦隊の配備
 	focus = {
-		id = CHI_equipment_effort_2
+		id = WHN_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = CHI_equipment_effort }
-		prerequisite = { focus = CHI_army_effort_1 }
+		prerequisite = { focus = WHN_equipment_effort }
+		prerequisite = { focus = WHN_army_effort_1 }
 		x = 1
 		y = 1
-		relative_position_id = CHI_equipment_effort
+		relative_position_id = WHN_equipment_effort
 		cost = 8
 		ai_will_do = {
 			factor = 50
@@ -1190,20 +1190,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = CHI_command_group
+			add_ideas = WHN_command_group
 		}
 	}
 
 
     #西洋式の訓練
 	focus = {
-		id = CHI_doctrine_effort_2
+		id = WHN_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = CHI_doctrine_effort_1 }
-		prerequisite = { focus = CHI_army_effort_1 }
+		prerequisite = { focus = WHN_doctrine_effort_1 }
+		prerequisite = { focus = WHN_army_effort_1 }
 		x = -1
 		y = 1
-		relative_position_id = CHI_doctrine_effort_1
+		relative_position_id = WHN_doctrine_effort_1
 		cost = 8
 		ai_will_do = {
 			factor = 50
@@ -1218,12 +1218,12 @@ focus_tree = {
 	} 
     #火力の強化
 	focus = {
-		id = CHI_doctrine_effort_3
+		id = WHN_doctrine_effort_3
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = CHI_doctrine_effort_2 }
+		prerequisite = { focus = WHN_doctrine_effort_2 }
 		x = -1
 		y = 2
-		relative_position_id = CHI_doctrine_effort_1
+		relative_position_id = WHN_doctrine_effort_1
 		cost = 8
 		ai_will_do = {
 			factor = 50
@@ -1233,17 +1233,17 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = CHI_Artillery_fire
+			add_ideas = WHN_Artillery_fire
 		}
 	}
     #規律ある軍隊
 	focus = {
-		id = CHI_equipment_effort_3
+		id = WHN_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = CHI_equipment_effort_2 }
+		prerequisite = { focus = WHN_equipment_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = CHI_equipment_effort_2
+		relative_position_id = WHN_equipment_effort_2
 		cost = 8
 		ai_will_do = {
 			factor = 50
@@ -1253,20 +1253,20 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_ideas = CHI_Reform_Army
+			add_ideas = WHN_Reform_Army
 		}
 	}
 
 
     #陸軍大学
 	focus = {
-		id = CHI_special_forces
+		id = WHN_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = CHI_equipment_effort_3 }
-		prerequisite = { focus = CHI_doctrine_effort_3 }
+		prerequisite = { focus = WHN_equipment_effort_3 }
+		prerequisite = { focus = WHN_doctrine_effort_3 }
 		x = 1
 		y = 1
-		relative_position_id = CHI_equipment_effort_3
+		relative_position_id = WHN_equipment_effort_3
 		cost = 10
 		ai_will_do = {
 			factor = 50
@@ -1281,13 +1281,13 @@ focus_tree = {
 	}
 	#指揮系統の統一
 	focus = {
-		id = CHI_Military_effort_2
+		id = WHN_Military_effort_2
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 25
 		y = 6
 		cost = 8
-		prerequisite = { focus = CHI_special_forces }
-		prerequisite = { focus = CHI_rocket_effort }
+		prerequisite = { focus = WHN_special_forces }
+		prerequisite = { focus = WHN_rocket_effort }
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		ai_will_do = {
 			factor = 50
@@ -1296,18 +1296,18 @@ focus_tree = {
 
 		completion_reward = {
 			swap_ideas = {
-				remove_idea = CHI_Reform_Army
-				add_idea = CHI_Reform_Army_1
+				remove_idea = WHN_Reform_Army
+				add_idea = WHN_Reform_Army_1
 			}
 		}
 	}
 	focus = {
-		id = CHI_aviation_effort
+		id = WHN_aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		x = 25
 		y = 1
 		cost = 10
-		prerequisite = { focus = CHI_Military_effort }
+		prerequisite = { focus = WHN_Military_effort }
 		search_filters = {   FOCUS_FILTER_RESEARCH }
 
 		available_if_capitulated = yes
@@ -1387,13 +1387,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_fighter_focus
+		id = WHN_fighter_focus
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = CHI_aviation_effort }
-		mutually_exclusive = { focus = CHI_bomber_focus }
+		prerequisite = { focus = WHN_aviation_effort }
+		mutually_exclusive = { focus = WHN_bomber_focus }
 		x = -1
 		y = 1
-		relative_position_id = CHI_aviation_effort
+		relative_position_id = WHN_aviation_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1417,13 +1417,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_bomber_focus
+		id = WHN_bomber_focus
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = CHI_aviation_effort }
-		mutually_exclusive = { focus =CHI_fighter_focus }
+		prerequisite = { focus = WHN_aviation_effort }
+		mutually_exclusive = { focus =WHN_fighter_focus }
 		x = 1
 		y = 1
-		relative_position_id = CHI_aviation_effort
+		relative_position_id = WHN_aviation_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1444,12 +1444,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_aviation_effort_2
+		id = WHN_aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus =CHI_bomber_focus focus = CHI_fighter_focus }
+		prerequisite = { focus =WHN_bomber_focus focus = WHN_fighter_focus }
 		x = -1
 		y = 1
-		relative_position_id = CHI_bomber_focus
+		relative_position_id = WHN_bomber_focus
 		cost = 10
 
 		search_filters = {   FOCUS_FILTER_RESEARCH }
@@ -1533,12 +1533,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_CAS_effort
+		id = WHN_CAS_effort
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = CHI_aviation_effort_2 }
+		prerequisite = { focus = WHN_aviation_effort_2 }
 		x = -1
 		y = 1
-		relative_position_id = CHI_aviation_effort_2
+		relative_position_id = WHN_aviation_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1557,13 +1557,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_rocket_effort
+		id = WHN_rocket_effort
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = CHI_aviation_effort_2 }
-		prerequisite = { focus = CHI_infrastructure_effort }
+		prerequisite = { focus = WHN_aviation_effort_2 }
+		prerequisite = { focus = WHN_infrastructure_effort }
 		x = 0
 		y = 2
-		relative_position_id = CHI_aviation_effort_2
+		relative_position_id = WHN_aviation_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1590,13 +1590,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_NAV_effort
+		id = WHN_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = CHI_aviation_effort_2 }
-		prerequisite = { focus = CHI_flexible_navy }
+		prerequisite = { focus = WHN_aviation_effort_2 }
+		prerequisite = { focus = WHN_flexible_navy }
 		x = 1
 		y = 1
-		relative_position_id = CHI_aviation_effort_2
+		relative_position_id = WHN_aviation_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1615,12 +1615,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_naval_effort
+		id = WHN_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 29
 		y = 1
 		cost = 10
-		prerequisite = { focus = CHI_Military_effort }
+		prerequisite = { focus = WHN_Military_effort }
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
 		
 		available_if_capitulated = yes
@@ -1743,13 +1743,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_flexible_navy
+		id = WHN_flexible_navy
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = CHI_naval_effort }
-		mutually_exclusive = { focus = CHI_large_navy }
+		prerequisite = { focus = WHN_naval_effort }
+		mutually_exclusive = { focus = WHN_large_navy }
 		x = -1
 		y = 1
-		relative_position_id = CHI_naval_effort
+		relative_position_id = WHN_naval_effort
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1785,13 +1785,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_large_navy
+		id = WHN_large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = CHI_naval_effort }
-		mutually_exclusive = { focus = CHI_flexible_navy }
+		prerequisite = { focus = WHN_naval_effort }
+		mutually_exclusive = { focus = WHN_flexible_navy }
 		x = 1
 		y = 1
-		relative_position_id = CHI_naval_effort
+		relative_position_id = WHN_naval_effort
 		cost = 10
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
@@ -1823,12 +1823,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_submarine_effort
+		id = WHN_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = CHI_flexible_navy focus = CHI_large_navy }
+		prerequisite = { focus = WHN_flexible_navy focus = WHN_large_navy }
 		x = 0
 		y = 1
-		relative_position_id = CHI_flexible_navy
+		relative_position_id = WHN_flexible_navy
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1861,12 +1861,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_cruiser_effort
+		id = WHN_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = CHI_large_navy focus = CHI_flexible_navy }
+		prerequisite = { focus = WHN_large_navy focus = WHN_flexible_navy }
 		x = 0
 		y = 1
-		relative_position_id = CHI_large_navy
+		relative_position_id = WHN_large_navy
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1900,12 +1900,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_destroyer_effort
+		id = WHN_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = CHI_submarine_effort }
+		prerequisite = { focus = WHN_submarine_effort }
 		x = 0
 		y = 1
-		relative_position_id = CHI_submarine_effort
+		relative_position_id = WHN_submarine_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1938,12 +1938,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_capital_ships_effort
+		id = WHN_capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = CHI_cruiser_effort }
+		prerequisite = { focus = WHN_cruiser_effort }
 		x = 0
 		y = 1
-		relative_position_id = CHI_cruiser_effort
+		relative_position_id = WHN_cruiser_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1978,13 +1978,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_industrial_effort
+		id = WHN_industrial_effort
 		icon = GFX_goal_generic_production
 		x = 34
 		y = 0
 		cost = 10
 		available = {
-			has_country_flag = CHI_expand
+			has_country_flag = WHN_expand
 	    }
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		
@@ -2023,12 +2023,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_construction_effort
+		id = WHN_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = CHI_industrial_effort }
+		prerequisite = { focus = WHN_industrial_effort }
 		x = -1
 		y = 1
-		relative_position_id = CHI_industrial_effort
+		relative_position_id = WHN_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2098,12 +2098,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_production_effort
+		id = WHN_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CHI_industrial_effort }
+		prerequisite = { focus = WHN_industrial_effort }
 		x = 1
 		y = 1
-		relative_position_id = CHI_industrial_effort
+		relative_position_id = WHN_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2172,12 +2172,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_construction_effort_2
+		id = WHN_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = CHI_construction_effort }
+		prerequisite = { focus = WHN_construction_effort }
 		x = 0
 		y = 1
-		relative_position_id = CHI_construction_effort
+		relative_position_id = WHN_construction_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2246,12 +2246,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_production_effort_2
+		id = WHN_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = CHI_production_effort }
+		prerequisite = { focus = WHN_production_effort }
 		x = 0
 		y = 1
-		relative_position_id = CHI_production_effort
+		relative_position_id = WHN_production_effort
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2320,12 +2320,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_infrastructure_effort
+		id = WHN_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CHI_construction_effort_2 }
+		prerequisite = { focus = WHN_construction_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = CHI_construction_effort_2
+		relative_position_id = WHN_construction_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2416,12 +2416,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_production_effort_3
+		id = WHN_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus =CHI_production_effort_2 }
+		prerequisite = { focus =WHN_production_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = CHI_production_effort_2
+		relative_position_id = WHN_production_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2490,12 +2490,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_infrastructure_effort_2
+		id = WHN_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = CHI_infrastructure_effort }
+		prerequisite = { focus = WHN_infrastructure_effort }
 		x = 0
 		y = 1
-		relative_position_id = CHI_infrastructure_effort
+		relative_position_id = WHN_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2586,12 +2586,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_construction_effort_3
+		id = WHN_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = CHI_infrastructure_effort }
+		prerequisite = { focus = WHN_infrastructure_effort }
 		x = 2
 		y = 1
-		relative_position_id = CHI_infrastructure_effort
+		relative_position_id = WHN_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2660,12 +2660,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_nuclear_effort
+		id = WHN_nuclear_effort
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = CHI_infrastructure_effort_2 }
+		prerequisite = { focus = WHN_infrastructure_effort_2 }
 		x = -2
 		y = 1
-		relative_position_id = CHI_infrastructure_effort_2
+		relative_position_id = WHN_infrastructure_effort_2
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -2690,12 +2690,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = CHI_extra_tech_slot
+		id = WHN_extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = CHI_infrastructure_effort_2 }
+		prerequisite = { focus = WHN_infrastructure_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = CHI_infrastructure_effort_2
+		relative_position_id = WHN_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -2708,9 +2708,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = CHI_extra_tech_slot_2
+		id = WHN_extra_tech_slot_2
 		icon = GFX_focus_research
-		prerequisite = { focus = CHI_extra_tech_slot }
+		prerequisite = { focus = WHN_extra_tech_slot }
 		available = {
 			num_of_factories > 100
 		}
@@ -2718,7 +2718,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		x = 0
 		y = 1
-		relative_position_id = CHI_extra_tech_slot
+		relative_position_id = WHN_extra_tech_slot
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -2731,12 +2731,12 @@ focus_tree = {
 	}	
 
 	focus = {
-		id = CHI_secret_weapons
+		id = WHN_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = CHI_infrastructure_effort_2 }
+		prerequisite = { focus = WHN_infrastructure_effort_2 }
 		x = 2
 		y = 1
-		relative_position_id = CHI_infrastructure_effort_2
+		relative_position_id = WHN_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 

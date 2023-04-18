@@ -9,3 +9,6 @@
  send_in_the_army_desc:0 "国内騒乱を鎮圧する方法は、軍隊を投入し完全鎮圧することである。誰もがそれにより幸福になる訳ではないのだが、確かにそれは事実なのだが、時には戒厳令の施行が唯一の選択肢となる。"
  can_raise_autonomy_level:0 "自治度を上げられない"
  can_lower_autonomy_level:0 "自治度を下げられない"
+ decision_cost_CP_25:0 "£command_power  §Y25§!"
+ decision_cost_CP_25_blocked:0 "£command_power  §R25§!"
+ decision_cost_CP_25_tooltip:0 "£command_power  §Y25§!が必要"

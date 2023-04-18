@@ -5,7 +5,7 @@
 
 		### Starting ###
 
-		CHI_late_army = {
+		WHN_late_army = {
 			allowed = {
 				always = no
 			}
@@ -21,7 +21,7 @@
 			      army_morale_factor = -0.2
 			}
 		}
-		CHI_late_army_1 = {
+		WHN_late_army_1 = {
 			allowed = {
 				always = no
 			}
@@ -37,7 +37,7 @@
 			      army_morale_factor = -0.15
 			}
 		}
-		CHI_late_army_2 = {
+		WHN_late_army_2 = {
 			allowed = {
 				always = no
 			}
@@ -53,7 +53,7 @@
 			      army_morale_factor = -0.1
 			}
 		}
-		CHI_late_army_3 = {
+		WHN_late_army_3 = {
 			allowed = {
 				always = no
 			}
@@ -69,7 +69,7 @@
 			      army_morale_factor = -0.05
 			}
 		}
-		CHI_Peple_Support_very_Low = {
+		WHN_Peple_Support_very_Low = {
 
 			allowed = {
 				always = no
@@ -86,7 +86,7 @@
 				war_support_factor = -0.5
 			}
 		}
-		CHI_Peple_Support_Low = {
+		WHN_Peple_Support_Low = {
 
 			allowed = {
 				always = no
@@ -107,7 +107,7 @@
 				war_support_factor = -0.2
 			}
 		}
-		CHI_Peple_Support_medium = {
+		WHN_Peple_Support_medium = {
 
 			allowed = {
 				always = no
@@ -123,7 +123,7 @@
 				war_support_factor = -0.05
 			}
 		}
-		CHI_Peple_Support_high = {
+		WHN_Peple_Support_high = {
 			
 			allowed = {
 				always = no
@@ -139,7 +139,7 @@
 				war_support_factor = 0.05
 			}
 		}
-		CHI_Peple_Support_very_high = {
+		WHN_Peple_Support_very_high = {
 
 			allowed = {
 				always = no
@@ -155,7 +155,7 @@
 				war_support_factor = 0.1
 			}
 		}
-                CHI_hikoritunatouti = {
+                WHN_hikoritunatouti = {
 			allowed = {
 				always = no
 			}
@@ -172,7 +172,7 @@
 			     production_factory_efficiency_gain_factor = -0.10
 			}
 		}
-                CHI_kaiseki_legacy = {
+                WHN_kaiseki_legacy = {
 			allowed = {
 				always = no
 			}
@@ -187,7 +187,7 @@
                              political_power_factor = 0.02
 			}
 		}
-                CHI_fuannteinakokka = {
+                WHN_fuannteinakokka = {
 			allowed = {
 				always = no
 			}
@@ -202,7 +202,7 @@
                              war_support_factor = -0.4
 			}
 		}
-                 CHI_fuannteinakokka_1 = {
+                 WHN_fuannteinakokka_1 = {
 			allowed = {
 				always = no
 			}
@@ -217,7 +217,7 @@
                              war_support_factor = -0.15
 			}
 		}
-                CHI_purge = {
+                WHN_purge = {
 			allowed = {
 				always = no
 			}
@@ -234,7 +234,7 @@
                                 MONTHLY_POPULATION = -0.5
 			}
 		}
-               CHI_Anti_Communist = {
+               WHN_Anti_Communist = {
 			allowed = {
 				always = no
 			}
@@ -250,7 +250,7 @@
                                 radical_socialist_drift = -0.01
 			}
 		}
-                CHI_guerrilla = {
+                WHN_guerrilla = {
 			allowed = {
 				always = no
 			}
@@ -268,7 +268,7 @@
 				out_of_supply_factor = -0.2
 			}
 		}
-                CHI_terror = {
+                WHN_terror = {
 			allowed = {
 				always = no
 			}
@@ -284,7 +284,7 @@
                              stability_factor = 0.2
 			}
 		}
-                CHI_police = {
+                WHN_police = {
 			allowed = {
 				always = no
 			}
@@ -299,7 +299,7 @@
 				resistance_target = -0.1
 			}
 		}
-                CHI_sanmin = {
+                WHN_sanmin = {
 			allowed = {
 				always = no
 			}
@@ -312,7 +312,7 @@
                              war_support_factor = 0.2
 			}
 		}
-                CHI_strongleader = {
+                WHN_strongleader = {
 			allowed = {
 				always = no
 			}
@@ -325,7 +325,7 @@
                              political_power_factor = 0.15
 			}
 		}
-                CHI_strongparty = {
+                WHN_strongparty = {
 			allowed = {
 				always = no
 			}
@@ -338,7 +338,7 @@
                              stability_factor = 0.1
 			}
 		}
-                CHI_Military_Police = {
+                WHN_Military_Police = {
 			allowed = {
 				always = no
 			}
@@ -352,7 +352,7 @@
                              required_garrison_factor = -0.05
 			}
 		}
-                CHI_Youth_group = {
+                WHN_Youth_group = {
 			allowed = {
 				always = no
 			}
@@ -366,7 +366,7 @@
                              	production_speed_buildings_factor = 0.1
 			}
 		}
-                CHI_Minsei_first = {
+                WHN_Minsei_first = {
 			allowed = {
 				always = no
 			}
@@ -380,7 +380,7 @@
                              production_speed_industrial_complex_factor = 0.1
 			}
 		}
-                CHI_Shading_sun = {
+                WHN_Shading_sun = {
 			allowed = {
 				always = no
 			}
@@ -394,7 +394,7 @@
                                political_power_factor = 0.1
 			}
 		}
-                CHI_Shading_sun_1 = {
+                WHN_Shading_sun_1 = {
 			allowed = {
 				always = no
 			}
@@ -425,7 +425,7 @@
                                political_power_factor = 0.1
 			}
 		}
-        CHI_war_of_resistance_prepare = {
+        WHN_war_of_resistance_prepare = {
 			removal_cost = -1
 			
 			allowed = {
@@ -443,7 +443,7 @@
 				industrial_capacity_factory = 0.1
 			}
 		}
-        CHI_war_of_resistance_1 = {
+        WHN_war_of_resistance_1 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -479,7 +479,7 @@
 				industry_free_repair_factor = 1
 			}
 		}
-        CHI_war_of_resistance_2 = {
+        WHN_war_of_resistance_2 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -516,7 +516,7 @@
 				industry_free_repair_factor = 2
 			}
 		}
-                CHI_Equipment_Idea = {
+                WHN_Equipment_Idea = {
 			allowed = {
 				always = no
 			}
@@ -536,7 +536,7 @@
 			modifier = {
 			}
 		}
-                CHI_command_group = {
+                WHN_command_group = {
 			removal_cost = -1
 			
 			allowed = {
@@ -551,7 +551,7 @@
 				army_morale_factor = 0.10
 			}
 		}
-                CHI_Artillery_fire = {
+                WHN_Artillery_fire = {
 			removal_cost = -1
 			
 			allowed = {
@@ -565,7 +565,7 @@
 				army_artillery_attack_factor = 0.15
 			}
 		}
-                CHI_Reform_Army = {
+                WHN_Reform_Army = {
 			removal_cost = -1
 			
 			allowed = {
@@ -581,7 +581,7 @@
                                 army_infantry_defence_factor = 0.05
 			}
 		}
-                CHI_Reform_Army_1 = {
+                WHN_Reform_Army_1 = {
 			removal_cost = -1
 			
 			allowed = {
@@ -597,7 +597,7 @@
                                 army_infantry_defence_factor = 0.12
 			}
 		}
-                CHI_Military_school = {
+                WHN_Military_school = {
 			removal_cost = -1
 			
 			allowed = {
@@ -613,7 +613,7 @@
                                 military_leader_cost_factor = -0.50
 			}
 		}
-        CHI_USA_Collaborate = {
+        WHN_USA_Collaborate = {
 			removal_cost = -1
 			
 			allowed = {
@@ -644,8 +644,8 @@
 		}
 }
 Head_of_State = { 
-	CHI_Lin_Sen = {
-		picture = CHI_Lin_Sen
+	WHN_Lin_Sen = {
+		picture = WHN_Lin_Sen
 		
 		allowed = {
 			original_tag = WHN
@@ -666,8 +666,8 @@ Head_of_State = {
 			TR_popular_figurehead
 		}
 	}
-	CHI_Chiang_Chingkuo = {
-		picture = CHI_Chiang_Chingkuo
+	WHN_Chiang_Chingkuo = {
+		picture = WHN_Chiang_Chingkuo
 		
 		allowed = {
 			original_tag = WHN
@@ -688,9 +688,9 @@ Head_of_State = {
 			TR_die_hard_reformer
 		}
 	}
-	CHI_Dai_Li_HS = {
-		name = CHI_Dai_Li
-		picture = CHI_Dai_Li
+	WHN_Dai_Li_HS = {
+		name = WHN_Dai_Li
+		picture = WHN_Dai_Li
 		
 		allowed = {
 			original_tag = WHN
@@ -711,8 +711,8 @@ Head_of_State = {
 			TR_Local_tyrant2
 		}
 	}
-	CHI_Sung_Meiling = {
-		picture = CHI_Sung_Meiling
+	WHN_Sung_Meiling = {
+		picture = WHN_Sung_Meiling
 		
 		allowed = {
 			original_tag = WHN
@@ -735,8 +735,8 @@ Head_of_State = {
 	}
 }
 Government_leaders = { 
-	CHI_Chen_Cheng = {
-		picture = CHI_Chen_Cheng
+	WHN_Chen_Cheng = {
+		picture = WHN_Chen_Cheng
 		
 		allowed = {
 			original_tag = WHN
@@ -757,8 +757,8 @@ Government_leaders = {
 			TR_political_protege
 		}
 	}
-	CHI_Dai_Li = {
-		picture = CHI_Dai_Li
+	WHN_Dai_Li = {
+		picture = WHN_Dai_Li
 		
 		allowed = {
 			original_tag = WHN
@@ -779,8 +779,8 @@ Government_leaders = {
 			TR_old_general
 		}
 	}
-	CHI_Chen_Kuofu = {
-		picture = CHI_Chen_Kuofu
+	WHN_Chen_Kuofu = {
+		picture = WHN_Chen_Kuofu
 		
 		allowed = {
 			original_tag = WHN
@@ -801,8 +801,8 @@ Government_leaders = {
 			TR_corporate_suit
 		}
 	}
-	CHI_Chiang_Kaishek = {
-		picture = CHI_Chiang_Kaishek
+	WHN_Chiang_Kaishek = {
+		picture = WHN_Chiang_Kaishek
 		
 		allowed = {
 			original_tag = WHN
@@ -825,8 +825,8 @@ Government_leaders = {
 	}
 }
 Minister_of_Foreign_Affairs = { 
-	CHI_Chang_Chun = {
-		picture = CHI_Chang_Chun
+	WHN_Chang_Chun = {
+		picture = WHN_Chang_Chun
 		
 		allowed = {
 			original_tag = WHN
@@ -847,9 +847,9 @@ Minister_of_Foreign_Affairs = {
 			TR_great_compromiser
 		}
 	}
-	CHI_Lin_Sen_FA = {
-		name = CHI_Lin_Sen
-		picture = CHI_Lin_Sen
+	WHN_Lin_Sen_FA = {
+		name = WHN_Lin_Sen
+		picture = WHN_Lin_Sen
 		
 		allowed = {
 			original_tag = WHN
@@ -871,9 +871,9 @@ Minister_of_Foreign_Affairs = {
 		}
 	}
 
-	CHI_Sung_Tzuwen_FA = {
-		name = CHI_Sung_Tzuwen
-		picture = CHI_Sung_Tzuwen
+	WHN_Sung_Tzuwen_FA = {
+		name = WHN_Sung_Tzuwen
+		picture = WHN_Sung_Tzuwen
 		
 		allowed = {
 			original_tag = WHN
@@ -896,9 +896,9 @@ Minister_of_Foreign_Affairs = {
 	}
 }
 Minister_of_Economy = { 
-	CHI_Kung_Hsinghsi_Moe = {
-		name = CHI_Kung_Hsinghsi
-		picture = CHI_Kung_Hsinghsi
+	WHN_Kung_Hsinghsi_Moe = {
+		name = WHN_Kung_Hsinghsi
+		picture = WHN_Kung_Hsinghsi
 		
 		allowed = {
 			original_tag = WHN
@@ -919,9 +919,9 @@ Minister_of_Economy = {
 			TR_bank_president
 		}
 	}
-	CHI_Chen_Cheng_Moe = {
-		name = CHI_Chen_Cheng
-		picture = CHI_Chen_Cheng
+	WHN_Chen_Cheng_Moe = {
+		name = WHN_Chen_Cheng
+		picture = WHN_Chen_Cheng
 		
 		allowed = {
 			original_tag = WHN
@@ -942,9 +942,9 @@ Minister_of_Economy = {
 			TR_construction_magnate
 		}
 	}
-	CHI_He_Yingqin_MoE = {
-		name = CHI_He_Yingqin
-		picture = CHI_He_Yingqin
+	WHN_He_Yingqin_MoE = {
+		name = WHN_He_Yingqin
+		picture = WHN_He_Yingqin
 		
 		allowed = {
 			original_tag = WHN
@@ -965,9 +965,9 @@ Minister_of_Economy = {
 			TR_resource_industrialist
 		}
 	}
-	CHI_Chen_Kuofu_MoE = {
-		name = CHI_Chen_Kuofu
-		picture = CHI_Chen_Kuofu
+	WHN_Chen_Kuofu_MoE = {
+		name = WHN_Chen_Kuofu
+		picture = WHN_Chen_Kuofu
 		
 		allowed = {
 			original_tag = WHN
@@ -988,9 +988,9 @@ Minister_of_Economy = {
 			TR_laissez_faire_capitalist
 		}
 	}
-	CHI_Sung_Tzuwen_MoE = {
-		name = CHI_Sung_Tzuwen
-		picture = CHI_Sung_Tzuwen
+	WHN_Sung_Tzuwen_MoE = {
+		name = WHN_Sung_Tzuwen
+		picture = WHN_Sung_Tzuwen
 		
 		allowed = {
 			original_tag = WHN
@@ -1011,9 +1011,9 @@ Minister_of_Economy = {
 			TR_laissez_faire_capitalist
 		}
 	}
-	CHI_Wu_Zhongxin_MoE = {
-		name = CHI_Wu_Zhongxin
-		picture = CHI_Wu_Zhongxin
+	WHN_Wu_Zhongxin_MoE = {
+		name = WHN_Wu_Zhongxin
+		picture = WHN_Wu_Zhongxin
 		
 		allowed = {
 			original_tag = WHN
@@ -1036,9 +1036,9 @@ Minister_of_Economy = {
 	}
 }
 Minister_of_Interior = { 
-	CHI_Chiang_Chingkuo_MoI = {
-		name = CHI_Chiang_Chingkuo
-		picture = CHI_Chiang_Chingkuo
+	WHN_Chiang_Chingkuo_MoI = {
+		name = WHN_Chiang_Chingkuo
+		picture = WHN_Chiang_Chingkuo
 		
 		allowed = {
 			original_tag = WHN
@@ -1059,9 +1059,9 @@ Minister_of_Interior = {
 			TR_man_of_the_people
 		}
 	}
-	CHI_Dai_Li_MoI = {
-		name = CHI_Dai_Li
-		picture = CHI_Dai_Li
+	WHN_Dai_Li_MoI = {
+		name = WHN_Dai_Li
+		picture = WHN_Dai_Li
 		
 		allowed = {
 			original_tag = WHN
@@ -1082,8 +1082,8 @@ Minister_of_Interior = {
 			TR_secret_police_chief
 		}
 	}
-	CHI_Chen_Lifu = {
-		picture = CHI_Chen_Lifu
+	WHN_Chen_Lifu = {
+		picture = WHN_Chen_Lifu
 		
 		allowed = {
 			original_tag = WHN
@@ -1104,8 +1104,8 @@ Minister_of_Interior = {
 			TR_efficient_sociopath
 		}
 	}
-	CHI_Wu_Zhongxin = {
-		picture = CHI_Wu_Zhongxin
+	WHN_Wu_Zhongxin = {
+		picture = WHN_Wu_Zhongxin
 		
 		allowed = {
 			original_tag = WHN
@@ -1128,9 +1128,9 @@ Minister_of_Interior = {
 	}
 }
 chief_of_staff = { 
-	CHI_He_Yingqin_cos = {
-		name = CHI_He_Yingqin
-		picture = CHI_He_Yingqin
+	WHN_He_Yingqin_cos = {
+		name = WHN_He_Yingqin
+		picture = WHN_He_Yingqin
 		cancel_if_invalid = yes			
 		allowed = {
 			original_tag = WHN
@@ -1140,9 +1140,9 @@ chief_of_staff = {
 			cos_school_of_mass_combat
 		}
 	}
-	CHI_Dai_Li_cos = {
-		name = CHI_Dai_Li
-		picture = CHI_Dai_Li
+	WHN_Dai_Li_cos = {
+		name = WHN_Dai_Li
+		picture = WHN_Dai_Li
 		cancel_if_invalid = yes			
 		allowed = {
 			original_tag = WHN
@@ -1154,9 +1154,9 @@ chief_of_staff = {
 	}
 }
 chief_of_army = { 
-	CHI_He_Yingqin_coa = {
-		name = CHI_He_Yingqin
-		picture = CHI_He_Yingqin
+	WHN_He_Yingqin_coa = {
+		name = WHN_He_Yingqin
+		picture = WHN_He_Yingqin
 		cancel_if_invalid = yes			
 		allowed = {
 			original_tag = WHN
@@ -1166,9 +1166,9 @@ chief_of_army = {
 			carm_elastic_defence_doctrine
 		}
 	}
-	CHI_Chen_Cheng_coa = {
-		name = CHI_Chen_Cheng
-		picture = CHI_Chen_Cheng
+	WHN_Chen_Cheng_coa = {
+		name = WHN_Chen_Cheng
+		picture = WHN_Chen_Cheng
 		cancel_if_invalid = yes			
 		allowed = {
 			original_tag = WHN
@@ -1180,8 +1180,8 @@ chief_of_army = {
 	}
 }
 chief_of_navy = { 
-	CHI_Chen_Shaokuan = {
-		picture = CHI_Chen_Shaokuan
+	WHN_Chen_Shaokuan = {
+		picture = WHN_Chen_Shaokuan
 		cancel_if_invalid = yes			
 		allowed = {
 			original_tag = WHN
@@ -1193,9 +1193,9 @@ chief_of_navy = {
 	}
 }
 chief_of_air_force = { 
-	CHI_Sung_Meiling_cair = {
-		name = CHI_Sung_Meiling
-		picture = CHI_Sung_Meiling
+	WHN_Sung_Meiling_cair = {
+		name = WHN_Sung_Meiling
+		picture = WHN_Sung_Meiling
 		cancel_if_invalid = yes			
 		allowed = {
 			original_tag = WHN

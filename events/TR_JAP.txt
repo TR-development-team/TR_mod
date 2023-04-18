@@ -1,26 +1,673 @@
 ﻿
 add_namespace = TR_japan
 
-#取り付け騒ぎ
+#大暴落の余波
 country_event = {
-	id = TR_japan.1
-	title = TR_japan.1.t
-	desc = TR_japan.1.d
+	id = TR_japan.100
+	title = TR_japan.100.t
+	desc = TR_japan.100.d
 	picture = GFX_report_event_gathering_protest
 
 	is_triggered_only = yes
-        fire_only_once = yes
+    fire_only_once = yes
 
 
 	
 	option = {
-		name = TR_japan.1.a
-        add_political_power = -50
-		add_stability = -0.1
-		modify_country_flag = { flag = JAP_Political_Distrust_flag value = 10 }
+		name = TR_japan.100.a
 		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.2
+		}
+		add_political_power = -50
+		add_stability = -0.1
 	}
 }
+#取り付け騒ぎ
+country_event = {
+	id = TR_japan.101
+	title = TR_japan.101.t
+	desc = TR_japan.101.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.101.a
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.15
+		}
+		add_stability = -0.05
+		hidden_effect = {
+			country_event = {
+					id = TR_japan.102
+					days = 7
+				}
+		}
+	}
+}
+#緊急銀行救済法
+country_event = {
+	id = TR_japan.102
+	title = TR_japan.102.t
+	desc = TR_japan.102.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.102.a
+		custom_effect_tooltip = JAP_Political_Distrust_flag_down
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = 0.05
+		}
+		add_stability = 0.03
+	}
+}
+#台北経済会議
+country_event = {
+	id = TR_japan.103
+	title = TR_japan.103.t
+	desc = TR_japan.103.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.103.a
+		add_ideas = JAP_blockeconomy_nf
+        reverse_add_opinion_modifier = {
+				target = RAT
+				modifier = JAP_blockeconomy_1
+			}
+        reverse_add_opinion_modifier = {
+				target = FRA
+				modifier = JAP_blockeconomy_1
+			}
+        reverse_add_opinion_modifier = {
+				target = USA
+				modifier = JAP_blockeconomy_1
+			}
+        reverse_add_opinion_modifier = {
+				target = RUS
+				modifier = JAP_blockeconomy_1
+			}
+        reverse_add_opinion_modifier = {
+				target = ITA
+				modifier = JAP_blockeconomy_1
+			}
+        reverse_add_opinion_modifier = {
+				target = GBR
+				modifier = JAP_blockeconomy_1
+			}
+        reverse_add_opinion_modifier = {
+				target = SWE
+				modifier = JAP_blockeconomy_1
+			}
+        reverse_add_opinion_modifier = {
+				target = AUS
+				modifier = JAP_blockeconomy_1
+			}
+	}
+}
+#安定化の始まり
+country_event = {
+	id = TR_japan.104
+	title = TR_japan.104.t
+	desc = TR_japan.104.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.104.a
+		add_stability = 0.05
+	}
+}
+#三井本館襲撃事件
+country_event = {
+	id = TR_japan.105
+	title = TR_japan.105.t
+	desc = TR_japan.105.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.105.a
+		add_stability = -0.05
+		808 = {
+			add_manpower = -21
+		}
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+					id = TR_japan.106
+					days = 3
+				}
+		}
+	}
+}
+#財閥批判の高まり
+country_event = {
+	id = TR_japan.106
+	title = TR_japan.106.t
+	desc = TR_japan.106.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.106.a
+		trigger = {
+			NOT = { has_government = social_liberal }
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.02
+		}
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.1
+		}
+	}
+	option = {
+		name = TR_japan.106.b
+		trigger = {
+			has_government = social_liberal
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = social_conservative
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.02
+		}
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.05
+		}
+	}
+}
+#「リベラル」な将軍
+country_event = {
+	id = TR_japan.107
+	title = TR_japan.107.t
+	desc = TR_japan.107.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.107.a
+		ai_chance = {
+			base = 100
+		}
+		set_country_flag = JAP_Liberal_officer
+		add_political_power = -25
+		custom_effect_tooltip = JAP_Political_Distrust_flag_down
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = 0.05
+		}
+		add_ideas = JAP_Watanabe_Jotaro_coa
+		add_ideas = JAP_Hori_Teikichi_con
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.118
+				days = 21
+			}
+		}	
+	}
+	option = {
+		name = TR_japan.107.b
+		ai_chance = {
+			base = 20
+		}
+		add_political_power = 50
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.05
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.116
+				days = 21
+			}
+		}	
+	}
+}
+#農村と軍隊
+country_event = {
+	id = TR_japan.108
+	title = TR_japan.108.t
+	desc = TR_japan.108.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.108.a
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = -20
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.01
+		}
+	}
+	option = {
+		name = TR_japan.108.b
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.03
+		}
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.05
+		}
+	}
+}
+#第17回メーデー大会開催宣言
+country_event = {
+	id = TR_japan.109
+	title = TR_japan.109.t
+	desc = TR_japan.109.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.109.a
+		swap_ideas = {
+			remove_idea = JAP_Prosperous_Cities
+			add_idea = JAP_Prosperous_Cities_May_Day
+		}	
+	}
+}
+#血のメーデー事件
+country_event = {
+	id = TR_japan.5
+	title = TR_japan.5.t
+	desc = TR_japan.5.d
+	picture = GFX_report_event_gathering_protest
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { 	
+		name = TR_japan.5.a
+        set_country_flag = JAP_May_Day_flag
+        add_stability = -0.1
+        add_popularity = {
+			ideology = totalist
+			popularity = 0.05
+		}
+        add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+        add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
+        hidden_effect = {
+			complete_national_focus = JAP_May_Day_focus
+			country_event = TR_japan.110
+            country_event = {
+				id = TR_news.1
+				days = 2
+			}
+		}
+	}	
+}
+#デモからゼネストへ
+country_event = {
+	id = TR_japan.110
+	title = TR_japan.110.t
+	desc = TR_japan.110.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.110.a
+        ai_chance = {
+			base = 80
+			modifier = {
+				factor = 0
+				has_government = social_democrat
+			}
+		}
+        set_country_flag = JAP_Martial_Law_flag
+        hidden_effect = {
+			complete_national_focus = JAP_Martial_law_focus
+			country_event = {
+				id = TR_japan.113
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = TR_japan.110.b
+		trigger = {
+			OR = { has_government = social_democrat has_government = social_liberal } 
+		}
+        ai_chance = {
+			base = 80
+			modifier = {
+				factor = 5
+				has_government = social_democrat
+			}
+		}
+        add_popularity = {
+			ideology = social_democrat
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
+		}
+        add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.02
+		}
+        add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		hidden_effect = {
+            country_event = {
+				id = TR_japan.111
+				days = 2
+			}
+		}
+	}
+}
+
+#労働者との交渉
+country_event = {
+	id = TR_japan.111
+	title = TR_japan.111.t
+	desc = TR_japan.111.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.111.a
+		ai_chance = {
+			base = 120
+		}
+		add_political_power = 25
+		hidden_effect = {
+            country_event = {
+				id = TR_japan.112
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = TR_japan.111.b
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				has_government = social_democrat
+			}
+		}
+		add_political_power = -50
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.113
+				days = 2
+			}
+		}
+	}
+}
+#東京労働協定
+country_event = {
+	id = TR_japan.112
+	title = TR_japan.112.t
+	desc = TR_japan.112.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.112.a
+		set_country_flag = JAP_Tokyo_Agreement
+		if = {
+			limit = { has_government = social_democrat }
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.05
+				}
+		}
+		if = {
+			limit = { has_government = social_liberal }
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.05
+				}
+		}
+		add_ideas = JAP_Three_labour_laws
+		custom_effect_tooltip = JAP_Political_Distrust_flag_down
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = 0.05
+		}
+	}
+}
+#戒厳の宣告
+country_event = {
+	id = TR_japan.113
+	title = TR_japan.113.t
+	desc = TR_japan.113.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.113.a
+		swap_ideas = {
+			remove_idea = JAP_Prosperous_Cities_May_Day
+			add_idea = JAP_Cities_Martial_Law
+		}	
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.114
+				days = 1
+			}
+		}
+	}
+}
+#鎮圧の開始
+country_event = {
+	id = TR_japan.114
+	title = TR_japan.114.t
+	desc = TR_japan.114.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.114.a
+        add_popularity = {
+			ideology = social_democrat
+			popularity = -0.02
+		}
+        add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.05
+		}
+        add_popularity = {
+			ideology = syndicalist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.02
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.115
+				days = 5
+			}
+		}
+	}
+}
+#戒厳体制
+country_event = {
+	id = TR_japan.115
+	title = TR_japan.115.t
+	desc = TR_japan.115.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.115.a
+		set_country_flag = JAP_End_of_riot
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.05
+		}
+	}
+}
+country_event = {
+	id = TR_japan.116
+	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_japan.118 FROM = [From.GetName]" }
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = {
+				has_idea = JAP_Osumi_Mineo
+			}
+			country_event = TR_japan.117
+		}
+		if = {
+			limit = {
+				has_idea = JAP_Hori_Teikichi_con
+			}
+			country_event = TR_japan.118
+		}
+	}
+}
+#大角人事
+country_event = {
+	id = TR_japan.117
+	title = TR_japan.117.t
+	desc = TR_japan.117.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.117.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -25
+		swap_ideas = {
+			remove_idea = JAP_respected_navy
+			add_idea = JAP_respected_navy_Fleet_faction
+		}	
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.05
+		}
+		retire_character = JAP_Hori_Teikichi
+		retire_character = JAP_Terazima_Ken
+	}
+	option = {
+		name = TR_japan.117.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -100
+		add_stability = -0.1
+	}
+}
+#掘人事
+country_event = {
+	id = TR_japan.118
+	title = TR_japan.118.t
+	desc = TR_japan.118.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.118.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -50
+		swap_ideas = {
+			remove_idea = JAP_respected_navy
+			add_idea = JAP_respected_navy_treatry_faction
+		}	
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = 0.05
+		}
+		retire_character = JAP_Suetugu_nobumasa
+		retire_character = JAP_Chuichi_Nagumo
+	}
+	option = {
+		name = TR_japan.118.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -100
+		add_stability = -0.1
+	}
+}
+
 #1936年衆議院選挙
 country_event = {
 	id = TR_japan.2
@@ -48,6 +695,8 @@ country_event = {
         set_country_flag = JAP_1936SENKYO
         set_country_flag = JAP_MINSEITO
         hidden_effect = {
+			complete_national_focus = JAP_SHUGIIN
+			complete_national_focus = JAP_MINSEITO_WIN
 			add_ideas = JAP_machida_chuji
 			add_ideas = JAP_Shigemitsu_Mamoru
 			add_ideas = JAP_Inoue_junnosuke
@@ -76,6 +725,8 @@ country_event = {
                 set_country_flag = JAP_1936SENKYO
                 set_country_flag = JAP_SEIYUKAI
         hidden_effect = {
+			complete_national_focus = JAP_SHUGIIN
+			complete_national_focus = JAP_SEIYUKAI_WIN
 			add_ideas = JAP_Suzuki_Kisaburo
 			add_ideas = JAP_Mori_Kaku
 			add_ideas = JAP_Takahashi_Korekiyo
@@ -104,6 +755,8 @@ country_event = {
         set_country_flag = JAP_1936SENKYO
         set_country_flag = JAP_KAKUSHINTO
 		hidden_effect = {
+			complete_national_focus = JAP_SHUGIIN
+			complete_national_focus = JAP_KAKUSHINTO_WIN
 			add_ideas = JAP_Inukai_Tsuyoshi
 			add_ideas = JAP_Yoshizawa_Kenkichi
 			add_ideas = JAP_Hoshishima_Nirou
@@ -127,6 +780,8 @@ country_event = {
         set_country_flag = JAP_1936SENKYO
         set_country_flag = JAP_TAISHUTO
 		hidden_effect = {
+			complete_national_focus = JAP_SHUGIIN
+			complete_national_focus = JAP_TAISHUTO_WIN
 			add_ideas = JAP_Abe_Iso
 			add_ideas = JAP_Shigemitsu_Mamoru
 			add_ideas = JAP_Mizutani_Chozaburou
@@ -151,8 +806,11 @@ country_event = {
 		ai_chance = {
 			base = 25
 		}
-        modify_country_flag = { flag = JAP_Political_Distrust_flag value = 2 }
 		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.05
+		}
         add_popularity = {
 			ideology = authoritarian_democrat
 			popularity = 0.5
@@ -161,14 +819,14 @@ country_event = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = yes
 		}
-                set_party_name = {
+        set_party_name = {
 			ideology = authoritarian_democrat
 			long_name = JAP_KYOKOKUITTI_long
 			name = JAP_KYOKOKUITTI_a
 		}
-                set_country_flag = JAP_KYOKOKUITTITAISEI
-            
-                hidden_effect = {
+        set_country_flag = JAP_KYOKOKUITTITAISEI
+        hidden_effect = {
+			complete_national_focus = JAP_KYOKOKUITTI
 			country_event = {
 					id = TR_japan.4
 					days = 1
@@ -182,8 +840,11 @@ country_event = {
 		ai_chance = {
 			base = 75
 		}
-        modify_country_flag = { flag = JAP_Political_Distrust_flag value = -2 }
 		custom_effect_tooltip = JAP_Political_Distrust_flag_down
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = 0.05
+		}
         }
 }
 #挙国一致内閣の首相
@@ -202,12 +863,16 @@ country_event = {
 		ai_chance = {
 		    base = 50
 			modifier = {
-				factor = 2
-				has_government = social_conservative
+				factor = 0
+				has_country_flag = JAP_MINSEITO
 			}
 		}
         effect_tooltip = { retire_country_leader = yes }
-		promote_character = JAP_Suzuki_Kisaburo_2
+		JAP_Suzuki_Kisaburo = {
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
         hidden_effect = {
 			add_ideas = JAP_Suzuki_Kisaburo
 		}
@@ -217,12 +882,16 @@ country_event = {
 		ai_chance = {
 		    base = 50
 			modifier = {
-				factor = 2
-				has_government = market_liberal
+				factor = 0
+				has_country_flag = JAP_SEIYUKAI
 			}
 		}
         effect_tooltip = { retire_country_leader = yes }
-		promote_character = JAP_machida_chuji_2
+		JAP_machida_chuji = {
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
         hidden_effect = {
             add_ideas = JAP_machida_chuji
 		}
@@ -231,227 +900,30 @@ country_event = {
 		
 }
 
-#革命
-country_event = {
-	id = TR_japan.5
-	title = TR_japan.5.t
-	desc = TR_japan.5.d
-	picture = GFX_report_event_gathering_protest
-        fire_only_once = yes
-	is_triggered_only = yes
 
-
-	option = { 	
-		name = TR_japan.5.a
-                set_country_flag = JAP_KAKUMEI_1
-                add_stability = -0.1
-                add_popularity = {
-			ideology = totalist
-			popularity = 0.05
-		}
-                add_popularity = {
-			ideology = radical_socialist
-			popularity = 0.05
-		}
-                add_popularity = {
-			ideology = syndicalist
-			popularity = 0.05
-		}
-                 hidden_effect = {
-			country_event = {
-					id = TR_japan.6
-					days = 3
-					
-				}
-                         country_event = {
-					id = TR_news.1
-					days = 5
-					
-				}
-		}
-	}
-
-	
-}
-#革命鎮圧
-country_event = {
-	id = TR_japan.6
-	title = TR_japan.6.t
-	desc = TR_japan.6.d
-	picture = GFX_report_event_japanese_soldiers_02
-
-	is_triggered_only = yes
-
-	
-	
-
-	option = {
-		name = TR_japan.6.a
-                ai_chance = {
-			base = 80
-		}
-                 set_country_flag = JAP_KAIGEN
-                 add_ideas = JAP_KAIGENREI
-                add_popularity = {
-			ideology = totalist
-			popularity = -0.03
-		}
-                add_popularity = {
-			ideology = radical_socialist
-			popularity = -0.03
-		}
-                add_popularity = {
-			ideology = syndicalist
-			popularity = -0.03
-		}
-                 hidden_effect = {
-			country_event = {
-					id = TR_japan.7
-					days = 35
-					
-				}
-		}
-	}
-	option = {
-		name = TR_japan.6.b
-		trigger = {
-			has_government = social_democrat
-		}
-                ai_chance = {
-			base = 120
-		}
-                set_country_flag = JAP_KAKUMEI_SEIKO
-                add_popularity = {
-			ideology = social_democrat
-			popularity = 0.05
-		}
-                add_popularity = {
-			ideology = totalist
-			popularity = 0.02
-		}
-                add_popularity = {
-			ideology = radical_socialist
-			popularity = 0.02
-		}
-                add_popularity = {
-			ideology = syndicalist
-			popularity = 0.02
-		}
-	}
-        #option = {
-	#	name = TR_japan.6.c
-        #        ai_chance = {
-	#		base = 0
-	#	}
-        #        set_country_flag = JAP_KAKUMEI_SEIKO
-        #        add_popularity = {
-	#		ideology = totalist
-	#		popularity = 0.2
-	#	}
-        #        add_popularity = {
-	#		ideology = radical_socialist
-	#		popularity = 0.2
-	#	}
-        #        add_popularity = {
-	#		ideology = syndicalist
-	#		popularity = 0.2
-	#	}
-	#	set_politics = {
-	#		ruling_party = radical_socialist
-	#		elections_allowed = no
-	#	}
-        #
-	#}
-
-	
-}
-
-#戒厳令
-country_event = {
-	id = TR_japan.7
-	title = TR_japan.7.t
-	desc = TR_japan.7.d
-	picture = GFX_report_event_japanese_transport_soldiers
-
-	is_triggered_only = yes
-
-	
-	
-
-	option = {
-		name = TR_japan.7.a
-                ai_chance = {
-			base = 100
-		}
-                 set_country_flag = JAP_KAIGEN_TEPPAI
-                 remove_ideas = JAP_KAIGENREI
-                add_popularity = {
-			ideology = social_conservative
-			popularity = 0.03
-		}
-                add_popularity = {
-			ideology = market_liberal
-			popularity = 0.03
-		}
-                add_popularity = {
-			ideology = social_liberal
-			popularity = 0.03
-		}
-                add_popularity = {
-			ideology = social_democrat
-			popularity = 0.03
-		}
-                   hidden_effect = {
-                         country_event = {
-					id = TR_news.3
-					days = 5
-					
-				}
-		}
-                 
-	}
-        option = {
-		name = TR_japan.7.b
-                ai_chance = {
-			base = 20
-		}
-               set_country_flag = JAP_KAIGEN_KEIZOKU
-                
-                  
-	}
-
-	
-}
 #日米開戦
 country_event = {
 	id = TR_japan.8
 	title = TR_japan.8.t
 	desc = TR_japan.8.d
 	picture = GFX_report_event_japanese_soldiers_01
-        fire_only_once = yes
+    fire_only_once = yes
 	trigger = {
 		tag = JAP
 		has_war_with = USA
 		
 	}
 
-	
-	
-
 	option = {
 		name = TR_japan.8.a
-                   remove_ideas = JAP_ugaki_gunshuku
-                   hidden_effect = {
-                         country_event = {
-					id = TR_news.10
-					days = 3
-					
-				}
-		}
-                 
+        remove_ideas = JAP_ugaki_gunshuku
+        hidden_effect = {
+            country_event = {
+				id = TR_news.10
+				days = 3
+			}
+		}            
 	}
-
-	
 }
 #東北飢饉
 country_event = {
@@ -469,10 +941,16 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		modify_country_flag = { flag = JAP_Political_Distrust_flag value = 4 }
+		add_political_power = -50
 		custom_effect_tooltip = JAP_Political_Distrust_flag_up
-		add_ideas = JAP_Tohoku_Famine
-        add_political_power = -50
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.1
+		}
+		swap_ideas = {
+			remove_idea = JAP_Dried_out_countryside
+			add_idea = JAP_Dried_out_countryside_Tohoku_Famine
+		}	
 		533 = {
 			add_manpower = -200
 			}
@@ -484,6 +962,7 @@ country_event = {
 			}
 			hidden_effect = {
 				country_event = { id = TR_japan.10 days = 240 }
+				country_event = { id = TR_japan.108 days = 5 }
 			}
 		
 	}
@@ -493,9 +972,23 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		modify_country_flag = { flag = JAP_Political_Distrust_flag value = 8 }
 		custom_effect_tooltip = JAP_Political_Distrust_flag_up
-		add_ideas = JAP_Tohoku_Famine
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.2
+		}
+		swap_ideas = {
+			remove_idea = JAP_Dried_out_countryside
+			add_idea = JAP_Dried_out_countryside_Tohoku_Famine
+		}	
+		add_popularity = {
+			ideology = natinal_populist_drift
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.03
+		}
 		533 = {
 			add_manpower = -1000
 			}
@@ -507,6 +1000,7 @@ country_event = {
 			}
 		hidden_effect = {
 		    country_event = { id = TR_japan.10 days = 360 }
+			country_event = { id = TR_japan.108 days = 5 }
 	    }
 	}
 }
@@ -524,9 +1018,16 @@ country_event = {
 	
 	option = {
 		name = TR_japan.10.a
-        remove_ideas = JAP_Tohoku_Famine
-		modify_country_flag = { flag = JAP_Political_Distrust_flag value = -2 }
+		swap_ideas = {
+			remove_idea = JAP_Dried_out_countryside_Tohoku_Famine
+			add_idea = JAP_Dried_out_countryside
+		}	
 		custom_effect_tooltip = JAP_Political_Distrust_flag_down
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = 0.05
+		}
+		set_country_flag = JAP_fammine_finish
 	}
 }
 
@@ -550,7 +1051,7 @@ country_event = {#オスマンが同盟を提案
             is_faction_leader = yes
 		}
         JAP = {
-            add_to_faction = OTT
+            add_to_faction = TUR
         }
 	}
     option = { 
@@ -1227,9 +1728,10 @@ country_event = {
 			ruling_party = market_liberal
 			elections_allowed = yes
 		}
-                set_country_flag = JAP_1940SENKYO
-                set_country_flag = JAP_MINSEITO_1940
+        set_country_flag = JAP_1940SENKYO
+        set_country_flag = JAP_MINSEITO_1940
         hidden_effect = {
+			complete_national_focus = JAP_1940SENKYO
 			add_ideas = JAP_machida_chuji
 			add_ideas = JAP_Shigemitsu_Mamoru
 			add_ideas = JAP_Katsu_Masanori
@@ -1257,9 +1759,10 @@ country_event = {
 			ruling_party = social_conservative
 			elections_allowed = yes
 		}
-                set_country_flag = JAP_1940SENKYO
-                set_country_flag = JAP_SEIYUKAI_1940
+        set_country_flag = JAP_1940SENKYO
+        set_country_flag = JAP_SEIYUKAI_1940
         hidden_effect = {
+			complete_national_focus = JAP_1940SENKYO
 			add_ideas = JAP_Kuhara_Fusanosuke
 			add_ideas = JAP_Mori_Kaku
 			add_ideas = JAP_Ikeda_Shigeaki
@@ -1290,6 +1793,7 @@ country_event = {
         set_country_flag = JAP_1940SENKYO
         set_country_flag = JAP_KAKUSHINTO_1940
 		hidden_effect = {
+			complete_national_focus = JAP_1940SENKYO
 			add_ideas = JAP_Nakano_Seigo
 			add_ideas = JAP_Yoshizawa_Kenkichi
 			add_ideas = JAP_Kiyose_Ichiro
@@ -1320,6 +1824,7 @@ country_event = {
         set_country_flag = JAP_1940SENKYO
         set_country_flag = JAP_TAISHUTO_1940
 		hidden_effect = {
+			complete_national_focus = JAP_1940SENKYO
 			add_ideas = JAP_Katayama_Tetsu
 			add_ideas = JAP_Suzuki_Bunji
 			add_ideas = JAP_Katou_Kanzyu
@@ -1346,7 +1851,14 @@ country_event = {
 	option = {#大連立
 		name = TR_japan.32.a
 		hidden_effect = { 
-		    promote_character = JAP_Hatoyama_Ichiro_2
+		    JAP_Hatoyama_Ichiro = {
+			    promote_character = {
+			        Ideology = liberal_conservative_subtype
+			    }
+				promote_character = {
+					Ideology = national_coalition_subtype
+				}
+		    }
 	    }
         add_popularity = {
 			ideology =authoritarian_democrat
@@ -1363,7 +1875,6 @@ country_event = {
 			add_ideas = JAP_Yoshida_Shigeru
 			add_ideas = JAP_Kono_Ichiro
 			add_ideas = JAP_Miki_Bukichi
-			promote_character = JAP_Hatoyama_Ichiro
 			promote_character = JAP_Nakano_Seigo
 			promote_character = JAP_Katayama_Tetsu
 		}
@@ -1404,7 +1915,7 @@ country_event = {
 		set_country_flag = JAP_End_Power_Struggle
 		complete_national_focus = JAP_Power_Struggle_14
 		promote_character = JAP_Hideki_Tojo_2
-                retire_character = JAP_Nagata_Tetsuzan_corp
+        retire_character = JAP_Nagata_Tetsuzan_corp
 		retire_character = JAP_Hideki_Tojo
     }
 	option = {#
@@ -1470,7 +1981,7 @@ country_event = {
 	id = TR_japan.36
 	title = TR_japan.36.t
 	desc = TR_japan.36.d
-	picture = GFX_report_event_RUS_negotiations_japan_rodzaevsky
+	picture = GFX_report_event_SOV_negotiations_japan_rodzaevsky
         fire_only_once = yes
 	trigger = {
 		tag = JAP
@@ -2167,118 +2678,6 @@ country_event = {
 	    set_country_flag = JAP_Prime_Minister_Kita
 	}
 }
-#政治信頼度の低下
-country_event = {
-	id = TR_japan.56
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_japan.56 FROM = [From.GetName]" }
-	title = TR_japan.56.t
-	desc = TR_japan.56.d
-	picture = GFX_report_event_japanese_soldiers_02
-    trigger = {
-        tag = JAP
-		has_country_flag = {
-			flag = JAP_Political_Distrust_flag
-			value > 19
-		}
-	}
-
-	option = {#なんてこった！
-	    name = TR_japan.56.a	
-		set_country_flag = { flag = JAP_Political_Distrust_flag value = 10 }
-		if = {
-			limit = {
-				has_idea = JAP_Political_Distrust_3
-			}
-			swap_ideas = {
-				remove_idea = JAP_Political_Distrust_3
-				add_idea = JAP_Political_Distrust_4
-			}
-		}
-		if = {
-			limit = {
-				has_idea = JAP_Political_Distrust_2
-			}
-			swap_ideas = {
-				remove_idea = JAP_Political_Distrust_2
-				add_idea = JAP_Political_Distrust_3
-			}
-		}
-		if = {
-			limit = {
-				has_idea = JAP_Political_Distrust_1
-			}
-			swap_ideas = {
-				remove_idea = JAP_Political_Distrust_1
-				add_idea = JAP_Political_Distrust_2
-			}
-		}
-		if = {
-			limit = {
-				has_idea = JAP_Political_Distrust
-			}
-			swap_ideas = {
-				remove_idea = JAP_Political_Distrust
-				add_idea = JAP_Political_Distrust_1
-			}
-		}
-	}
-}
-#政治信頼度の上昇
-country_event = {
-	id = TR_japan.57
-	immediate = { log = "[GetDateText]: [Root.GetName]: event TR_japan.57 FROM = [From.GetName]" }
-	title = TR_japan.57.t
-	desc = TR_japan.57.d
-	picture = GFX_report_event_japanese_soldiers_02
-    trigger = {
-        tag = JAP
-		has_country_flag = {
-			flag = JAP_Political_Distrust_flag
-			value < 1
-		}
-	}
-	
-	option = {#なんてこった！
-	    name = TR_japan.57.a
-		set_country_flag = { flag = JAP_Political_Distrust_flag value = 10 }
-		if = {
-			limit = {
-				has_idea = JAP_Political_Distrust_1
-			}
-			swap_ideas = {
-				remove_idea = JAP_Political_Distrust_1
-				add_idea = JAP_Political_Distrust
-			}
-		}
-		if = {
-			limit = {
-				has_idea = JAP_Political_Distrust_2
-			}
-			swap_ideas = {
-				remove_idea = JAP_Political_Distrust_2
-				add_idea = JAP_Political_Distrust_1
-			}
-		}
-		if = {
-			limit = {
-				has_idea = JAP_Political_Distrust_3
-			}
-			swap_ideas = {
-				remove_idea = JAP_Political_Distrust_3
-				add_idea = JAP_Political_Distrust_2
-			}
-		}
-		if = {
-			limit = {
-				has_idea = JAP_Political_Distrust_4
-			}
-			swap_ideas = {
-				remove_idea = JAP_Political_Distrust_4
-				add_idea = JAP_Political_Distrust_3
-			}
-		}
-	}
-}
 #昭和研究会の発足
 country_event = {
 	id = TR_japan.58
@@ -2295,8 +2694,11 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
-		modify_country_flag = { flag = JAP_Political_Distrust_flag value = 2 }
 		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.05
+		}
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.02
@@ -2308,8 +2710,11 @@ country_event = {
 		ai_chance = {
 			base = 50
 		}
-		modify_country_flag = { flag = JAP_Political_Distrust_flag value = 2 }
 		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.05
+		}
 		add_popularity = {
 			ideology = national_populist
 			popularity = 0.02

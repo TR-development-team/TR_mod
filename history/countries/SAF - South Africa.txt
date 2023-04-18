@@ -61,7 +61,6 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 
 	add_to_tech_sharing_group = commonwealth_research
-	add_opinion_modifier = { target = GBR modifier = SAF_anti_british_sentiment }
 }
 
 set_convoys = 25

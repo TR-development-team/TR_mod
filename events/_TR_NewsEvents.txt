@@ -1406,9 +1406,11 @@ news_event = {
 
 	option = {
 		name = TR_news.57.a
-		NOT = {
-			OR = { TAG = RAT TAG = FRA }
-		}
+		trigger = {
+		    NOT = {
+			    OR = { TAG = RAT TAG = FRA }
+		    }
+	    }
     }
 	option = {
 		name = TR_news.57.b

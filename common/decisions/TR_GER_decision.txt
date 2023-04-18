@@ -21,10 +21,10 @@ GER_integrate_policy = {
 				153 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				929 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				945 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                                978 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                                986 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                                987 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                                990 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+                978 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+                986 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+                987 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+                990 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
@@ -51,6 +51,14 @@ GER_integrate_policy = {
 			political_power_gain = -0.5
 		}
 		days_remove = 200
+		complete_effect = {
+			every_state = {
+				limit = {
+					is_core_austria = yes
+				}
+				add_claim_by = RAT
+			}
+		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_AUS_province"
 			4 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
@@ -58,10 +66,10 @@ GER_integrate_policy = {
 			153 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			929 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			945 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-                        978 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-                        986 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-                        987 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-                        990 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+            978 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+            986 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+            987 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+            990 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 
 		}
 		ai_will_do = {
@@ -82,12 +90,14 @@ GER_integrate_policy = {
 			OR = {
 				tag = PRE
 				tag = GER
-				tag = RAT
+				AND = { tag = RAT has_country_flag = RAT_Greater_germany }
 			}
 			OR = {
 				69 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				74 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				840 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				976 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				977 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				994 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
@@ -103,18 +113,25 @@ GER_integrate_policy = {
 		cost = 90
 		fire_only_once = yes
 		modifier = {
-                        consumer_goods_factor = 0.05
-                        MONTHLY_POPULATION = -0.1
+            consumer_goods_factor = 0.05
+            MONTHLY_POPULATION = -0.1
 			political_power_gain = -0.25
 		}
 		days_remove = 150
+		complete_effect = {
+			add_state_claim = 69
+			add_state_claim = 74
+			add_state_claim = 976
+			add_state_claim = 977
+			add_state_claim = 994
+		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Sudetenland_province"
 			69 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			74 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			976 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-                        977 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-                        994 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+            977 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+            994 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
 			factor = 50
@@ -154,6 +171,9 @@ GER_integrate_policy = {
 			political_power_gain = -0.25
 		}
 		days_remove = 100
+		complete_effect = {
+			add_state_claim = 8
+		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_LUX_province"
 			8 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
@@ -176,15 +196,17 @@ GER_integrate_policy = {
 			OR = {
 				tag = PRE
 				tag = GER
-				tag = RAT
+				AND = { tag = RAT has_country_flag = RAT_Greater_germany }
 			}
 			OR = {
-				8 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				3 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				151 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
 			has_full_control_of_state = 3
-                        has_full_control_of_state = 151
+            has_full_control_of_state = 151
+			
 		}
 		highlight_states = {
 			highlight_state_targets = { state = 3 state = 151 }
@@ -192,9 +214,13 @@ GER_integrate_policy = {
 		cost = 100
 		fire_only_once = yes
 		modifier = {
-                        consumer_goods_factor = 0.1
-                        MONTHLY_POPULATION = -0.1
+            consumer_goods_factor = 0.1
+            MONTHLY_POPULATION = -0.1
 			political_power_gain = -0.25
+		}
+		complete_effect = {
+			add_state_claim = 3
+			add_state_claim = 151
 		}
 		days_remove = 200
 		remove_effect = {
@@ -213,8 +239,7 @@ annexation_decisions = {
 		selectable_mission = yes
 		is_good = no
         visible = {
-			tag = GER
-				tag = RAT
+			tag = RAT
 			FRA = { exists = no }
 		}
 		available = {

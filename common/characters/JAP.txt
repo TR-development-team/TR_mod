@@ -88,6 +88,10 @@ characters={
                         desc = "POLITICS_MACHIDA_CHUJI_DESC"
 			ideology=parliamentarism_subtype
 		}
+		country_leader={
+                        desc = "POLITICS_MACHIDA_CHUJI_DESC"
+			ideology=national_coalition_subtype
+		}
 	}
 	JAP_Suzuki_Kisaburo={
 		name=JAP_Suzuki_Kisaburo
@@ -98,6 +102,9 @@ characters={
 		}
 		country_leader={
 			ideology=Royal_Centerism_subtype
+		}
+		country_leader={
+			ideology=national_coalition_subtype
 		}
 	}
 	JAP_Kuhara_Fusanosuke={
@@ -121,6 +128,9 @@ characters={
 		country_leader={
 			ideology=liberal_conservative_subtype
 		}
+		country_leader={
+			ideology=national_coalition_subtype
+		}
 	}
 	JAP_Tokonami_Takejiro={
 		name=JAP_Tokonami_Takejiro
@@ -130,30 +140,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=authoritarian_democrat_subtype
-		}
-	}
-	JAP_Suzuki_Kisaburo_2={
-		name=JAP_Suzuki_Kisaburo
-		portraits={
-			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_suzukikisa.png"
-			}
-		}
-		country_leader={
-			ideology=national_coalition_subtype
-		}
-	}
-	JAP_machida_chuji_2={
-		name=JAP_machida_chuji
-		portraits={
-			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_machida.png"
-			}
-		}
-		country_leader={
-                        desc = "POLITICS_MACHIDA_CHUJI_DESC"
-			ideology=national_coalition_subtype
+			ideology=prussian_constitutionalism_subtype
 		}
 	}
 	JAP_Daihonei={
@@ -165,25 +152,34 @@ characters={
 		}
 		country_leader={
 			ideology=prussian_constitutionalism_subtype
-                        traits={ Power_struggle }
+            traits={ Power_struggle }
 		}
 	}
-	JAP_Hatoyama_Ichiro_2={
-		name=JAP_Hatoyama_Ichiro
+	JAP_Ugaki_Kazushige={
+		name=JAP_Ugaki_Kazushige
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Hatoyama_Ichiro.png"
+				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.png"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.png"
 			}
 		}
 		country_leader={
 			ideology=national_coalition_subtype
 		}
+		country_leader={
+			ideology=militarism_subtype
+		}
 	}
-	JAP_Ugaki_Kazushige_2={
-		name=JAP_Ugaki_Kazushige
+	JAP_Okada_Keisuke={
+		name=JAP_Okada_Keisuke
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.png"
+				large="gfx/leaders/JAP/Portrait_JAP_Keisuke_Okada.png"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Keisuke_Okada.png"
 			}
 		}
 		country_leader={
@@ -212,17 +208,7 @@ characters={
 			ideology=militarism_subtype
 		}
 	}
-	JAP_Ugaki_Kazushige={
-		name=JAP_Ugaki_Kazushige
-		portraits={
-			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_ugakikazu.png"
-			}
-		}
-		country_leader={
-			ideology=militarism_subtype
-		}
-	}
+
 	JAP_Araki_Sadao={
 		name=JAP_Araki_Sadao
 		portraits={

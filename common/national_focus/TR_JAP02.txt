@@ -483,8 +483,14 @@ focus_tree = {
 				add_ideas = JAP_Ugaki_Kazushige_cos
 				add_ideas = JAP_Nagata_Tetsuzan_coa
 				add_ideas = JAP_Hideki_Tojo_cair
-				promote_character = JAP_Ugaki_Kazushige
-				promote_character = JAP_Ugaki_Kazushige_2
+				JAP_Ugaki_Kazushige = {
+					promote_character = {
+					    Ideology = national_coalition_subtype
+					}
+					promote_character = {
+					    Ideology = militarism_subtype
+					}
+				}
 				}
 		}
 	}

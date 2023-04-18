@@ -4590,18 +4590,6 @@ transfer_technology_without_doctrines = {
 		}
 		if = {
 			limit = {
-				PREV = { has_tech = improved_cruiser_armor_scheme }
-			}
-			set_technology = { improved_cruiser_armor_scheme = 1 popup = no }
-		}
-		if = {
-			limit = {
-				PREV = { has_tech = advanced_cruiser_armor_scheme }
-			}
-			set_technology = { advanced_cruiser_armor_scheme = 1 popup = no }
-		}
-		if = {
-			limit = {
 				PREV = { has_tech = early_ship_hull_heavy }
 			}
 			set_technology = { early_ship_hull_heavy = 1 popup = no }

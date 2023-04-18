@@ -52,7 +52,14 @@ JAP_Military_reform_Policy = {#民主ルート軍部改革
 	allowed = {
 		original_tag = JAP
 	}
-}  
+} 
+JAP_political_reform_Policy = {#民主ルート政治改革
+	icon = generic_political_actions
+
+	allowed = {
+		original_tag = JAP
+	}
+}   
 JAP_election_manifesto_Policy = {#民主ルート政権公約実行
 	icon = generic_political_actions
 
@@ -60,3 +67,12 @@ JAP_election_manifesto_Policy = {#民主ルート政権公約実行
 		original_tag = JAP
 	}
 }  
+JAP_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	allowed = {
+		original_tag = JAP
+	}
+	priority = 90
+	visible = {
+	}
+}

@@ -76,6 +76,7 @@ GBR_civil_war_start = {
 set_BRITANNIA_union = {
 	set_cosmetic_tag = BRITANNIA_socialist_republics_union
 	set_country_flag = GBR_revolutionary_faction_flag
+        load_focus_tree = ENR_focus
 	set_politics = {
 		ruling_party = totalist
 		last_election = "1935.11.14"

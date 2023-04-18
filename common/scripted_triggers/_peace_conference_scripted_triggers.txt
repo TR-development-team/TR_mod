@@ -1202,40 +1202,13 @@ rule_dont_take_land_other_continents_PREV = {
 	}
 }
 
-is_mainland_china = {	#エラー除去
-	always = no
-}
 is_mainland_america = {	#エラー除去
-	always = no
-}
-is_in_asia = {	#エラー除去
 	always = no
 }
 is_southeast_asia = {	#エラー除去
 	always = no
 }
 is_in_middle_east = {	#エラー除去
-	always = no
-}
-is_in_europe = {	#エラー除去
-	always = no
-}
-is_in_africa = {	#エラー除去
-	always = no
-}
-is_in_north_america = {	#エラー除去
-	always = no
-}
-is_in_south_america = {	#エラー除去
-	always = no
-}
-is_in_australia = {	#エラー除去
-	always = no
-}
-is_island_region = {	#エラー除去
-	always = no
-}
-is_full_germany = {	#エラー除去
 	always = no
 }
 is_french_colonial_claim = {	#エラー除去

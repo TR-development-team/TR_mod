@@ -25,25 +25,5 @@ set_politics = {
 set_popularities = {
 	paternal_autocrat = 100
 }
+recruit_character = SKT_Siddiq_Abubakar_III
 
-create_country_leader = {
-	name = "スィッディーク アブバカル2世"
-	
-	picture = "gfx/leaders/Africa/SiddiqAbubakarIII.tga"
-	expire = "1960.1.1"
-	ideology = paternal_autocrat_subtype
-	traits = {
-		
-	}
-}
-
-create_field_marshal = {
-	name = "スィッディーク アブバカル2世"
-	portrait_path = "gfx/leaders/Africa/SiddiqAbubakarIII.tga"
-	traits = { offensive_doctrine politically_connected }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
-}

@@ -131,51 +131,52 @@ WHN_militaly_reform = {
 
 		visible = {
 			OR = {
-				has_idea = CHI_late_army
-				has_idea = CHI_late_army_1
-				has_idea = CHI_late_army_2
-                                has_idea = CHI_late_army_3
+				has_idea = WHN_late_army
+				has_idea = WHN_late_army_1
+				has_idea = WHN_late_army_2
+                has_idea = WHN_late_army_3
 			}
 		}
 		remove_effect = {
 			if = {
-				limit = { has_idea = CHI_late_army }
+				limit = { has_idea = WHN_late_army }
 				swap_ideas = {
-					remove_idea = CHI_late_army
-					add_idea = CHI_late_army_1
+					remove_idea = WHN_late_army
+					add_idea = WHN_late_army_1
 				}
 			}
 			else_if = {
-				limit = { has_idea = CHI_late_army_1 }
+				limit = { has_idea = WHN_late_army_1 }
 				swap_ideas = {
-					remove_idea = CHI_late_army_1
-					add_idea = CHI_late_army_2
+					remove_idea = WHN_late_army_1
+					add_idea = WHN_late_army_2
 				}
 			}
 			else_if = {
-				limit = { has_idea = CHI_late_army_2 }
+				limit = { has_idea = WHN_late_army_2 }
 				swap_ideas = {
-					remove_idea = CHI_late_army_2
-					add_idea = CHI_late_army_3
+					remove_idea = WHN_late_army_2
+					add_idea = WHN_late_army_3
 				}
 			}
 			else_if = {
-				limit = { has_idea = CHI_late_army_3 }
-				remove_ideas = CHI_late_army_3
+				limit = { has_idea = WHN_late_army_3 }
+				remove_ideas = WHN_late_army_3
 			}
 		}
 		complete_effect = {
 			army_experience = -125					
 		}		
 	}
-	CHI_foreign_advisory_group_GER = {
+	WHN_foreign_advisory_group_RAT = {
 
 		icon = generic_prepare_civil_war
 
         allowed = { can_become_china = yes } 
 		available = {
-                        has_country_flag = foreign_advisory_group_allowed
-                        has_socialist_government = yes
+            has_country_flag = foreign_advisory_group_allowed
+            has_socialist_government = yes
+			NOT = { has_country_flag = japanese_support_government }
 		}
 		visible = {
                         NOT = { has_idea = foreign_advisory_group }
@@ -213,7 +214,7 @@ WHN_militaly_reform = {
 			}
 		}		
 	}
-	CHI_foreign_advisory_group_USA = {
+	WHN_foreign_advisory_group_USA = {
 
 		icon = generic_prepare_civil_war
 
@@ -221,6 +222,7 @@ WHN_militaly_reform = {
 		available = {
 			has_country_flag = foreign_advisory_group_allowed 
             has_socialist_government = no
+			NOT = { has_country_flag = japanese_support_government }
 		}
 		visible = {
             NOT = { has_idea = foreign_advisory_group }
@@ -258,7 +260,7 @@ WHN_militaly_reform = {
 			}
 		}		
 	}
-	CHI_foreign_advisory_group_FRA = {
+	WHN_foreign_advisory_group_FRA = {
 
 		icon = generic_prepare_civil_war
 
@@ -266,6 +268,7 @@ WHN_militaly_reform = {
 		available = {
             has_country_flag = foreign_advisory_group_allowed 
             has_authoritarian_government = yes
+			NOT = { has_country_flag = japanese_support_government }
 		}
 		visible = {
             NOT = { has_idea = foreign_advisory_group }
@@ -303,7 +306,7 @@ WHN_militaly_reform = {
 			}
 		}		
 	}
-	CHI_foreign_advisory_group_JAP = {
+	WHN_foreign_advisory_group_JAP = {
 
 		icon = generic_prepare_civil_war
 
@@ -348,7 +351,7 @@ WHN_militaly_reform = {
 			}
 		}		
 	}
-	CHI_Weapon_purchase_infantry_equipment_canton = {
+	WHN_Weapon_purchase_infantry_equipment_canton = {
 
 		icon = generic_prepare_civil_war
 
