@@ -5,13 +5,22 @@ set_cosmetic_tag = XIB_military_clique
 
 complete_national_focus = XIB_Diplomatic_focus_1
 # Starting tech
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	else = {
+		set_technology = {
+			early_fighter = 1
+			early_bomber = 1
+		}
+	}
+}
 set_technology = {
 	infantry_weapons = 1
+	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	early_bomber = 1
 	mass_assault = 1
 	fleet_in_being = 1
+	basic_train = 1
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }

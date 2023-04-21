@@ -673,8 +673,8 @@ focus_tree = {
 		relative_position_id = SOV_focus_1
 		available = {
 			has_global_flag = Soviet_Win_flag
-			has_country_flag = RUS_Congress_END
-			NOT = { country_exists = RUS }
+			has_country_flag = SOV_Congress_END
+			NOT = { country_exists = SOV }
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -714,7 +714,7 @@ focus_tree = {
 		relative_position_id = SOV_focus_1
 		available = {
 			NOT = { 
-				   has_country_flag = RUS_Stalin_Win
+				   has_country_flag = SOV_Stalin_Win
 					}
 			   }
 		search_filters = {
@@ -737,7 +737,7 @@ focus_tree = {
 		cost = 8
 		available = {
 			NOT = { 
-				   has_country_flag = RUS_Bukharin_Win
+				   has_country_flag = SOV_Bukharin_Win
 					}
 			   }
 		prerequisite = { focus = SOV_Economy_focus_2 }
@@ -1286,13 +1286,13 @@ focus_tree = {
 	#党大会
 	focus = {
 		id = SOV_dangdahui
-		icon = GFX_focus_RUS_the_path_of_marxism_leninism
+		icon = GFX_focus_SOV_the_path_of_marxism_leninism
 		x = 20
 		y = 5
 		cost = 8
 		available = {
                 has_global_flag = Soviet_Win_flag
-                NOT = { country_exists = RUS }
+                NOT = { country_exists = SOV }
                 }
 		search_filters = {
 			FOCUS_FILTER_USA_CONGRESS
@@ -1310,7 +1310,7 @@ focus_tree = {
 		y = 6
 		cost = 2
 		available = {
-			has_country_flag = RUS_Stalin_Win
+			has_country_flag = SOV_Stalin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1333,7 +1333,7 @@ focus_tree = {
 		y = 7
 		cost = 15
 		available = {
-			has_country_flag = RUS_Stalin_Win
+			has_country_flag = SOV_Stalin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1355,7 +1355,7 @@ focus_tree = {
 		y = 8
 		cost = 10
 		available = {
-			has_country_flag = RUS_Stalin_Win
+			has_country_flag = SOV_Stalin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1378,7 +1378,7 @@ focus_tree = {
 		y = 9
 		cost = 10
 		available = {
-			has_country_flag = RUS_Stalin_Win
+			has_country_flag = SOV_Stalin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1401,12 +1401,12 @@ focus_tree = {
 	#スターリン憲法
 	focus = {
 		id = SOV_gangtienovuositi_4
-		icon = GFX_focus_RUS_father_of_nations
+		icon = GFX_focus_SOV_father_of_nations
 		x = 21
 		y = 10
 		cost = 10
 		available = {
-			has_country_flag = RUS_Stalin_Win
+			has_country_flag = SOV_Stalin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1421,12 +1421,12 @@ focus_tree = {
 	#赤いツァーリ
 	focus = {
 		id = SOV_gangtienovuositi_5
-		icon = GFX_focus_RUS_stalins_cult_of_personality
+		icon = GFX_focus_SOV_stalins_cult_of_personality
 		x = 21
 		y = 11
 		cost = 10
 		available = {
-			has_country_flag = RUS_Stalin_Win
+			has_country_flag = SOV_Stalin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1446,7 +1446,7 @@ focus_tree = {
 		y = 6
 		cost = 2
 		available = {
-			has_country_flag = RUS_Bogdanov_Win
+			has_country_flag = SOV_Bogdanov_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1468,7 +1468,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available = {
-			has_country_flag = RUS_Bogdanov_Win
+			has_country_flag = SOV_Bogdanov_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1491,7 +1491,7 @@ focus_tree = {
 		y = 8
 		cost = 10
 		available = {
-			has_country_flag = RUS_Bogdanov_Win
+			has_country_flag = SOV_Bogdanov_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1510,7 +1510,7 @@ focus_tree = {
 		y = 9
 		cost = 10
 		available = {
-			has_country_flag = RUS_Bogdanov_Win
+			has_country_flag = SOV_Bogdanov_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1529,7 +1529,7 @@ focus_tree = {
 		y = 10
 		cost = 10
 		available = {
-			has_country_flag = RUS_Bogdanov_Win
+			has_country_flag = SOV_Bogdanov_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1548,7 +1548,7 @@ focus_tree = {
 		y = 11
 		cost = 10
 		available = {
-			has_country_flag = RUS_Bogdanov_Win
+			has_country_flag = SOV_Bogdanov_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1566,12 +1566,12 @@ focus_tree = {
 	#農民の友
 	focus = {
 		id = SOV_nongminnoyou
-		icon = GFX_focus_RUS_bukharinists
+		icon = GFX_focus_SOV_bukharinists
 		x = 19
 		y = 6
 		cost = 2
         available = {
-			has_country_flag = RUS_Bukharin_Win
+			has_country_flag = SOV_Bukharin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1593,7 +1593,7 @@ focus_tree = {
 		y = 7
 		cost = 10
         available = {
-			has_country_flag = RUS_Bukharin_Win
+			has_country_flag = SOV_Bukharin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1611,7 +1611,7 @@ focus_tree = {
 		y = 8
 		cost = 10
         available = {
-			has_country_flag = RUS_Bukharin_Win
+			has_country_flag = SOV_Bukharin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1631,7 +1631,7 @@ focus_tree = {
 		y = 9
 		cost = 10
         available = {
-			has_country_flag = RUS_Bukharin_Win
+			has_country_flag = SOV_Bukharin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1651,7 +1651,7 @@ focus_tree = {
 		y = 10
 		cost = 10
         available = {
-			has_country_flag = RUS_Bukharin_Win
+			has_country_flag = SOV_Bukharin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1676,7 +1676,7 @@ focus_tree = {
 		y = 11
 		cost = 10
         available = {
-			has_country_flag = RUS_Bukharin_Win
+			has_country_flag = SOV_Bukharin_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1690,12 +1690,12 @@ focus_tree = {
 	#レーニンに忠実に
 	focus = {
 		id = SOV_reninnohoujizhe
-		icon = GFX_focus_RUS_zinovyevists
+		icon = GFX_focus_SOV_zinovyevists
 		x = 17
 		y = 6
 		cost = 2
 		available = {
-			has_country_flag = RUS_Zinoviev_Win
+			has_country_flag = SOV_Zinoviev_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1717,7 +1717,7 @@ focus_tree = {
 		y = 7
 		cost = 10
 		available = {
-			has_country_flag = RUS_Zinoviev_Win
+			has_country_flag = SOV_Zinoviev_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1739,7 +1739,7 @@ focus_tree = {
 		y = 8
 		cost = 10
 		available = {
-			has_country_flag = RUS_Zinoviev_Win
+			has_country_flag = SOV_Zinoviev_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1758,7 +1758,7 @@ focus_tree = {
 		y = 9
 		cost = 10
 		available = {
-			has_country_flag = RUS_Zinoviev_Win
+			has_country_flag = SOV_Zinoviev_Win
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1781,7 +1781,7 @@ focus_tree = {
 			y = 10
 			cost = 10
 			available = {
-				has_country_flag = RUS_Zinoviev_Win
+				has_country_flag = SOV_Zinoviev_Win
 				}
 			search_filters = {
 				FOCUS_FILTER_POLITICAL
@@ -1804,7 +1804,7 @@ focus_tree = {
 			y = 11
 			cost = 10
 			available = {
-				has_country_flag = RUS_Zinoviev_Win
+				has_country_flag = SOV_Zinoviev_Win
 				}
 			search_filters = {
 				FOCUS_FILTER_POLITICAL
@@ -1822,9 +1822,9 @@ focus_tree = {
 			y = 10
 			cost = 8
 			available = {
-					has_country_flag = RUS_Congress_END
+					has_country_flag = SOV_Congress_END
 					has_global_flag = Soviet_Win_flag
-					NOT = { country_exists = RUS has_idea = GER_CIVILWAR_MARKS }
+					NOT = { country_exists = SOV has_idea = RAT_CIVILWAR_MARKS }
 					}
 			search_filters = {
 				FOCUS_FILTER_POLITICAL
@@ -1861,7 +1861,7 @@ focus_tree = {
 			cost = 8
 			available = {
 				is_subject = no
-				NOT = { has_country_flag = RUS_Bukharin_Win has_country_flag = RUS_Stalin_Win }
+				NOT = { has_country_flag = SOV_Bukharin_Win has_country_flag = SOV_Stalin_Win }
                 is_in_faction = no
 			    threat > 0.8
                 RAT = { 
@@ -2114,13 +2114,13 @@ focus_tree = {
 			prerequisite = { focus = SOV_Diplomacy_focus_8 }
 			completion_reward = {
 				722 = {
-					add_core_of = RUS
+					add_core_of = SOV
 				}
                 147 = {
-					add_core_of = RUS
+					add_core_of = SOV
 				}
                 146 = {
-					add_core_of = RUS
+					add_core_of = SOV
 				}
 			    create_wargoal = {
 				    target = FIN

@@ -1,7 +1,7 @@
 
 add_namespace = TR_central_asia
 
-#アラシュオルダ建国時の軍隊整備
+#アラシュオルダ建国時の整備
 country_event = {
 	id = TR_central_asia.1
 	title = TR_central_asia.1.t
@@ -37,11 +37,12 @@ country_event = {
 		ai_chance = {
 			base = 100
 		}
-		UZB = { 
+		TRK = { 
 			transfer_state = 405
+                        add_state_core = 405
             }
 		hidden_effect = {
-		UZB = {
+		TRK = {
 			country_event = {
 			id = TR_central_asia.4
 			days = 2
@@ -56,18 +57,31 @@ country_event = {
 		ai_chance = {
 			base = 0
 		}
-		UZB = { 
+		TRK = { 
 			change_tag_from = BUK
 			transfer_state = 405
+                        add_state_core = 405
             }
 		hidden_effect = {
-		UZB = {
+		TRK = {
 			country_event = {
 			id = TR_central_asia.4
 			days = 2
 			}
 			inherit_technology = KAZ
             }
+		every_state = {
+			limit = {
+				is_core_of = BUK
+			}
+			add_core_of = TRK
+		}	
+		every_state = {
+			limit = {
+				is_core_of = KAZ
+			}
+			add_core_of = TRK
+		}	
 		}
 	}
 }
@@ -85,10 +99,12 @@ country_event = {
 	
 
     option = { 
-		name = TR_central_asia.2.a
-		UZB = { 
+		name = TR_central_asia.3.a
+		TRK = { 
 			transfer_state = 732
 			transfer_state = 586
+                        add_state_core = 732
+                        add_state_core = 586
             }
 	}
 }
@@ -106,8 +122,8 @@ country_event = {
 	
 
     option = { 
-		name = TR_central_asia.2.a
-		load_oob = "UZB_unit"
+		name = TR_central_asia.4.a
+		load_oob = "TRK_unit"
 		declare_war_on = {
 			target = BUK
 			type = annex_everything

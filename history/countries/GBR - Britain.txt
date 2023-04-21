@@ -62,7 +62,7 @@ recruit_character = GBR_bernard_rawlings
 recruit_character = GBR_john_cunningham
 recruit_character = GBR_charles_forbes
 
-country_event = { id = TR_UK.1 days = 82 }
+country_event = { id = GBR_civil_war.1 days = 82 }
 
 add_ideas = {
 	Constitutional_monarchy
@@ -394,7 +394,7 @@ if = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = "GFX_GBR_basic_light_tank_medium"
+		icon = "GFX_ENG_basic_light_tank_medium"
 		obsolete = yes #used for oob
 	}
 	create_equipment_variant = {
@@ -410,7 +410,7 @@ if = {
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = smoke_launchers
 		}
-		icon = "GFX_GBR_basic_light_tank_medium"
+		icon = "GFX_ENG_basic_light_tank_medium"
 		upgrades = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 2
@@ -433,7 +433,7 @@ if = {
 			tank_nsb_armor_upgrade = 1
 			tank_nsb_engine_upgrade = 2
 		}
-		icon = "GFX_GBR_basic_light_tank_medium"
+		icon = "GFX_ENG_basic_light_tank_medium"
 	}
 
 	create_equipment_variant = {
@@ -452,7 +452,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 2
 		}
-		icon = "GFX_GBR_light_BAB_camo"
+		icon = "GFX_ENG_light_BAB_camo"
 		obsolete = yes #export only
 	}
 
@@ -471,7 +471,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 2
 		}
-		icon = "GFX_GBR_light_BAB_camo"
+		icon = "GFX_ENG_light_BAB_camo"
 		obsolete = yes #export only
 	}
 }
@@ -966,7 +966,7 @@ if = {
 				special_type_slot_1 = empty
 			}
 			obsolete = yes
-			icon = "GFX_GBR_CAS1_medium"
+			icon = "GFX_ENG_CAS1_medium"
 		}
 		create_equipment_variant = {
 			name = "Vickers Vildebeest" 
@@ -976,7 +976,7 @@ if = {
 				engine_type_slot = engine_1_1x
 				special_type_slot_1 = empty
 			}
-			icon = "GFX_GBR_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
+			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
 		}
 		create_equipment_variant = {
 			name = "Blackburn Shark" 
@@ -986,7 +986,7 @@ if = {
 				engine_type_slot = engine_1_1x
 				special_type_slot_1 = empty
 			}
-			icon = "GFX_GBR_naval_bomber1_medium"
+			icon = "GFX_ENG_naval_bomber1_medium"
 		}
 		create_equipment_variant = {
 			name = "Handley Page Heyford" 
@@ -1006,7 +1006,7 @@ if = {
 				engine_type_slot = engine_2_2x
 				special_type_slot_1 = lmg_defense_turret
 			}
-			icon = "GFX_GBR_heavy_fighter1_medium"
+			icon = "GFX_ENG_heavy_fighter1_medium"
 		}
 	}
 if = {
@@ -1054,7 +1054,7 @@ if = {
 				special_type_slot_1 = empty
 			}
 			obsolete = yes
-			icon = "GFX_GBR_CAS1_medium"
+			icon = "GFX_ENG_CAS1_medium"
 		}
 		create_equipment_variant = {
 			name = "Vickers Vildebeest" 
@@ -1064,7 +1064,7 @@ if = {
 				engine_type_slot = engine_1_1x
 				special_type_slot_1 = empty
 			}
-			icon = "GFX_GBR_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
+			icon = "GFX_ENG_naval_bomber1_medium" #TODO GABRIEL: change if art in before release
 		}
 		create_equipment_variant = {
 			name = "Blackburn Shark" 
@@ -1074,7 +1074,7 @@ if = {
 				engine_type_slot = engine_1_1x
 				special_type_slot_1 = empty
 			}
-			icon = "GFX_GBR_naval_bomber1_medium"
+			icon = "GFX_ENG_naval_bomber1_medium"
 		}
 		create_equipment_variant = {
 			name = "Handley Page Heyford" 
@@ -1094,6 +1094,6 @@ if = {
 				engine_type_slot = engine_2_2x
 				special_type_slot_1 = lmg_defense_turret
 			}
-			icon = "GFX_GBR_heavy_fighter1_medium"
+			icon = "GFX_ENG_heavy_fighter1_medium"
 		}
 	}

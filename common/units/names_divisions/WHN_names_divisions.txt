@@ -30,7 +30,7 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
-CHI_INF_01 = 
+WHN_INF_01 = 
 {
 	name = "Infantry Unit"
 
@@ -41,7 +41,7 @@ CHI_INF_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { CHI_INF_01 }
+	#link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Juntuán"
 
@@ -203,7 +203,7 @@ CHI_INF_01 =
 	}
 }
 
-CHI_CAV_01 = 
+WHN_CAV_01 = 
 {
 	name = "Cavalry Unit"
 
@@ -214,7 +214,7 @@ CHI_CAV_01 =
 	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { CHI_INF_01 }
+	#link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Qibing Jun"
 
@@ -239,7 +239,7 @@ CHI_CAV_01 =
 	}
 }
 
-CHI_MOT_01 = 
+WHN_MOT_01 = 
 {
 	name = "Motorized Unit"
 
@@ -250,7 +250,7 @@ CHI_MOT_01 =
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { CHI_INF_01 }
+	link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Jidonghua Juntuán"
 
@@ -304,7 +304,7 @@ CHI_MOT_01 =
 	}
 }
 
-CHI_MEC_01 = 
+WHN_MEC_01 = 
 {
 	name = "Mechanized Unit"
 
@@ -315,7 +315,7 @@ CHI_MEC_01 =
 	division_types = { "mechanized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { CHI_INF_01 }
+	link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Jixiehua Juntuán"
 
@@ -369,7 +369,7 @@ CHI_MEC_01 =
 	}
 }
 
-CHI_ARM_01 = 
+WHN_ARM_01 = 
 {
 	name = "Armored Unit"
 
@@ -380,7 +380,7 @@ CHI_ARM_01 =
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { CHI_INF_01 }
+	#link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Zhuangjia Shi"
 
@@ -406,7 +406,7 @@ CHI_ARM_01 =
 	}
 }
 
-CHI_PAR_01 = 
+WHN_PAR_01 = 
 {
 	name = "Paratrooper Unit"
 
@@ -417,7 +417,7 @@ CHI_PAR_01 =
 	division_types = { "paratrooper" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { CHI_INF_01 }
+	#link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Sanbing Shi"
 
@@ -438,7 +438,7 @@ CHI_PAR_01 =
 	}
 }
 
-CHI_MAR_01 = 
+WHN_MAR_01 = 
 {
 	name = "Marine Unit"
 
@@ -449,7 +449,7 @@ CHI_MAR_01 =
 	division_types = { "marine" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { CHI_INF_01 }
+	#link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Luzhan Dui Shi"
 
@@ -470,7 +470,7 @@ CHI_MAR_01 =
 	}
 }
 
-CHI_MNT_01 = 
+WHN_MNT_01 = 
 {
 	name = "Mountain Unit"
 
@@ -481,7 +481,7 @@ CHI_MNT_01 =
 	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { CHI_INF_01 }
+	link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Juntuán"
 
@@ -628,7 +628,7 @@ CHI_MNT_01 =
 	}
 }
 
-CHI_GAR_01 = 
+WHN_GAR_01 = 
 {
 	name = "Garrison Unit"
 
@@ -639,7 +639,7 @@ CHI_GAR_01 =
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	#link_numbering_with = { CHI_INF_01 }
+	#link_numbering_with = { WHN_INF_01 }
 
 	fallback_name = "%d Baoan Zongdui"
 

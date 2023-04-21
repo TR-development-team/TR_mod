@@ -1,8 +1,132 @@
 spriteTypes = {
 
 	SpriteType = {	
-		name = "GFX_goal_FNG_japan_money"
-		texturefile = "gfx/interface/goals/JAP/FNG_japan_money.png"
+		name = "GFX_goal_JAP_Asian_autarky"
+		texturefile = "gfx/interface/goals/JAP/JAP_Asian_autarky.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_asian_trade"
+		texturefile = "gfx/interface/goals/JAP/JAP_asian_trade.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Bankrupt_Bank"
+		texturefile = "gfx/interface/goals/JAP/JAP_Bankrupt_Bank.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_Revival"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_Revival.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Four_Years_Plan"
+		texturefile = "gfx/interface/goals/JAP/JAP_Four_Years_Plan.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Gold_Embargo"
+		texturefile = "gfx/interface/goals/JAP/JAP_Gold_Embargo.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_important_industry_control"
+		texturefile = "gfx/interface/goals/JAP/JAP_important_industry_control.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Inoue_Junnosuke"
+		texturefile = "gfx/interface/goals/JAP/JAP_Inoue_Junnosuke.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Kakushinto"
+		texturefile = "gfx/interface/goals/JAP/JAP_Kakushinto.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Katsu_Masanori"
+		texturefile = "gfx/interface/goals/JAP/JAP_Katsu_Masanori.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Kaya_Okinori"
+		texturefile = "gfx/interface/goals/JAP/JAP_Kaya_Okinori.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Minseito"
+		texturefile = "gfx/interface/goals/JAP/JAP_Minseito.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Public_Works"
+		texturefile = "gfx/interface/goals/JAP/JAP_Public_Works.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Seiyukai"
+		texturefile = "gfx/interface/goals/JAP/JAP_Seiyukai.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Shataito"
+		texturefile = "gfx/interface/goals/JAP/JAP_Shataito.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Sunset_Japan"
+		texturefile = "gfx/interface/goals/JAP/JAP_Sunset_Japan.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Takahashi_Korekiyo"
+		texturefile = "gfx/interface/goals/JAP/JAP_Takahashi_Korekiyo.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_cooperative_association"
+		texturefile = "gfx/interface/goals/JAP/JAP_cooperative_association.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Social_Collapse"
+		texturefile = "gfx/interface/goals/JAP/JAP_Social_Collapse.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Be_Friend_Vietnam"
+		texturefile = "gfx/interface/goals/JAP/JAP_Be_Friend_Vietnam.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Colony_Reform"
+		texturefile = "gfx/interface/goals/JAP/JAP_Colony_Reform.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Election"
+		texturefile = "gfx/interface/goals/JAP/JAP_Election.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Electoral_Cleaning"
+		texturefile = "gfx/interface/goals/JAP/JAP_Electoral_Cleaning.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Investment_Continent"
+		texturefile = "gfx/interface/goals/JAP/JAP_Investment_Continent.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Mori_Kaku_China"
+		texturefile = "gfx/interface/goals/JAP/JAP_Mori_Kaku_China.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Koua_Ron"
+		texturefile = "gfx/interface/goals/JAP/JAP_Koua_Ron.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Japanese_Socialism"
+		texturefile = "gfx/interface/goals/JAP/JAP_Japanese_Socialism.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Kokkai_Gijido"
+		texturefile = "gfx/interface/goals/JAP/JAP_Kokkai_Gijido.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Proletarian_Party"
+		texturefile = "gfx/interface/goals/JAP/JAP_Proletarian_Party.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Military_reform"
+		texturefile = "gfx/interface/goals/JAP/JAP_Military_reform.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Minpon_Shugi"
+		texturefile = "gfx/interface/goals/JAP/JAP_Minpon_Shugi.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_japan_money"
+		texturefile = "gfx/interface/goals/JAP/japan_money.png"
 	}
 	SpriteType = {	
 		name = "GFX_goal_align_japan"
@@ -145,6 +269,106 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/JAP/JAP_invasion_of_persia.png"
 	}
 	SpriteType = {	
+		name = "GFX_goal_JAP_Agriculture_focus_1"
+		texturefile = "gfx/interface/goals/JAP/JAP_Agriculture_focus_1.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Agriculture_focus_2"
+		texturefile = "gfx/interface/goals/JAP/JAP_Agriculture_focus_2.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Agriculture_focus_3"
+		texturefile = "gfx/interface/goals/JAP/JAP_Agriculture_focus_3.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Agriculture_focus_7"
+		texturefile = "gfx/interface/goals/JAP/JAP_Agriculture_focus_7.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Agriculture_focus_8"
+		texturefile = "gfx/interface/goals/JAP/JAP_Agriculture_focus_8.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Yoshio_Nishina"
+		texturefile = "gfx/interface/goals/JAP/JAP_Yoshio_Nishina.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Riken"
+		texturefile = "gfx/interface/goals/JAP/JAP_Riken.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Hideo_Itokawa"
+		texturefile = "gfx/interface/goals/JAP/JAP_Hideo_Itokawa.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Plan_focus_3"
+		texturefile = "gfx/interface/goals/JAP/JAP_Plan_focus_3.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Plan_focus_4"
+		texturefile = "gfx/interface/goals/JAP/JAP_Plan_focus_4.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Plan_focus_6"
+		texturefile = "gfx/interface/goals/JAP/JAP_Plan_focus_6.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Plan_focus_8"
+		texturefile = "gfx/interface/goals/JAP/JAP_Plan_focus_8.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_6"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_6.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_7"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_7.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_8"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_8.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_9"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_9.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_10"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_10.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_11"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_11.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_12"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_12.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_13"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_13.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_15"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_15.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_16"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_16.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_17"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_17.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_18"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_18.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_JAP_Economy_focus_19"
+		texturefile = "gfx/interface/goals/JAP/JAP_Economy_focus_19.png"
+	}
+	SpriteType = {	
 		name = "GFX_goal_USA_it_cant_happen_here"
 		texturefile = "gfx/interface/goals/usa/USA_it_cant_happen_here.png"
 	}
@@ -253,8 +477,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/forced_mil.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_spirit_of_revolution"
-		texturefile = "gfx/interface/goals/SOV_spirit_of_revolution.png"
+		name = "GFX_goal_generic_Earth_and_Moon"
+		texturefile = "gfx/interface/goals/Earth_and_Moon.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_generic_Jet_Fighter"
+		texturefile = "gfx/interface/goals/Jet_Fighter.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_spirit_of_revolution"
+		texturefile = "gfx/interface/goals/RUS_spirit_of_revolution.png"
 	}
 	SpriteType = {	
 		name = "GFX_goal_take_russia"
@@ -265,16 +497,16 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/Unite_Arabia.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_CHI_Taili"
-		texturefile = "gfx/interface/goals/CHI/CHI_Taili.png"
+		name = "GFX_goal_WHN_Taili"
+		texturefile = "gfx/interface/goals/WHN/WHN_Taili.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_CHI_Chen_Guofu"
-		texturefile = "gfx/interface/goals/CHI/CHI_Chen_Guofu.png"
+		name = "GFX_goal_WHN_Chen_Guofu"
+		texturefile = "gfx/interface/goals/WHN/WHN_Chen_Guofu.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_CHI_Chen_Cheng"
-		texturefile = "gfx/interface/goals/CHI/CHI_Chen_Cheng.png"
+		name = "GFX_goal_WHN_Chen_Cheng"
+		texturefile = "gfx/interface/goals/WHN/WHN_Chen_Cheng.png"
 	}
 	SpriteType = {	
 		name = "GFX_goal_FRA_Maurras_in_Prison"
@@ -520,57 +752,56 @@ spriteTypes = {
 
 
 	SpriteType = {	
-		name = "GFX_goal_SOV_romanov"
-		texturefile = "gfx/interface/goals/RUS/SOV_romanov.png"
+		name = "GFX_goal_RUS_romanov"
+		texturefile = "gfx/interface/goals/RUS/RUS_romanov.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Alexei_Constitutional_monarchy"
+		name = "GFX_goal_RUS_Alexei_Constitutional_monarchy"
 		texturefile = "gfx/interface/goals/RUS/Alexei_Constitutional_monarchy.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Pyotr_Wrangel"
+		name = "GFX_goal_RUS_Pyotr_Wrangel"
 		texturefile = "gfx/interface/goals/RUS/Pyotr_Wrangel.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Republic_Russia"
+		name = "GFX_goal_RUS_Republic_Russia"
 		texturefile = "gfx/interface/goals/RUS/Republic_Russia.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Mladorossi"
-		texturefile = "gfx/interface/goals/RUS/SOV_Mladorossi.png"
+		name = "GFX_goal_RUS_Mladorossi"
+		texturefile = "gfx/interface/goals/RUS/RUS_Mladorossi.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Saint_Alexei"
-		texturefile = "gfx/interface/goals/RUS/SOV_Saint_Alexei.png"
-	}
-
-	SpriteType = {	
-		name = "GFX_goal_SOV_Corporate_Orthodox"
-		texturefile = "gfx/interface/goals/RUS/SOV_Corporate_Orthodox.png"
+		name = "GFX_goal_RUS_Saint_Alexei"
+		texturefile = "gfx/interface/goals/RUS/RUS_Saint_Alexei.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_February_Revolution"
-		texturefile = "gfx/interface/goals/RUS/SOV_February_Revolution.png"
+		name = "GFX_goal_RUS_Corporate_Orthodox"
+		texturefile = "gfx/interface/goals/RUS/RUS_Corporate_Orthodox.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Mladorossi_kazembek"
-		texturefile = "gfx/interface/goals/RUS/SOV_Mladorossi_kazembek.png"
+		name = "GFX_goal_RUS_February_Revolution"
+		texturefile = "gfx/interface/goals/RUS/RUS_February_Revolution.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_regency_council"
-		texturefile = "gfx/interface/goals/RUS/SOV_regency_council.png"
+		name = "GFX_goal_RUS_Mladorossi_kazembek"
+		texturefile = "gfx/interface/goals/RUS/RUS_Mladorossi_kazembek.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Savinkov_Terror"
-		texturefile = "gfx/interface/goals/RUS/SOV_Savinkov_Terror.png"
+		name = "GFX_goal_RUS_regency_council"
+		texturefile = "gfx/interface/goals/RUS/RUS_regency_council.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Alexei_Taboritsky"
-		texturefile = "gfx/interface/goals/RUS/SOV_Alexei_Taboritsky.png"
+		name = "GFX_goal_RUS_Savinkov_Terror"
+		texturefile = "gfx/interface/goals/RUS/RUS_Savinkov_Terror.png"
 	}
 	SpriteType = {	
-		name = "GFX_goal_SOV_Taboritsky_Pure"
-		texturefile = "gfx/interface/goals/RUS/SOV_Taboritsky_Pure.png"
+		name = "GFX_goal_RUS_Alexei_Taboritsky"
+		texturefile = "gfx/interface/goals/RUS/RUS_Alexei_Taboritsky.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_RUS_Taboritsky_Pure"
+		texturefile = "gfx/interface/goals/RUS/RUS_Taboritsky_Pure.png"
 	}
 	SpriteType = {	
 		name = "GFX_goal_GER_Ernst_junger"
@@ -659,6 +890,58 @@ spriteTypes = {
 	SpriteType = {	
 		name = "GFX_goal_GER_heroic_nihilism"
 		texturefile = "gfx/interface/goals/GER/heroic_nihilism.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_Blut_und_Boden"
+		texturefile = "gfx/interface/goals/GER/GER_Blut_und_Boden.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_Crusader_Kings"
+		texturefile = "gfx/interface/goals/GER/GER_Crusader_Kings.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_Eagle_Fire_hand"
+		texturefile = "gfx/interface/goals/GER/GER_Eagle_Fire_hand.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_German_Socialism"
+		texturefile = "gfx/interface/goals/GER/GER_German_Socialism.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_German_spirit"
+		texturefile = "gfx/interface/goals/GER/GER_German_spirit.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_In_Stahlgewittern"
+		texturefile = "gfx/interface/goals/GER/GER_In_Stahlgewittern.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_Johann_Gottlieb_Fichte"
+		texturefile = "gfx/interface/goals/GER/GER_Johann_Gottlieb_Fichte.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_Junger_another_star"
+		texturefile = "gfx/interface/goals/GER/GER_Junger_another_star.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_memory_of_trenches"
+		texturefile = "gfx/interface/goals/GER/GER_memory_of_trenches.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_Militarism"
+		texturefile = "gfx/interface/goals/GER/GER_Militarism.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_National_anarchism"
+		texturefile = "gfx/interface/goals/GER/GER_National_anarchism.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_ruthless"
+		texturefile = "gfx/interface/goals/GER/GER_ruthless.png"
+	}
+	SpriteType = {	
+		name = "GFX_goal_GER_Strasserism"
+		texturefile = "gfx/interface/goals/GER/GER_Strasserism.png"
 	}
 	### Austria ###
 	SpriteType = {

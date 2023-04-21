@@ -1875,7 +1875,7 @@ focus_tree = {
 	focus = {
 		id = OTT_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = OTT_flexible_navy focus = CHI_large_navy }
+		prerequisite = { focus = OTT_flexible_navy focus = OTT_large_navy }
 		x = 0
 		y = 1
 		relative_position_id = OTT_flexible_navy
@@ -1913,7 +1913,7 @@ focus_tree = {
 	focus = {
 		id = OTT_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = OTT_large_navy focus = CHI_flexible_navy }
+		prerequisite = { focus = OTT_large_navy focus = OTT_flexible_navy }
 		x = 0
 		y = 1
 		relative_position_id = OTT_large_navy

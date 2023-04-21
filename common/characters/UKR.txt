@@ -1,5 +1,5 @@
 characters={
-	UKS_Nestor_Makhno={
+	UKR_Nestor_Makhno={
 		name=MHN_Nestor_Makhno
 		portraits={
 			civilian={
@@ -10,7 +10,7 @@ characters={
 			ideology= anarco_communist_subtype
 		}
 	}
-	UKS_Nikita_Khrushchev={
+	UKR_Nikita_Khrushchev={
 		name=MHN_Nikita_Khrushchev
 		portraits={
 			civilian={
@@ -24,7 +24,7 @@ characters={
 			ideology= Leninist_subtype
 		}
 	}
-	UKS_Volodymyr_Vynnychenko={
+	UKR_Volodymyr_Vynnychenko={
 		name=MHN_Volodymyr_Vynnychenko
 		portraits={
 			civilian={
@@ -35,12 +35,12 @@ characters={
 			ideology= social_democrat_subtype
 		}
 	}
-	UKS_ivan_chernyakhovsky = {
-		name = RUS_ivan_chernyakhovsky
+	UKR_ivan_chernyakhovsky = {
+		name = SOV_ivan_chernyakhovsky
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_ivan_chernyakhovsky"
-				small= "GFX_idea_RUS_ivan_chernyakhovsky"
+				large = "GFX_portrait_SOV_ivan_chernyakhovsky"
+				small= "GFX_idea_SOV_ivan_chernyakhovsky"
 			}
 		}
 		corps_commander = {
@@ -51,15 +51,15 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 413
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-	UKS_grigory_kulik = {
-		name = RUS_grigory_kulik
+	UKR_grigory_kulik = {
+		name = SOV_grigory_kulik
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_grigory_kulik
-				small=GFX_portrait_RUS_grigory_kulik_small
+				large = GFX_portrait_SOV_grigory_kulik
+				small=GFX_portrait_SOV_grigory_kulik_small
 			}
 		}
 		corps_commander = {
@@ -70,15 +70,15 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-	UKS_kirill_moskalenko = {
-		name = RUS_kirill_moskalenko
+	UKR_kirill_moskalenko = {
+		name = SOV_kirill_moskalenko
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_kirill_moskalenko
-				small=GFX_portrait_RUS_kirill_moskalenko_small
+				large = GFX_portrait_SOV_kirill_moskalenko
+				small=GFX_portrait_SOV_kirill_moskalenko_small
 			}
 		}
 		corps_commander = {
@@ -88,15 +88,15 @@ characters={
 			planning_skill = 3
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-	UKS_dmitry_lelyushenko = {
-		name = RUS_dmitry_lelyushenko
+	UKR_dmitry_lelyushenko = {
+		name = SOV_dmitry_lelyushenko
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_dmitry_lelyushenko
-				small=GFX_portrait_RUS_dmitry_lelyushenko_small
+				large = GFX_portrait_SOV_dmitry_lelyushenko
+				small=GFX_portrait_SOV_dmitry_lelyushenko_small
 			}
 		}
 		corps_commander = {
@@ -107,15 +107,15 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-	UKS_rodion_malinovsky = {
-		name = RUS_rodion_malinovsky
+	UKR_rodion_malinovsky = {
+		name = SOV_rodion_malinovsky
 		portraits = {
 			army = {
-				large = GFX_portrait_RUS_rodion_malinovsky
-				small=GFX_portrait_RUS_rodion_malinovsky_small
+				large = GFX_portrait_SOV_rodion_malinovsky
+				small=GFX_portrait_SOV_rodion_malinovsky_small
 			}
 		}
 		corps_commander = {
@@ -126,17 +126,17 @@ characters={
 			planning_skill = 1
 			logistics_skill = 1
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 
-	UKS_vitaly_primakov = {
-		name = RUS_vitaly_primakov
+	UKR_vitaly_primakov = {
+		name = SOV_vitaly_primakov
 
 		portraits = {
 			army = {
-				large = "GFX_portrait_RUS_vasily_primakov"
-				small = "GFX_portrait_RUS_vasily_primakov_small"
+				large = "GFX_portrait_SOV_vasily_primakov"
+				small = "GFX_portrait_SOV_vasily_primakov_small"
 			}
 		}
 
@@ -148,7 +148,7 @@ characters={
 			planning_skill = 2
 			logistics_skill = 3
 			legacy_id = 0
-			visible = { NOT = { has_character_flag = RUS_exiled_flag } }
+			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
 }

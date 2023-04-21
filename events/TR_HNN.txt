@@ -417,7 +417,7 @@ country_event = {
 				}
 			}
 			set_country_flag = HNN_Communist_win
-			ccountry_event = { id = TR_Hunan.11 days = 1 }
+			country_event = { id = TR_Hunan.11 days = 1 }
 			
 		}
 		if = {

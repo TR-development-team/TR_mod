@@ -1,0 +1,89 @@
+﻿
+instant_effect= {
+	create_equipment_variant = {
+		name = "I-15" #
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_4x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "DB-3" #
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_2_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_SOV_early_bomber_medium"
+	}
+	create_equipment_variant = {
+		name = "TB-3" #
+		type = large_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = large_bomb_bay
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_type_slot = engine_1_4x
+			special_type_slot_1 = lmg_defense_turret_2x
+		}
+		icon = "GFX_SOV_transport_plane_equipment_1_medium"
+	}
+}
+### Air Wings
+air_wings = {
+	# LVO Aviatsya Komandovaniya -- Leningrad
+	195 = { 
+		# 15ya Istrebitel'nye Aviabrigada
+		small_plane_airframe_0 = {
+			owner = "SOV" 
+			amount = 94
+			version_name = "I-15"
+		}
+		# 18ya Bombardirovochnye Aviabrigada
+		medium_plane_airframe_0 =  {
+			owner = "SOV" 
+			amount = 60
+			version_name = "DB-3"
+		}
+	}
+
+	# MVO Aviatsya Komandovaniya
+	219 = {
+		# 2ya Istrebitel'nye Aviabrigada
+		small_plane_airframe_0 = {
+			owner = "SOV" 
+			amount = 94
+			version_name = "I-15"
+		}
+		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
+		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
+		large_plane_airframe_0 =  {
+			owner = "SOV" 
+			amount = 48
+			version_name = "TB-3"
+		}
+		# TODO -- 46ya Transporta Aviabrigada -- transport planes
+	}
+	# VVS - KBF Aviatsya Komandovaniya -- Leningrad
+	195 = {
+		# 8ya VMF Aviabrigada
+		medium_plane_airframe_0 = {
+			owner = "SOV" 
+			amount = 54
+			version_name = "DB-3"
+		}
+	}
+}
+
+
+		
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+}
+	#####################

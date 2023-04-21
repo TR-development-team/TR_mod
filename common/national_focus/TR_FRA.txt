@@ -1959,7 +1959,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
-		RUS = { has_country_flag =RUS_OCREVOLUTION_END OR = { has_war_with = JAP has_war_with = RAT } is_in_faction = no NOT = { has_country_flag = RUS_SR_Dictator }}
+		RUS = { has_country_flag =RUS_OCREVOLUTION_END is_in_faction = no NOT = { has_country_flag = RUS_SR_Dictator }}
 		FRA = { OR = { has_war_with = JAP has_war_with = RAT } is_faction_leader = yes }
 		}
 		bypass = {is_in_faction_with = RUS}
@@ -3179,7 +3179,7 @@ focus = {
 		add_stability = 0.1
 		set_province_name = {
 			id = 11506
-			name = "リュテス"
+			name = "グラン・パリ"
 	    }
 		16 = {
 			add_extra_state_shared_building_slots = 4

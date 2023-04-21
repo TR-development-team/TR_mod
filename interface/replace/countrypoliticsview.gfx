@@ -600,6 +600,16 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_ideology_parliamentarism_subtype"
+		texturefile = "gfx/interface/ideologies/sub/parliamentarism_subtype.png"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_Royal_Centerism_subtype"
+		texturefile = "gfx/interface/ideologies/sub/Royal_Centerism_subtype.png"
+	}
+
+	spriteType = {
 		name = "GFX_ideology_Conservative_Revolution_subtype"
 		texturefile = "gfx/interface/ideologies/sub/Conservative_Revolution_subtype.png"
 	}

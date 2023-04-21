@@ -1,118 +1,173 @@
 ﻿division_template = {
-	name = "Juntuán"				# Represents local militia groups (generally poorly-equipped )
-	division_names_group = ZHI_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }	
+	name = "Juntuán"				# Represents: German-trained divisions (better equipment than rest),
+	division_names_group = SHX_INF_01
+									# 	as well as two-division infantry corps (generally poorly-equipped militias),
+	regiments = {					#	and local militia groups.
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
 	}
+
+	priority = 0 # garrison
 }
 division_template = {
-	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
-	division_names_group = WHN_INF_01
+	name = "Jingbei"				
+	division_names_group = SHX_MIL_01
+							
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+        is_locked = yes
+}
+division_template = {
+	name = "Bubing Shi"			# Represents three-division infantry corps (generally poorly-equipped militias)
+	division_names_group = SHX_INF_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
+	division_names_group = SHX_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
 	}
 }
 
+
 ### OOB ###
 units = {
-	### Provincial Forces ###
-	division = {
-		name = "Suiyuan Jingbei"
-		location = 4174
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
-		start_experience_factor = 0.3
-
-	}
-	division = {
-		name = "Taiyuan Jingbei"
-		location = 1519
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
-		start_experience_factor = 0.3
-
-	}
 	division = {
 		division_name = {
-				is_name_ordered = yes
-				name_order = 10
+			is_name_ordered = yes
+			name_order = 1
 		}
 		location = 4469
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
-		start_experience_factor = 0.3
-
+		division_template = "Juntuán"
+		start_equipment_factor = 0.8
 	}
 	division = {
 		division_name = {
-				is_name_ordered = yes
-				name_order = 11
-		}
-		location = 7571
-		division_template = "Juntuán"		# Provincial militia unit (poor equipment and training)
-		start_experience_factor = 0.3
-
-	}
-	division = {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 1575
-		division_template = "Sanjiao Jun"	
-		start_experience_factor = 0.3
-
-	}
-	division = {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 1034
-		division_template = "Sanjiao Jun"	
-		start_experience_factor = 0.3
-
-	}
-	division = {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 1519
-		division_template = "Sanjiao Jun"	
-		start_experience_factor = 0.3
-
-	}
-	division = {
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
+			is_name_ordered = yes
+			name_order = 2
 		}
 		location = 4634
-		division_template = "Sanjiao Jun"	
-		start_experience_factor = 0.3
-
+		division_template = "Juntuán"
+		start_equipment_factor = 0.8
 	}
 	division = {
 		division_name = {
-				is_name_ordered = yes
-				name_order = 5
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1519
+		division_template = "Bubing Shi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 10507
+		division_template = "Bubing Shi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7571
+		division_template = "Qibing Jun"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1519
+		division_template = "Jingbei"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1034
+		division_template = "Jingbei"
+		start_equipment_factor = 0.7
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1575
+		division_template = "Jingbei"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1531
+		division_template = "Jingbei"
+		start_equipment_factor = 0.6
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 4074
+		division_template = "Jingbei"
+		start_equipment_factor = 0.6
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 12300
+		division_template = "Jingbei"
+		start_equipment_factor = 0.9
+		start_experience_factor = 0.1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
 		}
 		location = 10367
-		division_template = "Sanjiao Jun"	
-		start_experience_factor = 0.3
-
+		division_template = "Jingbei"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.1
 	}
 }
 

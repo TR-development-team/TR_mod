@@ -70,16 +70,6 @@ clear_all_relations = {
 	}
 }
 
-# forces a country to surrender (mechanically by lowering their surrender limit to 0%)
-force_capitulate = {
-	hidden_effect = {
-		add_timed_idea = {
-			idea = ready_to_surrender
-			days = 15
-		}
-	}
-}
-
 # removes all current ministers for the country in scope (including lobe, lama, kcap, boss, naaf) - no tooltips displayed
 remove_all_minister_types = {
 	hidden_effect = {
@@ -228,7 +218,6 @@ restore_previous_government_type = {
 			for_each_loop = {
 				array = original_coalitions
 				set_temp_variable = { coalition_partner_var = v }
-				add_to_coalition = yes
 			}
 			clear_array = original_coalitions
 		}
@@ -529,26 +518,6 @@ destroy_all_ships = {
 }
 
 
-### adds research slots until five, then gives a temporary research speed bonus
-add_research_slot_until_five = {
-	if = {
-		limit = { has_idea = generic_research_advances }
-		modify_timed_idea = {
-			idea = generic_research_advances
-			days = 365
-		}
-	}
-	else_if = {
-		limit = { amount_research_slots > 4 }
-		add_timed_idea = {
-			idea = generic_research_advances
-			days = 365
-		}
-	}
-	else = {
-		add_research_slot = 1
-	}
-}
 
 # used for restoring factories lost when states are transferred to a new owners
 # example of use:

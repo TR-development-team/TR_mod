@@ -22,6 +22,23 @@
 	}
 }
 division_template = {
+	name = "Dokuritsu Konsei Ryodan" 
+	division_names_group = "JAP_IMB_01"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		armored_car = { x = 1 y = 0 }
+		armored_car = { x = 1 y = 1 }
+		light_armor = { x = 2 y = 0 }
+		medium_armor = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+                artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
 	name = "Sensha Shidan" 	
 	division_names_group = JAP_ARM_01
 										# 1 engineering battalion
@@ -781,26 +798,6 @@ instant_effect =
 		}
 		requested_factories = 1
 		progress = 0.4
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = cv_nav_bomber_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.2
 		efficiency = 50
 	}
 }

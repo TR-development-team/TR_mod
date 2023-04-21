@@ -1,0 +1,324 @@
+
+JAP_Political_Distrust_bop = {
+	initial_value = 0.0
+	left_side = JAP_Political_Distrust_side
+	right_side = JAP_Political_Trust_side
+	decision_category = JAP_balance_of_power_category
+
+	### Apathy
+	range = {
+		id = JAP_Political_Apathy_range
+		min = -0.2
+		max = 0.2
+		modifier = {
+
+		}
+		on_activate = {
+		}
+		on_deactivate = {
+		}
+	}
+	### Distrust
+	side = {
+		id = JAP_Political_Distrust_side
+		icon = GFX_bop_JAP_Political_Distrust_side
+		range = {
+			id = JAP_Political_Distrust_low_range
+			min = -0.4
+			max = -0.2
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				drift_defence_factor = -0.1
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_Political_Distrust_medium_range
+			min = -0.6
+			max = -0.4
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = -0.1
+				drift_defence_factor = -0.25
+				totalist_drift = 0.01
+				national_populist_drift = 0.01
+				paternal_autocrat_drift = 0.01
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_Political_Distrust_high_range
+			min = -0.8
+			max = -0.6
+			modifier = {
+				political_power_factor = -0.15
+				stability_factor = -0.15
+				drift_defence_factor = -0.5
+				totalist_drift = 0.02
+				national_populist_drift = 0.02
+				paternal_autocrat_drift = 0.02
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_Political_Distrust_very_high_range
+			min = -1
+			max = -0.8
+			modifier = {
+				political_power_factor = -0.2
+				stability_factor = -0.2
+				drift_defence_factor = -0.75
+				totalist_drift = 0.03
+				national_populist_drift = 0.03
+				paternal_autocrat_drift = 0.03
+                                custom_modifier_tooltip = JAP_Political_Distrust_very_high_tt
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+	### Trust
+	side = {
+		id = JAP_Political_Trust_side
+		icon = GFX_bop_JAP_Political_Trust_side
+		range = {
+			id = JAP_Political_Trust_low_range
+			min = 0.2
+			max = 0.4
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				drift_defence_factor = 0.1
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_Political_Trust_medium_range
+			min = 0.4
+			max = 0.6
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.1
+				drift_defence_factor = 0.25
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_Political_Trust_high_range
+			min = 0.6
+			max = 0.8
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.15
+				drift_defence_factor = 0.5
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_Political_Trust_very_high_range
+			min = 0.8
+			max = 1
+			modifier = {
+				political_power_factor = 0.2
+				stability_factor = 0.2
+				drift_defence_factor = 0.75
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+			}
+		}
+	}
+}
+
+JAP_interservice_rivalry_bop = {
+	initial_value = 0.0
+	left_side = JAP_Political_Distrust_side
+	right_side = JAP_Political_Trust_side
+	decision_category = JAP_interservice_rivalry_category
+
+	### balance
+	range = {
+		id = JAP_interservice_rivalry_balanced_range
+		min = -0.25
+		max = 0.25
+		modifier = {
+			planning_speed = 0.1
+			naval_morale_factor = 0.1
+			command_power_gain_mult = 0.25
+			experience_gain_army = 0.02
+			experience_gain_navy = 0.02
+			industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+		}
+		on_activate = {
+		}
+		on_deactivate = {
+		}
+	}
+	### IJN
+	side = {
+		id = JAP_IJN_side
+		icon = GFX_bop_JAP_Political_Distrust_side
+		range = {
+			id = JAP_interservice_rivalry_IJN_predominance_range
+			min = -0.5
+			max = -0.25
+			modifier = {
+				experience_gain_army_factor = -0.1
+				experience_gain_navy = 0.05
+				land_doctrine_cost_factor = 0.05
+				naval_doctrine_cost_factor = -0.05
+				army_leader_cost_factor = 0.05 
+				navy_leader_cost_factor = -0.05 
+				production_speed_arms_factory_factor = -0.05
+				production_speed_dockyard_factor = 0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = 0.05
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_interservice_rivalry_IJN_strengthened_range
+			min = -0.75
+			max = -0.5
+			modifier = {
+				experience_gain_army_factor = -0.2
+				experience_gain_navy = 0.1
+				land_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = -0.1
+				army_leader_cost_factor = 0.1
+				navy_leader_cost_factor = -0.1
+				planning_speed = -0.10
+				production_speed_arms_factory_factor = -0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = 0.1
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_interservice_rivalry_IJN_dominant_range
+			min = -1
+			max = -0.75
+			modifier = {
+				experience_gain_army_factor = -0.3
+				experience_gain_navy = 0.2
+				land_doctrine_cost_factor = 0.2
+				naval_doctrine_cost_factor = -0.2
+				army_leader_cost_factor = 0.2
+				navy_leader_cost_factor = -0.2
+				planning_speed = -0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_dockyard_factor = 0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = 0.2
+			}
+			on_activate = {
+			}
+			on_deactivate = {
+			}
+		}
+	}
+	### IJA
+	side = {
+		id = JAP_IJA_side
+		icon = GFX_bop_JAP_Political_Trust_side
+		range = {
+			id = JAP_interservice_rivalry_IJA_predominance_range
+			min = 0.25
+			max = 0.5
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_navy_factor = -0.1
+				land_doctrine_cost_factor = -0.05
+				naval_doctrine_cost_factor = 0.05
+				army_leader_cost_factor = -0.05 
+				navy_leader_cost_factor = 0.05 
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = -0.05
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_interservice_rivalry_IJA_strengthened_range
+			min = 0.5
+			max = 0.75
+			modifier = {
+				experience_gain_army = 0.1
+				experience_gain_navy_factor = -0.2
+				land_doctrine_cost_factor = -0.1
+				naval_doctrine_cost_factor = 0.1
+				army_leader_cost_factor = -0.1
+				navy_leader_cost_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = -0.1
+				naval_morale_factor = -0.1
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+			}
+		}
+		range = {
+			id = JAP_interservice_rivalry_IJA_dominant_range
+			min = 0.75
+			max = 1
+			modifier = {
+				experience_gain_army = 0.1
+				experience_gain_navy_factor = -0.3
+				land_doctrine_cost_factor = -0.1
+				naval_doctrine_cost_factor = 0.1
+				army_leader_cost_factor = -0.1
+				navy_leader_cost_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = -0.1
+				naval_morale_factor = -0.2
+			}
+			on_activate = {
+
+			}
+			on_deactivate = {
+			}
+		}
+	}
+}

@@ -1515,7 +1515,7 @@ JAP_fully_armed_state_Policy = {
 	}
 	JAP_fully_armed_state_decision_6 = {
 		icon = eng_trade_unions_demand
-                allowed = { always = no } #イベントorNFで解禁
+        allowed = { always = no } #イベントorNFで解禁
 		available = {
                         
 		}
@@ -1544,31 +1544,364 @@ JAP_fully_armed_state_Policy = {
 	}
 }
 JAP_Military_reform_Policy = {
-	
+
+    #天皇機関説の浸透	
 	JAP_Military_reform_Policy_1 = {
 		icon = eng_trade_unions_demand
         allowed = { always = no } #イベントorNFで解禁
 		available = {
-            
+            NOT = { has_country_flag = JAP_Reforming_Military }
+			has_idea = JAP_alienated_army
 		}
 		visible = {
 		}
 		modifier = {
-            political_power_gain = -0.20
+            political_power_cost = 1.0
 		}
-		cost = 50
+		cost = 0
 		days_remove = 70
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 100
+			factor = 200
 		}
 
 		complete_effect = {
+            set_country_flag = { flag = JAP_Reforming_Military days = 70 value = 1 }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = JAP_Political_Distrust_bop
+				value = 0.1
+			}
+			swap_ideas = {
+				remove_idea = JAP_alienated_army
+				add_idea = JAP_alienated_army_1
+			}
+		}
+	}
+	#参謀本部・軍令部の改革
+	JAP_Military_reform_Policy_2 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+			NOT = {
+				has_army_experience < 20
+			}
+			NOT = { has_country_flag = JAP_Reforming_Military }
+			has_idea = JAP_alienated_army_1
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.1
+		}
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+		modifier = {
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_Reforming_Military days = 70 value = 1 }
+			hidden_effect = {
+				add_command_power = -25
+			}
+			army_experience = -20
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = JAP_Political_Distrust_bop
+				value = 0.1
+			}
+			swap_ideas = {
+				remove_idea = JAP_alienated_army_1
+				add_idea = JAP_alienated_army_2
+			}
+			add_command_power = 25
+		}
+	}
+	#帷幄上奏権の廃止
+	JAP_Military_reform_Policy_3 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+			NOT = { has_country_flag = JAP_Reforming_Military }
+			has_idea = JAP_alienated_army_2
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.15
+		}
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 25
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+		modifier = {
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_Reforming_Military days = 70 value = 1 }
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = JAP_Political_Distrust_bop
+				value = 0.1
+			}
+			swap_ideas = {
+				remove_idea = JAP_alienated_army_2
+				add_idea = JAP_alienated_army_3
+			}
+		}
+	}
+	#軍部大臣武官制の廃止
+	JAP_Military_reform_Policy_4 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+			NOT = { has_country_flag = JAP_Reforming_Military }
+			has_idea = JAP_alienated_army_3
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.2
+		}
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 25
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 25
+			}
+		}
+		custom_cost_text = decision_cost_CP_25
+		modifier = {
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_Reforming_Military days = 70 value = 1 }
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = JAP_Political_Distrust_bop
+				value = 0.1
+			}
+			swap_ideas = {
+				remove_idea = JAP_alienated_army_3
+				add_idea = JAP_alienated_army_4
+			}
+		}
+	}
+	#文民統制の確立
+	JAP_Military_reform_Policy_5 = {
+		icon = eng_trade_unions_demand
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+			NOT = { has_country_flag = JAP_Reforming_Military }
+			has_idea = JAP_alienated_army_4
+		}
+		visible = {
+		}
+		modifier = {
+            political_power_factor = -0.25
+		}
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		cost = 50
+		modifier = {
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_Reforming_Military days = 70 value = 1 }
+		}
+		remove_effect = {
+			add_power_balance_value = {
+				id = JAP_Political_Distrust_bop
+				value = 0.1
+			}
+			remove_ideas = JAP_alienated_army_4
+		}
+	}
+}
+JAP_balance_of_power_category = {
 
+    #治安維持法の適用
+	JAP_balance_of_power_Policy_1 = {
+		icon = eng_trade_unions_demand
+        allowed = { original_tag = JAP } #イベントorNFで解禁
+		available = {
+			has_completed_focus = JAP_democracy_focus_3
+		}
+		visible = {
+		}
+		modifier = {
+			political_power_factor = -0.05
+			totalist_drift = -0.01
+			syndicalist_drift = -0.01
+			radical_socialist_drift = -0.01
+			national_populist_drift = -0.01
+			gnosticism_populist_drift = -0.01
+			power_balance_weekly = 0.005
+		}
+		cost = 50
+		days_remove = 70
+		days_re_enable = 400
+		fire_only_once = no
+		ai_will_do = {
+			factor = 40
+		}
+
+		complete_effect = {
+            set_country_flag = { flag = JAP_Bop_decision_going days = 70 value = 1 }
+		}
+		remove_effect = {
+		}
+	}
+	#報道の統制
+	JAP_balance_of_power_Policy_2 = {
+		icon = eng_trade_unions_demand
+        allowed = { original_tag = JAP } #イベントorNFで解禁
+		available = {
+			has_completed_focus = JAP_democracy_focus_3
+		}
+		visible = {
+		}
+		modifier = {
+			political_power_factor = -0.1
+			totalist_drift = -0.01
+			syndicalist_drift = -0.01
+			radical_socialist_drift = -0.01
+			national_populist_drift = -0.01
+			gnosticism_populist_drift = -0.01
+			power_balance_weekly = -0.005
+		}
+		cost = 50
+		days_remove = 70
+		days_re_enable = 400
+		fire_only_once = no
+		ai_will_do = {
+			base = 0
+			modifier = { has_idea = JAP_Osumi_Mineo add = 40 }
+		}
+
+		complete_effect = {
+            set_country_flag = { flag = JAP_Bop_decision_going days = 70 value = 1 }
+		}
+		remove_effect = {
+		}
+	}
+	#首相のラジオ演説
+	JAP_balance_of_power_Policy_3 = {
+		icon = eng_trade_unions_demand
+        allowed = { original_tag = JAP } #イベントorNFで解禁
+		available = {
+			has_completed_focus = JAP_democracy_focus_3
+		}
+		visible = {
+		}
+		modifier = {
+		}
+		cost = 30
+		days_remove = 7
+		days_re_enable = 200
+		fire_only_once = no
+		ai_will_do = {
+			factor = 40
+		}
+
+		complete_effect = {
+            set_country_flag = { flag = JAP_Bop_decision_going days = 7 value = 1 }
+		}
+		remove_effect = {
+			add_stability = 0.01
+			add_power_balance_value = {
+				id = JAP_Political_Distrust_bop
+				value = 0.02
+			}
+		}
+	}
+	#映画産業への投資
+	JAP_balance_of_power_Policy_4 = {
+		icon = eng_trade_unions_demand
+        allowed = { original_tag = JAP } #イベントorNFで解禁
+		available = {
+			has_completed_focus = JAP_democracy_focus_3
+		}
+		visible = {
+		}
+		modifier = {
+			political_power_cost = 0.2
+			stability_weekly = 0.001
+			power_balance_weekly = 0.003
+		}
+		cost = 50
+		days_remove = 70
+		days_re_enable = 365
+		fire_only_once = no
+		ai_will_do = {
+			factor = 40
+		}
+
+		complete_effect = {
+            set_country_flag = { flag = JAP_Bop_decision_going days = 70 value = 1 }
 		}
 		remove_effect = {
 
 		}
+	}
+	#第三次憲政擁護運動
+	JAP_balance_of_power_Policy_5 = {
+		icon = eng_trade_unions_demand
+        allowed = { original_tag = JAP } #イベントorNFで解禁
+		available = {
+			has_completed_focus = JAP_democracy_focus_3
+		}
+		visible = {
+		}
+		modifier = {
+			power_balance_weekly = 0.01
+			social_democrat_drift = 0.01
+			social_liberal_drift = 0.01
+			market_liberal_drift = 0.01
+			social_conservative_drift = 0.01
+		}
+		cost = 150
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 40
+		}
 
+		complete_effect = {
+            set_country_flag = { flag = JAP_Bop_decision_going days = 70 value = 1 }
+		}
+		remove_effect = {
+
+		}
 	}
 }

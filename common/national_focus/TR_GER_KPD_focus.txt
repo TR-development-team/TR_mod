@@ -211,7 +211,7 @@ focus_tree = {
 		icon = GFX_focus_fra_loyalty_trotzky
 		x = 2
 		y = 7
-		cost = 5
+		cost = 10
         available = {
             }
 		prerequisite = { focus =  GER_Trotsky_focus_7 }
@@ -409,7 +409,7 @@ focus_tree = {
 		icon = GFX_goal_GER_VS_Imperialism
 		x = 6
 		y = 7
-		cost = 5
+		cost = 10
         available = {
             }
 		prerequisite = { focus = GER_Levine_focus_7 }
@@ -563,7 +563,7 @@ focus_tree = {
 		icon = GFX_focus_SOV_proclaim_soviet_hegemony
 		x = 4
 		y = 8
-		cost = 8
+		cost = 15
         available = {
             }
 		prerequisite = { focus = GER_Trotsky_focus_9 focus = GER_Levine_focus_9 }

@@ -21,7 +21,6 @@ CHI_People_support_low_increase_effect = {
 transfer_all_unit_leaders_to_FROM = {
 	every_unit_leader = {
 		limit = { has_character_flag = CHI_original_unit_leader }
-		remove_second_in_command_role = yes
 		set_nationality = FROM
 	}
 }

@@ -15,9 +15,9 @@
 
 
 
-GER_invade_PRE = {
+RAT_invade_PRE = {
 	allowed = {
-			original_tag = GER
+			original_tag = RAT
 	}
 	enable = {
 		has_war_with = PRE
@@ -41,9 +41,9 @@ GER_invade_PRE = {
 	}
 }
 
-GER_extra_focus_on_Austria= {
+RAT_extra_focus_on_Austria= {
 	allowed = {
-		original_tag = GER
+		original_tag = RAT
 	}
 	enable = {
 		AUS = { is_faction_leader = yes }
@@ -63,9 +63,9 @@ GER_extra_focus_on_Austria= {
 	}
 }
 
-GER_extra_focus_on_france = {
+RAT_extra_focus_on_france = {
 	allowed = {
-		original_tag = GER
+		original_tag = RAT
 	}
 	enable = {
 		FRA = { is_faction_leader = yes }
@@ -85,9 +85,9 @@ GER_extra_focus_on_france = {
 	}
 }
 
-GER_extra_focus_on_NTL = {
+RAT_extra_focus_on_NTL = {
 	allowed = {
-		original_tag = GER
+		original_tag = RAT
 	}
 	enable = {
 		NTL = { is_in_faction_with = FRA }
@@ -106,12 +106,12 @@ GER_extra_focus_on_NTL = {
 	}
 }
 
-Germany_likes_soviet = {
+RATmany_likes_soviet = {
 	allowed = {
-		tag = GER
+		tag = RAT
 		tag = GBR
 		is_subject = no
-		GER = { is_faction_leader = yes }
+		RAT = { is_faction_leader = yes }
 		GBR = {	has_country_flag = GBR_revolutionary_faction_flag	}
 	}
 	enable = {

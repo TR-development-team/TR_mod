@@ -1,6 +1,6 @@
 ﻿division_template = {
-	name = "Juntuán"				# Binary infantry corps (Chinese divisions were brigade-sized units)
-	division_names_group = WHN_INF_01
+	name = "Juntuán"				
+	division_names_group = ANH_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -10,10 +10,21 @@
 		infantry = { x = 1 y = 1 }
 	}
 }
-
 division_template = {
-	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
-	division_names_group = WHN_INF_01
+	name = "Jingbei"				
+	division_names_group = ANH_MIL_01
+							
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+        is_locked = yes
+}
+division_template = {
+	name = "Bubing Shi"			
+	division_names_group = ANH_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }	
@@ -29,8 +40,8 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
-	division_names_group = WHN_CAV_01
+	name = "Qibing Jun"		
+	division_names_group = ANH_CAV_01
 
 	regiments = {
 		cavalry = { x = 0 y = 0 }
@@ -48,8 +59,7 @@ units = {
 			name_order = 1
 		}
 		location = 7191
-		division_template = "Juntuán"
-		start_equipment_factor = 0.7
+		division_template = "Jingbei"
 	}
 	division = { # "Peixun Shi"
 		division_name = {
@@ -57,8 +67,7 @@ units = {
 			name_order = 2
 		}
 		location = 1055
-		division_template = "Juntuán"
-		start_equipment_factor = 0.7
+		division_template = "Jingbei"
 
 	}
 	division = {
@@ -67,7 +76,7 @@ units = {
 			name_order = 3
 		}
 		location = 11913
-		division_template = "Juntuán"
+		division_template = "Jingbei"
 		start_equipment_factor = 0.7
 	}
 	division = {
@@ -76,7 +85,7 @@ units = {
 			name_order = 4
 		}
 		location = 11928
-		division_template = "Juntuán"
+		division_template = "Jingbei"
 		start_equipment_factor = 0.7
 	}
 	division = {
@@ -85,7 +94,7 @@ units = {
 			name_order = 5
 		}
 		location = 4079
-		division_template = "Juntuán"
+		division_template = "Jingbei"
 		start_equipment_factor = 0.6
 	}
 	division = {
@@ -94,37 +103,98 @@ units = {
 			name_order = 6
 		}
 		location = 7222
-		division_template = "Juntuán"
+		division_template = "Jingbei"
 		start_equipment_factor = 0.6
 	}
-	### Capital Garrison Force (CO: ) ###
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 11913
-		division_template ="Sanjiao Jun"
-		start_experience_factor = 0.3
+		location = 7035
+		division_template = "Jingbei"
+		start_equipment_factor = 0.7
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 11928
-		division_template ="Sanjiao Jun"
+		location = 4203
+		division_template = "Jingbei"
 		start_equipment_factor = 0.8
-		start_experience_factor = 0.3
 	}
 	division = {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 9
 		}
+		location = 4158
+		division_template = "Jingbei"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 9937
+		division_template = "Jingbei"
+		start_equipment_factor = 0.9
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 10079
+		division_template = "Jingbei"
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 1001
+		division_template = "Jingbei"
+	}
+	### Capital Garrison Force (CO: ) ###
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11913
+		division_template ="Bubing Shi"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11928
+		division_template ="Bubing Shi"
+		start_equipment_factor = 0.8
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
 		location = 10076
-		division_template ="Sanjiao Jun"
+		division_template ="Bubing Shi"
 		start_equipment_factor = 0.5
+		start_experience_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7007
+		division_template ="Bubing Shi"
+		start_equipment_factor = 0.8
 		start_experience_factor = 0.3
 	}
 	division = {
@@ -153,5 +223,13 @@ units = {
 
 
 instant_effect = {
-
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ANH"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
 }

@@ -538,7 +538,7 @@ country_event = {
 	
 	option = {
 		name = TR_germany.8.a
-		ai_chance = { factor = 50 }
+		ai_chance = { base = 50 }
 		BAY = { inherit_technology = RAT
 			add_state_core = 53
 			transfer_state = 53
@@ -566,7 +566,7 @@ country_event = {
 	}
 	option = {
 		name = TR_germany.8.b
-		ai_chance = { factor = 30 }
+		ai_chance = { base = 30 }
 		BAY = { inherit_technology = RAT
 			add_state_core = 53
 			transfer_state = 53
@@ -595,7 +595,7 @@ country_event = {
 	}
 	option = {
 		name = TR_germany.8.c
-		ai_chance = { factor = 20 }
+		ai_chance = { base = 20 }
 
 		BAY = {
 		inherit_technology = RAT
@@ -900,7 +900,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 2
-				has_government = GER_Black_front_1
+				has_country_flag = GER_Black_front_1
 			}
 		}
 		set_country_flag = GER_Erwin_Rommel_army
@@ -923,7 +923,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 2
-				has_government = GER_Consul_1
+				has_country_flag = GER_Consul_1
 			}
 		}
 		set_country_flag = GER_ernst_junger_army
@@ -1015,7 +1015,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 2
-				has_government = GER_Black_front_1
+				has_country_flag = GER_Black_front_1
 			}
 		}
 		hidden_effect = {
@@ -1037,7 +1037,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 2
-				has_government = GER_Consul_1
+				has_country_flag = GER_Consul_1
 			}
 		}
 		hidden_effect = {
@@ -1126,7 +1126,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 2
-				has_government = GER_Black_front_1
+				has_country_flag = GER_Black_front_1
 			}
 		}
 		hidden_effect = {
@@ -1148,7 +1148,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 2
-				has_government = GER_Consul_1
+				has_country_flag = GER_Consul_1
 			}
 		}
 		hidden_effect = {
@@ -1237,7 +1237,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 2
-				has_government = GER_Black_front_1
+				has_country_flag = GER_Black_front_1
 			}
 		}
 		hidden_effect = {
@@ -1259,7 +1259,7 @@ country_event = {
 			base = 40
 			modifier = {
 				factor = 2
-				has_government = GER_Consul_1
+				has_country_flag = GER_Consul_1
 			}
 		}
 		hidden_effect = {
@@ -2098,16 +2098,29 @@ country_event = {#フランス統治問題
 			}
 			transfer_state_to = FRA
 		}
-		FRA = { 
-			set_cosmetic_tag = FRA_republic
+	    }
+		if = {
+			limit = { RAT = { has_government = radical_socialist } }
+			set_autonomy = {
+				target = FRA
+				autonomy_state = constituent_republic
+			}
+			FRA = { 
+				set_cosmetic_tag = FRA_RAT
+			}
+		}
+		if = {
+			limit = { NOT = { RAT = { has_government = radical_socialist } } }
+			set_autonomy = {
+				target = FRA
+				autonomy_state = autonomy_puppet
+			}
+			FRA = { 
+				set_cosmetic_tag = FRA_people_republic
+			}
 		}
 		BRI = { 
 			set_cosmetic_tag = BRI_BRITANNIA
-		}
-	    }
-		set_autonomy = {
-			target = FRA
-			autonomy_state = autonomy_puppet
 		}
 		GB1 = { 
 			set_autonomy = {
@@ -2296,25 +2309,38 @@ country_event = {#フランス統治問題
 			}
 			transfer_state_to = FRA
 		}
-		FRA = { 
-			set_cosmetic_tag = FRA_republic
+	    }
+		if = {
+			limit = { RAT = { has_government = radical_socialist } }
+			FRA = { 
+				set_cosmetic_tag = FRA_RAT
+			}
+			set_autonomy = {
+				target = FRA
+				autonomy_state = constituent_republic
+			}
+		}
+		if = {
+			limit = { NOT = { RAT = { has_government = radical_socialist } } }
+			FRA = { 
+				set_cosmetic_tag = FRA_people_republic
+			}
+			set_autonomy = {
+				target = FRA
+				autonomy_state = autonomy_puppet
+			}
 		}
 		BRI = { 
 			set_cosmetic_tag = BRI_BRITANNIA
-		}
-		OCC = { 
-			set_cosmetic_tag = OCC_ITA
-		}
-	    }
-		set_autonomy = {
-			target = FRA
-			autonomy_state = autonomy_puppet
 		}
 		GB1 = { 
 			set_autonomy = {
 				target = BRI
 				autonomy_state = overseas_territory
 			}
+		}
+		OCC = { 
+			set_cosmetic_tag = OCC_ITA
 		}
 		ITA = { 
 			set_autonomy = {
@@ -2428,7 +2454,6 @@ country_event = {#フランス統治問題
 				remove_core_of = FRA
 			}
 		}		
-
 		every_owned_state = {
 			limit = {
 				is_core_of = FRA
@@ -2436,15 +2461,27 @@ country_event = {#フランス統治問題
 			}
 			transfer_state_to = FRA
 		}
-		FRA = { 
-			set_cosmetic_tag = FRA_republic
-		}
 	    }
-		set_autonomy = {
-			target = FRA
-			autonomy_state = autonomy_puppet
+		if = {
+			limit = { RAT = { has_government = radical_socialist } }
+			FRA = { 
+				set_cosmetic_tag = FRA_RAT
+			}
+			set_autonomy = {
+				target = FRA
+				autonomy_state = constituent_republic
+			}
 		}
-
+		if = {
+			limit = { NOT = { RAT = { has_government = radical_socialist } } }
+			FRA = { 
+				set_cosmetic_tag = FRA_people_republic
+			}
+			set_autonomy = {
+				target = FRA
+				autonomy_state = autonomy_puppet
+			}
+		}
 	}
 	option = { 
 		name = TR_gerfor.1.e

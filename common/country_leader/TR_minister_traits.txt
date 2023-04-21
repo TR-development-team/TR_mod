@@ -940,6 +940,14 @@ leader_traits = {
 
 		random = no
 	}
+	carm_JAP_Watanabe_Jotaro = {#渡辺錠太郎
+		experience_gain_army = 0.3
+		experience_loss_factor = -0.2
+		planning_speed = 0.15
+		power_balance_weekly = 0.002
+
+		random = no
+	}
 #海軍
 
 	cnav_open_seas_doctrine = {
@@ -987,6 +995,14 @@ leader_traits = {
 				instant = yes
 			}
 		}
+
+		random = no
+	}
+	cnav_JAP_Hori_Teikichi = {#堀悌吉
+	    experience_gain_navy = 0.3
+		naval_morale_factor = 0.1
+		sortie_efficiency = 0.1
+		power_balance_weekly = 0.002
 
 		random = no
 	}

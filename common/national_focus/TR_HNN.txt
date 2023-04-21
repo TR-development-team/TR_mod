@@ -2963,7 +2963,7 @@ focus_tree = {
 	completion_reward = {
 		add_stability = 0.1
 		add_timed_idea = {
-			idea = CHI_war_of_resistance_prepare
+			idea = WHN_war_of_resistance_prepare
 			days = 180
 		}
 		if = {
@@ -3086,7 +3086,7 @@ focus_tree = {
 			has_war = no
 			is_subject = no
 			has_army_manpower = { size > 999999 }
-			NOT = { has_idea = CHI_war_of_resistance_prepare }
+			NOT = { has_idea = WHN_war_of_resistance_prepare }
         }
 		ai_will_do = {
 			factor = 80
@@ -3094,7 +3094,7 @@ focus_tree = {
 		prerequisite = { focus = HNN_Diplomacy_focus_6 }
 		relative_position_id = HNN_Diplomacy_focus_1
 	completion_reward = {
-		add_ideas = CHI_war_of_resistance_1
+		add_ideas = WHN_war_of_resistance_1
 		if = {
 			limit = {
 				NOT = { is_in_faction_with = SHX }
@@ -3200,8 +3200,8 @@ focus_tree = {
 		relative_position_id = HNN_Diplomacy_focus_1
 	completion_reward = {
 		swap_ideas = {
-			remove_idea = CHI_war_of_resistance_1
-			add_idea = CHI_war_of_resistance_2
+			remove_idea = WHN_war_of_resistance_1
+			add_idea = WHN_war_of_resistance_2
 		}
 		}
 	}		
@@ -3225,8 +3225,8 @@ focus_tree = {
 	completion_reward = {
 		add_political_power = 1000
 		add_stability = 0.1
-		remove_ideas = CHI_war_of_resistance_1
-		remove_ideas = CHI_war_of_resistance_2
+		remove_ideas = WHN_war_of_resistance_1
+		remove_ideas = WHN_war_of_resistance_2
 		}
 	}	
 	#湖南産業

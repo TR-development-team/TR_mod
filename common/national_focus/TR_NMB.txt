@@ -346,10 +346,6 @@ focus_tree = {
 				target = NKR
 				type = annex_everything
 			}
-                        create_wargoal = {
-				target = CAR
-				type = annex_everything
-			}
 		}
 	}
 
@@ -363,12 +359,11 @@ focus_tree = {
 		cost = 10
 		available = {
 			is_subject = no	
-                        NOT = { country_exists = COG }
-                        NOT = { country_exists = CAR }
-                        NOT = { has_war_with = ETH }
+            NOT = { country_exists = COG }
+            NOT = { has_war_with = ETH }
 			OR = { 
-                           NMB = { is_neighbor_of = CMR }
-                           CAR = { is_neighbor_of = CMR }
+                NMB = { is_neighbor_of = CMR }
+                CAR = { is_neighbor_of = CMR }
                           }
 			}
 		ai_will_do = {
@@ -402,7 +397,6 @@ focus_tree = {
 		available = {
 			is_subject = no	
                         NOT = { country_exists = COG }
-                        NOT = { country_exists = CAR }
                         NOT = { has_war_with = CMR }
 			}
 		ai_will_do = {
@@ -1281,7 +1275,7 @@ focus_tree = {
 	focus = {
 		id = NMB_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = NMB_flexible_navy focus = CHI_large_navy }
+		prerequisite = { focus = NMB_flexible_navy focus = NMB_large_navy }
 		x = 0
 		y = 1
 		relative_position_id = NMB_flexible_navy
@@ -1319,7 +1313,7 @@ focus_tree = {
 	focus = {
 		id = NMB_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = NMB_large_navy focus = CHI_flexible_navy }
+		prerequisite = { focus = NMB_large_navy focus = NMB_flexible_navy }
 		x = 0
 		y = 1
 		relative_position_id = NMB_large_navy

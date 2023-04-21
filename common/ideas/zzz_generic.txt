@@ -103,36 +103,6 @@ ideas = {
 	country = {
 	
 	}	
-	political_advisor = {
-		# POLITICAL	
-		generic_TR_silent_workhorse = {
-			
-			allowed = {
-				NOT = { OR = { tag = RAT  tag = JAP tag = BUL tag = WHN tag = AST tag = USA  } }
-
-			}
-
-			available = {
-
-			}
-			
-			traits = { TR_silent_workhorse }
-	
-			on_add = {
-
-			}
-	
-			do_effect = {
-
-			}
-	
-			ai_will_do = {
-				factor = 1
-			}
-		}
-			
-
-	}
 		
 	
 

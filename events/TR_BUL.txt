@@ -63,22 +63,45 @@ country_event = {
 			ITA = { remove_from_faction = BUL }
 		}
 		if = {
-			limit = { RUS = { has_war_with = ITA } }
+			limit = { ITA = { is_in_faction_with = BUL } RUS = { has_war_with = ITA } }
 			ITA = { white_peace = RUS }
 		}
 		if = {
-			limit = { SOV = { has_war_with = ITA } }
+			limit = { ITA = { is_in_faction_with = BUL } SOV = { has_war_with = ITA } }
 			ITA = { white_peace = SOV }
 		}
 		if = {
-			limit = { MHN = { has_war_with = ITA } }
+			limit = { ITA = { is_in_faction_with = BUL } MHN = { has_war_with = ITA } }
 			ITA = { white_peace = MHN }
 		}
-		remove_state_core = 106
-		remove_state_core = 803
-		remove_state_core = 841
-		remove_state_core = 184
-		remove_state_core = 731
+                if = {
+			limit = { ITA = { is_in_faction_with = BUL } ROM = { has_war_with = ITA } }
+			ITA = { white_peace = ROM }
+		}
+                if = {
+			limit = { ITA = { is_in_faction_with = BUL } SER = { has_war_with = ITA } }
+			ITA = { white_peace = SER }
+		}
+                if = {
+			limit = { ITA = { is_in_faction_with = BUL } GRE = { has_war_with = ITA } }
+			ITA = { white_peace = GRE }
+		}
+                hidden_effect = { 
+                        every_state = {
+                                limit = {
+                                    is_claimed_by = BUL
+                                    is_bulgaria = no
+                                }
+                                remove_claim_by = BUL
+                        }
+                        every_state = {
+                                limit = {
+                                    is_core_of = BUL
+                                    is_bulgaria = no
+                                }
+                                remove_core_of = BUL
+                        }
+                }
 		remove_ideas = BUL_ARMY
 		remove_ideas = BUL_economic
 		remove_ideas = BUL_Foutrh_Roma
@@ -96,9 +119,12 @@ country_event = {
 				country_exists = ROM
 				has_war_with = ROM
 			}
-			ROM = { 
-				transfer_state = 841 
-				transfer_state = 77
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = ROM
+				}
+				transfer_state_to = ROM
 			}
 		}
 		if = {
@@ -108,20 +134,26 @@ country_event = {
                                owns_state = 184
                                owns_state = 731
                               }
-			GRE = { 
-                                transfer_state = 184
-                                transfer_state = 731
-                              }
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = GRE
+				}
+				transfer_state_to = GRE
+			}
 		}
                 if = {
 			limit = { 
                                country_exists = SER 
                                has_war_with = SER 
                               }
-			SER = { 
-                                transfer_state = 803 
-                                transfer_state = 106
-                              }
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = SER
+				}
+				transfer_state_to = SER
+			}
 		}
                 if = {
 			limit = { 
@@ -156,7 +188,13 @@ country_event = {
                                owns_state = 184
                                owns_state = 731
                               }
-                        release = GRE
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = GRE
+				}
+				transfer_state_to = GRE
+			}
 		}
                 if = {
 			limit = { 
@@ -166,7 +204,13 @@ country_event = {
                                NOT = { has_war_with = MHN }
                                NOT = { has_war_with = AUS }
                               }
-                        release = ROM
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = ROM
+				}
+				transfer_state_to = ROM
+			}
 		}
                 if = {
 			limit = { 
@@ -178,7 +222,6 @@ country_event = {
                                owns_state = 84
                                owns_state = 80
                               }
-                        release = ROM
                         AUS = { 
                                 transfer_state = 84 
                                 transfer_state = 82
@@ -186,6 +229,13 @@ country_event = {
                                 transfer_state = 76
                                 transfer_state = 80
                               }
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = ROM
+				}
+				transfer_state_to = ROM
+			}
 		}
                 if = {
 			limit = { 
@@ -194,11 +244,17 @@ country_event = {
                                owns_state = 78
                                owns_state = 768
                               }
-                        release = ROM
                         MHN = { 
                                 transfer_state = 78 
                                 transfer_state = 768
                               }
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = ROM
+				}
+				transfer_state_to = ROM
+			}
 		}
                 if = {
 			limit = { 
@@ -208,11 +264,17 @@ country_event = {
                                owns_state = 78
                                owns_state = 768
                               }
-                        release = ROM
                         SOV = { 
                                 transfer_state = 78 
                                 transfer_state = 768
                               }
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = ROM
+				}
+				transfer_state_to = ROM
+			}
 		}
                 if = {
 			limit = { 
@@ -223,11 +285,17 @@ country_event = {
                                owns_state = 78
                                owns_state = 768
                               }
-                        release = ROM
                         RUS = { 
                                 transfer_state = 78 
                                 transfer_state = 768
                               }
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = ROM
+				}
+				transfer_state_to = ROM
+			}
 		}
                 if = {
 			limit = { 
@@ -235,7 +303,13 @@ country_event = {
                                NOT = { has_war_with = AUS }
                                owns_state = 106
                               }
-                        release = SER
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = SER
+				}
+				transfer_state_to = SER
+			}
 		}
                 if = {
 			limit = { 
@@ -243,8 +317,14 @@ country_event = {
                                has_war_with = AUS
                                owns_state = 106
                               }
-                        release = SER
-                         AUS = { puppet = SER }
+                        every_state = {
+				limit = {
+                                        is_owned_by = BUL
+					is_core_of = SER
+				}
+				transfer_state_to = SER
+			}
+                        AUS = { puppet = SER }
 		}
                 every_country = {
                          limit = {

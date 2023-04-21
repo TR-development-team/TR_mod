@@ -23,16 +23,6 @@ set_popularities = {
 	social_conservative = 15
 }
 
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Christian_X.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-	
-	}
-}
 recruit_character = DEN_aksel_larsen
 recruit_character = DEN_thorvald_stauning
 recruit_character = DEN_peter_rochegune_munch

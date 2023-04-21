@@ -22,7 +22,7 @@ starting_train_buffer = 1
 set_stability = 0.4
 set_war_support = 0.4
 # Starting tech
-set_technology = {
+set_technology = { 
 	infantry_weapons = 1
 	infantry_weapons1 = 1
 	tech_recon = 1
@@ -31,26 +31,21 @@ set_technology = {
 	tech_military_police = 1
 	tech_mountaineers = 1
 	motorised_infantry = 1
-	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	fighter1 = 1
-	early_bomber = 1
-	strategic_bomber1 = 1
-	naval_bomber1 = 1
-	mass_assault = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
 	basic_train = 1
 }
+
 if = {
 	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
 		gwtank = 1
+
 	}
 }
 if = {
@@ -102,6 +97,32 @@ if = {
 		armored_car1 = 1
 	}
 }
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_technology = {
+			iw_small_airframe = 1
+			aa_lmg = 1
+			aa_cannon_1 = 1
+			early_bombs = 1
+			engines_1 = 1
+			engines_2 = 1
+			iw_medium_airframe = 1
+			iw_large_airframe = 1
+			basic_small_airframe = 1
+			basic_medium_airframe = 1
+			aircraft_construction = 1
+		}
+	else = {
+		set_technology = {
+			early_fighter = 1
+			fighter1 = 1
+			early_bomber = 1
+			strategic_bomber1 = 1
+			naval_bomber1 = 1
+		}
+	}
+}
+
 
 
 
@@ -137,51 +158,51 @@ add_ideas = {
         RUS_revolution
         RUS_Okhrana
         #大臣
-        SOV_nikolai_ii
-        SOV_Pavel_Ignatiev
-        SOV_Nikolai_Pokrovsky
-        SOV_Pyotr_Bark
-        SOV_Alexandr_Protopopov
-        SOV_Lavr_Kornilov
-        SOV_Pyotr_wrangel_coa
+        RUS_nikolai_ii
+        RUS_Pavel_Ignatiev
+        RUS_Nikolai_Pokrovsky
+        RUS_Pyotr_Bark
+        RUS_Alexandr_Protopopov
+        RUS_Lavr_Kornilov
+        RUS_Pyotr_wrangel_coa
 }
 
-recruit_character = SOV_Alexander_Kazembek
-recruit_character = SOV_Nikolai_bukharin
-recruit_character = SOV_Yuliy_martov
-recruit_character = SOV_Viktor_Chernov
-recruit_character = SOV_Pavel_Milyukov
-recruit_character = SOV_Nikolai_Trubetzkoy
-recruit_character = SOV_Alexander_Guchkov
-recruit_character = SOV_nikolai_ii
-recruit_character = SOV_Vladimir_Purishkevich
-recruit_character = SOV_Sergey_Taboritsky
+recruit_character = RUS_Alexander_Kazembek
+recruit_character = RUS_Nikolai_bukharin
+recruit_character = RUS_Yuliy_martov
+recruit_character = RUS_Viktor_Chernov
+recruit_character = RUS_Pavel_Milyukov
+recruit_character = RUS_Nikolai_Trubetzkoy
+recruit_character = RUS_Alexander_Guchkov
+recruit_character = RUS_nikolai_ii
+recruit_character = RUS_Vladimir_Purishkevich
+recruit_character = RUS_Sergey_Taboritsky
 
-recruit_character = SOV_Boris_Savinkov
-recruit_character = SOV_alexei_ii
-recruit_character = SOV_Pyotr_wrangel
-recruit_character = SOV_Pyotr_wrangel_1
-recruit_character = SOV_Anastasia
-recruit_character = SOV_Regent_Council
-recruit_character = SOV_alexei_ii_portrait
+recruit_character = RUS_Boris_Savinkov
+recruit_character = RUS_alexei_ii
+recruit_character = RUS_Pyotr_wrangel
+recruit_character = RUS_Pyotr_wrangel_1
+recruit_character = RUS_Anastasia
+recruit_character = RUS_Regent_Council
+recruit_character = RUS_alexei_ii_portrait
 
-recruit_character = SOV_Pyotr_wrangel_Army
-recruit_character = SOV_Pavel_Bermont_Avalov
-recruit_character = SOV_Sergey_Markov
-recruit_character = SOV_Abram_Dragomirov
-recruit_character = SOV_Mikhail_Drozdovskiy
-recruit_character = SOV_Ivan_Romanovsky
-recruit_character = SOV_Pavel_Shatilov
-recruit_character = SOV_Pyotr_Mahrov
-recruit_character = SOV_aleksandr_rodzyanko
-recruit_character = SOV_andrey_shkuro
-recruit_character = SOV_Boris_Annenkov
-recruit_character = SOV_Lavr_Kornilov
-recruit_character = SOV_Alexander_Kutepov
-recruit_character = SOV_Yevgeny_Miller
-recruit_character = SOV_Aleksei_Arkhangelsky
+recruit_character = RUS_Pyotr_wrangel_Army
+recruit_character = RUS_Pavel_Bermont_Avalov
+recruit_character = RUS_Sergey_Markov
+recruit_character = RUS_Abram_Dragomirov
+recruit_character = RUS_Mikhail_Drozdovskiy
+recruit_character = RUS_Ivan_Romanovsky
+recruit_character = RUS_Pavel_Shatilov
+recruit_character = RUS_Pyotr_Mahrov
+recruit_character = RUS_aleksandr_rodzyanko
+recruit_character = RUS_andrey_shkuro
+recruit_character = RUS_Boris_Annenkov
+recruit_character = RUS_Lavr_Kornilov
+recruit_character = RUS_Alexander_Kutepov
+recruit_character = RUS_Yevgeny_Miller
+recruit_character = RUS_Aleksei_Arkhangelsky
 
-recruit_character = SOV_Alexander_Kolchak
+recruit_character = RUS_Alexander_Kolchak
 
 ### VARIANTS ###
 # 1936 Start #
@@ -448,4 +469,3 @@ if = {
 		}
 	}
 }
-

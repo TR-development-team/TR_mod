@@ -1,0 +1,27 @@
+characters={
+	SKT_Siddiq_Abubakar_III={
+		name=SKT_Siddiq_Abubakar_III
+		portraits={
+			civilian={
+				large="gfx/leaders/Africa/SiddiqAbubakarIII.tga"
+			}
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+		country_leader={
+			ideology= Nationalism_subtype
+		}
+		field_marshal = {
+			traits = { offensive_doctrine politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		} 
+	}
+}
