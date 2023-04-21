@@ -194,6 +194,8 @@
  ALB_kingdom:0 "アルバニア王国"
  ALB_kingdom_DEF:0 "アルバニア王国"
  
+ AUS_arch_duchy:0 "オーストリア大公国"
+ AUS_arch_duchy_DEF:0 "オーストリア大公国"
  AUS_lands:0 "オーストリア諸邦"
  AUS_lands_DEF:0 "オーストリア諸邦"
  
@@ -292,8 +294,8 @@
  HRZ_state:0 "ヘルツェゴビナ国"
  HRZ_state_DEF:0 "ヘルツェゴビナ国"
  
- HUN_crown_lands:0 "神聖なるハンガリーの聖イシュトヴァーン王冠の諸邦"
- HUN_crown_lands_DEF:0 "神聖なるハンガリーの聖イシュトヴァーン王冠の諸邦"
+ HUN_crown_lands:0 "ハンガリー王冠領"
+ HUN_crown_lands_DEF:0 "ハンガリーの聖イシュトヴァーンの王冠諸邦"
  
  
  IRE_republic:0 "アイルランド共和国"
@@ -812,16 +814,42 @@
  BLT_united_republic:0 "バルト連合共和国"
  BLT_united_republic_DEF:0 "バルト連合共和国"
  
+ BUC_principality:0 "ブコヴィナ公国"
+ BUC_principality_DEF:0 "ブコヴィナ公国"
+ 
+ COT_free_city:0 "自由都市トリエステ"
+ COT_free_city_DEF:0 "自由都市トリエステ"
+ COT_freie_reichsstadt:0 "トリエステ帝国自由都市"
+ COT_freie_reichsstadt_DEF:0 "トリエステ帝国自由都市"
+ 
  DAL_kingdom:0 "ダルマチア王国"
  DAL_kingdom_DEF:0 "ダルマチア王国"
  
+ GAG_grafschaft:0 "ゴリツィア・グラディスカ伯国"
+ GAG_grafschaft_DEF:0 "ゴリツィア・グラディスカ伯国"
  
  
  
  
+ IST_margraviate:0 "イストリア辺境伯領"
+ IST_margraviate_DEF:0 "イストリア辺境伯領"
+ 
+ KAE_principality:0 "ケルンテン公国"
+ KAE_principality_DEF:0 "ケルンテン公国"
+ 
+ 
+ KRA_principality:0 "カルオニア公国"
+ KRA_principality_DEF:0 "カルオニア公国"
+ 
+ 
+ NIE_arch_duchy:0 "ニーダーエスターライヒ大公国"
+ NIE_arch_duchy_DEF:0 "ニーダーエスターライヒ大公国"
  
  NTL_state:0 "ネーデルラント国"
  NTL_state_DEF:0 "ネーデルラント国"
+ 
+ OBE_arch_duchy:0 "オーバーエスターライヒ大公国"
+ OBE_arch_duchy_DEF:0 "オーバーエスターライヒ大公国"
  
  RAT_international_republic:0 "国際レーテ共和国"
  RAT_international_republic_DEF:0 "国際レーテ共和国"
@@ -842,8 +870,20 @@
  RUS_republic:0 "ロシア共和国"
  RUS_republic_DEF:0 "ロシア共和国"
  
+ SAL_principality:0 "ザルツブルク公国"
+ SAL_principality_DEF:0 "ザルツブルク公国"
+ 
  SIB_socialist_republic:0 "シベリア社会主義共和国"
  SIB_socialist_republic_DEF:0 "シベリア社会主義共和国"
+ 
+ STE_principality:0 "シュタイアーマルク公国"
+ STE_principality_DEF:0 "シュタイアーマルク公国"
+ 
+ TYR_grafschaft:0 "チロル伯国"
+ TYR_grafschaft_DEF:0 "チロル伯国"
+ 
+ VOR_grafschaft:0 "フォアアールベルク伯国"
+ VOR_grafschaft_DEF:0 "フォアアールベルク伯国"
  
 #アフリカ
  KAT_state:0 "カタンガ国"

@@ -1,7 +1,7 @@
 ﻿capital = 91
 set_oob = "GAL_1936"
 
-AUS = {	set_autonomy = {	target = GAL	autonomous_state = AUS_crown_land	}	}
+AUS = {	set_autonomy = {	target = GAL	autonomy_state  = AUS_crown_land	}	}
 set_cosmetic_tag = GALandLOD_kingdom
 
 set_politics = {

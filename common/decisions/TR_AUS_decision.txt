@@ -3,10 +3,68 @@ AUS_debug_category = {
 		icon = generic_decision
 		fire_only_once = no
 		available = {
-			has_country_flag = AUS_finish_plunge
+			
 		}
 		complete_effect = {
-			remove_ideas = AUS_financial_difficulties_idea
+			set_temp_variable = {
+				THIS.testosterone = 1000
+			}
+			HUN = {
+				add_manpower = PREV.testosterone
+			}
+			multiply_temp_variable = {
+				THIS.testosterone = -1
+			}
+			add_manpower = THIS.testosterone
+		}
+	}
+	AUS_debug_decision_2 = {
+		icon = generic_decision
+		fire_only_once = no
+		available = {
+			
+		}
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = AUS
+					}
+				}
+				every_other_country = {
+					limit = {
+						NOT = {
+							tag = AUS
+						}
+					}
+					declare_war_on = {
+						target = PREV
+						type = annex_everything
+					}
+				}				
+			}
+		}
+	}
+	AUS_debug_decision_3 = {
+		icon = generic_decision
+		fire_only_once = no
+		available = {
+			
+		}
+		complete_effect = {
+			#every_other_country = {
+			#	limit = {
+			#		NOT = {
+			#			tag = AUS
+			#		}
+			#	}
+			#	every_owned_state = {
+			#		add_core_of = PREV
+			#	}				
+			#}
+			every_owned_state = {
+				add_core_of = ROOT
+			}	
 		}
 	}
 	AUS_debug_unite = {
@@ -73,7 +131,6 @@ AUS_debug_category = {
 				transfer_state = 80
 				transfer_state = 84
 				transfer_state = 1014
-				
 				every_owned_state = {
 					add_core_of = ROOT
 				}
@@ -516,6 +573,9 @@ AUS_development_project = {
 			has_political_power > 49
 		}
 		custom_cost_text = decision_cost_PP_50
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		state_target = yes
 		on_map_mode = map_and_decisions_view
@@ -573,6 +633,9 @@ AUS_development_project = {
 			has_political_power > 19
 		}
 		custom_cost_text = decision_cost_PP_20
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		state_target = yes
 		on_map_mode = map_and_decisions_view
@@ -652,6 +715,9 @@ AUS_development_project = {
 			}
 		}
 		cost = 0
+		ai_will_do = {
+			factor = 100
+		}
 		fire_only_once = yes
 		state_target = yes
 		on_map_mode = map_and_decisions_view
@@ -770,10 +836,12 @@ AUS_great_osaka_plunge_category = {
 			}
 		}
 		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		days_remove = 70
 		modifier = {
-			political_power_cost = 0.5
 			stability_weekly = -0.001
 		}
 		complete_effect = {
@@ -799,10 +867,12 @@ AUS_great_osaka_plunge_category = {
 			}
 		}
 		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		days_remove = 100
 		modifier = {
-			political_power_cost = 0.5
 		}
 		complete_effect = {
 			set_country_flag = AUS_addressing_plunge
@@ -827,10 +897,12 @@ AUS_great_osaka_plunge_category = {
 			}
 		}
 		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		days_remove = 50
 		modifier = {
-			political_power_cost = 1
 		}
 		complete_effect = {
 			set_country_flag = AUS_addressing_plunge
@@ -856,10 +928,12 @@ AUS_great_osaka_plunge_category = {
 			has_completed_focus = AUS_banking_network
 		}
 		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		days_remove = 50
 		modifier = {
-			political_power_cost = 1
 		}
 		complete_effect = {
 			set_country_flag = AUS_addressing_plunge
@@ -885,10 +959,12 @@ AUS_great_osaka_plunge_category = {
 			has_completed_focus = AUS_banking_network
 		}
 		cost = 25
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		days_remove = 30
 		modifier = {
-			political_power_cost = 1.5
 		}
 		complete_effect = {
 			set_country_flag = AUS_addressing_plunge
@@ -914,10 +990,12 @@ AUS_great_osaka_plunge_category = {
 			has_completed_focus = AUS_job_creation
 		}
 		cost = 25
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		days_remove = 100
 		modifier = {
-			political_power_cost = 0.5
 			production_factory_max_efficiency_factor = 0.3
 			production_factory_start_efficiency_factor = 0.5
 			industrial_capacity_factory = 0.33
@@ -946,10 +1024,12 @@ AUS_great_osaka_plunge_category = {
 			has_completed_focus = AUS_job_creation
 		}
 		cost = 25
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		days_remove = 100
 		modifier = {
-			political_power_cost = 0.5
 			consumer_goods_factor = -1
 			production_speed_buildings_factor = 0.33
 		}
@@ -976,10 +1056,12 @@ AUS_great_osaka_plunge_category = {
 			has_completed_focus = AUS_reichs_autobahn
 		}
 		cost = 50
+		ai_will_do = {
+			factor = 1
+		}
 		fire_only_once = yes
 		days_remove = 100
 		modifier = {
-			political_power_cost = 0.5
 			production_speed_infrastructure_factor = 0.66
 		}
 		complete_effect = {

@@ -1,7 +1,7 @@
 ﻿capital = 109
 oob = "DAL_1936"
 
-AUS = {	set_autonomy = {	autonomous_state = AUS_crown_land	target = ROOT	}	}
+AUS = {	set_autonomy = {	autonomy_state  = AUS_crown_land	target = ROOT	}	}
 set_cosmetic_tag = DAL_kingdom
 
 set_politics = {

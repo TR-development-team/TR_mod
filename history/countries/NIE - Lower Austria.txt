@@ -1,0 +1,31 @@
+﻿capital = 4
+
+set_cosmetic_tag = NIE_arch_duchy
+
+set_war_support = 0.5
+set_stability = 0.5
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 72
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 8
+	syndicalist = 4
+	radical_socialist = 3
+	social_democrat = 12
+	social_liberal = 3
+	market_liberal = 6
+	social_conservative = 8
+	authoritarian_democrat = 31
+	paternal_autocrat = 8
+	national_populist = 12
+	Gnosticism = 5
+}
+
+set_technology = {
+	infantry_weapons = 1
+}

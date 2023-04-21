@@ -65,14 +65,6 @@ intelligence_agency = {
 
 intelligence_agency = {
 	
-	picture = GFX_intelligence_agency_logo_ger
-	names = { "Kundschaftsstelle" }
-	
-	default = { tag = AUS }
-	available = { original_tag = AUS }
-}
-intelligence_agency = {
-	
 	picture = GFX_intelligence_agency_logo_jap
 	names = { "TO-Kikan" }
 	
@@ -277,6 +269,19 @@ intelligence_agency = {
 	} 
 	available = { 
 		original_tag = ETH 
+	}
+}
+
+intelligence_agency = {
+	
+	picture = GFX_intelligence_agency_logo_aus
+	names = { Evidenzbureau }
+	
+	default = { 
+		tag = AUS
+	} 
+	available = { 
+		original_tag = AUS
 	}
 }
 

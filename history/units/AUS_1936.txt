@@ -1,46 +1,72 @@
 ﻿division_template = {
-	name = "Infanterie Division"
+	name = "Infanterietruppendivisionen"
 	division_names_group = AUS_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-                artillery = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Alpenjäger Division"
-	division_names_group = AUS_MNT_01
+	name = "Infanteriebrigaden"
+	division_names_group = AUS_INF_03
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Gebirgsbrigaden"
+	division_names_group = AUS_MNT_03
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
 		mountaineers = { x = 1 y = 0 }
 		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }   # Pioneer Bn
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
 
 division_template = {
-	name = "Schnelle Division"  		# Schnelle-Division (cavalry)
+	name = "Gebirgsartilleriebrigaden"
+	division_names_group = AUS_MNT_05
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 1 y = 0 }
+		artillery_brigade = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Kavallerietruppendivisionen"
 	division_names_group = AUS_CAV_01
 
 	regiments = {
@@ -50,159 +76,539 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 	}
 	support = {
-	    recon = { x = 0 y = 0 }
-	    artillery = { x = 0 y = 1 }
+		artillery = { x = 0 y = 0 }
 	}
 }
 
 division_template = {
-	name = "Panzer-Division"
+	name = "Panzertruppendivisionen"
 
-	division_names_group = GER_Arm_01
+	division_names_group = AUS_ARM_01
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
-                light_armor = { x = 1 y = 0 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
 		motorized = { x = 2 y = 0 }
-                motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 2 y = 3 }
 	}
 	support = {
-        mot_recon = { x = 0 y = 0 }
-        engineer = { x = 0 y = 1 }
-        artillery = { x = 0 y = 2 }
+		mot_recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
 	}
 }
 
 
 units = {
-	##### Österreichisches Bundesheer #####
-	# I Korps
+	##### k.u.k. #####
+	#Panzer
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 1
+			is_name_ordered = yes
+			name_order = 1
 		}
-		location = 11666  # Vienna
-		division_template = "Panzer-Division"
+		location = 11666  # Wean
+		division_template = "Panzertruppendivisionen"
 		start_experience_factor = 0.3
-
-	}
-	division= {	
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 11666  # Vienna
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-
+		#start_equipment_factor = 0.9
 	}
 	division= {	
 		division_name = {
-				is_name_ordered = yes
-				name_order = 3
+			is_name_ordered = yes
+			name_order = 2
 		}
-		location = 11666  # Vienna
-		division_template = "Panzer-Division"
+		location = 11666  # Wean
+		division_template = "Panzertruppendivisionen"
 		start_experience_factor = 0.3
-
+		#start_equipment_factor = 0.9
 	}
-	division= {	# "1. Division"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
-		location = 673
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.3
-
-	}
-	division= {	# "2. Division"			# Used to form 44. Infanterie-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
-		location = 673
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.3
-
-	}
-	division= {	# "3. Division"			# Used to form 44. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
-		location = 11651 # St Poelten
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.3
-
-	}
-
-	# II Korps
-	division= {	# "4. Division"			# Used to form 45. Infanterie--division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
-		location = 9665 # Linz
-		division_template = "Infanterie Division"
-		start_experience_factor = 0.3
-
-	}
-	division= {	# "5. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
-		location = 9648  # Graz
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.3
-
-	}
-	division= {	# "6. Division"			# Used to form 2. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 6
-		}
-		location = 673  # Innsbruck
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.3
-
-	}
-	division= {	# "7. Division"			# Used to form 3. Gebirgs-division post-Anschluss
-		division_name = {
-				is_name_ordered = yes
-				name_order = 7
-		}
-		location = 688  # Salzburg
-		division_template = "Alpenjäger Division"
-		start_experience_factor = 0.3
-
-	}
-
 	division= {	
-		name = "8. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 9627
-		division_template = "Alpenjäger Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11666  # Wean
+		division_template = "Panzertruppendivisionen"
 		start_experience_factor = 0.3
-
+		#start_equipment_factor = 0.9
 	}
-
+	#Mountain
 	division= {	
-		name = "9. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 6680
+		division_template = "Gebirgsbrigaden"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 11618
+		division_template = "Gebirgsbrigaden"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 668
+		division_template = "Gebirgsbrigaden"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Mountain_ART
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 671
+		division_template = "Gebirgsartilleriebrigaden"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location = 6682
+		division_template = "Gebirgsartilleriebrigaden"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location = 11539
+		division_template = "Gebirgsartilleriebrigaden"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Cavalry
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 6552
+		division_template = "Kavallerietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3703
+		division_template = "Kavallerietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 3631
+		division_template = "Kavallerietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 11610
+		division_template = "Kavallerietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 3730
+		division_template = "Kavallerietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Infantry
+	#Austria - Defense
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 732
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
 		location = 9648
-		division_template = "Alpenjäger Division"
+		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.3
-
+	}
+	#Hungary - Defense
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location = 9660
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.3
 	}
 	division= {	
-		name = "10. Brigade"				# Used to form 2. Gebirgs-division post-Anschluss
-		location = 9627
-		division_template = "Alpenjäger Division"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location = 11659
+		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.3
-
+	}
+	#Germany - Border
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location = 6678
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location = 9636
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location = 673
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location = 13261
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location = 3675
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location = 6708
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location = 13205
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Czech - Border
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location = 3703
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location = 557
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location = 3484
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Polish - Border
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location = 9427
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location = 11413
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location = 6522
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Ukraine - Border
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location = 9454
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location = 3562
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Romania - Border
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location = 3743
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location = 9704
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location = 713
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location = 3696
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location = 11622
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location = 662
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location = 11592
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location = 3649
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Serbia - Border
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location = 614
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location = 606
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location = 11741
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location = 982
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location = 11845
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Dalmatia - Coastal
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location = 3924
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Zen
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location = 13252
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
+	}
+	#Lemberg
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location = 11479
+		division_template = "Infanterietruppendivisionen"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8
 	}
 }
 
@@ -213,7 +619,7 @@ instant_effect = {
 			type = infantry_equipment_1
 			creator = "AUS"
 		}
-		requested_factories = 1
+		requested_factories = 4
 		progress = 0.54
 		efficiency = 100
 	}
@@ -222,8 +628,56 @@ instant_effect = {
 			type = support_equipment_1
 			creator = "AUS"
 		}
-		requested_factories = 1
+		requested_factories = 2
 		progress = 0.74
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 2
+		progress = 0.74
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "AUS"
+			version_name = "Phönix D.IV"
+		}
+		requested_factories = 2
+		progress = 0.74
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_2
+			creator = "AUS" 
+			version_name = "TNH"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_1
+			creator = "AUS" 
+			version_name = "LT vz. 35"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = train_equipment_1
+			creator = "AUS" 
+		}
+		requested_factories = 2
+		progress = 0.9
 		efficiency = 100
 	}
 }

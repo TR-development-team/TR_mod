@@ -68,6 +68,108 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					DAL = {
+						is_puppet_of = AUS
+					}
+					has_country_leader = {
+						character = AUS_franz_josef_otto_von_habsburg
+						ruling_only = yes
+					}
+				}
+				DAL = {
+					set_temp_variable = { a = manpower }
+					round_temp_variable = a
+					ROOT = {
+						add_manpower = a
+					}
+					multiply_temp_variable = { a = -1 }
+					add_manpower = a
+				}
+			}
+			if = {
+				limit = {
+					GAL = {
+						is_puppet_of = AUS
+					}
+					has_country_leader = {
+						character = AUS_franz_josef_otto_von_habsburg
+						ruling_only = yes
+					}
+				}
+				GAL = {
+					set_temp_variable = { a = manpower }
+					round_temp_variable = a
+					ROOT = {
+						add_manpower = a
+					}
+					multiply_temp_variable = { a = -1 }
+					add_manpower = a
+				}
+			}
+			if = {
+				limit = {
+					HUN = {
+						is_puppet_of = AUS
+						has_manpower > 100000
+					}
+					has_country_leader = {
+						character = AUS_franz_josef_otto_von_habsburg
+						ruling_only = yes
+					}
+				}
+				HUN = {
+					set_temp_variable = { a = manpower }
+					subtract_from_temp_variable = { a = 100000 }
+					round_temp_variable = a
+					ROOT = {
+						add_manpower = a
+					}
+					multiply_temp_variable = { a = -1 }
+					add_manpower = a
+				}
+			}
+			if = {
+				limit = {
+					DAL = {
+						is_puppet_of = AUS
+						has_manpower > 50000
+					}
+					has_country_leader = {
+						character = AUS_franz_josef_otto_von_habsburg
+						ruling_only = yes
+					}
+				}
+				DAL = {
+					set_temp_variable = { a = manpower }
+					subtract_from_temp_variable = { a = 50000 }
+					round_temp_variable = a
+					ROOT = {
+						add_manpower = a
+					}
+					multiply_temp_variable = { a = -1 }
+					add_manpower = a
+				}
+			}
+			if = {
+				limit = {
+					CRO = {
+						is_puppet_of = HUN
+						has_manpower > 50000
+					}
+				}
+				CRO = {
+					set_temp_variable = { a = manpower }
+					subtract_from_temp_variable = { a = 50000 }
+					round_temp_variable = a
+					HUN = {
+						add_manpower = a
+					}
+					multiply_temp_variable = { a = -1 }
+					add_manpower = a
+				}
+			}
+			if = {
+				limit = {
 					has_completed_focus = AUS_great_plains_with_gold_fertile_soil
 				}
 				if = {

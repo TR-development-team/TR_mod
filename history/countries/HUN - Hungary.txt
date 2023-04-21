@@ -37,7 +37,7 @@ recruit_character = HUN_karoly_beregfy
 recruit_character = HUN_lajos_veress
 recruit_character = HUN_ferenc_feketehalmyczeydner
 
-set_autonomy = {	autonomous_state = HUN_crown_land	target = CRO	}
+set_autonomy = {	autonomy_state  = HUN_crown_land	target = CRO	}
 
 AUS = {	give_guarantee = CRO	}
 CRO = {	give_military_access = AUS	}

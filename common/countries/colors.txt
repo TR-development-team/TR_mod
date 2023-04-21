@@ -1163,9 +1163,21 @@ BLT = {	#バルト
 	color = rgb { 142 142 128 }
 	color_ui = rgb { 142 142 128 }
 }
+BUC = {	#ブコヴィナ
+	color = rgb { 143 130 188 }
+	color_ui = rgb { 143 130 188 }
+}
+COT = {	#トリエステ
+	color = rgb { 234 0 50 }
+	color_ui = rgb { 234 0 50 }
+}
 DAL = {	#ダルマチア
 	color = rgb { 61 141 198 }
 	color_ui = rgb { 61 141 198 }
+}
+GAG = {	#ゴリツィア・グラディスカ
+	color = rgb { 233 128 53 }
+	color_ui = rgb { 233 128 53 }
 }
 GAL = {	#ガリツィア
 	color = rgb { 224 71 140 }
@@ -1179,17 +1191,37 @@ HES = {	#ヘッセン
 	color = rgb { 136 71 37 }
 	color_ui = rgb { 136 71 37 }
 }
+IST = {	#イストリア
+	color = rgb { 137 120 88 }
+	color_ui = rgb { 137 120 88 }
+}
+KAE = {	#ケルンテン
+	color = rgb { 253 216 118 }
+	color_ui = rgb { 253 216 118 }
+}
 KIL = {	#キール
 	color = rgb { 0 18 93 }
 	color_ui = rgb { 0 18 93 }
+}
+KRA = {	#カルオニア
+	color = rgb { 162 215 221 }
+	color_ui = rgb { 162 215 221 }
 }
 MHN = {	#マフノフシチナ
 	color = rgb { 10  0  0 }
 	color_ui = rgb { 10  0  0 }
 }
+NIE = {	#ニーダーエスターライヒ
+	color = rgb { 0 134 204 }
+	color_ui = rgb { 0 134 204 }
+}
 NTL = {	#ネーデルラント
 	color = rgb { 255 154 0 }
 	color_ui = rgb { 255 154 0 }
+}
+OBE = {	#オーバーエスターライヒ
+	color = rgb { 250 220 233 }
+	color_ui = rgb { 250 220 233 }
 }
 RAT = {	#レーテ
 	color = rgb { 147 0 0 }
@@ -1203,9 +1235,25 @@ RUS = {	#ロシア
 	color = rgb { 72 143 68 }
 	color_ui = rgb { 72 143 68 }
 }
+SAL = {	#ザルツブルク
+	color = rgb { 223 242 252 }
+	color_ui = rgb { 223 242 252 }
+}
 SIB = {	#シベリア
 	color = rgb { 0 94 0 }
 	color_ui = rgb { 0 94 0 }
+}
+STE = {	#シュタイアーマルク
+	color = rgb { 204 236 204 }
+	color_ui = rgb { 204 236 204 }
+}
+TYR = {	#チロル
+	color = rgb { 179 205 191 }
+	color_ui = rgb { 179 205 191 }
+}
+VOR = {	#フォアアールベルク
+	color = rgb { 252 212 213 }
+	color_ui = rgb { 252 212 213 }
 }
 
 #アフリカ

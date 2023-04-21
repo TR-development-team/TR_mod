@@ -1,6 +1,6 @@
 autonomy_state = {	#同君連合下位国
 	id = junior_partner_state
-	
+	is_puppet = yes
 	min_freedom_level = 0.5
 	manpower_influence = 0.2
 	use_overlord_color = yes
@@ -33,7 +33,7 @@ autonomy_state = {	#同君連合下位国
 }
 autonomy_state = {
 	id = AUS_crown_land
-	
+	is_puppet = yes
 	min_freedom_level = 0
 	manpower_influence = 1
 	use_overlord_color = yes
@@ -60,14 +60,14 @@ autonomy_state = {
 	ai_overlord_wants_lower = {	factor = 0.0	}
 	
 	allowed = {	OVERLORD = {	original_tag = AUS	has_cosmetic_tag = AUS_lands	}	}
-	allowed_levels_filter = {	junior_partner_state	AUS_crown_land	}
+	allowed_levels_filter = {	AUS_crown_land	}
 	
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = HUN_crown_land
-	
+	is_puppet = yes
 	min_freedom_level = 0
 	manpower_influence = 1
 	use_overlord_color = yes
