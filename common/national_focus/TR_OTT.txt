@@ -7,8 +7,8 @@ focus_tree = {
 			tag = OTT
 		}
 	}
-        continuous_focus_position = { x = 2500 y = 1300 }
-	#Focus for 修正オスマン帝国憲法 - focus ID randomly generated due to title being in non-latin characters
+    continuous_focus_position = { x = 2500 y = 1300 }
+	#修正オスマン帝国憲法
 	focus = {
 		id = OTT_lVMNKjiv
 		icon = GFX_focus_renounce_the_treaty_of_trianon
@@ -37,7 +37,7 @@ focus_tree = {
 	}	
 
 
-	#Focus for 宗教家との妥協 - focus ID randomly generated due to title being in non-latin characters
+	#宗教家との妥協
 	focus = {
 		id = OTT_wARtkJZG
 		icon = GFX_goal_molotov_ribbentrop_pact
@@ -53,7 +53,7 @@ focus_tree = {
 		add_political_power = 50
 }
 }
-	#Focus for 宗教指導者としてのオスマン家 - focus ID randomly generated due to title being in non-latin characters
+	#宗教指導者としてのオスマン家
 	focus = {
 		id = OTT_qTKFZpGt
 		icon = GFX_focus_TUR_pivot_to_the_past
@@ -76,7 +76,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 民族浄化 - focus ID randomly generated due to title being in non-latin characters
+	#民族浄化
 	focus = {
 		id = OTT_uZEMqWkV
 		icon = GFX_goal_generic_CAS
@@ -100,7 +100,7 @@ focus_tree = {
 	}
 
 
-	#Focus for 軍制改革 - focus ID randomly generated due to title being in non-latin characters
+	#軍制改革
 	focus = {
 		id = OTT_XEdyOKWv
 		icon = GFX_focus_generic_military_academy
@@ -123,7 +123,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for トゥラン革命 - focus ID randomly generated due to title being in non-latin characters
+	#トゥラン革命
 	focus = {
 		id = OTT_BgbzdxKk
 		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
@@ -152,7 +152,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for イスラーム主義を堅持 - focus ID randomly generated due to title being in non-latin characters
+	#イスラーム主義を堅持
 	focus = {
 		id = OTT_JHdujoSV
 		icon = GFX_focus_TUR_turanist_ambition
@@ -169,7 +169,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 自立したトルコ経済 - focus ID randomly generated due to title being in non-latin characters
+	#自立したトルコ経済
 	focus = {
 		id = OTT_kZCulKcS
 		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
@@ -197,7 +197,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 世俗化を開始 - focus ID randomly generated due to title being in non-latin characters
+	#世俗化を開始
 	focus = {
 		id = OTT_aFzSqOfU
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
@@ -214,7 +214,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for オスマン皇族の国外追放 - focus ID randomly generated due to title being in non-latin characters
+	#オスマン皇族の国外追放
 	focus = {
 		id = OTT_yeAHTkDq
 		icon = GFX_focus_rom_abdicate
@@ -239,7 +239,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for トルコ語のラテン文字化 - focus ID randomly generated due to title being in non-latin characters
+	#トルコ語のラテン文字化
 	focus = {
 		id = OTT_cyVksLMP
 		icon = GFX_focus_TUR_the_sun_language_theory
@@ -262,7 +262,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 条約の修正 - focus ID randomly generated due to title being in non-latin characters
+	#条約の修正
 	focus = {
 		id = OTT_kgxhCqOW
 		icon = GFX_focus_generic_treaty
@@ -291,7 +291,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ルックイースト政策 - focus ID randomly generated due to title being in non-latin characters
+	#ルックイースト政策
 	focus = {
 		id = OTT_fdaRBjNG
 		icon = GFX_focus_chi_collaboration_with_the_japanese
@@ -314,7 +314,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for イスラム過激派を弾圧 - focus ID randomly generated due to title being in non-latin characters
+	#イスラム過激派を弾圧
 	focus = {
 		id = OTT_JOTociyH
 		icon = GFX_focus_eng_move_to_secure_the_dominions
@@ -337,7 +337,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 債務交渉 - focus ID randomly generated due to title being in non-latin characters
+	#債務交渉
 	focus = {
 		id = OTT_TfhSdYpH
 		icon = GFX_goal_generic_improve_relations
@@ -363,7 +363,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ケマル・パシャ - focus ID randomly generated due to title being in non-latin characters
+	#ケマル・パシャ
 	focus = {
 		id = OTT_YFxLpbEB
 		icon = GFX_goal_generic_demand_territory
@@ -383,7 +383,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 条約の破棄 - focus ID randomly generated due to title being in non-latin characters
+	#条約の破棄
 	focus = {
 		id = OTT_bAWCvyDz
 		icon = GFX_goal_generic_forceful_treaty
@@ -427,7 +427,7 @@ focus_tree = {
 
 		}
 	}
-	#Focus for エンヴェル・パシャ - focus ID randomly generated due to title being in non-latin characters
+	#エンヴェル・パシャ
 	focus = {
 		id = OTT_EYAINjyc
 		icon = GFX_focus_TUR_ratify_the_six_arrows
@@ -450,7 +450,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 崇高なる連邦国家 - focus ID randomly generated due to title being in non-latin characters
+	#崇高なる連邦国家
 	focus = {
 		id = OTT_mPNavVyH
 		icon = GFX_focus_TUR_treaty_of_saadabad
@@ -468,7 +468,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 大国民議会 - focus ID randomly generated due to title being in non-latin characters
+	#大国民議会
 	focus = {
 		id = OTT_GCBYwhEn
 		icon = GFX_focus_generic_befriend_turkey
@@ -489,7 +489,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for トルコ民族主義 - focus ID randomly generated due to title being in non-latin characters
+	#トルコ民族主義
 	focus = {
 		id = OTT_PsgrALvp
 		icon = GFX_focus_TUR_misak_i_milli
@@ -512,7 +512,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for オスマン主義
+	#オスマン主義
 	focus = {
 		id = OTT_tROgPzvG
 		icon = GFX_focus_TUR_turanist_ambition
@@ -535,7 +535,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 瀕死の病人 - focus ID randomly generated due to title being in non-latin characters
+	#瀕死の病人
 	focus = {
 		id = OTT_XOygATKf
 		icon = GFX_focus_CZE_german_puppet
@@ -557,7 +557,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for インド太平洋圏への加盟 - focus ID randomly generated due to title being in non-latin characters
+	#インド太平洋圏への加盟
 	focus = {
 		id = OTT_mZgxulSW
 		icon = GFX_focus_chi_collaboration_with_the_japanese
@@ -578,7 +578,7 @@ focus_tree = {
 		    }
 }
 
-	#Focus for 第二次タンジマート - focus ID randomly generated due to title being in non-latin characters
+	#第二次タンジマート
 	focus = {
 		id = OTT_knByAjHF
 		icon = GFX_focus_generic_monarchy_1
@@ -601,7 +601,7 @@ focus_tree = {
 		}	
 	}	
 
-	#Focus for 官僚改革 - focus ID randomly generated due to title being in non-latin characters
+	#官僚改革
 	focus = {
 		id = OTT_FUHlKYWM
 		icon = GFX_focus_hol_the_foundations_of_defense
@@ -624,7 +624,7 @@ focus_tree = {
 		}	
 	}	
 
-	#Focus for 協商への参加 - focus ID randomly generated due to title being in non-latin characters
+	#協商への参加
 	focus = {
 		id = OTT_dLzVIawT
 		icon = GFX_focus_TUR_treaty_of_saadabad
@@ -650,7 +650,7 @@ focus_tree = {
 		    }
 }
 
-	#Focus for 日土首脳会談 - focus ID randomly generated due to title being in non-latin characters
+	#日土首脳会談
 	focus = {
 		id = OTT_rnUvHWaM
 		icon = GFX_focus_jap_cast_the_die
@@ -674,7 +674,7 @@ focus_tree = {
 		}	
 	}
 
-	#Focus for 開かれたオスマン経済 - focus ID randomly generated due to title being in non-latin characters
+	#開かれたオスマン経済
 	focus = {
 		id = OTT_psESWoUt
 		icon = GFX_goal_generic_construct_infrastructure
@@ -701,7 +701,7 @@ focus_tree = {
 	          } 
 		}
     }
-	#Focus for 外交努力 - focus ID randomly generated due to title being in non-latin characters
+	#外交努力
 	focus = {
 		id = OTT_NArEflcd
 		icon = GFX_focus_generic_diplomatic_treaty
@@ -718,7 +718,7 @@ focus_tree = {
 	}
 	}
 
-	#Focus for 生まれ変わった帝国 - focus ID randomly generated due to title being in non-latin characters
+	#生まれ変わった帝国
 	focus = {
 		id = OTT_jhfHdZMo
 		icon = GFX_focus_TUR_pivot_to_the_past
@@ -740,7 +740,7 @@ focus_tree = {
         }
 }
 
-	#Focus for オスマン合衆国 - focus ID randomly generated due to title being in non-latin characters
+	#オスマン合衆国
 	focus = {
 		id = OTT_XySOHpjk
 		icon = GFX_focus_TUR_turanist_ambition
@@ -769,7 +769,7 @@ focus_tree = {
 }
 }
 
-	#Focus for 教育の機会均等 - focus ID randomly generated due to title being in non-latin characters
+	#教育の機会均等
 	focus = {
 		id = OTT_bLpEjUne
 		icon = GFX_focus_research2
@@ -792,7 +792,7 @@ focus_tree = {
 		}	
 	}	
 
-	#Focus for バグダード鉄道の接収 - focus ID randomly generated due to title being in non-latin characters
+	#バグダード鉄道の接収
 	focus = {
 		id = OTT_FcAVOYby
 		icon = GFX_goal_generic_construct_infrastructure
@@ -871,7 +871,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for ケマル主義 - focus ID randomly generated due to title being in non-latin characters
+	#ケマル主義
 	focus = {
 		id = OTT_gNbmFSWl
 		icon = GFX_focus_generic_military_mission
@@ -896,7 +896,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 新憲法 - focus ID randomly generated due to title being in non-latin characters
+	#新憲法
 	focus = {
 		id = OTT_BjlkEwKT
 		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
@@ -919,7 +919,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for トルコ共和国の維持 - focus ID randomly generated due to title being in non-latin characters
+	#トルコ共和国の維持
 	focus = {
 		id = OTT_liGKXWNO
 		icon = GFX_focus_generic_befriend_turkey
@@ -941,7 +941,7 @@ focus_tree = {
 }
 }
 
-	#Focus for エンヴェル・パシャの最後の冒険 - focus ID randomly generated due to title being in non-latin characters
+	#エンヴェル・パシャの最後の冒険
 	focus = {
 		id = OTT_oaHzqhXP
 		icon = GFX_focus_TUR_turanist_ambition
@@ -966,7 +966,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 病人、回復す - focus ID randomly generated due to title being in non-latin characters
+	#病人、回復す
 	focus = {
 		id = OTT_nXOzDwuZ
 		icon = GFX_focus_TUR_pivot_to_the_past
@@ -986,7 +986,7 @@ focus_tree = {
 }
 }
 
-	#Focus for バルカン外交 - focus ID randomly generated due to title being in non-latin characters
+	#バルカン外交
 	focus = {
 		id = OTT_qIfkYPoA
 		icon = GFX_focus_BUL_free_balkan_states
@@ -1027,7 +1027,7 @@ focus_tree = {
        }
 }
 
-	#Focus for 中東外交 - focus ID randomly generated due to title being in non-latin characters
+	#中東外交
 	focus = {
 		id = OTT_GJPkUzHN
 		icon = GFX_goal_anschluss
@@ -1063,7 +1063,7 @@ focus_tree = {
 		   }
 	}
 
-	#Focus for 欧州諸国との取引 - focus ID randomly generated due to title being in non-latin characters
+	#欧州諸国との取引
 	focus = {
 		id = OTT_PAZrXsQp
 		icon = GFX_focus_usa_focus_on_europe
@@ -1086,7 +1086,7 @@ focus_tree = {
 		}
 	}
 
-	#Focus for 自由と平等の保証 - focus ID randomly generated due to title being in non-latin characters
+	#自由と平等の保証
 	focus = {
 		id = OTT_IkETMtwg
 		icon = GFX_goal_support_democracy

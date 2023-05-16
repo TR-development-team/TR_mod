@@ -1,0 +1,33 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+		
+		SWI_swiss_neutrality = {
+			allowed = {
+				tag = SWI 
+			}
+
+			cancel = {
+				has_war = yes
+			}
+			
+			removal_cost = -1 
+			picture = SWI_swiss_neutrality 
+
+			modifier = { 
+				conscription = 0.05
+				join_faction_tension = 1.00
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				embargo_threshold_factor = 2.5
+				ai_badass_factor = 0.01    
+				ai_get_ally_desire_factor = -150
+				opinion_gain_monthly_factor = -0.2
+				enemy_justify_war_goal_time = 2.5
+			}
+		}
+    }
+}

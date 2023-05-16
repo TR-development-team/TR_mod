@@ -16,4 +16,18 @@ characters={
 			ideology=mil_colonial_government_subtype
 		}
 	}
+	SOM_Osman_Yusuf_Kenadid={
+		name=SOM_Osman_Yusuf_Kenadid
+		portraits={
+			civilian={
+				large="gfx/leaders/SOM/Portrait_SOM_Osman_Yusuf_Kenadid.png"
+			}
+			army={
+				large="gfx/leaders/SOM/Portrait_SOM_Osman_Yusuf_Kenadid.png"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_subtype
+		}
+	}
 }

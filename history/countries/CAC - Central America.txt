@@ -24,39 +24,9 @@ set_popularities = {
 	national_populist = 3
 }
 
-create_country_leader = {
-	name = "志田重男"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_Shida_Shigeo.tga"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-        traits = {
-		
-	}
-	
-}
-create_country_leader = {
-	name = "藤山愛一郎"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_Fujiyama_Aiichiro.tga"
-	expire = "1965.1.1"
-	ideology = paternal_autocrat_subtype
-        traits = {
-		
-	}
-	
-}
-create_country_leader = {
-	name = "賀来佐賀太郎"
-	desc = ""
-	picture = "gfx/leaders/JAP/Portrait_JAP_Sagataro.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-        traits = {
-		
-	}
-	
-}
+recruit_character = CAC_Shida_Shigeo
+recruit_character = CAC_Kaku_Sagataro
+recruit_character = CAC_Fujiyama_Aiichiro
 
 add_ideas = {
 	Tiyoda_Kensho

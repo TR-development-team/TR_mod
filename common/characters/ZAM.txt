@@ -1,0 +1,30 @@
+characters={
+	ZAM_Harry_Mwaanga_Nkumbula={
+		name=ZAM_Harry_Mwaanga_Nkumbula
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAM/Portrait_ZAM_Ito_Bunkichi.png"
+			}
+		}
+		country_leader={
+			ideology= National_liberalism_subtype
+		}
+		country_leader={
+			ideology= National_conservative_subtype
+		}
+	}
+	ZAM_Ito_Bunkichi={
+		name=ZAM_Ito_Bunkichi
+		portraits={
+			civilian={
+				large="gfx/leaders/ZAM/Portrait_ZAM_Ito_Bunkichi.png"
+			}
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology= mil_colonial_government_subtype
+		}
+	}
+}

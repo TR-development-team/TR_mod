@@ -1,0 +1,50 @@
+﻿capital = 970
+oob = "JBS_1936"
+set_cosmetic_tag = JBS_Emirate
+set_convoys = 20
+set_research_slots = 2
+set_war_support = 0.4
+
+set_technology = {
+	### Infantry ###
+	infantry_weapons = 1
+	tech_irregulars = 1
+}
+if = {
+	limit = { has_dlc = "Battle for the Bosporus" }
+	set_technology = { camelry = 1 }
+}
+OTT = {
+	set_autonomy = {
+		target = JBS
+		autonomy_state = autonomy_satellite
+	}
+}
+
+add_ideas = {
+	limited_conscription
+	Absolute_monarchy
+}
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 7
+	syndicalist = 0
+	radical_socialist = 4
+	social_democrat = 0
+	social_liberal = 0
+	market_liberal = 0
+	social_conservative = 7
+	authoritarian_democrat = 28
+	paternal_autocrat = 39
+	national_populist = 15
+}
+
+recruit_character = JBS_saud_bin_abd_al_aziz
+

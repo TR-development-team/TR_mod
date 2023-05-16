@@ -2,23 +2,22 @@
 state={
 	id=211
 	name="STATE_211"
-	manpower = 688394
+	manpower = 429384
 
 
-	state_category = city
+	state_category = town
 
 	history={
 		owner = OTT
 		victory_points = { #Burgas
-			9902 3
+			9902 5
 		}
-		victory_points = { #Sliven
-			6967 3
+		victory_points = { #Yambol
+			9888 1
 		}
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-                        arms_factory = 2
+			infrastructure = 3
+                        arms_factory = 1
 			9902 = {
 				naval_base = 5
 			}
@@ -28,6 +27,6 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		6967 9888 9902 9919
+		9888 9902
 	}
 }

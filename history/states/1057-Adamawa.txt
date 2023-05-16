@@ -1,0 +1,23 @@
+
+state={
+	id=1057
+	name="STATE_1057" 
+	manpower = 748479
+	
+	state_category = pastoral
+
+	history={
+		owner = SKT
+                add_core_of = SKT
+		add_core_of = CMR
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		9137 11194 
+	}
+}

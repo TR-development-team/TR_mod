@@ -18,33 +18,23 @@ add_ideas = {
 set_convoys = 50
 
 set_politics = {
-	ruling_party = syndicalist
+	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	syndicalist = 100
+	totalist = 5
+	syndicalist = 13
+	radical_socialist = 10
+	social_democrat = 4
+	social_liberal = 2
+	market_liberal = 5
+	social_conservative = 13
+	authoritarian_democrat = 24
+	paternal_autocrat = 8
+	national_populist = 11
+        Gnosticism = 5
 }
 
-create_country_leader = {
-	name = "デダン・キマジ"
-	
-	picture = "gfx/leaders/Africa/Portrait_Kimathi.tga"
-	expire = "1960.1.1"
-	ideology = syndicalist_subtype
-	traits = {
-		
-	}
-}
-
-create_field_marshal = {
-	name = "デダン・キマジ"
-	portrait_path = "gfx/leaders/Africa/Portrait_Kimathi.tga"
-	traits = { offensive_doctrine }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 4
-}
+recruit_character = KEN_Jomo_Kenyatta

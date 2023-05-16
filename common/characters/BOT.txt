@@ -1,0 +1,37 @@
+characters={
+	BOT_Seretse_Khama={
+		name=BOT_Seretse_Khama
+		portraits={
+			civilian={
+				large="gfx/leaders/BOT/Portrait_BOT_Seretse_Khama.png"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= conservative_liberalism_subtype
+		}
+		country_leader={
+			ideology= liberal_conservative_subtype
+		}
+	}
+	BOT_Sanada_Yukiyo={
+		name=BOT_Sanada_Yukiyo
+		portraits={
+			civilian={
+				large="gfx/leaders/BOT/Portrait_BOT_Sanada_Yukiyo.png"
+			}
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology= mil_colonial_government_subtype
+		}
+	}
+
+}

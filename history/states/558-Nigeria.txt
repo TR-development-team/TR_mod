@@ -8,13 +8,12 @@ state={
 
 	history={
 		owner = NGA
-                add_core_of = SKT
 		add_core_of = NGA
+		add_core_of = SKT
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
-			dockyard = 2
-			industrial_complex = 2
+			arms_factory = 1
+			industrial_complex = 1
 			2050 = {
 				naval_base = 3
 
@@ -22,16 +21,16 @@ state={
 
 		}
 		victory_points = {
-			2050 1 
+			2050 5 
 		}
 
 	}
 
-	local_supplies=0.0 
-provinces={
-		1992 2050 4889 4952 7978 8034 10831 12731 12817 12900 
+	provinces={
+		2050 4952 12731 12900 
 	}
-	manpower=10320000
+	manpower=7757000
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	state_category=city
+	local_supplies=0.000
 }

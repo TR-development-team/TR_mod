@@ -1,4 +1,30 @@
 ﻿capital = 771
+oob = "ZAM_1936"
+set_cosmetic_tag = COUNTRY_JAP
+set_research_slots = 2
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	
+}
+add_ideas = {
+        Colonical_system
+	JAP_JAP_colony
+}
+set_convoys = 20
 
-set_cosmetic_tag = ZAM_republic
-set_dictatorship = yes
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authoritarian_democrat = 100
+}
+recruit_character = ZAM_Ito_Bunkichi
+recruit_character = ZAM_Harry_Mwaanga_Nkumbula

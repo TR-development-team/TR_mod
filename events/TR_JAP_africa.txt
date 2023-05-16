@@ -1,0 +1,22 @@
+add_namespace = TR_jafrica
+
+
+
+country_event = {#マウマウ団
+	id = TR_jafrica.1
+	title = TR_jafrica.1
+	desc = TR_jafrica.1
+	picture = GFX_report_event_france_parade
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_japfed.18.a
+               
+
+	}
+
+}

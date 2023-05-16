@@ -1,0 +1,22 @@
+state={
+	id=1051
+	name="STATE_1051"
+	manpower = 2116367
+	state_category = town
+
+	history={
+		owner = NGA
+		add_core_of = NGA
+		add_core_of = SKT
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		1992 8034 10831 
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

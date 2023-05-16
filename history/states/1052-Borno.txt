@@ -1,0 +1,25 @@
+state={
+	id=1052
+	name="STATE_1052"
+	manpower = 1166240
+	state_category = town
+
+	history={
+		owner = BRU
+		add_core_of = BRU
+		victory_points = {
+			5028 1
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+	}  
+
+	provinces={
+		4997 5028 8109
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

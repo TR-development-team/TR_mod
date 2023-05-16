@@ -2,7 +2,7 @@
 state={
 	id=212
 	name="STATE_212"
-	manpower = 1614936
+	manpower = 1278347
 	
 	state_category = city
 
@@ -11,15 +11,12 @@ state={
 	}
 
 	history={
-		owner = OTT
+		owner = BUL
 		victory_points = { #Plovdiv
 			6923 10
 		}
 		victory_points = { #Stara Zagora
 			6814 3
-		}
-		victory_points = { #Haskovo
-			9862 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -32,6 +29,6 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		878 893 3937 6814 6923 6952 6982 9862 11813 
+		3937 6814 6923 6952 6982 11813 
 	}
 }

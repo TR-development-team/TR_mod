@@ -1,0 +1,31 @@
+state={
+	id=1054
+	name="STATE_1054"
+	manpower = 1017600
+	state_category =rural
+
+	history={
+		owner = EAF
+		add_core_of = EAF
+		buildings = {
+			infrastructure = 2
+			5210 = {
+				naval_base = 2
+
+			}
+		}
+
+		victory_points = {
+			5210 1 
+		}
+		add_core_of = KEN
+
+	}
+
+	provinces={
+		5196 5210 6020 
+	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

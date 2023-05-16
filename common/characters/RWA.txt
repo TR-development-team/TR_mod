@@ -1,0 +1,27 @@
+characters={
+	RWA_Mutara_III={
+		name=RWA_Mutara_III
+		portraits={
+			civilian={
+				large="gfx/leaders/RWA/Portrait_RWA_Mutara_III_Rudahigwa.png"
+			}
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+		country_leader={
+			ideology= Nationalism_subtype
+		}
+		field_marshal = {
+			traits = { politically_connected }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		} 
+	}
+}

@@ -1229,13 +1229,32 @@ SpriteType = {
 		texturefile = "gfx/interface/ideas/minister/SOV/Yakov_Alksnis.png"
 	}
 ###ザカフカース/ジョージア###
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_SCC_Ioseb_jugashvili"
 		texturefile = "gfx/interface/ideas/minister/SCC/Ioseb_jugashvili.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_SCC_Lavrentiy_Beria"
 		texturefile = "gfx/interface/ideas/minister/SCC/Lavrentiy_Beria.png"
 	}
-
+	SpriteType = {	
+		name = "GFX_idea_SCC_Kliment_Voroshilov"
+		texturefile = "gfx/interface/ideas/minister/SCC/Kliment_Voroshilov.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_SCC_Anastas_Mikoyan"
+		texturefile = "gfx/interface/ideas/minister/SCC/Anastas_Mikoyan.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_SCC_Semyon_Budyonny"
+		texturefile = "gfx/interface/ideas/minister/SCC/Semyon_Budyonny.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_SCC_Sergo_Ordzhonikidze"
+		texturefile = "gfx/interface/ideas/minister/SCC/Sergo_Ordzhonikidze.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_SCC_Sergei_Kirov"
+		texturefile = "gfx/interface/ideas/minister/SCC/Sergei_Kirov.png"
+	}
 }

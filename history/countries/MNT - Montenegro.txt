@@ -1,8 +1,8 @@
 ﻿capital = 105 # Montenegro
-
+oob = "MNT_1936"
+set_cosmetic_tag = MNT_republic
 set_research_slots = 3
 add_ideas = {
-      Absolute_monarchy
 }
 # Starting tech
 # clone of Yugoslavia
@@ -43,25 +43,29 @@ if = {
 }
 
 set_politics = {
-	ruling_party = authoritarian_democrat
-	last_election = "1936.1.1"
+	ruling_party = social_democrat
+	last_election = "1934.8.11"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
+}
+set_popularities = {
+	totalist = 9
+	syndicalist = 16
+	radical_socialist = 12
+	social_democrat = 28
+	social_liberal = 16
+	market_liberal = 6
+	social_conservative = 4
+	authoritarian_democrat = 4
+	paternal_autocrat = 0
+	national_populist = 5
 }
 
-set_popularities = {	authoritarian_democrat = 100
+recruit_character = MNT_Milovan_Djilas
+
+
+if = {
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = { target = OTT type = annex_everything	}
 }
-
-create_country_leader = {
-	name = "ダニーロ2世"
-	desc = ""
-	picture = "gfx/leaders/Europa/Portrait_Danilo_II.tga"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
-}
-
-
-
 

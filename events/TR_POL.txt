@@ -8,16 +8,13 @@ country_event = {
 	desc = TR_poland.1.d
 	picture = GFX_report_event_france_parade
 
-
     fire_only_once = yes
-
     trigger = {
         tag = POL
 		RAT = { has_war_with = PRE }
 		FRA = { owns_state = 28 }
 		is_subject = no
 	}
-
 	
 	option = { 
 		name = TR_poland.1.a
@@ -41,14 +38,13 @@ country_event = {
 	
 	option = { 
 		name = TR_poland.2.a
-                RAT = { add_to_faction = POL }
-                                86 = {
-					remove_core_of = RAT
-				}
-				845 = {
-					remove_core_of = RAT
-				}
-               
+        RAT = { add_to_faction = POL }
+        86 = {
+		    remove_core_of = RAT
+			}
+		845 = {
+			remove_core_of = RAT
+		}  
 	}
 }
 
@@ -59,40 +55,409 @@ country_event = {
 	picture = GFX_report_event_france_parade
 
 
-        fire_only_once = yes
-
-        is_triggered_only = yes
+    fire_only_once = yes
+	is_triggered_only = yes
 	
 	option = { 
 		name = TR_poland.3.a
-                ai_chance = {
+		trigger = {
+			is_in_faction_with = RAT
+		}
+        ai_chance = {
 			base = 80
 		}
-                RAT = { puppet = POL 
+        RAT = { puppet = POL 
 			transfer_state = 85
 			transfer_state = 86
-                        transfer_state = 762
+            transfer_state = 762
 			transfer_state = 845
-                      }
-               
+        }   
 	}
 	option = { 
 		name = TR_poland.3.b
-                ai_chance = {
+		trigger = {
+			is_in_faction_with = RAT
+		}
+        ai_chance = {
 			base = 20
 		}
-                leave_faction = yes
-                RAT = { create_wargoal = {
-				target = POL
-				type = annex_everything
-			} 
-                }
-                every_country = {
-                         limit = {
-                              has_war_with = POL
-                        }
-                        white_peace_with_ROOT = yes
-                    }
-               
+        leave_faction = yes
+        RAT = { 
+		    create_wargoal = {
+		        target = POL
+		        type = annex_everything
+		    } 
+        }
+        every_country = {
+            limit = {
+                has_war_with = POL
+            }
+            white_peace_with_ROOT = yes
+        }  
+	}
+	option = { 
+		name = TR_poland.3.c
+		trigger = {
+			NOT = { is_in_faction_with = RAT }
+		}
+		RAT = { 
+		    create_wargoal = {
+		        target = POL
+		        type = annex_everything
+		    } 
+        }
+		add_stability = 0.1
+		add_war_support = 0.3
+	}
+}
+#陰謀の発覚
+country_event = {
+	id = TR_poland.4
+	title = TR_poland.4.t
+	desc = TR_poland.4.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = TR_poland.4.a
+        ai_chance = {
+			base = 40
+		}
+		add_political_power = -25
+		set_country_flag = POL_exposed_plot
+		hidden_effect = {
+			country_event = {
+				id = TR_poland.5
+				days = 40
+				}
+		}
+	}
+	option = { 
+		name = TR_poland.4.b
+        ai_chance = {
+			base = 40
+		}
+		set_country_flag = POL_not_exposed_plot
+		hidden_effect = {
+			country_event = {
+				id = TR_poland.5
+				days = 40
+				}
+		}
+	}
+}
+#ワルシャワ・クーデター
+country_event = {
+	id = TR_poland.5
+	title = TR_poland.5.t
+	desc = TR_poland.5.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = TR_poland.5.a
+		trigger = {
+			has_country_flag = POL_not_exposed_plot
+		}
+		set_cosmetic_tag = POL_republic
+		add_stability = -0.1
+		10 = { set_demilitarized_zone = yes }
+		add_manpower = -1000
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		every_character = { 
+			limit = {
+			    has_trait = JAP_communist_sympathizer
+		    }
+			retire = yes
+		}
+		remove_ideas = POL_Red_Poland
+        remove_ideas = POL_Anti_Communist_Generals
+        remove_ideas = POL_German_puppet
+		if = {
+			limit = { is_in_faction_with = RAT }
+			RAT = { remove_from_faction = POL }
+		}
+		every_country = {
+			limit = {
+				 has_war_with = POL
+		   }
+		   white_peace_with_ROOT = yes
+	   }
+		hidden_effect = {
+			country_event = {
+				id = TR_poland.6
+				days = 7
+				}
+		}
+	}
+	option = { 
+		name = TR_poland.5.b
+		trigger = {
+			has_country_flag = POL_exposed_plot
+		}
+		10 = { set_demilitarized_zone = yes }
+		add_manpower = -1000
+		every_character = { 
+			limit = {
+			    has_trait = POL_sanation_left_leader
+		    }
+			retire = yes
+		}
+		every_character = { 
+			limit = {
+			    has_trait = POL_sanation_right_leader
+		    }
+			retire = yes
+		}
+        remove_ideas = POL_Anti_Communist_Generals
+		hidden_effect = {
+			country_event = {
+				id = TR_poland.7
+				days = 7
+				}
+		}
+	}
+}
+#軍事政権の成立
+country_event = {
+	id = TR_poland.6
+	title = TR_poland.6.t
+	desc = TR_poland.6.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = TR_poland.6.a
+        ai_chance = {
+			base = 40
+		}
+		add_ideas = Democratic_Republic
+		10 = { set_demilitarized_zone = no }
+		POL_wladyslaw_sikorski = {
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.2
+		}
+	}
+	option = { 
+		name = TR_poland.6.b
+        ai_chance = {
+			base = 40
+		}
+		add_ideas = militaly_dictatorship
+		10 = { set_demilitarized_zone = no }
+		POL_Tadeusz_Komorowski = {
+			promote_character = {
+			    Ideology = Military_junta_subtype
+		    }
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+	}
+	option = { 
+		name = TR_poland.6.c
+        ai_chance = {
+			base = 40
+		}
+		add_ideas = totalist_dictatorship
+		10 = { set_demilitarized_zone = no }
+		add_stability = -0.1
+		POL_Jan_Stachniuk = {
+			promote_character = {
+			    Ideology = Neo_Paganism_subtype
+		    }
+		}
+		set_politics = {
+			ruling_party = Gnosticism
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.2
+		}
+	}
+}
+#守られし革命の灯火
+country_event = {
+	id = TR_poland.7
+	title = TR_poland.7.t
+	desc = TR_poland.7.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = TR_poland.7.a
+        ai_chance = {
+			base = 40
+		}
+		10 = { set_demilitarized_zone = no }
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.2
+		}
+	}
+	option = { 
+		name = TR_poland.7.b
+        ai_chance = {
+			base = 40
+		}
+		10 = { set_demilitarized_zone = no }
+		POL_Feliks_Dzierzynski = {
+			promote_character = {
+			    Ideology = Jughashvilist_subtype
+		    }
+		}
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.2
+		}
+	}
+	option = { 
+		name = TR_poland.7.c
+        ai_chance = {
+			base = 40
+		}
+		add_ideas = Council_communism
+		10 = { set_demilitarized_zone = no }
+		add_stability = -0.1
+		POL_anarchist_commune = {
+			promote_character = {
+			    Ideology = anarco_syndicalist_subtype
+		    }
+		}
+		set_politics = {
+			ruling_party = syndicalist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_poland.8
+				days = 7
+				}
+		}
+	}
+}
+#許されざる無政府状態
+country_event = {
+	id = TR_poland.8
+	title = TR_poland.8.t
+	desc = TR_poland.8.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { 
+		name = TR_poland.8.a
+        ai_chance = {
+			base = 40
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = TR_poland.9
+				days = 5
+				}
+		}
+	}
+	option = { 
+		name = TR_poland.8.b
+        ai_chance = {
+			base = 40
+		}
+		add_political_power = -100
+		hidden_effect = {
+			country_event = {
+				id = TR_poland.10
+				days = 5
+				}
+		}
+	}
+}
+#赤い『サナツィア』
+country_event = {
+	id = TR_poland.9
+	title = TR_poland.9.t
+	desc = TR_poland.9.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_poland.9.a
+		add_stability = 0.01
+		add_ideas = militaly_dictatorship
+		POL_konstantin_rokossovsky = {
+			promote_character = {
+			    Ideology = military_socialism_subtype
+		    }
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.2
+		}
+	}
+}
+#そびえ立つ黒旗
+country_event = {
+	id = TR_poland.10
+	title = TR_poland.10.t
+	desc = TR_poland.10.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_poland.10.a
+		add_stability = 0.05
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.1
+		}
 	}
 }

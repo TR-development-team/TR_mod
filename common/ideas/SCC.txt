@@ -1,0 +1,220 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+		
+		SCC_Georgian_Centralism = {
+			allowed = {
+				tag = SCC
+			}
+			
+			removal_cost = -1 
+			picture = MEX_politicised_army
+
+			modifier = { 
+				political_power_gain = 0.1
+				stability_factor = -0.05
+				resistance_activity = 0.1
+                resistance_growth = 0.1
+			}
+		}
+		SCC_Five_Year_Plan_for_the_South_Caucasus = {
+			allowed = {
+				tag = SCC
+			}
+			
+			removal_cost = -1 
+			picture = SOV_second_five_year_plan
+
+			modifier = { 
+				industrial_capacity_factory = 0.03
+				industrial_capacity_dockyard = 0.03
+				production_factory_efficiency_gain_factor = -0.1 
+				production_factory_max_efficiency_factor = 0.05 
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+				consumer_goods_factor = 0.05
+				MONTHLY_POPULATION = -0.2
+			}
+		}
+		SCC_NKVD = {
+			allowed = {
+				tag = SCC
+			}
+			
+			removal_cost = -1 
+			picture = nkvd_2
+
+			modifier = { 
+				subversive_activites_upkeep = -0.5
+				operative_slot = 1
+				root_out_resistance_effectiveness_factor = 0.1
+				resistance_damage_to_garrison = -0.05		
+			}
+		}
+    }
+		#minister
+		Head_of_State = {	
+			SCC_Ioseb_jugashvili = {
+			
+			picture = SCC_Ioseb_jugashvili
+			
+			allowed = {
+				original_tag = SCC
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = head_of_state_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				Head_of_State
+				totalist
+				Stalin_traits
+				}
+			}
+		}
+		Government_leaders = {	
+			SCC_Sergei_Kirov = {
+				
+			picture = SCC_Sergei_Kirov
+				
+			allowed = {
+				original_tag = SCC
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Government_leaders_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				
+			traits = { 
+				Government_leaders
+				radical_socialist
+				TR_silent_workhorse
+				}
+			}
+		}
+		Minister_of_Foreign_Affairs = {	
+			SCC_Anastas_Mikoyan = {
+				
+			picture = SCC_Anastas_Mikoyan
+				
+			allowed = {
+				original_tag = SCC
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Foreign_Affairs_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				
+			traits = { 
+				Minister_of_Foreign_Affairs
+				totalist
+				TR_ideological_crusader
+				}
+			}
+		}
+		Minister_of_Economy = {	
+			SCC_Sergo_Ordzhonikidze = {
+				
+			picture =SCC_Sergo_Ordzhonikidze
+				
+			allowed = {
+				original_tag = SCC
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				
+			traits = { 
+				Minister_of_Economy
+				totalist
+				TR_planned_economy_proponent
+				}
+			}
+		}
+		Minister_of_Interior = {	
+			SCC_Lavrentiy_Beria = {
+			
+			picture = SCC_Lavrentiy_Beria
+				
+			allowed = {
+				original_tag = SCC
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Interior_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+					
+			traits = { 
+				Minister_of_Interior
+				totalist
+				TR_prince_of_terror
+				}
+			}
+		}
+		chief_of_staff = {	
+			SCC_Semyon_Budyonny = {
+				
+			picture = SCC_Semyon_Budyonny
+					
+			allowed = {
+				original_tag = SCC
+				}
+					
+			traits = { 
+				chief_of_staff
+				cos_school_of_cavalry
+				}
+			}
+		}
+		chief_of_army = {	
+			SCC_Kliment_Voroshilov = {
+			picture = SCC_Kliment_Voroshilov
+						
+			allowed = {
+				original_tag = SCC
+				}
+						
+			traits = { 
+				chief_of_army
+				carm_guns_and_butter_doctrine
+				}
+			}		
+		}
+}

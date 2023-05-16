@@ -3,7 +3,7 @@ characters={
 		name=ITA_benito_mussolini
 		portraits={
 			civilian={
-				large="gfx/leaders/ITA/Portrait_Italy_Mussolini.tga"
+				large="gfx/leaders/ITA/Portrait_ITA_benito_mussolini.png"
 			}
 		}
 		country_leader={
@@ -15,37 +15,35 @@ characters={
 		name=ITA_Michele_Bianchi
 		portraits={
 			civilian={
-				large="gfx/leaders/ITA/Portrait_Italy_Bianchi.tga"
+				large="gfx/leaders/ITA/Portrait_ITA_Michele_Bianchi.png"
 			}
 		}
 		country_leader={
 			ideology=National_syndicalist_subtype
 		}
 	}
-	ITA_Giacomo_Matteotti={
-		name=ITA_Giacomo_Matteotti
-		portraits={
-			civilian={
-				large="gfx/leaders/ITA/Portrait_Italy_Matteotti.tga"
-			}
-		}
-		country_leader={
-			ideology=syndicalist_subtype
-		}
-	}
-
 	ITA_Antonio_Gramsci={
 		name=ITA_Antonio_Gramsci
 		portraits={
 			civilian={
-				large="gfx/leaders/ITA/Portrait_Italy_Gramsci.tga"
+				large="gfx/leaders/ITA/Portrait_ITA_Antonio_Gramsci.png"
 			}
 		}
 		country_leader={
-			ideology=radical_socialist_subtype
+			ideology=Leninist_subtype
 		}
 	}
-
+	ITA_Giacomo_Matteotti={
+		name=ITA_Giacomo_Matteotti
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_ITA_Giacomo_Matteotti.png"
+			}
+		}
+		country_leader={
+			ideology=Democratic_socialism_left_subtype
+		}
+	}
 	ITA_Ivanoe_Bonomi={
 		name=ITA_Ivanoe_Bonomi
 		portraits={
@@ -54,7 +52,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_democrat_subtype
+			ideology=Progressivism_subtype
 		}
 	}
 
@@ -62,11 +60,11 @@ characters={
 		name=ITA_Alcide_De_Gasperi
 		portraits={
 			civilian={
-				large="gfx/leaders/ITA/Portrait_ITA_Gasperi.tga"
+				large="gfx/leaders/ITA/Portrait_ITA_Alcide_De_Gasperi.png"
 			}
 		}
 		country_leader={
-			ideology=social_conservative_subtype
+			ideology=con_Christian_democracy_subtype
 		}
 	}
 
@@ -78,7 +76,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=paternal_autocrat_subtype
+			ideology=absolute_monarchy_subtype
 		}
 	}
 
@@ -98,7 +96,7 @@ characters={
 		name=ITA_benito_mussolini
 		portraits={
 			civilian={
-				large="gfx/leaders/ITA/Portrait_Italy_Mussolini.tga"
+				large="gfx/leaders/ITA/Portrait_ITA_benito_mussolini.png"
 			}
 		}
 		country_leader={
@@ -111,7 +109,7 @@ characters={
 		name=ITA_Julius_Evola
 		portraits={
 			civilian={
-				large="gfx/leaders/ITA/Portrait_ITA_Evola.tga"
+				large="gfx/leaders/ITA/Portrait_ITA_Julius_Evola.png"
 			}
 		}
 		country_leader={

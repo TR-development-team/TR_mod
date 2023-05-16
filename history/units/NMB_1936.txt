@@ -2,7 +2,7 @@
 
 division_template = {
 	name = "Hohei Ryodan"		
-	division_names_group = JAP_INF_01				# Uses French-language generic division names
+	division_names_group = NMB_INF_01				# Uses French-language generic division names
 	# Note: Represents both regular infantry and militia units
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -16,7 +16,7 @@ division_template = {
 }
 division_template = {
 	name = "Hohei Shidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
-	division_names_group = JAP_INF_01
+	division_names_group = NMB_INF_01
 									# 1 engineering regiment, 1 recon regiment
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -37,7 +37,7 @@ division_template = {
 
 division_template = {
 	name = "Sangakuhei"	
-	division_names_group = JAP_MNT_01
+	division_names_group = NMB_MNT_01
 
 	regiments = {
 		mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
@@ -56,7 +56,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 12986
+		location = 4879
 		division_template = "Hohei Ryodan"			
 		start_experience_factor = 0.3
 	}
@@ -65,7 +65,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 5199
+		location = 7770
 		division_template = "Hohei Ryodan"				
 		start_experience_factor = 0.3
 	}
@@ -74,7 +74,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 10929
+		location = 2207
 		division_template = "Hohei Ryodan"				
 		start_experience_factor = 0.3
 	}
@@ -83,7 +83,7 @@ units = {
 			is_name_ordered = yes
 			name_order =4
 		}
-		location = 10966
+		location = 12921
 		division_template = "Hohei Shidan"			
 		start_experience_factor = 0.3
 	}
@@ -92,7 +92,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 8214
+		location = 8136
 		division_template = "Hohei Shidan"			
 		start_experience_factor = 0.3
 	}
@@ -101,7 +101,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 4879
+		location = 10963
 		division_template = "Hohei Shidan"			
 		start_experience_factor = 0.3
 	}
@@ -110,7 +110,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 4879
+		location = 5189
 		division_template = "Sangakuhei"			
 		start_experience_factor = 0.3
 	}
@@ -128,7 +128,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_0
-			creator = "CAR"
+			creator = "NMB"
 		}
 		requested_factories = 2
 		progress = 0.1

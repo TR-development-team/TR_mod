@@ -1,12 +1,12 @@
 characters={
-	CAR_Maeda_Toshinari={
-		name=JAP_Maeda_Toshinari
+	CAR_Akikusa_Shun={
+		name= CAR_Akikusa_Shun
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Maeda.tga"
+				large="gfx/leaders/CAR/Portrait_CAR_Akikusa_Shun.png"
 			}
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Maeda.tga"
+				large="gfx/leaders/CAR/Portrait_CAR_Akikusa_Shun.png"
 			}
 		}
 		country_leader={
@@ -15,8 +15,40 @@ characters={
 		country_leader={
 			ideology=mil_colonial_government_subtype
 		}
+	}
+	CAR_Ishii_Shiro={
+		name= CAR_Ishii_Shiro
+		portraits={
+			civilian={
+				large="gfx/leaders/CAR/Portrait_CAR_Ishii_Shiro.png"
+			}
+			army={
+				large="gfx/leaders/CAR/Portrait_CAR_Ishii_Shiro.png"
+			}
+		}
 		country_leader={
-			ideology= kokoku_shikan_subtype
+			ideology=colonial_government_subtype
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
 		}
 	}
+	CAR_Noguchi_Hideyo={
+		name= CAR_Noguchi_Hideyo
+		portraits={
+			civilian={
+				large="gfx/leaders/CAR/Portrait_CAR_Noguchi_Hideyo.png"
+			}
+			army={
+				large="gfx/leaders/CAR/Portrait_CAR_Noguchi_Hideyo.png"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
+		}
+	}
+
 }

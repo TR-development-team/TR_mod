@@ -1,0 +1,23 @@
+characters = {
+	KEN_Jomo_Kenyatta = {
+		name = KEN_Jomo_Kenyatta
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEN/Portrait_KEN_Jomo_Kenyatta.png"
+			}
+		}
+		country_leader = {
+			ideology = National_conservative_subtype
+			id = -1
+		}
+		country_leader = {
+			ideology = Dominant_party_system_subtype
+			id = -1
+		}
+		country_leader = {
+			ideology = paternal_autocrat_subtype
+			id = -1
+		}
+	}
+}
+	

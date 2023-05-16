@@ -1,0 +1,33 @@
+
+state={
+	id=1045
+	name="STATE_1045"
+	manpower = 243940
+	
+	state_category = rural
+	
+	resources={
+		chromium=3
+		steel = 9
+	}
+
+	history={
+		victory_points = {
+			3914 3
+		}
+		owner = OTT
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+			9805 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = GRE
+	}
+
+	provinces={
+		841 3914 3980 9805 9837 
+	}
+}

@@ -11,7 +11,17 @@ if = {
 set_cosmetic_tag = POL_rada_republic
 
 add_ideas = {
+        POL_Red_Poland
+        POL_Anti_Communist_Generals
+        POL_German_puppet
+
 	Democratic_centralism
+	trinket_minimum_wage
+	trinket_safety_regulations
+	trinket_Unemployment_subsidies
+	trinket_pensions
+	trinket_health_care
+	acceptable_school_system
 }
 set_research_slots = 3
 
@@ -68,7 +78,8 @@ if = {
 	}
 }
 
-set_convoys = 10
+country_event = { id = TR_poland.4 days = 370 }
+
 
 set_politics = {
 	ruling_party = radical_socialist
@@ -77,35 +88,39 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	 totalist = 15
-	syndicalist = 10
-	radical_socialist = 40
-	social_democrat = 5
+	totalist = 10
+	syndicalist = 7
+	radical_socialist = 19
+	social_democrat = 8
 	social_liberal = 5
-	market_liberal = 5
-	social_conservative = 5
-	authoritarian_democrat = 5
-	paternal_autocrat = 5
+	market_liberal = 6
+	social_conservative = 10
+	authoritarian_democrat = 13
+	paternal_autocrat = 11
 	national_populist = 5
+        Gnosticism = 6
 }
 
 recruit_character = POL_Feliks_Dzierzynski
+recruit_character = POL_anarchist_commune
 recruit_character = POL_Karl_Radek
 recruit_character = POL_maria_koszutska
 recruit_character = POL_wladyslaw_gomulka
-recruit_character = POL_wladyslaw_raczkiewicz
+recruit_character = POL_konstantin_rokossovsky
 recruit_character = POL_wincenty_witos
 recruit_character = POL_stanislaw_mikolajczyk
+recruit_character = POL_wladyslaw_sikorski
 recruit_character = POL_witold_pilecki
 recruit_character = POL_sejmik_regency
-recruit_character = POL_ignacy_moscicki
+recruit_character = POL_Tadeusz_Komorowski
 recruit_character = POL_boleslaw_wieniawa_glugoszowski
 recruit_character = POL_karl_albrecht
 recruit_character = POL_friedrich_christian
-recruit_character = POL_wladyslaw_sikorski
 recruit_character = POL_roman_dmowski
 recruit_character = POL_boleslaw_piasecki
+recruit_character = POL_Jan_Stachniuk
 recruit_character = POL_wojtek
+
 recruit_character = POL_vladislav_korchits
 recruit_character = POL_edward_rydzsmigly
 recruit_character = POL_wladyslaw_bortnowski

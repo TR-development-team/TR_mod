@@ -1,0 +1,23 @@
+
+state={
+	id=1056
+	name="STATE_1056" 
+	manpower = 319384
+	
+	state_category = pastoral
+
+	history={
+		owner = BRU
+		add_core_of = BRU
+		add_core_of = CMR
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		7963
+	}
+}

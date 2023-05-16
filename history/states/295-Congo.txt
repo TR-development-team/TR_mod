@@ -7,12 +7,12 @@ state={
 	state_category = town
 	
 	resources={
-		tungsten=5
+		tungsten=8
                 rubber=11
 	}
 
 	history={
-		owner = CAR
+		owner = MCG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -24,7 +24,7 @@ state={
 		victory_points = {
 			5117 3 
 		}
-		add_core_of = CAR
+		add_core_of = MCG
 		add_core_of = COG
 	}
 

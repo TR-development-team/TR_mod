@@ -11,14 +11,13 @@ state={
 	}
 
 	history={
-		owner = NMB
+		owner = BOT
 		buildings = {
 			infrastructure = 2
                         industrial_complex = 1
 			arms_factory = 1
 		}
 		add_core_of = BOT
-                add_core_of = NMB
 		victory_points = {
 			8214 1
 		}

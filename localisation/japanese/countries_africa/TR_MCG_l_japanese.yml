@@ -1,0 +1,12 @@
+﻿l_japanese: 
+###tooltip###
+MCG_unrest_inc_tt:0 "植民地不穏度が§R1§!上がる。"
+MCG_unrest_dec_tt:0 "植民地不穏度が§G1§!下がる。"
+MCG_Country_Unrest:0 "£pol_violence 植民地不穏度の影響"
+MCG_Country_Unrest_desc:0 "§R現在の£pol_violence 植民地不穏度に合わせて修正が入る。§!\n\n日本の4つのアフリカ植民地は、独立や自治を求める運動の高まりにより悪影響を受ける。\n§R不穏度が高すぎると原住民が反乱を起こし、最終的に植民地が崩壊してしまうかもしれない…§!"
+###decision###
+MCG_Africa_category:0 "£pol_violence 植民地不穏度の影響"
+MCG_Africa_category_desc:0 "現在の£pol_violence 植民地不穏度: [?MCG_unrest_level|-]"
+MCG_Africa_unrest_decision_ongoing_flag:0 "他の行動を行っている"
+MCG_Africa_unrest_decision_1:0 "独立運動家のテロリストを摘発"
+MCG_Africa_unrest_decision_2:0 "自治運動に対する理解を示す"

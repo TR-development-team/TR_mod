@@ -3,9 +3,10 @@ state={
 	name="STATE_679"
 
 	history={
-		owner = ARB
+		owner = HEJ
+		add_core_of = HEJ
 		victory_points = {
-			12758 1 
+			10835 1 
 		}
 		
 		buildings = {
@@ -13,14 +14,13 @@ state={
 			
 
 		}
-		add_core_of = ARB
 
 	}
 
 	provinces={
-		2033 4981 5099 7934 10748 10835 12758 
+		2033 4981 7934 10835 
 	}
-	manpower=511000
+	manpower=481000
 	buildings_max_level_factor=1.000
 	state_category=pastoral
 	local_supplies=0.000

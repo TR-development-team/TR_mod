@@ -54,25 +54,6 @@ characters={
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-	UKR_grigory_kulik = {
-		name = SOV_grigory_kulik
-		portraits = {
-			army = {
-				large = GFX_portrait_SOV_grigory_kulik
-				small=GFX_portrait_SOV_grigory_kulik_small
-			}
-		}
-		corps_commander = {
-			traits = { old_guard inflexible_strategist career_officer politically_connected }
-			skill = 1
-			attack_skill = 1
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
-			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
-	}
 	UKR_kirill_moskalenko = {
 		name = SOV_kirill_moskalenko
 		portraits = {

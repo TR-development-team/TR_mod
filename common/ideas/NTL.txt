@@ -1,0 +1,37 @@
+ideas = {
+
+	country = {
+
+		NTL_memory_of_the_king = {
+
+			picture = HOL_wilhelmina_ns
+			
+			allowed = {
+				original_tag = NTL
+			}
+
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				drift_defence_factor = -0.25
+		   }
+		}
+		NTL_Volkism = {
+
+			picture = generic_fascism_drift_bonus
+			
+			allowed = {
+				original_tag = NTL
+			}
+
+			
+			removal_cost = -1
+			modifier = {
+				mobilization_speed = 0.1
+				war_support_factor = 0.10
+				offensive_war_stability_factor = 0.05
+		   }
+		}
+	}
+}

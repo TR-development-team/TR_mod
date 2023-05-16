@@ -1,27 +1,23 @@
-
 state={
 	id=848
-	name="STATE_848" #Kikuyu
-	manpower = 2392000
-	
-	state_category = city
+	name="STATE_848"
+	manpower = 678400
+	state_category = rural
 
 	history={
 		owner = EAF
-		buildings = {
-			infrastructure = 3
-                        arms_factory = 2
-			industrial_complex = 2
-		}
-		victory_points = {
-			1939 2
-		}
 		add_core_of = EAF
-                add_core_of = KEN
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = KEN
 	}
 
-	local_supplies=0.0 
-provinces={
-		1939 10860 10962 5160 11145 
+	provinces={
+		5160 10860 11145 
 	}
+
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

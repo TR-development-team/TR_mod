@@ -20,7 +20,7 @@ autonomy_state = {	#帝国保護国
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
 	
-	allowed = {	OVERLORD = {	original_tag = JAP	}	}
+	allowed = {	OVERLORD = {	OR = { original_tag = JAP is_subject_of = NMB }    }	}
 	allowed_levels_filter = {	imperial_protectorate	}
 	
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = can_raise_autonomy_level	always = no	}	}

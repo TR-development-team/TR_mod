@@ -168,28 +168,6 @@ characters={
 		}		
 	}
 
-	SOV_konstantin_rokossovsky = {
-		name = SOV_konstantin_rokossovsky
-
-		portraits = {
-			army = {
-				small = "GFX_idea_konstantin_rokossovsky"
-				large = GFX_portrait_SOV_konstantin_rokossovsky
-			}
-		}
-
-		corps_commander = {
-			traits = { brilliant_strategist trait_cautious armor_officer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 4
-			legacy_id = 402
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}	
-	}
-
 	SOV_aleksandr_vasilevsky = {
 		name = SOV_aleksandr_vasilevsky
 		portraits = {
@@ -270,28 +248,6 @@ characters={
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-
-	SOV_semyon_timoshenko = {
-		name = SOV_semyon_timoshenko
-		portraits = {
-			army = {
-				small = "GFX_idea_semyon_timoshenko"
-				large = "GFX_portrait_SOV_semyon_timoshenko"
-			}
-		}
-
-		corps_commander = {
-			traits = { career_officer cavalry_officer politically_connected }
-			skill = 3
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = 404
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
-	}
-
 	SOV_mikhail_tukhachevsky = {
 		name = SOV_mikhail_tukhachevsky
 		portraits = {
@@ -332,25 +288,6 @@ characters={
 		}
 	}
 
-	SOV_kirill_meretskov = {
-		name = SOV_kirill_meretskov
-		portraits = {
-			army = {
-				large = GFX_portrait_SOV_kirill_meretskov
-				small=GFX_portrait_SOV_kirill_meretskov_small
-			}
-		}
-		corps_commander = {
-			traits = { trait_reckless infantry_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
-			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}
-	}
 
 	SOV_filipp_golikov = {
 		name = SOV_filipp_golikov
@@ -671,27 +608,6 @@ characters={
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
 		}
 	}
-	SOV_aleksandr_yegorov = {
-		name = SOV_aleksandr_yegorov
-		portraits = {
-			army = {
-				small = "GFX_idea_aleksandr_yegorov"
-				large = "GFX_portrait_SOV_aleksandr_yegorov"
-			}
-		}
-
-		field_marshal = {
-			traits = { career_officer inflexible_strategist trait_reckless }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 2
-			legacy_id = 0
-			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
-		}	
-	}
-
 	SOV_vasily_blyukher = {
 		name = SOV_vasily_blyukher
 		portraits = {

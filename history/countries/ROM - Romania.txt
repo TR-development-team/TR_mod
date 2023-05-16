@@ -114,7 +114,10 @@ recruit_character = ROM_ion_antonescu
 recruit_character = ROM_horia_macellariu
 recruit_character = ROM_gheorghe_avramescu
 
-
+if = {
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = { target = OTT type = annex_everything	}
+}
 
 ### VARIANTS ###
 # 1936 Start #

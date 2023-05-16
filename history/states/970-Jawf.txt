@@ -2,14 +2,14 @@ state={
 	id=970
 	name="STATE_970"
 	provinces={
-		2057 4974 8101 10815 10901 
+		2057 4562 4603 4974 5027 5099 7970 8101 10815 10901 12455 12758 
 	}
 	history = {
-		owner = ARB
-		add_core_of = ARB
+		owner = JBS
+		add_core_of = JBS
+		victory_points = { 2057 1 }
 	}
-	impassable = yes
-	manpower=5000
+	manpower=185000
 	state_category=pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

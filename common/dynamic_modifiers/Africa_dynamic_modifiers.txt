@@ -1,0 +1,88 @@
+#	Example:
+#
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+###### COUNTRY MODIFIERS
+EAF_Country_Unrest = {
+	icon = "GFX_idea_usa_great_depression_3"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	political_power_cost = EAF_Country_Unrest_political_power_cost
+	stability_weekly = EAF_Country_Unrest_stability_weekly
+	war_support_factor = EAF_Country_Unrest_war_support_factor
+	resistance_target = EAF_Country_Unrest_resistance_target
+	required_garrison_factor = EAF_Country_Unrest_required_garrison_factor
+	surrender_limit = EAF_Country_Unrest_surrender_limit
+}
+MCG_Country_Unrest = {
+	icon = "GFX_idea_usa_great_depression_3"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	political_power_cost = MCG_Country_Unrest_political_power_cost
+	stability_weekly = MCG_Country_Unrest_stability_weekly
+	war_support_factor = MCG_Country_Unrest_war_support_factor
+	resistance_target = MCG_Country_Unrest_resistance_target
+	required_garrison_factor = MCG_Country_Unrest_required_garrison_factor
+	surrender_limit = MCG_Country_Unrest_surrender_limit
+}
+NGA_Country_Unrest = {
+	icon = "GFX_idea_usa_great_depression_3"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	political_power_cost = NGA_Country_Unrest_political_power_cost
+	stability_weekly = NGA_Country_Unrest_stability_weekly
+	war_support_factor = NGA_Country_Unrest_war_support_factor
+	resistance_target = NGA_Country_Unrest_resistance_target
+	required_garrison_factor = NGA_Country_Unrest_required_garrison_factor
+	surrender_limit = NGA_Country_Unrest_surrender_limit
+}
+NMB_Country_Unrest = {
+	icon = "GFX_idea_usa_great_depression_3"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	political_power_cost = NMB_Country_Unrest_political_power_cost
+	stability_weekly = NMB_Country_Unrest_stability_weekly
+	war_support_factor = NMB_Country_Unrest_war_support_factor
+	resistance_target = NMB_Country_Unrest_resistance_target
+	required_garrison_factor = NMB_Country_Unrest_required_garrison_factor
+	surrender_limit = NMB_Country_Unrest_surrender_limit
+}

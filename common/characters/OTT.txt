@@ -1,4 +1,125 @@
 characters={
+	OTT_Kazim_Karabekir={
+		name=OTT_Kazim_Karabekir
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Kazim_Karabekir.png"
+			}
+		}
+		country_leader={
+			ideology=social_liberal_subtype
+			id=-1
+		}
+		corps_commander={
+			traits={ trait_cautious politically_connected desert_fox }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	OTT_Ali_Kemal={
+		name=OTT_Ali_Kemal
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Ali_Kemal.png"
+			}
+		}
+		country_leader={
+			ideology=classical_liberalism_subtype
+			id=-1
+		}
+	}
+	OTT_Sabahaddin={
+		name=OTT_Sabahaddin
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Prince_Sabahaddin.png"
+			}
+		}
+		country_leader={
+			ideology=market_liberal_subtype
+			id=-1
+		}
+	}
+	OTT_Shakib_Arslan={
+		name=OTT_Shakib_Arslan
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Shakib_Arslan.png"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			id=-1
+		}
+	}
+	OTT_Mustafa_Kemal={
+		name=OTT_Mustafa_Kemal
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Mustafa_Kemal.png"
+			}
+		}
+		country_leader={
+			ideology=Dominant_party_system_subtype
+			id=-1
+		}
+		field_marshal={
+			traits={ politically_connected media_personality war_hero organizer logistics_wizard  }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=5
+			logistics_skill=3
+		}
+	}
+	OTT_AbdulmecidII={
+		name=OTT_AbdulmecidII
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/portrait_OTT_Abdulmecid.png"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy_subtype
+			id=-1
+		}
+	}
+	OTT_Osman_Fuat={
+		name=OTT_Osman_Fuat
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Osman_Fuat.png"
+			}
+		}
+		country_leader={
+			ideology=absolute_monarchy_subtype
+			id=-1
+		}
+		field_marshal={
+			traits={ politically_connected media_personality war_hero }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+		}
+	}
+	OTT_TBMM={
+		name=OTT_TBMM
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_TBMM.png"
+			}
+		}
+		country_leader={
+			ideology=paternal_autocrat_subtype
+			id=-1
+		}
+	}
 	OTT_Enver_Pasha={
 		name=OTT_Enver_Pasha
 		portraits={
@@ -10,92 +131,46 @@ characters={
 			ideology=president_principle_subtype
 			id=-1
 		}
-	}
-	OTT_AbdulmecidII={
-		name=OTT_AbdulmecidII
-		portraits={
-			civilian={
-				large="gfx/leaders/OTT/portrait_OTT_Abdulmecid.tga"
-			}
-		}
-		country_leader={
-			ideology=absolute_monarchy_subtype
-			id=-1
-		}
-	}
-	OTT_Mustafa_Kemal={
-		name=OTT_Mustafa_Kemal
-		portraits={
-			civilian={
-				large="gfx/leaders/OTT/Portrait_Turkey_kemal.tga"
-			}
-		}
-		country_leader={
-			ideology=Dominant_party_system_subtype
-			id=-1
-		}
-	}
-	OTT_Shakib_Arslan={
-		name=OTT_Shakib_Arslan
-		portraits={
-			civilian={
-				large="gfx/leaders/OTT/Portrait_Ottoman_Shakib_Arslan.tga"
-			}
-		}
-		country_leader={
-			ideology=social_conservative_subtype
-			id=-1
-		}
-	}
-	OTT_Sabahaddin={
-		name=OTT_Sabahaddin
-		portraits={
-			civilian={
-				large="gfx/leaders/OTT/Portrait_Ottoman_Sabahaddin.tga"
-			}
-		}
-		country_leader={
-			ideology=market_liberal_subtype
-			id=-1
-		}
-	}
-
-	OTT_Mustafa_Kemal_marshal={
-		name=OTT_Mustafa_Kemal
-		portraits={
-			civilian={
-				large="gfx/leaders/OTT/Portrait_Turkey_kemal.tga"
-			}
-		}
-		field_marshal={
-			traits={ politically_connected media_personality war_hero organizer logistics_wizard }
-			skill=4
-			attack_skill=3
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=3
-		}
-	}
-
-	OTT_Enver_Pasha_marshal={
-		name=OTT_Enver_Pasha
-		portraits={
-			civilian={
-				large="gfx/leaders/OTT/Portrait_OTT_Enver_Pasha.png"
-			}
-		}
 		field_marshal={
 			traits={ politically_connected media_personality war_hero offensive_doctrine }
 			skill=2
-			attack_skill=2
+			attack_skill=1
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+			planning_skill=3
+			logistics_skill=1
 		}
 	}
-
+	OTT_Ziya_Gokalp={
+		name=OTT_Ziya_Gokalp
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Ziya_Gokalp.png"
+			}
+		}
+		country_leader={
+			ideology=Gnosticism_subtype
+			id=-1
+		}
+	}
+	OTT_Fahreddin_Pasha={
+		name=OTT_Fahreddin_Pasha
+		portraits={
+			army={
+				large="gfx/leaders/OTT/Portrait_OTT_Fahreddin_Pasha.png"
+			}
+		}
+		field_marshal={
+			traits={ war_hero desert_fox organizer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=905
+		}
+	}
 	OTT_izzettin_chalishlar={
-		name=OTT_izzettin_chalishlar
+		name=TUR_izzettin_chalishlar
 		portraits={
 			army={
 				large="GFX_portrait_tur_izzettin_calislar"
@@ -103,7 +178,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_officer war_hero trait_OTT_kemalist_champion trait_mountaineer }
+			traits={ infantry_officer war_hero  trait_mountaineer }
 			skill=3
 			attack_skill=4
 			defense_skill=3
@@ -112,29 +187,8 @@ characters={
 			legacy_id=905
 		}
 	}
-
-	OTT_kazim_karabekir={
-		name=OTT_kazim_karabekir
-		portraits={
-			army={
-				large="GFX_portrait_tur_kazim_karabekir"
-				small="GFX_idea_tur_kazim_karabekir"
-			}
-		}
-
-		corps_commander={
-			traits={ trait_cautious politically_connected desert_fox }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
-
 	OTT_mustafa_muglali={
-		name=OTT_mustafa_muglali
+		name=TUR_mustafa_muglali
 		portraits={
 			army={
 				large="GFX_portrait_tur_mustafa_mugali"
@@ -153,7 +207,7 @@ characters={
 	}
 
 	OTT_mehmet_salih_omurtak={
-                        name=OTT_mehmet_salih_omurtak
+                        name=TUR_mehmet_salih_omurtak
 			portraits={
 				army={
 					small="GFX_idea_tur_salih_omurtak"
@@ -161,7 +215,7 @@ characters={
 				}
 			}
 			corps_commander={
-				traits={ harsh_leader infantry_officer politically_connected trait_OTT_kemalist_champion }
+				traits={ harsh_leader infantry_officer politically_connected  }
 				skill=2
 				attack_skill=2
 				defense_skill=1
@@ -172,7 +226,7 @@ characters={
 		}
 
 	OTT_hayrullah_fisek={
-		name=OTT_hayrullah_fisek
+		name=TUR_hayrullah_fisek
 		portraits={
 			army={
 				large="GFX_portrait_tur_hayrullah_fisek"
@@ -191,7 +245,7 @@ characters={
 	}
 
 	OTT_mehmet_nuri_yamut={
-		name=OTT_mehmet_nuri_yamut
+		name=TUR_mehmet_nuri_yamut
 		portraits={
 			army={
 				large="GFX_portrait_tur_mehmet_nuri_yamut"
@@ -209,7 +263,7 @@ characters={
 		}
 	}
 	OTT_mehmet_ali_ulgen={
-			name=OTT_mehmet_ali_ulgen
+			name=TUR_mehmet_ali_ulgen
 			portraits={
 				army={
 					small="GFX_idea_tur_mehmet_ali_ulgen"
@@ -230,7 +284,7 @@ characters={
 	}
 
 	OTT_sukru_okan={
-		name=OTT_sukru_okan
+		name=TUR_sukru_okan
 		portraits={
 			army={
 				small="GFX_idea_tur_sukru_okan"
@@ -239,7 +293,7 @@ characters={
 		}
 
 		navy_leader={
-			traits={ media_personality gentlemanly trait_OTT_kemalist_champion }
+			traits={ media_personality gentlemanly  }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -250,7 +304,7 @@ characters={
 	}
 	
 	OTT_fevzi_cakmak={
-			name=OTT_fevzi_cakmak
+			name=TUR_fevzi_cakmak
 			portraits={
 				army={
 					small="GFX_idea_tur_fevzi_cakmak"
@@ -271,7 +325,7 @@ characters={
 			}
 		}
 	OTT_ahmet_fevzi_pasha = {
-		name=OTT_ahmet_fevzi_pasha
+		name=TUR_ahmet_fevzi_pasha
 		portraits={
 			army={
 				large="GFX_portrait_tur_ahmet_fevzi_pasha"
@@ -290,7 +344,7 @@ characters={
 	}
 
 	OTT_refet_pasha = {
-		name=OTT_refet_pasha
+		name=TUR_refet_pasha
 		portraits={
 			army={
 				large="GFX_portrait_tur_refe_pasha"
@@ -312,7 +366,7 @@ characters={
 	}
 
 	OTT_mehmet_esat_pasha = {
-		name=OTT_mehmet_esat_pasha
+		name=TUR_mehmet_esat_pasha
 		portraits={
 			army={
 				large="GFX_portrait_tur_mehmed_esad_pasha"

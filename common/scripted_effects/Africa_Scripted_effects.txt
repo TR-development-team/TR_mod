@@ -1,0 +1,97 @@
+EAF_increased_unrest_effect = {
+	custom_effect_tooltip = EAF_unrest_inc_tt
+	add_to_variable = {
+		EAF_unrest_level = 1
+	}
+}
+EAF_decreased_unrest_effect = {
+	custom_effect_tooltip = EAF_unrest_dec_tt
+	subtract_from_variable = {
+		EAF_unrest_level = 1
+	}
+}
+MCG_increased_unrest_effect = {
+	custom_effect_tooltip = MCG_unrest_inc_tt
+	add_to_variable = {
+		MCG_unrest_level = 1
+	}
+}
+MCG_decreased_unrest_effect = {
+	custom_effect_tooltip = MCG_unrest_dec_tt
+	subtract_from_variable = {
+		MCG_unrest_level = 1
+	}
+}
+NGA_increased_unrest_effect = {
+	custom_effect_tooltip = NGA_unrest_inc_tt
+	add_to_variable = {
+		NGA_unrest_level = 1
+	}
+}
+NGA_decreased_unrest_effect = {
+	custom_effect_tooltip = NGA_unrest_dec_tt
+	subtract_from_variable = {
+		NGA_unrest_level = 1
+	}
+}
+NMB_increased_unrest_effect = {
+	custom_effect_tooltip = NMB_unrest_inc_tt
+	add_to_variable = {
+		NMB_unrest_level = 1
+	}
+}
+NMB_decreased_unrest_effect = {
+	custom_effect_tooltip = NMB_unrest_dec_tt
+	subtract_from_variable = {
+		NMB_unrest_level = 1
+	}
+}
+
+Collapse_EAF_effect = {
+	custom_effect_tooltip = Collapse_EAF
+	set_country_flag = EAF_colony_collapse
+	set_variable = {
+		EAF_Country_Unrest_political_power_cost = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_stability_weekly = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_war_support_factor = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_resistance_target = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_required_garrison_factor = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_surrender_limit = 0
+	}
+}
+
+Collapse_EAF_effect = {
+	custom_effect_tooltip = Collapse_EAF
+	set_country_flag = EAF_colony_collapse
+	set_variable = {
+		EAF_Country_Unrest_political_power_cost = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_stability_weekly = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_war_support_factor = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_resistance_target = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_required_garrison_factor = 0
+	}
+	set_variable = {
+		EAF_Country_Unrest_surrender_limit = 0
+	}
+	set_variable = {
+		EAF_colony_deficit = 0.00
+	}
+}

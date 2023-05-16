@@ -1,9 +1,9 @@
-﻿capital = 772
+﻿capital = 660
 oob = "CAR_1936"
 
 JAP = {	set_autonomy = {	target = CAR	autonomous_state = imperial_colony	}	}
 set_cosmetic_tag = COUNTRY_JAP
-
+set_research_slots = 3
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
@@ -13,25 +13,24 @@ set_politics = {
 set_popularities = {
 	authoritarian_democrat = 100
 }
+recruit_character = CAR_Akikusa_Shun
+recruit_character = CAR_Ishii_Shiro
+recruit_character = CAR_Noguchi_Hideyo
 
-recruit_character = CAR_Maeda_Toshinari
 
 add_ideas = {
 	Colonical_system
-	African_Independence_movement
-	Tiyoda_Kensho
 	JAP_JAP_colony
+	CAR_Country_not_on_map
+	CAR_Secret_Laboratory       
 }
-add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
 
 set_convoys = 5
 set_technology = {
 	infantry_weapons = 1
+	tech_mountaineers = 1
 	tech_support = 1
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	CAS1 = 1
-	
 }

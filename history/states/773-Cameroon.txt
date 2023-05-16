@@ -2,13 +2,17 @@
 state={
 	id=773
 	name="STATE_773" # Cameroon
-	manpower = 3965782
+	manpower = 3012938
 	
-	state_category = rural
+	state_category = town
+
+	resources={
+                rubber=13
+	}
 
 	history={
-		owner = CAR
-                add_core_of = CAR
+		owner = NGA
+		add_core_of = NGA
 		add_core_of = CMR
 		victory_points = {
 			2080 1
@@ -26,6 +30,6 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		2080 5036 5054 6039 7963 9137 11194 
+		2080 5036 5054 6039
 	}
 }

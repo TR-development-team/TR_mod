@@ -1,0 +1,20 @@
+characters={
+	COG_Joseph_Kasa_Vubu={
+		name=COG_Joseph_Kasa_Vubu
+		portraits={
+			civilian={
+				large="gfx/leaders/COG/Portrait_COG_Joseph_Kasa_Vubu.png"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=Dominant_party_system_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

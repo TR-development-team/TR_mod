@@ -1,0 +1,22 @@
+state={
+	id=1061
+	name="STATE_1061"
+	
+	state_category = pastoral
+	history={
+		owner = NAF
+		add_core_of = NGE
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		8028 10758 10780 10805 
+	}
+	manpower=1346356
+	buildings_max_level_factor=1.000
+}

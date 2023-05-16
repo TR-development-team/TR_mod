@@ -14,7 +14,7 @@ provinces={
 	state_category = pastoral
 
 	history= {
-		owner = ALB
+		owner = OTT
 		victory_points = {
 			914 3
 		}
@@ -23,12 +23,5 @@ provinces={
 		}
 		add_core_of = ALB
 		add_claim_by = GRE
-		add_claim_by = ITA
-
-		1939.4.12 = {
-			owner = ITA
-			controller = ITA
-			remove_claim_by = ITA
-		}
 	}
 }

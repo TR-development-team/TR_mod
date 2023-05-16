@@ -43,16 +43,15 @@ recruit_character = BUL_vasil_boydev
 
 if = {
 	limit = {	has_start_date < 1936.01.02	}
-	declare_war_on = {	target = OTT	type = annex_everything	}
+	declare_war_on = { target = OTT type = annex_everything	}
 }
 
-create_faction = Anti_ottoman
+create_faction = Balkan_League
 add_to_faction = BUL
 add_to_faction = ROM
 add_to_faction = SER
-add_to_faction = ALB
 add_to_faction = GRE
-add_to_faction = PER
+add_to_faction = MNT
 
 add_ideas = {
 	Absolute_monarchy
@@ -81,7 +80,6 @@ set_technology = {
 	infantry_weapons1 = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
         trench_warfare = 1
 	basic_train = 1
 }
@@ -125,3 +123,11 @@ if = {
 		coastal_defense_ships = 1
 	}
 }
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "BUL_1936_air_bba"
+	else = {
+		set_air_oob = "BUL_1936_air_legacy"
+	}
+}
+

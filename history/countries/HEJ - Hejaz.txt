@@ -1,0 +1,46 @@
+﻿capital = 679
+oob = "HEJ_1936"
+set_cosmetic_tag = HEJ_Vilayet
+set_research_slots = 2
+
+set_technology = {
+	### Infantry ###
+	infantry_weapons = 1
+	tech_irregulars = 1
+}
+if = {
+	limit = { has_dlc = "Battle for the Bosporus" }
+	set_technology = { camelry = 1 }
+}
+OTT = {
+	set_autonomy = {
+		target = HEJ
+		autonomy_state = overseas_territory
+	}
+}
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1888.6.15"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	totalist = 6
+	syndicalist = 0
+	radical_socialist = 2
+	social_democrat = 0
+	social_liberal = 0
+	market_liberal = 10
+	social_conservative = 14
+	authoritarian_democrat = 24
+	paternal_autocrat = 37
+	national_populist = 7
+}
+
+add_ideas = {
+	limited_conscription
+	Colonical_system
+}
+recruit_character = HEJ_Fahreddin_Pasha

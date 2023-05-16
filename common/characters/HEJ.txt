@@ -1,0 +1,29 @@
+characters={
+	HEJ_Fahreddin_Pasha={
+		name=OTT_Fahreddin_Pasha
+		portraits={
+			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Fahreddin_Pasha.png"
+			}
+			army={
+				large="gfx/leaders/OTT/Portrait_OTT_Fahreddin_Pasha.png"
+			}
+		}
+		country_leader={
+			ideology= colonial_government_subtype
+		}
+		country_leader={
+			ideology= mil_colonial_government_subtype
+		}
+		field_marshal={
+			traits={ war_hero desert_fox organizer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=905
+		}
+
+	}
+}

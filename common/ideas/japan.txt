@@ -477,31 +477,6 @@ country = {
                                 resistance_target = 0.05
 			}
 		}
-
-               JAP_colony_deficit = {
-			allowed = {
-				always = no
-			}
-
-			picture = usa_great_depression_3
-			removal_cost = -1
-			modifier = {
-				stability_factor = -0.1
-				consumer_goods_factor = 0.1
-			}
-		}
-                JAP_colony_deficit_1 = {
-			allowed = {
-				always = no
-			}
-
-			picture = usa_great_depression_3
-			removal_cost = -1
-			modifier = {
-				stability_factor = -0.05
-				consumer_goods_factor = 0.05
-			}
-		}
                 JAP_black_thursday = {
 			allowed = {
 				always = no

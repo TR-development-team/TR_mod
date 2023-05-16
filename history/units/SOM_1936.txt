@@ -1,6 +1,6 @@
 ﻿division_template = {
 	name = "Hohei Shidan"				
-	division_names_group = JAP_INF_01
+	division_names_group = SOM_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -14,7 +14,18 @@
 		infantry = { x = 2 y = 2 }
 	}
 }
-
+division_template = {
+	name = "Askari"				
+	division_names_group = EAF_GAR_01
+							
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+        is_locked = yes
+}
 
 
 units = {
@@ -23,7 +34,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 8124
+		location = 8094
 		division_template = "Hohei Shidan"			# Elite emperor's guard
 		start_experience_factor = 0.2
 	}
@@ -31,13 +42,70 @@ units = {
 	division = { # "2nd Sidamo Sefari"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 15
+			name_order = 2
 		}
-		location = 5091
+		location = 5065
+		division_template = "Hohei Shidan"		# Regular Infantry
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = { # "Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 12812
+		division_template = "Hohei Shidan"			# Elite emperor's guard
+		start_experience_factor = 0.2
+	}
+
+	division = { # "2nd Sidamo Sefari"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4995
 		division_template = "Hohei Shidan"		# Regular Infantry
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 
+	}
+	division = { # "Hohei Shidan"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7980
+		division_template = "Hohei Shidan"			# Elite emperor's guard
+		start_experience_factor = 0.2
+	}
+
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1	
+		}
+		location = 1966
+		division_template = "Askari"	
+		start_experience_factor = 0.2
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2	
+		}
+		location = 2063
+		division_template = "Askari"	
+		start_experience_factor = 0.2
+	}
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3	
+		}
+		location = 1964
+		division_template = "Askari"	
+		start_experience_factor = 0.2
 	}
 }
 

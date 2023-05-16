@@ -1,0 +1,32 @@
+on_actions = {
+	on_daily_JAP = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						JAP = {
+							has_country_flag = JAP_end_colony_deficit
+						}
+					}
+				}
+				set_variable = {	JAP_colony_deficit_consumer_goods_factor = 0	}
+				add_to_variable = {
+					var = JAP_colony_deficit_consumer_goods_factor
+					value = EAF_colony_deficit 
+				}
+				add_to_variable = {
+					var = JAP_colony_deficit_consumer_goods_factor
+					value = MCG_colony_deficit 
+				}
+				add_to_variable = {
+					var = JAP_colony_deficit_consumer_goods_factor
+					value = NGA_colony_deficit 
+				}
+				add_to_variable = {
+					var = JAP_colony_deficit_consumer_goods_factor
+					value = NMB_colony_deficit 
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+﻿capital = 1052
+oob = "BRU_1936"
+
+JAP = {	set_autonomy = {	target = BRU	autonomous_state = imperial_protectorate	}	}
+set_cosmetic_tag = BRU_empire
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_mountaineers = 1
+
+}
+
+
+add_ideas = {
+      Absolute_monarchy
+}
+
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	paternal_autocrat = 100
+}
+recruit_character = BRU_Umar_Ibn_Muhammad
+

@@ -1,0 +1,90 @@
+characters={
+
+	GRE_nikos_zachariadis={
+		name=GRE_nikos_zachariadis
+		portraits={
+			civilian={
+				large="GFX_portrait_gre_nikos_zachariadis"
+			}
+		}
+		country_leader={
+			ideology=Jughashvilist_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	GRE_Georgios_II={
+		name=GRE_Georgios_II
+		portraits={
+			civilian={
+				large= "gfx/leaders/GRE/Portrait_GRE_Georgios_II.png"
+			}
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+	}
+
+
+
+	GRE_george_mercouris={
+		name=GRE_george_mercouris
+		portraits={
+			civilian={
+				large="GFX_portrait_gre_george_mercouris"
+			}
+		}
+		country_leader={
+			ideology=Nationalism_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+
+	GRE_charalambos_katsimitros={
+		name=GRE_charalambos_katsimitros
+		portraits={
+			army={
+				large="GFX_portrait_gre_charalambos_katsimitros"
+				small=GFX_portrait_GRE_charalambos_katsimitros_small
+			}
+		}
+		corps_commander={
+			traits={ inflexible_strategist trait_cautious war_hero trait_GRE_stauch_monarchist trickster trait_mountaineer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=304
+		}
+	}
+
+	GRE_markos_drakos={
+			name=GRE_markos_drakos
+			portraits={
+				army={
+					large="GFX_portrait_gre_markos_drakos"
+					small=GFX_portrait_GRE_markos_drakos_small
+				}
+			}
+			corps_commander={
+				traits={ career_officer infantry_officer trickster trait_mountaineer }
+				skill=3
+				attack_skill=1
+				defense_skill=3
+				planning_skill=3
+				logistics_skill=3
+				legacy_id=306
+			}
+	}
+
+
+
+
+}

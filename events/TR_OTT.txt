@@ -8,59 +8,74 @@ country_event = {
 	picture = GFX_report_event_tur_cakmak_general_staff
 
 	
-        fire_only_once = yes
+    fire_only_once = yes
         
 	trigger = {
-                tag = OTT
-                surrender_progress > 0.15
+        tag = OTT
+        surrender_progress > 0.15
 		has_war_with = BUL
-                has_war_with = GRE
-                has_war_with = PER
-                has_war_with = ROM
+        has_war_with = PER
 		is_subject = no
-		
 	}
 
 	option = {
 		name = TR_Turkey.1.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		}
-                white_peace = BUL
-                BUL = { dismantle_faction = yes
-                        transfer_state = 212
-                        transfer_state = 211
-                        transfer_state = 854
-                      }
-                GRE = { 
-                        transfer_state = 184
-                        transfer_state = 731
-                        transfer_state = 182
-                        transfer_state = 187
-                        transfer_state = 164
-                      }
-                PER = { 
-                        transfer_state = 419
-                      }
-               hidden_effect = {
-                       country_event = {
-					id = TR_Turkey.2
-					days = 1
-					
-				}
-                         country_event = {
-					id = TR_news.20
-					days = 1
-					
-				}
+        white_peace = BUL
+		white_peace = ROM
+		white_peace = SER
+		white_peace = GRE
+		white_peace = MNT
+		white_peace = PER
+        BUL = { 
+			dismantle_faction = yes
+			transfer_state = 184
+            transfer_state = 211
+			transfer_state = 341
+			transfer_state = 854
+            transfer_state = 1047
+        }
+		ROM = { 
+            transfer_state = 77
+            transfer_state = 841
+        }
+		SER = { 
+            transfer_state = 106
+            transfer_state = 802
+			transfer_state = 1046
+            transfer_state = 1050
+        }
+		GRE = { 
+			transfer_state = 182
+            transfer_state = 731
+			transfer_state = 1045
+            }
+		MNT = { 
+            transfer_state = 1049
+        }
+        PER = { 
+            transfer_state = 419
+            }
+		release = ALB
+		hidden_effect = {
+            country_event = {
+			    id = TR_Turkey.2
+				days = 1
+			}
+            country_event = {
+				id = TR_news.20
+				days = 1
+			}
 		}
 	}
-        option = {
+    option = {
 		name = TR_Turkey.1.b
-                ai_chance = {
+        ai_chance = {
 			base = 0
 		}
-                add_stability = -0.15
+        add_stability = -0.15
                 
 	}
 }
@@ -78,7 +93,7 @@ country_event = {
 
 	option = {
 		name = TR_Turkey.2.a
-                add_ideas = OTT_Treatment
+        add_ideas = OTT_Treatment
 	}
 
 }
@@ -108,7 +123,7 @@ country_event = {
 			ideology = authoritarian_democrat
 			popularity = 0.3
 		}
-                set_country_flag = OTT_KEMAL_WIN
+        set_country_flag = OTT_KEMAL_WIN
 	}
         option = {
 		name = TR_Turkey.3.b
@@ -123,7 +138,7 @@ country_event = {
 			ideology = national_populist
 			popularity = 0.3
 		}
-                set_country_flag = OTT_ENVER_WIN
+        set_country_flag = OTT_ENVER_WIN
                 
 	}
 }
@@ -141,55 +156,45 @@ country_event = {
 
 	option = {
 		name = TR_Turkey.4.a
-                set_capital = {state = 49}
-                set_cosmetic_tag = TUR_republic
-                effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = { kill_ideology_leader = paternal_autocrat }
-                create_country_leader = {
-	                name = "トルコ大国民議会"
-	                desc = ""
-	                picture = "gfx/leaders/OTT/Portrait_Turkey_TBMM.tga"
-	                expire = "1965.1.1"
-	                ideology = paternal_autocrat_subtype
-                }
-                hidden_effect = {
-                          677 = { set_demilitarized_zone = yes }
-                          553 = { set_demilitarized_zone = yes }
-                          680 = { set_demilitarized_zone = yes }
-                          554 = { set_demilitarized_zone = yes }
-                          454 = { set_demilitarized_zone = yes }
-                          455 = { set_demilitarized_zone = yes }
-                          675 = { set_demilitarized_zone = yes }
-                          291 = { set_demilitarized_zone = yes }
-                          676 = { set_demilitarized_zone = yes }
-                          350 = { set_demilitarized_zone = yes }
-                          352 = { set_demilitarized_zone = yes }
-                          800 = { set_demilitarized_zone = yes }
-                          353 = { set_demilitarized_zone = yes }
-                          354 = { set_demilitarized_zone = yes }
-                       country_event = {
-					id = TR_Turkey.5
-					days = 7
-					
-				}
-                       country_event = {
-					id = TR_Turkey.6
-					days = 9
-					
-				}
-                       country_event = {
-					id = TR_Turkey.8
-					days = 10
-					
-				}
-                       country_event = {
-					id = TR_news.31
-					days = 2
-					
-				}
+        set_capital = {state = 49}
+        set_cosmetic_tag = TUR_republic
+        effect_tooltip = { retire_country_leader = yes }
+        promote_character = OTT_TBMM
+		end_puppet = JBS
+		end_puppet = HEJ
+        hidden_effect = {
+            677 = { set_demilitarized_zone = yes }
+            553 = { set_demilitarized_zone = yes }
+            680 = { set_demilitarized_zone = yes }
+            554 = { set_demilitarized_zone = yes }
+            454 = { set_demilitarized_zone = yes }
+            455 = { set_demilitarized_zone = yes }
+            291 = { set_demilitarized_zone = yes }
+            676 = { set_demilitarized_zone = yes }
+            350 = { set_demilitarized_zone = yes }
+            352 = { set_demilitarized_zone = yes }
+            800 = { set_demilitarized_zone = yes }
+            353 = { set_demilitarized_zone = yes }
+            354 = { set_demilitarized_zone = yes }
+            country_event = {
+				id = TR_Turkey.5
+				days = 7
+				
+			}
+            country_event = {
+				id = TR_Turkey.6
+				days = 9	
+			}
+            country_event = {
+				id = TR_Turkey.8
+				days = 10
+			}
+            country_event = {
+				id = TR_news.31
+				days = 2
+			}
 		}
-                
-	}
+    }
 
 }
 #アラブ人の離脱
@@ -205,38 +210,36 @@ country_event = {
 
 	option = {
 		name = TR_Turkey.5.a
-                SYR = {
+        SYR = {
 			transfer_state = 677
 			transfer_state = 680
-                        transfer_state = 554
+            transfer_state = 554
 			transfer_state = 553
-                        transfer_state = 455
-                        country_event = TR_Syria.1
-                      }
-                IRQ = {
+            transfer_state = 455
+            country_event = TR_Syria.1
+            }
+        IRQ = {
 			transfer_state = 291
 			transfer_state = 676
-                        transfer_state = 675
-                      }
-                ISR = {
+            }
+        ISR = {
+			transfer_state = 453
 			transfer_state = 454
-                        country_event = TR_Syria.2
-                      }
-                hidden_effect = {
-                          country_event = {
-					id = TR_news.32
-					days = 2
-					
-				}
-                          677 = { set_demilitarized_zone = no }
-                          553 = { set_demilitarized_zone = no }
-                          680 = { set_demilitarized_zone = no }
-                          554 = { set_demilitarized_zone = no }
-                          454 = { set_demilitarized_zone = no }
-                          455 = { set_demilitarized_zone = no }
-                          675 = { set_demilitarized_zone = no }
-                          291 = { set_demilitarized_zone = no }
-                          676 = { set_demilitarized_zone = no }
+            country_event = TR_Syria.2
+        }
+        hidden_effect = {
+            country_event = {
+				id = TR_news.32
+				days = 2
+			}
+        677 = { set_demilitarized_zone = no }
+        553 = { set_demilitarized_zone = no }
+        680 = { set_demilitarized_zone = no }
+        554 = { set_demilitarized_zone = no }
+        454 = { set_demilitarized_zone = no }
+        455 = { set_demilitarized_zone = no }
+        291 = { set_demilitarized_zone = no }
+        676 = { set_demilitarized_zone = no }
 		}
                 
 	}
@@ -255,15 +258,15 @@ country_event = {
 
 	option = {
 		name = TR_Turkey.6.a
-                set_country_flag = OTT_KURDISTAN
-                KUR = {
+        set_country_flag = OTT_KURDISTAN
+        KUR = {
 			transfer_state = 350
-                        country_event = TR_Turkey.7
-                      }
-                hidden_effect = {
-                          350 = { set_demilitarized_zone = no }
-                          352 = { set_demilitarized_zone = no }
-                          353 = { set_demilitarized_zone = no }
+            country_event = TR_Turkey.7
+        }
+        hidden_effect = {
+            350 = { set_demilitarized_zone = no }
+            352 = { set_demilitarized_zone = no }
+            353 = { set_demilitarized_zone = no }
 		}
                 
 	}
@@ -285,10 +288,8 @@ country_event = {
 			type = annex_everything
 		    }
             division_template = {
-				name = "Kurdistan Infantry"
-                                
+				name = "Kurdistan Infantry"              
 				division_names_group = OTT_INF_01
-
 				regiments = {
 					infantry = { x = 0 y = 0 }
 					infantry = { x = 0 y = 1 }

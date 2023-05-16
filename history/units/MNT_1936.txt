@@ -1,0 +1,97 @@
+﻿division_template = {
+	name = "Pesadijska Divizija"	# Infantry Division	
+	# Note: infantry divisions were all at low reserve levels even just prior to Axis 
+	#	invasion of 1941
+
+	division_names_group = YUG_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 }  
+	}
+}
+division_template = {
+	name = "Gorska Pesadija"		# Mountain Brigade
+
+	division_names_group = YUG_MTN_01
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+	}
+}
+division_template = {
+
+	division_names_group = YUG_CAV_01
+
+	name = "Konjička Divizija" 			# Cavalry Division
+	# Note: regiments within the brigade were battalion-sized units
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Tenkovski Bataljon" 			# Tank Battalion
+	# Note: 1st Armor Battalion had FT-17s in 1936, 
+	#	2nd battalion formed when R-35s added in 1940
+
+	division_names_group = YUG_ARM_01
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }       # added infantry to not make it a death trap
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+
+units = {
+	######## LAND UNITS ########
+	###### Vojska Kraljevine Jugoslavije ######
+	division = {
+#		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9821
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.3
+	}
+	division = {
+#		name = "Gardijska Pesadijska Div."  			# Peadijska if we get font support
+		division_name = {    # New syntax for compatibility with name lists
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9809
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0.3
+	}
+}
+
+	
+
+### Starting Production ###
+instant_effect = {
+
+	
+}

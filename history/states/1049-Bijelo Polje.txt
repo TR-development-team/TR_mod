@@ -1,0 +1,27 @@
+
+state={
+	id=1049
+	name="STATE_1049"
+	resources={
+		chromium=13
+		aluminium=40
+	}
+
+	history={
+		owner = OTT
+		add_core_of = MNT
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		937 6913 
+	}
+	manpower=112837
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

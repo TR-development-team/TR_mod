@@ -1,0 +1,40 @@
+characters={
+
+	CAC_Shida_Shigeo={
+		name=CAC_Shida_Shigeo
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Shida_Shigeo.tga"
+			}
+		}
+		country_leader={
+			ideology=Totalist_Leninist_subtype
+		}
+	}
+	CAC_Kaku_Sagataro={
+		name=CAC_Kaku_Sagataro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Sagataro.png"
+			}
+		}
+		country_leader={
+			ideology=Neo_Canton_system_subtype
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+		}
+	}
+	CAC_Fujiyama_Aiichiro={
+		name=CAC_Fujiyama_Aiichiro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Fujiyama_Aiichiro.tga"
+			}
+		}
+		country_leader={
+			ideology=mil_colonial_government_subtype
+		}
+	}
+
+}

@@ -5,6 +5,8 @@ oob = "NMB_1936"
 JAP = {	set_autonomy = {	target = NMB	autonomous_state = imperial_colony	}	}
 set_cosmetic_tag = COUNTRY_JAP
 
+set_variable = {	NMB_unrest_level = 0	}
+
 set_research_slots = 3
 # Starting tech
 set_technology = {
@@ -13,8 +15,6 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	CAS1 = 1
 	
 }
 add_ideas = {
@@ -23,14 +23,15 @@ add_ideas = {
         low_school_system
         low_pensions
         low_health_care
-        Tiyoda_Kensho
         NMB_JAP_colony
+        Tiyoda_Kensho
         NMB_JAP_Africa
 }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
 		days = 500
                  }  
+add_dynamic_modifier = {	modifier = NMB_Country_Unrest	}
 set_convoys = 20
 
 set_politics = {
@@ -40,15 +41,20 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
+        social_conservative = 29
 	authoritarian_democrat = 39
 	paternal_autocrat = 4 
-        social_conservative = 17
-        national_populist = 40
+        national_populist = 28
 }
-
+recruit_character = NMB_Oda_Nobutsune
 recruit_character = NMB_Kashii_Kohei
 
 recruit_character = NMB_Yanagawa_Heisuke
 recruit_character = NMB_Ando_Teruzo
 recruit_character = NMB_Kurihara_Yasuhide
+
+
+NMB = {	set_autonomy = {	target = BOT	autonomous_state = imperial_protectorate	}	}
+NMB = {	set_autonomy = {	target = ZAM	autonomous_state = imperial_protectorate	}	}
+
 

@@ -23,107 +23,12 @@ set_popularities = {
 	national_populist = 5
 	Gnosticism = 7
 }
+recruit_character = CZE_Oskar_I
 
-create_country_leader = {
-	name = "オスカー1世"
-	desc = ""
-	picture = "gfx/leaders/CZE/Portrait_GER_Oskar.tga"
-	expire = "1965.1.1"
-	ideology = social_democrat_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "オスカー1世"
-	desc = ""
-	picture = "gfx/leaders/CZE/Portrait_GER_Oskar.tga"
-	expire = "1965.1.1"
-	ideology = social_liberal_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "オスカー1世"
-	desc = ""
-	picture = "gfx/leaders/CZE/Portrait_GER_Oskar.tga"
-	expire = "1965.1.1"
-	ideology = market_liberal_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "オスカー1世"
-	desc = ""
-	picture = "gfx/leaders/CZE/Portrait_GER_Oskar.tga"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Klement Gottwald"
-	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "gfx/leaders/CZE/Portrait_Czech_Klement_Gottwald.dds"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		#
-	}
-}
-create_field_marshal = {
-	name = "Vojtěch Luža"
-	gfx = "GFX_Portrait_czechoslovakia_vojtech_luza"
-	traits = {
-		fast_planner
-		offensive_doctrine
-	}
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 1
-}
-create_field_marshal = {
-	name = "Josef Šnejdárek"
-	gfx = "GFX_Portrait_czechoslovakia_josef_snejdarek"
-	traits = {
-		thorough_planner
-		defensive_doctrine
-	}
-	skill = 3
-	attack_skill = 3
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Richard Tesařík"
-	gfx = "GFX_Portrait_czechoslovakia_richard_tesarik"
-	traits = {
-		armor_officer
-	}
-	skill = 2
-	attack_skill = 4
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Sergej Vojcechovský"
-	gfx = "GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
-	traits = {
-		winter_specialist
-	}
-	skill = 3
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 1
-}
+recruit_character = CZE_vojtyech_luzha
+recruit_character = CZE_josef_shnejdarek
+recruit_character = CZE_richard_tesarzhik
+recruit_character = CZE_sergej_vojcechovsky
 
 add_ideas = {
 	Constitutional_monarchy

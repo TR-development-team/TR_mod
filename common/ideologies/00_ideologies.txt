@@ -140,6 +140,9 @@ ideologies = {
 			military_socialism_subtype = {
 				can_be_randomly_selected = no
 			}
+			Buddhist_socialism_subtype = {
+				can_be_randomly_selected = no
+			}
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_RADICAL_SOCIALIST_1"
@@ -193,6 +196,9 @@ ideologies = {
 				can_be_randomly_selected = no
 			}
 			San_min_Doctrine_left_subtype = {
+				can_be_randomly_selected = no
+			}
+			Buddhist_socialism_sd_subtype = {
 				can_be_randomly_selected = no
 			}
 		}
