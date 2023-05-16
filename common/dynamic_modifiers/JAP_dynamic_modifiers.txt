@@ -54,5 +54,14 @@ JAP_modern_agriculture = {
     global_building_slots_factor = JAP_countryside_global_building_slots_factor
 	production_factory_max_efficiency_factor = JAP_countryside_production_factory_max_efficiency_factor
 }
-
+JAP_colony_deficit = {
+	icon = "GFX_idea_usa_great_depression_3"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	consumer_goods_factor = JAP_colony_deficit_consumer_goods_factor
+}
 

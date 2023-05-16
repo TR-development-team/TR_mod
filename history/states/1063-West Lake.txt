@@ -1,0 +1,24 @@
+state={
+	id=1063
+	name="STATE_1063"
+	
+	state_category = rural
+	history={
+		owner = EAF
+		add_core_of = EAF
+		add_core_of = TZN
+		victory_points = {
+			4171 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+	}
+
+	local_supplies=0.0 
+provinces={
+		2308 4171 
+	}
+	manpower=239485
+	buildings_max_level_factor=1.000
+}

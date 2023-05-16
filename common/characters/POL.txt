@@ -3,7 +3,7 @@ characters = {
 		name=POL_Feliks_Dzierzynski
 		portraits = {
 			civilian = {
-				large="gfx/leaders/POL/Portrait_POL_Dzierzynski.tga"
+				large="gfx/leaders/POL/Portrait_POL_Felix_Dzerzhinsky.png"
 			}
 		}
 		country_leader = {
@@ -11,15 +11,27 @@ characters = {
 			id=-1
 		}
 	}
+	POL_anarchist_commune = {
+		name=POL_anarchist_commune
+		portraits = {
+			civilian = {
+				large="gfx/leaders/POL/Portrait_POL_anarchist_commune.png"
+			}
+		}
+		country_leader = {
+			ideology=anarco_syndicalist_subtype
+			id=-1
+		}
+	}
 	POL_Karl_Radek = {
 		name=POL_Karl_Radek
 		portraits = {
 			civilian = {
-				large="gfx/leaders/POL/Portrait_POL_Radek.tga"
+				large="gfx/leaders/POL/Portrait_POL_Karl_Radek.png"
 			}
 		}
 		country_leader = {
-			ideology=Trotskyist_subtype
+			ideology=Leninist_subtype
 			id=-1
 		}
 	}
@@ -38,7 +50,6 @@ characters = {
 			id=-1
 		}
 	}
-
 	POL_wladyslaw_gomulka = {
 		name=POL_wladyslaw_gomulka
 		portraits = {
@@ -51,19 +62,28 @@ characters = {
 			id=-1
 		}
 	}
+	POL_konstantin_rokossovsky = {
+		name = SOV_konstantin_rokossovsky
 
-	POL_wladyslaw_raczkiewicz = {
-		name=POL_wladyslaw_raczkiewicz
 		portraits = {
-			civilian = {
-				large="GFX_portrait_POL_wladyslaw_raczkiewicz"
+			army = {
+				small = "GFX_idea_konstantin_rokossovsky"
+				large = "gfx/leaders/POL/Portrait_POL_Konstantin Rokossovsky.png"
 			}
 		}
 		country_leader = {
-			ideology=market_liberal_subtype
-			id=-1
+			ideology=military_socialism_subtype
 		}
+		field_marshal = {
+			traits = { JAP_communist_sympathizer brilliant_strategist trait_cautious armor_officer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+		}	
 	}
+
 	POL_wincenty_witos = {
 		name=POL_wincenty_witos
 		portraits = {
@@ -72,7 +92,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=social_conservative_subtype
+			ideology=con_Christian_democracy_subtype
 			id=-1
 		}
 	}
@@ -85,8 +105,34 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology=social_conservative_subtype
+			ideology=con_Christian_democracy_subtype
 			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	POL_wladyslaw_sikorski = {
+		name=POL_wladyslaw_sikorski
+		portraits = {
+			civilian = {
+				large="gfx/leaders/POL/Portrait_POL_Wladyslaw_Sikorski.png"
+			}
+			army = {
+				large="gfx/leaders/POL/Portrait_POL_Wladyslaw_Sikorski.png"
+				small = GFX_portrait_POL_wladyslaw_sikorski_small
+			}
+		}
+
+		corps_commander = {
+			traits = { POL_sanation_left_leader defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+		country_leader = {
+			ideology=national_coalition_subtype
 			id=-1
 		}
 	}
@@ -112,7 +158,7 @@ characters = {
 			legacy_id=-1
 		}
 		country_leader = {
-			ideology= authoritarian_democrat_subtype
+			ideology= dem_Military_junta_subtype
 		}
 	}
 	POL_sejmik_regency = {
@@ -127,21 +173,30 @@ characters = {
 			id=-1
 		}
 	}
-	POL_ignacy_moscicki = {
-		name=POL_ignacy_moscicki
+	POL_Tadeusz_Komorowski = {
+		name=POL_Tadeusz_Komorowski
 		portraits = {
 			army={
-				small=GFX_portrait_POL_ignacy_moscicki_small
+				large="gfx/leaders/POL/Portrait_POL_Tadeusz_Bor_Komorowski.png"
 			}
 			civilian = {
-				large="GFX_portrait_POL_ignacy_moscicki"
+				large="gfx/leaders/POL/Portrait_POL_Tadeusz_Bor_Komorowski.png"
 			}
 		}
 		
 		country_leader = {
-			ideology=paternal_autocrat_subtype
+			ideology=Military_junta_subtype
 			expire="1965.1.1.1"
 			id=-1
+		}
+		corps_commander = {
+			traits = { POL_sanation_right_leader trickster cavalry_officer cavalry_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
 		}
 	}
 	POL_boleslaw_wieniawa_glugoszowski = {
@@ -195,33 +250,6 @@ characters = {
 		}
 	}
 
-	POL_wladyslaw_sikorski = {
-		name=POL_wladyslaw_sikorski
-		portraits = {
-			civilian = {
-				large=GFX_portrait_POL_wladyslaw_sikorski
-			}
-			army = {
-				large=GFX_portrait_POL_wladyslaw_sikorski
-				small = GFX_portrait_POL_wladyslaw_sikorski_small
-			}
-		}
-
-		field_marshal = {
-			traits = { POL_sanation_left_leader defensive_doctrine }
-			skill=3
-			attack_skill=2
-			defense_skill=3
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-		country_leader = {
-			ideology=paternal_autocrat_subtype
-			id=-1
-		}
-	}
-
 	POL_roman_dmowski = {
 		name=POL_roman_dmowski
 		portraits={
@@ -251,7 +279,42 @@ characters = {
 			id=-1
 		}
 	}
-
+	POL_Jan_Stachniuk = {
+		name=POL_Jan_Stachniuk
+		portraits = {
+			civilian = {
+				large="gfx/leaders/POL/Portrait_POL_Jan_Stachniuk.png"
+			}
+		}
+		country_leader = {
+			ideology=Neo_Paganism_subtype
+			id=-1
+		}
+	}
+	POL_wojtek = {
+		name = POL_wojtek
+		portraits = {
+			army = {
+				large = GFX_portrait_POL_wojtek
+				small = "GFX_idea_POL_wojtek"
+			}
+			civilian = {
+				large = "GFX_portrait_POL_king_woytek"
+			}
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery }
+			visible = {
+				has_country_flag = POL_vojtek_commander
+			}
+			skill = 1
+		}
+		country_leader = {
+			ideology=Gnosticism_subtype
+			traits = { he_who_bears_the_throne }
+			expire="1966.1.1.1"
+		}
+	}
 	POL_vladislav_korchits = {
 		name = POL_vladislav_korchits
 		portraits = {
@@ -282,7 +345,7 @@ characters = {
 				large="GFX_portrait_POL_edward_rydz_smigly"
 			}
 		}
-		field_marshal = {
+		corps_commander = {
 			traits = { old_guard POL_sanation_right_leader thorough_planner politically_connected }
 			skill=4
 			attack_skill=4
@@ -293,30 +356,6 @@ characters = {
 		}
 	}
 
-	POL_wojtek = {
-		name = POL_wojtek
-		portraits = {
-			army = {
-				large = GFX_portrait_POL_wojtek
-				small = "GFX_idea_POL_wojtek"
-			}
-			civilian = {
-				large = "GFX_portrait_POL_king_woytek"
-			}
-		}
-		corps_commander = {
-			traits = { bearer_of_artillery }
-			visible = {
-				has_country_flag = POL_vojtek_commander
-			}
-			skill = 1
-		}
-		country_leader = {
-			ideology=Gnosticism_subtype
-			traits = { he_who_bears_the_throne }
-			expire="1966.1.1.1"
-		}
-	}
 
 
 	POL_wladyslaw_bortnowski = {

@@ -1,0 +1,776 @@
+on_actions = {
+	on_daily_EAF = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						EAF = {
+							has_country_flag = EAF_colony_collapse
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							EAF_unrest_level = 0
+						}
+					}
+					set_variable = {
+						EAF_Country_Unrest_political_power_cost = 0
+					}
+					set_variable = {
+						EAF_Country_Unrest_stability_weekly = 0
+					}
+					set_variable = {
+						EAF_Country_Unrest_war_support_factor = 0
+					}
+					set_variable = {
+						EAF_Country_Unrest_resistance_target = 0
+					}
+					set_variable = {
+						EAF_Country_Unrest_required_garrison_factor = 0
+					}
+					set_variable = {
+						EAF_Country_Unrest_surrender_limit = 0
+					}
+
+					set_variable = {
+						EAF_colony_deficit = 0.00
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							EAF_unrest_level = 1
+						}
+					}
+					set_variable = {
+						EAF_Country_Unrest_political_power_cost = 0.03
+					}
+					set_variable = {
+						EAF_Country_Unrest_stability_weekly = -0.002
+					}
+					set_variable = {
+						EAF_Country_Unrest_war_support_factor = -0.03
+					}
+					set_variable = {
+						EAF_Country_Unrest_resistance_target = 0.03
+					}
+					set_variable = {
+						EAF_Country_Unrest_required_garrison_factor = 0.03
+					}
+					set_variable = {
+						EAF_Country_Unrest_surrender_limit = -0.03
+					}
+					JAP = {
+						set_variable = {
+							EAF_colony_deficit = 0.01
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							EAF_unrest_level = 2
+						}
+					}
+					set_variable = {
+						EAF_Country_Unrest_political_power_cost = 0.06
+					}
+					set_variable = {
+						EAF_Country_Unrest_stability_weekly = -0.004
+					}
+					set_variable = {
+						EAF_Country_Unrest_war_support_factor = -0.06
+					}
+					set_variable = {
+						EAF_Country_Unrest_resistance_target = 0.06
+					}
+					set_variable = {
+						EAF_Country_Unrest_required_garrison_factor = 0.06
+					}
+					set_variable = {
+						EAF_Country_Unrest_surrender_limit = -0.06
+					}
+					JAP = {
+						set_variable = {
+							EAF_colony_deficit = 0.02
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							EAF_unrest_level = 3
+						}
+					}
+					set_variable = {
+						EAF_Country_Unrest_political_power_cost = 0.09
+					}
+					set_variable = {
+						EAF_Country_Unrest_stability_weekly = -0.006
+					}
+					set_variable = {
+						EAF_Country_Unrest_war_support_factor = -0.09
+					}
+					set_variable = {
+						EAF_Country_Unrest_resistance_target = 0.09
+					}
+					set_variable = {
+						EAF_Country_Unrest_required_garrison_factor = 0.09
+					}
+					set_variable = {
+						EAF_Country_Unrest_surrender_limit = -0.09
+					}
+					JAP = {
+						set_variable = {
+							EAF_colony_deficit = 0.03
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							EAF_unrest_level = 4
+						}
+					}
+					set_variable = {
+						EAF_Country_Unrest_political_power_cost = 0.12
+					}
+					set_variable = {
+						EAF_Country_Unrest_stability_weekly = -0.008
+					}
+					set_variable = {
+						EAF_Country_Unrest_war_support_factor = -0.12
+					}
+					set_variable = {
+						EAF_Country_Unrest_resistance_target = 0.12
+					}
+					set_variable = {
+						EAF_Country_Unrest_required_garrison_factor = 0.12
+					}
+					set_variable = {
+						EAF_Country_Unrest_surrender_limit = -0.12
+					}
+					JAP = {
+						set_variable = {
+							EAF_colony_deficit = 0.04
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							EAF_unrest_level = 5
+						}
+					}
+					set_variable = {
+						EAF_Country_Unrest_political_power_cost = 0.15
+					}
+					set_variable = {
+						EAF_Country_Unrest_stability_weekly = -0.01
+					}
+					set_variable = {
+						EAF_Country_Unrest_war_support_factor = -0.15
+					}
+					set_variable = {
+						EAF_Country_Unrest_resistance_target = 0.15
+					}
+					set_variable = {
+						EAF_Country_Unrest_required_garrison_factor = 0.15
+					}
+					set_variable = {
+						EAF_Country_Unrest_surrender_limit = -0.15
+					}
+					JAP = {
+						set_variable = {
+							EAF_colony_deficit = 0.05
+						}
+					}
+				}
+			}
+		}
+	}
+	on_daily_MCG = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						MCG = {
+							has_country_flag = MCG_colony_collapse
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							MCG_unrest_level = 0
+						}
+						set_variable = {
+							MCG_Country_Unrest_political_power_cost = 0
+						}
+						set_variable = {
+							MCG_Country_Unrest_stability_weekly = 0
+						}
+						set_variable = {
+							MCG_Country_Unrest_war_support_factor = 0
+						}
+						set_variable = {
+							MCG_Country_Unrest_resistance_target = 0
+						}
+						set_variable = {
+							MCG_Country_Unrest_required_garrison_factor = 0
+						}
+						set_variable = {
+							MCG_Country_Unrest_surrender_limit = 0
+						}
+						set_variable = {
+							MCG_colony_deficit = 0.00
+						}
+						JAP = {
+							set_variable = {
+								MCG_colony_deficit = 0.00
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							MCG_unrest_level = 1
+						}
+					}
+					set_variable = {
+						MCG_Country_Unrest_political_power_cost = 0.03
+					}
+					set_variable = {
+						MCG_Country_Unrest_stability_weekly = -0.002
+					}
+					set_variable = {
+						MCG_Country_Unrest_war_support_factor = -0.03
+					}
+					set_variable = {
+						MCG_Country_Unrest_resistance_target = 0.03
+					}
+					set_variable = {
+						MCG_Country_Unrest_required_garrison_factor = 0.03
+					}
+					set_variable = {
+						MCG_Country_Unrest_surrender_limit = -0.03
+					}
+					JAP = {
+						set_variable = {
+							MCG_colony_deficit = 0.01
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							MCG_unrest_level = 2
+						}
+					}
+					set_variable = {
+						MCG_Country_Unrest_political_power_cost = 0.06
+					}
+					set_variable = {
+						MCG_Country_Unrest_stability_weekly = -0.004
+					}
+					set_variable = {
+						MCG_Country_Unrest_war_support_factor = -0.06
+					}
+					set_variable = {
+						MCG_Country_Unrest_resistance_target = 0.06
+					}
+					set_variable = {
+						MCG_Country_Unrest_required_garrison_factor = 0.06
+					}
+					set_variable = {
+						MCG_Country_Unrest_surrender_limit = -0.06
+					}
+					JAP = {
+						set_variable = {
+							MCG_colony_deficit = 0.02
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							MCG_unrest_level = 3
+						}
+					}
+					set_variable = {
+						MCG_Country_Unrest_political_power_cost = 0.09
+					}
+					set_variable = {
+						MCG_Country_Unrest_stability_weekly = -0.006
+					}
+					set_variable = {
+						MCG_Country_Unrest_war_support_factor = -0.09
+					}
+					set_variable = {
+						MCG_Country_Unrest_resistance_target = 0.09
+					}
+					set_variable = {
+						MCG_Country_Unrest_required_garrison_factor = 0.09
+					}
+					set_variable = {
+						MCG_Country_Unrest_surrender_limit = -0.09
+					}
+					JAP = {
+						set_variable = {
+							MCG_colony_deficit = 0.03
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							MCG_unrest_level = 4
+						}
+					}
+					set_variable = {
+						MCG_Country_Unrest_political_power_cost = 0.12
+					}
+					set_variable = {
+						MCG_Country_Unrest_stability_weekly = -0.008
+					}
+					set_variable = {
+						MCG_Country_Unrest_war_support_factor = -0.12
+					}
+					set_variable = {
+						MCG_Country_Unrest_resistance_target = 0.12
+					}
+					set_variable = {
+						MCG_Country_Unrest_required_garrison_factor = 0.12
+					}
+					set_variable = {
+						MCG_Country_Unrest_surrender_limit = -0.12
+					}
+					JAP = {
+						set_variable = {
+							MCG_colony_deficit = 0.04
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							MCG_unrest_level = 5
+						}
+					}
+					set_variable = {
+						MCG_Country_Unrest_political_power_cost = 0.15
+					}
+					set_variable = {
+						MCG_Country_Unrest_stability_weekly = -0.01
+					}
+					set_variable = {
+						MCG_Country_Unrest_war_support_factor = -0.15
+					}
+					set_variable = {
+						MCG_Country_Unrest_resistance_target = 0.15
+					}
+					set_variable = {
+						MCG_Country_Unrest_required_garrison_factor = 0.15
+					}
+					set_variable = {
+						MCG_Country_Unrest_surrender_limit = -0.15
+					}
+					JAP = {
+						set_variable = {
+							MCG_colony_deficit = 0.05
+						}
+					}
+				}
+			}
+		}
+	}
+	on_daily_NGA = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						NGA = {
+							has_country_flag = NGA_colony_collapse
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NGA_unrest_level = 0
+						}
+						set_variable = {
+							NGA_Country_Unrest_political_power_cost = 0
+						}
+						set_variable = {
+							NGA_Country_Unrest_stability_weekly = 0
+						}
+						set_variable = {
+							NGA_Country_Unrest_war_support_factor = 0
+						}
+						set_variable = {
+							NGA_Country_Unrest_resistance_target = 0
+						}
+						set_variable = {
+							NGA_Country_Unrest_required_garrison_factor = 0
+						}
+						set_variable = {
+							NGA_Country_Unrest_surrender_limit = 0
+						}
+						JAP = {
+							set_variable = {
+								NGA_colony_deficit = 0.00
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NGA_unrest_level = 1
+						}
+					}
+					set_variable = {
+						NGA_Country_Unrest_political_power_cost = 0.03
+					}
+					set_variable = {
+						NGA_Country_Unrest_stability_weekly = -0.002
+					}
+					set_variable = {
+						NGA_Country_Unrest_war_support_factor = -0.03
+					}
+					set_variable = {
+						NGA_Country_Unrest_resistance_target = 0.03
+					}
+					set_variable = {
+						NGA_Country_Unrest_required_garrison_factor = 0.03
+					}
+					set_variable = {
+						NGA_Country_Unrest_surrender_limit = -0.03
+					}
+					JAP = {
+						set_variable = {
+							NGA_colony_deficit = 0.01
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NGA_unrest_level = 2
+						}
+					}
+					set_variable = {
+						NGA_Country_Unrest_political_power_cost = 0.06
+					}
+					set_variable = {
+						NGA_Country_Unrest_stability_weekly = -0.004
+					}
+					set_variable = {
+						NGA_Country_Unrest_war_support_factor = -0.06
+					}
+					set_variable = {
+						NGA_Country_Unrest_resistance_target = 0.06
+					}
+					set_variable = {
+						NGA_Country_Unrest_required_garrison_factor = 0.06
+					}
+					set_variable = {
+						NGA_Country_Unrest_surrender_limit = -0.06
+					}
+					JAP = {
+						set_variable = {
+							NGA_colony_deficit = 0.02
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NGA_unrest_level = 3
+						}
+					}
+					set_variable = {
+						NGA_Country_Unrest_political_power_cost = 0.09
+					}
+					set_variable = {
+						NGA_Country_Unrest_stability_weekly = -0.006
+					}
+					set_variable = {
+						NGA_Country_Unrest_war_support_factor = -0.09
+					}
+					set_variable = {
+						NGA_Country_Unrest_resistance_target = 0.09
+					}
+					set_variable = {
+						NGA_Country_Unrest_required_garrison_factor = 0.09
+					}
+					set_variable = {
+						NGA_Country_Unrest_surrender_limit = -0.09
+					}
+					JAP = {
+						set_variable = {
+							NGA_colony_deficit = 0.03
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NGA_unrest_level = 4
+						}
+					}
+					set_variable = {
+						NGA_Country_Unrest_political_power_cost = 0.12
+					}
+					set_variable = {
+						NGA_Country_Unrest_stability_weekly = -0.008
+					}
+					set_variable = {
+						NGA_Country_Unrest_war_support_factor = -0.12
+					}
+					set_variable = {
+						NGA_Country_Unrest_resistance_target = 0.12
+					}
+					set_variable = {
+						NGA_Country_Unrest_required_garrison_factor = 0.12
+					}
+					set_variable = {
+						NGA_Country_Unrest_surrender_limit = -0.12
+					}
+					JAP = {
+						set_variable = {
+							NGA_colony_deficit = 0.04
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NGA_unrest_level = 5
+						}
+					}
+					set_variable = {
+						NGA_Country_Unrest_political_power_cost = 0.15
+					}
+					set_variable = {
+						NGA_Country_Unrest_stability_weekly = -0.01
+					}
+					set_variable = {
+						NGA_Country_Unrest_war_support_factor = -0.15
+					}
+					set_variable = {
+						NGA_Country_Unrest_resistance_target = 0.15
+					}
+					set_variable = {
+						NGA_Country_Unrest_required_garrison_factor = 0.15
+					}
+					set_variable = {
+						NGA_Country_Unrest_surrender_limit = -0.15
+					}
+					JAP = {
+						set_variable = {
+							NGA_colony_deficit = 0.05
+						}
+					}
+				}
+			}
+		}
+	}
+	on_daily_NMB = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						NMB = {
+							has_country_flag = NMB_colony_collapse
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NMB_unrest_level = 0
+						}
+						set_variable = {
+							NMB_Country_Unrest_political_power_cost = 0
+						}
+						set_variable = {
+							NMB_Country_Unrest_stability_weekly = 0
+						}
+						set_variable = {
+							NMB_Country_Unrest_war_support_factor = 0
+						}
+						set_variable = {
+							NMB_Country_Unrest_resistance_target = 0
+						}
+						set_variable = {
+							NMB_Country_Unrest_required_garrison_factor = 0
+						}
+						set_variable = {
+							NMB_Country_Unrest_surrender_limit = 0
+						}
+						JAP = {
+							set_variable = {
+								NMB_colony_deficit = 0.00
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NMB_unrest_level = 1
+						}
+					}
+					set_variable = {
+						NMB_Country_Unrest_political_power_cost = 0.03
+					}
+					set_variable = {
+						NMB_Country_Unrest_stability_weekly = -0.002
+					}
+					set_variable = {
+						NMB_Country_Unrest_war_support_factor = -0.03
+					}
+					set_variable = {
+						NMB_Country_Unrest_resistance_target = 0.03
+					}
+					set_variable = {
+						NMB_Country_Unrest_required_garrison_factor = 0.03
+					}
+					set_variable = {
+						NMB_Country_Unrest_surrender_limit = -0.03
+					}
+					JAP = {
+						set_variable = {
+							NMB_colony_deficit = 0.01
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NMB_unrest_level = 2
+						}
+					}
+					set_variable = {
+						NMB_Country_Unrest_political_power_cost = 0.06
+					}
+					set_variable = {
+						NMB_Country_Unrest_stability_weekly = -0.004
+					}
+					set_variable = {
+						NMB_Country_Unrest_war_support_factor = -0.06
+					}
+					set_variable = {
+						NMB_Country_Unrest_resistance_target = 0.06
+					}
+					set_variable = {
+						NMB_Country_Unrest_required_garrison_factor = 0.06
+					}
+					set_variable = {
+						NMB_Country_Unrest_surrender_limit = -0.06
+					}
+					JAP = {
+						set_variable = {
+							NMB_colony_deficit = 0.02
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NMB_unrest_level = 3
+						}
+					}
+					set_variable = {
+						NMB_Country_Unrest_political_power_cost = 0.09
+					}
+					set_variable = {
+						NMB_Country_Unrest_stability_weekly = -0.006
+					}
+					set_variable = {
+						NMB_Country_Unrest_war_support_factor = -0.09
+					}
+					set_variable = {
+						NMB_Country_Unrest_resistance_target = 0.09
+					}
+					set_variable = {
+						NMB_Country_Unrest_required_garrison_factor = 0.09
+					}
+					set_variable = {
+						NMB_Country_Unrest_surrender_limit = -0.09
+					}
+					JAP = {
+						set_variable = {
+							NMB_colony_deficit = 0.03
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NMB_unrest_level = 4
+						}
+					}
+					set_variable = {
+						NMB_Country_Unrest_political_power_cost = 0.12
+					}
+					set_variable = {
+						NMB_Country_Unrest_stability_weekly = -0.008
+					}
+					set_variable = {
+						NMB_Country_Unrest_war_support_factor = -0.12
+					}
+					set_variable = {
+						NMB_Country_Unrest_resistance_target = 0.12
+					}
+					set_variable = {
+						NMB_Country_Unrest_required_garrison_factor = 0.12
+					}
+					set_variable = {
+						NMB_Country_Unrest_surrender_limit = -0.12
+					}
+					JAP = {
+						set_variable = {
+							NMB_colony_deficit = 0.04
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							NMB_unrest_level = 5
+						}
+					}
+					set_variable = {
+						NMB_Country_Unrest_political_power_cost = 0.15
+					}
+					set_variable = {
+						NMB_Country_Unrest_stability_weekly = -0.01
+					}
+					set_variable = {
+						NMB_Country_Unrest_war_support_factor = -0.15
+					}
+					set_variable = {
+						NMB_Country_Unrest_resistance_target = 0.15
+					}
+					set_variable = {
+						NMB_Country_Unrest_required_garrison_factor = 0.15
+					}
+					set_variable = {
+						NMB_Country_Unrest_surrender_limit = -0.15
+					}
+					JAP = {
+						set_variable = {
+							NMB_colony_deficit = 0.05
+						}
+					}
+				}
+			}
+		}
+	}
+}

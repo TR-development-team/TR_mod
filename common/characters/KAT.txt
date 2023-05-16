@@ -1,0 +1,21 @@
+characters={
+	KAT_Moise_Kapenda_Tshombe={
+		name=KAT_Moise_Kapenda_Tshombe
+		portraits={
+			civilian={
+				large="gfx/leaders/KAT/Portrait_KAT_Moise_Kapenda_Tshombe.png"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=oligarchy_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+
+	}
+}

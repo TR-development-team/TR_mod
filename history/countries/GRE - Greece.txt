@@ -30,15 +30,16 @@ set_popularities = {
 	Gnosticism = 14
 }
 
-create_country_leader = {
-	name = "ゲオルギオス2世"
-	desc = "POLITICS_IOANNIS_Georgios_DESC"
-	picture = "gfx/leaders/GRE/Portrait_GRE_Georgios.tga"
-	expire = "1965.1.1"
-	ideology = authoritarian_democrat_subtype
-	traits = {
-		
-	}
+recruit_character = GRE_nikos_zachariadis
+recruit_character = GRE_Georgios_II
+recruit_character = GRE_george_mercouris
+
+recruit_character = GRE_charalambos_katsimitros
+recruit_character = GRE_markos_drakos
+
+if = {
+	limit = {	has_start_date < 1936.01.02	}
+	declare_war_on = { target = OTT type = annex_everything	}
 }
 
 add_ideas = {

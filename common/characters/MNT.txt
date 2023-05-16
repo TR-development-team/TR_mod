@@ -1,0 +1,29 @@
+characters = {
+
+	#######################
+	### COUNTRY LEADERS ###
+	#######################
+
+
+	MNT_Milovan_Djilas={
+		name=MNT_Milovan_Djilas
+		portraits={
+			civilian={
+				large="gfx/leaders/MNT/Portrait_MNT_Milovan_Djilas.png"
+			}
+		}
+		country_leader={
+			ideology= left_libertarianist_subtype
+		}
+		country_leader={
+			ideology= Council_communist_subtype
+		}
+		country_leader={
+			ideology= Democratic_socialism_left_subtype
+		}
+	}
+
+
+
+}
+

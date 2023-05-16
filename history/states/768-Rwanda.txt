@@ -2,12 +2,11 @@ state={
 	id=768
 	name="STATE_768" # Rwanda
 	
-	state_category = pastoral
+	state_category = town
 
 	history={
-		owner = EAF
+		owner = RWA
 		add_core_of = RWA
-                add_core_of = EAF
 		victory_points = {
 			9962 1
 		}

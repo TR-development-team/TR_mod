@@ -1,8 +1,8 @@
-﻿capital = 268
+﻿capital = 559
 
 oob = "SOM_1936"
 
-JAP = {	set_autonomy = {	target = SOM	autonomous_state = imperial_colony	}	}
+JAP = {	set_autonomy = {	target = SOM	autonomous_state = imperial_protectorate	}	}
 set_cosmetic_tag = COUNTRY_JAP
 
 # Starting tech
@@ -18,7 +18,6 @@ set_technology = {
 }
 add_ideas = {
         Colonical_system
-        African_Independence_movement
         Tiyoda_Kensho
         JAP_JAP_colony
 }
@@ -40,5 +39,6 @@ set_popularities = {
 }
 
 recruit_character = SOM_Nakamura_kotaro
+recruit_character = SOM_Osman_Yusuf_Kenadid
 
 

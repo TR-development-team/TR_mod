@@ -2,9 +2,13 @@
 state={
 	id=541
 	name="STATE_541"
-	manpower = 254100
+	manpower = 754100
 	state_category = town
-
+	resources={
+		steel = 2
+		chromium = 12
+		tungsten = 6
+	}
 	history={
 		owner = NMB
 		buildings = {

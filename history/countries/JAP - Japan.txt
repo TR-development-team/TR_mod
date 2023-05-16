@@ -52,9 +52,10 @@ add_ideas = {
         JAP_respected_navy
         JAP_Dried_out_countryside
         JAP_Prosperous_Cities
-        JAP_colony_deficit
         JAP_Korean_Question
 }
+add_dynamic_modifier = {	modifier = JAP_colony_deficit 	}
+
 country_event = { id = TR_news.36 days = 1 }#暗黒の木曜日
 country_event = { id = TR_japan.9 days = 12 }#東北飢饉
 country_event = { id = TR_japan.58 days = 30 }#昭和研究会の発足
@@ -63,7 +64,6 @@ country_event = { id = TR_japan.105 days = 65 }#三井本館襲撃事件
 country_event = { id = TR_japfed.1 days = 75 }#1936年度帝国会議
 country_event = { id = TR_japan.109 days = 90 }#第17回メーデー大会開催宣言
 country_event = { id = TR_japan.5 days = 120 }#血のメーデー事件
-country_event = { id = TR_japfed.22 days = 276 }#アフリカ植民地の整理
 country_event = { id = TR_japan.19 days = 382 }#朝鮮問題
 country_event = { id = TR_japan.30 days = 1491 }#1940年度衆院選
 country_event = { id = TR_jap_flavor.5 days = 484 }#ヒサトモ
@@ -1049,4 +1049,85 @@ if = {
 			}
 		}
 }
-
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	create_equipment_variant = {
+		name = "Ki-10"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Ki-2"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ki-1"
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+	}
+	create_equipment_variant = {
+		name = "Ki-3"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Aichi D1A2"
+		type = cv_small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = dive_brakes_small
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "A4N"
+		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "B2M"
+		type = cv_small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "GFX_JAP_cv_naval_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "B4Y"
+		type = cv_small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_JAP_cv_naval_bomber1_medium"
+	}
+}

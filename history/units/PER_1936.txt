@@ -33,6 +33,30 @@ units = {
 	##### Royal Iranian Army #####
 	division = {
 		name = "Persian Cossack Brigade"
+		location = 829
+		division_template = "Cavalry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "South Persia Rifles"
+		location = 5098
+		division_template = "Infantry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		name = "Imperial Gendarmerie"
+		location = 4943
+		division_template = "Infantry Brigade"		
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+
+	}
+        division = {
+		name = "Persian Cossack Brigade"
 		location = 9816
 		division_template = "Cavalry Brigade"		
 		start_experience_factor = 0.2
@@ -41,7 +65,7 @@ units = {
 	}
 	division = {
 		name = "South Persia Rifles"
-		location = 10913
+		location = 10523
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -49,7 +73,7 @@ units = {
 	}
 	division = {
 		name = "Imperial Gendarmerie"
-		location = 10837
+		location = 7953
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -57,7 +81,7 @@ units = {
 	}
         division = {
 		name = "Persian Cossack Brigade"
-		location = 4943
+		location = 5005
 		division_template = "Cavalry Brigade"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -65,7 +89,7 @@ units = {
 	}
 	division = {
 		name = "South Persia Rifles"
-		location = 10913
+		location = 10774
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -73,7 +97,7 @@ units = {
 	}
 	division = {
 		name = "Imperial Gendarmerie"
-		location = 10837
+		location = 5050
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -81,7 +105,7 @@ units = {
 	}
         division = {
 		name = "Persian Cossack Brigade"
-		location = 4901
+		location = 4609
 		division_template = "Cavalry Brigade"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -89,31 +113,7 @@ units = {
 	}
 	division = {
 		name = "South Persia Rifles"
-		location = 10913
-		division_template = "Infantry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "Imperial Gendarmerie"
-		location = 10837
-		division_template = "Infantry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-        division = {
-		name = "Persian Cossack Brigade"
-		location = 8125
-		division_template = "Cavalry Brigade"		
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-
-	}
-	division = {
-		name = "South Persia Rifles"
-		location = 10913
+		location = 4966
 		division_template = "Infantry Brigade"		
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7

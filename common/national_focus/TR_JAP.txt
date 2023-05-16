@@ -2618,7 +2618,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 3
+			factor = 80
 		}
 	completion_reward = {
 		add_political_power = 50
@@ -2650,7 +2650,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 	completion_reward = {
 		custom_effect_tooltip = JAP_Agriculture_focus_2_tt
@@ -2674,7 +2674,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 	completion_reward = {
 		custom_effect_tooltip = JAP_Agriculture_focus_3_tt
@@ -2702,7 +2702,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 	completion_reward = {
 		custom_effect_tooltip = JAP_Agriculture_focus_4_tt
@@ -2726,13 +2726,13 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 	completion_reward = {
 		custom_effect_tooltip = JAP_Agriculture_focus_5_tt
 		add_to_variable = {
 			var = JAP_countryside_stability_weekly
-			value = 0.01
+			value = 0.001
 		}
 		add_to_variable = {
 			var = JAP_countryside_stability_factor
@@ -2754,13 +2754,13 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 	completion_reward = {
 		custom_effect_tooltip = JAP_Agriculture_focus_5_tt
 		add_to_variable = {
 			var = JAP_countryside_stability_weekly
-			value = 0.01
+			value = 0.001
 		}
 		add_to_variable = {
 			var = JAP_countryside_stability_factor
@@ -2782,7 +2782,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 	completion_reward = {
 		set_variable = { JAP_countryside_stability_factor = 0.1 }

@@ -1,0 +1,33 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+		CAR_Country_not_on_map = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAR_Country_not_on_map" }
+			picture = generic_spy_intel
+			allowed = { always = no }
+			modifier = {
+                encryption_factor = 3.0
+				civilian_intel_to_others = -50
+				army_intel_to_others = -50
+				navy_intel_to_others = -50
+				airforce_intel_to_others = -50
+				subversive_activites_upkeep = -0.5
+				enemy_justify_war_goal_time = 2.0
+			}
+		}
+		CAR_Secret_Laboratory = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea CAR_Secret_Laboratory" }
+			picture = jap_supremacy_of_will
+			allowed = { always = no }
+			modifier = {
+                research_speed_factor = 0.1
+				MONTHLY_POPULATION = -0.01
+			}
+		}
+	
+
+}
+}

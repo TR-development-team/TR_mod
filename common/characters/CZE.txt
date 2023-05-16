@@ -1,0 +1,106 @@
+characters={
+	CZE_Oskar_I={
+		name=CZE_Oskar_I
+		portraits={
+			civilian={
+				large="gfx/leaders/CZE/Portrait_GER_Oskar.png"
+			}
+			army={
+				large="gfx/leaders/CZE/Portrait_GER_Oskar.png"
+			}
+		}
+		country_leader={
+			ideology= Christian_socialism_subtype
+		}
+		country_leader={
+			ideology= social_liberal_subtype
+		}
+		country_leader={
+			ideology= lib_Christian_democracy_subtype
+		}
+		country_leader={
+			ideology= con_Christian_democracy_subtype
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+	}
+	CZE_vojtyech_luzha={
+		name=CZE_vojtyech_luzha
+		portraits={
+			army={
+				large="GFX_Portrait_czechoslovakia_vojtech_luza"
+				small=GFX_portrait_CZE_vojtyech_luzha_small
+			}
+		}
+		field_marshal={
+			traits={ offensive_doctrine fast_planner }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	CZE_josef_shnejdarek={
+		name=CZE_josef_shnejdarek
+		portraits={
+			army={
+				large="GFX_Portrait_czechoslovakia_josef_snejdarek"
+				small=GFX_portrait_CZE_josef_shnejdarek_small
+			}
+		}
+		field_marshal={
+			traits={ defensive_doctrine thorough_planner }
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	CZE_richard_tesarzhik={
+		name=CZE_richard_tesarzhik
+		portraits={
+			army={
+				large="GFX_Portrait_czechoslovakia_richard_tesarik"
+				small=GFX_portrait_CZE_richard_tesarzhik_small
+			}
+		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=2
+			attack_skill=4
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	CZE_sergej_vojcechovsky={
+		name=CZE_sergej_vojcechovsky
+		portraits={
+			army={
+				large="GFX_Portrait_czechoslovakia_sergej_vojcechovsky"
+				small=GFX_portrait_CZE_sergej_vojcechovsky_small
+			}
+		}
+		corps_commander={
+			traits={ winter_specialist }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+}

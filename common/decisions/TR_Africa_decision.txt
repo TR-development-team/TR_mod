@@ -1,0 +1,368 @@
+
+EAF_Africa_category = {
+	EAF_Africa_unrest_decision_1 = {
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = EAF
+        }
+		available = {
+			NOT = { has_country_flag = EAF_Africa_unrest_decision_ongoing_flag }
+		}
+		visible = {
+			NOT = { has_country_flag = EAF_colony_collapse }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					EAF_unrest_level = 0
+				}
+			}
+		}
+		days_remove = 30
+
+		days_re_enable = 365
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 50
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		complete_effect = {
+			set_country_flag = EAF_Africa_unrest_decision_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -0.25
+
+		}
+		remove_effect = {
+			EAF_decreased_unrest_effect = yes
+			add_manpower = -30
+            clr_country_flag = EAF_Africa_unrest_decision_ongoing_flag
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.1
+			}
+		}
+	}
+	EAF_Africa_unrest_decision_2 = {
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = EAF
+        }
+		available = {
+			NOT = { has_country_flag = EAF_Africa_unrest_decision_ongoing_flag }
+		}
+		visible = {
+			NOT = { has_country_flag = EAF_colony_collapse }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					EAF_unrest_level = 0
+				}
+			}
+		}
+		days_remove = 30
+
+		days_re_enable = 365
+		cost = 50
+		complete_effect = {
+			set_country_flag = EAF_Africa_unrest_decision_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -0.25
+
+		}
+		remove_effect = {
+			EAF_decreased_unrest_effect = yes
+            clr_country_flag = EAF_Africa_unrest_decision_ongoing_flag
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+MCG_Africa_category = {
+	MCG_Africa_unrest_decision_1 = {
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = MCG
+        }
+		available = {
+			NOT = { has_country_flag = MCG_Africa_unrest_decision_ongoing_flag }
+		}
+		visible = {
+			NOT = { has_country_flag = MCG_colony_collapse }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					MCG_unrest_level = 0
+				}
+			}
+		}
+		days_remove = 30
+
+		days_re_enable = 365
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 50
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		complete_effect = {
+			set_country_flag = MCG_Africa_unrest_decision_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -0.25
+
+		}
+		remove_effect = {
+			MCG_decreased_unrest_effect = yes
+			add_manpower = -30
+            clr_country_flag = MCG_Africa_unrest_decision_ongoing_flag
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.1
+			}
+		}
+	}
+	MCG_Africa_unrest_decision_2 = {
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = MCG
+        }
+		available = {
+			NOT = { has_country_flag = MCG_Africa_unrest_decision_ongoing_flag }
+		}
+		visible = {
+			NOT = { has_country_flag = MCG_colony_collapse }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					MCG_unrest_level = 0
+				}
+			}
+		}
+		days_remove = 30
+
+		days_re_enable = 365
+		cost = 50
+		complete_effect = {
+			set_country_flag = MCG_Africa_unrest_decision_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -0.25
+
+		}
+		remove_effect = {
+			MCG_decreased_unrest_effect = yes
+            clr_country_flag = MCG_Africa_unrest_decision_ongoing_flag
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+NGA_Africa_category = {
+	NGA_Africa_unrest_decision_1 = {
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = NGA
+        }
+		available = {
+			NOT = { has_country_flag = NGA_Africa_unrest_decision_ongoing_flag }
+		}
+		visible = {
+			NOT = { has_country_flag = NGA_colony_collapse }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					NGA_unrest_level = 0
+				}
+			}
+		}
+		days_remove = 30
+
+		days_re_enable = 365
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 50
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		complete_effect = {
+			set_country_flag = NGA_Africa_unrest_decision_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -0.25
+
+		}
+		remove_effect = {
+			NGA_decreased_unrest_effect = yes
+			add_manpower = -30
+            clr_country_flag = NGA_Africa_unrest_decision_ongoing_flag
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.1
+			}
+		}
+	}
+	NGA_Africa_unrest_decision_2 = {
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = NGA
+        }
+		available = {
+			NOT = { has_country_flag = NGA_Africa_unrest_decision_ongoing_flag }
+		}
+		visible = {
+			NOT = { has_country_flag = NGA_colony_collapse }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					NGA_unrest_level = 0
+				}
+			}
+		}
+		days_remove = 30
+
+		days_re_enable = 365
+		cost = 50
+		complete_effect = {
+			set_country_flag = NGA_Africa_unrest_decision_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -0.25
+
+		}
+		remove_effect = {
+			NGA_decreased_unrest_effect = yes
+            clr_country_flag = NGA_Africa_unrest_decision_ongoing_flag
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.05
+			}
+		}
+	}
+}
+
+NMB_Africa_category = {
+	NMB_Africa_unrest_decision_1 = {
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = NMB
+        }
+		available = {
+			NOT = { has_country_flag = NMB_Africa_unrest_decision_ongoing_flag }
+		}
+		visible = {
+			NOT = { has_country_flag = NMB_colony_collapse }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					NMB_unrest_level = 0
+				}
+			}
+		}
+		days_remove = 30
+
+		days_re_enable = 365
+		cost = 0
+		custom_cost_trigger = {
+			NOT = {
+				command_power < 50
+			}
+		}
+		custom_cost_text = decision_cost_CP_50
+		complete_effect = {
+			set_country_flag = NMB_Africa_unrest_decision_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -0.25
+
+		}
+		remove_effect = {
+			NMB_decreased_unrest_effect = yes
+			add_manpower = -30
+            clr_country_flag = NMB_Africa_unrest_decision_ongoing_flag
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.1
+			}
+		}
+	}
+	NMB_Africa_unrest_decision_2 = {
+		icon = eng_trade_unions_demand
+
+		allowed = {
+			original_tag = NMB
+        }
+		available = {
+			NOT = { has_country_flag = NMB_Africa_unrest_decision_ongoing_flag }
+		}
+		visible = {
+			NOT = { has_country_flag = NMB_colony_collapse }
+		}
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 0
+				check_variable = {
+					NMB_unrest_level = 0
+				}
+			}
+		}
+		days_remove = 30
+
+		days_re_enable = 365
+		cost = 50
+		complete_effect = {
+			set_country_flag = NMB_Africa_unrest_decision_ongoing_flag
+		}
+		modifier = {
+			political_power_gain = -0.25
+
+		}
+		remove_effect = {
+			NMB_decreased_unrest_effect = yes
+            clr_country_flag = NMB_Africa_unrest_decision_ongoing_flag
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.05
+			}
+		}
+	}
+}

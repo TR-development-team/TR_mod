@@ -10,12 +10,22 @@ characters={
 			ideology=National_syndicalist_subtype
 		}
 	}
-
+	GBR_Clement_Attlee={
+		name=GBR_Clement_Attlee
+		portraits={
+			civilian={
+				large="gfx/leaders/GBR/Portrait_GBR_Clement_Attlee.png"
+			}
+		}
+		country_leader={
+			ideology=Fabianism_subtype
+		}
+	}
 	GBR_winston_churchill={
 		name=GBR_winston_churchill
 		portraits={
 			civilian={
-				large="gfx/leaders/GBR/Portrait_GBR_Winston_Churchill.tga"
+				large="gfx/leaders/GBR/Portrait_GBR_Winston_Churchill.png"
 			}
 		}
 		country_leader={

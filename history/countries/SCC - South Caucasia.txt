@@ -7,7 +7,19 @@ set_research_slots = 3
 
 country_event = { id = TR_russia.8 days = 336 }
 add_ideas = {
+        SCC_Georgian_Centralism
+        SCC_Five_Year_Plan_for_the_South_Caucasus
+        SCC_NKVD
+
         Democratic_centralism
+
+        SCC_Ioseb_jugashvili 
+        SCC_Sergei_Kirov
+        SCC_Anastas_Mikoyan
+        SCC_Sergo_Ordzhonikidze
+        SCC_Lavrentiy_Beria
+        SCC_Semyon_Budyonny
+        SCC_Kliment_Voroshilov
 }
 # Starting tech
 set_technology = {
@@ -33,11 +45,16 @@ set_popularities = {
         Gnosticism = 15
 }
 
-recruit_character = SCC_Joseph_Stalin
+recruit_character = SCC_Ioseb_jugashvili
 recruit_character = SCC_Sergei_Kirov
 recruit_character = SCC_Vladimir_Mayakovsky
 
 recruit_character = SCC_semyon_budyonny
 recruit_character = SCC_kliment_voroshilov
+recruit_character = SCC_aleksandr_yegorov
+recruit_character = SCC_semyon_timoshenko
+recruit_character = SCC_kirill_meretskov
 recruit_character = SCC_issa_pliyev
+recruit_character = SCC_grigory_kulik
+
 

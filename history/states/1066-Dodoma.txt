@@ -1,0 +1,25 @@
+state={
+	id=1066
+	name="STATE_1066"
+	
+	state_category = town
+	history={
+		owner = EAF
+		add_core_of = EAF
+		add_core_of = TZN
+		victory_points = {
+			12911 1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+	}
+
+	local_supplies=0.0 
+provinces={
+		2206 5224 8201 8205 10845 12911 12967 
+	}
+	manpower=1894504
+	buildings_max_level_factor=1.000
+}

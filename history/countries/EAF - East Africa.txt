@@ -4,6 +4,8 @@ oob = "EAF_1936"
 JAP = {	set_autonomy = {	target = EAF	autonomous_state = imperial_colony	}	}
 set_cosmetic_tag = COUNTRY_JAP
 
+set_variable = {	EAF_unrest_level = 2	}
+
 set_politics = {
 	ruling_party = authoritarian_democrat
 	last_election = "1936.1.1"
@@ -11,7 +13,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 8
+	syndicalist = 3
+	radical_socialist = 5
+	social_democrat = 12
+	social_liberal = 11
+	market_liberal = 13
+	social_conservative = 14
+	authoritarian_democrat = 27
+	paternal_autocrat = 4
+	national_populist = 3
+        Gnosticism = 0
 }
 
 recruit_character = EAF_Koiso_Kuniaki
@@ -19,11 +31,11 @@ recruit_character = EAF_Koiso_Kuniaki
 
 add_ideas = {
 	Colonical_system
-	African_Independence_movement
 	Tiyoda_Kensho
 	JAP_colony
 }
 add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+add_dynamic_modifier = {	modifier = EAF_Country_Unrest	}
 
 set_convoys = 50
 set_technology = {
@@ -32,7 +44,4 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	CAS1 = 1
-	
 }

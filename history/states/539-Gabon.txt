@@ -2,9 +2,13 @@ state={
 	id=539
 	name="STATE_539"
 
+	resources={
+                rubber=26
+	}
 	history={
-		owner = CAR
-                add_core_of = CAR
+		owner = MCG
+		add_core_of = MCG
+		add_core_of = GAB
 		victory_points = {
 			5139 1 
 		}

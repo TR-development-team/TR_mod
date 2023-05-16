@@ -4,19 +4,20 @@ state={
 	name="STATE_660"
 	manpower = 1316921
 	
-	state_category = pastoral
+	state_category = town
 	resources={
 		rubber=3 # was: 4
 	}
 	history={
 		owner = CAR
                 add_core_of = CAR
-		add_core_of = CAR
 		victory_points = {
 			12830 1
 		}
 		buildings = {
 			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
 		}
 
 	}

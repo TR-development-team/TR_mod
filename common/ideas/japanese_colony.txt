@@ -20,8 +20,8 @@
 				extra_trade_to_target_factor = 0.30
 			}
 			modifier = {
-				consumer_goods_factor = -0.05
-                               industrial_capacity_factory = 0.05
+				consumer_goods_factor = 0.05
+                               industrial_capacity_factory = 0.10
 			}
 		}
                Dainihon_Seito = {
@@ -103,33 +103,6 @@
 				industrial_capacity_factory = -0.2
 				consumer_goods_factor = 0.2
 				min_export = -0.2
-			}
-		}
-                African_Independence_movement = {
-			allowed = {
-				always = no
-			}
-
-			picture = usa_great_depression_3
-			removal_cost = -1
-			modifier = {
-                                political_power_cost = 0.2
-				stability_weekly = -0.005
-                                resistance_target = 0.5
-			}
-		}
-                Nippon_Tettai_Africa = {
-			allowed = {
-				always = no
-			}
-
-			picture = usa_great_depression_3
-			removal_cost = -1
-			modifier = {
-                                MONTHLY_POPULATION = -0.25
-                                political_power_cost = 0.5
-				stability_weekly = -0.005
-                                industrial_capacity_factory = -0.5
 			}
 		}
                 Nippon_Tettai_JAPAN = {

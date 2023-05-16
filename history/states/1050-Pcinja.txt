@@ -1,0 +1,29 @@
+
+state={
+	id=1050
+	name="STATE_1050"
+	resources={
+	}
+
+	history={
+		victory_points = {
+			11832 1
+		}
+		owner = OTT
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SER
+		add_core_of = BUL
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		11832
+	}
+	manpower=32838
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

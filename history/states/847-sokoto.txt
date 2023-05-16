@@ -1,29 +1,26 @@
 state={
 	id=847
 	name="STATE_847"
-	local_supplies=0.0 
-provinces={
-		1891 1932 1969 2025 4938 4972 4997 5028 8021 8109 10820 
-	}
+	manpower = 5832479
+	state_category = city
+
 	history={
 		owner = SKT
 		add_core_of = SKT
-                add_claim_by = NGA
+		victory_points = {
+			1891 5
+		}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 2
-
-
+			arms_factory = 1
+			industrial_complex = 1
 		}
-		victory_points = {
-			1891 10
-		}
-
 	}
 
-
-	manpower=9757000
+	provinces={
+		1891 1932 12817 
+	}
+	
 	buildings_max_level_factor=1.000
-	state_category=large_city
+	local_supplies=0.000
 }

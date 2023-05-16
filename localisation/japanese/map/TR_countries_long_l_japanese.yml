@@ -48,6 +48,11 @@
  
  GXC_military_clique:0 "広西軍閥"
  GXC_military_clique_DEF:0 "広西軍閥"
+
+ HEJ_Kingdom:0 "ヒジャーズ王国"
+ HEJ_Kingdom_DEF:0 "ヒジャーズ王国"
+ HEJ_Vilayet:0 "ヒジャーズ・ヴィライェト"
+ HEJ_Vilayet_DEF:0 "ヒジャーズ・ヴィライェト"
  
  IND_republic:0 "インド共和国"
  IND_republic_DEF:0 "インド共和国"
@@ -61,8 +66,8 @@
  ISR_state:0 "イスラエル国"
  ISR_state_DEF:0 "イスラエル国"
  
- 
- 
+ JBS_Emirate:0 "ジャバル・シャンマル首長国"
+ JBS_Emirate_DEF:0 "ジャバル・シャンマル首長国"
  
  KHI_khanate:0 "ヒヴァ・ハン国"
  KHI_khanate_DEF:0 "ヒヴァ・ハン国"
@@ -334,14 +339,14 @@
  MAC_republic:0 "マケドニア共和国"
  MAC_republic_DEF:0 "マケドニア共和国"
  
- 
- 
  MLT_republic:0 "マルタ共和国"
  MLT_republic_DEF:0 "マルタ共和国"
  
  MNT_kingdom:0 "モンテネグロ王国"
  MNT_kingdom_DEF:0 "モンテネグロ王国"
- 
+ MNT_republic:0 "モンテネグロ共和国"
+ MNT_republic_DEF:0 "モンテネグロ共和国"
+
  MOL_principality:0 "モルダヴィア公国"
  MOL_principality_DEF:0 "モルダヴィア公国"
  
@@ -365,7 +370,9 @@
  
  OCC_republic:0 "オクシタニア共和国"
  OCC_republic_DEF:0 "オクシタニア共和国"
- 
+
+ POL_republic:0 "ポーランド共和国"
+ POL_republic_DEF:0 "ポーランド共和国"
  POL_rada_republic:0 "ポーランド・ラーダ共和国"
  POL_rada_republic_DEF:0 "ポーランド・ラーダ共和国"
  
@@ -437,9 +444,6 @@
  VNC_most_serene_republic:0 "晴朗極まる共和国ヴェネツィア"
  VNC_most_serene_republic_DEF:0 "晴朗極まる共和国ヴェネツィア"
  
- 
- 
- 
  YUG_kingdom:0 "ユーゴスラビア王国"
  YUG_kingdom_DEF:0 "ユーゴスラビア王国"
  
@@ -464,6 +468,9 @@
  
  BRD_kingdom:0 "ブルンジ王国"
  BRD_kingdom_DEF:0 "ブルンジ王国"
+
+ BRU_empire:0 "ボルヌ帝国"
+ BRU_empire_DEF:0 "ボルヌ帝国"
  
  CAR_republic:0 "中央アフリカ共和国"
  CAR_republic_DEF:0 "中央アフリカ共和国"
@@ -552,8 +559,6 @@
  
  NGA_federal_republic:0 "ナイジェリア連邦共和国"
  NGA_federal_republic_DEF:0 "ナイジェリア連邦共和国"
- NGA_federal_republic:0 "ナイジェリア連邦共和国"
- NGA_federal_republic_DEF:0 "ナイジェリア連邦共和国"
  
  NGE_republic:0 "ニジェール共和国"
  NGE_republic_DEF:0 "ニジェール共和国"
@@ -602,6 +607,8 @@
  
  UGA_republic:0 "ウガンダ共和国"
  UGA_republic_DEF:0 "ウガンダ共和国"
+ UGA_federation:0 "ウガンダ連邦"
+ UGA_federation_DEF:0 "ウガンダ連邦"
  
  VOL_republic:0 "オートボルタ共和国"
  VOL_republic_DEF:0 "オートボルタ共和国"
@@ -849,9 +856,8 @@
  KAT_state:0 "カタンガ国"
  KAT_state_DEF:0 "カタンガ国"
  
- KIV_liberation_front:0 "キヴ解放戦線"
- KIV_liberation_front_DEF:0 "キヴ解放戦線"
- 
+ KIV_peoples_army:0 "キヴ人民軍"
+ KIV_peoples_army_DEF:0 "キヴ人民軍"
  
  NKR_peoples_republic:0 "新韓人民共和国"
  NKR_peoples_republic_DEF:0 "新韓人民共和国"

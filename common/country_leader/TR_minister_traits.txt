@@ -16,7 +16,7 @@ leader_traits = {
 		
 	}
 
-        Rastafari_traits = {#ハイレ・セラシエ
+    Rastafari_traits = {#ハイレ・セラシエ
 		random = no
                 non_core_manpower = 0.05
                 war_support_factor = 0.05
@@ -24,7 +24,7 @@ leader_traits = {
                 political_power_factor = 0.1
 	}
 
-        Shogun_traits = {#徳川将軍
+    Shogun_traits = {#徳川将軍
 		random = no
                 war_support_weekly = 0.002
                 army_morale_factor = 0.1
@@ -32,7 +32,7 @@ leader_traits = {
                 political_power_factor = -0.05
 	}
 
-        BUL_Khan = {#ボリス3世
+    BUL_Khan = {#ボリス3世
 		random = no
                 offensive_war_stability_factor = 0.2
                 subversive_activites_upkeep = -0.1
@@ -42,7 +42,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-        BUL_Tsar = {#ボリス3世
+    BUL_Tsar = {#ボリス3世
 		random = no
                 stability_factor = 0.1
                 political_power_factor = 0.05
@@ -50,7 +50,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-        Luksemburg_traits = {#ルクセンブルク
+    Luksemburg_traits = {#ルクセンブルク
 		random = no
                 justify_war_goal_time = 0.3
 		subversive_activites_upkeep = -0.3
@@ -60,7 +60,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-        Trotsky_traits = {#トロツキー
+    Trotsky_traits = {#トロツキー
 		random = no
         army_org_factor = 0.05
         war_support_factor = 0.1
@@ -84,22 +84,22 @@ leader_traits = {
         army_attack_factor = 0.1
 	    mobilization_speed = 0.1
 	}
-        Ma_Zhongying_traits = {#馬仲英
+    Ma_Zhongying_traits = {#馬仲英
 		random = no
-                army_org_factor = 0.1
-                conscription = 0.01
-                offensive_war_stability_factor = 0.15
-                justify_war_goal_time = -0.1
-                opinion_gain_monthly_factor = -0.2
-	        MONTHLY_POPULATION = -0.2
+        army_org_factor = 0.1
+        conscription = 0.01
+        offensive_war_stability_factor = 0.15
+        justify_war_goal_time = -0.1
+        opinion_gain_monthly_factor = -0.2
+	    MONTHLY_POPULATION = -0.2
 	}
-        Feng_Yuxiang_traits = {#馮玉祥
+    Feng_Yuxiang_traits = {#馮玉祥
 		random = no
-                max_command_power = 20
-                political_power_gain = 0.05
-                army_core_attack_factor = 0.1
-                army_core_defence_factor = 0.1
-                opinion_gain_monthly_factor = -0.25
+        max_command_power = 20
+        political_power_gain = 0.05
+        army_core_attack_factor = 0.1
+        army_core_defence_factor = 0.1
+        opinion_gain_monthly_factor = -0.25
 	}
 	NikolaiII_traits = {#ニコライ2世
 		random = no
@@ -126,37 +126,49 @@ leader_traits = {
 		political_power_factor = 0.1
 		war_support_factor = 0.05
 	}
-        #共通
-        TR_powerhungry_demagogue = {#権力に餓えた扇動家
+    Stalin_traits = {#スターリン
+		random = no
+        stability_factor = -0.05
+        political_power_factor = 0.05
+        war_support_factor = 0.1
+		defensive_war_stability_factor = 0.1
+		drift_defence_factor = 0.2
+		army_org_Factor = -0.03
+		army_morale_factor = 0.05
+		production_speed_buildings_factor = 0.03
+		
+	}
+    #共通
+    TR_powerhungry_demagogue = {#権力に餓えた扇動家
 		random = no
 		war_support_weekly = 0.003
-                justify_war_goal_time = -0.1
-                improve_relations_maintain_cost_factor = 0.1
-                opinion_gain_monthly_factor = -0.2
-                trade_opinion_factor = -0.1
+        justify_war_goal_time = -0.1
+        improve_relations_maintain_cost_factor = 0.1
+        opinion_gain_monthly_factor = -0.2
+        trade_opinion_factor = -0.1
 	}
-        TR_barking_buffoon = {#口先だけの道化者
+    TR_barking_buffoon = {#口先だけの道化者
 
 		random = no
-                army_morale_factor = -0.05
-                political_power_gain = 0.05
+        army_morale_factor = -0.05
+        political_power_gain = 0.05
 		trade_opinion_factor = 0.1
-                improve_relations_maintain_cost_factor = -0.2
+        improve_relations_maintain_cost_factor = -0.2
 	}
-        TR_stern_imperialist = {#厳格な帝国主義者
+    TR_stern_imperialist = {#厳格な帝国主義者
 		random = no
 		consumer_goods_factor = -0.05
-                training_time_army_factor = -0.1
-                stability_factor = -0.05
+        training_time_army_factor = -0.1
+        stability_factor = -0.05
 	}
-        TR_ruthless_powermonger = {#権力の亡者
+    TR_ruthless_powermonger = {#権力の亡者
 
 		random = no
-                political_power_gain = -0.2
-                army_org_Factor = -0.1
-                drift_defence_factor = 0.25
-                encryption_factor = 0.2
-                Intelligence_agency_defense = 0.5
+        political_power_gain = -0.2
+        army_org_Factor = -0.1
+        drift_defence_factor = 0.25
+        encryption_factor = 0.2
+        Intelligence_agency_defense = 0.5
 	}
         TR_autocratic_charmer = {#ワンマン政治家
 
@@ -167,79 +179,79 @@ leader_traits = {
                 industrial_capacity_factory = -0.1
                 industrial_capacity_dockyard = -0.1
 	}
-        TR_resigned_generalissimo = {#引退した大元帥
+    TR_resigned_generalissimo = {#引退した大元帥
 		random = no
 		stability_factor = -0.05
-                political_power_gain = -0.1
-                supply_consumption_factor = -0.1
-                experience_gain_army = 0.05
-                experience_gain_navy = 0.05
-                experience_gain_air = 0.05
+        political_power_gain = -0.1
+        supply_consumption_factor = -0.1
+        experience_gain_army = 0.05
+        experience_gain_navy = 0.05
+        experience_gain_air = 0.05
 	}
-        TR_benevolent_gentleman = {#高潔な紳士
+    TR_benevolent_gentleman = {#高潔な紳士
 
 		random = no
 		consumer_goods_factor = -0.03
-                stability_factor = 0.05
-                opinion_gain_monthly_factor = 0.1
-                send_volunteers_tension = 0.20
-                generate_wargoal_tension = 0.20
+        stability_factor = 0.05
+        opinion_gain_monthly_factor = 0.1
+        send_volunteers_tension = 0.20
+        generate_wargoal_tension = 0.20
 	}
-        TR_weary_stiffneck = {#臆病な頑固者
+    TR_weary_stiffneck = {#臆病な頑固者
 		random = no
 		army_morale_factor = 0.05
-                political_power_factor = -0.05
+        political_power_factor = -0.05
 	}
-        TR_insignificant_layman = {#無能な凡人
+    TR_insignificant_layman = {#無能な凡人
 
 		random = no
-                stability_factor = -0.05
-                political_power_gain = 0.1
+        stability_factor = -0.05
+        political_power_gain = 0.1
 	}
-        TR_die_hard_reformer = {#不屈の改革者
+    TR_die_hard_reformer = {#不屈の改革者
 
 		random = no
 
 		political_power_gain = -0.2
 		consumer_goods_factor = -0.05
-                send_volunteers_tension = -0.25
-                generate_wargoal_tension = -0.1
+        send_volunteers_tension = -0.25
+        generate_wargoal_tension = -0.1
 	}
-        TR_pig_headed_isolationist = {#強硬な孤立主義者
+    TR_pig_headed_isolationist = {#強硬な孤立主義者
 
 		random = no
 
 		political_power_gain = 0.2
-                send_volunteers_tension = 0.5
-                generate_wargoal_tension = 0.5
-                justify_war_goal_time = 0.5
+        send_volunteers_tension = 0.5
+        generate_wargoal_tension = 0.5
+        justify_war_goal_time = 0.5
 	}
-        TR_popular_figurehead = {#形のみの指導者
+    TR_popular_figurehead = {#形のみの指導者
 		random = no
 		consumer_goods_factor = 0.05
-                stability_factor = 0.15
+        stability_factor = 0.15
 	}
-        TR_Local_tyrant2 = {#地方の暴君
+    TR_Local_tyrant2 = {#地方の暴君
 
 		random = no
 
 		political_power_gain = -0.25
-                consumer_goods_factor = 0.05
-                MONTHLY_POPULATION = -0.05
-                industrial_capacity_factory = 0.05
-                industrial_capacity_dockyard = 0.05
-	        local_resources_factor = 0.05
-                training_time_army_factor = -0.1
-                stability_factor = 0.03
+        consumer_goods_factor = 0.05
+        MONTHLY_POPULATION = -0.05
+        industrial_capacity_factory = 0.05
+        industrial_capacity_dockyard = 0.05
+	    local_resources_factor = 0.05
+        training_time_army_factor = -0.1
+        stability_factor = 0.03
 	}
-        TR_Ruthless_colonialist = {#冷酷な植民地主義者
+    TR_Ruthless_colonialist = {#冷酷な植民地主義者
 
 		random = no
-                MONTHLY_POPULATION = -0.25
-                industrial_capacity_factory = -0.1
-                industrial_capacity_dockyard = -0.1
-                local_resources_factor = 0.3
-                stability_factor = -0.1
+        MONTHLY_POPULATION = -0.25
+        industrial_capacity_factory = -0.1
+        industrial_capacity_dockyard = -0.1
+        local_resources_factor = 0.3
+        stability_factor = -0.1
 	}
         ####首相#####
         #固有
@@ -868,6 +880,29 @@ leader_traits = {
 
 		random = no
 	}
+
+	cos_school_of_cavalry = {
+		cavalry_attack_factor = 0.1
+		cavalry_defence_factor = 0.1
+		training_time_army_factor = -0.1
+		supply_consumption_factor = -0.1
+		equipment_bonus = {
+			motorized = {
+				maximum_speed = -0.1
+				instant = yes
+			}
+			mechanized = {
+				maximum_speed = -0.1
+				instant = yes
+			}
+			armor = {
+				maximum_speed = -0.1
+				instant = yes
+			}
+		}
+		random = no
+	}
+
 #陸軍
 	carm_elastic_defence_doctrine = {
 		experience_gain_army = 0.2

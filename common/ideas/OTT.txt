@@ -2,7 +2,7 @@
  ideas = {
        
      country = {
-                 OTT_Bagdadrailway = {
+        OTT_Bagdadrailway = {
 			allowed = {
 				always = no
 			}
@@ -15,12 +15,12 @@
 			}
 
 			modifier = {
-                               stability_factor = -0.05
-                               consumer_goods_factor = 0.1
-                               political_power_cost = 0.15
+                stability_factor = -0.05
+                consumer_goods_factor = 0.1
+                political_power_cost = 0.15
 			}
 		}
-                 OTT_Bagdadrailway1 = {
+        OTT_Bagdadrailway1 = {
 			allowed = {
 				always = no
 			}
@@ -33,13 +33,13 @@
 			}
 
 			modifier = {
-                               stability_factor = -0.05
-                               political_power_cost = 0.05
+                stability_factor = -0.05
+                political_power_cost = 0.05
 				consumer_goods_factor = -0.03
-                               industrial_capacity_factory = 0.05
+                industrial_capacity_factory = 0.05
 			}
 		}
-                OTT_Free_trade = {
+        OTT_Free_trade = {
 			allowed = {
 				always = no
 			}
@@ -48,13 +48,13 @@
 			removal_cost = -1
             
 			modifier = {
-                              consumer_goods_factor = -0.05
-                              production_speed_buildings_factor = 0.1
-                              production_factory_max_efficiency_factor = 0.1
-		              production_factory_efficiency_gain_factor = 0.1
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.1
+                production_factory_max_efficiency_factor = 0.1
+		        production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-                OTT_SAIMUKANRI = {
+        OTT_SAIMUKANRI = {
 			allowed = {
 				always = no
 			}
@@ -65,230 +65,218 @@
 				trade_cost_for_target_factor = -0.1
 				extra_trade_to_target_factor = 0.1
 			}
-                        targeted_modifier = {
+            targeted_modifier = {
 				tag = FRA
 				trade_cost_for_target_factor = -0.1
 				extra_trade_to_target_factor = 0.1
 			}
-                        targeted_modifier = {
+            targeted_modifier = {
 				tag = ITA
 				trade_cost_for_target_factor = -0.1
 				extra_trade_to_target_factor = 0.1
 			}
 			modifier = {
-                               stability_factor = -0.05
-                               consumer_goods_factor = 0.15
-                               political_power_cost = 0.15
+                stability_factor = -0.05
+                consumer_goods_factor = 0.15
+                political_power_cost = 0.15
 			}
 		}
-                OTT_SAIMUKANRI2 = {
+        OTT_SAIMUKANRI2 = {
 			allowed = {
 				always = no
 			}
 			picture = chi_forced_conscription
 			removal_cost = -1
 			modifier = {
-                               consumer_goods_factor = 0.3
+                consumer_goods_factor = 0.3
 			}
 		}
-                OTT_depression = {
+        OTT_depression = {
 			allowed = {
 				always = no
 			}
-                        
-
-			
 			removal_cost = -1
                      
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-                                stability_factor = -0.25
+                stability_factor = -0.25
 				production_speed_buildings_factor = -0.5
 				industrial_capacity_factory = -0.2
 				consumer_goods_factor = 0.10
 			}
 		}
-                OTT_depression1 = {
+        OTT_depression1 = {
 			allowed = {
 				always = no
 			}
-                        
-
-			
 			removal_cost = -1
                      
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-                                stability_factor = -0.15
-				production_speed_buildings_factor = -0.3
-				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.10
+                stability_factor = -0.15
+	            production_speed_buildings_factor = -0.3
+		        industrial_capacity_factory = -0.1
+			    consumer_goods_factor = 0.10
 			}
 		}
-                OTT_Jubyounin = {
+        OTT_Jubyounin = {
 			allowed = {
 				always = no
-			}
-                        
-
-			
+			}	
 			removal_cost = -1
                      
 			picture = chi_war_of_resistance3
 			removal_cost = -1
 
 			modifier = {
-                                political_power_cost = 0.2
-                                stability_factor = -0.25
-                                war_support_factor = -0.2
-			        conscription_factor = -0.25
-                                research_speed_factor = -0.1
-                                army_attack_factor = -0.1
-			        army_defence_factor = -0.1
+                political_power_cost = 0.2
+                stability_factor = -0.3
+                research_speed_factor = -0.15
+                army_attack_factor = -0.3
+			    army_defence_factor = -0.3
 			}
 		}
-                OTT_Tanzimat1 = {
+        OTT_Tanzimat1 = {
 			allowed = {
 				always = no
 			}
-                        
+			picture = generic_democratic_drift_bonus
+			removal_cost = -1
 
-			
+			modifier = {
+                political_power_cost = 0.17
+                stability_factor = -0.25
+                research_speed_factor = -0.12
+                army_attack_factor = -0.25
+			    army_defence_factor = -0.25
+			}
+		}
+        OTT_Tanzimat2 = {
+			allowed = {
+				always = no
+			}
 			removal_cost = -1
                      
 			picture = generic_democratic_drift_bonus
 			removal_cost = -1
 
 			modifier = {
-                                political_power_cost = 0.15
-                                stability_factor = -0.2
-                                war_support_factor = -0.15
-			        conscription_factor = -0.2
-                                research_speed_factor = -0.1
-                                army_attack_factor = -0.07
-			        army_defence_factor = -0.07
+                political_power_cost = 0.12
+                stability_factor = -0.15
+                research_speed_factor = -0.05
+                army_attack_factor = -0.2
+			    army_defence_factor = -0.2
 			}
 		}
-                OTT_Tanzimat2 = {
+        OTT_Tanzimat3 = {
 			allowed = {
 				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+			}        
 			picture = generic_democratic_drift_bonus
 			removal_cost = -1
 
 			modifier = {
-                                stability_factor = -0.2
-                                war_support_factor = -0.15
-                                research_speed_factor = -0.1
-                                army_attack_factor = -0.07
-			        army_defence_factor = -0.07
+                political_power_cost = 0.7
+                stability_factor = -0.15
+                research_speed_factor = -0.05
+                army_attack_factor = -0.1
+			    army_defence_factor = -0.1
 			}
 		}
-                OTT_Tanzimat3 = {
+        OTT_Tanzimat4 = {
 			allowed = {
 				always = no
 			}
-                        
-
-			
-			removal_cost = -1
-                     
 			picture = generic_democratic_drift_bonus
 			removal_cost = -1
 
 			modifier = {
-                                war_support_factor = -0.1
-                                research_speed_factor = -0.1
-                                army_attack_factor = -0.07
-			        army_defence_factor = -0.07
+                political_power_cost = 0.05
+                stability_factor = -0.1
+                army_attack_factor = -0.05
+			    army_defence_factor = -0.05
 			}
 		}
-                OTT_Tanzimat4 = {
+        OTT_Tanzimat5 = {
 			allowed = {
 				always = no
 			}
-                        
-
-			
-			removal_cost = -1
-                     
 			picture = generic_democratic_drift_bonus
 			removal_cost = -1
 
 			modifier = {
-                                war_support_factor = -0.1
-                                research_speed_factor = 0.05
-                                army_attack_factor = -0.05
-			        army_defence_factor = -0.05
-			}
-		}
-                OTT_Tanzimat5 = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
-			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-
-			modifier = {
-                                political_power_factor = 0.1
-                                stability_factor = 0.2
-                                research_speed_factor = 0.05
+                political_power_factor = 0.1
+                stability_factor = 0.15
+                research_speed_factor = 0.05
                                 
 			}
 		}
-                OTT_Federation = {
+        OTT_Federation = {
 			allowed = {
 				always = no
 			}
-                        
-
-			
-			removal_cost = -1
                      
 			picture = generic_democratic_drift_bonus
 			removal_cost = -1
 
 			modifier = {
-                                consumer_goods_factor = 0.05
-                                stability_factor = 0.1
-                                non_core_manpower = 0.02
-                                resistance_target = -0.1
-                                resistance_damage_to_garrison = -0.1
+                consumer_goods_factor = 0.05
+                stability_factor = 0.1
+                non_core_manpower = 0.02
+                resistance_target = -0.1
+                resistance_damage_to_garrison = -0.1
 			}
 		}
-                OTT_Federation1 = {
+        OTT_Federation1 = {
 			allowed = {
 				always = no
 			}
-                        
-
-			
-			removal_cost = -1
                      
 			picture = generic_democratic_drift_bonus
 			removal_cost = -1
 
 			modifier = {
-                                consumer_goods_factor = 0.05
-                                stability_factor = 0.1
-                                non_core_manpower = 0.02
-                                resistance_target = -0.2
-                                resistance_damage_to_garrison = -0.2
+                consumer_goods_factor = 0.05
+                stability_factor = 0.1
+                non_core_manpower = 0.02
+                resistance_target = -0.2
+                resistance_damage_to_garrison = -0.2
 			}
 		}
-                OTT_kemal1 = {
+        OTT_kemal1 = {
+			allowed = {
+				always = no
+			}
+                     
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+
+			modifier = {
+                political_power_cost = 0.1
+                stability_factor = -0.2
+                research_speed_factor = -0.08
+                army_attack_factor = -0.25
+			    army_defence_factor = -0.25
+			}
+		}
+        OTT_kemal2 = {
+			allowed = {
+				always = no
+			}
+                     
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+
+			modifier = {
+                political_power_cost = 0.1
+                stability_factor = -0.15
+                army_attack_factor = -0.2
+			    army_defence_factor = -0.2
+			}
+		}
+        OTT_kemal3 = {
 			allowed = {
 				always = no
 			}
@@ -301,73 +289,57 @@
 			removal_cost = -1
 
 			modifier = {
-                                political_power_cost = 0.15
-                                stability_factor = -0.2
-                                war_support_factor = -0.15
-			        conscription_factor = -0.2
-                                army_attack_factor = -0.1
-			        army_defence_factor = -0.1
+				political_power_cost = 0.1
+                army_attack_factor = -0.1
+			    army_defence_factor = -0.1
 			}
 		}
-                OTT_kemal2 = {
+        OTT_kemal4 = {
 			allowed = {
 				always = no
 			}
-                        
-
-			
-			removal_cost = -1
-                     
-			picture = chi_war_of_resistance3
-			removal_cost = -1
-
-			modifier = {
-                                political_power_cost = 0.10
-                                stability_factor = -0.1
-                                war_support_factor = -0.1
-                                conscription_factor = -0.1
-                                research_speed_factor = 0.03
-                                army_attack_factor = -0.1
-			        army_defence_factor = -0.1
-			}
-		}
-                OTT_kemal3 = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
-			picture = chi_war_of_resistance3
-			removal_cost = -1
-
-			modifier = {
-                                political_power_cost = 0.10
-                                research_speed_factor = 0.05
-			}
-		}
-                OTT_kemal4 = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
                      
 			picture = generic_manpower_bonus
 			removal_cost = -1
 
 			modifier = {
-                                political_power_cost = -0.10
-                                stability_factor = 0.2
-                                research_speed_factor = 0.05
-                                production_speed_buildings_factor = 0.1
+                political_power_cost = -0.10
+                stability_factor = 0.2
+                research_speed_factor = 0.05
+                roduction_speed_buildings_factor = 0.1
 			}
 		}
-                OTT_Enver1 = {
+        OTT_Enver1 = {
+			allowed = {
+				always = no
+			}
+                     
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+
+			modifier = {
+                political_power_cost = 0.05
+                research_speed_factor = -0.15
+                army_attack_factor = -0.3
+			    army_defence_factor = -0.3
+			}
+		}
+        OTT_Enver2 = {
+			allowed = {
+				always = no
+			}
+                     
+			picture = chi_war_of_resistance3
+			removal_cost = -1
+
+			modifier = {
+                political_power_cost = 0.05
+                research_speed_factor = -0.1
+                army_attack_factor = -0.15
+			    army_defence_factor = -0.15
+			}
+		}
+        OTT_Enver3 = {
 			allowed = {
 				always = no
 			}
@@ -380,75 +352,28 @@
 			removal_cost = -1
 
 			modifier = {
-                                stability_factor = -0.15
-                                war_support_factor = -0.15
-			        conscription_factor = -0.15
-                                research_speed_factor = -0.1
-                                army_attack_factor = -0.1
-			        army_defence_factor = -0.1
+                political_power_cost = 0.05
+                research_speed_factor = -0.05
 			}
 		}
-                OTT_Enver2 = {
+        OTT_Enver4 = {
 			allowed = {
 				always = no
 			}
-                        
-
-			
-			removal_cost = -1
-                     
-			picture = chi_war_of_resistance3
-			removal_cost = -1
-
-			modifier = {
-                                stability_factor = -0.15
-                                war_support_factor = -0.15
-			        conscription_factor = -0.05
-                                research_speed_factor = -0.1
-			}
-		}
-                OTT_Enver3 = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
-			picture = chi_war_of_resistance3
-			removal_cost = -1
-
-			modifier = {
-                                political_power_factor = 0.05
-                                stability_factor = -0.05
-                                war_support_factor = -0.15
-			        conscription_factor = -0.05
-                                research_speed_factor = -0.05
-			}
-		}
-                OTT_Enver4 = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
                      
 			picture = generic_manpower_bonus
 			removal_cost = -1
 
 			modifier = {
-                                political_power_factor = 0.1
-                                conscription = 0.025
-                                war_support_factor = 0.2
-                                research_speed_factor = -0.05
-                                army_core_attack_factor = 0.1
-                                army_core_defence_factor = 0.1
+                political_power_factor = 0.1
+                conscription = 0.025
+                war_support_factor = 0.2
+                research_speed_factor = -0.05
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
 			}
 		}
-                OTT_Treatment = {
+        OTT_Treatment = {
 			allowed = {
 				always = no
 			}
@@ -456,12 +381,12 @@
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-                                political_power_factor = -0.25
+                political_power_factor = -0.25
 				consumer_goods_factor = 0.1
 				war_support_factor = -0.3
 			}
 		}
-                OTT_Treatment2 = {
+        OTT_Treatment2 = {
 			allowed = {
 				always = no
 			}
@@ -469,11 +394,11 @@
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-                                political_power_factor = -0.05
+                political_power_factor = -0.05
 				consumer_goods_factor = 0.05
 			}
 		}
-                OTT_Rebirth = {
+        OTT_Rebirth = {
 			allowed = {
 				always = no
 			}
@@ -481,7 +406,7 @@
 			picture = generic_economic_increase
 			removal_cost = -1
 			modifier = {
-                                political_power_cost = -0.15
+                political_power_cost = -0.15
 				stability_factor = 0.1
 			}
 		}

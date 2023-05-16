@@ -12,17 +12,15 @@ state = {
 		buildings = {
 			# infrastructure = 1
 		}
-		# Gaba
-		victory_points = { 
-			10775 1
-		}
+
 		
-		owner = ETH
-		add_core_of = ETH
+		owner = SOM
+		add_core_of = SOM
+		add_claim_by = ETH
 	}
 
 	provinces = {
- 		4995 10775 13248
+ 		4995 13248
  	}
 
 	local_supplies = 0.0 

@@ -18,15 +18,18 @@
 
 division_template = {
 	name = "Infantry Division"		
-	division_names_group = ETH_INF_01
+	division_names_group = ETH_GAR_01
 
 	# Note: Represents both regular infantry and militia units
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }	
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 2 y = 0 }
+		irregular_infantry = { x = 2 y = 1 }
 	}
+        is_locked = yes
 }
 division_template = {
 	name = "Mountain Division"		
@@ -50,40 +53,16 @@ units = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 5010
+		location = 8043
 		division_template = "Kebur Zabagna"			# Elite emperor's guard
 		start_experience_factor = 0.2
 	}
-
-	### Northern Front ###
-	## Gojjam Provincial Armed Forces #
-	#division = { # "1st Gojjam Levies"
-	#	division_name = {
-	#		is_name_ordered = yes
-	#		name_order = 2
-	#	}
-	#	location = 4954
-	#	division_template = "Infantry Division"		# Militia
-	#	start_experience_factor = 0.1
-	#	start_equipment_factor = 0.5
-	#}
-	#division = { # "2nd Gojjam Levies"
-	#	division_name = {
-	#		is_name_ordered = yes
-	#		name_order = 3
-	#	}
-	#	location = 4954
-	#	division_template = "Infantry Division"		# Militia
-	#	start_equipment_factor = 0.5
-	#	start_experience_factor = 0.1
-	#}
-	# Wolqayt, Semien and Welega-Ardjo Provincial Armed Forces #
 	division = { # "Wolqayt-Semien Sefari"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
-		location = 2072
+		location = 5041
 		division_template = "Mountain Division"		# Regular Infantry
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -94,7 +73,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 5
 		}
-		location = 2072
+		location = 5097
 		division_template = "Infantry Division"		# Regular Infantry
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
@@ -106,7 +85,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 6
 		}
-		location = 1984
+		location = 5010
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -117,7 +96,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 7
 		}
-		location = 1984
+		location = 2009
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -129,7 +108,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 10
 		}
-		location = 5041
+		location = 8036
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -140,7 +119,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 8
 		}
-		location = 5041
+		location = 7912
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -151,7 +130,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 9
 		}
-		location = 5041
+		location = 8019
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -164,7 +143,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 11
 		}
-		location = 12812
+		location = 8062
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -175,7 +154,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 8062
+		location = 10734
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -187,7 +166,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 13
 		}
-		location = 8062
+		location = 8036
 		division_template = "Infantry Division"		# Militia
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.5
@@ -198,7 +177,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 14
 		}
-		location = 4995
+		location = 5047
 		division_template = "Infantry Division"		# Regular Infantry
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
@@ -209,7 +188,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 15
 		}
-		location = 4995
+		location = 1984
 		division_template = "Infantry Division"		# Regular Infantry
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7

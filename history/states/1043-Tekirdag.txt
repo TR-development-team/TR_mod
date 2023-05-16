@@ -1,0 +1,29 @@
+
+state= {
+	id=1043
+	name="STATE_1043"
+	manpower = 152039
+	resources={
+
+	}
+	
+	state_category = rural
+
+	history= {
+		owner = OTT
+		add_core_of = OTT
+		victory_points = {
+			3879 1
+		}
+		buildings = {
+			infrastructure = 2
+			849 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+
+
+	}
+	provinces= { 849 3879 6895 }
+}

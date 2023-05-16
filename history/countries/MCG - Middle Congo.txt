@@ -1,4 +1,35 @@
-﻿capital = 295
+﻿capital = 772
+oob = "MCG_1936"
 
-set_cosmetic_tag = MCG_republic
-set_dictatorship = yes
+JAP = {	set_autonomy = {	target = MCG	autonomous_state = imperial_colony	}	}
+set_cosmetic_tag = COUNTRY_JAP
+
+set_variable = {	MCG_unrest_level = 1	}
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	authoritarian_democrat = 100
+}
+
+recruit_character = MCG_Maeda_Toshinari
+
+add_ideas = {
+	Colonical_system
+	JAP_JAP_colony
+	Tiyoda_Kensho
+}
+add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+add_dynamic_modifier = {	modifier = MCG_Country_Unrest	}
+set_convoys = 5
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}

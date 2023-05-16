@@ -1,0 +1,127 @@
+﻿### Congo OOB ###
+
+division_template = {
+	name = "Hohei Shidan"		
+	division_names_group = ZAM_INF_01				# Uses French-language generic division names
+	# Note: Represents both regular infantry and militia units
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Askari"				
+	division_names_group = ZAM_GAR_01
+							
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+	}
+        is_locked = yes
+}
+
+
+units = {
+		##### Imperial Army #####
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5199
+		division_template = "Hohei Shidan"		
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10929
+		division_template = "Hohei Shidan"		
+		start_experience_factor = 0.3
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10538
+		division_template = "Askari"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =2151
+		division_template = "Askari"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 7842
+		division_template = "Askari"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12986
+		division_template = "Askari"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10594
+		division_template = "Askari"		
+		start_experience_factor = 0.2
+	}
+        division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1874
+		division_template = "Askari"		
+		start_experience_factor = 0.2
+	}
+}
+
+
+### No air forces (small handful of various aircraft in 1935) ###
+
+#########################
+## STARTING PRODUCTION ##
+#########################
+
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ZAM"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+
+}
+
+#################################

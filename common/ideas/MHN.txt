@@ -8,7 +8,7 @@ ideas = {
 			allowed = {
 				always = no
 			}
-                        picture = SPR_anarchist_society
+            picture = SPR_anarchist_society
 
 			
 			removal_cost = -1
@@ -20,7 +20,22 @@ ideas = {
 				conscription_factor = 1.0
 			}
 		}
-                MHN_SOV_CIVIL_WAR = {
+		MHN_rural_economy = {
+			allowed = {
+				always = no
+			}
+            picture = generic_agrarian_society_green
+
+			
+			removal_cost = -1
+
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				supply_node_range = 0.1
+				industry_air_damage_factor = -0.3
+			}
+		}
+        MHN_SOV_CIVIL_WAR = {
 			allowed = {
 				always = no
 			}
@@ -31,13 +46,11 @@ ideas = {
 	
 
 			modifier = {
-                         conscription = 0.05
-			 war_support_factor = 1.0
+                         conscription = 0.01
+			 war_support_factor = 0.3
                          army_core_defence_factor = 0.1
-                         army_attack_factor = 0.1
-                         resistance_target = -0.5
                          surrender_limit= 0.1
-                         out_of_supply_factor = -0.2
+                         out_of_supply_factor = -0.1
 			}
 		}
 

@@ -1,0 +1,26 @@
+characters={
+	JBS_saud_bin_abd_al_aziz={
+		name=JBS_saud_bin_abd_al_aziz
+		portraits={
+			civilian={
+				large="gfx/leaders/JBS/Portrait_JBS_Emir_Saud_bin_Abdulaziz_of_Jabal_Shammar.png"
+			}
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+		field_marshal={
+			traits={ politically_connected }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+
+	}
+}

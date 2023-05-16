@@ -37,6 +37,8 @@ recruit_character = FIN_erik_heinrichs
 recruit_character = FIN_vilho_petter_nenonen
 
 add_ideas = {
+        sisu
+
 	limited_conscription
 	acceptable_minimum_wage
 	acceptable_max_workhours
@@ -45,7 +47,6 @@ add_ideas = {
 	low_school_system
 	acceptable_pensions
 	acceptable_health_care
-	limited_conscription
 }
 
 set_research_slots = 3

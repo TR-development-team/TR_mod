@@ -1,12 +1,12 @@
 characters={
-	NMB_Kashii_Kohei={
-		name=NMB_Kashii_Kohei
+	NMB_Oda_Nobutsune={
+		name=NMB_Oda_Nobutsune
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Kashii.tga"
+				large="gfx/leaders/NMB/Portrait_NMB_Oda_Nobutsune.png"
 			}
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Kashii.tga"
+				large="gfx/leaders/NMB/Portrait_NMB_Oda_Nobutsune.png"
 			}
 		}
 		country_leader={
@@ -14,6 +14,17 @@ characters={
 		}
 		country_leader={
 			ideology=mil_colonial_government_subtype
+		}
+	}
+	NMB_Kashii_Kohei={
+		name=NMB_Kashii_Kohei
+		portraits={
+			army={
+				large="gfx/leaders/NMB/Portrait_NMB_Kashii_Kohei.png"
+			}
+			civilian={
+				large="gfx/leaders/NMB/Portrait_NMB_Kashii_Kohei.png"
+			}
 		}
 		country_leader={
 			ideology= kokoku_shikan_subtype
@@ -32,10 +43,10 @@ characters={
 		name=NMB_Yanagawa_Heisuke
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Potraits_JAP_Yanagawa.tga"
+				large="gfx/leaders/NMB/Portrait_NMB_Yanagawa_Heisuke.png"
 			}
 			civilian={
-				large="gfx/leaders/JAP/Potraits_JAP_Yanagawa.tga"
+				large="gfx/leaders/NMB/Portrait_NMB_Yanagawa_Heisuke.png"
 			}
 		}
 		field_marshal={
@@ -52,10 +63,10 @@ characters={
 		name=NMB_Ando_Teruzo
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Potraits_JAP_Ando_Teruzo.tga"
+				large="gfx/leaders/NMB/Portrait_NMB_Ando_Teruzo.png"
 			}
 			civilian={
-				large="gfx/leaders/JAP/Potraits_JAP_Ando_Teruzo.tga"
+				large="gfx/leaders/NMB/Portrait_NMB_Ando_Teruzo.png"
 			}
 		}
 		corps_commander={
@@ -72,10 +83,10 @@ characters={
 		name=NMB_Kurihara_Yasuhide
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Potraits_JAP_Kurihara.tga"
+				large="gfx/leaders/NMB/Portrait_NMB_Kurihara_Yasuhide.png"
 			}
 			civilian={
-				large="gfx/leaders/JAP/Potraits_JAP_Kurihara.tga"
+				large="gfx/leaders/NMB/Portrait_NMB_Kurihara_Yasuhide.png"
 			}
 		}
 		corps_commander={

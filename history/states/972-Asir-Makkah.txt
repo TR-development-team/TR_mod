@@ -2,11 +2,11 @@ state={
 	id=972
 	name="STATE_972"
 	provinces={
-		1923 2090 5037 8073 10786 12883 
+		1923 5037 8073 12883 
 	}
 	history = {
-		owner = ARB
-		add_core_of	= ARB
+		owner = HEJ
+		add_core_of = HEJ
 		buildings = {
 			infrastructure = 1
 			12883 = {
@@ -18,7 +18,7 @@ state={
 			12883 1 
 		}
 	}
-	manpower=500000
+	manpower=480000
 	state_category=pastoral
 	buildings_max_level_factor=1.000
 	local_supplies=0.000

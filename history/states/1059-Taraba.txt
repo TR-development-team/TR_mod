@@ -1,0 +1,22 @@
+
+state={
+	id=1059
+	name="STATE_1059" 
+	manpower = 1203943
+	
+	state_category = rural
+
+	history={
+		owner = SKT
+		add_core_of = SKT
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		4889 7978 10820
+	}
+}

@@ -1,0 +1,19 @@
+characters={
+	BRU_Umar_Ibn_Muhammad={
+		name=BRU_Umar_Ibn_Muhammad
+		portraits={
+			civilian={
+				large="gfx/leaders/BRU/Portrait_BRU_Umar_Ibn_Muhammad.png"
+			}
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+		country_leader={
+			ideology= Nationalism_subtype
+		}
+	}
+}

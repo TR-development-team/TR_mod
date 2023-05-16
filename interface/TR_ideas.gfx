@@ -1,5 +1,5 @@
 spriteTypes = {
-	#####日本#####
+	### Japan ###
 	SpriteType = {
 		name = "GFX_idea_JAP_Shading_sun"
 		texturefile = "gfx/interface/ideas/JAP/idea_JAP_Shading_sun.png"
@@ -104,6 +104,7 @@ spriteTypes = {
 		name = "GFX_idea_JAP_Prosperous_Cities"
 		texturefile = "gfx/interface/ideas/JAP/JAP_Prosperous_Cities.png"
 	}
+	### France ###
 	SpriteType = {
 		name = "GFX_idea_FRA_revanchism"
 		texturefile = "gfx/interface/ideas/FRA/FRA_revanchism.png"
@@ -160,11 +161,6 @@ spriteTypes = {
 		name = "GFX_idea_befriend_usa"
 		texturefile = "gfx/interface/ideas/befriend_usa.png"
 	}
-	#企業
-	SpriteType = {
-		name = "GFX_idea_JAP_toyota"
-		texturefile = "gfx/interface/ideas/JAP/toyota.png"
-	}
 	### Austria ###
 	SpriteType = {
 		name = "GFX_idea_AUS_wiener_kreis"
@@ -185,5 +181,15 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_generic_agrarian_society_green"
 		texturefile = "gfx/interface/ideas/AUS/idea_generic_agrarian_society_green.png"
+	}
+	### Ukrine ###
+	SpriteType = {
+		name = "GFX_idea_UKR_greem_armies"
+		texturefile = "gfx/interface/ideas/UKR/UKR_greem_armies.png"
+	}
+	### 企業 ###
+	SpriteType = {
+		name = "GFX_idea_JAP_toyota"
+		texturefile = "gfx/interface/ideas/JAP/toyota.png"
 	}
 }
