@@ -52,13 +52,25 @@ aus_plunge_escalation_10_tt:0 "レベル10\n§Y大阪大暴落の余波§!は以
 AUS_creditanstalt_bankruptcy_crisis_mission_1:0 "クレディタンシュタルト危機"
 AUS_creditanstalt_bankruptcy_crisis_mission_2:0 "クレディタンシュタルト破綻"
 
-AUS_forced_cartel_establishment_law:0 "強制カルテル設立法"
-AUS_correction_of_agricultural_purchase_prices:0 "農作物価格の是正"
-AUS_rescuing_rural_finance:0 "地方金融の救済"
-AUS_cooperation_with_major_banks:0 "主要銀行との連携"
-AUS_job_creation_through_military_procurement:0 "軍需による雇用創出"
-AUS_job_creation_through_private_demand:0 "民需による雇用創出"
-AUS_autobahn_expansion:0 "トランスライタニエンでの公共事業"
+AUS_securing_funds:0 "資金の調達"
+AUS_securing_funds_desc:0 "大阪での事件が我が国に破滅的な混乱をもたらしてから半年が経った。当初、完全に麻痺していた行政は、いよいよ恐慌に対してある程度の対策を余力と必要が生まれた。我々は早急に資金を集め、具体的な計画を実行するフェーズへと移る必要がある。どんな手段を使ってでも、資金を用意する必要がある。"
+
+AUS_OeUBs_financial_assistance_1:0 "OeUBによる金融支援 I"
+AUS_OeUBs_financial_assistance_2:0 "OeUBによる金融支援 II"
+AUS_OeUBs_financial_assistance_3:0 "OeUBによる金融支援 III"
+
+AUS_bailout_of_major_banks:0 "主要銀行の救済"
+AUS_bailout_of_minor_banks:0 "地方銀行の救済"
+
+AUS_hydroelectric_power_plant_construction:0 "水力発電所の建設"
+AUS_military_and_economic_reconstruction:0 "軍需物資の民間発注"
+AUS_support_for_civil_engineering_projects:0 "土木産業の支援"
+
+AUS_labor_law_reforms:0 "労働法の改正"
+AUS_assistance_to_low_income_and_unemployed_persons:0 "低所得者と失業者への支援"
+
+AUS_mark_to_market_adjustment_method:0 "市場価格調整法(MPPG)の制定"
+AUS_rural_relief:0 "農村の救済"
 
 #AUS_development_project
 
@@ -215,6 +227,30 @@ TR_Austria.18.t:0 "自動車の広域な普及"
 TR_Austria.18.desc:0 "自動車は、ここ数年で民間の間に多く普及し、自動車関連企業の成長も目覚ましい。また、徴兵において一般成人男性の免許取得率が大幅に上昇しており、トラックの運用が非常に容易になっている。"
 TR_Austria.18.a:0 "自動車産業の成果だ！"
 
+TR_Austria.19.t:0 "取り付け騒ぎ"
+TR_Austria.19.desc:0 "帝国内の銀行は恐慌に耐えられずに次々と破綻している。\n銀行経営破綻の噂は取り付け騒ぎに結びつき、各地で取り付け騒ぎが頻発している。\n早期に帝国の金融市場にメスを入れなければ、この金融パニックは終わらないだろう。"
+TR_Austria.19.a:0 "金融機関を救済しなければ…"
+
+TR_Austria.20.t:0 "資金の確保"
+TR_Austria.20.desc:0 "大阪での事件が我が国に破滅的な混乱をもたらしてから半年が経った。当初、完全に麻痺していた行政は、いよいよ恐慌に対してある程度の対策を余力と必要が生まれた。我々は早急に資金を集め、具体的な計画を実行するフェーズへと移る必要がある。どんな手段を使ってでも、資金を用意する必要がある。"
+TR_Austria.20.a:0 "忙しいなんて騒ぎじゃないぞ！"
+
+TR_Austria.21.t:0 "貧者の問題"
+TR_Austria.21.desc:0 "大阪での事件は、もちろん国家や資本家、経済に甚大なダメージを与えた。しかしそれ以上に、低所得者や失業者は深刻な状態に陥っている。\nこの恐慌によって多くの者が低所得者へと成り下がり、失業率は今までよりさらに悪化している。\n国家が彼らに対して何ら支援しない場合、経済へのダメージより深刻な影響───主に政治的な───を与えるかもしれない…"
+TR_Austria.21.a:0 "どうしたものか…"
+
+TR_Austria.22.t:0 "労働者の問題"
+TR_Austria.22.desc:0 "恐慌により、今までより労働者の環境はさらに悪化した。多くのものが仕事に見合った報酬を受け取ることができず、少なくない数の工場においてストライキやゼネストも発生している。\n20世紀も中盤に差し掛かろうとしている現代、労働者の保護はコミュニスト共でなくとも実行するべきものだろう。\nしかし、我々が労働者を保護しなかった場合の予想はつかない…"
+TR_Austria.22.a:0 "議会を緊急招集せよ！"
+
+TR_Austria.23.t:0 "水力発電所の開業"
+TR_Austria.23.desc:0 "恐慌の時期に、公共事業として行われていた水力発電所建設が、遂に実を結んだようだ。\nこの水力発電所をはじめ、オーストリア国内で水力発電は非常に有力な発電所と言える。"
+TR_Austria.23.a:0 "土木技術の進歩だ"
+
+TR_Austria.24.t:0 "製鉄業の発展"
+TR_Austria.24.desc:0 "恐慌の時期に、公共事業として行われていた土木産業への支援が、意外な形で成果を見せた。\nオーストリア東部の伝統的な製鉄所は、資金投入を受け次々と最新設備へと転換されている。全体の経済規模としては驚くべきものではないが、着実に我々の産業は発展していると言えるだろう。"
+TR_Austria.24.a:0 "意外な成果だ"
+
 ##...................................................
 ##.IIIIIIIII.DDDDDDDDDDD...EEEEEEEEEEE....AAAAAA.....
 ##.IIIIIIIII.DDDDDDDDDDDD..EEEEEEEEEEE....AAAAAA.....
@@ -284,6 +320,8 @@ AUS_financial_difficulties_idea_desc:0 "オーストリア・ハンガリー帝�
 AUS_reichs_autobahn_idea:0 "ライヒスアウトバーン"
 AUS_empire_and_railways_idea:0 "広大な帝国と鉄道"
 AUS_development_of_the_petrochemical_industry_idea:0 "石油化学工業の発展"
+AUS_OeUBs_financial_assistance_idea:0 "OeUBによる金融支援"
+AUS_military_supply_by_private_companies_idea:0 "民間企業による軍需供給"
 
 ##....................................................................................................
 ##.MMMMM....MMMMMM.MIIIIIII.INNNNN...NNNN.NNIIIIIII..SSSSSSSSSSSSTTTTTTTTTTTTEEEEEEEEEE.ERRRRRRRRR....
@@ -716,6 +754,14 @@ AUS_enduring_economy_tt:0 "帝国の§Y財政§!の立て直しに関するデ�
 AUS_new_industrial_structures_tt:0 "§Y帝国の工業§!に以下の修正:\n£prod_eff 生産効率成長率: §G+40.00%§!\n生産効率基本値: §G+10.00%§!\n"
 AUS_developing_petrochemical_industry_tt:0 "\n§Y帝国の工業§!に以下の修正:\n§Y合成精製所§!建設速度: §G+33.3%§!"
 AUS_develop_LD_converter_slags_tt:0 "国内の全ての§Y転炉§!の稼働効率が§G2§!倍になる。"
+AUS_OeUBs_financial_assistance_tt:0 "借款を返済する。もし、返却日時点での所持政治力が§Y100§!未満の場合、追加のコストが発生する。"
+AUS_being_prepared_for_depression:0 "最近、恐慌対策をした"
+AUS_relaxed_state:0 "恐慌がある程度マシになった"
+AUS_chain_of_depression_resolution:0 "恐慌対策が進行する。"
+AUS_depression_resolution_delay:0 "恐慌対策が遅延する。"
+AUS_bank_rescue:0 "§Y主要銀行の救済§!と§Y地方銀行の救済§!は§R択一式である。§!"
+AUS_hydroelectric_power_plant_construction_tt:0 "数年後、同地に§Y水力発電所§!が建設される。\n§g数年後、同地の建築スロットが25枠全て埋まっている場合、国家に民需工場が追加される。§!"
+AUS_support_for_civil_engineering_projects_tt:0 "§g支援された土木産業は、将来的に発展するだろう。§!"
 
 ##...................................................
 ##.FFFFFFFFFFFFLLL..........AAAAA.......GGGGGGGGGG...
@@ -735,9 +781,10 @@ AUS_develop_LD_converter_slags_tt:0 "国内の全ての§Y転炉§!の稼働効�
 
 AUS_creditanstalt_rescued_1:0 "クレディタンシュタルトは救済された"
 AUS_creditanstalt_rescued_2:0 "クレディタンシュタルトは延命された"
-AUS_developing_mountain_infrastructure:0 "山岳インフラを開発中である"
+AUS_developing_mountain_infrastructure:0 "§Y山岳インフラ§!を開発中である"
 AUS_addressing_plunge:0 "恐慌に対処中"
-AUS_mechanization_of_hungarian_agriculture_a_tt:0 "農場がすでに開発されている"
+AUS_mechanization_of_hungarian_agriculture_a_tt:0 "§Y農場§!がすでに開発されている"
+AUS_civil_engineering_support_tt:0 "§Y土木産業§!が支援された"
 
 ##.......................................................................................
 ##.FFFFFFFFFFF..AAAAAA......CCCCCCCCCCCCTTTTTTTTTTTTIIIIIII..OOOOOOOOO....OONNN....NNNN..

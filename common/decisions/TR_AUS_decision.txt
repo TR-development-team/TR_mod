@@ -1,28 +1,33 @@
+##.....................................................................
+##.DDDDDDDDDD....DEEEEEEEEEE.BBBBBBBBBB...BUUU....UUUUU...GGGGGGGGGG...
+##.DDDDDDDDDDDD..DEEEEEEEEEE.BBBBBBBBBBB..BUUU....UUUUU..GGGGGGGGGGGG..
+##.DDDD.DDDDDDD..DEEEE.......BBBB..BBBBB..BUUU....UUUUU.UGGGGGG.GGGGG..
+##.DDDD....DDDDD.DEEEE.......BBBB...BBBB..BUUU....UUUUU.UGGGG.....GGG..
+##.DDDD....DDDDD.DEEEE.......BBBB..BBBBB..BUUU....UUUUUUUGGG...........
+##.DDDD.....DDDD.DEEEEEEEEE..BBBBBBBBBB...BUUU....UUUUUUUGGG...........
+##.DDDD.....DDDD.DEEEEEEEEE..BBBBBBBBBBBB.BUUU....UUUUUUUGGG..GGGGGGG..
+##.DDDD.....DDDD.DEEEE.......BBBB..BBBBBB.BUUU....UUUUUUUGGG..GGGGGGG..
+##.DDDD....DDDDD.DEEEE.......BBBB....BBBB.BUUUU...UUUUUUUGGG.....GGGG..
+##.DDDD....DDDDD.DEEEE.......BBBB....BBBB.BUUUU...UUUUU.UGGGG....GGGG..
+##.DDDD.DDDDDDD..DEEEE.......BBBB..BBBBBB.BUUUUU.UUUUU..UGGGGGG.GGGGG..
+##.DDDDDDDDDDDD..DEEEEEEEEEE.BBBBBBBBBBBB..UUUUUUUUUUU...GGGGGGGGGGGG..
+##.DDDDDDDDDD....DEEEEEEEEEE.BBBBBBBBBBB....UUUUUUUUU.....GGGGGGGGGG...
+##.....................................................................
 AUS_debug_category = {
 	AUS_debug_decision = {
 		icon = generic_decision
 		fire_only_once = no
 		available = {
-			
 		}
 		complete_effect = {
-			set_temp_variable = {
-				THIS.testosterone = 1000
-			}
-			HUN = {
-				add_manpower = PREV.testosterone
-			}
-			multiply_temp_variable = {
-				THIS.testosterone = -1
-			}
-			add_manpower = THIS.testosterone
+			activate_mission = AUS_assistance_to_low_income_and_unemployed_persons
+			activate_mission = AUS_labor_law_reforms
 		}
 	}
 	AUS_debug_decision_2 = {
 		icon = generic_decision
 		fire_only_once = no
 		available = {
-			
 		}
 		complete_effect = {
 			every_other_country = {
@@ -41,7 +46,7 @@ AUS_debug_category = {
 						target = PREV
 						type = annex_everything
 					}
-				}				
+				}
 			}
 		}
 	}
@@ -49,7 +54,6 @@ AUS_debug_category = {
 		icon = generic_decision
 		fire_only_once = no
 		available = {
-			
 		}
 		complete_effect = {
 			#every_other_country = {
@@ -64,7 +68,7 @@ AUS_debug_category = {
 			#}
 			every_owned_state = {
 				add_core_of = ROOT
-			}	
+			}
 		}
 	}
 	AUS_debug_unite = {
@@ -560,6 +564,21 @@ AUS_debug_category = {
 	#}
 }
 
+##.........................................
+##.DDDDDDDDDD....DEEEEEEEEEEEVVV.....VVVV..
+##.DDDDDDDDDDDD..DEEEEEEEEEEEVVVV....VVVV..
+##.DDDD.DDDDDDD..DEEEE......EVVVV...VVVVV..
+##.DDDD....DDDDD.DEEEE.......VVVV...VVVVV..
+##.DDDD....DDDDD.DEEEE.......VVVVV..VVVV...
+##.DDDD.....DDDD.DEEEEEEEEE..VVVVV.VVVVV...
+##.DDDD.....DDDD.DEEEEEEEEE...VVVV.VVVV....
+##.DDDD.....DDDD.DEEEE........VVVVVVVVV....
+##.DDDD....DDDDD.DEEEE........VVVVVVVVV....
+##.DDDD....DDDDD.DEEEE.........VVVVVVV.....
+##.DDDD.DDDDDDD..DEEEE.........VVVVVVV.....
+##.DDDDDDDDDDDD..DEEEEEEEEEE....VVVVVV.....
+##.DDDDDDDDDD....DEEEEEEEEEE....VVVVV......
+##.........................................
 AUS_development_project = {
 	AUS_development_of_upper_hungary_farms = {
 		icon = generic_operation
@@ -772,7 +791,23 @@ AUS_development_project = {
 	}
 }
 
+##.....................................................................
+##....OOOOOOOOO....SSSSSSSSSS.....AAAAA.....KKKK...KKKKKK...AAAAAA.....
+##...OOOOOOOOOOO..SSSSSSSSSSS....AAAAAAA....KKKK..KKKKKK....AAAAAA.....
+##..OOOOOOOOOOOOO.SSSSSSSSSSS....AAAAAAA....KKKK..KKKKK.....AAAAAA.....
+##.OOOOOO...OOOOO.SSSS....SSS....AAAAAAA....KKKK.KKKKK.....AAAAAAAA....
+##.OOOOO.....OOOO.SSSSSS........AAAAAAAAA...KKKKKKKKK......AAAAAAAA....
+##.OOOOO.....OOOO.SSSSSSSSSS....AAAAAAAAA...KKKKKKKK......AAAAAAAAAA...
+##.OOOOO.....OOOO.SSSSSSSSSSS..AAAAA.AAAA...KKKKKKKK......AAAAAAAAAA...
+##.OOOOO.....OOOO...SSSSSSSSSS.AAAAA.AAAAA..KKKKKKKKK.....AAAA..AAAA...
+##.OOOOO.....OOOO.......SSSSSS.AAAAAAAAAAA..KKKKKKKKKK...AAAAAAAAAAAA..
+##.OOOOOO...OOOOO.SSS....SSSSSAAAAAAAAAAAAA.KKKK.KKKKKK..AAAAAAAAAAAA..
+##..OOOOOOOOOOOOO.SSSSS.SSSSSSAAAAA...AAAAA.KKKK..KKKKK.KAAAA....AAAA..
+##...OOOOOOOOOOO..SSSSSSSSSSS.AAAA.....AAAA.KKKK...KKKKKKAAAA....AAAA..
+##....OOOOOOOOO...SSSSSSSSSS.SAAAA.....AAAAKKKKK...KKKKKKAAA.....AAAA..
+##.....................................................................
 AUS_great_osaka_plunge_category = {
+	#mission
 	AUS_creditanstalt_bankruptcy_crisis_mission_1 = {
 		allowed = {
 			always = no
@@ -811,9 +846,10 @@ AUS_great_osaka_plunge_category = {
 		timeout_effect = {
 			custom_effect_tooltip = AUS_creditanstalt_bankruptcy_crisis_mission_2_tt
 			hidden_effect = {
-				swap_ideas = {
-					remove_idea = AUS_creditanstalt_crisis_2_idea
-					add_idea = AUS_creditanstalt_crisis_3_idea
+				remove_ideas = AUS_creditanstalt_crisis_2_idea
+				add_timed_idea = {
+					idea = AUS_creditanstalt_crisis_3_idea
+					days = 1000
 				}
 				country_event = {
 					id = TR_Austria.7
@@ -822,129 +858,127 @@ AUS_great_osaka_plunge_category = {
 			}
 		}
 	}
-	AUS_forced_cartel_establishment_law = {
-		icon = eng_trade_unions_demand
-		visible = {
-			has_completed_focus = AUS_financial_assistance
-			NOT = {
-				has_country_flag = AUS_finish_plunge
-			}
+	AUS_securing_funds = {
+		allowed = {
+			always = no
 		}
 		available = {
-			NOT = {
-				has_country_flag = AUS_addressing_plunge
+			has_political_power > 200
+		}
+		is_good = no
+		days_mission_timeout = 30
+		icon = generic_civil_support
+		complete_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			custom_effect_tooltip = AUS_chain_of_depression_resolution
+			hidden_effect = {
+				country_event = {
+					id = TR_Austria.21
+					days = 5
+					random_days = 5
+				}
 			}
 		}
-		cost = 50
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 70
-		modifier = {
-			stability_weekly = -0.001
-		}
-		complete_effect = {
-			set_country_flag = AUS_addressing_plunge
-		}
-		remove_effect = {
-			AUS_decreased_impact_of_the_depression_effect = yes
-			add_stability = 0.03
-			clr_country_flag = AUS_addressing_plunge
+		timeout_effect = {
+			add_stability = -0.02
+			AUS_increased_impact_of_the_depression_effect = yes
+			custom_effect_tooltip = AUS_depression_resolution_delay
+			hidden_effect = {
+				country_event = {
+					id = TR_Austria.21
+					days = 20
+					random_days = 20
+				}
+			}
 		}
 	}
-	AUS_correction_of_agricultural_purchase_prices = {
-		icon = gre_paying_ifc_debt
+	AUS_assistance_to_low_income_and_unemployed_persons = {
+		icon = hol_attract_foreign_investors
 		visible = {
-			has_completed_focus = AUS_financial_assistance
 			NOT = {
 				has_country_flag = AUS_finish_plunge
 			}
 		}
-		available = {
-			NOT = {
-				has_country_flag = AUS_addressing_plunge
-			}
+		allowed = {
+			always = no
 		}
-		cost = 50
+		available = {
+		}
+		cost = 100
+		selectable_mission = yes
 		ai_will_do = {
 			factor = 1
 		}
-		fire_only_once = yes
-		days_remove = 100
-		modifier = {
-		}
+		is_good = no
+		days_mission_timeout = 30
 		complete_effect = {
-			set_country_flag = AUS_addressing_plunge
-		}
-		remove_effect = {
-			AUS_decreased_impact_of_the_depression_effect = yes
 			add_stability = 0.05
-			clr_country_flag = AUS_addressing_plunge
+			AUS_decreased_impact_of_the_depression_effect = yes
+			custom_effect_tooltip = AUS_chain_of_depression_resolution
+			hidden_effect = {
+				country_event = {
+					id = TR_Austria.22
+					days = 7
+					random_days = 7
+				}
+			}
+		}
+		timeout_effect = {
+			add_stability = -0.02
+			AUS_increased_impact_of_the_depression_effect = yes
+			custom_effect_tooltip = AUS_depression_resolution_delay
+			hidden_effect = {
+				country_event = {
+					id = TR_Austria.22
+					days = 28
+					random_days = 28
+				}
+			}
 		}
 	}
-	AUS_rescuing_rural_finance = {
-		icon = hol_attract_foreign_investors
+	AUS_labor_law_reforms = {
+		icon = generic_civil_support
 		visible = {
-			has_completed_focus = AUS_financial_assistance
 			NOT = {
 				has_country_flag = AUS_finish_plunge
 			}
 		}
-		available = {
-			NOT = {
-				has_country_flag = AUS_addressing_plunge
-			}
+		allowed = {
+			always = no
 		}
-		cost = 50
+		available = {
+		}
+		cost = 100
+		selectable_mission = yes
 		ai_will_do = {
 			factor = 1
 		}
-		fire_only_once = yes
-		days_remove = 50
-		modifier = {
-		}
+		is_good = no
+		days_mission_timeout = 20
 		complete_effect = {
-			set_country_flag = AUS_addressing_plunge
-		}
-		remove_effect = {
+			swap_ideas = {
+				remove_idea = no_max_workhours
+				add_idea = acceptable_max_workhours
+			}
+			swap_ideas = {
+				remove_idea = trinket_safety_regulations
+				add_idea = acceptable_safety_regulations
+			}
+			swap_ideas = {
+				remove_idea = trinket_Unemployment_subsidies
+				add_idea = acceptable_Unemployment_subsidies
+			}
 			AUS_decreased_impact_of_the_depression_effect = yes
-			add_stability = 0.02
-			clr_country_flag = AUS_addressing_plunge
+			custom_effect_tooltip = AUS_chain_of_depression_resolution
+		}
+		timeout_effect = {
+			add_stability = -0.02
+			AUS_increased_impact_of_the_depression_effect = yes
+			custom_effect_tooltip = AUS_depression_resolution_delay
 		}
 	}
-	AUS_rescuing_rural_finance = {
-		icon = hol_attract_foreign_investors
-		visible = {
-			has_completed_focus = AUS_financial_assistance
-			NOT = {
-				has_country_flag = AUS_finish_plunge
-			}
-		}
-		available = {
-			NOT = {
-				has_country_flag = AUS_addressing_plunge
-			}
-			has_completed_focus = AUS_banking_network
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 50
-		modifier = {
-		}
-		complete_effect = {
-			set_country_flag = AUS_addressing_plunge
-		}
-		remove_effect = {
-			AUS_decreased_impact_of_the_depression_effect = yes
-			add_stability = 0.02
-			clr_country_flag = AUS_addressing_plunge
-		}
-	}
-	AUS_cooperation_with_major_banks = {
+	#decision
+	AUS_OeUBs_financial_assistance_1 = {
 		icon = SOV_place_hq
 		visible = {
 			has_completed_focus = AUS_financial_assistance
@@ -953,136 +987,340 @@ AUS_great_osaka_plunge_category = {
 			}
 		}
 		available = {
-			NOT = {
-				has_country_flag = AUS_addressing_plunge
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		days_remove = 360
+		modifier = {
+			political_power_cost = 0.05
+		}
+		complete_effect = {
+			add_political_power = 100
+			set_country_flag = AUS_financial_assist_1
+			set_country_flag = {
+				flag = AUS_financial_assist_blocked
+				days = 2
+				value = 1
 			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = AUS_OeUBs_financial_assistance_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_political_power > 99
+					}
+					add_political_power = -100
+				}
+				else = {
+					add_political_power = -120
+				}
+			}
+		}
+	}
+	AUS_OeUBs_financial_assistance_2 = {
+		icon = SOV_place_hq
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			has_country_flag = AUS_financial_assist_1
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+			NOT = {
+				has_country_flag = AUS_financial_assist_blocked
+			}
+		}
+		available = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		days_remove = 360
+		modifier = {
+			political_power_cost = 0.05
+		}
+		complete_effect = {
+			add_political_power = 100
+			set_country_flag = AUS_financial_assist_2
+			set_country_flag = {
+				flag = AUS_financial_assist_blocked
+				days = 2
+				value = 1
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = AUS_OeUBs_financial_assistance_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_political_power > 99
+					}
+					add_political_power = -100
+				}
+				else = {
+					add_political_power = -120
+				}
+			}
+		}
+	}
+	AUS_OeUBs_financial_assistance_3 = {
+		icon = SOV_place_hq
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			has_country_flag = AUS_financial_assist_2
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+			NOT = {
+				has_country_flag = AUS_financial_assist_blocked
+			}
+		}
+		available = {
+		}
+		cost = 0
+		ai_will_do = {
+			factor = 0
+		}
+		fire_only_once = yes
+		days_remove = 360
+		modifier = {
+			political_power_cost = 0.05
+		}
+		complete_effect = {
+			add_political_power = 100
+			set_country_flag = AUS_financial_assist_3
+		}
+		remove_effect = {
+			custom_effect_tooltip = AUS_OeUBs_financial_assistance_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_political_power > 99
+					}
+					add_political_power = -100
+				}
+				else = {
+					add_political_power = -120
+				}
+			}
+		}
+	}
+	AUS_bailout_of_major_banks = {
+		icon = SOV_place_hq
+		visible = {
 			has_completed_focus = AUS_banking_network
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 30
-		modifier = {
-		}
-		complete_effect = {
-			set_country_flag = AUS_addressing_plunge
-		}
-		remove_effect = {
-			AUS_decreased_impact_of_the_depression_effect = yes
-			add_stability = -0.01
-			clr_country_flag = AUS_addressing_plunge
-		}
-	}
-	AUS_job_creation_through_military_procurement = {
-		icon = generic_merge_plant_materiel
-		visible = {
-			has_completed_focus = AUS_financial_assistance
 			NOT = {
 				has_country_flag = AUS_finish_plunge
 			}
-		}
-		available = {
 			NOT = {
-				has_country_flag = AUS_addressing_plunge
-			}
-			has_completed_focus = AUS_job_creation
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 100
-		modifier = {
-			production_factory_max_efficiency_factor = 0.3
-			production_factory_start_efficiency_factor = 0.5
-			industrial_capacity_factory = 0.33
-			industrial_capacity_dockyard = 0.33
-		}
-		complete_effect = {
-			set_country_flag = AUS_addressing_plunge
-		}
-		remove_effect = {
-			AUS_decreased_impact_of_the_depression_effect = yes
-			clr_country_flag = AUS_addressing_plunge
-		}
-	}
-	AUS_job_creation_through_private_demand = {
-		icon = generic_construction
-		visible = {
-			has_completed_focus = AUS_financial_assistance
-			NOT = {
-				has_country_flag = AUS_finish_plunge
+				has_country_flag = AUS_bailed_out_the_banks
 			}
 		}
 		available = {
-			NOT = {
-				has_country_flag = AUS_addressing_plunge
-			}
-			has_completed_focus = AUS_job_creation
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		fire_only_once = yes
-		days_remove = 100
-		modifier = {
-			consumer_goods_factor = -1
-			production_speed_buildings_factor = 0.33
-		}
-		complete_effect = {
-			set_country_flag = AUS_addressing_plunge
-		}
-		remove_effect = {
-			AUS_decreased_impact_of_the_depression_effect = yes
-			clr_country_flag = AUS_addressing_plunge
-		}
-	}
-	AUS_autobahn_expansion = {
-		icon = generic_trucks
-		visible = {
-			has_completed_focus = AUS_financial_assistance
-			NOT = {
-				has_country_flag = AUS_finish_plunge
-			}
-		}
-		available = {
-			NOT = {
-				has_country_flag = AUS_addressing_plunge
-			}
-			has_completed_focus = AUS_reichs_autobahn
 		}
 		cost = 50
 		ai_will_do = {
 			factor = 1
 		}
 		fire_only_once = yes
-		days_remove = 100
-		modifier = {
-			production_speed_infrastructure_factor = 0.66
-		}
+		days_remove = 80
 		complete_effect = {
-			set_country_flag = AUS_addressing_plunge
+			set_country_flag = AUS_bailed_out_the_banks
+			custom_effect_tooltip = AUS_bank_rescue
 		}
 		remove_effect = {
+			add_stability = -0.03
+			add_war_support = -0.03
 			AUS_decreased_impact_of_the_depression_effect = yes
-			HUN = {
-				every_owned_state = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+		}
+	}
+	AUS_bailout_of_minor_banks = {
+		icon = SOV_place_hq
+		visible = {
+			has_completed_focus = AUS_banking_network
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+			NOT = {
+				has_country_flag = AUS_bailed_out_the_banks
+			}
+		}
+		available = {
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 110
+		complete_effect = {
+			set_country_flag = AUS_bailed_out_the_banks
+			custom_effect_tooltip = AUS_bank_rescue
+		}
+		remove_effect = {
+			add_stability = 0.03
+			add_war_support = 0.03
+			AUS_decreased_impact_of_the_depression_effect = yes
+		}
+	}
+	AUS_hydroelectric_power_plant_construction = {
+		icon = hol_drain_water_lines
+		visible = {
+			has_completed_focus = AUS_job_creation
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 40
+		remove_effect = {
+			random_owned_controlled_state = {
+				custom_effect_tooltip = AUS_hydroelectric_power_plant_construction_tt
+				set_state_flag = AUS_hydroelectric_construction_planned
+			}
+			hidden_effect = {
+				country_event = {
+					id = TR_Austria.23
+					days = 1000
+					random_days = 200
 				}
 			}
-			clr_country_flag = AUS_addressing_plunge
+			set_country_flag = AUS_employment_chain_1
+		}
+	}
+	AUS_military_and_economic_reconstruction = {
+		icon = ger_military_buildup
+		visible = {
+			has_country_flag = AUS_employment_chain_1
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 30
+		remove_effect = {
+			add_timed_idea = {
+				idea = AUS_military_supply_by_private_companies_idea
+				days = 500
+			}
+			set_country_flag = AUS_employment_chain_2
+		}
+	}
+	AUS_support_for_civil_engineering_projects = {
+		icon = generic_construction
+		visible = {
+			has_country_flag = AUS_employment_chain_2
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+		}
+		cost = 100
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 50
+		remove_effect = {
+			AUS_decreased_impact_of_the_depression_effect = yes
+			set_country_flag = AUS_civil_engineering_support_tt
+			custom_effect_tooltip = AUS_support_for_civil_engineering_projects_tt
+			hidden_effect = {
+				country_event = {
+					id = TR_Austria.24
+					days = 500
+					random_days = 100
+				}
+			}
+		}
+	}
+	AUS_mark_to_market_adjustment_method = {
+		icon = eng_trade_unions_support
+		visible = {
+			has_completed_focus = AUS_financial_assistance
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			
+		}
+		cost = 40
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 50
+		modifier = {
+			political_power_cost = 0.25
+			stability_factor = -0.01
+		}
+		remove_effect = {
+			add_stability = 0.06
+			AUS_decreased_impact_of_the_depression_effect = yes
+			set_country_flag = AUS_chain_of_OeUB
+		}
+	}
+	AUS_rural_relief = {
+		icon = SWI_support_humanitarian_efforts
+		visible = {
+			has_country_flag = AUS_chain_of_OeUB
+			NOT = {
+				has_country_flag = AUS_finish_plunge
+			}
+		}
+		available = {
+			
+		}
+		cost = 25
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 70
+		modifier = {
+			political_power_cost = 0.5
+		}
+		remove_effect = {
+			add_stability = 0.06
+			AUS_decreased_impact_of_the_depression_effect = yes
 		}
 	}
 }
 
+##..............................................................
+##.DDDDDDDDDD...DDIIIIIII.IPPPPPPPPP..PLLLL........OOOOOOOOO....
+##.DDDDDDDDDDDD.DDIIIIIII.IPPPPPPPPPP.PLLLL.......OOOOOOOOOOO...
+##.DDDD.DDDDDDD...IIIII...IPPP.PPPPPP.PLLLL......LOOOOOOOOOOOO..
+##.DDDD....DDDDD..IIIII...IPPP...PPPPPPLLLL.....LLOOOO...OOOOO..
+##.DDDD....DDDDD..IIIII...IPPP...PPPPPPLLLL.....LLOOO.....OOOO..
+##.DDDD.....DDDD..IIIII...IPPP.PPPPPP.PLLLL.....LLOOO.....OOOO..
+##.DDDD.....DDDD..IIIII...IPPPPPPPPPP.PLLLL.....LLOOO.....OOOO..
+##.DDDD.....DDDD..IIIII...IPPPPPPPPP..PLLLL.....LLOOO.....OOOO..
+##.DDDD....DDDDD..IIIII...IPPP........PLLLL.....LLOOO.....OOOO..
+##.DDDD....DDDDD..IIIII...IPPP........PLLLL.....LLOOOO...OOOOO..
+##.DDDD.DDDDDDD...IIIII...IPPP........PLLLL......LOOOOOOOOOOOO..
+##.DDDDDDDDDDDD.DDIIIIIII.IPPP........PLLLLLLLLLL.OOOOOOOOOOO...
+##.DDDDDDDDDD...DDIIIIIII.IPPP........PLLLLLLLLLL..OOOOOOOOO....
+##..............................................................
 AUS_foreign_policy = {
 	AUS_retention_of_the_prague_schule = {
 		icon = generic_research
@@ -1163,5 +1401,20 @@ AUS_foreign_policy = {
 	}
 }
 
+##........................................................................................
+##.FFFFFFFFFFFFIIIIIII.INNNNN...NNNN.....AAAAA.....ANNNNN...NNNN....CCCCCCCCC.CEEEEEEEEE..
+##.FFFFFFFFFFFFIIIIIII.INNNNN...NNNN....AAAAAAA....ANNNNN...NNNN..CCCCCCCCCCC.CEEEEEEEEE..
+##.FFFF........IIIII...INNNNNN..NNNN....AAAAAAA....ANNNNNN..NNNN..CCCCCC.CCCC.CEEE........
+##.FFFF........IIIII...INNNNNNN.NNNN....AAAAAAA....ANNNNNNN.NNNN.NCCCC.....CC.CEEE........
+##.FFFF........IIIII...INNNNNNN.NNNN...AAAAAAAAA...ANNNNNNN.NNNN.NCCCC........CEEE........
+##.FFFFFFFFFF..IIIII...INNNNNNNNNNNN...AAAAAAAAA...ANNNNNNNNNNNN.NCCCC........CEEEEEEEEE..
+##.FFFFFFFFFF..IIIII...INNNNNNNNNNNN..AAAAA.AAAA...ANNNNNNNNNNNN.NCCC.........CEEEEEEEEE..
+##.FFFF........IIIII...INNN.NNNNNNNN..AAAAA.AAAAA..ANNN.NNNNNNNN.NCCCC........CEEE........
+##.FFFF........IIIII...INNN..NNNNNNN..AAAAAAAAAAA..ANNN..NNNNNNN.NCCCC........CEEE........
+##.FFFF........IIIII...INNN..NNNNNNN.NAAAAAAAAAAAA.ANNN..NNNNNNN.NCCCC.....CC.CEEE........
+##.FFFF........IIIII...INNN...NNNNNN.NAAAA...AAAAA.ANNN...NNNNNN..CCCCCC.CCCC.CEEE........
+##.FFFF......FFIIIIIII.INNN....NNNNN.NAAA.....AAAA.ANNN....NNNNN..CCCCCCCCCCC.CEEEEEEEEE..
+##.FFFF......FFIIIIIII.INNN....NNNNNNNAAA.....AAAAAANNN....NNNNN....CCCCCCCCC.CEEEEEEEEE..
+##........................................................................................
 AUS_reorganizing_public_finances = {
 }

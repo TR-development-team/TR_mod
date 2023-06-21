@@ -84,8 +84,8 @@ ideas = {
 				stability_factor = -0.3
 				war_support_factor = -0.3
 				political_power_cost = 0.5
-				authoritarian_democrat_drift = 0.05
-				Gnosticism_drift = 0.05
+				authoritarian_democrat_drift = 0.01
+				Gnosticism_drift = 0.02
 			}
 		}
 		AUS_prager_schule_idea = {
@@ -200,6 +200,22 @@ ideas = {
 			picture = generic_stockpile_fuel
 			modifier = {
 				production_speed_synthetic_refinery_factor = 0.33
+			}
+		}
+		AUS_OeUBs_financial_assistance_idea = {
+			picture = generic_foreign_capital
+			cancel = {
+				has_country_flag = AUS_finish_plunge
+			}
+			modifier = {
+				disabled_ideas = 1
+				political_power_gain = 1
+			}
+		}
+		AUS_military_supply_by_private_companies_idea = {
+			picture = generic_war_preparation
+			modifier = {
+				industrial_capacity_factory = 0.1
 			}
 		}
 	}

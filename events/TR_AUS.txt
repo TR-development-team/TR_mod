@@ -1,5 +1,6 @@
 ﻿add_namespace = TR_Austria
 country_event = {
+	#大恐慌の余波
 	id = TR_Austria.1
 	title = TR_Austria.1.t
 	desc = TR_Austria.1.desc
@@ -25,11 +26,17 @@ country_event = {
 				id = TR_Austria.5
 				days = 30
 			}
+			country_event = {
+				id = TR_Austria.19
+				days = 11
+				random_days = 18
+			}
 		}
 	}
 }
 
 country_event = {
+	#ハイパーインフレ
 	id = TR_Austria.2
 	title = TR_Austria.2.t
 	desc = TR_Austria.2.desc
@@ -49,6 +56,7 @@ country_event = {
 }
 
 country_event = {
+	#インフレ軽減
 	id = TR_Austria.3
 	title = TR_Austria.3.t
 	desc = TR_Austria.3.desc
@@ -78,6 +86,7 @@ country_event = {
 }
 
 country_event = {
+	#インフレ解消
 	id = TR_Austria.4
 	title = TR_Austria.4.t
 	desc = TR_Austria.4.desc
@@ -97,6 +106,7 @@ country_event = {
 }
 
 country_event = {
+	#倒産危機
 	id = TR_Austria.5
 	title = TR_Austria.5.t
 	desc = TR_Austria.5.desc
@@ -120,6 +130,7 @@ country_event = {
 }
 
 country_event = {
+	#破産寸前
 	id = TR_Austria.6
 	title = TR_Austria.6.t
 	desc = TR_Austria.6.desc
@@ -131,7 +142,7 @@ country_event = {
 }
 
 country_event = {
-	id = TR_Austria.7
+	id = TR_Austria.7	#破綻
 	title = TR_Austria.7.t
 	desc = TR_Austria.7.desc
 	picture = GFX_report_event_AUS_creditanstalt
@@ -142,6 +153,7 @@ country_event = {
 }
 
 country_event = {
+	#クレディタンシュタルト問題
 	id = TR_Austria.8
 	title = TR_Austria.8.t
 	desc = TR_Austria.8.desc
@@ -153,7 +165,7 @@ country_event = {
 		hidden_effect = {
 			country_event = {
 				id = TR_Austria.9
-				days = 40
+				days = 20
 			}
 		}
 	}
@@ -174,6 +186,7 @@ country_event = {
 }
 
 country_event = {
+	#国有化
 	id = TR_Austria.9
 	title = TR_Austria.9.t
 	desc = TR_Austria.9.desc
@@ -181,17 +194,18 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = TR_Austria.9.a
-		add_political_power = 80
+		add_political_power = 150
 		hidden_effect = {
 			country_event = {
 				id = TR_Austria.10
-				days = 80
+				days = 30
 			}
 		}
 	}
 }
 
 country_event = {
+	#解体
 	id = TR_Austria.10
 	title = TR_Austria.10.t
 	desc = TR_Austria.10.desc
@@ -200,11 +214,12 @@ country_event = {
 	option = {
 		name = TR_Austria.10.a
 		remove_ideas = AUS_creditanstalt_crisis_1_idea
-		add_political_power = 40
+		add_political_power = 150
 	}
 }
 
 country_event = {
+	#半官半民化
 	id = TR_Austria.11
 	title = TR_Austria.11.t
 	desc = TR_Austria.11.desc
@@ -222,6 +237,7 @@ country_event = {
 }
 
 country_event = {
+	#業績回復
 	id = TR_Austria.12
 	title = TR_Austria.12.t
 	desc = TR_Austria.12.desc
@@ -237,6 +253,7 @@ country_event = {
 }
 
 country_event = {
+	#クレディタンシュタルト問題-bad
 	id = TR_Austria.13
 	title = TR_Austria.13.t
 	desc = TR_Austria.13.desc
@@ -269,6 +286,7 @@ country_event = {
 }
 
 country_event = {
+	#国有化-bad
 	id = TR_Austria.14
 	title = TR_Austria.14.t
 	desc = TR_Austria.14.desc
@@ -276,7 +294,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = TR_Austria.14.a
-		add_political_power = 40
+		add_political_power = 100
 		hidden_effect = {
 			country_event = {
 				id = TR_Austria.15
@@ -287,6 +305,7 @@ country_event = {
 }
 
 country_event = {
+	#解体-bad
 	id = TR_Austria.15
 	title = TR_Austria.15.t
 	desc = TR_Austria.15.desc
@@ -295,11 +314,12 @@ country_event = {
 	option = {
 		name = TR_Austria.15.a
 		remove_ideas = AUS_creditanstalt_crisis_2_idea
-		add_political_power = 20
+		add_political_power = 100
 	}
 }
 
 country_event = {
+	#半官半民-bad
 	id = TR_Austria.16
 	title = TR_Austria.16.t
 	desc = TR_Austria.16.desc
@@ -317,6 +337,7 @@ country_event = {
 }
 
 country_event = {
+	#経営復帰
 	id = TR_Austria.17
 	title = TR_Austria.17.t
 	desc = TR_Austria.17.desc
@@ -332,6 +353,7 @@ country_event = {
 }
 
 country_event = {
+	#自動車の普及
 	id = TR_Austria.18
 	title = TR_Austria.18.t
 	desc = TR_Austria.18.desc
@@ -343,4 +365,127 @@ country_event = {
 	}
 }
 
+country_event = {
+	#取り付け騒ぎ
+	id = TR_Austria.19
+	title = TR_Austria.19.t
+	desc = TR_Austria.19.desc
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+	option = {
+		name = TR_Austria.19.a
+		AUS_increased_impact_of_the_depression_effect = yes
+		add_stability = -0.05
+		add_political_power = -50
+	}
+}
 
+country_event = {
+	#資金確保-ミッション
+	id = TR_Austria.20
+	title = TR_Austria.20.t
+	desc = TR_Austria.20.desc
+	picture = GFX_report_event_AUS_bundesregierung
+	is_triggered_only = yes
+	option = {
+		name = TR_Austria.20.a
+		activate_mission = AUS_securing_funds
+	}
+}
+
+country_event = {
+	#低所得者と失業者の問題
+	id = TR_Austria.21
+	title = TR_Austria.21.t
+	desc = TR_Austria.21.desc
+	picture = GFX_report_event_worker_protests
+	is_triggered_only = yes
+	option = {
+		name = TR_Austria.21.a
+		activate_mission = AUS_assistance_to_low_income_and_unemployed_persons
+	}
+}
+
+country_event = {
+	#労働者の保護
+	id = TR_Austria.22
+	title = TR_Austria.22.t
+	desc = TR_Austria.22.desc
+	picture = GFX_report_event_generic_research_lab
+	is_triggered_only = yes
+	option = {
+		name = TR_Austria.22.a
+		activate_mission = AUS_labor_law_reforms
+	}
+}
+
+country_event = {
+	#水力発電所の開業
+	id = TR_Austria.23
+	title = TR_Austria.23.t
+	desc = TR_Austria.23.desc
+	picture = GFX_report_event_AUS_hydroelectric_plant
+	is_triggered_only = yes
+	option = {
+		name = TR_Austria.23.a
+		if = {
+			limit = {
+				any_owned_state = {
+					has_state_flag = AUS_hydroelectric_construction_planned
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					has_state_flag = AUS_hydroelectric_construction_planned
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		else = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	#製鉄業の発展
+	id = TR_Austria.24
+	title = TR_Austria.24.t
+	desc = TR_Austria.24.desc
+	picture = GFX_report_event_AUS_steel_mill
+	is_triggered_only = yes
+	option = {
+		name = TR_Austria.24.a
+		4 = {
+			add_resource = {
+				amount = 10
+				type = steel
+			}
+		}
+		152 = {
+			add_resource = {
+				amount = 10
+				type = steel
+			}
+		}
+		987 = {
+			add_resource = {
+				amount = 10
+				type = steel
+			}
+		}
+	}
+}
