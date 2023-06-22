@@ -262,7 +262,7 @@ focus_tree = {
 			focus = AUS_abolition_of_krone
 		}
 		available = {
-			has_country_flag = AUS_finish_plunge
+			has_completed_focus = AUS_enduring_economy
 		}
 		completion_reward = {
 			add_to_variable = {
@@ -443,7 +443,7 @@ focus_tree = {
 			focus = AUS_reichs_autobahn
 		}
 		available = {
-			has_country_flag = AUS_finish_plunge
+			has_completed_focus = AUS_enduring_economy
 			978 = {
 				is_fully_controlled_by = ROOT
 			}
@@ -499,7 +499,7 @@ focus_tree = {
 			focus = AUS_reichs_autobahn
 		}
 		available = {
-			has_country_flag = AUS_finish_plunge
+			has_completed_focus = AUS_enduring_economy
 			153 = {
 				is_fully_controlled_by = ROOT
 			}
@@ -1068,7 +1068,7 @@ focus_tree = {
 			focus = AUS_empire_and_railways
 		}
 		available = {
-			has_country_flag = AUS_finish_plunge
+			has_completed_focus = AUS_enduring_economy
 		}
 		completion_reward = {
 			4 = {
@@ -1115,7 +1115,7 @@ focus_tree = {
 			focus = AUS_empire_and_railways
 		}
 		available = {
-			has_country_flag = AUS_finish_plunge
+			has_completed_focus = AUS_enduring_economy
 		}
 		completion_reward = {
 			#add_to_variable = {
@@ -1177,7 +1177,7 @@ focus_tree = {
 			focus = AUS_empire_and_railways
 		}
 		available = {
-			has_country_flag = AUS_finish_plunge
+			has_completed_focus = AUS_enduring_economy
 		}
 		completion_reward = {
 		}
@@ -1206,7 +1206,7 @@ focus_tree = {
 			focus = AUS_development_of_translytanien
 		}
 		available = {
-			has_country_flag = AUS_finish_plunge
+			has_completed_focus = AUS_enduring_economy
 		}
 		completion_reward = {
 			155 = {
