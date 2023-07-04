@@ -493,26 +493,11 @@ characters = {
 	}
 
 	POL_wladyslaw_anders = {
-		name=POL_tadeusz_kutrzeba
+		name=POL_wladyslaw_anders
 		portraits = {
 			army = {
 				large="GFX_POL_wladislaw_anders"
 				small = GFX_portrait_POL_wladyslaw_anders_small
-			}
-		}
-		advisor = {
-			slot = high_command
-			idea_token = POL_wladyslaw_anders
-			ledger = army
-			allowed = {
-				original_tag = POL
-			}
-			traits = {
-				army_cavalry_1
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
 			}
 		}
 		
@@ -528,7 +513,7 @@ characters = {
 	}
 
 	POL_roman_abraham = {
-		name="Roman Abraham"
+		name=POL_roman_abraham
 		portraits = {
 			army = {
 				large="GFX_POL_roman_abraham"

@@ -1,4 +1,38 @@
 ﻿capital = 773
 
 set_cosmetic_tag = CMR_republic
-set_dictatorship = yes
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+
+}
+add_ideas = {
+	Democratic_centralism
+	service_by_requirement
+	war_economy
+}
+
+set_convoys = 50
+
+set_politics = {
+	ruling_party = radical_socialist
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 14
+	syndicalist = 17
+	radical_socialist = 33
+	social_democrat = 4
+	social_liberal = 2
+	market_liberal = 5
+	social_conservative = 5
+	authoritarian_democrat = 3
+	paternal_autocrat = 8
+	national_populist = 8
+        Gnosticism = 1
+}
+
+recruit_character = CMR_Watanabe_Masanosuke

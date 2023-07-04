@@ -4,27 +4,29 @@ oob = "EGY_1936"
 JAP = {	set_autonomy = {	target = EGY	autonomous_state = imperial_protectorate	}	}
 set_cosmetic_tag = EGY_sultanate
 
+country_event = { id = TR_jafrica.23 days = 140 }#1936年エジプト議会選挙
+
 set_politics = {
 	ruling_party = authoritarian_democrat
-	last_election = "1936.1.1"
+	last_election = "1932.5.20"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	totalist = 5
-	syndicalist = 5
-	radical_socialist = 5
-	social_democrat = 5
-	social_liberal = 5
-	market_liberal = 10
-	social_conservative = 10
-	authoritarian_democrat = 45
-	paternal_autocrat = 5
-	national_populist = 5
+	totalist = 7
+	syndicalist = 3
+	radical_socialist = 6
+	social_democrat = 4
+	social_liberal = 9
+	market_liberal = 26
+	social_conservative = 12
+	authoritarian_democrat = 21
+	paternal_autocrat = 3
+	national_populist = 9
 }
-
-recruit_character = EGY_farouk_I
 recruit_character = EGY_Naguib
+recruit_character = EGY_farouk_I
+recruit_character = EGY_Ahmed_Hussein
 
 add_ideas = {
 	Absolute_monarchy

@@ -387,6 +387,20 @@ DIPLOMACY_GENERATE_WARGOAL_ENABLE_TRIGGER = {
 		}
 	}
 }
+DIPLOMACY_STAGE_COUP_ENABLE_TRIGGER = {
+	if = {
+		limit = {
+			has_game_rule = {
+				rule = allow_coups
+				option = BLOCKED
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = RULE_COUP_BLOCKED_TT
+			always = no
+		}
+	}
+}
 DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {
 	always = no
 }

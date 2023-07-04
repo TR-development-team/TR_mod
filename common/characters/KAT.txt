@@ -7,7 +7,12 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=social_conservative_subtype
+			ideology=libertarian_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=Neo_Canton_system_subtype
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -16,6 +21,10 @@ characters={
 			expire="1965.1.1.1"
 			id=-1
 		}
-
+		country_leader={
+			ideology=Military_junta_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
 	}
 }

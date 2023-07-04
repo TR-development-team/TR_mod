@@ -52,6 +52,8 @@ add_ideas = {
         JAP_respected_navy
         JAP_Dried_out_countryside
         JAP_Prosperous_Cities
+        JAP_Zaibatsu
+        JAP_Rice_Price_Act
         JAP_Korean_Question
 }
 add_dynamic_modifier = {	modifier = JAP_colony_deficit 	}
@@ -64,6 +66,7 @@ country_event = { id = TR_japan.105 days = 65 }#三井本館襲撃事件
 country_event = { id = TR_japfed.1 days = 75 }#1936年度帝国会議
 country_event = { id = TR_japan.109 days = 90 }#第17回メーデー大会開催宣言
 country_event = { id = TR_japan.5 days = 120 }#血のメーデー事件
+country_event = { id = TR_jafrica.240 days = 238 }#日本・エジプト同盟条約
 country_event = { id = TR_japan.19 days = 382 }#朝鮮問題
 country_event = { id = TR_japan.30 days = 1491 }#1940年度衆院選
 country_event = { id = TR_jap_flavor.5 days = 484 }#ヒサトモ
@@ -227,16 +230,16 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	totalist = 10
-	syndicalist = 8
-	radical_socialist = 8
-	social_democrat = 12
-	social_liberal = 7
-	market_liberal = 18
-	social_conservative = 17
-	authoritarian_democrat = 2
-	paternal_autocrat = 9
-	national_populist = 9
+	totalist = 4
+	syndicalist = 2
+	radical_socialist = 3
+	social_democrat = 11
+	social_liberal = 8
+	market_liberal = 27
+	social_conservative = 24
+	authoritarian_democrat = 9
+	paternal_autocrat = 6
+	national_populist = 6
 }
 set_power_balance = {id = JAP_Political_Distrust_bop }
 add_power_balance_value = {

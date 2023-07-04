@@ -2,6 +2,10 @@
 oob = "CAR_1936"
 
 JAP = {	set_autonomy = {	target = CAR	autonomous_state = imperial_colony	}	}
+
+country_event = { id = TR_jafrica.72 days = 140 }#死刑囚の脱獄
+country_event = { id = TR_jafrica.73 days = 210 }#黄熱病ワクチンの開発
+
 set_cosmetic_tag = COUNTRY_JAP
 set_research_slots = 3
 set_politics = {

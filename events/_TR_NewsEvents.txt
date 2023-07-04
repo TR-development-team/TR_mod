@@ -724,7 +724,7 @@ news_event = {
 	id =TR_news.32
 	title = TR_news.32.t
 	desc = TR_news.32.d
-	picture = GFX_news_event_battle_for_the_bosporus
+	picture = GFX_news_event_israel_army
 	
 	major = yes
 	
@@ -832,7 +832,7 @@ news_event = {
 	id = TR_news.37
 	title = TR_news.37.t
 	desc = TR_news.37.d
-	picture = GFX_news_event_hitler_speech
+	picture = GFX_news_event_USA_army_parade1
 	
 	major = yes
 	
@@ -925,24 +925,25 @@ news_event = {
 	}
 
 }
-
+#日本領東アフリカの崩壊
 news_event = {
 	id =TR_news.40
 	title = TR_news.40.t
 	desc = TR_news.40.d
-	picture = GFX_news_event_japanese_parade
+	picture = GFX_news_event_maumau
 	
 	major = yes
 	
 	is_triggered_only = yes
 	
-       option = {
+    option = {
 		name = TR_news.40.a
 		trigger = {
 			NOT = {
-			   OR  = { TAG = JAP
-                                   is_in_faction_with = JAP
-                                 }
+			    OR  = { 
+					TAG = JAP
+                    is_in_faction_with = JAP
+                }
 			}
 		}
 	}
@@ -960,24 +961,24 @@ news_event = {
 		}
 	}
 }
-
+#日本領西アフリカの崩壊
 news_event = {
 	id =TR_news.41
 	title = TR_news.41.t
 	desc = TR_news.41.d
-	picture = GFX_news_event_japanese_parade
+	picture = GFX_news_event_Sokoto_empire
 	
 	major = yes
-	
 	is_triggered_only = yes
 	
-       option = {
+    option = {
 		name = TR_news.41.a
 		trigger = {
 			NOT = {
-			   OR  = { TAG = JAP
-                                   is_in_faction_with = JAP
-                                 }
+			    OR = { 
+					TAG = JAP
+                    is_in_faction_with = JAP
+                }
 			}
 		}
 	}
@@ -994,27 +995,24 @@ news_event = {
 			is_in_faction_with = JAP
 		}
 	}
-
 }
-
+#コンゴ動乱
 news_event = {
 	id =TR_news.42
 	title = TR_news.42.t
 	desc = TR_news.42.d
-	picture = GFX_news_event_soldiers_marching
+	picture = GFX_news_event_Congo_crisis
 	
 	major = yes
-	
 	is_triggered_only = yes
 	
-       option = {
+    option = {
 		name = TR_news.42.a
                 trigger = {
 			NOT = {
 				TAG = JAP
 			}
 		}
-
 	}
        	option = {
 		name = TR_news.42.b
@@ -1030,7 +1028,6 @@ news_event = {
 	picture = GFX_news_event_WHN_XIB
 	
 	major = yes
-	
 	is_triggered_only = yes
 	
 
@@ -1123,7 +1120,6 @@ news_event = {
 				TAG = FRA
 			}
 		}
-
 	}
 	option = {
 		name = TR_news.46.b
@@ -1135,7 +1131,7 @@ news_event = {
 	id =TR_news.47
 	title = TR_news.47.t
 	desc = TR_news.47.d
-	picture = GFX_news_event_soldiers_marching
+	picture = GFX_news_event_Bolivian_Army
 	
 	major = yes
 	
@@ -1491,5 +1487,87 @@ news_event = {
 	option = {
 		name = TR_news.60.b
 		trigger = { TAG =RAT }
+	}
+}
+#パリ陥落
+news_event = {
+	id =TR_news.61
+	title = TR_news.61.t
+	desc = TR_news.61.d
+	picture = GFX_news_event_GER_occupy_paris
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.61.a
+		trigger = {
+			NOT = {
+				OR = { TAG = RAT TAG = FRA }
+			}
+		}
+	}
+	option = {
+		name = TR_news.61.b
+		trigger = { TAG =FRA }
+	}
+	option = {
+		name = TR_news.61.c
+		trigger = { TAG =RAT }
+	}
+}
+#フランス政府がアルジェリアへ亡命
+news_event = {
+	id =TR_news.62
+	title = TR_news.62.t
+	desc = TR_news.62.d
+	picture = GFX_news_event_French_army_parade_in_Algeria
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.62.a
+		trigger = {
+			NOT = {
+				OR = { TAG = RAT TAG = FRA }
+			}
+		}
+	}
+	option = {
+		name = TR_news.62.b
+		trigger = { TAG =FRA }
+	}
+	option = {
+		name = TR_news.62.c
+		trigger = { TAG =RAT }
+	}
+}
+#湘漢戦争
+news_event = {
+	id =TR_news.63
+	title = TR_news.63.t
+	desc = TR_news.63.d
+	picture = GFX_news_event_WHN_Northern_Expedition
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.63.a
+		trigger = {
+			NOT = {
+				OR = { TAG = WHN TAG = HNN }
+			}
+		}
+	}
+	option = {
+		name = TR_news.63.b
+		trigger = { TAG =WHN }
+	}
+	option = {
+		name = TR_news.63.c
+		trigger = { TAG =HNN }
 	}
 }

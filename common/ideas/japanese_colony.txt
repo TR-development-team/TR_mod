@@ -9,87 +9,98 @@
 			allowed = {
 				always = no
 			}
-                        picture = jap_zaibatsu_ally
+            picture = jap_zaibatsu_ally
+			cancel = {
+                NOT = { is_in_faction_with = JAP }
+            }
 
-			
-			removal_cost = -1
-	
-                        targeted_modifier = {
+            targeted_modifier = {
 				tag = JAP
 				trade_cost_for_target_factor = -0.30
 				extra_trade_to_target_factor = 0.30
 			}
 			modifier = {
 				consumer_goods_factor = 0.05
-                               industrial_capacity_factory = 0.10
+                industrial_capacity_factory = 0.10
 			}
 		}
-               Dainihon_Seito = {
+        Dainihon_Seito = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_zaibatsu_ally
-
-			
-			removal_cost = -1
+            picture = jap_zaibatsu_ally
+			cancel = {
+                NOT = { is_in_faction_with = JAP }
+            }
 	
 			modifier = {
-                                stability_factor = -0.2
-                                conscription = -0.005
-                                production_speed_buildings_factor = -0.1
+                stability_factor = -0.2
+                conscription = -0.005
+                production_speed_buildings_factor = -0.1
 				global_building_slots_factor = -0.2
-                                totalist_drift = 0.01
-                                syndicalist_drift = 0.01
-                                radical_socialist_drift = 0.01
+                totalist_drift = 0.01
+                syndicalist_drift = 0.01
+                radical_socialist_drift = 0.01
 			}
 		}
-                Hakkouitiu = {
+        Hakkouitiu = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_zaibatsu_ally
-
-			
-			removal_cost = -1
-	
+			cancel = {
+                NOT = { is_in_faction_with = JAP }
+            }
+            picture = jap_zaibatsu_ally
 
 			modifier = {
-                               consumer_goods_factor = -0.05
-                                production_speed_buildings_factor = 0.1
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.1
 			}
 		}
-                JAP_colony = {
+        JAP_colony = {
 			picture = jap_militarism_showa
+			cancel = {
+                NOT = { is_subject_of = JAP }
+            }
 			modifier = {
-                                ai_call_ally_desire_factor = -2000
-                                war_support_factor = -0.3
+                ai_call_ally_desire_factor = -2000
+                war_support_factor = -0.3
 			}
 		}
-                JAP_JAP_colony = {
+        JAP_JAP_colony = {
 			picture = jap_militarism_showa
+			cancel = {
+                NOT = { is_subject_of = JAP }
+            }
+
 			modifier = {
 				ai_call_ally_desire_factor = -2000
-                                war_support_factor = -0.15
-                                conscription_factor = 0.1
+                war_support_factor = -0.15
+                conscription_factor = 0.1
 			}
 		}
-                NMB_JAP_colony = {
+        NMB_JAP_colony = {
 			picture = jap_militarism_showa
+			cancel = {
+                NOT = { is_subject_of = JAP }
+            }
+
 			modifier = {
 				ai_call_ally_desire_factor = -2000
                                 conscription_factor = 0.2
 			}
 		}
-                NMB_JAP_Africa = {
+        NMB_JAP_Africa = {
 			picture = state_shintoism
+
 			modifier = {
 			    conscription = 0.05
-                            war_support_factor = 0.20
-                            army_attack_factor = 0.1
+                war_support_factor = 0.20
+                army_attack_factor = 0.1
 			    army_defence_factor = 0.1
 			}
 		}
-                JAPCO_black_thursday = {
+        JAPCO_black_thursday = {
 			allowed = {
 				always = no
 			}
@@ -105,18 +116,51 @@
 				min_export = -0.2
 			}
 		}
-                Nippon_Tettai_JAPAN = {
+		JAPCO_black_thursday_1 = {
+			name = JAPCO_black_thursday
 			allowed = {
 				always = no
 			}
 
-			picture = usa_great_depression_3
+			picture = great_depression
 			removal_cost = -1
 			modifier = {
-                                MONTHLY_POPULATION = 0.05
-                                consumer_goods_factor = 0.05
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				industrial_capacity_factory = -0.1
+				consumer_goods_factor = 0.1
+				min_export = -0.1
 			}
 		}
+		JAPCO_black_thursday_2 = {
+			name = JAPCO_black_thursday
+			allowed = {
+				always = no
+			}
 
-}
+			picture = great_depression
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				production_factory_max_efficiency_factor = -0.15
+				production_speed_buildings_factor = -0.2
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.15
+				min_export = -0.2
+			}
+		}
+        Nippon_Tettai_JAPAN = {
+			allowed = {
+				always = no
+			}
+			picture = usa_great_depression_3
+			removal_cost = -1
+
+			modifier = {
+                MONTHLY_POPULATION = 0.05
+                consumer_goods_factor = 0.05
+			}
+		}
+    }
 }

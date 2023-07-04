@@ -3,8 +3,11 @@ oob = "NGA_1936"
 
 JAP = {	set_autonomy = {	target = NGA	autonomous_state = imperial_colony	}	}
 set_cosmetic_tag = WAF_JAP_imperial_colony
-
 set_variable = {	NGA_unrest_level = 3	}
+
+country_event = { id = TR_jafrica.2 days = 5 }#恐慌
+country_event = { id = TR_jafrica.33 days = 45 }#西アフリカの部族紛争
+country_event = { id = TR_jafrica.36 days = 280 }#ラゴスでの抗議運動
 
 # Starting tech
 set_technology = {
@@ -20,11 +23,9 @@ add_ideas = {
 	Colonical_system
 	Tiyoda_Kensho
 	JAP_colony
+        NGA_North_South_divide
+        NGA_tribal_conflict
 }
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-                 }  
 add_dynamic_modifier = {	modifier = NGA_Country_Unrest	}
 
 set_convoys = 20
@@ -36,7 +37,19 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 8
+	syndicalist = 3
+	radical_socialist = 5
+	social_democrat = 14
+	social_liberal = 13
+	market_liberal = 9
+	social_conservative = 17
+	authoritarian_democrat = 24
+	paternal_autocrat = 4
+	national_populist = 3
+        Gnosticism = 0
 }
 
+recruit_character = NGA_Obafemi_Awolowo
 recruit_character = NGA_Minami_Jiro
+recruit_character = NGA_Nnamdi_Azikiwe

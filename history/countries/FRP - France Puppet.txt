@@ -1,0 +1,25 @@
+﻿capital = 16
+set_research_slots = 3
+
+set_cosmetic_tag = FRA_republic
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 5
+	syndicalist = 8
+	radical_socialist = 8
+	social_democrat = 12
+	social_liberal = 11
+	market_liberal = 12
+	social_conservative = 24
+	authoritarian_democrat = 9
+	paternal_autocrat = 2
+	national_populist = 9
+}
+
+recruit_character = FRP_Adrien_Marquet
+recruit_character = FRP_Benjamin_Peret 

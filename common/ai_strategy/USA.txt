@@ -115,3 +115,41 @@ USA_ignore_California_claims = {
 		value = 1
 	}
 }
+USA_Priority_Japan = {
+	allowed = {
+		tag = USA
+                is_in_faction_with = FRA
+		has_capitulated = no
+	}
+	enable = {
+                has_war_with = CAL
+		CAL = { has_capitulated = no }
+	}
+
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "RUS"
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "FRA"
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ITA"
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NTL"
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SWI"
+		value = 1000
+	}
+}

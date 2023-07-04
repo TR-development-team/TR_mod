@@ -1,0 +1,94 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		MCG_Mines_under_zaibatsu_control = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				NOT = { 867 = { is_owned_by = ROOT } }
+            }
+			picture = jap_zaibatsu_ally
+
+            targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.1
+				extra_trade_to_target_factor = 0.2
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+                stability_factor = -0.05
+				industrial_capacity_factory = 0.1
+				conscription_factor = -0.05
+				local_resources_factor = 0.1
+				global_building_slots_factor = -0.1
+			}
+		}
+		MCG_Mines_under_zaibatsu_control_1 = {
+			name = MCG_Mines_under_zaibatsu_control
+			allowed = {
+				always = no
+			}
+			cancel = {
+				NOT = { 867 = { is_owned_by = ROOT } }
+            }
+			picture = jap_zaibatsu_ally
+
+            targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.2
+				extra_trade_to_target_factor = 0.4
+			}
+			modifier = {
+				consumer_goods_factor = 0.05
+                stability_factor = -0.05
+				industrial_capacity_factory = 0.1
+				conscription_factor = -0.05
+				local_resources_factor = 0.1
+				global_building_slots_factor = -0.1
+				market_liberal_drift = 0.03
+			}
+		}
+		MCG_Kimbanguism = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_global_flag = MCG_colony_collapse
+            }
+            picture =chi_war_of_resistance3
+
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+                social_conservative_drift = 0.01
+                Gnosticism_drift = 0.01
+			}
+		}
+		
+		MCG_Darkest_Africa = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_global_flag = MCG_colony_collapse
+            }
+            picture = generic_agrarian_society
+
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.05
+				political_power_cost = 0.2
+			    consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				MONTHLY_POPULATION = -0.1
+			}
+		}
+}
+}

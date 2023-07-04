@@ -1,13 +1,13 @@
 characters={
 	YUN_long_yun={
-		name=CNK_long_yun
+		name=YUN_long_yun
 		portraits={
 			civilian={
-				large="gfx/leaders/CNK/Portrait_china_Lung_yun.png"
+				large="gfx/leaders/YUN/Portrait_YUN_long_yun_1.png"
 			}
 			army = {
 				small=GFX_portrait_CNK_long_yun_small
-				large="gfx/leaders/CNK/Portrait_china_Lung_yun.png"
+				large="gfx/leaders/YUN/Portrait_YUN_long_yun_1.png"
 			}
 		}
 		country_leader={
@@ -28,9 +28,39 @@ characters={
 			logistics_skill=2
 		}
 	}
-
+	YUN_Cai_E={
+		name=YUN_Cai_E
+		portraits={
+			civilian={
+				large="gfx/leaders/YUN/Portrait_YUN_Cai_E.png"
+			}
+			army = {
+				large="gfx/leaders/YUN/Portrait_YUN_Cai_E.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= dem_Military_junta_subtype
+		}
+		country_leader={
+			ideology= Military_junta_subtype
+		}
+		country_leader={
+			ideology=Nationalism_subtype
+		}
+		field_marshal={
+			traits={ politically_connected organizer }
+			skill=4
+			attack_skill=3
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
 	YUN_lu_han={
-		name=CNK_lu_han
+		name=YUN_lu_han
 		portraits={
 			army={
 				small=GFX_portrait_CNK_lu_han_small

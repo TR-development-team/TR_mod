@@ -1,0 +1,43 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		NGA_North_South_divide = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+                has_global_flag = NGA_colony_collapse
+            }
+			picture = usa_great_depression_3
+
+			modifier = {
+				political_power_cost = 0.15
+			    consumer_goods_factor = -0.05
+				stability_factor = -0.05
+				local_resources_factor = 0.10
+				industrial_capacity_factory = 0.03
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+
+		NGA_tribal_conflict = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_global_flag = NGA_colony_collapse
+            }
+            picture =chi_war_of_resistance3
+
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.1
+				conscription_factor = -0.03
+			}
+		}
+}
+}

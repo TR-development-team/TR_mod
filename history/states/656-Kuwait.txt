@@ -4,6 +4,9 @@ state={
 	manpower = 80000
 	
 	state_category = rural
+	resources={
+		oil=18
+	}
 	
 	history={
 		add_core_of = IRQ

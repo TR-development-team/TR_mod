@@ -194,44 +194,44 @@ focus_tree = {
 		hidden_effect = {
 		if = {
 			limit = {
-				CNK = { has_country_flag = CHI_Dislike_Wuhan }
+				CNK = { has_country_flag = WHN_Dislike_Wuhan }
 			}
 			XIB= { add_to_faction = CNK }
 		}
 		if = {
 			limit = {
-				NIG = { has_country_flag = CHI_Dislike_Wuhan }
+				NIG = { has_country_flag = WHN_Dislike_Wuhan }
 			}
 			XIB= { add_to_faction = NIG }
 		}
 		if = {
 			limit = {
-				NIG = { has_country_flag = CHI_Befriend_Wuhan }
+				NIG = { has_country_flag = WHN_Befriend_Wuhan }
 			}
 			end_puppet = NIG
 			NIG = { leave_faction = yes }
 		}
 		if = {
 			limit = {
-				YUN = { has_country_flag = CHI_Dislike_Wuhan }
+				YUN = { has_country_flag = WHN_Dislike_Wuhan }
 			}
 			XIB= { add_to_faction = YUN }
 		}
 		if = {
 			limit = {
-				QIG = { has_country_flag = CHI_Dislike_Wuhan }
+				QIG = { has_country_flag = WHN_Dislike_Wuhan }
 			}
 			XIB= { add_to_faction = QIG }
 		}
 		if = {
 			limit = {
-				SCH = { has_country_flag = CHI_Dislike_Wuhan }
+				SCH = { has_country_flag = WHN_Dislike_Wuhan }
 			}
 			XIB= { add_to_faction = SCH }
 		}
 		if = {
 			limit = {
-				GXC = { has_country_flag = CHI_Dislike_Wuhan }
+				GXC = { has_country_flag = WHN_Dislike_Wuhan }
 			}
 			XIB= { add_to_faction = GXC }
 		}

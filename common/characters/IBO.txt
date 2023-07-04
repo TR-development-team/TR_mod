@@ -1,0 +1,18 @@
+characters={
+	IBO_Nnamdi_Azikiwe={
+		name=NGA_Nnamdi_Azikiwe
+		portraits={
+			civilian={
+				large="gfx/leaders/NGA/Portrait_NGA_Nnamdi_Azikiwe.png"
+			}
+		}
+		country_leader={
+			ideology=oligarchy_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=Military_junta_subtype
+			id=-1
+		}
+	}
+}

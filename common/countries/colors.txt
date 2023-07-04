@@ -378,6 +378,10 @@ FRA = {	#フランス
 	color = rgb { 0 35 149 }
 	color_ui = rgb { 0 35 149 }
 }
+FRP = {	#フランス(傀儡用)
+	color = rgb { 96 130 182 }
+	color_ui = rgb { 96 130 182 }
+}
 GER = {	#ドイツ
 	color = rgb { 102 89 86 }
 	color_ui = rgb { 102 89 86 }
@@ -630,7 +634,6 @@ YUG = {	#ユーゴスラビア
 	color = rgb { 72 73 126 }
 	color_ui = rgb { 72 73 126 }
 }
-
 #アフリカ
 AFA = {	#アファール
 	color = rgb { 153 0 51 }
@@ -735,6 +738,10 @@ GNB = {	#ギニアビサウ
 HAR = {	#ハラール
 	color = rgb { 242 242 242 }
 	color_ui = rgb { 242 242 242 }
+}
+IBO = {	#イボ
+	color = rgb { 100 50 100 }
+	color_ui = rgb { 100 50 100 }
 }
 IVO = {	#コートジボワール
 	color = rgb { 247 127 0 }
@@ -855,6 +862,10 @@ VOL = {	#オートボルタ
 WES = {	#西サハラ
 	color = rgb { 255 178 102 }
 	color_ui = rgb { 255 178 102 }
+}
+YRB = {	#ヨルバ
+	color = rgb { 160 120 104 }
+	color_ui = rgb { 160 120 104 }
 }
 ZAM = {	#ザンビア
 	color = rgb { 8 48 0 }
@@ -1050,8 +1061,8 @@ TAH = {	#タヒチ
 ##追加国家
 #アジア
 ANH = {	#安徽
-	color = rgb { 105 132 200 }
-	color_ui = rgb { 105 132 200 }
+	color = rgb { 153 142 92 }
+	color_ui = rgb { 153 142 92 }
 }
 ARB = {	#アラブ
 	color = rgb { 86 151 120 }
@@ -1267,7 +1278,6 @@ VOR = {	#フォアアールベルク
 	color = rgb { 252 212 213 }
 	color_ui = rgb { 252 212 213 }
 }
-
 #アフリカ
 KAT = {	#カタンガ
 	color = rgb { 112 62 90 }

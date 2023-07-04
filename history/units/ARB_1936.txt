@@ -36,29 +36,29 @@ units = {
 		}
 		location = 8085
 		division_template = "Alfurqat Alfursan"		
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	division = {
 		#name = "Alfurqat Ar Riyad"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 1
+			name_order = 2
 		}
-		location = 2919
+		location = 10760
 		division_template = "Alfurqat Almasha"	
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 	division = {
 		#name = "Alfurqat Jiddah"
 		division_name = {    # New syntax for compatibility with name lists
 			is_name_ordered = yes
-			name_order = 2
+			name_order = 3
 		}
-		location = 2048
+		location = 7960
 		division_template = "Alfurqat Almasha"
-		start_equipment_factor = 0.3
+		start_equipment_factor = 1.0
 
 	}
 }

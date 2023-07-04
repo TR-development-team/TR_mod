@@ -44,7 +44,7 @@ country = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_production_bonus
+            picture = generic_production_bonus
 
 			
 			removal_cost = -1
@@ -56,55 +56,82 @@ country = {
 				stability_factor = 0.1
 			}
 		}  
-        JAP_Military_industrial_complex = {
+		JAP_Zaibatsu = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_zaibatsu_ally
+            picture = jap_zaibatsu_ally
 
 			
 			removal_cost = -1
 	
 
 			modifier = {
+                political_power_cost = 0.1
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+				production_speed_industrial_complex_factor = -0.05
+				industrial_concern_cost_factor = 0.25
+				aircraft_manufacturer_cost_factor = 0.25
+            }
+		}  
+        JAP_Alliance_with_Zaibatsu = {
+			name = JAP_Zaibatsu
+			allowed = {
+				always = no
+			}
+            picture = jap_zaibatsu_ally
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				stability_factor = -0.05
                 political_power_cost = 0.25
-                consumer_goods_factor = 0.025	
-                research_speed_factor = 0.05
-                production_factory_max_efficiency_factor = 0.1
-                production_factory_efficiency_gain_factor = 0.05
-                production_factory_start_efficiency_factor = 0.05
+                industrial_capacity_factory = 0.1
                 industrial_capacity_dockyard = 0.1
                 production_speed_arms_factory_factor = 0.1
-                production_speed_bunker_factor = 0.1
-                production_speed_coastal_bunker_factor = 0.1
-                production_speed_anti_air_building_factor = 0.1
                 production_speed_dockyard_factor = 0.1	
-                              }
+				production_speed_industrial_complex_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
+				industrial_concern_cost_factor = 0.25
+				aircraft_manufacturer_cost_factor = 0.25
+            }
 		}  
-        JAP_Military_industrial_complex_1 = {
+		JAP_Elimination_of_corruption = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_zaibatsu_ally
+            picture = jap_zaibatsu_ally
 
 			
 			removal_cost = -1
 	
 
 			modifier = {
-                political_power_cost = 0.5
-                consumer_goods_factor = 0.05	
-                research_speed_factor = 0.05
-                production_factory_max_efficiency_factor = 0.2
-                production_factory_efficiency_gain_factor = 0.1
-                production_factory_start_efficiency_factor = 0.1
-                industrial_capacity_dockyard = 0.2
-                production_speed_arms_factory_factor = 0.15
-                production_speed_bunker_factor = 0.2
-                production_speed_coastal_bunker_factor = 0.2
-                production_speed_anti_air_building_factor = 0.2
-                production_speed_dockyard_factor = 0.15
-                }
+                political_power_cost = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.1
+				global_building_slots_factor = 0.05
+            }
+		}  
+		JAP_Weakening_of_Zaibatsu = {
+			allowed = {
+				always = no
+			}
+            picture = jap_zaibatsu_ally
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                political_power_cost = -0.2
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.2
+				global_building_slots_factor = 0.1
+            }
 		}  
         JAP_Dried_out_countryside = {
 			allowed = {
@@ -190,6 +217,25 @@ country = {
 				industry_air_damage_factor = 0.2
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
+			}
+		}      
+		JAP_Prosperous_Cities_1= {
+			allowed = {
+				always = no
+			}
+             picture = JAP_Prosperous_Cities
+
+			
+			removal_cost = -1
+	
+
+			modifier = {
+				political_power_factor = -0.05
+				stability_factor = -0.05
+				industry_air_damage_factor = 0.1
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				power_balance_weekly = 0.001
 			}
 		}      
 		JAP_Prosperous_Cities_May_Day = {
@@ -314,7 +360,7 @@ country = {
                 political_power_factor = -0.1
 			}
 		}
-                JAP_rising_sun = {
+        JAP_rising_sun = {
 			allowed = {
 				always = no
 			}
@@ -322,13 +368,11 @@ country = {
 			picture = jap_militarism_shogun
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.1
-                                war_support_factor = 0.1
-                                political_power_factor = 0.15
-                                surrender_limit= 0.1
+                war_support_factor = 0.1
+                surrender_limit= 0.1
 			}
 		}
-                JAP_Omikokoro = {
+        JAP_Omikokoro = {
 			allowed = {
 				always = no
 			}
@@ -337,12 +381,12 @@ country = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.4
-                                war_support_factor = 0.4
-                                political_power_factor = 0.15
-                                surrender_limit= 0.1
+                war_support_factor = 0.4
+                political_power_factor = 0.15
+                surrender_limit= 0.1
 			}
 		}
-                JAP_SAISENTAN = {
+        JAP_SAISENTAN = {
 			allowed = {
 				always = no
 			}
@@ -351,14 +395,14 @@ country = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.05
-                                research_speed_factor = 0.1
-			        production_speed_buildings_factor = 0.15
-                                army_speed_factor = 0.1
-                                political_power_factor = -0.1
-                                surrender_limit= 0.1
+                research_speed_factor = 0.1
+			    production_speed_buildings_factor = 0.15
+                army_speed_factor = 0.1
+                political_power_factor = -0.1
+                surrender_limit= 0.1
 			}
 		}
-                JAP_soryokusen = {
+        JAP_soryokusen = {
 			allowed = {
 				always = no
 			}
@@ -373,7 +417,7 @@ country = {
                                 surrender_limit= 0.1
 			}
 		}
-                JAP_SHINSEI = {
+        JAP_SHINSEI = {
 			allowed = {
 				always = no
 			}
@@ -386,7 +430,7 @@ country = {
 			}
 		}
 
-                JAP_KEIKAKUKEIZAI = {
+        JAP_KEIKAKUKEIZAI = {
 			allowed = {
 				always = no
 			}
@@ -415,44 +459,230 @@ country = {
                 production_speed_buildings_factor = 0.2
 			}
 		}
-        JAP_Pacific_BELT = {
+        JAP_Science_for_New_Era = {
 			allowed = {
 				always = no
 			}
+            picture = jap_supremacy_of_technology
 
-			picture = man_five_year_plan_industry
-
+			
 			removal_cost = -1
+	
+
 			modifier = {
-                political_power_cost = 0.25
-                production_speed_buildings_factor = 0.1
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				industry_air_damage_factor = 0.3
+                research_speed_factor = 0.1
 			}
 		}
-        JAP_income_doubling_plan = {
+		JAP_Improved_rail_transportation = {
+			name = JAP_Improved_rail_transportation
 			allowed = {
 				always = no
 			}
+            picture = generic_build_infrastructure
 
-			picture = man_five_year_plan_industry
-
+			
 			removal_cost = -1
+	
+            equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
 			modifier = {
-				consumer_goods_factor = -0.03
-                political_power_cost = 0.25
-                production_speed_buildings_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				production_speed_supply_node_factor = 0.1
+			}
+		}
+		JAP_Improved_rail_transportation_1 = {
+			name = JAP_Improved_rail_transportation
+			allowed = {
+				always = no
+			}
+            picture = generic_build_infrastructure
+
+			
+			removal_cost = -1
+	
+            equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			modifier = {
+				production_speed_rail_way_factor = 0.1
+				production_speed_supply_node_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				supply_factor = 0.1
+			}
+		}
+		JAP_National_highway = {
+			allowed = {
+				always = no
+			}
+            picture = generic_exploit_mines
+
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				truck_attrition_factor = -0.2
+				supply_node_range = 0.15
 				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
-				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		JAP_bullet_train = {
+			name = generic_exploit_mines
+			allowed = {
+				always = no
+			}
+            picture = generic_build_infrastructure
+
+			
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
-				production_factory_start_efficiency_factor = 0.1
-				industry_air_damage_factor = 0.3
+				army_speed_factor = 0.1
 			}
 		}
+		JAP_mass_production_mass_market_car = {
+			allowed = {
+				always = no
+			}
+            equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			picture = FRA_Automobile_factory
+			removal_cost = -1
+			modifier = {
+			}
+        }
+		JAP_Economic_Planning_Agency = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
 
-                JAP_KENPEITAI = {
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		JAP_Public_Housing_Act = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = 0.02
+				stability_factor = 0.05
+				MONTHLY_POPULATION = 0.2
+			}
+		}        
+		JAP_business_management = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_start_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}     
+		JAP_convoy_system = {
+			allowed = {
+				always = no
+			}
+            picture = generic_production_bonus
+
+			
+			removal_cost = -1
+	
+			modifier = {
+				political_power_factor = 0.05
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = -0.1
+			}
+		}     
+		JAP_rapid_economic_growth = {
+			allowed = {
+				always = no
+			}
+
+			picture = man_five_year_plan_industry
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.2
+			}
+		}
+		JAP_Rice_Price_Act = {
+			allowed = {
+				always = no
+			}
+            picture = generic_agrarian_society
+
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.03
+			    consumer_goods_factor = 0.02
+				min_export = -0.05
+			}
+		}     
+		JAP_Rice_Control_Act = {
+			allowed = {
+				always = no
+			}
+            picture = generic_agrarian_society
+
+			
+			removal_cost = -1
+	
+			modifier = {
+				stability_factor = 0.06
+			    consumer_goods_factor = 0.05
+				min_export = -0.1
+			}
+		}     
+		JAP_Free_distribution_of_rice = {
+			allowed = {
+				always = no
+			}
+            picture = generic_agrarian_society
+
+			
+			removal_cost = -1
+	
+			modifier = {
+				consumer_goods_factor = -0.02
+				stability_factor = -0.03
+			}
+		}     
+        JAP_KENPEITAI = {
 			allowed = {
 				always = no
 			}
@@ -464,8 +694,7 @@ country = {
 				resistance_target = -0.2
 			}
 		}
-
-               JAP_Korean_Question = {
+        JAP_Korean_Question = {
 			allowed = {
 				always = no
 			}
@@ -474,10 +703,10 @@ country = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.1
-                                resistance_target = 0.05
+                resistance_target = 0.05
 			}
 		}
-                JAP_black_thursday = {
+        JAP_black_thursday = {
 			allowed = {
 				always = no
 			}
@@ -1166,51 +1395,49 @@ country = {
                             non_core_manpower = 0.01
 			}
 		}
-                JAP_NOT_END_Imperialism = {
+        JAP_NOT_END_Imperialism = {
 			allowed = {
 				always = no
 			}
-                        picture = air_support_focus
-
+            picture = air_support_focus
 			
 			removal_cost = -1
 	
 
 			modifier = {
-                            improve_relations_maintain_cost_factor = -0.1
-                            opinion_gain_monthly_factor = -0.1
-                            opinion_gain_monthly_same_ideology_factor = 0.1
-                            justify_war_goal_time = -0.1
+                improve_relations_maintain_cost_factor = -0.1
+                opinion_gain_monthly_factor = -0.1
+                opinion_gain_monthly_same_ideology_factor = 0.1
+                justify_war_goal_time = -0.1
 			    send_volunteers_tension = -0.20
-                            non_core_manpower = -0.01
+                non_core_manpower = -0.01
 			}
 		}
-                JAP_SOCIALISM = {
+        JAP_SOCIALISM = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_supremacy_of_technology
+            picture = jap_supremacy_of_technology
 
 			
 			removal_cost = -1
 	
 
 			modifier = {
-				 consumer_goods_factor = 0.1
-                                 research_speed_factor = 0.05
-                                 production_speed_buildings_factor = 0.1
-                                 production_factory_max_efficiency_factor = 0.15
-				 production_factory_efficiency_gain_factor = 0.15
-				 industrial_capacity_factory = 0.15
-                                 MONTHLY_POPULATION = 0.2
+				consumer_goods_factor = 0.1
+                research_speed_factor = 0.05
+                production_speed_buildings_factor = 0.1
+                production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.15
+                MONTHLY_POPULATION = 0.2
 			}
 		}
-            JAP_KAIZOUKEIKAKU = {
+        JAP_KAIZOUKEIKAKU = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_supremacy_of_technology
-
+            picture = jap_supremacy_of_technology
 			
 			removal_cost = -1
 	
@@ -1224,20 +1451,20 @@ country = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_supremacy_of_technology
+            picture = jap_supremacy_of_technology
 
 			
 			removal_cost = -1
 	
 
 			modifier = {
-                                 political_power_factor = 0.1
-				 consumer_goods_factor = -0.05
-                                 resistance_target = -0.3
-                                 conscription_factor = 0.05
-                                 industrial_capacity_factory = 0.1
-                                 global_building_slots_factor = 0.2
-                                 min_export = 0.1
+                political_power_factor = 0.1
+				consumer_goods_factor = -0.05
+                resistance_target = -0.3
+                conscription_factor = 0.05
+                industrial_capacity_factory = 0.1
+                global_building_slots_factor = 0.2
+                min_export = 0.1
 			}
 		}
         JAP_Parliament = {
@@ -1264,8 +1491,7 @@ country = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_supremacy_of_technology
-
+            picture = jap_supremacy_of_technology
 			
 			removal_cost = -1
 	
@@ -1286,11 +1512,9 @@ country = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_the_unthinkable_option
-
+            picture = jap_the_unthinkable_option
 			
 			removal_cost = -1
-	
 
 			modifier = {
                 political_power_gain = 0.2
@@ -1305,7 +1529,7 @@ country = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_local_self_management
+            picture = generic_local_self_management
 
 			
 			removal_cost = -1
@@ -1319,7 +1543,7 @@ country = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_supremacy_of_technology
+            picture = jap_supremacy_of_technology
 
 			
 			removal_cost = -1
@@ -1419,33 +1643,33 @@ country = {
 			allowed = {
 				always = no
 			}
-                        picture = JAP_co_prosper
+            picture = JAP_co_prosper
 
 			
 			removal_cost = -1
 	
 
 			modifier = {
-                              political_power_gain = 0.1   
-                              drift_defence_factor = 0.25 
-                              trade_opinion_factor = 0.1
-                              justify_war_goal_time = -0.25
-                              guarantee_cost = -0.5
+                political_power_gain = 0.1   
+                drift_defence_factor = 0.25 
+                trade_opinion_factor = 0.1
+                justify_war_goal_time = -0.25
+                guarantee_cost = -0.5
 			}
 		}
         JAP_Kinyutosei = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_exploit_mines
+            picture = generic_exploit_mines
 
 			
 			removal_cost = -1
 	
 
 			modifier = {
-                                 consumer_goods_factor = -0.05
-                                 stability_factor = -0.05  	
+                consumer_goods_factor = -0.05
+                stability_factor = -0.05  	
 
 			}
 		}  
@@ -1459,10 +1683,10 @@ country = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = 0.05
-                                political_power_cost = 0.1
-                                production_speed_buildings_factor = 0.1
-                                local_resources_factor = 0.1
-                                conversion_cost_civ_to_mil_factor = -0.5
+                political_power_cost = 0.1
+                production_speed_buildings_factor = 0.1
+                local_resources_factor = 0.1
+                conversion_cost_civ_to_mil_factor = -0.5
 			}
 		}
         JAP_Messhi_Houko = {
@@ -1476,11 +1700,11 @@ country = {
 	
 
 			modifier = {
-                              consumer_goods_factor = -0.05
-                              industrial_capacity_factory = 0.1
-                              industrial_capacity_dockyard = 0.1
-                              production_factory_max_efficiency_factor = -0.1
-                              production_factory_efficiency_gain_factor = -0.1
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
+                production_factory_max_efficiency_factor = -0.1
+                production_factory_efficiency_gain_factor = -0.1
 			}
 		}
         JAP_SHP_idea = {
@@ -1493,7 +1717,7 @@ country = {
 			modifier = {
 				stability_factor = 0.1
 				resistance_target = -0.1
-                                enemy_operative_capture_chance_factor = 0.2
+                enemy_operative_capture_chance_factor = 0.2
 			}
 		}
         JAP_SANGYOUHOKKOKAI = {
@@ -1507,9 +1731,9 @@ country = {
 	
 
 			modifier = {
-			         consumer_goods_factor = 0.05
-                                 production_factory_max_efficiency_factor = 0.15
-				 production_factory_efficiency_gain_factor = 0.15
+			    consumer_goods_factor = 0.05
+                production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
         JAP_black_thursday_KISHI = {
@@ -1642,10 +1866,10 @@ country = {
 	
 
 			modifier = {
-                        consumer_goods_factor = 0.05
-                        production_factory_max_efficiency_factor = 0.15
-                        compliance_gain = 0.01
-                        MONTHLY_POPULATION = 0.25
+                consumer_goods_factor = 0.05
+                production_factory_max_efficiency_factor = 0.15
+                compliance_gain = 0.01
+                MONTHLY_POPULATION = 0.25
 			}
 		}
                 
@@ -1660,8 +1884,8 @@ country = {
 	
 
 			modifier = {
-                        political_power_gain = 0.2
-                        stability_factor = 0.1
+                political_power_gain = 0.2
+                stability_factor = 0.1
 			}
 		}
         JAP_New_Constitution = {
@@ -1675,11 +1899,11 @@ country = {
 	
 
 			modifier = {
-                        political_power_gain = 0.4
-                        stability_factor = 0.2
+                political_power_gain = 0.4
+                stability_factor = 0.2
 			}
 		}
-                JAP_New_Constitution1 = {
+        JAP_New_Constitution1 = {
 			allowed = {
 				always = no
 			}
@@ -1690,13 +1914,13 @@ country = {
 	
 
 			modifier = {
-                        political_power_gain = 0.4
-                        stability_factor = 0.2
-                        compliance_gain = 0.01
-                        non_core_manpower = 0.04
+                political_power_gain = 0.4
+                stability_factor = 0.2
+                compliance_gain = 0.01
+                non_core_manpower = 0.04
 			}
 		}
-                JAP_Kazokunoteiko = {
+        JAP_Kazokunoteiko = {
 			allowed = {
 				always = no
 			}
@@ -1707,12 +1931,12 @@ country = {
 	
 
 			modifier = {
-                        political_power_factor = -0.1
-                        stability_weekly = -0.002
-                        war_support_factor = -0.1
+                political_power_factor = -0.1
+                stability_weekly = -0.002
+                war_support_factor = -0.1
 			}
 		}
-                JAP_Kita_Economy1 = {
+        JAP_Kita_Economy1 = {
 			allowed = {
 				always = no
 			}
@@ -1723,11 +1947,11 @@ country = {
 	
 
 			modifier = {
-                        political_power_factor = -0.05
-                        consumer_goods_factor = -0.05
+                political_power_factor = -0.05
+                consumer_goods_factor = -0.05
 			}
 		}
-                JAP_Kita_Economy2 = {
+        JAP_Kita_Economy2 = {
 			allowed = {
 				always = no
 			}
@@ -1738,14 +1962,14 @@ country = {
 	
 
 			modifier = {
-                        political_power_factor = -0.05
-                        consumer_goods_factor = -0.05
-                        production_speed_buildings_factor = 0.1
-                        industrial_capacity_factory = 0.1
-                        industrial_capacity_dockyard = 0.1
+                political_power_factor = -0.05
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.1
+                industrial_capacity_factory = 0.1
+                industrial_capacity_dockyard = 0.1
 			}
 		}
-                JAP_autogestion = {
+        JAP_autogestion = {
 			allowed = {
 				always = no
 			}
@@ -1756,45 +1980,43 @@ country = {
 	
 
 			modifier = {
-                        production_factory_start_efficiency_factor = 0.1
-                        line_change_production_efficiency_factor = 0.2
+                production_factory_start_efficiency_factor = 0.1
+                line_change_production_efficiency_factor = 0.2
 			}
 		}
-                JAP_High_welfare = {
+        JAP_High_welfare = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_the_unthinkable_option
+            picture = jap_the_unthinkable_option
 
 			
 			removal_cost = -1
 	
 
 			modifier = {
-                        consumer_goods_factor = 0.05
-                        stability_factor = 0.1
-                        MONTHLY_POPULATION = 0.25
+                consumer_goods_factor = 0.05
+                stability_factor = 0.1
+                MONTHLY_POPULATION = 0.25
 			}
 		}
-                JAP_Esperanto = {
+        JAP_Esperanto = {
 			allowed = {
 				always = no
 			}
-                        picture = por_nation_in_arms
-
+            picture = por_nation_in_arms
 			
 			removal_cost = -1
-	
 
 			modifier = {
-                        political_power_cost = 0.1
-                        research_speed_factor = -0.05
-                        compliance_gain = 0.01
-                        non_core_manpower = 0.01
-                        required_garrison_factor = -0.02
+                political_power_cost = 0.1
+                research_speed_factor = -0.05
+                compliance_gain = 0.01
+                non_core_manpower = 0.01
+                required_garrison_factor = -0.02
 			}
 		}
-                JAP_War_is_Peace = {
+        JAP_War_is_Peace = {
 			allowed = {
 				always = no
 			}
@@ -1805,76 +2027,70 @@ country = {
 	
 
 			modifier = {
-                        conscription = 0.02
-                        mobilization_speed = 0.1
-                        justify_war_goal_time = -0.25
-                        offensive_war_stability_factor = 0.1
-                        defensive_war_stability_factor = 0.1
-                        war_support_factor = 0.10
+                conscription = 0.02
+                mobilization_speed = 0.1
+                justify_war_goal_time = -0.25
+                offensive_war_stability_factor = 0.1
+                defensive_war_stability_factor = 0.1
+                war_support_factor = 0.10
 			}
 		}
-                JAP_Equality_Problem = {
+        JAP_Equality_Problem = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_democratic_drift_bonus
-
+            picture = generic_democratic_drift_bonus
 			
 			removal_cost = -1
-	
 
 			modifier = {
-                        stability_factor = 0.1
-                        industrial_capacity_factory = -0.1
-                        industrial_capacity_dockyard = -0.1
-                        production_factory_max_efficiency_factor = 0.1
-                        production_factory_efficiency_gain_factor = 0.1
+                stability_factor = 0.1
+                industrial_capacity_factory = -0.1
+                industrial_capacity_dockyard = -0.1
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-                JAP_Equality_Problem1 = {
+        JAP_Equality_Problem1 = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_democratic_drift_bonus
-
+            picture = generic_democratic_drift_bonus
 			
 			removal_cost = -1
-	
 
 			modifier = {
-                        political_power_cost = 0.1
-                        stability_factor = 0.1
-                        industrial_capacity_factory = -0.1
-                        industrial_capacity_dockyard = -0.1
-                        production_factory_max_efficiency_factor = 0.1
-                        production_factory_efficiency_gain_factor = 0.1
-                        production_speed_buildings_factor = 0.1
-                        global_building_slots_factor = 0.1
+                political_power_cost = 0.1
+                stability_factor = 0.1
+                industrial_capacity_factory = -0.1
+                industrial_capacity_dockyard = -0.1
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.1
+                production_speed_buildings_factor = 0.1
+                global_building_slots_factor = 0.1
 			}
 		}
-                JAP_Equality_Problem2 = {
+        JAP_Equality_Problem2 = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_democratic_drift_bonus
-
+            picture = generic_democratic_drift_bonus
 			
 			removal_cost = -1
-	
 
 			modifier = {
-                        research_speed_factor = 0.1
-                        political_power_cost = 0.2
-                        stability_factor = 0.1
-                        industrial_capacity_factory = -0.1
-                        industrial_capacity_dockyard = -0.1
-                        production_factory_max_efficiency_factor = 0.1
-                        production_factory_efficiency_gain_factor = 0.1
-                        production_speed_buildings_factor = 0.1
-                        global_building_slots_factor = 0.1
+                research_speed_factor = 0.1
+                political_power_cost = 0.2
+                stability_factor = 0.1
+                industrial_capacity_factory = -0.1
+                industrial_capacity_dockyard = -0.1
+                production_factory_max_efficiency_factor = 0.1
+                production_factory_efficiency_gain_factor = 0.1
+                production_speed_buildings_factor = 0.1
+                global_building_slots_factor = 0.1
 			}
 		}
-                JAP_Emperor_for_People = {
+        JAP_Emperor_for_People = {
 			allowed = {
 				always = no
 			}
@@ -1882,10 +2098,10 @@ country = {
 			picture = jap_militarism_shogun
 			removal_cost = -1
 			modifier = {
-                                political_power_factor = 0.1
-                                war_support_weekly = 0.01
-                                stability_weekly = 0.01
-                                surrender_limit= 0.1
+                political_power_factor = 0.1
+                war_support_weekly = 0.01
+                stability_weekly = 0.01
+                surrender_limit= 0.1
 			}
 		}
 		JAP_KOR_Constitution = {
@@ -1902,34 +2118,44 @@ country = {
 			picture = generic_constitutional_guarantee
 			
 			modifier = {
-                                consumer_goods_factor = 0.01
-                                political_power_cost = 0.1
-			       	stability_factor = 0.10
-                                conscription_factor = 0.05
-                                non_core_manpower = 0.02
-                                compliance_growth = 0.2
+                consumer_goods_factor = 0.01
+                political_power_cost = 0.1
+			    stability_factor = 0.10
+                conscription_factor = 0.05
+                non_core_manpower = 0.02
+                compliance_growth = 0.2
 			}
 		}
 
-                JAP_Three_Oceans = {
+        JAP_Three_Oceans = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_navy_bonus
-
+            picture = generic_navy_bonus
 			
 			removal_cost = -1
-	
 
 			modifier = {
-                            experience_gain_navy_factor = 0.1
-                            naval_speed_factor = 0.1
-                            naval_hit_chance = 0.1
-                            navy_max_range_factor = 0.1
-                            sortie_efficiency = 0.1
+                experience_gain_navy_factor = 0.1
+                naval_speed_factor = 0.1
+                naval_hit_chance = 0.1
+                navy_max_range_factor = 0.1
+                sortie_efficiency = 0.1
 			}
 		}
-                JAP_Zosenryoku = {
+        JAP_Zosenryoku = {
+			allowed = {
+				always = no
+			}
+            picture = generic_sea_focused_navy
+			
+			removal_cost = -1
+
+			modifier = {
+                industrial_capacity_dockyard = 0.2
+			}
+		}
+        JAP_Rikusentai = {
 			allowed = {
 				always = no
 			}
@@ -1939,24 +2165,11 @@ country = {
 	
 
 			modifier = {
-                            industrial_capacity_dockyard = 0.2
+                amphibious_invasion = 0.10
+                invasion_preparation = -0.25
 			}
 		}
-                JAP_Rikusentai = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_sea_focused_navy
-			
-			removal_cost = -1
-	
-
-			modifier = {
-                            amphibious_invasion = 0.10
-                            invasion_preparation = -0.25
-			}
-		}
-                the_long_lance = {
+        the_long_lance = {
 			allowed = {
 				always = no
 			}
@@ -1971,7 +2184,37 @@ country = {
 				naval_torpedo_screen_penetration_factor = 0.3
 			}
 		}
-                JAP_SEISHINDOIN = {
+        JAP_SEISHINDOIN = {
+			allowed = {
+				always = no
+			}
+            picture = jap_supremacy_of_will
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+			}
+		}
+        JAP_SEISHINDOIN_01 = {
+			allowed = {
+				always = no
+			}
+            picture = jap_supremacy_of_will
+			
+			removal_cost = -1
+	
+
+			modifier = {
+                conscription = 0.025
+                training_time_army_factor = -0.1
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+			}
+		}
+        JAP_SEISHINDOIN_02 = {
 			allowed = {
 				always = no
 			}
@@ -1981,96 +2224,65 @@ country = {
 	
 
 			modifier = {
-                            army_core_attack_factor = 0.1
-                            army_core_defence_factor = 0.1
+                conscription = 0.025
+                training_time_army_factor = -0.1
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+                army_org_Factor = 0.1
 			}
 		}
-                JAP_SEISHINDOIN_01 = {
+        JAP_KARYOKUYUETSU = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_supremacy_of_will
+             picture = jap_supremacy_of_technology
 			
 			removal_cost = -1
 	
 
 			modifier = {
-                            conscription = 0.025
-                            training_time_army_factor = -0.1
-                            army_core_attack_factor = 0.1
-                            army_core_defence_factor = 0.1
+                offence = 0.1
 			}
 		}
-                JAP_SEISHINDOIN_02 = {
+        JAP_KARYOKUYUETSU_01 = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_supremacy_of_will
+            picture = jap_supremacy_of_technology
 			
 			removal_cost = -1
 	
-
-			modifier = {
-                            conscription = 0.025
-                            training_time_army_factor = -0.1
-                            army_core_attack_factor = 0.1
-                            army_core_defence_factor = 0.1
-                            army_org_Factor = 0.1
-			}
-		}
-                JAP_KARYOKUYUETSU = {
-			allowed = {
-				always = no
-			}
-                        picture = jap_supremacy_of_technology
-			
-			removal_cost = -1
-	
-
-			modifier = {
-                            offence = 0.1
-			}
-		}
-                JAP_KARYOKUYUETSU_01 = {
-			allowed = {
-				always = no
-			}
-                        picture = jap_supremacy_of_technology
-			
-			removal_cost = -1
-	
-                        equipment_bonus = {
+            equipment_bonus = {
 				armor = {
 					build_cost_ic = -0.15
 					instant = yes
 				}
 			}
 			modifier = {
-                            offence = 0.1
+                offence = 0.1
 			}
 		}
-                JAP_KARYOKUYUETSU_02 = {
+        JAP_KARYOKUYUETSU_02 = {
 			allowed = {
 				always = no
 			}
-                        picture = jap_supremacy_of_technology
+            picture = jap_supremacy_of_technology
 			
 			removal_cost = -1
 	
-                        equipment_bonus = {
+            equipment_bonus = {
 				armor = {
 					build_cost_ic = -0.15
 					instant = yes
 				}
 			}
 			modifier = {
-                            offence = 0.1
-                            planning_speed = 0.10
-                            max_planning = 0.1
+                offence = 0.1
+                planning_speed = 0.10
+                max_planning = 0.1
 			}
 		}
-
-		JAP_superior_will = {
+		JAP_Uchiteshiyaman = {
 			allowed = {
 				always = no
 			}
@@ -2084,18 +2296,14 @@ country = {
 			picture = jap_supremacy_of_will
 			
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
+				army_attack_against_major_factor = 0.1
+				army_defence_against_major_factor = 0.1
 				army_morale_factor = 0.1
 			}
 		}
 		JAP_supremacy_of_technology = {
 			allowed = {
 				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
 			}
 			
 			removal_cost = -1
@@ -2107,7 +2315,7 @@ country = {
 				armor = 0.05
 			}
 		}
-               JAP_Gunshuku_research = {
+        JAP_Gunshuku_research = {
 			allowed = {
 				always = no
 			}
@@ -2117,12 +2325,15 @@ country = {
 			picture = RUS_scientist_defect
 			
 			modifier = {
-                                stability_factor = -0.05
-				war_support_factor = -0.10
-                                political_power_factor = 0.05
+                stability_factor = -0.1
+                political_power_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_dockyard_factor = 0.05
 			}
 		}
-               JAP_TO_Kikan = {
+        JAP_TO_Kikan = {
 			allowed = {
 				always = no
 			}
@@ -2132,10 +2343,10 @@ country = {
 			picture = JAP_to_kikan
 			
 			modifier = {
-                                operative_slot = 2
+                operative_slot = 2
 			}
 		}
-               JAP_TO_Kikan2 = {
+        JAP_TO_Kikan2 = {
 			allowed = {
 				always = no
 			}
@@ -2145,11 +2356,11 @@ country = {
 			picture = JAP_to_kikan
 			
 			modifier = {
-                                operative_slot = 2
-                                intelligence_agency_defense = 0.5
+                operative_slot = 2
+                intelligence_agency_defense = 0.5
 			}
 		}               
-                JAP_TO_Kikan3 = {
+        JAP_TO_Kikan3 = {
 			allowed = {
 				always = no
 			}
@@ -2159,12 +2370,12 @@ country = {
 			picture = JAP_to_kikan
 			
 			modifier = {
-                                operative_slot = 2
-                                intelligence_agency_defense = 0.5
-                                enemy_operative_capture_chance_factor = 0.2
+                operative_slot = 2
+                intelligence_agency_defense = 0.5
+                enemy_operative_capture_chance_factor = 0.2
 			}
 		}
-                JAP_TO_Kikan4 = {
+        JAP_TO_Kikan4 = {
 			allowed = {
 				always = no
 			}
@@ -2174,13 +2385,13 @@ country = {
 			picture = JAP_to_kikan
 			
 			modifier = {
-                                operative_slot = 2
-                                intelligence_agency_defense = 0.5
-                                enemy_operative_capture_chance_factor = 0.2
-                                own_operative_detection_chance_factor = -0.2
+                operative_slot = 2
+                intelligence_agency_defense = 0.5
+                enemy_operative_capture_chance_factor = 0.2
+                own_operative_detection_chance_factor = -0.2
 			}
 		}
-                JAP_CIRO = {
+        JAP_CIRO = {
 			allowed = {
 				always = no
 			}
@@ -2190,12 +2401,12 @@ country = {
 			picture = generic_spy_intel
 			
 			modifier = {
-                                stability_factor = 0.05
-                                war_support_factor = 0.10
-                                political_power_factor = -0.02
+                stability_factor = 0.05
+                war_support_factor = 0.10
+                political_power_factor = -0.02
 			}
 		}
-                JAP_CIRO2 = {
+        JAP_CIRO2 = {
 			allowed = {
 				always = no
 			}
@@ -2205,117 +2416,55 @@ country = {
 			picture = generic_spy_intel
 			
 			modifier = {
-                                stability_factor = 0.1
-                                war_support_factor = 0.15
-                                political_power_factor = -0.04
+                stability_factor = 0.1
+                war_support_factor = 0.15
+                political_power_factor = -0.04
 			}
 		}
-                JAP_army_technology = {
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				always = yes
-			}
-			
-			removal_cost = -1
-
-			picture = jap_supremacy_of_technology
-			
-			research_bonus = {
-                                infantry_weapons = 0.05
-                                artillery = 0.05
-                                armor = 0.05
-                                motorized_equipment = 0.05
-			}
-			modifier = {
-                                political_power_factor = -0.01
-                                land_doctrine_cost_factor = -0.1
-			}
-		}
-                JAP_General_Staff = {
+        JAP_General_Staff = {
 			allowed = {
 				always = no
 			}
 
 			removal_cost = -1
 
-			picture = cze_planning_bonus
+			picture = CZE_planning_bonus
 			
 			modifier = {
-                                political_power_factor = -0.01
-                                planning_speed = 0.25
-                                max_planning = 0.1
-                                naval_invasion_capacity = 4
+                political_power_cost = 0.05
+                planning_speed = 0.1
+				max_command_power = 30
 			}
 		} 
-                JAP_Coastal_fortress_Plan = {
+		JAP_General_Staff_1 = {
+			name = JAP_General_Staff
 			allowed = {
 				always = no
 			}
 
 			removal_cost = -1
 
-			picture = generic_fortify_the_borders
+			picture = CZE_planning_bonus
 			
 			modifier = {
-                                political_power_factor = -0.01
-                                production_speed_coastal_bunker_factor = 0.1
-                                production_speed_anti_air_building_factor = 0.1
-                                production_speed_radar_station_factor = 0.1
+                political_power_cost = 0.1
+                planning_speed = 0.2
+                max_command_power = 40
+				army_leader_start_planning_level = 1 
 			}
 		} 
-                JAP_Coastal_fortress_Plan2 = {
+		JAP_Army_Academy = {
 			allowed = {
 				always = no
 			}
 
 			removal_cost = -1
 
-			picture = generic_fortify_the_borders
+			picture = CZE_planning_bonus
 			
 			modifier = {
-                                political_power_factor = -0.02
-                                production_speed_coastal_bunker_factor = 0.2
-                                production_speed_anti_air_building_factor = 0.2
-                                production_speed_radar_station_factor = 0.2
-			}
-		} 
-                JAP_Yashima_fortress_Plan = {
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = generic_fortify_the_borders
-			
-			modifier = {
-                                political_power_factor = -0.02
-                                production_speed_bunker_factor = 0.2
-                                production_speed_anti_air_building_factor = 0.1
-                                production_speed_radar_station_factor = 0.1
-			}
-		} 
-                JAP_Urban_warfare = {
-			allowed = {
-				always = no
-			}
-
-			removal_cost = -1
-
-			picture = mex_politicised_army
-
-            equipment_bonus = {
-                category_light_infantry = {
-				   soft_attack = 0.05
-				   hard_attack = 0.05
-			           }
-                }
-			
-			modifier = {
-
+                army_leader_cost_factor = -0.2
+				army_leader_start_level = 1 
 			}
 		} 
         JAP_Marines_Buff = {
@@ -2332,11 +2481,33 @@ country = {
 				breakthrough = 0.1
 				soft_attack = 0.1
 				hard_attack = 0.05
-			      }
-
-                        }
+			    }
+            }
 			modifier = {
                 naval_invasion_penalty = -0.1
+			}
+		} 
+		JAP_Marines_Buff_1 = {
+			name = JAP_Marines_Buff
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = kure_naval_arsenal
+			
+            equipment_bonus = {
+                marine = {
+				breakthrough = 0.1
+				soft_attack = 0.1
+				hard_attack = 0.05
+			    }
+            }
+			modifier = {
+                naval_invasion_penalty = -0.1
+				naval_invasion_capacity = 5
+				amphibious_invasion = 0.2
 			}
 		} 
         JAP_Mechanized_infantry = {
@@ -2348,28 +2519,549 @@ country = {
 
 			picture = FRA_motorized_focus
 
-			equipment_bonust = {
-                              mechanized_equipment = {
-			      breakthrough = 0.05
-			     }
-                        }
+			equipment_bonus = {
+                mechanized_equipment = {
+			        breakthrough = 0.05
+			    }
+                }
 			modifier = {
-                            mechanized_attack_factor = 0.05
-                            mechanized_defence_factor = 0.05
+                mechanized_attack_factor = 0.05
+                mechanized_defence_factor = 0.05
                              
 			}
 		} 
-        JAP_Infantry_Equipment_Buff = {
+		JAP_Tank_School = {
+			allowed = {
+				always = no
+			}
+            picture = generic_armor
+
+			
+			removal_cost = -1
+
+			modifier = {
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
+		JAP_army_obata_plan = {
+			name = JAP_army_obata_plan
+			allowed = {
+				always = no
+			}
+            picture = generic_armor
+
+			
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.1
+			}
+		}
+		JAP_army_obata_plan_1 = {
+			name = JAP_army_obata_plan
+			allowed = {
+				always = no
+			}
+            picture = generic_armor
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.1
+			}
+		}
+		JAP_army_obata_plan_2 = {
+			name = JAP_army_obata_plan
+			allowed = {
+				always = no
+			}
+            picture = generic_armor
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.1
+				air_cas_efficiency = 0.2
+				breakthrough_factor = 0.1
+			}
+		}
+		JAP_army_obata_plan_3 = {
+			name = JAP_army_obata_plan
+			allowed = {
+				always = no
+			}
+            picture = generic_armor
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			
+			removal_cost = -1
+
+			modifier = {
+				army_speed_factor = 0.15
+				air_cas_efficiency = 0.2
+				breakthrough_factor = 0.1
+				army_armor_speed_factor = 0.1
+				org_loss_when_moving = -0.2
+			}
+		}
+		JAP_army_nagata_plan = {
+			allowed = {
+				always = no
+			}
+            picture = MEX_revolutionary_army
+			
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+			}
+		}
+		JAP_army_nagata_plan_1 = {
+			name = JAP_army_nagata_plan
+			allowed = {
+				always = no
+			}
+            picture = MEX_revolutionary_army
+			
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+				training_time_army_factor = -0.2
+			}
+		}
+		JAP_army_nagata_plan_2 = {
+			name = JAP_army_nagata_plan
+			allowed = {
+				always = no
+			}
+            picture = MEX_revolutionary_army
+			
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+				army_org_factor = 0.1
+				training_time_army_factor = -0.2
+			}
+		}
+		JAP_army_nagata_plan_3 = {
+			name = JAP_army_nagata_plan
+			allowed = {
+				always = no
+			}
+            picture = MEX_revolutionary_army
+			
+			removal_cost = -1
+
+			modifier = {
+				conscription = 0.015
+				army_org_factor = 0.1
+				training_time_army_factor = -0.2
+				army_attack_factor = 0.05
+				army_defence_factor = 0.1
+			}
+		}
+		JAP_army_okamura_plan = {
+			allowed = {
+				always = no
+			}
+            picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1	
+			}
+		}
+		JAP_army_okamura_plan_1 = {
+			name = JAP_army_okamura_plan
+			allowed = {
+				always = no
+			}
+            picture = generic_infantry_bonus
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+		JAP_army_okamura_plan_2 = {
+			name = JAP_army_okamura_plan
+			allowed = {
+				always = no
+			}
+            picture = generic_infantry_bonus
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				army_org_factor = 0.1
+				army_speed_factor = 0.05
+			}
+		}
+		JAP_army_okamura_plan_3 = {
+			name = JAP_army_okamura_plan
+			allowed = {
+				always = no
+			}
+            picture = generic_infantry_bonus
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.1
+				army_org_factor = 0.1
+				army_speed_factor = 0.05
+				out_of_supply_factor = -0.1
+				attrition = -0.1
+			}
+		}
+		JAP_1st_Squadron = {
+			name = JAP_1st_Squadron
+			allowed = {
+				always = no
+			}
+            picture = JAP_double_research
+			removal_cost = -1
+			modifier = {
+				air_agility_factor = 0.1
+				army_bonus_air_superiority_factor = 0.1
+			}
+		}
+		JAP_1st_Squadron_1 = {
+			name = JAP_1st_Squadron
+			allowed = {
+				always = no
+			}
+            picture = JAP_double_research
+			removal_cost = -1
+			modifier = {
+				air_agility_factor = 0.1
+				army_bonus_air_superiority_factor = 0.1
+				air_defence_factor = 0.1
+				fighter_sortie_efficiency = 0.2
+			}
+		}
+		JAP_1st_Squadron_2 = {
+			name = JAP_1st_Squadron
+			allowed = {
+				always = no
+			}
+            picture = JAP_double_research
+			removal_cost = -1
+			modifier = {
+				air_agility_factor = 0.1
+				army_bonus_air_superiority_factor = 0.1
+				air_defence_factor = 0.1
+				air_close_air_support_org_damage_factor = 0.2
+				mines_planting_by_air_factor = 0.1
+				fighter_sortie_efficiency = 0.2
+			}
+		}
+		JAP_1st_Squadron_3 = {
+			name = JAP_1st_Squadron
+			allowed = {
+				always = no
+			}
+            picture = JAP_double_research
+			removal_cost = -1
+			modifier = {
+				air_agility_factor = 0.1
+				army_bonus_air_superiority_factor = 0.1
+				air_defence_factor = 0.1
+				air_bombing_targetting = 0.1
+				air_range_factor = 0.1
+				fighter_sortie_efficiency = 0.2
+			}
+		}
+		JAP_1st_Squadron_4 = {
+			name = JAP_1st_Squadron
+			allowed = {
+				always = no
+			}
+            picture = JAP_double_research
+			removal_cost = -1
+			modifier = {
+				air_agility_factor = 0.1
+				army_bonus_air_superiority_factor = 0.1
+				air_defence_factor = 0.1
+				air_strategic_bomber_night_penalty = -0.2
+				air_strategic_bomber_bombing_factor = 0.15
+				fighter_sortie_efficiency = 0.2
+			}
+		}
+		JAP_air_force_academy = {
+			name = JAP_air_force_academy
+			allowed = {
+				always = no
+			}
+            picture = eng_special_air_service
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.10
+				air_ace_bonuses_factor = 0.1
+				experience_gain_air = 0.1
+			}
+		}
+		JAP_air_force_academy_1 = {
+			name = JAP_air_force_academy
+			allowed = {
+				always = no
+			}
+            picture = eng_special_air_service
+			removal_cost = -1
+			modifier = {
+				air_ace_generation_chance_factor = 0.2
+				air_ace_bonuses_factor = 0.2
+				experience_gain_air = 0.2
+			}
+		}
+		JAP_aircraft_arsenal = {
 			allowed = {
 				always = no
 			}
 
 			removal_cost = -1
 
-			picture = generic_infantry_bonus
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}	
+		} 
+		JAP_navy_academy = {
+			name = JAP_navy_academy
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_naval_escort_battle
 			modifier = {
-                            army_infantry_defence_factor = 0.1		
-                            cavalry_defence_factor = 0.1	
+                experience_gain_navy = 0.1
+				navy_leader_cost_factor = -0.3
+			}
+		} 
+		JAP_navy_academy_1 = {
+			name = JAP_navy_academy
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_naval_escort_battle
+			modifier = {
+                experience_gain_navy = 0.2
+				navy_leader_cost_factor = -0.3
+				navy_leader_start_level = 1 
+			}
+		} 
+		JAP_IJN_reform = {
+			name = JAP_IJN_reform
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_sea_power
+			modifier = {
+                naval_accidents_chance = -0.1
+				repair_speed_factor = 0.1
+			}
+		} 
+		JAP_IJN_reform_1 = {
+			name = JAP_IJN_reform
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_sea_power
+			modifier = {
+                naval_accidents_chance = -0.1
+				repair_speed_factor = 0.1
+				convoy_escort_efficiency = 0.3
+			}
+		} 
+		JAP_IJN_reform_2 = {
+			name = JAP_IJN_reform
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_sea_power
+			modifier = {
+                naval_accidents_chance = -0.1
+				repair_speed_factor = 0.1
+				naval_morale_factor = 0.15
+			}
+		} 
+		JAP_IJN_reform_3 = {
+			name = JAP_IJN_reform
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_sea_power
+			modifier = {
+                naval_accidents_chance = -0.1
+				repair_speed_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				navy_capital_ship_attack_factor = 0.1
+			}
+		} 
+		JAP_submarine = {
+			name = JAP_submarine
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_type_93_torpedo
+			modifier = {
+                naval_torpedo_hit_chance_factor = 0.1
+				naval_torpedo_screen_penetration_factor = 0.1
+			}
+		} 
+		JAP_submarine_1 = {
+			name = JAP_submarine
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = JAP_type_93_torpedo
+			modifier = {
+                naval_torpedo_hit_chance_factor = 0.1
+				naval_torpedo_screen_penetration_factor = 0.1
+				spotting_chance = 0.1
+			}
+		} 
+		JAP_Coastal_navy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_coastal_navy
+			modifier = {
+				naval_coordination = 0.1
+				positioning = 0.1
+			}
+		} 
+		JAP_blue_water_navy = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_sea_focused_navy
+			modifier = {
+				navy_max_range_factor = 0.1
+				naval_speed_factor = 0.1
+			}
+		} 
+		JAP_decisive_fleet = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			modifier = {
+				naval_defense_factor = 0.1
+				naval_hit_chance = 0.1
+			}
+		} 
+		JAP_air_fleet = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_carrier_bonus
+			modifier = {
+				navy_carrier_air_targetting_factor = 0.1
+				navy_carrier_air_agility_factor = 0.1
+			}
+		} 
+		JAP_Unparalleled_shipbuilding_capacity = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_naval_manufacturer_2
+			modifier = {
+                industrial_capacity_dockyard = 0.15
 			}
 		} 
         JAP_Triservice_Cooperation = {
@@ -2399,6 +3091,7 @@ country = {
                 war_support_factor = 0.10
 			}
 		} 
+
 }
 naval_manufacturer = {
 		
@@ -4452,21 +5145,7 @@ naval_manufacturer = {
 				cos_school_of_psychology
 			}
 		}
-		JAP_Ugaki_Kazushige_cos = {
-			name = JAP_Ugaki_Kazushige
-			picture = JAP_Ugaki_Kazushige
-			cancel_if_invalid = yes			
-			allowed = {
-				original_tag = JAP
-                        }
-			available = {
-				NOT = { has_country_flag = JAP_Ugaki_reserve }
-                        }
-			traits = { 
-				chief_of_staff
-				cos_school_of_defence
-			}
-		}
+
 		JAP_Kanin_Kotohito = {
 			
 			picture = JAP_Kanin_Kotohito
@@ -4477,17 +5156,6 @@ naval_manufacturer = {
 			traits = { 
 				chief_of_staff
 				cos_school_of_psychology
-			}
-		}
-		JAP_Sugiyama_Gen = {
-			picture = JAP_Sugiyama_Gen
-			cancel_if_invalid = yes			
-			allowed = {
-				original_tag = JAP
-                        }
-			traits = { 
-				chief_of_staff
-				cos_school_of_defence
 			}
 		}
 		JAP_Nagata_Tetsuzan_cos = {
@@ -4514,6 +5182,59 @@ naval_manufacturer = {
 			traits = { 
 				chief_of_staff
 				cos_school_of_fire_support
+			}
+		}
+		JAP_Obata_Toshiro_cos = {
+			name = JAP_Obata_Toshiro
+			picture = JAP_Obata_Toshiro
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = JAP
+                        }
+			available = {
+				NOT = { has_country_flag =JAP_Ugaki_Nagata }
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+		JAP_Okamura_Yasuji_cos = {
+			name = JAP_Okamura_Yasuji
+			picture = JAP_Okamura_Yasuji
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = JAP
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+		JAP_Sugiyama_Gen = {
+			picture = JAP_Sugiyama_Gen
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = JAP
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+		JAP_Ugaki_Kazushige_cos = {
+			name = JAP_Ugaki_Kazushige
+			picture = JAP_Ugaki_Kazushige
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = JAP
+                        }
+			available = {
+				NOT = { has_country_flag = JAP_Ugaki_reserve }
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_defence
 			}
 		}
 		JAP_Yamashita_Tomoyuki = {

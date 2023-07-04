@@ -4,8 +4,9 @@ oob = "NMB_1936"
 
 JAP = {	set_autonomy = {	target = NMB	autonomous_state = imperial_colony	}	}
 set_cosmetic_tag = COUNTRY_JAP
-
 set_variable = {	NMB_unrest_level = 0	}
+
+country_event = { id = TR_jafrica.4 days = 5 }#恐慌
 
 set_research_slots = 3
 # Starting tech
@@ -27,10 +28,6 @@ add_ideas = {
         Tiyoda_Kensho
         NMB_JAP_Africa
 }
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-                 }  
 add_dynamic_modifier = {	modifier = NMB_Country_Unrest	}
 set_convoys = 20
 

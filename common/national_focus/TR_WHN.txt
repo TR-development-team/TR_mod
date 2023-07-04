@@ -558,13 +558,19 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-		declare_war_on = {
-			target = HNN
-			type = annex_everything
+		if = {
+			limit = { NOT = { is_ally_with = HNN } }
+			declare_war_on = {
+				target = HNN
+				type = annex_everything
+			}
 		}
-		declare_war_on = {
-			target = RJN
-			type = annex_everything
+		if = {
+			limit = { NOT = { is_ally_with = RJN } }
+			declare_war_on = {
+				target = RJN
+				type = annex_everything
+			}
 		}
 		}
 	}
@@ -708,7 +714,7 @@ focus_tree = {
 		}
 	completion_reward = {
 		add_stability = 0.1
-		set_cosmetic_tag = WHN_minguo
+		set_cosmetic_tag = CHI_minguo
 		set_capital = {state = 613}
 		}
 	}

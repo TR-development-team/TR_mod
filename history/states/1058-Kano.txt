@@ -3,9 +3,11 @@ state={
 	id=1058
 	name="STATE_1058" 
 	manpower = 4248479
-	
 	state_category = rural
-
+	resources={
+		chromium = 5
+		tungsten = 12
+	}
 	history={
 		owner = SKT
 		add_core_of = SKT

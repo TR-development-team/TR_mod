@@ -498,9 +498,6 @@
 			allowed = {
 				always = no
 			}
-                        
-
-			
 			removal_cost = -1
                      
 			picture = generic_communism_drift_bonus
@@ -516,8 +513,6 @@
 			allowed = {
 				always = no
 			}
-                        
-
 			
 			removal_cost = -1
                      
@@ -533,8 +528,6 @@
 			allowed = {
 				always = no
 			}
-                        
-
 			
 			removal_cost = -1
                      
@@ -552,8 +545,6 @@
 			allowed = {
 				always = no
 			}
-                        
-
 			
 			removal_cost = -1
                      
@@ -573,10 +564,8 @@
 				always = no
 			}
             picture = FRA_expansion
-
 			
 			removal_cost = -1
-	
 
 			modifier = {
                 conscription = 0.01
@@ -588,10 +577,8 @@
 				always = no
 			}
             picture = generic_production_bonus
-
 			
 			removal_cost = -1
-	
 
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
@@ -839,6 +826,77 @@
 				attrition = -0.1
 			}
 		}
+		FRA_reparations_from_ITA = {
+			allowed = {
+				always = no
+			}
+            picture = chi_forced_conscription
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		ITA_reparations_to_FRA = {
+			allowed = {
+				always = no
+			}
+            picture = chi_forced_conscription
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		ITA_reparations_from_FRA = {
+			allowed = {
+				always = no
+			}
+            picture = chi_forced_conscription
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		FRA_reparations_to_ITA = {
+			allowed = {
+				always = no
+			}
+            picture = chi_forced_conscription
+			
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		ITA_limitation_of_armaments = {
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+            }
+            picture = tfv_can_conscription_crisis
+
+			on_add = {
+				set_rule = {
+					can_not_declare_war = yes
+				}
+			}
+			on_remove = {
+				set_rule = {
+					can_not_declare_war = no
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				training_time_factor = 1.0
+				mobilization_speed = -0.5
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+			}
+		}
 }
     #minister
     Head_of_State = {	
@@ -956,6 +1014,29 @@
 				Head_of_State
                 paternal_autocrat
 				TR_stern_imperialist
+			}
+		}
+		FRA_Henri_VI = {
+            allowed = {
+		        original_tag = FRA
+		    }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+		    picture = FRA_henri_d_orleans
+		    removal_cost = -1
+	        traits = { 
+				Head_of_State
+                paternal_autocrat
+				TR_autocratic_charmer
 			}
 		}
         FRA_Jacques_Doriot_hs = {

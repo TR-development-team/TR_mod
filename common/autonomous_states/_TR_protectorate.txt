@@ -17,8 +17,6 @@ autonomy_state = {
 		extra_trade_to_overlord_factor = 0.25
 		overlord_trade_cost_factor = -0.25
 		license_subject_master_purchase_cost = -0.25
-		cic_to_overlord_factor = 0.25
-		mic_to_overlord_factor = 0.25
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
@@ -44,12 +42,12 @@ autonomy_state = {
 	}
 	
 	modifier = {
-		autonomy_manpower_share = 0.75
-		extra_trade_to_overlord_factor = 0.75
-		overlord_trade_cost_factor = -0.75
-		license_subject_master_purchase_cost = -0.75
-		cic_to_overlord_factor = 0.75
-		mic_to_overlord_factor = 0.75
+		autonomy_manpower_share = 0.5
+		extra_trade_to_overlord_factor = 0.5
+		overlord_trade_cost_factor = -0.5
+		license_subject_master_purchase_cost = -0.5
+		cic_to_overlord_factor = 0.5
+		mic_to_overlord_factor = 0.5
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}

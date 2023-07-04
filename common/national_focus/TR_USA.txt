@@ -7,7 +7,7 @@ focus_tree = {
 			tag = USA
 		}
 	}
-        default = no
+    default = no
 	#社会党の政策
 	focus = {
 		id = USA_GxEhtjnU
@@ -15,17 +15,16 @@ focus_tree = {
 		x = 6
 		y = 0
 		cost = 7
-                available = {
-                          NOT  = { has_country_flag = USA_anarchy }
-                       }
+        available = {
+            NOT  = { has_country_flag = USA_anarchy }
+            }
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-			add_stability = 0.025
-                        add_political_power = 25	
-
+		add_stability = 0.025
+        add_political_power = 25	
 		}
 	}
 	#全国産業復興法
@@ -41,8 +40,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-			add_stability = 0.05
-
+		add_stability = 0.05
 		}
 	}
 	#公正な雇用
@@ -58,8 +56,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-			add_stability = 0.05
-
+		add_stability = 0.05
 		}
 	}
 	#公共事業の促進
@@ -75,8 +72,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-			add_stability = 0.05	
-
+		add_stability = 0.05	
 		}
 	}
 
@@ -101,23 +97,22 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-                        
-			swap_ideas = {
-				remove_idea = USA_depression
-				add_idea = USA_depression_1
+        swap_ideas = {
+			remove_idea = USA_depression
+			add_idea = USA_depression_1
 			}	
 		}
 	}
 	#1936年大統領選挙
 	focus = {
 		id = USA_1936
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_generic_elections
 		x = 6
 		y = 3
-                available = {
-                            always = no
-                       }
-                bypass = {
+        available = {
+            always = no
+            }
+        bypass = {
 			has_country_flag = USA_1936SENKYO
 		}
 		cost = 10

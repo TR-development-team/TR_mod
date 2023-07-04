@@ -3,7 +3,9 @@ state={
 	name="STATE_847"
 	manpower = 5832479
 	state_category = city
-
+	resources={
+		chromium = 15
+	}
 	history={
 		owner = SKT
 		add_core_of = SKT

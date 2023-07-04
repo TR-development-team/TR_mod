@@ -1,26 +1,20 @@
 WHN_united_policy = {
 	china_attack_Independent_warlord = {
 		icon = generic_nationalism
-        allowed = { can_become_china = yes } 
+        allowed = { always = no } 
 		available = {    
-			has_country_flag = attack_Independent_warlord_allowed   
 			OR = {
 				is_neighbor_of = FROM
 				any_allied_country = { is_neighbor_of = FROM }
 				any_subject_country = { is_neighbor_of = FROM }
 			}
+			NOT = { has_war_with = FROM }
 		}
 		visible = {
-			is_subject = no
+			is_faction_leader = yes
 		}
-		target_array = global.china_tags_array
 		target_trigger = {
-			is_neighbor_of = ROOT
 			FROM = { is_in_faction = no }
-		}
-		target_root_trigger = {
-			can_declare_war_on = FROM
-            is_subject = no
 		}
 
  		cancel_trigger = {
@@ -179,7 +173,7 @@ WHN_militaly_reform = {
 			NOT = { has_country_flag = japanese_support_government }
 		}
 		visible = {
-                        NOT = { has_idea = foreign_advisory_group }
+            NOT = { has_idea = foreign_advisory_group }
 		}
 		targets = { RAT }
 		fire_only_once = yes

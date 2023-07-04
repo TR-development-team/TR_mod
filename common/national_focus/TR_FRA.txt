@@ -1712,20 +1712,21 @@ focus = {
 	prerequisite = { focus = FRA_DIP_4 }
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
+		add_threat = 5
 		34 = {
 			add_core_of = FRA
 		}
 				8 = {
 			add_core_of = FRA
 		}
-	create_wargoal = {
-		target = BEL
-		type = annex_everything
-	}
-				create_wargoal = {
-		target = LUX
-		type = annex_everything
-	}
+	    create_wargoal = {
+		    target = BEL
+		    type = annex_everything
+	    }
+		create_wargoal = {
+		    target = LUX
+		    type = annex_everything
+	    }
 	}
 }
 #ロマンディの分離主義を煽る
@@ -1751,6 +1752,7 @@ focus = {
 	prerequisite = { focus = FRA_DIP_4 }
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
+		add_threat = 5
 		country_event = TR_france.16
 	}
 }
@@ -1760,7 +1762,7 @@ focus = {
 	icon = GFX_focus_attack_italy
 	x = 0
 	y = 3
-	cost = 5
+	cost = 10
 	ai_will_do = {
 		factor = 60
 	}
@@ -1768,11 +1770,16 @@ focus = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
 		is_neighbor_of = ITA
+		735 = { is_owned_by = ITA }
+		846 = { is_owned_by = ITA }
 		}
     available_if_capitulated = no
     bypass = {
-	    NOT = { country_exists = ITA }
-        FRA = { is_in_faction_with = ITA }
+		OR = { 
+			NOT = { country_exists = ITA }
+			FRA = { is_in_faction_with = ITA }
+		}
+
         }
 	ai_will_do = {
 		factor = 50
@@ -1795,12 +1802,7 @@ focus = {
 	prerequisite = { focus = FRA_DIP_6 }
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
-		    add_named_threat = { threat = 10 name = FRA_ITA_WAR_THREAT }
-            add_state_claim = 158
-			create_wargoal = {
-				target = ITA
-				type = annex_everything
-			}
+			country_event = TR_france.30
 	}
 }
 #協商の拡大
@@ -1959,8 +1961,25 @@ focus = {
 	available = {
 		has_country_flag = FRA_Seijiantei
 		is_subject = no
-		RUS = { has_country_flag =RUS_OCREVOLUTION_END is_in_faction = no NOT = { has_country_flag = RUS_SR_Dictator }}
-		FRA = { OR = { has_war_with = JAP has_war_with = RAT } is_faction_leader = yes }
+		RUS = { 
+			has_country_flag =RUS_OCREVOLUTION_END 
+			is_in_faction = no 
+			is_subject = no
+			NOT = { has_country_flag = RUS_SR_Dictator }
+			NOT = { has_idea = RUS_CIVILWAR_MARKS }
+			NOT = { has_idea = RUS_CIVILWAR_MARKS_1 }
+			NOT = { has_idea = RUS_CIVILWAR_MARKS_2 }
+			OR = { 
+				has_war_with = JAP 
+				has_war_with = RAT
+			}
+		}
+		FRA = { 			
+			OR = { 
+			    has_war_with = JAP 
+			    has_war_with = RAT
+            }
+            is_faction_leader = yes }
 		}
 		bypass = {is_in_faction_with = RUS}
 	prerequisite = { focus = FRA_DIP_14 }
@@ -1989,6 +2008,8 @@ focus = {
 	prerequisite = { focus = FRA_DIP_8 }
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
+		give_guarantee = USA
+        FRA = { give_guarantee = FRA }
 		add_ideas = FRA_USA_Friendship
         reverse_add_opinion_modifier = {
 				target = FRA
@@ -2002,7 +2023,7 @@ focus = {
             }
 	}
 }
-#米仏同盟の公式化
+#米仏同盟の発展
 focus = {
 	id = FRA_DIP_17
 	icon = GFX_focus_chi_mission_to_the_us
@@ -2080,7 +2101,7 @@ focus = {
 	icon = GFX_focus_ger_bulwark_against_bolshevism
 	x = -2
 	y = 4
-	cost = 5
+	cost = 10
 	mutually_exclusive = { 
 		focus = FRA_DIP_23
 	}
@@ -2920,6 +2941,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Economy_Reform
 		owns_state = 19
+		controls_state = 19
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {
@@ -2952,6 +2974,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Economy_Reform
 		owns_state = 21
+		controls_state = 21
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {
@@ -2984,6 +3007,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Economy_Reform
 		owns_state = 29
+		controls_state = 29
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {
@@ -3016,6 +3040,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Economy_Reform
 		owns_state = 14
+		controls_state = 14
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {
@@ -3049,6 +3074,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Economy_Reform
 		owns_state = 31
+		controls_state = 31
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {
@@ -3082,6 +3108,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Economy_Reform
 		owns_state = 20
+		controls_state = 20
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {
@@ -3115,6 +3142,7 @@ focus = {
 	available = {
 		has_country_flag = FRA_Economy_Reform
 		owns_state = 28
+		controls_state = 28
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {
@@ -3151,6 +3179,7 @@ focus = {
 		owns_state = 16
 		is_subject = no
 		has_war = no 
+		controls_state = 16
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {
@@ -3173,6 +3202,7 @@ focus = {
 		owns_state = 16
 		is_subject = no
 		has_war = no 
+		controls_state = 16
 	}
 	relative_position_id = FRA_Economy_1
 	completion_reward = {

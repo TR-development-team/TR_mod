@@ -241,9 +241,6 @@ characters = {
 	}
 
 	ETH_desta_damtew = {
-			allowed = {
-				has_dlc = "By Blood Alone"
-			}
 			name = ETH_desta_damtew
 			portraits = {
 				army = {
@@ -283,9 +280,6 @@ characters = {
 	}
 
 	ETH_ras_kassa = {
-			allowed = {
-				has_dlc = "By Blood Alone"
-			}
 			name = ETH_ras_kassa
 			portraits = {
 				army = {
@@ -329,9 +323,6 @@ characters = {
 
 	ETH_ayalew_birru = {
 		name = ETH_ayalew_birru
-		allowed_civil_war = {
-			has_government = neutrality
-		}
 		portraits = {
 			army = {
 				large=GFX_portrait_ETH_ayalew_birru

@@ -1,0 +1,19 @@
+characters = {
+	CMR_Watanabe_Masanosuke = {
+		name = CMR_Watanabe_Masanosuke
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CMR/Portrait_CMR_Watanabe_Masanosuke.png"
+			}
+		}
+		country_leader = {
+			ideology = Totalist_Leninist_subtype
+			id = -1
+		}
+		country_leader = {
+			ideology = Leninist_subtype
+			id = -1
+		}
+	}
+}
+	

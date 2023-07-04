@@ -2,9 +2,14 @@
 ###tooltip###
 EAF_unrest_inc_tt:0 "植民地不穏度が§R1§!上がる。"
 EAF_unrest_dec_tt:0 "植民地不穏度が§G1§!下がる。"
+EAF_jafrica_12_tt:0 "§R独立を求めるテロリスト共は当然我らに抵抗するだろう！§!"
 ###ideas###
 EAF_Country_Unrest:0 "£pol_violence 植民地不穏度の影響"
 EAF_Country_Unrest_desc:0 "§R現在の£pol_violence 植民地不穏度に合わせて修正が入る。§!\n\n日本の4つのアフリカ植民地は、独立や自治を求める運動の高まりにより悪影響を受ける。\n§R不穏度が高すぎると原住民が反乱を起こし、最終的に植民地が崩壊してしまうかもしれない…§!"
+EAF_rice_cultivation_plan:0 "東アフリカ稲作計画"
+EAF_rice_cultivation_plan_desc:0 "アフリカという広大な大地を日本の食糧庫に変えるための計画。日本の稲作技術を導入することで、効率的な食糧生産を可能にすることができる。コメは気候を選ぶ作物であるものの、小麦やトウモロコシに比べて生産性が高い。アフリカに定着させることで日本人のみならず、先住民の食糧事情の改善にも寄与するはずである。立派な灌漑施設を作り上げよう。"
+EAF_battle_against_infection:0 "感染症との闘い"
+EAF_battle_against_infection_desc:0 "アフリカ睡眠病、マラリア、住血吸虫症。東アフリカに住む我々はこれらの感染症と闘わなければならない。長年の努力と「研究所」から届く成果により、感染症の発生件数は減少傾向にあるものの、それでは足りない。根絶させなければならない。保健への投資は必須であり、更に病院を増やし、医師を育成する必要がある。"
 ###decision###
 EAF_Africa_category:0 "£pol_violence 植民地不穏度の影響"
 EAF_Africa_category_desc:0 "現在の£pol_violence 植民地不穏度: [?EAF_unrest_level|-]"

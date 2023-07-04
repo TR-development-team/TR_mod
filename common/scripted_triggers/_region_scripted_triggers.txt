@@ -212,7 +212,16 @@ is_mainland_china = {
 	}
 }
 
-
+is_nigeria = {
+	OR = {
+		state = 558
+		state = 847
+		state = 1051
+		state = 1052
+		state = 1058
+		state = 1059
+	}
+}
 
 is_in_asia = {
 	capital_scope = { is_on_continent = asia }

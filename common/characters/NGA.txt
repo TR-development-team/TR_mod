@@ -1,4 +1,20 @@
 characters={
+	NGA_Obafemi_Awolowo={
+		name=NGA_Obafemi_Awolowo
+		portraits={
+			civilian={
+				large="gfx/leaders/NGA/Portrait_NGA_Obafemi_Awolowo.png"
+			}
+		}
+		country_leader={
+			ideology=African_socialism_rs_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=African_socialism_subtype
+			id=-1
+		}
+	}
 	NGA_Minami_Jiro={
 		name=JAP_Minami_Jiro
 		portraits={
@@ -17,6 +33,22 @@ characters={
 		}
 		country_leader={
 			ideology= kokoku_shikan_subtype
+		}
+	}
+	NGA_Nnamdi_Azikiwe={
+		name=NGA_Nnamdi_Azikiwe
+		portraits={
+			civilian={
+				large="gfx/leaders/NGA/Portrait_NGA_Nnamdi_Azikiwe.png"
+			}
+		}
+		country_leader={
+			ideology=oligarchy_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=Military_junta_subtype
+			id=-1
 		}
 	}
 }

@@ -410,7 +410,7 @@
 				stability_factor = 0.1
 			}
 		}
-                OTT_Turkey_State = {
+        OTT_Turkey_State = {
 			allowed = {
 				always = no
 			}
@@ -418,12 +418,12 @@
 			picture = generic_manpower_bonus
 			removal_cost = -1
 			modifier = {
-                                offensive_war_stability_factor = 0.1
+                offensive_war_stability_factor = 0.1
 				army_attack_factor = 0.1
-                                non_core_manpower = 0.05
+                non_core_manpower = 0.05
 			}
 		}
-                OTT_Turkey_Republic = {
+        OTT_Turkey_Republic = {
 			allowed = {
 				always = no
 			}
@@ -431,10 +431,10 @@
 			picture = generic_manpower_bonus
 			removal_cost = -1
 			modifier = {
-                                MONTHLY_POPULATION = 0.1
-                                industrial_capacity_factory = 0.05
-                                production_speed_bunker_factor = 0.15
-                                army_defence_factor = 0.1
+                MONTHLY_POPULATION = 0.1
+                industrial_capacity_factory = 0.05
+                production_speed_bunker_factor = 0.15
+                army_defence_factor = 0.1
 			}
 		}
 		}

@@ -5,7 +5,7 @@ on_actions = {
 				limit = {
 					NOT = {
 						EAF = {
-							has_country_flag = EAF_colony_collapse
+							has_global_flag = EAF_colony_collapse
 						}
 					}
 				}
@@ -188,6 +188,40 @@ on_actions = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						check_variable = {
+							EAF_unrest_level > 5
+						}
+					}
+					set_variable = {
+						EAF_Country_Unrest_political_power_cost = 0.18
+					}
+					set_variable = {
+						EAF_Country_Unrest_stability_weekly = -0.012
+					}
+					set_variable = {
+						EAF_Country_Unrest_war_support_factor = -0.18
+					}
+					set_variable = {
+						EAF_Country_Unrest_resistance_target = 0.18
+					}
+					set_variable = {
+						EAF_Country_Unrest_required_garrison_factor = 0.18
+					}
+					set_variable = {
+						EAF_Country_Unrest_surrender_limit = -0.18
+					}
+					country_event = {
+						id = TR_jafrica.12
+						days = 30
+					}
+					JAP = {
+						set_variable = {
+							EAF_colony_deficit = 0.06
+						}
+					}
+				}
 			}
 		}
 	}
@@ -197,7 +231,7 @@ on_actions = {
 				limit = {
 					NOT = {
 						MCG = {
-							has_country_flag = MCG_colony_collapse
+							has_global_flag = MCG_colony_collapse
 						}
 					}
 				}
@@ -206,6 +240,7 @@ on_actions = {
 						check_variable = {
 							MCG_unrest_level = 0
 						}
+					}
 						set_variable = {
 							MCG_Country_Unrest_political_power_cost = 0
 						}
@@ -233,7 +268,6 @@ on_actions = {
 							}
 						}
 					}
-				}
 				if = {
 					limit = {
 						check_variable = {
@@ -384,6 +418,40 @@ on_actions = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						check_variable = {
+							MCG_unrest_level > 5
+						}
+					}
+					set_variable = {
+						MCG_Country_Unrest_political_power_cost = 0.18
+					}
+					set_variable = {
+						MCG_Country_Unrest_stability_weekly = -0.012
+					}
+					set_variable = {
+						MCG_Country_Unrest_war_support_factor = -0.18
+					}
+					set_variable = {
+						MCG_Country_Unrest_resistance_target = 0.18
+					}
+					set_variable = {
+						MCG_Country_Unrest_required_garrison_factor = 0.18
+					}
+					set_variable = {
+						MCG_Country_Unrest_surrender_limit = -0.18
+					}
+					country_event = {
+						id = TR_jafrica.61
+						days = 30
+					}
+					JAP = {
+						set_variable = {
+							MCG_colony_deficit = 0.06
+						}
+					}
+				}
 			}
 		}
 	}
@@ -393,7 +461,7 @@ on_actions = {
 				limit = {
 					NOT = {
 						NGA = {
-							has_country_flag = NGA_colony_collapse
+							has_global_flag = NGA_colony_collapse
 						}
 					}
 				}
@@ -402,6 +470,7 @@ on_actions = {
 						check_variable = {
 							NGA_unrest_level = 0
 						}
+					}
 						set_variable = {
 							NGA_Country_Unrest_political_power_cost = 0
 						}
@@ -426,7 +495,6 @@ on_actions = {
 							}
 						}
 					}
-				}
 				if = {
 					limit = {
 						check_variable = {
@@ -577,6 +645,52 @@ on_actions = {
 						}
 					}
 				}
+				if = {
+					limit = {
+						check_variable = {
+							NGA_unrest_level > 5
+						}
+					}
+					558 = { set_demilitarized_zone = yes }
+					776 = { set_demilitarized_zone = yes }
+					777 = { set_demilitarized_zone = yes }
+					1051 = { set_demilitarized_zone = yes }
+					set_variable = {
+						NGA_Country_Unrest_political_power_cost = 0.18
+					}
+					set_variable = {
+						NGA_Country_Unrest_stability_weekly = -0.012
+					}
+					set_variable = {
+						NGA_Country_Unrest_war_support_factor = -0.18
+					}
+					set_variable = {
+						NGA_Country_Unrest_resistance_target = 0.18
+					}
+					set_variable = {
+						NGA_Country_Unrest_required_garrison_factor = 0.18
+					}
+					set_variable = {
+						NGA_Country_Unrest_surrender_limit = -0.18
+					}
+					country_event = {
+						id = TR_jafrica.39
+						days = 30
+					}
+					country_event = {
+						id = TR_jafrica.40
+						days = 30
+					}
+					country_event = {
+						id = TR_jafrica.41
+						days = 37
+					}
+					JAP = {
+						set_variable = {
+							NGA_colony_deficit = 0.06
+						}
+					}
+				}
 			}
 		}
 	}
@@ -586,7 +700,7 @@ on_actions = {
 				limit = {
 					NOT = {
 						NMB = {
-							has_country_flag = NMB_colony_collapse
+							has_global_flag = NMB_colony_collapse
 						}
 					}
 				}
@@ -595,6 +709,7 @@ on_actions = {
 						check_variable = {
 							NMB_unrest_level = 0
 						}
+					    }
 						set_variable = {
 							NMB_Country_Unrest_political_power_cost = 0
 						}
@@ -619,7 +734,6 @@ on_actions = {
 							}
 						}
 					}
-				}
 				if = {
 					limit = {
 						check_variable = {

@@ -1,11 +1,11 @@
 
-add_namespace = TR_Hexi
+add_namespace = TR_Gansu
 
 #馬仲英の勝利
 country_event = {
-	id = TR_Hexi.1
-	title = TR_Hexi.1.t
-	desc = TR_Hexi.1.d
+	id = TR_Gansu.1
+	title = TR_Gansu.1.t
+	desc = TR_Gansu.1.d
 	picture = GFX_report_event_generic_rally
 
 
@@ -19,7 +19,7 @@ country_event = {
 	
 
     option = { 
-		name = TR_Hexi.1.a
+		name = TR_Gansu.1.a
 		every_state = {
 			limit = {
 				is_core_of = SIK
@@ -31,5 +31,70 @@ country_event = {
 			transfer_troops = yes
 		}
 		set_cosmetic_tag = SIK_ma_military_clique
+		set_capital = {
+			state = 617
+			remember_old_capital = no
+		}
+	}
+}
+#馬仲英の勝利
+country_event = {
+	id = TR_Gansu.2
+	title = TR_Gansu.2.t
+	desc = TR_Gansu.2.d
+	picture = GFX_report_event_generic_rally
+
+    fire_only_once = yes
+    trigger = {
+        tag = GAN
+		SIK = { exists = no }
+        ETR = { exists = no }
+		KUM = { exists = no }
+		XIB = { has_war_with = WHN }
+		has_cosmetic_tag = SIK_ma_military_clique
+	}
+
+    option = { 
+		name = TR_Gansu.2.a
+		ai_chance = {
+			base = 20
+		}
+		every_state = {
+			limit = {
+				is_core_of = XIB
+			}
+			add_claim_by = GAN
+		}
+		every_state = {
+			limit = {
+				is_core_of = NIG
+			}
+			add_claim_by = GAN
+		}
+		every_state = {
+			limit = {
+				is_core_of = QIG
+			}
+			add_claim_by = GAN
+		}
+		create_wargoal = {
+		    target = XIB
+		    type = annex_everything
+	    }
+		create_wargoal = {
+		    target = QIG
+		    type = annex_everything
+	    }
+	}
+	option = { 
+		name = TR_Gansu.2.b
+		ai_chance = {
+			base = 40
+		}
+		create_wargoal = {
+		    target = XIB
+		    type = annex_everything
+	    }
+		WHN= { add_to_faction = GAN }
 	}
 }

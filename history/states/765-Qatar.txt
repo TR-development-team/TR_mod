@@ -4,6 +4,9 @@ state={
 	name="STATE_765"
 	manpower = 51600
 	state_category = pastoral
+	resources={
+		oil=12
+	}
 
 	history={
 		add_core_of = QAT
@@ -15,8 +18,9 @@ state={
 		buildings = {
 			infrastructure = 1
 			8051 = {
-				naval_base = 2
+				naval_base = 3
 			}
+			industrial_complex = 1
 		}
 	}
 

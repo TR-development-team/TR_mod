@@ -32,6 +32,10 @@ JAP_Political_Distrust_bop = {
 				drift_defence_factor = -0.1
 			}
 			on_activate = {
+				if = {
+					limit = { has_idea = JAP_Prosperous_Cities_1 }
+				    country_event = TR_japan.60
+				}
 			}
 			on_deactivate = {
 			}
@@ -49,6 +53,10 @@ JAP_Political_Distrust_bop = {
 				paternal_autocrat_drift = 0.01
 			}
 			on_activate = {
+				if = {
+					limit = { has_idea = JAP_Prosperous_Cities_1 }
+				    country_event = TR_japan.60
+				}
 			}
 			on_deactivate = {
 			}
@@ -66,6 +74,10 @@ JAP_Political_Distrust_bop = {
 				paternal_autocrat_drift = 0.02
 			}
 			on_activate = {
+				if = {
+					limit = { has_idea = JAP_Prosperous_Cities_1 }
+				    country_event = TR_japan.60
+				}
 			}
 			on_deactivate = {
 			}
@@ -81,9 +93,13 @@ JAP_Political_Distrust_bop = {
 				totalist_drift = 0.03
 				national_populist_drift = 0.03
 				paternal_autocrat_drift = 0.03
-                                custom_modifier_tooltip = JAP_Political_Distrust_very_high_tt
+                custom_modifier_tooltip = JAP_Political_Distrust_very_high_tt
 			}
 			on_activate = {
+				if = {
+					limit = { has_idea = JAP_Prosperous_Cities_1 }
+				    country_event = TR_japan.60
+				}
 			}
 			on_deactivate = {
 			}
@@ -103,6 +119,10 @@ JAP_Political_Distrust_bop = {
 				drift_defence_factor = 0.1
 			}
 			on_activate = {
+				if = {
+					limit = { has_idea = JAP_Cities_Martial_Law }
+				    country_event = TR_japan.61
+				}
 			}
 			on_deactivate = {
 			}
@@ -117,6 +137,10 @@ JAP_Political_Distrust_bop = {
 				drift_defence_factor = 0.25
 			}
 			on_activate = {
+				if = {
+					limit = { has_idea = JAP_Cities_Martial_Law }
+				    country_event = TR_japan.61
+				}
 			}
 			on_deactivate = {
 			}
@@ -131,6 +155,10 @@ JAP_Political_Distrust_bop = {
 				drift_defence_factor = 0.5
 			}
 			on_activate = {
+				if = {
+					limit = { has_idea = JAP_Cities_Martial_Law }
+				    country_event = TR_japan.61
+				}
 			}
 			on_deactivate = {
 			}
@@ -145,7 +173,10 @@ JAP_Political_Distrust_bop = {
 				drift_defence_factor = 0.75
 			}
 			on_activate = {
-
+				if = {
+					limit = { has_idea = JAP_Cities_Martial_Law }
+				    country_event = TR_japan.61
+				}
 			}
 			on_deactivate = {
 			}

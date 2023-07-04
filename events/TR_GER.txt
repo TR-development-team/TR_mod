@@ -2493,3 +2493,108 @@ country_event = {#フランス統治問題
 	}
 }
 
+#フランス政府からアルジェへと逃亡！
+country_event = {
+	id = TR_gerfor.2
+	title = TR_gerfor.2.t
+	desc = TR_gerfor.2.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_gerfor.2.a
+		add_state_claim = 862
+		custom_effect_tooltip = TR_gerfor2_tt
+		hidden_effect = { 
+			16 = {
+				transfer_state_to = FRP
+			}
+			FRP = { 
+				add_ideas = FRP_Government_without_legitimacy
+				add_ideas = FRP_FRA_resistance
+				add_state_core = 16
+				every_state = {
+					limit = {
+						is_european_france = yes
+					}
+                    add_claim_by = FRP
+				}
+
+			}
+			28 = { remove_claim_by = FRP } 
+			862 = { remove_claim_by = FRP } 
+			every_state = {
+				limit = {
+					is_controlled_by = RAT
+					is_claimed_by = FRP
+				}
+				set_state_controller_to = FRP
+			}
+			if = {
+				limit = { 
+					NOT = { 
+						OR = { 
+							has_government = totalist
+							has_government = syndicalist
+						}
+					}
+				}  
+				RAT = {	set_autonomy = {	target = FRP	autonomous_state = constituent_republic	}	}
+				FRP = { 
+					add_ideas = Council_communism
+					set_cosmetic_tag = FRA_council_republic
+					set_politics = {
+						ruling_party = radical_socialist
+						elections_allowed = no
+					}
+					set_popularities = {
+						totalist = 8
+						syndicalist = 6
+						radical_socialist = 14
+						social_democrat = 9
+						social_liberal = 7
+						market_liberal = 7
+						social_conservative = 7
+						authoritarian_democrat = 12
+						paternal_autocrat = 7
+						national_populist = 16
+						Gnosticism = 7
+					}
+				}
+			}
+			if = {
+				limit = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}  
+				RAT = {	set_autonomy = {	target = FRP	autonomous_state = military_occupation	}	}
+				FRP = { 
+					add_ideas = totalist_dictatorship
+					set_cosmetic_tag = FRA_under_GER_military_rule
+					set_politics = {
+						ruling_party = totalist
+						elections_allowed = no
+					}
+					set_popularities = {
+						totalist = 14
+						syndicalist = 6
+						radical_socialist = 8
+						social_democrat = 9
+						social_liberal = 7
+						market_liberal = 7
+						social_conservative = 7
+						authoritarian_democrat = 12
+						paternal_autocrat = 7
+						national_populist = 16
+						Gnosticism = 7
+					}
+				}
+			}
+	    }
+
+    }
+}

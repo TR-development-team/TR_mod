@@ -365,34 +365,4 @@
 			}
 		}
            }
-           political_advisor = {	
-		
-                AST_Prince_Henry = {
-			
-			picture = GFX_idea_AST_Prince_Henry
-			
-			allowed = {
-				original_tag = AST
-                                  }
-                        available = {
-                                has_completed_focus = AST_gurosutagongwoshezhengnirenming
-			}
-			
-			traits = { TR_silent_workhorse }
-		    }
-                AST_Aleister_Crowley = {
-			
-			picture = GFX_idea_AST_Aleister_Crowley
-			
-			allowed = {
-				original_tag = AST
-                                  }
-                        available = {
-                                has_completed_focus = AST_kurouriwoshezhengnirenming
-			}
-			
-			traits = { AST_Aleister_Crowley_traits }
-		    }
-              }
-
 }

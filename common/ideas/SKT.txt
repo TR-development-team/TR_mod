@@ -1,0 +1,54 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		SKT_coalition_of_chiefs = {
+			allowed = {
+				always = no
+			}
+			picture = chi_warlord_integration
+			
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.1
+				stability_factor = 0.1
+				mobilization_speed = -0.1
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05
+			}
+		}
+
+		SKT_Jihad = {
+			allowed = {
+				always = no
+			}
+            picture =generic_manpower_bonus
+			
+			removal_cost = -1
+			modifier = {
+				conscription = 0.01
+				offensive_war_stability_factor = 0.1
+				surrender_limit = 0.1
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		SKT_Slavery = {
+			allowed = {
+				always = no
+			}
+            picture =chi_forced_conscription
+			
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				MONTHLY_POPULATION = -0.1
+			}
+		}
+    }
+}

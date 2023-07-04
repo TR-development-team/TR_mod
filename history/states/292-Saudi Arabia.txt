@@ -4,22 +4,21 @@ state={
 	name="STATE_292"
 	manpower = 800000
 	
-	state_category = large_city
+	state_category = rural
 	resources={
 		oil=53 # was: 3
 	}
 
 	history={
-		owner = ARB
+		owner = JBS
+		add_core_of = JBS
 		buildings = {
 			infrastructure = 1
-			arms_factory = 2
-			industrial_complex = 4
+			industrial_complex = 1
 		}
 		victory_points = {
 			12727 15
 		}
-		add_core_of = ARB
 	}
 
 	local_supplies=0.0 

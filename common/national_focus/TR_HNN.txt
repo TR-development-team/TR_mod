@@ -253,28 +253,6 @@ focus_tree = {
 		}
 	completion_reward = {
 		602 = {
-			limit = {
-				free_building_slots = {
-					building = industrial_complex
-					size > 0
-					include_locked = yes
-				}
-				OR = {
-					is_in_home_area = yes
-					NOT = {
-						owner = {
-							any_owned_state = {
-								free_building_slots = {
-									building = industrial_complex
-									size > 0
-									include_locked = yes
-								}
-								is_in_home_area = yes
-							}
-						}
-					}
-				}
-			}
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
 				type = industrial_complex
@@ -848,7 +826,7 @@ focus_tree = {
 		add_political_power = -50
 		add_stability = 0.05
 		add_popularity = {
-			ideology = social_1iberal
+			ideology = social_liberal
 			popularity = -0.1
 		}
 		add_popularity = {
@@ -2761,7 +2739,7 @@ focus_tree = {
 		cost = 6
         available = {
 			has_country_flag = HNN_Political_stable
-			custom_trigger_tooltip = HNN_Political_stable_tooltip
+			custom_trigger_tooltip ={ tooltip = HNN_Political_stable_tooltip } 
 			NOT = { 			
 				has_country_leader = {
 				    character = HNN_Tang_Shengzhi
@@ -2778,6 +2756,12 @@ focus_tree = {
 		}
 	completion_reward = {
 		add_war_support = 0.1
+		every_state = {
+			limit = {
+				is_mainland_china = yes
+			}
+			add_claim_by = HNN
+		}
 		if = {
 			limit = {
 				OR = { 
@@ -2834,6 +2818,52 @@ focus_tree = {
 	    completion_reward = {
 			custom_effect_tooltip = attack_Independent_warlord_tooltip
 		    set_country_flag = attack_Independent_warlord_allowed
+			hidden_effect = { 
+				activate_targeted_decision = {
+					target = ANH
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = SGH
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = GAN
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = YUN
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = XIB
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = NIG
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = QIG
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = MIN
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = SHA
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = HEN
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = SCH
+					decision = china_attack_Independent_warlord
+				}
+			}
 		}
 	}	
 	#外国顧問団
@@ -2995,7 +3025,7 @@ focus_tree = {
 					}
 				}
 			}
-			set_cosmetic_tag = CHANGSHA_government
+			set_cosmetic_tag = CHANGSHA_government_united
 		}
 		}
 	}	

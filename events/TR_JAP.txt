@@ -744,7 +744,7 @@ country_event = {
 		ai_chance = {
 			base = 15
 		}
-                add_popularity = {
+        add_popularity = {
 			ideology = social_liberal
 			popularity = 0.2
 		}
@@ -982,7 +982,7 @@ country_event = {
 			add_idea = JAP_Dried_out_countryside_Tohoku_Famine
 		}	
 		add_popularity = {
-			ideology = natinal_populist_drift
+			ideology = national_populist
 			popularity = 0.03
 		}
 		add_popularity = {
@@ -1051,7 +1051,7 @@ country_event = {#オスマンが同盟を提案
             is_faction_leader = yes
 		}
         JAP = {
-            add_to_faction = TUR
+            add_to_faction = OTT
         }
 	}
     option = { 
@@ -1632,13 +1632,12 @@ country_event = {#京城での戴冠式
 		add_political_power = 25
 		add_stability = 0.05
 		set_cosmetic_tag = GREATEREASTASIA_union
-		add_state_core = 525
-		add_state_core = 527
-		add_state_core = 830
-		add_state_core = 831
-		add_state_core = 832
-		add_state_core = 833
-		add_state_core = 834
+		every_state = {
+			limit = {
+				is_core_of = KOR
+			}
+			add_core_of = JAP
+		}
 	}
 }
 country_event = {#衆議院の解散
@@ -2678,6 +2677,107 @@ country_event = {
 	    set_country_flag = JAP_Prime_Minister_Kita
 	}
 }
+country_event = {#財閥との関係
+	id = TR_japan.56
+	title = TR_japan.56.t
+	desc = TR_japan.56.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.56.a
+		trigger = {
+			NOT = { 
+				OR = { 
+					has_government = social_liberal
+					has_government = social_democrat
+				}
+			}
+		}
+		add_political_power = 25
+		swap_ideas = {
+			remove_idea = JAP_Zaibatsu
+			add_idea = JAP_Alliance_with_Zaibatsu
+		}
+	}
+	option = { 
+		name = TR_japan.56.b
+		trigger = {
+			has_government = social_liberal
+		}
+		add_political_power = -50
+		add_stability = -0.05
+		swap_ideas = {
+			remove_idea = JAP_Zaibatsu
+			add_idea = JAP_Elimination_of_corruption
+		}
+	}
+	option = { 
+		name = TR_japan.56.c
+		trigger = {
+			has_government = social_democrat
+		}
+		add_political_power = -100
+		add_stability = -0.1
+		swap_ideas = {
+			remove_idea = JAP_Zaibatsu
+			add_idea = JAP_Weakening_of_Zaibatsu
+		}
+	}
+}
+country_event = {#米穀法
+	id = TR_japan.57
+	title = TR_japan.57.t
+	desc = TR_japan.57.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.57.a
+		ai_chance = {
+		    base = 1
+	    }	
+		add_political_power = 50
+	}
+	option = { 
+		name = TR_japan.57.b
+		trigger = {
+			OR = { 
+				has_government = social_conservative
+				has_government = social_democrat
+				has_government = authoritarian_democrat
+			}
+		}
+		ai_chance = {
+		    base = 120
+	    }	
+		swap_ideas = {
+			remove_idea = JAP_Rice_Price_Act
+			add_idea = JAP_Rice_Control_Act
+		}
+	}
+	option = { 
+		name = TR_japan.57.c
+		trigger = {
+			OR = { 
+				has_government = social_liberal
+				has_government = market_liberal
+				has_government = authoritarian_democrat
+			}
+		}
+		ai_chance = {
+		    base = 120
+	    }	
+		swap_ideas = {
+			remove_idea = JAP_Rice_Price_Act
+			add_idea = JAP_Free_distribution_of_rice
+		}
+	}
+}
 #昭和研究会の発足
 country_event = {
 	id = TR_japan.58
@@ -2719,5 +2819,176 @@ country_event = {
 			ideology = national_populist
 			popularity = 0.02
 		}
+	}
+}
+#陸軍改革論争
+country_event = {
+	id = TR_japan.59
+	title = TR_japan.59.t
+	desc = TR_japan.59.d
+	picture = GFX_report_event_japanese_soldiers_02
+    is_triggered_only = yes
+    fire_only_once = yes
+
+
+	#小畑
+	option = {
+		name = TR_japan.59.a
+		trigger = {
+			has_character = JAP_Obata_Toshiro
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				has_government = paternal_autocrat
+			}
+			modifier = {
+				factor = 100
+				OR = { 
+					has_government = national_populist
+					has_government = totalist
+				}
+			}
+			modifier = {
+				factor = 0.5
+				has_democratic_government = yes
+			}
+		}
+		set_country_flag = JAP_obata_plan
+		add_ideas = JAP_Obata_Toshiro_cos
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.06
+		}
+		add_political_power = -25
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+	#永田
+	option = {
+		name = TR_japan.59.b
+		trigger = {
+			has_character = JAP_Nagata_Tetsuzan_corp
+		}
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				OR = { 
+					has_government = national_populist
+					has_government = totalist
+				}
+			}
+			modifier = {
+				factor = 100
+				has_government = paternal_autocrat
+			}
+			modifier = {
+				factor = 0.5
+				has_democratic_government = yes
+			}
+		}
+		set_country_flag = JAP_nagata_plan
+		add_ideas = JAP_Nagata_Tetsuzan_cos
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.06
+		}
+		add_political_power = -25
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 2
+			category = land_doctrine
+		}
+	}
+	#岡村
+	option = {
+		name = TR_japan.59.c
+		ai_chance = {
+			base = 50
+			modifier = {
+				factor = 0
+				has_democratic_government = no
+			}
+		}
+		set_country_flag = JAP_okamura_plan
+		add_ideas = JAP_Okamura_Yasuji_cos
+		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = -0.03
+		}
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+#戒厳令の再開
+country_event = {
+	id = TR_japan.60
+	title = TR_japan.60.t
+	desc = TR_japan.60.d
+	picture = GFX_report_event_japanese_soldiers_02
+    is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = JAP_Prosperous_Cities_1 }
+				swap_ideas = {
+					remove_idea = JAP_Prosperous_Cities_1
+					add_idea = JAP_Cities_Martial_Law
+				}	
+			}
+		}
+	}
+
+	option = {
+		name = TR_japan.60.a
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = JAP_Prosperous_Cities_1
+				add_idea = JAP_Cities_Martial_Law
+			}	
+		}
+	}
+}
+#戒厳令の停止
+country_event = {
+	id = TR_japan.61
+	title = TR_japan.61.t
+	desc = TR_japan.61.d
+	picture = GFX_report_event_japanese_soldiers_02
+    is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = JAP_Cities_Martial_Law }
+				swap_ideas = {
+					remove_idea = JAP_Cities_Martial_Law
+					add_idea = JAP_Prosperous_Cities_1
+				}	
+			}
+		}
+	}
+
+	option = {
+		name = TR_japan.61.a
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = JAP_Cities_Martial_Law
+				add_idea = JAP_Prosperous_Cities_1
+			}	
+	    }
 	}
 }

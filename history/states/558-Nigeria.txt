@@ -4,12 +4,13 @@ state={
 	name="STATE_558"
 	resources={
 		rubber=2.000
+		oil=1
+		steel=12
 	}
 
 	history={
 		owner = NGA
 		add_core_of = NGA
-		add_core_of = SKT
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1

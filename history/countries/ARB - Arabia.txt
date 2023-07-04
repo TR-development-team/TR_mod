@@ -57,7 +57,7 @@ set_technology = {
 	fuel_refining = 1
 	marines = 1
 }
-set_convoys = 5
+set_convoys = 50
 if = {
 	limit = {	has_dlc = "Battle for the Bosporus"	}
 	set_technology = { camelry = 1 }

@@ -4,7 +4,7 @@ oob = "SOM_1936"
 
 JAP = {	set_autonomy = {	target = SOM	autonomous_state = imperial_protectorate	}	}
 set_cosmetic_tag = COUNTRY_JAP
-
+country_event = { id = TR_jafrica.16 days = 48 }#ソマリ青年同盟の結成
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -12,8 +12,6 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	CAS1 = 1
 	
 }
 add_ideas = {
@@ -35,7 +33,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 8
+	syndicalist = 3
+	radical_socialist = 5
+	social_democrat = 12
+	social_liberal = 5
+	market_liberal = 11
+	social_conservative = 12
+	authoritarian_democrat = 21
+	paternal_autocrat = 4
+	national_populist = 16
+        Gnosticism = 3
 }
 
 recruit_character = SOM_Nakamura_kotaro

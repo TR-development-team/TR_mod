@@ -85,28 +85,6 @@ country_event = {
 
 	}
 }
-
-country_event = {
-	id = TR_france.3
-	title = TR_france.3.t
-	desc = TR_france.3.d
-	picture = GFX_report_event_portugal_navy_mutiny_prisoners
-
-
-        fire_only_once = yes
-        trigger = {
-                tag = FRA
-                is_subject = yes
-	}
-
-	
-
-        option = { 
-		name = TR_france.3.a
-                drop_cosmetic_tag = yes
-	}
-}
-
 country_event = {#トルコが同盟を提案
 	id = TR_france.4
 	title = TR_france.4.t
@@ -421,27 +399,24 @@ country_event = {#米仏同盟(アメリカで起こる)
 	option = { 
 		name = TR_france.12.a
 		ai_chance = {
-		    base = 85
+		    base = 80
 			modifier = {
 				factor = 2
 				has_government = national_populist
 			}
 		}
-		every_country = {
-			limit = {
-				is_in_faction_with = USA
-				is_subject = no
-			}
-			USA = {
-				remove_from_faction = PREV
-			}
-			FRA = {
-				add_to_faction = PREV
-			}
+		give_military_access = FRA
+		declare_war_on = {
+			target = RAT
+			type = annex_everything
 		}
-		USA = {
-			dismantle_faction = yes
-		}
+		FRA = { 
+			give_military_access = USA 
+			declare_war_on = {
+				target = JAP
+				type = annex_everything
+			}
+	    }
 		hidden_effect = {
 		    FRA = { 
 				country_event = {
@@ -454,7 +429,7 @@ country_event = {#米仏同盟(アメリカで起こる)
 	option = { 
 		name = TR_france.12.b
 		ai_chance = {
-			base = 15
+			base = 20
 		}
 		add_opinion_modifier = {
 			target = FRA
@@ -1097,5 +1072,554 @@ country_event = {#ジャンは如何なる刑を科されるべきか
 			popularity = -0.05
 		    }
 		set_cosmetic_tag = FRA_republic
+	}
+}
+country_event = {#サヴォワとニース
+	id = TR_france.30
+	title = TR_france.30.t
+	desc = TR_france.30.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.30.a
+		ITA = { 
+			country_event = {
+			id = TR_france.31
+			days = 2
+			}
+		}
+	}
+}
+country_event = {#フランスが国境交渉を提案
+	id = TR_france.31
+	title = TR_france.31.t
+	desc = TR_france.31.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.31.a
+		FRA = { 
+			country_event = {
+			id = TR_france.32
+			days = 2
+			}
+		}
+	}
+}
+country_event = {#マルセイユ会議
+	id = TR_france.32
+	title = TR_france.32.t
+	desc = TR_france.32.d
+	picture = GFX_report_event_generic_lend_lease
+
+
+        fire_only_once = yes
+        is_triggered_only = yes
+
+	
+	option = { 
+		name = TR_france.32.a
+		ai_chance = {
+		    base = 120
+
+		}
+		ITA = { 
+			country_event = {
+			id = TR_france.33
+			days = 1
+			}
+		}
+	}
+	option = { 
+		name = TR_france.32.b
+		ai_chance = {
+		    base = 60
+		}
+		NAF = { 
+			add_state_claim = 458
+			add_state_claim = 665
+		}
+		ITA = { 
+			country_event = {
+			id = TR_france.34
+			days = 1
+			}
+		}
+	}
+	option = { 
+		name = TR_france.32.c
+		trigger = {
+			ITA = { has_socialist_government = no }
+		}
+		ai_chance = {
+		    base = 10
+			modifier = {
+				factor = 2
+				ITA = { has_authoritarian_government = yes }
+			}
+		}
+		add_war_support = -0.1
+		ITA = { 
+			country_event = {
+			id = TR_france.35
+			days = 1
+			}
+		}
+	}
+}
+country_event = {#マルセイユ会議-フランスが領土割譲を要求！
+	id = TR_france.33
+	title = TR_france.33.t
+	desc = TR_france.33.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.33.a
+		ai_chance = {
+		    base = 40
+			modifier = {
+				factor = 2
+				has_democratic_government = yes
+			}
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+		hidden_effect = { 
+			FRA = { 
+				country_event = {
+				id = TR_france.36
+				days = 1
+				}
+			}
+		}
+	}
+	option = { 
+		name = TR_france.33.b
+		ai_chance = {
+		    base = 40
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = large_decrease
+		}
+		hidden_effect = { 
+			FRA = { 
+				country_event = {
+				id = TR_france.39
+				days = 1
+				}
+			}
+		}
+	}
+}
+country_event = {#マルセイユ会議-フランスが領土割譲を要求！
+	id = TR_france.34
+	title = TR_france.34.t
+	desc = TR_france.34.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.34.a
+		ai_chance = {
+		    base = 20
+			modifier = {
+				factor = 2
+				has_democratic_government = yes
+			}
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		add_political_power = -50
+		hidden_effect = { 
+			FRA = { 
+				country_event = {
+				id = TR_france.37
+				days = 1
+				}
+			}
+		}
+	}
+	option = { 
+		name = TR_france.34.b
+		ai_chance = {
+		    base = 40
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = large_decrease
+		}		
+		hidden_effect = { 
+			FRA = { 
+				country_event = {
+				id = TR_france.40
+				days = 1
+				}
+			}
+		}
+	}
+}
+country_event = {#マルセイユ会議-同盟を提案
+	id = TR_france.35
+	title = TR_france.35.t
+	desc = TR_france.35.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.35.a
+		ai_chance = {
+		    base = 40
+			modifier = {
+				factor = 2
+				has_authoritarian_government = yes
+			}
+		}
+		leave_faction = yes
+		dismantle_faction = yes
+		hidden_effect = { 
+			FRA = { 
+				country_event = {
+				id = TR_france.38
+				days = 1
+				}
+			}
+		}
+	}
+	option = { 
+		name = TR_france.35.b
+		ai_chance = {
+		    base = 20
+		}
+		add_opinion_modifier = {
+			target = FRA
+			modifier = large_decrease
+		}
+		hidden_effect = { 
+			FRA = { 
+				country_event = {
+				id = TR_france.41
+				days = 1
+				}
+			}
+		}
+	}
+}
+country_event = {#マルセイユ会議-イタリアが同意
+	id = TR_france.36
+	title = TR_france.36.t
+	desc = TR_france.36.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.36.a
+		FRA = { 
+			transfer_state = 735
+			transfer_state = 846
+		}
+		diplomatic_relation = {
+			country = ITA
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+country_event = {#マルセイユ会議-イタリアが同意
+	id = TR_france.37
+	title = TR_france.37.t
+	desc = TR_france.37.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.37.a
+		FRA = { 
+			transfer_state = 735
+			transfer_state = 846
+		}
+		NAF = { 
+			transfer_state = 458
+			transfer_state = 665
+		}
+		diplomatic_relation = {
+			country = ITA
+			relation = non_aggression_pact
+			active = yes
+		}
+	}
+}
+country_event = {#マルセイユ会議-イタリアが同意
+	id = TR_france.38
+	title = TR_france.38.t
+	desc = TR_france.38.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.38.a
+        FRA = { add_to_faction = ITA }
+	}
+}
+country_event = {#マルセイユ会議-イタリアが離脱
+	id = TR_france.39
+	title = TR_france.39.t
+	desc = TR_france.39.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.39.a
+		create_wargoal = {
+			target = ITA
+			type = annex_everything
+		}
+	}
+}
+country_event = {#マルセイユ会議-イタリアが離脱
+	id = TR_france.40
+	title = TR_france.40.t
+	desc = TR_france.40.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.40.a
+		create_wargoal = {
+			target = ITA
+			type = annex_everything
+		}
+	}
+}
+country_event = {#マルセイユ会議-イタリアが離脱
+	id = TR_france.41
+	title = TR_france.41.t
+	desc = TR_france.41.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.41.a
+		add_opinion_modifier = {
+			target = ITA
+			modifier = large_decrease
+		}
+	}
+}
+country_event = {#イタリアに対する勝利！
+	id = TR_france.42
+	title = TR_france.42.t
+	desc = TR_france.42.d
+	picture = GFX_report_event_generic_lend_lease
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_france.42.a
+		158 = { set_demilitarized_zone = yes }
+		FRA = { 
+			transfer_state = 116
+		    transfer_state = 735
+		    transfer_state = 846
+		}
+		NAF = { 
+		    transfer_state = 458
+		    transfer_state = 665
+		}
+		every_state = {
+			limit = {
+				is_core_of = LBA
+				is_owned_by = ITA
+			}
+			transfer_state_to = NAF
+		}
+		every_state = {
+			limit = {
+				is_core_of = SIC
+			}
+			transfer_state_to = SIC
+		}
+		FRA = {
+			set_autonomy = {
+				target = SIC
+				autonomy_state = autonomy_satellite
+			}
+		}
+		add_timed_idea = {
+			idea = FRA_reparations_from_ITA
+			days = 365
+		}
+		ITA = { 
+			add_timed_idea = {
+				idea = ITA_reparations_to_FRA
+				days = 365
+			}
+			add_ideas = ITA_limitation_of_armaments
+		}
+	}
+}
+#イタリア侵攻の失敗
+country_event = {
+	id = TR_france.43
+	title = TR_france.43.t
+	desc = TR_france.43.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    trigger = {
+        tag = FRA
+        surrender_progress > 0.1
+		has_offensive_war_with = ITA
+		is_faction_leader = yes
+		is_subject = no
+	}
+	
+	option = { 
+		name = TR_france.43.a
+        hidden_effect = { 
+		    ITA = { 
+			    country_event = TR_italy.2
+            }
+	    }
+    }
+}
+#パリ陥落
+country_event = {
+	id = TR_france.44
+	title = TR_france.44.t
+	desc = TR_france.44.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    trigger = {
+        tag = FRA
+        NOT = { 16 = { is_controlled_by = FRA } }
+	}
+	
+	option = { 
+		name = TR_france.44.a
+		add_stability = -0.1
+		add_war_support = -0.1
+        hidden_effect = { 
+			country_event = {
+				id = TR_news.61
+				days = 1
+			}
+	    }
+    }
+
+}
+#蹂躙されたメトロポリテーヌ
+country_event = {
+	id = TR_france.45
+	title = TR_france.45.t
+	desc = TR_france.45.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    trigger = {
+		tag = FRA
+		16 = { is_controlled_by = RAT } 
+		surrender_progress > 0.8
+        has_war_with = RAT
+		RAT = { is_faction_leader = yes }
+        is_subject = no
+		NAF = { is_subject_of = FRA }
+	}
+	
+	option = { 
+		name = TR_france.45.a
+		add_stability = -0.5
+		add_war_support = -0.5
+		NAF = { 
+			transfer_navy = {
+				target = FRA
+			}
+		}
+		annex_country = {
+			target = NAF
+			transfer_troops = yes
+		}
+		every_state = {
+			limit = {
+				is_core_of = NAF
+			}
+			add_core_of = FRA
+		}
+		16 = {
+			transfer_state_to = RAT
+		}
+		set_capital = {
+			state = 459
+			remember_old_capital = yes
+		}
+		RAT = { 
+			country_event = TR_gerfor.2
+		}
+		hidden_effect = { 
+			country_event = {
+				id = TR_news.62
+				days = 3
+			}
+	    }
+    }
+}
+country_event = {#ジャン3世の崩御
+	id = TR_france.46
+	title = TR_france.46.t
+	desc = TR_france.46.d
+	picture = GFX_report_event_europe_funeral
+	trigger = {
+		tag = FRA
+		date > 1940.8.24
+		has_start_date < 1936.01.02
+		has_idea = FRA_Jean_III
+	}
+	
+	fire_only_once = yes
+	
+	option = {
+		name = TR_france.46.a
+		set_country_flag = FRA_Jean_III_death
+		add_ideas = FRA_Henri_VI
+		if = {
+			limit = { 
+				has_country_leader = {
+				character = FRA_Jean_dOrleans
+				ruling_only = yes
+			    } 
+		    }  
+			hidden_effect = { retire_character = FRA_Jean_dOrleans }
+			promote_character = FRA_henri_d_orleans
+		}
 	}
 }

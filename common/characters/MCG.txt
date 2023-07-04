@@ -1,4 +1,30 @@
 characters={
+	MCG_Moise_Kapenda_Tshombe={
+		name=KAT_Moise_Kapenda_Tshombe
+		portraits={
+			civilian={
+				large="gfx/leaders/KAT/Portrait_KAT_Moise_Kapenda_Tshombe.png"
+			}
+		}
+		country_leader={
+			ideology=libertarian_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	MCG_Joseph_Kasa_Vubu={
+		name=COG_Joseph_Kasa_Vubu
+		portraits={
+			civilian={
+				large="gfx/leaders/COG/Portrait_COG_Joseph_Kasa_Vubu.png"
+			}
+		}
+		country_leader={
+			ideology=National_conservative_subtype
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 	MCG_Maeda_Toshinari={
 		name=JAP_Maeda_Toshinari
 		portraits={
@@ -19,4 +45,5 @@ characters={
 			ideology= kokoku_shikan_subtype
 		}
 	}
+
 }

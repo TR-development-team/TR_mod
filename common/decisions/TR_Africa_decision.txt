@@ -10,10 +10,10 @@ EAF_Africa_category = {
 			NOT = { has_country_flag = EAF_Africa_unrest_decision_ongoing_flag }
 		}
 		visible = {
-			NOT = { has_country_flag = EAF_colony_collapse }
+			NOT = { has_global_flag = EAF_colony_collapse }
 		}
-		ai_chance = {
-			base = 40
+		ai_will_do = {
+			base = 80
 			modifier = {
 				factor = 0
 				check_variable = {
@@ -58,10 +58,10 @@ EAF_Africa_category = {
 			NOT = { has_country_flag = EAF_Africa_unrest_decision_ongoing_flag }
 		}
 		visible = {
-			NOT = { has_country_flag = EAF_colony_collapse }
+			NOT = { has_global_flag = EAF_colony_collapse }
 		}
-		ai_chance = {
-			base = 40
+		ai_will_do = {
+			base = 80
 			modifier = {
 				factor = 0
 				check_variable = {
@@ -102,10 +102,10 @@ MCG_Africa_category = {
 			NOT = { has_country_flag = MCG_Africa_unrest_decision_ongoing_flag }
 		}
 		visible = {
-			NOT = { has_country_flag = MCG_colony_collapse }
+			NOT = { has_global_flag = MCG_colony_collapse }
 		}
-		ai_chance = {
-			base = 40
+		ai_will_do = {
+			base = 80
 			modifier = {
 				factor = 0
 				check_variable = {
@@ -150,10 +150,10 @@ MCG_Africa_category = {
 			NOT = { has_country_flag = MCG_Africa_unrest_decision_ongoing_flag }
 		}
 		visible = {
-			NOT = { has_country_flag = MCG_colony_collapse }
+			NOT = { has_global_flag = MCG_colony_collapse }
 		}
-		ai_chance = {
-			base = 40
+		ai_will_do = {
+			base = 80
 			modifier = {
 				factor = 0
 				check_variable = {
@@ -194,10 +194,10 @@ NGA_Africa_category = {
 			NOT = { has_country_flag = NGA_Africa_unrest_decision_ongoing_flag }
 		}
 		visible = {
-			NOT = { has_country_flag = NGA_colony_collapse }
+			NOT = { has_global_flag = NGA_colony_collapse }
 		}
-		ai_chance = {
-			base = 40
+		ai_will_do = {
+			base = 80
 			modifier = {
 				factor = 0
 				check_variable = {
@@ -242,10 +242,10 @@ NGA_Africa_category = {
 			NOT = { has_country_flag = NGA_Africa_unrest_decision_ongoing_flag }
 		}
 		visible = {
-			NOT = { has_country_flag = NGA_colony_collapse }
+			NOT = {has_global_flag = NGA_colony_collapse }
 		}
-		ai_chance = {
-			base = 40
+		ai_will_do = {
+			base = 80
 			modifier = {
 				factor = 0
 				check_variable = {
@@ -286,10 +286,10 @@ NMB_Africa_category = {
 			NOT = { has_country_flag = NMB_Africa_unrest_decision_ongoing_flag }
 		}
 		visible = {
-			NOT = { has_country_flag = NMB_colony_collapse }
+			NOT = { has_global_flag = NMB_colony_collapse }
 		}
-		ai_chance = {
-			base = 40
+		ai_will_do = {
+			base = 80
 			modifier = {
 				factor = 0
 				check_variable = {
@@ -334,10 +334,10 @@ NMB_Africa_category = {
 			NOT = { has_country_flag = NMB_Africa_unrest_decision_ongoing_flag }
 		}
 		visible = {
-			NOT = { has_country_flag = NMB_colony_collapse }
+			NOT = { has_global_flag = NMB_colony_collapse }
 		}
-		ai_chance = {
-			base = 40
+		ai_will_do = {
+			base = 80
 			modifier = {
 				factor = 0
 				check_variable = {

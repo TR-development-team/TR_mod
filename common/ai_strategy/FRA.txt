@@ -100,7 +100,7 @@ France_likes_russia = {
 	}
 	enable = {
 		country_exists = FRA
-                RUS = { has_war_with = SOV }
+        RUS = { has_war_with = SOV }
 		NOT = { has_war_with = RUS }
 	}
 
@@ -153,3 +153,41 @@ France_likes_usa = {
 	}
 }
 
+FRA_Priority_Germany = {
+	allowed = {
+		tag = FRA
+        FRA = { is_faction_leader = yes }
+		has_capitulated = no
+	}
+	enable = {
+        has_war_with = RAT
+		RAT = { has_capitulated = no }
+	}
+
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "RUS"
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "USA"
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MEX"
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "COL"
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "EQB"
+		value = 1000
+	}
+}

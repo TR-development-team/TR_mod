@@ -9,8 +9,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_Hunan.1.a
@@ -28,8 +26,6 @@ country_event = {
 	is_triggered_only = yes
     fire_only_once = yes
 
-
-	
 	option = {
 		name = TR_Hunan.2.a
 		add_stability = 0.05
@@ -44,7 +40,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
 	
 	option = {
 		name = TR_Hunan.3.a
@@ -1110,9 +1105,9 @@ country_event = {
 }
 #国民党の内部紛争
 country_event = {
-	id = TR_Hunan.29
-	title = TR_Hunan.29.t
-	desc = TR_Hunan.29.d
+	id = TR_Hunan.30
+	title = TR_Hunan.30.t
+	desc = TR_Hunan.30.d
 	picture = GFX_report_event_generic_rally
 
 	is_triggered_only = yes
@@ -1120,14 +1115,14 @@ country_event = {
 
 	#重慶
 	option = {
-		name = TR_Hunan.29.a
+		name = TR_Hunan.30.a
 		ai_chance = {
-			base = 20
+			base = 0
 		}
 		set_country_flag = HNN_Political_stable
 		add_stability = 0.1
 		add_popularity = {
-			ideology = social_1liberal
+			ideology = social_liberal
 			popularity = 0.2
 		}
 		add_popularity = {
@@ -1136,7 +1131,7 @@ country_event = {
 		}
 		CNK = {
 			country_event = {
-				id = TR_Hunan.30
+				id = TR_Hunan.31
 				days = 1
 			}
 		}
@@ -1144,9 +1139,9 @@ country_event = {
 	}
 	#武漢
 	option = {
-		name = TR_Hunan.29.b
+		name = TR_Hunan.30.b
 		ai_chance = {
-			base = 80
+			base = 100
 		}
 		uncomplete_national_focus = {
 			focus = HNN_Kuomintang_focus_2
@@ -1154,7 +1149,7 @@ country_event = {
 			refund_political_power = no
 		  }
 		add_popularity = {
-			ideology = social_1liberal
+			ideology = social_liberal
 			popularity = -0.2
 		}
 		add_popularity = {
@@ -1169,9 +1164,9 @@ country_event = {
 }
 #湖南が我々の陣営への参加を希望(重慶)
 country_event = {
-	id = TR_Hunan.30
-	title = TR_Hunan.30.t
-	desc = TR_Hunan.30.d
+	id = TR_Hunan.31
+	title = TR_Hunan.31.t
+	desc = TR_Hunan.31.d
 	picture = GFX_report_event_generic_rally
 
 	is_triggered_only = yes
@@ -1179,7 +1174,7 @@ country_event = {
 
 	#ようこそ！
 	option = {
-		name = TR_Hunan.30.a
+		name = TR_Hunan.31.a
 		ai_chance = {
 			base = 40
 		}

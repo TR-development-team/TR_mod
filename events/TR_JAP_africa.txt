@@ -1,22 +1,3176 @@
 add_namespace = TR_jafrica
 
-
-
-country_event = {#マウマウ団
+country_event = {#大阪からアフリカへ(東阿弗利加)
 	id = TR_jafrica.1
-	title = TR_jafrica.1
-	desc = TR_jafrica.1
+	title = TR_jafrica.1.t
+	desc = TR_jafrica.1.d
 	picture = GFX_report_event_france_parade
 
 
-        fire_only_once = yes
-        is_triggered_only = yes
-
+    fire_only_once = yes
+    is_triggered_only = yes
 	
 	option = { 
-		name = TR_japfed.18.a
-               
+		name = TR_jafrica.1.a
+        EAF_increased_unrest_effect = yes
+		add_ideas = JAPCO_black_thursday
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.5
+		    	days = 35	
+		    }
+	    }
+	}
+}
+country_event = {#大阪からアフリカへ(西阿弗利加)
+	id = TR_jafrica.2
+	title = TR_jafrica.2.t
+	desc = TR_jafrica.2.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.2.a
+        NGA_increased_unrest_effect = yes
+		add_ideas = JAPCO_black_thursday
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.6
+		    	days = 35	
+		    }
+	    }
+	}
+}
+country_event = {#大阪からアフリカへ(中央阿弗利加)
+	id = TR_jafrica.3
+	title = TR_jafrica.3.t
+	desc = TR_jafrica.3.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.3.a
+        MCG_increased_unrest_effect = yes
+		add_ideas = JAPCO_black_thursday
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.7
+		    	days = 35	
+		    }
+	    }
+	}
+}
+country_event = {#大阪からアフリカへ(南西阿弗利加)
+	id = TR_jafrica.4
+	title = TR_jafrica.4.t
+	desc = TR_jafrica.4.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.4.a
+        NMB_increased_unrest_effect = yes
+		add_ideas = JAPCO_black_thursday
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.8
+		    	days = 35	
+		    }
+	    }
+	}
+}
+country_event = {#アフリカ大恐慌(東阿弗利加)
+	id = TR_jafrica.5
+	title = TR_jafrica.5.t
+	desc = TR_jafrica.5.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.5.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -50
+		EAF_increased_unrest_effect = yes
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = JAPCO_black_thursday_1
+			days = 500
+		}
+	}
+	option = { 
+		name = TR_jafrica.5.b
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -100
+		EAF_decreased_unrest_effect = yes
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = JAPCO_black_thursday_2
+			days = 500
+		}
+	}
+}
+country_event = {#アフリカ大恐慌(西阿弗利加)
+	id = TR_jafrica.6
+	title = TR_jafrica.6.t
+	desc = TR_jafrica.6.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.6.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -50
+		NGA_increased_unrest_effect = yes
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = JAPCO_black_thursday_1
+			days = 500
+		}
+	}
+	option = { 
+		name = TR_jafrica.6.b
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -100
+		NGA_decreased_unrest_effect = yes
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = JAPCO_black_thursday_2
+			days = 500
+		}
+	}
+}
+country_event = {#アフリカ大恐慌(中央阿弗利加)
+	id = TR_jafrica.7
+	title = TR_jafrica.7.t
+	desc = TR_jafrica.7.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.7.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -50
+		MCG_increased_unrest_effect = yes
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = JAPCO_black_thursday_1
+			days = 500
+		}
+	}
+	option = { 
+		name = TR_jafrica.7.b
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -100
+		MCG_decreased_unrest_effect = yes
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = JAPCO_black_thursday_2
+			days = 500
+		}
+	}
+}
+country_event = {#アフリカ大恐慌(南西阿弗利加)
+	id = TR_jafrica.8
+	title = TR_jafrica.8.t
+	desc = TR_jafrica.8.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.8.a
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = -50
+		NMB_increased_unrest_effect = yes
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = JAPCO_black_thursday_1
+			days = 500
+		}
+	}
+	option = { 
+		name = TR_jafrica.8.b
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -100
+		NMB_decreased_unrest_effect = yes
+		remove_ideas = JAPCO_black_thursday
+		add_timed_idea = {
+			idea = JAPCO_black_thursday_2
+			days = 500
+		}
+	}
+}
+country_event = {#ケニアの「アジア的高地」
+	id = TR_jafrica.9
+	title = TR_jafrica.9.t
+	desc = TR_jafrica.9.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.9.a
+		add_stability = -0.025
+		add_war_support = -0.025
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.10
+		    	days = 70
+		    }
+	    }
+	}
+}
+country_event = {#ケニア土地自由軍の結成
+	id = TR_jafrica.10
+	title = TR_jafrica.10.t
+	desc = TR_jafrica.10.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.10.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.02
+		}
+		EAF_increased_unrest_effect = yes
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.11
+		    	days = 70
+		    }
+	    }
+	}
+}
+country_event = {#赤い汎アフリカ主義者
+	id = TR_jafrica.11
+	title = TR_jafrica.11.t
+	desc = TR_jafrica.11.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.11.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.02
+		}
+		EAF_increased_unrest_effect = yes
+	}
+}
+country_event = {#暴動の発生
+	id = TR_jafrica.12
+	title = TR_jafrica.12.t
+	desc = TR_jafrica.12.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.12.a
+		ai_chance = {
+			base = 100
+		}
+		custom_effect_tooltip = EAF_jafrica_12_tt
+		547 = { set_demilitarized_zone = yes } 
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.13
+		    	days = 7
+		    }
+	    }
+	}
+	option = { 
+		name = TR_jafrica.12.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -500
+		EAF_decreased_unrest_effect = yes
+	}
+}
+country_event = {#マウマウ蜂起
+	id = TR_jafrica.13
+	title = TR_jafrica.13.t
+	desc = TR_jafrica.13.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.13.a
+		every_state = {
+			limit = {
+				is_core_of = KEN
+			}
+			remove_core_of = EAF
+			add_claim_by = EAF
+		}
+		547 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = KEN  
+		}
+		hidden_effect = {
+			KEN = { 
+				country_event = {
+					id = TR_Kenya.1
+					days = 1
+				}
+			}
+			country_event = {
+		    	id = TR_jafrica.14
+		    	days = 3
+		    }
+	    }
+	}
+}
+country_event = {#東阿弗利加の崩壊
+	id = TR_jafrica.14
+	title = TR_jafrica.14.t
+	desc = TR_jafrica.14.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.14.a
+		add_stability = -0.1
+        JAP = {
+			end_puppet = BRD
+			end_puppet = EAF
+			end_puppet = UGA
+			end_puppet = RWA
+		}
+		leave_faction = yes
+		hidden_effect = {
+			country_event = {
+				id = TR_news.40
+				days = 1
+			}
+			remove_ideas = Tiyoda_Kensho
+			remove_ideas = JAP_colony
+			set_cosmetic_tag = EAFbyJAP_military_government
+			remove_dynamic_modifier = { modifier = EAF_Country_Unrest }
+			Collapse_EAF_effect = yes
+			JAP = {
+				set_variable = {
+					EAF_colony_deficit = 0
+				}
+			}
+			country_event = {
+		    	id = TR_jafrica.15
+		    	days = 7
+		    }
+			SOM = { 
+				country_event = {
+					id = TR_jafrica.17
+					days = 1
+				}
+			}
+			ETH = { 
+				country_event = {
+					id = TR_jafrica.19
+					days = 7
+				}
+			}
+			UGA = { 
+				country_event = {
+					id = TR_jafrica.31
+					days = 1
+				}
+			}
+			BRD = { 
+				leave_faction = yes
+			}
+			UGA = { 
+				leave_faction = yes
+			}
+			RWA = { 
+				leave_faction = yes
+			}
+	    }
+	}
+}
+country_event = {#取り残された者たち
+	id = TR_jafrica.15
+	title = TR_jafrica.15.t
+	desc = TR_jafrica.15.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.15.a
+		add_manpower = 1000
+	}
+}
+country_event = {#ソマリ青年同盟の結成
+	id = TR_jafrica.16
+	title = TR_jafrica.16.t
+	desc = TR_jafrica.16.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.16.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.03
+		}
+	}
+}
+country_event = {#東阿弗利加の崩壊(ソマリ)
+	id = TR_jafrica.17
+	title = TR_jafrica.17.t
+	desc = TR_jafrica.17.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.17.a
+		add_stability = -0.2
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.1
+		}
+		country_event = {
+			id = TR_jafrica.18
+			days = 7
+		}
+	}
+}
+country_event = {#ソマリ青年同盟のクーデター
+	id = TR_jafrica.18
+	title = TR_jafrica.18.t
+	desc = TR_jafrica.18.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.18.a
+		JAP = {
+			end_puppet = SOM
+		}
+		add_ideas = totalist_dictatorship
+		leave_faction = yes
+		add_stability = 0.1
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		hidden_effect = {
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = SOM_state
+			remove_ideas = Tiyoda_Kensho
+			remove_ideas = JAP_JAP_colony
+			remove_ideas = JAPCO_black_thursday
+	    }
+	}
+}
+country_event = {#エチオピアの独立
+	id = TR_jafrica.19
+	title = TR_jafrica.19.t
+	desc = TR_jafrica.19.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.19.a
+		JAP = {
+			end_puppet = ETH
+		}
+		leave_faction = yes
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.20
+				days = 10
+			}
+			country_event = {
+				id = TR_jafrica.21
+				days = 40
+			}
+	    }
+	}
+}
+country_event = {#ラスタファリ運動
+	id = TR_jafrica.20
+	title = TR_jafrica.20.t
+	desc = TR_jafrica.20.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.20.a
+		ai_chance = {
+			base = 40
+		}
+		add_stability = -0.05
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = Gnosticism
+			elections_allowed = no
+		}
+    }
+	option = { 
+		name = TR_jafrica.20.b
+		ai_chance = {
+			base = 40
+		}
+		add_stability = 0.05
+    }
+}
+country_event = {#オガデンの奪還
+	id = TR_jafrica.21
+	title = TR_jafrica.21.t
+	desc = TR_jafrica.21.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.21.a
+		ai_chance = {
+			base = 40
+		}
+		declare_war_on = {
+			target = SOM
+			type = annex_everything
+		}
+		hidden_effect = {
+			SOM = { 
+				country_event = {
+					id = TR_jafrica.22
+					days = 1
+				}
+			}
+	    }
+    }
+	option = { 
+		name = TR_jafrica.21.b
+		ai_chance = {
+			base = 0
+		}
+
+    }
+}
+country_event = {#エチオピアの侵攻！
+	id = TR_jafrica.22
+	title = TR_jafrica.22.t
+	desc = TR_jafrica.22.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.22.a
+		add_war_support = 0.2
+		add_manpower = 100000
+    }
+}
+country_event = {#1936年エジプト議会選挙
+	id = TR_jafrica.23
+	title = TR_jafrica.23.t
+	desc = TR_jafrica.23.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {#ワフド党
+		name = TR_jafrica.23.a
+		ai_chance = {
+			base = 120
+		}
+        add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+    }
+	option = {#立憲自由党
+		name = TR_jafrica.23.b
+		ai_chance = {
+			base = 40
+		}
+        add_popularity = {
+			ideology = social_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+    }
+	option = {#ワタニ党
+		name = TR_jafrica.23.c
+		ai_chance = {
+			base = 40
+		}
+        add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = yes
+		}
+    }
+}
+country_event = {#日本・エジプト同盟条約
+	id = TR_jafrica.240
+	title = TR_jafrica.240.t
+	desc = TR_jafrica.240.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.240.a
+		EGY = { 
+			country_event = {
+				id = TR_jafrica.24
+				days = 1
+			}
+		}
+    }
+}
+country_event = {#日本・エジプト同盟条約
+	id = TR_jafrica.24
+	title = TR_jafrica.24.t
+	desc = TR_jafrica.24.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.24.a
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = -25
+		add_opinion_modifier = {
+			target = JAP
+			modifier = JAP_EGY_Ally
+		}
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.241
+				days = 1
+			}
+		}
+		set_country_flag = JAP_EGY_Alliance
+    }
+	option = {
+		name = TR_jafrica.24.b
+		ai_chance = {
+			base = 40
+		}
+		add_opinion_modifier = {
+			target = JAP
+			modifier = medium_decrease
+		}
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.242
+				days = 1
+			}
+		}
+    }
+}
+country_event = {#エジプトが同盟条約に調印
+	id = TR_jafrica.241
+	title = TR_jafrica.241.t
+	desc = TR_jafrica.241.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.241.a
+		add_political_power = 10
+		add_opinion_modifier = {
+			target = EGY
+			modifier = JAP_EGY_Ally
+		}
+    }
+}
+country_event = {#エジプトが条約締結を拒否
+	id = TR_jafrica.242
+	title = TR_jafrica.242.t
+	desc = TR_jafrica.242.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.242.a
+		ai_chance = {
+			base = 120
+		}
+		add_political_power = -25
+		EGY = { 
+			country_event = {
+				id = TR_jafrica.243
+				days = 7
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.242.b
+		ai_chance = {
+			base = 10
+		}
+		end_puppet = EGY
+		EGY= { leave_faction = yes }
+    }
+}
+country_event = {#日本の艦隊がアレクサンドリアに集結
+	id = TR_jafrica.243
+	title = TR_jafrica.243.t
+	desc = TR_jafrica.243.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.243.a
+		ai_chance = {
+			base = 120
+		}
+		add_political_power = -50
+		set_country_flag = JAP_EGY_Alliance
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.244
+				days = 1
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.243.b
+		ai_chance = {
+			base = 10
+		}
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.245
+				days = 1
+			}
+		}
+    }
+}
+country_event = {#エジプト、脅迫に屈す！
+	id = TR_jafrica.244
+	title = TR_jafrica.244.t
+	desc = TR_jafrica.244.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.244.a
+		add_political_power = 10
+    }
+}
+country_event = {#エジプト、脅迫に屈さず！
+	id = TR_jafrica.245
+	title = TR_jafrica.245.t
+	desc = TR_jafrica.245.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.245.a
+		ai_chance = {
+			base = 0
+		}
+		end_puppet = EGY
+		EGY= { leave_faction = yes }
+		add_political_power = -50
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = EGY
+		}
+    }
+	option = {
+		name = TR_jafrica.245.b
+		ai_chance = {
+			base = 40
+		}
+		end_puppet = EGY
+		EGY= { leave_faction = yes }
+    }
+}
+country_event = {#アフリカで広がる日本支配の後退
+	id = TR_jafrica.25
+	title = TR_jafrica.25.t
+	desc = TR_jafrica.25.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+	trigger = {
+		tag = EGY
+		has_country_flag = JAP_EGY_Alliance
+		has_global_flag = EAF_colony_collapse
+	}
+	
+	option = {
+		name = TR_jafrica.25.a
+		ai_chance = {
+			base = 40
+		}
+		clr_country_flag = JAP_EGY_Alliance
+		leave_faction = yes
+		JAP = { end_puppet = EGY }
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.251
+				days = 1
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.25.b
+		ai_chance = {
+			base = 40
+		}
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.252
+				days = 1
+			}
+		}
+    }
+}
+country_event = {#エジプトが同盟条約の破棄を通告
+	id = TR_jafrica.251
+	title = TR_jafrica.251.t
+	desc = TR_jafrica.251.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.251.a
+		add_political_power = -10
+		add_opinion_modifier = {
+			target = EGY
+			modifier = large_decrease
+		}
+    }
+}
+country_event = {#エジプトが対等な同盟を求める
+	id = TR_jafrica.252
+	title = TR_jafrica.252.t
+	desc = TR_jafrica.252.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.252.a
+		ai_chance = {
+			base = 80
+		}
+        end_puppet = EGY
+		EGY = { 
+			country_event = {
+				id = TR_jafrica.26
+				days = 1
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.252.b
+		ai_chance = {
+			base = 10
+		}
+		end_puppet = EGY
+		EGY = { 
+			country_event = {
+				id = TR_jafrica.27
+				days = 1
+			}
+		}
+    }
+}
+country_event = {#日本との交渉
+	id = TR_jafrica.26
+	title = TR_jafrica.26.t
+	desc = TR_jafrica.26.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.26.a
+		ai_chance = {
+			base = 0
+		}
+        add_political_power = -50
+    }
+	option = {
+		name = TR_jafrica.26.b
+		ai_chance = {
+			base = 80
+		}
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.261
+				days = 1
+			}
+		}
+    }
+}
+country_event = {#エジプトがスエズ返還を要求
+	id = TR_jafrica.261
+	title = TR_jafrica.261.t
+	desc = TR_jafrica.261.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.261.a
+		ai_chance = {
+			base = 40
+		}
+        add_political_power = -25
+		EGY = { 
+			country_event = {
+				id = TR_jafrica.27
+				days = 1
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.261.b
+		ai_chance = {
+			base = 40
+		}
+		EGY = { 
+			country_event = {
+				id = TR_jafrica.28
+				days = 1
+			}
+		}
+    }
+}
+country_event = {#日本がスエズを返還
+	id = TR_jafrica.27
+	title = TR_jafrica.27.t
+	desc = TR_jafrica.27.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.27.a
+		837 = { 
+			add_core_of = EGY 
+            transfer_state_to = EGY
+		}
+    }
+}
+country_event = {#日本が要求を却下
+	id = TR_jafrica.28
+	title = TR_jafrica.28.t
+	desc = TR_jafrica.28.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.27.a
+		837 = { 
+			add_core_of = EGY 
+		}
+		clr_country_flag = JAP_EGY_Alliance
+		leave_faction = yes
+    }
+}
+country_event = {#アフリカで広がる日本支配の後退
+	id = TR_jafrica.29
+	title = TR_jafrica.29.t
+	desc = TR_jafrica.29.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+	trigger = {
+		tag = EGY
+		is_in_faction_with = JAP
+		date > 1938.01.01
+	}
+	
+	option = {
+		name = TR_jafrica.29.a
+		ai_chance = {
+			base = 40
+		}
+		add_stability = -0.1
+        add_popularity = {
+			ideology = national_populist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		clr_country_flag = JAP_EGY_Alliance
+		JAP = { end_puppet = EGY }
+		leave_faction = yes
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.291
+				days = 1
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.29.b
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = -50
+    }
+}
+country_event = {#エジプトでのクーデター
+	id = TR_jafrica.291
+	title = TR_jafrica.291.t
+	desc = TR_jafrica.291.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.291.a
+		ai_chance = {
+			base = 10
+		}
+		add_political_power = -50
+		create_wargoal = {
+			type = puppet_wargoal_focus
+			target = EGY
+		}
+    }
+	option = {
+		name = TR_jafrica.291.b
+		ai_chance = {
+			base = 40
+		}
+
+    }
+}
+country_event = {#アフリカで広がる日本支配の後退
+	id = TR_jafrica.30
+	title = TR_jafrica.30.t
+	desc = TR_jafrica.30.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+	trigger = {
+		tag = EGY
+		NOT = { is_in_faction_with = JAP }
+		837 = { is_owned_by = JAP }
+		JAP = { has_war_with = USA }
+	}
+	
+	option = {
+		name = TR_jafrica.30.a
+		ai_chance = {
+			base = 100
+		}
+		837 = { 
+			add_core_of = EGY 
+            transfer_state_to = EGY
+		}
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.301
+				days = 1
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.30.b
+		ai_chance = {
+			base = 0
+		}
+    }
+}
+country_event = {#エジプトがスエズ運河を接収！
+	id = TR_jafrica.301
+	title = TR_jafrica.301.t
+	desc = TR_jafrica.301.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.301.a
+		ai_chance = {
+			base = 100
+		}
+    }
+	option = {
+		name = TR_jafrica.301.b
+		ai_chance = {
+			base = 0
+		}
+		declare_war_on = {
+			target = EGY
+			type = puppet_wargoal_focus
+		}
+    }
+}
+country_event = {#東阿弗利加の崩壊
+	id = TR_jafrica.31
+	title = TR_jafrica.31.t
+	desc = TR_jafrica.31.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.31.a
+		add_state_claim = 1063
+		country_event = {
+			id = TR_jafrica.32
+			days = 20
+		}
+    }
+}
+country_event = {#ウガンダ連邦の行く末
+	id = TR_jafrica.32
+	title = TR_jafrica.32.t
+	desc = TR_jafrica.32.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.32.a
+		ai_chance = {
+			base = 40
+		}
+		add_stability = 0.1
+		create_wargoal = {
+            target = EAF
+            type = take_state_focus
+            generator = { 1063 }
+        }
+    }
+	option = {
+		name = TR_jafrica.32.b
+		ai_chance = {
+			base = 40
+		}
+		add_war_support = 0.1
+        promote_character = {
+			character = UGA_Winyi_IV_of_Bunyoro
+			ideology = prussian_constitutionalism_subtype
+		}
+		promote_character = {
+			character = UGA_Winyi_IV_of_Bunyoro
+			ideology = absolute_monarchy_subtype
+		}
+		promote_character = {
+			character = UGA_Winyi_IV_of_Bunyoro
+			ideology = Nationalism_subtype
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		create_wargoal = {
+            target = EAF
+            type = take_state_focus
+            generator = { 1063 }
+        }
+    }
+}
+country_event = {#西アフリカの部族紛争
+	id = TR_jafrica.33
+	title = TR_jafrica.33.t
+	desc = TR_jafrica.33.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.33.a
+		add_stability = -0.01
+        add_political_power = -25
+    }
+}
+country_event = {#日仏境界紛争
+	id = TR_jafrica.340
+	title = TR_jafrica.340.t
+	desc = TR_jafrica.340.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.340.a
+        add_war_support = 0.01
+		NGA = { 
+			country_event = {
+				id = TR_jafrica.34
+				days = 3
+			}
+		}
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.350
+		    	days = 7
+		    }
+	    }
+    }
+}
+country_event = {#フランス軍の策動
+	id = TR_jafrica.34
+	title = TR_jafrica.34.t
+	desc = TR_jafrica.34.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.34.a
+		add_war_support = 0.02
+    }
+}
+country_event = {#パンジャーリでの衝突
+	id = TR_jafrica.350
+	title = TR_jafrica.350.t
+	desc = TR_jafrica.350.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.301.a
+		ai_chance = {
+			base = 100
+		}
+		NGA = { 
+			country_event = {
+				id = TR_jafrica.35
+				days = 1
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.301.b
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -50
+    }
+}
+country_event = {#パンジャーリ事件
+	id = TR_jafrica.35
+	title = TR_jafrica.35.t
+	desc = TR_jafrica.35.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.35.a
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 778
+				num_provinces = 2
+				on_win = TR_jafrica.353
+				on_lose = TR_jafrica.354
+			}	
+			defender = {
+				state = 776
+				num_provinces = 2
+				on_win = TR_jafrica.351
+				on_lose = TR_jafrica.352
+			}
+		}
+		set_border_war_data = {
+			attacker = 778
+			defender = 776
+			defender_modifier = 0.05
+			combat_width = 100
+		}
+    }
+}
+country_event = {#パンジャーリ事件-日本の勝利
+	id = TR_jafrica.351
+	title = TR_jafrica.351.t
+	desc = TR_jafrica.351.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.351.a
+		army_experience = 15
+		add_stability = 0.02
+		add_political_power = 25
+    }
+}
+country_event = {#パンジャーリ事件-日本の敗北
+	id = TR_jafrica.352
+	title = TR_jafrica.352.t
+	desc = TR_jafrica.352.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.352.a
+		army_experience = 15
+		add_stability = -0.02
+		add_political_power = -25
+		NGA_increased_unrest_effect = yes
+    }
+}
+country_event = {#パンジャーリ事件-フランスの勝利
+	id = TR_jafrica.353
+	title = TR_jafrica.353.t
+	desc = TR_jafrica.353.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.353.a
+		army_experience = 15
+		add_stability = 0.02
+		add_political_power = 25
+    }
+}
+country_event = {#パンジャーリ事件-フランスの敗北
+	id = TR_jafrica.354
+	title = TR_jafrica.354.t
+	desc = TR_jafrica.354.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.354.a
+		army_experience = 15
+		add_stability = -0.02
+		add_political_power = -25
+    }
+}
+country_event = {#ラゴスでの抗議運動
+	id = TR_jafrica.36
+	title = TR_jafrica.36.t
+	desc = TR_jafrica.36.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.36.a
+		ai_chance = {
+			base = 100
+		}
+		add_stability = -0.1
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.37
+		    	days = 3
+		    }
+	    }
+    }
+	option = {
+		name = TR_jafrica.36.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.1
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.38
+		    	days = 3
+		    }
+	    }
+    }
+}
+country_event = {#血の日曜日事件
+	id = TR_jafrica.37
+	title = TR_jafrica.37.t
+	desc = TR_jafrica.37.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.37.a
+		ai_chance = {
+			base = 40
+		}
+		558 = {
+			add_manpower = -568
+		}
+		NGA_increased_unrest_effect = yes
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.371
+		    	days = 3
+		    }
+	    }
+    }
+	option = {
+		name = TR_jafrica.37.b
+		ai_chance = {
+			base = 40
+		}
+		558 = {
+			add_manpower = -568
+		}
+		NGA_increased_unrest_effect = yes
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.371
+		    	days = 3
+		    }
+	    }
+    }
+}
+country_event = {#全土に広がる抗議運動
+	id = TR_jafrica.371
+	title = TR_jafrica.371.t
+	desc = TR_jafrica.371.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.371.a
+		add_stability = -0.1
+		NGA_increased_unrest_effect = yes
+    }
+}
+country_event = {#デモ隊との交渉
+	id = TR_jafrica.38
+	title = TR_jafrica.38.t
+	desc = TR_jafrica.38.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.38.a
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = -50
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.381
+				days = 3
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.38.b
+		ai_chance = {
+			base = 10
+		}
+		add_stability = -0.1
+		NGA_increased_unrest_effect = yes
+    }
+}
+country_event = {#西アフリカ植民地からの改革提案
+	id = TR_jafrica.381
+	title = TR_jafrica.381.t
+	desc = TR_jafrica.381.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.381.a
+		ai_chance = {
+			base = 40
+		}
+		NGA = { 
+			country_event = {
+				id = TR_jafrica.382
+				days = 2
+			}
+		}
+    }
+	option = {
+		name = TR_jafrica.381.b
+		ai_chance = {
+			base = 0
+		}
+		NGA = { 
+			country_event = {
+				id = TR_jafrica.384
+				days = 2
+			}
+		}
+    }
+}
+country_event = {#日本政府がナイジェリアの改革を許可
+	id = TR_jafrica.382
+	title = TR_jafrica.382.t
+	desc = TR_jafrica.382.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.382.a
+		add_political_power = -100
+		NGA_decreased_unrest_effect = yes
+		country_event = {
+			id = TR_jafrica.383
+			days = 7
+		}
+    }
+}
+country_event = {#ナイジェリア帝国自治領
+	id = TR_jafrica.383
+	title = TR_jafrica.383.t
+	desc = TR_jafrica.383.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.383.a
+		add_stability = 0.3
+		NGA_decreased_unrest_effect = yes
+		JAP = {	set_autonomy = { target = NGA autonomous_state = imperial_dominion } }
+		JAP = { add_to_faction = NGA }
+		hidden_effect = {
+			set_cosmetic_tag = NGA_imperial_dominion
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = yes
+			}
+			promote_character = {
+				character = NGA_Nnamdi_Azikiwe
+				ideology = oligarchy_subtype
+			}
+			promote_character = {
+				character = NGA_Nnamdi_Azikiwe
+				ideology = Military_junta_subtype
+			}
+			set_popularities = {
+				totalist = 8
+				syndicalist = 3
+				radical_socialist = 5
+				social_democrat = 9
+				social_liberal = 8
+				market_liberal = 9
+				social_conservative = 14
+				authoritarian_democrat = 37
+				paternal_autocrat = 4
+				national_populist = 3
+				Gnosticism = 0
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = NGA_National_Council_long
+				name = NGA_National_Council
+			}
+			set_party_name = {
+				ideology = paternal_autocrat
+				long_name = NGA_National_Council_long
+				name = NGA_National_Council
+			}
+	    }
+    }
+}
+country_event = {#日本政府がナイジェリアの改革を拒否
+	id = TR_jafrica.384
+	title = TR_jafrica.384.t
+	desc = TR_jafrica.384.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.384.a
+		add_stability = -0.1
+		NGA_increased_unrest_effect = yes
+    }
+}
+country_event = {#ビアフラ共和国の建国宣言
+	id = TR_jafrica.39
+	title = TR_jafrica.39.t
+	desc = TR_jafrica.39.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.39.a
+		ai_chance = {
+			base = 40
+		}
+		1051 = { 
+			add_core_of = IBO
+			transfer_state_to = IBO
+		}
+		hidden_effect = {
+			IBO = { 
+				load_oob = "IBO_unit"
+			}
+	    }
+    }
+	option = {
+		name = TR_jafrica.39.b
+		ai_chance = {
+			base = 0
+		}
+		1051 = { 
+			add_core_of = IBO
+			transfer_state_to = IBO
+		}
+		hidden_effect = {
+			IBO = { 
+				change_tag_from = NGA
+				load_oob = "IBO_unit"
+			}
+	    }
+    }
+}
+country_event = {#ヨルバ人が立ち上がる
+	id = TR_jafrica.40
+	title = TR_jafrica.40.t
+	desc = TR_jafrica.40.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.40.a
+		ai_chance = {
+			base = 40
+		}
+		558 = { 
+			add_core_of = YRB
+			transfer_state_to = YRB
+		}
+		hidden_effect = {
+			YRB = { 
+				load_oob = "YRB_unit"
+			}
+	    }
+    }
+	option = {
+		name = TR_jafrica.40.b
+		ai_chance = {
+			base = 0
+		}
+		558 = { 
+			add_core_of = YRB
+			transfer_state_to = YRB
+		}
+		hidden_effect = {
+			YRB = { 
+				change_tag_from = NGA
+				load_oob = "YRB_unit"
+			}
+	    }
+    }
+}
+country_event = {#西阿弗利加の崩壊
+	id = TR_jafrica.41
+	title = TR_jafrica.41.t
+	desc = TR_jafrica.41.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.41.a
+		add_stability = -0.1
+        JAP = {
+			end_puppet = BRU
+			end_puppet = NGA
+			end_puppet = SKT
+		}
+		leave_faction = yes
+		hidden_effect = {
+			country_event = {
+				id = TR_news.41
+				days = 1
+			}
+			remove_ideas = Tiyoda_Kensho
+			remove_ideas = JAP_colony
+			set_cosmetic_tag = WAFbyJAP_military_government
+			remove_dynamic_modifier = { modifier = NGA_Country_Unrest }
+			Collapse_NGA_effect = yes
+			JAP = {
+				set_variable = {
+					NGA_colony_deficit = 0
+				}
+			}
+			country_event = {
+		    	id = TR_jafrica.43
+		    	days = 14
+		    }
+			NAF = { 
+				country_event = {
+					id = TR_jafrica.420
+					days = 7
+				}
+			}
+			SKT = { 
+				country_event = {
+					id = TR_jafrica.45
+					days = 3
+				}
+			}
+			BRU = { 
+				leave_faction = yes
+			}
+			SKT = { 
+				leave_faction = yes
+			}
+	    }
+	}
+}
+country_event = {#フランスが植民地を奪取
+	id = TR_jafrica.420
+	title = TR_jafrica.420.t
+	desc = TR_jafrica.420.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.420.a
+		776 = { 
+			set_demilitarized_zone = no
+            transfer_state_to = NAF
+		}
+		777 = { 
+			set_demilitarized_zone = no
+            transfer_state_to = NAF
+		}
+		NGA = { 
+			country_event = {
+				id = TR_jafrica.42
+				days = 1
+			}
+		}
+	}
+}
+country_event = {#フランスが植民地を奪取
+	id = TR_jafrica.42
+	title = TR_jafrica.42.t
+	desc = TR_jafrica.42.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.42.a
+	}
+}
+country_event = {#カメルーン植民地政府
+	id = TR_jafrica.43
+	title = TR_jafrica.43.t
+	desc = TR_jafrica.43.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.43.a
+		set_cosmetic_tag = CMRbyJAP_emergency_government
+		set_stability = 0.5
+		558 = { remove_core_of = NGA  }
+		776 = { remove_core_of = NGA  }
+		777 = { remove_core_of = NGA  }
+	    1051 = { remove_core_of = NGA  }
+	}
+}
+country_event = {#森に潜むアカども
+	id = TR_jafrica.44
+	title = TR_jafrica.44.t
+	desc = TR_jafrica.44.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.44.a
+		add_war_support = 0.05
+		declare_war_on = {
+			target = CMR
+			type = annex_everything
+		}
+	}
+}
+country_event = {#西阿弗利加の崩壊
+	id = TR_jafrica.45
+	title = TR_jafrica.45.t
+	desc = TR_jafrica.45.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.45.a
+		add_war_support = 0.05
+		1057 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.46
+		    	days = 3
+		    }
+			country_event = {
+		    	id = TR_jafrica.47
+		    	days = 14
+		    }
+	    }
+	}
+}
+country_event = {#アダマワに侵入した共産主義者
+	id = TR_jafrica.46
+	title = TR_jafrica.46.t
+	desc = TR_jafrica.46.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.46.a
+		ai_chance = {
+			base = 40
+		}
+		1057 = { 
+            transfer_state_to = CMR
+		}
+		hidden_effect = {
+			CMR = { 
+				country_event = {
+					id = TR_jafrica.461
+					days = 3
+				}
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.46.b
+		ai_chance = {
+			base = 0
+		}
+		1057 = { 
+            transfer_state_to = CMR
+		}
+		hidden_effect = {
+			CMR = { 
+				change_tag_from = SKT
+				country_event = {
+					id = TR_jafrica.461
+					days = 3
+				}
+			}
+	    }
+	}
+}
+country_event = {#赤道人民解放同盟
+	id = TR_jafrica.461
+	title = TR_jafrica.461.t
+	desc = TR_jafrica.461.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.461.a
+		load_oob = "CMR_unit"
+		set_cosmetic_tag = EQUATOR_peoples_liberation_league
+		hidden_effect = {
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.02
+			}
+			NGA = { 
+				country_event = {
+					id = TR_jafrica.44
+					days = 3
+				}
+			}
+	    }
+	}
+}
+country_event = {#ナイジェリア統一戦争
+	id = TR_jafrica.47
+	title = TR_jafrica.47.t
+	desc = TR_jafrica.47.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.47.a
+		add_war_support = 0.1
+		set_global_flag = NGA_unification_war
+		declare_war_on = {
+			target = IBO
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = YRB
+			type = annex_everything
+		}
+		hidden_effect = {
+			IBO = { 
+				country_event = TR_jafrica.54
+			}
+			YRB = { 
+				country_event = TR_jafrica.52
+			}
+	    }
+	}
+}
+country_event = {#ナイジェリアの統一
+	id = TR_jafrica.48
+	title = TR_jafrica.48.t
+	desc = TR_jafrica.48.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+	trigger = {
+		tag = NGA
+		has_global_flag = NGA_unification_war
+		558 = { is_owned_by = SKT }
+		1051 = { is_owned_by = SKT }
+		NOT = { country_exists = IBO }
+		NOT = { country_exists = YRB }
+	}
+	
+	option = { 
+		name = TR_jafrica.48.a
+		add_stability = 0.1
+		every_state = {
+			limit = {
+				is_nigeria = yes
+			}
+			add_core_of = SKT
+		}
+		hidden_effect = {
+		    country_event = {
+		    	id = TR_jafrica.49
+		    	days = 14
+		    }
+	    }
+	}
+}
+country_event = {#ナイジェリア統一戦争
+	id = TR_jafrica.52
+	title = TR_jafrica.52.t
+	desc = TR_jafrica.52.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.52.a
+		add_war_support = 0.1
+		declare_war_on = {
+			target = IBO
+			type = annex_everything
+		}
+	}
+}
+country_event = {#ナイジェリアの統一
+	id = TR_jafrica.53
+	title = TR_jafrica.53.t
+	desc = TR_jafrica.53.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+	trigger = {
+		tag = YRB
+		has_global_flag = NGA_unification_war
+		847 = { is_owned_by = YRB }
+		1051 = { is_owned_by = YRB }
+		NOT = { country_exists = IBO }
+		NOT = { country_exists = SKT }
+	}
+	
+	option = { 
+		name = TR_jafrica.53.a
+		add_stability = 0.1
+		every_state = {
+			limit = {
+				is_nigeria = yes
+			}
+			add_core_of = YRB
+		}
+	}
+}
+country_event = {#ナイジェリア統一戦争
+	id = TR_jafrica.54
+	title = TR_jafrica.54.t
+	desc = TR_jafrica.54.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.54.a
+		add_war_support = 0.1
+		declare_war_on = {
+			target = YRB
+			type = annex_everything
+		}
+	}
+}
+country_event = {#ナイジェリアの統一
+	id = TR_jafrica.55
+	title = TR_jafrica.55.t
+	desc = TR_jafrica.55.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+	trigger = {
+		tag = IBO
+		has_global_flag = NGA_unification_war
+		558 = { is_owned_by = IBO }
+		847 = { is_owned_by = IBO }
+		NOT = { country_exists =YRB }
+		NOT = { country_exists = SKT }
+	}
+	
+	option = { 
+		name = TR_jafrica.55.a
+		add_stability = 0.1
+		every_state = {
+			limit = {
+				is_nigeria = yes
+			}
+			add_core_of = IBO
+		}
+	}
+}
+country_event = {#コンゴ族同盟(ABAKO)の訴え
+	id = TR_jafrica.56
+	title = TR_jafrica.56.t
+	desc = TR_jafrica.56.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.56.a
+		ai_chance = {
+			base = 40
+		}
+		add_stability = -0.05
+		MCG_increased_unrest_effect = yes
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.03
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.57
+				days = 48
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.56.b
+		ai_chance = {
+			base = 80
+		}
+		add_stability = -0.05
+        add_political_power = -50
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.03
+		}
+		set_country_flag = MCG_reform_colonial_system
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.57
+				days = 48
+			}
+	    }
+	}
+}
+country_event = {#非公式なアパルトヘイト
+	id = TR_jafrica.57
+	title = TR_jafrica.57.t
+	desc = TR_jafrica.57.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.57.a
+		trigger = {
+			has_country_flag = MCG_reform_colonial_system
+		}
+		add_political_power = -50
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.60
+				days = 120
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.57.b
+		trigger = {
+			NOT = { has_country_flag = MCG_reform_colonial_system }
+		}
+		MCG_increased_unrest_effect = yes
+		add_stability = 0.02
+		add_war_support = -0.02
+	}
+}
+country_event = {#黄熱病ワクチンの開発
+	id = TR_jafrica.58
+	title = TR_jafrica.58.t
+	desc = TR_jafrica.58.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.58.a
+		add_stability = 0.05
+	}
+}
+country_event = {#カタンガでの鉱山ストライキ
+	id = TR_jafrica.59
+	title = TR_jafrica.59.t
+	desc = TR_jafrica.59.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.59.a
+		ai_chance = {
+			base = 120
+		}
+		MCG_increased_unrest_effect = yes
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.591
+				days = 10
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.59.b
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = -25
+		MCG_increased_unrest_effect = yes
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.592
+				days = 10
+			}
+	    }
+	}
+}
+country_event = {#財閥がストライキに対し傭兵を投入
+	id = TR_jafrica.591
+	title = TR_jafrica.591.t
+	desc = TR_jafrica.591.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.58.a
+		MCG_increased_unrest_effect = yes
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.05
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.05
+		}
+		add_manpower = -839
+	}
+}
+country_event = {#労働条件の見直し
+	id = TR_jafrica.592
+	title = TR_jafrica.592.t
+	desc = TR_jafrica.592.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.58.a
+		MCG_decreased_unrest_effect = yes
+		add_ideas = {
+			trinket_minimum_wage
+			trinket_max_workhours
+			trinket_safety_regulations
+			trinket_Unemployment_subsidies
+     	}
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.593
+				days = 10
+			}
+	    }
+	}
+}
+country_event = {#財閥の抗議
+	id = TR_jafrica.593
+	title = TR_jafrica.593.t
+	desc = TR_jafrica.593.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.58.a
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = -25
+		add_stability = -0.05
+	}
+	option = { 
+		name = TR_jafrica.58.b
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = 50
+		MCG_increased_unrest_effect = yes
+		add_ideas = {
+			no_minimum_wage
+			no_max_workhours
+			no_safety_regulations
+			no_Unemployment_subsidies
+     	}
+	}
+}
+country_event = {#第一回中央阿弗利加総選挙
+	id = TR_jafrica.60
+	title = TR_jafrica.60.t
+	desc = TR_jafrica.60.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.60.a
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = MCG_ABAKO_win
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.601
+				days = 21
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.60.b
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = MCG_autonomy_party_win
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.601
+				days = 21
+			}
+	    }
+	}
+}
+country_event = {#自治権拡大の要求
+	id = TR_jafrica.601
+	title = TR_jafrica.601.t
+	desc = TR_jafrica.601.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.601.a
+		JAP = { 
+			country_event = {
+				id = TR_jafrica.602
+				days = 3
+			}
+		}
+    }
+}
+country_event = {#中央阿弗利加における自治拡大
+	id = TR_jafrica.602
+	title = TR_jafrica.602.t
+	desc = TR_jafrica.602.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.602.a
+		MCG = { 
+			country_event = {
+				id = TR_jafrica.603
+				days = 2
+			}
+		}
+    }
+}
+country_event = {#帝国自治領コンゴ
+	id = TR_jafrica.603
+	title = TR_jafrica.603.t
+	desc = TR_jafrica.603.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = {
+		name = TR_jafrica.603.a
+		add_stability = 0.3
+		MCG_decreased_unrest_effect = yes
+		JAP = {	set_autonomy = { target = MCG autonomous_state = imperial_dominion } }
+		JAP = { add_to_faction = MCG }
+		hidden_effect = {
+			set_cosmetic_tag = MCG_imperial_dominion
+			if = {
+				limit = { has_country_flag = MCG_ABAKO_win }
+				set_popularities = {
+					totalist = 8
+					syndicalist = 3
+					radical_socialist = 5
+					social_democrat = 9
+					social_liberal = 8
+					market_liberal = 14
+					social_conservative = 35
+					authoritarian_democrat = 8
+					paternal_autocrat = 4
+					national_populist = 3
+					Gnosticism = 3
+				}
+			}
+			if = {
+				limit = { has_country_flag = MCG_autonomy_party_win }
+				set_popularities = {
+					totalist = 8
+					syndicalist = 3
+					radical_socialist = 5
+					social_democrat = 9
+					social_liberal = 8
+					market_liberal = 35
+					social_conservative = 14
+					authoritarian_democrat = 8
+					paternal_autocrat = 4
+					national_populist = 3
+					Gnosticism = 3
+				}
+			}
+
+	    }
+    }
+}
+country_event = {#キンシャサ蜂起
+	id = TR_jafrica.61
+	title = TR_jafrica.61.t
+	desc = TR_jafrica.61.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.61.a
+		add_stability = -0.1
+		295 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.62
+				days = 7
+			}
+	    }
+	}
+}
+country_event = {#ABAKOが独立宣言！
+	id = TR_jafrica.62
+	title = TR_jafrica.62.t
+	desc = TR_jafrica.62.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.62.a
+		ai_chance = {
+			base = 40
+		}
+		295 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = COG
+		}
+		hidden_effect = {
+			COG = { 
+				load_oob = "COG_unit"
+				country_event = {
+					id = TR_jafrica.66
+					days = 1
+				}
+			}
+			country_event = {
+				id = TR_jafrica.63
+				days = 7
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.62.a
+		ai_chance = {
+			base = 0
+		}
+		295 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = COG
+		}
+		hidden_effect = {
+			COG = { 
+				change_tag_from = MCG
+				load_oob = "COG_unit"
+				country_event = {
+					id = TR_jafrica.66
+					days = 1
+				}
+			}
+			country_event = {
+				id = TR_jafrica.63
+				days = 7
+			}
+	    }
+	}
+}
+country_event = {#植民地軍の敗北
+	id = TR_jafrica.63
+	title = TR_jafrica.63.t
+	desc = TR_jafrica.63.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.63.a
+		add_manpower = -1485
+        COG = { 
+			transfer_state = 538
+			transfer_state = 867
+			transfer_state = 868
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.64
+				days = 3
+			}
+	    }
+	}
+}
+country_event = {#中央阿弗利加の崩壊
+	id = TR_jafrica.64
+	title = TR_jafrica.64.t
+	desc = TR_jafrica.64.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.64.a
+		add_stability = -0.1
+        JAP = {
+			end_puppet = MCG
+			end_puppet = CAR
+		}
+		leave_faction = yes
+		hidden_effect = {
+			remove_ideas = Tiyoda_Kensho
+			remove_ideas = JAP_JAP_colony
+			remove_state_core = 295
+			remove_state_core = 538
+			remove_state_core = 867
+			remove_state_core = 868
+			remove_dynamic_modifier = { modifier = MCG_Country_Unrest }
+			Collapse_MCG_effect = yes
+			JAP = {
+				set_variable = {
+					MCG_colony_deficit = 0
+				}
+			}
+			country_event = {
+		    	id = TR_jafrica.65
+		    	days = 7
+		    }
+			CAR = { 
+				leave_faction = yes
+				country_event = {
+					id = TR_jafrica.74
+					days = 2
+				}
+			}
+	    }
 
 	}
+}
+country_event = {#赤道阿弗利加緊急政府
+	id = TR_jafrica.65
+	title = TR_jafrica.65.t
+	desc = TR_jafrica.65.d
+	picture = GFX_report_event_france_parade
 
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.65.a
+		set_stability = 0.5
+		set_cosmetic_tag = EQAbyJAP_emergency_government
+	}
+}
+country_event = {#コンゴの独立
+	id = TR_jafrica.66
+	title = TR_jafrica.66.t
+	desc = TR_jafrica.66.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.66.a
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.67
+				days = 7
+			}
+			country_event = {
+				id = TR_jafrica.79
+				days = 30
+			}
+	    }
+	}
+}
+country_event = {#カタンガでの不穏な動き
+	id = TR_jafrica.67
+	title = TR_jafrica.67.t
+	desc = TR_jafrica.67.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.67.a
+		add_stability = -0.05
+		867 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.68
+				days = 7
+			}
+			KAT = { 
+				country_event = {
+					id = TR_jafrica.69
+					days = 7
+				}
+			}
+	    }
+	}
+}
+country_event = {#カタンガ国の成立
+	id = TR_jafrica.68
+	title = TR_jafrica.68.t
+	desc = TR_jafrica.68.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.68.a
+		ai_chance = {
+			base = 40
+		}
+		867 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = KAT
+		}
+		hidden_effect = {
+			KAT = { 
+				load_oob = "KAT_unit"
+				country_event = {
+					id = TR_jafrica.69
+					days = 1
+				}
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.68.b
+		ai_chance = {
+			base = 0
+		}
+		867 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = KAT
+		}
+		hidden_effect = {
+			KAT = { 
+				change_tag_from = COG
+				load_oob = "KAT_unit"
+				country_event = {
+					id = TR_jafrica.69
+					days = 1
+				}
+			}
+	    }
+	}
+}
+country_event = {#カタンガ国
+	id = TR_jafrica.69
+	title = TR_jafrica.69.t
+	desc = TR_jafrica.69.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.69.a
+		add_political_power = 50
+		every_state = {
+			limit = {
+				is_core_of = COG
+			}
+			add_core_of = KAT
+		}
+	}
+}
+country_event = {#秋草所長の召喚
+	id = TR_jafrica.70
+	title = TR_jafrica.70.t
+	desc = TR_jafrica.70.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.70.a
+	}
+}
+country_event = {#新たなる所長
+	id = TR_jafrica.71
+	title = TR_jafrica.71.t
+	desc = TR_jafrica.71.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.71.a
+	}
+}
+country_event = {#死刑囚の脱獄
+	id = TR_jafrica.72
+	title = TR_jafrica.72.t
+	desc = TR_jafrica.72.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.72.a
+		add_stability = -0.05
+	}
+}
+country_event = {#黄熱病ワクチンの開発
+	id = TR_jafrica.73
+	title = TR_jafrica.73.t
+	desc = TR_jafrica.73.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.73.a
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.58
+				days = 1
+			}
+	    }
+	}
+}
+country_event = {#コンゴでの騒乱！
+	id = TR_jafrica.74
+	title = TR_jafrica.74.t
+	desc = TR_jafrica.74.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.74.a
+		set_cosmetic_tag = CARbyJAP_autonomous_government
+        add_stability = -0.1
+		718 = { set_demilitarized_zone = yes }
+		869 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+			country_event = {
+				id = TR_jafrica.75
+				days = 12
+			}
+			country_event = {
+				id = TR_jafrica.76
+				days = 14
+			}
+			country_event = {
+				id = TR_jafrica.77
+				days = 16
+			}
+	    }
+	}
+}
+country_event = {#キヴで独立派が反乱
+	id = TR_jafrica.75
+	title = TR_jafrica.75.t
+	desc = TR_jafrica.75.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.75.a
+		ai_chance = {
+			base = 40
+		}
+		869 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = KIV
+		}
+		hidden_effect = {
+			KIV = { 
+				load_oob = "KIV_unit"
+				country_event = {
+					id = TR_jafrica.78
+					days = 1
+				}
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.75.b
+		ai_chance = {
+			base = 0
+		}
+		869 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = KIV
+		}
+		hidden_effect = {
+			KIV = { 
+				change_tag_from = CAR
+				load_oob = "KIV_unit"
+				country_event = {
+					id = TR_jafrica.78
+					days = 1
+				}
+			}
+	    }
+	}
+}
+country_event = {#キヴで独立派が反乱
+	id = TR_jafrica.76
+	title = TR_jafrica.76.t
+	desc = TR_jafrica.76.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.76.a
+		ai_chance = {
+			base = 40
+		}
+		718 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = NKR
+		}
+		hidden_effect = {
+			NKR = { 
+				load_oob = "NKR_unit"
+				country_event = {
+					id = TR_jafrica.781
+					days = 1
+				}
+			}
+	    }
+	}
+	option = { 
+		name = TR_jafrica.76.b
+		ai_chance = {
+			base = 0
+		}
+		718 = { 
+			set_demilitarized_zone = no 
+			transfer_state_to = NKR
+		}
+		hidden_effect = {
+			NKR = { 
+				change_tag_from = CAR
+				load_oob = "NKR_unit"
+				country_event = {
+					id = TR_jafrica.781
+					days = 1
+				}
+			}
+	    }
+	}
+}
+country_event = {#取り残された研究施設群
+	id = TR_jafrica.77
+	title = TR_jafrica.77.t
+	desc = TR_jafrica.77.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.77.a
+		promote_character = {
+			character = CAR_Noguchi_Hideyo
+			ideology = colonial_government_subtype
+		}
+		promote_character = {
+			character = CAR_Noguchi_Hideyo
+			ideology = mil_colonial_government_subtype
+		}
+	}
+}
+country_event = {#キヴ人民軍
+	id = TR_jafrica.78
+	title = TR_jafrica.78.t
+	desc = TR_jafrica.78.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.78.a
+		every_state = {
+			limit = {
+				is_core_of = COG
+			}
+			add_core_of = KIV
+		}
+	}
+}
+country_event = {#新朝鮮の成立
+	id = TR_jafrica.781
+	title = TR_jafrica.781.t
+	desc = TR_jafrica.781.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.781.a
+		every_state = {
+			limit = {
+				is_core_of = KOR
+			}
+			add_claim_by = NKR
+		}
+		every_state = {
+			limit = {
+				is_core_of = COG
+			}
+			add_claim_by = NKR
+		}
+	}
+}
+country_event = {#コンゴ動乱
+	id = TR_jafrica.79
+	title = TR_jafrica.79.t
+	desc = TR_jafrica.79.d
+	picture = GFX_report_event_france_parade
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_jafrica.79.a
+		custom_effect_tooltip = Congo_Crisis_tt
+		hidden_effect = {
+			country_event = {
+				id = TR_news.42
+				days = 1
+			}
+			COG = { 
+				declare_war_on = {
+					target = KAT
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KIV
+					type = annex_everything
+				}
+			}
+			KAT = { 
+				declare_war_on = {
+					target = KIV
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = NKR
+					type = annex_everything
+				}
+			}
+			KIV = { 
+				declare_war_on = {
+					target = NKR
+					type = annex_everything
+				}
+			}
+			NKR = { 
+				declare_war_on = {
+					target = COG
+					type = annex_everything
+				}
+			}
+	    }
+	}
 }

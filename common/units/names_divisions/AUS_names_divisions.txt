@@ -30,2214 +30,310 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
-# Number reservation system will tie to another group.
-#link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
 AUS_INF_01 = 
 {
-	name = "Infantry Divisions"
+	name = "Infantry Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Infanterietruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		2 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		3 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		4 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		5 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		6 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		7 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		8 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		9 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		10 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		11 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		12 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		13 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		14 = { "k.u.k. %d. Infanterietruppendivisionen" }
-		15 = { "k.u.k. %d. Infanterietruppendivisionen" }
-	}
-}
-
-AUS_INF_02 = 
-{
-	name = "Infantry Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Infanterietruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Infanterietruppendivisionen" }
-		2 = { "%d. Infanterietruppendivisionen" }
-		3 = { "%d. Infanterietruppendivisionen" }
-		4 = { "%d. Infanterietruppendivisionen" }
-		5 = { "%d. Infanterietruppendivisionen" }
-		6 = { "%d. Infanterietruppendivisionen" }
-		7 = { "%d. Infanterietruppendivisionen" }
-		8 = { "%d. Infanterietruppendivisionen" }
-		9 = { "%d. Infanterietruppendivisionen" }
-		10 = { "%d. Infanterietruppendivisionen" }
-		11 = { "%d. Infanterietruppendivisionen" }
-		12 = { "%d. Infanterietruppendivisionen" }
-		13 = { "%d. Infanterietruppendivisionen" }
-		14 = { "%d. Infanterietruppendivisionen" }
-		15 = { "%d. Infanterietruppendivisionen" }
-	}
-}
-
-AUS_INF_03 = 
-{
-	name = "Infantry Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Infanteriebrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Infanteriebrigaden" }
-		2 = { "k.u.k. %d. Infanteriebrigaden" }
-		3 = { "k.u.k. %d. Infanteriebrigaden" }
-		4 = { "k.u.k. %d. Infanteriebrigaden" }
-		5 = { "k.u.k. %d. Infanteriebrigaden" }
-		6 = { "k.u.k. %d. Infanteriebrigaden" }
-		7 = { "k.u.k. %d. Infanteriebrigaden" }
-		8 = { "k.u.k. %d. Infanteriebrigaden" }
-		9 = { "k.u.k. %d. Infanteriebrigaden" }
-		10 = { "k.u.k. %d. Infanteriebrigaden" }
-		11 = { "k.u.k. %d. Infanteriebrigaden" }
-		12 = { "k.u.k. %d. Infanteriebrigaden" }
-		13 = { "k.u.k. %d. Infanteriebrigaden" }
-		14 = { "k.u.k. %d. Infanteriebrigaden" }
-		15 = { "k.u.k. %d. Infanteriebrigaden" }
-	}
-}
-
-AUS_INF_04 = 
-{
-	name = "Infantry Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Infanteriebrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Infanteriebrigaden" }
-		2 = { "%d. Infanteriebrigaden" }
-		3 = { "%d. Infanteriebrigaden" }
-		4 = { "%d. Infanteriebrigaden" }
-		5 = { "%d. Infanteriebrigaden" }
-		6 = { "%d. Infanteriebrigaden" }
-		7 = { "%d. Infanteriebrigaden" }
-		8 = { "%d. Infanteriebrigaden" }
-		9 = { "%d. Infanteriebrigaden" }
-		10 = { "%d. Infanteriebrigaden" }
-		11 = { "%d. Infanteriebrigaden" }
-		12 = { "%d. Infanteriebrigaden" }
-		13 = { "%d. Infanteriebrigaden" }
-		14 = { "%d. Infanteriebrigaden" }
-		15 = { "%d. Infanteriebrigaden" }
-	}
-}
-
-AUS_LSR_01 = 
-{
-	name = "Landwehr Regiments"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			has_cosmetic_tag = AUS_republic
-			has_completed_focus = AUS_becoming_modern_army
-		}
-	}
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "%dth Landwehrstammregiment"
+	fallback_name = "%d. Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Landwehrstammregiment" }
-		2 = { "%dnd Landwehrstammregiment" }
-		3 = { "%drd Landwehrstammregiment" }
-		4 = { "%dth Landwehrstammregiment" }
-		5 = { "%dth Landwehrstammregiment" }
-		6 = { "%dth Landwehrstammregiment" }
-		7 = { "%dth Landwehrstammregiment" }
-		8 = { "%dth Landwehrstammregiment" }
-		9 = { "%dth Landwehrstammregiment" }
-		10 = { "%dth Landwehrstammregiment" }
-		11 = { "%dth Landwehrstammregiment" }
-		12 = { "%dth Landwehrstammregiment" }
-		13 = { "%dth Landwehrstammregiment" }
-		14 = { "%dth Landwehrstammregiment" }
-		15 = { "%dth Landwehrstammregiment" }
-		16 = { "%dth Landwehrstammregiment" }
-		17 = { "%dth Landwehrstammregiment" }
-		18 = { "%dth Landwehrstammregiment" }
-		19 = { "%dth Landwehrstammregiment" }
-		20 = { "%dth Landwehrstammregiment" }
-		21 = { "%dst Landwehrstammregiment" }
-		22 = { "%dnd Landwehrstammregiment" }
-		23 = { "%drd Landwehrstammregiment" }
-		24 = { "%dth Landwehrstammregiment" }
-		25 = { "%dth Landwehrstammregiment" }
-		26 = { "%dth Landwehrstammregiment" }
-		27 = { "%dth Landwehrstammregiment" }
-		28 = { "%dth Landwehrstammregiment" }
-		29 = { "%dth Landwehrstammregiment" }
-		30 = { "%dth Landwehrstammregiment" }
-		31 = { "%dst Landwehrstammregiment" }
-		32 = { "%dnd Landwehrstammregiment" }
-		33 = { "%drd Landwehrstammregiment" }
-		34 = { "%dth Landwehrstammregiment" }
-		35 = { "%dth Landwehrstammregiment" }
-		36 = { "%dth Landwehrstammregiment" }
-		37 = { "%dth Landwehrstammregiment" }
-		38 = { "%dth Landwehrstammregiment" }
-		39 = { "%dth Landwehrstammregiment" }
-		40 = { "%dth Landwehrstammregiment" }
-		41 = { "%dst Landwehrstammregiment" }
-		42 = { "%dnd Landwehrstammregiment" }
-		43 = { "%drd Landwehrstammregiment" }
-		44 = { "%dth Landwehrstammregiment" }
-		45 = { "%dth Landwehrstammregiment" }
-		46 = { "%dth Landwehrstammregiment" }
-		47 = { "%dth Landwehrstammregiment" }
-		48 = { "%dth Landwehrstammregiment" }
-		49 = { "%dth Landwehrstammregiment" }
-		50 = { "%dth Landwehrstammregiment" }
-		51 = { "%dst Landwehrstammregiment" }
-		52 = { "%dnd Landwehrstammregiment" }
-		53 = { "%drd Landwehrstammregiment" }
-		54 = { "%dth Landwehrstammregiment" }
-		55 = { "%dth Landwehrstammregiment" }
-		56 = { "%dth Landwehrstammregiment" }
-		57 = { "%dth Landwehrstammregiment" }
-		58 = { "%dth Landwehrstammregiment" }
-		59 = { "%dth Landwehrstammregiment" }
-		60 = { "%dth Landwehrstammregiment" }
-		61 = { "%dst Landwehrstammregiment" }
-		62 = { "%dnd Landwehrstammregiment" }
-		63 = { "%drd Landwehrstammregiment" }
-		64 = { "%dth Landwehrstammregiment" }
-		65 = { "%dth Landwehrstammregiment" }
-		66 = { "%dth Landwehrstammregiment" }
-		67 = { "%dth Landwehrstammregiment" }
-		68 = { "%dth Landwehrstammregiment" }
-		69 = { "%dth Landwehrstammregiment" }
-		70 = { "%dth Landwehrstammregiment" }
-		71 = { "%dst Landwehrstammregiment" }
-		72 = { "%dnd Landwehrstammregiment" }
-		73 = { "%drd Landwehrstammregiment" }
-		74 = { "%dth Landwehrstammregiment" }
-		75 = { "%dth Landwehrstammregiment" }
-		76 = { "%dth Landwehrstammregiment" }
-		77 = { "%dth Landwehrstammregiment" }
-		78 = { "%dth Landwehrstammregiment" }
-		79 = { "%dth Landwehrstammregiment" }
-		80 = { "%dth Landwehrstammregiment" }
-		81 = { "%dst Landwehrstammregiment" }
-		82 = { "%dnd Landwehrstammregiment" }
-		83 = { "%drd Landwehrstammregiment" }
-		84 = { "%dth Landwehrstammregiment" }
-		85 = { "%dth Landwehrstammregiment" }
-		86 = { "%dth Landwehrstammregiment" }
-		87 = { "%dth Landwehrstammregiment" }
-		88 = { "%dth Landwehrstammregiment" }
-		89 = { "%dth Landwehrstammregiment" }
-		90 = { "%dth Landwehrstammregiment" }
-		91 = { "%dst Landwehrstammregiment" }
-		92 = { "%dnd Landwehrstammregiment" }
-		93 = { "%drd Landwehrstammregiment" }
-		94 = { "%dth Landwehrstammregiment" }
-		95 = { "%dth Landwehrstammregiment" }
-		96 = { "%dth Landwehrstammregiment" }
-		97 = { "%dth Landwehrstammregiment" }
-		98 = { "%dth Landwehrstammregiment" }
-		99 = { "%dth Landwehrstammregiment" }
-		100 = { "%dth Landwehrstammregiment" }
-		101 = { "%dst Landwehrstammregiment" }
-		102 = { "%dnd Landwehrstammregiment" }
-		103 = { "%drd Landwehrstammregiment" }
-		104 = { "%dth Landwehrstammregiment" }
-		105 = { "%dth Landwehrstammregiment" }
-		106 = { "%dth Landwehrstammregiment" }
-		107 = { "%dth Landwehrstammregiment" }
-		108 = { "%dth Landwehrstammregiment" }
-		109 = { "%dth Landwehrstammregiment" }
-		110 = { "%dth Landwehrstammregiment" }
-		111 = { "%dth Landwehrstammregiment" }
-		112 = { "%dth Landwehrstammregiment" }
-		113 = { "%dth Landwehrstammregiment" }
-		114 = { "%dth Landwehrstammregiment" }
-		115 = { "%dth Landwehrstammregiment" }
-		116 = { "%dth Landwehrstammregiment" }
-		117 = { "%dth Landwehrstammregiment" }
-		118 = { "%dth Landwehrstammregiment" }
-		119 = { "%dth Landwehrstammregiment" }
-		120 = { "%dth Landwehrstammregiment" }
-		121 = { "%dst Landwehrstammregiment" }
-		122 = { "%dnd Landwehrstammregiment" }
-		123 = { "%drd Landwehrstammregiment" }
-		124 = { "%dth Landwehrstammregiment" }
-		125 = { "%dth Landwehrstammregiment" }
-		126 = { "%dth Landwehrstammregiment" }
-		127 = { "%dth Landwehrstammregiment" }
-		128 = { "%dth Landwehrstammregiment" }
-		129 = { "%dth Landwehrstammregiment" }
-		130 = { "%dth Landwehrstammregiment" }
-		131 = { "%dst Landwehrstammregiment" }
-		132 = { "%dnd Landwehrstammregiment" }
-		133 = { "%drd Landwehrstammregiment" }
-		134 = { "%dth Landwehrstammregiment" }
-		135 = { "%dth Landwehrstammregiment" }
-		136 = { "%dth Landwehrstammregiment" }
-		137 = { "%dth Landwehrstammregiment" }
-		138 = { "%dth Landwehrstammregiment" }
-		139 = { "%dth Landwehrstammregiment" }
-		140 = { "%dth Landwehrstammregiment" }
-		141 = { "%dst Landwehrstammregiment" }
-		142 = { "%dnd Landwehrstammregiment" }
-		143 = { "%drd Landwehrstammregiment" }
-		144 = { "%dth Landwehrstammregiment" }
-		145 = { "%dth Landwehrstammregiment" }
-		146 = { "%dth Landwehrstammregiment" }
-		147 = { "%dth Landwehrstammregiment" }
-		148 = { "%dth Landwehrstammregiment" }
-		149 = { "%dth Landwehrstammregiment" }
-		150 = { "%dth Landwehrstammregiment" }
-		151 = { "%dst Landwehrstammregiment" }
-		152 = { "%dnd Landwehrstammregiment" }
-		153 = { "%drd Landwehrstammregiment" }
-		154 = { "%dth Landwehrstammregiment" }
-		155 = { "%dth Landwehrstammregiment" }
-		156 = { "%dth Landwehrstammregiment" }
-		157 = { "%dth Landwehrstammregiment" }
-		158 = { "%dth Landwehrstammregiment" }
-		159 = { "%dth Landwehrstammregiment" }
-		160 = { "%dth Landwehrstammregiment" }
-		161 = { "%dst Landwehrstammregiment" }
-		162 = { "%dnd Landwehrstammregiment" }
-		163 = { "%drd Landwehrstammregiment" }
-		164 = { "%dth Landwehrstammregiment" }
-		165 = { "%dth Landwehrstammregiment" }
-		166 = { "%dth Landwehrstammregiment" }
-		167 = { "%dth Landwehrstammregiment" }
-		168 = { "%dth Landwehrstammregiment" }
-		169 = { "%dth Landwehrstammregiment" }
-		170 = { "%dth Landwehrstammregiment" }
-		171 = { "%dst Landwehrstammregiment" }
-		172 = { "%dnd Landwehrstammregiment" }
-		173 = { "%drd Landwehrstammregiment" }
-		174 = { "%dth Landwehrstammregiment" }
-		175 = { "%dth Landwehrstammregiment" }
-		176 = { "%dth Landwehrstammregiment" }
-		177 = { "%dth Landwehrstammregiment" }
-		178 = { "%dth Landwehrstammregiment" }
-		179 = { "%dth Landwehrstammregiment" }
-		180 = { "%dth Landwehrstammregiment" }
-		181 = { "%dst Landwehrstammregiment" }
-		182 = { "%dnd Landwehrstammregiment" }
-		183 = { "%drd Landwehrstammregiment" }
-		184 = { "%dth Landwehrstammregiment" }
-		185 = { "%dth Landwehrstammregiment" }
-		186 = { "%dth Landwehrstammregiment" }
-		187 = { "%dth Landwehrstammregiment" }
-		188 = { "%dth Landwehrstammregiment" }
-		189 = { "%dth Landwehrstammregiment" }
-		190 = { "%dth Landwehrstammregiment" }
-		191 = { "%dst Landwehrstammregiment" }
-		192 = { "%dnd Landwehrstammregiment" }
-		193 = { "%drd Landwehrstammregiment" }
-		194 = { "%dth Landwehrstammregiment" }
-		195 = { "%dth Landwehrstammregiment" }
-		196 = { "%dth Landwehrstammregiment" }
-		197 = { "%dth Landwehrstammregiment" }
-		198 = { "%dth Landwehrstammregiment" }
-		199 = { "%dth Landwehrstammregiment" }
-		200 = { "%dth Landwehrstammregiment" }
-	}
-}
-
-AUS_MNT_01 = 
-{
-	name = "Mountain Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "mountaineers" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Gebirgstruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		2 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		3 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		4 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		5 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		6 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		7 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		8 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		9 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		10 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		11 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		12 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		13 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		14 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-		15 = { "k.u.k. %d. Gebirgstruppendivisionen" }
-	}
-}
-
-AUS_MNT_02 = 
-{
-	name = "Mountain Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "mountaineers" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Gebirgstruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Gebirgstruppendivisionen" }
-		2 = { "%d. Gebirgstruppendivisionen" }
-		3 = { "%d. Gebirgstruppendivisionen" }
-		4 = { "%d. Gebirgstruppendivisionen" }
-		5 = { "%d. Gebirgstruppendivisionen" }
-		6 = { "%d. Gebirgstruppendivisionen" }
-		7 = { "%d. Gebirgstruppendivisionen" }
-		8 = { "%d. Gebirgstruppendivisionen" }
-		9 = { "%d. Gebirgstruppendivisionen" }
-		10 = { "%d. Gebirgstruppendivisionen" }
-		11 = { "%d. Gebirgstruppendivisionen" }
-		12 = { "%d. Gebirgstruppendivisionen" }
-		13 = { "%d. Gebirgstruppendivisionen" }
-		14 = { "%d. Gebirgstruppendivisionen" }
-		15 = { "%d. Gebirgstruppendivisionen" }
-	}
-}
-
-AUS_MNT_03 = 
-{
-	name = "Mountain Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "mountaineers" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Gebirgsbrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Gebirgsbrigaden" }
-		2 = { "k.u.k. %d. Gebirgsbrigaden" }
-		3 = { "k.u.k. %d. Gebirgsbrigaden" }
-		4 = { "k.u.k. %d. Gebirgsbrigaden" }
-		5 = { "k.u.k. %d. Gebirgsbrigaden" }
-		6 = { "k.u.k. %d. Gebirgsbrigaden" }
-		7 = { "k.u.k. %d. Gebirgsbrigaden" }
-		8 = { "k.u.k. %d. Gebirgsbrigaden" }
-		9 = { "k.u.k. %d. Gebirgsbrigaden" }
-		10 = { "k.u.k. %d. Gebirgsbrigaden" }
-		11 = { "k.u.k. %d. Gebirgsbrigaden" }
-		12 = { "k.u.k. %d. Gebirgsbrigaden" }
-		13 = { "k.u.k. %d. Gebirgsbrigaden" }
-		14 = { "k.u.k. %d. Gebirgsbrigaden" }
-		15 = { "k.u.k. %d. Gebirgsbrigaden" }
-	}
-}
-
-AUS_MNT_04 = 
-{
-	name = "Mountain Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "mountaineers" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Gebirgsbrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Gebirgsbrigaden" }
-		2 = { "%d. Gebirgsbrigaden" }
-		3 = { "%d. Gebirgsbrigaden" }
-		4 = { "%d. Gebirgsbrigaden" }
-		5 = { "%d. Gebirgsbrigaden" }
-		6 = { "%d. Gebirgsbrigaden" }
-		7 = { "%d. Gebirgsbrigaden" }
-		8 = { "%d. Gebirgsbrigaden" }
-		9 = { "%d. Gebirgsbrigaden" }
-		10 = { "%d. Gebirgsbrigaden" }
-		11 = { "%d. Gebirgsbrigaden" }
-		12 = { "%d. Gebirgsbrigaden" }
-		13 = { "%d. Gebirgsbrigaden" }
-		14 = { "%d. Gebirgsbrigaden" }
-		15 = { "%d. Gebirgsbrigaden" }
-	}
-}
-
-AUS_MNT_05 = 
-{
-	name = "Mountain Artillery Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "mountaineers" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Gebirgsartilleriebrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		2 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		3 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		4 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		5 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		6 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		7 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		8 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		9 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		10 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		11 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		12 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		13 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		14 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-		15 = { "k.u.k. %d. Gebirgsartilleriebrigaden" }
-	}
-}
-
-AUS_MNT_06 = 
-{
-	name = "Mountain Artillery Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "mountaineers" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Gebirgsartilleriebrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Gebirgsartilleriebrigaden" }
-		2 = { "%d. Gebirgsartilleriebrigaden" }
-		3 = { "%d. Gebirgsartilleriebrigaden" }
-		4 = { "%d. Gebirgsartilleriebrigaden" }
-		5 = { "%d. Gebirgsartilleriebrigaden" }
-		6 = { "%d. Gebirgsartilleriebrigaden" }
-		7 = { "%d. Gebirgsartilleriebrigaden" }
-		8 = { "%d. Gebirgsartilleriebrigaden" }
-		9 = { "%d. Gebirgsartilleriebrigaden" }
-		10 = { "%d. Gebirgsartilleriebrigaden" }
-		11 = { "%d. Gebirgsartilleriebrigaden" }
-		12 = { "%d. Gebirgsartilleriebrigaden" }
-		13 = { "%d. Gebirgsartilleriebrigaden" }
-		14 = { "%d. Gebirgsartilleriebrigaden" }
-		15 = { "%d. Gebirgsartilleriebrigaden" }
+		1 = { "%d. Division" }
+		2 = { "%d. Division" }
+		3 = { "%d. Division" }
+		4 = { "%d. Division" }
+		5 = { "%d. Division" }
+		6 = { "%d. Division" }
+		7 = { "%d. Division" }
+		8 = { "%d. Division" }
+		9 = { "%d. Division" }
+		10 = { "%d. Division" }
+		11 = { "%d. Division" }
+		12 = { "%d. Division" }
+		13 = { "%d. Division" }
+		14 = { "%d. Division" }
+		15 = { "%d. Division" }
+		16 = { "%d. Division" }
+		17 = { "%d. Division" }
+		18 = { "%d. Division" }
+		19 = { "%d. Division" }
+		20 = { "%d. Division" }
 	}
 }
 
 AUS_CAV_01 = 
 {
-	name = "Cavalry Divisions"
+	name = "Cavalry Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
+	can_use = { always = yes }
 
 	division_types = { "cavalry" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
+	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "k.u.k. %d. Kavallerietruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		2 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		3 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		4 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		5 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		6 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		7 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		8 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		9 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		10 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		11 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		12 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		13 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		14 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-		15 = { "k.u.k. %d. Kavallerietruppendivisionen" }
-	}
-}
-
-AUS_CAV_02 = 
-{
-	name = "Cavalry Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "cavalry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Kavallerietruppendivisionen"
+	fallback_name = "%d. Schnelle Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Kavallerietruppendivisionen" }
-		2 = { "%d. Kavallerietruppendivisionen" }
-		3 = { "%d. Kavallerietruppendivisionen" }
-		4 = { "%d. Kavallerietruppendivisionen" }
-		5 = { "%d. Kavallerietruppendivisionen" }
-		6 = { "%d. Kavallerietruppendivisionen" }
-		7 = { "%d. Kavallerietruppendivisionen" }
-		8 = { "%d. Kavallerietruppendivisionen" }
-		9 = { "%d. Kavallerietruppendivisionen" }
-		10 = { "%d. Kavallerietruppendivisionen" }
-		11 = { "%d. Kavallerietruppendivisionen" }
-		12 = { "%d. Kavallerietruppendivisionen" }
-		13 = { "%d. Kavallerietruppendivisionen" }
-		14 = { "%d. Kavallerietruppendivisionen" }
-		15 = { "%d. Kavallerietruppendivisionen" }
-	}
-}
-
-AUS_CAV_03 = 
-{
-	name = "Cavalry Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "cavalry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Kavalleriebrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Kavalleriebrigaden" }
-		2 = { "k.u.k. %d. Kavalleriebrigaden" }
-		3 = { "k.u.k. %d. Kavalleriebrigaden" }
-		4 = { "k.u.k. %d. Kavalleriebrigaden" }
-		5 = { "k.u.k. %d. Kavalleriebrigaden" }
-		6 = { "k.u.k. %d. Kavalleriebrigaden" }
-		7 = { "k.u.k. %d. Kavalleriebrigaden" }
-		8 = { "k.u.k. %d. Kavalleriebrigaden" }
-		9 = { "k.u.k. %d. Kavalleriebrigaden" }
-		10 = { "k.u.k. %d. Kavalleriebrigaden" }
-		11 = { "k.u.k. %d. Kavalleriebrigaden" }
-		12 = { "k.u.k. %d. Kavalleriebrigaden" }
-		13 = { "k.u.k. %d. Kavalleriebrigaden" }
-		14 = { "k.u.k. %d. Kavalleriebrigaden" }
-		15 = { "k.u.k. %d. Kavalleriebrigaden" }
-	}
-}
-
-AUS_CAV_04 = 
-{
-	name = "Cavalry Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "cavalry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Kavalleriebrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Kavalleriebrigaden" }
-		2 = { "%d. Kavalleriebrigaden" }
-		3 = { "%d. Kavalleriebrigaden" }
-		4 = { "%d. Kavalleriebrigaden" }
-		5 = { "%d. Kavalleriebrigaden" }
-		6 = { "%d. Kavalleriebrigaden" }
-		7 = { "%d. Kavalleriebrigaden" }
-		8 = { "%d. Kavalleriebrigaden" }
-		9 = { "%d. Kavalleriebrigaden" }
-		10 = { "%d. Kavalleriebrigaden" }
-		11 = { "%d. Kavalleriebrigaden" }
-		12 = { "%d. Kavalleriebrigaden" }
-		13 = { "%d. Kavalleriebrigaden" }
-		14 = { "%d. Kavalleriebrigaden" }
-		15 = { "%d. Kavalleriebrigaden" }
-	}
-}
-
-AUS_ART_01 = 
-{
-	name = "Artillery Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "artillery" "rocket_artillery" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Feldartillerietruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		2 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		3 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		4 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		5 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		6 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		7 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		8 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		9 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		10 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		11 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		12 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		13 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		14 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-		15 = { "k.u.k. %d. Feldartillerietruppendivisionen" }
-	}
-}
-
-AUS_ART_02 = 
-{
-	name = "Artillery Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "artillery" "rocket_artillery" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Feldartillerietruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Feldartillerietruppendivisionen" }
-		2 = { "%d. Feldartillerietruppendivisionen" }
-		3 = { "%d. Feldartillerietruppendivisionen" }
-		4 = { "%d. Feldartillerietruppendivisionen" }
-		5 = { "%d. Feldartillerietruppendivisionen" }
-		6 = { "%d. Feldartillerietruppendivisionen" }
-		7 = { "%d. Feldartillerietruppendivisionen" }
-		8 = { "%d. Feldartillerietruppendivisionen" }
-		9 = { "%d. Feldartillerietruppendivisionen" }
-		10 = { "%d. Feldartillerietruppendivisionen" }
-		11 = { "%d. Feldartillerietruppendivisionen" }
-		12 = { "%d. Feldartillerietruppendivisionen" }
-		13 = { "%d. Feldartillerietruppendivisionen" }
-		14 = { "%d. Feldartillerietruppendivisionen" }
-		15 = { "%d. Feldartillerietruppendivisionen" }
-	}
-}
-
-AUS_ART_03 = 
-{
-	name = "Artillery Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "artillery" "rocket_artillery" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Feldartilleriebrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		2 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		3 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		4 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		5 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		6 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		7 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		8 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		9 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		10 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		11 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		12 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		13 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		14 = { "k.u.k. %d. Feldartilleriebrigaden" }
-		15 = { "k.u.k. %d. Feldartilleriebrigaden" }
-	}
-}
-
-AUS_ART_04 = 
-{
-	name = "Artillery Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "artillery" "rocket_artillery" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Feldartilleriebrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Feldartilleriebrigaden" }
-		2 = { "%d. Feldartilleriebrigaden" }
-		3 = { "%d. Feldartilleriebrigaden" }
-		4 = { "%d. Feldartilleriebrigaden" }
-		5 = { "%d. Feldartilleriebrigaden" }
-		6 = { "%d. Feldartilleriebrigaden" }
-		7 = { "%d. Feldartilleriebrigaden" }
-		8 = { "%d. Feldartilleriebrigaden" }
-		9 = { "%d. Feldartilleriebrigaden" }
-		10 = { "%d. Feldartilleriebrigaden" }
-		11 = { "%d. Feldartilleriebrigaden" }
-		12 = { "%d. Feldartilleriebrigaden" }
-		13 = { "%d. Feldartilleriebrigaden" }
-		14 = { "%d. Feldartilleriebrigaden" }
-		15 = { "%d. Feldartilleriebrigaden" }
+		1 = { "%d. Schnelle Division" }
+		2 = { "%d. Schnelle Division" }
+		3 = { "%d. Schnelle Division" }
+		4 = { "%d. Schnelle Division" }
+		5 = { "%d. Schnelle Division" }
+		6 = { "%d. Schnelle Division" }
+		7 = { "%d. Schnelle Division" }
+		8 = { "%d. Schnelle Division" }
+		9 = { "%d. Schnelle Division" }
+		10 = { "%d. Schnelle Division" }
 	}
 }
 
 AUS_MOT_01 = 
 {
-	name = "Motorized Divisions"
+	name = "Motorized Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
+	can_use = { always = yes }
 
 	division_types = { "motorized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
+	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "k.u.k. %d. Motorisiertetruppendivisionen"
+	fallback_name = "%d. Kraftfahrjäger-Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		2 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		3 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		4 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		5 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		6 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		7 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		8 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		9 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		10 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		11 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		12 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		13 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		14 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-		15 = { "k.u.k. %d. Motorisiertetruppendivisionen" }
-	}
-}
-
-AUS_MOT_02 = 
-{
-	name = "Motorized Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "motorized" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Motorisiertetruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Motorisiertetruppendivisionen" }
-		2 = { "%d. Motorisiertetruppendivisionen" }
-		3 = { "%d. Motorisiertetruppendivisionen" }
-		4 = { "%d. Motorisiertetruppendivisionen" }
-		5 = { "%d. Motorisiertetruppendivisionen" }
-		6 = { "%d. Motorisiertetruppendivisionen" }
-		7 = { "%d. Motorisiertetruppendivisionen" }
-		8 = { "%d. Motorisiertetruppendivisionen" }
-		9 = { "%d. Motorisiertetruppendivisionen" }
-		10 = { "%d. Motorisiertetruppendivisionen" }
-		11 = { "%d. Motorisiertetruppendivisionen" }
-		12 = { "%d. Motorisiertetruppendivisionen" }
-		13 = { "%d. Motorisiertetruppendivisionen" }
-		14 = { "%d. Motorisiertetruppendivisionen" }
-		15 = { "%d. Motorisiertetruppendivisionen" }
+		1 = { "%d. Kraftfahrjäger-Division" }
+		2 = { "%d. Kraftfahrjäger-Division" }
+		3 = { "%d. Kraftfahrjäger-Division" }
+		4 = { "%d. Kraftfahrjäger-Division" }
+		5 = { "%d. Kraftfahrjäger-Division" }
+		6 = { "%d. Kraftfahrjäger-Division" }
+		7 = { "%d. Kraftfahrjäger-Division" }
+		8 = { "%d. Kraftfahrjäger-Division" }
+		9 = { "%d. Kraftfahrjäger-Division" }
+		10 = { "%d. Kraftfahrjäger-Division" }
 	}
 }
 
 AUS_MEC_01 = 
 {
-	name = "Mechanized Divisions"
+	name = "Mechanized Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
+	can_use = { always = yes }
 
 	division_types = { "mechanized" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
+	link_numbering_with = { AUS_CAV_01 }
 
-	fallback_name = "k.u.k. %d. Mechanisiertetruppendivisionen"
+	fallback_name = "%d. Schnelle Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		2 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		3 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		4 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		5 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		6 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		7 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		8 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		9 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		10 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		11 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		12 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		13 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		14 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-		15 = { "k.u.k. %d. Mechanisiertetruppendivisionen" }
-	}
-}
-
-AUS_MEC_02 = 
-{
-	name = "Mechanized Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "mechanized" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Motorisiertetruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Mechanisiertetruppendivisionen" }
-		2 = { "%d. Mechanisiertetruppendivisionen" }
-		3 = { "%d. Mechanisiertetruppendivisionen" }
-		4 = { "%d. Mechanisiertetruppendivisionen" }
-		5 = { "%d. Mechanisiertetruppendivisionen" }
-		6 = { "%d. Mechanisiertetruppendivisionen" }
-		7 = { "%d. Mechanisiertetruppendivisionen" }
-		8 = { "%d. Mechanisiertetruppendivisionen" }
-		9 = { "%d. Mechanisiertetruppendivisionen" }
-		10 = { "%d. Mechanisiertetruppendivisionen" }
-		11 = { "%d. Mechanisiertetruppendivisionen" }
-		12 = { "%d. Mechanisiertetruppendivisionen" }
-		13 = { "%d. Mechanisiertetruppendivisionen" }
-		14 = { "%d. Mechanisiertetruppendivisionen" }
-		15 = { "%d. Mechanisiertetruppendivisionen" }
+		1 = { "%d. Schnelle Division" }
+		2 = { "%d. Schnelle Division" }
+		3 = { "%d. Schnelle Division" }
+		4 = { "%d. Schnelle Division" }
+		5 = { "%d. Schnelle Division" }
+		6 = { "%d. Schnelle Division" }
+		7 = { "%d. Schnelle Division" }
+		8 = { "%d. Schnelle Division" }
+		9 = { "%d. Schnelle Division" }
+		10 = { "%d. Schnelle Division" }
 	}
 }
 
 AUS_ARM_01 = 
 {
-	name = "Armored Divisions"
+	name = "Armored Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
+	can_use = { always = yes }
 
 	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
 
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "k.u.k. %d. Panzertruppendivisionen"
+	fallback_name = "%d. Panzerwagen-Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "k.u.k. %d. Panzertruppendivisionen" }
-		2 = { "k.u.k. %d. Panzertruppendivisionen" }
-		3 = { "k.u.k. %d. Panzertruppendivisionen" }
-		4 = { "k.u.k. %d. Panzertruppendivisionen" }
-		5 = { "k.u.k. %d. Panzertruppendivisionen" }
-		6 = { "k.u.k. %d. Panzertruppendivisionen" }
-		7 = { "k.u.k. %d. Panzertruppendivisionen" }
-		8 = { "k.u.k. %d. Panzertruppendivisionen" }
-		9 = { "k.u.k. %d. Panzertruppendivisionen" }
-		10 = { "k.u.k. %d. Panzertruppendivisionen" }
-		11 = { "k.u.k. %d. Panzertruppendivisionen" }
-		12 = { "k.u.k. %d. Panzertruppendivisionen" }
-		13 = { "k.u.k. %d. Panzertruppendivisionen" }
-		14 = { "k.u.k. %d. Panzertruppendivisionen" }
-		15 = { "k.u.k. %d. Panzertruppendivisionen" }
-	}
-}
-
-AUS_ARM_02 = 
-{
-	name = "Armored Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_ARM_01 }
-
-	fallback_name = "%d. Panzertruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Panzertruppendivisionen" }
-		2 = { "%d. Panzertruppendivisionen" }
-		3 = { "%d. Panzertruppendivisionen" }
-		4 = { "%d. Panzertruppendivisionen" }
-		5 = { "%d. Panzertruppendivisionen" }
-		6 = { "%d. Panzertruppendivisionen" }
-		7 = { "%d. Panzertruppendivisionen" }
-		8 = { "%d. Panzertruppendivisionen" }
-		9 = { "%d. Panzertruppendivisionen" }
-		10 = { "%d. Panzertruppendivisionen" }
-		11 = { "%d. Panzertruppendivisionen" }
-		12 = { "%d. Panzertruppendivisionen" }
-		13 = { "%d. Panzertruppendivisionen" }
-		14 = { "%d. Panzertruppendivisionen" }
-		15 = { "%d. Panzertruppendivisionen" }
-	}
-}
-
-AUS_ARM_03 = 
-{
-	name = "Armored Corps"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "medium_armor" "heavy_armor" "modern_armor" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AUS_INF_01 }
-
-	fallback_name = "k.u.k. %d. Panzerkorps"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Panzerkorps 'Wean'" }
-		2 = { "k.u.k. %d. Panzerkorps 'Budapest'" }
-		3 = { "k.u.k. %d. Panzerkorps 'Linz'" }
-		4 = { "k.u.k. %d. Panzerkorps 'Graz'" }
-		5 = { "k.u.k. %d. Panzerkorps 'Debrecen'" }
-		6 = { "k.u.k. %d. Panzerkorps 'Pressburg'" }
-		7 = { "k.u.k. %d. Panzerkorps 'Lemberg'" }
-		8 = { "k.u.k. %d. Panzerkorps 'Laibach'" }
-		9 = { "k.u.k. %d. Panzerkorps 'Krakau'" }
-		10 = { "k.u.k. %d. Panzerkorps 'Czernowitz'" }
-		11 = { "k.u.k. %d. Panzerkorps 'Sarajewo'" }
-		12 = { "k.u.k. %d. Panzerkorps 'Breagaz'" }
-		13 = { "k.u.k. %d. Panzerkorps 'Salzburg'" }
-		14 = { "k.u.k. %d. Panzerkorps 'Innschbruck'" }
-		15 = { "k.u.k. %d. Panzerkorps 'Agram'" }
-	}
-}
-
-AUS_ARM_04 = 
-{
-	name = "Armored Corps"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "medium_armor" "heavy_armor" "modern_armor" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_ARM_03 }
-
-	fallback_name = "%d. Panzerkorps"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Panzerkorps 'Wean'" }
-		2 = { "%d. Panzerkorps 'Budapest'" }
-		3 = { "%d. Panzerkorps 'Linz'" }
-		4 = { "%d. Panzerkorps 'Graz'" }
-		5 = { "%d. Panzerkorps 'Debrecen'" }
-		6 = { "%d. Panzerkorps 'Pressburg'" }
-		7 = { "%d. Panzerkorps 'Lemberg'" }
-		8 = { "%d. Panzerkorps 'Laibach'" }
-		9 = { "%d. Panzerkorps 'Krakau'" }
-		10 = { "%d. Panzerkorps 'Czernowitz'" }
-		11 = { "%d. Panzerkorps 'Sarajewo'" }
-		12 = { "%d. Panzerkorps 'Breagaz'" }
-		13 = { "%d. Panzerkorps 'Salzburg'" }
-		14 = { "%d. Panzerkorps 'Innschbruck'" }
-		15 = { "%d. Panzerkorps 'Agram'" }
+		1 = { "%d. Panzerwagen-Division" }
+		2 = { "%d. Panzerwagen-Division" }
+		3 = { "%d. Panzerwagen-Division" }
+		4 = { "%d. Panzerwagen-Division" }
+		5 = { "%d. Panzerwagen-Division" }
+		6 = { "%d. Panzerwagen-Division" }
+		7 = { "%d. Panzerwagen-Division" }
+		8 = { "%d. Panzerwagen-Division" }
+		9 = { "%d. Panzerwagen-Division" }
+		10 = { "%d. Panzerwagen-Division" }
 	}
 }
 
 AUS_PAR_01 = 
 {
-	name = "Paratrooper Divisions"
+	name = "Paratrooper Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
+	can_use = { always = yes }
 
 	division_types = { "paratrooper" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
+	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "k.u.k. %d. Luftlandejägertruppendivisionen"
+	fallback_name = "%d. Fallschirmjäger-Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		2 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		3 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		4 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		5 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		6 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		7 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		8 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		9 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		10 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		11 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		12 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		13 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		14 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-		15 = { "k.u.k. %d. Luftlandejägertruppendivisionen" }
-	}
-}
-
-AUS_PAR_02 = 
-{
-	name = "Paratrooper Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "paratrooper" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Luftlandejägertruppendivisionen"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Luftlandejägertruppendivisionen" }
-		2 = { "%d. Luftlandejägertruppendivisionen" }
-		3 = { "%d. Luftlandejägertruppendivisionen" }
-		4 = { "%d. Luftlandejägertruppendivisionen" }
-		5 = { "%d. Luftlandejägertruppendivisionen" }
-		6 = { "%d. Luftlandejägertruppendivisionen" }
-		7 = { "%d. Luftlandejägertruppendivisionen" }
-		8 = { "%d. Luftlandejägertruppendivisionen" }
-		9 = { "%d. Luftlandejägertruppendivisionen" }
-		10 = { "%d. Luftlandejägertruppendivisionen" }
-		11 = { "%d. Luftlandejägertruppendivisionen" }
-		12 = { "%d. Luftlandejägertruppendivisionen" }
-		13 = { "%d. Luftlandejägertruppendivisionen" }
-		14 = { "%d. Luftlandejägertruppendivisionen" }
-		15 = { "%d. Luftlandejägertruppendivisionen" }
+		1 = { "%d. Fallschirmjäger-Division" }
+		2 = { "%d. Fallschirmjäger-Division" }
+		3 = { "%d. Fallschirmjäger-Division" }
+		4 = { "%d. Fallschirmjäger-Division" }
+		5 = { "%d. Fallschirmjäger-Division" }
+		6 = { "%d. Fallschirmjäger-Division" }
+		7 = { "%d. Fallschirmjäger-Division" }
+		8 = { "%d. Fallschirmjäger-Division" }
+		9 = { "%d. Fallschirmjäger-Division" }
+		10 = { "%d. Fallschirmjäger-Division" }
 	}
 }
 
 AUS_MAR_01 = 
 {
-	name = "Marine Divisions"
+	name = "Marine Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
+	can_use = { always = yes }
 
 	division_types = { "marine" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
+	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "k.u.k. %d. Marineinfanterietruppendivisionen"
+	fallback_name = "%d. Marine-Stürmdivision"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		2 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		3 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		4 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		5 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		6 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		7 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		8 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		9 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		10 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		11 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		12 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		13 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		14 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
-		15 = { "k.u.k. %d. Marineinfanterietruppendivisionen" }
+		1 = { "%d. Marine-Stürmdivision" }
+		2 = { "%d. Marine-Stürmdivision" }
+		3 = { "%d. Marine-Stürmdivision" }
+		4 = { "%d. Marine-Stürmdivision" }
+		5 = { "%d. Marine-Stürmdivision" }
+		6 = { "%d. Marine-Stürmdivision" }
+		7 = { "%d. Marine-Stürmdivision" }
+		8 = { "%d. Marine-Stürmdivision" }
+		9 = { "%d. Marine-Stürmdivision" }
+		10 = { "%d. Marine-Stürmdivision" }
 	}
 }
 
-AUS_MAR_02 = 
+AUS_MNT_01 = 
 {
-	name = "Marine Divisions"
+	name = "Mountain Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
+	can_use = { always = yes }
 
-	division_types = { "marine" }
+	division_types = { "mountaineers" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
+	link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "%d. Marineinfanterietruppendivisionen"
+	fallback_name = "%d. Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Marineinfanterietruppendivisionen" }
-		2 = { "%d. Marineinfanterietruppendivisionen" }
-		3 = { "%d. Marineinfanterietruppendivisionen" }
-		4 = { "%d. Marineinfanterietruppendivisionen" }
-		5 = { "%d. Marineinfanterietruppendivisionen" }
-		6 = { "%d. Marineinfanterietruppendivisionen" }
-		7 = { "%d. Marineinfanterietruppendivisionen" }
-		8 = { "%d. Marineinfanterietruppendivisionen" }
-		9 = { "%d. Marineinfanterietruppendivisionen" }
-		10 = { "%d. Marineinfanterietruppendivisionen" }
-		11 = { "%d. Marineinfanterietruppendivisionen" }
-		12 = { "%d. Marineinfanterietruppendivisionen" }
-		13 = { "%d. Marineinfanterietruppendivisionen" }
-		14 = { "%d. Marineinfanterietruppendivisionen" }
-		15 = { "%d. Marineinfanterietruppendivisionen" }
+		1 = { "%d. Division" }
+		2 = { "%d. Division" }
+		3 = { "%d. Division" }
+		4 = { "%d. Division" }
+		5 = { "%d. Division" }
+		6 = { "%d. Division" }
+		7 = { "%d. Division" }
+		8 = { "%d. Division" }
+		9 = { "%d. Division" }
+		10 = { "%d. Division" }
 	}
 }
 
 AUS_GAR_01 = 
 {
-	name = "Garrison Divisions"
+	name = "Garrison Division"
 
 	for_countries = { AUS }
 
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
+	can_use = { always = yes }
 
 	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_02 AUS_GAR_03 AUS_GAR_04 }
+	link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "k.u.k. %d. Sicherungstruppendivision"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Sicherungstruppendivision" }
-		2 = { "k.u.k. %d. Sicherungstruppendivision" }
-		3 = { "k.u.k. %d. Sicherungstruppendivision" }
-		4 = { "k.u.k. %d. Sicherungstruppendivision" }
-		5 = { "k.u.k. %d. Sicherungstruppendivision" }
-		6 = { "k.u.k. %d. Sicherungstruppendivision" }
-		7 = { "k.u.k. %d. Sicherungstruppendivision" }
-		8 = { "k.u.k. %d. Sicherungstruppendivision" }
-		9 = { "k.u.k. %d. Sicherungstruppendivision" }
-		10 = { "k.u.k. %d. Sicherungstruppendivision" }
-		11 = { "k.u.k. %d. Sicherungstruppendivision" }
-		12 = { "k.u.k. %d. Sicherungstruppendivision" }
-		13 = { "k.u.k. %d. Sicherungstruppendivision" }
-		14 = { "k.u.k. %d. Sicherungstruppendivision" }
-		15 = { "k.u.k. %d. Sicherungstruppendivision" }
-	}
-}
-
-AUS_GAR_02 = 
-{
-	name = "Garrison Divisions"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_03 AUS_GAR_04 }
-
-	fallback_name = "%d. Sicherungstruppendivision"
+	fallback_name = "%d. Sicherungs-Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Sicherungstruppendivision" }
-		2 = { "%d. Sicherungstruppendivision" }
-		3 = { "%d. Sicherungstruppendivision" }
-		4 = { "%d. Sicherungstruppendivision" }
-		5 = { "%d. Sicherungstruppendivision" }
-		6 = { "%d. Sicherungstruppendivision" }
-		7 = { "%d. Sicherungstruppendivision" }
-		8 = { "%d. Sicherungstruppendivision" }
-		9 = { "%d. Sicherungstruppendivision" }
-		10 = { "%d. Sicherungstruppendivision" }
-		11 = { "%d. Sicherungstruppendivision" }
-		12 = { "%d. Sicherungstruppendivision" }
-		13 = { "%d. Sicherungstruppendivision" }
-		14 = { "%d. Sicherungstruppendivision" }
-		15 = { "%d. Sicherungstruppendivision" }
+		101 = { "Division Burgenland" }
+		102 = { "Division Wien" }
+		103 = { "Division Niederösterreich" }
+		104 = { "Division Oberösterreich" }
+		105 = { "Division Steirmark" }
+		106 = { "Division Kärnten" }
+		107 = { "Division Salzburg" }
+		108 = { "Division Tirol" }
+		109 = { "Division Voralberg" }
+		1 = { "%d. Sicherungs-Division" }
+		2 = { "%d. Sicherungs-Division" }
+		3 = { "%d. Sicherungs-Division" }
+		4 = { "%d. Sicherungs-Division" }
+		5 = { "%d. Sicherungs-Division" }
+		6 = { "%d. Sicherungs-Division" }
+		7 = { "%d. Sicherungs-Division" }
+		8 = { "%d. Sicherungs-Division" }
+		9 = { "%d. Sicherungs-Division" }
+		10 = { "%d. Sicherungs-Division" }		
 	}
 }
 
-AUS_GAR_03 = 
-{
-	name = "Garrison Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		HUN = {
-			is_puppet_of = AUS
-		}
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_04 }
-
-	fallback_name = "k.u.k. %d. Sicherungsbrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "k.u.k. %d. Sicherungsbrigaden" }
-		2 = { "k.u.k. %d. Sicherungsbrigaden" }
-		3 = { "k.u.k. %d. Sicherungsbrigaden" }
-		4 = { "k.u.k. %d. Sicherungsbrigaden" }
-		5 = { "k.u.k. %d. Sicherungsbrigaden" }
-		6 = { "k.u.k. %d. Sicherungsbrigaden" }
-		7 = { "k.u.k. %d. Sicherungsbrigaden" }
-		8 = { "k.u.k. %d. Sicherungsbrigaden" }
-		9 = { "k.u.k. %d. Sicherungsbrigaden" }
-		10 = { "k.u.k. %d. Sicherungsbrigaden" }
-		11 = { "k.u.k. %d. Sicherungsbrigaden" }
-		12 = { "k.u.k. %d. Sicherungsbrigaden" }
-		13 = { "k.u.k. %d. Sicherungsbrigaden" }
-		14 = { "k.u.k. %d. Sicherungsbrigaden" }
-		15 = { "k.u.k. %d. Sicherungsbrigaden" }
-	}
-}
-
-AUS_GAR_04 = 
-{
-	name = "Garrison Brigades"
-
-	for_countries = { AUS }
-
-	can_use = {
-		OR = {
-			NOT = {
-				HUN = {
-					is_puppet_of = AUS
-				}
-			}
-			NOT = {
-				has_country_leader = {
-					character = AUS_franz_josef_otto_von_habsburg
-					ruling_only = yes
-				}
-			}
-		}
-	}
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_INF_01 AUS_INF_02 AUS_INF_03 AUS_INF_04 AUS_MNT_01 AUS_MNT_02 AUS_MNT_03 AUS_MNT_04 AUS_MNT_05 AUS_MNT_06 AUS_CAV_01 AUS_CAV_02 AUS_CAV_03 AUS_CAV_04 AUS_ART_01 AUS_ART_02 AUS_ART_03 AUS_ART_04 AUS_MOT_01 AUS_MOT_02 AUS_MEC_01 AUS_MEC_02 AUS_PAR_01 AUS_PAR_02 AUS_MAR_01 AUS_MAR_02 AUS_GAR_01 AUS_GAR_02 AUS_GAR_03 }
-
-	fallback_name = "%d. Sicherungsbrigaden"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Sicherungsbrigaden" }
-		2 = { "%d. Sicherungsbrigaden" }
-		3 = { "%d. Sicherungsbrigaden" }
-		4 = { "%d. Sicherungsbrigaden" }
-		5 = { "%d. Sicherungsbrigaden" }
-		6 = { "%d. Sicherungsbrigaden" }
-		7 = { "%d. Sicherungsbrigaden" }
-		8 = { "%d. Sicherungsbrigaden" }
-		9 = { "%d. Sicherungsbrigaden" }
-		10 = { "%d. Sicherungsbrigaden" }
-		11 = { "%d. Sicherungsbrigaden" }
-		12 = { "%d. Sicherungsbrigaden" }
-		13 = { "%d. Sicherungsbrigaden" }
-		14 = { "%d. Sicherungsbrigaden" }
-		15 = { "%d. Sicherungsbrigaden" }
-	}
-}
-
-AUS_IRL_01 = 
-{
-	name = "Landwehr Infanterie-Regienter"
-
-	for_countries = { AUS }
-
-	can_use = {
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-	#link_numbering_with = { AUS_INF_01 }
-
-	fallback_name = "%d. Infanterieregiment"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Infanterieregiment" }
-		2 = { "%d. Infanterieregiment" }
-		3 = { "%d. Infanterieregiment" }
-		4 = { "%d. Infanterieregiment" }
-		5 = { "%d. Infanterieregiment" }
-		6 = { "%d. Infanterieregiment" }
-		7 = { "%d. Infanterieregiment" }
-		8 = { "%d. Infanterieregiment" }
-		9 = { "%d. Infanterieregiment" }
-		10 = { "%d. Infanterieregiment" }
-		11 = { "%d. Infanterieregiment" }
-		12 = { "%d. Infanterieregiment" }
-		13 = { "%d. Infanterieregiment" }
-		14 = { "%d. Infanterieregiment" }
-		15 = { "%d. Infanterieregiment" }
-	}
-}
-
-AUS_IRL_02 = 
-{
-	name = "Tiroler Landesschützen-Regimenter"
-
-	for_countries = { AUS }
-
-	can_use = {
-		has_country_leader = {
-			character = AUS_franz_josef_otto_von_habsburg
-			ruling_only = yes
-		}
-	}
-
-	division_types = { "mountaineers" }
-
-	# Number reservation system will tie to another group.
-	link_numbering_with = { AUS_IRL_01 }
-
-	fallback_name = "%d. Tiroler Landesschützenregimenter"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%d. Tiroler Landesschützenregimenter" }
-		2 = { "%d. Tiroler Landesschützenregimenter" }
-		3 = { "%d. Tiroler Landesschützenregimenter" }
-		4 = { "%d. Tiroler Landesschützenregimenter" }
-		5 = { "%d. Tiroler Landesschützenregimenter" }
-		6 = { "%d. Tiroler Landesschützenregimenter" }
-		7 = { "%d. Tiroler Landesschützenregimenter" }
-		8 = { "%d. Tiroler Landesschützenregimenter" }
-		9 = { "%d. Tiroler Landesschützenregimenter" }
-		10 = { "%d. Tiroler Landesschützenregimenter" }
-		11 = { "%d. Tiroler Landesschützenregimenter" }
-		12 = { "%d. Tiroler Landesschützenregimenter" }
-		13 = { "%d. Tiroler Landesschützenregimenter" }
-		14 = { "%d. Tiroler Landesschützenregimenter" }
-		15 = { "%d. Tiroler Landesschützenregimenter" }
-	}
-}
-
-#AUS_CAV_01 = 
-#{
-#	name = "Cavalry Division"
-#
-#	for_countries = { AUS }
-#
-#	can_use = { always = yes }
-#
-#	division_types = { "cavalry" }
-#
-#	# Number reservation system will tie to another group.
-#	#link_numbering_with = { AUS_INF_01 }
-#
-#	fallback_name = "%d. Schnelle Division"
-#
-#	# Names with numbers (only one number per entry). 
-#	# It's okay to have gaps in numbering.
-#	ordered =
-#	{
-#		1 = { "%d. Schnelle Division" }
-#		2 = { "%d. Schnelle Division" }
-#		3 = { "%d. Schnelle Division" }
-#		4 = { "%d. Schnelle Division" }
-#		5 = { "%d. Schnelle Division" }
-#		6 = { "%d. Schnelle Division" }
-#		7 = { "%d. Schnelle Division" }
-#		8 = { "%d. Schnelle Division" }
-#		9 = { "%d. Schnelle Division" }
-#		10 = { "%d. Schnelle Division" }
-#	}
-#}
-#
-#AUS_MOT_01 = 
-#{
-#	name = "Motorized Division"
-#
-#	for_countries = { AUS }
-#
-#	can_use = { always = yes }
-#
-#	division_types = { "motorized" }
-#
-#	# Number reservation system will tie to another group.
-#	#link_numbering_with = { AUS_INF_01 }
-#
-#	fallback_name = "%d. Kraftfahrjäger-Division"
-#
-#	# Names with numbers (only one number per entry). 
-#	# It's okay to have gaps in numbering.
-#	ordered =
-#	{
-#		1 = { "%d. Kraftfahrjäger-Division" }
-#		2 = { "%d. Kraftfahrjäger-Division" }
-#		3 = { "%d. Kraftfahrjäger-Division" }
-#		4 = { "%d. Kraftfahrjäger-Division" }
-#		5 = { "%d. Kraftfahrjäger-Division" }
-#		6 = { "%d. Kraftfahrjäger-Division" }
-#		7 = { "%d. Kraftfahrjäger-Division" }
-#		8 = { "%d. Kraftfahrjäger-Division" }
-#		9 = { "%d. Kraftfahrjäger-Division" }
-#		10 = { "%d. Kraftfahrjäger-Division" }
-#	}
-#}
-#
-#AUS_MEC_01 = 
-#{
-#	name = "Mechanized Division"
-#
-#	for_countries = { AUS }
-#
-#	can_use = { always = yes }
-#
-#	division_types = { "mechanized" }
-#
-#	# Number reservation system will tie to another group.
-#	link_numbering_with = { AUS_CAV_01 }
-#
-#	fallback_name = "%d. Schnelle Division"
-#
-#	# Names with numbers (only one number per entry). 
-#	# It's okay to have gaps in numbering.
-#	ordered =
-#	{
-#		1 = { "%d. Schnelle Division" }
-#		2 = { "%d. Schnelle Division" }
-#		3 = { "%d. Schnelle Division" }
-#		4 = { "%d. Schnelle Division" }
-#		5 = { "%d. Schnelle Division" }
-#		6 = { "%d. Schnelle Division" }
-#		7 = { "%d. Schnelle Division" }
-#		8 = { "%d. Schnelle Division" }
-#		9 = { "%d. Schnelle Division" }
-#		10 = { "%d. Schnelle Division" }
-#	}
-#}
-#
-#AUS_ARM_01 = 
-#{
-#	name = "Armored Division"
-#
-#	for_countries = { AUS }
-#
-#	can_use = { always = yes }
-#
-#	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor" }
-#
-#	# Number reservation system will tie to another group.
-#	#link_numbering_with = { AUS_INF_01 }
-#
-#	fallback_name = "%d. Panzerwagen-Division"
-#
-#	# Names with numbers (only one number per entry). 
-#	# It's okay to have gaps in numbering.
-#	ordered =
-#	{
-#		1 = { "%d. Panzerwagen-Division" }
-#		2 = { "%d. Panzerwagen-Division" }
-#		3 = { "%d. Panzerwagen-Division" }
-#		4 = { "%d. Panzerwagen-Division" }
-#		5 = { "%d. Panzerwagen-Division" }
-#		6 = { "%d. Panzerwagen-Division" }
-#		7 = { "%d. Panzerwagen-Division" }
-#		8 = { "%d. Panzerwagen-Division" }
-#		9 = { "%d. Panzerwagen-Division" }
-#		10 = { "%d. Panzerwagen-Division" }
-#	}
-#}
-#
-#AUS_PAR_01 = 
-#{
-#	name = "Paratrooper Division"
-#
-#	for_countries = { AUS }
-#
-#	can_use = { always = yes }
-#
-#	division_types = { "paratrooper" }
-#
-#	# Number reservation system will tie to another group.
-#	#link_numbering_with = { AUS_INF_01 }
-#
-#	fallback_name = "%d. Fallschirmjäger-Division"
-#
-#	# Names with numbers (only one number per entry). 
-#	# It's okay to have gaps in numbering.
-#	ordered =
-#	{
-#		1 = { "%d. Fallschirmjäger-Division" }
-#		2 = { "%d. Fallschirmjäger-Division" }
-#		3 = { "%d. Fallschirmjäger-Division" }
-#		4 = { "%d. Fallschirmjäger-Division" }
-#		5 = { "%d. Fallschirmjäger-Division" }
-#		6 = { "%d. Fallschirmjäger-Division" }
-#		7 = { "%d. Fallschirmjäger-Division" }
-#		8 = { "%d. Fallschirmjäger-Division" }
-#		9 = { "%d. Fallschirmjäger-Division" }
-#		10 = { "%d. Fallschirmjäger-Division" }
-#	}
-#}
-#
-#AUS_MAR_01 = 
-#{
-#	name = "Marine Division"
-#
-#	for_countries = { AUS }
-#
-#	can_use = { always = yes }
-#
-#	division_types = { "marine" }
-#
-#	# Number reservation system will tie to another group.
-#	#link_numbering_with = { AUS_INF_01 }
-#
-#	fallback_name = "%d. Marine-Stürmdivision"
-#
-#	# Names with numbers (only one number per entry). 
-#	# It's okay to have gaps in numbering.
-#	ordered =
-#	{
-#		1 = { "%d. Marine-Stürmdivision" }
-#		2 = { "%d. Marine-Stürmdivision" }
-#		3 = { "%d. Marine-Stürmdivision" }
-#		4 = { "%d. Marine-Stürmdivision" }
-#		5 = { "%d. Marine-Stürmdivision" }
-#		6 = { "%d. Marine-Stürmdivision" }
-#		7 = { "%d. Marine-Stürmdivision" }
-#		8 = { "%d. Marine-Stürmdivision" }
-#		9 = { "%d. Marine-Stürmdivision" }
-#		10 = { "%d. Marine-Stürmdivision" }
-#	}
-#}
-#
-#AUS_MNT_01 = 
-#{
-#	name = "Mountain Division"
-#
-#	for_countries = { AUS }
-#
-#	can_use = { always = yes }
-#
-#	division_types = { "mountaineers" }
-#
-#	# Number reservation system will tie to another group.
-#	link_numbering_with = { AUS_INF_01 }
-#
-#	fallback_name = "%d. Division"
-#
-#	# Names with numbers (only one number per entry). 
-#	# It's okay to have gaps in numbering.
-#	ordered =
-#	{
-#		1 = { "%d. Division" }
-#		2 = { "%d. Division" }
-#		3 = { "%d. Division" }
-#		4 = { "%d. Division" }
-#		5 = { "%d. Division" }
-#		6 = { "%d. Division" }
-#		7 = { "%d. Division" }
-#		8 = { "%d. Division" }
-#		9 = { "%d. Division" }
-#		10 = { "%d. Division" }
-#	}
-#}
-#
-#AUS_GAR_01 = 
-#{
-#	name = "Garrison Division"
-#
-#	for_countries = { AUS }
-#
-#	can_use = { always = yes }
-#
-#	division_types = { "infantry" }
-#
-#	# Number reservation system will tie to another group.
-#	link_numbering_with = { AUS_INF_01 }
-#
-#	fallback_name = "%d. Sicherungs-Division"
-#
-#	# Names with numbers (only one number per entry). 
-#	# It's okay to have gaps in numbering.
-#	ordered =
-#	{
-#		101 = { "Division Burgenland" }
-#		102 = { "Division Wien" }
-#		103 = { "Division Niederösterreich" }
-#		104 = { "Division Oberösterreich" }
-#		105 = { "Division Steirmark" }
-#		106 = { "Division Kärnten" }
-#		107 = { "Division Salzburg" }
-#		108 = { "Division Tirol" }
-#		109 = { "Division Voralberg" }
-#		1 = { "%d. Sicherungs-Division" }
-#		2 = { "%d. Sicherungs-Division" }
-#		3 = { "%d. Sicherungs-Division" }
-#		4 = { "%d. Sicherungs-Division" }
-#		5 = { "%d. Sicherungs-Division" }
-#		6 = { "%d. Sicherungs-Division" }
-#		7 = { "%d. Sicherungs-Division" }
-#		8 = { "%d. Sicherungs-Division" }
-#		9 = { "%d. Sicherungs-Division" }
-#		10 = { "%d. Sicherungs-Division" }		
-#	}
-#}
-#
-#

@@ -422,11 +422,15 @@ spriteTypes = {
 
 ###フランス###
     #国家元首
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_FRA_Jean_Orleans"
 		texturefile = "gfx/interface/ideas/minister/FRA/idea_FRA_Jean_Orleans.png"
 	}
-      SpriteType = {	
+	SpriteType = {	
+		name = "GFX_idea_FRA_henri_d_orleans"
+		texturefile = "gfx/interface/ideas/minister/FRA/henri_d_orleans.png"
+	}
+    SpriteType = {	
 		name = "GFX_idea_FRA_marcel_deat"
 		texturefile = "gfx/interface/ideas/minister/FRA/idea_FRA_marcel_deat.png"
 	}

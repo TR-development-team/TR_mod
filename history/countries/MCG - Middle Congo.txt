@@ -3,8 +3,11 @@ oob = "MCG_1936"
 
 JAP = {	set_autonomy = {	target = MCG	autonomous_state = imperial_colony	}	}
 set_cosmetic_tag = COUNTRY_JAP
-
 set_variable = {	MCG_unrest_level = 1	}
+
+country_event = { id = TR_jafrica.3 days = 5 }#恐慌
+country_event = { id = TR_jafrica.56 days = 70 }#コンゴ族同盟
+country_event = { id = TR_jafrica.59 days = 300 }#カタンガストライキ
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -13,17 +16,31 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 8
+	syndicalist = 3
+	radical_socialist = 5
+	social_democrat = 8
+	social_liberal = 6
+	market_liberal = 11
+	social_conservative = 14
+	authoritarian_democrat = 38
+	paternal_autocrat = 4
+	national_populist = 3
+        Gnosticism = 0
 }
 
+recruit_character = MCG_Moise_Kapenda_Tshombe
+recruit_character = MCG_Joseph_Kasa_Vubu
 recruit_character = MCG_Maeda_Toshinari
 
 add_ideas = {
 	Colonical_system
 	JAP_JAP_colony
 	Tiyoda_Kensho
+        MCG_Darkest_Africa
+        MCG_Mines_under_zaibatsu_control
+        MCG_Kimbanguism
 }
-add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
 add_dynamic_modifier = {	modifier = MCG_Country_Unrest	}
 set_convoys = 5
 set_technology = {

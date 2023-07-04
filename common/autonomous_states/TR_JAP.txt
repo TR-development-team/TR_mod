@@ -12,7 +12,7 @@ autonomy_state = {	#帝国保護国
 	}
 	modifier = {
 		autonomy_manpower_share = 0
-		extra_trade_to_overlord_factor = 1.0
+		extra_trade_to_overlord_factor = 0.5
 		overlord_trade_cost_factor = -0.5
 		autonomy_gain_global_factor = -0.3
 	}
@@ -35,6 +35,8 @@ autonomy_state = {	#帝国自治領
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = yes
+		can_be_spymaster = yes
+		contributes_operatives = yes
 		can_create_collaboration_government = no
 	}
 	modifier = {

@@ -3,40 +3,18 @@ characters={
 		name=USA_Earl_Browder
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Browder.tga"
+				large="gfx/leaders/USA/Portrait_USA_Earl_Browder.png"
 			}
 		}
 		country_leader={
 			ideology= Jughashvilist_subtype
 		}
 	}
- 	USA_Bill_Haywood={
-		name=USA_Bill_Haywood
-		portraits={
-			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Haywood.tga"
-			}
-		}
-		country_leader={
-			ideology= anarco_syndicalist_subtype
-		}
-	}
- 	USA_Father_Divine={
-		name=USA_Father_Divine
-		portraits={
-			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Divine.tga"
-			}
-		}
-		country_leader={
-			ideology= radical_socialist_subtype
-		}
-	}
  	USA_Norman_Thomas={
 		name=USA_Norman_Thomas
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Norman_Thomas.tga"
+				large="gfx/leaders/USA/Portrait_USA_Norman_Thomas.png"
 			}
 		}
 		country_leader={
@@ -48,54 +26,76 @@ characters={
 		name=USA_Franklin_Roosevelt
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_FDR.tga"
+				large="gfx/leaders/USA/Portrait_USA_FDR.png"
 			}
 		}
 		country_leader={
 			ideology= social_liberal_subtype
 		}
 	}
- 	USA_Douglas_MacArthur={
-		name=USA_Douglas_MacArthur
+ 	USA_Alf_Landon={
+		name=USA_Alf_Landon
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_McArthur.tga"
+				large="gfx/leaders/USA/Portrait_USA_Alf_Landon.png"
 			}
 		}
 		country_leader={
 			ideology= market_liberal_subtype
-		}
-		country_leader={
-			ideology= social_conservative_subtype
 		}
 	}
  	USA_Richard_Russell_jr={
 		name=USA_Richard_Russell_jr
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Russell.tga"
+				large="gfx/leaders/USA/Portrait_USA_Richard_Russell_jr.png"
 			}
 		}
 		country_leader={
-			ideology= authoritarian_democrat_subtype
+			ideology= social_conservative_subtype
 		}
 	}
- 	USA_Herbert_Armstrong={
-		name=USA_Herbert_Armstrong
+ 	USA_Charles_Lindbergh={
+		name=USA_Charles_Lindbergh
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Armstrong.tga"
+				large="gfx/leaders/USA/Portrait_USA_Charles_Lindbergh.png"
 			}
 		}
 		country_leader={
-			ideology= Theocracy_subtype
+			ideology= oligarchy_subtype
+		}
+	}
+ 	USA_Huey_Long={
+		name=USA_Huey_Long
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Huey_Long.png"
+			}
+		}
+		country_leader={
+			ideology= paternal_autocrat_subtype
+		}
+		country_leader={
+			ideology= Fascist_subtype
+		}
+	}
+ 	USA_Charles_Coughlin={
+		name=USA_Charles_Coughlin
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Charles_Coughlin.png"
+			}
+		}
+		country_leader={
+			ideology= Catholic_Integralism_subtype
 		}
 	}
  	USA_Gerald_LK_Smith={
 		name=USA_Gerald_LK_Smith
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Gerald.tga"
+				large="gfx/leaders/USA/Portrait_USA_Gerald.png"
 			}
 		}
 		country_leader={
@@ -103,15 +103,49 @@ characters={
                         traits = { dictator }
 		}
 	}
+ 	USA_Hiram_Wesley_Evans={
+		name=USA_Hiram_Wesley_Evans
+		portraits={
+			civilian={
+				large= "gfx/leaders/USA/Portrait_USA_Hiram_Wesley_Evans.png"
+			}
+		}
+		country_leader={
+			ideology= Aryanism_subtype
+		}
+	}
  	USA_HP_Lovecraft={
 		name=USA_HP_Lovecraft
 		portraits={
 			civilian={
-				large= "gfx/leaders/USA/Portrait_USA_Lovecraft.tga"
+				large= "gfx/leaders/USA/Portrait_USA_Lovecraft.png"
 			}
 		}
 		country_leader={
-			ideology= Gnosticism_subtype
+			ideology= occultism_subtype
+		}
+	}
+	USA_douglas_macarthur={
+		name=USA_douglas_macarthur
+		portraits={
+			army={
+				small="GFX_idea_douglas_macarthur"
+			}
+			army={
+				large="gfx/leaders/USA/Portrait_USA_McArthur.png"
+			}
+		}
+		country_leader={
+			ideology= militarism_subtype
+		}
+		field_marshal={
+			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=57
 		}
 	}
 	USA_george_s_patton={
@@ -233,27 +267,6 @@ characters={
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=0
-		}
-	}
-
-	USA_douglas_macarthur_marshal={
-		name=USA_douglas_macarthur
-		portraits={
-			army={
-				small="GFX_idea_douglas_macarthur"
-			}
-			army={
-				large="gfx/leaders/USA/Portrait_USA_McArthur.tga"
-			}
-		}
-		field_marshal={
-			traits={ brilliant_strategist career_officer media_personality politically_connected offensive_doctrine }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=57
 		}
 	}
 

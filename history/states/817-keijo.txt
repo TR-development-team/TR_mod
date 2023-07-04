@@ -10,8 +10,9 @@ provinces={
 	history={
 		owner = JAP
                 add_core_of = KOR
+                add_dynamic_modifier = { modifier = JAP_Imperialized_State }
 		buildings = {
-			industrial_complex = 3
+			industrial_complex = 4
 			infrastructure = 4
 			dockyard = 1
                         7221 = {

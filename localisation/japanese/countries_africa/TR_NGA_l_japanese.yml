@@ -1,9 +1,17 @@
 ﻿l_japanese: 
+###name###
+NGA_Obafemi_Awolowo:0 "オバフェミ・アウォロウォ"
+NGA_Nnamdi_Azikiwe:0 "ンナムディ・アジキウェ"
 ###tooltip###
 NGA_unrest_inc_tt:0 "植民地不穏度が§R1§!上がる。"
 NGA_unrest_dec_tt:0 "植民地不穏度が§G1§!下がる。"
 NGA_Country_Unrest:0 "£pol_violence 植民地不穏度の影響"
 NGA_Country_Unrest_desc:0 "§R現在の£pol_violence 植民地不穏度に合わせて修正が入る。§!\n\n日本の4つのアフリカ植民地は、独立や自治を求める運動の高まりにより悪影響を受ける。\n§R不穏度が高すぎると原住民が反乱を起こし、最終的に植民地が崩壊してしまうかもしれない…§!"
+###ideas###
+NGA_North_South_divide:0 "南北に分かれた植民地"
+NGA_North_South_divide_desc:0 "西アフリカは二つに分かれている。北のソコトやボルヌでは伝統的な支配体制を温存し、保護国としたこれらの諸国を通じた間接的な統治を行っている。一方、ラゴスを中心とした南部では強制的に経済制度を近代化し、社会制度を近代化し、日本語が公用化され、寺社仏閣が建設された。地域ごとに全く異なる様相を示す西アフリカ統治政策はこの地域に多くの矛盾をもたらしているが、植民地政府にとってはこれが好都合なのである。"
+NGA_tribal_conflict:0 "部族対立"
+NGA_tribal_conflict_desc:0 "日本がこの地域を武力によって制圧し、一つの植民地としてまとめなければ、『ナイジェリア』という地理的概念は生まれなかっただろう。この地域から万が一秩序が失われるようなことがあれば、南西部のヨルバ人、南東部のイボ人、北部のハウサ人はそれぞれが主導権を握るために行動を起こすだろう…"
 ###decision###
 NGA_Africa_category:0 "£pol_violence 植民地不穏度の影響"
 NGA_Africa_category_desc:0 "現在の£pol_violence 植民地不穏度: [?NGA_unrest_level|-]"

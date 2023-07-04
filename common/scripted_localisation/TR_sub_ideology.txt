@@ -226,6 +226,42 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = African_socialism_tot_subtype
+		}
+		localization_key = African_socialism_tot_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = African_socialism_syn_subtype
+		}
+		localization_key = African_socialism_syn_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = African_socialism_rs_subtype
+		}
+		localization_key = African_socialism_rs_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = African_socialism_subtype
+		}
+		localization_key = African_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Buddhist_socialism_subtype
+		}
+		localization_key = Buddhist_socialism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Buddhist_socialism_sd_subtype
+		}
+		localization_key = Buddhist_socialism_sd_subtype
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = Pan_Asianism_subtype
 		}
 		localization_key = Pan_Asianism_subtype

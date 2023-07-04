@@ -1,38 +1,41 @@
 
 opinion_modifiers = {
-               SOV_GER_SUPPORT = {
+            SOV_GER_SUPPORT = {
 		        value = 50
 	        }
-               SOV_GER_SUPPORT_deny = {
+            SOV_GER_SUPPORT_deny = {
 		        value = -30
 	        }
-               JAP_blockeconomy_1 = {
+            JAP_blockeconomy_1 = {
                         trade = yes
 		        value = -50
 	        }
-               JAP_AST_collaborate = {
+            JAP_AST_collaborate = {
 		        value = 50
 	        }
-               USA_AST_collaborate = {
+            USA_AST_collaborate = {
 		        value = 50
 	        }
-               OTT_Treatment_Revoke = {
+            OTT_Treatment_Revoke = {
 		        value = -50
 	        }
-               OTT_Bagdadrailway_a = {
+            OTT_Bagdadrailway_a = {
 		        value = -50
 	        }
-               USA_FRA_SUPPORT = {
+            USA_FRA_SUPPORT = {
 		        value = 50
 	        }
-               RUS_FRA_SUPPORT = {
+            RUS_FRA_SUPPORT = {
 		        value = 50
 	        }
-               returned_land_opinion = {
+            returned_land_opinion = {
 		        value = 50
 	        }
-               RUS_FRA_SUPPORT_DENY = {
+            RUS_FRA_SUPPORT_DENY = {
 		        value = -25
+	        }
+			JAP_EGY_Ally = {
+		        value = 50
 	        }
 
 }

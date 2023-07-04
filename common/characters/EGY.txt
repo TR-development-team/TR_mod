@@ -1,5 +1,15 @@
 characters={
-	
+        EGY_Naguib={
+		name=EGY_Naguib
+		portraits={
+			civilian={
+				large="gfx/leaders/EGY/Portrait_EGY_Naguib.tga"
+			}
+		}
+		country_leader={
+			ideology= radical_socialist_subtype
+		}
+	}
 	EGY_farouk_I={
 		name=EGY_farouk_I
 		portraits={
@@ -26,15 +36,15 @@ characters={
 			ideology= absolute_monarchy_subtype
 		}
 	}
-	EGY_Naguib={
-		name=EGY_Naguib
+        EGY_Ahmed_Hussein={
+		name=EGY_Ahmed_Hussein
 		portraits={
 			civilian={
-				large="gfx/leaders/EGY/Portrait_EGY_Naguib.tga"
+				large="gfx/leaders/EGY/Portrait_EGY_Ahmed_Hussein.png"
 			}
 		}
 		country_leader={
-			ideology= radical_socialist_subtype
+			ideology= Islamism_subtype
 		}
 	}
 }

@@ -1,6 +1,6 @@
 add_namespace = TR_USA
 
-
+#1936年大統領選挙
 country_event = {
 	id = TR_USA.1
 	title = TR_USA.1.t
@@ -8,409 +8,85 @@ country_event = {
 	picture = GFX_report_event_usa_election_generic
 
 	is_triggered_only = yes
-        fire_only_once = yes
+    fire_only_once = yes
 
-
-	
 	option = {
 		name = TR_USA.1.a
-                trigger = {
-			NOT = { has_government = Gnosticism }
+        ai_chance = {
+			base = 100 
 		}
-                ai_chance = {
-			base = 100 #45
-		}
-                add_popularity = {
+        add_popularity = {
 			ideology = national_populist
 			popularity = 0.25
 		}
-                set_country_flag = USA_1936SENKYO
-                set_country_flag = USA_Smith_Win
-                load_focus_tree = america_focus_smith
+        set_country_flag = USA_1936SENKYO
+        set_country_flag = USA_Smith_Win
+        load_focus_tree = america_focus_smith
 		hidden_effect = {
-                           country_event = {
-					id =  TR_USA.11
-					days = 22
-					
-				}
+            country_event = {
+				id =  TR_USA.11
+				days = 22
+			}
 		}
-	}
-        option = {
-		name = TR_USA.1.b
-                trigger = {
-			has_government = Gnosticism
-		}
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
-		}
-                hidden_effect = { kill_ideology_leader = national_populist }
-                create_country_leader = {
-	                name = "繧ｸ繧ｧ繝ｩ繝ｫ繝鵜K繧ｹ繝溘せ"
-	                desc = "POLITICS_GERALD_DESC"
-	                picture = "Portrait_USA_Gerald.tga"
-	                expire = "1965.1.1"
-	                ideology = national_populist_subtype
-                 }
-	}
-        option = {
-		name = TR_USA.1.c
-                trigger = {
-			NOT = { has_government = Gnosticism }
-		}
-                ai_chance = {
-			base = 0 #35
-		}
-                add_popularity = {
-			ideology = totalist
-			popularity = 0.25
-		}
-                set_country_flag = USA_1936SENKYO
-                set_country_flag = USA_Browder_Win
-		hidden_effect = {
-                           country_event = {
-					id =  TR_USA.11
-					days = 22
-					
-				}
-		}
-	}
-        option = {
-		name = TR_USA.1.e
-                trigger = {
-			NOT = { has_government = Gnosticism }
-		}
-                ai_chance = {
-			base = 0 #10
-		}
-                add_popularity = {
-			ideology = social_conservative
-			popularity = 0.25
-		}
-                set_country_flag = USA_1936SENKYO
-                set_country_flag = USA_McArthur_Win
-		hidden_effect = {
-                           country_event = {
-					id =  TR_USA.11
-					days = 22
-					
-				}
-		}
-	}
-                option = {
-		name = TR_USA.1.f
-                trigger = {
-			NOT = { has_government = Gnosticism }
-		}
-                ai_chance = {
-			base = 0 #10
-		}
-                add_popularity = {
-			ideology = authoritarian_democrat
-			popularity = 0.25
-		}
-                set_country_flag = USA_1936SENKYO
-                set_country_flag = USA_Russell_Win
-		hidden_effect = {
-                           country_event = {
-					id =  TR_USA.11
-					days = 22
-					
-				}
-		}
-	}
-    
+	} 
 }
-
-
+#上院議員ヒューイ・ロングの暗殺
 country_event = {
 	id = TR_USA.2
 	title = TR_USA.2.t
 	desc = TR_USA.2.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_usa_election_generic
 
-        is_triggered_only = yes
-        fire_only_once = yes
+	is_triggered_only = yes
+    fire_only_once = yes
 
-	
 	option = {
 		name = TR_USA.2.a
-                remove_ideas = USA_LOSE_IN_CALIFORNIA
-                remove_ideas = USA_depression
-                add_ideas = USA_Anarchy_idea
-                set_country_flag = USA_anarchy
-                set_politics = {
-			ruling_party = syndicalist
-			elections_allowed = no
-		}
-
-                set_party_name = {
-			ideology = syndicalist
-			long_name = USA_anarchy_state_long
-			name = USA_anarchy_state
-		}
-                hidden_effect = { kill_ideology_leader = syndicalist }
-                create_country_leader = {
-                    	name = "無政府状態"
-	                desc = ""
-	                picture = "Anarchist_Flag.tga"
-	                expire = "1965.1.1"
-	                ideology = syndicalist_subtype
-	                traits = {}
-                    }
-                hidden_effect = {
-                          country_event = {
-					id =  TR_USA.3
-					days = 30
-					
+		371 = { 
+			add_manpower = -1
+		} 
+		retire_character = USA_Huey_Long
+		add_stability = -0.05
+		hidden_effect = {
+			USA_Charles_Coughlin = {
+				promote_character = {
+					Ideology = Catholic_Integralism_subtype
 				}
+			}
+			USA_Gerald_LK_Smith = {
+				promote_character = {
+					Ideology = president_principle_subtype
+				}
+			}
+            country_event = {
+				id =  TR_USA.3
+				days = 5
+			}
 		}
-	}
+	} 
 }
-
-
-
+#連合党に同情が集まる
 country_event = {
 	id = TR_USA.3
 	title = TR_USA.3.t
 	desc = TR_USA.3.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_usa_election_generic
 
 	is_triggered_only = yes
-        fire_only_once = yes
+    fire_only_once = yes
 
-
-	
 	option = {
 		name = TR_USA.3.a
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.02
 		}
-                hidden_effect = {
-                          country_event = {
-					id =  TR_USA.4
-					days = 30
-					
-				}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.04
 		}
-	}
+	} 
 }
-
-country_event = {
-	id = TR_USA.4
-	title = TR_USA.4.t
-	desc = TR_USA.4.d
-	picture = GFX_report_event_gathering_protest
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_USA.4.a
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
-		}
-                hidden_effect = {
-                          country_event = {
-					id =  TR_USA.5
-					days = 30
-					
-				}
-		}
-	}
-}
-
-country_event = {
-	id = TR_USA.5
-	title = TR_USA.5.t
-	desc = TR_USA.5.d
-	picture = GFX_report_event_gathering_protest
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_USA.5.a
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
-		}
-                hidden_effect = {
-                          country_event = {
-					id =  TR_USA.6
-					days = 60
-					
-				}
-		}
-	}
-}
-
-country_event = {
-	id = TR_USA.6
-	title = TR_USA.6.t
-	desc = TR_USA.6.d
-	picture = GFX_report_event_gathering_protest
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_USA.6.a
-                 set_politics = {
-			ruling_party = Gnosticism
-			elections_allowed = no
-		}
-                hidden_effect = {
-                          country_event = {
-					id =  TR_USA.7
-					days = 30
-					
-				}
-		}
-	}
-}
-
-country_event = {
-	id = TR_USA.7
-	title = TR_USA.7.t
-	desc = TR_USA.7.d
-	picture = GFX_report_event_gathering_protest
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_USA.7.a
-                remove_ideas = USA_Anarchy_idea
-                add_ideas = USA_Cthulhu
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
-		}
-                hidden_effect = {
-                          country_event = {
-					id =  TR_USA.8
-					days = 60
-					
-				}
-		}
-	}
-}
-
-country_event = {
-	id = TR_USA.8
-	title = TR_USA.8.t
-	desc = TR_USA.8.d
-	picture = GFX_report_event_gathering_protest
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_USA.8.a
-                add_ideas = USA_Innsmouth
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
-		}
-                hidden_effect = {
-                          country_event = {
-					id =  TR_USA.9
-					days = 60
-					
-				}
-		}
-	}
-}
-
-country_event = {
-	id = TR_USA.9
-	title = TR_USA.9.t
-	desc = TR_USA.9.d
-	picture = GFX_report_event_gathering_protest
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_USA.9.a
-                add_ideas = USA_Madness
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
-		}
-                hidden_effect = {
-                          country_event = {
-					id =  TR_USA.10
-					days = 999
-					
-				}
-		}
-	}
-}
-
-
-country_event = {
-	id = TR_USA.10
-	title = TR_USA.10.t
-	desc = TR_USA.10.d
-	picture = GFX_report_event_gathering_protest
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_USA.10.a
-                add_ideas = USA_Nyarlathotep
-                add_popularity = {
-			ideology = Gnosticism
-			popularity = 0.05
-		}
-                declare_war_on = {
-				target = JAP type = annex_everything
-			}
-                declare_war_on = {
-				target = CAL type = annex_everything
-			}
-                declare_war_on = {
-				target = RAT type = annex_everything
-			}
-                declare_war_on = {
-				target = CAN type = annex_everything
-			}
-                declare_war_on = {
-				target = GBR type = annex_everything
-			}
-                declare_war_on = {
-				target = SOV type = annex_everything
-			}
-                declare_war_on = {
-				target = RUS type = annex_everything
-			}
-                declare_war_on = {
-				target = MEX type = annex_everything
-			}
-                
-	}
-}
-
-
 country_event = {
 	id = TR_USA.11
 	title = TR_USA.11.t
@@ -424,24 +100,22 @@ country_event = {
 	
 	option = {
 		name = TR_USA.11.a
-                WIN = {
+        WIN = {
 			transfer_state = 690
 			transfer_state = 689
-                        transfer_state = 693
+            transfer_state = 693
 			transfer_state = 686
-
-                      }
-                hidden_effect = {
-                         WIN = { country_event = {
+            }
+        hidden_effect = {
+            WIN = { 
+				country_event = {
 					id =  TR_USA.12
 					days = 2
-					
 				} 
-                    }
+            }
 		}
 	}
 }
-
 country_event = {
 	id = TR_USA.12
 	title = TR_USA.12.t
@@ -455,7 +129,7 @@ country_event = {
 	
 	option = {
 		name = TR_USA.12.a
-                set_politics = {
+        set_politics = {
 			ruling_party = market_liberal
 			elections_allowed = no
 		}
@@ -498,37 +172,35 @@ country_event = {
 	
 	option = {
 		name = TR_USA.13.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		} 
-                add_political_power = 50
-                remove_ideas = USA_treaty_of_Tokyo
-                remove_ideas = USA_Extremism
-                reverse_add_opinion_modifier = {
-				target = JAP
-				modifier = OTT_Treatment_Revoke
+        add_political_power = 50
+        remove_ideas = USA_treaty_of_Tokyo
+        remove_ideas = USA_Extremism
+        reverse_add_opinion_modifier = {
+			target = JAP
+			modifier = OTT_Treatment_Revoke
+		}
+        388 = { set_demilitarized_zone = no }
+        381 = { set_demilitarized_zone = no }
+        382 = { set_demilitarized_zone = no }
+        376 = { set_demilitarized_zone = no }
+        add_named_threat = { threat = 5 name = USA_TRATMENT_BREAK }
+	    hidden_effect = {
+            country_event = {
+			id = TR_news.37
+			days = 1
 			}
-                388 = { set_demilitarized_zone = no }
-                381 = { set_demilitarized_zone = no }
-                382 = { set_demilitarized_zone = no }
-                376 = { set_demilitarized_zone = no }
-                add_named_threat = { threat = 5 name = USA_TRATMENT_BREAK }
-	        hidden_effect = {
-                         country_event = {
-					id = TR_news.37
-					days = 1
-					
-				}
 		}
         }
-        option = {
+    option = {
 		name = TR_USA.13.b
                 ai_chance = {
 			base = 0
 		}
-                add_political_power = -500
-		add_stability = -0.5
-                
+         add_political_power = -500
+		add_stability = -0.5         
 	}
 }
 
@@ -545,45 +217,46 @@ country_event = {
 	
 	option = {
 		name = TR_USA.14.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		} 
-                remove_ideas = CNK_jap_economic
-                drop_cosmetic_tag = yes
-				set_cosmetic_tag = TEX_emergency_government
-                add_popularity = {
+        remove_ideas = CNK_jap_economic
+        drop_cosmetic_tag = yes
+		set_cosmetic_tag = TEX_emergency_government
+        add_popularity = {
 			ideology = paternal_autocrat
 			popularity = 0.3
 		}
-                JAP = { diplomatic_relation = {
-                               country = TEX
-                               relation = guarantee
-                               active = no
-                             } 
-                         }
+        JAP = {   
+			diplomatic_relation = {
+                country = TEX
+                relation = guarantee
+                active = no
+            } 
+        }
 		set_politics = {
 			ruling_party = paternal_autocrat
 			elections_allowed = no
 		}
-                hidden_effect = {
-                         country_event = {
-					id = TR_USA.15
-					days = 7
-					  }
-                         country_event = {
-					id = TR_news.38
-					days = 1
-					  }
+        hidden_effect = {
+            country_event = {
+				id = TR_USA.15
+				days = 7
 				}
+            country_event = {
+				id = TR_news.38
+				days = 1
+				}
+			}
         }
         option = {
 		name = TR_USA.14.b
-                ai_chance = {
+        ai_chance = {
 			base = 0
 		}
-                add_political_power = -200
-		add_stability = -0.3
-                JAP = { add_to_faction = TEX }
+        add_political_power = -200
+		add_stability = -0.5
+        JAP = { add_to_faction = TEX }
                 
 	}
 }
@@ -601,52 +274,54 @@ country_event = {
 	
 	option = {
 		name = TR_USA.15.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		} 
-                trigger = {
-			NOT = { USA = { has_government = totalist } }
+        trigger = {
+			USA = { has_socialist_government = no }
 		}
-                hidden_effect = {
-                      USA = {   country_event = {
+        hidden_effect = {
+            USA = {   
+				country_event = {
 					id = TR_USA.16
 					days = 7
-					  }
+					}
 				}
-                            }
+            }
         }
-        option = {
+    option = {
 		name = TR_USA.15.b
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		} 
-                trigger = {
-		     USA  = { has_government = totalist }
+        trigger = {
+		    USA = { has_socialist_government = yes }
 		}
-                hidden_effect = {
-                   USA  = {      country_event = {
+        hidden_effect = {
+            USA = {      
+				country_event = {
 					id = TR_USA.17
 					days = 7
-					  }
-                                   }
-				}
+				    }
+                }
+			}
         }
         option = {
 		name = TR_USA.15.c
-                ai_chance = {
+        ai_chance = {
 			base = 0
 		}
-                trigger = {
-			NOT = { USA = { has_government = totalist } }
+        trigger = {
+			USA = { has_socialist_government = no }
 		}
-                add_political_power = -100
+        add_political_power = -100
 		add_stability = -0.2
-                USA = { 
-                        create_wargoal = {
+        USA = { 
+            create_wargoal = {
 				target = TEX
 				type = annex_everything
 			} 
-                       }
+            }
 	}
 }
 #テキサス併合
@@ -663,14 +338,12 @@ country_event = {
 	option = {
 		name = TR_USA.16.a
 		add_stability = 0.05
-                annex_country = {
-                        target = TEX
-                        transfer_troops = yes
-                      }
-           TEX = { retire_character = USA_dwight_d_eisenhower }
-           USA = { recruit_character = USA_dwight_d_eisenhower }
-
-
+        annex_country = {
+            target = TEX
+            transfer_troops = yes
+            }
+        TEX = { retire_character = USA_dwight_d_eisenhower }
+        USA = { recruit_character = USA_dwight_d_eisenhower }
         }
 }
 
@@ -688,34 +361,10 @@ country_event = {
 	option = {
 		name = TR_USA.17.a
 		create_wargoal = {
-				target = TEX
-				type = annex_everything
-			} 
-
-
+			target = TEX
+			type = annex_everything
+		    } 
         }
-}
-
-country_event = {
-	id = TR_USA.18
-	title = TR_USA.18.t
-	desc = TR_USA.18.d
-	picture = GFX_report_event_portugal_navy_mutiny_prisoners
-
-
-        fire_only_once = yes
-        trigger = {
-                tag = USA
-                is_subject = yes
-	}
-
-	
-
-        option = { 
-		name = TR_USA.18.a
-		drop_cosmetic_tag = yes
-		set_cosmetic_tag = AMERICA_united_states_41
-	}
 }
 #米中合作
 country_event = {
@@ -724,34 +373,30 @@ country_event = {
 	desc = TR_USA.19.d
 	picture = GFX_report_event_generic_lend_lease
 
-
-        fire_only_once = yes
-        is_triggered_only = yes
-
+    fire_only_once = yes
+    is_triggered_only = yes
 	
 	option = { 
 		name = TR_USA.19.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		}
-                add_political_power = -50
-                reverse_add_opinion_modifier = {
-				target = WHN
-				modifier = medium_increase
+        add_political_power = -50
+        reverse_add_opinion_modifier = {
+			target = WHN
+			modifier = medium_increase
 			}
-                WHN = { country_event = TR_USA.20 }
-
+        WHN = { country_event = TR_USA.20 }
 	}
-        option = { 
+    option = { 
 		name = TR_USA.19.b
                 ai_chance = {
 			base = 0
 		}
-               reverse_add_opinion_modifier = {
-				target = WHN
-				modifier = medium_decrease
-			}
-
+        reverse_add_opinion_modifier = {
+			target = WHN
+			modifier = medium_decrease
+		}
 	}
 }
 
@@ -762,14 +407,11 @@ country_event = {
 	desc = TR_USA.20.d
 	picture = GFX_report_event_generic_lend_lease
 
-
-        fire_only_once = yes
-        is_triggered_only = yes
-
+    fire_only_once = yes
+    is_triggered_only = yes
 	
 	option = { 
 		name = TR_USA.20.a
-                add_ideas = WHN_USA_Collaborate
-
+        add_ideas = WHN_USA_Collaborate
 	}
 }

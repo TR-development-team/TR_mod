@@ -67,6 +67,12 @@ JAP_election_manifesto_Policy = {#民主ルート政権公約実行
 		original_tag = JAP
 	}
 }  
+JAP_Economic_Policy = {#経済計画
+	icon = generic_political_actions
+	allowed = {
+		original_tag = JAP
+	}
+}
 JAP_balance_of_power_category = {
 	icon = GFX_decision_category_power_struggle
 	allowed = {

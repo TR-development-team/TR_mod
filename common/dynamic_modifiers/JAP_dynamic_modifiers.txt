@@ -64,4 +64,27 @@ JAP_colony_deficit = {
 	}
 	consumer_goods_factor = JAP_colony_deficit_consumer_goods_factor
 }
-
+JAP_administrative_reform = {
+	icon = "GFX_idea_JAP_Japan"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	stability_factor = JAP_administrative_reform_stability_factor
+	party_popularity_stability_factor = JAP_administrative_reform_party_popularity_stability_factor 
+    political_power_gain = JAP_administrative_reform_political_power_gain
+	consumer_goods_factor = JAP_administrative_reform_consumer_goods_factor
+}
+JAP_Imperialized_State = {
+	enable = { always = yes  }
+	icon = GFX_modifiers_generic_fascist_corporatism
+	local_resources_factor = 0.2
+	local_factories = 0.2
+	local_supplies = 0.1
+	local_manpower = 0.1
+	local_building_slots_factor = 0.3
+	compliance_growth = 0.1
+	resistance_target = -0.1
+}

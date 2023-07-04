@@ -13,12 +13,13 @@ JAP_Imperialisation_policy = {
 		visible = {
 			FROM = {
 				is_owned_by = ROOT
+				is_controlled_by = ROOT
 				NOT = { is_core_of = ROOT }
 			}
 		}
 		modifier = {
 			consumer_goods_factor = 0.02
-                        political_power_cost = 0.1
+            political_power_cost = 0.1
 		}
 		cost = 25
 		days_remove = 365
@@ -33,7 +34,9 @@ JAP_Imperialisation_policy = {
 			
 		}
 		remove_effect = {
-			add_state_core = FROM
+			FROM = {
+				add_dynamic_modifier = { modifier = JAP_Imperialized_State }
+		        }
 		}
 
 	}
@@ -49,15 +52,16 @@ JAP_Imperialisation_policy = {
 		visible = {
 			FROM = {
 				is_owned_by = ROOT
+				is_controlled_by = ROOT
 				NOT = { is_core_of = ROOT }
 			}
 		}
 		modifier = {
 			consumer_goods_factor = 0.02
-                        political_power_cost = 0.1
+            political_power_cost = 0.1
 		}
 		cost = 50
-		days_remove = 730
+		days_remove = 640
 		fire_only_once = yes
 		ai_will_do = {
 			factor = 100
@@ -69,7 +73,9 @@ JAP_Imperialisation_policy = {
 			
 		}
 		remove_effect = {
-			add_state_core = FROM
+			FROM = {
+				add_dynamic_modifier = { modifier = JAP_Imperialized_State }
+		        }
 		}
 
 	}
@@ -1753,7 +1759,7 @@ JAP_balance_of_power_category = {
     #治安維持法の適用
 	JAP_balance_of_power_Policy_1 = {
 		icon = eng_trade_unions_demand
-        allowed = { original_tag = JAP } #イベントorNFで解禁
+        allowed = { original_tag = JAP }
 		available = {
 			has_completed_focus = JAP_democracy_focus_3
 		}
@@ -1765,7 +1771,7 @@ JAP_balance_of_power_category = {
 			syndicalist_drift = -0.01
 			radical_socialist_drift = -0.01
 			national_populist_drift = -0.01
-			gnosticism_populist_drift = -0.01
+			Gnosticism_drift = -0.01
 			power_balance_weekly = 0.005
 		}
 		cost = 50
@@ -1773,7 +1779,7 @@ JAP_balance_of_power_category = {
 		days_re_enable = 400
 		fire_only_once = no
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 
 		complete_effect = {
@@ -1785,7 +1791,7 @@ JAP_balance_of_power_category = {
 	#報道の統制
 	JAP_balance_of_power_Policy_2 = {
 		icon = eng_trade_unions_demand
-        allowed = { original_tag = JAP } #イベントorNFで解禁
+        allowed = { original_tag = JAP }
 		available = {
 			has_completed_focus = JAP_democracy_focus_3
 		}
@@ -1797,7 +1803,7 @@ JAP_balance_of_power_category = {
 			syndicalist_drift = -0.01
 			radical_socialist_drift = -0.01
 			national_populist_drift = -0.01
-			gnosticism_populist_drift = -0.01
+			Gnosticism_drift = -0.01
 			power_balance_weekly = -0.005
 		}
 		cost = 50
@@ -1818,7 +1824,7 @@ JAP_balance_of_power_category = {
 	#首相のラジオ演説
 	JAP_balance_of_power_Policy_3 = {
 		icon = eng_trade_unions_demand
-        allowed = { original_tag = JAP } #イベントorNFで解禁
+        allowed = { original_tag = JAP }
 		available = {
 			has_completed_focus = JAP_democracy_focus_3
 		}
@@ -1828,10 +1834,10 @@ JAP_balance_of_power_category = {
 		}
 		cost = 30
 		days_remove = 7
-		days_re_enable = 200
+		days_re_enable = 180
 		fire_only_once = no
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 
 		complete_effect = {
@@ -1841,14 +1847,14 @@ JAP_balance_of_power_category = {
 			add_stability = 0.01
 			add_power_balance_value = {
 				id = JAP_Political_Distrust_bop
-				value = 0.02
+				value = 0.03
 			}
 		}
 	}
 	#映画産業への投資
 	JAP_balance_of_power_Policy_4 = {
 		icon = eng_trade_unions_demand
-        allowed = { original_tag = JAP } #イベントorNFで解禁
+        allowed = { original_tag = JAP }
 		available = {
 			has_completed_focus = JAP_democracy_focus_3
 		}
@@ -1864,7 +1870,7 @@ JAP_balance_of_power_category = {
 		days_re_enable = 365
 		fire_only_once = no
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 
 		complete_effect = {
@@ -1877,7 +1883,7 @@ JAP_balance_of_power_category = {
 	#第三次憲政擁護運動
 	JAP_balance_of_power_Policy_5 = {
 		icon = eng_trade_unions_demand
-        allowed = { original_tag = JAP } #イベントorNFで解禁
+        allowed = { original_tag = JAP } 
 		available = {
 			has_completed_focus = JAP_democracy_focus_3
 		}
@@ -1894,7 +1900,7 @@ JAP_balance_of_power_category = {
 		days_remove = 70
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 40
+			factor = 80
 		}
 
 		complete_effect = {
@@ -1902,6 +1908,158 @@ JAP_balance_of_power_category = {
 		}
 		remove_effect = {
 
+		}
+	}
+}
+JAP_Economic_Policy = {
+    #ダムを建設
+	JAP_Construction_of_dams = {
+		icon = generic_construction
+        allowed = { always = no } #イベントorNFで解禁
+		available = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+			}
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
+			}
+		}
+		modifier = {
+			civilian_factory_use = 5
+		}
+		cost = 30
+		days_remove = 180
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 80
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_japan = yes
+			}
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			FROM = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+    #開発
+	JAP_Comprehensive_National_Development_Plan = {
+		icon = generic_construction
+		allowed = { original_tag = JAP } 
+		available = {
+			FROM = {
+				is_fully_controlled_by = ROOT
+			}
+			has_completed_focus = JAP_Economy_focus_6
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		visible = {
+			FROM = {
+				is_owned_by = ROOT
+				is_controlled_by = ROOT
+			}
+			has_completed_focus = JAP_Economy_focus_6
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		cost = 25
+		days_remove = 180
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 40
+		}
+		state_target = yes
+		target_trigger = {
+			FROM = {
+				is_japan = yes
+			}
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			FROM = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	JAP_National_highway_project = {
+		icon = generic_construction
+		available = {
+			NOT = {
+				has_country_flag = JAP_National_Plan_Ongoing
+			}
+			num_of_civilian_factories_available_for_projects > 7
+			has_completed_focus = JAP_Plan_focus_4
+		}
+		visible = {
+			has_completed_focus = JAP_Plan_focus_4
+		}
+		modifier = {
+			civilian_factory_use = 8
+		}
+		cost = 100
+		days_remove = 1080
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 40
+		}
+		complete_effect = {
+			set_country_flag = JAP_National_Plan_Ongoing
+		}
+		remove_effect = {
+			add_ideas = JAP_National_highway
+			clr_country_flag = JAP_National_Plan_Ongoing
+		}
+	}
+	JAP_bullet_train_project = {
+		icon = generic_construction
+		available = {
+			NOT = {
+				has_country_flag = JAP_National_Plan_Ongoing
+			}
+			num_of_civilian_factories_available_for_projects > 7
+			has_completed_focus = JAP_Plan_focus_7
+		}
+		visible = {
+			has_completed_focus = JAP_Plan_focus_7
+		}
+		modifier = {
+			civilian_factory_use = 8
+		}
+		cost = 100
+		days_remove = 1080
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 40
+		}
+		complete_effect = {
+			set_country_flag = JAP_National_Plan_Ongoing
+		}
+		remove_effect = {
+			add_ideas = JAP_bullet_train
+			clr_country_flag = JAP_National_Plan_Ongoing
 		}
 	}
 }

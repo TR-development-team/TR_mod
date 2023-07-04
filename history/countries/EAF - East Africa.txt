@@ -3,8 +3,10 @@ oob = "EAF_1936"
 
 JAP = {	set_autonomy = {	target = EAF	autonomous_state = imperial_colony	}	}
 set_cosmetic_tag = COUNTRY_JAP
-
 set_variable = {	EAF_unrest_level = 2	}
+
+country_event = { id = TR_jafrica.1 days = 5 }#恐慌
+country_event = { id = TR_jafrica.9 days = 210 }#ケニアの「アジア的高地」
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -33,8 +35,10 @@ add_ideas = {
 	Colonical_system
 	Tiyoda_Kensho
 	JAP_colony
+        EAF_rice_cultivation_plan
+        EAF_battle_against_infection
 }
-add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
+
 add_dynamic_modifier = {	modifier = EAF_Country_Unrest	}
 
 set_convoys = 50

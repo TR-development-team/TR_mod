@@ -14,68 +14,27 @@ country_event = {
 	
 	option = {
 		name = TR_China.1.a
-                set_country_flag = WHN_ChiangAnsatu
-                effect_tooltip = { retire_country_leader = yes }
-                remove_ideas = WHN_Chiang_Kaishek
-		    WHN_kokumin_seifu = {
-			    promote_character = {
-			      Ideology = San_min_Doctrine_Blue_shirts_subtype
-			    }
-		    }
-		    WHN_kokumin_seifu = {
-		    	promote_character = {
-			    Ideology = San_min_Doctrine_CC_subtype
-			  }
-		    }
-                 hidden_effect = {
-                         country_event = {
-					id = TR_news.11
-					days = 1
-					
-				}
+        set_country_flag = WHN_ChiangAnsatu
+        effect_tooltip = { retire_country_leader = yes }
+        remove_ideas = WHN_Chiang_Kaishek
+		WHN_kokumin_seifu = {
+			promote_character = {
+			    Ideology = San_min_Doctrine_Blue_shirts_subtype
+			}
 		}
-                 
-		
+		WHN_kokumin_seifu = {
+		    promote_character = {
+			Ideology = San_min_Doctrine_CC_subtype
+			}
+		}
+        hidden_effect = {
+            country_event = {
+				id = TR_news.11
+				days = 1
+			}
+		}
 	}
 }
-
-
-country_event = {
-	id = TR_China.2
-	title = TR_China.2.t
-	desc = TR_China.2.d
-	picture = GFX_report_event_china_chiang_kai_shek
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_China.2.a
-                 ai_chance = { factor = 100 }
-                 SHA = {
-			transfer_state = 622
-    		
-		
-		}
-                 
-		
-	}
-        option = {
-		name = TR_China.2.b
-                ai_chance = { factor = 0 }
-                 SHA = {
-                        change_tag_from = WHN
-			transfer_state = 622
-		
-		
-		}
-                 
-		
-	}
-}
-
 country_event = {
 	id = TR_China.3
 	title = TR_China.3.t
@@ -178,45 +137,36 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
-
-
+    fire_only_once = yes
 	
 	option = {
 		name = TR_China.6.a
 		 ANH = { end_puppet = FUJ }
 		 JAP = { end_puppet = SGH }
-                 ANH = {
-                       remove_ideas = CNK_jap_economic
-                       leave_faction = yes
+        ANH = {
+            remove_ideas = CNK_jap_economic
+            leave_faction = yes
 		 }
-                 FUJ = {
-                       remove_ideas = CNK_jap_economic
-                       leave_faction = yes
-		 }
-                 hidden_effect = {
-                        country_event = {
-					id = TR_news.21
-					days = 2
-					
-				}
+        FUJ = {
+            remove_ideas = CNK_jap_economic
+            leave_faction = yes
 		}
-
-                 SGH = {
-                        leave_faction = yes
-                        drop_cosmetic_tag = yes
-						set_cosmetic_tag = SGH_military_clique
-    		        country_event = {
-					id = TR_China.7
-					days = 3
-					
-				}
-		
+        hidden_effect = {
+            country_event = {
+				id = TR_news.21
+				days = 2
+			}
 		}
-                 
-		
+        SGH = {
+            leave_faction = yes
+            drop_cosmetic_tag = yes
+			set_cosmetic_tag = SGH_military_clique
+    		country_event = {
+				id = TR_China.7
+				days = 3
+			}
+		}	
 	}
-
 }
 
 country_event = {
@@ -225,18 +175,16 @@ country_event = {
 	desc = TR_China.7.d
 	picture = GFX_report_event_france_parade
 
-
-        fire_only_once = yes
-        is_triggered_only = yes
-
+    fire_only_once = yes
+    is_triggered_only = yes
 	
 	option = { 
 		name = TR_China.7.a
+		ai_chance = { factor = 70 }
 		add_ideas = totalist_dictatorship
-                ai_chance = { factor = 70 }
-                add_ideas = Fetus_dream
-                set_cosmetic_tag = WU_state
-                add_popularity = {
+        add_ideas = Fetus_dream
+        set_cosmetic_tag = WU_state
+        add_popularity = {
 			ideology = Gnosticism
 			popularity = 0.3
 		}
@@ -244,81 +192,75 @@ country_event = {
 			ruling_party = Gnosticism
 			elections_allowed = no
 		}
-                declare_war_on = {
-				target = ANH type = annex_everything
+        declare_war_on = {
+			target = ANH type = annex_everything
+		}
+		add_state_core = 606
+        add_state_core = 749
+        add_state_core = 915
+ 		add_state_core = 596
+        add_state_core = 613
+        add_state_core = 598
+        division_template = {
+			name = "Nanjing Infantry"
+			division_names_group = WHN_GAR_01
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
 			}
-			add_state_core = 606
-                        add_state_core = 749
-                        add_state_core = 915
- 			add_state_core = 596
-                        add_state_core = 613
-                        add_state_core = 598
-                division_template = {
-				name = "Nanjing Infantry"
-				division_names_group = WHN_GAR_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-				}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 613 }
+			create_unit = {
+				division = "division_template = \"Nanjing Infantry\" start_experience_factor = 0.1"
+				owner = SGH
+				count = 4
 			}
-			random_owned_controlled_state = {
-				prioritize = { 613 }
-				create_unit = {
-					division = "division_template = \"Nanjing Infantry\" start_experience_factor = 0.1"
-					owner = SGH
-					count = 4
-				}
-			}
-                
-               
-
+		}
 	}
-        option = { 
+    option = { 
 		name = TR_China.7.b
-                ai_chance = { factor = 30 }
-                declare_war_on = {
-				target = ANH type = annex_everything
+        ai_chance = { factor = 30 }
+        declare_war_on = {
+			target = ANH type = annex_everything
+		    }
+		add_state_core = 606
+        add_state_core = 749
+        add_state_core = 915
+ 	    add_state_core = 596
+        add_state_core = 613
+        add_state_core = 598
+        division_template = {
+			name = "Nanjing Infantry"
+			division_names_group = WHN_GAR_01
+			regiments = {
+			    infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
 			}
-			add_state_core = 606
-                        add_state_core = 749
-                        add_state_core = 915
- 			add_state_core = 596
-                        add_state_core = 613
-                        add_state_core = 598
-                division_template = {
-				name = "Nanjing Infantry"
-				division_names_group = WHN_GAR_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }
-					infantry = { x = 2 y = 1 }
-					infantry = { x = 2 y = 2 }
-				}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 613 }
+			create_unit = {
+				division = "division_template = \"Nanjing Infantry\" start_experience_factor = 0.1"
+				owner = SGH
+				count = 4
 			}
-			random_owned_controlled_state = {
-				prioritize = { 613 }
-				create_unit = {
-					division = "division_template = \"Nanjing Infantry\" start_experience_factor = 0.1"
-					owner = SGH
-					count = 4
-				}
-			}
-               
-
+		}        
 	}
-
 }
 
 #武漢からの使節(広西)
@@ -330,8 +272,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.8.a 
@@ -378,8 +318,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.9.a 
@@ -426,8 +364,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.10.a 
@@ -474,8 +410,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.11.a 
@@ -520,8 +454,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.12.a 
@@ -580,8 +512,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.13.a 
@@ -601,8 +531,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.14.a 
@@ -622,8 +550,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.15.a 
@@ -643,8 +569,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.16.a 
@@ -664,8 +588,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.17.a 
@@ -685,8 +607,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.18.a 
@@ -706,8 +626,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.19.a 
@@ -727,8 +645,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.20.a 
@@ -748,8 +664,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.21.a 
@@ -769,8 +683,6 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
 	
 	option = {
 		name = TR_China.22.a 
@@ -789,10 +701,8 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
+    fire_only_once = yes
 
-
-	
 	option = {
 		name = TR_China.23.a
 		hidden_effect = {
@@ -811,8 +721,7 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
-
+    fire_only_once = yes
 
 	#宋美鈴は軍統を批判した
 	option = {
@@ -853,8 +762,7 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
-
+    fire_only_once = yes
 
 	#CC団派に要職を与える
 	option = {
@@ -895,8 +803,7 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
-
+    fire_only_once = yes
 
 	#共産党への対処を優先する
 	option = {
@@ -937,8 +844,7 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
-
+    fire_only_once = yes
 
 	#経済的自立を成し遂げる
 	option = {
@@ -1020,8 +926,7 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
-
+    fire_only_once = yes
 
 	#新たな総統に万歳！
 	option = {
@@ -1038,8 +943,7 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
-
+    fire_only_once = yes
 
 	#新たな総統に万歳！
 	option = {
@@ -1056,8 +960,7 @@ country_event = {
 	picture = GFX_report_event_china_chiang_kai_shek
 
 	is_triggered_only = yes
-        fire_only_once = yes
-
+    fire_only_once = yes
 
 	#なんということだ！
 	option = {
@@ -1078,11 +981,11 @@ country_event = {
         tag = JAP
 		is_subject = no
 		is_faction_leader = yes
-		FROM = { 
+		any_country = { 
 			is_chinese_tag = yes
 			is_faction_leader = yes
 			controls_all_owned_states = yes
-			has_war_with = JAP
+			has_war_with = ROOT
 			controls_state = 817 #ソウル
 			controls_state = 818 #釜山
 			controls_state = 829 #平壌
@@ -1096,7 +999,6 @@ country_event = {
 		ZHI = { OR = { has_capitulated = yes exists = no } }
 		GND = { OR = { has_capitulated = yes exists = no } }
 		SGH = { OR = { has_capitulated = yes exists = no } }
-
 	}
     fire_only_once = yes
 
@@ -1105,21 +1007,32 @@ country_event = {
 	option = {
 		name = TR_China.32.a
 		ai_chance = {
-			base = 99
+			base = 100
 		}
-		FROM = { country_event = TR_China.33 }
-
+		every_country = {
+			limit = {
+				is_chinese_tag = yes
+				is_faction_leader = yes
+				controls_all_owned_states = yes
+				has_war_with = ROOT
+				controls_state = 817 #ソウル
+				controls_state = 818 #釜山
+				controls_state = 829 #平壌
+				controls_state = 328 #新京
+				controls_state = 608 #北京
+				controls_state = 816 #上海
+				controls_state = 863 #広州
+				controls_state = 916 #ウラジオストク
+			}
+			country_event = TR_China.33
+		}
 	}
 	#我々は断じて降伏しない！
 	option = {
 		name = TR_China.32.b
 		ai_chance = {
-			base = 1
-		modifier = {
-			factor = 2
-			has_country_flag = JAP_KAIGEN_KEIZOKU
-		}
-	}
+			base = 0
+	    }
 		add_stability = -0.2
 	}	
 }
@@ -1143,11 +1056,18 @@ country_event = {
 		set_global_flag = war_of_resistance_china_win
 		every_state = {
 			limit = {
-				OR = { is_core_of = ROOT is_claimed_by = ROOT }
+				OR = { is_core_of = ROOT is_claimed_by = WHN }
 				is_owned_by = JAP
 			}
 			transfer_state_to = ROOT
 		}	
+		hidden_effect = { 
+			524 = { transfer_state_to = JAP }
+			remove_wargoal = {
+				type = all
+				target = JAP
+			}
+		}
 		if = {
 			limit = {
 				MAN = { exists = yes has_capitulated = yes }
@@ -1163,11 +1083,15 @@ country_event = {
 			limit = {
 				KOR = { exists = yes has_capitulated = yes }
 			}
-			ROOT = {
-			    annex_country = {
-				    target = KOR
-				    transfer_troops = no
+			every_state = {
+				limit = {
+					is_core_of = KOR
 				}
+				set_state_controller_to = KOR
+				transfer_state_to = KOR
+			}	
+			ROOT = {
+			    puppet = KOR
 		    }
 		}
 		if = {
@@ -1177,6 +1101,17 @@ country_event = {
 			ROOT = {
 			    annex_country = {
 				    target = ZHI
+				    transfer_troops = no
+				}
+		    }
+		}
+		if = {
+			limit = {
+				SHD = { exists = yes has_capitulated = yes }
+			}
+			ROOT = {
+			    annex_country = {
+				    target = SHD
 				    transfer_troops = no
 				}
 		    }
@@ -1209,7 +1144,7 @@ country_event = {
 			}
 			every_state = {
 				limit = {
-					OR = { is_core_of = KOR }
+					is_core_of = KOR
 					is_owned_by = JAP
 				}
 				transfer_state_to = KOR
@@ -1251,7 +1186,7 @@ country_event = { #軍閥併合ディシジョン用イベント
 			base = 100
 			modifier = {
 				tag = GAN
-				factor = 0
+				factor = 20
 			}
 		}
 		china_integrate_ally_effect = yes

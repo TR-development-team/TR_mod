@@ -1,0 +1,24 @@
+characters={
+	FRP_Adrien_Marquet={
+		name=FRP_Adrien_Marquet
+		portraits={
+			civilian={
+				large="gfx/leaders/FRP/Portrait_FRP_Adrien_Marquet.png"
+			}
+		}
+		country_leader={
+			ideology=Strasserism_subtype
+		}
+	}
+	FRP_Benjamin_Peret={
+		name=FRP_Benjamin_Peret
+		portraits={
+			civilian={
+				large="gfx/leaders/FRP/Portrait_FRP_Benjamin_Peret.png"
+			}
+		}
+		country_leader={
+			ideology=Trotskyist_subtype
+		}
+	}
+}

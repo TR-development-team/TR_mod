@@ -4,10 +4,10 @@ state={
 	name="STATE_658"
 	manpower = 1700200
 	resources={
-		oil=100 # was: 6
+		oil=74
 	}
 	
-	state_category = large_city
+	state_category = city
 
 
 	history={
@@ -18,12 +18,12 @@ state={
 			7960 15
 		}
 		buildings = {
-			arms_factory = 2
-			industrial_complex = 6
+			arms_factory = 1
+			industrial_complex = 2
 			infrastructure = 4
                         air_base = 4
 			7960 = {
-				naval_base = 3
+				naval_base = 6
 			}
 		}
 

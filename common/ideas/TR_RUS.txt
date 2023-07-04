@@ -516,8 +516,8 @@
 
 			modifier = {
                 conscription = 0.02
-			    war_support_factor = 1.0
-                stability_factor = -0.25
+			    war_support_factor = 0.2
+                stability_factor = -0.15
                 surrender_limit= 0.1
                 out_of_supply_factor = -0.2
 			    ai_focus_aggressive_factor = 0.5
@@ -534,8 +534,8 @@
 
 			modifier = {
                 conscription = 0.02
-			    war_support_factor = 1.0
-                stability_factor = -0.25
+			    war_support_factor = 0.2
+                stability_factor = -0.15
                 surrender_limit= 0.1
                 out_of_supply_factor = -0.2
 			    ai_focus_aggressive_factor = 0.5
@@ -552,8 +552,8 @@
 
 			modifier = {
                          conscription = 0.02
-			 war_support_factor = 1.0
-                         stability_factor = -0.25
+			 war_support_factor = 0.2
+                         stability_factor = -0.1
                          surrender_limit= 0.1
                          out_of_supply_factor = -0.2
 			}
@@ -571,8 +571,8 @@
 			modifier = {
                          ai_call_ally_desire_factor = -2000
                          conscription = 0.02
-			 war_support_factor = 1.0
-                         stability_factor = -0.25
+			 war_support_factor = 0.2
+                         stability_factor = -0.1
                          surrender_limit= 0.1
 			}
 		}

@@ -1,4 +1,4 @@
-﻿capital = 848
+﻿capital = 547
 oob = "KEN_1936"
 
 set_cosmetic_tag = KEN_republic
@@ -12,29 +12,29 @@ add_ideas = {
 	Council_communism
 	limited_conscription
 	partial_economic_mobilisation
-	maumau_army
 }
 
 set_convoys = 50
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = totalist
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 5
-	syndicalist = 13
-	radical_socialist = 10
+	totalist = 24
+	syndicalist = 14
+	radical_socialist = 13
 	social_democrat = 4
 	social_liberal = 2
 	market_liberal = 5
-	social_conservative = 13
-	authoritarian_democrat = 24
+	social_conservative = 11
+	authoritarian_democrat = 7
 	paternal_autocrat = 8
 	national_populist = 11
-        Gnosticism = 5
+        Gnosticism = 1
 }
 
+recruit_character = KEN_George_Padmore
 recruit_character = KEN_Jomo_Kenyatta

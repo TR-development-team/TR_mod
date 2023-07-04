@@ -139,23 +139,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= Gnosticism_subtype
-		}
-	}
-	GER_mikhail_frunze={
-		name=GER_mikhail_frunze
-		portraits={
-			army={
-				large="gfx/leaders/UZB/Portrait_UZB_Mikhail_Frunze.png"
-			}
-		}
-		field_marshal = {
-			traits = { logistics_wizard media_personality inflexible_strategist organizer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 4
+			ideology= Aryanism_subtype
 		}
 	}
 	GER_Lev_Trotsky_marshal={

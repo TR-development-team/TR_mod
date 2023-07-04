@@ -5,8 +5,8 @@
  KAZ_overseas_territory_DEF:0 "$OVERLORDADJ$領ステップ"
  KAZ_overseas_territory_ADJ:0 "$OVERLORDADJ$領ステップ"
  
- MAN_imperial_colony:0 "$OVERLORDADJ$領満州聯邦"
- MAN_imperial_colony_DEF:0 "$OVERLORDADJ$領満州聯邦"
+ MAN_imperial_colony:0 "$OVERLORDADJ$領満州"
+ MAN_imperial_colony_DEF:0 "$OVERLORDADJ$領満州"
  MAN_imperial_colony_ADJ:0 "$OVERLORDADJ$領満州"
  
 #ヨーロッパ
@@ -129,9 +129,17 @@
  BLT_overseas_territory_ADJ:0 "$OVERLORDADJ$領バルト"
  
 #アフリカ
+ MCG_imperial_dominion:0 "公果帝国自治領"
+ MCG_imperial_dominion_DEF:0 "公果帝国自治領"
+ MCG_imperial_dominion_ADJ:0 "コンゴ"
+
  NAF_colony:0 "$OVERLORDADJ$領北アフリカ植民地"
  NAF_colony_DEF:0 "$OVERLORDADJ$領北アフリカ植民地"
  NAF_colony_ADJ:0 "$OVERLORDADJ$領北アフリカ"
+
+ NGA_imperial_dominion:0 "尼日利亜帝国自治領"
+ NGA_imperial_dominion_DEF:0 "尼日利亜帝国自治領"
+ NGA_imperial_dominion_ADJ:0 "ナイジェリア"
  
  WAF_colony:0 "$OVERLORDADJ$領西アフリカ植民地"
  WAF_colony_DEF:0 "$OVERLORDADJ$領西アフリカ植民地"
@@ -151,15 +159,11 @@
  
 ##コズメティックタグ
 #ヨーロッパ
- BOSandHRZ_condominium:0 "共同統治国ボスニア・ヘルツェゴビナ"
- BOSandHRZ_condominium_DEF:0 "共同統治国ボスニア・ヘルツェゴビナ"
+ BOSandHRZ_condominium:0 "共同統治国ボスニア及びヘルツェゴビナ"
+ BOSandHRZ_condominium_DEF:0 "共同統治国ボスニア及びヘルツェゴビナ"
  BOSandHRZ_condominium_ADJ:0 "ボスニア・ヘルツェゴビナ"
  
  LIT_grand_duchy_RUS:0 "リトアニア大公国"
  LIT_grand_duchy_RUS_DEF:0 "リトアニア大公国"
  LIT_grand_duchy_RUS_ADJ:0 "リトアニア"
- 
- KUSTENLAND_AUS:0 "キュステンラント"
- KUSTENLAND_AUS_DEF:0 "オーストリア沿海州"
- KUSTENLAND_AUS_ADJ:0 "沿海州"
  

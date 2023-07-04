@@ -1,4 +1,24 @@
 characters = {
+	KEN_George_Padmore = {
+		name = KEN_George_Padmore
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/KEN/Portrait_KEN_George_Padmore.png"
+			}
+		}
+		country_leader = {
+			ideology = African_socialism_tot_subtype
+			id = -1
+		}
+		country_leader = {
+			ideology = African_socialism_syn_subtype
+			id = -1
+		}
+		country_leader = {
+			ideology = African_socialism_rs_subtype
+			id = -1
+		}
+	}
 	KEN_Jomo_Kenyatta = {
 		name = KEN_Jomo_Kenyatta
 		portraits = {

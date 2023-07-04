@@ -1,0 +1,46 @@
+add_namespace = TR_Kenya
+
+country_event = {#土地自由軍の蹶起
+	id = TR_Kenya.1
+	title = TR_Kenya.1.t
+	desc = TR_Kenya.1.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_Kenya.1.a
+		load_oob = "KEN_1936"
+		add_ideas = maumau_army
+		hidden_effect = {
+			set_cosmetic_tag = KEN_Liberated_Zone
+			KEN = { 
+				country_event = {
+					id = TR_Kenya.2
+					days = 7
+				}
+			}
+	    }
+	}
+}
+country_event = {#解放戦の開始
+	id = TR_Kenya.2
+	title = TR_Kenya.2.t
+	desc = TR_Kenya.2.d
+	picture = GFX_report_event_france_parade
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_Kenya.2.a
+		add_war_support = 0.1
+		declare_war_on = {
+			target = EAF
+			type = annex_everything
+		}
+	}
+}

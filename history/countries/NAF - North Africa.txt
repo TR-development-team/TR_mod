@@ -3,6 +3,7 @@ oob = "NAF_1936"
 
 FRA = {	set_autonomy = {	target = NAF	autonomous_state = colony	}	}
 set_cosmetic_tag = COUNTRY_FRA
+country_event = { id = TR_jafrica.340 days = 120 }#日仏境界紛争
 
 # Starting tech
 set_technology = {

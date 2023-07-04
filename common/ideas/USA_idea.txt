@@ -1,37 +1,20 @@
-
- ideas = {
-       
-     country = {
-               
+ideas = {   
+    country = {
         USA_treaty_of_Tokyo = {
-		picture = jap_ichi_go
-
-			allowed = {
-				has_war = no
-			}
+		    picture = jap_ichi_go
 			modifier = { 
-                                consumer_goods_factor = 0.15
-                                conscription = -0.01
-                                join_faction_tension = 1.0
-                                justify_war_goal_time = 1.0
-                                generate_wargoal_tension = 1.0
-                                send_volunteers_tension = 1.0
-                                guarantee_tension = 1.0
-	                        drift_defence_factor = -0.5
+                consumer_goods_factor = 0.15
+                conscription = -0.01
+                join_faction_tension = 1.0
+                justify_war_goal_time = 1.0
+                generate_wargoal_tension = 1.0
+                send_volunteers_tension = 1.0
+                guarantee_tension = 1.0
+	            drift_defence_factor = -0.5
 			}
 		}
-
         USA_depression = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
 			picture = great_depression
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.3
 				production_factory_max_efficiency_factor = -0.2
@@ -41,17 +24,8 @@
 				min_export = -0.4
 			}
 		}
-                USA_depression_1 = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_depression_1 = {
 			picture = great_depression
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
 				production_factory_max_efficiency_factor = -0.1
@@ -60,409 +34,161 @@
 				consumer_goods_factor = 0.1
 			}
 		}
-                USA_Extremism = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_Extremism = {     
 			picture = chi_war_of_resistance3
-			removal_cost = -1
-
 			modifier = {
-                               totalist_drift = 0.02
-                               national_populist_drift = 0.02
-                               paternal_autocrat_drift = 0.01
-                               Gnosticism_drift = 0.01
+				stability_weekly = -0.005
+                totalist_drift = 0.02
+				paternal_autocrat_drift = 0.02
+                national_populist_drift = 0.02
+				Gnosticism_drift = 0.01
 			}
 		}
-                USA_LOSE_IN_CALIFORNIA = {
-			allowed = {
-				always = no
+		USA_invisible_empire= {     
+			picture = chi_war_of_resistance3
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.2
+                national_populist_drift = 0.01
+                Gnosticism_drift = 0.01
 			}
-                        
-
-			
-			removal_cost = -1
-                     
+		}
+        USA_LOSE_IN_CALIFORNIA = {
 			picture = chi_forced_conscription
-			removal_cost = -1
-
 			modifier = {
-                               
-                                political_power_factor = -0.2
-                                stability_factor = -0.2
-                                war_support_factor = -0.2
-			        conscription_factor = -0.2
+                political_power_factor = -0.2
+                stability_factor = -0.2
+                war_support_factor = -0.2
+			    conscription_factor = -0.2
 			}
 		}
-                USA_LOSE_IN_CALIFORNIA_1 = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_LOSE_IN_CALIFORNIA_1 = {
 			picture = chi_forced_conscription
-			removal_cost = -1
-
 			modifier = {
-                               
-                                political_power_factor = -0.1
-                                stability_factor = -0.1
-                                war_support_factor = -0.1
+                political_power_factor = -0.1
+                stability_factor = -0.1
+                war_support_factor = -0.1
 			}
 		}
-                USA_LOSE_IN_CALIFORNIA_2 = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_LOSE_IN_CALIFORNIA_2 = {
 			picture = chi_forced_conscription
-			removal_cost = -1
-
 			modifier = {
-                                conscription_factor = 0.1
-                                political_power_factor = 0.05
-                                war_support_factor = 0.1
+                conscription_factor = 0.1
+                political_power_factor = 0.05
+                war_support_factor = 0.1
 			}
 		}
-                USA_antisemitism = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_antisemitism = {
 			picture = chi_war_of_resistance3
-			removal_cost = -1
-
 			modifier = {
-                               industrial_capacity_factory = -0.1
-                               research_speed_factor = -0.075
-			       production_speed_buildings_factor = -0.1
+                industrial_capacity_factory = -0.1
+                research_speed_factor = -0.075
+			    production_speed_buildings_factor = -0.1
 			}
 		}
-                USA_zaisanbossyu = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_zaisanbossyu = {
 			picture = chi_war_of_resistance3
-			removal_cost = -1
-
 			modifier = {
-                               consumer_goods_factor = -0.05
+                consumer_goods_factor = -0.05
 			}
 		}
-                USA_antijap = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_antijap = {
 			picture = chi_war_of_resistance3
-			removal_cost = -1
-
 			modifier = {
-                               stability_factor = 0.05
-                               conscription_factor = -0.025
+                stability_factor = 0.05
+                 conscription_factor = -0.025
 			}
 		}
-                USA_whitesupremacy = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_whitesupremacy = {
 			picture = chi_war_of_resistance3
-			removal_cost = -1
-
 			modifier = {
-                               stability_factor = 0.2
-                               MONTHLY_POPULATION = -0.3
-                               conscription_factor = -0.1
+                stability_factor = 0.2
+                MONTHLY_POPULATION = -0.3
+                conscription_factor = -0.1
 			}
 		}
-                USA_Shidousya = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        USA_Shidousya = {
 			picture = generic_fascism_drift_2
-			removal_cost = -1
-
 			modifier = {
-                                stability_factor = 0.1
-                                political_power_factor = 0.25
+                stability_factor = 0.1
+                political_power_factor = 0.25
 			}
 		}
-                USA_Kokkahoushi = {
-			allowed = {
-				always = no
-			}
-                        
-
-			removal_cost = -1
-                     
+        USA_Kokkahoushi = { 
 			picture = generic_production_bonus
-			removal_cost = -1
 			modifier = {
-                             conscription_factor = -0.05
-                             consumer_goods_factor = -0.05
-                             production_speed_buildings_factor = 0.05
-                             production_factory_efficiency_gain_factor = 0.05
-      
-		}
-              }
-                USA_Shuseifu = {
-			allowed = {
-				always = no
-			}
-                        
-
-			removal_cost = -1
-                     
+                conscription_factor = -0.05
+                consumer_goods_factor = -0.05
+                production_speed_buildings_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.05
+            }
+        }
+        USA_Shuseifu = {
 			picture = generic_production_bonus
-			removal_cost = -1
 			modifier = {
-                             political_power_cost = 0.1
-                             conscription_factor = 0.05
-      
-		}
-             }
-                USA_Keizaishudan = {
-			allowed = {
-				always = no
-			}
-                        
-
-			removal_cost = -1
-                     
+                political_power_cost = 0.1
+                conscription_factor = 0.05
+		    }
+        }
+        USA_Keizaishudan = {
 			picture = generic_production_bonus
-			removal_cost = -1
 			modifier = {
-                             political_power_cost = 0.1
-                             consumer_goods_factor = 0.05
-                             production_speed_buildings_factor = 0.075
-                             production_factory_max_efficiency_factor = 0.05
-		             production_factory_efficiency_gain_factor = 0.05
-		             industrial_capacity_factory = 0.1
-		}
-             }
-                USA_Roudousensen = {
-			allowed = {
-				always = no
-			}
-                        
-
-			removal_cost = -1
-                     
+                political_power_cost = 0.1
+                consumer_goods_factor = 0.05
+                production_speed_buildings_factor = 0.075
+                production_factory_max_efficiency_factor = 0.05
+		        production_factory_efficiency_gain_factor = 0.05
+		        industrial_capacity_factory = 0.1
+		    }
+        }
+        USA_Roudousensen = {
 			picture = generic_production_bonus
-			removal_cost = -1
 			modifier = {
-                             political_power_cost = 0.05
-                             production_factory_max_efficiency_factor = 0.1
-		             production_factory_efficiency_gain_factor = 0.05
-		}
-              }
-                USA_ZIKYU = {
-			allowed = {
-				always = no
-			}
-                        
-
-			removal_cost = -1
-                     
+                political_power_cost = 0.05
+                production_factory_max_efficiency_factor = 0.1
+		        production_factory_efficiency_gain_factor = 0.05
+		    }
+        }
+        USA_ZIKYU = {
 			picture = can_wartime_prices_and_trade_board
-			removal_cost = -1
 			modifier = {
-                             political_power_cost = 0.05
-                             consumer_goods_factor = -0.05
-                             min_export = -0.2
-		}
-           }
-                USA_expansion = {
-			allowed = {
-				always = no
-			}
-                        picture = bul_prussia_of_the_balkans
-
-			
-			removal_cost = -1
-	
-
+                political_power_cost = 0.05
+                consumer_goods_factor = -0.05
+                min_export = -0.2
+		    }
+        }
+        USA_expansion = {
+            picture = bul_prussia_of_the_balkans
 			modifier = {
-                                  conscription = 0.025
-                                  justify_war_goal_time = -0.3
-                                  war_support_factor = 0.4
-			          army_attack_factor = 0.1
+                conscription = 0.025
+                justify_war_goal_time = -0.3
+                war_support_factor = 0.4
+			    army_attack_factor = 0.1
 			}
 		}
-                USA_kokujindre = {
-			allowed = {
-				always = no
-			}
-                        
-
-			removal_cost = -1
-                     
+        USA_kokujindre = {           
 			picture = generic_production_bonus
-			removal_cost = -1
 			modifier = {
-                             stability_factor = -0.1
-                             political_power_cost = 0.1
-                             consumer_goods_factor = -0.05
-                             industrial_capacity_factory = 0.1
-		}
-             }
-                USA_CIA = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_spy_intel
-
-			
-			removal_cost = -1
-                     
+                stability_factor = -0.1
+                political_power_cost = 0.1
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.1
+		    }
+        }
+        USA_CIA = {
+            picture = generic_spy_intel
 			modifier = {
 				stability_factor = 0.2
 				resistance_target = -0.25
 			}
 		}
-                FRA_USA_Friendship = {
-			allowed = {
-				always = no
-			}
-                        picture = befriend_usa
-
-			
-			removal_cost = -1
-                     
+        FRA_USA_Friendship = {
+            picture = befriend_usa
 			modifier = {
 				consumer_goods_factor = -0.02
-                                research_speed_factor = 0.03
+                research_speed_factor = 0.03
 			}
 		}
-                USA_Anarchy_idea = {
-			allowed = {
-				always = no
-			}
-                        picture = SPR_anarchist_society
-
-			
-			removal_cost = -1
-
-			modifier = {
-				conscription_factor = -1.0
-				political_power_factor = -1.0
-                                stability_factor = -1.0
-                                war_support_factor = -1.0
-                                industrial_capacity_factory = -1.0
-                                consumer_goods_factor = 1.0
-                                min_export = -1.0
-			}
-		}
-                USA_Cthulhu = {
-			allowed = {
-				always = no
-			}
-                        picture = great_depression
-
-			
-			removal_cost = -1
-
-			modifier = {
-				political_power_factor = -1.0
-                                stability_factor = -0.1
-                                resistance_target = -1.0
-                                justify_war_goal_time = -0.7
-                                consumer_goods_factor = -0.25
-			}
-		}
-                USA_Innsmouth = {
-			allowed = {
-				always = no
-			}
-                        picture = great_depression
-
-			
-			removal_cost = -1
-
-			modifier = {
-			     conscription_factor = -0.25
-                             MONTHLY_POPULATION = -0.5
-                             stability_factor = -0.1
-                             political_power_cost = 0.25
-                             industrial_capacity_factory = 0.25
-                             production_factory_max_efficiency_factor = 0.25
-	                     production_factory_efficiency_gain_factor = 0.25
-			}
-		}
-                USA_Madness = {
-			allowed = {
-				always = no
-			}
-                        picture = great_depression
-
-			
-			removal_cost = -1
-
-			modifier = {
-			     MONTHLY_POPULATION = -0.2
-                             stability_factor = -0.1
-                             political_power_cost = 0.25
-                             production_speed_buildings_factor = 1.0
-			}
-		}
-                USA_Nyarlathotep = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
-			picture = great_depression
-			removal_cost = -1
-
-			modifier = {
-                                stability_factor = -0.1
-                                conscription = 0.1
-                                political_power_cost = 0.3
-                                war_support_factor = 0.5
-                                army_morale_factor = 0.2
-			        army_org_factor = 0.2
-                                army_attack_factor = 0.2
-			        army_defence_factor = 0.2
-			}
-		} 
 }
 
 tank_manufacturer = { 

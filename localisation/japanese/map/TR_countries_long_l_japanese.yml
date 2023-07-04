@@ -215,9 +215,6 @@
  BLR_peoples_republic:0 "ベラルーシ人民共和国"
  BLR_peoples_republic_DEF:0 "ベラルーシ人民共和国"
  
- 
- 
- 
  BUL_khanate:0 "ブルガリア・ハン国"
  BUL_khanate_DEF:0 "ブルガリア・ハン国"
  BUL_principality:0 "ブルガリア公国"
@@ -272,15 +269,21 @@
  FRA_republic_DEF:0 "フランス共和国"
  FRA_people_republic:0 "フランス人民共和国"
  FRA_people_republic_DEF:0 "フランス人民共和国"
+ FRA_council_republic:0 "フランス評議会共和国"
+ FRA_council_republic_DEF:0 "フランス評議会共和国"
+ FRA_under_GER_military_rule:0 "ドイツ軍政下フランス国"
+ FRA_under_GER_military_rule_DEF:0 "ドイツ軍政下フランス国"
  
  GER_:0 "ドイツ"
  GER__DEF:0 "ドイツ"
  GER_battle_league:0 "ドイツ闘争連盟"
  GER_battle_league_DEF:0 "ドイツ闘争連盟"
- GER_kampf_reich:0 "ドイツ闘争国"
- GER_kampf_reich_DEF:0 "ドイツ闘争国"
+ GER_volksreich:0 "ドイツ人民国"
+ GER_volksreich_DEF:0 "ドイツ人民国"
+ GER_volksreich_ADJ:0 "ドイツ"
  GER_national_socialist_republic:0 "ドイツ国民社会主義共和国"
  GER_national_socialist_republic_DEF:0 "ドイツ国民社会主義共和国"
+ GER_national_socialist_republic_ADJ:0 "ドイツ"
  GER_naval_general_headquarters:0 "ドイツ海軍司令部"
  GER_naval_general_headquarters_DEF:0 "ドイツ海軍司令部"
  GER_rate_republic:0 "ドイツ・レーテ共和国"
@@ -308,8 +311,7 @@
  
  ITA_social_republic:0 "イタリア社会共和国"
  ITA_social_republic_DEF:0 "イタリア社会共和国"
- 
- 
+
  
  KBK_republic:0 "カバルダ＝バルカル共和国"
  KBK_republic_DEF:0 "カバルダ＝バルカル共和国"
@@ -535,7 +537,8 @@
  
  KEN_republic:0 "ケニア共和国"
  KEN_republic_DEF:0 "ケニア共和国"
- 
+ KEN_Liberated_Zone:0 "ケニア解放区"
+ KEN_Liberated_Zone_DEF:0 "ケニア解放区"
  
  LIB_republic:0 "リベリア共和国"
  LIB_republic_DEF:0 "リベリア共和国"
@@ -591,6 +594,8 @@
  
  SOM_federation:0 "ソマリア連邦"
  SOM_federation_DEF:0 "ソマリア連邦"
+ SOM_state:0 "ソマリア国"
+ SOM_state_DEF:0 "ソマリア国"
  
  SUD_republic:0 "スーダン共和国"
  SUD_republic_DEF:0 "スーダン共和国"

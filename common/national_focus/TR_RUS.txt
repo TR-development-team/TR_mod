@@ -415,9 +415,6 @@ focus_tree = {
 		available = {
             has_country_flag = RUS_SR_Dictator
             }
-		bypass = {
-            has_country_flag = RUS_OCREVOLUTION
-            }
 		prerequisite = { focus = RUS_Democracy_focus_7 }
 		prerequisite = { focus = RUS_Democracy_focus_5 }
 		prerequisite = { focus = RUS_Democracy_focus_6 }
@@ -3284,7 +3281,13 @@ focus_tree = {
 		x = 18
 		y = 10
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
+			NOT = { has_idea = RUS_CIVILWAR_MARKS }
+			NOT = { has_idea = RUS_CIVILWAR_MARKS_1 }
+			NOT = { has_idea = RUS_CIVILWAR_MARKS_2 }
 			is_subject = no
 			has_country_flag = RUS_OCREVOLUTION_END
 		}
@@ -3299,7 +3302,13 @@ focus_tree = {
 		x = 6
 		y = 0
 		cost = 8
+		ai_will_do = {
+			factor = 80
+		}
 		available = {
+			NOT = { has_idea = RUS_CIVILWAR_MARKS }
+			NOT = { has_idea = RUS_CIVILWAR_MARKS_1 }
+			NOT = { has_idea = RUS_CIVILWAR_MARKS_2 }
 			is_subject = no
 			has_country_flag = RUS_OCREVOLUTION_END
 		}
@@ -3315,6 +3324,9 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 8
+		ai_will_do = {
+			factor = 20
+		}
 		available = {
 			is_subject = no
 			RUS = { has_country_flag = RUS_OCREVOLUTION_END is_in_faction = no }
@@ -3368,12 +3380,14 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 			has_country_flag = RUS_OCREVOLUTION_END
 			if = {
-	            date > 1938.1.1
+	            date > 1939.1.1
 			} 
-            has_war = no
 			is_subject = no
             is_in_faction = no
 		}
@@ -3441,6 +3455,9 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		prerequisite = { focus = RUS_Diplomacy_focus_1 }
 		prerequisite = { focus = RUS_Diplomacy_focus_2 }
 		relative_position_id =RUS_Diplomacy_focus_1
@@ -3535,6 +3552,9 @@ focus_tree = {
 		x = 3
 		y = 2
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 			is_subject = no
 				}
@@ -3570,6 +3590,9 @@ focus_tree = {
 		x = 3
 		y = 3
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 			is_subject = no
 				}
@@ -3627,6 +3650,9 @@ focus_tree = {
 		x = 5
 		y = 1
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 			is_subject = no
 		}
@@ -3691,6 +3717,9 @@ focus_tree = {
 		x = 5
 		y = 2
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 			is_subject = no
 			OR = { is_neighbor_of = MHN is_neighbor_of = UKR }
@@ -3735,6 +3764,9 @@ focus_tree = {
 		x = 7
 		y = 1
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 			is_subject = no
 			OR= {
@@ -3795,6 +3827,9 @@ focus_tree = {
 		x = 7
 		y = 2
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 			is_subject = no
 			is_neighbor_of = FIN
@@ -3831,6 +3866,9 @@ focus_tree = {
 		x = 6
 		y = 3
 		cost = 8
+		ai_will_do = {
+			factor = 40
+		}
 		available = {
 			is_subject = no
 			OR= {

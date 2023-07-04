@@ -191,13 +191,13 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-                set_major = yes
-                add_stability = 0.25 
-                remove_ideas = ENR_REVOLUTION
-                add_timed_idea = {
-					idea = GER_CIVILWAR_MARKS
-					days = 730
-				} 
+        set_major = yes
+        remove_ideas = ENR_REVOLUTION
+        add_ideas = GER_CIVILWAR_MARKS
+		set_capital = {
+			state = 126
+			remember_old_capital = no
+		}
 	}
  }
 
@@ -233,7 +233,7 @@ focus_tree = {
 			factor = 1
 		}
 	completion_reward = {
-                       add_ideas = ENR_TRUTH
+        add_ideas = ENR_TRUTH
 				
 	}
 	}
@@ -251,7 +251,7 @@ focus_tree = {
 			factor = 1
 		}
 	completion_reward = {
-                       add_ideas = ENR_Plenty
+        add_ideas = ENR_Plenty
 				
 	}
 	}
@@ -455,7 +455,7 @@ focus_tree = {
 			factor = 1
 		}
 	completion_reward = {
-                       add_war_support = 0.05
+		remove_ideas = GER_CIVILWAR_MARKS
 		}
 	}
 
@@ -470,6 +470,15 @@ focus_tree = {
 		prerequisite = { focus = ENR_MPhaAfjF }
 		available = {
 			is_subject = no
+			RAT = { 
+				is_faction_leader = yes 
+				has_socialist_government = yes
+			}
+			}
+		bypass = {
+			RAT = { 
+				has_socialist_government = no
+			}
 			}
 		ai_will_do = {
 			factor = 1

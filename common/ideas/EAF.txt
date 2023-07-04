@@ -1,0 +1,38 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+
+		EAF_rice_cultivation_plan = {
+			allowed = {
+				always = no
+			}
+            picture = generic_agrarian_society
+
+			
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.2
+			    consumer_goods_factor = -0.05
+				MONTHLY_POPULATION = 0.15
+				conscription_factor = 0.02
+			}
+		}
+
+		EAF_battle_against_infection = {
+			allowed = {
+				always = no
+			}
+            picture =chi_war_of_resistance3
+
+			
+			removal_cost = -1
+			modifier = {
+				MONTHLY_POPULATION = -0.1
+				stability_factor = -0.1		
+			}
+		}
+}
+}
