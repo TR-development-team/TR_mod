@@ -1,32 +1,24 @@
 state = {
 	id = 70
 	name = "STATE_70"
-	resources = {
-		tungsten = 1
-	}
+	manpower = 539653	#現代人口を参照
+	state_category = three_town
+	local_supplies = 0.000
 	history = {
 		owner = HUN
-		add_core_of = SLO
-		add_core_of = HUN
 		victory_points = {
+			#Preßburg
 			9692
-			10
+			15
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			industrial_complex = 2
-			air_base = 3
 		}
-		set_province_name = {
-			id = 9692
-			name = VICTORY_POINTS_9692_TR
-		}
+		add_core_of = HUN
+		add_core_of = SLO
 	}
 	provinces = {
-		541
-		9692
-		11522
+		9539 9692
 	}
-	manpower = 2812100
-	state_category = city
 }

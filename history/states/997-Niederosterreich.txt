@@ -1,0 +1,55 @@
+state = {
+	id = 997
+	name = "STATE_997"
+	manpower = 6507096
+	state_category = eleven
+	local_supplies = 0.000
+	resources={
+		oil = 3.000
+		steel = 23
+	}
+	history = {
+		owner = AUS
+		victory_points = {
+			#Sankt Pölten
+			9527
+			10
+		}
+		victory_points = {
+			#Krems an der Donau
+			13298
+			3
+		}
+		victory_points = {
+			#Wiener Neustadt
+			6690
+			3
+		}
+		victory_points = {
+			#Amstetten
+			11651
+			3
+		}
+		victory_points = {
+			#Klosterneuburg
+			704
+			1
+		}
+		victory_points = {
+			#Baden bei Wien(Bodn)
+			9661
+			1
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 4
+			arms_factory = 2
+			air_base = 5
+		}
+		add_core_of = AUS
+		add_core_of = NIE
+	}
+	provinces = {
+		704 3718 6552 6690 6723 6739 9527 9661 11651 13298 13299 13304 13305
+	}
+}

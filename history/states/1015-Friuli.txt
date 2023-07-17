@@ -1,0 +1,30 @@
+state = {
+	id = 1015
+	name = "STATE_1015"
+	manpower = 845555	#現代人口を参照
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = ITA
+		victory_points = {
+			#Udine(Weiden)
+			3657
+			3
+		}
+		victory_points = {
+			#Pordenone(Portenau)
+			13338
+			3
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = ITA
+	}
+	provinces = {
+		3657 9613 13338
+	}
+}

@@ -1,0 +1,37 @@
+state = {
+	id = 71
+	name = "STATE_71"
+	manpower = 1219500	#現代人口を参照
+	state_category = five
+	local_supplies = 0.000
+	resources = {
+		steel = 17
+	}
+	history = {
+		owner = HUN
+		victory_points = {
+			#Kaschau(S:Košice,H:Kassa)
+			6573
+			10
+		}
+		victory_points = {
+			#Preschau(S:Prešov,H:Eperjes)
+			3581
+			3
+		}
+		victory_points = {
+			#Deutschendorf(S:Poprad,H:Poprád)
+			555
+			1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = HUN
+		add_core_of = SLO
+	}
+	provinces = {
+		555 3550 3565 3581 6573 6586 6604
+	}
+}

@@ -1,25 +1,37 @@
 state = {
 	id = 945
 	name = "STATE_945"
+	manpower = 482009	#現代人口を参照
+	state_category = three
+	local_supplies = 0.000
+	#resources={
+	#	
+	#}
 	history = {
 		owner = AUS
 		victory_points = {
+			#Feldkirch
+			13317
+			3
+		}
+		victory_points = {
+			#Bregenz
 			6680
-			5
+			3
+		}
+		victory_points = {
+			#Liechtenstein
+			13316
+			1
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
 		add_core_of = AUS
-		set_province_name = {
-			id = 6680
-			name = VICTORY_POINTS_6680_TR
-		}
+		add_core_of = VOR
 	}
 	provinces = {
-		6680
+		6680 13316 13317
 	}
-	manpower = 546916
-	state_category = town
 }

@@ -1,21 +1,26 @@
 state = {
 	id = 987
 	name = "STATE_987"
+	manpower = 3007012	#現代人口を参照
+	state_category = eight_indus
+	local_supplies = 0.000
 	resources = {
-		steel = 12
+		steel = 12.000
 	}
 	history = {
 		owner = AUS
-		add_core_of = AUS
 		victory_points = {
+			#Graz
 			9648
 			20
 		}
 		victory_points = {
-			653
-			3
+			#Leoben
+			13309
+			5
 		}
 		victory_points = {
+			#Kapfenberg
 			9679
 			3
 		}
@@ -24,18 +29,10 @@ state = {
 			industrial_complex = 4
 			arms_factory = 2
 		}
-		set_state_name = STATE_987_Einheitlich
+		add_core_of = AUS
+		add_core_of = STE
 	}
 	provinces = {
-		653
-		6687
-		6691
-		9646
-		9648
-		9650
-		9679
+		653 6687 6691 9646 9648 9650 9679 13289 13290 13291 13308 13309 13311 13312
 	}
-	manpower = 1805979
-	buildings_max_level_factor = 1
-	state_category = metropolis
 }

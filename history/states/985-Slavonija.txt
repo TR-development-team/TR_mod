@@ -1,37 +1,40 @@
 state = {
 	id = 985
 	name = "STATE_985"
+	manpower = 499394	#現代人口を参照
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
 	history = {
 		owner = CRO
-		add_core_of = HUN
-		add_core_of = CRO
+		victory_points = {
+			#Esseg(H:Eszék,C:Osijek)
+			11577
+			5
+		}
+		victory_points = {
+			#Brood(C:Slavonski Brod,Generally:Brod na Savi)
+			6647
+			3
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		victory_points = {
-			6647
-			3
-		}
-		victory_points = {
-			11577
-			3
-		}
-		set_province_name = {
-			id = 6647
-			name = VICTORY_POINTS_6647_TR
-		}
-		set_province_name = {
+		add_core_of = CRO
+		add_core_of = HUN
+		set_province_name = {	#ドイツ人の間接統治下故
 			id = 11577
-			name = VICTORY_POINTS_11577_TR
+			name = "VICTORY_POINTS_11577_GERMANY"
+		}
+		set_province_name = {	#ドイツ人の間接統治下故
+			id = 6647
+			name = "VICTORY_POINTS_6647_GERMANY"
 		}
 	}
 	provinces = {
-		3627
-		6647
-		9595
-		11577
+		3627 6647 9595 11577
 	}
-	manpower = 806192
-	state_category = large_town
 }

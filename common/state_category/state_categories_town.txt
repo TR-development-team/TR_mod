@@ -1,0 +1,58 @@
+state_categories = {
+	zero_town = {
+		color = {
+			146
+			146
+			146
+		}
+		local_building_slots = 0
+	}
+	one_town = {
+		color = {
+			164
+			164
+			164
+		}
+		local_building_slots = 1
+	}
+	two_town = {
+		color = {
+			182
+			182
+			182
+		}
+		local_building_slots = 2
+	}
+	three_town = {
+		color = {
+			200
+			200
+			200
+		}
+		local_building_slots = 3
+	}
+	four_town = {
+		color = {
+			219
+			219
+			219
+		}
+		local_building_slots = 4
+	}
+	five_town = {
+		color = {
+			237
+			237
+			237
+		}
+		local_building_slots = 5
+	}
+	six_town = {
+		color = {
+			255
+			255
+			255
+		}
+		local_building_slots = 6
+	}
+}

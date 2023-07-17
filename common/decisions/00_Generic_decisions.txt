@@ -55,6 +55,10 @@ political_actions = {
 				add = 2
 				has_stability < 0.10
 			}
+			modifier = {
+				factor = 0
+				tag = AUS
+			}
 		}
 	}
 

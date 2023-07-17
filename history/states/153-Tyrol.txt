@@ -1,41 +1,43 @@
 state = {
 	id = 153
 	name = "STATE_153"
+	manpower = 916922	#現代人口を参照
+	state_category = five
+	local_supplies = 0.000
 	resources = {
-		steel = 14
+		steel = 14.000
 	}
 	history = {
 		owner = AUS
 		victory_points = {
+			#Innsbruck
 			11618
 			10
 		}
 		victory_points = {
+			#Kufstein
 			11634
-			3
+			1
 		}
 		victory_points = {
+			#Hall in Tirol
+			13296
+			1
+		}
+		victory_points = {
+			#Lienz
 			671
 			3
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
-			arms_factory = 1
-			air_base = 3
+			air_base = 2
 		}
 		add_core_of = AUS
+		add_core_of = TYR
 	}
 	provinces = {
-		671
-		673
-		6678
-		9633
-		9636
-		11618
-		11634
+		671 673 6678 9633 9636 11618 11634 13295 13296
 	}
-	manpower = 1047708
-	buildings_max_level_factor = 1
-	state_category = city
 }

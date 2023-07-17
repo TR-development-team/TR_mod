@@ -1,0 +1,28 @@
+state = {
+	id = 104
+	name = "STATE_104"
+	manpower = 721246	#find popより
+	state_category = five
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = BOS
+		victory_points = {
+			#Sarajewo
+			11899
+			10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+			air_base = 2
+		}
+		add_core_of = BOS
+	}
+	provinces = {
+		982 6799 11572 11741 11872 11899
+	}
+}

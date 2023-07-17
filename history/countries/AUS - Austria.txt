@@ -124,7 +124,7 @@ set_variable = {
 }
 
 set_variable = {
-	AUS_ri_global_building_slots_factor_modifier = -0.2
+	AUS_ri_global_building_slots_factor_modifier = 0
 }
 
 set_variable = {
@@ -161,7 +161,26 @@ add_dynamic_modifier = {
 
 #great depression
 set_variable = {
-	AUS_plunge_escalation_level = 10
+	4_plunge_escalation_level = 10
+}
+
+#wien in blute
+
+4 = {
+	set_variable = {
+		4_wib_local_manpower_modifier = -0.5
+	}
+
+	set_variable = {
+		4_wib_local_building_slots_modifier = 1
+	}
+
+	set_variable = {
+		4_wib_resistance_target_modifier = 0.3
+	}
+	add_dynamic_modifier = {
+		modifier = 4_wien_in_blute
+	}
 }
 
 #add_dynamic_modifier = {
@@ -294,9 +313,9 @@ recruit_character = AUS_Franz_Bohme
 recruit_character = AUS_Karl_Eglseer
 recruit_character = AUS_Otto_Skorzeny
 recruit_character = AUS_Lothar_Rendulic
-recruit_character = AUS_Karl_Maria_Wiligut
-recruit_character = AUS_Heinrich_Himmler
-recruit_character = AUS_Adolf_Hitler
+#recruit_character = AUS_Karl_Maria_Wiligut
+#recruit_character = AUS_Heinrich_Himmler
+#recruit_character = AUS_Adolf_Hitler
 ### VARIANTS ###
 if = {
 	limit = {

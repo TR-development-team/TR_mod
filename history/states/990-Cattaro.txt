@@ -1,0 +1,30 @@
+state = {
+	id = 990
+	name = "STATE_990"
+	manpower = 102624	#現代人口を参照
+	state_category = two_port
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = AUS
+		victory_points = {
+			#Càttaro(Kotor)
+			13285
+			3
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			13285 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = AUS
+		add_core_of = MNT
+	}
+	provinces = {
+		13285 13286
+	}
+}

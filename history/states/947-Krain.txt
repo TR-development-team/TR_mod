@@ -1,0 +1,33 @@
+state = {
+	id = 947
+	name = "STATE_947"
+	manpower = 564011	#史実1880年国勢調査-インナークライン
+	state_category = four
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = AUS
+		victory_points = {
+			#Laibach(Ljubljana )
+			13258
+			10
+		}
+		victory_points = {
+			#Krainburg(Kranj)
+			3631
+			2
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = AUS
+		add_core_of = KRA
+		#add_core_of = SLV
+	}
+	provinces = {
+		3631 6650 9627 13257 13258
+	}
+}

@@ -20,8 +20,9 @@ AUS_debug_category = {
 		available = {
 		}
 		complete_effect = {
-			activate_mission = AUS_assistance_to_low_income_and_unemployed_persons
-			activate_mission = AUS_labor_law_reforms
+			remove_dynamic_modifier = {
+				modifier = AUS_reichs_agriculture
+			}
 		}
 	}
 	AUS_debug_decision_2 = {
@@ -30,17 +31,195 @@ AUS_debug_category = {
 		available = {
 		}
 		complete_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = AUS
+						tag = CZE
+						tag = HUN
+						tag = GAL
+						tag = SLO
+						tag = KRA
+						tag = CRO
+						tag = BOS
+						tag = HRZ
+						tag = TRA
+						tag = COT
+						tag = TYR
+						tag = BUC
+						tag = DAL
+						tag = MOL
+						tag = SIL
+						tag = NIE
+						tag = STE
+						tag = OBE
+						tag = SAL
+						tag = KAE
+						tag = VOR
+						tag = GAG
+						tag = IST
+					}
+				}
+				every_owned_state = {
+					add_core_of = PREV
+				}
+				capital_scope = {
+					PREV = {
+						teleport_armies = {
+							to_state = PREV
+						}
+					}
+				}
+			}
+			
 			every_other_country = {
 				limit = {
-					NOT = {
+					OR = {
 						tag = AUS
+						tag = CZE
+						tag = HUN
+						tag = GAL
+						tag = SLO
+						tag = KRA
+						tag = CRO
+						tag = BOS
+						tag = HRZ
+						tag = TRA
+						tag = COT
+						tag = TYR
+						tag = BUC
+						tag = DAL
+						tag = MOL
+						tag = SIL
+						tag = NIE
+						tag = STE
+						tag = OBE
+						tag = SAL
+						tag = KAE
+						tag = VOR
+						tag = GAG
+						tag = IST
+					}
+				}
+				division_template = {
+					name = "Independent Brigade"
+					is_locked = no
+					priority = 0
+					division_names_group = ENG_INF_02
+					regiments = {
+						infantry = {
+							x = 0
+							y = 0
+						}
+						infantry = {
+							x = 0
+							y = 1
+						}
+						infantry = {
+							x = 0
+							y = 2
+						}
+						infantry = {
+							x = 1
+							y = 0
+						}
+						infantry = {
+							x = 1
+							y = 1
+						}
+						infantry = {
+							x = 1
+							y = 2
+						}
+					}
+				}
+				set_temp_variable = {
+					division_spawn_sum_var_@THIS = num_core_states@THIS
+				}
+				add_to_temp_variable = {
+					division_spawn_sum_var_@THIS = THIS.num_of_factories@THIS
+				}
+				set_temp_variable = {
+					division_spawn_warsupport_var_@THIS = THIS.has_war_support@THIS
+				}
+				add_to_temp_variable = {
+					division_spawn_warsupport_var_@THIS = 0.5
+				}
+				multiply_temp_variable = {
+					division_spawn_sum_var_@THIS = division_spawn_warsupport_var_@THIS
+				}
+				round_temp_variable = division_spawn_sum_var_@THIS
+				if = {
+					limit = {
+						has_idea = Brave_men_against_single_domination
+					}
+					add_to_temp_variable = {
+						division_spawn_sum_var_@THIS = 2
+					}
+				}
+				add_offsite_building = {
+					type = arms_factory
+					level = 2
+				}
+				add_offsite_building = {
+					type = industrial_complex
+					level = 2
+				}
+				capital_scope = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+					if = {
+						limit = {
+							infrastructure < 3
+						}
+						set_building_level = {
+							type = infrastructure
+							level = 3
+						}
+					}
+					create_unit = {
+						division = "name = \"Independent Brigade\" division_template = \"Independent Brigade\" start_experience_factor = 0.2 start_equipment_factor = 1.0 start_manpower_factor = 1.0"
+						owner = PREV
+						count = division_spawn_sum_var_@PREV
 					}
 				}
 				every_other_country = {
 					limit = {
-						NOT = {
-							tag = AUS
-						}
+						OR = {
+						tag = AUS
+						tag = CZE
+						tag = HUN
+						tag = GAL
+						tag = SLO
+						tag = KRA
+						tag = CRO
+						tag = BOS
+						tag = HRZ
+						tag = TRA
+						tag = COT
+						tag = TYR
+						tag = BUC
+						tag = DAL
+						tag = MOL
+						tag = SIL
+						tag = NIE
+						tag = STE
+						tag = OBE
+						tag = SAL
+						tag = KAE
+						tag = VOR
+						tag = GAG
+						tag = IST
+					}
 					}
 					declare_war_on = {
 						target = PREV

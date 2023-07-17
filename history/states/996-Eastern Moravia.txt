@@ -1,0 +1,37 @@
+state = {
+	id = 996
+	name = "STATE_996"
+	manpower = 1555429	#Find popと1880年国勢調査を参考に導出
+	state_category = seven_indus
+	local_supplies = 0.000
+	resources={
+		steel = 5.000
+		oil = 1.000
+	}
+	history = {
+		owner = CZE
+		victory_points = {
+			#Uherské Hradiště(G:Ungarisch Hradisch,M:Magyarhradis)
+			13274
+			3
+		}
+		victory_points = {
+			#Ostrava(Ostrau)
+			3583
+			15
+		}
+		victory_points = {
+			#Frýdek(G:Friedeck,P:Frydek)
+			6590
+			3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		add_core_of = CZE
+	}
+	provinces = {
+		3414 3583 6576 6590 13273 13274 13306
+	}
+}

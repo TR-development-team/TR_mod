@@ -1,0 +1,31 @@
+state = {
+	id = 72
+	name = "STATE_72"	#Czech名(Těšín)
+	manpower = 520800	#正史'10の国勢調査時点で434000
+	state_category = three
+	local_supplies = 0.000
+	#resources={
+	#	
+	#}
+	history = {
+		owner = CZE
+		victory_points = {
+			#Bílsko(G:Bielitz,P:Bielsko)
+			13277
+			3
+		}
+		victory_points = {
+			#Těšín(G:Teschen,P:Cieszyn)
+			9567
+			1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = CZE
+		add_claim_by = POL
+	}
+	provinces = {
+		9551 9567 13277 
+	}
+}

@@ -1,0 +1,31 @@
+state = {
+	id = 163
+	name = "STATE_163"
+	manpower = 54539
+	state_category = two_port
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = ITA
+		victory_points = {
+			#Zara(Zadar)
+			3943
+			5
+		}
+		buildings = {
+			infrastructure = 3
+			3943 = {
+				naval_base = 3
+			}
+		}
+		add_core_of = CRO
+		add_core_of = HUN
+		add_core_of = DAL
+		add_claim_by = ITA
+	}
+	provinces = {
+		3943
+	}
+}

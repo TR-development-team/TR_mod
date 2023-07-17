@@ -1,0 +1,44 @@
+state = {
+	id = 152
+	name = "STATE_152"
+	manpower = 3404396	#現代人口を参照
+	state_category = eight_indus
+	local_supplies = 0.000
+	resources={
+		steel = 24.000
+		aluminium = 1.000
+	}
+	history = {
+		owner = AUS
+		victory_points = {
+			#Linz
+			9665
+			20
+		}
+		victory_points = {
+			#Steyr
+			13303
+			3
+		}
+		victory_points = {
+			#Wels
+			3703
+			5
+		}
+		victory_points = {
+			#Vöcklabruck
+			6708
+			3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+		}
+		add_core_of = AUS
+		add_core_of = OBE
+	}
+	provinces = {
+		732 3684 3703 6708 9665 13297 13300 13303
+	}
+}

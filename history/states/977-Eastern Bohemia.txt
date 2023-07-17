@@ -1,0 +1,31 @@
+state = {
+	id = 977
+	name = "STATE_977"
+	manpower = 1300391	#現在の行政区画における2州の組み合わせのみ
+	state_category = seven_indus
+	local_supplies = 0.000
+	resources={
+		steel = 4.000
+	}
+	history = {
+		owner = CZE
+		victory_points = {
+			#Pardubice(Pardubitz)
+			445
+			3
+		}
+		victory_points = {
+			#Hradec Králové(Königgrätz)
+			494
+			3
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		add_core_of = CZE
+	}
+	provinces = {
+		445 494 583 3462 9414 11414 13272
+	}
+}

@@ -1,0 +1,26 @@
+state = {
+	id = 9
+	name = "STATE_9"	#Czech名(Praha)
+	manpower = 850000
+	state_category = four_town
+	local_supplies = 5.000
+	#resources={
+	#	
+	#}
+	history = {
+		owner = CZE
+		victory_points = {
+			#Praha(Prag)
+			11542
+			25
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 3
+		}
+		add_core_of = CZE
+	}
+	provinces = {
+		11542
+	}
+}

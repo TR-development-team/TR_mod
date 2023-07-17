@@ -1,28 +1,31 @@
-state = {
-	id = 43
-	name = "TR_STATE_43"
-	resources = {
-		aluminium = 25
+
+state={
+	id=43
+	name="STATE_43"
+	resources={
+		aluminium=25.000
 	}
-	history = {
+
+	history={
 		owner = HUN
 		buildings = {
 			infrastructure = 5
-			arms_factory = 1
-			industrial_complex = 4
+			industrial_complex = 2
 			air_base = 4
+
 		}
 		victory_points = {
-			9660
-			25
+			13339 25 
 		}
 		add_core_of = HUN
+
 	}
-	provinces = {
-		684
-		9660
+
+	provinces={
+		13339 
 	}
-	manpower = 2993948
-	buildings_max_level_factor = 1
-	state_category = metropolis
+	manpower=2993948
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=0.000
 }

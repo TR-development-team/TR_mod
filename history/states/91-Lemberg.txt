@@ -1,0 +1,33 @@
+state = {
+	id = 91
+	name = "STATE_91"
+	manpower = 4077800
+	state_category = seven
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = GAL
+		victory_points = {
+			#Lemberg(U:Львів,P:Lwów,R:Львов)
+			11479
+			20
+		}
+		victory_points = {
+			#Tarnopol(U:Тернопіль,P:Tarnopol,R:Тарнополь)
+			3483
+			3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+		}
+		add_core_of = POL
+		add_core_of = GAL
+	}
+	provinces = {
+		438 491 536 3483 3562 9454 9468 9558 11427 11479 13354
+	}
+}

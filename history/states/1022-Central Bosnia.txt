@@ -1,0 +1,30 @@
+state = {
+	id = 1022
+	name = "STATE_1022"
+	manpower = 606004
+	state_category = two
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = BOS
+		victory_points = {
+			#Zenica
+			11574
+			1
+		}
+		victory_points = {
+			#Doboj
+			9591
+			1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BOS
+	}
+	provinces = {
+		6957 9591 9922 11574 13348
+	}
+}

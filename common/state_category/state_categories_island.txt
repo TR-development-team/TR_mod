@@ -1,0 +1,50 @@
+state_categories = {
+	zero_island = {
+		color = {
+			36
+			19
+			0
+		}
+		local_building_slots = 0
+	}
+	one_island = {
+		color = {
+			73
+			39
+			0
+		}
+		local_building_slots = 1
+	}
+	two_island = {
+		color = {
+			109
+			58
+			0
+		}
+		local_building_slots = 2
+	}
+	three_island = {
+		color = {
+			146
+			78
+			0
+		}
+		local_building_slots = 3
+	}
+	four_island = {
+		color = {
+			182
+			97
+			0
+		}
+		local_building_slots = 4
+	}
+	five_island = {
+		color = {
+			219
+			117
+			0
+		}
+		local_building_slots = 5
+	}
+}

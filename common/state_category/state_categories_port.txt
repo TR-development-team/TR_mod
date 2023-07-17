@@ -1,0 +1,42 @@
+state_categories = {
+	one_port = {
+		color = {
+			0
+			0
+			255
+		}
+		local_building_slots = 1
+	}
+	two_port = {
+		color = {
+			36
+			36
+			255
+		}
+		local_building_slots = 2
+	}
+	three_port = {
+		color = {
+			73
+			73
+			255
+		}
+		local_building_slots = 3
+	}
+	four_port = {
+		color = {
+			109
+			109
+			255
+		}
+		local_building_slots = 4
+	}
+	five_port = {
+		color = {
+			146
+			146
+			255
+		}
+		local_building_slots = 5
+	}
+}

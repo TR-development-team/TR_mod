@@ -1,0 +1,33 @@
+state = {
+	id = 994
+	name = "STATE_994"
+	manpower = 1385032	#現在の人口を参照
+	state_category = nine
+	local_supplies = 0.000
+	resources={
+		steel = 5.000
+	}
+	history = {
+		owner = CZE
+		victory_points = {
+			#Kladno(Kladen)
+			13280
+			5
+		}
+		victory_points = {
+			#Kutná Hora(Kuttenberg)
+			13266
+			1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 2
+			air_base = 5
+		}
+		add_core_of = CZE
+	}
+	provinces = {
+		6440 9421 9429 9569 13266 13267 13280 13365
+	}
+}

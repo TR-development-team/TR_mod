@@ -1,0 +1,28 @@
+state = {
+	id = 991
+	name = "STATE_991"
+	manpower = 299002	#史実'10の国勢調査を参照
+	state_category = two
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = ITA
+		victory_points = {
+			#Gorizia(S:Gorica,G:Görz)
+			13367
+			1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = ITA
+		add_core_of = AUS
+		add_core_of = GAG
+		#add_core_of = SLV
+	}
+	provinces = {
+		599 11595 13367
+	}
+}

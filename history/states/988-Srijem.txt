@@ -1,18 +1,27 @@
 state = {
 	id = 988
 	name = "STATE_988"
-	provinces = {
-		11580
-	}
+	manpower = 593023	#現代人口を参照
+	state_category = two
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
 	history = {
 		owner = CRO
-		add_core_of = HUN
-		add_core_of = CRO
-		add_core_of = SER
+		victory_points = {
+			#Szávaszentdemeter(Sremska Mitrovica)
+			11580
+			3
+		}
 		buildings = {
 			infrastructure = 3
 		}
+		add_core_of = HUN
+		add_core_of = CRO
+		add_core_of = SER
 	}
-	manpower = 790697
-	state_category = town
+	provinces = {
+		11580
+	}
 }

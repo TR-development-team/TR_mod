@@ -1,0 +1,26 @@
+state = {
+	id = 931
+	name = "STATE_931"
+	manpower = 78000	#現代人口を参照
+	state_category = one
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = HUN
+		victory_points = {
+			#Muraszombat(Murska Sobota)
+			13288
+			1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = HUN
+		#add_core_of = SLV
+	}
+	provinces = {
+		6672 13288
+	}
+}

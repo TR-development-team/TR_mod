@@ -168,5 +168,18 @@ AUS_industrialised_effect = {
 	remove_trigger = {
 		always = no
 	}
-	local_factories = 0.5
+	local_building_slots = 2
+}
+
+4_wien_in_blute = {
+	icon = "GFX_modifiers_AUS_wien"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	local_manpower = 4_wib_local_manpower_modifier
+	local_building_slots = 4_wib_local_building_slots_modifier
+	resistance_target  = 4_wib_resistance_target_modifier
 }

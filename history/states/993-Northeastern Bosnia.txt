@@ -1,0 +1,35 @@
+state = {
+	id = 993
+	name = "STATE_993"
+	manpower = 1008148
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = BOS
+		victory_points = {
+			#Bijeljina
+			13345
+			1
+		}
+		victory_points = {
+			#Tuzla
+			606
+			1
+		}
+		victory_points = {
+			#Brcko
+			13349
+			1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BOS
+	}
+	provinces = {
+		606 9588 13344 13345 13346 13349 13352
+	}
+}

@@ -1,0 +1,33 @@
+state = {
+	id = 109
+	name = "STATE_109"
+	manpower = 1560239	#Find popより
+	state_category = five
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = CRO
+		victory_points = {
+			#Agram(Zagreb)
+			9611
+			10
+		}
+		victory_points = {
+			#Karlstadt(Karlovac)
+			3592
+			1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+		add_core_of = HUN
+		add_core_of = CRO
+	}
+	provinces = {
+		624 3592 3596 9611 11581 11594 13321 13322 13323 13325 13326 13327 13328
+	}
+}

@@ -1,0 +1,37 @@
+state = {
+	id = 840
+	name = "STATE_840"
+	manpower = 888484	#Find popや現代の南ボヘミアの人口を参考に導出
+	state_category = seven_indus
+	local_supplies = 5.000
+	#resources={
+	#	
+	#}
+	history = {
+		owner = CZE
+		victory_points = {
+			#České Budějovice(Budweis)
+			13270
+			5
+		}
+		victory_points = {
+			#Jihlava(Iglau)
+			13271
+			3
+		}
+		victory_points = {
+			#Český Krumlov(Schloss Krumau)
+			5283
+			1
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		add_core_of = CZE
+	}
+	provinces = {
+		543 5283 9541 11525 11556 13269 13270 13271 13368
+	}
+}

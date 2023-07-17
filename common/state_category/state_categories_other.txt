@@ -1,0 +1,53 @@
+state_categories = {
+	#wasteland
+	zero_wasteland = {
+		color = {
+			0
+			0
+			0
+		}
+		local_building_slots = 0
+	}
+	zero_hardpan = {
+		color = {
+			42
+			68
+			0
+		}
+		local_building_slots = 0
+	}
+	#archipelago
+	one_archipelago = {
+		color = {
+			64
+			64
+			191
+		}
+		local_building_slots = 1
+	}
+	#exclave
+	zero_exclave = {
+		color = {
+			146
+			109
+			146
+		}
+		local_building_slots = 0
+	}
+	one_exclave = {
+		color = {
+			173
+			82
+			173
+		}
+		local_building_slots = 1
+	}
+	two_exclave = {
+		color = {
+			200
+			55
+			200
+		}
+		local_building_slots = 2
+	}
+}

@@ -1,0 +1,33 @@
+state = {
+	id = 976
+	name = "STATE_976"
+	manpower = 1077974
+	state_category = eight_indus
+	local_supplies = 0.000
+	resources={
+		steel = 14.000
+	}
+	history = {
+		owner = CZE
+		victory_points = {
+			#Karlovy Vary(Karlsbad)
+			13320
+			3
+		}
+		victory_points = {
+			#Plzeň(Pilsen)
+			6418
+			5
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 4
+		}
+		add_core_of = CZE
+	}
+	provinces = {
+		424 3585 6418 6470 6592 7857 9555 13320
+	}
+}

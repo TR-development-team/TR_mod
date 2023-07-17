@@ -1,33 +1,26 @@
 state = {
 	id = 103
-	name = "TR_STATE_103"	# Dalmatia
-	manpower = 878032
-	state_category = large_town
+	name = "STATE_103"
+	manpower = 86463
+	state_category = one
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
 	history = {
 		owner = CRO
 		victory_points = {
-			13252
+			#Gospić
+			591
 			1
 		}
-		set_province_name = {
-			id = 13252
-			name = VICTORY_POINTS_13252_TR
-		}
 		buildings = {
-			infrastructure = 3
-			industrial_complex = 1
-			13252 = {
-				naval_base = 1
-			}
+			infrastructure = 1
 		}
-		add_core_of = HUN
 		add_core_of = CRO
+		add_core_of = HUN
 	}
-	local_supplies = 0
 	provinces = {
-		591
-		3601
-		6611
-		13252
+		591 3601 6611 13252 13329 13330 13331
 	}
 }

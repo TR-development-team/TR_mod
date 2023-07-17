@@ -1,46 +1,33 @@
-
-state={
-	id=160
-	name="STATE_160"
-	resources={
-		steel=20.000
-		aluminium=11.000
+state = {
+	id = 160
+	name = "STATE_160"
+	manpower = 4853657
+	state_category = nine
+	local_supplies = 0.000
+	resources = {
+		steel = 20.000
+		aluminium = 11.000
 	}
-
-	history={
+	history = {
 		owner = ITA
 		victory_points = {
-			11584 10 
+			#Venezia
+			11584
+			20
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 4
 			arms_factory = 2
 			industrial_complex = 4
 			dockyard = 2
 			air_base = 3
 			11584 = {
 				naval_base = 6
-
 			}
-
 		}
 		add_core_of = ITA
-		1939.1.1 = {
-			buildings = {
-				dockyard = 2
-				industrial_complex = 5
-
-			}
-
-		}
-
 	}
-
-	provinces={
-		603 628 3604 6656 9582 11584 
+	provinces = {
+		603 628 3604 6656 9582 11584
 	}
-	manpower=4763151
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
 }

@@ -1,27 +1,37 @@
 state = {
 	id = 986
 	name = "STATE_986"
-	resources = {
-		tungsten = 30
-	}
-	provinces = {
-		688
-		3675
-		13261
+	manpower = 672852	#現代人口を参照
+	state_category = four
+	local_supplies = 0.000
+	resources={
+		tungsten = 30.000
 	}
 	history = {
 		owner = AUS
-		add_core_of = AUS
 		victory_points = {
+			#Salzburg
 			688
 			10
+		}
+		victory_points = {
+			#Hallein
+			3675
+			3
+		}
+		victory_points = {
+			#Saalfelden
+			13315
+			1
 		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
+		add_core_of = AUS
+		add_core_of = SAL
 	}
-	manpower = 793627
-	buildings_max_level_factor = 1
-	state_category = city
+	provinces = {
+		688 3675 13261 13313 13314 13315
+	}
 }

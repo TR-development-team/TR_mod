@@ -1,29 +1,28 @@
 state = {
 	id = 73
 	name = "STATE_73"
-	manpower = 1994300
-	state_category = rural
+	manpower = 943725	#現代人口を参照
+	state_category = two
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
 	history = {
+		owner = HUN
 		victory_points = {
-			3548
-			1
+			#Munkatsch(U,R:Mukachevo,H:Munkács)
+			13384
+			3
 		}
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
-		owner = HUN
-		add_core_of = SLO
 		add_core_of = HUN
-		set_province_name = {
-			id = 3548
-			name = VICTORY_POINTS_3548_TR
-		}
+		add_core_of = SLO
+		add_core_of = UKR
+		add_core_of = MHN
 	}
 	provinces = {
-		3548
-		6571
-		9563
-		11536
-		11691
+		3548 6571 9563 11536 11691 13384 13385
 	}
 }

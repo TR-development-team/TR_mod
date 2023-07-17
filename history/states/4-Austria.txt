@@ -1,54 +1,27 @@
 state = {
 	id = 4
-	name = "TR_STATE_4"
-	resources = {
-		oil = 1
-		steel = 23
-	}
+	name = "STATE_4"
+	manpower = 4482196
+	state_category = five_town
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
 	history = {
 		owner = AUS
 		victory_points = {
+			#Wien(Wean)
 			11666
 			50
 		}
-		victory_points = {
-			704
-			5
-		}
-		victory_points = {
-			9661
-			5
-		}
-		victory_points = {
-			11651
-			3
-		}
-		victory_points = {
-			6552
-			10
-		}
 		buildings = {
 			infrastructure = 5
-			arms_factory = 4
-			industrial_complex = 5
-			air_base = 6
+			industrial_complex = 3
 		}
 		add_core_of = AUS
+		add_core_of = NIE
 	}
 	provinces = {
-		704
-		3718
-		6552
-		6690
-		6723
-		6739
-		9527
-		9661
-		11651
 		11666
 	}
-	manpower = 4873618
-	buildings_max_level_factor = 1
-	state_category = megalopolis
-	local_supplies = 0
 }

@@ -1,51 +1,51 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			every_country = {
-				limit = {
-					OR = {
-						tag = AUS
-						tag = HUN
-						tag = CZE
-						tag = BOS
-						tag = GAL
-					}
-				}
-				every_owned_state = {
-					set_temp_variable = {
-						AUS_temp_man = THIS.state_population_k
-					}
-					multiply_temp_variable = {
-						AUS_temp_man = 360
-					}
-					add_manpower = AUS_temp_man
-				}
-			}
-			every_state = {
-				limit = {
-					OR = {
-						state = 39
-						state = 76
-						state = 80
-						state = 82
-						state = 83
-						state = 84
-						state = 163
-						state = 736
-						state = 946
-						state = 948
-						state = 991
-						state = 992
-					}
-				}
-				set_temp_variable = {
-					AUS_temp_man = THIS.state_population_k
-				}
-				multiply_temp_variable = {
-					AUS_temp_man = 360
-				}
-				add_manpower = AUS_temp_man
-			}
+			#every_country = {
+			#	limit = {
+			#		OR = {
+			#			tag = AUS
+			#			tag = HUN
+			#			tag = CZE
+			#			tag = BOS
+			#			tag = GAL
+			#		}
+			#	}
+			#	every_owned_state = {
+			#		set_temp_variable = {
+			#			AUS_temp_man = THIS.state_population_k
+			#		}
+			#		multiply_temp_variable = {
+			#			AUS_temp_man = 360
+			#		}
+			#		add_manpower = AUS_temp_man
+			#	}
+			#}
+			#every_state = {
+			#	limit = {
+			#		OR = {
+			#			state = 39
+			#			state = 76
+			#			state = 80
+			#			state = 82
+			#			state = 83
+			#			state = 84
+			#			state = 163
+			#			state = 736
+			#			state = 946
+			#			state = 948
+			#			state = 991
+			#			state = 992
+			#		}
+			#	}
+			#	set_temp_variable = {
+			#		AUS_temp_man = THIS.state_population_k
+			#	}
+			#	multiply_temp_variable = {
+			#		AUS_temp_man = 360
+			#	}
+			#	add_manpower = AUS_temp_man
+			#}
 			987 = {
 				add_dynamic_modifier = {
 					modifier = AUS_industrialised_effect
@@ -62,6 +62,20 @@ on_actions = {
 			#	start_province = 9527
 			#	target_province = 11666
 			#}
+		}
+	}
+	on_monthly_AUS = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = AUS_die_apokalypse
+					}
+				}
+				4 = {
+					add_manpower = 6000
+				}
+			}
 		}
 	}
 	on_weekly_AUS = {

@@ -1,0 +1,35 @@
+state = {
+	id = 1024
+	name = "STATE_1024"
+	manpower = 690074
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = BOS
+		victory_points = {
+			#Banja Luka
+			13347
+			3
+		}
+		victory_points = {
+			#Prijedor
+			6619
+			1
+		}
+		victory_points = {
+			#Cazin
+			6614
+			1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = BOS
+	}
+	provinces = {
+		3985 6614 6619 6983 9586 13347
+	}
+}

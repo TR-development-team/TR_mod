@@ -1,0 +1,66 @@
+state_categories = {
+	five_indus = {
+		color = {
+			255
+			0
+			0
+		}
+		local_building_slots = 5
+	}
+	six_indus = {
+		color = {
+			255
+			0
+			44
+		}
+		local_building_slots = 6
+	}
+	seven_indus = {
+		color = {
+			255
+			0
+			87
+		}
+		local_building_slots = 7
+	}
+	eight_indus = {
+		color = {
+			255
+			0
+			131
+		}
+		local_building_slots = 8
+	}
+	nine_indus = {
+		color = {
+			255
+			0
+			175
+		}
+		local_building_slots = 9
+	}
+	ten_indus = {
+		color = {
+			255
+			0
+			219
+		}
+		local_building_slots = 10
+	}
+	eleven_indus = {
+		color = {
+			248
+			0
+			255
+		}
+		local_building_slots = 11
+	}
+	twelve_indus = {
+		color = {
+			204
+			0
+			255
+		}
+		local_building_slots = 12
+	}
+}

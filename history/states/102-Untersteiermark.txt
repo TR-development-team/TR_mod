@@ -1,0 +1,33 @@
+state = {
+	id = 102
+	name = "STATE_102"
+	manpower = 776838	#史実1880年国勢調査を参照
+	state_category = five_indus
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = AUS
+		victory_points = {
+			#Marburg(Maribor)
+			13307
+			5
+		}
+		victory_points = {
+			#Cilli(Celje)
+			3654
+			3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+		}
+		add_core_of = AUS
+		add_core_of = STE
+		#add_core_of = SLV
+	}
+	provinces = {
+		596 665 3654 9596 13307
+	}
+}

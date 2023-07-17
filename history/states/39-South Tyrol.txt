@@ -1,31 +1,33 @@
-
 state = {
 	id = 39
-	name = "STATE_39" # (South Tyrol) Alto Adige -> #TODO_Manu: Should change name to Südtirol when under Austrian/German control
-	manpower = 298290 # was 641650 before Trentino split
-	
-	state_category = town
-	
+	name = "STATE_39"
+	manpower = 507657	#現代人口を参照
+	state_category = four
+	local_supplies = 0.000
 	resources = {
-		aluminium = 14 # was: 22
+		aluminium = 14 
 	}
-
 	history = {
-		victory_points = { #Bolzano
-			11598 1
-		}
 		owner = ITA
+		victory_points = {
+			#Bolzano(Bozen)
+			656
+			3
+		}
+		victory_points = {
+			#Merano(Meran)
+			6675
+			1
+		}
 		buildings = {
-			infrastructure = 2 # was 3 before split
-			industrial_complex = 1 #Bolzano's industrial zone started in 1934-35 (Steel meels, Lancia...)
+			infrastructure = 2
+			industrial_complex = 1
 		}
 		add_core_of = ITA
 		add_core_of = AUS
+		add_core_of = TYR
 	}
-
 	provinces = {
 		656 6675 9630 11598 11615
 	}
-
-	local_supplies = 0.0 
 }

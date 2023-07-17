@@ -1,0 +1,31 @@
+state = {
+	id = 736
+	name = "STATE_736"
+	manpower = 372225	#現代人口を参照
+	state_category = four_port
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = ITA
+		victory_points = {
+			#Trieste(Triest)
+			6626
+			5
+		}
+		buildings = {
+			infrastructure = 4
+			dockyard = 2
+			6626 = {
+				naval_base = 6
+			}
+		}
+		add_core_of = ITA
+		add_core_of = AUS
+		add_core_of = COT
+	}
+	provinces = {
+		6626 13353
+	}
+}
