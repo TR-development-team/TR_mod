@@ -1,24 +1,28 @@
-
-state={
-	id=995
-	name="STATE_995"
-
-	history={
+state = {
+	id = 995
+	name = "STATE_995"
+	manpower = 944484	#現代人口を参照
+	state_category = six
+	local_supplies = 0.000
+	resources = {
+		aluminium = 25
+	}
+	history = {
 		owner = HUN
-		add_core_of = HUN
+		victory_points = {
+			#Ráckeve
+			13340
+			3
+		}
 		buildings = {
 			infrastructure = 4
+			industrial_complex = 2
 			arms_factory = 1
-			industrial_complex = 1
+			air_base = 3
 		}
-
+		add_core_of = HUN
 	}
-
-	provinces={
-		684 9660 13337 13340 13341 
+	provinces = {
+		684 9660 13337 13340 13341
 	}
-	manpower=514518
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

@@ -1,0 +1,28 @@
+state = {
+	id = 1068
+	name = "STATE_1068"
+	manpower = 766285	#現代人口を参照
+	state_category = four
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = GAL
+		victory_points = {
+			#Tarnopol
+			3483
+			5
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GAL
+		add_core_of = POL
+		add_core_of = UKR
+		add_core_of = MHN
+	}
+	provinces = {
+		438 491 3483 3562 9454 9558 11427 13401 13402 13403
+	}
+}

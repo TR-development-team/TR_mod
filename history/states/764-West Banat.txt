@@ -1,25 +1,33 @@
 state = {
 	id = 764
 	name = "STATE_764"
-	manpower = 885579
-	state_category = town
+	manpower = 585579	#史実'30のデータを参照
+	state_category = four
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
 	history = {
 		owner = HUN
-		add_core_of = TRA
-		add_core_of = HUN
-		add_core_of = SER
 		victory_points = {
+			#Pančevo
 			3614
-			1
+			3
+		}
+		victory_points = {
+			#Zrenjanin
+			11787
+			3
 		}
 		buildings = {
 			infrastructure = 3
 		}
+		add_core_of = HUN
+		add_core_of = TRA
+		add_core_of = ROM
+		add_core_of = SER
 	}
 	provinces = {
-		614
-		3614
-		6643
-		11787
+		614 3614 6643 11787
 	}
 }

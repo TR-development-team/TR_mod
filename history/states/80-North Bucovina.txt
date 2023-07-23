@@ -1,0 +1,27 @@
+state = {
+	id = 80
+	name = "STATE_80"
+	manpower = 531300	#史実'40年人口を参照
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = ROM
+		victory_points = {
+			#Cernăuţi(G:Czernowitz,U:Чернівці,R:Черновцы,P:Czerniowce)
+			13387
+			5
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = BUC
+		add_core_of = ROM
+	}
+	provinces = {
+		577 9548 13387
+	}
+}

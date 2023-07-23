@@ -1,33 +1,36 @@
-
-state={
-	id=981
-	name="STATE_981"
-
-	history={
+state = {
+	id = 981
+	name = "STATE_981"
+	manpower = 737950	#現代人口を参照
+	state_category = five
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
 		owner = HUN
-		add_core_of = HUN
+		victory_points = {
+			#Győr
+			6720
+			3
+		}
+		victory_points = {
+			#Szombathely
+			13335
+			3
+		}
+		victory_points = {
+			#Zalaegerszeg
+			11627
+			1
+		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-
 		}
-		victory_points = {
-			6720 10 
-		}
-		victory_points = {
-			11627 1 
-		}
-		victory_points = {
-			3670 1 
-		}
-
+		add_core_of = HUN
 	}
-
-	provinces={
-		686 3670 6720 11627 13333 13334 13335 13336 
+	provinces = {
+		686 3670 6720 11627 13333 13334 13335 13336
 	}
-	manpower=983933
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
 }

@@ -1,0 +1,28 @@
+state = {
+	id = 83
+	name = "STATE_83"
+	manpower = 376462
+	state_category = four
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = HUN
+		victory_points = {
+			#Arad
+			13359
+			3
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = HUN
+		add_core_of = ROM
+		add_core_of = TRA
+	}
+	provinces = {
+		696 6697 9640 13359 13390
+	}
+}

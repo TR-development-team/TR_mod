@@ -1,0 +1,26 @@
+state = {
+	id = 980
+	name = "STATE_980"
+	manpower = 1061020	#find popより(不正確)
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = GAL
+		victory_points = {
+			#Reichshof(Rzeszów)
+			13397
+			3
+		}
+		buildings = {
+			infrastructure = 3
+		}
+		add_core_of = GAL
+		add_core_of = POL
+	}
+	provinces = {
+		466 6522 9494 11507 13397 13398 13399
+	}
+}

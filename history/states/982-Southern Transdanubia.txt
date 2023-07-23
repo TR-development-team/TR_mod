@@ -1,27 +1,30 @@
-
-state={
-	id=982
-	name="STATE_982"
-
-	history={
+state = {
+	id = 982
+	name = "STATE_982"
+	manpower = 507787	#現代人口とfindpopを参照
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
 		owner = HUN
-		add_core_of = HUN
 		victory_points = {
-			3680 1 
+			#Szekszárd
+			13356
+			1
+		}
+		victory_points = {
+			#Kaposvár
+			682
+			1
 		}
 		buildings = {
-			infrastructure = 3
-			arms_factory = 1
-
+			infrastructure = 2
 		}
-
+		add_core_of = HUN
 	}
-
-	provinces={
-		682 3680 6685 13302 13355 13356 
+	provinces = {
+		682 3680 6685 13302 13355 13356
 	}
-	manpower=300868
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

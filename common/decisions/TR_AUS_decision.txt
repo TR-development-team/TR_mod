@@ -20,8 +20,17 @@ AUS_debug_category = {
 		available = {
 		}
 		complete_effect = {
-			remove_dynamic_modifier = {
-				modifier = AUS_reichs_agriculture
+			NIE = {
+				transfer_state = 4
+				change_tag_from = AUS
+				annex_country = {
+					target = AUS
+					transfer_troops = yes
+				}
+				every_owned_state = {
+					add_core_of = NIE
+				}
+				set_cosmetic_tag = AUS_lands
 			}
 		}
 	}
@@ -309,6 +318,7 @@ AUS_debug_category = {
 				transfer_state = 948
 				transfer_state = 991
 				transfer_state = 992
+				transfer_state = 1016
 				#ROM
 				transfer_state = 76
 				transfer_state = 80

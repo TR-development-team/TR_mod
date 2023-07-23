@@ -1,26 +1,25 @@
-
-state={
-	id=1020
-	name="STATE_1020"
-
-	history={
+state = {
+	id = 1020
+	name = "STATE_1020"
+	manpower = 379202	#現代人口を参照
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
 		owner = HUN
-		add_core_of = HUN
 		victory_points = {
-			6700 3 
+			#Kecskemét
+			13374
+			3
 		}
 		buildings = {
-			infrastructure = 3
-
+			infrastructure = 2
 		}
-
+		add_core_of = HUN
 	}
-
-	provinces={
-		6670 6700 11625 13357 13373 13374 13375 
+	provinces = {
+		6670 6700 11625 13357 13373 13374 13375
 	}
-	manpower=505602
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

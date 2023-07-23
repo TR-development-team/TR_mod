@@ -1,31 +1,26 @@
-
-state={
-	id=43
-	name="STATE_43"
-	resources={
-		aluminium=25.000
-	}
-
-	history={
+state = {
+	id = 43
+	name = "STATE_43"
+	manpower = 1314215	#現代人口を参照
+	state_category = four_town
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
 		owner = HUN
+		victory_points = {
+			#Budapest
+			13339
+			30
+		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-			air_base = 4
-
-		}
-		victory_points = {
-			13339 25 
 		}
 		add_core_of = HUN
-
 	}
-
-	provinces={
-		13339 
+	provinces = {
+		13339
 	}
-	manpower=2993948
-	buildings_max_level_factor=1.000
-	state_category=metropolis
-	local_supplies=0.000
 }

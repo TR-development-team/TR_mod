@@ -1,25 +1,27 @@
-
-state={
-	id=1019
-	name="STATE_1019"
-
-	history={
+state = {
+	id = 1019
+	name = "STATE_1019"
+	manpower = 658043	#現代人口を参照
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
 		owner = HUN
-		add_core_of = ROM
+		victory_points = {
+			#Nagybánya(R:Baia Mare)
+			11676
+			3
+		}
+		buildings = {
+			infrastructure = 2
+		}
 		add_core_of = HUN
 		add_core_of = TRA
-		buildings = {
-			infrastructure = 3
-
-		}
-
+		add_core_of = ROM
 	}
-
-	provinces={
-		746 9687 9704 11676 13386 
+	provinces = {
+		746 9687 9704 11676 13386
 	}
-	manpower=845641
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

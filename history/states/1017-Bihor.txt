@@ -1,25 +1,28 @@
-
-state={
-	id=1017
-	name="STATE_1017"
-
-	history={
+state = {
+	id = 1017
+	name = "STATE_1017"
+	manpower = 381504	#find popより（不正確）
+	state_category = four
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
 		owner = HUN
-		add_core_of = ROM
-		add_core_of = HUN
-		add_core_of = TRA
+		victory_points = {
+			#Nagyvárad(R:Oradea)
+			13388
+			5
+		}
 		buildings = {
 			infrastructure = 3
-
+			arms_factory = 1
 		}
-
+		add_core_of = HUN
+		add_core_of = ROM
+		add_core_of = TRA
 	}
-
-	provinces={
-		713 3696 13388 13389 
+	provinces = {
+		713 3696 13388 13389
 	}
-	manpower=600223
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
 }

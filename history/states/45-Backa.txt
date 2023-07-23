@@ -1,0 +1,28 @@
+state = {
+	id = 45
+	name = "STATE_45"
+	manpower = 845476	#史実'10国勢調査より
+	state_category = five
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = HUN
+		victory_points = {
+			#Újvidék(S:Нови Сад)
+			3617
+			10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = HUN
+		add_core_of = SER
+		add_core_of = CRO
+	}
+	provinces = {
+		619 3617 3623 9621
+	}
+}

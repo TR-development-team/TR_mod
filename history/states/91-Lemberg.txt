@@ -1,33 +1,35 @@
 state = {
 	id = 91
 	name = "STATE_91"
-	manpower = 4077800
+	manpower = 1934790	#find popより（不正確）
 	state_category = seven
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		oil = 13
+	}
 	history = {
 		owner = GAL
 		victory_points = {
-			#Lemberg(U:Львів,P:Lwów,R:Львов)
+			#Lemberg(U:Львів,R:Львов,P:Lwów)
 			11479
 			20
 		}
 		victory_points = {
-			#Tarnopol(U:Тернопіль,P:Tarnopol,R:Тарнополь)
-			3483
-			3
+			#Drohobych(Drohobycz)
+			13406
+			1
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 1
 		}
-		add_core_of = POL
 		add_core_of = GAL
+		add_core_of = POL
+		add_core_of = UKR
+		add_core_of = MHN
 	}
 	provinces = {
-		438 491 536 3483 3562 9454 9468 9558 11427 11479 13354
+		536 3434 9468 11479 13354 13404 13405 13406
 	}
 }
