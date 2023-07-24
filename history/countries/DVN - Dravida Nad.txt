@@ -5,28 +5,37 @@ JAP = {	set_autonomy = {	target = DVN	autonomous_state = imperial_colony	}	}
 set_cosmetic_tag = COUNTRY_JAP
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	authoritarian_democrat = 100
+	totalist = 6
+	syndicalist = 5
+	radical_socialist = 11
+	social_democrat = 17
+	social_liberal = 4
+	market_liberal = 5
+	social_conservative = 13
+	authoritarian_democrat = 12
+	paternal_autocrat = 23
+	national_populist = 2
+	Gnosticism = 2
 }
 
 ###country_leader###
 recruit_character = DVN_Mutaguchi_Renya
-recruit_character = DVN_Indian_Emperor_Mutaguchi_Renya
 
-###corps_commander###
-recruit_character = JAP_Mutaguchi_Renya
-recruit_character = JAP_Obata_Hideyoshi
-recruit_character = JAP_Miyazaki_Shigesaburo
+
+recruit_character = DVN_Obata_Hideyoshi
+recruit_character = DVN_Miyazaki_Shigesaburo
 
 add_ideas = {
 	Colonical_system
 	Tiyoda_Kensho
 	JAP_colony
+        IND_agrarian_society
 }
 add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
 
@@ -38,7 +47,4 @@ set_technology = {
 	tech_engineers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	CAS1 = 1
-	
 }

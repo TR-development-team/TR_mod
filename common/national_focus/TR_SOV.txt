@@ -1291,8 +1291,8 @@ focus_tree = {
 		y = 5
 		cost = 8
 		available = {
-                has_global_flag = Soviet_Win_flag
-                NOT = { country_exists = SOV }
+            has_global_flag = Soviet_Win_flag
+            NOT = { country_exists = RUS }
                 }
 		search_filters = {
 			FOCUS_FILTER_USA_CONGRESS
@@ -1861,7 +1861,11 @@ focus_tree = {
 			cost = 8
 			available = {
 				is_subject = no
-				NOT = { has_country_flag = SOV_Bukharin_Win has_country_flag = SOV_Stalin_Win }
+				NOT = {
+					has_idea = GER_CIVILWAR_MARKS 
+					has_country_flag = SOV_Bukharin_Win 
+					has_country_flag = SOV_Stalin_Win 
+				}
                 is_in_faction = no
 			    threat > 0.8
                 RAT = { 
@@ -2063,6 +2067,13 @@ focus_tree = {
 					    type = annex_everything
 				    }
 			    }
+				if = {
+					limit = { country_exists = ALO }
+					create_wargoal = {
+						target = ALO
+						type = annex_everything
+					}
+				}
 				every_state = {
 					limit = {
 						is_core_of = KHI

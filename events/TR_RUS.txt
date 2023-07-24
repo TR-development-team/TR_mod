@@ -48,23 +48,23 @@ country_event = {
 			ideology = totalist
 			popularity = 0.05
 		}
-				add_popularity = {
+		add_popularity = {
 			ideology = radical_socialist
 			popularity = 0.05
 		}
-				add_popularity = {
+		add_popularity = {
 			ideology = syndicalist
 			popularity = 0.05
 		}
-				add_popularity = {
+		add_popularity = {
 			ideology = social_democrat
 			popularity = 0.05
 		}
-				add_popularity = {
+		add_popularity = {
 			ideology = social_liberal
 			popularity = 0.05
 		}
-				add_popularity = {
+		add_popularity = {
 			ideology = market_liberal
 			popularity = 0.05
 		}
@@ -212,9 +212,7 @@ country_event = {
 	desc = TR_russia.4.d
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
-		fire_only_once = yes
-
-	   
+	fire_only_once = yes
 	
 	option = {
 		name = TR_russia.4.a
@@ -231,7 +229,6 @@ country_event = {
 			elections_allowed = yes
 		}
 	}
-
 
 	option = {
 		name = TR_russia.4.b
@@ -259,11 +256,11 @@ country_event = {
 			base = 20
 		}
 		add_ideas = RUS_Yuliy_martov
-				add_popularity = {
+		add_popularity = {
 			ideology = social_democrat
 			popularity = 0.2
 		}
-				set_politics = {
+		set_politics = {
 			ruling_party = social_democrat
 			elections_allowed = yes
 		}
@@ -303,7 +300,6 @@ country_event = {
 			ruling_party = authoritarian_democrat
 			elections_allowed = yes
 		}
-
 	}
 }
 
@@ -320,18 +316,17 @@ country_event = {
 		name = TR_russia.5.a
 		trigger = {	NOT = {	has_country_flag = RUS_Great_Purge_flag	}	}
 		ai_chance = {	base = 100	}
-		end_puppet = BUK
-		end_puppet = KHI
-		end_puppet = KAZ
-		end_puppet = BLT
-		end_puppet = LIT
-		end_puppet = SKH
-		create_faction = "russianwhite_faction"
 		add_ideas = RUS_CIVIL_WAR
 		set_country_flag = RUS_OCREVOLUTION
 		set_global_flag = Russian_civil_war
 		remove_ideas = RUS_revolution_1
 		hidden_effect = {
+			end_puppet = BUK
+			end_puppet = KHI
+			end_puppet = KAZ
+			end_puppet = BLT
+			end_puppet = LIT
+			end_puppet = SKH
 			195 = { set_demilitarized_zone = yes }
 			208 = { set_demilitarized_zone = yes }
 			263 = { set_demilitarized_zone = yes }
@@ -354,17 +349,24 @@ country_event = {
 			BLT = {
 				drop_cosmetic_tag = yes
 				set_cosmetic_tag = BLT_united_republic
+				country_event = { id = TR_Baltic.1 days = 10 }
+			}
+			KAZ = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = RUS_Frontier_Forces
 			}
 			LIT = {
 				drop_cosmetic_tag = yes
 				set_cosmetic_tag = LIT_republic
 				country_event = TR_Lithuania.1
 			}
+			SKH = {
+				drop_cosmetic_tag = yes
+				set_cosmetic_tag = OMSK_emergency_government
+			}
 			BUK = {	country_event = {	id = TR_central_asia.2	days = 3	}	}
 			KAZ = {	country_event = {	id = TR_central_asia.3	days = 3	}	}
-			create_dynamic_country = {
-				original_tag = KAZ
-				recruit_character = KAZ_Akhmet_Baitursynov
+			ALO = {
 				transfer_state = 652
 				transfer_state = 406
 				transfer_state = 407
@@ -374,6 +376,15 @@ country_event = {
 				transfer_state = 583
 				transfer_state = 582
 				transfer_state = 893
+				every_state = {
+					limit = {
+						is_Kazakhstan = yes
+					}
+					add_core_of = ALO
+				}	
+				add_state_core = 582
+				add_state_core = 652
+				add_state_core = 893
 				country_event = {	id = TR_central_asia.1	days = 1	}
 				set_politics = {
 					ruling_party = social_democrat
@@ -394,95 +405,7 @@ country_event = {
 				set_cosmetic_tag = ALASH_autonomy
 			}
 			set_capital = {	state = 249	remember_old_capital = yes	}
-		}
-	}
-	option = {
-		name = TR_russia.5.b
-		trigger = {
-			NOT = { has_country_flag = RUS_Great_Purge_flag }
-		}
-				ai_chance = {
-			base = 0
-		}
-		end_puppet = BUK
-		end_puppet = KHI
-		end_puppet = KAZ
-		end_puppet = BLT
-		end_puppet = LIT
-		end_puppet = SKH
-		create_faction = "russianwhite_faction"
-		remove_ideas = RUS_revolution_1
-		add_ideas = RUS_CIVIL_WAR
-		set_country_flag = RUS_OCREVOLUTION
-		set_global_flag = Russian_civil_war
-		set_capital = {
-			state = 249
-			remember_old_capital = yes
-		}
-		hidden_effect = {
-			195 = { set_demilitarized_zone = yes }
-			208 = { set_demilitarized_zone = yes }
-			263 = { set_demilitarized_zone = yes }
-			209 = { set_demilitarized_zone = yes }
-			246 = { set_demilitarized_zone = yes }
-			244 = { set_demilitarized_zone = yes }
-			210 = { set_demilitarized_zone = yes }
-			207 = { set_demilitarized_zone = yes }
-			926 = { set_demilitarized_zone = yes }
-			241 = { set_demilitarized_zone = yes }
-			243 = { set_demilitarized_zone = yes }
-			242 = { set_demilitarized_zone = yes }
-			205 = { set_demilitarized_zone = yes }
-			224 = { set_demilitarized_zone = yes }
-			247 = { set_demilitarized_zone = yes }
-			219 = { set_demilitarized_zone = yes }
-			223 = { set_demilitarized_zone = yes }
-			222 = { set_demilitarized_zone = yes }
-			96 = { set_demilitarized_zone = yes }
-			BLT = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = BLT_united_republic
-			}
-			LIT = {
-				drop_cosmetic_tag = yes
-				set_cosmetic_tag = LIT_republic
-				country_event = TR_Lithuania.1
-			}
-			BUK = {	country_event = {	id = TR_central_asia.2	days = 3	}	}
-			KAZ = {	country_event = {	id = TR_central_asia.3	days = 3	}	}
-			create_dynamic_country = {
-				original_tag = KAZ
-				recruit_character = KAZ_Akhmet_Baitursynov
-				change_tag_from = RUS
-				transfer_state = 652
-				transfer_state = 406
-				transfer_state = 407
-				transfer_state = 402
-				transfer_state = 402
-				transfer_state = 587
-				transfer_state = 583
-				transfer_state = 582
-				transfer_state = 893
-				country_event = {	id = TR_central_asia.1	days = 1	}
-				set_politics = {
-					ruling_party = social_democrat
-					elections_allowed = yes
-				}
-				set_popularities = {
-					totalist = 13
-					syndicalist = 5
-					radical_socialist = 12
-					social_democrat = 27
-					social_liberal = 10
-					market_liberal = 8
-					social_conservative = 8
-					authoritarian_democrat = 7
-					paternal_autocrat = 5
-					national_populist = 5
-				}
-				set_cosmetic_tag = ALASH_autonomy
-
-			}
+			create_faction = "russianwhite_faction"
 		}
 	}
 	option = {

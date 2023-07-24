@@ -80,7 +80,7 @@ spriteTypes = {
 		name = "GFX_news_event_GBR_general_strike"
 		texturefile = "gfx/event_pictures/news/news_event_GBR_general_strike.png"
 	}
-        SpriteType = {	##
+    SpriteType = {	##
 		name = "GFX_news_event_Russian_civil_war"
 		texturefile = "gfx/event_pictures/news/news_event_Russian_civil_war.png"
 	}
@@ -179,5 +179,37 @@ spriteTypes = {
 	SpriteType = {	##
 	    name = "GFX_news_event_French_army_parade_in_Algeria"
 	    texturefile = "gfx/event_pictures/news/news_event_French_army_parade_in_Algeria.png"
+    }
+	SpriteType = {	##
+	    name = "GFX_new_event_USA_whitehouse_explosion"
+	    texturefile = "gfx/event_pictures/news/new_event_USA_whitehouse_explosion.png"
+    }
+	SpriteType = {	##
+	    name = "GFX_news_event_JAP_sanfrancisco_treaty"
+	    texturefile = "gfx/event_pictures/news/news_event_JAP_sanfrancisco_treaty.png"
+    }
+	SpriteType = {	##
+	    name = "GFX_news_event_JAP_battleship_yamato"
+	    texturefile = "gfx/event_pictures/news/news_event_JAP_battleship_yamato.png"
+    }
+	SpriteType = {	##
+	    name = "GFX_news_HNN_civil_war"
+	    texturefile = "gfx/event_pictures/news/news_HNN_civil_war.png"
+    }
+    SpriteType = {	##
+	    name = "GFX_news_event_sino_japanese_war"
+        texturefile = "gfx/event_pictures/news/news_event_sino_japanese_war.png"
+    }
+    SpriteType = {	##
+	    name = "GFX_news_event_National_Congress_of_Kuomintang"
+        texturefile = "gfx/event_pictures/news/news_event_National_Congress_of_Kuomintang.png"
+    }
+	SpriteType = {	##
+	    name = "GFX_news_event_HNN_Wu_peifu"
+	    texturefile = "gfx/event_pictures/news/news_event_HNN_Wu_peifu.png"
+    }
+    SpriteType = {	##
+	    name = "GFX_news_event_HNN_Zhou_enlai_and_Mao_Zedong"
+        texturefile = "gfx/event_pictures/news/news_event_HNN_Zhou_enlai_and_Mao_Zedong.png"
     }
 }

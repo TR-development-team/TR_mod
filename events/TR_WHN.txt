@@ -36,101 +36,6 @@ country_event = {
 	}
 }
 country_event = {
-	id = TR_China.3
-	title = TR_China.3.t
-	desc = TR_China.3.d
-	picture = GFX_report_event_china_chiang_kai_shek
-
-	is_triggered_only = yes
-        fire_only_once = yes
-
-
-	
-	option = {
-		name = TR_China.3.a
-                 ai_chance = { factor = 100 }
-                 end_puppet = YUN
-                 YUN = {
-		        country_event = {
-					id = TR_China.4
-					days = 1
-					
-				}
-		}
-                 
-		
-	}
-}
-
-country_event = {
-	id = TR_China.4
-	title = TR_China.4.t
-	desc = TR_China.4.d
-	picture = GFX_report_event_france_parade
-
-
-        fire_only_once = yes
-        is_triggered_only = yes
-
-	
-	option = { 
-		name = TR_China.4.a
-                division_template = {
-				name = "Yunnan Infantry"
-				division_names_group = WHN_GAR_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 325 }
-				create_unit = {
-					division = "division_template = \"Yunnan Infantry\" start_experience_factor = 0.1"
-					owner = YUN
-					count = 2
-				}
-			}
-                CNK = {
-                         country_event = {
-					id = TR_China.5
-					days = 1
-			}		
-		}
-               
-
-	}
-
-}
-
-country_event = {
-	id = TR_China.5
-	title = TR_China.5.t
-	desc = TR_China.5.d
-	picture = GFX_report_event_france_parade
-
-
-        fire_only_once = yes
-        is_triggered_only = yes
-
-	
-	option = { 
-		name = TR_China.5.a
-
-                declare_war_on = {
-			target = YUN
-			type = annex_everything
-		}
-               
-
-}
-}
-
-country_event = {
 	id = TR_China.6
 	title = TR_China.6.t
 	desc = TR_China.6.d
@@ -1205,6 +1110,39 @@ country_event = { #軍閥併合ディシジョン用イベント
 			create_wargoal = {
 				target = ROOT
 				type = annex_everything
+			}
+		}
+	}
+}
+
+#支那事変
+country_event = {
+	id = TR_China.35
+	title = TR_China.35.t
+	desc = TR_China.35.d
+	picture = GFX_report_event_china_chiang_kai_shek
+
+    trigger = {
+        tag = JAP
+		is_subject = no
+		is_faction_leader = yes
+		any_country = { 
+			is_chinese_tag = yes
+			is_faction_leader = yes
+			has_war_with = ROOT
+		}
+	}
+    fire_only_once = yes
+
+
+	#暴支膺懲！
+	option = {
+		name = TR_China.35.a
+		add_war_support = 0.05
+		hidden_effect = {
+            country_event = {
+				id = TR_news.69
+				days = 1
 			}
 		}
 	}

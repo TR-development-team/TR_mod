@@ -17,7 +17,7 @@ focus_tree = {
 		y = 0
 		cost = 1
         available = {
-             
+			is_subject = no
         }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -35,6 +35,7 @@ focus_tree = {
 		y = 1
 		cost = 5
         available = {
+			is_subject = no
         }
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_1
@@ -55,6 +56,7 @@ focus_tree = {
 		y = 1
 		cost = 5
         available = {
+			is_subject = no
         }
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_1
@@ -75,6 +77,7 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available = {
+			is_subject = no
 		    SHA = { exists = no }
 		}
 		prerequisite = { 
@@ -100,6 +103,7 @@ focus_tree = {
 		y = 3
 		cost = 7
 		available = {
+			is_subject = no
 		    NIG = { exists = yes }
 		}
 		bypass = {
@@ -124,6 +128,7 @@ focus_tree = {
 		y = 3
 		cost = 7
 		available = {
+			is_subject = no
 		    CNK = { exists = yes }
 		}
 		bypass = {
@@ -150,6 +155,7 @@ focus_tree = {
 		y = 3
 		cost = 7
 		available = {
+			is_subject = no
 		    QIG = { exists = yes }
 		}
 		bypass = {
@@ -174,6 +180,7 @@ focus_tree = {
 		y = 4
 		cost = 8
         available = {
+			is_subject = no
         }
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_5
@@ -246,6 +253,7 @@ focus_tree = {
 		y = 5
 		cost = 5
         available = {
+			is_subject = no
 			WHN = {owns_state = 607 }
         }
 		prerequisite = { 
@@ -267,6 +275,7 @@ focus_tree = {
 		y = 6
 		cost = 5
         available = {
+			is_subject = no
         }
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_9
@@ -275,8 +284,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-	completion_reward = {	
-
+	completion_reward = {	 
+		add_war_support = 0.1
 		}
 	}
 	#社会主義者との協力
@@ -287,6 +296,7 @@ focus_tree = {
 		y = 6
 		cost = 5
         available = {
+			is_subject = no
         }
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_9
@@ -296,7 +306,15 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {	
-
+		add_stability = 0.1
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.05
+		}
 		}
 	}
 	#中国の新たなる盟主
@@ -307,6 +325,7 @@ focus_tree = {
 		y = 7
 		cost = 5
         available = {
+			is_subject = no
 			WHN = { exists = no }
         }
 		prerequisite = { 
@@ -320,6 +339,13 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {	
+		every_state = {
+			limit = {
+				is_mainland_china = yes
+			}
+			add_claim_by = XIB
+			remove_claim_by = WHN
+		}
         set_cosmetic_tag = CHI_minguo
 		}
 	}
@@ -331,6 +357,11 @@ focus_tree = {
 		y = 8
 		cost = 5
         available = {
+			is_subject = no
+			owns_state = 613
+			owns_state = 620
+			owns_state = 605
+			owns_state = 914
         }
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_12
@@ -340,7 +371,10 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {	
-
+		add_timed_idea = {
+			idea = WHN_war_of_resistance_prepare
+			days = 180
+		}
 		}
 	}
 	#統治の安定化
@@ -351,6 +385,7 @@ focus_tree = {
 		y = 8
 		cost = 5
         available = {
+			is_subject = no
         }
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_12
@@ -371,6 +406,7 @@ focus_tree = {
 		y = 8
 		cost = 5
         available = {
+			is_subject = no
         }
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_12
@@ -460,6 +496,16 @@ focus_tree = {
 				type = annex_everything
 			}
 		}
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = HNN }
+				country_exists = HNN
+			}
+			create_wargoal = {
+				target = HNN
+				type = annex_everything
+			}
+		}
 		}
 	}
 	#大抗戦の開始
@@ -473,6 +519,7 @@ focus_tree = {
 			has_war = no
 			is_subject = no
 			has_army_manpower = { size > 999999 }
+			NOT = { has_idea = WHN_war_of_resistance_prepare }
 		}
 		prerequisite = { 
 			focus = XIB_Diplomatic_focus_13

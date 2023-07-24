@@ -1,4 +1,33 @@
 characters={
+	BLT_johannes_kabin={
+		name=EST_johannes_kabin
+		portraits={
+			civilian={
+				large="GFX_portrait_EST_johannes_kabin"
+			}
+			army={
+				small="GFX_idea_EST_johannes_kabin"
+			}
+		}
+
+		country_leader={
+			ideology=Jughashvilist_subtype
+		}
+	}
+	BLT_jaan_anvelt={
+		name=EST_jaan_anvelt
+		portraits={
+			civilian={
+				large="GFX_portrait_EST_jaan_anvelt"
+			}
+			army = {
+				small = "GFX_idea_EST_jaan_anvelt" #Not ever used
+			}
+		}
+		country_leader={
+			ideology=Leninist_subtype
+		}
+	}
 	BLT_Nikolai_Yudenich={
 		name=BLT_Nikolai_Yudenich
 		portraits={

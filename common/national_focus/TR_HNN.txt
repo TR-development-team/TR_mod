@@ -711,7 +711,9 @@ focus_tree = {
 			id = TR_Hunan.37
 			days = 1
 		}
-           
+		hidden_effect = {
+		    country_event = { id = TR_news.70 days = 2 }
+	    }
 		}
 	}	
 	#新憲法
@@ -1470,6 +1472,7 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
+		set_cosmetic_tag = HNN_republic
 		add_popularity = {
 			ideology = radical_socialist
 			popularity = 0.05
@@ -2844,6 +2847,14 @@ focus_tree = {
 					decision = china_attack_Independent_warlord
 				}
 				activate_targeted_decision = {
+					target = GXC
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
+					target = SIK
+					decision = china_attack_Independent_warlord
+				}
+				activate_targeted_decision = {
 					target = QIG
 					decision = china_attack_Independent_warlord
 				}
@@ -2998,19 +3009,27 @@ focus_tree = {
 		}
 		if = {
 			limit = {
-				OR = { 
-					has_country_leader = {
-						character = HNN_Zhao_Hengti
-						ruling_only = yes
-					}
-					has_country_leader = {
-						character = HNN_Chen_Chiungming
-						ruling_only = yes
-					}
-					has_socialist_government = yes
+				has_country_leader = {
+					character = HNN_Chen_Chiungming
+					ruling_only = yes
 				}
 			}
-			set_cosmetic_tag = CHI_united_provinces
+			set_cosmetic_tag = CHI_united_provinces_Chen
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = HNN_Zhao_Hengti
+					ruling_only = yes
+				}
+			}
+			set_cosmetic_tag = CHI_united_provinces_Zhao
+		}
+		if = {
+			limit = {
+					has_socialist_government = yes
+			}
+			set_cosmetic_tag = CHI_united_republic
 		}
 		if = {
 			limit = {
@@ -3084,25 +3103,59 @@ focus_tree = {
 		}
 		}
 	}	
-	#広東工作
+	#馮玉祥を打倒する
 	focus = {
 		id = HNN_Diplomacy_focus_8
 		icon = GFX_
 		x = 4
 		y = 2
 		cost = 6
-        available = {
-			
+		available = {
+			is_subject = no
         }
+		bypass = {
+		    OR = {  
+				NOT = { country_exists = XIB }
+		        has_war_with = XIB
+		    }  
+		}
 		ai_will_do = {
 			factor = 80
+			modifier = {
+				factor = 0
+				OR = {
+					XIB = {
+						strength_ratio = {
+							tag = HNN
+							ratio > 1.5
+						}
+					}
+					any_neighbor_country = {
+						has_war_with = HNN
+						NOT = { has_capitulated = yes }
+						strength_ratio = {
+							tag = HNN
+							ratio > 0.6
+						}
+					}
+				}
+			}
 		}
 		prerequisite = { focus = HNN_Diplomacy_focus_2 }
 		prerequisite = { focus = HNN_Diplomacy_focus_3 }
 		prerequisite = { focus = HNN_Diplomacy_focus_4 }
 		relative_position_id = HNN_Diplomacy_focus_1
 	completion_reward = {
-		
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = XIB }
+				country_exists = XIB
+			}
+			create_wargoal = {
+				target = XIB
+				type = annex_everything
+		    } 
+		}
 		}
 	}	
 	#旭日を撃て

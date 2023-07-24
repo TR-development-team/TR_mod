@@ -1,12 +1,14 @@
 ﻿
 add_namespace = TR_japan
+add_namespace = TR_japfor
+add_namespace = TR_jap_flavor
 
 #大暴落の余波
 country_event = {
 	id = TR_japan.100
 	title = TR_japan.100.t
 	desc = TR_japan.100.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_great_depression_1
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -29,7 +31,7 @@ country_event = {
 	id = TR_japan.101
 	title = TR_japan.101.t
 	desc = TR_japan.101.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_great_depression_2
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -55,7 +57,7 @@ country_event = {
 	id = TR_japan.102
 	title = TR_japan.102.t
 	desc = TR_japan.102.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_great_depression_3
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -75,7 +77,7 @@ country_event = {
 	id = TR_japan.103
 	title = TR_japan.103.t
 	desc = TR_japan.103.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_asian_politicians
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -122,7 +124,7 @@ country_event = {
 	id = TR_japan.104
 	title = TR_japan.104.t
 	desc = TR_japan.104.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_city_1
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -137,7 +139,7 @@ country_event = {
 	id = TR_japan.105
 	title = TR_japan.105.t
 	desc = TR_japan.105.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_Mitsui_honkan
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -166,7 +168,7 @@ country_event = {
 	id = TR_japan.106
 	title = TR_japan.106.t
 	desc = TR_japan.106.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_Mitsui_honkan
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -219,7 +221,7 @@ country_event = {
 	id = TR_japan.107
 	title = TR_japan.107.t
 	desc = TR_japan.107.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_watanabe_jotaro
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -248,7 +250,7 @@ country_event = {
 	option = {
 		name = TR_japan.107.b
 		ai_chance = {
-			base = 20
+			base = 0 #20
 		}
 		add_political_power = 50
 		custom_effect_tooltip = JAP_Political_Distrust_flag_up
@@ -269,7 +271,7 @@ country_event = {
 	id = TR_japan.108
 	title = TR_japan.108.t
 	desc = TR_japan.108.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_countryside
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -306,7 +308,7 @@ country_event = {
 	id = TR_japan.109
 	title = TR_japan.109.t
 	desc = TR_japan.109.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_riot_1
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -324,7 +326,7 @@ country_event = {
 	id = TR_japan.5
 	title = TR_japan.5.t
 	desc = TR_japan.5.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_riot_2
     fire_only_once = yes
 	is_triggered_only = yes
 
@@ -359,7 +361,7 @@ country_event = {
 	id = TR_japan.110
 	title = TR_japan.110.t
 	desc = TR_japan.110.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_riot_3
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -424,7 +426,7 @@ country_event = {
 	id = TR_japan.111
 	title = TR_japan.111.t
 	desc = TR_japan.111.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_strike_negotiation
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -465,7 +467,7 @@ country_event = {
 	id = TR_japan.112
 	title = TR_japan.112.t
 	desc = TR_japan.112.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_strike_negotiation
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -500,7 +502,7 @@ country_event = {
 	id = TR_japan.113
 	title = TR_japan.113.t
 	desc = TR_japan.113.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_martial_law
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -524,7 +526,7 @@ country_event = {
 	id = TR_japan.114
 	title = TR_japan.114.t
 	desc = TR_japan.114.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_japanese_officers
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -560,7 +562,7 @@ country_event = {
 	id = TR_japan.115
 	title = TR_japan.115.t
 	desc = TR_japan.115.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_martial_law
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -600,7 +602,7 @@ country_event = {
 	id = TR_japan.117
 	title = TR_japan.117.t
 	desc = TR_japan.117.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_Mineo_Osumi
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -636,7 +638,7 @@ country_event = {
 	id = TR_japan.118
 	title = TR_japan.118.t
 	desc = TR_japan.118.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_JAP_hori_yamamoto
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -675,9 +677,7 @@ country_event = {
 	desc = TR_japan.2.d
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
-        fire_only_once = yes
-
-       
+    fire_only_once = yes
 	
 	option = {#立憲民政党
 		name = TR_japan.2.a
@@ -930,7 +930,7 @@ country_event = {
 	id = TR_japan.9
 	title = TR_japan.9.t
 	desc = TR_japan.9.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_JAP_countryside
         is_triggered_only = yes
         fire_only_once = yes
 
@@ -1010,7 +1010,7 @@ country_event = {
 	id = TR_japan.10
 	title = TR_japan.10.t
 	desc = TR_japan.10.d
-	picture = GFX_report_event_japanese_transport_soldiers
+	picture = GFX_report_event_JAP_countryside
         is_triggered_only = yes
         fire_only_once = yes
 
@@ -1637,6 +1637,7 @@ country_event = {#京城での戴冠式
 				is_core_of = KOR
 			}
 			add_core_of = JAP
+			remove_dynamic_modifier = { modifier = JAP_Imperialized_State }
 		}
 	}
 }
@@ -2616,7 +2617,7 @@ country_event = {
 	id = TR_japan.54
 	title = TR_japan.54.t
 	desc = TR_japan.54.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_generic_rally_3
 	is_triggered_only = yes
         fire_only_once = yes
 
@@ -2636,11 +2637,16 @@ country_event = {
 		}
 		add_popularity = {
 			ideology = market_liberal
-			popularity = 0.35
+			popularity = 0.25
 		}
 		set_politics = {
 			ruling_party = social_conservative
 			elections_allowed = yes
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = JAP_LDP_long
+			name = JAP_LDP_a
 		}
         set_party_name = {
 			ideology = social_conservative
@@ -2681,7 +2687,7 @@ country_event = {#財閥との関係
 	id = TR_japan.56
 	title = TR_japan.56.t
 	desc = TR_japan.56.d
-	picture = GFX_report_event_generic_parliament
+	picture = GFX_report_event_JAP_Mitsui_honkan
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -2783,7 +2789,7 @@ country_event = {
 	id = TR_japan.58
 	title = TR_japan.58.t
 	desc = TR_japan.58.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_japanese_reply
     is_triggered_only = yes
     fire_only_once = yes
 
@@ -2939,7 +2945,7 @@ country_event = {
 	id = TR_japan.60
 	title = TR_japan.60.t
 	desc = TR_japan.60.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_japanese_officers
     is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -2968,7 +2974,7 @@ country_event = {
 	id = TR_japan.61
 	title = TR_japan.61.t
 	desc = TR_japan.61.d
-	picture = GFX_report_event_japanese_soldiers_02
+	picture = GFX_report_event_JAP_city_2
     is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -2990,5 +2996,463 @@ country_event = {
 				add_idea = JAP_Prosperous_Cities_1
 			}	
 	    }
+	}
+}
+
+#アメリカ政府、無条件降伏を宣言
+country_event = {
+	id = TR_japfor.1
+	title = TR_japfor.1.t
+	desc = TR_japfor.1.d
+	picture = GFX_report_event_japanese_chinese_surrender
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japfor.1.a
+		start_peace_conference = {
+			tag = USA
+			score_factor = 1.0
+			message = WW2_USA_JAP_peace_tt
+		}
+		hidden_effect = {
+			USA = { 
+				dismantle_faction = yes
+			}
+            JAP= {      
+				country_event = {
+					id = TR_japfor.2
+					days = 3
+				}
+            }
+		}
+	}
+}
+#北米の占領
+country_event = {
+	id = TR_japfor.2
+	title = TR_japfor.2.t
+	desc = TR_japfor.2.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japfor.2.a
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				remove_core_of = USA
+			}
+			every_state = {
+				limit = {
+					OR = { 
+						is_owned_by = JAP
+						is_owned_by = CAL
+				    }
+					is_greater_california = yes
+				}
+				remove_core_of = USA
+				remove_core_of = CAN
+				add_claim_by = CAL
+				transfer_state_to = CAL
+			}
+			every_state = {
+				limit = {
+					OR = { 
+						is_owned_by = JAP
+						is_owned_by = CAL
+				    }
+					is_core_of = TEX
+				}
+				remove_core_of = USA
+				transfer_state_to = TEX
+			}
+			every_state = {
+				limit = {
+					OR = { 
+						is_owned_by = JAP
+						is_owned_by = CAL
+				    }
+					is_core_of = USA
+				}
+				transfer_state_to = USA
+				remove_building = {
+					type = arms_factory
+					level = 3
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+				damage_building = {
+					type = industrial_complex
+					damage = 2
+				}
+			}
+			JAP= {      
+				country_event = {
+					id = TR_japfor.3
+					days = 1
+				}
+				set_country_flag = JAP_Victor_of_WW2
+            }
+		}
+		set_autonomy = {
+			target = USA
+			autonomy_state = military_occupation
+		}
+		set_autonomy = {
+			target = TEX
+			autonomy_state = imperial_protectorate
+		}
+		hidden_effect = {
+            USA = { 
+				set_cosmetic_tag = AMERICA_Occupation_by_JAP
+				set_stability = 0.25
+				set_war_support = 0.0
+			}
+			TEX = { 
+				set_cosmetic_tag = TEX_administrative_committee
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 12
+				    social_democrat = 5
+				    social_liberal = 5
+				    market_liberal = 5
+				    social_conservative = 14
+				    authoritarian_democrat = 33
+				    paternal_autocrat = 7
+				    national_populist = 19
+			    }
+			}
+		}
+	}
+}
+#共栄圏軍最高司令官
+country_event = {
+	id = TR_japfor.3
+	title = TR_japfor.3.t
+	desc = TR_japfor.3.d
+	picture = GFX_report_event_japanese_soldiers_02
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japfor.3.a
+		hidden_effect = {
+			country_event = {
+				id = TR_news.66
+				days = 1
+				}
+			country_event = {
+				id = TR_japfor.9
+				days = 365
+			}
+            USA= {      
+				USA_Joseph_Grew = {
+					promote_character = {
+						ideology= social_conservative_subtype
+					}
+				}
+                USA_masaharu_homma = {
+					promote_character = {
+					    ideology= dem_Military_junta_subtype
+					}
+					promote_character = {
+					    ideology= Military_junta_subtype
+					}
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = USA_General_Headquarters_long
+					name = USA_General_Headquarters
+				}
+				set_party_name = {
+					ideology = paternal_autocrat
+					long_name = USA_General_Headquarters_long
+					name = USA_General_Headquarters
+				}
+				set_politics = {
+					ruling_party = authoritarian_democrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 9
+					syndicalist = 4
+					radical_socialist = 5
+					social_democrat = 9
+					social_liberal = 8
+					market_liberal = 9
+					social_conservative = 12
+					authoritarian_democrat = 21
+					paternal_autocrat = 11
+					national_populist = 12
+					Gnosticism = 0
+				}
+				country_event = {
+					id = TR_japfor.4
+					days = 14
+				}
+            }
+		}
+	}
+}
+#アーリントン裁判
+country_event = {
+	id = TR_japfor.4
+	title = TR_japfor.4.t
+	desc = TR_japfor.4.d
+	picture = GFX_report_event_gre_trial
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japfor.4.a
+		effect_tooltip = TR_japfor_4_tt
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.02
+		}
+		hidden_effect = {
+			every_character = { 
+				limit = {
+					has_character_flag = USA_will_be_purged_by_Japan
+				}
+				retire = yes
+			}
+			country_event = {
+				id = TR_japfor.5
+				days = 14
+			}
+        }
+	}
+}
+#新たな合衆国政府
+country_event = {
+	id = TR_japfor.9
+	title = TR_japfor.9.t
+	desc = TR_japfor.9.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japfor.9.a
+		set_autonomy = {
+			target = USA
+			autonomy_state = autonomy_supervised_state
+		}
+		hidden_effect = {
+			USA ={ 
+				set_cosmetic_tag = AMERICA_united_states_36
+				set_politics = {
+					ruling_party = social_conservative
+					elections_allowed = yes
+				}
+				set_popularities = {
+					totalist = 0
+					syndicalist = 4
+					radical_socialist = 7
+					social_democrat = 15
+					social_liberal = 12
+					market_liberal = 25
+					social_conservative = 29
+					authoritarian_democrat = 8
+					paternal_autocrat = 0
+					national_populist = 0
+					Gnosticism = 0
+				}
+			}
+
+        }
+	}
+}
+#アメリカが講和を提案
+country_event = {
+	id = TR_japfor.10
+	title = TR_japfor.10.t
+	desc = TR_japfor.10.d
+	picture = GFX_report_event_JAP_2600th_Anniversary
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = { 
+		name = TR_japfor.10.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					CAL = { is_in_faction_with = JAP }
+					MEX = { is_in_faction_with = USA }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = CAL
+						is_core_of = MEX
+					}
+					remove_core_of = CAL
+					transfer_state_to = MEX
+				}
+			}
+			if = {
+				limit = {
+					CAL = { is_in_faction_with = JAP }
+					COL = { is_in_faction_with = USA }
+				}
+				every_state = {
+					limit = {
+						is_owned_by = CAC
+						is_core_of = COL
+					}
+					remove_core_of = CAC
+					transfer_state_to = COL
+				}
+			}
+			USA = { 
+				if = {
+					limit = {
+						CAL = { is_in_faction_with = JAP }
+					}
+					annex_country = {
+						target = CAL
+						transfer_troops = no
+					}
+				}
+				if = {
+					limit = {
+						CAC = { is_in_faction_with = JAP }
+					}
+					set_autonomy = {
+						target = CAC
+						autonomy_state = protected_territory
+					}
+					CAC = { set_cosmetic_tag = CAC_federation }
+				}
+				white_peace = JAP
+			}
+			685 = { transfer_state_to = USA }
+			country_event = {
+				id = TR_news.65
+				days = 3
+			}
+		}
+	}
+	option = { 
+		name = TR_japfor.10.b
+		ai_chance = {
+			base = 0 
+		}
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+
+
+
+#紀元2600年
+country_event = {
+	id = TR_jap_flavor.1
+	title = TR_jap_flavor.1.t
+	desc = TR_jap_flavor.1.d
+	picture = GFX_report_event_JAP_2600th_Anniversary
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_jap_flavor.1.a
+        add_political_power = 50
+	}
+}
+
+#クモハタ
+country_event = {
+	id = TR_jap_flavor.2
+	title = TR_jap_flavor.2.t
+	desc = TR_jap_flavor.2.d
+	picture = GFX_report_event_JAP_Kumohata
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+
+	
+	option = {
+		name = TR_jap_flavor.2.a
+		
+	}
+}
+
+#クリフジ
+country_event = {
+	id = TR_jap_flavor.3
+	title = TR_jap_flavor.3.t
+	desc = TR_jap_flavor.3.d
+	picture = GFX_report_event_JAP_Kurifuji
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_jap_flavor.3.a
+		
+	}
+}
+
+
+#セントライト
+country_event = {
+	id = TR_jap_flavor.4
+	title = TR_jap_flavor.4.t
+	desc = TR_jap_flavor.4.d
+	picture = GFX_report_event_JAP_Stlite
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_jap_flavor.4.a
+		
+	}
+}
+#ビサトモ
+country_event = {
+	id = TR_jap_flavor.5
+	title = TR_jap_flavor.5.t
+	desc = TR_jap_flavor.5.d
+	picture = GFX_report_event_JAP_hisatomo
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_jap_flavor.5.a
+		
 	}
 }

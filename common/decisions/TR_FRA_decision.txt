@@ -3,106 +3,76 @@ annexation_decisions = {
 		icon = generic_form_nation
 		selectable_mission = yes
 		is_good = no
-                visible = {
+        visible = {
 			tag = FRA
-                                RHI = { exists = no }
-                                GER = { exists = no }
-                                RAT = { exists = no }
-				FRA = {
-				       owns_state = 51
-                                       owns_state = 57
-                                       owns_state = 59
-			              } 
+            RHI = { exists = no }
+            GER = { exists = no }
+            RAT = { exists = no }
+			FRA = {
+				owns_state = 51
+                owns_state = 57
+                owns_state = 59
+			    } 
 		}
 		available = {
-                                tag = FRA
-                                RHI = { exists = no }
-                                GER = { exists = no }
-                                RAT = { exists = no }
-				FRA = {
-				       owns_state = 51
-                                       owns_state = 57
-                                       owns_state = 59
-			              } 
-		}
-		complete_effect = {
-                   hidden_effect = { 
-                        RHI = {
-			    add_state_core = 50
-                            add_state_core = 52
-                            add_state_core = 55
-			    add_state_core = 57
-                            add_state_core = 59
-                            add_state_core = 54
-			    add_state_core = 53
-                            add_state_core = 61
-                            add_state_core = 60
-			    add_state_core = 861
+            tag = FRA
+            RHI = { exists = no }
+            GER = { exists = no }
+            RAT = { exists = no }
+			FRA = {
+				owns_state = 51
+                owns_state = 57
+                owns_state = 59
 			} 
-                      } 
-	                release_puppet = RHI
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	}
-        FRA_annexation_Eastern_Germany = {
-		icon = generic_form_nation
-		selectable_mission = yes
-		is_good = no
-                visible = {
-			
-                                tag = FRA
-                                PRE = { exists = no }
-                                GER = { exists = no }
-                                RAT = { exists = no }
-				FRA = {
-				       owns_state = 64
-			              } 
-		}
-		available = {
-                                tag = FRA
-                                PRE = { exists = no }
-                                GER = { exists = no }
-                                RAT = { exists = no }
-				FRA = {
-				       owns_state = 64
-			              } 
 		}
 		complete_effect = {
-	                release_puppet = PRE
+            hidden_effect = { 
+                RHI = {
+			        add_state_core = 50
+                    add_state_core = 52
+                    add_state_core = 55
+			        add_state_core = 57
+                    add_state_core = 59
+                    add_state_core = 54
+			        add_state_core = 53
+                    add_state_core = 61
+                    add_state_core = 60
+			        add_state_core = 861
+			    } 
+            } 
+	        release_puppet = RHI
 		}
 		ai_will_do = {
 			factor = 100
 		}
 	}
-        FRA_annexation_England = {
+    FRA_annexation_England = {
 		icon = generic_form_nation
 		selectable_mission = yes
 		is_good = no
-                visible = {
+        visible = {
 			tag = FRA
-                        ENG = { exists = no }
-                                GBR = { exists = no }
-                                SCO = { exists = no }
-                                WLS = { exists = no }
-				FRA = {
-				       owns_state =126
-                                       owns_state =122
-                                       owns_state =121
-			              } 
+            ENG = { exists = no }
+            GBR = { exists = no }
+            SCO = { exists = no }
+            WLS = { exists = no }
+			FRA = {
+				owns_state =126
+                owns_state =122
+                owns_state =121
+			} 
 		}
 		available = {
-                                tag = FRA
-                                ENG = { exists = no }
-                                GBR = { exists = no }
-                                SCO = { exists = no }
-                                WLS = { exists = no }
-				FRA = {
-				       owns_state =126
-                                       owns_state =122
-                                       owns_state =121
-			              } 
+            tag = FRA
+            ENG = { exists = no }
+            GBR = { exists = no }
+            SCO = { exists = no }
+            WLS = { exists = no }
+			FRA = {
+				owns_state =126
+                owns_state =122
+                owns_state =121
+			} 
 		}
 		complete_effect = {
 			release_puppet = SCO

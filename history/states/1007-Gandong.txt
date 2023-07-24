@@ -1,7 +1,9 @@
 state={
 	id=1007
 	name="STATE_1007"
-
+	resources={
+		tungsten=90
+	}
 	history={
 		owner = FUJ
                 add_core_of = RJN

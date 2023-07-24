@@ -1,7 +1,7 @@
 ﻿capital = 546
 oob = "EAF_1936"
 
-JAP = {	set_autonomy = {	target = EAF	autonomous_state = imperial_colony	}	}
+JAP = {	set_autonomy = {	target = EAF	autonomy_state = imperial_colony	}	}
 set_cosmetic_tag = COUNTRY_JAP
 set_variable = {	EAF_unrest_level = 2	}
 

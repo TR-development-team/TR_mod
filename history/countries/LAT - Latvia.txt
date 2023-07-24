@@ -1,4 +1,36 @@
 ﻿capital = 878
-
 set_cosmetic_tag = LAT_republic
-set_dictatorship = yes
+set_politics = {
+	ruling_party = social_conservative
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	totalist = 6
+	syndicalist = 4
+	radical_socialist = 2
+	social_democrat = 7
+	social_liberal = 6
+	market_liberal = 11
+	social_conservative = 31
+	authoritarian_democrat = 13
+	paternal_autocrat = 9
+	national_populist = 6
+	Gnosticism = 5
+}
+
+
+recruit_character = LAT_augusts_kirhensteins
+recruit_character = LAT_fricis_menders
+recruit_character = LAT_alberts_kvesis
+recruit_character = LAT_karlis_ulmanis
+recruit_character = LAT_gustavs_celminsh
+
+recruit_character = LAT_janis_balodis
+recruit_character = LAT_martinsh_penikis
+recruit_character = LAT_hermanis_buks
+recruit_character = LAT_fricis_virsaitis
+recruit_character = LAT_andrejs_krustinsh
+recruit_character = LAT_zhanis_bahs
+recruit_character = LAT_krisjanis_berkis

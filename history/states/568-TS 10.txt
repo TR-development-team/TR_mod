@@ -2,19 +2,19 @@
 state={
 	id=568
 	name="STATE_568" # Krasnoyarsk
-	manpower = 1726427
+	manpower = 1226427
 	
 	state_category = town
 
 	history={
-		owner = SIB
+		owner = SKH
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {
 			4724 1 
 		}
-		add_core_of = SIB
+		add_core_of = SKH
 	}
 
 	local_supplies=0.0 

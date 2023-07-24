@@ -1,30 +1,68 @@
 characters={
-	DVN_Mutaguchi_Renya={
-		name=JAP_Mutaguchi_Renya
+	DVN_Miyazaki_Shigesaburo ={
+		name=DVN_Miyazaki_Shigesaburo
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_mutaguchi.tga"
+				large="gfx/leaders/DVN/Portrait_DVN_Miyazaki_Shigesaburo.png"
+			}
+			army={
+				large="gfx/leaders/DVN/Portrait_DVN_Miyazaki_Shigesaburo.png"
 			}
 		}
 		country_leader={
 			ideology= colonial_government_subtype
 		}
-		country_leader={
-			ideology= kokoku_shikan_subtype
+		corps_commander={
+			traits={ inflexible_strategist infantry_officer infantry_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
 		}
 	}
-	DVN_Indian_Emperor_Mutaguchi_Renya={
-		name=JAP_Mutaguchi_Renya
+	DVN_Mutaguchi_Renya={
+		name=DVN_Mutaguchi_Renya
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_IndianEmperor_Mutaguchi.tga"
+				large="gfx/leaders/DVN/Portrait_DVN_mutaguchi.png"
+			}
+			army={
+				large="gfx/leaders/DVN/Portrait_DVN_mutaguchi.png"
 			}
 		}
 		country_leader={
-			ideology= colonial_government_subtype
+			ideology= mil_colonial_government_subtype
 		}
 		country_leader={
 			ideology= kokoku_shikan_subtype
+		}
+		field_marshal={
+			traits={ JAP_samurai_lineage harsh_leader trait_reckless politically_connected }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+
+	DVN_Obata_Hideyoshi={
+		name=DVN_Obata_Hideyoshi
+		portraits={
+			army={
+				large="gfx/leaders/DVN/Portrait_DVN_Obata_Hideyoshi.png"
+			}
+		}
+		corps_commander = {
+			traits = { inflexible_strategist career_officer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
 		}
 	}
 }

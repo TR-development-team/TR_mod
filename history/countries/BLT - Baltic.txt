@@ -11,9 +11,19 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	paternal_autocrat = 100
+	totalist = 5
+	syndicalist = 6
+	radical_socialist = 11
+	social_democrat = 5
+	social_liberal = 12
+	market_liberal = 11
+	social_conservative = 7
+	authoritarian_democrat = 5
+	paternal_autocrat = 31
+	national_populist = 7
 }
-
+recruit_character = BLT_johannes_kabin
+recruit_character = BLT_jaan_anvelt
 recruit_character = BLT_Nikolai_Yudenich
 
 add_ideas = {

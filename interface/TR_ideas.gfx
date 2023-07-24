@@ -108,6 +108,10 @@ spriteTypes = {
 		name = "GFX_idea_JAP_Prosperous_Cities"
 		texturefile = "gfx/interface/ideas/JAP/JAP_Prosperous_Cities.png"
 	}
+	SpriteType = {
+		name = "GFX_modifiers_JAP_shinto_gate"
+		texturefile = "gfx/interface/state_modifiers/modifiers_JAP_shinto_gate.png"
+	}
 	### France ###
 	SpriteType = {
 		name = "GFX_idea_FRA_revanchism"
@@ -190,6 +194,27 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_UKR_greem_armies"
 		texturefile = "gfx/interface/ideas/UKR/UKR_greem_armies.png"
+	}
+	### America ###
+	SpriteType = {
+		name = "GFX_idea_USA_invisible_empire"
+		texturefile = "gfx/interface/ideas/USA/USA_invisible_empire.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_USA_treaty_of_Tokyo"
+		texturefile = "gfx/interface/ideas/USA/USA_treaty_of_Tokyo.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_USA_dust_bowl"
+		texturefile = "gfx/interface/ideas/USA/USA_dust_bowl.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_USA_LOSE_IN_CALIFORNIA"
+		texturefile = "gfx/interface/ideas/USA/USA_LOSE_IN_CALIFORNIA.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_USA_Manifest_Destiny"
+		texturefile = "gfx/interface/ideas/USA/USA_Manifest_Destiny.png"
 	}
 	### 企業 ###
 	SpriteType = {

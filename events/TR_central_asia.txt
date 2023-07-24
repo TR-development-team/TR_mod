@@ -16,7 +16,11 @@ country_event = {
 
     option = { 
 		name = TR_central_asia.1.a
-		load_oob = "KAZ_unit"
+		load_oob = "ALO_unit"
+		declare_war_on = {
+			target = KAZ
+			type = annex_everything
+		}
 	}
 }
 #タシュケント・ソビエトの蜂起-ブハラ編
@@ -39,7 +43,7 @@ country_event = {
 		}
 		TRK = { 
 			transfer_state = 405
-                        add_state_core = 405
+            add_state_core = 405
             }
 		hidden_effect = {
 		TRK = {
@@ -49,6 +53,12 @@ country_event = {
 			}
 			inherit_technology = KAZ
             }
+			every_state = {
+				limit = {
+					is_core_of = UZB
+				}
+				add_core_of = TRK
+			}	
 		}
 
 	}
@@ -70,18 +80,12 @@ country_event = {
 			}
 			inherit_technology = KAZ
             }
-		every_state = {
-			limit = {
-				is_core_of = BUK
-			}
-			add_core_of = TRK
-		}	
-		every_state = {
-			limit = {
-				is_core_of = KAZ
-			}
-			add_core_of = TRK
-		}	
+			every_state = {
+				limit = {
+					is_core_of = UZB
+				}
+				add_core_of = TRK
+			}	
 		}
 	}
 }
@@ -130,6 +134,10 @@ country_event = {
 		}
 		declare_war_on = {
 			target = KAZ
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = KHI
 			type = annex_everything
 		}
 		hidden_effect = { 

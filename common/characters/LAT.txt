@@ -1,0 +1,224 @@
+characters={
+	LAT_augusts_kirhensteins={
+		name=LAT_augusts_kirhensteins
+		portraits={
+			civilian={
+				large="GFX_portrait_LAT_augusts_kirhensteins"
+			}
+			army={
+				small="GFX_idea_LAT_augusts_kirhensteins"
+			}
+		}
+
+		country_leader={
+			ideology=Leninist_subtype
+		}
+	}
+	LAT_fricis_menders={
+		name=LAT_fricis_menders
+		portraits={
+			civilian={
+				large="GFX_portrait_lat_fricis_menders"
+			}
+			army={
+				small="GFX_idea_LAT_fricis_menders"
+			}
+		}
+
+		country_leader={
+			ideology=social_democrat_subtype
+		}
+	}
+	LAT_alberts_kvesis={
+		name=LAT_alberts_kvesis
+		portraits={
+			civilian={
+				large="GFX_portrait_LAT_alberts_kviesis"
+			}
+			army={
+				small="GFX_idea_LAT_alberts_kviesis"
+			}
+		}
+
+		country_leader={
+			ideology=social_conservative_subtype
+		}
+	}
+	LAT_karlis_ulmanis={
+		name=LAT_karlis_ulmanis
+		portraits={
+			civilian={
+				large="GFX_Portrait_latvia_karlis_ulmanis"
+			}
+			army={
+				small="GFX_idea_LAT_karlis_ulmanis"
+			}
+		}
+
+		country_leader={
+			ideology=oligarchy_subtype
+		}
+	}
+
+	LAT_gustavs_celminsh={
+			name=LAT_gustavs_celminsh
+			portraits={
+				civilian={
+					large="GFX_portrait_LAT_gustavs_celmins"
+				}
+				army={
+					small="GFX_idea_LAT_gustavs_celmins"
+				}
+			}
+
+			country_leader={
+				ideology=Fascist_subtype
+			}
+	}
+	
+	LAT_janis_balodis={
+		name=LAT_janis_balodis
+		portraits={
+			army={
+				large="GFX_portrait_LAT_janis_balodis"
+				small="GFX_idea_LAT_janis_balodis"
+			}
+			civilian={
+				large="GFX_portrait_LAT_janis_balodis"
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	LAT_martinsh_penikis={
+		name=LAT_martinsh_penikis
+		portraits={
+			army={
+				large="GFX_portrait_LAT_martins_penikis"
+				small="GFX_idea_LAT_martins_penikis"
+			}
+		}
+		field_marshal={
+			traits={ old_guard }
+			skill=3
+			attack_skill=4
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	LAT_hermanis_buks={
+		name=LAT_hermanis_buks
+		portraits={
+			army={
+				large="GFX_portrait_LAT_hermanis_buks"
+				small="GFX_idea_LAT_hermanis_buks"
+			}
+		}
+		corps_commander={
+			traits={ cavalry_leader }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	LAT_fricis_virsaitis={
+		name=LAT_fricis_virsaitis
+		portraits={
+			army={
+				large="GFX_portrait_LAT_fricis_virsaitis"
+				small="GFX_idea_LAT_fricis_virsaitis"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	LAT_andrejs_krustinsh={
+		name=LAT_andrejs_krustinsh
+		portraits={
+			army={
+				large="GFX_portrait_LAT_andrejs_krustins"
+				small="GFX_idea_LAT_andrejs_krustins"
+			}
+		}
+		corps_commander={
+			traits={ BALTIC_anti_bolshevik }
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	LAT_zhanis_bahs={
+		name=LAT_zhanis_bahs
+		portraits={
+			army={
+				large="GFX_portrait_LAT_zanis_bahs"
+				small="GFX_idea_LAT_zanis_bahs"
+			}
+		}
+		corps_commander={
+			traits={ BALTIC_anti_bolshevik }
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	LAT_krisjanis_berkis={
+		name=LAT_krisjanis_berkis
+		portraits={
+			army={
+				large="GFX_portrait_LAT_krisjanis_berkis"
+				small="GFX_idea_LAT_krisjanis_berkis"
+			}
+		}
+
+		corps_commander={
+			traits={ 
+				infantry_officer 
+				ranger
+			}
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+}

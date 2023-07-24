@@ -1,0 +1,202 @@
+characters={	
+	EST_johannes_kabin={
+		name=EST_johannes_kabin
+		portraits={
+			civilian={
+				large="GFX_portrait_EST_johannes_kabin"
+			}
+			army={
+				small="GFX_idea_EST_johannes_kabin"
+			}
+		}
+
+		country_leader={
+			ideology=Jughashvilist_subtype
+		}
+	}
+	EST_jaan_anvelt={
+		name=EST_jaan_anvelt
+		portraits={
+			civilian={
+				large="GFX_portrait_EST_jaan_anvelt"
+			}
+			army = {
+				small = "GFX_idea_EST_jaan_anvelt" #Not ever used
+			}
+		}
+		country_leader={
+			ideology=Leninist_subtype
+		}
+	}
+	EST_jaan_tonisson={
+		name=EST_jaan_tonisson
+		portraits={
+			civilian={
+				large="GFX_portrait_EST_jaan_tonisson"
+			}
+			army={
+				small="GFX_idea_EST_jaan_tonisson"
+			}
+		}
+		country_leader={
+			ideology=social_conservative_subtype
+		}
+	}
+	EST_konstantin_pats={
+		name=EST_konstantin_pats
+		portraits={
+			civilian={
+				large="GFX_Portrait_estonia_konstantin_pats"
+			}
+			army = {
+				small = GFX_portrait_EST_konstantin_pats_small #Not ever used
+			}
+		}
+		country_leader={
+			ideology=oligarchy_subtype
+		}
+	}
+	EST_Nikolai_Yudenich={
+		name=BLT_Nikolai_Yudenich
+		portraits={
+			civilian={
+				large="gfx/leaders/BLT/Portrait_BLT_Nikolai_Yudenich.png"
+			}
+			army={
+				large="gfx/leaders/BLT/Portrait_BLT_Nikolai_Yudenich.png"
+			}
+		}
+		country_leader={
+			ideology= Military_junta_subtype
+		}
+		field_marshal={
+			traits={ defensive_doctrine career_officer  }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+	EST_artur_sirk={
+		name=EST_artur_sirk
+		portraits={
+			civilian={
+				large="GFX_portrait_EST_artur_sirk"
+			}
+			army = {
+				small = "GFX_idea_EST_artur_sirk" #Not ever used
+			}
+		}
+		country_leader={
+			ideology=Fascist_subtype
+		}
+	}
+
+
+	EST_andres_larka={
+		name=EST_andres_larka
+		portraits={
+			army={
+				large="GFX_portrait_EST_andres_larka"
+				small="GFX_idea_EST_andres_larka"
+			}
+			civilian={
+				large="GFX_portrait_EST_andres_larka"
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	EST_herbert_brede={
+		name=EST_herbert_brede
+		portraits={
+			army={
+				large="GFX_portrait_EST_herbert_brede"
+				small = "GFX_idea_EST_herbert_brede"
+			}
+		}
+		corps_commander={
+			traits={ old_guard }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	EST_otto_heinze={
+		name=EST_otto_heinze
+		portraits={
+			army={
+				large="GFX_portrait_EST_otto_heinze"
+				small="GFX_idea_EST_otto_heinze"
+			}
+		}
+		corps_commander={
+			traits={ BALTIC_anti_bolshevik }
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back" }
+		}
+	}
+
+	EST_aleksander_jaakson={
+		name=EST_alexander_jaakson
+		portraits={
+			army={
+				large="GFX_portrait_EST_aleksander_jaakson"
+				small="GFX_idea_EST_aleksander_jaakson"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer BALTIC_anti_bolshevik }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back"}
+		}
+	}
+
+	EST_johan_laidoner={
+		name=EST_johan_laidoner
+		portraits={
+			army={
+				small="GFX_idea_EST_johan_laidoner"
+				large="GFX_portrait_EST_johan_laidoner"
+			}
+		}
+		
+		field_marshal={
+			traits={ old_guard }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+			visible = { has_dlc = "No Step Back"}
+		}
+	}
+}

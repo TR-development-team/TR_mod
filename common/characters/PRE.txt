@@ -47,7 +47,7 @@ characters={
 		name=PRE_Lettow_Vorbeck
 		portraits={
 			civilian={
-				large="gfx/leaders/GER/Portrait_GER_Adenauer.tga"
+				large=""
 			}
 		}
 		country_leader={
@@ -99,6 +99,37 @@ characters={
 		}
 		country_leader={
 			ideology= Aryanism_subtype
+		}
+	}
+	PRE_Rudiger_von_der_Goltz={
+		name=PRE_Rudiger_von_der_Goltz
+		portraits={
+			army={
+				large="gfx/leaders/PRE/Portrait_PRE_Rudiger_von_der_Goltz.png"
+			}
+			civilian={
+				large="gfx/leaders/PRE/Portrait_PRE_Rudiger_von_der_Goltz.png"
+			}
+		}
+		country_leader={
+			ideology=dem_Military_junta_subtype
+		}
+		country_leader={
+			ideology=militarism_subtype
+		}
+		country_leader={
+			ideology=national_populist_subtype
+		}
+		country_leader={
+			ideology=Aryanism_subtype
+		}
+		corps_commander={
+			traits={ old_guard infantry_leader career_officer trait_reckless }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
 		}
 	}
 	PRE_Erich_Ludendorff_marshal={
@@ -353,23 +384,7 @@ characters={
 		}
 	}
 
-	PRE_Rudiger_von_der_Goltz={
-		name=PRE_Rudiger_von_der_Goltz
-		portraits={
-			army={
-				large="gfx/leaders/PRE/Portrait_PRE_Rudiger_von_der_Goltz.png"
-			}
-		}
-		
-		corps_commander={
-			traits={ old_guard infantry_leader career_officer trait_reckless }
-			skill=3
-			attack_skill=4
-			defense_skill=2
-			planning_skill=3
-			logistics_skill=2
-		}
-	}
+
 	PRE_paul_hausser={
 		name=GER_paul_hausser
 		portraits={

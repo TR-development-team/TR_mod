@@ -1,0 +1,21 @@
+
+add_namespace = TR_siberia
+
+#
+country_event = {
+	id = TR_siberia.1
+	title = TR_siberia.1.t
+	desc = TR_siberia.1.d
+	picture = GFX_report_event_generic_rally
+
+
+    fire_only_once = yes
+    is_triggered_only = yes
+
+	
+
+    option = { 
+		name = TR_siberia.1.a
+
+	}
+}

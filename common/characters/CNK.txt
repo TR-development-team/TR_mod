@@ -3,17 +3,36 @@ characters={
 		name=CNK_Wang_Jingwei
 		portraits={
 			civilian={
-				large="gfx/leaders/WHN/Portrait_CHI_Wang.png"
+				large="gfx/leaders/CNK/Portrait_CNK_Wang_Jingwei.png"
 			}
 		}
 		country_leader={
-			ideology= anarco_communist_subtype
+			ideology= anarco_syndicalist_subtype
 		}
 		country_leader={
 			ideology= San_min_Doctrine_left_subtype
 		}
 		country_leader={
 			ideology= San_min_Doctrine_left_SL_subtype
+		}
+	}
+	CNK_Kagesa_Sadaaki={
+		name=CNK_Kagesa_Sadaaki
+		portraits={
+			civilian={
+				large="gfx/leaders/CNK/Portrait_CNK_Kagesa_Sadaaki.png"
+			}
+		}
+		country_leader={
+			ideology= Neo_Canton_system_subtype
+		}
+		corps_commander={
+			traits={ JAP_samurai_lineage harsh_leader trait_engineer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
 		}
 	}
 }

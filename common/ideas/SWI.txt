@@ -11,14 +11,14 @@
 			}
 
 			cancel = {
-				has_war = yes
+				is_in_faction = yes
 			}
 			
 			removal_cost = -1 
 			picture = SWI_swiss_neutrality 
 
 			modifier = { 
-				conscription = 0.05
+				conscription = 0.01
 				join_faction_tension = 1.00
 				send_volunteers_tension = 0.20
 				guarantee_tension = 1.0

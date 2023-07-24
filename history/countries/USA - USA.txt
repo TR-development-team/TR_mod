@@ -9,7 +9,7 @@ country_event = { id = TR_USA.1 days = 308 }
 country_event = { id = TR_USA.2 days = 27 }
 country_event = { id = TR_USA.13 days = 345 }
 set_research_slots = 4
-set_stability = 0.4
+set_stability = 0.5
 set_war_support = 0.4
 starting_train_buffer = 1
 
@@ -164,6 +164,7 @@ add_ideas = {
         USA_treaty_of_Tokyo
         USA_Extremism
         USA_invisible_empire
+        USA_dust_bowl
 	USA_LOSE_IN_CALIFORNIA
         USA_depression
         #閣僚
@@ -188,9 +189,12 @@ recruit_character = USA_Huey_Long
 recruit_character = USA_Hiram_Wesley_Evans
 
 recruit_character = USA_douglas_macarthur
+recruit_character = USA_George_Marshall
 recruit_character = USA_Charles_Coughlin
 recruit_character = USA_Gerald_LK_Smith
 recruit_character = USA_HP_Lovecraft
+recruit_character = USA_Joseph_Grew
+recruit_character = USA_masaharu_homma
 
 recruit_character = USA_george_s_patton
 recruit_character = USA_omar_bradley
@@ -222,7 +226,17 @@ recruit_character = USA_harold_rainsford_stark
 recruit_character = USA_arleigh_burke
 recruit_character = USA_charles_m_cooke_jr
 
-
+###character setup
+#敗戦時処刑or公職追放
+USA_Hiram_Wesley_Evans = { set_character_flag = USA_will_be_purged_by_Japan }
+USA_douglas_macarthur = { set_character_flag = USA_will_be_purged_by_Japan }
+USA_Gerald_LK_Smith = { set_character_flag = USA_will_be_purged_by_Japan }
+USA_George_Marshall = { set_character_flag = USA_will_be_purged_by_Japan }
+USA_joseph_stilwell = { set_character_flag = USA_will_be_purged_by_Japan }
+USA_ernest_king = { set_character_flag = USA_will_be_purged_by_Japan }
+USA_chester_w_nimitz = { set_character_flag = USA_will_be_purged_by_Japan }
+USA_william_halsey_jr = { set_character_flag = USA_will_be_purged_by_Japan }
+###operative
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {

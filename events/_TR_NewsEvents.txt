@@ -835,8 +835,12 @@ news_event = {
 	picture = GFX_news_event_USA_army_parade1
 	
 	major = yes
-	
 	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			JAP = { remove_ideas = JAP_treaty_of_Tokyo } 
+		}
+	}
 	
 	option = {
 		name = TR_news.37.a
@@ -845,13 +849,14 @@ news_event = {
 				OR = { TAG = JAP
 				       TAG = USA
 				       is_in_faction_with = JAP
-                                      }
+                }
 			}
 		}
 	}
 	option = {
 		name = TR_news.37.b
 		trigger = { TAG = JAP }
+		custom_effect_tooltip = JAP_TR_news_37_b_tt
 	}
 	option = {
 		name = TR_news.37.c
@@ -1569,5 +1574,198 @@ news_event = {
 	option = {
 		name = TR_news.63.c
 		trigger = { TAG =HNN }
+	}
+}
+#アメリカ大統領、死す
+news_event = {
+	id =TR_news.64
+	title = TR_news.64.t
+	desc = TR_news.64.d
+	picture = GFX_new_event_USA_whitehouse_explosion
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.64.a
+		trigger = {
+			NOT = {
+				TAG = USA
+			}
+		}
+	}
+	option = {
+		name = TR_news.64.b
+		trigger = { TAG =USA }
+	}
+}
+#サンフランシスコ条約
+news_event = {
+	id =TR_news.65
+	title = TR_news.65.t
+	desc = TR_news.65.d
+	picture = GFX_news_event_JAP_sanfrancisco_treaty
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.65.a
+		trigger = {
+			NOT = {
+				OR = { TAG = JAP TAG = USA }
+			}
+		}
+	}
+	option = {
+		name = TR_news.65.b
+		trigger = { TAG =USA }
+	}
+	option = {
+		name = TR_news.65.c
+		trigger = { TAG =JAP }
+	}
+}
+#大和休戦協定
+news_event = {
+	id =TR_news.66
+	title = TR_news.66.t
+	desc = TR_news.66.d
+	picture = GFX_news_event_JAP_battleship_yamato
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.66.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = TR_news.66.b
+		trigger = { TAG = JAP }
+	}
+}
+#湖南が内戦状態に陥る
+news_event = {
+	id =TR_news.67
+	title = TR_news.67.t
+	desc = TR_news.67.d
+	picture = GFX_news_HNN_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.67.a
+		trigger = {
+			NOT = {
+				TAG = HNN
+			}
+		}
+	}
+	option = {
+		name = TR_news.67.b
+		trigger = { TAG = HNN }
+	}
+}
+#中華民国再建国宣言
+news_event = {
+	id =TR_news.68
+	title = TR_news.68.t
+	desc = TR_news.68.d
+	picture = GFX_news_event_National_Congress_of_Kuomintang
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.68.a
+	}
+}
+#日中戦争
+news_event = {
+	id =TR_news.69
+	title = TR_news.69.t
+	desc = TR_news.69.d
+	picture = GFX_news_event_sino_japanese_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_news.69.b
+	}
+}
+#長沙政府の宣言
+news_event = {
+	id =TR_news.70
+	title = TR_news.70.t
+	desc = TR_news.70.d
+	picture = GFX_news_event_HNN_Wu_peifu
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.70.a
+		trigger = {
+			NOT = {
+				TAG = HNN
+			}
+		}
+	}
+	option = {
+		name = TR_news.70.b
+		trigger = { TAG = HNN }
+	}
+}
+#国民党が湖南政府を転覆させる
+news_event = {
+	id =TR_news.71
+	title = TR_news.71.t
+	desc = TR_news.71.d
+	picture = GFX_news_HNN_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.71.a
+		trigger = {
+			NOT = {
+				TAG = HNN
+			}
+		}
+	}
+	option = {
+		name = TR_news.71.b
+		trigger = { TAG = HNN }
+	}
+}
+#毛沢東が湖南を掌握
+news_event = {
+	id =TR_news.72
+	title = TR_news.72.t
+	desc = TR_news.72.d
+	picture = GFX_news_event_HNN_Zhou_enlai_and_Mao_Zedong
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.72.a
+		trigger = {
+			NOT = {
+				TAG = HNN
+			}
+		}
+	}
+	option = {
+		name = TR_news.72.b
+		trigger = { TAG = HNN }
 	}
 }

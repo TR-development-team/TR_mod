@@ -2551,6 +2551,10 @@ country_event = {#帝国自治領コンゴ
 			set_cosmetic_tag = MCG_imperial_dominion
 			if = {
 				limit = { has_country_flag = MCG_ABAKO_win }
+				set_politics = {
+					ruling_party = social_conservative
+					elections_allowed = yes
+				}
 				set_popularities = {
 					totalist = 8
 					syndicalist = 3
@@ -2567,6 +2571,10 @@ country_event = {#帝国自治領コンゴ
 			}
 			if = {
 				limit = { has_country_flag = MCG_autonomy_party_win }
+				set_politics = {
+					ruling_party = market_liberal
+					elections_allowed = yes
+				}
 				set_popularities = {
 					totalist = 8
 					syndicalist = 3

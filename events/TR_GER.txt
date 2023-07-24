@@ -416,8 +416,10 @@ country_event = {
 			set_cosmetic_tag = RHI_protectorate
 			transfer_state = 42
             transfer_state = 51
+			transfer_state = 998
 			add_state_core = 51
 			add_state_core = 42
+			add_state_core = 998
         }
 		BDN = { inherit_technology = RAT
 			add_state_core = 876

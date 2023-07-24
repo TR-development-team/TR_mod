@@ -48,6 +48,7 @@ RAT_extra_focus_on_Austria= {
 	enable = {
 		AUS = { is_faction_leader = yes }
 		is_faction_leader = yes
+		NOT = { has_war_with = PRE }
 	}
 	abort_when_not_enabled = yes
 
@@ -70,6 +71,7 @@ RAT_extra_focus_on_france = {
 	enable = {
 		FRA = { is_faction_leader = yes }
 		is_faction_leader = yes
+                NOT = { has_war_with = PRE }
 	}
 	abort_when_not_enabled = yes
 

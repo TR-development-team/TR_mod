@@ -35,7 +35,7 @@ country_event = {
 	id = TR_USA.2
 	title = TR_USA.2.t
 	desc = TR_USA.2.d
-	picture = GFX_report_event_usa_election_generic
+	picture = GFX_report_event_usa_funeral
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -59,7 +59,7 @@ country_event = {
 				}
 			}
             country_event = {
-				id =  TR_USA.3
+				id =TR_USA.3
 				days = 5
 			}
 		}
@@ -70,7 +70,7 @@ country_event = {
 	id = TR_USA.3
 	title = TR_USA.3.t
 	desc = TR_USA.3.d
-	picture = GFX_report_event_usa_election_generic
+	picture = GFX_report_event_usa_funeral
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -87,11 +87,133 @@ country_event = {
 		}
 	} 
 }
+#焦点を絞る
+country_event = {
+	id = TR_USA.8
+	title = TR_USA.8.t
+	desc = TR_USA.8.d
+	picture = GFX_report_event_fascists_posing
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_USA.8.a
+        ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = Gnosticism
+			popularity = -0.03
+		}
+	} 
+	option = {
+		name = TR_USA.8.b
+        ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.03
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.03
+		}
+	}
+}
+#賠償問題
+country_event = {
+	id = TR_USA.9
+	title = TR_USA.9.t
+	desc = TR_USA.9.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_USA.9.a
+		JAP = { 
+			country_event = {
+				id =TR_USA.9_1
+				days = 1
+			}
+		}
+	}
+}
+#アメリカが賠償金の減額を要求
+country_event = {
+	id = TR_USA.9_1
+	title = TR_USA.9_1.t
+	desc = TR_USA.9_1.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_USA.9_1.a
+		USA = { 
+			country_event = {
+				id =TR_USA.9_2
+				days = 1
+			}
+		}
+	}
+}
+#日本が賠償金減額を拒否
+country_event = {
+	id = TR_USA.9_2
+	title = TR_USA.9_2.t
+	desc = TR_USA.9_2.d
+	picture = GFX_report_event_generic_sign_treaty2
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_USA.9_2.a
+		add_political_power = -50
+		add_war_support = 0.1
+	}
+}
+#国外流出
+country_event = {
+	id = TR_USA.10
+	title = TR_USA.10.t
+	desc = TR_USA.10.d
+	picture = GFX_report_event_usa_election_generic
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_USA.10.a
+		add_ideas = USA_antisemitism
+		add_timed_idea = {
+			idea = USA_hemorrhage
+			days = 600
+		}
+	}
+}
 country_event = {
 	id = TR_USA.11
 	title = TR_USA.11.t
 	desc = TR_USA.11.d
-	picture = GFX_report_event_gathering_protest
+	picture = GFX_report_event_generic_soldiers_surrendering
 
 	is_triggered_only = yes
         fire_only_once = yes
@@ -177,7 +299,6 @@ country_event = {
 		} 
         add_political_power = 50
         remove_ideas = USA_treaty_of_Tokyo
-        remove_ideas = USA_Extremism
         reverse_add_opinion_modifier = {
 			target = JAP
 			modifier = OTT_Treatment_Revoke
@@ -413,5 +534,170 @@ country_event = {
 	option = { 
 		name = TR_USA.20.a
         add_ideas = WHN_USA_Collaborate
+	}
+}
+#カリフォルニアの解放
+country_event = {
+	id = TR_USA.21
+	title = TR_USA.21.t
+	desc = TR_USA.21.d
+	picture = GFX_report_event_soldiers_marching
+
+    fire_only_once = yes
+    trigger = {
+		tag = USA
+		378 = { is_controlled_by_ROOT_or_ally = yes } 
+		386 = { is_controlled_by_ROOT_or_ally = yes } 
+		910 = { is_controlled_by_ROOT_or_ally = yes } 
+		CAL = { has_capitulated = yes }
+	}
+	
+	
+	option = { 
+		name = TR_USA.21.a
+        add_war_support = 0.05
+		JAP = { add_war_support = -0.05 }
+	}
+}
+#新大陸戦線での勝利
+country_event = {
+	id = TR_USA.22
+	title = TR_USA.22.t
+	desc = TR_USA.22.d
+	picture = GFX_report_event_long_march
+
+    fire_only_once = yes
+    trigger = {
+		tag = USA
+		controls_all_owned_states = yes
+		378 = { is_controlled_by_ROOT_or_ally = yes } 
+		386 = { is_controlled_by_ROOT_or_ally = yes } 
+		910 = { is_controlled_by_ROOT_or_ally = yes } 
+		685 = { is_controlled_by_ROOT_or_ally = yes } 
+		CAC = { has_capitulated = yes }
+		CAL = { has_capitulated = yes }
+	}
+	
+	option = { 
+		name = TR_USA.22.a
+		ai_chance = {
+			base = 40
+			modifier = {
+				factor = 5
+				has_democratic_government = yes
+			}
+		}
+		set_global_flag = USA_win_JAP_in_california
+		JAP = { country_event = TR_japfor.10 }
+	}
+	option = { 
+		name = TR_USA.22.b
+		ai_chance = {
+			base = 0 #100
+		}
+		set_global_flag = USA_pacific_war
+		custom_effect_tooltip = TR_USA_22_b_tt
+	}
+}
+#大統領死す
+country_event = {
+	id = TR_USA.23
+	title = TR_USA.23.t
+	desc = TR_USA.23.d
+	picture = GFX_report_event_generic_funeral
+
+    fire_only_once = yes
+    trigger = {
+		tag = USA
+		has_dictatorship_government = yes
+		has_offensive_war = yes
+		has_war_with = JAP
+		surrender_progress > 0.75
+		361 = { 		
+			controller = {
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			} 
+		} 
+	}
+	
+	option = { 
+		name = TR_USA.23.a
+		add_stability = -0.2
+		add_war_support = -0.2
+		kill_country_leader = yes
+		USA_George_Marshall = {
+			promote_character = {
+			    Ideology = dem_Military_junta_subtype
+		    }
+			promote_character = {
+			    Ideology = Military_junta_subtype
+		    }
+			promote_character = {
+			    Ideology = national_populist_subtype
+		    }
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = USA_provisional_government_long
+			name = USA_provisional_government
+		}
+		hidden_effect = {
+            USA = {      
+				country_event = {
+					id = TR_news.64
+					days = 1
+				}
+            }
+		}
+
+	}
+}
+#旭日は再び昇る
+country_event = {
+	id = TR_USA.24
+	title = TR_USA.24.t
+	desc = TR_USA.24.d
+	picture = GFX_report_event_japanese_transport_soldiers
+
+    fire_only_once = yes
+    trigger = {
+		tag = USA
+		has_war_with = JAP
+		surrender_progress > 0.85
+		361 = { 		
+			controller = {
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			} 
+		} 
+	}
+	
+	option = { 
+		name = TR_USA.24.a
+		ai_chance = {
+			base = 40
+		}
+		JAP = { country_event = TR_japfor.1 }
+	}
+	option = { 
+		name = TR_USA.24.b
+		ai_chance = {
+			base = 0 
+		}
+		add_stability = -0.5
+		add_war_support = -0.5
 	}
 }

@@ -385,22 +385,7 @@ characters={
 			logistics_skill = 1
 		}
 	}
-	JAP_Obata_Hideyoshi={
-		name=JAP_Obata_Hideyoshi
-		portraits={
-			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Obata_Hideyoshi.png"
-			}
-		}
-		corps_commander = {
-			traits = { inflexible_strategist career_officer }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 3
-		}
-	}
+
 	JAP_Shimomura_Sadamu={
 		name=JAP_Shimomura_Sadamu
 		portraits={
@@ -870,23 +855,7 @@ characters={
 		}
 	}
 
-	JAP_Miyazaki_Shigesaburo ={
-		name=JAP_Miyazaki_Shigesaburo
-		portraits={
-			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Miyazaki_Shigesaburo.png"
-			}
-		}
-		corps_commander={
-			traits={ inflexible_strategist infantry_officer infantry_leader }
-			skill=3
-			attack_skill=2
-			defense_skill=4
-			planning_skill=3
-			logistics_skill=3
-			legacy_id=0
-		}
-	}
+
 
 	JAP_hatazo_adachi={
 		name=JAP_hatazo_adachi
@@ -1119,23 +1088,7 @@ characters={
 		}
 	}
 
-	JAP_Mutaguchi_Renya={
-		name=JAP_Mutaguchi_Renya
-		portraits={
-			army={
-				large="gfx/leaders/JAP/Portrait_JAP_mutaguchi.tga"
-			}
-		}
-		corps_commander={
-			traits={ JAP_samurai_lineage harsh_leader trait_reckless politically_connected }
-			skill=1
-			attack_skill=1
-			defense_skill=1
-			planning_skill=1
-			logistics_skill=1
-			legacy_id=0
-		}
-	}
+
 
 
 	JAP_isoroku_yamamoto={

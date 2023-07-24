@@ -1,0 +1,28 @@
+ideas = {   
+    country = {
+        SIB_Japan_Russia_coexistence = {
+		    picture = state_shintoism
+			modifier = { 
+				political_power_cost = 0.2
+				stability_factor = -0.1
+			}
+		}
+		SIB_Manchurian_worker = {
+		    picture = generic_production_bonus
+			modifier = { 
+			    consumer_goods_factor = -0.05
+				stability_factor = -0.1
+                industrial_capacity_factory = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		SIB_Mines_in_the_Far_North = {
+		    picture = generic_exploit_mines
+			modifier = { 
+				local_resources_factor = 0.2
+				consumer_goods_factor = 0.05
+			}
+		}
+    }
+}
+

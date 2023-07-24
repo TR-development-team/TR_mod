@@ -87,35 +87,59 @@ country_event = {
 					OR = {
 						AND = {
 							ROOT = { tag = JAP }
-							is_important_state_china = yes
+							OR = { 
+								is_important_state_china = yes
+								is_important_state = yes
+								}
 						}
 						AND = {
 							ROOT = { tag = RUS }
-							is_important_state_china = yes
+							OR = { 
+								is_important_state_china = yes
+								is_important_state = yes
+								}
 						}
 						AND = {
 							ROOT = { tag = GBR }
-							is_important_state_china = yes
+							OR = { 
+								is_important_state_china = yes
+								is_important_state = yes
+								}
 						}
 						AND = {
 							ROOT = { tag = PRE }
-							is_important_state_china = yes
+							OR = { 
+								is_important_state_china = yes
+								is_important_state = yes
+								}
 						}
 						AND = {
 							ROOT = { tag = AUS }
-							is_important_state_china = yes
+							OR = { 
+								is_important_state_china = yes
+								is_important_state = yes
+								}
 						}
 						AND = {
 							ROOT = { tag = USA }
-							is_important_state_china = yes
+							OR = { 
+								is_important_state_china = yes
+								is_important_state = yes
+								}
 						}
 						AND = {
 							ROOT = { tag = FRA }
-							is_french_colonial_claim = yes
+							OR = { 
+								is_important_state_china = yes
+								is_important_state = yes
+								}
 						}
 						AND = {
 							ROOT = { tag = POR }
-							is_french_colonial_claim = yes
+							OR = { 
+								is_important_state_china = yes
+								is_important_state = yes
+								}
 						}
 						ROOT = { is_ai = no }
 					}
@@ -139,35 +163,59 @@ country_event = {
 						OR = {
 							AND = {
 								ROOT = { tag = JAP }
-								is_important_state_china = yes
+								OR = { 
+									is_important_state_china = yes
+								    is_important_state = yes
+								    }
 							}
 							AND = {
 								ROOT = { tag = RUS }
-								is_important_state_china = yes
+								OR = { 
+									is_important_state_china = yes
+								    is_important_state = yes
+								    }
 							}
 							AND = {
 								ROOT = { tag = GBR }
-								is_important_state_china = yes
+								OR = { 
+									is_important_state_china = yes
+								    is_important_state = yes
+								    }
 							}
 							AND = {
 								ROOT = { tag = PRE }
-								is_important_state_china = yes
+								OR = { 
+									is_important_state_china = yes
+								    is_important_state = yes
+								    }
 							}
 							AND = {
 								ROOT = { tag = AUS }
-								is_important_state_china = yes
+								OR = { 
+									is_important_state_china = yes
+								    is_important_state = yes
+								    }
 							}
 							AND = {
 								ROOT = { tag = USA }
-								is_important_state_china = yes
+								OR = { 
+									is_important_state_china = yes
+								    is_important_state = yes
+								    }
 							}
 							AND = {
 								ROOT = { tag = FRA }
-								is_french_colonial_claim = yes
+								OR = { 
+									is_important_state_china = yes
+								    is_important_state = yes
+								    }
 							}
 							AND = {
 								ROOT = { tag = POR }
-								is_french_colonial_claim = yes
+								OR = { 
+									is_important_state_china = yes
+								    is_important_state = yes
+								    }
 							}
 							ROOT = { is_ai = no }
 						}

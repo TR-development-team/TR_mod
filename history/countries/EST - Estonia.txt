@@ -1,4 +1,33 @@
 ﻿capital = 882
-
 set_cosmetic_tag = EST_republic
-set_dictatorship = yes
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 3
+	syndicalist = 4
+	radical_socialist = 2
+	social_democrat = 12
+	social_liberal = 11
+	market_liberal = 11
+	social_conservative = 11
+	authoritarian_democrat = 29
+	paternal_autocrat = 6
+	national_populist = 6
+	Gnosticism = 5
+}
+
+recruit_character = EST_johannes_kabin
+recruit_character = EST_jaan_anvelt
+recruit_character = EST_jaan_tonisson
+recruit_character = EST_konstantin_pats
+recruit_character = EST_artur_sirk
+
+recruit_character = EST_andres_larka
+recruit_character = EST_herbert_brede
+recruit_character = EST_otto_heinze
+recruit_character = EST_alexander_jaakson
+recruit_character = EST_johan_laidoner

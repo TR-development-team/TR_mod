@@ -1,5 +1,6 @@
 focus_tree = {
 	id = america_focus
+	continuous_focus_position = { x = 300 y = 600 }
 	country = {
 		factor = 0
 		modifier = {
@@ -8,13 +9,13 @@ focus_tree = {
 		}
 	}
     default = no
-	#社会党の政策
+	#国難の時代
 	focus = {
-		id = USA_GxEhtjnU
-		icon = GFX_focus_prc_agrarian_socialism
+		id = USA_focus_1
+		icon = GFX_focus_generic_strike_at_democracy3
 		x = 6
 		y = 0
-		cost = 7
+		cost = 8
         available = {
             NOT  = { has_country_flag = USA_anarchy }
             }
@@ -23,75 +24,77 @@ focus_tree = {
 			factor = 100
 		}
 	completion_reward = {
-		add_stability = 0.025
-        add_political_power = 25	
+        add_political_power = 50
 		}
 	}
-	#全国産業復興法
+	#自然との闘い
 	focus = {
-		id = USA_UlkfjqDO
-		icon = GFX_focus_generic_industry_3
+		id = USA_focus_2
+		icon = GFX_focus_POL_riot_of_37
 		x = 6
 		y = 1
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = USA_GxEhtjnU }
+		prerequisite = { focus = USA_focus_1 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_stability = 0.05
+        swap_ideas = {
+			remove_idea = USA_dust_bowl
+			add_idea = USA_dust_bowl_1
+			}	
 		}
 	}
-	#公正な雇用
+	#過激派への対処
 	focus = {
-		id = USA_TfkrSUph
-		icon = GFX_goal_generic_national_unity
+		id = USA_focus_3
+		icon = GFX_focus_ITA_corpo_volontari_della_liberta
 		x = 4
 		y = 1
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = USA_GxEhtjnU }
+		prerequisite = { focus = USA_focus_1 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_stability = 0.05
+		country_event = TR_USA.8
 		}
 	}
-	#公共事業の促進
+	#賠償問題
 	focus = {
-		id = USA_TUOfVdro
-		icon = GFX_goal_generic_production2
+		id = USA_focus_4
+		icon = GFX_focus_hol_abandon_the_gold_standard
 		x = 8
 		y = 1
-		cost = 7
+		cost = 8
 		available_if_capitulated = yes
-		prerequisite = { focus = USA_GxEhtjnU }
+		prerequisite = { focus = USA_focus_1 }
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
-		add_stability = 0.05	
+		country_event = TR_USA.9
 		}
 	}
 
-	#恐慌からの部分的回復
+	#全国産業復興法
 	focus = {
-		id = USA_tRGCEpFy
-		icon = GFX_goal_generic_production
+		id = USA_focus_5
+		icon = GFX_focus_usa_guarantee_the_american_dream
 		x = 6
 		y = 2
-		cost = 7
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = USA_TfkrSUph 
+			focus = USA_focus_2
 		}
 		prerequisite = { 
-			focus = USA_TUOfVdro 
+			focus = USA_focus_3
 		}
 		prerequisite = { 
-			focus = USA_UlkfjqDO 
+			focus = USA_focus_4
 		}
 		ai_will_do = {
 			factor = 100
@@ -117,7 +120,7 @@ focus_tree = {
 		}
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = USA_tRGCEpFy }
+		prerequisite = { focus = USA_focus_5 }
 		ai_will_do = {
 			factor = 100
 		}

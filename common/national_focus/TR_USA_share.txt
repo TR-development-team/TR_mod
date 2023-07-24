@@ -1,0 +1,2168 @@
+	#戦争への道
+	shared_focus = {
+		id = USA_diplomacy_focus_1
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 4
+		y = 0
+		cost = 5
+        available = {
+			is_subject = no	
+			has_country_flag = USA_political_stability
+            }
+		ai_will_do = {
+			factor = 200
+		}
+	completion_reward = {
+        add_war_support = 0.1
+		hidden_effect = {
+			country_event = {
+				id = TR_news.9
+				days = 7
+			}
+		}
+		}
+	}
+	#貿易協定
+	shared_focus = {
+		id = USA_diplomacy_focus_2
+		icon = GFX_goal_generic_trade
+		x = -2
+		y = 1
+		cost = 5
+        available = {
+			is_subject = no	
+		}
+		prerequisite = { focus = USA_diplomacy_focus_1 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 150
+		}
+	completion_reward = {
+        add_ideas = FRA_USA_Friendship
+        reverse_add_opinion_modifier = {
+			target = FRA
+			modifier = USA_FRA_SUPPORT
+		}
+        FRA = { 
+			add_ideas = FRA_USA_Friendship
+            reverse_add_opinion_modifier = {
+				target = USA
+				modifier = USA_FRA_SUPPORT
+			} 
+            }
+		}
+	}
+	#北米の統一
+	shared_focus = {
+		id = USA_diplomacy_focus_3
+		icon = GFX_focus_attack_canada
+		x = 0
+		y = 1
+		cost = 5
+        available = {
+			is_subject = no	
+		}
+		prerequisite = { focus = USA_diplomacy_focus_1 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 300
+		}
+	completion_reward = {
+		every_state = {
+			limit = {
+				is_core_of = CAN
+			}
+			add_core_of = USA
+		}		
+		declare_war_on = {
+			target = CAN
+			type = annex_everything
+		}
+		}
+	}
+	#同盟国の模索
+	shared_focus = {
+		id = USA_diplomacy_focus_4
+		icon = GFX_goal_generic_alliance
+		x = 2
+		y = 1
+		cost = 5
+        available = {
+			is_subject = no	
+		}
+		prerequisite = { focus = USA_diplomacy_focus_1 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 150
+		}
+	completion_reward = {
+		create_faction = "USA_faction"
+		MEX = { country_event = TR_Mexico.1 }
+		BRA = { country_event = TR_Mexico.2 }
+		COL = { country_event = TR_Mexico.3 }
+		}
+	}
+	#カリフォルニアか戦争か
+	shared_focus = {
+		id = USA_diplomacy_focus_5
+		icon = GFX_focus_attack_japan
+		x = 0
+		y = 2
+		cost = 10
+		available = {
+			if = {
+				date > 1940.1.1
+			}
+			is_owner_neighbor_of = CAL
+			can_declare_war_on = CAL
+			is_subject = no
+		}
+		prerequisite = { focus = USA_diplomacy_focus_2 }
+		prerequisite = { focus = USA_diplomacy_focus_3 }
+		prerequisite = { focus = USA_diplomacy_focus_4 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 300
+		}
+	completion_reward = {
+		add_named_threat = { threat = 50 name = USA_WW2 }
+		380 = {
+			add_core_of = USA
+		}
+		377 = {
+			add_core_of = USA
+		}
+		380 = {
+			add_core_of = USA
+		}
+		387 = {
+			add_core_of = USA
+		}
+		379 = {
+			add_core_of = USA
+		}
+		378 = {
+			add_core_of = USA
+		}
+		385 = {
+			add_core_of = USA
+		}
+		386 = {
+			add_core_of = USA
+		}
+		910 = {
+			add_core_of = USA
+	    }
+		declare_war_on = {
+			target = CAL
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = JAP
+			type = annex_everything
+		}
+		}
+	}
+	#モンロー主義の復古
+	shared_focus = {
+		id = USA_diplomacy_focus_6
+		icon = GFX_goal_generic_neutrality_focus
+		x = -2
+		y = 3
+		cost = 5
+        available = {
+			has_global_flag = USA_win_JAP_in_california
+		}
+		prerequisite = { focus = USA_diplomacy_focus_5 }
+		mutually_exclusive = { focus = USA_diplomacy_focus_14 }  
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#米州機構
+	shared_focus = {
+		id = USA_diplomacy_focus_7
+		icon = GFX_focus_usa_union_representation_act
+		x = -4
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_6 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#棍棒外交
+	shared_focus = {
+		id = USA_diplomacy_focus_8
+		icon = GFX_goal_demand_sudetenland
+		x = -2
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_6 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#経済的植民地
+	shared_focus = {
+		id = USA_diplomacy_focus_9
+		icon = GFX_focus_por_recover_latin_america
+		x = -2
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_7 }
+		prerequisite = { focus = USA_diplomacy_focus_8 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#西半球の覇者
+	shared_focus = {
+		id = USA_diplomacy_focus_10
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = -2
+		y = 6
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_9 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#太平洋での戦い
+	shared_focus = {
+		id = USA_diplomacy_focus_11
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 0
+		y = 4
+		cost = 5
+        available = {
+			has_country_flag = USA_pacific_war
+		}
+		prerequisite = { focus = USA_diplomacy_focus_5 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#ダウンフォール作戦
+	shared_focus = {
+		id = USA_diplomacy_focus_12
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 0
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_11 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#大勝利
+	shared_focus = {
+		id = USA_diplomacy_focus_13
+		icon = GFX_focus_generic_strike_at_democracy3
+		x = 0
+		y = 6
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_12 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#世界の警察官
+	shared_focus = {
+		id = USA_diplomacy_focus_14
+		icon = GFX_focus_POL_support_global_falangism
+		x = 2
+		y = 3
+		cost = 5
+        available = {
+			has_global_flag = USA_win_JAP_in_pacific
+		}
+		prerequisite = { focus = USA_diplomacy_focus_5 }
+		mutually_exclusive = { focus = USA_diplomacy_focus_6 }  
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#アジアへの介入
+	shared_focus = {
+		id = USA_diplomacy_focus_15
+		icon = GFX_focus_usa_focus_on_asia
+		x = 2
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_14 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#欧州への介入
+	shared_focus = {
+		id = USA_diplomacy_focus_16
+		icon = GFX_focus_usa_focus_on_europe
+		x = 4
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_14 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#アフリカへの介入
+	shared_focus = {
+		id = USA_diplomacy_focus_17
+		icon = GFX_focus_generic_africa_liberation
+		x = 2
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_15 }
+		prerequisite = { focus = USA_diplomacy_focus_16 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#パクス・アメリカーナ
+	shared_focus = {
+		id = USA_diplomacy_focus_18
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		x = 2
+		y = 6
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_diplomacy_focus_17 }
+		relative_position_id = USA_diplomacy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        
+		}
+	}
+	#再軍備
+	shared_focus = {
+		id = USA_military_focus_1
+		icon = GFX_focus_secret_rearmament
+		x = 21
+		y = 0
+		cost = 5
+        available = {
+			has_war_support > 0.6
+			NOT = { has_idea = USA_treaty_of_Tokyo }
+		}
+		ai_will_do = {
+			factor = 200
+		}
+	completion_reward = {
+		add_ideas = war_economy
+		add_timed_idea = {
+			idea = USA_rearmament
+			days = 365
+		}
+		}
+	}
+	#陸軍改革
+	shared_focus = {
+		id = USA_military_focus_2
+		icon = GFX_focus_usa_build_the_pentagon
+		x = -8
+		y = 1
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_1 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        army_experience = 50
+		}
+	}
+	#マーシャル・プラン
+	shared_focus = {
+		id = USA_military_focus_3
+		icon = GFX_focus_generic_combined_arms
+		x = -11
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_2 }
+		mutually_exclusive = { focus = USA_military_focus_4 }  
+		mutually_exclusive = { focus = USA_military_focus_5 }  
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_Marshall_Plan
+		}
+	}
+	#マッカーサー・プラン
+	shared_focus = {
+		id = USA_military_focus_4
+		icon = GFX_focus_generic_provoke_border_clashes
+		x = -8
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_2 }
+		mutually_exclusive = { focus = USA_military_focus_3 }  
+		mutually_exclusive = { focus = USA_military_focus_5 }  
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_MacArthur_Plan
+		}
+	}
+	#パットン・プラン
+	shared_focus = {
+		id = USA_military_focus_5
+		icon = GFX_focus_generic_tankette
+		x = -5
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_2 }
+		mutually_exclusive = { focus = USA_military_focus_3 }  
+		mutually_exclusive = { focus = USA_military_focus_4 }  
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_Patton_Plan
+		}
+	}
+	#火砲生産の効率化
+	shared_focus = {
+		id = USA_military_focus_6
+		icon = GFX_goal_generic_army_artillery2
+		x = -12
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_3 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Marshall_Plan
+			add_idea = USA_Marshall_Plan_1
+		}
+		}
+	}
+	#航空支援
+	shared_focus = {
+		id = USA_military_focus_7
+		icon = GFX_focus_generic_armored_air_support
+		x = -10
+		y = 3
+		cost = 5
+        available = {
+			has_idea = USA_Marshall_Plan_1
+		}
+		prerequisite = { focus = USA_military_focus_3 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Marshall_Plan_1
+			add_idea = USA_Marshall_Plan_2
+		}
+		}
+	}
+	#装備近代化
+	shared_focus = {
+		id = USA_military_focus_8
+		icon = GFX_goal_generic_small_arms
+		x = -11
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_6 }
+		prerequisite = { focus = USA_military_focus_7 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+		}
+	}
+	#圧倒的な火力
+	shared_focus = {
+		id = USA_military_focus_9
+		icon = GFX_goal_generic_army_artillery
+		x = -12
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_8 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Marshall_Plan_2
+			add_idea = USA_Marshall_Plan_3
+		}
+		}
+	}
+	#小銃の規格化
+	shared_focus = {
+		id = USA_military_focus_10
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -10
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_8 focus = USA_military_focus_12 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_Standardization_of_rifles
+		}
+	}
+	#参謀本部集権化
+	shared_focus = {
+		id = USA_military_focus_11
+		icon = GFX_focus_generic_military_mission
+		x = -8
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_4 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_MacArthur_Plan
+			add_idea = USA_MacArthur_Plan_1
+		}
+		}
+	}
+	#兵站局
+	shared_focus = {
+		id = USA_military_focus_12
+		icon = GFX_focus_POL_warsaw_main_station
+		x = -9
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_11 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_MacArthur_Plan_1
+			add_idea = USA_MacArthur_Plan_2
+		}
+		}
+	}
+	#陸軍工兵隊
+	shared_focus = {
+		id = USA_military_focus_13
+		icon = GFX_focus_SOV_penal_battalions
+		x = -7
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_11 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = engineers_tech
+		}
+		}
+	}
+	#士官学校カリキュラムの見直し
+	shared_focus = {
+		id = USA_military_focus_14
+		icon = GFX_focus_generic_military_academy
+		x = -8
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_12 }
+		prerequisite = { focus = USA_military_focus_13 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_MacArthur_Plan_2
+			add_idea = USA_MacArthur_Plan_3
+		}
+		}
+	}
+	#企業との契約
+	shared_focus = {
+		id = USA_military_focus_15
+		icon = GFX_focus_generic_license_production
+		x = -6
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_5 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#機械化計画
+	shared_focus = {
+		id = USA_military_focus_16
+		icon = GFX_focus_generic_self_propelled_gun
+		x = -4
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_5 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Patton_Plan
+			add_idea = USA_Patton_Plan_1
+		}
+		}
+	}
+	#機動戦
+	shared_focus = {
+		id = USA_military_focus_17
+		icon = GFX_focus_SOV_the_road_of_life
+		x = -5
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_15 }
+		prerequisite = { focus = USA_military_focus_16 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Patton_Plan_1
+			add_idea = USA_Patton_Plan_2
+		}
+		}
+	}
+	#新たな軍需企業
+	shared_focus = {
+		id = USA_military_focus_18
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -6
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_13 focus = USA_military_focus_17 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#装甲騎兵
+	shared_focus = {
+		id = USA_military_focus_19
+		icon = GFX_goal_generic_army_tanks
+		x = -4
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_17 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Patton_Plan_2
+			add_idea = USA_Patton_Plan_3
+		}
+		}
+	}
+	#This We'll Defend
+	shared_focus = {
+		id = USA_military_focus_20
+		icon = GFX_focus_chi_army_reform
+		x = -8
+		y = 6
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_9 focus = USA_military_focus_14 focus = USA_military_focus_19 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_This_We_ll_Defend
+		}
+	}
+	#陸軍航空隊
+	shared_focus = {
+		id = USA_air_focus_1
+		icon = GFX_goal_generic_build_airforce
+		x = 0
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_2 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        air_experience = 50
+		}
+	}
+	#爆撃機の開発
+	shared_focus = {
+		id = USA_air_focus_2
+		icon = GFX_goal_generic_air_bomber
+		x = -2
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_air_focus_1 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = bomber_bonus
+			bonus = 1.0
+			uses = 1
+			category = tactical_bomber
+		}
+		}
+	}
+	#地上支援能力の強化
+	shared_focus = {
+		id = USA_air_focus_3
+		icon = GFX_focus_generic_tank_air_support
+		x = -3
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_air_focus_2 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_ideas = USA_ground_support
+		add_doctrine_cost_reduction = {
+			name = air_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = battlefield_support_tree
+		}
+		}
+	}
+	#戦略爆撃能力の強化
+	shared_focus = {
+		id = USA_air_focus_4
+		icon = GFX_focus_generic_multi_role_aircraft
+		x = -1
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_air_focus_2 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_ideas = USA_strategic_bombing
+		add_doctrine_cost_reduction = {
+			name = air_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = battlefield_support_tree
+		}
+		}
+	}
+	#大型機の開発
+	shared_focus = {
+		id = USA_air_focus_5
+		icon = GFX_focus_generic_long_range_aircraft
+		x = -2
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_air_focus_3 }
+		prerequisite = { focus = USA_air_focus_4 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = bomber_bonus
+			bonus = 1.0
+			uses = 1
+			category = cat_strategic_bomber
+		}
+		}
+	}
+	#戦闘機の開発
+	shared_focus = {
+		id = USA_air_focus_6
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_air_focus_1 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = fighter_bonus
+			bonus = 1.0
+			uses = 1
+			category = light_fighter
+			category = cat_heavy_fighter
+		}
+		}
+	}
+	#空軍基地の建設
+	shared_focus = {
+		id = USA_air_focus_7
+		icon = GFX_goal_generic_air_production
+		x = 0
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_air_focus_6 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#空軍の設立
+	shared_focus = {
+		id = USA_air_focus_8
+		icon = GFX_focus_usa_escort_fighters
+		x = -1
+		y = 6
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_air_focus_5 }
+		prerequisite = { focus = USA_air_focus_7 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		custom_effect_tooltip = USA_air_focus_8_tt
+		hidden_effect = { 
+            remove_ideas = USA_ground_support
+			remove_ideas = USA_strategic_bombing
+			add_ideas = USA_USAF
+	    }
+		}
+	}
+	#海軍拡張法
+	shared_focus = {
+		id = USA_navy_focus_1
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 4
+		y = 1
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_military_focus_1 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        navy_experience = 50
+		}
+	}
+	#空母配備計画
+	shared_focus = {
+		id = USA_navy_focus_2
+		icon = GFX_goal_generic_navy_carrier
+		x = 2
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_1 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		create_ship = {
+			type = ship_hull_carrier_1
+			equipment_variant = "Yorktown Class"
+			creator = USA
+		}
+		}
+	}
+	#大増強
+	shared_focus = {
+		id = USA_navy_focus_3
+		icon = GFX_goal_generic_navy_cruiser
+		x = 4
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_1 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_Great_White_Fleet
+		}
+	}
+	#造船所の拡張
+	shared_focus = {
+		id = USA_navy_focus_4
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		x = 6
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_1 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}        
+		}
+	}
+	#海軍機の更新
+	shared_focus = {
+		id = USA_navy_focus_5
+		icon = GFX_goal_generic_air_naval_bomber
+		x = 2
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_2 }
+		prerequisite = { focus = USA_air_focus_1 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = nav_bomber_bonus
+			bonus = 1.0
+			uses = 1
+			category = naval_bomber
+		}
+		}
+	}
+	#新たなグレート・ホワイト・フリート
+	shared_focus = {
+		id = USA_navy_focus_6
+		icon = GFX_focus_generic_navy_battleship2
+		x = 4
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_3 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Great_White_Fleet
+			add_idea = USA_Great_White_Fleet_1
+		}
+		}
+	}
+	#ノーフォーク造船所の強化
+	shared_focus = {
+		id = USA_navy_focus_7
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 6
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_4 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_political_power = -100
+		add_ideas = norfolk_naval_yard_1
+		}
+	}
+	#海兵隊の強化
+	shared_focus = {
+		id = USA_navy_focus_8
+		icon = GFX_focus_focus_fra_down_marianne
+		x = 2
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_6 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_marine
+		}
+	}
+	#輸送艦の近代化
+	shared_focus = {
+		id = USA_navy_focus_9
+		icon = GFX_goal_generic_amphibious_assault
+		x = 2
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_8 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 1
+			category = tp_tech
+		}
+		}
+	}
+	#戦艦の建造
+	shared_focus = {
+		id = USA_navy_focus_10
+		icon = GFX_goal_generic_navy_battleship
+		x = 4
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_6 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		create_ship = {
+			type = ship_hull_heavy_1
+			equipment_variant = "Colorado Class"
+			creator = USA
+		}
+		}
+	}
+	#巡洋艦の建造
+	shared_focus = {
+		id = USA_navy_focus_11
+		icon = GFX_focus_generic_cruiser2
+		x = 4
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_10 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		create_ship = {
+			type = ship_hull_cruiser_2
+			equipment_variant = "Wichita Class"
+			creator = USA
+		}
+		}
+	}
+	#駆逐艦の更新
+	shared_focus = {
+		id = USA_navy_focus_12
+		icon = GFX_focus_generic_destroyer
+		x = 6
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_6 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = dd_bonus
+			bonus = 1.0
+			ahead_reduction = 2
+			uses = 1
+			category = dd_tech
+		}
+		}
+	}
+	#潜水艦の強化
+	shared_focus = {
+		id = USA_navy_focus_13
+		icon = GFX_goal_generic_navy_submarine
+		x = 6
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_12 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Great_White_Fleet_1
+			add_idea = USA_Great_White_Fleet_2
+		}
+		}
+	}
+	#太平洋艦隊
+	shared_focus = {
+		id = USA_navy_focus_14
+		icon = GFX_focus_usa_focus_on_asia
+		x = 3
+		y = 6
+		cost = 5
+        available = {
+			has_full_control_of_state = 910
+		}
+		prerequisite = { focus = USA_navy_focus_9 }
+		prerequisite = { focus = USA_navy_focus_11 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		910 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#大西洋艦隊
+	shared_focus = {
+		id = USA_navy_focus_15
+		icon = GFX_focus_usa_focus_on_europe
+		x = 5
+		y = 6
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_navy_focus_11 }
+		prerequisite = { focus = USA_navy_focus_13 }
+		relative_position_id = USA_military_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Great_White_Fleet_2
+			add_idea = USA_Great_White_Fleet_3
+		}
+		}
+	}
+	#アメリカ産業
+	shared_focus = {
+		id = USA_economy_focus_1
+		icon = GFX_focus_generic_improve_the_administration
+		x = 32
+		y = 0
+		cost = 5
+        available = {
+			has_country_flag = USA_assumption_of_the_presidency
+		}
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 0.5
+			uses = 2
+			category = industry
+		}
+		}
+	}
+	#軍需産業
+	shared_focus = {
+		id = USA_economy_focus_2
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 1
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_1 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}        
+		}
+	}
+	#科学的管理法
+	shared_focus = {
+		id = USA_economy_focus_3
+		icon = GFX_goal_generic_scientific_exchange
+		x = 0
+		y = 1
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_1 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_Scientific_management
+		}
+	}
+	#アメリカの可能性
+	shared_focus = {
+		id = USA_economy_focus_4
+		icon = GFX_focus_generic_the_giant_wakes
+		x = 2
+		y = 1
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_1 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_political_power = 100
+		}
+	}
+	#スプリングフィールドへの投資
+	shared_focus = {
+		id = USA_economy_focus_5
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = -3
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_2 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_political_power = -100
+		add_ideas = springfield_armory_1 
+		}
+	}
+	#フォード自動車
+	shared_focus = {
+		id = USA_economy_focus_6
+		icon = GFX_focus_generic_improve_roads
+		x = -1
+		y = 2
+		cost = 5
+        available = {
+			has_full_control_of_state = 393
+		}
+		prerequisite = { focus = USA_economy_focus_2 }
+		prerequisite = { focus = USA_economy_focus_3 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_ideas = USA_Automobile_factory
+		393 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#住宅の拡大
+	shared_focus = {
+		id = USA_economy_focus_7
+		icon = GFX_focus_generic_land_reclamation
+		x = 1
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_4 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 1
+		}		
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+			}
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	}
+	#資源開発
+	shared_focus = {
+		id = USA_economy_focus_8
+		icon = GFX_goal_generic_construction2
+		x = 3
+		y = 2
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_4 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				steel > 0
+			}
+			add_resource = {
+				type = steel
+				amount = 39
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				aluminium > 0
+			}
+			add_resource = {
+				type = aluminium
+				amount = 18
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				tungsten > 0
+			}
+			add_resource = {
+				type = tungsten
+				amount = 18
+			}
+		}
+		}
+	}
+	#アメリカの造船業
+	shared_focus = {
+		id = USA_economy_focus_9
+		icon = GFX_focus_generic_refit_civilian_ships
+		x = -2
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_2 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_shipbuilding_industry
+		}
+	}
+	#大量生産
+	shared_focus = {
+		id = USA_economy_focus_10
+		icon = GFX_focus_SOV_organize_wreckers
+		x = 0
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_3 }
+		prerequisite = { focus = USA_economy_focus_6 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Scientific_management
+			add_idea = USA_Scientific_management_1
+		}
+		}
+	}
+	#外国の投資を誘致
+	shared_focus = {
+		id = USA_economy_focus_11
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 2
+		y = 3
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_7 }
+		prerequisite = { focus = USA_economy_focus_8 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#デトロイト戦車工廠
+	shared_focus = {
+		id = USA_economy_focus_12
+		icon = GFX_focus_generic_tank_production
+		x = -3
+		y = 4
+		cost = 5
+        available = {
+			has_full_control_of_state = 393
+		}
+		prerequisite = { focus = USA_economy_focus_5 }
+		prerequisite = { focus = USA_economy_focus_6 }
+		prerequisite = { focus = USA_economy_focus_10 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		add_political_power = -100
+		add_ideas = detroit_arsenal_1
+		393 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#航空機製造
+	shared_focus = {
+		id = USA_economy_focus_13
+		icon = GFX_focus_generic_aircraft_production
+		x = -1
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_6 }
+		prerequisite = { focus = USA_economy_focus_10 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_ideas = USA_aircraft_arsenal
+		}
+	}
+	#軍産学複合体
+	shared_focus = {
+		id = USA_economy_focus_14
+		icon = GFX_focus_generic_industry_3
+		x = -2
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_9 }
+		prerequisite = { focus = USA_economy_focus_12 }
+		prerequisite = { focus = USA_economy_focus_13 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+        add_research_slot = 1
+		custom_effect_tooltip = USA_economy_focus_14_tt
+		hidden_effect = { 
+            remove_ideas = USA_shipbuilding_industry
+			remove_ideas = USA_aircraft_arsenal
+			remove_ideas = USA_Automobile_factory
+			add_ideas = USA_MICC
+	    }
+		}
+	}
+	#大量消費
+	shared_focus = {
+		id = USA_economy_focus_15
+		icon = GFX_goal_generic_consumer_goods
+		x = 1
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_7 }
+		prerequisite = { focus = USA_economy_focus_10 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Scientific_management_1
+			add_idea = USA_Scientific_management_2
+		}
+		}
+	}	
+	#合成ゴムの研究
+	shared_focus = {
+		id = USA_economy_focus_16
+		icon = GFX_focus_generic_rubber
+		x = 3
+		y = 4
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_8 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		modify_building_resources = {
+			building = synthetic_refinery
+			resource = rubber
+			amount = 2
+		}
+		}
+	}	
+	#狂乱する経済
+	shared_focus = {
+		id = USA_economy_focus_17
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 2
+		y = 5
+		cost = 5
+        available = {}
+		prerequisite = { focus = USA_economy_focus_11 }
+		prerequisite = { focus = USA_economy_focus_15 }
+		prerequisite = { focus = USA_economy_focus_16 }
+		relative_position_id = USA_economy_focus_1
+		ai_will_do = {
+			factor = 40
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = USA_Scientific_management_2
+			add_idea = USA_Scientific_management_3
+		}
+		}
+	}	

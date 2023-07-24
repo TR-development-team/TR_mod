@@ -53,9 +53,9 @@ country_event = {
         ai_chance = {
 			base = 30
 		}
-		set_country_flag = RUS_Congress_END
-        set_country_flag = RUS_Stalin_Win
-		add_ideas = RUS_Vyacheslav_Molotov
+		set_country_flag = SOV_Congress_END
+        set_country_flag = SOV_Stalin_Win
+		add_ideas = SOV_Vyacheslav_Molotov
 		set_politics = {
 			ruling_party = totalist
 			elections_allowed = no
@@ -66,9 +66,9 @@ country_event = {
         ai_chance = {
 			base = 30
 		}
-		set_country_flag = RUS_Congress_END
-		set_country_flag = RUS_Bukharin_Win
-		add_ideas = RUS_Nikolai_Bukharin
+		set_country_flag = SOV_Congress_END
+		set_country_flag = SOV_Bukharin_Win
+		add_ideas = SOV_Nikolai_Bukharin
 		set_politics = {
 			ruling_party = radical_socialist
 			elections_allowed = no
@@ -85,9 +85,9 @@ country_event = {
         ai_chance = {
 			base = 20
 		}
-		set_country_flag = RUS_Congress_END
-		set_country_flag = RUS_Bogdanov_Win
-		add_ideas = RUS_Alexander_Bogdanov
+		set_country_flag = SOV_Congress_END
+		set_country_flag = SOV_Bogdanov_Win
+		add_ideas = SOV_Alexander_Bogdanov
 		set_politics = {
 			ruling_party = Gnosticism
 			elections_allowed = no
@@ -102,9 +102,9 @@ country_event = {
         ai_chance = {
 			base = 20
 		}
-		set_country_flag = RUS_Congress_END
-		set_country_flag = RUS_Zinoviev_Win
-		add_ideas = RUS_Grigory_Zinoviev
+		set_country_flag = SOV_Congress_END
+		set_country_flag = SOV_Zinoviev_Win
+		add_ideas = SOV_Grigory_Zinoviev
 		set_politics = {
 			ruling_party = radical_socialist
 			elections_allowed = no
@@ -127,25 +127,18 @@ country_event = {
 		tag = SOV
         RUS = { exists = no }
         }
-
-
-        fire_only_once = yes
+    fire_only_once = yes
 
 	
 	option = { 
 		name = TR_Soviet.3.a
-		trigger = {
-			NOT = {
-				is_in_faction_with = SIB
-			}
-		}
 		set_capital = {
 			state = 219
 			remember_old_capital = no
 		}
         add_timed_idea = {
 			idea = GER_CIVILWAR_MARKS
-			days = 365
+			days = 730
 			} 
         remove_ideas = SOV_CIVIL_WAR
 		add_stability = 0.1
@@ -158,44 +151,9 @@ country_event = {
 			    	is_core_of = RUS
 		    	}
 			    add_core_of = SOV
-		    }
-		    every_state = {
-			    limit = {
-				    is_core_of = RUS
-			    }
-			    remove_core_of = RUS
+				remove_core_of = RUS
 		    }
 	    }
-	}
-	option = { 
-		name = TR_Soviet.3.b
-		trigger = {
-				is_in_faction_with = SIB
-		}
-		set_capital = {
-			state = 219
-			remember_old_capital = no
-		}
-                add_timed_idea = {
-				idea = GER_CIVILWAR_MARKS
-				days = 365
-				} 
-                remove_ideas = SOV_CIVIL_WAR
-                set_global_flag = Soviet_Win_flag
-		add_stability = 0.1
-                set_rule = { can_create_factions = no }
-		dismantle_faction = yes
-		annex_country = {
-			target = SIB
-			transfer_troops = yes
-			}
-		every_state = {
-			limit = {
-				is_core_of = SIB
-			}
-			add_core_of = SOV
-		}
-
 	}
 
 }

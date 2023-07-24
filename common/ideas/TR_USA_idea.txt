@@ -1,0 +1,1620 @@
+ideas = {   
+    country = {
+        USA_treaty_of_Tokyo = {
+		    picture = USA_treaty_of_Tokyo
+			modifier = { 
+                consumer_goods_factor = 0.1
+                conscription = -0.01
+                join_faction_tension = 1.0
+                justify_war_goal_time = 1.0
+                generate_wargoal_tension = 1.0
+                send_volunteers_tension = 1.0
+                guarantee_tension = 1.0
+	            drift_defence_factor = -0.5
+			}
+		}
+        USA_depression = {
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.3
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.3
+				consumer_goods_factor = 0.25
+				min_export = -0.4
+			}
+		}
+        USA_depression_1 = {
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.15
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.15
+				min_export = -0.2
+			}
+		}
+		USA_Share_Our_Wealth = {
+			name = USA_Share_Our_Wealth
+			picture = SOV_fourth_five_year_plan
+			modifier = {
+				consumer_goods_factor = 0.3
+				min_export = -0.2
+			}
+		}
+		USA_Share_Our_Wealth_1 = {
+			name = USA_Share_Our_Wealth
+			picture = SOV_fourth_five_year_plan
+			modifier = {
+				consumer_goods_factor = 0.15
+				min_export = -0.1
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
+		USA_Share_Our_Wealth_2 = {
+			name = USA_Share_Our_Wealth
+			picture = SOV_fourth_five_year_plan
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				min_export = -0.05
+			}
+		}
+		USA_welfare_state = {
+			name = USA_welfare_state
+			picture = usa_war_department
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		USA_welfare_state_1 = {
+			name = USA_welfare_state
+			picture = usa_war_department
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor = 0.1
+				stability_factor = 0.1
+				MONTHLY_POPULATION = 0.15
+				conscription_factor = 0.02
+			}
+		}
+        USA_Extremism = {     
+			picture = SPR_masters_of_our_own_fate
+			modifier = {
+				stability_weekly = -0.004
+                totalist_drift = 0.02
+				paternal_autocrat_drift = 0.02
+                national_populist_drift = 0.02
+				Gnosticism_drift = 0.01
+			}
+		}
+		USA_invisible_empire= {     
+			picture = USA_invisible_empire
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.2
+                national_populist_drift = 0.01
+                Gnosticism_drift = 0.01
+			}
+		}
+		USA_invisible_empire_1= {     
+			name = USA_invisible_empire
+			picture = USA_invisible_empire
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				stability_factor = -0.1
+				political_power_cost = 0.2
+                national_populist_drift = 0.05
+                Gnosticism_drift = 0.01
+				resistance_target = -0.1
+			}
+		}
+		USA_invisible_empire_2= {     
+			name = USA_invisible_empire
+			picture = USA_invisible_empire
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				conscription = 0.002
+				stability_factor = -0.1
+				political_power_cost = 0.2
+                national_populist_drift = 0.05
+                Gnosticism_drift = 0.01
+				resistance_target = -0.1
+				resistance_growth = -0.1
+				compliance_growth_on_our_occupied_states = -0.1
+			}
+		}
+		USA_dust_bowl= {     
+			picture = USA_dust_bowl
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				local_resources_factor = -0.10
+				global_building_slots_factor = -0.05
+				MONTHLY_POPULATION = -0.05
+			}
+		}
+		USA_dust_bowl_1= {     
+			name = USA_dust_bowl
+			picture = USA_dust_bowl
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				local_resources_factor = -0.05
+				global_building_slots_factor = -0.05
+				MONTHLY_POPULATION = -0.02
+			}
+		}
+		USA_dust_bowl_2= {     
+			name = USA_dust_bowl_2
+			picture = USA_dust_bowl
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				global_building_slots_factor = 0.05
+				MONTHLY_POPULATION = 0.01
+			}
+		}
+		USA_dust_bowl_3= {     
+			name = USA_dust_bowl_2
+			picture = USA_dust_bowl
+			modifier = {
+				local_resources_factor = 0.1
+				global_building_slots_factor = 0.1
+				MONTHLY_POPULATION = 0.02
+			}
+		}
+        USA_LOSE_IN_CALIFORNIA = {
+			picture = USA_LOSE_IN_CALIFORNIA
+			modifier = {
+                political_power_factor = -0.2
+                stability_factor = -0.2
+                war_support_factor = -0.2
+			    conscription_factor = -0.2
+			}
+		}
+        USA_LOSE_IN_CALIFORNIA_1 = {
+			picture = USA_LOSE_IN_CALIFORNIA
+			modifier = {
+                political_power_factor = -0.1
+                stability_factor = -0.1
+                war_support_factor = -0.1
+				conscription_factor = -0.1
+			}
+		}
+        USA_LOSE_IN_CALIFORNIA_2 = {
+			picture = USA_Manifest_Destiny
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+                political_power_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		USA_LOSE_IN_CALIFORNIA_3 = {
+			name = USA_LOSE_IN_CALIFORNIA_2
+			picture = USA_Manifest_Destiny
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+                conscription_factor = 0.1
+                political_power_factor = 0.1
+                war_support_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		USA_Scientific_management = {
+			picture = generic_production_bonus
+			modifier = {
+                consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		USA_Scientific_management_1 = {
+			picture = generic_production_bonus
+			modifier = {
+                consumer_goods_factor = 0.05
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		USA_Scientific_management_2 = {
+			picture = generic_production_bonus
+			modifier = {
+				production_factory_max_efficiency_factor = 0.2
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		USA_Scientific_management_3 = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.2
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		USA_Automobile_factory = {
+			picture = FRA_Automobile_factory
+            equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+        }
+		USA_aircraft_arsenal = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}	
+		} 
+		USA_shipbuilding_industry = {
+			picture = generic_naval_manufacturer_2
+			modifier = {
+                industrial_capacity_dockyard = 0.15
+			}
+		} 
+		USA_MICC = {
+			picture = man_five_year_plan_air
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}	
+			modifier = {
+				political_power_cost = 0.1
+				research_speed_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+                industrial_capacity_dockyard = 0.15
+			}
+		} 
+		USA_rearmament = {
+			picture = HUN_secret_rearmament
+			modifier = {
+                political_power_factor = -0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				conscription_factor = 0.1
+			}
+		}
+		USA_Marshall_Plan = {
+			picture = MEX_politicised_army
+			
+			modifier = {
+				experience_gain_army_factor = 0.1
+				army_org_Factor = 0.1
+			}
+		} 
+		USA_Marshall_Plan_1 = {
+			name = USA_Marshall_Plan
+			picture = MEX_politicised_army
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			modifier = {
+				experience_gain_army_factor= 0.1
+				army_org_Factor = 0.1
+			}
+		} 
+		USA_Marshall_Plan_2 = {
+			name = USA_Marshall_Plan
+			picture = MEX_politicised_army
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			modifier = {
+				experience_gain_army_factor = 0.1
+				army_org_Factor = 0.1
+				ground_attack_factor = 0.05
+				army_bonus_air_superiority_factor = 0.1
+			}
+		} 
+		USA_Marshall_Plan_3 = {
+			name = USA_Marshall_Plan
+			picture = MEX_politicised_army
+			equipment_bonus = {
+				artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				rocket_artillery_equipment = {
+					build_cost_ic = -0.1
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.05
+				}
+			}
+			modifier = {
+				experience_gain_army_factor = 0.1
+				army_org_Factor = 0.1
+				ground_attack_factor = 0.05
+				army_bonus_air_superiority_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		} 
+		USA_MacArthur_Plan = {
+			picture = CZE_planning_bonus
+			modifier = {
+                experience_gain_army_factor = 0.1
+				planning_speed = 0.1
+			}
+		} 
+		USA_MacArthur_Plan_1 = {
+			name = USA_MacArthur_Plan
+			picture = CZE_planning_bonus
+			
+			modifier = {
+				experience_gain_army_factor = 0.1
+				planning_speed = 0.2
+				max_planning = 0.1
+			}
+		} 
+		USA_MacArthur_Plan_2 = {
+			name = USA_MacArthur_Plan
+			picture = CZE_planning_bonus
+			
+			modifier = {
+                experience_gain_army_factor = 0.1
+				planning_speed = 0.2
+				max_planning = 0.1
+				supply_consumption_factor = -0.1
+				supply_factor = 0.1
+			}
+		} 
+		USA_MacArthur_Plan_3 = {
+			name = USA_MacArthur_Plan
+			picture = CZE_planning_bonus
+			
+			modifier = {
+                experience_gain_army_factor = 0.1
+				planning_speed = 0.2
+				max_planning = 0.1
+				supply_consumption_factor = -0.1
+				supply_factor = 0.1
+				max_command_power = 20
+				army_leader_start_level = 1
+				army_leader_start_planning_level= 1
+			}
+		} 
+		USA_Patton_Plan = {
+			picture = generic_acquire_tanks
+			modifier = {
+                experience_gain_army_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		} 
+		USA_Patton_Plan_1 = {
+			name = USA_Patton_Plan
+			picture = generic_acquire_tanks
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+                experience_gain_army_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		} 
+		USA_Patton_Plan_2 = {
+			name = USA_Patton_Plan
+			picture = generic_acquire_tanks
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+                experience_gain_army_factor = 0.1
+				army_speed_factor = 0.2
+			}
+		} 
+		USA_Patton_Plan_3 = {
+			name = USA_Patton_Plan
+			picture = generic_acquire_tanks
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+                experience_gain_army_factor = 0.1
+				army_speed_factor = 0.2
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		} 
+		USA_Standardization_of_rifles = {
+            picture = generic_infantry_equipment_manufacturer_3
+            equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		USA_This_We_ll_Defend = {
+            picture = generic_infantry_bonus
+			modifier = {
+				defence = 0.05
+				offence = 0.05
+				training_time_army_factor = -0.1
+			}
+		}
+		USA_ground_support = {
+            picture = air_support_focus
+			modifier = {
+				air_cas_present_factor = 0.15
+			}
+		}
+		USA_strategic_bombing = {
+            picture = strategic_bombing_focus
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.1
+			}
+		}
+		USA_USAF = {
+            picture = usa_us_air_force
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.1
+				air_cas_present_factor = 0.15
+				air_defence_factor = 0.1
+				air_attack_factor = 0.1
+			}
+		}
+		USA_Great_White_Fleet = {
+            picture = generic_navy_bonus
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		USA_Great_White_Fleet_1 = {
+            picture = generic_navy_bonus
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+			}
+		}
+		USA_Great_White_Fleet_2 = {
+            picture = generic_navy_bonus
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				navy_submarine_attack_factor = 0.2
+			}
+		}
+		USA_Great_White_Fleet_3 = {
+            picture = generic_navy_bonus
+			equipment_bonus = {
+				ship_hull_carrier = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_heavy = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.1
+				}
+			}
+			modifier = {
+				experience_gain_navy_factor = 0.1
+				navy_capital_ship_defence_factor = 0.1
+				navy_submarine_attack_factor = 0.2
+				navy_max_range_factor = 0.2
+				navy_org_factor = 0.1
+			}
+		}
+		USA_marine = {
+			picture = FRA_down_marianne
+            equipment_bonus = {
+                marine = {
+				breakthrough = 0.05
+				soft_attack = 0.05
+				hard_attack = 0.05
+			    }
+            }
+			modifier = {
+                naval_invasion_planning_bonus_speed = 0.1
+				amphibious_invasion = 0.1
+			}
+		} 
+		USA_hemorrhage = {
+			picture = chi_war_of_resistance3
+			modifier = {
+                MONTHLY_POPULATION = -1.0
+			}
+		} 
+        USA_antisemitism = {
+			picture = jap_duplicate_research
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+                research_speed_factor = -0.1
+			}
+		}
+		USA_antisemitism_1 = {
+			picture = jap_duplicate_research
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+                research_speed_factor = -0.1
+				stability_factor = -0.1
+			}
+		}
+        USA_confiscation_of_property = {
+			picture = eng_tackle_capitalism
+			modifier = {
+                consumer_goods_factor = -0.05
+			}
+		}
+		USA_centralization = {
+			picture = generic_central_management
+			modifier = {
+                political_power_gain = 0.1
+				stability_factor = 0.02
+		    }
+        }
+		USA_centralization_1 = {
+			name = USA_centralization
+			picture = generic_central_management
+			modifier = {
+                political_power_gain = 0.2
+				stability_factor = 0.05
+		    }
+        }
+        USA_antijap = {
+			picture = chi_war_of_resistance3
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+                stability_factor = 0.05
+                conscription_factor = -0.025
+			}
+		}
+		USA_Slavery = {           
+			picture = SOV_organize_wreckers
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+                stability_factor = -0.1
+                political_power_cost = 0.1
+                consumer_goods_factor = -0.05
+                industrial_capacity_factory = 0.1
+		    }
+        }
+		USA_holy_plan = {
+			name = USA_holy_plan
+			picture = generic_usa_conflict
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				consumer_goods_factor = -0.02
+				stability_factor = 0.03
+				conscription_factor = 0.02
+				army_morale_factor = 0.03
+		    }
+        }
+		USA_holy_plan_1 = {
+			name = USA_holy_plan
+			picture = generic_usa_conflict
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				consumer_goods_factor = -0.04
+				stability_factor = 0.06
+				conscription_factor = 0.04
+				army_morale_factor = 0.05
+				command_power_gain_mult = 0.1
+		    }
+        }
+		USA_holy_plan_2 = {
+			name = USA_holy_plan
+			picture = generic_usa_conflict
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				consumer_goods_factor = -0.06
+				stability_factor = 0.09
+				conscription_factor = 0.06
+				army_morale_factor = 0.08
+				command_power_gain_mult = 0.1
+		    }
+        }
+		USA_holy_plan_3 = {
+			name = USA_holy_plan
+			picture = generic_usa_conflict
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				consumer_goods_factor = -0.08
+				stability_factor = 0.12
+				conscription_factor = 0.08
+				army_morale_factor = 0.1
+				command_power_gain_mult = 0.1
+		    }
+        }
+		USA_crusade = {
+			name = USA_holy_plan
+			picture = FRA_feudalism
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				war_stability_factor = 0.1
+				surrender_limit = 0.1
+		    }
+        }
+        USA_expansion = {
+            picture = bul_prussia_of_the_balkans
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+                conscription = 0.025
+                justify_war_goal_time = -0.3
+                war_support_factor = 0.4
+			    army_attack_factor = 0.1
+			}
+		}
+        USA_CIA = {
+            picture = generic_spy_intel
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				stability_factor = 0.2
+				resistance_target = -0.25
+			}
+		}
+        FRA_USA_Friendship = {
+            picture = befriend_usa
+			cancel = {
+				is_subject = yes
+            }
+			modifier = {
+				consumer_goods_factor = -0.02
+                research_speed_factor = 0.03
+			}
+		}
+}
+
+tank_manufacturer = { 
+	
+		designer = yes
+	
+		marmon_herrington = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { small_tank_producer_mass_2 }
+			
+			modifier = {
+			}
+		}
+		
+		chrysler = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { medium_tank_producer_offense_1 }
+			
+			modifier = {
+			}
+		}
+		detroit_arsenal = {
+			
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = USA	
+			}
+			available = { NOT = { has_completed_focus = USA_economy_focus_12 } }
+			
+			research_bonus = {
+				armor = 0.1
+			}
+			
+			traits = { medium_tank_producer_defense_1 }
+
+			modifier = {
+
+			}
+		}
+		detroit_arsenal_1 = {
+			name = detroit_arsenal
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = USA
+				has_completed_focus = USA_economy_focus_12
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { 
+				medium_tank_producer_defense_1
+				medium_tank_producer_mass_1
+			}
+
+			modifier = {
+
+			}
+		}
+		tank_destroyer_board = {
+			
+			picture = usa_tank_destroyer_board
+			allowed = {
+				original_tag = USA
+			}
+
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { }
+			
+			equipment_bonus = {
+				light_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				medium_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+				heavy_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+					ap_attack = 0.1
+					hard_attack = 0.25
+				}
+			}
+
+			modifier = {
+
+			}
+		}
+		
+		army_ordnance_department = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_producer_offense_2 }
+			
+			modifier = {
+			}
+		}	
+	}
+	
+	naval_manufacturer = { 
+	
+		designer = yes
+		
+		norfolk_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			available = { NOT = { has_completed_focus = USA_navy_focus_7 } }
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { small_ship_producer_mass_0 }
+			
+			modifier = {
+			}
+		}
+		norfolk_naval_yard_1 = {
+			name = norfolk_naval_yard
+			picture = norfolk_naval_yard
+			
+			allowed = {
+				original_tag = USA
+				has_completed_focus = USA_navy_focus_7
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { 
+				small_ship_producer_mass_0
+				capital_ship_producer_mass_1
+			}
+			
+			modifier = {
+			}
+		}
+		
+		electric_boat_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { small_ship_producer_offense_2 }
+			
+			modifier = {
+			}
+		}
+		
+		brooklyn_naval_yard = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { cruiser_producer_offense_2 }
+			
+			modifier = {
+			}
+		}
+		
+		newport_news_shipbuilding = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { capital_ship_producer_mass_2 }
+			
+			modifier = {
+			}
+		}
+	}
+	
+	aircraft_manufacturer = { 
+		
+		designer = yes
+		
+		north_american_aviation = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { fighter_producer_offense_2 }
+			
+			modifier = {
+			}
+		}
+		
+	
+		
+		lockheed = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { bomber_producer_offense_2 }
+			
+			modifier = {
+			}
+		}
+		
+		douglas_aircraft_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { nav_cas_producer_mass_2 }
+			
+			modifier = {
+			}
+		}
+
+		
+		boeing = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { bomber_producer_mass_1 }
+			
+			modifier = {
+			}
+		}
+		
+
+		grumman = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { nav_cas_producer_offense_2 }
+			
+			modifier = {
+			}
+		}		
+	}
+	
+	
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		springfield_armory = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			available = { NOT = { has_completed_focus = USA_economy_focus_5 } }
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = { infantry_equipment_producer_allround_1 }
+			
+			modifier = {
+			}
+		}
+		springfield_armory_1 = {
+			name = springfield_armory
+			picture = springfield_armory
+			allowed = {
+				original_tag = USA
+				has_completed_focus = USA_economy_focus_5
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+			traits = { 
+				infantry_equipment_producer_allround_1 
+				infantry_equipment_producer_mass_1
+			}
+			
+			modifier = {
+			}
+		}
+		
+		ford_motor_company = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+			
+			traits = { motorised_equipment_producer_mass_2 }
+			
+			modifier = {
+			}
+		}
+		rock_island_arsenal = {
+			
+			
+			allowed = {
+				original_tag = USA
+			}
+			
+
+			
+			research_bonus = {
+				artillery = 0.15
+			}
+			
+			traits = { artillery_producer_offense_2 }
+			
+			modifier = {
+			}
+		}
+	}
+	
+
+	
+	industrial_concern = {		
+		standard_oil_california = {
+			allowed = {
+				original_tag = USA
+			}
+            modifier = {
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+						
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.1
+			}
+			
+			traits = { oil_concern }
+			
+			modifier = {
+			}
+		}
+		
+		general_electric = {
+			allowed = {
+				original_tag = USA
+			}
+            modifier = {
+				research_speed_factor = 0.05
+			}
+						
+			research_bonus = {
+				electronics = 0.1
+			}
+			
+			traits = { electronics_manufacturer }
+			
+			modifier = {
+			}
+		}
+		USA_general_motors = {
+			picture = usa_general_motors
+			allowed = {
+				original_tag = USA
+			}
+			
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			traits = { industrial_manufacturer }
+			
+            modifier = {
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+	}	
+	#minister
+	Head_of_State = {	
+		USA_Norman_Thomas = {
+		
+		picture = USA_Norman_Thomas
+		
+		allowed = {
+			original_tag = USA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+		
+		traits = { 
+			    Head_of_State
+				social_democrat
+				TR_pig_headed_isolationist
+				}
+			}
+		USA_Gerald_LK_Smith = {
+		    picture = USA_Gerald_LK_Smith
+		    allowed = {
+			    original_tag = USA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+		
+		    traits = { 
+			    Head_of_State
+				national_populist
+				TR_powerhungry_demagogue
+				}
+			}
+		}
+	Government_leaders = {	
+			USA_James_Hudson_Maurer = {
+			
+			picture = USA_James_Hudson_Maurer
+			
+			allowed = {
+				original_tag = USA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Government_leaders_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Government_leaders
+					social_democrat
+					TR_ambitious_union_boss
+					}
+				}
+		USA_William_Dudley_Pelley = {
+		    picture = USA_William_Dudley_Pelley
+		    allowed = {
+			    original_tag = USA
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+		
+		    traits = { 
+		        Government_leaders
+			    national_populist
+			    TR_Orgone
+			}
+		}
+	}
+    Minister_of_Foreign_Affairs = {	
+			USA_Devere_Allen = {
+			
+			picture = USA_Devere_Allen
+			
+			allowed = {
+				original_tag = USA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Foreign_Affairs_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Minister_of_Foreign_Affairs
+					social_democrat
+					TR_biased_intellectual
+					}
+				}
+		USA_Hamilton_Fish_III = {	
+			picture = USA_Hamilton_Fish_III
+			allowed = {
+				original_tag = USA
+				}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = { 
+				Minister_of_Foreign_Affairs
+				national_populist
+				TR_biased_intellectual
+				}
+			}
+		}
+		Minister_of_Economy = {	
+			USA_Haim_Kantorovitch = {
+			
+			picture = USA_Haim_Kantorovitch
+			
+			allowed = {
+				original_tag = USA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Minister_of_Economy
+					social_democrat
+					TR_mixed_economy
+					}
+				}
+			USA_william_lemke = {
+			picture = USA_william_lemke
+			allowed = {
+				original_tag = USA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+			
+			traits = { 
+				    Minister_of_Economy
+					national_populist
+					TR_keynesian_economy
+					}
+				}
+			}
+		Minister_of_Interior = {	
+			USA_Darlington_Hoopes = {
+			
+			picture = USA_Darlington_Hoopes
+				
+			allowed = {
+					original_tag = USA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Interior_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				
+			traits = { 
+				    Minister_of_Interior
+					social_democrat
+					TR_silent_lawyer
+					}
+				}
+			USA_lothrop_stoddard = {
+			
+			picture = USA_lothrop_stoddard
+				
+			allowed = {
+					original_tag = USA
+				}
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Interior_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no
+				
+			traits = { 
+				    Minister_of_Interior
+					national_populist
+					TR_efficient_sociopath
+					}
+				}
+			}
+		chief_of_staff = {	
+			USA_William_Leahy = {
+			
+			picture = USA_William_Leahy
+				
+			allowed = {
+					original_tag = USA
+				}
+				
+			traits = { 
+				    chief_of_staff
+					cos_school_of_fire_support
+					}
+				}
+			}
+		chief_of_army = {	
+			USA_Malin_craig = {
+				
+			picture = USA_Malin_craig
+					
+			allowed = {
+				original_tag = USA
+				}
+					
+			traits = { 
+				    chief_of_army
+					carm_guns_and_butter_doctrine
+					}
+				}
+			}
+		chief_of_navy = {	
+			USA_William_Leahy_nav = {
+			name = USA_William_Leahy
+			picture = USA_William_Leahy
+					
+			allowed = {
+				original_tag = USA
+				}
+					
+			traits = { 
+				    chief_of_navy
+					cnav_base_control_doctrine
+					}
+				}
+			}
+		chief_of_air_force = {	
+			USA_henry_arnold = {
+				
+			picture = USA_henry_arnold
+					
+			allowed = {
+				original_tag = USA
+				}
+					
+			traits = { 
+				    chief_of_air_force
+					cair_carpet_bombing_doctrine
+					}
+				}
+			}
+}
+

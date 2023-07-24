@@ -76,67 +76,6 @@ GER_integrate_policy = {
 			factor = 50
 		}
 	}
-#ズデーテンラント
-	tr_integrate_Sudetenland_province = {
-		icon = infiltrate_state
-		allowed = {
-			OR = {
-				tag = PRE
-				tag = GER
-				tag = RAT
-			}
-		}
-		visible = {
-			OR = {
-				tag = PRE
-				tag = GER
-				AND = { tag = RAT has_country_flag = RAT_Greater_germany }
-			}
-			OR = {
-				69 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				74 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				976 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				977 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				994 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-			}
-		}
-		available = {
-			has_full_control_of_state = 69
-			has_full_control_of_state = 74
-			has_full_control_of_state = 976
-			has_full_control_of_state = 977
-			has_full_control_of_state = 994
-		}
-		highlight_states = {
-			highlight_state_targets = { state = 69 state = 74 state = 976 state = 977 state = 994 }
-		}
-		cost = 90
-		fire_only_once = yes
-		modifier = {
-            consumer_goods_factor = 0.05
-            MONTHLY_POPULATION = -0.1
-			political_power_gain = -0.25
-		}
-		days_remove = 150
-		complete_effect = {
-			add_state_claim = 69
-			add_state_claim = 74
-			add_state_claim = 976
-			add_state_claim = 977
-			add_state_claim = 994
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Sudetenland_province"
-			69 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-			74 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-			976 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-            977 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-            994 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-		}
-		ai_will_do = {
-			factor = 50
-		}
-	}
 #ルクセンブルク
 	tr_integrate_LUX_province = {
 		icon = infiltrate_state

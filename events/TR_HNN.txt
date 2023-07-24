@@ -623,6 +623,9 @@ country_event = {
 			remove_idea = HNN_RJN_partisan
 			add_idea = HNN_RJN_partisan_1
 		}
+		hidden_effect = {
+		    country_event = { id = TR_news.67 days = 3 }
+	    }
 	}
 }
 #唐が長沙を占領
@@ -657,6 +660,9 @@ country_event = {
 		complete_national_focus = HNN_Political_focus_5
 		complete_national_focus = HNN_Kuomintang_focus_1
 		750 = { set_demilitarized_zone = no }
+		hidden_effect = {
+		    country_event = { id = TR_news.71 days = 1 }
+	    }
 	}
 }
 #紅軍が長沙を占領
@@ -688,6 +694,9 @@ country_event = {
 		600 = { set_demilitarized_zone = no }
 		872 = { set_demilitarized_zone = no }
 		1010 = { set_demilitarized_zone = no }
+		hidden_effect = {
+		    country_event = { id = TR_news.72 days = 1 }
+	    }
 	}
 }
 #事態の収拾

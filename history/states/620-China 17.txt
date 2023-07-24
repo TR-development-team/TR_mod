@@ -1,7 +1,9 @@
 state={
 	id=620
 	name="TR_STATE_620"
-
+	resources={
+		steel=20 
+	}
 	history={
 		owner = WHN
 		add_core_of = WHN

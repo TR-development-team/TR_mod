@@ -1027,14 +1027,18 @@ focus_tree = {
 			}
             set_country_flag = RUS_FEBREVO_II
             add_popularity = {
-			ideology = national_populist
-			popularity = 0.1
+			    ideology = national_populist
+			    popularity = 0.1
 		        }
 			set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		         }
+			    ruling_party = national_populist
+			    elections_allowed = no
+		        }
+			hidden_effect = { 
+                set_cosmetic_tag = RUS_empire_nationalist
+			}
 		    }
+
 	}
 	#忠誠による団結
 	focus = {
@@ -3871,10 +3875,6 @@ focus_tree = {
 		}
 		available = {
 			is_subject = no
-			OR= {
-				is_faction_leader = yes
-				is_in_faction = yes
-			}
 		}
 		prerequisite = { focus = RUS_Diplomacy_focus_13 }
 		prerequisite = { focus = RUS_Diplomacy_focus_15 }
@@ -3890,6 +3890,13 @@ focus_tree = {
 				limit = { country_exists = KAZ }
 				create_wargoal = {
 					target = KAZ
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = ALO }
+				create_wargoal = {
+					target = ALO
 					type = annex_everything
 				}
 			}

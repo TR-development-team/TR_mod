@@ -9,19 +9,11 @@ ideas = {
 #####################
 
 country = {
-        ZHI_hirohito = {
-			allowed = {
-				always = no
-			}
-            picture = jap_hirohito
-
-			
-			removal_cost = -1
-	
-
-			modifier = {
-				political_power_factor = 0.05
-                                stability_factor = 0.05
+	    JAP_treaty_of_Tokyo = {
+			name = USA_treaty_of_Tokyo
+		    picture = USA_treaty_of_Tokyo
+			modifier = { 
+                consumer_goods_factor = -0.05
 			}
 		}
         JAP_NAISEIJUSHI = {
@@ -2322,7 +2314,7 @@ country = {
 
 			removal_cost = -1
 
-			picture = RUS_scientist_defect
+			picture = HUN_secret_rearmament
 			
 			modifier = {
                 stability_factor = -0.1

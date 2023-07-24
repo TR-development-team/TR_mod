@@ -7,107 +7,83 @@ country_event = {
 	desc = TR_Australia.1.d
 	picture = GFX_report_event_france_parade
 
-
-        fire_only_once = yes
-       trigger = {
-                tag = AST
+	fire_only_once = yes
+    trigger = {
+        tag = AST
 		is_subject = no
-                country_exists = GB1
-                NOT = {
-				country_exists = GB0
-			}
-               
-		
+        country_exists = GB1
+        NOT = {
+			country_exists = GB0
+		}	
 	}
 	
-	
-        
-        option = {
+    option = {
 		name = TR_Australia.1.a
-                set_cosmetic_tag = GBRandAUSTRALASIAandIREbyENG_united_kingdom
-                add_ideas = AST_Exile_Hanpatsu
-                set_global_flag = AST_GBR_Exile
+        set_cosmetic_tag = GBRandAUSTRALASIAandIREbyENG_united_kingdom
+        add_ideas = AST_Exile_Hanpatsu
+        set_global_flag = AST_GBR_Exile
 		hidden_effect = { 
-                AST_Elizabeth_II = {
-			promote_character = {
-			ideology= social_democrat_subtype
+            AST_Elizabeth_II = {
+			    promote_character = {
+			        ideology= social_democrat_subtype
+			    }
+			    promote_character = {
+			        ideology= social_liberal_subtype
+			    }
+			    promote_character = {
+			        ideology= market_liberal_subtype
+			    }
+			    promote_character = {
+					ideology= social_conservative_subtype
+				}
+			    promote_character = {
+					ideology= authoritarian_democrat_subtype
+			    }
+			    promote_character = {
+					ideology= paternal_autocrat_subtype
+			    }
+			    promote_character = {
+					ideology= national_populist_subtype
+			    }
+			    promote_character = {
+					ideology= Gnosticism_subtype
+			    }
+		    }
+            set_politics = {
+			    ruling_party = social_conservative
+			    elections_allowed = no
+		    }
+            add_popularity = {
+			    ideology = social_conservative
+			    popularity = 0.12
+		    }
+            }
+        annex_country = {
+            target = NZL
+            transfer_troops = yes
+            }
+        284 = { add_core_of = AST }
+		723 = { add_core_of = AST }
+		every_state = {
+			limit = {
+				is_great_britain = yes
 			}
-			promote_character = {
-			ideology= social_liberal_subtype
-			}
-			promote_character = {
-			ideology= market_liberal_subtype
-			}
-			promote_character = {
-			ideology= social_conservative_subtype
-			}
-			promote_character = {
-			ideology= authoritarian_democrat_subtype
-			}
-			promote_character = {
-			ideology= paternal_autocrat_subtype
-			}
-			promote_character = {
-			ideology= national_populist_subtype
-			}
-			promote_character = {
-			ideology= Gnosticism_subtype
-			}
+			add_claim_by = AST
 		}
-                set_politics = {
-			ruling_party = social_conservative
-			elections_allowed = no
-		}
-                add_popularity = {
-			ideology = social_conservative
-			popularity = 0.12
-		}
-                }
-                annex_country = {
-                               target = NZL
-                               transfer_troops = yes
-                             }
-                284 = {
-					add_core_of = AST
-				}
-		723 = {
-					add_core_of = AST
-				}
-                       add_state_claim = 126
-                       add_state_claim = 125
-                       add_state_claim = 127
-                       add_state_claim = 123
-                       add_state_claim = 122
-                       add_state_claim = 120
-                       add_state_claim = 121
-                       add_state_claim = 128	
-                       add_state_claim = 129
-                       add_state_claim = 130
-                       add_state_claim = 131
-                       add_state_claim = 132
-                       add_state_claim = 133
-                       add_state_claim = 136
-                       add_state_claim = 338	
-
-              hidden_effect = {
-                          
-                          country_event = {
-					id =  TR_Australia.2
-					days = 3
-					
-				}
-                         country_event = {
-					id = TR_news.19
-					days = 1
-					
-				}
-                          country_event = {
-					id =  TR_Australia.4
-					days = 44
-					
-				}
-		}
-                 
+        hidden_effect = {          
+            country_event = {
+				id =  TR_Australia.2
+				days = 3
+			}
+            country_event = {
+				id = TR_news.19
+				days = 1
+			}
+            #country_event = {
+			#	id =  TR_Australia.4
+			#	days = 44
+			#}
+		}               
 	}
 
 }
@@ -188,32 +164,28 @@ country_event = {
         
        option = { 
 		name = TR_Australia.4.a
-                ai_chance = {
+        ai_chance = {
 			base = 40
 		}
-                add_popularity = {
+        add_popularity = {
 			ideology = Gnosticism
 			popularity = 0.05
 		}
-                
-                add_stability = -0.05	
-                hidden_effect = {
-                          country_event = {
-					id =  TR_Australia.5
-					days = 2
-					
-				}
+        add_stability = -0.05	
+        hidden_effect = {
+            country_event = {
+				id =  TR_Australia.5
+				days = 2
+			}
 		}
-
 	}
-        option = { 
+    option = { 
 		name = TR_Australia.4.b
-                ai_chance = {
+        ai_chance = {
 			base = 60
 		}
-                set_country_flag = AST_Democratic_Hold
-                add_political_power = 5
-
+        set_country_flag = AST_Democratic_Hold
+        add_political_power = 5
 	}
 }
 
@@ -269,76 +241,20 @@ country_event = {
 	desc = TR_Australia.6.d
 	picture = GFX_report_event_france_parade
 
-
-        fire_only_once = yes
-
-        is_triggered_only = yes	
-	
-        
-       option = { 
+    fire_only_once = yes
+    is_triggered_only = yes	
+	    
+    option = { 
 		name = TR_Australia.6.a
-                 ai_chance = {
-			base = 0
+		every_state = {
+			limit = {
+				is_great_britain = yes
+			}
+			remove_claim_by = AST
+			add_core_of = AST
 		}
-                remove_state_claim = 126
-                remove_state_claim = 125
-                remove_state_claim = 127
-                remove_state_claim = 123
-                remove_state_claim = 122
-                remove_state_claim = 120
-                remove_state_claim = 121
-                remove_state_claim = 128	
-                remove_state_claim = 129
-                remove_state_claim = 130
-                remove_state_claim = 131
-                remove_state_claim = 132
-                remove_state_claim = 133
-                remove_state_claim = 136
-                remove_state_claim = 338	
-                release_puppet = GBR
-
-                GBR = { 
-                       change_tag_from =AST
-                       country_event = {
-					id = TR_Australia.7
-					days = 1
-					
-				}
-                      }
-
-	 }
-               option = { 
-		name = TR_Australia.6.b
-                ai_chance = {
-			base = 100
-		}
-
-                remove_state_claim = 126
-                remove_state_claim = 125
-                remove_state_claim = 127
-                remove_state_claim = 123
-                remove_state_claim = 122
-                remove_state_claim = 120
-                remove_state_claim = 121
-                remove_state_claim = 128	
-                remove_state_claim = 129
-                remove_state_claim = 130
-                remove_state_claim = 131
-                remove_state_claim = 132
-                remove_state_claim = 133
-                remove_state_claim = 136
-                remove_state_claim = 338	
-                release_puppet = GBR
-               GBR = { 
-                     country_event = {
-					id = TR_Australia.7
-					days = 1
-					
-				     }
-                      }
-
+		set_capital = {	state = 126	remember_old_capital = no }
 	}
-
 }
 
 country_event = {
@@ -355,58 +271,59 @@ country_event = {
         
        option = { 
 		name = TR_Australia.7.a
-                hidden_effect = { kill_ideology_leader = social_democrat 
-                                  kill_ideology_leader = social_liberal 
-                                  kill_ideology_leader = market_liberal
-                                  kill_ideology_leader = social_conservative
-                                  kill_ideology_leader = Gnosticism
-          	create_country_leader = {
+        hidden_effect = { 
+		    kill_ideology_leader = social_democrat 
+            kill_ideology_leader = social_liberal 
+            kill_ideology_leader = market_liberal
+            kill_ideology_leader = social_conservative
+			kill_ideology_leader = Gnosticism
+        create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth_II.png"
 			expire = "1965.1.1"
 			ideology = social_democrat_subtype
-                        traits = { AST_Elisabeth_Great }
+            traits = { AST_Elisabeth_Great }
 		}
-                create_country_leader = {
+        create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth_II.png"
 			expire = "1965.1.1"
 			ideology = social_liberal_subtype
-                        traits = { AST_Elisabeth_Great }
+            traits = { AST_Elisabeth_Great }
 		}
-                create_country_leader = {
+        create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth_II.png"
 			expire = "1965.1.1"
 			ideology = market_liberal_subtype
-                        traits = { AST_Elisabeth_Great }
+            traits = { AST_Elisabeth_Great }
 		}
-                create_country_leader = {
+        create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth_II.png"
 			expire = "1965.1.1"
 			ideology = social_conservative_subtype
-                        traits = { AST_Elisabeth_Great }
+            traits = { AST_Elisabeth_Great }
 		}
-                create_country_leader = {
+        create_country_leader = {
 			name = "エリザベス2世"
 			desc = ""
-			picture = "Portrait_AST_Elizabeth.tga"
+			picture = "gfx/leaders/AST/Portrait_AST_Elizabeth_II.png"
 			expire = "1965.1.1"
 			ideology = Gnosticism_subtype
-                        traits = { AST_Elisabeth_Terror }
+            traits = { AST_Elisabeth_Terror }
 		}
-                remove_ideas = GBR_LOSE_IN_INDIA
-                remove_ideas = george_v
-                remove_ideas = GBR_depression
-                remove_ideas = GBR_revolution
-                remove_ideas = ENR_REVOLUTION    
-                AST = { end_puppet = GBR }    
-              }
+        remove_ideas = GBR_LOSE_IN_INDIA
+        remove_ideas = george_v
+        remove_ideas = GBR_depression
+        remove_ideas = GBR_revolution
+        remove_ideas = ENR_REVOLUTION    
+        AST = { end_puppet = GBR }
+        }
 	}
 
 }

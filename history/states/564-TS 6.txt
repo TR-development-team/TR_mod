@@ -2,8 +2,8 @@
 state={
 	id=564
 	name="STATE_564" # Ulan Ude
-	manpower = 370893
-	state_category = rural
+	manpower = 1370893
+	state_category = town
 	resources={
 		steel=10 # was: 20
 		chromium=12 # was: 34
@@ -15,6 +15,7 @@ state={
 		owner = SIB
 		buildings = {
 			infrastructure = 2
+                        industrial_complex = 1
 
 		}
 		add_core_of = SIB

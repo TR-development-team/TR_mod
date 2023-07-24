@@ -296,69 +296,6 @@ units = {
 		start_equipment_factor = 0.3
 
 	}
-
-	# Corp 6 Armata
-	division = {
-		#name = "Divizia 16 Infanterie"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 16
-		}
-		location = 6682
-		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		#name = "Divizia 17 Infanterie"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 17
-		}
-		location = 6697
-		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		#name = "Divizia 18 Infanterie"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 18
-		}
-		location = 3696
-		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		#name = "Divizia 20 Infanterie"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 713
-		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-	division = {
-		#name = "Brigada 8 Cavalerie"
-		division_name = {    # New syntax for compatibility with name lists
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location = 6682
-		division_template = "Brigada de Cavalerie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-
-	}
-
 	# Corp 7 Armata
 	division = {
 		#name = "Divizia 1 Infanterie"

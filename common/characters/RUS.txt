@@ -350,22 +350,6 @@ characters={
 			logistics_skill = 3
 		}
 	}
-	RUS_Pyotr_Krasnov={
-		name=RUS_Pyotr_Krasnov
-		portraits={
-			civilian={
-				large="gfx/leaders/RUS/Portrait_RUS_Pyotr_Krasnov_1.png"
-			}
-		}
-		corps_commander = {
-			traits = { cavalry_officer cavalry_leader organizer }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 3
-			logistics_skill = 3
-		}
-	}
 	RUS_Ivan_Romanovsky={
 		name=RUS_Ivan_Romanovsky
 		portraits={

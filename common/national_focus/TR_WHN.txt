@@ -572,6 +572,13 @@ focus_tree = {
 				type = annex_everything
 			}
 		}
+		hidden_effect = {
+			country_event = {
+				id = TR_news.63
+				days = 1
+			}
+			
+		}
 		}
 	}
 	#河南の白蓮教徒を鎮める
@@ -716,6 +723,13 @@ focus_tree = {
 		add_stability = 0.1
 		set_cosmetic_tag = CHI_minguo
 		set_capital = {state = 613}
+		hidden_effect = {
+			country_event = {
+				id = TR_news.68
+				days = 1
+			}
+			
+		}
 		}
 	}
 	#高まる支持

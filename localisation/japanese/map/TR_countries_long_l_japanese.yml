@@ -36,8 +36,12 @@
  CHI_council_republic_DEF:0 "中華評議会共和国"
  CHI_minguo:0 "中華民国"
  CHI_minguo_DEF:0 "中華民国"
- CHI_united_provinces:0 "中華連合省"
- CHI_united_provinces_DEF:0 "中華連合省"
+ CHI_united_provinces_Zhao:0 "中華連合省"
+ CHI_united_provinces_Zhao_DEF:0 "中華連合省"
+ CHI_united_provinces_Chen:0 "中華連合省"
+ CHI_united_provinces_Chen_DEF:0 "中華連合省"
+ CHI_united_republic:0 "中華連合共和国"
+ CHI_united_republic_DEF:0 "中華連合共和国"
  
  CKK_republic:0 "チュクチ共和国"
  CKK_republic_DEF:0 "チュクチ共和国"
@@ -45,6 +49,11 @@
  FEA_republic:0 "極東共和国"
  FEA_republic_DEF:0 "極東共和国"
  
+ GND_special_economic_zone:0 "広東省経済特区"
+ GND_special_economic_zone_DEF:0 "広東省経済特区"
+ GND_military_clique:0 "広東軍閥"
+ GND_military_clique_DEF:0 "広東軍閥"
+
  
  GXC_military_clique:0 "広西軍閥"
  GXC_military_clique_DEF:0 "広西軍閥"
@@ -68,6 +77,9 @@
  
  JBS_Emirate:0 "ジャバル・シャンマル首長国"
  JBS_Emirate_DEF:0 "ジャバル・シャンマル首長国"
+
+ KAZ_republic:0 "カザフスタン共和国"
+ KAZ_republic_DEF:0 "カザフスタン共和国"
  
  KHI_khanate:0 "ヒヴァ・ハン国"
  KHI_khanate_DEF:0 "ヒヴァ・ハン国"
@@ -236,10 +248,10 @@
  
  
  CYP_republic:0 "キプロス共和国"
- CYP_republic_DEF:0 "キプロス共和国"
+ CYP_republic_DEF:0 "チェコ共和国"
  
  CZE_kingdom:0 "ボヘミア王国"
- CZE_kingdom_DEF:0 "チェコ王国"
+ CZE_kingdom_DEF:0 "ボヘミア王国"
  
  DAG_republic:0 "ダゲスタン共和国"
  DAG_republic_DEF:0 "ダゲスタン共和国"
@@ -250,7 +262,9 @@
  DNZ_free_city:0 "自由都市ダンツィヒ"
  DNZ_free_city_DEF:0 "自由都市ダンツィヒ"
  
- 
+ DON_republic:0 "ドン共和国"
+ DON_republic_DEF:0 "ドン共和国"
+
  EGR_democratic_republic:0 "東ドイツ民主共和国"
  EGR_democratic_republic_DEF:0 "東ドイツ民主共和国"
  
@@ -777,14 +791,13 @@
  GAN_ma_military_clique:0 "甘粛馬軍閥"
  GAN_ma_military_clique_DEF:0 "甘粛馬軍閥"
  
- 
- 
  HNN_military_clique:0 "湖南軍閥"
  HNN_military_clique_DEF:0 "湖南軍閥"
+ HNN_republic:0 "湖南共和国"
+ HNN_republic_DEF:0 "湖南共和国"
  
  HYD_princely_state:0 "ハイデラバード藩王国"
  HYD_princely_state_DEF:0 "ハイデラバード藩王国"
- 
  
  KUM_khanate:0 "クムル・ハン国"
  KUM_khanate_DEF:0 "クムル・ハン国"
@@ -795,10 +808,8 @@
  OTT_sublime_state:0 "崇高なるオスマン国"
  OTT_sublime_state_DEF:0 "崇高なるオスマン国"
  
- 
  QIG_ma_military_clique:0 "青海馬軍閥"
  QIG_ma_military_clique_DEF:0 "青海馬軍閥"
- 
  
  SCC_SOV_federative_socialist_republic:0 "南コーカサス・ソビエト連邦社会主義共和国"
  SCC_SOV_federative_socialist_republic_DEF:0 "南コーカサス・ソビエト連邦社会主義共和国"
@@ -823,6 +834,10 @@
  BDN_reich:0 "バーデン国"
  BDN_reich_DEF:0 "バーデン国"
  
+ BLT_commune:0 "バルト・コムーナ"
+ BLT_commune_DEF:0 "バルト・コムーナ"
+ BLT_Freikorps:0 "バルト義勇軍"	
+ BLT_Freikorps_DEF:0 "バルト義勇軍"
  BLT_united_republic:0 "バルト連合共和国"
  BLT_united_republic_DEF:0 "バルト連合共和国"
  
@@ -875,6 +890,8 @@
  
  RUS_empire:0 "ロシア帝国"
  RUS_empire_DEF:0 "ロシア帝国"
+ RUS_empire_nationalist:0 "ロシア帝国"
+ RUS_empire_nationalist_DEF:0 "ロシア帝国"
  RUS_federal_empire:0 "ロシア連邦帝国"
  RUS_federal_empire_DEF:0 "ロシア連邦帝国"
  RUS_peoples_republic:0 "ロシア人民共和国"

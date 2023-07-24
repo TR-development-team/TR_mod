@@ -223,6 +223,50 @@ is_nigeria = {
 	}
 }
 
+is_california = {
+	OR = {
+		state = 377
+		state = 378
+		state = 379
+		state = 380
+		state = 385
+		state = 386
+		state = 387
+		state = 483
+		state = 484
+		state = 910
+	}
+}
+
+is_greater_california = {
+	OR = {
+		is_california = yes
+		state = 463
+		state = 471
+		state = 473
+		state = 739
+		state = 740
+		state = 962
+		state = 376
+		state = 381
+		state = 382
+		state = 388
+	}
+}
+
+is_Kazakhstan = {
+	OR = {
+		region = 136 #Alash
+		state = 402
+		state = 404
+		state = 406
+		state = 407
+		state = 587
+		state = 586
+		state = 589
+	}
+}
+
 is_in_asia = {
 	capital_scope = { is_on_continent = asia }
 }

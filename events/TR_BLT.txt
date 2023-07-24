@@ -1,0 +1,380 @@
+add_namespace = TR_Baltic
+
+#バルト革命
+country_event = {
+	id =TR_Baltic.1
+	title =TR_Baltic.1.t
+	desc =TR_Baltic.1.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = TR_Baltic.2
+				days = 7
+			}
+		}
+	}
+	option = {
+		name =TR_Baltic.1.a
+		retire_character = BLT_Nikolai_Yudenich
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = radical_socialist
+			elections_allowed = no
+		}
+		set_cosmetic_tag = BLT_commune
+		every_state = {
+			limit = {
+				is_owned_by = BLT
+				NOT = { state = 191 state = 881 state = 883 }
+			}
+			set_demilitarized_zone = yes
+		}	
+	}
+}
+#独立戦争
+country_event = {
+	id =TR_Baltic.2
+	title =TR_Baltic.2.t
+	desc =TR_Baltic.2.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name =TR_Baltic.2.a
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = BLT_civil_war
+		hidden_effect = {
+			EST = { 
+				transfer_state = 13
+				transfer_state = 880
+				transfer_state = 882
+				country_event = {
+					id = TR_Baltic.3
+					days = 2
+				}
+			}
+			LAT = { 
+				transfer_state = 12
+				transfer_state = 190
+				transfer_state = 878
+				transfer_state = 879
+				country_event = {
+					id = TR_Baltic.4
+					days = 2
+				}
+			}
+		}
+	}
+	option = {
+		name =TR_Baltic.2.b
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = BLT_civil_war
+		hidden_effect = {
+			EST = { 
+				transfer_state = 13
+				transfer_state = 880
+				transfer_state = 882
+				country_event = {
+					id = TR_Baltic.3
+					days = 2
+				}
+			}
+			LAT = { 
+				change_tag_from = BLT
+				transfer_state = 12
+				transfer_state = 190
+				transfer_state = 878
+				transfer_state = 879
+				country_event = {
+					id = TR_Baltic.4
+					days = 2
+				}
+			}
+		}
+	}
+	option = {
+		name =TR_Baltic.2.c
+		ai_chance = {
+			base = 0
+		}
+		set_country_flag = BLT_civil_war
+		hidden_effect = {
+			EST = { 
+				change_tag_from = BLT
+				transfer_state = 13
+				transfer_state = 880
+				transfer_state = 882
+				country_event = {
+					id = TR_Baltic.3
+					days = 2
+				}
+			}
+			LAT = { 
+				transfer_state = 12
+				transfer_state = 190
+				transfer_state = 878
+				transfer_state = 879
+				country_event = {
+					id = TR_Baltic.4
+					days = 2
+				}
+			}
+		}
+	}
+}
+#エストニアの成立
+country_event = {
+	id =TR_Baltic.3
+	title =TR_Baltic.3.t
+	desc =TR_Baltic.3.d
+	picture = GFX_report_event_generic_rally
+	is_triggered_only = yes
+    fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = TR_Baltic.5
+				days = 7
+			}
+		}
+	}
+	option = {
+		name =TR_Baltic.3.a
+		load_oob = "EST_unit"
+		declare_war_on = {
+			target = BLT
+			type = annex_everything
+		}
+	}
+}
+#ラトビアの成立
+country_event = {
+	id =TR_Baltic.4
+	title =TR_Baltic.4.t
+	desc =TR_Baltic.4.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name =TR_Baltic.4.a
+		load_oob = "LAT_unit"
+		declare_war_on = {
+			target = BLT
+			type = annex_everything
+		}
+	}
+}
+#ユデーニチとエストニア
+country_event = {
+	id =TR_Baltic.5
+	title =TR_Baltic.5.t
+	desc =TR_Baltic.5.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name =TR_Baltic.5.a
+		ai_chance = {
+			base = 40
+		}
+		recruit_character = EST_Nikolai_Yudenich
+	}
+	option = {
+		name =TR_Baltic.5.b
+		ai_chance = {
+			base = 40
+		}
+	}
+}
+#プロイセン残党の襲来
+country_event = {
+	id =TR_Baltic.6
+	title =TR_Baltic.6.t
+	desc =TR_Baltic.6.d
+	picture = GFX_report_event_generic_rally
+
+    trigger = {
+        tag = BLT
+		is_subject = no
+		has_war_with = LAT
+        has_country_flag = BLT_civil_war
+        NOT = {
+			country_exists = PRE
+		}	
+	}
+    fire_only_once = yes
+
+	option = {
+		name =TR_Baltic.6.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+		    PRE = { 
+				load_focus_tree = generic_focus
+				remove_ideas = GER_CIVIL_WAR
+				transfer_state = 190
+				every_state = {
+					limit = {
+						is_full_germany = yes
+					}
+					remove_core_of = PRE
+					add_claim_by = PRE
+				}	
+				every_state = {
+					limit = {
+						is_core_of = BLT
+					}
+					add_core_of = PRE
+				}	
+				add_manpower = 10000
+				set_cosmetic_tag = BLT_Freikorps
+				PRE_Rudiger_von_der_Goltz = {
+					promote_leader = yes
+					promote_character = {
+						ideology= dem_Military_junta_subtype
+					}
+					promote_character = {
+						ideology= militarism_subtype
+					}
+					promote_character = {
+						ideology= national_populist_subtype
+					}
+					promote_character = {
+						ideology= Aryanism_subtype
+					}
+				}
+				set_politics = {
+					ruling_party = Gnosticism
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 2
+					syndicalist = 3
+					radical_socialist = 5
+					social_democrat = 9
+					social_liberal = 2
+					market_liberal = 4
+					social_conservative = 2
+					authoritarian_democrat = 7
+					paternal_autocrat = 13
+					national_populist = 21
+					Gnosticism = 32
+				}
+				retire_character = PRE_Erich_Ludendorff_marshal
+				retire_character = PRE_Kurt_von_Schleicher_marshal
+			    country_event = {
+			    	id = TR_Baltic.7
+		    		days = 1
+		    	}
+		    }
+	    }
+	}
+	option = {
+		name =TR_Baltic.6.b
+		ai_chance = {
+			base = 0
+		}
+		hidden_effect = {
+		    PRE = { 
+				load_focus_tree = generic_focus
+				remove_ideas = GER_CIVIL_WAR
+				transfer_state = 190
+				every_state = {
+					limit = {
+						is_full_germany = yes
+					}
+					remove_core_of = PRE
+					add_claim_by = PRE
+				}	
+				every_state = {
+					limit = {
+						is_core_of = BLT
+					}
+					add_claim_by = PRE
+				}	
+				add_manpower = 20000
+				set_cosmetic_tag = BLT_Freikorps
+				PRE_Rudiger_von_der_Goltz = {
+					promote_leader = yes
+					promote_character = {
+						ideology= dem_Military_junta_subtype
+					}
+					promote_character = {
+						ideology= militarism_subtype
+					}
+					promote_character = {
+						ideology= national_populist_subtype
+					}
+					promote_character = {
+						ideology= Aryanism_subtype
+					}
+				}
+				set_politics = {
+					ruling_party = Gnosticism
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 2
+					syndicalist = 3
+					radical_socialist = 5
+					social_democrat = 9
+					social_liberal = 2
+					market_liberal = 4
+					social_conservative = 2
+					authoritarian_democrat = 7
+					paternal_autocrat = 13
+					national_populist = 21
+					Gnosticism = 32
+				}
+				retire_character = PRE_Erich_Ludendorff_marshal
+				retire_character = PRE_Kurt_von_Schleicher_marshal
+			    country_event = {
+			    	id = TR_Baltic.7
+		    		days = 1
+		    	}
+				change_tag_from = BLT
+		    }
+	    }
+	}
+}
+#バルト義勇軍
+country_event = {
+	id =TR_Baltic.7
+	title =TR_Baltic.7.t
+	desc =TR_Baltic.7.d
+	picture = GFX_report_event_generic_rally
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	option = {
+		name =TR_Baltic.7.a
+		load_oob = "PRE_BLT"
+		declare_war_on = {
+			target = BLT
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = LAT
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = EST
+			type = annex_everything
+		}
+	}
+}
