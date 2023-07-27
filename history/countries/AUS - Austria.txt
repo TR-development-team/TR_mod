@@ -161,7 +161,7 @@ add_dynamic_modifier = {
 
 #great depression
 set_variable = {
-	4_plunge_escalation_level = 10
+	AUS_plunge_escalation_level = 10
 }
 
 #wien in blute
@@ -283,7 +283,7 @@ add_ideas = {
 set_politics = {
 	ruling_party = social_conservative
 	last_election = "1935.11.9"
-	election_frequency = 60
+	election_frequency = 48
 	elections_allowed = yes
 }
 
@@ -291,31 +291,23 @@ set_popularities = {
 	totalist = 0
 	syndicalist = 2
 	radical_socialist = 1
-	social_democrat = 22
+	social_democrat = 23
 	social_liberal = 6
 	market_liberal = 3
 	social_conservative = 25
 	authoritarian_democrat = 10
-	paternal_autocrat = 5
-	national_populist = 1
-	Gnosticism = 25
+	paternal_autocrat = 10
+	national_populist = 0
+	Gnosticism = 20
 }
 
 set_stability = 0.5
 set_war_support = 0.3
-recruit_character = AUS_Karl_Renner
-recruit_character = AUS_Richard_Coudenhove_Kalergi
-recruit_character = AUS_franz_josef_otto_von_habsburg
-recruit_character = AUS_Engelbert_Dollfuss
-recruit_character = AUS_Adolf_Joseph_Lanz
-recruit_character = AUS_Eugen_von_Osterreich
-recruit_character = AUS_Franz_Bohme
-recruit_character = AUS_Karl_Eglseer
-recruit_character = AUS_Otto_Skorzeny
-recruit_character = AUS_Lothar_Rendulic
-#recruit_character = AUS_Karl_Maria_Wiligut
-#recruit_character = AUS_Heinrich_Himmler
-#recruit_character = AUS_Adolf_Hitler
+
+### recruit
+recruit_character = AUS_karl_renner
+recruit_character = AUS_karl_eglseer
+
 ### VARIANTS ###
 if = {
 	limit = {

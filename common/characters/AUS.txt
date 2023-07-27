@@ -1,20 +1,24 @@
 characters = {
-	AUS_Karl_Renner = {
-		name = AUS_Karl_Renner
+	#######################
+	### Country Leaders ###
+	#######################
+	AUS_karl_renner = {
+		name = AUS_karl_renner
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/AUS/Portrait_AUS_renner.png"
+				large = "gfx/leaders/AUS/Portrait_AUS_Karl_Renner.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Karl_Renner.png"
 			}
 		}
 		country_leader = {
 			ideology = social_democrat_subtype
 		}
 	}
-	AUS_Richard_Coudenhove_Kalergi = {
-		name = AUS_Richard_Coudenhove_Kalergi
+	AUS_richard_coudenhove_kalergi = {
+		name = AUS_richard_coudenhove_kalergi
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/AUS/Portait_AUS_Richard_Coudenhove_Kalergi.tga"
+				large = "gfx/leaders/AUS/Portrait_AUS_Richard_Coudenhove_Kalergi.tga"
 			}
 		}
 	}
@@ -71,11 +75,11 @@ characters = {
 			legacy_id = -1
 		}
 	}
-	AUS_Karl_Eglseer = {
-		name = AUS_Karl_Eglseer
+	AUS_karl_eglseer = {
+		name = AUS_karl_eglseer
 		portraits = {
 			army = {
-				large = "gfx/leaders/AUS/Portrai_AUS_Eglseer.tga"
+				large = "gfx/leaders/AUS/Portrait_AUS_Karl_Eglseer.png"
 			}
 		}
 		corps_commander = {

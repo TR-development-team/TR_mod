@@ -923,20 +923,28 @@ SpriteType = {
 
 ###オーストリア###
 
-      SpriteType = {	
-		name = "GFX_idea_AUS_Erik_Jan_Hanussen"
+	#SpriteType = {
+	#	name = "GFX_idea_AUS_"
+	#	texturefile = "gfx/interface/ideas/minister/AUS/.png"
+	#}
+
+	SpriteType = {
+		name = "GFX_idea_AUS_idea_AUS_Karl_Renner"
+		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Karl_Renner.png"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_AUS_idea_AUS_Erik_Jan_Hanussen"
 		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Erik_Jan_Hanussen.png"
 	}
-      SpriteType = {	
-		name = "GFX_idea_AUS_Himmler"
-		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Himmler.png"
+
+	SpriteType = {
+		name = "GFX_idea_AUS_idea_AUS_Heinrich_Himmler"
+		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Heinrich_Himmler.png"
 	}
-      SpriteType = {	
-		name = "GFX_idea_AUS_Hitler"
-		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Hitler.png"
-	}
-      SpriteType = {	
-		name = "GFX_idea_AUS_Karl_Maria_Wiligut"
+
+	SpriteType = {
+		name = "GFX_idea_AUS_idea_AUS_Karl_Maria_Wiligut"
 		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Karl_Maria_Wiligut.png"
 	}
 
