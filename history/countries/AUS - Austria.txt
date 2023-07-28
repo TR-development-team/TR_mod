@@ -291,12 +291,12 @@ set_popularities = {
 	totalist = 0
 	syndicalist = 2
 	radical_socialist = 1
-	social_democrat = 23
+	social_democrat = 27
 	social_liberal = 6
 	market_liberal = 3
-	social_conservative = 25
+	social_conservative = 29
 	authoritarian_democrat = 10
-	paternal_autocrat = 10
+	paternal_autocrat = 2
 	national_populist = 0
 	Gnosticism = 20
 }
@@ -306,7 +306,6 @@ set_war_support = 0.3
 
 ### recruit
 recruit_character = AUS_karl_renner
-recruit_character = AUS_karl_eglseer
 
 ### VARIANTS ###
 if = {
