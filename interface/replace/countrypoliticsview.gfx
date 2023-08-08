@@ -671,6 +671,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideologies/sub/National_liberalism_subtype.png"
 	}
 	spriteType = {
+		name = "GFX_ideology_Austromarxism_subtype"
+		texturefile = "gfx/interface/ideologies/sub/Austromarxism_subtype.png"
+	}
+	spriteType = {
+		name = "GFX_ideology_Austromarxism_democrat_subtype"
+		texturefile = "gfx/interface/ideologies/sub/Austromarxism_democrat_subtype.png"
+	}
+	spriteType = {
 		name = "GFX_ideology_unknown"
 		texturefile = "gfx/interface/ideologies/unknown.dds"
 		legacy_lazy_load = no

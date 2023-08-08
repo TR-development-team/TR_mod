@@ -146,6 +146,14 @@ leader_traits = {
 		army_morale_factor = 0.05
 		production_speed_buildings_factor = 0.03
 	}
+	TR_paneuropaeer = {	#汎欧主義者
+		random = no
+		research_sharing_per_country_bonus_factor = 0.5
+		forced_surrender_limit = 0.25
+		power_balance_weekly = 0.005
+		resistance_target = -0.1
+		compliance_gain = 0.01
+	}
 	#共通
 	TR_powerhungry_demagogue = {
 		#権力に餓えた扇動家
@@ -402,12 +410,27 @@ leader_traits = {
 		stability_factor = 0.1
 		conscription_factor = 0.02
 	}
-	TR_two_dimensional_federalist_trait = {
+	TR_two_dimensional_federalist = {
 		#カール・レンナー
 		random = no
 		political_power_factor = 0.1
 		party_popularity_stability_factor = 0.3
 		power_balance_weekly = 0.005
+	}
+	TR_defender_of_democracy = {	#民主主義の擁護者
+		random = no
+		political_power_gain = 0.05
+		drift_defence_factor = 0.33
+		stability_factor = 0.05
+		send_volunteers_tension = 0.2
+		generate_wargoal_tension = 0.2
+	}
+	TR_controller_of_the_reich = {	#帝国の統制者
+		random = no
+		political_power_factor = 0.2
+		drift_defence_factor = 0.2
+		war_support_factor = 0.2
+		surrender_limit = 0.2
 	}
 	#共通
 	TR_ambitious_union_boss = {
@@ -506,42 +529,43 @@ leader_traits = {
 	}
 	####外務大臣#####
 	#固有
-	AUS_Hanussen_traits = {
-		#エリック・ヤン・ハヌッセン
-		political_power_factor = 0.1
-		opinion_gain_monthly_factor = -0.3
+	TR_kaunitz_revisited = {	#カウニッツの再来
+		opinion_gain_monthly_same_ideology_factor = -0.33
+		opinion_gain_monthly_factor = 0.33
+		planning_speed = 0.15
+		enemy_justify_war_goal_time = 0.25
 		random = no
 	}
 	#共通
-	TR_biased_intellectual = {
+	TR_biased_intellectual = {	#偏見ある知識人
 		opinion_gain_monthly_same_ideology_factor = 0.15
 		opinion_gain_monthly_factor = -0.15
 		random = no
 	}
-	TR_ideological_crusader = {
+	TR_ideological_crusader = {	#イデオロギーの闘士
 		opinion_gain_monthly_same_ideology_factor = 0.25
 		random = no
 	}
-	TR_apologetic_clerk = {
+	TR_apologetic_clerk = {	#ぺこぺこ役人
 		political_power_gain = 0.04
 		random = no
 	}
-	TR_iron_fisted_brute = {
+	TR_iron_fisted_brute = {	#非情な乱暴者
 		trade_opinion_factor = -0.03
 		justify_war_goal_time = -0.05
 		random = no
 	}
-	TR_great_compromiser = {
+	TR_great_compromiser = {	#偉大な調停者
 		trade_opinion_factor = 0.1
 		political_power_gain = 0.03
 		random = no
 	}
-	TR_general_staffer = {
+	TR_general_staffer = {	#参謀出身
 		justify_war_goal_time = -0.05
 		production_speed_bunker_factor = 0.03
 		random = no
 	}
-	TR_the_cloak_n_dagger_schemer = {
+	TR_the_cloak_n_dagger_schemer = {	#懐剣の策謀家
 		political_power_gain = -0.04
 		planning_speed = 0.1
 		random = no
@@ -569,38 +593,45 @@ leader_traits = {
 		MONTHLY_POPULATION = 0.1
 		random = no
 	}
+	TR_oesterreichische_schule = {	#オーストリア学派
+		production_factory_max_efficiency_factor = 0.06
+		local_resources_factor = -0.02
+		consumer_goods_factor = -0.03
+		political_power_gain = -0.04
+		random = no
+	}
 	#共通
-	TR_administrative_genius = {
+	TR_administrative_genius = {	#管理の天才
 		industrial_capacity_factory = 0.05
 		production_speed_buildings_factor = 0.05
 		research_speed_factor = 0.03
 		random = no
 	}
-	TR_resource_industrialist = {
+	TR_resource_industrialist = {	#資源産業家
 		local_resources_factor = 0.1
 		random = no
 	}
-	TR_laissez_faire_capitalist = {
+	TR_laissez_faire_capitalist = {	#自由放任主義者
 		production_speed_arms_factory_factor = -0.1
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = 0.05
 		political_power_gain = -0.05
 		random = no
 	}
-	TR_theoretical_scientist = {
+	TR_theoretical_scientist = {	#理論科学者
 		production_speed_rocket_site_factor = 0.05
 		production_speed_nuclear_reactor_factor = 0.05
 		research_speed_factor = 0.03
 		random = no
 	}
-	TR_planned_economy_proponent = {
+	TR_planned_economy_proponent = {	#計画経済の提唱者
 		production_speed_buildings_factor = 0.1
 		local_resources_factor = -0.02
 		conscription_factor = -0.02
 		industrial_capacity_factory = -0.02
 		random = no
 	}
-	TR_construction_magnate = {
+	TR_construction_magnate = {	#建設王
 		production_speed_infrastructure_factor = 0.1
 		production_speed_air_base_factor = 0.1
 		production_speed_naval_base_factor = 0.1
@@ -609,51 +640,51 @@ leader_traits = {
 		production_speed_nuclear_reactor_factor = 0.1
 		random = no
 	}
-	TR_mixed_economy = {
+	TR_mixed_economy = {	#混合経済の提唱者
 		production_factory_max_efficiency_factor = 0.05
 		local_resources_factor = 0.05
 		production_speed_buildings_factor = 0.03
 		random = no
 	}
-	TR_oil_baron = {
+	TR_oil_baron = {	#石油王
 		local_resources_factor = 0.05
 		production_factory_max_efficiency_factor = 0.05
 		production_speed_synthetic_refinery_factor = 0.1
 		random = no
 	}
-	TR_steel_magnate = {
+	TR_steel_magnate = {	#金属王
 		local_resources_factor = 0.05
 		production_factory_max_efficiency_factor = 0.05
 		random = no
 	}
-	TR_railway_magnate = {
+	TR_railway_magnate = {	#鉄道王
 		production_speed_infrastructure_factor = 0.15
 		random = no
 	}
-	TR_reformer = {
+	TR_reformer = {	#改革者
 		consumer_goods_factor = -0.05
 		stability_factor = -0.05
 		random = no
 	}
-	TR_balanced_budget_economy = {
+	TR_balanced_budget_economy = {	#財政均衡経済の提唱者
 		political_power_gain = 0.05
 		production_speed_buildings_factor = 0.02
 		production_factory_max_efficiency_factor = 0.05
 		random = no
 	}
-	TR_keynesian_economy = {
+	TR_keynesian_economy = {	#ケインズ経済学の提唱者
 		production_factory_max_efficiency_factor = -0.03
 		local_resources_factor = -0.02
 		consumer_goods_factor = -0.03
 		political_power_gain = 0.08
 		random = no
 	}
-	TR_bank_president = {
+	TR_bank_president = {	#銀行総裁
 		production_factory_max_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.05
 		random = no
 	}
-	TR_Businessman = {
+	TR_Businessman = {	#企業出身
 		production_speed_industrial_complex_factor = 0.05
 		random = no
 	}
@@ -686,8 +717,25 @@ leader_traits = {
 		random = no
 		political_power_factor = 0.1
 	}
+	TR_Protektorat = {	#護国家
+		random = no
+		political_power_gain = 0.03
+		war_support_factor = 0.06
+		surrender_limit = 0.1
+		drift_defence_factor = 0.15
+	}
+	TR_Trade_Guru = {	#貿易の達人
+		random = no
+		trade_opinion_factor = 0.33
+		trade_laws_cost_factor = -0.33
+		consumer_goods_factor = -0.01
+		production_lack_of_resource_penalty_factor = -0.2
+		production_factory_start_efficiency_factor = 0.1
+		industrial_capacity_factory = -0.03
+		industrial_capacity_dockyard = -0.03
+	}
 	#共通
-	Founder_of_intelligence = {
+	Founder_of_intelligence = {	#情報機関の創設者
 		random = no
 		resistance_growth = -0.1
 		resistance_target = -0.1
@@ -695,42 +743,42 @@ leader_traits = {
 		decryption_factor = 0.1
 		encryption_factor = 0.1
 	}
-	TR_prince_of_terror = {
+	TR_prince_of_terror = {	#恐怖公
 		non_core_manpower = 0.03
 		MONTHLY_POPULATION = -0.1
 		local_resources_factor = 0.05
 		global_building_slots_factor = 0.05
 		resistance_growth = 0.1
 	}
-	TR_back_stabber = {
+	TR_back_stabber = {	#裏工作の名人
 		stability_factor = -0.05
 		political_power_gain = 0.15
 		random = no
 	}
-	TR_compassionate_gentleman = {
+	TR_compassionate_gentleman = {	#温情深い紳士
 		stability_factor = 0.05
 		political_power_gain = 0.05
 		non_core_manpower = 0.02
 		random = no
 	}
-	TR_crime_fighter = {
+	TR_crime_fighter = {	#犯罪取締人
 		political_power_gain = 0.05
 		consumer_goods_factor = -0.03
 		conscription_factor = -0.01
 		random = no
 	}
-	TR_crooked_kleptocrat = {
+	TR_crooked_kleptocrat = {	#ねじくれた汚職屋
 		political_power_gain = -0.05
 		consumer_goods_factor = 0.03
 		random = no
 	}
-	TR_efficient_sociopath = {
+	TR_efficient_sociopath = {	#有能な人格異常者
 		industrial_capacity_factory = 0.03
 		local_resources_factor = 0.05
 		conscription_factor = -0.05
 		random = no
 	}
-	TR_health_and_safety = {
+	TR_health_and_safety = {	#社会福祉の提唱者
 		political_power_gain = 0.05
 		conscription_factor = 0.03
 		local_resources_factor = -0.04
@@ -738,23 +786,23 @@ leader_traits = {
 		industrial_capacity_factory = -0.04
 		random = no
 	}
-	TR_man_of_the_people = {
+	TR_man_of_the_people = {	#人民の人
 		stability_factor = 0.1
 		resistance_growth = -0.1
 		random = no
 	}
-	TR_media_magnate = {
+	TR_media_magnate = {	#メディア王
 		consumer_goods_factor = -0.02
 		political_power_gain = 0.1
 		random = no
 	}
-	TR_secret_police_chief = {
+	TR_secret_police_chief = {	#秘密警察の人物
 		political_power_gain = -0.04
 		resistance_growth = -0.1
 		resistance_target = -0.1
 		random = no
 	}
-	TR_silent_lawyer = {
+	TR_silent_lawyer = {	#物静かな法律家
 		political_power_gain = 0.1
 		production_speed_buildings_factor = 0.03
 		random = no

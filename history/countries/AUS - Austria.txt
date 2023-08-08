@@ -288,17 +288,17 @@ set_politics = {
 }
 
 set_popularities = {
-	totalist = 0
-	syndicalist = 2
-	radical_socialist = 1
-	social_democrat = 27
-	social_liberal = 6
-	market_liberal = 3
+	totalist = 3
+	syndicalist = 3
+	radical_socialist = 8
+	social_democrat = 25
+	social_liberal = 3
+	market_liberal = 9
 	social_conservative = 29
-	authoritarian_democrat = 10
-	paternal_autocrat = 2
-	national_populist = 0
-	Gnosticism = 20
+	authoritarian_democrat = 3
+	paternal_autocrat = 0
+	national_populist = 3
+	Gnosticism = 14
 }
 
 set_stability = 0.5
@@ -306,6 +306,26 @@ set_war_support = 0.3
 
 ### recruit
 recruit_character = AUS_karl_renner
+recruit_character = AUS_anton_rintelen
+recruit_character = AUS_carl_vaugoin
+recruit_character = AUS_emanuel_weidenhoffer
+recruit_character = AUS_emil_fey
+recruit_character = AUS_emmerich_czermak
+recruit_character = AUS_engelbert_dollfuss
+recruit_character = AUS_egon_berger_waldenegg
+recruit_character = AUS_ernst_fischer
+recruit_character = AUS_ernst_starhemberg
+recruit_character = AUS_florian_foedermayr
+recruit_character = AUS_franz_winkler
+recruit_character = AUS_friedrich_stockinger
+recruit_character = AUS_otto_von_habsburg
+add_ideas = {
+	AUS_emanuel_weidenhoffer_idea
+	AUS_emil_fey_idea
+	AUS_egon_berger_waldenegg_idea
+	AUS_carl_vaugoin_idea
+	AUS_otto_von_habsburg_idea
+}
 
 ### VARIANTS ###
 if = {

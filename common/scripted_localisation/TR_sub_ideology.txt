@@ -556,4 +556,16 @@ defined_text = {
 		}
 		localization_key = San_min_Doctrine_CC_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Austromarxism_subtype
+		}
+		localization_key = Austromarxism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = Austromarxism_democrat_subtype
+		}
+		localization_key = Austromarxism_democrat_subtype
+	}
 } 

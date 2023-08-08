@@ -12,12 +12,177 @@ characters = {
 		}
 	}
 	AUS_adolf_hitler = {
-		name = AUS_Adolf_Hitler
+		name = AUS_adolf_hitler
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/AUS/Portrait_AUS_Adolf_Hitler.png"
 				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Adolf_Hitler.png"
 			}
+		}
+	}
+	AUS_anton_rintelen = {
+		name = AUS_anton_rintelen
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Anton_Rintelen.png"
+			}
+		}
+	}
+	AUS_carl_vaugoin = {
+		name = AUS_carl_vaugoin
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Carl_Vaugoin.png"
+			}
+		}
+	}
+	AUS_emanuel_weidenhoffer = {
+		name = AUS_emanuel_weidenhoffer
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Emanuel_Weidenhoffer.png"
+			}
+		}
+	}
+	AUS_emil_fey = {
+		name = AUS_emil_fey
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Emil_Fey.png"
+			}
+		}
+	}
+	AUS_emmerich_czermak = {
+		name = AUS_emmerich_czermak
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Emmerich_Czermak.png"
+			}
+		}
+	}
+	AUS_engelbert_dollfuss = {
+		name = AUS_engelbert_dollfuss
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Engelbert_Dollfuss.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Engelbert_Dollfuss.png"
+			}
+		}
+	}
+	AUS_egon_berger_waldenegg = {
+		name = AUS_egon_berger_waldenegg
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Egon_Berger_Waldenegg.png"
+			}
+		}
+	}
+	AUS_ernst_fischer = {
+		name = AUS_ernst_fischer
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Ernst_Fischer.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Ernst_Fischer.png"
+			}
+		}
+	}
+	AUS_ernst_starhemberg = {
+		name = AUS_ernst_starhemberg
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Ernst_Starhemberg.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Ernst_Starhemberg.png"
+			}
+		}
+	}
+	AUS_florian_foedermayr = {
+		name = AUS_florian_foedermayr
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Florian_Foedermayr.png"
+			}
+		}
+	}
+	AUS_franz_winkler = {
+		name = AUS_franz_winkler
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Franz_Winkler.png"
+			}
+		}
+	}
+	AUS_friedrich_stockinger = {
+		name = AUS_friedrich_stockinger
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Friedrich_Stockinger.png"
+			}
+		}
+	}
+	AUS_guido_jakoncig = {
+		name = AUS_guido_jakoncig
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Guido_Jakoncig.png"
+			}
+		}
+	}
+	AUS_guido_schmidt = {
+		name = AUS_guido_schmidt
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Guido_Schmidt.png"
+			}
+		}
+	}
+	AUS_wilhelm_miklas = {
+		name = AUS_wilhelm_miklas
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Wilhelm_Miklas.png"
+			}
+		}
+	}
+	AUS_otto_von_habsburg = {
+		name = AUS_otto_von_habsburg
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Otto_von_Habsburg.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Otto_von_Habsburg.png"
+			}
+		}
+		country_leader = {
+			ideology = National_syndicalist_subtype
+		}
+		country_leader = {
+			ideology = left_libertarianist_subtype
+		}
+		country_leader = {
+			ideology = Austromarxism_subtype
+		}
+		country_leader = {
+			ideology = Austromarxism_democrat_subtype
+		}
+		country_leader = {
+			ideology = Progressivism_subtype
+		}
+		country_leader = {
+			ideology = conservative_liberalism_subtype
+		}
+		country_leader = {
+			ideology = con_Christian_democracy_subtype
+		}
+		country_leader = {
+			ideology = prussian_constitutionalism_subtype
+		}
+		country_leader = {
+			ideology = absolute_monarchy_subtype
+		}
+		country_leader = {
+			ideology = Nationalism_subtype
+		}
+		country_leader = {
+			ideology = Aryanism_subtype
 		}
 	}
 }

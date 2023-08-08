@@ -1,5 +1,29 @@
+@minister_cost = 200
 ideas = {
 	Head_of_State = {
+		#国家元首
+		AUS_otto_von_habsburg_idea = {
+			picture = AUS_Otto_von_Habsburg
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Head_of_State_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Head_of_State
+				social_democrat
+				TR_paneuropaeer
+			}
+		}
+	}
+	Government_leaders = {
+		#政府首班
 		AUS_karl_renner_idea = {
 			picture = AUS_Karl_Renner
 			allowed = {
@@ -7,15 +31,310 @@ ideas = {
 			}
 			available = {
 				custom_trigger_tooltip = {
-					tooltip = head_of_state_available
+					tooltip = Government_leaders_available
 					has_country_flag = can_change_minister
 				}
 			}
 			cancel_if_invalid = no
+			cost = @minister_cost
 			traits = {
-				Head_of_State
+				Government_leaders
 				social_democrat
-				TR_two_dimensional_federalist_trait
+				TR_two_dimensional_federalist
+			}
+		}
+		AUS_carl_vaugoin_idea = {
+			picture = AUS_Carl_Vaugoin
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Government_leaders
+				social_conservative
+				TR_defender_of_democracy
+			}
+		}
+		AUS_engelbert_dollfuss_idea = {
+			picture = AUS_Engelbert_Dollfuss
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Government_leaders
+				national_populist
+				TR_controller_of_the_reich
+			}
+		}
+		AUS_wilhelm_miklas_idea = {
+			picture = AUS_Wilhelm_Miklas
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Government_leaders
+				social_conservative
+				TR_naive_optimist
+			}
+		}
+	}
+	Minister_of_Foreign_Affairs = {
+		#外務大臣
+		AUS_egon_berger_waldenegg_idea = {
+			picture = AUS_Egon_Berger_Waldenegg
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Foreign_Affairs
+				social_conservative
+				TR_apologetic_clerk
+			}
+		}
+		AUS_guido_schmidt_idea = {
+			picture = AUS_Guido_Schmidt
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Foreign_Affairs
+				social_conservative
+				TR_kaunitz_revisited
+			}
+		}
+	}
+	Minister_of_Economy = {
+		#大蔵大臣
+		AUS_emanuel_weidenhoffer_idea = {
+			picture = AUS_Emanuel_Weidenhoffer
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Economy
+				social_conservative
+				TR_bank_president
+			}
+		}
+		AUS_guido_jakoncig_idea = {
+			picture = AUS_Guido_Jakoncig
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Economy
+				social_conservative
+				TR_laissez_faire_capitalist
+			}
+		}
+	}
+	Minister_of_Interior = {
+		#内務大臣
+		AUS_anton_rintelen_idea = {
+			picture = AUS_Anton_Rintelen
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				national_populist
+				TR_crooked_kleptocrat
+			}
+		}
+		AUS_emil_fey_idea = {
+			picture = AUS_Emil_Fey
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				social_conservative
+				TR_crime_fighter
+			}
+		}
+		AUS_emmerich_czermak_idea = {
+			picture = AUS_Emmerich_Czermak
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				social_conservative
+				TR_compassionate_gentleman
+			}
+		}
+		AUS_ernst_fischer_idea = {
+			picture = AUS_Ernst_Fischer
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				social_democrat
+				Founder_of_intelligence
+			}
+		}
+		AUS_ernst_starhemberg_idea = {
+			picture = AUS_Ernst_Starhemberg
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				national_populist
+				TR_Protektorat
+			}
+		}
+		AUS_florian_foedermayr_idea = {
+			picture = AUS_Florian_Foedermayr
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				social_conservative
+				TR_man_of_the_people
+			}
+		}
+		AUS_franz_winkler_idea = {
+			picture = AUS_Franz_Winkler
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				social_conservative
+				TR_crooked_kleptocrat
+			}
+		}
+		AUS_friedrich_stockinger_idea = {
+			picture = AUS_Friedrich_Stockinger
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				social_conservative
+				TR_Trade_Guru
 			}
 		}
 	}
@@ -104,8 +423,6 @@ ideas = {
 				stability_factor = -0.3
 				war_support_factor = -0.3
 				political_power_cost = 0.5
-				authoritarian_democrat_drift = 0.01
-				Gnosticism_drift = 0.02
 			}
 		}
 		AUS_prager_schule_idea = {
