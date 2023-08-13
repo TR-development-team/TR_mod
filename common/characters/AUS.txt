@@ -135,11 +135,163 @@ characters = {
 			}
 		}
 	}
-	AUS_wilhelm_miklas = {
-		name = AUS_wilhelm_miklas
+	AUS_huelgerth_ludwig = {
+		name = AUS_huelgerth_ludwig
 		portraits = {
 			civilian = {
-				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Wilhelm_Miklas.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Huelgerth_Ludwig.png"
+				large = "gfx/leaders/AUS/Portrait_AUS_Huelgerth_Ludwig.png"
+			}
+			army = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Huelgerth_Ludwig.png"
+				large = "gfx/leaders/AUS/Portrait_AUS_Huelgerth_Ludwig.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				career_officer
+				infantry_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	AUS_joseph_august = {
+		name = AUS_joseph_august
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Joseph_August.png"
+			}
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Joseph_August.png"
+			}
+		}
+		field_marshal = {
+			traits = {
+				inflexible_strategist
+				organizer
+				career_officer
+				infantry_officer
+			}
+			skill = 4
+			attack_skill = 3
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+	AUS_johann_josef_mittelberger = {
+		name = AUS_johann_josef_mittelberger
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_Johann_Josef_Mittelberger.png"
+			}
+		}
+	}
+	AUS_joseph_roth = {
+		name = AUS_joseph_roth
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Joseph_Roth.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Joseph_Roth.png"
+			}
+		}
+	}
+	AUS_karl_buresch = {
+		name = AUS_karl_buresch
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Karl_Buresch.png"
+			}
+		}
+	}
+	AUS_karl_eglseer = {
+		name = AUS_karl_eglseer
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Karl_Eglseer.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				trait_mountaineer
+				infantry_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	AUS_kurt_schuschnigg = {
+		name = AUS_kurt_schuschnigg
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Kurt_Schuschnigg.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Kurt_Schuschnigg.png"
+			}
+		}
+	}
+	AUS_ludwig_von_eimannsberger = {
+		name = AUS_ludwig_von_eimannsberger
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Ludwig_von_Eimannsberger.png"
+			}
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Ludwig_von_Eimannsberger.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				armor_officer
+				organizer
+				trickster
+				panzer_leader
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	AUS_maximilian_de_angelis = {
+		name = AUS_maximilian_de_angelis
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Maximilian_de_Angelis.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+	}
+	AUS_otto_ender = {
+		name = AUS_otto_ender
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Otto_Ender.png"
+			}
+		}
+	}
+	AUS_otto_juch = {
+		name = AUS_otto_juch
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Otto_Juch.png"
 			}
 		}
 	}
@@ -183,6 +335,46 @@ characters = {
 		}
 		country_leader = {
 			ideology = Aryanism_subtype
+		}
+	}
+	AUS_richard_coudenhove_kalergi = {
+		name = AUS_richard_coudenhove_kalergi
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Richard_Coudenhove_Kalergi.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Richard_Coudenhove_Kalergi.png"
+			}
+		}
+	}
+	AUS_sigismund_schilhawsky = {
+		name = AUS_sigismund_schilhawsky
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Sigismund_Schilhawsky.png"
+			}
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Sigismund_Schilhawsky.png"
+			}
+		}
+		field_marshal = {
+			traits = {
+				infantry_officer
+				inflexible_strategist
+				old_guard
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	AUS_wilhelm_miklas = {
+		name = AUS_wilhelm_miklas
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Wilhelm_Miklas.png"
+			}
 		}
 	}
 }

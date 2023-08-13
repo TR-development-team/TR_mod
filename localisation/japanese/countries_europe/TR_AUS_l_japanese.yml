@@ -357,6 +357,15 @@ AUS_guido_jakoncig_idea:0 "グイド・ヤコンジグ"
 AUS_guido_schmidt_idea:0 "グイド・シュミット"
 AUS_wilhelm_miklas_idea:0 "ヴィルヘルム・ミクラス"
 AUS_otto_von_habsburg_idea:0 "フランツ＝ヨーゼフ2世"
+AUS_huelgerth_ludwig_idea:0 "ルートヴィヒ・ヒュルゲルト"
+AUS_johann_josef_mittelberger_idea:0 "ヨハン・ヨーゼフ・ミッテルベルガー"
+AUS_karl_buresch_idea:0 "カール・ブレシュ"
+AUS_kurt_schuschnigg_idea:0 "クルト・シュシュニック"
+AUS_otto_ender_idea:0 "オットー・エンダー"
+AUS_otto_juch_idea:0 "オットー・ジュッフ"
+AUS_ludwig_von_eimannsberger_idea:0 "ルートヴィヒ・フォン・アイマンスベルガー"
+AUS_richard_coudenhove_kalergi_idea:0 "リヒャルト・クーデンホーフ＝カレルギー"
+AUS_sigismund_schilhawsky_idea:0 "ジギスムント・シルハウスキー"
 
 ##......................................................................
 ##....CCCCCCCCC.HHHHH....HHHH.....AAAAA.....RRRRRRRRRRR......AAAAA......
@@ -392,6 +401,19 @@ AUS_guido_jakoncig:0 "グイド・ヤコンジグ"
 AUS_guido_schmidt:0 "グイド・シュミット"
 AUS_wilhelm_miklas:0 "ヴィルヘルム・ミクラス"
 AUS_otto_von_habsburg:0 "フランツ＝ヨーゼフ2世"
+AUS_huelgerth_ludwig:0 "ルートヴィヒ・ヒュルゲルト"
+AUS_johann_josef_mittelberger:0 "ヨハン・ヨーゼフ・ミッテルベルガー"
+AUS_joseph_august:0 "ヨーゼフ・アウグスト大公"
+AUS_joseph_roth:0 "ヨーゼフ・ロート"
+AUS_karl_buresch:0 "カール・ブレシュ"
+AUS_kurt_schuschnigg:0 "クルト・シュシュニック"
+AUS_karl_eglseer:0 "カール・エグルゼーア"
+AUS_otto_ender:0 "オットー・エンダー"
+AUS_otto_juch:0 "オットー・ジュッフ"
+AUS_ludwig_von_eimannsberger:0 "ルートヴィヒ・フォン・アイマンスベルガー"
+AUS_maximilian_de_angelis:0 "マクシミリアン・デ・アンゲリス"
+AUS_richard_coudenhove_kalergi:0 "リヒャルト・クーデンホーフ＝カレルギー"
+AUS_sigismund_schilhawsky:0 "ジギスムント・シルハウスキー"
 
 ##............................................................................................................................
 ##.TTTTTTTTTTTTEEEEEEEEEEEE...CCCCCCCCC.HHHH....HHHHH........SSSSSSSSSS..HHHH....HHHHH....AAAAAA....RRRRRRRRRRR...EEEEEEEEEE..
@@ -763,8 +785,6 @@ AUS_creditanstalt_bankruptcy_crisis_mission_1_tt:0 "誰の目から見ても明�
 AUS_creditanstalt_bankruptcy_crisis_mission_2_tt:0 "§Yクレディタンシュタルト§!は倒産し、帝国の軍需産業は今後数十年停滞する。"
 AUS_empire_and_railways_tt:0 "\n§Y帝国の工業§!に以下の修正:\n§Y鉄道§!建設速度: §G+20.0%§!\n\n"
 AUS_popularisation_of_cars_tt:0 "\n数年後、この取り組みは全くの§Y別分野§!で効力を発揮するかもしれない…"
-#AUS_decentralisation_of_food_production_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y-7.5%§!\n月毎の人口: §G+25.0%§!\n戦争ペナルティによる安定度補正: §G+15.00%§!\n"
-#AUS_great_plains_with_gold_fertile_soil_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y-15.0%§!\n月毎の人口: §G+25.0%§!\n徴兵可能人口補正: §G+25%§!\n師団消耗: §G-20.0%§!\n"
 AUS_decentralisation_of_food_production_tt:0 "§Y上ハンガリー§!での大規模農場の§Y整備ディシジョン§!が解禁される。"
 AUS_great_plains_with_gold_fertile_soil_tt:0 "§Yハンガリー§!での§Y農業機械化ディシジョン§!が解禁される。"
 AUS_development_of_upper_hungary_farms_tt:0 "§Y帝国の農業§!に以下の修正:\n消費財工場: §Y-1.5%§!\n月毎の人口: §G+2.0%§!\n戦争ペナルティによる安定度補正: §G+3.00%§!\n徴兵可能人口補正: §G+1%§!\n師団消耗: §G-2.0%§!\n"
@@ -782,6 +802,8 @@ AUS_depression_resolution_delay:0 "恐慌対策が遅延する。"
 AUS_bank_rescue:0 "§Y主要銀行の救済§!と§Y地方銀行の救済§!は§R択一式である。§!"
 AUS_hydroelectric_power_plant_construction_tt:0 "数年後、同地に§Y水力発電所§!が建設される。\n§g数年後、同地の建築スロットが25枠全て埋まっている場合、国家に民需工場が追加される。§!"
 AUS_support_for_civil_engineering_projects_tt:0 "§g支援された土木産業は、将来的に発展するだろう。§!"
+
+AUS_integration_csp_into_gdp:0 "§Yキリスト教社会党§!と§Y大ドイツ人民党§!とが連立状態となる。"
 
 ##...................................................
 ##.FFFFFFFFFFFFLLL..........AAAAA.......GGGGGGGGGG...

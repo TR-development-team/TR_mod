@@ -149,8 +149,8 @@ leader_traits = {
 	TR_paneuropaeer = {	#汎欧主義者
 		random = no
 		research_sharing_per_country_bonus_factor = 0.5
-		forced_surrender_limit = 0.25
-		power_balance_weekly = 0.005
+		forced_surrender_limit = 0.33
+		power_balance_weekly = -0.005
 		resistance_target = -0.1
 		compliance_gain = 0.01
 	}
@@ -415,7 +415,7 @@ leader_traits = {
 		random = no
 		political_power_factor = 0.1
 		party_popularity_stability_factor = 0.3
-		power_balance_weekly = 0.005
+		power_balance_weekly = -0.005
 	}
 	TR_defender_of_democracy = {	#民主主義の擁護者
 		random = no

@@ -20,6 +20,32 @@ AUS_debug_category = {
 		available = {
 		}
 		complete_effect = {
+			custom_effect_tooltip = AUS_integration_csp_into_gdp
+			hidden_effect = {
+				set_temp_variable = {
+					temp_main = party_popularity_100@social_conservative
+				}
+				set_temp_variable = {
+					temp_integ = party_popularity_100@market_liberal
+				}
+				add_to_temp_variable = {
+					temp_main = temp_integ
+				}
+				set_popularities = {
+					totalist = party_popularity_100@totalist
+					syndicalist = party_popularity_100@syndicalist
+					radical_socialist = party_popularity_100@radical_socialist
+					social_democrat = party_popularity_100@social_democrat
+					social_liberal = party_popularity_100@social_liberal
+					market_liberal = 0
+					social_conservative = temp_main
+					authoritarian_democrat = party_popularity_100@authoritarian_democrat
+					paternal_autocrat = party_popularity_100@paternal_autocrat
+					national_populist = party_popularity_100@national_populist
+					Gnosticism = party_popularity_100@Gnosticism
+				}
+			}
+			
 		}
 	}
 	AUS_debug_decision_2 = {
