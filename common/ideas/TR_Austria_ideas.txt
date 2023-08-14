@@ -198,6 +198,25 @@ ideas = {
 				TR_kaunitz_revisited
 			}
 		}
+		AUS_stephan_tauschitz_idea = {
+			picture = AUS_Stephan_Tauschitz
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Foreign_Affairs
+				authoritarian_democrat
+				TR_ideological_crusader
+			}
+		}
 	}
 	Minister_of_Economy = {
 		#大蔵大臣
@@ -449,6 +468,25 @@ ideas = {
 				Minister_of_Interior
 				social_conservative
 				TR_Trade_Guru
+			}
+		}
+		AUS_vinzenz_schumy_idea = {
+			picture = AUS_Vinzenz_Schumy
+			allowed = {
+				original_tag = AUS
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			cost = @minister_cost
+			traits = {
+				Minister_of_Interior
+				authoritarian_democrat
+				TR_silent_lawyer
 			}
 		}
 	}

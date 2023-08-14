@@ -254,11 +254,11 @@ characters = {
 				trickster
 				panzer_leader
 			}
-			skill = 4
-			attack_skill = 4
+			skill = 5
+			attack_skill = 5
 			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
 		}
 	}
 	AUS_maximilian_de_angelis = {
@@ -362,10 +362,10 @@ characters = {
 				inflexible_strategist
 				old_guard
 			}
-			skill = 3
+			skill = 4
 			attack_skill = 3
-			defense_skill = 2
-			planning_skill = 2
+			defense_skill = 4
+			planning_skill = 3
 			logistics_skill = 3
 		}
 	}
@@ -374,6 +374,81 @@ characters = {
 		portraits = {
 			civilian = {
 				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Wilhelm_Miklas.png"
+			}
+		}
+	}
+	AUS_ehard_ruas = {
+		name = AUS_ehard_ruas
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Ehard_Ruas.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+				brilliant_strategist
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_erwin_von_lahousen = {
+		name = AUS_erwin_von_lahousen
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Erwin_von_Lahousen.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+	AUS_eugen_von_oesterreich = {
+		name = AUS_eugen_von_oesterreich
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Eugen_von_Oesterreich.png"
+			}
+		}
+		field_marshal = {
+			traits = {
+				old_guard
+				brilliant_strategist
+				career_officer
+				cavalry_officer
+				organizer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 2
+		}
+	}
+	AUS_stephan_tauschitz = {
+		name = AUS_stephan_tauschitz
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Stephan_Tauschitz.png"
+			}
+		}
+	}
+	AUS_vinzenz_schumy = {
+		name = AUS_vinzenz_schumy
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Vinzenz_Schumy.png"
 			}
 		}
 	}
