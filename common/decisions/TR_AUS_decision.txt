@@ -19,6 +19,11 @@ AUS_debug_category = {
 		fire_only_once = no
 		available = {
 		}
+		
+		modifier = {
+			org_loss_when_moving = -0.5
+		}
+		days_remove = 1000
 		complete_effect = {
 			custom_effect_tooltip = AUS_integration_csp_into_gdp
 			hidden_effect = {
@@ -45,7 +50,6 @@ AUS_debug_category = {
 					Gnosticism = party_popularity_100@Gnosticism
 				}
 			}
-			
 		}
 	}
 	AUS_debug_decision_2 = {

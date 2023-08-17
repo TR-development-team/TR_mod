@@ -951,6 +951,47 @@ leader_traits = {
 		power_balance_weekly = 0.002
 		random = no
 	}
+	carm_AUS_Wilhelm_Zehner = {
+		#ヴィルヘルム・ツェーナー
+		random = no
+		land_doctrine_cost_factor = -0.1
+		experience_gain_army = 0.4
+		army_strength_factor = 0.1
+		max_planning_factor = 0.1
+		army_morale_factor = 0.1
+		max_command_power_mult = 0.1
+	}
+	carm_AUS_ludwig_von_eimannsberger = {
+		#ルートヴィヒ・フォン・アイマンスベルガー
+		random = no
+		experience_gain_army = 0.3
+		cat_mobile_warfare_cost_factor = -0.2
+		coordination_bonus = 0.05
+		org_loss_when_moving = -0.25
+		equipment_bonus = {
+			motorized = {
+				maximum_speed = 0.1
+				soft_attack = 0.1
+				hard_attack = 0.1
+				ap_attack = 0.1
+				instant = yes
+			}
+			mechanized = {
+				maximum_speed = 0.1
+				soft_attack = 0.1
+				hard_attack = 0.1
+				ap_attack = 0.1
+				instant = yes
+			}
+			armor = {
+				maximum_speed = 0.1
+				soft_attack = 0.1
+				hard_attack = 0.1
+				ap_attack = 0.1
+				instant = yes
+			}
+		}
+	}
 	#海軍
 	cnav_open_seas_doctrine = {
 		experience_gain_navy = 0.2

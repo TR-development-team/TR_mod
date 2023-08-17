@@ -503,7 +503,18 @@ ideas = {
 				cos_school_of_fire_support
 			}
 		}
-
+		AUS_alfred_jansa_idea  = {
+			picture = AUS_Alfred_Jansa
+			allowed = {
+				original_tag = AUS
+			}
+			cancel_if_invalid = yes
+			cost = @minister_cost
+			traits = {
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
 	}
 	chief_of_army = {
 		AUS_ludwig_von_eimannsberger_idea = {
@@ -515,7 +526,19 @@ ideas = {
 			cost = @minister_cost
 			traits = {
 				chief_of_army
-				carm_armoured_spearhead_doctrine
+				carm_AUS_ludwig_von_eimannsberger
+			}
+		}
+		AUS_wilhelm_zehner_idea = {
+			picture = AUS_Wilhelm_Zehner
+			allowed = {
+				original_tag = AUS
+			}
+			cancel_if_invalid = yes
+			cost = @minister_cost
+			traits = {
+				chief_of_army
+				carm_AUS_Wilhelm_Zehner
 			}
 		}
 	}

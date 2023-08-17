@@ -151,6 +151,8 @@ characters = {
 			traits = {
 				career_officer
 				infantry_officer
+				trickster
+				skilled_staffer
 			}
 			skill = 3
 			attack_skill = 3
@@ -164,6 +166,7 @@ characters = {
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/AUS/Portrait_AUS_Joseph_August.png"
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Joseph_August.png"
 			}
 			army = {
 				large = "gfx/leaders/AUS/Portrait_AUS_Joseph_August.png"
@@ -175,6 +178,7 @@ characters = {
 				organizer
 				career_officer
 				infantry_officer
+				skilled_staffer
 			}
 			skill = 4
 			attack_skill = 3
@@ -253,6 +257,7 @@ characters = {
 				organizer
 				trickster
 				panzer_leader
+				skilled_staffer
 			}
 			skill = 5
 			attack_skill = 5
@@ -361,6 +366,7 @@ characters = {
 				infantry_officer
 				inflexible_strategist
 				old_guard
+				skilled_staffer
 			}
 			skill = 4
 			attack_skill = 3
@@ -388,6 +394,7 @@ characters = {
 			traits = {
 				armor_officer
 				brilliant_strategist
+				trickster
 			}
 			skill = 3
 			attack_skill = 3
@@ -420,6 +427,9 @@ characters = {
 			army = {
 				large = "gfx/leaders/AUS/Portrait_AUS_Eugen_von_Oesterreich.png"
 			}
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Eugen_von_Oesterreich.png"
+			}
 		}
 		field_marshal = {
 			traits = {
@@ -431,9 +441,9 @@ characters = {
 			}
 			skill = 4
 			attack_skill = 4
-			defense_skill = 3
+			defense_skill = 1
 			planning_skill = 4
-			logistics_skill = 2
+			logistics_skill = 4
 		}
 	}
 	AUS_stephan_tauschitz = {
@@ -450,6 +460,75 @@ characters = {
 			civilian = {
 				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Vinzenz_Schumy.png"
 			}
+		}
+	}
+	AUS_franz_boehme = {
+		name = AUS_franz_boehme
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Franz_Boehme.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				harsh_leader
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	AUS_alfred_jansa = {
+		name = AUS_alfred_jansa
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Alfred_Jansa.png"
+			}
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Alfred_Jansa.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				inflexible_strategist
+				career_officer
+				organizer
+				skilled_staffer
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	AUS_wilhelm_zehner = {
+		name = AUS_wilhelm_zehner
+		portraits = {
+			civilian = {
+				small = "gfx/interface/ideas/minister/AUS/idea_AUS_Wilhelm_Zehner.png"
+			}
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Wilhelm_Zehner.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				inflexible_strategist
+				career_officer
+				organizer
+				skilled_staffer
+			}
+			skill = 4
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 4
 		}
 	}
 }
