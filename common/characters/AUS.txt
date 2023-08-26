@@ -531,4 +531,24 @@ characters = {
 			logistics_skill = 4
 		}
 	}
+	AUS_lothar_rendulic = {
+		name = AUS_lothar_rendulic
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Lothar_Rendulic.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				armor_officer
+				harsh_leader
+				career_officer
+			}
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
 }
