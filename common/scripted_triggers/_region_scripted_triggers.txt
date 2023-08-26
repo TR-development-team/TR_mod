@@ -73,21 +73,28 @@ is_european_france = {
 		region = 208 #Western France
 	}
 }
-
-is_european_italy = {
+is_italy = {
 	OR = {
-		region = 23 #Italy
-		state = 39 #South Tyrol
-		state = 114 #Sardinia
-		state = 158 #Piedmont
-		state = 159 #Lombardy
-		state = 160 #Veneto
-		state = 736 #Istria
-		state = 946 #Trentino
-		state = 948 #Fiume
-		state = 991 #Primorska
-		state = 992 #Istarska
-		state = 1015 #Udine
+		region = 21 #北イタリア
+		region = 23 #南イタリア
+		region = 287 #中部イタリア
+	}
+}
+is_full_italy = {
+	OR = {
+		region = 21 #北イタリア
+		region = 23 #南イタリア
+		region = 287 #中部イタリア
+		state = 39 #南チロル
+		state = 114 #サルデーニャ
+		state = 115 #シチリア
+		state = 735 #サヴォイ
+		state = 736 #トリエステ
+		state = 846 #ニース
+		state = 946 #トレンティーノ
+		state = 991 #ゴリツィア・グラディスカ
+		state = 992 #イストリアーナ
+		state = 1016 #ノトランスカ
 	}
 }
 
@@ -100,47 +107,45 @@ is_iberia = {
 	}
 }
 
-is_germany = {
+is_germany = {#現代ドイツ
 	OR = {
-		state = 56
-		state = 57
-		state = 58
-		state = 59
-		state = 877
-		region = 7 #Western Germany
-		region = 8 #Eastern Germany
+		region = 6 #ドイツ北部
+		region = 7 #ドイツ西部
+		region = 8 #ドイツ中部
+		region = 283 #ドイツ南部
 	}
 }
 
-
-is_full_germany = {
+is_full_germany = {#ドイツ帝国
 	OR = {
 		is_germany = yes
-		region = 38
-		state = 8 #Luxembourg
+		region = 284 #ドイツ東部
+		region = 38 #プロイセン
 		state = 28 #Alsace-Lorraine
         state = 850 #North slesvig
 	}
 }
 
-is_core_austria = {
-	OR = {
-		state = 4 #Lower Austria
-		state = 152
+is_core_austria = {#現代オーストリア
+    OR = {
+	    state = 4
+	    state = 152
 		state = 153
 		state = 929
-		state = 945
 		state = 978
 		state = 986
 		state = 987
-		state = 990
-	}
+		state = 997
+    }
 }
-
-is_greater_germany = {
+is_full_austria = {
+	region = 278 #オーストリア
+}
+is_greater_germany = {#大ドイツ
 	OR = {
 		is_full_germany = yes
 		is_core_austria = yes
+		state = 8 #Luxembourg
 	}
 }
 
@@ -152,6 +157,7 @@ is_bulgaria = {
 		state = 801
 		state = 853
 		state = 854
+		state = 1048
 	}
 }
 
@@ -159,10 +165,13 @@ is_full_bulgaria = {
 	OR = {
 		is_bulgaria = yes
 		state = 77
+		state = 106
 		state = 184
 		state = 731
 		state = 803
 		state = 841
+		state = 1046
+		state = 1050
 	}
 }
 

@@ -735,24 +735,8 @@ focus_tree = {
 				}
 				add_claim_by = RAT
 			}
-			every_state = {
-				limit = {
-					is_core_of = NTL
-				}
-				add_claim_by = RAT
-			}
-			every_state = {
-				limit = {
-					is_core_of = SWI
-				}
-				add_claim_by = RAT
-			}
-			#ズデーテンラント
-			add_state_claim = 69
-			add_state_claim = 74
-			add_state_claim = 976
-			add_state_claim = 977
-			add_state_claim = 994
+			add_state_claim = 3
+			add_state_claim = 151
 		}
 	}
 	#エスターライヒの回復

@@ -20,11 +20,10 @@ GER_integrate_policy = {
 				152 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				153 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				929 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				945 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                978 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				978 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
                 986 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
                 987 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                990 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+                997 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
@@ -32,22 +31,20 @@ GER_integrate_policy = {
 			has_full_control_of_state = 152
 			has_full_control_of_state = 153
 			has_full_control_of_state = 929
-			has_full_control_of_state = 945
 			has_full_control_of_state = 978
 			has_full_control_of_state = 986
 			has_full_control_of_state = 987
-			has_full_control_of_state = 990
-
+			has_full_control_of_state = 997
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 4 state = 152 state = 153 state = 929 state = 945 state = 978 state = 986 state = 987 state = 990  }
+			highlight_state_targets = { state = 4 }
 		}
 		cost = 150
 		fire_only_once = yes
 		modifier = {
-                        consumer_goods_factor = 0.1
-                        MONTHLY_POPULATION = -0.2
-                        stability_weekly = -0.002
+            consumer_goods_factor = 0.1
+            MONTHLY_POPULATION = -0.2
+            stability_weekly = -0.002
 			political_power_gain = -0.5
 		}
 		days_remove = 200
@@ -65,11 +62,10 @@ GER_integrate_policy = {
 			152 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			153 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			929 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-			945 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
             978 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
             986 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
             987 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-            990 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+            997 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 
 		}
 		ai_will_do = {
