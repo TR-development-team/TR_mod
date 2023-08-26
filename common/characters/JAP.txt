@@ -276,9 +276,9 @@ characters={
 		field_marshal = {
 			traits = { trait_engineer trait_cautious brilliant_strategist JAP_samurai_lineage war_hero }
 			skill = 4
-			attack_skill = 4
+			attack_skill = 3
 			defense_skill = 4
-			planning_skill = 4
+			planning_skill = 3
 			logistics_skill = 4
 		}		
 	}
@@ -292,11 +292,11 @@ characters={
 		}
 		field_marshal = {
 			traits = { logistics_wizard organizer JAP_samurai_lineage war_hero }
-			skill = 5
+			skill = 4
 			attack_skill = 4
 			defense_skill = 3
-			planning_skill = 5
-			logistics_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
 		}
 
 	}

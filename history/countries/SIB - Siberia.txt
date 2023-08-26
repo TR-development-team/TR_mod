@@ -52,6 +52,7 @@ if = {
 add_ideas = {
         Constitutional_monarchy
         Tiyoda_Kensho
+        limited_conscription
         SIB_Japan_Russia_coexistence
         SIB_Manchurian_worker
         SIB_Mines_in_the_Far_North
@@ -63,7 +64,7 @@ add_ideas = {
 }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
-		days = 250
+		days = 365
                  }  
 set_convoys = 250
 

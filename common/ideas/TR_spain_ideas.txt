@@ -4,90 +4,53 @@
      country = {
 
 		### Starting ###
-
 		SPR_CIVIL_WAR = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_manpower_bonus
-
-			
-			removal_cost = -1
+            picture = SPR_class_war
 			modifier = {
-			 conscription = 0.05
-			 war_support_factor = 1.0
-                         stability_factor = -0.25
-                         surrender_limit= 0.1
-                         out_of_supply_factor = -0.2
+			    conscription = 0.05
+			    war_support_factor = 1.0
+                stability_factor = -0.25
+                surrender_limit= 0.1
+                out_of_supply_factor = -0.2
 			}
 		}
 		SPR_depression = {
-			allowed = {
-				always = no
-			}
-                        picture = great_depression
-
-			
-			removal_cost = -1
+            picture = usa_great_depression_2
 			modifier = {
-			        stability_factor = -0.2
+			    stability_factor = -0.2
 				production_speed_buildings_factor = -0.4
 				consumer_goods_factor = 0.10
 			}
 		}
-                SPR_carlismo = {
-			allowed = {
-				always = no
-			}
-                        picture = GFX_idea_SPA_carlism
-
-			
-			removal_cost = -1
+        SPR_carlismo = {
+            picture = SPA_carlism
 			modifier = {
-                                political_power_cost = -0.1
-			        stability_factor = 0.1
+                political_power_cost = -0.1
+			    stability_factor = 0.1
 				research_speed_factor = -0.05
 			}
 		}
-                SPR_bundansyakai = {
-			allowed = {
-				always = no
-			}
-                        picture = GFX_idea_SPR_political_violence
-
-			
-			removal_cost = -1
+        SPR_bundansyakai = {
+            picture = SPR_political_violence
 			modifier = {
-                                conscription_factor = -0.3
-                                political_power_cost = 0.5
-			        stability_factor = -0.25
+                conscription_factor = -0.3
+                political_power_cost = 0.5
+			    stability_factor = -0.25
 			}
 		}
-                ADU_surrealism = {
-			allowed = {
-				always = no
-			}
-                        picture = GFX_idea_SPA_national_recovery
-
-			
-			removal_cost = -1
+        ADU_surrealism = {
+            picture = SPA_national_recovery
 			modifier = {
-                                production_speed_buildings_factor = 0.1
+                production_speed_buildings_factor = 0.1
 				research_speed_factor = 0.05
 				political_power_cost = 0.2
 			}
 		}
-                CAT_communism_1 = {
-			allowed = {
-				always = no
-			}
-                        picture = GFX_idea_SPR_collectivized_society
-
-			
-			removal_cost = -1
+        CAT_communism_1 = {
+            picture = SPR_collectivized_society
 			modifier = {
-                                political_power_factor = -0.1
-                                local_resources_factor = 0.05
+                political_power_factor = -0.1
+                local_resources_factor = 0.05
 				consumer_goods_factor = -0.05
 				MONTHLY_POPULATION = 0.1
 			}

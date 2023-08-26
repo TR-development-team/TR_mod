@@ -16,8 +16,8 @@
 
             targeted_modifier = {
 				tag = JAP
-				trade_cost_for_target_factor = -0.1
-				extra_trade_to_target_factor = 0.2
+				trade_cost_for_target_factor = -0.2
+				extra_trade_to_target_factor = 0.4
 			}
 			modifier = {
 				consumer_goods_factor = 0.05
@@ -40,8 +40,8 @@
 
             targeted_modifier = {
 				tag = JAP
-				trade_cost_for_target_factor = -0.2
-				extra_trade_to_target_factor = 0.4
+				trade_cost_for_target_factor = -0.4
+				extra_trade_to_target_factor = 0.8
 			}
 			modifier = {
 				consumer_goods_factor = 0.05

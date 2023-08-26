@@ -1,9 +1,9 @@
-﻿add_namespace = GBR
+﻿add_namespace = TR_UK
 
-country_event = {	#ジョージ5世の崩御
-	id = GBR.0
-	title = GBR.0.t
-	desc = GBR.0.d
+country_event = {#ジョージ5世の崩御
+	id = TR_UK.0
+	title = TR_UK.0.t
+	desc = TR_UK.0.d
 	picture = GFX_report_event_europe_funeral
 	trigger = {
 		tag = GBR
@@ -14,11 +14,184 @@ country_event = {	#ジョージ5世の崩御
 	fire_only_once = yes
 	
 	option = {
-		name = GBR.0.0
+		name = TR_UK.0.a
 		add_ideas = GBR_Edward_VIII
 	}
 }
+country_event = {#帝国の現状
+	id = TR_UK.1
+	title = TR_UK.1.t
+	desc = TR_UK.1.d
+	picture = GFX_report_event_generic_sign_treaty1
 
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = TR_UK.1.a
+
+	}
+}
+country_event = {#赤き冬
+	id = TR_UK.2
+	title = TR_UK.2.t
+	desc = TR_UK.2.d
+	picture = GFX_report_event_generic_strike
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = GBR_frequent_strikes
+		}
+	}
+	option = {
+		name = TR_UK.2.a
+		add_stability = -0.05
+		effect_tooltip = {
+			add_ideas = GBR_frequent_strikes
+		}
+	}
+}
+country_event = {#大阪大暴落の影響がイギリスに波及！
+	id = TR_UK.3
+	title = TR_UK.3.t
+	desc = TR_UK.3.d
+	picture = GFX_report_event_JAP_great_depression_1
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = GBR_depression
+		}
+	}
+	option = {
+		name = TR_UK.3.a
+		effect_tooltip = {
+			add_ideas = GBR_depression
+		}
+	}
+}
+country_event = {#モズレーが経済悪化を非難
+	id = TR_UK.4
+	title = TR_UK.4.t
+	desc = TR_UK.4.d
+	picture = GFX_report_event_eng_mosley_speech
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.4.a
+		GBR_royalist_decreased_effect = yes
+		add_stability = -0.05
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.03
+		}
+	}
+}
+country_event = {#扇動家たちの集い
+	id = TR_UK.5
+	title = TR_UK.5.t
+	desc = TR_UK.5.d
+	picture = GFX_report_event_eng_mosley_march_on_downing_street
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.5.a
+		add_stability = -0.05
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = 0.02
+		}
+
+	}
+}
+country_event = {#迫る革命
+	id = TR_UK.6
+	title = TR_UK.6.t
+	desc = TR_UK.6.d
+	picture = GFX_report_event_generic_communist_congress
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = syndicalist
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = radical_socialist
+				popularity = 0.02
+			}
+		}
+	}
+	option = {
+		name = TR_UK.6.a
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = GBR_Manipulation_of_Labor
+	}
+	option = {
+		name = TR_UK.6.b
+		ai_chance = {
+			base = 40
+		}
+		set_country_flag = GBR_Outlawing_Revolution
+	}
+}
+country_event = {#非常時権限法
+	id = TR_UK.7
+	title = TR_UK.7.t
+	desc = TR_UK.7.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.7.a
+		GBR_royalist_decreased_effect = yes
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.02
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.02
+		}
+	}
+}
+country_event = {#労働に関する王立委員会
+	id = TR_UK.8
+	title = TR_UK.8.t
+	desc = TR_UK.8.d
+	picture = GFX_report_event_generic_parliament
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.8.a
+		GBR_royalist_increased_effect = yes
+	}
+}
 add_namespace = GBR_civil_war
 country_event = {#暴動
 	id = GBR_civil_war.1
@@ -30,10 +203,11 @@ country_event = {#暴動
 	is_triggered_only = yes
 	
 	option = { 
-		name = GBR_civil_war.1.0
+		name = GBR_civil_war.1.a
 		ai_chance = {	factor = 100	}
 		GBR_civil_war_start = yes
 		hidden_effect = {
+			remove_ideas = GBR_frequent_strikes
 			create_dynamic_country = {
 				original_tag = GBR
 				set_BRITANNIA_union = yes
@@ -46,7 +220,7 @@ country_event = {#暴動
 				transfer_state = 338
 				GBR = {
 					every_character = {
-						limit = {	is_character = GBR_oswald_mosley	}
+						limit = {	has_character_flag = GBR_red_team	}
 						set_nationality = PREV.PREV
 					}
 				}
@@ -54,6 +228,16 @@ country_event = {#暴動
 			}
 			GBR = {
 				set_country_flag = GBR_royalist_faction_flag
+				set_popularities = {
+					social_democrat = 24
+					social_liberal = 11
+					market_liberal = 10
+					social_conservative = 26
+					authoritarian_democrat = 9
+					paternal_autocrat = 4
+					national_populist = 11
+					Gnosticism = 5
+				}
 				transfer_units_fraction= {
 					target = GB1
 					size = 0.5
@@ -67,23 +251,35 @@ country_event = {#暴動
 		}
 	}
 	option = { 
-		name = GBR_civil_war.1.1
+		name = GBR_civil_war.1.b
 		ai_chance = {	factor = 0	}
 		GBR_civil_war_start = yes
 		hidden_effect = {
-			transfer_units_fraction= {
-				target = GB0
-				size = 0.5
-				stockpile_ratio = 0.0
-				army_ratio = 0.0
-				navy_ratio = 0.4
-				air_ratio = 0.0
-				keep_unit_leaders_trigger = { always = yes }
-			}
+			remove_ideas = GBR_frequent_strikes
 			create_dynamic_country = {
 				original_tag = GBR
 				set_cosmetic_tag = GBRandIREbyENG_united_kingdom
 				set_country_flag = GBR_royalist_faction_flag
+				set_politics = {
+					ruling_party = social_conservative
+					elections_allowed = yes
+				}
+				set_popularities = {
+					social_democrat = 24
+					social_liberal = 11
+					market_liberal = 10
+					social_conservative = 26
+					authoritarian_democrat = 9
+					paternal_autocrat = 4
+					national_populist = 11
+					Gnosticism = 5
+				}
+				GBR = {
+					every_character = {
+						limit = {	NOT = { has_character_flag = GBR_red_team }	}
+						set_nationality = PREV.PREV
+					}
+				}
 				GBR = {
 					every_owned_state = {
 						limit = {
@@ -99,14 +295,22 @@ country_event = {#暴動
 						}
 						transfer_state_to = PREV.PREV
 					}
-					every_character = {
-						limit = {	NOT = {	is_character = GBR_oswald_mosley	}	}
-						set_nationality = PREV.PREV
-					}
 				}
-				promote_character = GBR_oswald_mosley
+				promote_character = GBR_Clement_Attlee
+				promote_character = GBR_winston_churchill
+				promote_character = GBR_winston_churchill_2
+				promote_character = GBR_Aleister_Crowley
 			}
-			GBR = {	set_BRITANNIA_union = yes	}
+			transfer_units_fraction= {
+				target = GB0
+				size = 0.5
+				stockpile_ratio = 0.5
+				army_ratio = 1.0
+				navy_ratio = 0.5
+				air_ratio = 1.0
+				keep_unit_leaders_trigger = { always = yes }
+			}
+			GBR = {	set_BRITANNIA_union = yes }
 		}
 	}
 }
@@ -121,27 +325,109 @@ country_event = {	#英国国民革命
 	fire_only_once = yes
 	
 	option = {
-		name = GBR_civil_war.2.0
+		name = GBR_civil_war.2.a
 		add_ideas = ENR_REVOLUTION
 		load_oob = "ENR_Civil_war"
 		declare_war_on = {	target = GB0	type = civil_war	}
+		hidden_effect = { 
+			GB0 = { country_event = GBR_civil_war.3 } 
+		}
 	}
 }
-
-country_event = {	#王党派の勝利
+country_event = {#革命派の攻撃
 	id = GBR_civil_war.3
 	title = GBR_civil_war.3.t
 	desc = GBR_civil_war.3.d
+	picture = GFX_report_event_eng_mosley_speech
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = {
+		name = GBR_civil_war.3.a
+		add_ideas = GBR_civil_war
+		add_ideas = limited_conscription
+		add_ideas = partial_economic_mobilisation
+		remove_ideas = GBR_depression
+		add_dynamic_modifier = { modifier = GBR_royalist_civil_war_modifier  }
+		if = {
+			limit = {
+				has_completed_focus = GBR_focus_9
+			}
+			division_template = {
+				name = "Royalist Infantry Division"
+				division_names_group = GBR_INF_01
+				regiments = {					
+					infantry = { x = 0 y = 0 }	
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }	
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+				is_locked = yes
+			}
+			random_owned_controlled_state = {
+				prioritize = { 126 }
+				create_unit = {
+					division = "division_template = \"Royalist Infantry Division\" start_experience_factor = 0.2"
+					owner = GBR
+					count = 3
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = GBR_focus_10
+			}
+			division_template = {
+				name = "Royalist Militia"
+				division_names_group = GBR_GAR_01
+				regiments = {					
+					irregular_infantry = { x = 0 y = 0 }	
+					irregular_infantry = { x = 0 y = 1 }
+					irregular_infantry = { x = 0 y = 2 }
+					irregular_infantry = { x = 0 y = 3 }
+					irregular_infantry = { x = 1 y = 0 }	
+					irregular_infantry = { x = 1 y = 1 }
+					irregular_infantry = { x = 1 y = 2 }
+					irregular_infantry = { x = 1 y = 3 }
+				}
+				is_locked = yes
+			}
+			random_owned_controlled_state = {
+				prioritize = { 126 }
+				create_unit = {
+					division = "division_template = \"Royalist Militia\" start_experience_factor = 0.2"
+					owner = GBR
+					count = 3
+				}
+			}
+		}
+	}
+}
+country_event = {	#王党派の勝利
+	id = GBR_civil_war.4
+	title = GBR_civil_war.4.t
+	desc = GBR_civil_war.4.d
 	picture = GFX_report_event_france_parade
 	trigger = {
-	has_country_flag = GBR_revolution_FLAG
+	    has_country_flag = GBR_revolution_FLAG
 		tag = GBR
 		GB1 = { exists = no }
 	}
 	fire_only_once = yes
 	
 	option = { 
-		name = GBR_civil_war.3.0
+		name = GBR_civil_war.4.a
+		remove_ideas = GBR_civil_war
+		add_ideas = volunteer_only
+		add_ideas = civilian_economy
+		add_ideas = GBR_civil_war_economy
+		add_ideas = GBR_social_division
 		set_country_flag = GBR_revolution_end
+		remove_dynamic_modifier = { modifier = GBR_royalist_civil_war_modifier  }
 	}
 }

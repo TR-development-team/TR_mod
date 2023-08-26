@@ -9,15 +9,12 @@
         infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
 	}
 }
 division_template = {
-	name = "District Garrison"			# Represents precursors to Indian Infantry Divisions (district divisions)
-	division_names_group = IND_GAR_01
-										# Has older equipment, lower experience
+	name = "Indian National Army"
+	division_names_group = IND_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -25,102 +22,269 @@ division_template = {
         infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
-
 division_template = {
-	name = "Armored-Division"
-	division_names_group = IND_ARM_01
+	name = "Cavalry Division"
+	division_names_group = IND_CAV_01
 
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
 	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "District Garrison"			
+	division_names_group = IND_GAR_01
+										
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
+	}
+	is_locked = yes
 }
 
 
 ####### OOB #######
 units = {
-	#India Command
-	
-	
-	
-	#Eastern Command
-	division= {	# "Meerut District"
+	division= {	# 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 106
+			name_order = 1
+		}
+		location = 2086
+		division_template = "Indian National Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	# 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10116
+		division_template = "Indian National Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division= {	# 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11952
+		division_template = "Indian National Army"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 3989
+		division_template = "Infantry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12708
+		division_template = "Infantry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 2032
+		division_template = "Infantry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 7064
+		division_template = "Infantry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 4984
+		division_template = "Infantry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 10428
+		division_template = "Infantry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 7497
+		division_template = "Infantry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4237
+		division_template = "Cavalry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12781
+		division_template = "Cavalry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3456
+		division_template = "Cavalry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4110
+		division_template = "Cavalry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10021
+		division_template = "Cavalry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1898
+		division_template = "Cavalry Division"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2105
+		division_template = "District Garrison"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1949
+		division_template = "District Garrison"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4045
+		division_template = "District Garrison"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12241
+		division_template = "District Garrison"
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
 		}
 		location = 12777
 		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 	}
-	division= {	# "Lucknow District"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 107
+			name_order = 6
 		}
-		location = 12777
+		location = 10088
 		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 	}
-	division= {	
-		name = "Presidency & Assam District"
-		location = 12777
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	
-	#Southern Command
-	division= {	# "Deccan District"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 109
+			name_order = 7
 		}
-		location = 12777
+		location = 4090
 		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 	}
-	division= {	# "Bombay District"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 110
+			name_order = 8
 		}
-		location = 12777
+		location = 4187
 		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
 	}
-	division= {	# "Madras District"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
-			name_order = 111
+			name_order = 9
 		}
-		location = 12777
+		location = 12854
 		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 12490
+		division_template = "District Garrison"
 	}
 }
 
-
-}
 
 
 ##### Starting Production #####
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "IND"
 		}
 		requested_factories = 1

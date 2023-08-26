@@ -7,6 +7,9 @@ set_cosmetic_tag = INS_military_government
 add_ideas = {
         Colonical_system
         Tiyoda_Kensho
+		INS_military_rule
+		INS_Anger_of_a_New_Generation
+		INS_3A_Movement
 }
 add_timed_idea = {
 		idea = JAPCO_black_thursday
@@ -66,16 +69,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 5
-	syndicalist = 10
-	radical_socialist = 10
-	social_democrat = 10
-	social_liberal = 5
-	market_liberal = 0
-	social_conservative = 20
-	authoritarian_democrat = 30
-	paternal_autocrat = 0
-	national_populist = 10
+	totalist = 7
+	syndicalist = 4
+	radical_socialist = 18
+	social_democrat = 8
+	social_liberal = 2
+	market_liberal = 3
+	social_conservative = 18
+	authoritarian_democrat = 24
+	paternal_autocrat = 12
+	national_populist = 4
 }
 
 recruit_character = INS_amir_sjarifuddin_harahap

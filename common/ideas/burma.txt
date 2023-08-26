@@ -1,0 +1,48 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+		BRM_National_Army = {
+			picture = MEX_revolutionary_army
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.05
+				army_morale_factor = 0.1
+				training_time_army_factor = -0.1
+				drift_defence_factor = -0.2
+				totalist_drift = 0.02
+			}
+		}
+		BRM_ethnic_conflict = {
+			picture = chi_war_of_resistance3
+			modifier = {
+				conscription_factor = -0.1
+				stability_factor = -0.3
+			}
+		}
+		BRM_Thai_Burma_Railway = {
+			picture = generic_build_infrastructure
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.5
+			}
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = -0.05
+				supply_factor = 0.1
+			}
+		}
+        BRM_black_thursday = {
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.2
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.2
+			}
+		}
+    }
+}

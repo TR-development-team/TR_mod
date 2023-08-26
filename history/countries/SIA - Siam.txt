@@ -11,11 +11,16 @@ if = {
 set_cosmetic_tag = SIA_kingdom
 
 add_ideas = {
-      Constitutional_monarchy
-      trinket_minimum_wage
-      trinket_max_workhours
-      trinket_health_care
-      low_school_system
+    Constitutional_monarchy
+    trinket_minimum_wage
+    trinket_max_workhours
+    trinket_health_care
+    low_school_system
+
+	SIA_Aftermath_of_the_Revolution
+	SIA_the_absentee_king
+	SIA_Thai_Burma_Railway
+	SIA_black_thursday
 }
  
 # Starting tech
@@ -131,15 +136,15 @@ set_politics = {
 set_popularities = {
 	totalist = 7
 	syndicalist = 6
-	radical_socialist = 3
+	radical_socialist = 4
 	social_democrat = 11
-	social_liberal = 8
-	market_liberal = 6
-	social_conservative = 7
+	social_liberal = 5
+	market_liberal = 8
+	social_conservative = 12
 	authoritarian_democrat = 24
 	paternal_autocrat = 12
 	national_populist = 11
-        Gnosticism = 5
+        Gnosticism = 0
 }
 
 recruit_character = SIA_phraya_phahon

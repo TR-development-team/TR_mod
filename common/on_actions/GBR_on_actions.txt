@@ -1,0 +1,257 @@
+on_actions = {
+	on_daily_GBR = {
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						GBR = {
+							has_country_flag = GBR_end_civil_war
+						}
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 0
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = -0.25
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = -0.25
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = -0.25
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = -0.25
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = -0.25
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 1
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = -0.2
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = -0.2
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = -0.2
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = -0.2
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = -0.2
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 2
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = -0.15
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = -0.15
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = -0.15
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = -0.15
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = -0.15
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 3
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = -0.1
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = -0.1
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = -0.1
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = -0.1
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = -0.1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 4
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = -0.05
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = -0.05
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = -0.05
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = -0.05
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = -0.05
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 5
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = 0
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = 0
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = 0
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = 0
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = 0
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 6
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = 0.05
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = 0.05
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = 0.05
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = 0.05
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = 0.05
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 7
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = 0.1
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = 0.1
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = 0.1
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = 0.1
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = 0.1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 8
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = 0.15
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = 0.15
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = 0.15
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = 0.15
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = 0.15
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 9
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = 0.2
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = 0.2
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = 0.2
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = 0.2
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = 0.2
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							GBR_royalist_support = 10
+						}
+					}
+					set_variable = {
+						GBR_royalist_stability_factor = 0.25
+					}
+					set_variable = {
+						GBR_royalist_war_support_factor = 0.25
+					}
+					set_variable = {
+						GBR_royalist_army_attack_factor = 0.25
+					}
+					set_variable = {
+						GBR_royalist_army_defence_factor = 0.25
+					}
+					set_variable = {
+						GBR_royalist_army_org_Factor = 0.25
+					}
+				}
+			}
+		}
+	}
+}

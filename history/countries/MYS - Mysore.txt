@@ -1,0 +1,53 @@
+﻿capital = 1069
+#oob = "MYS_1936"
+
+set_cosmetic_tag = MYS_princely_state
+JAP = {	set_autonomy = {	target = MYS	autonomous_state = imperial_protectorate	}	}
+add_ideas = {
+        Absolute_monarchy
+        CNK_jap_economic
+        IND_agrarian_society
+}
+set_convoys = 20
+set_research_slots = 3
+set_stability = 0.5
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1		
+	tech_engineers = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+}
+
+if = {
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+	set_technology = { camelry = 1 }
+}
+
+
+
+set_politics = {
+	ruling_party = authoritarian_democrat
+	last_election = "1935.11.14"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 5
+	syndicalist = 10
+	radical_socialist = 5
+	social_democrat = 17
+	social_liberal = 10
+	market_liberal = 6
+	social_conservative = 12
+	authoritarian_democrat = 21
+	paternal_autocrat = 2
+	national_populist = 3
+        Gnosticism = 9
+}
+recruit_character = MYS_Chama_Raja_XI
+

@@ -1859,4 +1859,30 @@
 				}
 			}			
 		}
+		chief_of_navy = {	
+			RUS_Alexander_Kolchak = {
+			picture = RUS_Alexander_Kolchak
+			allowed = {
+				original_tag = RUS
+				}
+					
+			traits = { 
+				chief_of_navy
+				cnav_decisive_battle_doctrine
+				}
+			}
+		}
+		chief_of_air_force = {	
+			RUS_Alexander_Seversky = {
+			picture = RUS_Alexander_Seversky
+			allowed = {
+				original_tag = RUS
+				}
+					
+			traits = { 
+				chief_of_air_force
+				cair_air_superiority_doctrine
+				}
+			}
+		}
 }

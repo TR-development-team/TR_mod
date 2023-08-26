@@ -1,0 +1,25 @@
+
+state={
+	id=1072
+	name="STATE_1072"
+	manpower = 2136800
+	
+	state_category = four
+	
+	history={
+		owner = PJB
+                add_core_of = PJB
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {
+			12822 5
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		2002 10729 10772 12822
+	}
+}

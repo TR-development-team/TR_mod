@@ -1,0 +1,30 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+		DVN_Cracked_diamond = {
+			picture = citizen_militia_2
+			modifier = {
+				political_power_cost = 0.2
+                war_support_factor = -0.2
+			}
+		}
+		DVN_Hero_of_Imphal = {
+			picture = DVN_Hero_of_Imphal
+			modifier = {
+				political_power_factor = 0.1
+				war_stability_factor = 0.1
+				local_resources_factor = 0.05
+				MONTHLY_POPULATION = -0.15
+			}
+		}
+		DVN_rumor = {
+			picture = DVN_rumor
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+    }
+}

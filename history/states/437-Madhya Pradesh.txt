@@ -4,11 +4,12 @@ state={
 	name="STATE_437" # Indore
 	manpower = 8402500
 
-	state_category = town
+	state_category = four
 
 	history={
 		owner = IND
                 add_core_of = IND
+		victory_points = { 12080 5 }
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

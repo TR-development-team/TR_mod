@@ -1,21 +1,49 @@
 ﻿### DECAN OOB ###
 
 division_template = {
-	name = "Infantry Division"		
-	division_names_group = JAP_INF_01			
+	name = "Hohei Shidan" 			
+	division_names_group = DVN_INF_01
+									
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-                infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-                infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 2 }
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
-                infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
 	}
 }
+division_template = {
+    name = "Kihei Shidan" 			# Cavalry Division - 2 Cavalry Division regiments (3k men); 1 mounted artillery regiment
+    division_names_group = DVN_CAV_01
+    regiments = {
+	    cavalry = { x = 0 y = 0 }
+	    cavalry = { x = 0 y = 1 }
+	    cavalry = { x = 0 y = 2 }
+	    cavalry = { x = 1 y = 0 }
+	    cavalry = { x = 1 y = 1 }
+	    cavalry = { x = 1 y = 2 }
+    }
+}
+division_template = {
+	name = "Chuton-chi Shidan" 	
+	division_names_group = JAP_GAR_01
 
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
 
 
 units = {
@@ -25,29 +53,134 @@ units = {
 			name_order = 1
 		}
 		location = 1349
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		division_template = "Hohei Shidan" 			
+		start_experience_factor = 0.3
 	}
-        division= {	
+    division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
 		location = 10278
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+		division_template = "Hohei Shidan" 			
+		start_experience_factor = 0.3
 	}
-        division= {	
+    division= {	
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
-		location = 8011
-		division_template = "Infantry Division"
+		location = 12779
+		division_template ="Hohei Shidan" 			
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10756
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 1381
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1268
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1409
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1349 
+		division_template = "Chuton-chi Shidan" 	
 		start_experience_factor = 0.2
-		start_equipment_factor = 0.8
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12295
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10278
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1228 
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1344
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 7177
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1405
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 12180
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
 	}
 }
 

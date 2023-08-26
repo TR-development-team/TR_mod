@@ -1,0 +1,33 @@
+
+ ideas = {
+       
+     country = {
+
+		### Stjapanese_loyalismarting ###
+		INS_military_rule = {
+			picture = jap_militarism_showa
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.5
+			}
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = 0.1
+				war_support_factor = -0.2
+			}
+		}
+		INS_Anger_of_a_New_Generation = {
+			picture = hol_liberation
+			modifier = {
+				stability_factor = -0.3
+			}
+		}
+		INS_3A_Movement = {
+			picture = JAP_japanese_loyalism
+			modifier = {
+                war_stability_factor = 0.1
+			}
+		}
+    }
+}

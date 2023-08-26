@@ -2016,21 +2016,48 @@ focus_tree = {
 					limit = {
 						is_core_of = BLT
 					}
-					add_claim_by = SOV
+					add_claim_by = RUS
 				}
-				create_wargoal = {
-					target = BLT
-					type = annex_everything
+				if = {
+					limit = { country_exists = BLT BLT = { is_subject = no } }
+					create_wargoal = {
+						target = BLT
+						type = annex_everything
+					}
+				}
+				if = {
+					limit = { country_exists = EST EST = { is_subject = no } }
+					create_wargoal = {
+						target = EST
+						type = annex_everything
+					}
+				}
+				if = {
+					limit = { country_exists = LAT LAT = { is_subject = no } }
+					create_wargoal = {
+						target = LAT
+						type = annex_everything
+					}
+				}
+				if = {
+					limit = { country_exists = PRE PRE = { has_country_flag = BLT_Freikorps } }
+					create_wargoal = {
+						target = PRE
+						type = annex_everything
+					}
 				}
 				every_state = {
 					limit = {
 						is_core_of = LIT
 					}
-					add_claim_by = SOV
+					add_claim_by = RUS
 				}
-				create_wargoal = {
-					target = LIT
-					type = annex_everything
+				if = {
+					limit = { country_exists = LIT BLT = { is_subject = no } }
+					create_wargoal = {
+						target = LIT
+						type = annex_everything
+					}
 				}
 			}
 		}

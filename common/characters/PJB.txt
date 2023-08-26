@@ -12,8 +12,13 @@ characters={
 		country_leader={
 			ideology= absolute_monarchy_subtype
 		}
-		country_leader={
-			ideology= Nationalism_subtype
-		}
+		field_marshal = {
+			traits = { politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		} 
 	}
 }

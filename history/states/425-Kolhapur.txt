@@ -1,0 +1,30 @@
+
+state={
+	id=425
+	name="STATE_425" # Kolhapur
+	manpower = 4158200
+	
+	state_category = two
+	
+	resources={
+		
+	}
+
+	history={
+		owner = DVN
+                add_core_of = DVN
+		victory_points = {
+			12295 1
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		4278 4291 4395 5032 7250 12105 12208 12295 13408
+	}
+}

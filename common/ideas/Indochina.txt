@@ -5,9 +5,7 @@
 
 		### Starting ###
 		INC_independent_movement = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea INC_colonial_question" }
 			picture = chi_war_of_resistance3
-			allowed = { always = no }
 			modifier = {
 				conscription_factor = -0.1
 				army_morale_factor = -0.1
@@ -18,10 +16,30 @@
                 resistance_growth = 0.25
 			}
 		}
+		INC_Indochina_Railway = {
+			picture = generic_build_infrastructure
+			targeted_modifier = {
+				tag = JAP
+				cic_to_target_factor = 0.05
+			}
+			modifier = {
+				political_power_cost = 0.1
+				consumer_goods_factor = -0.05
+				supply_factor = 0.1
+			}
+		}
+		INC_naval_rule = {
+			picture = generic_the_london_naval_treaty
+			modifier = {
+				production_speed_naval_base_factor = 0.2
+				production_speed_dockyard_factor = 0.1
+				production_speed_arms_factory_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
 		INC_Governance_reform = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea INC_Governance_reform" }
-			picture = generic_democratic_drift_bonus
-			allowed = { always = no }
+			picture = chi_war_of_resistance3
 			modifier = {
 				political_power_gain = -1.0
 				stability_weekly = 0.01

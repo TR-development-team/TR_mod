@@ -1,0 +1,32 @@
+
+state={
+	id=1071
+	name="STATE_1071" # Mangalore
+	manpower = 2120345
+	
+	state_category = three
+	
+	resources={
+		
+	}
+
+	history={
+		owner = DVN
+                add_core_of = DVN
+		victory_points = {
+			10190 1
+		}
+		buildings = {
+			infrastructure = 2
+			10190 = {
+				naval_base = 1
+			}
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		7244 7391 10190
+	}
+}

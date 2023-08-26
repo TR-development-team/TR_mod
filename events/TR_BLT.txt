@@ -157,6 +157,7 @@ country_event = {
 			target = BLT
 			type = annex_everything
 		}
+		give_military_access = LAT
 	}
 }
 #ラトビアの成立
@@ -175,6 +176,7 @@ country_event = {
 			target = BLT
 			type = annex_everything
 		}
+		give_military_access = EST
 	}
 }
 #ユデーニチとエストニア
@@ -225,6 +227,7 @@ country_event = {
 		}
 		hidden_effect = {
 		    PRE = { 
+				set_country_flag = BLT_Freikorps
 				load_focus_tree = generic_focus
 				remove_ideas = GER_CIVIL_WAR
 				transfer_state = 190
@@ -241,7 +244,7 @@ country_event = {
 					}
 					add_core_of = PRE
 				}	
-				add_manpower = 10000
+				add_manpower = 3000
 				set_cosmetic_tag = BLT_Freikorps
 				PRE_Rudiger_von_der_Goltz = {
 					promote_leader = yes
@@ -291,6 +294,7 @@ country_event = {
 		}
 		hidden_effect = {
 		    PRE = { 
+				set_country_flag = BLT_Freikorps
 				load_focus_tree = generic_focus
 				remove_ideas = GER_CIVIL_WAR
 				transfer_state = 190
@@ -305,9 +309,9 @@ country_event = {
 					limit = {
 						is_core_of = BLT
 					}
-					add_claim_by = PRE
+					add_core_of = PRE
 				}	
-				add_manpower = 20000
+				add_manpower = 3000
 				set_cosmetic_tag = BLT_Freikorps
 				PRE_Rudiger_von_der_Goltz = {
 					promote_leader = yes

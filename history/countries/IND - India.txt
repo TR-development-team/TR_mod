@@ -21,15 +21,10 @@ set_war_support = 0.1
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
-	infantry_weapons1 = 1
 	tech_support = 1		
-	tech_engineers = 1
 	tech_recon = 1
-	transport = 1
-	trench_warfare = 1
-	fleet_in_being = 1
-	fuel_silos = 1
-	fuel_refining = 1
+	tech_engineers = 1
+	gw_artillery = 1
 }
 
 if = {
@@ -51,17 +46,17 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	totalist = 5
-	syndicalist = 10
-	radical_socialist = 5
-	social_democrat = 8
-	social_liberal = 10
-	market_liberal = 15
+	totalist = 1
+	syndicalist = 1
+	radical_socialist = 10
+	social_democrat = 20
+	social_liberal = 16
+	market_liberal = 11
 	social_conservative = 25
 	authoritarian_democrat = 0
 	paternal_autocrat = 0
 	national_populist = 5
-        Gnosticism = 17
+        Gnosticism = 11
 }
 
 recruit_character = IND_p_krishna_pillai
@@ -69,10 +64,6 @@ recruit_character = IND_Jawaharlal_Nehru
 recruit_character = IND_Behari_Bose
 recruit_character = IND_Jiddu_Krishnamurti
 
-recruit_character = IND_noel_beresfordpeirse
-recruit_character = IND_frank_messervy
-recruit_character = IND_douglas_gracey
-recruit_character = IND_herbert_fitzherbert
 
 if = {
 	limit = {

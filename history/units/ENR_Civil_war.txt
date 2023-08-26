@@ -6,12 +6,11 @@
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
         infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+		infantry = { x = 1 y = 3 }
 	}
 	support = {
        	engineer = { x = 0 y = 0 }
@@ -75,7 +74,7 @@ units = {
 		}
 		location = 11297
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 	}
 	#Scottish Command
 	division= {	# "51st 'Highland' Infantry Division"
@@ -85,7 +84,7 @@ units = {
 		}
 		location = 6384
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 
 	}
 	division= {	# "52nd 'Lowland' Infantry Division"
@@ -145,7 +144,7 @@ units = {
 		}
 		location = 377
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 	}
 	division= {	# "44th 'Home Counties' Infantry Division"
 		division_name = {
@@ -154,7 +153,7 @@ units = {
 		}
 		location = 377
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 
 	}
 	division= {	# "54th 'East Anglia' Infantry Division"
@@ -164,7 +163,7 @@ units = {
 		}
 		location = 377
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 
 	}
 	#Western Command	
@@ -175,7 +174,7 @@ units = {
 		}
 		location = 3369
 		division_template = "Cavalry Brigade"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 
 	}
 	division= {	# "42nd 'East Lancashire' Infantry Division"
@@ -195,7 +194,7 @@ units = {
 		}
 		location = 3369
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 
 	}
 	division= {	# "55th 'West Lancashire' Infantry Division"
@@ -205,48 +204,29 @@ units = {
 		}
 		location = 3311
 		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+		start_experience_factor = 0.1
 
 	}
-	division= {	# "3rd Infantry Division"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 17
-		}
-		location = 351
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+	division= {	# "53rd 'Welsh' Infantry Division"
+	division_name = {
+		is_name_ordered = yes
+		name_order = 16
 	}
-	division= {	# "43rd 'Wessex' Infantry Division"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 18
-		}
-		location = 351
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+	location = 3369
+	division_template = "Infantry Division"
+	start_experience_factor = 0.1
 
+}
+division= {	# "55th 'West Lancashire' Infantry Division"
+	division_name = {
+		is_name_ordered = yes
+		name_order = 17
 	}
-	division= {	# "48th 'South Midland' Infantry Division"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 19
-		}
-		location = 9268
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
+	location = 3311
+	division_template = "Infantry Division"
+	start_experience_factor = 0.1
 
-	}
-	division= {	# "48th 'South Midland' Infantry Division"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location = 9268
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-
-	}
+}
 }
 	
 

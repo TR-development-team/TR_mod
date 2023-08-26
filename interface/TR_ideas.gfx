@@ -216,6 +216,19 @@ spriteTypes = {
 		name = "GFX_idea_USA_Manifest_Destiny"
 		texturefile = "gfx/interface/ideas/USA/USA_Manifest_Destiny.png"
 	}
+	### South India ###
+	SpriteType = {
+		name = "GFX_idea_DVN_Cracked_diamond"
+		texturefile = "gfx/interface/ideas/DVN/DVN_Cracked_diamond.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_DVN_Hero_of_Imphal"
+		texturefile = "gfx/interface/ideas/DVN/DVN_Hero_of_Imphal.png"
+	}
+	SpriteType = {
+		name = "GFX_idea_DVN_rumor"
+		texturefile = "gfx/interface/ideas/DVN/DVN_rumor.png"
+	}
 	### 企業 ###
 	SpriteType = {
 		name = "GFX_idea_JAP_toyota"

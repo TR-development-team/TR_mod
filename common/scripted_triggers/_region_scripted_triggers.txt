@@ -102,9 +102,13 @@ is_iberia = {
 
 is_germany = {
 	OR = {
-		region = 6 #Rhineland
-		region = 7 #Upper Germany
-		region = 8 #Lower Germany
+		state = 56
+		state = 57
+		state = 58
+		state = 59
+		state = 877
+		region = 7 #Western Germany
+		region = 8 #Eastern Germany
 	}
 }
 
@@ -112,15 +116,10 @@ is_germany = {
 is_full_germany = {
 	OR = {
 		is_germany = yes
-		state = 5 #East Prussia
+		region = 38
 		state = 8 #Luxembourg
 		state = 28 #Alsace-Lorraine
-		state = 67 #Upper Silesia
-		state = 85 #Danzig
-		state = 86 #Posen
-		state = 188 #Memel
-		state = 762 #Katowice
-		state = 845 #torun
+        state = 850 #North slesvig
 	}
 }
 

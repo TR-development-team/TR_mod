@@ -1,8 +1,8 @@
 ﻿### Pakistan OOB ###
 
 division_template = {
-	name = "Infantry Division"
-	division_names_group = BRENGL_INF_01		# Uses generic English templates
+	name = "Fauj-i-Khas"
+	division_names_group = PJB_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -11,44 +11,204 @@ division_template = {
         infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
 		infantry = { x = 1 y = 2 }
-        infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
 	}
 }
-
 division_template = {
-	name = "Armoured Division"
-	division_names_group = BRENGL_ARM_01		# Uses generic English templates
+	name = "Fauj-i-Khas(Cavalry)"
+	division_names_group = PJB_CAV_01
 
 	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
 	}
 }
+division_template = {
+	name = "Fauj-i-Be Qawaid"
+	division_names_group = PJB_GAR_01
 
-units = {
-        division= {	# "Panjub Division1"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 106
-		}
-		location = 10887
-		division_template = "Infantry Division"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.9
+	regiments = {
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 1 y = 2 }
 	}
-        division= {	# "Panjub Division2"
+	is_locked = yes
+}
+units = {
+    division= {	
 		division_name = {
 			is_name_ordered = yes
-			name_order = 106
+			name_order = 1
 		}
 		location = 10887
-		division_template = "Infantry Division"
-		start_experience_factor = 0.9
-		start_equipment_factor = 0.9
+		division_template = "Fauj-i-Khas"
+		start_experience_factor = 1.0
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10772
+		division_template = "Fauj-i-Khas"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10843
+		division_template = "Fauj-i-Khas"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1978
+		division_template = "Fauj-i-Khas"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1910 
+		division_template = "Fauj-i-Khas"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 2041 
+		division_template = "Fauj-i-Khas"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 2084 
+		division_template = "Fauj-i-Khas"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 4558 
+		division_template = "Fauj-i-Khas"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 10066 
+		division_template = "Fauj-i-Khas(Cavalry)"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 12717 
+		division_template ="Fauj-i-Khas(Cavalry)"
+		start_experience_factor = 0.3
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12763 
+		division_template = "Fauj-i-Be Qawaid"
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4979 
+		division_template ="Fauj-i-Be Qawaid"
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 8007 
+		division_template ="Fauj-i-Be Qawaid"
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 8022 
+		division_template ="Fauj-i-Be Qawaid"
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 8106 
+		division_template ="Fauj-i-Be Qawaid"
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 9084 
+		division_template ="Fauj-i-Be Qawaid"
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 10813 
+		division_template ="Fauj-i-Be Qawaid"
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 12754 
+		division_template ="Fauj-i-Be Qawaid"
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 12884 
+		division_template ="Fauj-i-Be Qawaid"
 	}
 }
 	
@@ -60,7 +220,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_1
+			type = infantry_equipment_0
 			creator = "PJB"
 		}
 		requested_factories = 1

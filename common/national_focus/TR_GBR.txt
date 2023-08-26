@@ -1,0 +1,31 @@
+focus_tree = {
+	id = britain_focus_2
+	continuous_focus_position = { x = 2000 y = 0 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GBR
+		}
+	}
+    default = no
+	#廃墟と化した島にて
+	focus = {
+		id = GBR_Political_focus_1
+		icon = GFX_
+		x = 8
+		y = 0
+		cost = 10
+        available = {
+
+            }
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+
+		}
+	}
+
+}

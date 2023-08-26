@@ -34,18 +34,18 @@ add_ideas = {
         good_pensions
         good_health_care
         #大臣
-        JAP_hirohito_hs#昭和天皇
-        JAP_machida_chuji#町田忠治
-        JAP_Shidehara_Kijuro#幣原喜重郎
-        JAP_Kataoka_Naoteru#片岡直温
-        JAP_Yamamoto_Tatsuo#山本達雄
-        JAP_Kanin_Kotohito
-        JAP_Ugaki_Kazushige_coa
-        JAP_Osumi_Mineo
-        JAP_Yamamoto_Isoroku_coa
+        JAP_hirohito_hs         #昭和天皇
+        JAP_machida_chuji       #町田忠治
+        JAP_Shidehara_Kijuro    #幣原喜重郎
+        JAP_Kataoka_Naoteru     #片岡直温
+        JAP_Yamamoto_Tatsuo     #山本達雄
+        JAP_Kanin_Kotohito      #閑院宮載仁親王
+        JAP_Ugaki_Kazushige_coa #宇垣一成
+        JAP_Osumi_Mineo         #大角岑生
+        JAP_Yamamoto_Isoroku_coa#山本五十六
         #国民精神
         JAP_asian_leader
-	JAP_Shading_sun
+	    JAP_Shading_sun
         JAP_black_thursday
         JAP_treaty_of_Tokyo
         JAP_ugaki_gunshuku
@@ -82,7 +82,7 @@ set_technology = {
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
-        tech_mountaineers = 1
+    tech_mountaineers = 1
 	motorised_infantry = 1
 	marines  = 1
 	gw_artillery = 1
@@ -91,7 +91,7 @@ set_technology = {
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
-        trench_warfare = 1
+    trench_warfare = 1
 	electronic_mechanical_engineering = 1
 	fuel_silos = 1
 	fuel_refining = 1

@@ -52,4 +52,24 @@ characters={
 			legacy_id=0
 		}
 	}
+	CCS_Pyotr_Krasnov={
+		name=RUS_Pyotr_Krasnov
+		portraits={
+			civilian={
+				large="gfx/leaders/DON/Portrait_DON_Pyotr_Krasnov.png"
+			}
+			army={
+				large="gfx/leaders/DON/Portrait_DON_Pyotr_Krasnov.png"
+			}
+		}
+		field_marshal={
+			traits={ cavalry_officer cavalry_leader organizer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
 }

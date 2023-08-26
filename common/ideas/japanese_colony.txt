@@ -13,11 +13,10 @@
 			cancel = {
                 NOT = { is_in_faction_with = JAP }
             }
-
             targeted_modifier = {
 				tag = JAP
-				trade_cost_for_target_factor = -0.30
-				extra_trade_to_target_factor = 0.30
+				trade_cost_for_target_factor = -0.25
+				extra_trade_to_target_factor = 0.8
 			}
 			modifier = {
 				consumer_goods_factor = 0.05

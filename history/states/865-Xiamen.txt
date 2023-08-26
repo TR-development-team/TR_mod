@@ -4,7 +4,7 @@ state={
 	name="STATE_865" # Xiamen
 	manpower = 823289
 	
-	state_category = town
+	state_category = three_port
 	
 	resources={
 	}
@@ -21,7 +21,6 @@ state={
 				coastal_bunker = 1
 				bunker = 1
 			}
-                        arms_factory = 1
 			industrial_complex = 1
 			air_base = 2
 		}

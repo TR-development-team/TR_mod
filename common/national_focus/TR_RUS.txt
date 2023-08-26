@@ -3664,28 +3664,28 @@ focus_tree = {
 		relative_position_id =RUS_Diplomacy_focus_1
 		completion_reward = {
 			if = {
-				limit = { CCS = { is_subject_of = RUS } }
+				limit = { country_exists = CCS CCS = { is_subject_of = RUS } }
 				annex_country = {
 					target = CCS
 					transfer_troops = yes
 				}
 			}
 			if = {
-				limit = { DON = { is_subject_of = RUS } }
+				limit = { country_exists = DON DON = { is_subject_of = RUS } }
 				annex_country = {
 					target = DON
 					transfer_troops = yes
 				}
 			}
 			if = {
-				limit = { CCS = { is_subject = no } }
+				limit = { country_exists = CCS CCS = { is_subject = no } }
 				create_wargoal = {
 					target = CCS
 					type = annex_everything
 				}
 			}
 			if = {
-				limit = { DON = { is_subject = no } }
+				limit = { country_exists = DON DON = { is_subject = no } }
 				create_wargoal = {
 					target = DON
 					type = annex_everything
@@ -3799,6 +3799,27 @@ focus_tree = {
 				limit = { country_exists = BLT BLT = { is_subject = no } }
 				create_wargoal = {
 					target = BLT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = EST EST = { is_subject = no } }
+				create_wargoal = {
+					target = EST
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = LAT LAT = { is_subject = no } }
+				create_wargoal = {
+					target = LAT
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = PRE PRE = { has_country_flag = BLT_Freikorps } }
+				create_wargoal = {
+					target = PRE
 					type = annex_everything
 				}
 			}

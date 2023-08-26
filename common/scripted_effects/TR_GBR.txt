@@ -76,7 +76,7 @@ GBR_civil_war_start = {
 set_BRITANNIA_union = {
 	set_cosmetic_tag = BRITANNIA_socialist_republics_union
 	set_country_flag = GBR_revolutionary_faction_flag
-        load_focus_tree = ENR_focus
+    load_focus_tree = ENR_focus
 	set_politics = {
 		ruling_party = totalist
 		last_election = "1935.11.14"
@@ -90,6 +90,7 @@ set_BRITANNIA_union = {
 	}
 	add_ideas = {
 		totalist_dictatorship
+		partial_economic_mobilisation
 		acceptable_minimum_wage
 		good_max_workhours
 		good_safety_regulations
@@ -100,4 +101,16 @@ set_BRITANNIA_union = {
 	}
 	
 	country_event = { id = GBR_civil_war.2 days = 7 }
+}
+GBR_royalist_increased_effect = {
+	custom_effect_tooltip = GBR_royalist_inc_tt
+	add_to_variable = {
+		GBR_royalist_support = 1
+	}
+}
+GBR_royalist_decreased_effect = {
+	custom_effect_tooltip = GBR_royalist_dec_tt
+	subtract_from_variable = {
+		GBR_royalist_support = 1
+	}
 }

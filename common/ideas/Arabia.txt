@@ -1,0 +1,20 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+		ARB_Oil_Discovery = {
+			picture = generic_exploit_mines
+            targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.5
+				extra_trade_to_target_factor = 0.8
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				local_resources_factor = 0.1
+			}
+		}
+    }
+}

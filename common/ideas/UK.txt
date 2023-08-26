@@ -2,35 +2,49 @@
  ideas = {
        
      country = {
-  
-
 		### Starting ###
-
-		GBR_LOSE_IN_INDIA = {
+		GBR_crumbling_empire = {
+            picture = eng_guided_by_britain
+                     
+			modifier = {
+				political_power_cost = 0.3
+                stability_factor = -0.15
+			}
+		}
+		GBR_frequent_strikes = {
+			picture = FRA_factory_strikes
+			modifier = {
+				stability_weekly = -0.0025
+				drift_defence_factor = -0.2
+				totalist_drift = 0.01
+				syndicalist_drift = 0.01
+				radical_socialist_drift = 0.01
+			}
+		}
+		GBR_social_division = {
+			picture = generic_communism_drift_bonus
+			modifier = {
+				political_power_cost = 0.5
+				stability_factor = -0.3
+				war_support_factor = -0.5
+				conscription_factor = -0.5
+			}
+		}
+		GBR_civil_war = {
 			allowed = {
 				always = no
 			}
-                       picture = raj_all_india_forward_bloc_fascism
-
-			
+            picture = generic_communism_drift_bonus
 			removal_cost = -1
                      
 			modifier = {
-                              stability_factor = -0.2
-			      political_power_cost = 0.3
+			    war_support_factor = 0.5
+                stability_factor = -0.1
+                surrender_limit= 0.1
 			}
 		}
-                GBR_depression = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
+        GBR_depression = {
 			picture = great_depression
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.3
 				production_factory_max_efficiency_factor = -0.1
@@ -40,22 +54,21 @@
 				min_export = -0.15
 			}
 		}
-
-        GBR_revolution = {
-			allowed = {
-				always = no
-			}
-                        
-
-			
-			removal_cost = -1
-                     
-			picture = generic_communism_drift_bonus
-			removal_cost = -1
+		GBR_civil_war_economy= {
+			picture = great_depression
 			modifier = {
-				stability_factor = -0.15
-                                war_support_factor = -0.25
-			        conscription_factor = -0.3
+				stability_factor = -0.2
+				production_factory_max_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				industrial_capacity_factory = -0.3
+				consumer_goods_factor = 0.5
+				min_export = -0.5
+			}
+		}
+		GBR_Subsidies_for_miners = {
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_factor = 0.1
 			}
 		}
     }
@@ -236,23 +249,48 @@
 			}
 		}
 		chief_of_staff = {	
+			GBR_Alan_Brooke_cos = {
+				name = GBR_Alan_Brooke
+				picture = GBR_Alan_Brooke
+						
+				allowed = {
+					original_tag = GBR
+					}
+						
+				traits = { 
+					chief_of_army
+					cos_school_of_fire_support
+					}
+				}	
+			GBR_Bernard_Montgomery_cos = {
+				name = GBR_Bernard_Montgomery
+				picture = GBR_Bernard_Montgomery
+						
+				allowed = {
+					original_tag = GBR
+					}
+						
+			    traits = { 
+					chief_of_army
+					cos_school_of_defence
+					}
+			    }	
 			GBR_Montgomery_Massingberd = {
-			
-			picture = GBR_Montgomery_Massingberd
+			    picture = GBR_Montgomery_Massingberd
 				
-			allowed = {
-				original_tag = GBR
+			    allowed = {
+				    original_tag = GBR
 				}
 				
-			traits = { 
+			    traits = { 
 				    chief_of_staff
 					cos_school_of_fire_support
 				}
 			}
-			}
+        }
 		chief_of_army = {	
-			GBR_Bernard_Montgomery = {
-			picture = GBR_Bernard_Montgomery
+			GBR_Alan_Brooke = {
+			picture = GBR_Alan_Brooke
 					
 			allowed = {
 				original_tag = GBR
@@ -260,8 +298,60 @@
 					
 			traits = { 
 				chief_of_army
+				carm_guns_and_butter_doctrine
+				}
+			}		
+			GBR_Bernard_Montgomery = {
+				picture = GBR_Bernard_Montgomery
+						
+			allowed = {
+				original_tag = GBR
+				}
+						
+			traits = { 
+				chief_of_army
 				carm_elastic_defence_doctrine
 				}
 			}		
+		}
+		chief_of_navy = {	
+			GBR_Dudley_Pound = {
+			picture = GBR_Dudley_Pound
+					
+			allowed = {
+				original_tag = GBR
+				}
+					
+			traits = { 
+				chief_of_navy
+				cnav_base_control_doctrine
+				}
+			}
+			GBR_Ernle_Chatfield = {
+			picture = GBR_Ernle_Chatfield
+					
+			allowed = {
+				original_tag = GBR
+				}
+					
+			traits = { 
+				chief_of_navy
+				cnav_power_projection_doctrine
+				}
+			}
+		}
+		chief_of_air_force = {	
+			GBR_Owen_Tudor_Boyd = {
+			picture = GBR_Owen_Tudor_Boyd
+					
+			allowed = {
+				original_tag = GBR
+				}
+					
+			traits = { 
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+				}
+			}
 		}
 }

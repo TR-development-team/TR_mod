@@ -4,7 +4,7 @@ state={
 	name="STATE_436" # Jabalpur
 	manpower = 14123100
 	
-	state_category = town
+	state_category = four
 	
 	resources={
 		chromium=4 # was: 6
@@ -13,6 +13,7 @@ state={
 	history={
 		owner = IND
                  add_core_of = IND
+		victory_points = { 4883 5 }
 		buildings = {
 			infrastructure = 2
 		}

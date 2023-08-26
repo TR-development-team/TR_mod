@@ -1,0 +1,34 @@
+
+ ideas = {
+       
+     country = {
+
+		### Starting ###
+		PJB_Nihang = {
+			picture = citizen_militia_2
+			modifier = {
+				army_core_defence_factor = 0.1
+				training_time_army_factor = -0.1
+				army_org_Factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		PJB_religious_conflict = {
+			picture = raj_marginalized_muslim_community
+			modifier = {
+				conscription_factor = -0.1
+				political_power_cost = 0.2
+				stability_factor = -0.15
+				drift_defence_factor = -0.25
+			}
+		}
+		PJB_relic_of_an_era = {
+			picture = saf_history_of_segregation
+			modifier = {
+				improve_relations_maintain_cost_factor = 0.2
+				trade_opinion_factor = -0.2
+				min_export = -0.5
+			}
+		}
+    }
+}

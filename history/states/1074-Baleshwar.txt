@@ -1,0 +1,29 @@
+
+state={
+	id=1074
+	name="STATE_1074" # Baleshwar
+	manpower = 1238458
+	
+	state_category = two
+	
+	resources={
+		steel=2
+		chromium=1
+	}
+
+	history={
+		owner = BAN
+                add_core_of = BAN
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			4104 1
+		}
+	}
+
+	local_supplies=0.0 
+provinces={
+		1059 1101 1538 4104 12063 
+	}
+}

@@ -47,7 +47,7 @@
 	
 
 			modifier = {
-			army_org_factor = -0.1
+			army_org_factor = -0.2
 			army_morale_factor = 0.05
 			}
 		}
@@ -63,6 +63,7 @@
 
 			modifier = {
 			experience_gain_army_factor = 0.1
+			army_org_factor = -0.1
 			army_morale_factor = 0.05
 			}
 		}
@@ -78,7 +79,6 @@
 
 			modifier = {
 			experience_gain_army_factor = 0.1
-			army_morale_factor = 0.05
 			}
 			equipment_bonus = {
 				armor = {
@@ -99,7 +99,6 @@
 
 			modifier = {
 			experience_gain_army_factor = 0.1
-			army_morale_factor = 0.05
 			army_armor_attack_factor = 0.1
 			planning_speed = 0.1
 			}
@@ -123,7 +122,6 @@
 			army_speed_factor = 0.1
 			army_armor_attack_factor = 0.1
 			planning_speed = 0.1
-			army_org_Factor = 0.1
 			}
 			equipment_bonus = {
 				armor = {
@@ -155,6 +153,7 @@
 			modifier = {
 			experience_gain_army_factor = 0.1
 			army_morale_factor = 0.05
+			army_org_factor = -0.1
 			army_artillery_attack_factor = 0.15
 			}
 		}
@@ -169,6 +168,7 @@
 			modifier = {
 				experience_gain_army_factor = 0.1
 				army_morale_factor = 0.05
+				army_org_factor = -0.1
 				army_artillery_attack_factor = 0.15
 				army_core_defence_factor = 0.1
 			}
@@ -185,6 +185,7 @@
 			modifier = {
 				experience_gain_army_factor = 0.1
 				army_morale_factor = 0.1
+				army_org_factor = -0.1
 				max_planning = 0.1
 				army_artillery_attack_factor = 0.15
 				army_core_defence_factor = 0.1
@@ -202,6 +203,7 @@
 			modifier = {
 				experience_gain_army_factor = 0.1
 				army_morale_factor = 0.05
+				army_org_factor = -0.1
 				training_time_army_factor = -0.1
 			}
 		}
@@ -216,6 +218,7 @@
 			modifier = {
 				experience_gain_army_factor = 0.1
 				army_morale_factor = 0.1
+				army_org_factor = -0.1
 				training_time_army_factor = -0.1
 				conscription_factor = 0.1
 			}
@@ -231,6 +234,7 @@
 			modifier = {
 				experience_gain_army_factor = 0.1
 				army_morale_factor = 0.1
+				army_org_factor = -0.1
 				training_time_army_factor = -0.1
 				conscription_factor = 0.1
 				planning_speed = 0.1
@@ -248,6 +252,7 @@
 			modifier = {
 				experience_gain_army_factor = 0.1
 				army_morale_factor = 0.05
+				army_org_factor = -0.1
 				army_speed_factor = 0.1
 			}
 		}
@@ -264,7 +269,7 @@
 				army_morale_factor = 0.05
 				army_speed_factor = 0.1
 				offence = 0.05
-				army_org_Factor = 0.05
+				army_org_Factor = -0.05
 			}
 		}
 		GER_Army_Rommel_2 = {
@@ -1854,9 +1859,8 @@ Head_of_State = {
                }
     Minister_of_Foreign_Affairs = { 
 		GER_joseph_goebbels_FA = {
-
 			name = GER_Joseph_Goebbels
-                        picture = GER_Joseph_Goebbels
+            picture = GER_Joseph_Goebbels
 			allowed = {
 				original_tag = RAT
 			}
@@ -1877,9 +1881,29 @@ Head_of_State = {
                 TR_ideological_crusader
 			}
 		}
-
+		GER_Karl_Otto_Paetel = {
+            picture = GER_Karl_Otto_Paetel
+			allowed = {
+				original_tag = RAT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = { 
+				Minister_of_Foreign_Affairs
+				syndicalist
+                TR_biased_intellectual
+			}
+		}
 		GER_ernst_thalmann = {
-
 			picture = GER_Thalman
 			allowed = {
 				original_tag = RAT
@@ -1902,7 +1926,6 @@ Head_of_State = {
 			}
 		}
 		GER_Anton_Ackermann = {
-
 			picture = GER_Anton_Ackermann
 			allowed = {
 				original_tag = RAT
@@ -1927,7 +1950,6 @@ Head_of_State = {
 		}
     Minister_of_Economy = {	
 		GER_todt = {
-
 			picture = GER_todt
 			allowed = {
 				original_tag = RAT
@@ -1945,11 +1967,10 @@ Head_of_State = {
 			traits = { 
 				Minister_of_Economy
 				totalist
-                                TR_resource_industrialist
+                TR_resource_industrialist
 			}
 		}
 		GER_Speer = {
-
 			picture = GER_Speer
 			allowed = {
 				original_tag = RAT
@@ -1971,7 +1992,6 @@ Head_of_State = {
 			}
 		}
 		GER_Ernst_Niekisch = {
-
 			picture = GER_Ernst_Niekisch
 			allowed = {
 				original_tag = RAT
@@ -1994,7 +2014,6 @@ Head_of_State = {
 			}
 		}
 		GER_Walter_Ulbricht = {
-
 			picture = GER_Walter_Ulbricht
 			allowed = {
 				original_tag = RAT
@@ -2013,7 +2032,7 @@ Head_of_State = {
 			traits = { 
 				Minister_of_Economy
 				radical_socialist
-                                TR_planned_economy_proponent
+                TR_planned_economy_proponent
 			}
 		}
 		GER_Wilhelm_reich = {
@@ -2063,7 +2082,6 @@ Head_of_State = {
 			}
 		}
 		GER_Paul_Levi = {
-
 			picture = GER_Paul_Levi
 			allowed = {
 				original_tag = RAT
@@ -2082,13 +2100,12 @@ Head_of_State = {
 			traits = { 
 				Minister_of_Economy
 				radical_socialist
-                                TR_reformer
+                TR_reformer
 			}
 		}	
                }
     Minister_of_Interior = {
 		GER_Rohm = {
-
 			picture = GER_Rohm
 			allowed = {
 				original_tag = RAT
@@ -2104,12 +2121,11 @@ Head_of_State = {
 				}
 			}
 			cancel_if_invalid = no
-
 			
 			traits = { 
 				Minister_of_Interior
 				totalist
-                                GER_Rohm_traits
+                GER_Rohm_traits
 			}
 		}
 		GER_Edmund_Heines = {
@@ -2133,7 +2149,7 @@ Head_of_State = {
 			traits = { 
 				Minister_of_Interior
 				totalist
-                                TR_prince_of_terror
+                TR_prince_of_terror
 			}
 		}
 		GER_Roland_Freisler = {
@@ -2157,11 +2173,10 @@ Head_of_State = {
 			traits = { 
 				Minister_of_Interior
 				totalist
-                                TR_silent_lawyer
+                TR_silent_lawyer
 			}
 		}
 		GER_joseph_goebbels_int = {
-
 			name = GER_Joseph_Goebbels
                         picture = GER_Joseph_Goebbels
 			allowed = {
@@ -2181,7 +2196,7 @@ Head_of_State = {
 			traits = { 
 				Minister_of_Interior
 				totalist
-                                TR_efficient_sociopath
+                TR_efficient_sociopath
 			}
 		}
 		GER_Ernst_Junger_int = { 
@@ -2205,11 +2220,32 @@ Head_of_State = {
 			traits = { 
 				Minister_of_Interior
 				syndicalist
-                                TR_man_of_the_people
+                TR_man_of_the_people
+			}
+		}
+		GER_Friedrich_Wilhelm_Heinz = { 
+            picture = GER_Friedrich_Wilhelm_Heinz
+			allowed = {
+				original_tag = RAT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = { 
+				Minister_of_Interior
+				syndicalist
+                Founder_of_intelligence
 			}
 		}
         GER_Ludwig_Renn = { 
-
             picture = GER_Ludwig_Renn
 			allowed = {
 				original_tag = RAT
@@ -2228,12 +2264,11 @@ Head_of_State = {
 			traits = { 
 				Minister_of_Interior
 				radical_socialist
-                                TR_crime_fighter
+                TR_crime_fighter
 			}
 		}
         GER_Erich_Mielke = { 
-
-                        picture = GER_Erich_Mielke
+            picture = GER_Erich_Mielke
 			allowed = {
 				original_tag = RAT
 			}
@@ -2255,8 +2290,7 @@ Head_of_State = {
 			}
 		}
         GER_Julius_Leber = { 
-
-                        picture = GER_Julius_Leber
+            picture = GER_Julius_Leber
 			allowed = {
 				original_tag = RAT
 			}
@@ -2341,6 +2375,34 @@ Head_of_State = {
 				carm_guns_and_butter_doctrine
 			}
 		}
+	}
+	chief_of_navy = {	
+		GER_Hermann_Ehrhardt = {
+		picture = GER_Hermann_Ehrhardt
+				
+		allowed = {
+			original_tag = RAT
+			}
+				
+		traits = { 
+			chief_of_navy
+			cnav_base_control_doctrine
+			}
+		}		
+	}
+	chief_of_air_force = {	
+		GER_Albert_Kesselring = {
+		picture = GER_Albert_Kesselring
+				
+		allowed = {
+			original_tag = RAT
+			}
+				
+		traits = { 
+			chief_of_air_force
+			cair_battlefield_support_doctrine
+			}
+		}		
 	}
 
 	# TECHNOLOGY

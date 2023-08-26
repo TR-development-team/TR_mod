@@ -4,11 +4,11 @@ state={
 	name="STATE_440"
 	manpower = 13665000
 	
-	state_category = large_city
+	state_category = eight
 
 	history={
 		victory_points = {
-			10887 5
+			12005 15
 		}
 		owner = PJB
 		buildings = {
@@ -21,6 +21,6 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		4979 8007 8022 8106 9084 10066 10139 10173 10772 10843 10887 10898 12005 12792 12822 
+		4979 8007 8022 8106 9084 10066 10139 10173 10843 10887 10898 12005 12792
 	}
 }

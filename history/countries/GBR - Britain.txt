@@ -12,8 +12,9 @@ if = {
 	set_naval_oob = "GBR_1936_Naval"
 	else = {	set_naval_oob = "GBR_1936_Naval_Legacy"	}
 }
-
 set_cosmetic_tag = GBRandIREbyENG_united_kingdom
+
+set_variable = {	GBR_royalist_support = 5	}
 
 set_politics = {
 	ruling_party = social_conservative
@@ -22,17 +23,17 @@ set_politics = {
 	elections_allowed = yes
 }
 set_popularities = {
-	totalist = 15
-	syndicalist = 9
-	radical_socialist = 10
-	social_democrat = 15
+	totalist = 11
+	syndicalist = 8
+	radical_socialist = 7
+	social_democrat = 18
 	social_liberal = 6
 	market_liberal = 5
-	social_conservative = 16
+	social_conservative = 21
 	authoritarian_democrat = 4
 	paternal_autocrat = 4
 	national_populist = 11
-        Gnosticism = 5
+    Gnosticism = 5
 }
 
 recruit_character = GBR_oswald_mosley
@@ -62,8 +63,39 @@ recruit_character = GBR_john_tovey
 recruit_character = GBR_bernard_rawlings
 recruit_character = GBR_john_cunningham
 recruit_character = GBR_charles_forbes
+recruit_character = GBR_claude_auchinleck
+recruit_character = GBR_neil_ritchie
+recruit_character = GBR_william_slim
+recruit_character = GBR_richard_oconnor
+recruit_character = GBR_william_platt
+recruit_character = GBR_george_giffard
+recruit_character = GBR_jackie_smyth 
+recruit_character = GBR_william_gott
+recruit_character = GBR_jock_campbell
+recruit_character = GBR_bruce_fraser
+recruit_character = GBR_algernon_willis
+recruit_character = GBR_arthur_power
 
-country_event = { id = GBR_civil_war.1 days = 82 }
+GBR_oswald_mosley = { set_character_flag = GBR_red_team }
+GBR_claude_auchinleck = { set_character_flag = GBR_red_team }
+GBR_neil_ritchie = { set_character_flag = GBR_red_team }
+GBR_william_slim = { set_character_flag = GBR_red_team }
+GBR_richard_oconnor = { set_character_flag = GBR_red_team }
+GBR_william_platt = { set_character_flag = GBR_red_team }
+GBR_george_giffard = { set_character_flag = GBR_red_team }
+GBR_jackie_smyth = { set_character_flag = GBR_red_team }
+GBR_william_gott = { set_character_flag = GBR_red_team }
+GBR_jock_campbell = { set_character_flag = GBR_red_team }
+GBR_bruce_fraser = { set_character_flag = GBR_red_team }
+GBR_algernon_willis = { set_character_flag = GBR_red_team }
+GBR_arthur_power = { set_character_flag = GBR_red_team }
+
+country_event = { id = TR_UK.1 days = 1 }
+country_event = { id = TR_UK.2 days = 3 }
+country_event = { id = TR_UK.3 days = 7 }
+country_event = { id = TR_UK.4 days = 10 }
+country_event = { id = TR_UK.5 days = 20 }
+country_event = { id = GBR_civil_war.1 days = 115 }
 
 add_ideas = {
 	Constitutional_monarchy
@@ -82,10 +114,10 @@ add_ideas = {
 	GBR_John_Simon
 	GBR_Montgomery_Massingberd
 	GBR_Bernard_Montgomery
+	GBR_Ernle_Chatfield
+	GBR_Owen_Tudor_Boyd
 	#初期国家精神
-	GBR_LOSE_IN_INDIA
-	GBR_depression
-	GBR_revolution
+	GBR_crumbling_empire
 }
 
 set_convoys = 800
