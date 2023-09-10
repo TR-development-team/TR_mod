@@ -179,7 +179,6 @@ AUS_industrialised_effect = {
 	remove_trigger = {
 		always = no
 	}
-	local_manpower = 4_wib_local_manpower_modifier
 	local_building_slots = 4_wib_local_building_slots_modifier
-	resistance_target  = 4_wib_resistance_target_modifier
+	state_production_speed_buildings_factor = 4_wib_state_production_speed_buildings_factor
 }
