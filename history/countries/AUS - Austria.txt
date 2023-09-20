@@ -24,7 +24,7 @@ add_manpower = 300000
 set_stability = 0.5
 set_war_support = 0.3
 set_research_slots = 4
-starting_train_buffer = 1.5
+starting_train_buffer = 3
 set_major = yes
 set_technology = {
 	infantry_weapons = 1
@@ -38,12 +38,13 @@ set_technology = {
 	interwar_antiair = 1
 	basic_train = 1
 	fuel_silos = 1
+	interwar_artillery = 1
 }
 
 create_import = {
-		resource = aluminium
-		factories = 1
-		exporter = HUN
+	resource = aluminium
+	factories = 1
+	exporter = HUN
 }
 
 set_power_balance = {	id = AUS_power_balance	}
@@ -53,116 +54,47 @@ country_event = {	id = TR_Austria.1	days = 5	}
 
 ###Dynamic_modifier
 #reichs agriculture
-set_variable = {	AUS_ra_min_export_modifier = 0	}
-set_variable = {	AUS_ra_war_stability_factor_modifier = -0.1	}
-set_variable = {	AUS_ra_attrition_modifier = 0.2	}
-set_variable = {	AUS_ra_consumer_goods_factor_modifier = 0.1	}
-set_variable = {	AUS_ra_conscription_factor_modifier = -0.25	}
-set_variable = {	AUS_ra_monthly_population_modifier = -0.5	}
-set_variable = {	AUS_ra_embargo_threshold_factor_modifier = 0	}
-set_variable = {	AUS_ra_embargo_cost_factor_modifier = 0	}
+set_variable = { AUS_ra_min_export_modifier = 0 }
+set_variable = { AUS_ra_war_stability_factor_modifier = -0.1 }
+set_variable = { AUS_ra_attrition_modifier = 0.2 }
+set_variable = { AUS_ra_consumer_goods_factor_modifier = 0.1 }
+set_variable = { AUS_ra_conscription_factor_modifier = -0.25 }
+set_variable = { AUS_ra_monthly_population_modifier = -0.5 }
+set_variable = { AUS_ra_embargo_threshold_factor_modifier = 0 }
+set_variable = { AUS_ra_embargo_cost_factor_modifier = 0 }
 
-add_dynamic_modifier = {	modifier = AUS_reichs_agriculture	}
+add_dynamic_modifier = { modifier = AUS_reichs_agriculture }
 
 #reichs industry
-set_variable = {	AUS_ri_local_resources_factor_modifier = -0.2	}
-set_variable = {	AUS_ri_min_export_modifier = 0	}
-set_variable = {
-	AUS_ri_social_democrat_drift_modifier = 0.00
-}
+set_variable = { AUS_ri_local_resources_factor_modifier = -0.2 }
+set_variable = { AUS_ri_min_export_modifier = 0 }
+set_variable = { AUS_ri_social_democrat_drift_modifier = 0.00 }
+set_variable = { AUS_ri_syndicalist_drift_modifier = 0.00 }
+set_variable = { AUS_ri_radical_socialist_drift_modifier = 0.00 }
+set_variable = { AUS_ri_production_factory_efficiency_gain_factor_modifier = -0.2 }
+set_variable = { AUS_ri_production_factory_max_efficiency_factor_modifier = 0 }
+set_variable = { AUS_ri_production_factory_start_efficiency_factor_modifier = -0.1 }
+set_variable = { AUS_ri_production_lack_of_resource_penalty_factor_modifier = 0.1 }
+set_variable = { AUS_ri_consumer_goods_factor_modifier = 0.05 }
+set_variable = { AUS_ri_production_speed_industrial_complex_factor_modifier = -0.25 }
+set_variable = { AUS_ri_production_speed_infrastructure_factor_modifier = 0 }
+set_variable = { AUS_ri_production_speed_rail_way_factor_modifier = 0 }
+set_variable = { AUS_ri_production_speed_arms_factory_factor_modifier = 0 }
+set_variable = { AUS_ri_production_speed_dockyard_factor_modifier = 0 }
+set_variable = { AUS_ri_production_speed_synthetic_refinery_factor_modifier = 0 }
+set_variable = { AUS_ri_global_building_slots_factor_modifier = 0 }
+set_variable = { AUS_ri_production_speed_buildings_factor_modifier = -0.20 }
+set_variable = { AUS_ri_industrial_capacity_factory_modifier = 0 }
+set_variable = { AUS_ri_industrial_capacity_dockyard_modifier = 0 }
+set_variable = { AUS_ri_industry_free_repair_factor_modifier = 0 }
+set_variable = { AUS_ri_industry_repair_factor_modifier = 0 }
+set_variable = { AUS_ri_production_oil_factor_modifier = 0 }
+set_variable = { AUS_ri_industry_air_damage_factor_modifier = 0 }
 
-set_variable = {
-	AUS_ri_syndicalist_drift_modifier = 0.00
-}
-
-set_variable = {
-	AUS_ri_radical_socialist_drift_modifier = 0.00
-}
-
-set_variable = {
-	AUS_ri_production_factory_efficiency_gain_factor_modifier = -0.2
-}
-
-set_variable = {
-	AUS_ri_production_factory_max_efficiency_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_production_factory_start_efficiency_factor_modifier = -0.1
-}
-
-set_variable = {
-	AUS_ri_production_lack_of_resource_penalty_factor_modifier = 0.1
-}
-
-set_variable = {
-	AUS_ri_consumer_goods_factor_modifier = 0.05
-}
-
-set_variable = {
-	AUS_ri_production_speed_industrial_complex_factor_modifier = -0.25
-}
-
-set_variable = {
-	AUS_ri_production_speed_infrastructure_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_production_speed_rail_way_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_production_speed_arms_factory_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_production_speed_dockyard_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_production_speed_synthetic_refinery_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_global_building_slots_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_production_speed_buildings_factor_modifier = -0.20
-}
-
-set_variable = {
-	AUS_ri_industrial_capacity_factory_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_industrial_capacity_dockyard_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_industry_free_repair_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_industry_repair_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_production_oil_factor_modifier = 0
-}
-
-set_variable = {
-	AUS_ri_industry_air_damage_factor_modifier = 0
-}
-
-add_dynamic_modifier = {
-	modifier = AUS_reichs_industry
-}
+add_dynamic_modifier = { modifier = AUS_reichs_industry }
 
 #great depression
-set_variable = {
-	AUS_plunge_escalation_level = 10
-}
+set_variable = { AUS_plunge_escalation_level = 10 }
 
 #wien in blute
 
@@ -231,6 +163,7 @@ if = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
 		improved_light_tank_chassis = 1
+		engine_tech_1 = 1
 	}
 }
 
@@ -259,10 +192,15 @@ if = {
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
 		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		basic_cruiser_armor_scheme = 1
+		early_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		coastal_defense_ships = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
 	}
 }
 
@@ -332,6 +270,8 @@ recruit_character = AUS_franz_boehme
 recruit_character = AUS_alfred_jansa
 recruit_character = AUS_wilhelm_zehner
 recruit_character = AUS_lothar_rendulic
+recruit_character = AUS_karl_albrecht
+recruit_character = AUS_theodor_brantner
 add_ideas = {
 	AUS_emanuel_weidenhoffer_idea
 	AUS_emil_fey_idea
@@ -387,17 +327,17 @@ if = {
 		type = light_tank_chassis_2
 		parent_version = 0
 		modules = {
-			main_armament_slot = tank_high_velocity_cannon
+			main_armament_slot = tank_small_cannon_2
 			turret_type_slot = tank_light_two_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = additional_machine_guns
-			special_type_slot_3 = smoke_launchers
+			special_type_slot_3 = additional_machine_guns
 		}
 		upgrades = {
-			tank_nsb_engine_upgrade = 5
+			tank_nsb_engine_upgrade = 7
 			tank_nsb_armor_upgrade = 3
 		}
 	}

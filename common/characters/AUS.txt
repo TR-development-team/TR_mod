@@ -551,4 +551,45 @@ characters = {
 			logistics_skill = 3
 		}
 	}
+	AUS_karl_albrecht = {
+		name = AUS_karl_albrecht
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Karl_Albrecht.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				brilliant_strategist
+				infantry_officer
+				armor_officer
+				engineer_officer
+			}
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 4
+		}
+	}
+	AUS_theodor_brantner = {
+		name = AUS_theodor_brantner
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Theodor_Brantner.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				cavalry_officer
+				organizer
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
 }
