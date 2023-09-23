@@ -592,4 +592,24 @@ characters = {
 			logistics_skill = 3
 		}
 	}
+	AUS_eduard_barger = {
+		name = AUS_eduard_barger
+		portraits = {
+			army = {
+				large = "gfx/leaders/AUS/Portrait_AUS_Eduard_Barger.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+				infantry_officer
+				trait_mountaineer
+				adaptable
+			}
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
 }
