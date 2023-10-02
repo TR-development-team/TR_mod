@@ -21,22 +21,6 @@ state={
 			industrial_complex = 3
 
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				WHN = {
-					transfer_state = PREV
-
-				}
-
-			}
-
-		}
 
 	}
 
@@ -46,5 +30,5 @@ provinces={
 	}
 	manpower=10994500
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=six
 }

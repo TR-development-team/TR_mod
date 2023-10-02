@@ -1,0 +1,31 @@
+state={
+	id=1080
+	name="STATE_1080"
+
+	history={
+		owner = OTT
+		victory_points = {
+			3653 3 
+		}
+		buildings = {
+			infrastructure = 3
+                        dockyard = 1
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = GEO
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		3653 3656
+	}
+	manpower=289586
+	buildings_max_level_factor=1.000
+	state_category=two
+}

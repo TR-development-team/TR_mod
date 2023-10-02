@@ -7,7 +7,7 @@ state={
 		steel=53 # was: 90
 	}
 
-	state_category = metropolis
+	state_category = eleven_indus
 
 
 	history={
@@ -25,13 +25,6 @@ state={
 			3535 5 
 		}
 		add_core_of = RAT
-		1939.1.1 = {
-			buildings = {
-				synthetic_refinery = 2
-				arms_factory = 5
-				industrial_complex = 10
-			}
-		}
 	}
 
 	local_supplies=0.0 

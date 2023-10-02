@@ -4,15 +4,12 @@ state={
 	name="STATE_352" # Van
 	manpower = 262095
 
-	state_category = rural
+	state_category = two
 
 	history={
 		owner = OTT
 		victory_points = {
 			12476 1 
-		}
-		victory_points = {
-			7530 1 
 		}
 		victory_points = {
 			10497 1 
@@ -26,7 +23,7 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		864 1463 7530 10497 11739 12318 12476
+		864 1463 10497 12318 12476
 	}
 }
 

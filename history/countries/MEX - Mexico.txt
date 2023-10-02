@@ -3,6 +3,7 @@ oob = "MEX_1936"
 
 set_cosmetic_tag = MEX_united_states
 
+country_event = { id = TR_Mexico.4 days = 829 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 		set_naval_oob = "MEX_1936_naval_mtg"
@@ -10,24 +11,12 @@ if = {
 		set_naval_oob = "MEX_1936_naval_legacy"
 	}
 }
-add_ideas = {
-        totalist_dictatorship
-        trinket_minimum_wage
-        trinket_safety_regulations
-        trinket_school_system
-        trinket_pensions
-        trinket_health_care
-}
-country_event = { id = TR_Mexico.4 days = 829 }
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	gwtank = 1
-	early_fighter = 1
-	early_bomber = 1
-	CAS1 = 1
 	fuel_silos = 1
 	fuel_refining = 1
 }
@@ -51,13 +40,19 @@ if = {
 	}
 }
 
-set_country_flag = monroe_doctrine
-
 set_convoys = 45
 set_stability = 0.2
 set_war_support = 0.1
 
 
+add_ideas = {
+	totalist_dictatorship
+	trinket_minimum_wage
+	trinket_safety_regulations
+	trinket_school_system
+	trinket_pensions
+	trinket_health_care
+}
 
 set_politics = {
 	ruling_party = national_populist
@@ -66,59 +61,32 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	social_conservative = 18
-	radical_socialist = 20
-	totalist = 9
-	national_populist = 53
+	totalist = 10
+	syndicalist = 2
+	radical_socialist = 3
+	social_democrat = 13
+	social_liberal = 2
+	market_liberal = 1
+	social_conservative = 6
+	authoritarian_democrat = 5
+	paternal_autocrat = 24
+	national_populist = 31
+    Gnosticism = 3
 }
 
+recruit_character = MEX_plutarco_calles
+recruit_character = MEX_hernan_laborde
+recruit_character = MEX_lazaro_cardenas
+recruit_character = MEX_Jose_Antonio_Urquiza
+recruit_character = MEX_salvador_abascal
 
-create_country_leader = {
-	name = "ホセ・アントニオ・ウルキザ"
-	desc = ""
-	picture = "gfx/leaders/MEX/Portrait_MEX_Urquiza.png"
-	expire = "1965.1.1"
-	ideology = national_populist_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = { # Exiled until 1935 following a rebellion attempt, allowed back in by Cardenas and joined the cabinet of Avila
-	name = "Adolfo de la Huerta"
-	desc = "POLITICS_ADOLFO_DE_LA_HUERTA_DESC"
-	picture = "GFX_Portrait_MEX_Adolfo_de_la_Huerta"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
-
-create_country_leader = { # Stalinist, took over after assassination of Trotsky. 1940-1959
-	name = "Dionisio Encina"
-	desc = "POLITICS_DIONISIO_ENCINA_DESC"
-	picture = "GFX_Portrait_MEX_Dionisio_Encina"
-	expire = "1965.1.1"
-	ideology = totalist_subtype
-	traits = {
-		
-	}
-}
-
-create_country_leader = { # Trotskyist, led the PCM 1929-1940
-	name = "Hernán Laborde"
-	desc = "POLITICS_HERNAN_LABORDE_DESC"
-	picture = "GFX_Portrait_MEX_Hernan_Laborde"
-	expire = "1965.1.1"
-	ideology = radical_socialist_subtype
-	traits = {
-		
-	}
-}
-
-
-
+recruit_character = MEX_heliodoro_charis
+recruit_character = MEX_gildardo_magana
+recruit_character = MEX_manuel_perez_trevino
+recruit_character = MEX_abelardo_rodriguez
+recruit_character = MEX_manuel_avila_camacho
+recruit_character = MEX_othon_blanco
+recruit_character = MEX_heriberto_corona
 
 ### VARIANTS ###
 # 1936 Start #

@@ -3,7 +3,7 @@ state={
 	id=127
 	name="STATE_127" # Sussex
 	manpower = 2243383
-	state_category = large_city
+	state_category = seven
 
 	history={
 		owner = GBR
@@ -27,12 +27,6 @@ state={
 			}
 		}
 		add_core_of = GBR
-		1939.1.1 = {
-			buildings = {
-				dockyard = 3
-				industrial_complex = 2
-			}
-		}
 	}
 
 	local_supplies=0.0 

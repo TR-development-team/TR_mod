@@ -4,12 +4,11 @@ state=
 	name="STATE_164"
 	manpower = 120000
 	
-	state_category = small_island
+	state_category = one_archipelago
 	
 	history=
 	{
 		owner = OTT
-                add_core_of = OTT
 		victory_points = {
 			10007 1 
 		}

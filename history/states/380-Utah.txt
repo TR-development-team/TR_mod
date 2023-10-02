@@ -3,7 +3,7 @@ state= {
 	name="STATE_380"
 	manpower = 507846
 	
-	state_category = rural
+	state_category = three
 	
 	resources={
 		tungsten=76 # was: 106
@@ -18,6 +18,10 @@ state= {
 		}
 		victory_points = {
 			4865 1 
+		}
+		set_province_name = {
+			id = 4865
+			name = "VICTORY_POINTS_4865_JAPANESE"
 		}
 	}
 	local_supplies=0.0 

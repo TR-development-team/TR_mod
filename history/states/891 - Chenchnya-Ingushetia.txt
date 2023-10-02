@@ -4,7 +4,7 @@ state = {
 	name = "STATE_891"
 	manpower = 731985
 	
-	state_category = rural
+	state_category = two
 	
 	resources={
 		oil = 9 # was split from Dagestan which had 19 oil, and retained 10
@@ -16,6 +16,9 @@ state = {
 			infrastructure = 2
 		}
 		add_core_of = SCC
+		victory_points = {
+			666 1 
+		}
 	}
 	##
 	provinces = {

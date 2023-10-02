@@ -6,7 +6,7 @@ state={
 		aluminium=9 # was: 16.000
 	}
 	
-	state_category = metropolis
+	state_category = ten_indus
 
 	history={
 		owner = USA
@@ -22,14 +22,6 @@ state={
 		victory_points = {
 			6890 10 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 7
-
-			}
-
-		}
-
 	}
 
 	local_supplies=0.0 

@@ -4,7 +4,7 @@ state={
 	name="STATE_910"
 	manpower = 1823949
 	
-	state_category = large_city
+	state_category = ten
 	
 	resources={
 		oil=182
@@ -27,12 +27,19 @@ state={
 				naval_base = 5
 			}
 		}
-		
+		victory_points = {
+			1562 10 
+		}	
 		victory_points = {
 			9814 30
 		}
-		victory_points = {
-			1562 10 
+		set_province_name = {
+			id = 1562
+			name = "VICTORY_POINTS_1562_JAPANESE"
+		}
+		set_province_name = {
+			id = 9814
+			name = "VICTORY_POINTS_9814_JAPANESE"
 		}
 	}
 

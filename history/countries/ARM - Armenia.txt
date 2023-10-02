@@ -1,4 +1,23 @@
 ﻿capital = 230
 
 set_cosmetic_tag = ARM_republic
-set_dictatorship = yes
+set_politics = {
+	ruling_party = paternal_autocrat
+	last_election = "1935.2.8"
+	elections_allowed = no
+}
+set_popularities = {
+	totalist = 4
+	syndicalist = 1
+	radical_socialist = 19
+	social_democrat = 16
+	social_liberal = 1
+	market_liberal = 11
+	social_conservative = 8
+	authoritarian_democrat = 2
+	paternal_autocrat = 22
+	national_populist = 8
+    Gnosticism = 8
+}
+
+recruit_character = ARM_Drastamat_Kanayan

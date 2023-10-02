@@ -669,119 +669,6 @@ country_event = {
 		add_stability = -0.1
 	}
 }
-#内閣総辞職
-country_event = {
-	id = TR_japan.119
-	title = TR_japan.119.t
-	desc = TR_japan.119.d
-	picture = GFX_report_event_hol_cabinet_de_geer
-
-	is_triggered_only = yes
-    fire_only_once = yes
-	
-	option = {
-		name = TR_japan.119.a
-		effect_tooltip = { retire_country_leader = yes }
-		hidden_effect = {
-            promote_character = JAP_Daihonei
-		    set_party_name = {
-			    ideology = authoritarian_democrat
-			    long_name = JAP_Kaigensireibu_long
-			    name = JAP_Kaigensireibu_a
-		    }
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = 0.05
-			}
-		    set_politics = {
-			    ruling_party = authoritarian_democrat
-			    elections_allowed = no
-		    }
-			add_ideas = generic_Government_leaders_Vacancy
-			add_ideas = generic_Foreign_Affairs_Vacancy
-			add_ideas = generic_Economy_Vacancy
-			add_ideas = generic_Interior_Vacancy
-            country_event = {
-			    id = TR_news.4
-			    days = 2
-			    }
-            country_event = {
-			    id = TR_japan.120
-			    days = 14
-			    }
-	    }
-	}
-}
-#後継首相の選定
-country_event = {
-	id = TR_japan.120
-	title = TR_japan.120.t
-	desc = TR_japan.120.d
-	picture = GFX_report_event_generic_sign_treaty1
-
-	is_triggered_only = yes
-    fire_only_once = yes
-	
-	option = {
-		name = TR_japan.120.a
-		ai_chance = {
-			base = 40
-		}
-		country_event = {
-			id = TR_japan.121
-			days = 14
-			}
-	}
-	option = {
-		name = TR_japan.120.b
-		ai_chance = {
-			base = 40
-		}
-		country_event = {
-			id = TR_japan.122
-			days = 14
-			}
-
-	}
-}
-#政界の太陽
-country_event = {
-	id = TR_japan.121
-	title = TR_japan.121.t
-	desc = TR_japan.121.d
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-    fire_only_once = yes
-	
-	option = {
-		name = TR_japan.121.a
-		JAP_Ugaki_Kazushige = {
-			promote_character = {
-			    Ideology = national_coalition_subtype
-		    }
-		}
-	}
-}
-#国を想う狸
-country_event = {
-	id = TR_japan.122
-	title = TR_japan.122.t
-	desc = TR_japan.122.d
-	picture = GFX_report_event_generic_read_write
-
-	is_triggered_only = yes
-    fire_only_once = yes
-	
-	option = {
-		name = TR_japan.122.a
-		JAP_Okada_Keisuke = {
-			promote_character = {
-			    Ideology = national_coalition_subtype
-		    }
-		}
-	}
-}
 #1936年衆議院選挙
 country_event = {
 	id = TR_japan.2
@@ -3128,13 +3015,129 @@ country_event = {
 		hidden_effect = {
             JAP= {      
 				country_event = {
-					id = TR_japan.119
+					id = TR_japan.63
 					days = 3
 				}
             }
 		}
 	}
 }
+#内閣総辞職
+country_event = {
+	id = TR_japan.63
+	title = TR_japan.63.t
+	desc = TR_japan.63.d
+	picture = GFX_report_event_hol_cabinet_de_geer
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.63.a
+		effect_tooltip = { retire_country_leader = yes }
+		complete_national_focus =JAP_Militalism_focus
+		hidden_effect = {
+			load_focus_tree = japan_focus_02
+            promote_character = JAP_Daihonei
+		    set_party_name = {
+			    ideology = authoritarian_democrat
+			    long_name = JAP_Kaigensireibu_long
+			    name = JAP_Kaigensireibu_a
+		    }
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+		    set_politics = {
+			    ruling_party = authoritarian_democrat
+			    elections_allowed = no
+		    }
+			add_ideas = generic_Government_leaders_Vacancy
+			add_ideas = generic_Foreign_Affairs_Vacancy
+			add_ideas = generic_Economy_Vacancy
+			add_ideas = generic_Interior_Vacancy
+            country_event = {
+			    id = TR_news.4
+			    days = 2
+			    }
+            country_event = {
+			    id = TR_japan.64
+			    days = 14
+			    }
+	    }
+	}
+}
+#後継首相の選定
+country_event = {
+	id = TR_japan.64
+	title = TR_japan.64.t
+	desc = TR_japan.64.d
+	picture = GFX_report_event_generic_sign_treaty1
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.64.a
+		ai_chance = {
+			base = 40
+		}
+		country_event = {
+			id = TR_japan.65
+			days = 14
+			}
+	}
+	option = {
+		name = TR_japan.64.b
+		ai_chance = {
+			base = 0 #40
+		}
+		country_event = {
+			id = TR_japan.66
+			days = 14
+			}
+
+	}
+}
+#政界の太陽
+country_event = {
+	id = TR_japan.65
+	title = TR_japan.65.t
+	desc = TR_japan.65.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.65.a
+		JAP_Ugaki_Kazushige = {
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+	}
+}
+#国を想う狸
+country_event = {
+	id = TR_japan.66
+	title = TR_japan.66.t
+	desc = TR_japan.66.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.66.a
+		JAP_Okada_Keisuke = {
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+	}
+}
+
 #アメリカ政府、無条件降伏を宣言
 country_event = {
 	id = TR_japfor.1

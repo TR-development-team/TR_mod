@@ -140,40 +140,5 @@ units = {
 
 
 instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "MEX"
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "MEX"
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = CAS_equipment_1
-			creator = "MEX" 
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = convoy_1
-			creator = "MEX" 
-		}
-		requested_factories = 2
-		progress = 0.20
-		efficiency = 100
-	}
+
 }

@@ -1,0 +1,35 @@
+
+state={
+	id=1084
+	name="STATE_1084"
+	manpower = 728384
+	
+	state_category = two
+	
+	resources={
+		oil=25
+	}
+
+	history={
+		owner = OTT
+		victory_points = {
+			8001 3
+		}
+		victory_points = {
+			2089 5 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1 
+			2089 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = IRQ
+	}
+
+	local_supplies=0.0 
+provinces={
+		78 2089 7977 8001 12726
+	}
+}

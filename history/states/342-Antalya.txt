@@ -6,7 +6,7 @@ state={
 	resources={
 		chromium=35 # was: 46
 	}
-	state_category = rural
+	state_category = four
 
 	history={
 		owner = OTT
@@ -22,6 +22,7 @@ state={
 			}
 		}
 		add_core_of = OTT
+		add_claim_by = GRE
 	}
 
 	local_supplies=0.0 

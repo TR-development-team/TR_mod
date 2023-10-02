@@ -2,7 +2,7 @@ state = {
 	id=484
 	name="STATE_484"
 	manpower = 108841
-	state_category = rural
+	state_category = three
 	
 	history={
 		owner = CAL
@@ -18,19 +18,13 @@ state = {
 		}
 		add_core_of = MEX
                 add_core_of = CAL
-               
 		victory_points = {
 			12461 10
 		}
-		#victory_points = {
-		#	12736 3
-		#}
-		#victory_points = {
-		#	1892 3
-		#}
-		#victory_points = {
-		#	13215 5
-		#}
+		set_province_name = {
+			id = 12461
+			name = "VICTORY_POINTS_12461_JAPANESE"
+		}
 
 	}
 	provinces= { 1892 1904 7964 8119 12461 12736 12859 13215 13216 }

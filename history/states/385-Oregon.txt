@@ -4,7 +4,7 @@ state={
 	name="STATE_385"
 	manpower = 953785
 	
-	state_category = town
+	state_category = four
 
 	history={
 		owner = CAL
@@ -21,7 +21,10 @@ state={
 		victory_points = {
 			3513 1 
 		}
-
+		set_province_name = {
+			id = 3513
+			name = "VICTORY_POINTS_3513_JAPANESE"
+		}
 	}
 
 	local_supplies=0.0 

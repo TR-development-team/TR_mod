@@ -4,7 +4,7 @@ state={
 	name="STATE_131"
 	manpower = 2768860
 	
-	state_category = city
+	state_category = six
 	resources={
 		steel=38 # was: 60
 		aluminium=5 # was: 8
@@ -28,12 +28,6 @@ state={
 			}
 		}
 		add_core_of = GBR
-		1939.1.1 = {
-			buildings = {
-				dockyard = 5
-				industrial_complex = 2
-			}
-		}
 	}
 
 	local_supplies=0.0 

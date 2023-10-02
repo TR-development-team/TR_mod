@@ -4,7 +4,7 @@ state={
 	name="STATE_367"
 	manpower = 2646247
 	
-	state_category = city
+	state_category =six
 
 	history={
 		owner = USA
@@ -22,12 +22,6 @@ state={
 		victory_points = {
 			12735 1 
 		}
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
-
 	}
 
 	local_supplies=0.0 

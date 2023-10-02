@@ -7,30 +7,27 @@ country_event = {
 	title = TR_Brazil.1.t
 	desc = TR_Brazil.1.d
 	picture = GFX_report_event_portugal_navy_mutiny_prisoners
-
-
-        fire_only_once = yes
-        trigger = {
-                tag = BRA
+    fire_only_once = yes
+    trigger = {
+        tag = EQB
 		BRA = { exists = no }
-                AMZ = { exists = no }
-                SBR = { exists = no }
-		
+        AMZ = { exists = no }
+        SBR = { exists = no }
 	}
-
-	
-
         option = { 
-		name = TR_Brazil.1.a
-                add_stability = 0.1
-                remove_ideas = BRA_CIVIL_WAR
-		hidden_effect = {
-                         country_event = {
+		    name = TR_Brazil.1.a
+            add_stability = 0.1
+			set_global_flag = BRA_civil_war_end
+            remove_ideas = BRA_CIVIL_WAR
+			remove_ideas = BRA_Collapsed_Economy
+			remove_ideas = BRA_Securing_Infantry_Rifles
+			BRA_Collapsed_Economy
+		    hidden_effect = {
+                country_event = {
 					id = TR_news.23
-					days = 1
-					
+					days = 1	
 				}
-		}
+		    }
 	}
 }
 country_event = {
@@ -38,25 +35,23 @@ country_event = {
 	title = TR_Brazil.2.t
 	desc = TR_Brazil.2.d
 	picture = GFX_report_event_portugal_navy_mutiny_prisoners
-
-
         fire_only_once = yes
         trigger = {
-                tag = BRA
-		BRA = { exists = no }
-                AMZ = { exists = no }
-                SBR = { exists = no }
-		
-	}
-
-	
+            tag = BRA
+		    EQB = { exists = no }
+            AMZ = { exists = no }
+            SBR = { exists = no }
+		}
 
         option = { 
-		name = TR_Brazil.2.a
-                add_stability = 0.1
-                remove_ideas = BRA_CIVIL_WAR
-		hidden_effect = {
-                         country_event = {
+		    name = TR_Brazil.2.a
+            add_stability = 0.1
+			set_global_flag = BRA_civil_war_end
+            remove_ideas = BRA_CIVIL_WAR
+			remove_ideas = BRA_Collapsed_Economy
+			remove_ideas = BRA_Securing_Infantry_Rifles
+		    hidden_effect = {
+                country_event = {
 					id = TR_news.24
 					days = 1
 					
@@ -70,28 +65,28 @@ country_event = {
 	desc = TR_Brazil.3.d
 	picture = GFX_report_event_portugal_navy_mutiny_prisoners
 
-
-        fire_only_once = yes
-        trigger = {
-                tag = AMZ
-		BRA = { exists = no }
-                BRA = { exists = no }
-                SBR = { exists = no }
-		
+    fire_only_once = yes
+    trigger = {
+        tag = AMZ
+		EQB = { exists = no }
+        BRA = { exists = no }
+        SBR = { exists = no }	
 	}
 
 	
 
-        option = { 
+    option = { 
 		name = TR_Brazil.3.a
-                add_stability = 0.1
-                remove_ideas = BRA_CIVIL_WAR
+        add_stability = 0.1
+		set_global_flag = BRA_civil_war_end
+		remove_ideas = BRA_CIVIL_WAR
+		remove_ideas = BRA_Collapsed_Economy
+		remove_ideas = BRA_Securing_Infantry_Rifles
 		hidden_effect = {
-                         country_event = {
-					id = TR_news.25
-					days = 1
-					
-				}
+            country_event = {
+				id = TR_news.25
+				days = 1
+			}
 		}
 	}
 }
@@ -101,35 +96,31 @@ country_event = {
 	title = TR_Brazil.4.t
 	desc = TR_Brazil.4.d
 	picture = GFX_report_event_portugal_navy_mutiny_prisoners
-
-
-        fire_only_once = yes
-        trigger = {
-                tag = SBR
-		BRA = { exists = no }
-                BRA = { exists = no }
-                AMZ = { exists = no }
-		
+    fire_only_once = yes
+    trigger = {
+        tag = SBR
+		EQB = { exists = no }
+        BRA = { exists = no }
+        AMZ = { exists = no }	
 	}
 
-	
-
-        option = { 
+    option = { 
 		name = TR_Brazil.4.a
-                add_stability = 0.1
-                set_cosmetic_tag = JAP-BRA_federal_republic
-                remove_ideas = BRA_CIVIL_WAR
+        add_stability = 0.1
+		set_global_flag = BRA_civil_war_end
+        set_cosmetic_tag = JAP-BRA_federal_republic
+		remove_ideas = BRA_CIVIL_WAR
+		remove_ideas = BRA_Collapsed_Economy
+		remove_ideas = BRA_Securing_Infantry_Rifles
 		hidden_effect = {
-                         country_event = {
-					id = TR_news.26
-					days = 1
-					
+            country_event = {
+				id = TR_news.26
+				days = 1	
 				}
-                          country_event = {
-					id = TR_Brazil.5
-					days = 200
-					
-				}
+            country_event = {
+				id = TR_Brazil.5
+				days = 200
+			}
 		}
 	}
 }
@@ -139,28 +130,22 @@ country_event = {
 	title = TR_Brazil.5.t
 	desc = TR_Brazil.5.d
 	picture = GFX_report_event_portugal_navy_mutiny_prisoners
-
-
-        fire_only_once = yes
-        is_triggered_only = yes
-
-	
-
-          option = { 
+    fire_only_once = yes
+    is_triggered_only = yes
+    option = { 
 		name = TR_Brazil.5.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		}
-               
-                JAP = { country_event = TR_Brazil.6 }
+        JAP = { country_event = TR_Brazil.6 }
 
 	}
-        option = { 
+    option = { 
 		name = TR_Brazil.5.b
-                ai_chance = {
+        ai_chance = {
 			base = 0
 		}
-               add_political_power = 50
+        add_political_power = 50
 
 	}
 }
@@ -177,20 +162,20 @@ country_event = {
 
 	
 
-          option = { 
+    option = { 
 		name = TR_Brazil.6.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		}
-                JAP = { add_to_faction = SBR }
+        JAP = { add_to_faction = SBR }
 
 	}
-        option = { 
+    option = { 
 		name = TR_Brazil.6.b
-                ai_chance = {
+        ai_chance = {
 			base = 0
 		}
-               add_political_power = 1
+        add_political_power = 1
 
 	}
 }

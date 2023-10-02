@@ -4,7 +4,7 @@ state={
 	name="STATE_365"
 	manpower = 2908504
 	
-	state_category = city
+	state_category = six
 
 	history={
 		owner = USA
@@ -19,12 +19,6 @@ state={
 		add_core_of = USA
 		victory_points = {
 			12384 10 
-		}
-
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
 		}
 
 	}

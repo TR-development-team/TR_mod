@@ -1,1118 +1,1094 @@
 focus_tree = {
-	id = Turkey_focus
+	id = italy_focus
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = OTT
+			tag = ITA
 		}
 	}
-    continuous_focus_position = { x = 2500 y = 1300 }
-	#修正オスマン帝国憲法
+        continuous_focus_position = { x = 2000 y = 2000 } 
+	#リビア戦争の終結
 	focus = {
-		id = OTT_lVMNKjiv
-		icon = GFX_focus_renounce_the_treaty_of_trianon
-		x = 18
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		available = {
-			has_idea = OTT_Tanzimat4
-	    }
-		prerequisite = { 
-			focus = OTT_wARtkJZG 
-		}
-		prerequisite = { 
-			focus = OTT_bLpEjUne 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	    completion_reward = {
-            swap_ideas = {
-				remove_idea = OTT_Tanzimat4
-				add_idea = OTT_Tanzimat5
-			}	
-		}	
-	}	
-
-
-	#宗教家との妥協
-	focus = {
-		id = OTT_wARtkJZG
-		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 19
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_FUHlKYWM }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_political_power = 50
-}
-}
-	#宗教指導者としてのオスマン家
-	focus = {
-		id = OTT_qTKFZpGt
-		icon = GFX_focus_TUR_pivot_to_the_past
-		x = 11
-		y = 5
-		cost = 10
-                available = {
-                       has_idea = OTT_Jubyounin
-                }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_JHdujoSV }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = OTT_Jubyounin
-				add_idea = OTT_Enver1
-			}	
-		}
-	}
-
-	#民族浄化
-	focus = {
-		id = OTT_uZEMqWkV
-		icon = GFX_goal_generic_CAS
-		x = 11
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_qTKFZpGt }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        add_stability = 0.1
-                        800 = {         remove_core_of = ARM
-					add_manpower = -100000
-				}
-                        354 = {         remove_core_of = ARM
-					add_manpower = -100000
-				}
-		}
-	}
-
-
-	#軍制改革
-	focus = {
-		id = OTT_XEdyOKWv
-		icon = GFX_focus_generic_military_academy
-		x = 9
-		y = 5
-		cost = 10
-                available = {
-                       has_idea = OTT_Enver1
-                }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_JHdujoSV }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = OTT_Enver1
-				add_idea = OTT_Enver2
-			}	
-		}
-	}
-
-	#トゥラン革命
-	focus = {
-		id = OTT_BgbzdxKk
-		icon = GFX_focus_spr_the_anti_fascist_workers_revolution
+		id = ITA_Politic_Focus_1
+		icon = GFX_goal_generic_wolf_pack
 		x = 10
-		y = 7
-		cost = 10
-                available = {
-                       has_idea = OTT_Enver3
-                }
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_BjlkEwKT 
-		}
-		prerequisite = { 
-			focus = OTT_uZEMqWkV 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_ideas = totalist_dictatorship
-                        swap_ideas = {
-				remove_idea = OTT_Enver3
-				add_idea = OTT_Enver4
-			}	
-		}
-	}
-
-	#イスラーム主義を堅持
-	focus = {
-		id = OTT_JHdujoSV
-		icon = GFX_focus_TUR_turanist_ambition
-		x = 10
-		y = 4
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_EYAINjyc }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        add_political_power = -50
-		}
-	}
-
-	#自立したトルコ経済
-	focus = {
-		id = OTT_kZCulKcS
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 6
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_TfhSdYpH 
-		}
-		prerequisite = { 
-			focus = OTT_FcAVOYby 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			remove_ideas = OTT_depression
-                        add_timed_idea = {
-					idea = OTT_depression1
-					days = 365
-				} 
-
-
-		}
-	}
-
-	#世俗化を開始
-	focus = {
-		id = OTT_aFzSqOfU
-		icon = GFX_focus_BUL_condemn_macedonian_organizations
-		x = 2
-		y = 4
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_YFxLpbEB }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        add_political_power = -50
-		}
-	}
-
-	#オスマン皇族の国外追放
-	focus = {
-		id = OTT_yeAHTkDq
-		icon = GFX_focus_rom_abdicate
-		x = 1
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_aFzSqOfU }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_stability = -0.1	
-                add_popularity = {
-			ideology = national_populist
-			popularity = -0.15
-		}
-                add_popularity = {
-			ideology = paternal_autocrat
-			popularity = -0.15
-		}
-		}
-	}
-
-	#トルコ語のラテン文字化
-	focus = {
-		id = OTT_cyVksLMP
-		icon = GFX_focus_TUR_the_sun_language_theory
-		x = 3
-		y = 5
-		cost = 10
-                available = {
-                       has_idea = OTT_Jubyounin 
-                }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_aFzSqOfU }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = OTT_Jubyounin
-				add_idea = OTT_kemal1
-			}	
-		}
-	}
-
-	#条約の修正
-	focus = {
-		id = OTT_kgxhCqOW
-		icon = GFX_focus_generic_treaty
-		x = 5
-		y = 4
-		cost = 10
-                available = {
-                       has_idea = OTT_Treatment
-                }
-                bypass   = {
-                   NOT = { has_idea = OTT_Treatment } 
-                            }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_YFxLpbEB }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			remove_ideas = OTT_Treatment	
-                        add_timed_idea = {
-					idea = OTT_Treatment2
-					days = 730
-				} 
-
-
-		}
-	}
-
-	#ルックイースト政策
-	focus = {
-		id = OTT_fdaRBjNG
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		x = 3
-		y = 6
-		cost = 10
-                available = {
-                       has_idea = OTT_kemal2
-                }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_cyVksLMP }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = OTT_kemal2
-				add_idea = OTT_kemal3
-			}	
-		}
-	}
-
-	#イスラム過激派を弾圧
-	focus = {
-		id = OTT_JOTociyH
-		icon = GFX_focus_eng_move_to_secure_the_dominions
-		x = 1
-		y = 6
-		cost = 10
-                available = {
-                       has_idea = OTT_kemal1
-                }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_yeAHTkDq }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = OTT_kemal1
-				add_idea = OTT_kemal2
-			}	
-		}
-	}
-
-	#債務交渉
-	focus = {
-		id = OTT_TfhSdYpH
-		icon = GFX_goal_generic_improve_relations
-		x = 5
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_bAWCvyDz 
-			focus = OTT_kgxhCqOW 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			remove_ideas = OTT_SAIMUKANRI
-                        add_timed_idea = {
-					idea = OTT_SAIMUKANRI2
-					days = 90
-				} 
-
-
-		}
-	}
-
-	#ケマル・パシャ
-	focus = {
-		id = OTT_YFxLpbEB
-		icon = GFX_goal_generic_demand_territory
-		x = 4
-		y = 3
-                available = {
-                            always = no
-                       }
-                bypass   = {
-                             has_country_flag = OTT_KEMAL_WIN
-                            }
-		cost = 1
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_GCBYwhEn }
-		ai_will_do = {
-			factor = 100
-		}
-	}
-
-	#条約の破棄
-	focus = {
-		id = OTT_bAWCvyDz
-		icon = GFX_goal_generic_forceful_treaty
-		x = 7
-		y = 4
-		cost = 10
-                available = {
-                       has_idea = OTT_Treatment
-                }
-                bypass   = {
-                   NOT = { has_idea = OTT_Treatment } 
-                            }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_EYAINjyc }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        remove_ideas = OTT_Treatment
-                        add_named_threat = { threat = 5 name = OTT_Treatment_threat }
-                        reverse_add_opinion_modifier = {
-				target = BUL
-				modifier = OTT_Treatment_Revoke
-			}
-                        reverse_add_opinion_modifier = {
-				target = GRE
-				modifier = OTT_Treatment_Revoke
-			}
-                        reverse_add_opinion_modifier = {
-				target = ROM
-				modifier = OTT_Treatment_Revoke
-			}
-                        reverse_add_opinion_modifier = {
-				target = PER
-				modifier = OTT_Treatment_Revoke
-			}
-                        reverse_add_opinion_modifier = {
-				target = SER
-				modifier = OTT_Treatment_Revoke
-			}
-
-		}
-	}
-	#エンヴェル・パシャ
-	focus = {
-		id = OTT_EYAINjyc
-		icon = GFX_focus_TUR_ratify_the_six_arrows
-		x = 8
-		y = 3
-		cost = 1
-                available = {
-                            always = no
-                       }
-                bypass   = {
-                             has_country_flag = OTT_ENVER_WIN
-                            }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_GCBYwhEn }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                   
-		}
-	}
-
-	#崇高なる連邦国家
-	focus = {
-		id = OTT_mPNavVyH
-		icon = GFX_focus_TUR_treaty_of_saadabad
-		x = 16
-		y = 2
-		cost = 8
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_tROgPzvG }
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			add_ideas = Constitutional_monarchy
-            add_ideas = OTT_Federation
-		}
-	}
-
-	#大国民議会
-	focus = {
-		id = OTT_GCBYwhEn
-		icon = GFX_focus_generic_befriend_turkey
-		x = 6
-		y = 2
-		cost = 5
-                available = {
-                            has_country_flag = OTT_REVOLUTION
-                       }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_PsgrALvp }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		     add_ideas = militaly_dictatorship
-			country_event = TR_Turkey.3	
-		}
-	}
-
-	#トルコ民族主義
-	focus = {
-		id = OTT_PsgrALvp
-		icon = GFX_focus_TUR_misak_i_milli
-		x = 6
-		y = 1
-		cost = 5
-		available = {
-			has_country_flag = OTT_Nationalism 
-		}
-        mutually_exclusive = { 
-			focus = OTT_tROgPzvG
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_XOygATKf }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			country_event = TR_Turkey.4	
-		}
-	}
-
-	#オスマン主義
-	focus = {
-		id = OTT_tROgPzvG
-		icon = GFX_focus_TUR_turanist_ambition
-		x = 16
-		y = 1
-		cost = 5
-        available = {
-			has_country_flag = OTT_Ottoman_democlatic        
-            }
-         mutually_exclusive = { 
-			focus = OTT_PsgrALvp
-		}
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_XOygATKf }
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			country_event = TR_Turkey.12
-		}
-	}
-
-	#瀕死の病人
-	focus = {
-		id = OTT_XOygATKf
-		icon = GFX_focus_CZE_german_puppet
-		x = 11
 		y = 0
 		cost = 2
-                available = {
-                       is_subject = no
-                       has_war = no
-                       has_idea = OTT_Treatment
-                }
-		available_if_capitulated = yes
+		available = {
+			is_subject = no
+                        NOT = { has_war_with = LBA }
+		}
 		ai_will_do = {
 			factor = 100
 		}
-	completion_reward = {
-		country_event = TR_Turkey.11
-        add_political_power = -50
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power= 50
 		}
 	}
 
-	#インド太平洋圏への加盟
+	#決断
 	focus = {
-		id = OTT_mZgxulSW
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		x = 14
+		id = ITA_Politic_Focus_2
+		icon = GFX_focus_renounce_the_treaty_of_trianon
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Politic_Focus_1 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 0
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#民主主義を守れ！
+	focus = {
+		id = ITA_Politic_Focus_3
+		icon = GFX_goal_support_democracy
+		available_if_capitulated = yes
+		available = {
+			always = no
+	    }
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Politic_Focus_2 }
+		mutually_exclusive = { 
+			focus = ITA_Politic_Focus_4
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = -6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	#選挙の準備
+	focus = {
+		id = ITA_Demo_Focus_1
+		icon = GFX_goal_support_democracy
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Politic_Focus_3 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = -6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = {
+				id = TR_italy.2
+				days = 14
+				}
+		}
+	}
+	#社会党の勝利
+	focus = {
+		id = ITA_Demo_Focus_2
+		icon = GFX_focus_prc_agrarian_socialism
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = ITA_Socialist_WIN
+			}
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Demo_Focus_1 }
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_3
+		}
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_4
+		}
+		mutually_exclusive = { 
+			focus = ITA_fascist_Focus_2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = -9
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#人民党の勝利
+	focus = {
+		id = ITA_Demo_Focus_3
+		icon = GFX_goal_generic_defence
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = ITA_conservative_WIN
+			}
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Demo_Focus_1 }
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_2
+		}
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_4
+		}
+		mutually_exclusive = { 
+			focus = ITA_fascist_Focus_2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = -6
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#自由党の勝利
+	focus = {
+		id = ITA_Demo_Focus_4
+		icon = GFX_focus_research2
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = ITA_Liberal_WIN
+			}
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Demo_Focus_1 }
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_2
+		}
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_3
+		}
+		mutually_exclusive = { 
+			focus = ITA_fascist_Focus_2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = -3
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+
+	#ローマ進軍
+	focus = {
+		id = ITA_Politic_Focus_4
+		icon = GFX_focus_ger_assassinate_mussolini
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Politic_Focus_2 }
+		mutually_exclusive = { 
+			focus = ITA_Politic_Focus_3
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = -0.1
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.1
+			}
+
+		}
+	}
+
+
+	#ムッソリーニ内閣の成立
+	focus = {
+		id = ITA_fascist_Focus_1
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Politic_Focus_4 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			country_event = TR_italy.3
+		}
+	}
+
+	#国家ファシスト党の勝利！
+	focus = {
+		id = ITA_fascist_Focus_2
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		available = {
+			has_country_flag = ITA_Fascist_WIN
+			}
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_Demo_Focus_1 }
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_3
+		}
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_4
+		}
+		mutually_exclusive = { 
+			focus = ITA_Demo_Focus_2
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 0
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#ファシズム大評議会の設立
+	focus = {
+		id = ITA_fascist_Focus_3
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_1 
+                         focus = ITA_fascist_Focus_2 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 6
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = totalist_dictatorship
+			add_stability = 0.05
+			add_ideas = ITA_Fascist_Council
+		}
+	}
+
+	#大同団結
+	focus = {
+		id = ITA_fascist_Focus_4
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_3 }
+		mutually_exclusive = { 
+			focus = ITA_fascist_Focus_5
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 4
+		y = 5
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = 0.05
+			set_politics = {
+				ruling_party = national_populist
+				elections_allowed = no
+                        }
+			promote_character = ITA_benito_mussolini_NP
+                        set_party_name = {
+					ideology = national_populist
+					long_name = ITA_fascistparty_long
+					name = ITA_fascistparty
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = 0.2
+			}
+		}
+	}
+
+	#国防義勇軍
+	focus = {
+		id = ITA_fascist_Focus_6
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_4 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 5
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = ITA_Milizia
+		}
+	}
+	
+	#中央集権化の推進
+	focus = {
+		id = ITA_fascist_Focus_7
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_4 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 3
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = ITA_Centralization
+		}
+	}
+
+	#マフィアの解体
+	focus = {
+		id = ITA_fascist_Focus_9
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_6 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 5
 		y = 7
 		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_MAFIA_CORRUPT
+				add_idea = ITA_Police_state
+			}
+		}
+	}
+	
+	#組合の形骸化
+	focus = {
+		id = ITA_fascist_Focus_8
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_7 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 3
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = ITA_Corporatism_1
+		}
+	}
+
+	#一党独裁体制の確立
+	focus = {
+		id = ITA_fascist_Focus_10
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_9 }
+		prerequisite = { focus = ITA_fascist_Focus_8 }
+		mutually_exclusive = { 
+			focus = ITA_Gnosticism_Focus_1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 4
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = national_populist
+				popularity = 1.0
+			}
+		}
+	}
+
+	
+	#ローマ異教主義への関心
+	focus = {
+		id = ITA_Gnosticism_Focus_1
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		available = {
+			always = no
+	    }
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_9 }
+		prerequisite = { focus = ITA_fascist_Focus_8 }
+		mutually_exclusive = { 
+			focus = ITA_fascist_Focus_10
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 1
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+	 
+		}
+	}
+
+	#リラ戦争
+	focus = {
+		id = ITA_fascist_Focus_11
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_10 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 3
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = 0.03
+			add_ideas = ITA_Battle_for_the_Lira
+			remove_ideas = ITA_depression
+		}
+	}
+
+
+	#コーポラティズムの強化
+	focus = {
+		id = ITA_fascist_Focus_12
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_11 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 3
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_Corporatism_1
+				add_idea = ITA_Corporatism_2
+			}
+		}
+	}
+
+
+	#小麦戦争
+	focus = {
+		id = ITA_fascist_Focus_16
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_12 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 3
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = 0.03
+			add_ideas = ITA_Battle_for_Grain
+		}
+	}
+
+	#更なる国有化
+	focus = {
+		id = ITA_fascist_Focus_17
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_16 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 3
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = ITA_Corporatism_2
+				add_idea = ITA_Corporatism_3
+			}
+		}
+	}
+
+
+	#ラテラノ条約
+	focus = {
+		id = ITA_fascist_Focus_13
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_10 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 5
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+	          add_ideas = ITA_Lateranensi
+		}
+	}
+
+	#ブルガリアとの条約
+	focus = {
+		id = ITA_fascist_Focus_14
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_13 }
+		ai_will_do = {
+			factor = 100
+		}
+                bypass = {
+                   OR = { 
+                          BUL = { has_country_flag = BUL_Surrender }
+                          NOT = { country_exists = BUL }
+						  ITA = { is_in_faction = yes }
+                        }
+                     }
+		available = {
+                        is_subject = no
+                        is_faction_leader = no
+			BUL = { 
+                          is_subject = no	
+                          is_faction_leader = no 
+                         } 
+			}
+		x = 5
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+	              BUL = { country_event = TR_Bulgaria.1 } 
+		}
+	}
+
+	#アルバニアへの領土要求
+	focus = {
+		id = ITA_fascist_Focus_15
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		available = {
+			is_subject = no
+			threat > 0.1
+			}
+		prerequisite = { focus = ITA_fascist_Focus_14 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 5
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_state_claim = 44
+			add_state_claim = 805
+			create_wargoal = {
+				target = ALB
+				type = annex_everything
+			}
+	
+		}
+	}
+
+	#ギリシャを攻撃
+	focus = {
+		id = ITA_fascist_Focus_18
+		icon = GFX_focus_generic_italy_first
+		available = {
+			is_subject = no
+			threat > 0.3
+			}
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_15 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 5
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			create_wargoal = {
+				target = GRE
+				type = annex_everything
+			}
+	
+		}
+	}
+
+	#ファシスト革命
+	focus = {
+		id = ITA_fascist_Focus_5
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_3 }
+		mutually_exclusive = { 
+			focus = ITA_fascist_Focus_4
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 8
+		y = 5
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			set_politics = {
+				ruling_party = totalist
+				elections_allowed = no
+			}
+			add_stability = -0.1
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.2
+			}
+		}
+	}
+
+	#王党派の粛清
+	focus = {
+		id = ITA_totalist_Focus_1
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_5 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 7
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = -0.15
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.2
+			}
+		}
+	}
+
+	#社会主義者との連携
+	focus = {
+		id = ITA_totalist_Focus_2
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_fascist_Focus_5 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 9
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_popularity = {
+				ideology = totalist
+				popularity = 0.2
+			}
+
+		}
+	}
+
+	#国王の追放
+	focus = {
+		id = ITA_totalist_Focus_3
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_1 }
+		prerequisite = { focus = ITA_totalist_Focus_2 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 8
+		y = 7
+		cost = 15
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = -0.05
+			remove_ideas = victor_emmanuel
+			set_cosmetic_tag = ITA_REP
+		}
+	}
+
+	#共和国のドゥーチェ
+	focus = {
+		id = ITA_totalist_Focus_4
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_3 }
+		mutually_exclusive = { 
+			focus = ITA_syndicalist_Focus_1
+		}
+		ai_will_do = {
+			factor = 100
+		}
+		x = 7
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+
+	#ムッソリーニを粛清
+	focus = {
+		id = ITA_syndicalist_Focus_1
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_3 }
+		ai_will_do = {
+			factor = 100
+		}
+		mutually_exclusive = { 
+			focus = ITA_totalist_Focus_4
+		}
+		x = 9
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_stability = -0.1
+			effect_tooltip = { retire_country_leader = yes }
+			promote_character = ITA_Michele_Bianchi
+		    }
+	}
+	
+
+	#旧弊なブルジョワ文化の破壊
+	focus = {
+		id = ITA_totalist_Focus_5
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_4 
+		                focus = ITA_syndicalist_Focus_1 
+					   }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 7
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+				remove_ideas = ITA_MAFIA_CORRUPT
+				add_ideas = ITA_New_Culture
+		}
+	}
+
+
+	#生産手段の統制
+	focus = {
+		id = ITA_totalist_Focus_6
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_5 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 7
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+                        remove_ideas = ITA_depression
+			add_ideas = ITA_Seinsashudan
+		}
+	}
+
+
+	#プロレタリア独裁
+	focus = {
+		id = ITA_totalist_Focus_7
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_6 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 7
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = ITA_Proletarian_dictatorship
+		}
+	}
+
+
+	#統合された国家
+	focus = {
+		id = ITA_totalist_Focus_8
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_7 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 7
+		y = 12
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = ITA_Integralism
+		}
+	}
+
+	#バチカンの破壊
+	focus = {
+		id = ITA_totalist_Focus_9
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_4 
+						focus = ITA_syndicalist_Focus_1 
+					   }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 9
+		y = 9
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = ITA_Atheism
+		}
+	}
+
+
+
+    #国際主義への反発
+	focus = {
+		id = ITA_totalist_Focus_10
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_9 }
+		ai_will_do = {
+			factor = 100
+		}
+		x = 9
+		y = 10
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = ITA_Anti_International
+			reverse_add_opinion_modifier = {
+				target = GER
+				modifier = medium_decrease
+			}
+		}
+	}
+
+    #ローマ・コムーネ
+	focus = {
+		id = ITA_totalist_Focus_11
+		icon = GFX_focus_generic_italy_first
+		available_if_capitulated = yes
+		mutually_exclusive = { 
+		}
 		available = {
 			is_subject = no	
                         is_in_faction = no
 			}
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_psESWoUt }
+		bypass = { ITA = { is_in_faction = yes } }
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_10 }
 		ai_will_do = {
 			factor = 100
+		}
+		x = 9
+		y = 11
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			JAP = { country_event = TR_japan.11 }
-		    }
-}
-
-	#第二次タンジマート
-	focus = {
-		id = OTT_knByAjHF
-		icon = GFX_focus_generic_monarchy_1
-		x = 18
-		y = 3
-		available = {
-			has_idea = OTT_Jubyounin
-	    }
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_mPNavVyH }
-		ai_will_do = {
-			factor = 50
+			create_faction = "Rome_Commune"
 		}
-	    completion_reward = {
-            swap_ideas = {
-				remove_idea = OTT_Jubyounin
-				add_idea = OTT_Tanzimat1
-			}	
-		}	
-	}	
+	}
 
-	#官僚改革
+
+    #バルカンへの社会主義拡大
 	focus = {
-		id = OTT_FUHlKYWM
-		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 19
-		y = 4
-		available = {
-			has_idea = OTT_Tanzimat1
-	    }
-		cost = 10
+		id = ITA_totalist_Focus_13
+		icon = GFX_focus_generic_italy_first
 		available_if_capitulated = yes
-		prerequisite = { focus = OTT_knByAjHF }
-		ai_will_do = {
-			factor = 100
-		}
-	    completion_reward = {
-            swap_ideas = {
-				remove_idea = OTT_Tanzimat1
-				add_idea = OTT_Tanzimat2
-			}	
-		}	
-	}	
-
-	#協商への参加
-	focus = {
-		id = OTT_dLzVIawT
-		icon = GFX_focus_TUR_treaty_of_saadabad
-		x = 6
-		y = 7
-		cost = 10
+		relative_position_id = ITA_Politic_Focus_1
+		prerequisite = { focus = ITA_totalist_Focus_11 }
 		available = {
 			is_subject = no
-			is_in_faction = no
-			threat > 0.3
-            FRA = { 
-			  is_subject = no	
-			  is_faction_leader = yes
-			 } 
-         }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_kZCulKcS }
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			FRA = { country_event = TR_france.4 }
-		    }
-}
-
-	#日土首脳会談
-	focus = {
-		id = OTT_rnUvHWaM
-		icon = GFX_focus_jap_cast_the_die
-		x = 15
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_GJPkUzHN }
-		ai_will_do = {
-			factor = 50
-		}
-	    completion_reward = {
-			reverse_add_opinion_modifier = {
-				target = JAP
-				modifier = large_increase
+			has_war =no
+			threat > 0.6
 			}
-            swap_ideas = {
-				remove_idea = OTT_Bagdadrailway
-				add_idea = OTT_Bagdadrailway1
-			}	
-		}	
-	}
-
-	#開かれたオスマン経済
-	focus = {
-		id = OTT_psESWoUt
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 14
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_rnUvHWaM 
-		}
-		prerequisite = { 
-			focus = OTT_PAZrXsQp 
-		}
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			add_ideas = free_trade
-			add_ideas = OTT_Free_trade
-			remove_ideas = OTT_depression
-			add_timed_idea = {
-		           idea = OTT_depression
-		           days = 300
-	          } 
-		}
-    }
-	#外交努力
-	focus = {
-		id = OTT_NArEflcd
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 14
-		y = 3
-		cost = 5
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_mPNavVyH }
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			add_political_power = 50
-	}
-	}
-
-	#生まれ変わった帝国
-	focus = {
-		id = OTT_jhfHdZMo
-		icon = GFX_focus_TUR_pivot_to_the_past
-		x = 16
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_mZgxulSW 
-		}
-		prerequisite = { 
-			focus = OTT_XySOHpjk 
-		}
 		ai_will_do = {
 			factor = 100
 		}
-		completion_reward = {
-			add_ideas = OTT_Rebirth
-        }
-}
-
-	#オスマン合衆国
-	focus = {
-		id = OTT_XySOHpjk
-		icon = GFX_focus_TUR_turanist_ambition
-		x = 18
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_lVMNKjiv }
-		ai_will_do = {
-			factor = 50
-		}
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = OTT_Federation
-				add_idea = OTT_Federation1
-			}	
-			add_state_core = 677
-			add_state_core = 680
-			add_state_core = 554
-			add_state_core = 553
-			add_state_core = 454
-			add_state_core = 455
-			add_state_core = 675
-			add_state_core = 291
-			add_state_core = 676
-}
-}
-
-	#教育の機会均等
-	focus = {
-		id = OTT_bLpEjUne
-		icon = GFX_focus_research2
-		x = 17
-		y = 5
-		cost = 10
-		available = {
-			has_idea = OTT_Tanzimat3
-	    }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_IkETMtwg }
-		ai_will_do = {
-			factor = 100
-		}
-	    completion_reward = {
-            swap_ideas = {
-				remove_idea = OTT_Tanzimat3
-				add_idea = OTT_Tanzimat4
-			}	
-		}	
-	}	
-
-	#バグダード鉄道の接収
-	focus = {
-		id = OTT_FcAVOYby
-		icon = GFX_goal_generic_construct_infrastructure
-		x = 7
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_bAWCvyDz 
-			focus = OTT_kgxhCqOW 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-
-	completion_reward = {
-			remove_ideas = OTT_Bagdadrailway
-                        reverse_add_opinion_modifier = {
-				target = JAP
-				modifier = OTT_Bagdadrailway_a
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	#ケマル主義
-	focus = {
-		id = OTT_gNbmFSWl
-		icon = GFX_focus_generic_military_mission
-		x = 2
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_fdaRBjNG 
-		}
-		prerequisite = { 
-			focus = OTT_JOTociyH 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = OTT_kemal3
-				add_idea = OTT_kemal4
-			}	
-		}
-	}
-
-	#新憲法
-	focus = {
-		id = OTT_BjlkEwKT
-		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
 		x = 9
-		y = 6
+		y = 12
 		cost = 10
-                available = {
-                       has_idea = OTT_Enver2
-                }
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_XEdyOKWv }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-                        swap_ideas = {
-				remove_idea = OTT_Enver2
-				add_idea = OTT_Enver3
-			}	
-		}
-	}
-
-	#トルコ共和国の維持
-	focus = {
-		id = OTT_liGKXWNO
-		icon = GFX_focus_generic_befriend_turkey
-		x = 3
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_gNbmFSWl 
-		}
-		prerequisite = { 
-			focus = OTT_nXOzDwuZ 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-			add_ideas = OTT_Turkey_Republic
-}
-}
-
-	#エンヴェル・パシャの最後の冒険
-	focus = {
-		id = OTT_oaHzqhXP
-		icon = GFX_focus_TUR_turanist_ambition
-		x = 9
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_BgbzdxKk 
-		}
-		prerequisite = { 
-			focus = OTT_nXOzDwuZ 
-		}
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		add_ideas = OTT_Turkey_State
-                       set_country_flag = OTT_Turk_Expansion
-                       add_political_power = 25
-                       custom_effect_tooltip = "汎テュルク主義実現のためのディシジョンをアンロックする"
-		}
-	}
-
-	#病人、回復す
-	focus = {
-		id = OTT_nXOzDwuZ
-		icon = GFX_focus_TUR_pivot_to_the_past
-		x = 6
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = OTT_gNbmFSWl 
-			focus = OTT_BgbzdxKk 
-		}
-		ai_will_do = {
-			factor = 100
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
 		}
 		completion_reward = {
-			add_ideas = OTT_Rebirth
-}
-}
-
-	#バルカン外交
-	focus = {
-		id = OTT_qIfkYPoA
-		icon = GFX_focus_BUL_free_balkan_states
-		x = 13
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_NArEflcd }
-		ai_will_do = {
-			factor = 100
-		}
-	completion_reward = {
-		remove_ideas = OTT_Treatment	
-		add_timed_idea = {
-	               idea = OTT_Treatment2
-	               days = 730
-          } 
-		diplomatic_relation = {
-			country = BUL
-			relation = non_aggression_pact
-			active = yes
+			create_wargoal = {
+				target = GRE
+				type = annex_everything
 			}
-		diplomatic_relation = {
-			country = SER
-			relation = non_aggression_pact
-			active = yes
+			create_wargoal = {
+				target = ALB
+				type = annex_everything
 			}
-		diplomatic_relation = {
-			country = GRE
-			relation = non_aggression_pact
-			active = yes
+			create_wargoal = {
+				target = SER
+				type = annex_everything
 			}
-		diplomatic_relation = {
-			country = ROM
-			relation = non_aggression_pact
-			active = yes
+			create_wargoal = {
+				target = BUL
+				type = annex_everything
 			}
-       }
-}
-
-	#中東外交
-	focus = {
-		id = OTT_GJPkUzHN
-		icon = GFX_goal_anschluss
-		x = 15
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_NArEflcd }
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			diplomatic_relation = {
-				country = PER
-				relation = non_aggression_pact
-				active = yes
-				}
-			diplomatic_relation = {
-				country = SCC
-				relation = non_aggression_pact
-				active = yes
-				}
-			diplomatic_relation = {
-				country = EGY
-				relation = non_aggression_pact
-				active = yes
-				}
-			diplomatic_relation = {
-				country = ARB
-				relation = non_aggression_pact
-				active = yes
-				}
-		   }
-	}
-
-	#欧州諸国との取引
-	focus = {
-		id = OTT_PAZrXsQp
-		icon = GFX_focus_usa_focus_on_europe
-		x = 13
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_qIfkYPoA }
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			remove_ideas = OTT_SAIMUKANRI
-                        add_timed_idea = {
-					idea = OTT_SAIMUKANRI2
-					days = 90
-				} 
-
+			create_wargoal = {
+				target = CRO
+				type = annex_everything
+			}
+			create_wargoal = {
+				target = BOS
+				type = annex_everything
+			}
 
 		}
 	}
-
-	#自由と平等の保証
 	focus = {
-		id = OTT_IkETMtwg
-		icon = GFX_goal_support_democracy
-		x = 17
-		y = 4
-		available = {
-			has_idea = OTT_Tanzimat2
-	    }
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = OTT_knByAjHF }
-		ai_will_do = {
-			factor = 100
-		}
-	    completion_reward = {
-            swap_ideas = {
-				remove_idea = OTT_Tanzimat2
-				add_idea = OTT_Tanzimat3
-			}	
-		}	
-	}	
-
-	focus = {
-		id = OTT_army_effort
+		id = ITA_army_effort
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 23
+		x = 24
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1130,13 +1106,13 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = OTT_equipment_effort
+focus = {
+		id = ITA_equipment_effort
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = OTT_army_effort }
+		prerequisite = { focus = ITA_army_effort }
 		x = -1
 		y = 1
-		relative_position_id = OTT_army_effort
+		relative_position_id = ITA_army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1155,13 +1131,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_motorization_effort
+		id = ITA_motorization_effort
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = OTT_army_effort }
+		prerequisite = { focus = ITA_army_effort }
 		bypass = { has_tech = motorised_infantry }
 		x = 1
 		y = 1
-		relative_position_id = OTT_army_effort
+		relative_position_id = ITA_army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1178,12 +1154,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_doctrine_effort
+		id = ITA_doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = OTT_army_effort }
+		prerequisite = { focus = ITA_army_effort }
 		x = 0
 		y = 2
-		relative_position_id = OTT_army_effort
+		relative_position_id = ITA_army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1202,12 +1178,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_equipment_effort_2
+		id = ITA_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = OTT_equipment_effort }
+		prerequisite = { focus = ITA_equipment_effort }
 		x = 0
 		y = 2
-		relative_position_id = OTT_equipment_effort
+		relative_position_id = ITA_equipment_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1226,12 +1202,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_mechanization_effort
+		id = ITA_mechanization_effort
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = OTT_motorization_effort }
+		prerequisite = { focus = ITA_motorization_effort }
 		x = 0
 		y = 2
-		relative_position_id = OTT_motorization_effort
+		relative_position_id = ITA_motorization_effort
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1249,12 +1225,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_doctrine_effort_2
+		id = ITA_doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus =OTT_doctrine_effort }
+		prerequisite = { focus = ITA_doctrine_effort }
 		x = 0
 		y = 2
-		relative_position_id = OTT_doctrine_effort
+		relative_position_id = ITA_doctrine_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1273,12 +1249,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_equipment_effort_3
+		id = ITA_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = OTT_equipment_effort_2 }
+		prerequisite = { focus = ITA_equipment_effort_2 }
 		x = 0
 		y = 2
-		relative_position_id = OTT_equipment_effort_2
+		relative_position_id = ITA_equipment_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1297,12 +1273,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_armor_effort
+		id = ITA_armor_effort
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = OTT_mechanization_effort }
+		prerequisite = { focus = ITA_mechanization_effort }
 		x = 0
 		y = 2
-		relative_position_id = OTT_mechanization_effort
+		relative_position_id = ITA_mechanization_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1320,14 +1296,14 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_special_forces
+		id = ITA_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = OTT_equipment_effort_3 }
-		prerequisite = { focus = OTT_doctrine_effort_2 }
-		prerequisite = { focus = OTT_armor_effort }
+		prerequisite = { focus = ITA_equipment_effort_3 }
+		prerequisite = { focus = ITA_doctrine_effort_2 }
+		prerequisite = { focus = ITA_armor_effort }
 		x = 1
 		y = 1
-		relative_position_id = OTT_equipment_effort_3
+		relative_position_id = ITA_equipment_effort_3
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1350,9 +1326,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_aviation_effort
+		id = ITA_aviation_effort
 		icon = GFX_goal_generic_build_airforce
-		x = 27
+		x = 28
 		y = 0
 		cost = 10
 		
@@ -1435,13 +1411,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_fighter_focus
+		id = ITA_fighter_focus
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = OTT_aviation_effort }
-		mutually_exclusive = { focus =OTT_bomber_focus }
+		prerequisite = { focus = ITA_aviation_effort }
+		mutually_exclusive = { focus = ITA_bomber_focus }
 		x = -1
 		y = 1
-		relative_position_id = OTT_aviation_effort
+		relative_position_id = ITA_aviation_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1465,13 +1441,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_bomber_focus
+		id = ITA_bomber_focus
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = OTT_aviation_effort }
-		mutually_exclusive = { focus =OTT_fighter_focus }
+		prerequisite = { focus = ITA_aviation_effort }
+		mutually_exclusive = { focus = ITA_fighter_focus }
 		x = 1
 		y = 1
-		relative_position_id = OTT_aviation_effort
+		relative_position_id = ITA_aviation_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1492,13 +1468,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_aviation_effort_2
+		id = ITA_aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus =OTT_bomber_focus 
-                                 focus =OTT_fighter_focus }
+		prerequisite = { focus = ITA_bomber_focus focus = ITA_fighter_focus }
 		x = -1
 		y = 1
-		relative_position_id = OTT_bomber_focus
+		relative_position_id = ITA_bomber_focus
 		cost = 10
 
 		search_filters = {   FOCUS_FILTER_RESEARCH }
@@ -1582,13 +1557,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_CAS_effort
+		id = ITA_CAS_effort
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = OTT_aviation_effort_2 }
-		prerequisite = { focus = OTT_motorization_effort }
+		prerequisite = { focus = ITA_aviation_effort_2 }
+		prerequisite = { focus = ITA_motorization_effort }
 		x = -1
 		y = 1
-		relative_position_id = OTT_aviation_effort_2
+		relative_position_id = ITA_aviation_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1607,13 +1582,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_rocket_effort
+		id = ITA_rocket_effort
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = OTT_aviation_effort_2 }
-		prerequisite = { focus = OTT_infrastructure_effort }
+		prerequisite = { focus = ITA_aviation_effort_2 }
+		prerequisite = { focus = ITA_infrastructure_effort }
 		x = 0
 		y = 2
-		relative_position_id = OTT_aviation_effort_2
+		relative_position_id = ITA_aviation_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1640,13 +1615,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_NAV_effort
+		id = ITA_NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
-		prerequisite = { focus = OTT_aviation_effort_2 }
-		prerequisite = { focus = OTT_flexible_navy }
+		prerequisite = { focus = ITA_aviation_effort_2 }
+		prerequisite = { focus = ITA_flexible_navy }
 		x = 1
 		y = 1
-		relative_position_id = OTT_aviation_effort_2
+		relative_position_id = ITA_aviation_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1665,9 +1640,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_naval_effort
+		id = ITA_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 31
+		x = 32
 		y = 0
 		cost = 10
 
@@ -1793,13 +1768,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_flexible_navy
+		id = ITA_flexible_navy
 		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = OTT_naval_effort }
-		mutually_exclusive = { focus =OTT_large_navy }
+		prerequisite = { focus = ITA_naval_effort }
+		mutually_exclusive = { focus = ITA_large_navy }
 		x = -1
 		y = 1
-		relative_position_id = OTT_naval_effort
+		relative_position_id = ITA_naval_effort
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1835,13 +1810,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_large_navy
+		id = ITA_large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = OTT_naval_effort }
-		mutually_exclusive = { focus = OTT_flexible_navy }
+		prerequisite = { focus = ITA_naval_effort }
+		mutually_exclusive = { focus = ITA_flexible_navy }
 		x = 1
 		y = 1
-		relative_position_id = OTT_naval_effort
+		relative_position_id = ITA_naval_effort
 		cost = 10
 		
 		search_filters = {   FOCUS_FILTER_RESEARCH }
@@ -1873,12 +1848,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_submarine_effort
+		id = ITA_submarine_effort
 		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = OTT_flexible_navy focus = OTT_large_navy }
+		prerequisite = { focus = ITA_flexible_navy focus = ITA_large_navy }
 		x = 0
 		y = 1
-		relative_position_id = OTT_flexible_navy
+		relative_position_id = ITA_flexible_navy
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1911,12 +1886,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_cruiser_effort
+		id = ITA_cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = OTT_large_navy focus = OTT_flexible_navy }
+		prerequisite = { focus = ITA_large_navy focus = ITA_flexible_navy }
 		x = 0
 		y = 1
-		relative_position_id = OTT_large_navy
+		relative_position_id = ITA_large_navy
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1950,12 +1925,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_destroyer_effort
+		id = ITA_destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = OTT_submarine_effort }
+		prerequisite = { focus = ITA_submarine_effort }
 		x = 0
 		y = 1
-		relative_position_id = OTT_submarine_effort
+		relative_position_id = ITA_submarine_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -1988,12 +1963,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_capital_ships_effort
+		id = ITA_capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = OTT_cruiser_effort }
+		prerequisite = { focus = ITA_cruiser_effort }
 		x = 0
 		y = 1
-		relative_position_id = OTT_cruiser_effort
+		relative_position_id = ITA_cruiser_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -2028,9 +2003,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_industrial_effort
+		id = ITA_industrial_effort
 		icon = GFX_goal_generic_production
-		x = 35
+		x = 36
 		y = 0
 		cost = 10
 
@@ -2055,12 +2030,12 @@ focus_tree = {
 				OR = { 
 					# we dont want chinese minors to go crazy on slots early since they get eaten
 					tag = GXC 
-					tag = CNK
-					tag = ZHI
-					tag = QIG
+					tag = YUN
+					tag = SHX
+					tag = XSM
 					tag = BEL
 					tag = LUX
-					tag = NTL
+					tag = HOL
 					tag = DEN
 
 					# we also dont want tiny nations to go crazy with slots right away
@@ -2071,12 +2046,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_construction_effort
+		id = ITA_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = OTT_industrial_effort }
+		prerequisite = { focus = ITA_industrial_effort }
 		x = -1
 		y = 1
-		relative_position_id = OTT_industrial_effort
+		relative_position_id = ITA_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2146,12 +2121,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_production_effort
+		id = ITA_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = OTT_industrial_effort }
+		prerequisite = { focus = ITA_industrial_effort }
 		x = 1
 		y = 1
-		relative_position_id = OTT_industrial_effort
+		relative_position_id = ITA_industrial_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2220,12 +2195,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_construction_effort_2
+		id = ITA_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = OTT_construction_effort }
+		prerequisite = { focus = ITA_construction_effort }
 		x = 0
 		y = 1
-		relative_position_id = OTT_construction_effort
+		relative_position_id = ITA_construction_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2294,12 +2269,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_production_effort_2
+		id = ITA_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = OTT_production_effort }
+		prerequisite = { focus = ITA_production_effort }
 		x = 0
 		y = 1
-		relative_position_id = OTT_production_effort
+		relative_position_id = ITA_production_effort
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2368,12 +2343,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_infrastructure_effort
+		id = ITA_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = OTT_construction_effort_2 }
+		prerequisite = { focus = ITA_construction_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = OTT_construction_effort_2
+		relative_position_id = ITA_construction_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2464,12 +2439,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_production_effort_3
+		id = ITA_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = OTT_production_effort_2 }
+		prerequisite = { focus = ITA_production_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = OTT_production_effort_2
+		relative_position_id = ITA_production_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2538,12 +2513,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_infrastructure_effort_2
+		id = ITA_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = OTT_infrastructure_effort }
+		prerequisite = { focus = ITA_infrastructure_effort }
 		x = 0
 		y = 1
-		relative_position_id = OTT_infrastructure_effort
+		relative_position_id = ITA_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2634,12 +2609,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_construction_effort_3
+		id = ITA_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = OTT_infrastructure_effort }
+		prerequisite = { focus = ITA_infrastructure_effort }
 		x = 2
 		y = 1
-		relative_position_id = OTT_infrastructure_effort
+		relative_position_id = ITA_infrastructure_effort
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
@@ -2708,12 +2683,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_nuclear_effort
+		id = ITA_nuclear_effort
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = OTT_infrastructure_effort_2 }
+		prerequisite = { focus = ITA_infrastructure_effort_2 }
 		x = -2
 		y = 1
-		relative_position_id = OTT_infrastructure_effort_2
+		relative_position_id = ITA_infrastructure_effort_2
 		cost = 10
 		
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -2738,12 +2713,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = OTT_extra_tech_slot
+		id = ITA_extra_tech_slot
 		icon = GFX_focus_research
-		prerequisite = { focus = OTT_infrastructure_effort_2 }
+		prerequisite = { focus = ITA_infrastructure_effort_2 }
 		x = 0
 		y = 1
-		relative_position_id = OTT_infrastructure_effort_2
+		relative_position_id = ITA_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -2755,36 +2730,15 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = OTT_extra_tech_slot_2
-		icon = GFX_focus_research
-		prerequisite = { focus = OTT_extra_tech_slot }
-		available = {
-			num_of_factories > 100
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		x = 0
-		y = 1
-		relative_position_id = OTT_extra_tech_slot
-		cost = 10
 
-		search_filters = { FOCUS_FILTER_RESEARCH } 
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}	
 
 	focus = {
-		id = OTT_secret_weapons
+		id = ITA_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
-		prerequisite = { focus = OTT_infrastructure_effort_2 }
+		prerequisite = { focus = ITA_infrastructure_effort_2 }
 		x = 2
 		y = 1
-		relative_position_id = OTT_infrastructure_effort_2
+		relative_position_id = ITA_infrastructure_effort_2
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -2814,9 +2768,13 @@ focus_tree = {
 	
 
 	
+	
 
 
 
 
-#End of focuses 
+
+
+
+#end of focuses 
  }

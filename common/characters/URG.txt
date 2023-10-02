@@ -1,0 +1,25 @@
+characters={
+
+	URG_gabriel_terra={
+		name= URG_gabriel_terra
+		portraits={
+			civilian={
+				large="gfx/leaders/URG/Portrait_URG_Gabriel_Terra_1.png"
+			}
+		}
+		country_leader={
+			ideology=civilian_dictatorship_subtype
+		}
+	}
+	URG_alfredo_baldomir_ferrari={
+		name= URG_alfredo_baldomir_ferrari
+		portraits={
+			civilian={
+				large=GFX_portrait_Alfredo_Baldomir_Ferrari
+			}
+		}
+		country_leader={
+			ideology=civilian_dictatorship_subtype
+		}
+	}
+}

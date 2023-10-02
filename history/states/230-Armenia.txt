@@ -5,10 +5,13 @@ state={
 	history={
 		owner = SCC
 		victory_points = {
-			12320 3
+			12320 5
 		}
 		victory_points = {
-			12441 1
+			12380 1
+		}
+		victory_points = {
+			4660 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -19,21 +22,14 @@ state={
 		}
 		add_core_of = ARM
                 add_core_of = SCC
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 3
-
-			}
-
-		}
 
 	}
 
 	local_supplies=0.0 
 provinces={
-		3564 4660 6642 6997 11708 12320 12380 12441 12450 13123 
+		4660 6642 11708 12320 12380 12450 13123 
 	}
-	manpower=1250082
+	manpower=1169483
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=five
 }

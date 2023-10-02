@@ -2,23 +2,17 @@
 state={
 	id=344
 	name="STATE_344"
-	manpower = 1081781
+	manpower = 481781
 	
-	state_category = town
+	state_category = two
 
 	history={
 		owner = OTT
 		victory_points = {
-			9893 15
-		}
-		victory_points = {
-			7620 10
-		}
-		victory_points = {
-			6813 3
-		}
-		victory_points = {
 			11746 5 
+		}
+		victory_points = {
+			11810 1 
 		}
 		buildings = {
 			infrastructure = 2
@@ -28,12 +22,11 @@ state={
 			}
 		}
 		add_core_of = OTT
-		add_claim_by = KUR
 	}
 
 	local_supplies=0.0 
 provinces={
-		806 3889 6813 7620 9893 9912 11746 
+		806 886 6956 11746  11810 
 	}
 
 }

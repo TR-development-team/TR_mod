@@ -2,36 +2,43 @@
  ideas = {
        
      country = {
-        OTT_Bagdadrailway = {
-			allowed = {
-				always = no
+		OTT_sultanate_caliphate = {
+			picture = tur_ottoman_spirit
+			modifier = {
+				political_power_factor = 0.05
+				training_time_army_factor = 0.2
+				war_support_factor = -0.10
 			}
-			picture = jap_ichi_go
-			removal_cost = -1
+		}
+		OTT_Committee_of_Union_and_Progress = {
+			picture = tur_kemalist_army_officers_limited_power_disloyal
+			modifier = {
+				stability_factor = -0.1
+                drift_defence_factor = -0.5
+				authoritarian_democrat_drift = 0.02
+				national_populist_drift = 0.02
+			}
+		}
+		OTT_Baghdad_railway = {
+			picture = generic_build_infrastructure
 			targeted_modifier = {
 				tag = JAP
 				trade_cost_for_target_factor = -0.1
 				extra_trade_to_target_factor = 0.1
 			}
-
 			modifier = {
                 stability_factor = -0.05
                 consumer_goods_factor = 0.1
                 political_power_cost = 0.15
 			}
 		}
-        OTT_Bagdadrailway1 = {
-			allowed = {
-				always = no
-			}
+        OTT_Baghdad_railway_1 = {
 			picture = jap_zaibatsu_ally
-			removal_cost = -1
 			targeted_modifier = {
 				tag = JAP
 				trade_cost_for_target_factor = -0.2
 				extra_trade_to_target_factor = 0.2
 			}
-
 			modifier = {
                 stability_factor = -0.05
                 political_power_cost = 0.05
@@ -40,13 +47,7 @@
 			}
 		}
         OTT_Free_trade = {
-			allowed = {
-				always = no
-			}
-                        picture = man_five_year_plan_industry
-			
-			removal_cost = -1
-            
+            picture = can_wartime_prices_and_trade_board
 			modifier = {
                 consumer_goods_factor = -0.05
                 production_speed_buildings_factor = 0.1
@@ -54,12 +55,8 @@
 		        production_factory_efficiency_gain_factor = 0.1
 			}
 		}
-        OTT_SAIMUKANRI = {
-			allowed = {
-				always = no
-			}
-			picture = chi_forced_conscription
-			removal_cost = -1
+        OTT_OPDA = {
+			picture = tur_balkan_central_bank_wealthy_greece
 			targeted_modifier = {
 				tag = GBR
 				trade_cost_for_target_factor = -0.1
@@ -81,39 +78,23 @@
                 political_power_cost = 0.15
 			}
 		}
-        OTT_SAIMUKANRI2 = {
-			allowed = {
-				always = no
-			}
-			picture = chi_forced_conscription
-			removal_cost = -1
+        OTT_OPDA_2 = {
+			picture = tur_balkan_central_bank_wealthy_greece
 			modifier = {
                 consumer_goods_factor = 0.3
 			}
 		}
         OTT_depression = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-                     
 			picture = great_depression
-			removal_cost = -1
 			modifier = {
-                stability_factor = -0.25
+                stability_factor = -0.2
 				production_speed_buildings_factor = -0.5
 				industrial_capacity_factory = -0.2
 				consumer_goods_factor = 0.10
 			}
 		}
-        OTT_depression1 = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-                     
+        OTT_depression_1 = {      
 			picture = great_depression
-			removal_cost = -1
 			modifier = {
                 stability_factor = -0.15
 	            production_speed_buildings_factor = -0.3
@@ -121,62 +102,38 @@
 			    consumer_goods_factor = 0.10
 			}
 		}
-        OTT_Jubyounin = {
-			allowed = {
-				always = no
-			}	
-			removal_cost = -1
-                     
+		OTT_Dead_man_of_Europe = {
 			picture = chi_war_of_resistance3
-			removal_cost = -1
-
 			modifier = {
                 political_power_cost = 0.2
-                stability_factor = -0.3
+                stability_factor = -0.2
                 research_speed_factor = -0.15
-                army_attack_factor = -0.3
-			    army_defence_factor = -0.3
-			}
-		}
-        OTT_Tanzimat1 = {
-			allowed = {
-				always = no
-			}
-			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-
-			modifier = {
-                political_power_cost = 0.17
-                stability_factor = -0.25
-                research_speed_factor = -0.12
-                army_attack_factor = -0.25
-			    army_defence_factor = -0.25
-			}
-		}
-        OTT_Tanzimat2 = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
-                     
-			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-
-			modifier = {
-                political_power_cost = 0.12
-                stability_factor = -0.15
-                research_speed_factor = -0.05
                 army_attack_factor = -0.2
 			    army_defence_factor = -0.2
 			}
 		}
-        OTT_Tanzimat3 = {
-			allowed = {
-				always = no
-			}        
-			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-
+        OTT_Tanzimat1 = {
+			picture = tur_funkplan
+			modifier = {
+                political_power_cost = 0.17
+                stability_factor = -0.25
+                research_speed_factor = -0.12
+                army_attack_factor = -0.15
+			    army_defence_factor = -0.15
+			}
+		}
+        OTT_Tanzimat2 = {
+			picture = tur_funkplan
+			modifier = {
+                political_power_cost = 0.12
+                stability_factor = -0.15
+                research_speed_factor = -0.05
+                army_attack_factor = -0.15
+			    army_defence_factor = -0.15
+			}
+		}
+        OTT_Tanzimat3 = {   
+			picture = tur_funkplan
 			modifier = {
                 political_power_cost = 0.7
                 stability_factor = -0.15
@@ -186,12 +143,7 @@
 			}
 		}
         OTT_Tanzimat4 = {
-			allowed = {
-				always = no
-			}
-			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-
+			picture = tur_funkplan
 			modifier = {
                 political_power_cost = 0.05
                 stability_factor = -0.1
@@ -200,27 +152,15 @@
 			}
 		}
         OTT_Tanzimat5 = {
-			allowed = {
-				always = no
-			}
-			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-
+			picture = tur_funkplan
 			modifier = {
                 political_power_factor = 0.1
                 stability_factor = 0.15
                 research_speed_factor = 0.05
-                                
 			}
 		}
         OTT_Federation = {
-			allowed = {
-				always = no
-			}
-                     
 			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-
 			modifier = {
                 consumer_goods_factor = 0.05
                 stability_factor = 0.1
@@ -230,13 +170,7 @@
 			}
 		}
         OTT_Federation1 = {
-			allowed = {
-				always = no
-			}
-                     
 			picture = generic_democratic_drift_bonus
-			removal_cost = -1
-
 			modifier = {
                 consumer_goods_factor = 0.05
                 stability_factor = 0.1
@@ -440,9 +374,8 @@
 		}
     #minister
     Head_of_State = {	
-                
-                OTT_AbdulmecidII = {
-			picture = OTT_Abdulmecid_Ottoman
+        OTT_AbdulmecidII = {
+			picture = OTT_Abdulmecid_II
 			allowed = {
 				original_tag = OTT
 			}
@@ -459,7 +392,7 @@
 			
 			traits = {
 				Head_of_State
-                                paternal_autocrat
+                paternal_autocrat
 				TR_autocratic_charmer
 			}
 		}

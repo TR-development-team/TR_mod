@@ -5,7 +5,11 @@ set_cosmetic_tag = NIKKE_colonial_republic
 
 add_ideas = {
         Democratic_Republic
-	BRA_CIVIL_WAR
+		extensive_conscription
+		war_economy
+		BRA_CIVIL_WAR
+		BRA_Collapsed_Economy
+		BRA_Securing_Infantry_Rifles
         SBR_jap_economic
         low_school_system
         low_minimum_wage
@@ -60,6 +64,7 @@ set_politics = {
 	ruling_party = social_conservative
 	last_election = "1932.5.1"
 	election_frequency = 48
+
 	elections_allowed = no
 }
 set_popularities = {
