@@ -1,0 +1,29 @@
+
+state={
+	id=1075
+	name="STATE_1075"
+	manpower = 104984
+	
+	state_category = one_archipelago
+	
+	resources={
+
+	}
+
+	history={
+		owner = GRE
+                add_core_of = GRE
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			3401 1
+		}
+		add_core_of = GRE
+	}
+
+	local_supplies=0.0 
+provinces={
+		3401
+	}
+}

@@ -3,7 +3,7 @@ state= {
 	name="STATE_183"
 	manpower = 347959
 	
-	state_category = rural
+	state_category = two_island
 	resources={
 		chromium=3 # was: 4
 	}
@@ -12,6 +12,7 @@ state= {
 	{
 		owner = OTT
 		add_core_of = CYP
+		add_claim_by = GRE
 		victory_points = {
 			11984 5
 		}

@@ -3,18 +3,17 @@ state={
 	name="STATE_799"
 	local_supplies=0.0 
 provinces={
-		12029 
+		1088 10087 
 	}
 	manpower = 234379
 	
-	state_category = enclave
+	state_category = one
 
 	history= {
 		owner = OTT
-		add_core_of = OTT
 		add_core_of = SYR
 		victory_points = {
-			12029 1
+			1088 1
 		}
 		buildings = {
 			infrastructure = 1

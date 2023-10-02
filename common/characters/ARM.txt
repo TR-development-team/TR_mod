@@ -1,0 +1,28 @@
+characters={
+	ARM_Drastamat_Kanayan={
+		name=ARM_Drastamat_Kanayan
+		portraits={
+			civilian={
+				large="gfx/leaders/ARM/Portrait_ARM_Drastamat_Kanayan.png"
+			}
+			army={
+				large="gfx/leaders/ARM/Portrait_ARM_Drastamat_Kanayan.png"
+			}
+		}
+		country_leader={
+			ideology= social_democrat_subtype
+		}
+		country_leader={
+			ideology= Military_junta_subtype
+		}
+		field_marshal={
+			traits={ cavalry_officer cavalry_leader organizer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=0
+		}
+	}
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=1081
+	name="STATE_1081"
+	manpower = 425845
+	
+	state_category = two
+	
+	resources={
+		oil=7
+	}
+
+	history={
+		owner = CCS
+		add_core_of = CCS
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			683 1
+		}
+	}
+
+	local_supplies=0.0 
+	provinces = {
+		683 700 712 728 6730 6748 11632 
+	}
+}

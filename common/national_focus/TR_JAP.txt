@@ -1584,33 +1584,8 @@ focus_tree = {
 		cost = 1
 		cancelable = no
 		completion_reward = {
-		custom_effect_tooltip = JAP_Militalism_focus_text
-		hidden_effect = {
-		load_focus_tree = japan_focus_02
-		effect_tooltip = { retire_country_leader = yes }
-		promote_character = JAP_Daihonei
-		set_party_name = {
-			ideology = authoritarian_democrat
-			long_name = JAP_Kaigensireibu_long
-			name = JAP_Kaigensireibu_a
-		}
-		set_politics = {
-			ruling_party = authoritarian_democrat
-			elections_allowed = no
-		}
-		hidden_effect = {			
-			load_focus_tree = japan_focus_02
-			add_ideas = generic_Government_leaders_Vacancy
-			add_ideas = generic_Foreign_Affairs_Vacancy
-			add_ideas = generic_Economy_Vacancy
-			add_ideas = generic_Interior_Vacancy
-        country_event = {
-			    id = TR_news.4
-			    days = 5
-			    }
-		    }
+		    custom_effect_tooltip = JAP_Militalism_focus_text
 	    }
-	 }
        
 	}
 	########################

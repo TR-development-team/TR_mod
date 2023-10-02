@@ -1,0 +1,36 @@
+state={
+	id=1076
+	name="STATE_1076"
+	resources={
+	}
+
+	history={
+		owner = SCC
+		victory_points = {
+			11674 3 
+		}
+		victory_points = {
+			7495 1 
+		}
+		victory_points = {
+			6763 1 
+		}
+		victory_points = {
+			4473 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SCC
+                add_core_of = AZR
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1536 1539 1610 4458 4473 4477 4545 4614 6763 7495 11645 11674 11704 12434 
+	}
+	manpower=1994856
+	buildings_max_level_factor=1.000
+	state_category=three
+}

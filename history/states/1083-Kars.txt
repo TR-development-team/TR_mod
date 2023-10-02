@@ -1,0 +1,25 @@
+
+state={
+	id=1083
+	name="STATE_1083"
+	manpower = 267483
+	
+	state_category = two
+
+	history={
+		owner = OTT
+		victory_points = {
+			10472 3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = OTT
+                add_core_of = ARM
+	}
+
+	local_supplies=0.0 
+provinces={
+		7454 10403 10472
+	}
+}

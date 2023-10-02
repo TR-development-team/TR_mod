@@ -7,7 +7,7 @@ state= {
 
 	}
 	
-	state_category = town
+	state_category = five
 
 	history= {
 		owner = OTT
@@ -20,6 +20,7 @@ state= {
 		}
 		add_core_of = OTT
 		add_claim_by = BUL
+		add_claim_by = GRE
 
 	}
 	provinces= { 922 3893 11842 }

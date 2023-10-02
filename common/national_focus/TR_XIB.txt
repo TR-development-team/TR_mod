@@ -418,6 +418,26 @@ focus_tree = {
 	completion_reward = {	
 		if = {
 			limit = {
+				NOT = { is_in_faction_with = ANH }
+				country_exists = ANH
+			}
+			create_wargoal = {
+				target = ANH
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
+				NOT = { is_in_faction_with = SGH }
+				country_exists = SGH
+			}
+			create_wargoal = {
+				target = SGH
+				type = annex_everything
+			}
+		}
+		if = {
+			limit = {
 				NOT = { is_in_faction_with = SCH }
 				country_exists = SCH
 			}

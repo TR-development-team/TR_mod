@@ -431,6 +431,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = civilian_dictatorship_subtype
+		}
+		localization_key = civilian_dictatorship_subtype
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = Fascist_subtype
 		}
 		localization_key = Fascist_subtype

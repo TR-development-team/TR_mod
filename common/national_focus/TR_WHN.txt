@@ -689,7 +689,10 @@ focus_tree = {
 			factor = 100
 		}
 		bypass = {
-		    NOT = {country_exists = SGH }
+		    NOT = {
+				country_exists = SGH 
+				country_exists = ANH
+			}
 		}
 		available = {
 			NOT = {country_exists = XIB }
@@ -698,6 +701,10 @@ focus_tree = {
 	completion_reward = {
 		create_wargoal = {
 			target = SGH
+			type = annex_everything
+		}
+		create_wargoal = {
+			target = ANH
 			type = annex_everything
 		}
 		}

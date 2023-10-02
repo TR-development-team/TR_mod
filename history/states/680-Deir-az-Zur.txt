@@ -1,31 +1,26 @@
 state={
 	id=680
 	name="STATE_680"
-	manpower = 324110
+	manpower = 154110
 	
-	state_category = wasteland
+	state_category = one
 
 	history={
 		owner = OTT
 		victory_points = {
-			3942 1
-		}
-		victory_points = {
-			1549 1
-		}
-		victory_points = {
-			6883 1
+			2013 1
 		}
 		buildings = {
 			infrastructure = 1
 		}
 		add_core_of = SYR
 		add_core_of = KUR
+		add_core_of = IRQ
 	}
 
 
 	local_supplies=0.0 
 provinces={
-		901 1549 1578 1606 1634 2013 3942 6883 7513 10882 12442 
+		901 1578 1938 2013 7513 10804 10882 12372 
 	}
 }

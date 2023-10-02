@@ -1,0 +1,224 @@
+characters={
+	MEX_plutarco_calles = { #Note this guy is also a National Spirit
+		name=MEX_plutarco_calles
+		portraits={
+			army={
+				large="GFX_portrait_MEX_calles_military" #Can become unit leader (field marshal)
+				small="GFX_idea_MEX_plutarco_calles"
+			}
+			civilian={
+				large="GFX_portrait_MEX_calles_civil" #Can become country leader (Non-Aligned -> Despotism) (Fascism -> Fascism)
+			}
+		}
+		country_leader={
+			ideology=National_syndicalist_subtype
+		}
+	}
+	MEX_hernan_laborde={
+		name=MEX_hernan_laborde
+		portraits={
+			civilian={
+				large="GFX_portrait_MEX_hernan_laborde"
+			}
+		}
+		country_leader={
+			ideology=Trotskyist_subtype
+		}
+	}
+	MEX_lazaro_cardenas={
+		name=MEX_lazaro_cardenas
+		portraits={
+			army={
+				large=GFX_portrait_MEX_lazaro_cardenas
+				small=GFX_portrait_MEX_lazaro_cardenas_small
+			}
+			civilian={
+				large=GFX_portrait_MEX_lazaro_cardenas
+			}
+		}
+		field_marshal={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=712
+		}
+		country_leader={
+			ideology=Democratic_socialism_subtype
+		}
+	}
+	MEX_Jose_Antonio_Urquiza={
+		name=MEX_Jose_Antonio_Urquiza
+		portraits={
+			civilian={
+				large="gfx/leaders/MEX/Portrait_MEX_Jose_Antonio_Urquiza.png"
+			}
+		}
+		country_leader={
+			ideology=Catholic_Integralism_subtype
+		}
+	}
+	MEX_salvador_abascal={
+		name=MEX_salvador_abascal
+		portraits={
+			civilian={
+				large="gfx/leaders/MEX/Portrait_MEX_Salvador_Abascal_1.png"
+			}
+		}
+		country_leader={
+			ideology=Integralism_subtype
+		}
+	}
+
+	MEX_heliodoro_charis={
+		name=MEX_heliodoro_charis
+		portraits={
+			army={
+				large="GFX_portrait_MEX_heliodoro_charis" #This is really a generic portrait
+				small="GFX_portrait_MEX_heliodoro_charis_small" #This is really a generic portrait
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=700
+		}
+	}
+
+	MEX_gildardo_magana={
+		name=MEX_gildardo_magana
+		portraits={
+			army={
+				large="GFX_portrait_MEX_gildardo_magana"
+				small=GFX_portrait_MEX_gildardo_magana_small
+			}
+		}
+		corps_commander={
+			traits={ media_personality }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=702
+		}
+	}
+
+	MEX_manuel_perez_trevino={
+		name=MEX_manuel_perez_trevino
+		portraits={
+			army={
+				large="GFX_portrait_MEX_manuel_perez_trevino"
+				small=GFX_portrait_MEX_manuel_perez_trevino_small
+			}
+		}
+		corps_commander={
+			traits={ career_officer }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=703
+		}
+	}
+
+	MEX_abelardo_rodriguez={
+		name=MEX_abelardo_rodriguez
+		portraits={
+			civilian={
+				large="GFX_portrait_MEX_abelardo_rodriguez"
+			}
+			army={
+				large="GFX_portrait_MEX_abelardo_rodriguez"
+				small="GFX_portrait_MEX_abelardo_rodriguez_small"
+			}
+		}
+
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=704
+		}
+	}
+
+	MEX_manuel_avila_camacho={
+		name=MEX_manuel_avila_camacho
+		portraits={
+			civilian={
+				large="GFX_portrait_MEX_avila_civil" #Can become country leader (Non-Aligned -> Oligarchism) (Democratic -> Conservatism)
+				small=GFX_portrait_MEX_manuel_avila_camacho_small # TODO_Manu: THIS IS A CIVILIAN PORTRAIT FOR HIS POLITICAL ADVISOR ROLE -> Need code support for civilian-small
+			}
+			army={
+				large="GFX_portrait_MEX_avila_military"
+				#small="gfx/interface/ideas/idea_MEX_avila_military.dds" THIS IS A MILITARY PORTRAIT FOR PROMOTED MILITARY ADVISOR -> Need code support for civilian-small (for the other portrait)
+				small=GFX_portrait_MEX_manuel_avila_camacho_small # TODO_Manu: THIS IS A CIVILIAN PORTRAIT FOR HIS POLITICAL ADVISOR ROLE -> Need code support for civilian-small
+			}
+		}
+
+		corps_commander={
+			traits={ politically_connected }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=705
+		}
+	}
+
+	MEX_othon_blanco={
+		name=MEX_othon_blanco
+		portraits={
+			civilian={
+				large="GFX_portrait_MEX_othon_blanco"
+			}
+			army={
+				large="GFX_portrait_MEX_othon_blanco"
+				small="GFX_idea_MEX_othon_blanco"
+			}
+		}
+
+		navy_leader={
+			traits={ old_guard_navy }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=2
+			coordination_skill=3
+			legacy_id=706
+		}
+	}
+
+	MEX_heriberto_corona={
+		name=MEX_heriberto_corona
+		portraits={
+			army={
+				large="GFX_portrait_MEX_heriberto_corona"
+				small="GFX_portrait_MEX_heriberto_corona_small"
+			}
+		}
+
+		navy_leader={
+			traits={ navy_media_personality }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=707
+		}
+	}
+	
+	# Illusive Gentleman auto-generated
+}

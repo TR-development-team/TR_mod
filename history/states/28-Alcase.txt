@@ -4,7 +4,7 @@ state={
 	name="STATE_28" # Alsace-Lorraine
 	manpower = 3045600
 	
-	state_category = city
+	state_category = eight_indus
 	resources={
 		steel=100 # was: 236
 	}
@@ -26,11 +26,6 @@ state={
 		}
 		add_core_of = RAT
                 add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 4
-			}
-		}
 	}
 
 	local_supplies=0.0 

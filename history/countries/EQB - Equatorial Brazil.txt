@@ -1,5 +1,5 @@
 ﻿capital = 498
-oob = "BRA_1936"
+oob = "EQB_1936"
 
 set_cosmetic_tag = BRA_state
 
@@ -20,7 +20,7 @@ set_popularities = {
 	authoritarian_democrat = 5
 	paternal_autocrat = 5
 	national_populist = 35
-        Gnosticism = 5
+    Gnosticism = 5
 }
 
 recruit_character = EQB_luis_carlos_prestes
@@ -39,7 +39,11 @@ if = {
 
 add_ideas = {
 	totalist_dictatorship
+	extensive_conscription
+	war_economy
 	BRA_CIVIL_WAR
+	BRA_Collapsed_Economy
+	BRA_Securing_Infantry_Rifles
 	low_school_system
 	low_minimum_wage
 }

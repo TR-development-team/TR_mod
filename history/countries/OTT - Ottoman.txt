@@ -9,6 +9,7 @@ if = {
 }
 
 set_cosmetic_tag = OTT_sublime_state
+set_major = yes
 
 ###################
 #### 3D MODELS ####
@@ -25,21 +26,24 @@ set_research_slots = 3
 starting_train_buffer = 1
 set_convoys = 50
 set_stability = 0.5
-set_war_support = 0.3
+set_war_support = 0.5
 
 add_ideas = {
-        Absolute_monarchy
-        low_max_workhours
-        low_Unemployment_subsidies
-        acceptable_school_system
-        low_pensions
-        limited_conscription
+    Absolute_monarchy
+    low_max_workhours
+    low_Unemployment_subsidies
+    acceptable_school_system
+    low_pensions
+    limited_conscription
 	partial_economic_mobilisation
-	OTT_SAIMUKANRI
-        OTT_Bagdadrailway
-        OTT_depression
-        OTT_Jubyounin
-        OTT_AbdulmecidII
+	
+	OTT_sultanate_caliphate 
+	OTT_Committee_of_Union_and_Progress
+	OTT_OPDA
+    OTT_Baghdad_railway
+    OTT_depression
+    OTT_Dead_man_of_Europe
+    OTT_AbdulmecidII
 }
 set_technology = {
 	infantry_weapons = 1
@@ -103,17 +107,17 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 7
-	syndicalist = 4
-	radical_socialist = 7
+	totalist = 4
+	syndicalist = 1
+	radical_socialist = 2
 	social_democrat = 7
 	social_liberal = 11
-	market_liberal = 8
+	market_liberal = 18
 	social_conservative = 8
-	authoritarian_democrat = 15
+	authoritarian_democrat = 18
 	paternal_autocrat = 9
 	national_populist = 14
-        Gnosticism = 10
+    Gnosticism = 8
 }
 
 recruit_character = OTT_Kazim_Karabekir
