@@ -230,7 +230,7 @@ ideas = {
 	
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}  
         SOV_WAR_COMMUNISM = {
@@ -283,7 +283,7 @@ ideas = {
 			modifier = {
                 political_power_factor = -0.1
                 stability_factor = -0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
                 production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 				production_factory_start_efficiency_factor = 0.05
@@ -302,7 +302,7 @@ ideas = {
 			modifier = {
                 political_power_factor = -0.15
                 stability_factor = -0.15
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_speed_industrial_complex_factor = 0.1
                 production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
@@ -322,7 +322,7 @@ ideas = {
 			modifier = {
                 political_power_factor = -0.2
                 stability_factor = -0.2
-				consumer_goods_factor = -0.07
+				consumer_goods_expected_value = -0.07
 				production_speed_industrial_complex_factor = 0.1
                 production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
@@ -344,7 +344,7 @@ ideas = {
 			modifier = {
                 political_power_factor = -0.25
                 stability_factor = -0.25
-				consumer_goods_factor = -0.1
+				consumer_goods_expected_value = -0.1
 				production_speed_industrial_complex_factor = 0.1
                 production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
@@ -365,7 +365,7 @@ ideas = {
 	
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.05
 				production_speed_infrastructure_factor = 0.15
@@ -477,7 +477,7 @@ ideas = {
                      
 			modifier = {
 				stability_weekly = -0.005
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		SOV_political_officer = {
@@ -589,7 +589,7 @@ ideas = {
 			picture = generic_economic_increase
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.02
+				consumer_goods_expected_value = 0.02
                 MONTHLY_POPULATION = 0.1
 			}
 		}
@@ -673,7 +673,7 @@ ideas = {
 			picture = generic_production_bonus
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
                 production_factory_max_efficiency_factor = 0.1
                 production_factory_efficiency_gain_factor = 0.05
                 production_factory_start_efficiency_factor = 0.05
@@ -757,7 +757,7 @@ ideas = {
 			picture = generic_communism_drift_bonus
 			removal_cost = -1
 			modifier = {
-                consumer_goods_factor = -0.03
+                consumer_goods_expected_value = -0.03
                 production_factory_max_efficiency_factor = 0.1
 			}
 		}
@@ -773,7 +773,7 @@ ideas = {
 			picture = generic_economic_increase
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_expected_value = -0.02
                 MONTHLY_POPULATION = 0.1
 			}
 		}	

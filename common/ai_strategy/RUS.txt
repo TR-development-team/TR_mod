@@ -10,7 +10,55 @@
 # protect
 # influence
 # send_volunteers_desire
+RUS_invade_SOV = {
+	allowed = {
+		tag = RUS
+	}
+	enable = {
+		country_exists = SOV
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = invade
+		id = SOV
+		value = 200
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		tag = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SOV
+		value = 100
+	}
+}
 
+SOV_invade_RUS = {
+	allowed = {
+	    tag = SOV
+	}
+	enable = {
+		country_exists = RUS
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = invade
+		id = RUS
+		value = 200
+	}
+	ai_strategy = {
+		type = invasion_unit_request
+		tag = RUS
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = RUS
+		value = 100
+	}
+}
 SOV_we_dont_need_garrisons = {
 	allowed = {
 		OR = {
@@ -21,7 +69,8 @@ SOV_we_dont_need_garrisons = {
 	enable = {
 		always = yes
 	}
-
+	abort = { always = no }
+	
 	ai_strategy = {
 		type = garrison
 		value = -60

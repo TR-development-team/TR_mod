@@ -75,7 +75,7 @@
 			modifier = {
 				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
 		HNN_black_thursday_1 = {
@@ -89,7 +89,7 @@
             
 			modifier = {
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
 		HNN_black_thursday_2 = {
@@ -102,7 +102,7 @@
 			removal_cost = -1
             
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
 		HNN_opium_trade = {
@@ -116,7 +116,7 @@
 			modifier = {
 				war_support_factor = -0.10
 				political_power_factor = -0.1
-                consumer_goods_factor = -0.03
+                consumer_goods_expected_value = -0.03
 			}
 		}
 		HNN_opium_trade_ban = {
@@ -129,7 +129,7 @@
 			removal_cost = -1
 			modifier = {
 				stability_factor = 0.05
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
 			}
 		}
 		HNN_opium_trade_Gradual_ban = {
@@ -142,7 +142,7 @@
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 0.05
-                consumer_goods_factor = -0.01
+                consumer_goods_expected_value = -0.01
 			}
 		}
 		HNN_resource_development = {
@@ -168,7 +168,7 @@
 	
 
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_buildings_factor = 0.2
 			}
@@ -183,7 +183,7 @@
 	
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 			}
@@ -225,7 +225,6 @@
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
 				mobilization_speed = 0.1
-				political_advisor_cost_factor = -0.25
 				mobilization_laws_cost_factor = -0.25
 				trade_laws_cost_factor = -0.25
 				economy_cost_factor = -0.25
@@ -242,7 +241,7 @@
 
 
 		    modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_expected_value = -0.02
 			    MONTHLY_POPULATION = 0.1
 		    }
 	    }  
@@ -257,7 +256,7 @@
 
 
 		    modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			    MONTHLY_POPULATION = 0.1
 				industry_air_damage_factor = -0.1
 		    }
@@ -273,7 +272,7 @@
 
 
 		    modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			    MONTHLY_POPULATION = 0.1
 				industry_air_damage_factor = -0.1
 				global_building_slots_factor = 0.10
@@ -290,7 +289,7 @@
 
 
 		    modifier = {
-				consumer_goods_factor = -0.07
+				consumer_goods_expected_value = -0.07
 			    MONTHLY_POPULATION = 0.2
 				industry_air_damage_factor = -0.25
 				global_building_slots_factor = 0.15
@@ -404,7 +403,7 @@
 
 		    modifier = {
 				political_power_cost = 0.2
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.1
 				stability_factor = 0.10
@@ -424,7 +423,7 @@
 
 		    modifier = {
 				political_power_cost = 0.2
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				industrial_capacity_factory = 0.1
 				production_speed_buildings_factor = 0.1
 				stability_factor = 0.10
@@ -488,7 +487,7 @@
 				stability_factor = -0.05
 				political_power_factor = -0.05
                 global_building_slots_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		HNN_decentralization_1 = {
@@ -504,7 +503,7 @@
 			modifier = {
 				political_power_factor = -0.05
                 global_building_slots_factor = 0.2
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		HNN_People_autonomy = {
@@ -535,7 +534,7 @@
                
 			}
 			modifier = {
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
 				stability_factor = -0.05
 			}
 		}
@@ -550,7 +549,7 @@
                
 			}
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				stability_factor = 0.1
 			}
 		}
@@ -613,7 +612,7 @@
 				stability_factor = 0.05
 				war_support_factor = 0.1
 				MONTHLY_POPULATION = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		HNN_Five_anti_Campaigns = {
@@ -630,7 +629,7 @@
 			modifier = {
 				stability_factor = 0.05
                 industrial_capacity_factory = -0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		HNN_Three_anti_Campaigns = {
@@ -647,7 +646,7 @@
 			modifier = {
 				stability_factor = 0.05
 				production_factory_max_efficiency_factor = -0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		HNN_army_idea = {

@@ -5,6 +5,9 @@ characters={
 			civilian={
 				large="gfx/leaders/OTT/Portrait_OTT_Kazim_Karabekir.png"
 			}
+			army={
+				large="gfx/leaders/OTT/Portrait_OTT_Kazim_Karabekir.png"
+			}
 		}
 		country_leader={
 			ideology=social_liberal_subtype
@@ -62,6 +65,9 @@ characters={
 			civilian={
 				large="gfx/leaders/OTT/Portrait_OTT_Mustafa_Kemal.png"
 			}
+			army={
+				large="gfx/leaders/OTT/Portrait_OTT_Mustafa_Kemal.png"
+			}
 		}
 		country_leader={
 			ideology=Dominant_party_system_subtype
@@ -73,6 +79,29 @@ characters={
 			attack_skill=3
 			defense_skill=4
 			planning_skill=5
+			logistics_skill=3
+		}
+	}
+	OTT_fevzi_cakmak={
+		name=OTT_Fevzi_Pasha
+		portraits={
+			army={
+				small="GFX_idea_tur_fevzi_cakmak"
+				large="gfx/leaders/OTT/Portrait_OTT_Fevzi_Cakmak.png"
+			}
+			civilian = {
+				large="gfx/leaders/OTT/Portrait_OTT_Fevzi_Cakmak.png"
+			}
+		}
+		country_leader={
+			ideology=national_coalition_subtype
+		}
+		field_marshal={
+			traits={ old_guard media_personality war_hero desert_fox logistics_wizard defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=3
 			logistics_skill=3
 		}
 	}
@@ -92,6 +121,9 @@ characters={
 		name=OTT_Osman_Fuat
 		portraits={
 			civilian={
+				large="gfx/leaders/OTT/Portrait_OTT_Osman_Fuat.png"
+			}
+			army={
 				large="gfx/leaders/OTT/Portrait_OTT_Osman_Fuat.png"
 			}
 		}
@@ -126,10 +158,12 @@ characters={
 			civilian={
 				large="gfx/leaders/OTT/Portrait_OTT_Enver_Pasha.png"
 			}
+			army={
+				large="gfx/leaders/OTT/Portrait_OTT_Enver_Pasha.png"
+			}
 		}
 		country_leader={
 			ideology=president_principle_subtype
-			id=-1
 		}
 		field_marshal={
 			traits={ politically_connected media_personality war_hero offensive_doctrine }
@@ -205,7 +239,7 @@ characters={
 	}
 
 	OTT_mehmet_salih_omurtak={
-                        name=TUR_mehmet_salih_omurtak
+            name=TUR_mehmet_salih_omurtak
 			portraits={
 				army={
 					small="GFX_idea_tur_salih_omurtak"
@@ -300,28 +334,7 @@ characters={
 			legacy_id=907
 		}
 	}
-	
-	OTT_fevzi_cakmak={
-			name=TUR_fevzi_cakmak
-			portraits={
-				army={
-					small="GFX_idea_tur_fevzi_cakmak"
-					large="GFX_portrait_tur_fevzi_cakmak"
-				}
-				civilian = {
-					large="GFX_portrait_tur_fevzi_cakmak" #Can become country leader later
-				}
-			}
-			field_marshal={
-				traits={ old_guard media_personality war_hero desert_fox logistics_wizard defensive_doctrine }
-				skill=3
-				attack_skill=2
-				defense_skill=2
-				planning_skill=3
-				logistics_skill=3
-				legacy_id=901
-			}
-		}
+
 	OTT_ahmet_fevzi_pasha = {
 		name=TUR_ahmet_fevzi_pasha
 		portraits={

@@ -30,8 +30,7 @@ ideas = {
 			removal_cost = -1
                      
 			modifier = {
-                         consumer_goods_factor = -0.03
-                         political_power_factor = 0.25
+                         political_power_factor = 0.1
 			}
 		}
                 ENR_HIMITSUKEISATU = {
@@ -58,9 +57,8 @@ ideas = {
 			removal_cost = -1
                      
 			modifier = {
-                        production_factory_max_efficiency_factor = 0.15
-			industrial_capacity_factory = 0.15
-			production_speed_buildings_factor = 0.15
+                        production_factory_max_efficiency_factor = 0.1
+			industrial_capacity_factory = 0.1
 			}
 		}
                 ENR_LOVE = {
@@ -74,7 +72,7 @@ ideas = {
                      
 			modifier = {
 				stability_factor = 0.05
-				resistance_target = -0.3
+				resistance_target = -0.1
 			}
 		}
                 ENR_TRUTH = {
@@ -87,7 +85,7 @@ ideas = {
 			removal_cost = -1
                      
 			modifier = {
-				war_support_factor = 0.5
+				war_support_factor = 0.2
 			}
 		}
                 ENR_Plenty = {
@@ -100,7 +98,7 @@ ideas = {
 			removal_cost = -1
                      
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = 0.1
 			}
 		}
                 ENR_PEACE = {
@@ -113,13 +111,10 @@ ideas = {
 			removal_cost = -1
                      
 			modifier = {
-                        conscription = 0.015
-			army_org_factor = 0.1
-			army_core_defence_factor = 0.1
-                        surrender_limit	= 0.1
+                conscription = 0.02
 			}
 		}
-                ENR_Newspeak = {
+        ENR_Newspeak = {
 			allowed = {
 				always = no
 			}
@@ -129,10 +124,10 @@ ideas = {
 			removal_cost = -1
                      
 			modifier = {
-                        research_speed_factor = -0.1
+                research_speed_factor = -0.1
 			}
 		}
-              ENR_Arms_fac = {
+        ENR_Arms_fac = {
 			allowed = {
 				always = no
 			}
@@ -141,13 +136,13 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.05
-                                production_speed_dockyard_factor = 0.10
-                                production_speed_arms_factory_factor = 0.10
-                                production_speed_industrial_complex_factor = -0.15
+				consumer_goods_expected_value = 0.05
+                production_speed_dockyard_factor = 0.10
+                production_speed_arms_factory_factor = 0.10
+                production_speed_industrial_complex_factor = -0.15
 			}
 		}
-                ENR_Airstrip_One = {
+        ENR_Airstrip_One = {
 			allowed = {
 				always = no
 			}
@@ -155,9 +150,8 @@ ideas = {
 			picture = eng_imperial_conscription
 			removal_cost = -1
 			modifier = {
-                                conscription = 0.01
-                                army_core_defence_factor = 0.25
-                                surrender_limit= 0.1
+                army_core_defence_factor = 0.1
+                surrender_limit= 0.1
 			}
 		}
 

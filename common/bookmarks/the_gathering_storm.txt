@@ -56,8 +56,9 @@ bookmarks = {
 				USA_treaty_of_Tokyo
 			}
 			focuses = {
-				USA_sQHwileF
-				USA_HIFLSvqT
+				USA_smith_focus_13
+				USA_focus_1
+				USA_smith_focus_1
 			}
 		}
 		"GBR"={
@@ -65,10 +66,13 @@ bookmarks = {
 			ideology = social_conservative
 			ideas = {
 				GBR_crumbling_empire
-                                GBR_frequent_strikes
-                                GBR_depression
+                GBR_frequent_strikes
+                GBR_depression
 			}
 			focuses = {
+				GBR_democratic_focus_1
+				GBR_Political_focus_1
+				GBR_autocratic_focus_1
 			}
 		}
 		"ITA" = {
@@ -109,9 +113,6 @@ bookmarks = {
 				AUS_frohlichen_apokalypse_idea
 			}
 			focuses = {
-				AUS_ewUIGHrt
-				AUS_lsYFRofA
-				AUS_FZvPTIpA
 			}
 		}
 		"WHN" = {
@@ -134,9 +135,9 @@ bookmarks = {
 			history = "TR_BUL_GATHERING_STORM_DESC"
 			ideology = paternal_autocrat
 			ideas = {
-				BUL_Foutrh_Roma
-				BUL_YABOU
-				BUL_KHANATE_IDEA
+				BUL_Awakening_of_the_Bulgarians
+				BUL_Respected_King
+				BUL_Golden_Age_of_the_Economy
 			}
 			focuses = {
 
@@ -152,7 +153,7 @@ bookmarks = {
 				OTT_Dead_man_of_Europe
 			}
 			focuses = {
-
+				OTT_focus_1
 			}
 		}
 		"SOV" = {

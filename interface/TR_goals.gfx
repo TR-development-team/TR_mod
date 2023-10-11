@@ -1272,4 +1272,26 @@ spriteTypes = {
 		name = "GFX_focus_AUS_LD_process"
 		texturefile = "gfx/interface/goals/AUS/focus_AUS_LD_process.png"
 	}
+	### Ottoman ###
+	SpriteType = {
+		name = "GFX_focus_OTT_Incompetent_Sublime_Porte"
+		texturefile = "gfx/interface/goals/OTT/OTT_Incompetent_Sublime_Porte.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_OTT_Patriotic_War"
+		texturefile = "gfx/interface/goals/OTT/OTT_Patriotic_War.png"
+	}
+	### Great Britain ###
+	SpriteType = {
+		name = "GFX_focus_GBR_Ruined_islands"
+		texturefile = "gfx/interface/goals/GBR/GBR_Ruined_islands.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_GBR_Democratic_Churchill"
+		texturefile = "gfx/interface/goals/GBR/GBR_Democratic_Churchill.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_GBR_Defence_the_Empire"
+		texturefile = "gfx/interface/goals/GBR/GBR_Defence_the_Empire.png"
+	}
 }

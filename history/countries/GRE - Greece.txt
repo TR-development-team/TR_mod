@@ -48,7 +48,7 @@ if = {
 	limit = {	has_start_date < 1936.01.02	}
 	declare_war_on = { target = OTT type = annex_everything	}
 }
-
+country_event = { id = TR_Greece.1 days = 7 }#恐慌波及
 add_ideas = {
 	Democratic_Republic
 	low_max_workhours
@@ -60,12 +60,12 @@ add_ideas = {
 
 	GRE_ethnikos_dichasmos
 	GRE_Megali_Idea_dream
-	GRE_depression
 }
 
 set_stability = 0.5
 set_war_support = 0.6
-set_convoys = 80
+set_convoys = 100
+starting_train_buffer = 2
 set_research_slots = 3
 set_technology = {
 	infantry_weapons = 1

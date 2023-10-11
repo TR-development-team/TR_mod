@@ -2,7 +2,10 @@
 # meaning it's the top 7 in the world or has at least 70% of the average of those 7
 # we're also including a number of tags which should act like majors even if they're not in that category
 
-
+is_actual_major = {
+	is_major = yes
+	num_of_factories > 35
+}
 # checks whether the country in scope has the same government as ROOT (the country running the event/focus)
 has_same_government_as_ROOT = {
 	has_government = var:ROOT.current_party_ideology_group

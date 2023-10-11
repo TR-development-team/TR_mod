@@ -1,6 +1,6 @@
 focus_tree = {
 	id = britain_focus_2
-	continuous_focus_position = { x = 2000 y = 0 }
+	continuous_focus_position = { x = 2200 y = 0 }
 	country = {
 		factor = 0
 		modifier = {
@@ -12,20 +12,1658 @@ focus_tree = {
 	#廃墟と化した島にて
 	focus = {
 		id = GBR_Political_focus_1
-		icon = GFX_
-		x = 8
+		icon = GFX_focus_GBR_Ruined_islands
+		x = 11
 		y = 0
-		cost = 10
-        available = {
-
-            }
-		available_if_capitulated = yes
+		cost = 6
+		select_effect = {
+			if = {
+				limit = { has_country_flag = GBR_Emergency_Powers_Act }
+				country_event = {
+					id = TR_UK.9
+					days = 7
+				}
+			}
+			if = {
+				limit = { NOT = { has_country_flag = GBR_Emergency_Powers_Act } }
+				country_event = {
+					id = TR_UK.12
+					days = 7
+				}
+			}
+		}
 		ai_will_do = {
 			factor = 100
 		}
 	completion_reward = {
+		custom_effect_tooltip = GBR_Political_focus_1_tooltip
+		}
+	}
+	#最悪かつ最良の統治
+	focus = {
+		id = GBR_democratic_focus_1
+		icon = GFX_focus_GBR_Democratic_Churchill
+		x = -7
+		y = 1
+		cost = 3
+		prerequisite = {
+			focus = GBR_Political_focus_1
+		}
+        available = {
+			has_country_flag = GBR_Churchill_believes_democracy
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+        add_stability = 0.1
+		}
+	}
+	#戦う民主主義
+	focus = {
+		id = GBR_democratic_focus_2
+		icon = GFX_
+		x = -10
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = GBR_democratic_focus_1
+		}
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+        add_ideas = GBR_Defensive_democracy
+		}
+	}
+	#名誉革命を思い出せ
+	focus = {
+		id = GBR_democratic_focus_3
+		icon = GFX_
+		x = -7
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = GBR_democratic_focus_1
+		}
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_social_recovery = yes
+		}
+	}
+	#英国王のスピーチ
+	focus = {
+		id = GBR_democratic_focus_4
+		icon = GFX_
+		x = -5
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = GBR_democratic_focus_1
+		}
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_stability = 0.1
+		}
+	}
+	#反逆者の運命
+	focus = {
+		id = GBR_democratic_focus_5
+		icon = GFX_
+		x = -11
+		y = 3
+		cost = 6
+		prerequisite = {
+			focus = GBR_democratic_focus_2
+		}
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = TR_UK.13
+		}
+	}
+	#忠誠の確認
+	focus = {
+		id = GBR_democratic_focus_6
+		icon = GFX_
+		x = -9
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_2 }
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_social_recovery = yes
+		}
+	}
+	#権利の章典の再確認
+	focus = {
+		id = GBR_democratic_focus_7
+		icon = GFX_
+		x = -7
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_3 }
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_social_recovery = yes
+		}
+	}
+	#国王の巡幸
+	focus = {
+		id = GBR_democratic_focus_8
+		icon = GFX_
+		x = -5
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_4 }
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+        add_political_power = 100
+		}
+	}
+	#べヴァリッジ報告書
+	focus = {
+		id = GBR_democratic_focus_9
+		icon = GFX_
+		x = -10
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_2 }
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = good_health_care
+        add_ideas = GBR_National_Health_Service
+		}
+	}
+	#政治的安定
+	focus = {
+		id = GBR_democratic_focus_10
+		icon = GFX_
+		x = -7
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_6 }
+		prerequisite = { focus = GBR_democratic_focus_7 }
+		prerequisite = { focus = GBR_democratic_focus_8 }
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_social_recovery = yes
+		}
+	}
+	#民主主義教育
+	focus = {
+		id = GBR_democratic_focus_11
+		icon = GFX_
+		x = -11
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_5 }
+		prerequisite = { focus = GBR_democratic_focus_9 }
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#強化された議会制度
+	focus = {
+		id = GBR_democratic_focus_12
+		icon = GFX_
+		x = -9
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_10 }
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = GBR_Defensive_democracy
+			add_idea = GBR_Defensive_democracy_1
+		}
+		}
+	}
+	#決して降伏しない
+	focus = {
+		id = GBR_democratic_focus_13
+		icon = GFX_
+		x = -7
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_10 }
+        available = {
+			has_democratic_government = yes
+			has_war = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = GBR_we_shall_never_surrender
+		}
+	}
+	#団結した英国
+	focus = {
+		id = GBR_democratic_focus_14
+		icon = GFX_
+		x = -10
+		y = 6
+		cost = 6
+		prerequisite = { focus = GBR_democratic_focus_11 }
+		prerequisite = { focus = GBR_democratic_focus_12 }
+        available = {
+			has_democratic_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_stability = 0.05
+		GBR_social_recovery = yes
+		
+		}
+	}
+	#帝国の防衛
+	focus = {
+		id = GBR_autocratic_focus_1
+		icon = GFX_focus_GBR_Defence_the_Empire
+		x = 7
+		y = 1
+		cost = 3
+		prerequisite = {
+			focus = GBR_Political_focus_1
+		}
+        available = {
+			has_country_flag = GBR_Churchill_Chase_British_Empire
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_stability = -0.1
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		}
+		}
+	}
+	#軍部の支持を得る
+	focus = {
+		id = GBR_autocratic_focus_2
+		icon = GFX_
+		x = 4
+		y = 2
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_1 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.1
+		}
+		}
+	}
+	#国王大権
+	focus = {
+		id = GBR_autocratic_focus_3
+		icon = GFX_
+		x = 6
+		y = 2
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_1 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+        add_political_power = 100
+		}
+	}
+	#戒厳令
+	focus = {
+		id = GBR_autocratic_focus_4
+		icon = GFX_
+		x = 8
+		y = 2
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_1 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = GBR_martial_law
+		GBR_social_recovery = yes
+		}
+	}
+	#裏切者の破壊
+	focus = {
+		id = GBR_autocratic_focus_5
+		icon = GFX_
+		x = 5
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_2 }
+		prerequisite = { focus = GBR_autocratic_focus_3 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_social_recovery = yes
+		add_popularity = {
+			ideology = totalist
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = syndicalist
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = radical_socialist
+			popularity = -0.1
+		}
+		}
+	}
+	#国民的効率
+	focus = {
+		id = GBR_autocratic_focus_6
+		icon = GFX_
+		x = 7
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_1 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+        add_ideas = GBR_National_Efficiency
+		}
+	}
+	#安全保障委員会
+	focus = {
+		id = GBR_autocratic_focus_7
+		icon = GFX_
+		x = 9
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_4 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_social_recovery = yes
+		}
+	}
+	#報道の支配
+	focus = {
+		id = GBR_autocratic_focus_8
+		icon = GFX_
+		x = 6
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_3 }
+		prerequisite = { focus = GBR_autocratic_focus_5 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_stability = 0.1
+		}
+	}
+	#議会を支配
+	focus = {
+		id = GBR_autocratic_focus_9
+		icon = GFX_
+		x = 8
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_4 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		}
+	}
+	#軍事教育
+	focus = {
+		id = GBR_autocratic_focus_10
+		icon = GFX_
+		x = 5
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_8 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_research_slot = 1
+		}
+	}
+	#過去の栄光
+	focus = {
+		id = GBR_autocratic_focus_11
+		icon = GFX_
+		x = 7
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_6 }
+		prerequisite = { focus = GBR_autocratic_focus_8 }
+		prerequisite = { focus = GBR_autocratic_focus_9 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_war_support = 0.1
+		}
+	}
+	#監視社会の構築
+	focus = {
+		id = GBR_autocratic_focus_12
+		icon = GFX_
+		x = 9
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_7 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_social_recovery = yes
+		swap_ideas = {
+			remove_idea = GBR_martial_law
+			add_idea = GBR_martial_law_1
+		}
+		}
+	}
+	#王国青年組織
+	focus = {
+		id = GBR_autocratic_focus_13
+		icon = GFX_
+		x = 5
+		y = 6
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_10 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = GBR_Royal_Youth_Organisation
+		}
+	}
+	#大英帝国を守り抜け！
+	focus = {
+		id = GBR_autocratic_focus_14
+		icon = GFX_
+		x = 7
+		y = 6
+		cost = 6
+		prerequisite = { focus = GBR_autocratic_focus_11 }
+		prerequisite = { focus = GBR_autocratic_focus_12 }
+        available = {
+			has_authoritarian_government = yes
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_social_recovery = yes
+		}
+	}
+	#経済再建法
+	focus = {
+		id = GBR_economy_focus_1
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = {
+			focus = GBR_democratic_focus_1 focus = GBR_autocratic_focus_1
+		}
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+		add_ideas = GBR_Economic_Reconstruction_Act
+		}
+	}
+	#シティの再建
+	focus = {
+		id = GBR_economy_focus_2
+		icon = GFX_
+		x = -3
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_1 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		126 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		GBR_economy_recovery = yes
+		}
+	}
+	#鉄道の再建
+	focus = {
+		id = GBR_economy_focus_3
+		icon = GFX_
+		x = 0
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_1 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+			fallback = yes
+			path = {
+				6103
+				11253
+				3287
+			}
+			start_province = 6103
+			target_province = 3287
+		}
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+			fallback = yes
+			path = {
+				6103
+				9239
+				11471
+				3369
+				6378
+				377
+				407
+				3274
+			}
+			start_province = 6103
+			target_province = 3274
+		}
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+			fallback = yes
+			path = {
+				3369
+				9484
+				3463
+				540
+				6526
+			}
+			start_province = 3369
+			target_province = 6526
+		}
+		build_railway = {
+			level = 1
+			build_only_on_allied = yes
+			fallback = yes
+			path = {
+				6103
+				11221
+				9268
+				11279
+				6237
+				9315
+				6318
+			}
+			start_province = 6103
+			target_province = 6318
+		}
+		}
+	}
+	#地方の再建
+	focus = {
+		id = GBR_economy_focus_4
+		icon = GFX_
+		x = 2
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_1 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		122 = { add_extra_state_shared_building_slots = 1 }
+		123 = { add_extra_state_shared_building_slots = 1 }
+		131 = { add_extra_state_shared_building_slots = 1 }
+		127 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+	#組合の運命
+	focus = {
+		id = GBR_economy_focus_5
+		icon = GFX_
+		x = -4
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_2 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		country_event = TR_UK.14
+		}
+	}
+	#証券取引所の改革
+	focus = {
+		id = GBR_economy_focus_6
+		icon = GFX_
+		x = -2
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_2 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = GBR_London_Stock_Exchange
+		GBR_economy_recovery = yes
+		}
+	}
+	#モーターウェイの整備
+	focus = {
+		id = GBR_economy_focus_7
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_3 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		126 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		129 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		130 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		GBR_economy_recovery = yes
+		}
+	}
+	#農業補助金
+	focus = {
+		id = GBR_economy_focus_8
+		icon = GFX_
+		x = 2
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_4 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+        add_political_power = -50
+		add_ideas = GBR_agricultural_subsidy
+		}
+	}
+	#造船所の拡張
+	focus = {
+		id = GBR_economy_focus_9
+		icon = GFX_
+		x = 4
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_4 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#投資の拡大
+	focus = {
+		id = GBR_economy_focus_10
+		icon = GFX_
+		x = -3
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_6 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_economy_recovery = yes
+		}
+	}
+	#軍需産業の再建
+	focus = {
+		id = GBR_economy_focus_11
+		icon = GFX_
+		x = -1
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_6 }
+		prerequisite = { focus = GBR_economy_focus_7 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		126 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		132 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+	#自動車産業
+	focus = {
+		id = GBR_economy_focus_12
+		icon = GFX_
+		x = 1
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_7 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = GBR_Automobile_industry
+		129 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		}
+	}
+	#鉱山への投資
+	focus = {
+		id = GBR_economy_focus_13
+		icon = GFX_
+		x = 3
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_8 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_political_power = -50
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				steel > 0
+			}
+			add_resource = {
+				type = steel
+				amount = 15
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				steel > 0
+			}
+			add_resource = {
+				type = steel
+				amount = 15
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				steel > 0
+			}
+			add_resource = {
+				type = steel
+				amount = 15
+			}
+		}
+		random_owned_state = {
+			limit = {
+				is_core_of = ROOT
+				aluminium > 0
+			}
+			add_resource = {
+				type = aluminium
+				amount = 15
+			}
+		}
+		}
+	}
+	#復興の完了
+	focus = {
+		id = GBR_economy_focus_14
+		icon = GFX_
+		x = -1
+		y = 6
+		cost = 6
+		prerequisite = { focus = GBR_economy_focus_10 }
+		prerequisite = { focus = GBR_economy_focus_11 }
+        available = {
+
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		GBR_economy_recovery = yes
+		swap_ideas = {
+			remove_idea = GBR_Economic_Reconstruction_Act
+			add_idea = GBR_Strengthened_economy
+		}
+		}
+	}
+	#北海に眠る石油
+	focus = {
+		id = GBR_economy_focus_15
+		icon = GFX_
+		x = 3
+		y = 6
+		cost = 15
+		prerequisite = { focus = GBR_economy_focus_13 }
+        available = {
+            
+            }
+		relative_position_id = GBR_Political_focus_1
+		ai_will_do = {
+			factor = 50
+		}
+	completion_reward = {
+		136 = {
+			add_resource = {
+				type = oil
+				amount = 65
+			}
+		}
+		}
+	}
+	#コモンウェルスの再建
+	focus = {
+		id = GBR_Diplomacy_focus_1
+		icon = GFX_
+		x = 11
+		y = 7
+		cost = 5
+		select_effect = {
+
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_stability = 0.05
+		if = {
+			limit = { is_in_faction = no }
+			create_faction = GBR_faction
+		}
+		}
+	}
+	#現実主義外交
+	focus = {
+		id = GBR_Diplomacy_focus_2
+		icon = GFX_
+		x = -4
+		y = 1
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_1 }
+		mutually_exclusive = { focus = GBR_Diplomacy_focus_3 }
+        available = { has_completed_focus = GBR_democratic_focus_14 }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	#帝国主義外交
+	focus = {
+		id = GBR_Diplomacy_focus_3
+		icon = GFX_
+		x = 4
+		y = 1
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_1 }
+		mutually_exclusive = { focus = GBR_Diplomacy_focus_2 }
+		available = { has_completed_focus = GBR_autocratic_focus_14 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+			add_war_support = 0.1
+		}
+	}
+	#独仏の過激主義と戦う
+	focus = {
+		id = GBR_Diplomacy_focus_4
+		icon = GFX_
+		x = -6
+		y = 2
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_2 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#アイルランドとの対話
+	focus = {
+		id = GBR_Diplomacy_focus_5
+		icon = GFX_
+		x = -4
+		y = 2
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_2 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#ベネルクスへの支援
+	focus = {
+		id = GBR_Diplomacy_focus_6
+		icon = GFX_
+		x = -6
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_4 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#北欧諸国との安全保障会議
+	focus = {
+		id = GBR_Diplomacy_focus_7
+		icon = GFX_
+		x = -4
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_5 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#門戸開放を要請
+	focus = {
+		id = GBR_Diplomacy_focus_8
+		icon = GFX_
+		x = -2
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_2 }
+		prerequisite = { focus = GBR_Diplomacy_focus_9 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#植民地の回復
+	focus = {
+		id = GBR_Diplomacy_focus_9
+		icon = GFX_
+		x = 0
+		y = 2
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_2 focus = GBR_Diplomacy_focus_3 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
 
 		}
 	}
-
+	#陣営の選択
+	focus = {
+		id = GBR_Diplomacy_focus_10
+		icon = GFX_
+		x = 0
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_9 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#武力で取り戻す
+	focus = {
+		id = GBR_Diplomacy_focus_11
+		icon = GFX_
+		x = 2
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_3 }
+		prerequisite = { focus = GBR_Diplomacy_focus_9 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#アイルランド侵攻
+	focus = {
+		id = GBR_Diplomacy_focus_12
+		icon = GFX_
+		x = 4
+		y = 2
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_3 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+			add_state_core = 119
+			every_state = {
+				limit = {
+					is_core_of = IRE
+				}
+				add_claim_by = GBR
+			}
+			create_wargoal = {
+				target = IRE
+				type = annex_everything
+			}
+		}
+	}
+	#ドイツとの秘密協定
+	focus = {
+		id = GBR_Diplomacy_focus_13
+		icon = GFX_
+		x = 4
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_12 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#英葡永久同盟の確認
+	focus = {
+		id = GBR_Diplomacy_focus_14
+		icon = GFX_
+		x = 6
+		y = 2
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_3 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#ジブラルタル返還要求
+	focus = {
+		id = GBR_Diplomacy_focus_15
+		icon = GFX_
+		x = 6
+		y = 3
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_14 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#アメリカへの対応
+	focus = {
+		id = GBR_Diplomacy_focus_16
+		icon = GFX_
+		x = -6
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_6 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#欧州防衛条約
+	focus = {
+		id = GBR_Diplomacy_focus_17
+		icon = GFX_
+		x = -4
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_6 }
+		prerequisite = { focus = GBR_Diplomacy_focus_7 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+			if = {
+				limit = { is_faction_leader = yes }
+				set_faction_name = European_Defense_Treaty
+			}
+		}
+	}
+	#インドでの交渉
+	focus = {
+		id = GBR_Diplomacy_focus_18
+		icon = GFX_
+		x = -2
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_8 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#均衡を守る国
+	focus = {
+		id = GBR_Diplomacy_focus_19
+		icon = GFX_
+		x = -4
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_17 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#アフリカの問題
+	focus = {
+		id = GBR_Diplomacy_focus_20
+		icon = GFX_
+		x = -2
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_18 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#反乱の扇動
+	focus = {
+		id = GBR_Diplomacy_focus_21
+		icon = GFX_
+		x = 0
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_8 focus = GBR_Diplomacy_focus_11 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#実力行使
+	focus = {
+		id = GBR_Diplomacy_focus_22
+		icon = GFX_
+		x = 0
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_21 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#インドの回復
+	focus = {
+		id = GBR_Diplomacy_focus_23
+		icon = GFX_
+		x = 2
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_11 }
+		prerequisite = { focus = GBR_Diplomacy_focus_13 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+			every_state = {
+				limit = {
+					is_British_Raj = yes
+				}
+				add_claim_by = GBR
+			}
+		}
+	}
+	#13植民地
+	focus = {
+		id = GBR_Diplomacy_focus_24
+		icon = GFX_
+		x = 2
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_23 }
+		prerequisite = { focus = GBR_Diplomacy_focus_25 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#フランスに対する攻撃
+	focus = {
+		id = GBR_Diplomacy_focus_25
+		icon = GFX_
+		x = 4
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_11 }
+		prerequisite = { focus = GBR_Diplomacy_focus_13 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#帝国の世紀再び
+	focus = {
+		id = GBR_Diplomacy_focus_26
+		icon = GFX_
+		x = 4
+		y = 5
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_25 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
+	#中近東の確保
+	focus = {
+		id = GBR_Diplomacy_focus_27
+		icon = GFX_
+		x = 6
+		y = 4
+		cost = 6
+		prerequisite = { focus = GBR_Diplomacy_focus_15 }
+        available = { }
+		relative_position_id = GBR_Diplomacy_focus_1
+		ai_will_do = {
+			factor = 100
+		}
+	    completion_reward = {
+		}
+	}
 }

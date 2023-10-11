@@ -19,7 +19,7 @@
 				extra_trade_to_target_factor = 0.8
 			}
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
                 industrial_capacity_factory = 0.10
 			}
 		}
@@ -52,7 +52,7 @@
             picture = jap_zaibatsu_ally
 
 			modifier = {
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
                 production_speed_buildings_factor = 0.1
 			}
 		}
@@ -111,7 +111,7 @@
 				production_factory_max_efficiency_factor = -0.2
 				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
 				min_export = -0.2
 			}
 		}
@@ -128,7 +128,7 @@
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_buildings_factor = -0.1
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 				min_export = -0.1
 			}
 		}
@@ -145,7 +145,7 @@
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				min_export = -0.2
 			}
 		}
@@ -158,7 +158,7 @@
 
 			modifier = {
                 MONTHLY_POPULATION = 0.05
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
 			}
 		}
     }

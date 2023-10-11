@@ -29403,4 +29403,214 @@ spriteTypes = {
 			}
 			legacy_lazy_load = no
 		}
+		SpriteType = {
+			name = "GFX_focus_OTT_Incompetent_Sublime_Porte_shine"
+			texturefile = "gfx/interface/goals/OTT/OTT_Incompetent_Sublime_Porte.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OTT/OTT_Incompetent_Sublime_Porte.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 2
+					y = 1
+				}
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OTT/OTT_Incompetent_Sublime_Porte.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 1
+					y = 1
+				}
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_focus_OTT_Patriotic_War_shine"
+			texturefile = "gfx/interface/goals/OTT/OTT_Patriotic_War.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OTT/OTT_Patriotic_War.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 2
+					y = 1
+				}
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/OTT/OTT_Patriotic_War.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 1
+					y = 1
+				}
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_focus_GBR_Ruined_islands_shine"
+			texturefile = "gfx/interface/goals/GBR/GBR_Ruined_islands.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/GBR/GBR_Ruined_islands.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 2
+					y = 1
+				}
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/GBR/GBR_Ruined_islands.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 1
+					y = 1
+				}
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_focus_GBR_Democratic_Churchill_shine"
+			texturefile = "gfx/interface/goals/GBR/GBR_Democratic_Churchill.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/GBR/GBR_Democratic_Churchill.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 2
+					y = 1
+				}
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/GBR/GBR_Democratic_Churchill.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 1
+					y = 1
+				}
+			}
+			legacy_lazy_load = no
+		}
+		SpriteType = {
+			name = "GFX_focus_GBR_Defence_the_Empire_shine"
+			texturefile = "gfx/interface/goals/GBR/GBR_Defence_the_Empire.png"
+			effectFile = "gfx/FX/buttonstate.lua"
+			animation = {
+				animationmaskfile = "gfx/interface/goals/GBR/GBR_Defence_the_Empire.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = -90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 2
+					y = 1
+				}
+			}
+			animation = {
+				animationmaskfile = "gfx/interface/goals/GBR/GBR_Defence_the_Empire.png"
+				animationtexturefile = "gfx/interface/goals/shine_overlay.dds"			# <- the animated file
+				animationrotation = 90			# -90 clockwise 90 counterclockwise(by default)
+				animationlooping = no			# yes or no ;)
+				animationtime = 0.75			# in seconds
+				animationdelay = 0			# in seconds
+				animationblendmode = "add"			#add, multiply, overlay
+				animationtype = "scrolling"			#scrolling, rotating, pulsing
+				animationrotationoffset = {
+					x = 0
+					y = 0
+				}
+				animationtexturescale = {
+					x = 1
+					y = 1
+				}
+			}
+			legacy_lazy_load = no
+		}
 }

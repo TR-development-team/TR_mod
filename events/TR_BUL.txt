@@ -1,348 +1,107 @@
 add_namespace = TR_Bulgaria
 
-#イタリアが同盟を提案！
 
+#ウズンキョプリュ休戦協定
 country_event = {
-	id = TR_Bulgaria.1
-	title = TR_Bulgaria.1.t
-	desc = TR_Bulgaria.1.d
-	picture = GFX_report_event_gathering_protest
+    id = TR_Bulgaria.3
+    title = TR_Bulgaria.3.t
+    desc = TR_Bulgaria.3.d
+    picture = GFX_report_event_gathering_protest
 
-	is_triggered_only = yes
-        fire_only_once = yes
+    is_triggered_only = yes
+    fire_only_once = yes
 
+    option = {
+	    name = TR_Bulgaria.3.a
+    	add_political_power = 50
+        remove_ideas = BUL_Awakening_of_the_Bulgarians
+        hidden_effect = {
+            country_event = {
+                id = TR_Bulgaria.4
+                days = 7
+            }
+        }
+    }
+}
+#ツァール国宣言
+country_event = {
+    id = TR_Bulgaria.4
+    title = TR_Bulgaria.4.t
+    desc = TR_Bulgaria.4.d
+    picture = GFX_report_event_gathering_protest
 
-	
-	option = { 
-		name = TR_Bulgaria.1.a
-                ai_chance = {
-			base = 95
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	    name = TR_Bulgaria.4.a
+    	add_stability = 0.1
+        set_cosmetic_tag = BUL_tsardom
+    }
+}
+#希土戦争-絶好の機会
+country_event = {
+    id = TR_Bulgaria.5
+    title = TR_Bulgaria.5.t
+    desc = TR_Bulgaria.5.d
+    picture = GFX_report_event_gathering_protest
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	    name = TR_Bulgaria.5.a
+        OTT= { 
+            country_event = {
+                id = TR_Turkey.21
+                days = 1
+            }
+        }
+    }
+}
+#オスマン、協定に同意！
+country_event = {
+    id = TR_Bulgaria.6
+    title = TR_Bulgaria.6.t
+    desc = TR_Bulgaria.6.d
+    picture = GFX_report_event_gathering_protest
+
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+	    name = TR_Bulgaria.6.a
+		declare_war_on = {
+			target = GRE
+			type = annex_everything
 		}
-                trigger = {
-                        is_subject = no
-                        NOT = { has_country_flag = BUL_Surrender }
-		}
-                ITA = {
-                   create_faction = "ITA_BUL_faction"
-                   add_to_faction = BUL
-                    }
-                
-
-	}
-        option = { 
-		name = TR_Bulgaria.1.b
-                ai_chance = {
-			base = 5
-		}
-
-
-	}
+    }
 }
 
+#大阪大暴落の影響がブルガリアに波及
 country_event = {
-	id = TR_Bulgaria.2
-	title = TR_Bulgaria.2.t
-	desc = TR_Bulgaria.2.d
+	id = TR_Bulgaria.7
+	title = TR_Bulgaria.7.t
+	desc = TR_Bulgaria.7.d
 	picture = GFX_report_event_gathering_protest
-
-	trigger = {
-                tag = BUL
-                surrender_progress > 0.8
-		is_subject = no
-		is_faction_leader = no
+	is_triggered_only = yes
+    fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+            swap_ideas = {
+                remove_idea = BUL_Golden_Age_of_the_Economy
+                add_idea = BUL_depression
+            }
+		}
 	}
-        fire_only_once = yes
 
-
-	
-	option = { 
-		name = TR_Bulgaria.2.a
-		ai_chance = {	base = 100	}
-		if = {
-			limit = { is_in_faction_with = ITA }
-			ITA = { remove_from_faction = BUL }
+	option = {
+		name = TR_Bulgaria.7.a
+		effect_tooltip = {
+            swap_ideas = {
+                remove_idea = BUL_Golden_Age_of_the_Economy
+                add_idea = BUL_depression
+            }
 		}
-		if = {
-			limit = { ITA = { is_in_faction_with = BUL } RUS = { has_war_with = ITA } }
-			ITA = { white_peace = RUS }
-		}
-		if = {
-			limit = { ITA = { is_in_faction_with = BUL } SOV = { has_war_with = ITA } }
-			ITA = { white_peace = SOV }
-		}
-		if = {
-			limit = { ITA = { is_in_faction_with = BUL } MHN = { has_war_with = ITA } }
-			ITA = { white_peace = MHN }
-		}
-                if = {
-			limit = { ITA = { is_in_faction_with = BUL } ROM = { has_war_with = ITA } }
-			ITA = { white_peace = ROM }
-		}
-                if = {
-			limit = { ITA = { is_in_faction_with = BUL } SER = { has_war_with = ITA } }
-			ITA = { white_peace = SER }
-		}
-                if = {
-			limit = { ITA = { is_in_faction_with = BUL } GRE = { has_war_with = ITA } }
-			ITA = { white_peace = GRE }
-		}
-                hidden_effect = { 
-                        every_state = {
-                                limit = {
-                                    is_claimed_by = BUL
-                                    is_bulgaria = no
-                                }
-                                remove_claim_by = BUL
-                        }
-                        every_state = {
-                                limit = {
-                                    is_core_of = BUL
-                                    is_bulgaria = no
-                                }
-                                remove_core_of = BUL
-                        }
-                }
-		remove_ideas = BUL_ARMY
-		remove_ideas = BUL_economic
-		remove_ideas = BUL_Foutrh_Roma
-		remove_ideas = BUL_YABOU
-		remove_ideas = BUL_ARMY
-		remove_ideas = BUL_BANZOKU
-		remove_ideas = BUL_METAL_HORSE
-		remove_ideas = BUL_KHANATE_IDEA
-		add_ideas = BUL_Neutral_IDEA
-		drop_cosmetic_tag = yes
-		set_cosmetic_tag = BUL_principality
-		set_country_flag = BUL_Surrender
-		if = {
-			limit = { 
-				country_exists = ROM
-				has_war_with = ROM
-			}
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = ROM
-				}
-				transfer_state_to = ROM
-			}
-		}
-		if = {
-			limit = { 
-                               country_exists = GRE
-                               has_war_with = GRE
-                               owns_state = 184
-                               owns_state = 731
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = GRE
-				}
-				transfer_state_to = GRE
-			}
-		}
-                if = {
-			limit = { 
-                               country_exists = SER 
-                               has_war_with = SER 
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = SER
-				}
-				transfer_state_to = SER
-			}
-		}
-                if = {
-			limit = { 
-                               has_war_with = OTT
-                               owns_state = 187
-                              }
-			OTT = { 
-                                transfer_state = 187
-                              }
-		}
-                if = {
-			limit = { 
-                               has_war_with = OTT
-                               owns_state = 164
-                              }
-			OTT = { 
-                                transfer_state = 164
-                              }
-		}
-                if = {
-			limit = { 
-                               has_war_with = OTT
-                               owns_state = 182
-                              }
-			OTT = { 
-                                transfer_state = 182
-                              }
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = GRE }
-                               owns_state = 184
-                               owns_state = 731
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = GRE
-				}
-				transfer_state_to = GRE
-			}
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = ROM }
-                               NOT = { has_war_with = RUS }
-                               NOT = { has_war_with = SOV }
-                               NOT = { has_war_with = MHN }
-                               NOT = { has_war_with = AUS }
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = ROM
-				}
-				transfer_state_to = ROM
-			}
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = ROM }
-                               has_war_with = AUS
-                               owns_state = 82
-                               owns_state = 83
-                               owns_state = 76
-                               owns_state = 84
-                               owns_state = 80
-                              }
-                        AUS = { 
-                                transfer_state = 84 
-                                transfer_state = 82
-                                transfer_state = 83
-                                transfer_state = 76
-                                transfer_state = 80
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = ROM
-				}
-				transfer_state_to = ROM
-			}
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = ROM }
-                               has_war_with = MHN
-                               owns_state = 78
-                               owns_state = 768
-                              }
-                        MHN = { 
-                                transfer_state = 78 
-                                transfer_state = 768
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = ROM
-				}
-				transfer_state_to = ROM
-			}
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = ROM }
-                               has_war_with = SOV
-                               NOT = { has_war_with = MHN }
-                               owns_state = 78
-                               owns_state = 768
-                              }
-                        SOV = { 
-                                transfer_state = 78 
-                                transfer_state = 768
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = ROM
-				}
-				transfer_state_to = ROM
-			}
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = ROM }
-                               has_war_with = RUS
-                               NOT = { has_war_with = MHN }
-                               NOT = { has_war_with = SOV }
-                               owns_state = 78
-                               owns_state = 768
-                              }
-                        RUS = { 
-                                transfer_state = 78 
-                                transfer_state = 768
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = ROM
-				}
-				transfer_state_to = ROM
-			}
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = SER }
-                               NOT = { has_war_with = AUS }
-                               owns_state = 106
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = SER
-				}
-				transfer_state_to = SER
-			}
-		}
-                if = {
-			limit = { 
-                               NOT = { country_exists = SER }
-                               has_war_with = AUS
-                               owns_state = 106
-                              }
-                        every_state = {
-				limit = {
-                                        is_owned_by = BUL
-					is_core_of = SER
-				}
-				transfer_state_to = SER
-			}
-                        AUS = { puppet = SER }
-		}
-                every_country = {
-                         limit = {
-                              has_war_with = BUL 
-                        }
-                        white_peace_with_ROOT = yes
-                    }
-                  
-
-
-
-	}
-        option = { 
-		name = TR_Bulgaria.2.b
-                ai_chance = {
-			base = 0
-		}
-                 add_stability = -0.15
-
 	}
 }

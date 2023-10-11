@@ -3,7 +3,7 @@ ideas = {
         USA_treaty_of_Tokyo = {
 		    picture = USA_treaty_of_Tokyo
 			modifier = { 
-                consumer_goods_factor = 0.1
+                consumer_goods_expected_value = 0.1
                 conscription = -0.01
                 join_faction_tension = 1.0
                 justify_war_goal_time = 1.0
@@ -20,7 +20,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.2
 				industrial_capacity_factory = -0.3
-				consumer_goods_factor = 0.25
+				consumer_goods_expected_value = 0.25
 				min_export = -0.4
 			}
 		}
@@ -31,7 +31,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.15
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				min_export = -0.2
 			}
 		}
@@ -39,7 +39,7 @@ ideas = {
 			name = USA_Share_Our_Wealth
 			picture = SOV_fourth_five_year_plan
 			modifier = {
-				consumer_goods_factor = 0.3
+				consumer_goods_expected_value = 0.3
 				min_export = -0.2
 			}
 		}
@@ -47,7 +47,7 @@ ideas = {
 			name = USA_Share_Our_Wealth
 			picture = SOV_fourth_five_year_plan
 			modifier = {
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				min_export = -0.1
 				production_factory_max_efficiency_factor = 0.05
 			}
@@ -56,7 +56,7 @@ ideas = {
 			name = USA_Share_Our_Wealth
 			picture = SOV_fourth_five_year_plan
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				min_export = -0.05
@@ -66,7 +66,7 @@ ideas = {
 			name = USA_welfare_state
 			picture = usa_war_department
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				research_speed_factor = 0.1
 				stability_factor = 0.05
 			}
@@ -75,7 +75,7 @@ ideas = {
 			name = USA_welfare_state
 			picture = usa_war_department
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				research_speed_factor = 0.1
 				stability_factor = 0.1
 				MONTHLY_POPULATION = 0.15
@@ -216,7 +216,7 @@ ideas = {
 		USA_Scientific_management = {
 			picture = generic_production_bonus
 			modifier = {
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
 			}
@@ -224,7 +224,7 @@ ideas = {
 		USA_Scientific_management_1 = {
 			picture = generic_production_bonus
 			modifier = {
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
 				production_factory_max_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.1
 				production_speed_buildings_factor = 0.1
@@ -241,7 +241,7 @@ ideas = {
 		USA_Scientific_management_3 = {
 			picture = generic_production_bonus
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_factory_max_efficiency_factor = 0.25
 				production_factory_efficiency_gain_factor = 0.2
 				production_speed_buildings_factor = 0.1
@@ -696,7 +696,7 @@ ideas = {
         USA_confiscation_of_property = {
 			picture = eng_tackle_capitalism
 			modifier = {
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
 			}
 		}
 		USA_centralization = {
@@ -732,7 +732,7 @@ ideas = {
 			modifier = {
                 stability_factor = -0.1
                 political_power_cost = 0.1
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
                 industrial_capacity_factory = 0.1
 		    }
         }
@@ -743,7 +743,7 @@ ideas = {
 				is_subject = yes
             }
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_expected_value = -0.02
 				stability_factor = 0.03
 				conscription_factor = 0.02
 				army_morale_factor = 0.03
@@ -756,7 +756,7 @@ ideas = {
 				is_subject = yes
             }
 			modifier = {
-				consumer_goods_factor = -0.04
+				consumer_goods_expected_value = -0.04
 				stability_factor = 0.06
 				conscription_factor = 0.04
 				army_morale_factor = 0.05
@@ -770,7 +770,7 @@ ideas = {
 				is_subject = yes
             }
 			modifier = {
-				consumer_goods_factor = -0.06
+				consumer_goods_expected_value = -0.06
 				stability_factor = 0.09
 				conscription_factor = 0.06
 				army_morale_factor = 0.08
@@ -784,7 +784,7 @@ ideas = {
 				is_subject = yes
             }
 			modifier = {
-				consumer_goods_factor = -0.08
+				consumer_goods_expected_value = -0.08
 				stability_factor = 0.12
 				conscription_factor = 0.08
 				army_morale_factor = 0.1
@@ -830,7 +830,7 @@ ideas = {
 				is_subject = yes
             }
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_expected_value = -0.02
                 research_speed_factor = 0.03
 			}
 		}

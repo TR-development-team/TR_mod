@@ -156,19 +156,19 @@ country_event = {
 }
 #アメリカが賠償金の減額を要求
 country_event = {
-	id = TR_USA.9_1
-	title = TR_USA.9_1.t
-	desc = TR_USA.9_1.d
+	id = TR_USA.91
+	title = TR_USA.91.t
+	desc = TR_USA.91.d
 	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
     fire_only_once = yes
 
 	option = {
-		name = TR_USA.9_1.a
+		name = TR_USA.91.a
 		USA = { 
 			country_event = {
-				id =TR_USA.9_2
+				id =TR_USA.92
 				days = 1
 			}
 		}
@@ -176,9 +176,9 @@ country_event = {
 }
 #日本が賠償金減額を拒否
 country_event = {
-	id = TR_USA.9_2
-	title = TR_USA.9_2.t
-	desc = TR_USA.9_2.d
+	id = TR_USA.92
+	title = TR_USA.92.t
+	desc = TR_USA.92.d
 	picture = GFX_report_event_generic_sign_treaty2
 
 	is_triggered_only = yes

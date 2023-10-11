@@ -3,7 +3,9 @@ mobile_warfare_ratios = {
 	enable = {
 		has_tech = mobile_warfare
 	}
-
+	abort = {
+		always = no
+	}
 	ai_strategy = {
 		type = role_ratio
 		id = armor
@@ -18,7 +20,6 @@ superior_firepower_ratios = {
 	abort = {
 		has_tech = concentrated_fire_plans
 	}
-
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
@@ -37,7 +38,9 @@ concentrated_fire_plans_ratios = {
 	enable = {
 		has_tech = concentrated_fire_plans
 	}
-
+	abort = {
+		always = no
+	}
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
@@ -59,7 +62,9 @@ grand_battle_plan_ratios = {
 	enable = {
 		has_tech = trench_warfare
 	}
-
+	abort = {
+		always = no
+	}
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
@@ -76,7 +81,9 @@ mass_assault_ratios = {
 	enable = {
 		has_tech = mass_assault
 	}
-
+	abort = {
+		always = no
+	}
 	ai_strategy = {
 		type = role_ratio
 		id = infantry
@@ -94,7 +101,9 @@ large_front_operations_ratios = {
 	enable = {
 		has_tech = large_front_operations
 	}
-
+	abort = {
+		always = no
+	}
 	ai_strategy = {
 		type = role_ratio
 		id = infantry

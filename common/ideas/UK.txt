@@ -22,7 +22,8 @@
 			}
 		}
 		GBR_social_division = {
-			picture = generic_communism_drift_bonus
+			name = GBR_social_division
+			picture = generic_democratic_opposition
 			modifier = {
 				political_power_cost = 0.5
 				stability_factor = -0.3
@@ -30,13 +31,48 @@
 				conscription_factor = -0.5
 			}
 		}
-		GBR_civil_war = {
-			allowed = {
-				always = no
+		GBR_social_division_1 = {
+			name = GBR_social_division
+			picture = generic_democratic_opposition
+			modifier = {
+				political_power_cost = 0.4
+				stability_factor = -0.24
+				war_support_factor = -0.4
+				conscription_factor = -0.4
 			}
+		}
+		GBR_social_division_2 = {
+			name = GBR_social_division
+			picture = generic_democratic_opposition
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.18
+				war_support_factor = -0.3
+				conscription_factor = -0.3
+			}
+		}
+		GBR_social_division_3 = {
+			name = GBR_social_division
+			picture = generic_democratic_opposition
+			modifier = {
+				political_power_cost = 0.2
+				stability_factor = -0.12
+				war_support_factor = -0.2
+				conscription_factor = -0.2
+			}
+		}
+		GBR_social_division_4 = {
+			name = GBR_social_division
+			picture = generic_democratic_opposition
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = -0.06
+				war_support_factor = -0.1
+				conscription_factor = -0.1
+			}
+		}
+		GBR_civil_war = {
             picture = generic_communism_drift_bonus
-			removal_cost = -1
-                     
 			modifier = {
 			    war_support_factor = 0.5
                 stability_factor = -0.1
@@ -50,27 +86,208 @@
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.25
+				consumer_goods_expected_value = 0.25
 				min_export = -0.15
 			}
 		}
-		GBR_civil_war_economy= {
+		GBR_civil_war_economy = {
 			picture = great_depression
 			modifier = {
 				stability_factor = -0.2
 				production_factory_max_efficiency_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.2
 				industrial_capacity_factory = -0.3
-				consumer_goods_factor = 0.5
+				consumer_goods_expected_value = 0.5
 				min_export = -0.5
+			}
+		}
+		GBR_civil_war_economy_1 = {
+			name = GBR_civil_war_economy
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.16
+				production_factory_max_efficiency_factor = -0.16
+				production_factory_efficiency_gain_factor = -0.16
+				industrial_capacity_factory = -0.24
+				consumer_goods_expected_value = 0.4
+				min_export = -0.4
+			}
+		}
+		GBR_civil_war_economy_2 = {
+			name = GBR_civil_war_economy
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.12
+				production_factory_max_efficiency_factor = -0.12
+				production_factory_efficiency_gain_factor = -0.12
+				industrial_capacity_factory = -0.18
+				consumer_goods_expected_value = 0.3
+				min_export = -0.3
+			}
+		}
+		GBR_civil_war_economy_3 = {
+			name = GBR_civil_war_economy
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.08
+				production_factory_max_efficiency_factor = -0.08
+				production_factory_efficiency_gain_factor = -0.08
+				industrial_capacity_factory = -0.12
+				consumer_goods_expected_value = 0.2
+				min_export = -0.2
+			}
+		}
+		GBR_civil_war_economy_4 = {
+			name = GBR_civil_war_economy
+			picture = great_depression
+			modifier = {
+				stability_factor = -0.04
+				production_factory_max_efficiency_factor = -0.04
+				production_factory_efficiency_gain_factor = -0.04
+				industrial_capacity_factory = -0.08
+				consumer_goods_expected_value = 0.1
+				min_export = -0.1
 			}
 		}
 		GBR_Subsidies_for_miners = {
 			picture = SPR_seize_the_gold_reserves
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 			}
 		}
+		GBR_National_Health_Service = {
+			picture = EST_democratic_opposition
+			modifier = {
+				stability_factor = 0.1
+                consumer_goods_expected_value = 0.02
+                MONTHLY_POPULATION = 0.1
+			}
+		}
+		GBR_Defensive_democracy = {
+			picture = generic_democratic_drift_bonus
+			modifier = {
+                drift_defence_factor = 0.25
+				totalist_drift = -0.01
+				syndicalist_drift = -0.01
+				radical_socialist_drift = -0.01
+				national_populist_drift = -0.01
+				Gnosticism_drift = -0.01
+			}
+		}
+		GBR_Defensive_democracy_1 = {
+			name = GBR_Defensive_democracy
+			picture = generic_democratic_drift_bonus
+			modifier = {
+                drift_defence_factor = 0.5
+				totalist_drift = -0.01
+				syndicalist_drift = -0.01
+				radical_socialist_drift = -0.01
+				national_populist_drift = -0.01
+				Gnosticism_drift = -0.01
+				political_power_gain = 0.1
+			}
+		}
+		GBR_we_shall_never_surrender = {
+			picture = eng_service_overseas
+			modifier = {
+				army_core_defence_factor = 0.15
+				forced_surrender_limit = 0.1
+			}
+		}
+		GBR_martial_law = {
+			picture = por_volunteers_in_the_war3
+			modifier = {
+				stability_factor = 0.1
+				social_democrat_drift = -0.01
+				radical_socialist_drift = -0.01
+				syndicalist_drift = -0.01
+				totalist_drift = -0.01
+			}
+		}
+		GBR_martial_law_1 = {
+			name = GBR_martial_law
+			picture = por_volunteers_in_the_war3
+			modifier = {
+				stability_factor = 0.1
+				resistance_target = -0.1
+				root_out_resistance_effectiveness_factor = 0.2
+				social_democrat_drift = -0.02
+				radical_socialist_drift = -0.02
+				syndicalist_drift = -0.02
+				totalist_drift = -0.02
+			}
+		}
+		GBR_Royal_Youth_Organisation = {
+			picture = eng_the_sun_never_sets
+			modifier = {
+				conscription_factor = 0.1
+				forced_surrender_limit = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		GBR_National_Efficiency = {
+			picture = generic_production_bonus
+			modifier = {
+				consumer_goods_expected_value = 0.05
+				research_speed_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		GBR_Automobile_industry = {
+            equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			picture = FRA_Automobile_factory
+			removal_cost = -1
+			modifier = {
+			}
+        }
+		GBR_agricultural_subsidy = {
+			picture = generic_agrarian_society
+			modifier = {
+				consumer_goods_expected_value = -0.02
+				global_building_slots_factor = 0.1
+			}
+		}
+		GBR_London_Stock_Exchange = {
+			picture = SPR_seize_the_gold_reserves
+			modifier = {
+				consumer_goods_expected_value = -0.05
+			}
+		}
+		GBR_Outlawing_of_unions = {
+			picture = send_attache
+			modifier = {
+				resistance_activity = -0.1
+			}
+		}
+		GBR_state_labour_union = {
+			picture = send_attache
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+		GBR_Economic_Reconstruction_Act = {
+            picture = man_five_year_plan_industry
+			modifier = {
+                production_speed_buildings_factor = 0.2
+				consumer_goods_expected_value = -0.05
+                war_support_factor = -0.2
+			}
+		}  
+		GBR_Strengthened_economy = {
+            picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_expected_value = -0.05
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}  
     }
 	#minister
 	Head_of_State = {	
@@ -127,6 +344,7 @@
 		allowed = {
 			original_tag = GBR
 			}
+		
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_state_available

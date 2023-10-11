@@ -79,7 +79,7 @@ default_role_ratios_minors = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		NOT = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -90,6 +90,7 @@ default_role_ratios_minors = {
 	enable = {
 		always = yes
 	}
+	abort = { always = no }
 
 	ai_strategy = {
 		type = unit_ratio
@@ -124,7 +125,7 @@ default_role_ratios_majors = {
 	allowed = {
 		NOT = { has_dlc = "Man the Guns" }
 		OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -135,7 +136,7 @@ default_role_ratios_majors = {
 	enable = {
 		always = yes
 	}
-
+	abort = { always = no }
 	ai_strategy = {
 		type = unit_ratio
 		id = carrier
@@ -172,7 +173,7 @@ naval_unit_role_ratios_minors = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		NOT = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -204,12 +205,12 @@ naval_unit_role_ratios_minors = {
 naval_unit_role_ratios_GER = {
 	allowed = {
 		has_dlc = "Man the Guns"
-		tag = GER
+		tag = RAT
 	}
 	enable = {
 		always = yes
 	}
-
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = role_ratio
 		id = naval_submarine
@@ -241,7 +242,7 @@ naval_unit_role_ratios_GBR = {
 	enable = {
 		always = yes
 	}
-
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = role_ratio
 		id = naval_submarine
@@ -271,7 +272,7 @@ naval_unit_role_ratios_FRA = {
 	enable = {
 		always = yes
 	}
-
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = role_ratio
 		id = naval_submarine
@@ -294,7 +295,7 @@ naval_unit_role_ratios_CAN = {
 	enable = {
 		always = yes
 	}
-
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = role_ratio
 		id = naval_screen
@@ -321,7 +322,7 @@ naval_unit_role_ratios_SOV = {
 	enable = {
 		always = yes
 	}
-
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = role_ratio
 		id = naval_submarine
@@ -339,6 +340,7 @@ naval_unit_role_ratios_JAP = {
 	enable = {
 		always = yes
 	}
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bb
@@ -385,6 +387,7 @@ naval_unit_role_ratios_USA = {
 		tag = USA
 
 	}
+	abort_when_not_enabled = yes
 	enable = {
 		always = yes
 	}
@@ -413,7 +416,7 @@ naval_unit_role_ratios_majors_lategame = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -422,6 +425,7 @@ naval_unit_role_ratios_majors_lategame = {
 			tag = RUS
 		}
 	}
+	abort_when_not_enabled = yes
 	enable = { date > 1942.1.1 }
 
 	ai_strategy = {
@@ -455,7 +459,7 @@ high_convoy_threat = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -519,7 +523,7 @@ high_mine_threat_1 = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		OR = {			
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -547,7 +551,7 @@ high_mine_threat_2 = {
 	allowed = {
 		has_dlc = "Man the Guns"
 		OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -577,7 +581,7 @@ we_need_convoys_minors = {
 	allowed = {
 		NOT = {
 			OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -601,14 +605,14 @@ we_need_convoys_minors = {
 we_need_convoys_majors1 = {
 	allowed = {
 		OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
-			stockpile_ratio = { archetype = convoy ratio < 75 }
 		}
-		abort = { stockpile_ratio = { archetype = convoy ratio > 125 } }
+		stockpile_ratio = { archetype = convoy ratio < 75 }
 	}
-
+	enable = { always = yes }
+	abort = { stockpile_ratio = { archetype = convoy ratio > 125 } }
 	ai_strategy = {
 		type = equipment_production_min_factories
 		id = convoy
@@ -619,7 +623,7 @@ we_need_convoys_majors1 = {
 we_need_convoys_majors2 = {
 	allowed = {
 		OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -681,7 +685,7 @@ we_dont_need_convoys_1 = {
 	allowed = {
 		NOT = {
 			OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP
@@ -705,7 +709,7 @@ we_dont_need_convoys_1 = {
 we_dont_need_convoys_2 = {
 	allowed = {
 		OR = {
-			tag = GER
+			tag = RAT
 			tag = FRA
 			tag = GBR
 			tag = JAP

@@ -1,6 +1,6 @@
 add_namespace = TR_Turkey
 
-
+#ウズンキョプリュ休戦協定
 country_event = {
 	id = TR_Turkey.1
 	title = TR_Turkey.1.t
@@ -17,18 +17,21 @@ country_event = {
         has_war_with = PER
 		is_subject = no
 	}
-
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = TR_Turkey.4
+				days = 1
+			}
+		}
+	}
 	option = {
 		name = TR_Turkey.1.a
-        ai_chance = {
-			base = 100
-		}
         white_peace = BUL
 		white_peace = ROM
 		white_peace = SER
 		white_peace = GRE
 		white_peace = MNT
-		white_peace = PER
         BUL = { 
 			dismantle_faction = yes
             transfer_state = 211
@@ -55,36 +58,37 @@ country_event = {
             transfer_state = 731
 			transfer_state = 805
 			transfer_state = 1045
+			transfer_state = 1085
+			transfer_state = 1086
             }
 		MNT = { 
             transfer_state = 1049
         }
-        PER = { 
-            transfer_state = 419
-			transfer_state = 1078
-            }
 		hidden_effect = {
             country_event = {
 			    id = TR_Turkey.2
-				days = 1
+				days = 3
 			}
             country_event = {
 				id = TR_news.20
 				days = 1
 			}
+			GRE = { 
+				country_event = {
+					id = TR_Greece.2
+					days = 1
+				}
+			}
+			BUL = { 
+				country_event = {
+					id = TR_Bulgaria.3
+					days = 1
+				}
+			}
 		}
-	}
-    option = {
-		name = TR_Turkey.1.b
-        ai_chance = {
-			base = 0
-		}
-        add_stability = -0.15
-                
 	}
 }
-
-
+#休戦協定の成立
 country_event = {
 	id = TR_Turkey.2
 	title = TR_Turkey.2.t
@@ -92,18 +96,20 @@ country_event = {
 	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
-        fire_only_once = yes
-        
+    fire_only_once = yes    
 
 	option = {
 		name = TR_Turkey.2.a
-        add_ideas = OTT_Treatment
+		339 = { set_demilitarized_zone = yes }
+		797 = { set_demilitarized_zone = yes }
+		1043 = { set_demilitarized_zone = yes }
+		country_event = {
+			id = TR_Turkey.3
+			days = 4
+		}
 	}
-
 }
-
-
-#大国民議会
+#将校たちの抗議
 country_event = {
 	id = TR_Turkey.3
 	title = TR_Turkey.3.t
@@ -111,98 +117,64 @@ country_event = {
 	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
-        fire_only_once = yes
-        
+    fire_only_once = yes
 
 	option = {
 		name = TR_Turkey.3.a
-                ai_chance = {
-			base = 50
-		}
-        set_politics = {
-			ruling_party = authoritarian_democrat
-			elections_allowed = no
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.02
 		}
         add_popularity = {
 			ideology = authoritarian_democrat
-			popularity = 0.3
+			popularity = 0.02
 		}
-        set_country_flag = OTT_KEMAL_WIN
-	}
-        option = {
-		name = TR_Turkey.3.b
-                ai_chance = {
-			base = 50
-		}
-                set_politics = {
-			ruling_party = national_populist
-			elections_allowed = no
-		}
-                add_popularity = {
+		add_popularity = {
 			ideology = national_populist
-			popularity = 0.3
+			popularity = 0.02
 		}
-        set_country_flag = OTT_ENVER_WIN
-                
+        add_stability = -0.05
+		hidden_effect = {
+			country_event = {
+				id = TR_Turkey.6
+				days = 10
+			}
+		}
 	}
 }
 
-#トルコ革命
+#イランとの停戦？
 country_event = {
 	id = TR_Turkey.4
 	title = TR_Turkey.4.t
 	desc = TR_Turkey.4.d
 	picture = GFX_report_event_tur_cakmak_general_staff
-
+	
 	is_triggered_only = yes
-        fire_only_once = yes
-        
+    fire_only_once = yes
 
-	option = {
+    option = { 
 		name = TR_Turkey.4.a
-        set_capital = {state = 49}
-        set_cosmetic_tag = TUR_republic
-        effect_tooltip = { retire_country_leader = yes }
-        promote_character = OTT_TBMM
-		end_puppet = JBS
-		end_puppet = HEJ
-        hidden_effect = {
-            1084 = { set_demilitarized_zone = yes }
-            799 = { set_demilitarized_zone = yes }
-            553 = { set_demilitarized_zone = yes }
-            680 = { set_demilitarized_zone = yes }
-            554 = { set_demilitarized_zone = yes }
-            454 = { set_demilitarized_zone = yes }
-            455 = { set_demilitarized_zone = yes }
-            291 = { set_demilitarized_zone = yes }
-            676 = { set_demilitarized_zone = yes }
-            350 = { set_demilitarized_zone = yes }
-            352 = { set_demilitarized_zone = yes }
-            800 = { set_demilitarized_zone = yes }
-            353 = { set_demilitarized_zone = yes }
-            354 = { set_demilitarized_zone = yes }
-            country_event = {
-				id = TR_Turkey.5
-				days = 7
-				
-			}
-            country_event = {
-				id = TR_Turkey.6
-				days = 9	
-			}
-            country_event = {
-				id = TR_Turkey.8
-				days = 10
-			}
-            country_event = {
-				id = TR_news.31
-				days = 2
-			}
+        ai_chance = {
+			base = 100
 		}
-    }
+		white_peace = PER
+        PER = { 
+            transfer_state = 419
+			transfer_state = 1078
+        }
+	}
+    option = { 
+		name = TR_Turkey.4.b
+        ai_chance = {
+			base = 0
+		}
+        add_political_power = -100
+		add_stability = -0.1
+	}
 
 }
-#アラブ人の離脱
+#大阪大暴落の影響がオスマン帝国に波及
 country_event = {
 	id = TR_Turkey.5
 	title = TR_Turkey.5.t
@@ -210,49 +182,22 @@ country_event = {
 	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
-        fire_only_once = yes
-        
+    fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = OTT_depression
+		}
+	}     
 
 	option = {
 		name = TR_Turkey.5.a
-        SYR = {
-			transfer_state = 799
-            transfer_state = 554
-			transfer_state = 553
-            transfer_state = 455
-            country_event = TR_Syria.1
-            }
-        IRQ = {
-			transfer_state = 291
-			transfer_state = 676
-			transfer_state = 680
-			transfer_state = 1084
-            }
-        ISR = {
-			transfer_state = 453
-			transfer_state = 454
-            country_event = TR_Syria.2
-        }
-        hidden_effect = {
-            country_event = {
-				id = TR_news.32
-				days = 2
-			}
-        799 = { set_demilitarized_zone = no }
-        553 = { set_demilitarized_zone = no }
-        680 = { set_demilitarized_zone = no }
-        1084 = { set_demilitarized_zone = no }
-        554 = { set_demilitarized_zone = no }
-        454 = { set_demilitarized_zone = no }
-        455 = { set_demilitarized_zone = no }
-        291 = { set_demilitarized_zone = no }
-        676 = { set_demilitarized_zone = no }
+		effect_tooltip = {
+			add_ideas = OTT_depression
 		}
-                
 	}
 
 }
-#クルド人蜂起
+#大宰相府襲撃事件
 country_event = {
 	id = TR_Turkey.6
 	title = TR_Turkey.6.t
@@ -260,24 +205,64 @@ country_event = {
 	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
-        fire_only_once = yes
+    fire_only_once = yes
         
-
-	option = {
+    option = { 
 		name = TR_Turkey.6.a
-        set_country_flag = OTT_KURDISTAN
-        KUR = {
-			transfer_state = 350
-            country_event = TR_Turkey.7
-        }
-        hidden_effect = {
-            350 = { set_demilitarized_zone = no }
-            352 = { set_demilitarized_zone = no }
-            353 = { set_demilitarized_zone = no }
+        ai_chance = {
+			base = 50
 		}
-                
+		797 = {
+			add_manpower = -234
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.1
+		}
+		add_stability = -0.1
+		add_war_support = 0.05
+		hidden_effect = {
+			country_event = {
+				id = TR_Turkey.7
+				days = 1
+			}
+			GRE= { 
+				country_event = {
+					id = TR_Greece.3
+					days = 10
+				}
+			}
+		}
+	}
+    option = { 
+		name = TR_Turkey.6.b
+        ai_chance = {
+			base = 50
+		}
+		797 = {
+			add_manpower = -498
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.1
+		}
+		add_stability = -0.05
+		add_war_support = -0.05
+		hidden_effect = {
+			country_event = {
+				id = TR_Turkey.8
+				days = 1
+			}
+			GRE= { 
+				country_event = {
+					id = TR_Greece.3
+					days = 10
+				}
+			}
+		}
 	}
 }
+#第二次青年トルコ革命
 country_event = {
 	id = TR_Turkey.7
 	title = TR_Turkey.7.t
@@ -285,41 +270,45 @@ country_event = {
 	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
-        fire_only_once = yes
-        
+    fire_only_once = yes     
 
 	option = {
 		name = TR_Turkey.7.a
-            declare_war_on = {
-			target = OTT
-			type = annex_everything
+		remove_ideas = OTT_sultanate_caliphate 
+		remove_ideas = OTT_Committee_of_Union_and_Progress
+		OTT_fevzi_cakmak = {
+			promote_character = {
+			    Ideology = national_coalition_subtype
 		    }
-            division_template = {
-				name = "Kurdistan Infantry"              
-				division_names_group = OTT_INF_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 350 }
-				create_unit = {
-					division = "division_template = \"Kurdistan Infantry\" start_experience_factor = 0.1"
-					owner = KUR
-					count = 5
-				}
-			}
-                
-                
+		}
+		add_ideas = OTT_Fevzi_Pasha
+		add_ideas = OTT_Kazim_Karabekir_FA
+		add_ideas = OTT_Mustafa_Kemal_MoI
+		add_ideas = OTT_Enver_Pasha_cos
+		add_ideas = OTT_Enver_Pasha_coa
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.05
+		}
+        add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.05
+		}
+		set_country_flag = OTT_Second_Young_Turk_Revolution
+		complete_national_focus = OTT_focus_1
+		load_focus_tree = ottoman_crisis_focus
 	}
 }
 
-#アルメニア人蜂起
+#新政府の発足
 country_event = {
 	id = TR_Turkey.8
 	title = TR_Turkey.8.t
@@ -332,20 +321,24 @@ country_event = {
 
 	option = {
 		name = TR_Turkey.8.a
-                set_country_flag = OTT_ARMENIA
-                ARM = {
-			transfer_state = 800
-                        country_event = TR_Turkey.9
-                      }
-                hidden_effect = {
-                          800 = { set_demilitarized_zone = no }
-                          354 = { set_demilitarized_zone = no }
+		remove_ideas = OTT_sultanate_caliphate 
+		remove_ideas = OTT_Committee_of_Union_and_Progress
+		add_ideas = OTT_Ali_Kemal
+		add_ideas = OTT_Ali_Kemal_MoI
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
 		}
-                
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.1
+		}
+		set_country_flag = OTT_Freedom_and_Accord_Party_win	
+        complete_national_focus = OTT_focus_1
+		load_focus_tree = ottoman_crisis_focus
 	}
-
 }
-
+#ギリシャが休戦協定を破棄
 country_event = {
 	id = TR_Turkey.9
 	title = TR_Turkey.9.t
@@ -353,136 +346,463 @@ country_event = {
 	picture = GFX_report_event_tur_cakmak_general_staff
 
 	is_triggered_only = yes
-        fire_only_once = yes
-        
+    fire_only_once = yes
 
 	option = {
 		name = TR_Turkey.9.a
-                declare_war_on = {
-			target = OTT
-			type = annex_everything
+		add_war_support = 0.1
+		if = {
+			limit = { has_country_flag = OTT_Second_Young_Turk_Revolution }
+			country_event = {
+				id = TR_Turkey.10
+				days = 3
+			}
 		}
-                division_template = {
-				name = "Armenia Infantry"
-                                
-				division_names_group = ARM_INF_01
-
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-				}
+		if = {
+			limit = { has_country_flag = OTT_Freedom_and_Accord_Party_win }
+			country_event = {
+				id = TR_Turkey.11
+				days = 3
 			}
-			random_owned_controlled_state = {
-				prioritize = { 800 }
-				create_unit = {
-					division = "division_template = \"Armenia Infantry\" start_experience_factor = 0.1"
-					owner = ARM
-					count = 5
-				}
-			}
-                
-                
+		}
+		complete_national_focus = OTT_crisis_focus_1
 	}
 }
-
+#ギョカルプの文、エンヴェルの言葉、ケマルの指揮
 country_event = {
 	id = TR_Turkey.10
 	title = TR_Turkey.10.t
 	desc = TR_Turkey.10.d
 	picture = GFX_report_event_portugal_navy_mutiny_prisoners
-
-
-        fire_only_once = yes
-        trigger = {
-                tag = OTT
-                has_country_flag = OTT_ARMENIA
-                has_country_flag = OTT_KURDISTAN
-		ARM = { exists = no }
-                KUR = { exists = no }
-		
-	}
-
 	
+	is_triggered_only = yes
+    fire_only_once = yes
 
-        option = { 
+    option = { 
 		name = TR_Turkey.10.a
-                add_stability = 0.1
-                set_country_flag = OTT_REVOLUTION
+        add_stability = 0.1
+        
 	}
 }
-
-country_event = {#決断
+#ギリシャとの停戦交渉
+country_event = {
 	id = TR_Turkey.11
 	title = TR_Turkey.11.t
 	desc = TR_Turkey.11.d
-	picture = GFX_report_event_tur_cakmak_general_staff
-
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
 	is_triggered_only = yes
     fire_only_once = yes
 
-	
-
-        option = { 
+    option = { 
 		name = TR_Turkey.11.a
-                ai_chance = {
-			base = 70
+		country_event = {
+			id = TR_Turkey.13
+			days = 7
 		}
-                add_stability = -0.03
-                set_country_flag = OTT_Nationalism
-	}
-        option = { 
-		name = TR_Turkey.11.b
-                ai_chance = {
-			base = 30
+		hidden_effect = {
+			country_event = {
+				id = TR_Turkey.12
+				days = 4
+			}
 		}
-                add_political_power = -50
-                set_country_flag = OTT_Ottoman_democlatic  
 	}
 }
-country_event = {#改革
+#アナトリア・ルメリア権利擁護委員会
+country_event = {
 	id = TR_Turkey.12
 	title = TR_Turkey.12.t
 	desc = TR_Turkey.12.d
-	picture = GFX_report_event_tur_cakmak_general_staff
-
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
 	is_triggered_only = yes
     fire_only_once = yes
 
-	
-
-        option = { 
+    option = { 
 		name = TR_Turkey.12.a
-        ai_chance = {
-			base = 75
-		}
-                add_ideas = OTT_AbdulmecidII
-		set_politics = {
-			ruling_party = market_liberal
-			elections_allowed = no
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.04
 		}
         add_popularity = {
-			ideology = market_liberal
-			popularity = 0.3
+			ideology = authoritarian_democrat
+			popularity = 0.08
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.04
 		}
 	}
-        option = { 
-		name = TR_Turkey.12.b
-                ai_chance = {
-			base = 25
+}
+#ギリシャが要求を提示
+country_event = {
+	id = TR_Turkey.13
+	title = TR_Turkey.13.t
+	desc = TR_Turkey.13.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.13.a
+        ai_chance = {
+			base = 50
 		}
-                add_ideas = OTT_AbdulmecidII
-		set_politics = {
-			ruling_party = social_conservative
-			elections_allowed = no
+		hidden_effect = {
+			country_event = {
+				id = TR_Turkey.14
+				days = 5
+			}
+		}
+	}
+	option = { 
+		name = TR_Turkey.13.b
+        ai_chance = {
+			base = 50
+		}
+        add_war_support = -0.1
+		white_peace = GRE
+		797 = { set_demilitarized_zone = yes }
+		1043 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+			GRE = { 
+				transfer_state = 339
+				}
+			country_event = {
+				id = TR_Turkey.15
+				days = 7
+			}
+		}
+	}
+}
+#二人のケマルが出会う時
+country_event = {
+	id = TR_Turkey.14
+	title = TR_Turkey.14.t
+	desc = TR_Turkey.14.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.14.a
+        add_popularity = {
+			ideology = market_liberal
+			popularity = 0.05
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.05
+		}
+		set_country_flag = OTT_Alliance_of_two_Kemal
+	}
+}
+#アンカラ大国民議会
+country_event = {
+	id = TR_Turkey.15
+	title = TR_Turkey.15.t
+	desc = TR_Turkey.15.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.15.a
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
 		}
         add_popularity = {
-			ideology = social_conservative
-			popularity = 0.3
+			ideology = authoritarian_democrat
+			popularity = 0.1
 		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.1
+		}
+		set_country_flag = OTT_Grand_National_Assembly_of_Turkey
+		hidden_effect = {
+			GRE = { 
+				transfer_state = 339
+				}
+			country_event = {
+				id = TR_Turkey.16
+				days = 7
+			}
+		}
+	}
+}
+#スミルナの戦い
+country_event = {
+	id = TR_Turkey.16
+	title = TR_Turkey.16.t
+	desc = TR_Turkey.16.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
 
+    option = { 
+		name = TR_Turkey.16.a
+		set_capital = {	state = 49	remember_old_capital = no }
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		add_ideas = OTT_Mustafa_Kemal_GL
+		add_ideas = OTT_Mustafa_Kemal_MoI
+		add_ideas = OTT_Mustafa_Kemal_cos
+		add_ideas = OTT_Fevzi_Pasha_coa
+
+		hidden_effect = {
+			GRE = { 
+				country_event = TR_Greece.5
+			}
+		}
+	}
+}
+#対ギリシャ勝利時終戦形式の判定
+country_event = {
+	id = TR_Turkey.171819
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		if = {
+			limit = { has_country_flag = OTT_Second_Young_Turk_Revolution }
+			country_event = TR_Turkey.17
+		}
+		if = {
+			limit = { has_country_flag = OTT_Alliance_of_two_Kemal }
+			country_event = TR_Turkey.18
+		}
+		if = {
+			limit = { has_country_flag = OTT_Grand_National_Assembly_of_Turkey }
+			country_event = TR_Turkey.19
+		}
+	}
+}
+#偉大なる勝利-統一の勝利
+country_event = {
+	id = TR_Turkey.17
+	title = TR_Turkey.17.t
+	desc = TR_Turkey.17.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.17.a
+		white_peace = GRE
+		BUL = { white_peace = GRE }
+		add_stability = 0.1
+		add_political_power = 100
+		hidden_effect = {
+			remove_ideas = OTT_Patriotic_War
+			remove_ideas = OTT_Patriotic_War_1
+			remove_ideas = OTT_Patriotic_War_2
+			country_event = {
+				id = TR_Turkey.23
+				days = 7
+			}
+		}
+	}
+}
+#偉大なる勝利-自由の勝利
+country_event = {
+	id = TR_Turkey.18
+	title = TR_Turkey.18.t
+	desc = TR_Turkey.18.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.18.a
+		white_peace = GRE
+		BUL = { white_peace = GRE }
+		remove_ideas = OTT_Patriotic_War
+		add_stability = 0.1
+		add_political_power = 100
+		hidden_effect = {
+			country_event = {
+				id = TR_Turkey.23
+				days = 7
+			}
+		}
+	}
+}
+#偉大なる勝利-祖国の勝利
+country_event = {
+	id = TR_Turkey.19
+	title = TR_Turkey.19.t
+	desc = TR_Turkey.19.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.19.a
+		white_peace = GRE
+        BUL = { white_peace = GRE }
+		remove_ideas = OTT_Patriotic_War
+		add_stability = 0.1
+		add_political_power = 100
+		hidden_effect = {
+			country_event = {
+				id = TR_Turkey.20
+				days = 14
+			}
+			country_event = {
+				id = TR_Turkey.23
+				days = 7
+			}
+
+		}
+	}
+}
+#オスマン帝国とアンカラ政府
+country_event = {
+	id = TR_Turkey.20
+	title = TR_Turkey.20.t
+	desc = TR_Turkey.20.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.20.a
+		ai_chance = {
+			base = 40
+		}
+		set_cosmetic_tag = TUR_republic
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.1
+		}
+		add_ideas = OTT_Mustafa_Kemal
+		add_ideas = OTT_Fevzi_Pasha
+	}
+	option = { 
+		name = TR_Turkey.20.b
+		ai_chance = {
+			base = 40
+		}
+		set_cosmetic_tag = TUR_republic
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+		add_ideas = OTT_Kazim_Karabekir
+	}
+	option = { 
+		name = TR_Turkey.21.b
+		ai_chance = {
+			base = 40
+		}
+		set_cosmetic_tag = TUR_state
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.1
+		}
+		add_ideas = OTT_Enver_Pasha
+	}
+}
+#ブルガリアがギリシャへの側面攻撃を提案
+country_event = {
+	id = TR_Turkey.21
+	title = TR_Turkey.21.t
+	desc = TR_Turkey.21.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.21.a
+		give_military_access = BUL
+        BUL= { 
+            country_event = {
+                id = TR_Bulgaria.6
+                days = 1
+            }
+        }
+	}
+}
+#アルメニア反乱
+country_event = {
+	id = TR_Turkey.22
+	title = TR_Turkey.22.t
+	desc = TR_Turkey.22.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.22.a
+		ARM = { 
+			transfer_state = 1079
+			transfer_state = 1080
+			transfer_state = 1082
+			transfer_state = 1083
+            }
+		hidden_effect = {
+			ARM = { 
+				country_event = TR_Armenia.1
+			}
+		}
+	}
+}
+#チャナッカレ条約
+country_event = {
+	id = TR_Turkey.23
+	title = TR_Turkey.23.t
+	desc = TR_Turkey.23.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Turkey.23.a
+		OTT = { 
+			transfer_state = 164
+			transfer_state = 187
+			transfer_state = 1086
+            }
+		BUL = { 
+			transfer_state = 184
+			transfer_state = 1085
+			diplomatic_relation = {
+				country = OTT
+				relation = military_access
+				active = no
+			}
+            }
+		hidden_effect = {
+			GRE = { 
+				country_event = TR_Greece.13
+			}
+		}
 	}
 }

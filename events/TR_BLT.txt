@@ -19,7 +19,9 @@ country_event = {
 	}
 	option = {
 		name =TR_Baltic.1.a
-		retire_character = BLT_Nikolai_Yudenich
+		BLT_Nikolai_Yudenich = {
+			set_nationality = EST
+		}
 		add_popularity = {
 			ideology = radical_socialist
 			popularity = 0.2
@@ -193,7 +195,9 @@ country_event = {
 		ai_chance = {
 			base = 40
 		}
-		recruit_character = EST_Nikolai_Yudenich
+		BLT_Nikolai_Yudenich = {
+			set_nationality = EST
+		}
 	}
 	option = {
 		name =TR_Baltic.5.b

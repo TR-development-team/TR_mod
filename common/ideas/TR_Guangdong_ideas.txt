@@ -11,7 +11,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 			        political_power_cost = 0.3
-                    consumer_goods_factor = 0.1
+                    consumer_goods_expected_value = 0.1
                     industrial_capacity_factory = -0.1
                     industrial_capacity_dockyard = -0.1
 			}
@@ -26,7 +26,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 			    stability_factor = -0.1
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
 			}
 		}
 		GND_Chinese_labor_system = {
@@ -38,7 +38,7 @@ ideas = {
 			
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = -0.05
+			    consumer_goods_expected_value = -0.05
 				stability_factor = -0.1
                 conscription_factor = -0.25
 				MONTHLY_POPULATION = -0.2

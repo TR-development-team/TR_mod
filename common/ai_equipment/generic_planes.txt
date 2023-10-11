@@ -3,7 +3,7 @@
 generic_fighter = {
 	category = air
 
-	blocked_for = {GER GBR USA}
+	blocked_for = {RAT GBR USA}
 
 	available_for = {}
 
@@ -152,7 +152,7 @@ generic_fighter = {
 generic_cas = {
 	category = air
 
-	blocked_for = {GER GBR USA}
+	blocked_for = {RAT GBR USA}
 
 	available_for = {}
 
@@ -238,7 +238,7 @@ generic_cas = {
 generic_naval_bomber = {
 	category = air
 
-	blocked_for = {GER GBR USA}
+	blocked_for = {RAT GBR USA}
 
 	available_for = {}
 
@@ -321,7 +321,8 @@ generic_naval_bomber = {
 generic_cv_fighter = {
 	category = air
 
-	#blocked_for = {  GBR USA FRA JAP }
+	#blocked_for = {  GBR USA FRA JAP } #Why
+	blocked_for = { GBR }
 
 	available_for = {}
 
@@ -470,6 +471,7 @@ generic_cv_cas = {
 	category = air
 
 	#blocked_for = { GBR USA FRA JAP }
+	blocked_for = { GBR }
 
 	available_for = {}
 
@@ -568,6 +570,7 @@ generic_cv_naval_bomber = {
 	category = air
 
 	#blocked_for = {  GBR USA FRA JAP }
+	blocked_for = { GBR }
 
 	available_for = {}
 
@@ -668,7 +671,7 @@ generic_cv_naval_bomber = {
 generic_tactical_bomber = {
 	category = air
 
-	blocked_for = {GER GBR USA}
+	blocked_for = {RAT GBR USA}
 
 	available_for = {}
 
@@ -828,7 +831,7 @@ generic_tactical_bomber = {
 generic_heavy_fighter = {
 	category = air
 
-	blocked_for = {GER GBR USA}
+	blocked_for = {RAT GBR USA}
 
 	available_for = {}
 
@@ -1029,7 +1032,7 @@ generic_scout_plane = {
 generic_strategic_bomber = {
 	category = air
 
-	blocked_for = {GER GBR USA}
+	blocked_for = {RAT GBR USA RUS SOV}
 
 	available_for = {}
 
@@ -1045,11 +1048,37 @@ generic_strategic_bomber = {
 		}
 	}
 
+	strat_bomber_0_default = {
+		priority = {
+			factor = 5
+		}
+
+		target_variant = {
+			match_value = 500
+			type = large_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				engine_type_slot = engine_1_4x
+				special_type_slot_1 = {
+					any_of = {
+						lmg_defense_turret
+						lmg_defense_turret_2x
+					}
+				}
+			}
+		}
+
+		allowed_modules = {
+			large_bomb_bay
+			engine_1_4x
+			lmg_defense_turret_2x
+			lmg_defense_turret
+		}
+	}
+
 	strat_bomber_1_default = {
 		priority = {
 			factor = 10
-		
-			
 		}
 
 		target_variant = {
@@ -1077,7 +1106,6 @@ generic_strategic_bomber = {
 	strat_bomber_2_default = {
 		priority = {
 			factor = 10
-			
 		}
 
 		target_variant = {
@@ -1119,7 +1147,6 @@ generic_strategic_bomber = {
 				special_type_slot_2 = hmg_defense_turret_2x
 				special_type_slot_3 = empty
 			}
-			
 		}
 
 		allowed_modules = {
@@ -1134,7 +1161,7 @@ generic_strategic_bomber = {
 generic_maritime_patrol = {
 	category = air
 
-	blocked_for = {GER GBR USA}
+	blocked_for = {RAT GBR USA}
 
 	available_for = {}
 

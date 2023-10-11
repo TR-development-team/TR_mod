@@ -114,3 +114,91 @@ GBR_royalist_decreased_effect = {
 		GBR_royalist_support = 1
 	}
 }
+GBR_economy_recovery = {
+	if = {
+		limit = {
+			has_idea = GBR_civil_war_economy_4
+		}
+		remove_ideas = GBR_civil_war_economy_4
+	}
+	if = {
+		limit = {
+			has_idea = GBR_civil_war_economy_3
+		}
+		swap_ideas = {
+			remove_idea = GBR_civil_war_economy_3
+			add_idea = GBR_civil_war_economy_4
+		}
+	}
+	if = {
+		limit = {
+			has_idea = GBR_civil_war_economy_2
+		}
+		swap_ideas = {
+			remove_idea = GBR_civil_war_economy_2
+			add_idea = GBR_civil_war_economy_3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = GBR_civil_war_economy_1
+		}
+		swap_ideas = {
+			remove_idea = GBR_civil_war_economy_1
+			add_idea = GBR_civil_war_economy_2
+		}
+	}
+	if = {
+		limit = {
+			has_idea = GBR_civil_war_economy
+		}
+		swap_ideas = {
+			remove_idea = GBR_civil_war_economy
+			add_idea = GBR_civil_war_economy_1
+		}
+	}
+}
+GBR_social_recovery = {
+	if = {
+		limit = {
+			has_idea = GBR_social_division_4
+		}
+		remove_ideas = GBR_social_division_4
+	}
+	if = {
+		limit = {
+			has_idea = GBR_social_division_3
+		}
+		swap_ideas = {
+			remove_idea = GBR_social_division_3
+			add_idea = GBR_social_division_4
+		}
+	}
+	if = {
+		limit = {
+			has_idea = GBR_social_division_2 
+		}
+		swap_ideas = {
+			remove_idea = GBR_social_division_2
+			add_idea = GBR_social_division_3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = GBR_social_division_1
+		}
+		swap_ideas = {
+			remove_idea = GBR_social_division_1
+			add_idea = GBR_social_division_2
+		}
+	}
+	if = {
+		limit = {
+			has_idea = GBR_social_division
+		}
+		swap_ideas = {
+			remove_idea = GBR_social_division
+			add_idea = GBR_social_division_1
+		}
+	}
+}

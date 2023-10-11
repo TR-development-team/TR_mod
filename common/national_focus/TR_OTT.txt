@@ -1,0 +1,30 @@
+focus_tree = {
+	id = ottoman_start_focus
+	continuous_focus_position = { x = 300 y = 600 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 50
+			tag = OTT
+		}
+	}
+    default = no
+	#無能な大宰相府
+	focus = {
+		id = OTT_focus_1
+		icon = GFX_focus_OTT_Incompetent_Sublime_Porte
+		x = 6
+		y = 0
+		cost = 100
+        available = {
+            }
+		cancelable = no
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		custom_effect_tooltip = OTT_focus_1_tooltip
+		}
+	}
+
+}

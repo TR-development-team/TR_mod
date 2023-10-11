@@ -10,7 +10,7 @@ state={
 		tungsten = 10 # was: 20
 	}
 	
-	state_category = city
+	state_category = eight
 
 	history={
 		owner = GRE
@@ -39,6 +39,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 3
 			dockyard = 1
+                        arms_factory = 2
 			air_base = 4
 			4109 = {
 				naval_base = 9

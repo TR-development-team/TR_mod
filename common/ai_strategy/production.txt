@@ -5,6 +5,7 @@ default_unit_production = {
 	enable = {
 		always = yes
 	}
+	abort = { always = no }
 	ai_strategy = {
 		type = role_ratio
 		id = armor
@@ -193,6 +194,7 @@ more_mountaineer_focused_nation = {
 			is_chinese_tag = yes
 		}
 	}
+	abort_when_not_enabled = yes
 	enable = {
 		has_tech = tech_mountaineers
 	}
@@ -272,6 +274,7 @@ halt_light_armor_production_in_transitioning = {
 			date > 1939.1.1
 		}
 	}
+	abort = { always = no }
 
 	ai_strategy = {
 		type = equipment_variant_production_factor
@@ -329,6 +332,7 @@ LATE_template_design = {
 	enable = {
 		date > 1940.1.1
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = template_prio
