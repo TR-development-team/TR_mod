@@ -20,7 +20,7 @@
 				extra_trade_to_target_factor = 0.4
 			}
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
                 stability_factor = -0.05
 				industrial_capacity_factory = 0.1
 				conscription_factor = -0.05
@@ -44,7 +44,7 @@
 				extra_trade_to_target_factor = 0.8
 			}
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
                 stability_factor = -0.05
 				industrial_capacity_factory = 0.1
 				conscription_factor = -0.05
@@ -84,7 +84,7 @@
 				stability_factor = -0.1
 				war_support_factor = -0.05
 				political_power_cost = 0.2
-			    consumer_goods_factor = -0.05
+			    consumer_goods_expected_value = -0.05
 				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = -0.1
 				MONTHLY_POPULATION = -0.1

@@ -15,7 +15,6 @@ is_democratic_government = {
 }
 is_fascism_government = {
 	OR = {
-		has_government = totalist
 		has_government = national_populist
 		has_government = Gnosticism
 	}

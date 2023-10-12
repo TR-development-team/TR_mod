@@ -276,6 +276,47 @@ is_Kazakhstan = {
 	}
 }
 
+is_Bengal = {
+	OR = {
+		state = 435
+		state = 430
+		state = 431
+		state = 432
+		state = 434
+		state = 1073
+		state = 1074
+	}
+}
+is_pakistan = {
+	OR = {
+		region = 190
+		region = 251
+	}
+}
+is_india = {
+	OR = {
+		is_Bengal = yes
+		region = 31
+		region = 153
+		region = 231
+		region = 253
+		region = 254
+		state = 320
+		state = 423
+		state = 1070
+	}
+}
+is_British_Raj = {
+	OR = {
+		is_india = yes
+		is_pakistan = yes
+		region = 189
+		state = 422
+		state = 733
+		state = 857
+	}
+}
+
 is_in_asia = {
 	capital_scope = { is_on_continent = asia }
 }

@@ -1,0 +1,381 @@
+add_namespace = TR_Greece
+
+#大阪大暴落の影響がギリシャに波及
+country_event = {
+	id = TR_Greece.1
+	title = TR_Greece.1.t
+	desc = TR_Greece.1.d
+	picture = GFX_report_event_gathering_protest
+	is_triggered_only = yes
+    fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = GRE_depression
+		}
+	}
+
+	option = {
+		name = TR_Greece.1.a
+		effect_tooltip = {
+			add_ideas = GRE_depression
+		}
+	}
+}
+#ウズンキョプリュ休戦協定
+country_event = {
+	id = TR_Greece.2
+	title = TR_Greece.2.t
+	desc = TR_Greece.2.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Greece.2.a
+		add_political_power = 25
+	}
+}
+#熱狂
+country_event = {
+	id = TR_Greece.3
+	title = TR_Greece.3.t
+	desc = TR_Greece.3.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Greece.3.a
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.05
+		}
+		add_war_support = 0.1
+		country_event = {
+			id = TR_Greece.4
+			days = 3
+		}
+	}
+	#option = {
+	#	name = TR_Greece.3.b
+	#	ai_chance = {
+	#		base = 0
+	#	}
+	#	add_popularity = {
+	#		ideology = market_liberal
+	#		popularity = -0.05
+	#	}
+	#	add_political_power = -100
+	#	add_war_support = -0.1
+	#}
+}
+
+#パリスの審判
+country_event = {
+	id = TR_Greece.4
+	title = TR_Greece.4.t
+	desc = TR_Greece.4.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Greece.4.a
+		swap_ideas = {
+			remove_idea = GRE_Megali_Idea_dream
+			add_idea = GRE_Megali_Idea_dream_1
+		}
+		declare_war_on = { target = OTT type = annex_everything	}
+		load_oob = "GRE_turkish_war"
+		GRE = { 
+			set_state_controller = 339
+            }
+		hidden_effect = {
+			OTT= { 
+				country_event = {
+					id = TR_Turkey.9
+					days = 1
+				}
+			}
+			BUL= { 
+				country_event = {
+					id = TR_Bulgaria.5
+					days = 60
+				}
+			}
+			country_event = {
+				id = TR_Greece.6
+				days = 35
+			}
+		}
+		set_country_flag = GRE_Greco_Turkish_War
+	}
+}
+#スミルナ占領
+country_event = {
+	id = TR_Greece.5
+	title = TR_Greece.5.t
+	desc = TR_Greece.5.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Greece.5.a
+		declare_war_on = { target = OTT type = annex_everything	}
+	}
+}
+#ダシュナク党への支援？
+country_event = {
+	id = TR_Greece.6
+	title = TR_Greece.6.t
+	desc = TR_Greece.6.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Greece.6.a
+		ai_chance = {
+			base = 100
+		}
+		add_manpower = -500
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -1000
+		}
+		hidden_effect = {
+			OTT= { 
+				country_event = {
+					id = TR_Turkey.22
+					days = 7
+				}
+			}
+		}
+	}
+	option = {
+		name = TR_Greece.6.b
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+#小アジアの破滅
+country_event = {
+	id = TR_Greece.7
+	title = TR_Greece.7.t
+	desc = TR_Greece.7.d
+	picture = GFX_report_event_tur_cakmak_general_staff
+
+	
+    fire_only_once = yes
+	trigger = {
+        tag = GRE
+		has_country_flag = GRE_Greco_Turkish_War
+		has_war_with = OTT
+		has_war_with = BUL
+		is_subject = no
+		OR = { 
+			surrender_progress > 0.15
+			OTT = { 
+				controls_state = 339
+				controls_state = 340
+				controls_state = 341
+				controls_state = 342
+				controls_state = 797
+				controls_state = 1043
+			}
+		}
+	}
+	immediate = {
+		remove_ideas = GRE_Megali_Idea_dream_1
+	}
+	option = {
+		name = TR_Greece.7.a
+		effect_tooltip = {
+			remove_ideas = GRE_Megali_Idea_dream_1
+		}
+		add_war_support = -0.3
+		hidden_effect = {
+			OTT= { 
+				country_event = {
+					id = TR_Turkey.171819
+					days = 1
+				}
+			}
+			OTT = { 
+				transfer_state = 341
+				transfer_state = 339
+				}
+		}
+	}
+}
+#王党派によるクーデター
+country_event = {
+	id = TR_Greece.8
+	title = TR_Greece.8.t
+	desc = TR_Greece.8.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Greece.8.a
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_Greece.10
+				days = 3
+			}
+		}
+	}
+	option = {
+		name = TR_Greece.8.b
+		ai_chance = {
+			base = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_Greece.9
+				days = 3
+			}
+		}
+	}
+}
+#プラスティラス将軍が秩序を回復
+country_event = {
+	id = TR_Greece.9
+	title = TR_Greece.9.t
+	desc = TR_Greece.9.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Greece.9.a
+		retire_character = GRE_ioannis_metaxas
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = -0.1
+		}
+	}
+}
+#メタクサスが新政府を樹立
+country_event = {
+	id = TR_Greece.10
+	title = TR_Greece.10.t
+	desc = TR_Greece.10.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Greece.10.a
+		retire_character = GRE_nikolaos_plastiras
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.1
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_Greece.11
+				days = 14
+			}
+		}
+	}
+}
+#王政復古の国民投票
+country_event = {
+	id = TR_Greece.11
+	title = TR_Greece.11.t
+	desc = TR_Greece.11.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Greece.11.a
+		hidden_effect = {
+			country_event = {
+				id = TR_Greece.12
+				days = 7
+			}
+		}
+	}
+}
+#国王の帰還
+country_event = {
+	id = TR_Greece.12
+	title = TR_Greece.12.t
+	desc = TR_Greece.12.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Greece.12.a
+        set_cosmetic_tag = GRE_kingdom
+	}
+}
+#チャナッカレ条約
+country_event = {
+	id = TR_Greece.13
+	title = TR_Greece.13.t
+	desc = TR_Greece.13.d
+	picture = GFX_report_event_portugal_navy_mutiny_prisoners
+	
+	is_triggered_only = yes
+    fire_only_once = yes
+
+    option = { 
+		name = TR_Greece.13.a
+		every_state = {
+			limit = {
+				is_owned_by = OTT
+				is_claimed_by = GRE
+			}
+			remove_claim_by = GRE
+		}	
+		hidden_effect = {
+			country_event = {
+				id = TR_Greece.8
+				days = 14
+			}
+		}
+	}
+}

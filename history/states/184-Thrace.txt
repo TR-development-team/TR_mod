@@ -2,12 +2,12 @@
 state={
 	id=184
 	name="STATE_184"
-	manpower = 382500
+	manpower = 232500
 
-	state_category = three
+	state_category = two
 
 	resources={
-		chromium=11.000
+		chromium=6
 	}
 
 	history={
@@ -17,7 +17,6 @@ state={
 		owner = OTT
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
 
 		}
 		add_core_of = GRE
@@ -26,6 +25,6 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		9791 9930 11774 11905 
+		11774 11905 
 	}
 }

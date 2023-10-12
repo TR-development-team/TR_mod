@@ -56,7 +56,7 @@ caspian_tags_dont_build_dockyards = {
 	enable = {
 		always = yes
 	}
-
+	abort = { always = no }
 	ai_strategy = {
 		type = dockyard_to_military_factory_ratio
 		value = -1000
@@ -67,7 +67,7 @@ dont_deploy_in_caspian = {
 	enable = {
 		always = yes
 	}
-
+	abort = { always = no }
 	ai_strategy = {
 		type = naval_avoid_region
 		id = 70 #Caspian Sea

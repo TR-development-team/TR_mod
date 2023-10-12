@@ -20,6 +20,7 @@ GER_integrate_policy = {
 				152 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				153 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				929 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				945 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				978 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
                 986 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
                 987 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -62,6 +63,7 @@ GER_integrate_policy = {
 			152 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			153 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			929 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			945 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
             978 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
             986 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
             987 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }

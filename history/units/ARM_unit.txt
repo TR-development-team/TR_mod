@@ -1,0 +1,85 @@
+﻿division_template = {
+	name = "Fedayi Infantry Divisions"
+	division_names_group = ARM_INF_01
+
+	regiments = {					
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+
+}
+division_template = {
+	name = "Fedayi Cavalry Divisions"
+	division_names_group = ARM_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+
+
+units = {
+	division = { #
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10472
+		division_template = "Fedayi Infantry Divisions"
+		start_experience_factor = 0.3
+	}
+	division = { #
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10403
+		division_template = "Fedayi Infantry Divisions"
+		start_experience_factor = 0.3
+	}
+	division = { #
+	    division_name = {
+		    is_name_ordered = yes
+		    name_order = 3
+	    }
+	    location = 7454
+	    division_template = "Fedayi Infantry Divisions"
+	    start_experience_factor = 0.3
+    }
+	division = { #
+	    division_name = {
+		    is_name_ordered = yes
+		    name_order = 1
+	    }
+	    location = 10472
+	    division_template = "Fedayi Cavalry Divisions"
+	    start_experience_factor = 0.3
+    }
+    division = { #
+	    division_name = {
+	    	is_name_ordered = yes
+	    	name_order = 2
+	    }
+	    location = 10403
+	    division_template = "Fedayi Cavalry Divisions"
+	    start_experience_factor = 0.3
+    }
+	division = { #
+	    division_name = {
+	    	is_name_ordered = yes
+	    	name_order = 3
+	    }
+	    location = 7454
+	    division_template = "Fedayi Cavalry Divisions"
+	    start_experience_factor = 0.3
+    }
+}

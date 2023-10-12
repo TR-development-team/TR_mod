@@ -13,13 +13,12 @@
 
 GBR_per_ardua_ad_astra_1 = {
 	allowed = {
-		OR = {
-			original_tag = GBR
-		}
+		original_tag = GBR
 	}
 	enable = {
 		date > 1937.1.1
 	}
+	abort_when_not_enabled = yes
 
 	ai_strategy = {
 		type = air_factory_balance
@@ -36,7 +35,7 @@ GBR_per_ardua_ad_astra_2 = {
 	enable = {
 		date > 1939.1.1
 	}
-
+	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = air_factory_balance
 		value = 140
@@ -108,9 +107,7 @@ ENR_protect_italy = {
 
 GBR_invade_ireland = {
 	allowed = {
-		OR = {
-			tag = GBR
-		}
+		original_tag = GBR
 	}
 	enable = {
 		has_war_with = IRE

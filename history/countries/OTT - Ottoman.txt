@@ -21,10 +21,11 @@ set_major = yes
 #OTT_fascism
 #OTT_neutrality
 
+country_event = { id = TR_Turkey.5 days = 7 }#恐慌波及
 
 set_research_slots = 3
 starting_train_buffer = 1
-set_convoys = 50
+set_convoys = 100
 set_stability = 0.5
 set_war_support = 0.5
 
@@ -41,9 +42,15 @@ add_ideas = {
 	OTT_Committee_of_Union_and_Progress
 	OTT_OPDA
     OTT_Baghdad_railway
-    OTT_depression
     OTT_Dead_man_of_Europe
+
     OTT_AbdulmecidII
+	OTT_Suleyman_Sefik_Pasha
+	OTT_Riza_Tevfik_Bey
+	OTT_Rumbeyoglu_Fahreddin_Bey
+	OTT_Anzavur_Ahmed_Pasha
+	OTT_Fevzi_Pasha_cos
+	OTT_Ahmed_Izzet_Pasha_coa
 }
 set_technology = {
 	infantry_weapons = 1
@@ -143,6 +150,10 @@ recruit_character = OTT_fevzi_cakmak
 recruit_character = OTT_ahmet_fevzi_pasha
 recruit_character = OTT_refet_pasha
 recruit_character = OTT_mehmet_esat_pasha
+
+OTT_kazim_karabekir = { set_character_flag = OTT_CUP_member }
+OTT_Mustafa_Kemal = { set_character_flag = OTT_CUP_member }
+OTT_Enver_Pasha = { set_character_flag = OTT_CUP_member }
  
 	create_operative_leader = {
 		name = "Ruzi Nazar"

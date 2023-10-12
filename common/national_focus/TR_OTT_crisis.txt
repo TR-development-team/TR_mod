@@ -1,0 +1,341 @@
+focus_tree = {
+	id = ottoman_crisis_focus
+	continuous_focus_position = { x = 150 y = 750 }
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = OTT
+		}
+	}
+    default = no
+	#国難
+	focus = {
+		id = OTT_crisis_focus_1
+		icon = GFX_focus_TUR_misak_i_milli
+		x = 4
+		y = 0
+		cost = 10
+        available = {
+            }
+		cancelable = no
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		custom_effect_tooltip = OTT_crisis_focus_1_tooltip
+		}
+	}
+	#緊急徴兵
+	focus = {
+		id = OTT_crisis_focus_2
+		icon = GFX_focus_generic_manpower
+		x = 2
+		y = 1
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_1 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_manpower = 100000
+		}
+	}
+	#産業動員
+	focus = {
+		id = OTT_crisis_focus_3
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 1
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_1 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		49 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		346 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+		}
+	}
+	#国民的闘争
+	focus = {
+		id = OTT_crisis_focus_4
+		icon = GFX_focus_TUR_pivot_to_the_past
+		x = 1
+		y = 2
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_2 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_ideas = OTT_Patriotic_War
+		}
+	}
+	#塹壕の構築
+	focus = {
+		id = OTT_crisis_focus_5
+		icon = GFX_goal_generic_construct_military
+		x = 3
+		y = 2
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_2 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		49 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3951
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 909
+						instant_build = yes
+					}
+			}
+		}	
+		343 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6877
+						instant_build = yes
+					}
+			}
+		}	
+		346 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11860
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 3788
+						instant_build = yes
+					}
+			}
+		}	
+		347 = {
+			if = {
+				limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 11811
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 1
+						province = 6871
+						instant_build = yes
+					}
+			}
+		}	
+		}
+	}
+	#ゲリラ部隊を組織
+	focus = {
+		id = OTT_crisis_focus_6
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 1
+		y = 3
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_4 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = OTT_Patriotic_War
+			add_idea = OTT_Patriotic_War_1
+		}
+		}
+	}
+	#ハミディイェを徴集
+	focus = {
+		id = OTT_crisis_focus_7
+		icon = GFX_focus_ITA_comandante_diavolo
+		x = 3
+		y = 3
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_5 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		division_template = {
+			name = "Hamidiye"
+			division_names_group =  OTT_CAV_01
+			regiments = {					
+				cavalry = { x = 0 y = 0 }
+				cavalry = { x = 0 y = 1 }
+				cavalry = { x = 0 y = 2 }
+				cavalry = { x = 0 y = 3 }
+				cavalry = { x = 1 y = 0 }
+				cavalry = { x = 1 y = 1 }
+				cavalry = { x = 1 y = 2 }
+				cavalry = { x = 1 y = 3 }
+			}
+		}
+		random_owned_controlled_state = {
+			prioritize = { 49 }
+			create_unit = {
+				division = "division_template = \"Hamidiye\" start_experience_factor = 0.2"
+				owner = OTT
+				count = 2
+			}
+		}
+		}
+	}
+	#小火器の調達
+	focus = {
+		id = OTT_crisis_focus_8
+		icon = GFX_focus_secret_rearmament
+		x = 5
+		y = 2
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_3 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_political_power = -50
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1000
+			producer = JAP
+		}
+		}
+	}
+	#ムスリム義勇軍
+	focus = {
+		id = OTT_crisis_focus_9
+		icon = GFX_focus_TUR_turanist_ambition
+		x = 7
+		y = 2
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_3 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_manpower = 10000
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = 500
+		}
+		}
+	}
+	#野戦砲の調達
+	focus = {
+		id = OTT_crisis_focus_10
+		icon = GFX_goal_generic_army_artillery2
+		x = 5
+		y = 3
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_8 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_political_power = -50
+		add_equipment_to_stockpile = {
+			type = artillery_equipment_1
+			amount = 150
+			producer = JAP
+		}
+		}
+	}
+	#海外からの顧問
+	focus = {
+		id = OTT_crisis_focus_11
+		icon = GFX_goal_generic_army_doctrines
+		x = 7
+		y = 3
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_9 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		}
+	}
+	#祖国戦争
+	focus = {
+		id = OTT_crisis_focus_12
+		icon = GFX_focus_OTT_Patriotic_War
+		x = 4
+		y = 4
+		cost = 2
+        available = {
+            }
+		prerequisite = { focus = OTT_crisis_focus_6 }
+		prerequisite = { focus = OTT_crisis_focus_7 }
+		prerequisite = { focus = OTT_crisis_focus_10 }
+		prerequisite = { focus = OTT_crisis_focus_11 }
+		ai_will_do = {
+			factor = 100
+		}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = OTT_Patriotic_War_1
+			add_idea = OTT_Patriotic_War_2
+		}
+		}
+	}
+}

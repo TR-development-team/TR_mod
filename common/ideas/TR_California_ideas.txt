@@ -13,7 +13,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.2
 				production_speed_buildings_factor = -0.5
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.25
+				consumer_goods_expected_value = 0.25
 				min_export = -0.25
 			}
 		}
@@ -27,7 +27,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.1
 				production_speed_buildings_factor = -0.25
 				industrial_capacity_factory = -0.1
-				consumer_goods_factor = 0.2
+				consumer_goods_expected_value = 0.2
 				min_export = -0.2
 			}
 		}
@@ -39,7 +39,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = -0.1
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 				min_export = -0.1
 			}
 		}
@@ -53,7 +53,7 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
 		CAL_black_thursday_austerity_1 = {
@@ -66,7 +66,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.2
 				production_speed_buildings_factor = -0.5
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 				min_export = -0.1
 			}
 		}
@@ -92,7 +92,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_buildings_factor = -0.05
 				industrial_capacity_factory = -0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		CAL_Economic_Boom = {
@@ -107,7 +107,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
         Second_Utah_War = {
@@ -142,7 +142,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
                                 political_power_cost = 0.1
                                 production_speed_buildings_factor = 0.2
 			}
@@ -159,7 +159,7 @@ ideas = {
 
 			modifier = {
 				political_power_cost = 0.03
-                consumer_goods_factor = -0.02
+                consumer_goods_expected_value = -0.02
 				MONTHLY_POPULATION = 0.1
 			}
 		}  
@@ -176,7 +176,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.05
 				conscription_factor = 0.03
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
 				MONTHLY_POPULATION = 0.1
 			}
 		}  
@@ -195,7 +195,7 @@ ideas = {
 				conscription_factor = 0.03
 				stability_factor =0.1
 				local_resources = 0.05
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
 				MONTHLY_POPULATION = 0.1
 			}
 		}  
@@ -214,7 +214,7 @@ ideas = {
 				conscription_factor = 0.06
 				stability_factor = 0.1
 				local_resources = 0.05
-                consumer_goods_factor = -0.1
+                consumer_goods_expected_value = -0.1
 				MONTHLY_POPULATION = 0.2
 			}
 		}  
@@ -233,7 +233,7 @@ ideas = {
 				conscription_factor = 0.1
 				stability_factor = 0.15
 				local_resources = 0.1
-                consumer_goods_factor = -0.1
+                consumer_goods_expected_value = -0.1
 				MONTHLY_POPULATION = 0.3
 			}
 		}  
@@ -254,7 +254,7 @@ ideas = {
 				stability_factor = 0.2
 				local_resources = 0.1
 				drift_defence_factor = 0.5
-                consumer_goods_factor = -0.1
+                consumer_goods_expected_value = -0.1
 				MONTHLY_POPULATION = 0.3
 			}
 		}  
@@ -275,7 +275,7 @@ ideas = {
 				stability_factor = 0.2
 				local_resources = 0.1
 				drift_defence_factor = 0.5
-                consumer_goods_factor = -0.1
+                consumer_goods_expected_value = -0.1
 				MONTHLY_POPULATION = 0.5
 			}
 		}  
@@ -408,7 +408,7 @@ ideas = {
 				stability_factor = 0.1
 				resistance_target = -0.2
 				research_speed_factor = -0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				industrial_capacity_factory = 0.1
 			}
 		}  

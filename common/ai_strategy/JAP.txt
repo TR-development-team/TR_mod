@@ -17,10 +17,10 @@ JAP_hate_usa = {
 		tag = JAP
 	}
 	enable = { 
-                is_in_faction_with = JAP
+        is_in_faction_with = JAP
 		USA  = {  has_government = national_populist }
 	}
-
+	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = contain
@@ -48,7 +48,7 @@ JAP_hate_china = {
 	enable = {
 		is_in_faction_with = JAP
 	}
-
+	abort_when_not_enabled = yes
 	
 	ai_strategy = {
 		type = contain
@@ -114,8 +114,8 @@ JAP_USA_VS_CALIFORNIA = {
 			tag = CAL
 			tag = JAP
 			tag = CAC
-                        tag = AST
-                        tag = SBR
+            tag = AST
+            tag = SBR
 		}
 	}
 	enable = {
@@ -140,62 +140,12 @@ JAP_USA_VS_CALIFORNIA = {
 	}
 }
 
-JAP_EAF_VS_KEN = {
-	allowed = {
-		NOT = {
-			tag = EAF
-		}
-	}
-	enable = {
-		is_in_faction_with = EAF
-		KEN = { 
-			exists = yes
-			has_capitulated = no
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "EAF"
-		value = 1000
-	}
-}
-
-JAP_NGA_VS_SKT = {
-	allowed = {
-		NOT = {
-			tag = NGA
-		}
-	}
-	enable = {
-		is_in_faction_with = NGA
-		SKT = { 
-			exists = yes
-			has_capitulated = no
-		}
-	}
-
-	abort_when_not_enabled = yes
-
-	ai_strategy = {
-		type = dont_defend_ally_borders
-		id = "NGA"
-		value = 1000
-	}
-}
-
-
 jap_building_boats_is_great = {
 	
 	enable = {
 		tag = JAP
 	}
-
-	abort = {
-
-	}
+	abort = { always = no }
 
 	ai_strategy = {
 		type = dockyard_to_military_factory_ratio
@@ -321,7 +271,8 @@ JAP_naval_role_ratios_historical_late = {
 		original_tag = JAP
 		num_of_naval_factories > 60
 	}
-
+	abort_when_not_enabled = yes
+	
 	ai_strategy = {
 		type = role_ratio
 		id = naval_capital_bb

@@ -244,7 +244,6 @@ technologies = {
 				factor = 2
 				date > "1937.1.1"
 			}
-
 		}
 		
 		categories = {
@@ -272,6 +271,7 @@ technologies = {
 				factor = 2
 				date > "1937.1.1"
 			}
+
 		}
 		
 		categories = {
@@ -308,7 +308,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				NOT = { tag = GER }
+				NOT = { tag = RAT }
 			}
 			
 			modifier = {
@@ -535,7 +535,7 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = GER
+				tag = RAT
 			}
 			
 			modifier = {
@@ -1123,14 +1123,18 @@ technologies = {
 			synth_resources
 			cat_synth_oil
 		}
+
+		on_research_complete = {
+
+		}
 		
 		ai_will_do = {
 			factor = 5
 			modifier = {
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = ITA
-					tag = JAP
+					tag = FRA
 				}
 				has_war = yes
 				factor = 5
@@ -1182,7 +1186,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = ITA
 					tag = JAP
 				}
@@ -1237,9 +1241,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = ITA
-					tag = JAP
+					tag = FRA
 				}
 				has_war = yes
 				factor = 25
@@ -1257,7 +1261,7 @@ technologies = {
 				oil > 30
 			}	
 			modifier = {
-				original_tag = GER			
+				original_tag = RAT			
 				has_war = yes
 				factor = 3
 			}		
@@ -1297,9 +1301,9 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = ITA
-					tag = JAP
+					tag = FRA
 				}
 				has_war = yes
 				factor = 25
@@ -1400,7 +1404,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = ITA
 				}
 				has_war = yes
@@ -1460,7 +1464,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = ITA
 				}
 				has_war = yes
@@ -1520,7 +1524,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GER
+					tag = RAT
 					tag = ITA
 				}
 				has_war = yes

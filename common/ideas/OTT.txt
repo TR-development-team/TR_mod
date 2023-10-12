@@ -28,7 +28,7 @@
 			}
 			modifier = {
                 stability_factor = -0.05
-                consumer_goods_factor = 0.1
+                consumer_goods_expected_value = 0.1
                 political_power_cost = 0.15
 			}
 		}
@@ -42,14 +42,14 @@
 			modifier = {
                 stability_factor = -0.05
                 political_power_cost = 0.05
-				consumer_goods_factor = -0.03
+				consumer_goods_expected_value = -0.03
                 industrial_capacity_factory = 0.05
 			}
 		}
         OTT_Free_trade = {
             picture = can_wartime_prices_and_trade_board
 			modifier = {
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
                 production_speed_buildings_factor = 0.1
                 production_factory_max_efficiency_factor = 0.1
 		        production_factory_efficiency_gain_factor = 0.1
@@ -74,14 +74,14 @@
 			}
 			modifier = {
                 stability_factor = -0.05
-                consumer_goods_factor = 0.15
+                consumer_goods_expected_value = 0.15
                 political_power_cost = 0.15
 			}
 		}
         OTT_OPDA_2 = {
 			picture = tur_balkan_central_bank_wealthy_greece
 			modifier = {
-                consumer_goods_factor = 0.3
+                consumer_goods_expected_value = 0.3
 			}
 		}
         OTT_depression = {
@@ -90,7 +90,7 @@
                 stability_factor = -0.2
 				production_speed_buildings_factor = -0.5
 				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.10
+				consumer_goods_expected_value = 0.10
 			}
 		}
         OTT_depression_1 = {      
@@ -99,17 +99,44 @@
                 stability_factor = -0.15
 	            production_speed_buildings_factor = -0.3
 		        industrial_capacity_factory = -0.1
-			    consumer_goods_factor = 0.10
+			    consumer_goods_expected_value = 0.10
 			}
 		}
 		OTT_Dead_man_of_Europe = {
 			picture = chi_war_of_resistance3
 			modifier = {
-                political_power_cost = 0.2
                 stability_factor = -0.2
                 research_speed_factor = -0.15
-                army_attack_factor = -0.2
-			    army_defence_factor = -0.2
+                army_attack_factor = -0.4
+			    army_defence_factor = -0.4
+			}
+		}
+		OTT_Patriotic_War = {
+			picture = generic_war_preparation
+			modifier = {
+				defensive_war_stability_factor = 0.3
+				war_support_factor = 0.1
+			}
+		}
+		OTT_Patriotic_War_1 = {
+			name = OTT_Patriotic_War
+			picture = generic_war_preparation
+			modifier = {
+				army_core_defence_factor = 0.2
+				defensive_war_stability_factor = 0.3
+				war_support_factor = 0.1
+				no_supply_grace = 48
+			}
+		}
+		OTT_Patriotic_War_2 = {
+			name = OTT_Patriotic_War
+			picture = generic_war_preparation
+			modifier = {
+				army_core_defence_factor = 0.2
+				defensive_war_stability_factor = 0.3
+				war_support_factor = 0.1
+				no_supply_grace = 48
+				conscription = 0.02
 			}
 		}
         OTT_Tanzimat1 = {
@@ -162,7 +189,7 @@
         OTT_Federation = {
 			picture = generic_democratic_drift_bonus
 			modifier = {
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
                 stability_factor = 0.1
                 non_core_manpower = 0.02
                 resistance_target = -0.1
@@ -172,7 +199,7 @@
         OTT_Federation1 = {
 			picture = generic_democratic_drift_bonus
 			modifier = {
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
                 stability_factor = 0.1
                 non_core_manpower = 0.02
                 resistance_target = -0.2
@@ -240,7 +267,7 @@
                 political_power_cost = -0.10
                 stability_factor = 0.2
                 research_speed_factor = 0.05
-                roduction_speed_buildings_factor = 0.1
+                production_speed_buildings_factor = 0.1
 			}
 		}
         OTT_Enver1 = {
@@ -316,7 +343,7 @@
 			removal_cost = -1
 			modifier = {
                 political_power_factor = -0.25
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
 				war_support_factor = -0.3
 			}
 		}
@@ -329,7 +356,7 @@
 			removal_cost = -1
 			modifier = {
                 political_power_factor = -0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 			}
 		}
         OTT_Rebirth = {
@@ -374,7 +401,51 @@
 		}
     #minister
     Head_of_State = {	
-        OTT_AbdulmecidII = {
+		OTT_Kazim_Karabekir = {
+			picture = OTT_Kazim_Karabekir
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = {
+				Head_of_State
+                social_liberal
+				TR_benevolent_gentleman
+			}
+		}
+        OTT_Mustafa_Kemal = {
+			picture = OTT_Mustafa_Kemal
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = {
+				Head_of_State
+                authoritarian_democrat
+				TR_Ataturk
+			}
+		}
+		OTT_AbdulmecidII = {
 			picture = OTT_Abdulmecid_II
 			allowed = {
 				original_tag = OTT
@@ -393,8 +464,428 @@
 			traits = {
 				Head_of_State
                 paternal_autocrat
-				TR_autocratic_charmer
+				TR_Caliph
+			}
+		}
+		OTT_Enver_Pasha = {
+			picture = OTT_Enver_Pasha
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			
+			traits = {
+				Head_of_State
+                national_populist
+				TR_stern_imperialist
 			}
 		}
     }
+	Government_leaders = { 
+		OTT_Kazim_Karabekir_GL = {
+			name = OTT_Kazim_Karabekir
+			picture = OTT_Kazim_Karabekir
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				social_liberal
+				TR_flamboyant_tough_guy
+			}
+		}
+		OTT_Ali_Kemal = {
+			name = OTT_Ali_Kemal
+			picture = OTT_Ali_Kemal
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				market_liberal
+				Defender_of_freedom
+			}
+		}
+		OTT_Mustafa_Kemal_GL = {
+			name = OTT_Mustafa_Kemal
+			picture = OTT_Mustafa_Kemal
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				authoritarian_democrat
+				TR_hero_of_the_war
+			}
+		}
+		OTT_Fevzi_Pasha = {
+			picture = OTT_Fevzi_Pasha
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				authoritarian_democrat
+				TR_old_general
+			}
+		}
+		OTT_Suleyman_Sefik_Pasha = {
+			picture = OTT_Suleyman_Sefik_Pasha
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				paternal_autocrat
+				TR_political_protege
+			}
+		}
+		OTT_Enver_Pasha_GL = {
+			name = OTT_Enver_Pasha
+			picture = OTT_Enver_Pasha
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				national_populist
+				TR_Grey_Wolves
+			}
+		}
+	}
+	Minister_of_Foreign_Affairs = { 
+		OTT_Kazim_Karabekir_FA = {
+			name = OTT_Kazim_Karabekir
+			picture = OTT_Kazim_Karabekir
+			
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Minister_of_Foreign_Affairs
+				social_liberal
+				TR_general_staffer
+			}
+		}
+		OTT_Riza_Tevfik_Bey = {
+			picture = OTT_Riza_Tevfik_Bey
+			
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Minister_of_Foreign_Affairs
+				market_liberal
+				TR_apologetic_clerk
+			}
+		}
+	}
+	Minister_of_Economy = { 
+		OTT_Rumbeyoglu_Fahreddin_Bey = {
+			picture = OTT_Rumbeyoglu_Fahreddin_Bey
+			
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Minister_of_Economy
+				paternal_autocrat
+				TR_resource_industrialist
+			}
+		}
+	}
+	Minister_of_Interior = { 
+		OTT_Ali_Kemal_MoI = {
+			name = OTT_Ali_Kemal
+			picture = OTT_Ali_Kemal
+			
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Minister_of_Interior
+				market_liberal
+				TR_compassionate_gentleman
+			}
+		}
+		OTT_Mustafa_Kemal_MoI = {
+			name = OTT_Mustafa_Kemal
+			picture = OTT_Mustafa_Kemal
+			
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Minister_of_Interior
+				authoritarian_democrat
+				TR_crime_fighter
+			}
+		}
+		OTT_Anzavur_Ahmed_Pasha = {
+			name = OTT_Anzavur_Ahmed_Pasha
+			picture = OTT_Anzavur_Ahmed_Pasha
+			
+			allowed = {
+				original_tag = OTT
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Minister_of_Interior
+				paternal_autocrat
+				TR_crooked_kleptocrat
+			}
+		}
+	}
+	chief_of_staff = { 
+		OTT_Ahmed_Izzet_Pasha_cos = {
+			name = OTT_Ahmed_Izzet_Pasha
+			picture = OTT_Ahmed_Izzet_Pasha
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+		OTT_Enver_Pasha_cos = {
+			name = OTT_Enver_Pasha
+			picture = OTT_Enver_Pasha
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+		OTT_Fevzi_Pasha_cos = {
+			name = OTT_Fevzi_Pasha
+			picture = OTT_Fevzi_Pasha
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+		OTT_Kazim_Karabekir_cos = {
+			name = OTT_Kazim_Karabekir
+			picture = OTT_Kazim_Karabekir
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_staff
+				cos_school_of_manoeuvre
+			}
+		}
+		OTT_Mustafa_Kemal_cos = {
+			name = OTT_Mustafa_Kemal
+			picture = OTT_Mustafa_Kemal
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_staff
+				cos_school_of_defence
+			}
+		}
+	}
+	chief_of_army = { 
+		OTT_Ahmed_Izzet_Pasha_coa = {
+			name = OTT_Ahmed_Izzet_Pasha
+			picture = OTT_Ahmed_Izzet_Pasha
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+		}
+		OTT_Enver_Pasha_coa = {
+			name = OTT_Enver_Pasha
+			picture = OTT_Enver_Pasha
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+		}
+		OTT_Fevzi_Pasha_coa = {
+			name = OTT_Fevzi_Pasha
+			picture = OTT_Fevzi_Pasha
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_army
+				carm_guns_and_butter_doctrine
+			}
+		}
+		OTT_Kazim_Karabekir_coa = {
+			name = OTT_Kazim_Karabekir
+			picture = OTT_Kazim_Karabekir
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+		OTT_Mustafa_Kemal_coa = {
+			name = OTT_Mustafa_Kemal
+			picture = OTT_Mustafa_Kemal
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = OTT
+						}
+			traits = { 
+				chief_of_army
+				carm_elastic_defence_doctrine
+			}
+		}
+	}
 }

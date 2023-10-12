@@ -1,0 +1,30 @@
+
+state= {
+	id=1043
+	name="STATE_1043"
+	manpower = 152039
+	resources={
+
+	}
+	
+	state_category = three_town
+
+	history= {
+		owner = OTT
+		add_core_of = OTT
+		add_claim_by = GRE
+		victory_points = {
+			849 1
+		}
+		buildings = {
+			infrastructure = 2
+			849 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+		}
+
+
+	}
+	provinces= { 849 3879 6895 }
+}

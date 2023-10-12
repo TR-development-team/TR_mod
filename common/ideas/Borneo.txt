@@ -9,7 +9,7 @@
 			picture = generic_democratic_drift_bonus
 			allowed = { always = no }
 			modifier = {
-                                consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
                                 political_power_cost = 0.1
 				MONTHLY_POPULATION = 0.5
                                 production_speed_buildings_factor = 0.1

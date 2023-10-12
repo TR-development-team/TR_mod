@@ -1,6 +1,12 @@
 ﻿capital = 48
 oob = "BUL_1936"
 
+set_research_slots = 3
+starting_train_buffer = 1
+set_convoys = 50
+set_stability = 0.5
+set_war_support = 0.5
+
 set_cosmetic_tag = BUL_principality
 
 set_politics = {
@@ -46,6 +52,8 @@ if = {
 	declare_war_on = { target = OTT type = annex_everything	}
 }
 
+country_event = { id = TR_Bulgaria.7 days = 7 }#恐慌波及
+
 create_faction = Balkan_League
 add_to_faction = BUL
 add_to_faction = ROM
@@ -61,20 +69,25 @@ add_ideas = {
 	low_pensions
 	limited_conscription
 	partial_economic_mobilisation
+
+	BUL_Awakening_of_the_Bulgarians
+	BUL_Respected_King
+	BUL_Dictatorship_of_the_Tsar
+	BUL_Golden_Age_of_the_Economy
+
 	BUL_BorisIII_HS
 	BUL_Filov
 	BUL_Kyoseivanov
 	BUL_Dobri_Bozhilov
 	BUL_Nikola_Nedev
 }
-add_timed_idea = {	idea = BUL_Independent	days = 100	}
 
-set_convoys = 5 
-starting_train_buffer = 1
+
 set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1

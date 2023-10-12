@@ -35,6 +35,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -106,6 +107,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -155,6 +157,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -225,6 +228,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -293,6 +297,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -335,6 +340,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -400,6 +406,7 @@ technologies = {
 
 		categories = {
 			artillery
+			mio_cat_all_artillery_equipment
 		}
 
 		ai_will_do = {
@@ -433,13 +440,13 @@ technologies = {
 
 		artillery_brigade = {
 			mountain = {
-				movement = 0.15 #If you change this - Change the custom tooltip too: IND_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
+				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
 			}
 		}
 
 		anti_tank_brigade = {
 			mountain = {
-				movement = 0.15 #If you change this - Change the custom tooltip too: IND_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
+				movement = 0.15 #If you change this - Change the custom tooltip too: RAJ_revive_the_screw_guns_effect ROM_modern_at_guns_tech_tt
 			}
 		}
 	}
@@ -477,12 +484,13 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = RUS
+				tag = SOV
 			}
 		}
 
 		categories = {
 			rocketry
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -520,12 +528,13 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = RUS
+				tag = SOV
 			}
 		}
 
 		categories = {
 			rocketry
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -563,12 +572,13 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = RUS
+				tag = SOV
 			}
 		}
 
 		categories = {
 			rocketry
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -597,12 +607,13 @@ technologies = {
 
 			modifier = {
 				factor = 2
-				tag = RUS
+				tag = SOV
 			}
 		}
 
 		categories = {
 			rocketry
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -644,15 +655,7 @@ technologies = {
 			modifier = {
 				factor = 0.5
 
-				OR = {
-					tag = WHN
-					tag = RJN
-					tag = QIG
-					tag = SIK
-					tag = GXC
-					tag = ZHI
-					tag = CNK
-				}
+				is_chinese_tag = yes
 			}
 			modifier = {
 				factor = 2
@@ -673,6 +676,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -724,6 +728,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -766,7 +771,7 @@ technologies = {
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = GBR
+					has_war_with = ENG
 				}
 				factor = 5
 			}
@@ -775,6 +780,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -821,7 +827,7 @@ technologies = {
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = GBR
+					has_war_with = ENG
 				}
 				factor = 5
 			}
@@ -830,6 +836,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -872,7 +879,7 @@ technologies = {
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = GBR
+					has_war_with = ENG
 				}
 				factor = 5
 			}
@@ -881,6 +888,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -919,7 +927,7 @@ technologies = {
 				OR = {
 					has_war_with = JAP
 					has_war_with = USA
-					has_war_with = GBR
+					has_war_with = ENG
 				}
 				factor = 5
 			}
@@ -928,6 +936,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_air
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -962,20 +971,20 @@ technologies = {
 				factor = 0.2
 
 				OR = {
-					tag = WHN
-					tag = RJN
-					tag = QIG
+					tag = CHI
+					tag = PRC
+					tag = XSM
 					tag = SIK
 					tag = GXC
-					tag = ZHI
-					tag = CNK
+					tag = SHX
+					tag = YUN
 				}
 			}
 			modifier = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = RUS
+						has_War_with = SOV
 						has_war_with = USA
 					}
 				}
@@ -1011,6 +1020,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1084,7 +1094,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = RUS
+						has_War_with = SOV
 						has_war_with = USA
 					}
 				}
@@ -1104,6 +1114,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1146,7 +1157,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = RUS
+						has_War_with = SOV
 						has_war_with = USA
 					}
 				}
@@ -1181,6 +1192,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1246,7 +1258,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = RUS
+						has_War_with = SOV
 						has_war_with = USA
 					}
 				}
@@ -1277,6 +1289,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1343,6 +1356,7 @@ technologies = {
 				not = {
 					OR = {
 						has_War_with = RUS
+						has_War_with = SOV
 						has_war_with = USA
 					}
 				}
@@ -1368,6 +1382,7 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			mio_cat_all_artillery_equipment
 		}
 	}
 
@@ -1401,7 +1416,7 @@ technologies = {
 				tag = JAP
 				not = {
 					OR = {
-						has_War_with = RUS
+						has_War_with = SOV
 						has_war_with = USA
 					}
 				}
@@ -1432,6 +1447,56 @@ technologies = {
 		categories = {
 			artillery
 			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+	}
+
+	SWE_bofors_antitank_gun = {
+
+		research_cost = 1
+
+		# only from focus!!! Bofors anti tank gun ##### 
+		allow = {
+			always = no
+		}
+
+		anti_tank = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		light_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		medium_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		heavy_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		super_heavy_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+		modern_tank_destroyer_brigade = {
+			hard_attack = 0.1
+			ap_attack = 0.1
+		}
+
+		categories = {
+			cat_anti_tank
+			artillery
+			mio_cat_all_artillery_equipment
 		}
 	}
 

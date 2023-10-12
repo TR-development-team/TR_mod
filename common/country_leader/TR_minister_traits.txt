@@ -109,7 +109,7 @@ leader_traits = {
 		#ニコライ2世
 		random = no
 		stability_factor = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 		political_power_cost = 0.2
 		war_stability_factor = -0.1
 	}
@@ -118,13 +118,13 @@ leader_traits = {
 		random = no
 		stability_factor = 0.1
 		research_speed_factor = 0.03
-		consumer_goods_factor = 0.05
+		consumer_goods_expected_value = 0.05
 	}
 	Savinkov_traits = {
 		#サヴィンコフ
 		random = no
 		war_stability_factor = 0.1
-		consumer_goods_factor = 0.05
+		consumer_goods_expected_value = 0.05
 		army_morale_factor = 0.1
 		attrition = -0.1
 	}
@@ -163,6 +163,22 @@ leader_traits = {
 		justify_war_goal_time = -0.1
 		trade_opinion_factor = -0.1
 	}
+	TR_Caliph = {
+		#アブデュルメジト2世
+		random = no
+		political_power_gain = 0.1
+		war_stability_factor = 0.05
+		drift_defence_factor = 0.1
+		resistance_growth = -0.1
+	}
+	TR_Ataturk = {
+		#ケマル
+		random = no
+		political_power_gain = 0.1
+		stability_factor = 0.1
+		drift_defence_factor = 0.5
+		forced_surrender_limit = 0.2
+	}
 	#共通
 	TR_powerhungry_demagogue = {
 		#権力に餓えた扇動家
@@ -184,7 +200,7 @@ leader_traits = {
 	TR_stern_imperialist = {
 		#厳格な帝国主義者
 		random = no
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 		training_time_army_factor = -0.1
 		stability_factor = -0.05
 	}
@@ -200,7 +216,7 @@ leader_traits = {
 	TR_autocratic_charmer = {
 		#ワンマン政治家
 		random = no
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 		stability_factor = 0.05
 		industrial_capacity_factory = -0.1
 		industrial_capacity_dockyard = -0.1
@@ -218,7 +234,7 @@ leader_traits = {
 	TR_benevolent_gentleman = {
 		#高潔な紳士
 		random = no
-		consumer_goods_factor = -0.03
+		consumer_goods_expected_value = -0.03
 		stability_factor = 0.05
 		opinion_gain_monthly_factor = 0.1
 		send_volunteers_tension = 0.2
@@ -240,7 +256,7 @@ leader_traits = {
 		#不屈の改革者
 		random = no
 		political_power_gain = -0.2
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 		send_volunteers_tension = -0.25
 		generate_wargoal_tension = -0.1
 	}
@@ -255,14 +271,14 @@ leader_traits = {
 	TR_popular_figurehead = {
 		#形のみの指導者
 		random = no
-		consumer_goods_factor = 0.05
+		consumer_goods_expected_value = 0.05
 		stability_factor = 0.15
 	}
 	TR_Local_tyrant2 = {
 		#地方の暴君
 		random = no
 		political_power_gain = -0.25
-		consumer_goods_factor = 0.05
+		consumer_goods_expected_value = 0.05
 		MONTHLY_POPULATION = -0.05
 		industrial_capacity_factory = 0.05
 		industrial_capacity_dockyard = 0.05
@@ -287,7 +303,7 @@ leader_traits = {
 		political_power_gain = 0.1
 		production_factory_efficiency_gain_factor = 0.05
 		industrial_capacity_factory = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 		ai_will_do = {
 			factor = 1
 		}
@@ -296,7 +312,7 @@ leader_traits = {
 		#久原房之介
 		random = no
 		political_power_factor = -0.05
-		consumer_goods_factor = -0.02
+		consumer_goods_expected_value = -0.02
 		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.1
 		production_speed_industrial_complex_factor = 0.1
@@ -305,7 +321,7 @@ leader_traits = {
 	Nagata_traits = {
 		#永田鉄山
 		random = no
-		consumer_goods_factor = 0.02
+		consumer_goods_expected_value = 0.02
 		army_org_Factor = 0.1
 		experience_gain_army = 0.07
 	}
@@ -320,7 +336,7 @@ leader_traits = {
 		#北一輝
 		random = no
 		stability_factor = -0.1
-		consumer_goods_factor = 0.1
+		consumer_goods_expected_value = 0.1
 		conscription_factor = 0.1
 		production_speed_buildings_factor = 0.1
 		industrial_capacity_factory = 0.1
@@ -403,7 +419,7 @@ leader_traits = {
 		stability_factor = -0.1
 		conscription_factor = -0.1
 		supply_consumption_factor = -0.1
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 	}
 	TR_kazembek_trait = {
 		#カゼムベク
@@ -415,7 +431,7 @@ leader_traits = {
 	TR_bogdanov_trait = {
 		#ボグダーノフ
 		random = no
-		consumer_goods_factor = 0.05
+		consumer_goods_expected_value = 0.05
 		production_speed_buildings_factor = 0.1
 		production_factory_efficiency_gain_factor = 0.1
 	}
@@ -478,6 +494,22 @@ leader_traits = {
 		war_stability_factor = 0.1
 		war_support_factor = 0.05
 	}
+	TR_Grey_Wolves = {
+		#エンヴェル
+		random = no
+		war_stability_factor = 0.1
+		war_support_factor = 0.1
+		surrender_limit = 0.1
+		justify_war_goal_time = -0.1
+		trade_opinion_factor = -0.1
+	}
+	TR_hero_of_the_war = {
+		#ケマル
+		random = no
+		war_stability_factor = 0.1
+		army_org_Factor = 0.1
+		army_core_defence_factor = 0.1
+	}
 	#共通
 	TR_ambitious_union_boss = {
 		random = no
@@ -493,7 +525,7 @@ leader_traits = {
 	TR_naive_optimist = {
 		random = no
 		political_power_gain = 0.02
-		consumer_goods_factor = -0.03
+		consumer_goods_expected_value = -0.03
 	}
 	TR_flamboyant_tough_guy = {
 		random = no
@@ -502,7 +534,7 @@ leader_traits = {
 		political_power_gain = -0.08
 	}
 	TR_happy_amateur = {
-		consumer_goods_factor = 0.02
+		consumer_goods_expected_value = 0.02
 		political_power_gain = 0.1
 		random = no
 	}
@@ -561,7 +593,7 @@ leader_traits = {
 		random = no
 	}
 	TR_corporate_suit = {
-		consumer_goods_factor = -0.02
+		consumer_goods_expected_value = -0.02
 		political_power_gain = -0.15
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_arms_factory_factor = 0.05
@@ -629,20 +661,20 @@ leader_traits = {
 		#カール・マリア・ヴィリグート
 		non_core_manpower = 0.02
 		stability_factor = -0.1
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 		random = no
 	}
 	TR_Orgone = {
 		#ヴィルヘルム・ライヒ
 		stability_factor = -0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 		MONTHLY_POPULATION = 0.1
 		random = no
 	}
 	TR_oesterreichische_schule = {	#オーストリア学派
 		production_factory_max_efficiency_factor = 0.06
 		local_resources_factor = -0.02
-		consumer_goods_factor = -0.03
+		consumer_goods_expected_value = -0.03
 		political_power_gain = -0.04
 		random = no
 	}
@@ -708,7 +740,7 @@ leader_traits = {
 		random = no
 	}
 	TR_reformer = {	#改革者
-		consumer_goods_factor = -0.05
+		consumer_goods_expected_value = -0.05
 		stability_factor = -0.05
 		random = no
 	}
@@ -721,7 +753,7 @@ leader_traits = {
 	TR_keynesian_economy = {	#ケインズ経済学の提唱者
 		production_factory_max_efficiency_factor = -0.03
 		local_resources_factor = -0.02
-		consumer_goods_factor = -0.03
+		consumer_goods_expected_value = -0.03
 		political_power_gain = 0.08
 		random = no
 	}
@@ -774,7 +806,7 @@ leader_traits = {
 		random = no
 		trade_opinion_factor = 0.33
 		trade_laws_cost_factor = -0.33
-		consumer_goods_factor = -0.01
+		consumer_goods_expected_value = -0.01
 		production_lack_of_resource_penalty_factor = -0.2
 		production_factory_start_efficiency_factor = 0.1
 		industrial_capacity_factory = -0.03
@@ -807,13 +839,13 @@ leader_traits = {
 	}
 	TR_crime_fighter = {	#犯罪取締人
 		political_power_gain = 0.05
-		consumer_goods_factor = -0.03
+		consumer_goods_expected_value = -0.03
 		conscription_factor = -0.01
 		random = no
 	}
 	TR_crooked_kleptocrat = {	#ねじくれた汚職屋
 		political_power_gain = -0.05
-		consumer_goods_factor = 0.03
+		consumer_goods_expected_value = 0.03
 		random = no
 	}
 	TR_efficient_sociopath = {	#有能な人格異常者
@@ -836,7 +868,7 @@ leader_traits = {
 		random = no
 	}
 	TR_media_magnate = {	#メディア王
-		consumer_goods_factor = -0.02
+		consumer_goods_expected_value = -0.02
 		political_power_gain = 0.1
 		random = no
 	}

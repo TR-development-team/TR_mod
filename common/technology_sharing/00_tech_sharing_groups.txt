@@ -1,26 +1,39 @@
 
-technology_sharing_group = {
+ technology_sharing_group = {
 
-	id = continuous_tech_share
-	name = continuous_tech_share_group_name
-	desc = continuous_tech_share_group_desc
-	picture = GFX_technology_sharing_default
+	id = commonwealth_research
+	name = commonwealth_research_name
+	desc = commonwealth_research_desc
+	picture = GFX_commonwealth_research
     
 	research_sharing_per_country_bonus = 0.1
-	is_faction_sharing = yes
 
     available = {
-        is_in_faction = yes
+        is_in_faction_with = GBR
     }
 
 }
 
+technology_sharing_group = {
+
+	id = comintern_research
+	name = comintern_research_name
+	desc = comintern_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = SOV
+    }
+
+}
 
 technology_sharing_group = {
 
-	id = International_research
-	name = International_research_name
-	desc = International_research_desc
+	id = axis_research
+	name = axis_research_name
+	desc = axis_research_desc
 	picture = GFX_technology_sharing_default
     
 	research_sharing_per_country_bonus = 0.1
@@ -28,7 +41,9 @@ technology_sharing_group = {
     available = {
         is_in_faction_with = RAT
     }
+
 }
+
 
 technology_sharing_group = {
 
@@ -44,3 +59,20 @@ technology_sharing_group = {
     }
 
 }
+
+technology_sharing_group = {
+
+	id = us_research
+	name = us_research_name
+	desc = us_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = USA
+    }
+
+}
+
+

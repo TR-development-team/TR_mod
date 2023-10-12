@@ -1,0 +1,23 @@
+add_namespace = TR_Armenia
+
+
+country_event = {
+	id = TR_Armenia.1
+	title = TR_Armenia.1.t
+	desc = TR_Armenia.1.d
+	picture = GFX_report_event_gathering_protest
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = { 
+		name = TR_Armenia.1.a
+		add_manpower = 100000
+		load_oob = "ARM_unit"
+		declare_war_on = {
+			target = OTT
+			type = annex_everything
+		}
+	}
+}
+

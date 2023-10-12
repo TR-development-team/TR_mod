@@ -13,7 +13,7 @@ country = {
 			name = USA_treaty_of_Tokyo
 		    picture = USA_treaty_of_Tokyo
 			modifier = { 
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
 			}
 		}
         JAP_NAISEIJUSHI = {
@@ -21,10 +21,6 @@ country = {
 				always = no
 			}
                         picture = man_five_year_plan_industry
-
-			
-			removal_cost = -1
-	
 
 			modifier = {
                 production_speed_buildings_factor = 0.1
@@ -103,7 +99,7 @@ country = {
 
 			modifier = {
                 political_power_cost = -0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_speed_industrial_complex_factor = 0.1
 				global_building_slots_factor = 0.05
             }
@@ -120,7 +116,7 @@ country = {
 
 			modifier = {
                 political_power_cost = -0.2
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_speed_industrial_complex_factor = 0.2
 				global_building_slots_factor = 0.1
             }
@@ -335,7 +331,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
                 industrial_capacity_factory = 0.05
 			}
 		}
@@ -386,7 +382,7 @@ country = {
 			picture = jap_militarism_shogun
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
                 research_speed_factor = 0.1
 			    production_speed_buildings_factor = 0.15
                 army_speed_factor = 0.1
@@ -431,7 +427,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
                                 production_speed_dockyard_factor = 0.1
                                 production_speed_arms_factory_factor = 0.1
                                 production_speed_industrial_complex_factor = -0.05
@@ -446,7 +442,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
                 political_power_cost = 0.3
                 production_speed_buildings_factor = 0.2
 			}
@@ -519,7 +515,7 @@ country = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				truck_attrition_factor = -0.2
 				supply_node_range = 0.15
 				industrial_capacity_factory = 0.1
@@ -536,7 +532,7 @@ country = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				local_resources_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				army_speed_factor = 0.1
@@ -581,7 +577,7 @@ country = {
 			removal_cost = -1
 	
 			modifier = {
-				consumer_goods_factor = 0.02
+				consumer_goods_expected_value = 0.02
 				stability_factor = 0.05
 				MONTHLY_POPULATION = 0.2
 			}
@@ -612,7 +608,7 @@ country = {
 	
 			modifier = {
 				political_power_factor = 0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_factory_max_efficiency_factor = -0.1
 			}
 		}     
@@ -625,7 +621,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_factory_max_efficiency_factor = 0.2
 				production_factory_efficiency_gain_factor = 0.2
 			}
@@ -641,7 +637,7 @@ country = {
 	
 			modifier = {
 				stability_factor = 0.03
-			    consumer_goods_factor = 0.02
+			    consumer_goods_expected_value = 0.02
 				min_export = -0.05
 			}
 		}     
@@ -656,7 +652,7 @@ country = {
 	
 			modifier = {
 				stability_factor = 0.06
-			    consumer_goods_factor = 0.05
+			    consumer_goods_expected_value = 0.05
 				min_export = -0.1
 			}
 		}     
@@ -670,7 +666,7 @@ country = {
 			removal_cost = -1
 	
 			modifier = {
-				consumer_goods_factor = -0.02
+				consumer_goods_expected_value = -0.02
 				stability_factor = -0.03
 			}
 		}     
@@ -710,7 +706,7 @@ country = {
 				production_factory_max_efficiency_factor = -0.2
 				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = -0.35
-				consumer_goods_factor = 0.4
+				consumer_goods_expected_value = 0.4
 				min_export = -0.4
 			}
 		}
@@ -726,7 +722,7 @@ country = {
 				production_factory_max_efficiency_factor = -0.10
 				production_speed_buildings_factor = -0.1
 				industrial_capacity_factory = -0.15
-				consumer_goods_factor = 0.3
+				consumer_goods_expected_value = 0.3
 				min_export = -0.15
 			}
 		}
@@ -742,7 +738,7 @@ country = {
 				production_factory_max_efficiency_factor = -0.07
 				production_speed_buildings_factor = -0.07
 				industrial_capacity_factory = -0.10
-				consumer_goods_factor = 0.20
+				consumer_goods_expected_value = 0.20
 				min_export = -0.10
 			}
 		}
@@ -758,7 +754,7 @@ country = {
 				production_factory_max_efficiency_factor = -0.04
 				production_speed_buildings_factor = -0.04
 				industrial_capacity_factory = -0.05
-				consumer_goods_factor = 0.10
+				consumer_goods_expected_value = 0.10
 				min_export = -0.05
 			}
 		}
@@ -782,7 +778,7 @@ country = {
 			picture = generic_production_bonus
 			removal_cost = -1
 			modifier = {
-                                consumer_goods_factor = 0.03
+                                consumer_goods_expected_value = 0.03
 				production_speed_buildings_factor = 0.1
 			}
 		}
@@ -798,7 +794,7 @@ country = {
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.3
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				min_export = -0.1
 			}
 		}
@@ -814,7 +810,7 @@ country = {
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.3
-                                consumer_goods_factor = 0.05
+                                consumer_goods_expected_value = 0.05
 			}
 		}
                 JAP_black_thursdayk_INOUE2 = {
@@ -840,7 +836,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-                                consumer_goods_factor = -0.05
+                                consumer_goods_expected_value = -0.05
 				production_factory_efficiency_gain_factor = -0.05
 			}
 		}
@@ -948,7 +944,7 @@ country = {
 	
 
 			modifier = {
-                                consumer_goods_factor = -0.05
+                                consumer_goods_expected_value = -0.05
 				production_oil_factor = 0.15
                                 local_resources_factor = 0.1
                                 production_speed_synthetic_refinery_factor = 0.15
@@ -982,7 +978,7 @@ country = {
 
 			modifier = {
                                 stability_factor = -0.05
-                                consumer_goods_factor = -0.04
+                                consumer_goods_expected_value = -0.04
 			}
 		}
 		JAP_Kakakutosei2 = {
@@ -997,7 +993,7 @@ country = {
 
 			modifier = {
                                 stability_factor = -0.1
-                                consumer_goods_factor = -0.08
+                                consumer_goods_expected_value = -0.08
 			}
 		}
         JAP_black_thursdayk_KAYA = {
@@ -1009,7 +1005,7 @@ country = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				consumer_goods_factor = 0.5
+				consumer_goods_expected_value = 0.5
 				min_export = -0.5
 			}
 		}
@@ -1022,7 +1018,7 @@ country = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.10
-				consumer_goods_factor = 0.4
+				consumer_goods_expected_value = 0.4
 				min_export = -0.4
 			}
 		}
@@ -1035,7 +1031,7 @@ country = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.05
-				consumer_goods_factor = 0.3
+				consumer_goods_expected_value = 0.3
 				min_export = -0.3
 			}
 		}
@@ -1047,7 +1043,7 @@ country = {
 			picture = generic_production_bonus
 			removal_cost = -1
 			modifier = {
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
                 production_speed_buildings_factor = 0.15
 			}
         }
@@ -1059,7 +1055,7 @@ country = {
 			picture = can_wartime_prices_and_trade_board
 			removal_cost = -1
 			modifier = {
-                consumer_goods_factor = -0.06
+                consumer_goods_expected_value = -0.06
                 min_export = -0.5
                 local_resources_factor = 0.10
 			}
@@ -1208,7 +1204,7 @@ country = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
                 research_speed_factor = 0.05
                 production_speed_buildings_factor = 0.05
 				equipment_conversion_speed = 0.25
@@ -1307,7 +1303,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-                        consumer_goods_factor = -0.03
+                        consumer_goods_expected_value = -0.03
                         min_export = -0.1	
 			}
 		}
@@ -1416,7 +1412,7 @@ country = {
 	
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
                 research_speed_factor = 0.05
                 production_speed_buildings_factor = 0.1
                 production_factory_max_efficiency_factor = 0.15
@@ -1435,7 +1431,7 @@ country = {
 	
 
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_expected_value = 0.1
                 production_speed_buildings_factor = 0.4
 			}
 		}
@@ -1451,7 +1447,7 @@ country = {
 
 			modifier = {
                 political_power_factor = 0.1
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
                 resistance_target = -0.3
                 conscription_factor = 0.05
                 industrial_capacity_factory = 0.1
@@ -1489,7 +1485,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
 			    stability_factor = 0.1  	
                 research_speed_factor = 0.05
                 production_speed_dockyard_factor = 0.1
@@ -1528,7 +1524,7 @@ country = {
 	
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 			}
 		}
 		JAP_Kakushin_Seito = {
@@ -1594,7 +1590,7 @@ country = {
 
 			modifier = {
 				political_power_factor = -0.05
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				conversion_cost_civ_to_mil_factor = -0.2
 			}
 		}
@@ -1660,7 +1656,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
                 stability_factor = -0.05  	
 
 			}
@@ -1674,7 +1670,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
                 political_power_cost = 0.1
                 production_speed_buildings_factor = 0.1
                 local_resources_factor = 0.1
@@ -1692,7 +1688,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
                 industrial_capacity_factory = 0.1
                 industrial_capacity_dockyard = 0.1
                 production_factory_max_efficiency_factor = -0.1
@@ -1723,7 +1719,7 @@ country = {
 	
 
 			modifier = {
-			    consumer_goods_factor = 0.05
+			    consumer_goods_expected_value = 0.05
                 production_factory_max_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.15
 			}
@@ -1736,9 +1732,9 @@ country = {
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-                                political_power_cost = 1.0
+                political_power_cost = 1.0
 				stability_factor = -0.15
-				consumer_goods_factor = 0.25
+				consumer_goods_expected_value = 0.25
 				min_export = -0.5
 			}
 		}
@@ -1752,7 +1748,7 @@ country = {
 			modifier = {
                                political_power_cost = 0.6
 				stability_factor = -0.10
-				consumer_goods_factor = 0.15
+				consumer_goods_expected_value = 0.15
 				min_export = -0.4
 			}
 		}
@@ -1766,7 +1762,7 @@ country = {
 			modifier = {
                                 political_power_cost = 0.3
 				stability_factor = -0.05
-				consumer_goods_factor = 0.05
+				consumer_goods_expected_value = 0.05
 				min_export = -0.3
 			}
 		}
@@ -1833,7 +1829,7 @@ country = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_expected_value = -0.05
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
 				production_speed_naval_base_factor = 0.1
@@ -1858,7 +1854,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
                 production_factory_max_efficiency_factor = 0.15
                 compliance_gain = 0.01
                 MONTHLY_POPULATION = 0.25
@@ -1940,7 +1936,7 @@ country = {
 
 			modifier = {
                 political_power_factor = -0.05
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
 			}
 		}
         JAP_Kita_Economy2 = {
@@ -1955,7 +1951,7 @@ country = {
 
 			modifier = {
                 political_power_factor = -0.05
-                consumer_goods_factor = -0.05
+                consumer_goods_expected_value = -0.05
                 production_speed_buildings_factor = 0.1
                 industrial_capacity_factory = 0.1
                 industrial_capacity_dockyard = 0.1
@@ -1987,7 +1983,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_factor = 0.05
+                consumer_goods_expected_value = 0.05
                 stability_factor = 0.1
                 MONTHLY_POPULATION = 0.25
 			}
@@ -2110,7 +2106,7 @@ country = {
 			picture = generic_constitutional_guarantee
 			
 			modifier = {
-                consumer_goods_factor = 0.01
+                consumer_goods_expected_value = 0.01
                 political_power_cost = 0.1
 			    stability_factor = 0.10
                 conscription_factor = 0.05
