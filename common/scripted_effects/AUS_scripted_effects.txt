@@ -28,3 +28,21 @@ AUS_decreased_impact_of_the_depression_effect = {
 		AUS_plunge_escalation_level = 1
 	}
 }
+
+d_integrate = {
+	FROM = {
+		annex_country = {
+			target = ROOT
+			transfer_troops = yes
+		}
+	}
+}
+
+d_create_wargoal_annex = {
+	FROM = {
+		create_wargoal = {
+			type = annex_everything
+			target = ROOT
+		}
+	}
+}
