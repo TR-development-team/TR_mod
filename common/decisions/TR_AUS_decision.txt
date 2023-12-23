@@ -262,19 +262,7 @@ AUS_debug_category = {
 		available = {
 		}
 		complete_effect = {
-			#every_other_country = {
-			#	limit = {
-			#		NOT = {
-			#			tag = AUS
-			#		}
-			#	}
-			#	every_owned_state = {
-			#		add_core_of = PREV
-			#	}				
-			#}
-			every_owned_state = {
-				add_core_of = ROOT
-			}
+			set_autonomy = {	target = CZE	autonomous_state = AUS_crown_land	}
 		}
 	}
 	AUS_debug_unite = {

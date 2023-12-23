@@ -1,0 +1,23 @@
+state={
+	id=1087
+	name="STATE_1087"
+	provinces={
+		711 3689 9668 9670 13361 
+	}
+
+	history={
+		owner = ROM
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = HUN
+		add_core_of = TRA
+		add_core_of = ROM
+
+	}
+
+	manpower=409000
+	buildings_max_level_factor=1.000
+	state_category=two
+	local_supplies=0.000
+}

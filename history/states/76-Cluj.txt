@@ -1,0 +1,29 @@
+
+state={
+	id=76
+	name="STATE_76"
+
+	history={
+		owner = ROM
+		victory_points = {
+			6711 15 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+
+		}
+		add_core_of = HUN
+		add_core_of = TRA
+		add_core_of = ROM
+
+	}
+
+	provinces={
+		693 727 3709 6711 6714 6731 9672 9685 13360 13410 
+	}
+	manpower=1952700
+	buildings_max_level_factor=1.000
+	state_category=five
+	local_supplies=0.000
+}
