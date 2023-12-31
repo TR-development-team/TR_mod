@@ -8,6 +8,15 @@
 
  #################### 
 
+MAN_South_Manchuria_Army_Arsenal_organization = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_generic_tank_manufacturer_1
+	allowed = {	
+		tag = MAN
+	}
+	available = {
+	}
+} 
 
 
 #####################
@@ -31,19 +40,6 @@
 #    ### #  # #  # ### ##  
 
 ###########################
-MAN_mamc_organization = {
-	include = generic_light_aircraft_organization
-	icon = GFX_idea_generic_air_manufacturer_1
-	
-	allowed = {	
-		original_tag = MAN
-		NOT = { has_dlc = "Waking the Tiger" }
-	}
-
-	available = {
-		owner = { controls_state = 714 }
-	}
-}
 
 MAN_mamc_light_organization = {
 	include = generic_light_aircraft_organization
@@ -52,7 +48,8 @@ MAN_mamc_light_organization = {
 		original_tag = MAN
 		has_dlc = "Waking the Tiger"
 	}
-
+	available = {
+	}
 }
 
 MAN_mamc_medium_organization = {
@@ -62,7 +59,8 @@ MAN_mamc_medium_organization = {
 		original_tag = MAN
 		has_dlc = "Waking the Tiger"
 	}
-
+	available = {
+	}
 
 }
 
@@ -73,7 +71,8 @@ MAN_mamc_heavy_organization = {
 		original_tag = MAN
 		has_dlc = "Waking the Tiger"
 	}
-
+	available = {
+	}
 
 }
 
@@ -88,3 +87,46 @@ MAN_mamc_heavy_organization = {
 
 
 ###################################
+MAN_SMAA_infantry_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
+	allowed = {	
+		tag = MAN
+	}
+	available = {
+	}
+	initial_trait = {
+		equipment_bonus = {
+			breakthrough = 0.03
+		}
+	}
+} 
+MAN_Manchurian_Industrial_Development_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {	
+		tag = MAN
+	}
+	available = {
+	}
+	initial_trait = {
+		equipment_bonus = {
+			breakthrough = 0.03
+		}
+	}
+} 
+MAN_Dowa_organization = {
+	include = generic_motorized_mechanized_organization 
+	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
+	allowed = {	 
+		tag = MAN
+		has_dlc = "Arms Against Tyranny"
+	}
+	available = {
+	}
+	initial_trait = {
+		equipment_bonus = {
+			build_cost_ic = -0.05
+		}
+	}	
+}

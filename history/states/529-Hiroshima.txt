@@ -9,9 +9,9 @@ state={
 		buildings = {
 			infrastructure = 5
 			air_base = 3
-			dockyard = 5
+			dockyard = 4
 			arms_factory = 1
-			industrial_complex = 3
+			industrial_complex = 2
 			1092 = {
 				naval_base = 10
 
@@ -22,15 +22,15 @@ state={
 			1092 20 
 		}
                 victory_points = { 7212 3 }
-                victory_points = { 11985 1 }
+
 
 	}
 
 	local_supplies=0.0 
 provinces={
-		1092 4197 7212 9968 10052 11946 11985 
+		1092 4197 7212 9968 11946 
 	}
-	manpower=6293000
+	manpower=4803671
 	buildings_max_level_factor=1.000
-	state_category=ten_indus
+	state_category=eight_indus
 }

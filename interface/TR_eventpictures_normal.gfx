@@ -101,6 +101,21 @@ spriteTypes = {
 	}
 	SpriteType = {
 		##
+		name = "GFX_report_event_MAM_Datong_Square"
+		texturefile = "gfx/event_pictures/MAN/MAM_Datong_Square.png"
+	}
+	SpriteType = {
+		##
+		name = "GFX_report_event_MAN_opium_cultivation"
+		texturefile = "gfx/event_pictures/MAN/MAN_opium_cultivation.png"
+	}
+	SpriteType = {
+		##
+		name = "GFX_report_event_MAM_Xinjing_city"
+		texturefile = "gfx/event_pictures/MAN/MAM_Xinjing_city.png"
+	}
+	SpriteType = {
+		##
 		name = "GFX_report_event_Chambre_des_Deputes"
 		texturefile = "gfx/event_pictures/FRA/Chambre_des_Deputes.png"
 	}

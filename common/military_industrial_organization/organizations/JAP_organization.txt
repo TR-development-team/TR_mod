@@ -168,7 +168,7 @@ JAP_nissan_organization = {
 	include = generic_motorized_mechanized_organization 
 	icon = GFX_idea_nissan
 	allowed = {	 
-		OR = { tag = JAP tag = MAN }
+		tag = JAP
 		has_dlc = "Arms Against Tyranny"
 	}
 	initial_trait = {

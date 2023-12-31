@@ -243,7 +243,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = MAN } }
 
 			}
 			
@@ -266,7 +266,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = MAN } }
 
 			}
 			modifier = {

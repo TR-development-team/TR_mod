@@ -4,20 +4,228 @@
      country = {
 
 		### Starting ###
-
-		MAN_KAITAKUDAN = {
+		MAN_South_Manchuria_Railway = {
+            picture = MAN_south_manchuria_railway
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			modifier = {
+				war_support_factor = -0.1
+                political_power_cost = 0.2
+				industrial_capacity_factory = 0.1
+				production_speed_infrastructure_factor = 0.15
+				production_speed_rail_way_factor = 0.15
+				production_speed_supply_node_factor = 0.1
+			}
+		}
+		MAN_South_Manchuria_Railway_1 = {
+			name = MAN_South_Manchuria_Railway
+            picture = MAN_south_manchuria_railway
+			equipment_bonus = {
+				train_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+			modifier = {
+				war_support_factor = -0.1
+                political_power_cost = 0.1
+				industrial_capacity_factory = 0.1
+				production_speed_infrastructure_factor = 0.3
+				production_speed_rail_way_factor = 0.3
+				production_speed_supply_node_factor = 0.1
+			}
+		}
+		MAN_Japanese_settlers = {
+            picture = MAN_Japanese_settlers
+			modifier = {
+                MONTHLY_POPULATION = 0.25
+				global_building_slots_factor = 0.05
+			}
+		}
+		MAN_Japanese_settlers_1 = {
+			name = MAN_Japanese_settlers
+            picture = MAN_Japanese_settlers
+			modifier = {
+                MONTHLY_POPULATION = 0.5
+				global_building_slots_factor = 0.1
+			}
+		}
+		MAN_Japanese_settlers_2 = {
+			name = MAN_Japanese_settlers
+            picture = MAN_Japanese_settlers
+			modifier = {
+                MONTHLY_POPULATION = 0.5
+				global_building_slots_factor = 0.2
+			}
+		}
+		MAN_opium_trade = {
+            picture = prc_permit_opium_trade
+			modifier = {
+			    stability_factor = -0.3
+				war_support_factor = -0.3
+                consumer_goods_factor = -0.2
+				recruitable_population_factor = -0.1
+			}
+		}
+		MAN_opium_trade1 = {
+            picture = prc_permit_opium_trade
+			modifier = {
+			    stability_factor = -0.1
+				war_support_factor = -0.1
+                consumer_goods_factor = -0.1
+				recruitable_population_factor = -0.05
+			}
+		}
+		MAN_opium_trade2 = {
+            picture = prc_permit_opium_trade
+			modifier = {
+                consumer_goods_factor = 0.5
+			}
+		}
+		MAN_Kwantung_Army = {
+            picture = MAN_Kwantung_Army
+			modifier = {
+				stability_factor = -0.1
+                political_power_cost = 0.3
+				planning_speed = -0.1
+				max_planning = 0.1
+			}
+		}
+		MAN_Kwantung_Army_1 = {
+			name = MAN_Kwantung_Army
+            picture = MAN_Kwantung_Army
+			modifier = {
+				stability_factor = -0.1
+                political_power_cost = 0.2
+				max_planning = 0.1
+			}
+		}
+		MAN_Kwantung_Army_2 = {
+			name = MAN_Kwantung_Army
+            picture = MAN_Kwantung_Army
+			modifier = {
+				stability_factor = -0.1
+                political_power_cost = 0.2
+				max_planning = 0.1
+				max_dig_in = 10
+				army_org_regain = 0.05
+			}
+		}
+		MAN_Kwantung_Army_3 = {
+			name = MAN_Kwantung_Army
+            picture = MAN_Kwantung_Army
+			equipment_bonus = {
+                mechanized_equipment = {
+			        breakthrough = 0.1
+			    }
+				armor = {
+			        breakthrough = 0.1
+			    }
+                }
+			modifier = {
+				stability_factor = -0.1
+                political_power_cost = 0.1
+				max_planning = 0.1
+				max_dig_in = 10
+				army_org_regain = 0.05
+			}
+		}
+		MAN_Kwantung_Army_4 = {
+			name = MAN_Kwantung_Army
+            picture = MAN_Kwantung_Army
+			equipment_bonus = {
+                mechanized_equipment = {
+			        breakthrough = 0.1
+			    }
+				armor = {
+			        breakthrough = 0.1
+			    }
+                }
+			modifier = {
+				stability_factor = -0.1
+                political_power_cost = 0.1
+				max_planning = 0.1
+				max_dig_in = 10
+				army_org_regain = 0.05
+				army_armor_attack_factor = 0.1
+				army_armor_defence_factor = 0.1
+			}
+		}
+		MAN_tank_production_line = {
 			allowed = {
 				always = no
 			}
-                        picture = generic_production_bonus
-			
-			removal_cost = -1
-            
-			modifier = {
-                              MONTHLY_POPULATION = 0.5
+            picture = generic_armor
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
 			}
 		}
-                MAN_MINZOKUKYOUWA = {
+		MAN_Army_Academy = {
+			picture = CZE_planning_bonus
+			modifier = {
+                army_leader_cost_factor = -0.2
+				army_leader_start_level = 1 
+			}
+		} 
+		MAN_military_police = {
+			allowed = {
+				always = no
+			}
+			picture = generic_Military_Police
+			modifier = {
+				resistance_target = -0.05
+				resistance_growth = -0.2
+			}
+		}
+		MAN_Air_Corps = {
+            picture = generic_air_payment
+			modifier = {
+				air_agility_factor = 0.1
+				air_defence_factor = 0.1
+			}
+		}
+		MAN_Air_Corps_1 = {
+			name = MAN_Air_Corps
+            picture = generic_air_payment
+			modifier = {
+				air_agility_factor = 0.1
+				air_defence_factor = 0.1
+			}
+			equipment_bonus = {
+				fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_fighter_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				CAS_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+				cv_nav_bomber_equipment = {
+					instant = yes
+					build_cost_ic = -0.10
+				}
+			}
+		}
+        MAN_MINZOKUKYOUWA = {
 			allowed = {
 				always = no
 			}
@@ -117,15 +325,36 @@
 			}
 		}
 }
-        #minister
-        Head_of_State = {	
-                MAN_Masahiko_Amakasu = {
-			
-			picture = MAN_Masahiko_Amakasu
+    #minister
+    Head_of_State = {	
+		MAN_Yamaoka_Mannosuke = {
+			picture = MAN_Yamaoka_Mannosuke
+			allowed = {
+				original_tag = MAN
+                }  
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Head_of_State
+				authoritarian_democrat
+				TR_benevolent_gentleman
+			}
+		}
+		MAN_Matsuoka_Yousuke_HoS = {
+			name = JAP_Matsuoka_Yousuke
+			picture = JAP_Matsuoka_Yousuke
 			
 			allowed = {
 				original_tag = MAN
-                                  }  
+            }
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = head_of_state_available
@@ -139,16 +368,79 @@
 			traits = { 
 				Head_of_State
 				paternal_autocrat
-				TR_Local_tyrant2
+				TR_stern_imperialist
 			}
 		}
-               
-               }
-        Government_leaders = {	
-                MAN_Furumi_Tadayuki = {
-			
-			picture = MAN_Furumi_Tadayuki
-			
+
+    }
+    Government_leaders = {	
+		MAN_Hoshino_Naoki = {
+			picture = MAN_Hoshino_Naoki
+			allowed = {
+				original_tag = MAN
+                }  
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				authoritarian_democrat
+				TR_silent_workhorse
+			}
+		}
+		MAN_Kishi_Nobusuke_GL = {
+			name = MAN_Kishi_Nobusuke
+			picture = MAN_Kishi_Nobusuke
+			allowed = {
+				original_tag = MAN
+                }  
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				authoritarian_democrat
+				MAN_Devil_of_showa
+			}
+		}
+		MAN_Matsuoka_Yousuke_GL = {
+			name = JAP_Matsuoka_Yousuke
+			picture = JAP_Matsuoka_Yousuke
+			allowed = {
+				original_tag = MAN
+                }  
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				paternal_autocrat
+				TR_flamboyant_tough_guy
+			}
+		}
+		MAN_Masahiko_Amakasu = {
+			picture = MAN_Masahiko_Amakasu
 			allowed = {
 				original_tag = MAN
                                   }  
@@ -165,11 +457,31 @@
 			traits = { 
 				Government_leaders
 				paternal_autocrat
-				TR_smiling_oilman
+				TR_political_protege
 			}
 		}
-               
-               }
+		MAN_Toyama_Hidezo = {
+			picture = MAN_Toyama_Hidezo
+			allowed = {
+				original_tag = MAN
+                }  
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Government_leaders
+				national_populist
+				Pan_Asian_Politician
+			}
+		}
+    }
     Minister_of_Foreign_Affairs = { 
 		MAN_Matsuoka_Yousuke = {
 			name = JAP_Matsuoka_Yousuke
@@ -190,16 +502,14 @@
 			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Foreign_Affairs
-				national_populist
+				paternal_autocrat
 				TR_iron_fisted_brute
 			}
 		}
 		}
-        Minister_of_Economy = {	
-                MAN_Kishi_Nobusuke = {
-			
-			picture = MAN_Kishi_Nobusuke
-			
+    Minister_of_Economy = {	
+		MAN_Furumi_Tadayuki = {	
+			picture = MAN_Furumi_Tadayuki
 			allowed = {
 				original_tag = MAN
                                   }  
@@ -215,17 +525,59 @@
 			cancel_if_invalid = no
 			traits = { 
 				Minister_of_Economy
-				national_populist
+				paternal_autocrat
+				TR_resource_industrialist
+			}
+		}
+        MAN_Kishi_Nobusuke = {
+			picture = MAN_Kishi_Nobusuke
+			allowed = {
+				original_tag = MAN
+                                  }  
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
 				TR_planned_economy_proponent
 			}
 		}
-               
-               }
-        Minister_of_Interior = {	
+
+    }
+    Minister_of_Interior = {	
+		MAN_Masahiko_Amakasu_MoI = {
+			name = MAN_Masahiko_Amakasu
+			picture = MAN_Masahiko_Amakasu
+			allowed = {
+				original_tag = MAN
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			traits = { 
+				Minister_of_Interior
+				paternal_autocrat
+				TR_back_stabber
+			}
+		}
 		MAN_Hideki_Tojo_int = {
 			name = JAP_Hideki_Tojo_int
 			picture = JAP_Hideki_Tojo
-			
 			allowed = {
 				original_tag = MAN
 			}
@@ -246,4 +598,68 @@
 			}
 		}
     }
+    chief_of_staff = { 
+		MAN_Muto_Nobuyoshi = {
+			name = JAP_Muto_Nobuyoshi
+			picture = JAP_Muto_Nobuyoshi
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = MAN
+                        }
+			traits = { 
+				chief_of_staff
+				cos_school_of_fire_support
+			}
+		}
+	}
+    chief_of_army = { 
+		MAN_Hideki_Tojo_coa = {
+			name = JAP_Hideki_Tojo_int
+			picture = JAP_Hideki_Tojo
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = MAN
+                        }
+			traits = { 
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+		}
+	}
+    chief_of_air_force = { 
+		MAN_Hideki_Tojo_cair = {
+			name = JAP_Hideki_Tojo_int
+			picture = JAP_Hideki_Tojo
+			cancel_if_invalid = yes			
+			allowed = {
+				original_tag = MAN
+                        }
+			traits = { 
+				chief_of_air_force
+				cair_battlefield_support_doctrine
+			}
+		}
+	}
+	industrial_concern = {
+	
+		MAN_Manchurian_Industrial_Development = {
+			picture = generic_industrial_concern_1
+			allowed = {
+				original_tag = MAN
+			          }
+	        available = {
+		        has_completed_focus = MAN_Economy_focus_12
+	        }    
+            modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+			
+			traits = { industrial_manufacturer }
+		}
+
+	}
 }

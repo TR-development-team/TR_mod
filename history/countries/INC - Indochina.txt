@@ -6,6 +6,8 @@ set_cosmetic_tag = COUNTRY_JAP
 
 set_research_slots = 2
 country_event = { id = TR_indochina.1 days = 30 }#独立運動の激化
+country_event = { id = TR_indochina.5 days = 730 random_days = 100 }#ハイフォン事件
+random_days = 100
 # Starting tech
 set_technology = {
 	infantry_weapons = 1

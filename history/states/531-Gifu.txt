@@ -1,0 +1,25 @@
+state={
+	id=531
+	name="STATE_531"
+
+	resources={
+		aluminium=6.000
+	}
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = { 4172 1 }
+
+	}
+	local_supplies=0.0 
+provinces={
+		4172 7187 7217 
+	}
+	manpower=1512934
+	buildings_max_level_factor=1.000
+	state_category=two
+}

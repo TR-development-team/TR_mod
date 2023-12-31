@@ -24,7 +24,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 300
 		}
-
+		allow_branch = {
+			NOT = { 
+				OR =  { 
+					has_completed_focus = JAP_TAKAHASHI 
+					has_completed_focus = JAP_INOUE
+				}
+			}
+		}
 		x = 3
 		y = 0
 		cost = 1
@@ -94,105 +101,25 @@ focus_tree = {
 	}
     focus = {
 		id = JAP_TAKAHASHI
-		icon = GFX_goal_JAP_Takahashi_Korekiyo
+		icon = GFX_goal_JAP_Mitsuchi_Chuzo
         prerequisite = {
 			focus = JAP_industry_focus
 			}
         available = {
-            has_country_flag = JAP_1936SENKYO
-			NOT = { has_country_flag = JAP_Rise_of_the_Military }        
-            OR = {
-                has_government = social_conservative
-                has_government = social_democrat
-                has_government = authoritarian_democrat
-                has_government = social_liberal
-                }
+            has_country_flag = JAP_Mitsuchi_flag
             }
 		mutually_exclusive = {
-			focus = JAP_KAYA
             focus = JAP_INOUE
 		}   
 		ai_will_do = {
 			factor = 300
 		}
-                
-		x = 3
+		x = 1
 		y = 3
-		cost = 15
+		cost = 1
 		cancelable = yes
 		completion_reward = {
-            set_country_flag = JAP_Takahashi_flag
-            add_ideas = JAP_Takahashi_Korekiyo
-			swap_ideas = {
-				remove_idea = JAP_black_thursday
-				add_idea = JAP_black_thursdayk_TAKAHASHI
-			}	
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
-		}
-	}
-    focus = {
-		id = JAP_TAKAHASHI1
-		icon = GFX_goal_JAP_Gold_Embargo
-        prerequisite = {
-			focus = JAP_TAKAHASHI
-		}
-        available = {
-        }
-		mutually_exclusive = {
-			    
-		}   
-		ai_will_do = {
-			factor = 300
-		}
-                
-		x = 3
-		y = 4
-		cost = 12
-		cancelable = yes
-		completion_reward = {
-            add_ideas = JAP_Managed_system
-			swap_ideas = {
-				remove_idea = JAP_black_thursdayk_TAKAHASHI
-				add_idea = JAP_black_thursdayk_TAKAHASHI1
-			}	
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
-		}
-	}
-    focus = {
-		id = JAP_TAKAHASHI2
-		icon = GFX_goal_JAP_Public_Works
-        prerequisite = {
-			focus = JAP_TAKAHASHI1
-		}
-        available = {
-        }
-		mutually_exclusive = {
-			    
-		}   
-		ai_will_do = {
-			factor = 300
-		}
-                
-		x = 3
-		y = 5
-		cost = 12
-		cancelable = yes
-		completion_reward = {
-            add_ideas = JAP_Public_Works
-			swap_ideas = {
-				remove_idea = JAP_black_thursdayk_TAKAHASHI1
-				add_idea = JAP_black_thursdayk_TAKAHASHI2
-			}	
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
+			add_ideas = JAP_Mitsuchi_Finance
 		}
 	}
     focus = {
@@ -202,17 +129,10 @@ focus_tree = {
 			focus = JAP_industry_focus
 		}       
         available = {
-            has_country_flag = JAP_1936SENKYO
-			NOT = { has_country_flag = JAP_Rise_of_the_Military }
-            OR = {
-                has_government = market_liberal
-                has_government = authoritarian_democrat
-                has_government = social_liberal
-                }
+            has_country_flag = JAP_INOUE_flag
             }
 		mutually_exclusive = {
 			focus = JAP_TAKAHASHI
-            focus = JAP_KAYA
 		}
 		ai_will_do = {
 			factor = 300
@@ -220,235 +140,24 @@ focus_tree = {
                 
 		x = 5
 		y = 3
-		cost = 15
+		cost = 1
 		cancelable = yes
 		completion_reward = {
-            set_country_flag = JAP_INOUE_flag
-            add_ideas = JAP_Inoue_junnosuke
-			swap_ideas = {
-				remove_idea = JAP_black_thursday
-				add_idea = JAP_black_thursdayk_INOUE
-			}	
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
+			add_ideas = JAP_Inoue_Finance 
 		}
-	}
-       
-    focus = {
-		id = JAP_INOUE1
-		icon = GFX_goal_JAP_Katsu_Masanori
-        prerequisite = {
-		    focus = JAP_INOUE
-		}
-        available = {
-        }
-		mutually_exclusive = {
-			    
-		}   
-		ai_will_do = {
-			factor = 300
-		}
-                
-		x = 5
-		y = 4
-		cost = 12
-		cancelable = yes
-		completion_reward = {
-            add_ideas = JAP_Kinshuku_zaisei
-			swap_ideas = {
-				remove_idea = JAP_black_thursdayk_INOUE
-				add_idea = JAP_black_thursdayk_INOUE1
-			}	
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
-		}
-	}
-    focus = {
-		id = JAP_INOUE2
-		icon = GFX_goal_JAP_important_industry_control
-        prerequisite = {
-			focus = JAP_INOUE1
-		}
-        available = {
-        }
-		mutually_exclusive = {
-		}   
-		ai_will_do = {
-			factor = 300
-		}
-		x = 5
-		y = 5
-		cost = 12
-		cancelable = yes
-		completion_reward = {
-            add_ideas = JAP_Jyuyosangyo
-			swap_ideas = {
-				remove_idea = JAP_black_thursdayk_INOUE1
-				add_idea = JAP_black_thursdayk_INOUE2
-			}	
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
-		}
-	}
-    focus = {
-		id = JAP_KAYA
-		icon = GFX_goal_JAP_Kaya_Okinori
-        prerequisite = {
-			focus = JAP_industry_focus
-		}
-        available = {
-            has_country_flag = JAP_1936SENKYO
-			NOT = { has_country_flag = JAP_Rise_of_the_Military }
-            OR = {
-                has_government = authoritarian_democrat
-                has_government = social_democrat
-                 }
-            }
-		mutually_exclusive = {
-            focus = JAP_TAKAHASHI
-            focus = JAP_INOUE
-			
-		}
-		ai_will_do = {
-			factor = 300
-		}
-                
-		x = 1
-		y = 3
-		cost = 15
-		cancelable = yes
-		completion_reward = {
-            set_country_flag = JAP_Kaya_flag
-            add_ideas = JAP_Kaya_Okinori
-			swap_ideas = {
-				remove_idea = JAP_black_thursday
-				add_idea = JAP_black_thursdayk_KAYA
-			}	
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
-		}
-        }
-    focus = {
-		id = JAP_KAYA1
-		icon = GFX_goal_JAP_Four_Years_Plan
-        prerequisite = {
-			focus = JAP_KAYA
-		}
-        available = {
-        }
-		mutually_exclusive = {
-			    
-		}   
-		ai_will_do = {
-			factor = 300
-		}
-                
-		x = 1
-		y = 4
-		cost = 12
-		cancelable = yes
-		completion_reward = {
-            add_timed_idea = {
-				idea = JAP_yonkanen
-				days = 1440
-			}        
-			swap_ideas = {
-				remove_idea = JAP_black_thursdayk_KAYA
-				add_idea = JAP_black_thursdayk_KAYA1
-			}	
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
-		}
-	}
-    focus = {
-		id = JAP_KAYA2
-		icon = GFX_goal_JAP_Asian_autarky
-        prerequisite = {
-            focus = JAP_KAYA1
-		}
-        available = {
-        }
-		mutually_exclusive = {
-		}   
-		ai_will_do = {
-			factor = 300
-		}
-		x = 1
-		y = 5
-		cost = 12
-		cancelable = yes
-		completion_reward = {
-            swap_ideas = {
-				remove_idea = JAP_blockeconomy_nf
-				add_idea = JAP_Autarkie
-			}	
-			swap_ideas = {
-				remove_idea = JAP_black_thursdayk_KAYA1
-				add_idea = JAP_black_thursdayk_KAYA2
-			}	
-			add_ideas = limited_exports
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.05
-			}
-		}
-	}
-    focus = {
-		id = JAP_keizaifukkatsu
-		icon = GFX_goal_JAP_Economy_Revival
-        prerequisite = {
-            focus = JAP_TAKAHASHI2
-            focus = JAP_INOUE2
-			focus = JAP_KAYA2
-        }
-        available = {
-        }
-		mutually_exclusive = {
-			    
-		}   
-		ai_will_do = {
-			factor = 300
-		}
-                
-		x = 3
-		y = 6
-		cost = 12
-		cancelable = yes
-		completion_reward = {
-            set_country_flag = JAP_KEIZAIFUKKO
-            remove_ideas = JAP_black_thursdayk_TAKAHASHI2
-            remove_ideas = JAP_black_thursdayk_INOUE2
-            remove_ideas = JAP_black_thursdayk_KAYA2
-			add_power_balance_value = {
-				id = JAP_Political_Distrust_bop
-				value = 0.1
-			}
-		}
-	}
-       
-
+	}  
 	########################
 	###民主主義政治ツリー###
 	########################
     focus = {
 		id =JAP_SHUGIIN
 		icon = GFX_goal_JP_1936
-        prerequisite = {
-			 
+		allow_branch = {
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
 		}
-                available = {
-                            always = no
-                       }
+        available = {
+            always = no
+            }
 		mutually_exclusive = {
 			
 		}
@@ -612,8 +321,8 @@ focus_tree = {
         prerequisite = {
 			focus = JAP_KAKUSHINTO3
 		}
-		mutually_exclusive = {
-			
+		bypass = { 
+			country_exists = VIN
 		}
 		ai_will_do = {
 			factor = 100
@@ -625,9 +334,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = TR_japan.13
 		}
-       
 	}
-	
 
 	#アジアの夜明け
 	focus = {
@@ -693,7 +400,7 @@ focus_tree = {
         available = {
 			has_completed_focus = JAP_democracy_focus
 			NOT = { has_idea = JAP_Korean_Question }
-            has_country_flag = JAP_KEIZAIFUKKO
+            has_country_flag = JAP_recovering_from_the_depression
             }
 		ai_will_do = {
 			factor = 100
@@ -1200,7 +907,7 @@ focus_tree = {
 		id = JAP_Korean_focus
 		icon = GFX_goal_korean_independence
 		x = 3
-		y = 7
+		y = 5
         available = {
             has_country_flag = JAP_Korean_Autonomy
             }
@@ -1223,7 +930,7 @@ focus_tree = {
 		id = JAP_Korean_focus_1
 		icon = GFX_goal_Korea_Colony
 		x = 5
-		y = 8
+		y = 6
         available = {
             has_country_flag = JAP_Korean_Autonomy1
             }
@@ -1249,7 +956,7 @@ focus_tree = {
 		id = JAP_Korean_focus_2
 		icon = GFX_goal_align_japan
 		x = 3
-		y = 8
+		y = 6
         available = {
 			has_country_flag = JAP_Korean_Autonomy2
             }
@@ -1277,7 +984,7 @@ focus_tree = {
 		id = JAP_Korean_focus_3
 		icon = GFX_goal_japanese_investment
 		x = 1
-		y = 8
+		y = 6
         available = {
             has_country_flag = JAP_Korean_Autonomy3
             }
@@ -1388,6 +1095,7 @@ focus_tree = {
 				has_country_flag = JAP_End_of_riot
 				has_country_flag = JAP_Tokyo_Agreement
 		    }
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
             }
 		mutually_exclusive = {
 		}
@@ -1412,6 +1120,7 @@ focus_tree = {
 			focus = JAP_democracy_focus
 		}
         available = {
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
             }
 		mutually_exclusive = {
 		}
@@ -1439,6 +1148,7 @@ focus_tree = {
 			focus = JAP_democracy_focus
 		}
         available = {
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
             }
 		mutually_exclusive = {
 		}
@@ -1489,6 +1199,7 @@ focus_tree = {
 			focus = JAP_democracy_focus
 		}
         available = {
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
             }
 		mutually_exclusive = {
 		}
@@ -1523,6 +1234,7 @@ focus_tree = {
 				id = JAP_Political_Distrust_bop
 				range = JAP_Political_Trust_very_high_range
 			}
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
             }
 		mutually_exclusive = {
 		}
@@ -3449,7 +3161,7 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-		827 = {
+		536 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
 				type = arms_factory
@@ -4584,7 +4296,7 @@ focus_tree = {
 					}
 			}
 		}
-		825 = {
+		536 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -6237,7 +5949,7 @@ focus_tree = {
 				}
 			}
 		}
-		825 = {
+		536 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
@@ -6384,5 +6096,376 @@ focus_tree = {
 			}
 		}
 	}
+	########################
+	###  戦時経済ツリー   ###
+	########################
+	#戦時経済
+	focus = {
+		id = JAP_MIL_Economy_1
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		x = 3
+		y = 0
+		cost = 5
+		allow_branch = {
+			OR =  { 
+				has_completed_focus = JAP_TAKAHASHI 
+				has_completed_focus = JAP_INOUE
+			}
+		}
+		available = {
+			is_subject = no
+			OR = { 
+				has_war_with = USA
+				has_war_with = RUS
+				has_war_with = SOV
+			}
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			if = {
+				limit = { NOT = { OR = { has_idea = war_economy has_idea = tot_economic_mobilisation } } }
+				add_ideas = war_economy
+			}
+			if = {
+				limit = { OR = { has_idea = war_economy has_idea = tot_economic_mobilisation } }
+				add_political_power = 100
+			}
+		}
+	}
+	#国家総動員法
+	focus = {
+		id = JAP_MIL_Economy_2
+		icon = GFX_focus_SOV_mobilization_plan
+		x = 3
+		y = 1
+		cost = 5
+		prerequisite = { focus = JAP_MIL_Economy_1 }
+		available = {
+			is_subject = no
+			has_war = yes
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	#ぜいたくは敵だ！
+	focus = {
+		id = JAP_MIL_Economy_3
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 1
+		y = 2
+		cost = 5
+		prerequisite = { focus = JAP_MIL_Economy_2 }
+		available = {
+			is_subject = no
+			has_war = yes
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = JAP_Kakakutosei1
+		}
+	}
+	#価格統制令
+	focus = {
+		id = JAP_MIL_Economy_4
+		icon = GFX_goal_JAP_yen
+		x = 1
+		y = 3
+		cost = 5
+		prerequisite = { focus = JAP_MIL_Economy_3 }
+		prerequisite = { focus = JAP_MIL_Economy_5 }
+		available = {
+			is_subject = no
+			has_war = yes
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_Kakakutosei1
+				add_idea = JAP_Kakakutosei2
+			}
+		}
+	}
+	#企画院の発足
+	focus = {
+		id = JAP_MIL_Economy_5
+		icon = GFX_focus_SOV_merge_plants
+		x = 3
+		y = 2
+		cost = 5
+		prerequisite = { focus = JAP_MIL_Economy_2 }
+		available = {
+			is_subject = no
+			has_war = yes
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = JAP_Kikakuin
+		}
+	}
+	#徴兵拡大
+	focus = {
+		id = JAP_MIL_Economy_6
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 3
+		y = 3
+		cost = 5
+		prerequisite = { focus = JAP_MIL_Economy_3 }
+		prerequisite = { focus = JAP_MIL_Economy_5 }
+		prerequisite = { focus = JAP_MIL_Economy_7 }
+		available = {
+			is_subject = no
+			has_war = yes
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = JAP_Mobilization
+		}
+	}
+	#電力の統制
+	focus = {
+		id = JAP_MIL_Economy_7
+		icon = GFX_focus_generic_aluminum
+		x = 5
+		y = 2
+		cost = 5
+		prerequisite = { focus = JAP_MIL_Economy_2 }
+		available = {
+			is_subject = no
+			has_war = yes
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_ideas = JAP_electric_power
+		}
+	}
+	#物資を軍需産業へ回せ
+	focus = {
+		id = JAP_MIL_Economy_8
+		icon = GFX_goal_JAP_tank
+		x = 5
+		y = 3
+		cost = 5
+		prerequisite = { focus = JAP_MIL_Economy_5 }
+		prerequisite = { focus = JAP_MIL_Economy_7 }
+		available = {
+			is_subject = no
+			has_war = yes
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = JAP_electric_power
+				add_idea = JAP_electric_power1
+			}
+		}
+	}
+	#敗北主義の根絶
+	focus = {
+		id = JAP_MIL_Economy_11
+		icon = GFX_focus_CZE_german_puppet
+		x = 3
+		y = 4
+		cost = 5
+		prerequisite = { focus = JAP_MIL_Economy_4 }
+		prerequisite = { focus = JAP_MIL_Economy_6 }
+		prerequisite = { focus = JAP_MIL_Economy_8 }
+		available = {
+			has_war = yes
+	    }
+		ai_will_do = {
+			factor = 100
+		}
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+	########################
+	###  宇垣内閣ツリー   ###
+	########################
+	#宇垣内閣
+    focus = {
+		id =JAP_Ugaki_Cabinet
+		icon = GFX_
+		allow_branch = {
+			has_country_flag = JAP_Rise_of_the_Military
+			has_country_leader = {
+				character = JAP_Ugaki_Kazushige
+				ruling_only = yes
+			}
+		}
+        available = { }
+		mutually_exclusive = { }
+		bypass = { }
+		ai_will_do = { factor = 200 }
+		x = 11
+		y = 0
+		cost = 1
+		cancelable = no
+		completion_reward = {
+			remove_power_balance = {
+				id = JAP_Political_Distrust_bop
+			}
+			add_ideas = JAP_Ugaki_Kazushige
+			add_ideas = JAP_Togo_Shigenori
+			add_ideas = JAP_Oasa_Tadao
+			add_ideas = JAP_Nagata_Tetsuzan_coa
+		}
+	}  
+	#国粋主義者との接触
+    focus = {
+		id = JAP_Ugaki_Cabinet_1
+		icon = GFX_
+		relative_position_id = JAP_Ugaki_Cabinet
+		available = {
+			has_country_flag = JAP_Rise_of_the_Military
+			has_country_leader = {
+				character = JAP_Ugaki_Kazushige
+				ruling_only = yes
+			}
+		}
+		mutually_exclusive = { }
+        bypass = { }
+		ai_will_do = { factor = 200 }
+		prerequisite = { focus = JAP_Ugaki_Cabinet }
+		x = -2
+		y = 1
+		cost = 1
+		cancelable = no
+		completion_reward = {
+
+		}
+	}  
+	#政党を欺く
+    focus = {
+		id = JAP_Ugaki_Cabinet_2
+		icon = GFX_
+		relative_position_id = JAP_Ugaki_Cabinet
+		available = {
+			has_country_flag = JAP_Rise_of_the_Military
+			has_country_leader = {
+				character = JAP_Ugaki_Kazushige
+				ruling_only = yes
+			}
+		}
+		mutually_exclusive = { }
+        bypass = { }
+		ai_will_do = { factor = 200 }
+		prerequisite = { focus = JAP_Ugaki_Cabinet }
+		x = 0
+		y = 1
+		cost = 1
+		cancelable = no
+		completion_reward = {
+
+		}
+	}  
+	#軍内部の懐柔
+    focus = {
+		id = JAP_Ugaki_Cabinet_3
+		icon = GFX_
+		relative_position_id = JAP_Ugaki_Cabinet
+		available = {
+			has_country_flag = JAP_Rise_of_the_Military
+			has_country_leader = {
+				character = JAP_Ugaki_Kazushige
+				ruling_only = yes
+			}
+		}
+		mutually_exclusive = { }
+        bypass = { }
+		ai_will_do = { factor = 200 }
+		prerequisite = { focus = JAP_Ugaki_Cabinet }
+		x = 2
+		y = 1
+		cost = 1
+		cancelable = no
+		completion_reward = {
+
+		}
+	}  
+	########################
+	###  岡田内閣ツリー   ###
+	########################
+	#岡田内閣
+	focus = {
+		id =JAP_Okada_Cabinet
+		icon = GFX_
+		allow_branch = {
+			has_country_flag = JAP_Rise_of_the_Military
+			has_country_leader = {
+				character = JAP_Okada_Keisuke
+				ruling_only = yes
+			}
+		}
+        available = {
+            always = no
+            }
+		mutually_exclusive = {
+			
+		}
+		ai_will_do = {
+			factor = 300
+		}
+        bypass = {
+		}
+		x = 11
+		y = 0
+		cost = 5
+		cancelable = no
+		completion_reward = {
+			remove_power_balance = {
+				id = JAP_Political_Distrust_bop
+			}
+			add_ideas = JAP_Okada_Keisuke
+			add_ideas = JAP_Hirota_Kouki
+			add_ideas = JAP_Suma_Yakichiro
+			add_ideas = JAP_Yonai_Mitsumasa
+		}
+	}  
 #End of focuses 
- }
+}

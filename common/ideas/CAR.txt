@@ -9,7 +9,7 @@
 			picture = generic_spy_intel
 			allowed = { always = no }
 			modifier = {
-                encryption_factor = 3.0
+                intelligence_agency_defense = 0.25
 				civilian_intel_to_others = -50
 				army_intel_to_others = -50
 				navy_intel_to_others = -50

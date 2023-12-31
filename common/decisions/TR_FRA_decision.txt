@@ -1,46 +1,171 @@
 annexation_decisions = {
-	FRA_annexation_Western_Germany = {
+	FRA_annexation_Westfalen= {
 		icon = generic_form_nation
 		selectable_mission = yes
 		is_good = no
         visible = {
 			tag = FRA
+			is_subject = no
             RHI = { exists = no }
             GER = { exists = no }
             RAT = { exists = no }
 			FRA = {
-				owns_state = 51
-                owns_state = 57
-                owns_state = 59
-			    } 
+                owns_state = 875
+			} 
 		}
 		available = {
             tag = FRA
+			is_subject = no
             RHI = { exists = no }
             GER = { exists = no }
             RAT = { exists = no }
 			FRA = {
-				owns_state = 51
-                owns_state = 57
-                owns_state = 59
+                owns_state = 875
 			} 
 		}
 		complete_effect = {
             hidden_effect = { 
                 RHI = {
-			        add_state_core = 50
-                    add_state_core = 52
-                    add_state_core = 55
-			        add_state_core = 57
-                    add_state_core = 59
-                    add_state_core = 54
-			        add_state_core = 53
-                    add_state_core = 61
-                    add_state_core = 60
-			        add_state_core = 861
+			        add_state_core = 55
+					add_state_core = 56
+					add_state_core = 57
+					add_state_core = 861
+					add_state_core = 875
 			    } 
             } 
-	        release_puppet = RHI
+	        release = RHI
+			set_autonomy = {	target = RHI	autonomous_state = military_occupation	}
+			RHI = { set_cosmetic_tag = RHI_protectorate }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	FRA_annexation_South_Germany= {
+		icon = generic_form_nation
+		selectable_mission = yes
+		is_good = no
+        visible = {
+			tag = FRA
+			is_subject = no
+            BDN = { exists = no }
+            GER = { exists = no }
+            RAT = { exists = no }
+			FRA = {
+				owns_state = 876
+			    } 
+		}
+		available = {
+            tag = FRA
+			is_subject = no
+            BDN = { exists = no }
+            GER = { exists = no }
+            RAT = { exists = no }
+			FRA = {
+				owns_state = 876
+			    } 
+		}
+		complete_effect = {
+            hidden_effect = { 
+                BDN = {
+					add_state_core = 50
+					add_state_core = 52
+					add_state_core = 53
+					add_state_core = 54
+					add_state_core = 876
+			    } 
+            } 
+	        release = BDN
+			set_autonomy = {	target = BDN	autonomous_state = military_occupation	}
+			BDN = { set_cosmetic_tag = SOUTH_GER_Confederation }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	FRA_annexation_North_Germany= {
+		icon = generic_form_nation
+		selectable_mission = yes
+		is_good = no
+        visible = {
+			tag = FRA
+			is_subject = no
+            HAN = { exists = no }
+            GER = { exists = no }
+            RAT = { exists = no }
+			FRA = {
+				owns_state = 877
+			    } 
+		}
+		available = {
+            tag = FRA
+			is_subject = no
+            HAN = { exists = no }
+            GER = { exists = no }
+            RAT = { exists = no }
+			FRA = {
+				owns_state = 877
+			    } 
+		}
+		complete_effect = {
+            hidden_effect = { 
+                HAN = {
+					add_state_core = 58
+					add_state_core = 59
+					add_state_core = 60
+					add_state_core = 61
+					add_state_core = 62
+					add_state_core = 64
+					add_state_core = 65
+					add_state_core = 844
+					add_state_core = 877
+			    } 
+            } 
+	        release = HAN
+			set_autonomy = {	target = HAN	autonomous_state = military_occupation	}
+			HAN = { set_cosmetic_tag = NORTH_GER_Confederation }
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	FRA_annexation_Poland= {
+		icon = generic_form_nation
+		selectable_mission = yes
+		is_good = no
+        visible = {
+			tag = FRA
+			is_subject = no
+            POL = { exists = no }
+            GER = { exists = no }
+            RAT = { exists = no }
+			FRA = {
+				owns_state = 10
+			    } 
+		}
+		available = {
+            tag = FRA
+			is_subject = no
+            POL = { exists = no }
+            GER = { exists = no }
+            RAT = { exists = no }
+			FRA = {
+				owns_state = 10
+			    } 
+		}
+		complete_effect = {
+            hidden_effect = { 
+                POL = {
+					add_state_core = 5
+					add_state_core = 63
+					add_state_core = 66
+					add_state_core = 67
+					add_state_core = 68
+			    } 
+            } 
+	        release = POL
+			set_autonomy = {	target = POL	autonomous_state = autonomy_satellite	}
+			POL = { set_cosmetic_tag = POL_republic }
 		}
 		ai_will_do = {
 			factor = 100

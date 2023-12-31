@@ -1,0 +1,23 @@
+
+state={
+	id=655
+	name="STATE_655"
+	manpower = 1582000
+	
+	state_category = four
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 3
+                        industrial_complex = 3
+		}
+                victory_points = { 1024 3 }
+                victory_points = { 4122 3 }
+	}
+
+	local_supplies=0.0 
+provinces={
+	    1024 4118 4122 	
+	}
+}

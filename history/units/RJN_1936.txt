@@ -1,18 +1,18 @@
 ﻿division_template = {
 	name = "Juntuán"				# Represents: two-division infantry corps (generally poorly-equipped, but decent experience),
-	division_names_group = RJN_INF_01
+	division_names_group = RJN_GAR_01
 									#	RJN divisions were well-trained in guerilla mountain tactics.
-	regiments = {
-		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
 	}
-	priority = 0
+        is_locked = yes
 }
 division_template = {
 	name = "Renmin Jundui"				# Represents three-column local militia groups (Triangular Corps); poorly-equipped, lowest experience
-	division_names_group = RJN_GAR_01
+	division_names_group = RJN_INF_01
 
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -53,7 +53,16 @@ units = {
 		start_equipment_factor = 0.8
 
 	}
-	
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 11945
+		division_template = "Juntuán"
+		start_equipment_factor = 0.9
+
+	}
 	### Provincial Forces ###
 	division = { #  "1 Shensi Juntuán"
 		division_name = {
@@ -95,16 +104,7 @@ units = {
 		start_equipment_factor = 0.9
 
 	}
-	division = { #  "5 Shensi Juntuán"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location = 11945
-		division_template = "Renmin Jundui"		# Provincial militia unit (poor equipment and training)
-		start_equipment_factor = 0.9
 
-	}
 }
 
 ##### STARTING PRODUCTION #####

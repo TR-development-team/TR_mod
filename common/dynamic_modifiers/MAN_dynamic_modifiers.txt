@@ -1,0 +1,46 @@
+#	Example:
+#
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+###### COUNTRY MODIFIERS
+MAN_the_industry = {
+	icon = "GFX_idea_generic_improved_industries"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	local_resources_factor = MAN_the_industry_local_resources_factor_modifier
+	min_export = MAN_the_industry_min_export_modifier
+	production_factory_efficiency_gain_factor = MAN_the_industry_production_factory_efficiency_gain_factor_modifier
+	production_factory_max_efficiency_factor = MAN_the_industry_production_factory_max_efficiency_factor_modifier
+	production_factory_start_efficiency_factor = MAN_the_industry_production_factory_start_efficiency_factor_modifier
+	consumer_goods_factor = MAN_the_industry_consumer_goods_factor_modifier
+    global_building_slots_factor = MAN_the_industry_global_building_slots_factor_modifier
+	production_speed_buildings_factor = MAN_the_industry_production_speed_buildings_factor_modifier
+	industrial_capacity_factory = MAN_the_industry_industrial_capacity_factory_modifier
+}

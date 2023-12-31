@@ -1,0 +1,38 @@
+ideas = {
+
+	country = {
+		ZHI_North_China_secession = {
+			picture = jap_intervene_in_china
+			modifier = {
+				stability_factor = -0.2
+				recruitable_population_factor = -0.2
+				resistance_growth = 0.3
+		   }
+		}
+		ZHI_Control_of_special_agencies = {
+			picture = generic_spy_intel
+			modifier = {
+				stability_factor = 0.1
+                intelligence_agency_defense = 0.2
+				subversive_activites_upkeep = -0.2
+		   }
+		}
+		ZHI_formless_nation = {
+			picture = prc_the_long_march2
+			modifier = {
+				stability_factor = -0.3
+				political_power_cost = 0.5
+				drift_defence_factor = -0.5
+		   }
+		}
+		ZHI_opium_trade = {
+            picture = prc_permit_opium_trade
+			modifier = {
+			    stability_factor = -0.3
+				war_support_factor = -0.3
+                consumer_goods_factor = -0.2
+				recruitable_population_factor = -0.1
+			}
+		}
+	}
+}

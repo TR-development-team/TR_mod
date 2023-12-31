@@ -15,7 +15,7 @@ generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = SWE tag = CAN tag = MEX tag = AST } }
+		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = SWE tag = CAN tag = MEX tag = AST tag = MAN } }
 	}
 
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }

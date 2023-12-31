@@ -12,12 +12,20 @@ country_event = {
 
 	is_triggered_only = yes
     fire_only_once = yes
-
-
-	
+	immediate = {
+		add_to_variable = {
+			JAP_economic_stability_level = -3
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.67
+				days = 14
+			}
+		}
+	}
 	option = {
 		name = TR_japan.100.a
-		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		custom_effect_tooltip = JAP_high_economic_stability_decrease_tt
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = -0.2
@@ -32,13 +40,16 @@ country_event = {
 	title = TR_japan.101.t
 	desc = TR_japan.101.d
 	picture = GFX_report_event_JAP_great_depression_2
-
 	is_triggered_only = yes
     fire_only_once = yes
-	
+	immediate = {
+		add_to_variable = {
+			JAP_economic_stability_level = -2
+		}
+	}
 	option = {
 		name = TR_japan.101.a
-		custom_effect_tooltip = JAP_Political_Distrust_flag_up
+		custom_effect_tooltip = JAP_medium_economic_stability_decrease_tt
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = -0.15
@@ -58,13 +69,16 @@ country_event = {
 	title = TR_japan.102.t
 	desc = TR_japan.102.d
 	picture = GFX_report_event_JAP_great_depression_3
-
 	is_triggered_only = yes
     fire_only_once = yes
-	
+	immediate = {
+		add_to_variable = {
+			JAP_economic_stability_level = 1
+		}
+	}
 	option = {
 		name = TR_japan.102.a
-		custom_effect_tooltip = JAP_Political_Distrust_flag_down
+		custom_effect_tooltip = JAP_low_economic_stability_increase_tt
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = 0.05
@@ -150,7 +164,6 @@ country_event = {
 		808 = {
 			add_manpower = -21
 		}
-		custom_effect_tooltip = JAP_Political_Distrust_flag_up
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = -0.1
@@ -186,7 +199,6 @@ country_event = {
 			ideology = market_liberal
 			popularity = -0.02
 		}
-		custom_effect_tooltip = JAP_Political_Distrust_flag_up
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = -0.1
@@ -209,7 +221,6 @@ country_event = {
 			ideology = market_liberal
 			popularity = -0.02
 		}
-		custom_effect_tooltip = JAP_Political_Distrust_flag_up
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = -0.05
@@ -233,7 +244,6 @@ country_event = {
 		}
 		set_country_flag = JAP_Liberal_officer
 		add_political_power = -25
-		custom_effect_tooltip = JAP_Political_Distrust_flag_down
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = 0.05
@@ -253,7 +263,6 @@ country_event = {
 			base = 0 #20
 		}
 		add_political_power = 50
-		custom_effect_tooltip = JAP_Political_Distrust_flag_up
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = -0.05
@@ -296,7 +305,6 @@ country_event = {
 			ideology = national_populist
 			popularity = 0.03
 		}
-		custom_effect_tooltip = JAP_Political_Distrust_flag_up
 		add_power_balance_value = {
 			id = JAP_Political_Distrust_bop
 			value = -0.05
@@ -677,6 +685,14 @@ country_event = {
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
     fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = TR_japan.68
+				days = 3
+			}
+		}
+	}
 	
 	option = {#立憲民政党
 		name = TR_japan.2.a
@@ -698,7 +714,6 @@ country_event = {
 			complete_national_focus = JAP_MINSEITO_WIN
 			add_ideas = JAP_machida_chuji
 			add_ideas = JAP_Shigemitsu_Mamoru
-			add_ideas = JAP_Inoue_junnosuke
 			add_ideas = JAP_Saito_Takao
 			country_event = {
 					id = TR_japan.3
@@ -728,8 +743,7 @@ country_event = {
 			complete_national_focus = JAP_SEIYUKAI_WIN
 			add_ideas = JAP_Suzuki_Kisaburo
 			add_ideas = JAP_Mori_Kaku
-			add_ideas = JAP_Takahashi_Korekiyo
-			add_ideas = JAP_Mitsuchi_Chuzo
+			add_ideas = JAP_Hatoyama_Ichiro_MoI
 			country_event = {
 					id = TR_japan.3
 					days = 7
@@ -758,7 +772,6 @@ country_event = {
 			complete_national_focus = JAP_KAKUSHINTO_WIN
 			add_ideas = JAP_Inukai_Tsuyoshi
 			add_ideas = JAP_Yoshizawa_Kenkichi
-			add_ideas = JAP_Hoshishima_Nirou
 			add_ideas = JAP_Uehara_Etsujiro
 		}
 	}
@@ -783,7 +796,6 @@ country_event = {
 			complete_national_focus = JAP_TAISHUTO_WIN
 			add_ideas = JAP_Abe_Iso
 			add_ideas = JAP_Shigemitsu_Mamoru
-			add_ideas = JAP_Mizutani_Chozaburou
 			add_ideas = JAP_Katayama_Tetsu_Int
 		}
 
@@ -1654,7 +1666,7 @@ country_event = {#衆議院の解散
 	option = { 
 		name = TR_japan.30.a
 		trigger = {
-			NOT = { has_country_flag = JAP_KAIGEN_KEIZOKU }
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
 			NOT = { has_government = authoritarian_democrat }
 		}
 		country_event = {
@@ -1665,7 +1677,7 @@ country_event = {#衆議院の解散
 	option = { 
 		name = TR_japan.30.b
 		trigger = {
-			NOT = { has_country_flag = JAP_KAIGEN_KEIZOKU }
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
 			has_government = authoritarian_democrat
 		}
 		ai_chance = {
@@ -1680,7 +1692,7 @@ country_event = {#衆議院の解散
 	option = { 
 		name = TR_japan.30.c
 		trigger = {
-			NOT = { has_country_flag = JAP_KAIGEN_KEIZOKU }
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
 			has_government = authoritarian_democrat
 		}
 		ai_chance = {
@@ -2841,13 +2853,10 @@ country_event = {
 		name = TR_japan.59.a
 		trigger = {
 			has_character = JAP_Obata_Toshiro
+			NOT = { has_government = paternal_autocrat }
 		}
 		ai_chance = {
 			base = 50
-			modifier = {
-				factor = 0
-				has_government = paternal_autocrat
-			}
 			modifier = {
 				factor = 100
 				OR = { 
@@ -2880,13 +2889,13 @@ country_event = {
 		name = TR_japan.59.b
 		trigger = {
 			has_character = JAP_Nagata_Tetsuzan_corp
+			NOT = { has_government = national_populist }
 		}
 		ai_chance = {
 			base = 50
 			modifier = {
 				factor = 0
 				OR = { 
-					has_government = national_populist
 					has_government = totalist
 				}
 			}
@@ -2917,6 +2926,10 @@ country_event = {
 	#岡村
 	option = {
 		name = TR_japan.59.c
+		trigger = {
+			NOT = { has_government = national_populist }
+			NOT = { has_government = paternal_autocrat }
+		}
 		ai_chance = {
 			base = 50
 			modifier = {
@@ -3037,7 +3050,6 @@ country_event = {
 		effect_tooltip = { retire_country_leader = yes }
 		complete_national_focus =JAP_Militalism_focus
 		hidden_effect = {
-			load_focus_tree = japan_focus_02
             promote_character = JAP_Daihonei
 		    set_party_name = {
 			    ideology = authoritarian_democrat
@@ -3116,6 +3128,7 @@ country_event = {
 			    Ideology = national_coalition_subtype
 		    }
 		}
+		set_country_flag = JAP_Rise_of_the_Military
 	}
 }
 #国を想う狸
@@ -3135,9 +3148,87 @@ country_event = {
 			    Ideology = national_coalition_subtype
 		    }
 		}
+		set_country_flag = JAP_Rise_of_the_Military
 	}
 }
+#井上・三土論争
+country_event = {
+	id = TR_japan.67
+	title = TR_japan.67.t
+	desc = TR_japan.67.d
+	picture = GFX_report_event_generic_read_write
 
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.67.a
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.02
+		}
+	}
+}
+#大蔵大臣の任命
+country_event = {
+	id = TR_japan.68
+	title = TR_japan.68.t
+	desc = TR_japan.68.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.68.a
+		trigger = {
+			NOT = { has_government = market_liberal }
+		}
+		ai_chance = {
+			base = 40
+		}
+		add_ideas = JAP_Mitsuchi_Chuzo_MoE
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.01
+		}
+		set_country_flag = JAP_Mitsuchi_flag
+	}
+	option = {
+		name = TR_japan.68.b
+		trigger = {
+			NOT = { has_government = social_conservative }
+		}
+		ai_chance = {
+			base = 40
+		}
+		add_ideas = JAP_Inoue_junnosuke
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.01
+		}
+		set_country_flag = JAP_INOUE_flag
+	}
+}
+#日本経済の復活
+country_event = {
+	id = TR_japan.69
+	title = TR_japan.69.t
+	desc = TR_japan.69.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.69.a
+		add_stability = 0.1
+		add_power_balance_value = {
+			id = JAP_Political_Distrust_bop
+			value = 0.1
+		}
+	}
+}
 #アメリカ政府、無条件降伏を宣言
 country_event = {
 	id = TR_japfor.1

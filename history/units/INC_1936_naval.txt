@@ -6,7 +6,7 @@
 		naval_base = 1285
 		task_force = {
 			name = "Indochina Kantai"
-			location = 4401  		
+			location = 1285  		
 			ship = { name = "Etsunan" definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = CAL version_name = "Nagato Class" } } }
 			ship = { ordered_name = 2 definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Tone Class"} } }
 			ship = { ordered_name = 1 definition = heavy_cruiser start_experience_factor = 0.25 equipment = { ship_hull_cruiser_2 = {amount = 1 owner = JAP version_name = "Tone Class"} } }
@@ -19,7 +19,7 @@
 		}	
 		task_force = {
 			name = "Sensui Kantai"
-			location = 4401  
+			location = 1285  
 			# 18 Sensui Sentai
 			ship = { ordered_name = 1 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }			
 			ship = { ordered_name = 2 definition = submarine equipment = { ship_hull_submarine_1 = {amount = 1 owner = JAP version_name = "Kaidai III Class"} } }	

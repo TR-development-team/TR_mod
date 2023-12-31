@@ -13,7 +13,6 @@ if = {
 	}
 	set_oob = "JAP_1936_nsb"
 }
-
 set_cosmetic_tag = GREATERJAPAN_empire
 
 set_major = yes
@@ -46,7 +45,6 @@ add_ideas = {
         #国民精神
         JAP_asian_leader
 	    JAP_Shading_sun
-        JAP_black_thursday
         JAP_treaty_of_Tokyo
         JAP_ugaki_gunshuku
         JAP_alienated_army
@@ -58,6 +56,9 @@ add_ideas = {
         JAP_Korean_Question
 }
 add_dynamic_modifier = {	modifier = JAP_colony_deficit 	}
+add_dynamic_modifier = { modifier = JAP_black_thursday 	}
+
+set_variable = { JAP_economic_stability_level = -5 }
 
 country_event = { id = TR_news.36 days = 1 }#暗黒の木曜日
 country_event = { id = TR_japan.9 days = 12 }#東北飢饉
@@ -306,13 +307,11 @@ promote_character = JAP_Tokonami_Takejiro
 recruit_character = JAP_tomoyuki_yamashita
 recruit_character = JAP_hisaichi_terauchi
 recruit_character = JAP_shunroku_hata
-recruit_character = JAP_akira_muto
 recruit_character = JAP_Shimomura_Sadamu
 recruit_character = JAP_Kanin_Kotohito
 recruit_character = JAP_Watanabe_Jotaro
 recruit_character = JAP_iwane_matsui
 recruit_character = JAP_yasuji_okamura
-recruit_character = JAP_toshizo_nishio
 recruit_character = JAP_naruhiko_higashikuni
 recruit_character = JAP_takashi_sakai
 recruit_character = JAP_kenkichi_ueda
@@ -330,9 +329,7 @@ recruit_character = JAP_Anami_Korechika
 recruit_character = JAP_hitoshi_imamura
 recruit_character = JAP_masatane_kanda
 recruit_character = JAP_Shirakawa_Yoshinori
-recruit_character = JAP_Muto_Nobuyoshi
 recruit_character = JAP_Nagata_Tetsuzan_corp
-recruit_character = JAP_Hideki_Tojo
 recruit_character = JAP_Obata_Toshiro
 recruit_character = JAP_Iwanaka_Yoshiharu
 recruit_character = JAP_Ikeda_Sueo

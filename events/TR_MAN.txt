@@ -1,0 +1,251 @@
+add_namespace = TR_Manchu
+
+#大阪大暴落の影響が満洲に波及
+country_event = {
+	id = TR_Manchu.1
+	title = TR_Manchu.1.t
+	desc = TR_Manchu.1.d
+	picture = GFX_report_event_MAM_Xinjing_city
+	is_triggered_only = yes
+    fire_only_once = yes
+	immediate = {
+		add_to_variable = {
+			var = MAN_the_industry_consumer_goods_factor_modifier
+			value = 0.6
+		}
+		add_to_variable = {
+			var = MAN_the_industry_production_speed_buildings_factor_modifier
+			value = -0.4
+		}
+		add_to_variable = {
+			var = MAN_the_industry_industrial_capacity_factory_modifier
+			value = -0.2
+		}
+		add_to_variable = {
+			var = MAN_the_industry_production_factory_max_efficiency_factor_modifier
+			value = -0.1
+		}
+		add_to_variable = {
+			var = MAN_the_industry_production_factory_start_efficiency_factor_modifier
+			value = -0.05
+		}
+		add_to_variable = {
+			var = MAN_the_industry_production_factory_efficiency_gain_factor_modifier
+			value = -0.05
+		}
+		add_to_variable = {
+			var = MAN_the_industry_min_export_modifier
+			value = -0.25
+		}
+	}
+
+	option = {
+		name = TR_Manchu.1.a
+		add_stability = -0.2
+		custom_effect_tooltip = event_TR_Manchu_1_tt
+
+	}
+}
+#阿片政策改革
+country_event = {
+	id = TR_Manchu.2
+	title = TR_Manchu.2.t
+	desc = TR_Manchu.2.d
+	picture = GFX_report_event_MAN_opium_cultivation
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	#本来の目的を達成するぞ！阿片とはおさらばだ！
+	option = {
+		name = TR_Manchu.2.a
+		ai_chance = {
+			base = 40
+		}
+		remove_ideas = MAN_opium_trade
+		add_timed_idea = {
+			idea = MAN_opium_trade2
+			days = 180
+		}
+	}
+	#政策は現状を維持するが、密売を取り締まれ！
+	option = {
+		name = TR_Manchu.2.b
+		ai_chance = {
+			base = 40
+		}
+		swap_ideas = {
+			remove_idea = MAN_opium_trade
+			add_idea = MAN_opium_trade1
+		}
+		add_political_power = -50
+	}
+	#現状で何の問題があるのかね？
+	option = {
+		name = TR_Manchu.2.c
+		ai_chance = {
+			base = 40
+		}
+		add_political_power = 50
+	}
+}
+#満洲聯邦
+country_event = {
+	id = TR_Manchu.3
+	title = TR_Manchu.3.t
+	desc = TR_Manchu.3.d
+	picture = GFX_report_event_MAM_Datong_Square
+
+	is_triggered_only = yes
+    fire_only_once = yes    
+
+	option = {
+		name = TR_Manchu.3.a
+	}
+}
+#満洲協和会
+country_event = {
+	id = TR_Manchu.4
+	title = TR_Manchu.4.t
+	desc = TR_Manchu.4.d
+	picture = GFX_report_event_MAM_Datong_Square
+
+	is_triggered_only = yes
+    fire_only_once = yes    
+
+	option = {
+		name = TR_Manchu.4.a
+	}
+}
+#満洲協和会党大会
+country_event = {
+	id = TR_Manchu.5
+	title = TR_Manchu.5.t
+	desc = TR_Manchu.5.d
+	picture = GFX_report_event_MAM_Datong_Square
+
+	is_triggered_only = yes
+    fire_only_once = yes    
+
+	option = {
+		name = TR_Manchu.5.a
+		hidden_effect = { country_event = { id = TR_Manchu.10 days = 7 } }
+	}
+}
+#協和会総裁選
+country_event = {
+	id = TR_Manchu.10
+	title = TR_Manchu.10.t
+	desc = TR_Manchu.10.d
+	picture = GFX_report_event_MAM_Datong_Square
+
+	is_triggered_only = yes
+    fire_only_once = yes    
+
+
+	#官僚派の岸信介
+	option = {
+		name = TR_Manchu.10.a
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.05
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+		}
+		MAN_Kishi_Nobusuke = {
+			promote_character = {
+				ideology= Dominant_party_system_subtype
+			}
+		}
+		add_ideas = MAN_Kishi_Nobusuke_GL
+	}
+	#関東軍派の甘粕正彦
+	option = {
+		name = TR_Manchu.10.b
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		add_ideas = MAN_Masahiko_Amakasu
+		add_ideas = MAN_Furumi_Tadayuki
+	}
+	#国粋派の頭山秀三
+	option = {
+		name = TR_Manchu.10.c
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = national_populist
+			elections_allowed = no
+		}
+		add_ideas = MAN_Toyama_Hidezo
+	}
+	#企業連盟の鮎川義介
+	option = {
+		name = TR_Manchu.10.e
+		ai_chance = {
+			base = 40
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = no
+		}
+	}
+}
+#満鉄の支配
+country_event = {
+	id = TR_Manchu.11
+	title = TR_Manchu.11.t
+	desc = TR_Manchu.11.d
+	picture = GFX_report_event_MAM_Datong_Square
+
+	is_triggered_only = yes
+    fire_only_once = yes    
+
+	option = {
+		name = TR_Manchu.11.a
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = paternal_autocrat
+			elections_allowed = no
+		}
+		set_party_name = {
+			ideology = paternal_autocrat
+			long_name = MAN_mantetsu_party_long
+			name = MAN_mantetsu_party
+		}
+		MAN_Matsuoka_Yousuke = {
+			promote_character = {
+				ideology= oligarchy_subtype
+			}
+			promote_character = {
+				ideology= corporatocracy_subtype
+			}
+		}
+		add_ideas = MAN_Matsuoka_Yousuke_GL
+	}
+}

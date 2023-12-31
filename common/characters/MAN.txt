@@ -10,6 +10,72 @@ characters={
 			ideology=anarco_syndicalist_subtype
 		}
 	}
+	MAN_Ayukawa_Yoshisuke={
+		name=MAN_Ayukawa_Yoshisuke
+		portraits={
+			civilian={
+				large="gfx/leaders/MAN/Portrait_MAN_Ayukawa_Yoshisuke.png"
+			}
+		}
+		country_leader={
+			ideology=National_liberalism_subtype
+			id=-1
+		}
+	}
+	MAN_Hoshino_Naoki={
+		name=MAN_Hoshino_Naoki
+		portraits={
+			civilian={
+				large="gfx/leaders/MAN/Portrait_MAN_Hoshino_Naoki.png"
+			}
+		}
+		country_leader={
+			ideology=colonial_government_subtype
+			id=-1
+		}
+	}
+	MAN_Kishi_Nobusuke={
+		name=MAN_Kishi_Nobusuke
+		portraits={
+			civilian={
+				large="gfx/leaders/MAN/Portrait_MAN_Kishi_Nobusuke.png"
+			}
+		}
+		country_leader={
+			ideology=Dominant_party_system_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=civilian_dictatorship_subtype
+			id=-1
+		}
+	}
+	MAN_Masahiko_Amakasu={
+		name=MAN_Masahiko_Amakasu
+		portraits={
+			civilian={
+				large="gfx/leaders/MAN/Portrai_MAN_Masahiko_Amakasu.png"
+			}
+		}
+		country_leader={
+			ideology=militarism_subtype
+		}
+	}
+	MAN_Matsuoka_Yousuke={
+		name=JAP_Matsuoka_Yousuke
+		portraits={
+			civilian={
+				large="gfx/leaders/MAN/Portrait_MAN_Matsuoka_Yousuke.png"
+			}
+		}
+		country_leader={
+			ideology=oligarchy_subtype
+			id=-1
+		}
+		country_leader={
+			ideology=corporatocracy_subtype
+		}
+	}
 	MAN_Toyama_Hidezo={
 		name=MAN_Toyama_Hidezo
 		portraits={
@@ -18,19 +84,7 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=Pan_Asianism_subtype
-			id=-1
-		}
-	}
-	MAN_Masahiko_Amakasu={
-		name=MAN_Masahiko_Amakasu
-		portraits={
-			civilian={
-				large="gfx/leaders/MAN/Portrai_man_amakasu.tga"
-			}
-		}
-		country_leader={
-			ideology=colonial_government_subtype
+			ideology=asian_monroe_subtype
 			id=-1
 		}
 	}
@@ -106,8 +160,4 @@ characters={
 			legacy_id=-1
 		}
 	}
-
-
-
-
 }

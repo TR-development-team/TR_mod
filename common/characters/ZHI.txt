@@ -1,17 +1,24 @@
 characters={
-	
-	ZHI_Doihara_Kenji={
-		name=JAP_Doihara_Kenji
+	ZHI_Wang_Kemin={
+		name=ZHI_Wang_Kemin
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
+				large="gfx/leaders/ZHI/Portrait_ZHI_Wang_Kemin.png"
 			}
 		}
 		country_leader={
 			ideology= social_conservative_subtype
 		}
 		country_leader={
-			ideology= colonial_government_subtype
+			ideology= oligarchy_subtype
+		}
+	}
+	ZHI_Doihara_Kenji={
+		name=JAP_Doihara_Kenji
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
+			}
 		}
 		country_leader={
 			ideology= mil_colonial_government_subtype

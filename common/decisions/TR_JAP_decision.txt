@@ -388,13 +388,13 @@ JAP_Five_Year_Plan_Policy = {
 		icon = eng_trade_unions_demand
                 allowed = { always = no } #イベントorNFで解禁
 		available = {
-                        has_idea = JAP_black_thursday
+
 		}
 		visible = {
 		}
 		modifier = {
-                       political_power_factor = -0.2
-                       stability_weekly = 0.005
+            political_power_factor = -0.2
+            stability_weekly = 0.005
 		}
 		cost = 0
 		days_remove = 70
@@ -407,10 +407,10 @@ JAP_Five_Year_Plan_Policy = {
 			add_political_power = -50
 		}
 		remove_effect = {
-			swap_ideas = {
-                        remove_idea = JAP_black_thursday
-                        add_idea = JAP_black_thursday_KISHI
-                        }
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 		}
 
 	}
@@ -418,13 +418,13 @@ JAP_Five_Year_Plan_Policy = {
 		icon = eng_trade_unions_demand
                 allowed = { always = no } #イベントorNFで解禁
 		available = {
-                        has_idea = JAP_black_thursday_KISHI
+
 		}
 		visible = {
 		}
 		modifier = {
-                       political_power_factor = -0.2
-                       stability_weekly = 0.005
+            political_power_factor = -0.2
+            stability_weekly = 0.005
 		}
 		cost = 0
 		days_remove = 70
@@ -437,10 +437,10 @@ JAP_Five_Year_Plan_Policy = {
 			add_political_power = -50
 		}
 		remove_effect = {
-			swap_ideas = {
-                        remove_idea = JAP_black_thursday_KISHI
-                        add_idea = JAP_black_thursday_KISHI1
-                        }
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
@@ -529,13 +529,12 @@ JAP_Five_Year_Plan_Policy = {
 		icon = eng_trade_unions_demand
         allowed = { always = no } #イベントorNFで解禁
 		available = {
-                        has_idea = JAP_black_thursday_KISHI1
 		}
 		visible = {
 		}
 		modifier = {
-                       political_power_factor = -0.2
-                       stability_weekly = 0.005
+            political_power_factor = -0.2
+            stability_weekly = 0.005
 		}
 		cost = 0
 		days_remove = 70
@@ -549,6 +548,10 @@ JAP_Five_Year_Plan_Policy = {
 		}
 		remove_effect = {
 			add_ideas = JAP_Autarkie
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 			activate_targeted_decision = {
 				target = JAP
 				decision = JAP_Five_Year_Plan_decision_4
@@ -561,10 +564,6 @@ JAP_Five_Year_Plan_Policy = {
 				target = JAP
 				decision = JAP_Five_Year_Plan_decision_6
 			}
-			swap_ideas = {
-                                remove_idea = JAP_black_thursday_KISHI1
-                                add_idea = JAP_black_thursday_KISHI2
-                        }
 		}
 
 	}
@@ -657,7 +656,7 @@ JAP_National_Reform_Plan_Policy = {
 		icon = eng_trade_unions_demand
         allowed = { always = no } #イベントorNFで解禁
 		available = {
-            has_idea = JAP_black_thursday
+
 		}
 		visible = {
 		}
@@ -676,10 +675,10 @@ JAP_National_Reform_Plan_Policy = {
 			add_political_power = -50
 		}
 		remove_effect = {
-			swap_ideas = {
-                        remove_idea = JAP_black_thursday
-                        add_idea = JAP_black_thursday_KISHI
-                        }
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 		}
 
 	}
@@ -687,7 +686,7 @@ JAP_National_Reform_Plan_Policy = {
 		icon = eng_trade_unions_demand
         allowed = { always = no } #イベントorNFで解禁
 		available = {
-            has_idea = JAP_black_thursday_KISHI
+
 		}
 		visible = {
 		}
@@ -706,10 +705,10 @@ JAP_National_Reform_Plan_Policy = {
 			add_political_power = -50
 		}
 		remove_effect = {
-			swap_ideas = {
-				remove_idea = JAP_black_thursday_KISHI
-				add_idea = JAP_black_thursday_KISHI1
-                        }
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 			533 = {
 				add_extra_state_shared_building_slots = 2
 				add_manpower = 10000
@@ -729,7 +728,7 @@ JAP_National_Reform_Plan_Policy = {
 		icon = eng_trade_unions_demand
         allowed = { always = no } #イベントorNFで解禁
 		available = {
-            has_idea = JAP_black_thursday_KISHI1
+
 		}
 		visible = {
 		}
@@ -749,10 +748,10 @@ JAP_National_Reform_Plan_Policy = {
 		}
 		remove_effect = {
 			add_ideas = JAP_mefo_bills_1
-			swap_ideas = {
-				remove_idea = JAP_black_thursday_KISHI1
-				add_idea = JAP_black_thursday_KISHI2
-                        }
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 			activate_targeted_decision = {
 				target = JAP
 				decision = JAP_National_Reform_Plan_decision_4
@@ -856,7 +855,7 @@ JAP_Japan_Reform_Plan_Policy = {
 		icon = eng_trade_unions_demand
         allowed = { always = no } #イベントorNFで解禁
 		available = {
-            has_idea = JAP_black_thursday
+
 		}
 		visible = {
 		}
@@ -876,14 +875,14 @@ JAP_Japan_Reform_Plan_Policy = {
 			add_stability = -0.1
 		}
 		remove_effect = {
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 			add_ideas = JAP_agricultural_2
 			add_ideas = JAP_agriculture_3
 			remove_ideas = JAP_food_import
 			remove_ideas = JAP_Toshikamitu
-			swap_ideas = {
-                        remove_idea = JAP_black_thursday
-                        add_idea = JAP_black_thursday_KISHI
-                        }
 		}
 
 	}
@@ -891,7 +890,6 @@ JAP_Japan_Reform_Plan_Policy = {
 		icon = eng_trade_unions_demand
         allowed = { always = no } #イベントorNFで解禁
 		available = {
-            has_idea = JAP_black_thursday_KISHI
 		}
 		visible = {
 		}
@@ -911,11 +909,11 @@ JAP_Japan_Reform_Plan_Policy = {
 			add_stability = -0.1
 		}
 		remove_effect = {
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 			add_ideas = JAP_Kinyutosei
-			swap_ideas = {
-				remove_idea = JAP_black_thursday_KISHI
-				add_idea = JAP_black_thursday_KISHI1
-                        } 
 		}
 
 	}
@@ -923,7 +921,6 @@ JAP_Japan_Reform_Plan_Policy = {
 		icon = eng_trade_unions_demand
         allowed = { always = no } #イベントorNFで解禁
 		available = {
-            has_idea = JAP_black_thursday_KISHI1
 		}
 		visible = {
 		}
@@ -942,11 +939,11 @@ JAP_Japan_Reform_Plan_Policy = {
 			add_political_power = -50
 		}
 		remove_effect = {
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 			add_ideas = JAP_autogestion
-			swap_ideas = {
-				remove_idea = JAP_black_thursday_KISHI1
-				add_idea = JAP_black_thursday_KISHI2
-                        }
 			activate_targeted_decision = {
 				target = JAP
 				decision = JAP_Japan_Reform_Plan_decision_4
@@ -1196,7 +1193,6 @@ JAP_fully_armed_state_Policy = {
 		icon = eng_trade_unions_demand
                 allowed = { always = no } #イベントorNFで解禁
 		available = {
-                        has_idea = JAP_black_thursday
 		}
 		visible = {
 		}
@@ -1215,10 +1211,10 @@ JAP_fully_armed_state_Policy = {
 			add_political_power = -50
 		}
 		remove_effect = {
-			swap_ideas = {
-                        remove_idea = JAP_black_thursday
-                        add_idea = JAP_black_thursday_KISHI
-                        }
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
@@ -1307,13 +1303,12 @@ JAP_fully_armed_state_Policy = {
 		icon = eng_trade_unions_demand
                 allowed = { always = no } #イベントorNFで解禁
 		available = {
-                        has_idea = JAP_black_thursday_KISHI
 		}
 		visible = {
 		}
 		modifier = {
-                       political_power_factor = -0.2
-                       stability_weekly = 0.005
+            political_power_factor = -0.2
+            stability_weekly = 0.005
 		}
 		cost = 0
 		days_remove = 70
@@ -1326,10 +1321,10 @@ JAP_fully_armed_state_Policy = {
 			add_political_power = -50
 		}
 		remove_effect = {
-			swap_ideas = {
-                        remove_idea = JAP_black_thursday_KISHI
-                        add_idea = JAP_black_thursday_KISHI1
-                        }
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 						random_owned_controlled_state = {
 							limit = {
 								free_building_slots = {
@@ -1448,6 +1443,10 @@ JAP_fully_armed_state_Policy = {
 		}
 		remove_effect = {
 			add_ideas = JAP_Autarkie
+			custom_effect_tooltip = JAP_high_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 3
+			}
 			activate_targeted_decision = {
 				target = JAP
 				decision = JAP_fully_armed_state_decision_4
@@ -1460,10 +1459,6 @@ JAP_fully_armed_state_Policy = {
 				target = JAP
 				decision = JAP_fully_armed_state_decision_6
 			}
-			swap_ideas = {
-                                remove_idea = JAP_black_thursday_KISHI1
-                                add_idea = JAP_black_thursday_KISHI2
-                        }
 		}
 
 	}
@@ -2060,6 +2055,447 @@ JAP_Economic_Policy = {
 		remove_effect = {
 			add_ideas = JAP_bullet_train
 			clr_country_flag = JAP_National_Plan_Ongoing
+		}
+	}
+}
+JAP_Inoue_Plan_Policy = {
+	JAP_Inoue_Plan_decision_1 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_INOUE_flag
+			has_completed_focus = JAP_INOUE
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+			production_speed_buildings_factor = -0.5
+			political_power_factor = 0.25
+		}
+		cost = 0
+		days_remove = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+			add_stability = -0.1
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+		}
+	}
+	JAP_Inoue_Plan_decision_2 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_INOUE_flag
+			has_completed_focus = JAP_INOUE
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+            consumer_goods_factor = 0.3
+		}
+		cost = 50
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+			add_ideas = JAP_Critical_Industry_Control_Law
+		}
+	}
+	JAP_Inoue_Plan_decision_3 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_INOUE_flag
+			has_completed_focus = JAP_INOUE
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+            political_power_cost = 0.5
+		}
+		cost = 50
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+			add_ideas = JAP_Reform_of_the_Tax_Bureau
+		}
+	}
+	JAP_Inoue_Plan_decision_4 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_INOUE_flag
+			has_completed_focus = JAP_INOUE
+			has_idea = JAP_Critical_Industry_Control_Law
+			has_idea = JAP_Reform_of_the_Tax_Bureau
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+            research_speed_factor = 0.05
+			political_power_cost = 0.25
+		}
+		cost = 50
+		days_remove = 70
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+		}
+	}
+	JAP_Inoue_Plan_decision_5 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_INOUE_flag
+			has_completed_focus = JAP_INOUE
+			has_idea = JAP_Critical_Industry_Control_Law
+			has_idea = JAP_Reform_of_the_Tax_Bureau
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+            trade_opinion_factor = 0.1
+			min_export = 0.1
+			political_power_cost = 0.25
+		}
+		cost = 50
+		days_remove = 70
+		ai_will_do = {
+			factor = 100
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+		}
+	}
+	JAP_Inoue_Plan_decision_6 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_INOUE_flag
+			has_completed_focus = JAP_INOUE
+			check_variable = {
+				JAP_economic_stability_level > -2
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+			political_power_cost = 0.25
+			production_speed_buildings_factor = -0.25
+			production_factory_max_efficiency_factor = 0.25
+		}
+		cost = 50
+		days_remove = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+			529 = { 
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			807 = { 
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			808 = { 
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			815 = { 
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+			822 = { 
+				remove_building = {
+					type = industrial_complex
+					level = 1
+				}
+			}
+		}
+		remove_effect = {
+            add_ideas = JAP_Economic_Darwinism
+		}
+	}
+}
+JAP_Mitsuchi_Plan_Policy = {
+	JAP_Mitsuchi_Plan_decision_1 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_Mitsuchi_flag
+			has_completed_focus = JAP_TAKAHASHI
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+			political_power_gain = 0.2
+			min_export = -0.1
+		}
+		cost = 0
+		days_remove = 100
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+			add_ideas = JAP_Managed_system
+			set_country_flag = { flag = JAP_military_budget value = 0 }
+		}
+	}
+	JAP_Mitsuchi_Plan_decision_2 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_Mitsuchi_flag
+			has_completed_focus = JAP_TAKAHASHI
+			OR = { 
+				has_idea = JAP_Managed_system
+				has_idea = JAP_Managed_system_1
+			}
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+			political_power_cost = 0.25
+			production_speed_industrial_complex_factor = 0.2
+			production_speed_infrastructure_factor = 0.2
+			production_speed_rail_way_factor = 0.2
+		}
+		cost = 50
+		days_remove = 70
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+			modify_country_flag= { flag = JAP_military_budget value = 1 }
+		}
+	}
+	JAP_Mitsuchi_Plan_decision_3 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_Mitsuchi_flag
+			has_completed_focus = JAP_TAKAHASHI
+			OR = { 
+				has_idea = JAP_Managed_system
+				has_idea = JAP_Managed_system_1
+			}
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+			political_power_cost = 0.25
+			production_speed_dockyard_factor = 0.2
+			production_speed_arms_factory_factor = 0.2
+			power_balance_weekly = -0.002
+		}
+		cost = 50
+		days_remove = 70
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+		}
+	}
+	JAP_Mitsuchi_Plan_decision_4 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_Mitsuchi_flag
+			has_completed_focus = JAP_TAKAHASHI
+			OR = { 
+				has_idea = JAP_Managed_system
+				has_idea = JAP_Managed_system_1
+			}
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+			trade_opinion_factor = -0.5
+		}
+		cost = 50
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+			swap_ideas = {
+				remove_idea = JAP_Managed_system
+				add_idea = JAP_Managed_system_1
+			}
+		}
+	}
+	JAP_Mitsuchi_Plan_decision_5 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_Mitsuchi_flag
+			has_completed_focus = JAP_TAKAHASHI
+			OR = { 
+				has_idea = JAP_Managed_system
+				has_idea = JAP_Managed_system_1
+			}
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+			industrial_capacity_factory = -0.1
+			industrial_capacity_dockyard = -0.1
+		}
+		cost = 50
+		days_remove = 70
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = JAP_low_economic_stability_increase_tt
+			add_to_variable = {
+				JAP_economic_stability_level = 1
+			}
+			add_ideas = JAP_price_control_law
+		}
+	}
+	JAP_Mitsuchi_Plan_decision_6 = {
+		icon = generic_consumer_goods
+		visible = {
+			has_country_flag = JAP_Mitsuchi_flag
+			has_completed_focus = JAP_TAKAHASHI
+			OR = { 
+				has_idea = JAP_Managed_system
+				has_idea = JAP_Managed_system_1
+			}
+			NOT = {
+				has_country_flag = JAP_recovering_from_the_depression
+			}
+			has_country_flag = {
+				flag = JAP_military_budget
+				value > 0
+			}
+		}
+		available = {
+
+		}
+		modifier = {
+			political_power_factor = 0.2
+			production_speed_dockyard_factor = -0.25
+			production_speed_arms_factory_factor = -0.25
+			war_support_factor = -0.1
+			conscription_factor = -0.1
+			power_balance_weekly = 0.002
+		}
+		cost = 0
+		days_remove = 70
+		ai_will_do = {
+			factor = 200
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			modify_country_flag= { flag = JAP_military_budget value = -1 }
 		}
 	}
 }

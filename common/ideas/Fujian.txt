@@ -7,13 +7,12 @@
         FUJ_RJN_partisan = {
 			allowed = {
 				always = no
-			}
-                        
+			}        
 
 			targeted_modifier = {
 				tag = RJN
 				attack_bonus_against = -0.05
-                                defense_bonus_against = -0.05
+                defense_bonus_against = -0.05
 			}
 			removal_cost = -1
                      

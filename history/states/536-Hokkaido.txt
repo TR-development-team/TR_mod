@@ -10,24 +10,30 @@ state={
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
-			arms_factory = 1
-			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 1
+			dockyard = 3
+			infrastructure = 3
                         1512 = {
-				naval_base = 5
+				naval_base = 4
+			}
+                        3962 = {
+				naval_base = 4
 
 			}
-                        air_base = 3
+                        air_base = 5
 		}
-		victory_points = {
-			1512 5
-		}
+		victory_points = { 10444 20 }
+		victory_points = { 12421 1 }
+		victory_points = { 1512 1 }
+                victory_points = { 3962 3 }
 	}
 
 	local_supplies=0.0 
 provinces={
-		1512 4646 7595 10512 12493 
+		1512 1642 3962 4576 4646 7532 7595 10444 10512 12352 12421 12493 
 	}
-	manpower=712000
+	manpower=2712000
 	buildings_max_level_factor=1.000
-	state_category=two
+	state_category=eight
 }

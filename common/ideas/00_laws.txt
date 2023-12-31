@@ -253,15 +253,15 @@ ideas = {
 		}
         #ドイツ専用
 		tot_economic_mobilisation_1 = {
-                        name = tot_economic_mobilisation
+            name = tot_economic_mobilisation
 			picture = tot_economic_mobilisation
-                        on_add = { log = "[GetDateText] [Root.GetName]: add idea tot_economic_mobilisation_1" }
+            on_add = { log = "[GetDateText] [Root.GetName]: add idea tot_economic_mobilisation_1" }
 
 			allowed = {
 				always = no
 			}
 			allowed_to_remove = {
-			        NOT = { has_government = syndicalist }
+			    NOT = { has_government = syndicalist }
 			}
 
 			removal_cost = -1

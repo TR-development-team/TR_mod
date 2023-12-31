@@ -19,7 +19,8 @@ autonomy_state = {
 		extra_trade_to_overlord_factor = 1.0
 		overlord_trade_cost_factor = -0.5
 		research_sharing_per_country_bonus_factor = -0.5
-		autonomy_gain_global_factor = -0.3
+		cic_to_overlord_factor = 0.2
+		mic_to_overlord_factor = 0.2
 	}
 	
 	ai_subject_wants_higher = {

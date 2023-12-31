@@ -1,0 +1,111 @@
+﻿division_template = {
+	name = "Lính du kích"
+	division_names_group = VIN_GAR_01
+									
+	regiments = {					
+		irregular_infantry = { x = 0 y = 0 }	
+		irregular_infantry = { x = 0 y = 1 }
+		irregular_infantry = { x = 1 y = 0 }
+		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 2 y = 0 }
+		irregular_infantry = { x = 2 y = 1 }
+	}
+        is_locked = yes
+}
+division_template = {
+	name = "Sư đoàn bộ binh"	
+	division_names_group = VIN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+units = {
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Sư đoàn bộ binh"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4075
+		division_template = "Lính du kích"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10129
+		division_template = "Lính du kích"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 10103
+		division_template = "Lính du kích"
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 4529
+		division_template = "Lính du kích"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 12075
+		division_template = "Lính du kích"
+		start_experience_factor = 0.0
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 10075
+		division_template = "Lính du kích"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 12319
+		division_template = "Lính du kích"
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 12319
+		division_template = "Lính du kích"
+	}
+}
+

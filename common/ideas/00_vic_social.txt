@@ -17,7 +17,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				political_power_gain = -0.2
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 			}
 			
 			default = yes
@@ -36,7 +36,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				political_power_gain = -0.1
-				consumer_goods_expected_value = -0.025
+				consumer_goods_factor = -0.05
 			}
 			
 			cancel_if_invalid = no
@@ -76,7 +76,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				political_power_gain = 0.1
-				consumer_goods_expected_value = 0.025
+				consumer_goods_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -97,7 +97,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				political_power_gain = 0.2
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -187,8 +187,8 @@ ideas = {
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
 				production_factory_max_efficiency_factor = 0.1
-                                production_factory_efficiency_gain_factor = 0.05
-                                production_factory_start_efficiency_factor = 0.05
+                production_factory_efficiency_gain_factor = 0.05
+                production_factory_start_efficiency_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -347,7 +347,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = -0.3
 				production_factory_efficiency_gain_factor = -0.2
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 			}
 			
 			default = yes
@@ -366,7 +366,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.1
-				consumer_goods_expected_value = -0.025
+				consumer_goods_factor = -0.05
 			}
 			
 			cancel_if_invalid = no
@@ -407,7 +407,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.1
-				consumer_goods_expected_value = 0.025
+				consumer_goods_factor = 0.05
 			}
 			
 			cancel_if_invalid = no
@@ -428,7 +428,7 @@ ideas = {
 			modifier = {
 				line_change_production_efficiency_factor = 0.3
 				production_factory_efficiency_gain_factor = 0.2
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -456,7 +456,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = -0.1
 				industrial_capacity_factory = 0.1
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 			}
 			
 			default = yes
@@ -475,7 +475,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = -0.05
 				industrial_capacity_factory = 0.05
-				consumer_goods_expected_value = -0.025
+				consumer_goods_factor = -0.03
 			}
 			
 			cancel_if_invalid = no
@@ -496,7 +496,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 				industrial_capacity_factory = -0.05
-				consumer_goods_expected_value = 0.025
+				consumer_goods_factor = 0.05
 
 			}
 			
@@ -518,7 +518,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.15
 				industrial_capacity_factory = -0.1
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
 			}
 			
 			cancel_if_invalid = no
@@ -746,7 +746,7 @@ ideas = {
 				stability_factor = 0.1
 				non_core_manpower = 0.1
 				monthly_population = 0.5
-                                production_factory_max_efficiency_factor = -0.1
+                production_factory_max_efficiency_factor = -0.1
 			}
 			
 			cancel_if_invalid = no

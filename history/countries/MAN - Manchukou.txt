@@ -1,11 +1,17 @@
 ﻿capital = 328
 oob = "MAN_1936"
 
-JAP = {	set_autonomy = {	target = MAN	autonomous_state = imperial_colony	}	}
-set_cosmetic_tag = COUNTRY_JAP
+JAP = {	set_autonomy = {	target = MAN	autonomous_state = imperial_dominion }	}
+set_cosmetic_tag = MAN_JAP_imperial_dominion
 
-starting_train_buffer = 1
+country_event = { id = TR_Manchu.1 days = 3 }#大阪大暴落
+country_event = { id = TR_Manchu.3 days = 1 }#満洲聯邦
+country_event = { id = TR_Manchu.4 days = 14 }#満洲協和会
+country_event = { id = TR_Manchu.5 days = 400 }#満洲協和会党大会
+
+starting_train_buffer = 3
 set_research_slots = 3
+set_convoys = 25
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -21,10 +27,19 @@ set_technology = {
 }
 if = {
 	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = { bicycle_infantry = 1 }
+}
+if = {
+	limit = {
 		NOT = { has_dlc = "No Step Back" }
 	}
 	set_technology = {
 		gwtank = 1
+		basic_light_tank = 1
+		basic_heavy_tank = 1
+		improved_light_tank = 1
 	}
 }
 if = {
@@ -33,33 +48,15 @@ if = {
 	}
 	set_technology = {
 		gwtank_chassis = 1
-	}
-}
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	create_equipment_variant = {
-		name = "Type 90 Tankette"
-		type = light_tank_chassis_0
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_one_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		icon = "GFX_JAP_basic_light_tank_medium"
+		basic_light_tank_chassis = 1
+		basic_heavy_tank_chassis = 1
+		improved_light_tank_chassis = 1
+		armor_tech_1 = 1
+		engine_tech_1 = 1
 	}
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "JAP_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			aa_cannon_1 = 1
@@ -74,7 +71,6 @@ if = {
 			iw_large_airframe = 1
 		}
 	else = {
-		set_air_oob = "JAP_1936_air_legacy"
 		set_technology = {
 			cv_early_fighter = 1
 			cv_CAS1 = 1
@@ -89,22 +85,48 @@ if = {
 		}
 	}
 }
-add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 400
-                 }  
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
 add_ideas = {
-        Colonical_system
+	    Constitutional_monarchy
+		low_minimum_wage
+		trinket_max_workhours
+		trinket_safety_regulations
+		trinket_Unemployment_subsidies
+		trinket_school_system
+		trinket_pensions
+		low_health_care
+		
         Tiyoda_Kensho
-        JAP_colony
-        GND_opium_trade
-        MAN_Masahiko_Amakasu#甘粕正彦
-        MAN_Furumi_Tadayuki#古海忠之
+		MAN_Kwantung_Army
+		MAN_south_manchuria_railway
+		MAN_Japanese_settlers
+        MAN_opium_trade
+		MAN_Yamaoka_Mannosuke#山岡萬之助
+		MAN_Hoshino_Naoki#星野直樹
         MAN_Matsuoka_Yousuke#松岡洋右
         MAN_Kishi_Nobusuke#岸信介
         MAN_Hideki_Tojo_int#東條英機
+		MAN_Muto_Nobuyoshi#武藤信義
 }
-set_convoys = 5
+
+set_variable = { MAN_the_industry_local_resources_factor_modifier = -0.2 }
+set_variable = { MAN_the_industry_min_export_modifier = 0 }
+set_variable = { MAN_the_industry_production_factory_efficiency_gain_factor_modifier = -0.05 }
+set_variable = { MAN_the_industry_production_factory_max_efficiency_factor_modifier = -0.1 }
+set_variable = { MAN_the_industry_production_factory_start_efficiency_factor_modifier = -0.05 }
+set_variable = { MAN_the_industry_consumer_goods_factor_modifier = 0.4 }
+set_variable = { MAN_the_industry_global_building_slots_factor_modifier = -0.2 }
+set_variable = { MAN_the_industry_production_speed_buildings_factor_modifier = -0.1 }
+set_variable = { MAN_the_industry_industrial_capacity_factory_modifier = -0.1 }
+
+add_dynamic_modifier = { modifier = MAN_the_industry }
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -126,10 +148,199 @@ set_popularities = {
 }
 
 recruit_character = MAN_oosugi_sakae
+recruit_character = MAN_Ayukawa_Yoshisuke
 recruit_character = MAN_Toyama_Hidezo
+recruit_character = MAN_Hoshino_Naoki
 recruit_character = MAN_Masahiko_Amakasu
 
+recruit_character = MAN_Matsuoka_Yousuke
+recruit_character = MAN_Kishi_Nobusuke
+
+recruit_character = JAP_Muto_Nobuyoshi
+recruit_character = JAP_toshizo_nishio
+recruit_character = JAP_Hideki_Tojo
+recruit_character = JAP_akira_muto
+recruit_character = JAP_Hattori_takushiro
 recruit_character = MAN_zhang_haipeng
 recruit_character = MAN_zhang_jinghui
 recruit_character = MAN_aisin_gioro_xiqia
 recruit_character = MAN_yoshiko_kawashima
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Type 90 Tankette"
+		type = light_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_heavy_machine_gun
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 1
+			tank_nsb_armor_upgrade = 1
+		}
+		obsolete = yes
+		icon = "GFX_JAP_basic_light_tank_medium"
+	}
+	create_equipment_variant = {
+		name = "Type 89 I-Go"
+		type = medium_tank_chassis_0
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_medium_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 3
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "GFX_JAP_basic_medium_tank_medium"
+	}
+	create_equipment_variant = {
+		name = "Type 93 Ha-Go"
+		type = light_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon
+			turret_type_slot = tank_light_one_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "GFX_JAP_improved_light_tank_medium"
+	}
+	create_equipment_variant = {
+		name = "Type 95 Ke-Ni"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_auto_cannon
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 2
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "GFX_JAP_improved_light_tank_medium"
+	}
+	create_equipment_variant = {
+		name = "Type 95 Ro-Go"
+		type = heavy_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_close_support_gun
+			turret_type_slot = tank_heavy_three_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = secondary_turret_hmg
+			special_type_slot_4 = secondary_turret_hmg
+		}
+		upgrades = {
+			tank_nsb_engine_upgrade = 6
+			tank_nsb_armor_upgrade = 2
+		}
+		icon = "GFX_JAP_basic_heavy_tank_medium"
+	}
+}
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	create_equipment_variant = {
+		name = "Ki-10"
+		type = small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "Ki-2"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = small_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Ki-1"
+		type = medium_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = medium_bomb_bay
+			engine_type_slot = engine_1_2x
+			special_type_slot_1 = lmg_defense_turret
+		}
+	}
+	create_equipment_variant = {
+		name = "Ki-3"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = lmg_defense_turret
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "Aichi D1A2"
+		type = cv_small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = dive_brakes_small
+		}
+		icon = "GFX_JAP_CAS1_medium"
+	}
+	create_equipment_variant = {
+		name = "A4N"
+		type = cv_small_plane_airframe_0
+		modules = {
+			fixed_main_weapon_slot = light_mg_2x
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
+	create_equipment_variant = {
+		name = "B2M"
+		type = cv_small_plane_naval_bomber_airframe_0
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+		obsolete = yes
+		icon = "GFX_JAP_cv_naval_bomber1_medium"
+	}
+	create_equipment_variant = {
+		name = "B4Y"
+		type = cv_small_plane_naval_bomber_airframe_1
+		modules = {
+			fixed_main_weapon_slot = torpedo_mounting
+			fixed_auxiliary_weapon_slot_1 = bomb_locks
+			engine_type_slot = engine_2_1x
+			special_type_slot_1 = empty
+		}
+		icon = "GFX_JAP_cv_naval_bomber1_medium"
+	}
+}

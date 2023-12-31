@@ -1,0 +1,25 @@
+
+state={
+	id=555
+	name="STATE_555"
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			dockyard = 1
+		}
+                victory_points = { 10052 1 }
+                victory_points = { 11985 1 }
+	}
+
+	local_supplies=0.0 
+provinces={
+		10052 11985 
+	}
+	manpower=1489329
+	buildings_max_level_factor=1.000
+	state_category=three
+}

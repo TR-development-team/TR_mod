@@ -12,9 +12,50 @@
 		infantry = { x = 2 y = 0 }
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }		
+        artillery_brigade = { x = 3 y = 2 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Dokuritsu Konsei Ryodan" 
+	division_names_group = MAN_IMB_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+        artillery = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Sensha Shidan" 	
+	division_names_group = MAN_ARM_01
+										# 1 engineering battalion
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		light_armor = { x= 1 y = 0 }
+		light_armor = { x= 1 y = 1 }
+        light_armor = { x= 1 y = 2 }
+        light_armor = { x= 1 y = 3 }
+	}
+	support = {
+	    mot_recon = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+        artillery = { x = 0 y = 2 }
 	}
 }
 division_template = {
@@ -28,6 +69,12 @@ division_template = {
 		motorized = { x = 1 y = 0 }
 		motorized = { x = 1 y = 1 }
 		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
 	}
 	support = {
 		artillery = { x = 0 y = 0 }
@@ -48,100 +95,205 @@ division_template = {
 		cavalry = { x = 1 y = 2 }
 	}
 }
+division_template = {
+	name = "Chuton-chi Shidan" 			# Garrison template - represents Imperial Manchukuo Army infantry divisions: 2 infantry regiments (3k men) -- militia (lowest equipment, experience)
+	division_names_group = MAN_GAR_01
+										# Also represents (over-sized) IJN Base Defense Unit (island, city and naval base garrisons): 2 infantry rgts (3k men), 1 field artillery rgt (abstracted), 1 engineering rgt
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
 
 
 ##### OOB #####
 units = {
-	division = { # "1 Qu Jun"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 800
-		division_template = "Jidousha Shidan" 
+		division_template = "Dokuritsu Konsei Ryodan" 
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
+		force_equipment_variants = { light_tank_chassis_0 = { owner = "MAN" creator = "JAP" amount = 120 version_name = "Type 90 Tankette"} }
 	}
-	division = { # "2 Qu Jun"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
 		location = 11771
-		division_template = "Jidousha Shidan" 
+		division_template = "Dokuritsu Konsei Ryodan" 
 		start_experience_factor = 0.3
-		start_equipment_factor = 1.0
+		force_equipment_variants = { light_tank_chassis_0 = { owner = "MAN" creator = "JAP" amount = 120 version_name = "Type 90 Tankette"} }
 	}
-	division = { # "3 Qu Jun"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
 		location = 3944
-		division_template = "Jidousha Shidan" 
+		division_template = "Dokuritsu Konsei Ryodan" 
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
+		force_equipment_variants = { light_tank_chassis_0 = { owner = "MAN" creator = "JAP" amount = 120 version_name = "Type 90 Tankette"} }
 	}
 	division = {
-		name = "4 Qu Jun"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 4
+			name_order = 1
 		}
 		location = 4809
 		division_template = "Jidousha Shidan" 
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.9
 	}
 	division = { # "5 Qu Jun"
 		division_name = {
 			is_name_ordered = yes
-			name_order = 5
+			name_order = 1
 		}
 		location = 3877
-		division_template = "Jidousha Shidan" 
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		division_template = "Sensha Shidan" 
+		start_experience_factor = 0.3
+		force_equipment_variants = { light_tank_chassis_1 = { owner = "MAN" creator = "JAP" amount = 240 version_name = "Type 93 Ha-Go"} }
 	}
-	division = { # "1 Qibing Shi"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
 		location = 800
 		division_template = "Hohei Shidan" 
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_experience_factor = 0.3
 	}
-	division = { # "2 Qibing Shi"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
 		location = 11771
 		division_template = "Hohei Shidan" 
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_experience_factor = 0.3
 	}
-	division = { # "3 Qibing Shi"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3
 		}
 		location = 3944
 		division_template = "Hohei Shidan" 
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+		start_experience_factor = 0.3
 	}
-	division = { # "4 Qibing Shi"
+	division = { 
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4
 		}
 		location = 4809
 		division_template = "Hohei Shidan" 
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 1150
+		division_template = "Hohei Shidan" 
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12261
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 10577
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.2
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 4779
+		division_template = "Chuton-chi Shidan" 	
 		start_experience_factor = 0.1
-		start_equipment_factor = 0.9
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12543
+		division_template = "Chuton-chi Shidan" 	
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 10612
+		division_template = "Chuton-chi Shidan" 
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 7812
+		division_template = "Chuton-chi Shidan" 
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4290
+		division_template ="Kihei Shidan" 
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 11886
+		division_template ="Kihei Shidan" 
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1807
+		division_template = "Kihei Shidan" 
+		start_experience_factor = 0.3
+	}
+	division = { 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 12657
+		division_template = "Kihei Shidan" 
+		start_experience_factor = 0.3
 	}
 }
 
@@ -150,7 +302,7 @@ units = {
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
-			type = infantry_equipment_0
+			type = infantry_equipment_1
 			creator = "MAN"
 		}
 		requested_factories = 1

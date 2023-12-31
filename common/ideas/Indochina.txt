@@ -36,6 +36,7 @@
 				production_speed_arms_factory_factor = -0.1
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = 0.1
+				amphibious_invasion = 0.1
 			}
 		}
 		INC_Governance_reform = {
@@ -43,6 +44,12 @@
 			modifier = {
 				political_power_gain = -1.0
 				stability_weekly = 0.01
+			}
+		}
+		INC_independent_war = {
+			picture = generic_war_preparation
+			modifier = {
+				surrender_limit = 0.2
 			}
 		}
     }

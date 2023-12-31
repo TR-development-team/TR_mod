@@ -437,6 +437,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = corporatocracy_subtype
+		}
+		localization_key = corporatocracy_subtype
+	}
+	text = {
+		trigger = {
 			has_country_leader_ideology = Fascist_subtype
 		}
 		localization_key = Fascist_subtype
@@ -573,5 +579,11 @@ defined_text = {
 			has_country_leader_ideology = Austromarxism_democrat_subtype
 		}
 		localization_key = Austromarxism_democrat_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = national_communism_subtype
+		}
+		localization_key = national_communism_subtype
 	}
 } 

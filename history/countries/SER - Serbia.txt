@@ -68,23 +68,23 @@ if = {
 set_convoys = 0
 
 set_politics = {
-	ruling_party = authoritarian_democrat
+	ruling_party = paternal_autocrat
 	last_election = "1936.1.1"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
 	totalist = 5
-	syndicalist = 3
-	radical_socialist = 2
-	social_democrat = 3
-	social_liberal = 8
-	market_liberal = 5
+	syndicalist = 4
+	radical_socialist = 9
+	social_democrat = 9
+	social_liberal = 13
+	market_liberal = 10
 	social_conservative = 10
-	authoritarian_democrat = 28
-	paternal_autocrat = 14
+	authoritarian_democrat = 1
+	paternal_autocrat = 27
 	national_populist = 11
-	Gnosticism = 11
+	Gnosticism = 1
 }
 
 recruit_character = SER_aleksander_I

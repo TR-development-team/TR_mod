@@ -5,11 +5,15 @@ country_event = {
 	id = TR_indochina.1
 	title = TR_indochina.1.t
 	desc = TR_indochina.1.d
-	picture = GFX_report_event_generic_rally
+	picture = GFX_report_event_generic_rifles
 
 	is_triggered_only = yes
     fire_only_once = yes
-	
+	immediate = {
+		hidden_effect = {
+			country_event = { id = TR_indochina.4 days = 100 random_days = 100 }
+		}
+	}
 	option = {
 		name = TR_indochina.1.a
         add_stability = -0.1
@@ -24,7 +28,6 @@ country_event = {
 		1039 = { 
 			start_resistance = yes
 			set_state_flag = Viet_Minh_controlled 
-			set_demilitarized_zone = yes 
 			set_resistance = 25
 		}
 		671 = { 
@@ -46,7 +49,7 @@ country_event = {
 	id = TR_indochina.2
 	title = TR_indochina.2.t
 	desc = TR_indochina.2.d
-	picture = GFX_report_event_generic_rally
+	picture = GFX_report_event_chinese_japanese_handshake
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -80,7 +83,7 @@ country_event = {
 	id = TR_indochina.3
 	title = TR_indochina.3.t
 	desc = TR_indochina.3.d
-	picture = GFX_report_event_generic_rally
+	picture = GFX_report_event_asian_politicians
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -344,5 +347,277 @@ country_event = {
 		VIN = {
 			change_tag_from = INC
 		}
+	}
+}
+#ベトミンの攻撃
+country_event = {
+	id = TR_indochina.4
+	title = TR_indochina.4.t
+	desc = TR_indochina.4.d
+	picture = GFX_report_event_FIN_continuation_war
+
+	is_triggered_only = yes
+	trigger = {
+		tag = INC
+		is_puppet_of = JAP
+		OR = { 
+			NOT = { has_country_flag = INC_independent_promise }
+			country_exists = VIN
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			country_event = { id = TR_indochina.4 days = 100 random_days = 100 }
+		}
+	}
+	option = {
+		name = TR_indochina.4.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -500
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -300
+		}
+        add_manpower = -100
+		
+	}
+}
+#ハイフォン事件
+country_event = {
+	id = TR_indochina.5
+	title = TR_indochina.5.t
+	desc = TR_indochina.5.d
+	picture = GFX_report_event_DEN_resistance
+
+	is_triggered_only = yes
+	trigger = {
+		NOT = { has_country_flag = INC_independent_promise }
+	}
+    fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			country_event = { id = TR_indochina.6 days = 7 random_days = 7 }
+		}
+	}
+	option = {
+		name = TR_indochina.5.a
+		set_global_flag = VIN_Haiphong_Incident
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -2000
+		}
+		add_equipment_to_stockpile = {
+			type = support_equipment
+			amount = -1000
+		}
+        add_manpower = -5000
+	}
+}
+#ベトナム独立革命
+country_event = {
+	id = TR_indochina.6
+	title = TR_indochina.6.t
+	desc = TR_indochina.6.d
+	picture = GFX_report_event_peasant_revolt
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_indochina.6.a
+		ai_chance = { factor = 100 }
+		set_global_flag = VIN_independent_war
+		add_ideas = INC_independent_war
+		VIN = {
+			set_cosmetic_tag = VIN_democratic_republic
+			transfer_state = 671
+			hidden_effect = {
+				inherit_technology = INC
+				set_politics = {
+					ruling_party = radical_socialist
+					elections_allowed = no
+				}
+			    set_popularities = {
+				    totalist = 19
+				    syndicalist = 13
+				    radical_socialist = 26
+				    social_democrat = 10
+				    social_liberal = 19
+				    market_liberal = 3
+				    social_conservative = 1
+				    authoritarian_democrat = 0
+				    paternal_autocrat = 5
+				    national_populist = 2
+				    Gnosticism = 2
+			    }
+			    load_oob = "VIN_independent"
+			    country_event = { id = TR_vietnam.1 days = 1 }
+		    }
+		}
+		INC = { 
+			every_state = {
+				limit = {
+					is_core_of = VIN
+				}
+				add_claim_by = INC
+			}		
+			declare_war_on = {
+				target = VIN
+				type = annex_everything
+			}
+		}
+	}
+	option = {
+		name = TR_indochina.6.b
+		ai_chance = { factor = 0 }
+		set_global_flag = VIN_independent_war
+		add_ideas = INC_independent_war
+		VIN = {
+			set_cosmetic_tag = VIN_democratic_republic
+			transfer_state = 671
+			hidden_effect = {
+				set_politics = {
+					ruling_party = radical_socialist
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 19
+					syndicalist = 13
+					radical_socialist = 26
+					social_democrat = 10
+					social_liberal = 19
+					market_liberal = 3
+					social_conservative = 1
+					authoritarian_democrat = 0
+					paternal_autocrat = 5
+					national_populist = 2
+					Gnosticism = 2
+				}
+				load_oob = "VIN_independent"
+				country_event = { id = TR_vietnam.1 days = 1 }
+		    }
+		}
+		INC = { 
+			every_state = {
+				limit = {
+					OR = { 
+						is_core_of = VIN
+						is_core_of = CAM
+						is_core_of = LAO
+					}
+				}
+				add_claim_by = INC
+			}		
+			declare_war_on = {
+				target = VIN
+				type = annex_everything
+			}
+		}
+		VIN = { 
+			change_tag_from = INC
+		}
+	}
+}
+
+#サイゴン陥落
+country_event = {
+	id = TR_indochina.10
+	title = TR_indochina.10.t
+	desc = TR_indochina.10.d
+	picture = GFX_report_event_sailors_in_working_rig
+
+	trigger = {
+		tag = INC
+		is_subject_of = JAP
+		has_war_with = VIN
+	    286 = { is_controlled_by_ROOT_or_ally = no }
+		671 = { is_controlled_by_ROOT_or_ally = no }
+		1025 = { is_controlled_by_ROOT_or_ally = no }
+		1026 = { is_controlled_by_ROOT_or_ally = no }
+		1039 = { is_controlled_by_ROOT_or_ally = no }
+	}
+    fire_only_once = yes
+	
+	option = {
+		name = TR_indochina.10.a
+        hidden_effect = { 
+			JAP = { country_event = { id = TR_indochina.11 days = 2 } }
+		}
+	}
+}
+#インドシナ総督府の崩壊
+country_event = {
+	id = TR_indochina.11
+	title = TR_indochina.11.t
+	desc = TR_indochina.11.d
+	picture = GFX_report_event_dutch_soldiers_indonesia
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_indochina.11.a
+		ai_chance = { factor = 40 }
+		hidden_effect = { 
+			INC = { country_event = { id = TR_indochina.12 days = 1 } }
+		}
+	}
+	option = {
+		name = TR_indochina.11.b
+		ai_chance = { factor = 0 }
+		set_country_flag = JAP_VIN_independent_war_intervention
+		add_political_power = -100
+		add_war_support = -0.1
+		declare_war_on = {
+			target = VIN
+			type = annex_everything
+		}
+	}
+}
+#本国がベトナムの放棄を決定
+country_event = {
+	id = TR_indochina.12
+	title = TR_indochina.12.t
+	desc = TR_indochina.12.d
+	picture = GFX_report_event_generic_soldiers_surrendering
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_indochina.12.a
+		white_peace = VIN
+		hidden_effect = { 
+		    every_owned_state = {
+			    limit = {
+			    	is_core_of = VIN
+			    }
+			    transfer_state_to = VIN
+				remove_core_of = INC
+		    }
+		    every_owned_state = {
+			    limit = {
+			    	is_core_of = LAO
+			    }
+			    transfer_state_to = LAO
+				remove_core_of = INC
+		    }
+		    every_owned_state = {
+			    limit = {
+			    	is_core_of = CAM
+			    }
+			    transfer_state_to = CAM
+				remove_core_of = INC
+		    }
+			VIN = {	set_autonomy = { target = CAM autonomous_state = military_occupation } }
+			VIN = {	set_autonomy = { target = LAO autonomous_state = military_occupation } }
+			VIN = { country_event = { id = TR_vietnam.3 days = 1 } } 
+			CAM = { set_cosmetic_tag = CAM_peoples_republic }
+			LAO = { set_cosmetic_tag = LAO_democratic_republic }
+	    }
+		set_cosmetic_tag = MAL_imperial_colony
+		remove_ideas = INC_independent_war
 	}
 }

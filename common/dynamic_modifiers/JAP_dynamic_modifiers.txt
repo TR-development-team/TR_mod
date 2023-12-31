@@ -26,6 +26,22 @@
 #	can be added to countries, states or unit leaders
 #	will only updated daily, unless forced by force_update_dynamic_modifier effect
 ###### COUNTRY MODIFIERS
+JAP_black_thursday = {
+	icon = "GFX_idea_JAP_disaster_stricken_country"
+	enable = {
+		always = yes
+	}
+	remove_trigger = {
+		always = no
+	}
+	stability_factor = JAP_black_thursday_stability_factor_modifier
+	consumer_goods_factor = JAP_black_thursday_consumer_goods_factor_modifier
+	production_factory_max_efficiency_factor = JAP_black_thursday_production_factory_max_efficiency_factor_modifier
+	production_speed_buildings_factor = JAP_black_thursday_production_speed_buildings_factor_modifier
+	industrial_capacity_factory = JAP_black_thursday_industrial_capacity_factory_modifier
+	industrial_capacity_dockyard = JAP_black_thursday_industrial_capacity_dockyard_modifier
+	min_export = JAP_black_thursday_min_export_modifier
+}
 JAP_Dried_out_countryside_dm = {
 	icon = "GFX_idea_JAP_Dried_out_countryside"
 	enable = {

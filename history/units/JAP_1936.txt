@@ -1,4 +1,8 @@
-﻿division_template = {
+﻿focus = {
+	current = "JAP_black_thursday1"
+	progress = 0
+}
+division_template = {
 	name = "Hohei Shidan" 			# (Square) Infantry Division - 4 infantry regiments (3k men each), 1 field artillery regiment - abstracted into infantry,
 	division_names_group = JAP_INF_01
 									# 1 engineering regiment, 1 recon regiment
@@ -217,19 +221,19 @@ units = {
 		start_experience_factor = 0.3
 	}
 	division = {
-		name = "Yokusaka Daiichi Tokubetsu Rikusentai"
+		name = "Yokosuka Daiichi Tokubetsu Rikusentai"
 		location = 9998 #Yokosuka
 		division_template = "Rikusentai"
 		start_experience_factor = 0.3
 	}
         division = {
-		name = "Yokusaka Daini Tokubetsu Rikusentai"
+		name = "Yokosuka Daini Tokubetsu Rikusentai"
 		location = 9998 #Yokosuka
 		division_template = "Rikusentai"
 		start_experience_factor = 0.3
 	}
         division = {
-		name = "Yokusaka Daisan Tokubetsu Rikusentai"
+		name = "Yokosuka Daisan Tokubetsu Rikusentai"
 		location = 9998 #Yokosuka
 		division_template = "Rikusentai"
 		start_experience_factor = 0.3

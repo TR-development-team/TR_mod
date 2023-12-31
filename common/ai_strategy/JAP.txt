@@ -139,7 +139,29 @@ JAP_USA_VS_CALIFORNIA = {
 		value = 1000
 	}
 }
+JAP_Indochina_war = {
+	allowed = {
+		NOT = {
+			tag = INC
+		}
+	}
+	enable = {
+		is_in_faction_with = JAP
+		VIN = { 
+			NOT = { is_in_faction_with = JAP }
+			has_war_with = INC
+			has_capitulated = no
+		}
+		JAP = { NOT = { has_country_flag = JAP_VIN_independent_war_intervention } }
+	}
+	abort_when_not_enabled = yes
 
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "INC"
+		value = 1000
+	}
+}
 jap_building_boats_is_great = {
 	
 	enable = {

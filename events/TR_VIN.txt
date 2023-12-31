@@ -1,0 +1,55 @@
+add_namespace = TR_vietnam
+
+#ベトナム民主共和国臨時政府
+country_event = {
+	id = TR_vietnam.1
+	title = TR_vietnam.1.t
+	desc = TR_vietnam.1.d
+	picture = GFX_report_event_generic_communist_congress
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_vietnam.1.a
+		add_ideas = VIN_independent_war
+        add_ideas = VIN_guerrilla_warfare
+		add_ideas = extensive_conscription
+		add_ideas = partial_economic_mobilisation
+	}
+}
+#サイゴン陥落
+country_event = {
+	id = TR_vietnam.2
+	title = TR_vietnam.2.t
+	desc = TR_vietnam.2.d
+	picture = GFX_report_event_sailors_in_working_rig
+
+	trigger = {
+		tag = VIN
+		has_war_with = INC
+	    286 = { is_controlled_by = VIN }
+	}
+    fire_only_once = yes
+
+	option = {
+		name = TR_vietnam.2.a
+	}
+}
+#日本がベトナムから撤退
+country_event = {
+	id = TR_vietnam.3
+	title = TR_vietnam.3.t
+	desc = TR_vietnam.3.d
+	picture = GFX_report_event_soviet_soldiers_tank
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_vietnam.3.a
+		remove_ideas = VIN_independent_war
+		add_ideas = volunteer_only 
+		add_ideas = civilian_economy
+	}
+}

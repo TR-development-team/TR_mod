@@ -414,9 +414,9 @@ characters={
 			traits = { organizer career_officer infantry_officer politically_connected  }
 			skill = 3
 			attack_skill = 1
-		        defense_skill = 1
-		        planning_skill = 2
-		        logistics_skill = 4
+		    defense_skill = 1
+		    planning_skill = 2
+		    logistics_skill = 4
 		}
 	}
 	JAP_Hideki_Tojo ={
@@ -428,11 +428,11 @@ characters={
 			}
 		}
 		corps_commander = {
-			traits = { JAP_samurai_lineage }
+			traits = { JAP_samurai_lineage harsh_leader trait_reckless career_officer infantry_officer }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
-			planning_skill = 1
+			planning_skill = 2
 			logistics_skill = 2
 		}
 	}
@@ -540,12 +540,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ career_officer }
-			skill=2
+			traits={ career_officer infantry_officer skilled_staffer }
+			skill=3
 			attack_skill=2
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=1
+			planning_skill=4
+			logistics_skill=2
 			legacy_id=0
 		}
 	}
@@ -1069,7 +1069,6 @@ characters={
 			legacy_id=0
 		}
 	}
-
 	JAP_Kuribayashi_Tadamichi={
 		name=JAP_Kuribayashi_Tadamichi
 		portraits={
@@ -1084,6 +1083,23 @@ characters={
 			defense_skill=5
 			planning_skill=3
 			logistics_skill=4
+			legacy_id=0
+		}
+	}
+	JAP_Hattori_takushiro={
+		name=JAP_Hattori_takushiro
+		portraits={
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Hattori_takushiro.png"
+			}
+		}
+		corps_commander={
+			traits={ skilled_staffer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
 			legacy_id=0
 		}
 	}

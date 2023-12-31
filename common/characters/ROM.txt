@@ -42,7 +42,7 @@ characters={
 		name=ROM_king_michael
 		portraits={
 			civilian={
-				large="gfx/leaders/ROM/Portrait_ROM_Michael.tga"
+				large="gfx/leaders/ROM/Portrait_ROM_Michael.png"
 			}
 		}
 		country_leader={
@@ -73,8 +73,6 @@ characters={
 
 		country_leader={
 			ideology=authoritarian_democrat_subtype
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
@@ -82,18 +80,11 @@ characters={
 		name=ROM_corneliu_codreanu
 		portraits={
 			civilian={
-				large="gfx/leaders/ROM/Portrait_ROM_Comeliu_Codreanu.tga"
+				large="gfx/leaders/ROM/Portrait_ROM_Comeliu_Codreanu.ping"
 			}
 		}
 		country_leader={
-			ideology=president_principle_subtype
-			expire="1965.1.1.1"
-			id=-1
-		}
-		country_leader={
 			ideology=occultism_subtype
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 

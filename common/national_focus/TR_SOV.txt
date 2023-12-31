@@ -674,7 +674,7 @@ focus_tree = {
 		available = {
 			has_global_flag = Soviet_Win_flag
 			has_country_flag = SOV_Congress_END
-			NOT = { country_exists = SOV }
+			NOT = { country_exists = RUS }
 			}
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -1824,7 +1824,7 @@ focus_tree = {
 			available = {
 					has_country_flag = SOV_Congress_END
 					has_global_flag = Soviet_Win_flag
-					NOT = { country_exists = SOV has_idea = RAT_CIVILWAR_MARKS }
+					NOT = { country_exists = RUS has_idea = GER_CIVILWAR_MARKS }
 					}
 			search_filters = {
 				FOCUS_FILTER_POLITICAL

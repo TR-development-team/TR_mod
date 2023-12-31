@@ -1,7 +1,7 @@
 ﻿capital = 608
 oob = "ZHI_1936"
 
-JAP = {	set_autonomy = {	target = ZHI	autonomous_state = imperial_colony	}	}
+JAP = {	set_autonomy = {	target = ZHI	autonomous_state = military_occupation	}	}
 set_cosmetic_tag = HUABEI_Political_Committee
 
 set_research_slots = 2
@@ -12,9 +12,9 @@ set_technology = {
 	tech_support = 1		
 	tech_recon = 1
 	tech_engineers = 1
-        tech_mountaineers = 1
-		tech_trucks = 1
-		motorised_infantry = 1
+    tech_mountaineers = 1
+	tech_trucks = 1
+	motorised_infantry = 1
 	marines  = 1
 	gw_artillery = 1
 	basic_train = 1
@@ -22,7 +22,7 @@ set_technology = {
 	fuel_silos = 1
 	synth_oil_experiments = 1
 	fuel_refining = 1
-        trench_warfare = 1
+    trench_warfare = 1
 	electronic_mechanical_engineering = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -152,13 +152,15 @@ set_convoys = 20
 add_ideas = {
         Colonical_system
         Tiyoda_Kensho
-        JAP_colony
-        GND_opium_trade
+		ZHI_North_China_secession
+		ZHI_Control_of_special_agencies 
+		ZHI_formless_nation
+        ZHI_opium_trade
 }
-	add_timed_idea = {
+add_timed_idea = {
 		idea = JAPCO_black_thursday
 		days = 500
-                 }  
+    }  
 
 
 set_politics = {
@@ -178,11 +180,12 @@ set_popularities = {
 	authoritarian_democrat = 29
 	paternal_autocrat = 15
 	national_populist = 13
-        Gnosticism = 0
+    Gnosticism = 0
 }
 recruit_character = ZHI_Minoda_Muneki
-recruit_character = ZHI_Pu_Yi
+recruit_character = ZHI_Wang_Kemin
 recruit_character = ZHI_Doihara_Kenji
+recruit_character = ZHI_Pu_Yi
 recruit_character = JAP_Doihara_Kenji
 recruit_character = JAP_Nemoto_Hiroshi
 recruit_character = JAP_Sugiyama_Hajime

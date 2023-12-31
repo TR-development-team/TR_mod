@@ -5,9 +5,16 @@
  KAZ_overseas_territory_DEF:0 "$OVERLORDADJ$領ステップ"
  KAZ_overseas_territory_ADJ:0 "$OVERLORDADJ$領ステップ"
  
- MAN_imperial_colony:0 "$OVERLORDADJ$領満州"
- MAN_imperial_colony_DEF:0 "$OVERLORDADJ$領満州"
- MAN_imperial_colony_ADJ:0 "$OVERLORDADJ$領満州"
+ MAL_imperial_colony:0 "$OVERLORDADJ$領馬来"
+ MAL_imperial_colony_DEF:0 "$OVERLORDADJ$領馬来"
+ MAL_imperial_colony_ADJ:0 "$OVERLORDADJ$領マライ"
+
+ MAN_imperial_colony:0 "$OVERLORDADJ$領満洲"
+ MAN_imperial_colony_DEF:0 "$OVERLORDADJ$領満洲"
+ MAN_imperial_colony_ADJ:0 "$OVERLORDADJ$領満洲"
+ MAN_imperial_dominion:0 "満洲聯邦"
+ MAN_imperial_dominion_DEF:0 "満洲聯邦"
+ MAN_imperial_dominion_ADJ:0 "満洲聯邦"
  
 #ヨーロッパ
  BRI_BRITANNIA_overseas_territory:0 "$OVERLORDADJ$領小ブリタニア"

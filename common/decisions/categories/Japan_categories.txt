@@ -73,6 +73,26 @@ JAP_Economic_Policy = {#経済計画
 		original_tag = JAP
 	}
 }
+JAP_Inoue_Plan_Policy = {#井上財政
+	icon = GFX_decision_category_generic_economy
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+		has_completed_focus = JAP_INOUE
+	}
+}
+JAP_Mitsuchi_Plan_Policy = {#三土財政
+	icon = GFX_decision_category_generic_economy
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		original_tag = JAP
+		has_completed_focus = JAP_TAKAHASHI
+	}
+}
 JAP_balance_of_power_category = {
 	icon = GFX_decision_category_power_struggle
 	allowed = {

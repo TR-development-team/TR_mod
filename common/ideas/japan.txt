@@ -13,7 +13,7 @@ country = {
 			name = USA_treaty_of_Tokyo
 		    picture = USA_treaty_of_Tokyo
 			modifier = { 
-                consumer_goods_expected_value = -0.05
+                consumer_goods_factor = -0.15
 			}
 		}
         JAP_NAISEIJUSHI = {
@@ -99,7 +99,7 @@ country = {
 
 			modifier = {
                 political_power_cost = -0.1
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				production_speed_industrial_complex_factor = 0.1
 				global_building_slots_factor = 0.05
             }
@@ -116,7 +116,7 @@ country = {
 
 			modifier = {
                 political_power_cost = -0.2
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				production_speed_industrial_complex_factor = 0.2
 				global_building_slots_factor = 0.1
             }
@@ -331,7 +331,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_expected_value = -0.05
+                consumer_goods_factor = -0.1
                 industrial_capacity_factory = 0.05
 			}
 		}
@@ -382,7 +382,7 @@ country = {
 			picture = jap_militarism_shogun
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
                 research_speed_factor = 0.1
 			    production_speed_buildings_factor = 0.15
                 army_speed_factor = 0.1
@@ -427,7 +427,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
                                 production_speed_dockyard_factor = 0.1
                                 production_speed_arms_factory_factor = 0.1
                                 production_speed_industrial_complex_factor = -0.05
@@ -442,7 +442,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
                 political_power_cost = 0.3
                 production_speed_buildings_factor = 0.2
 			}
@@ -515,7 +515,7 @@ country = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				truck_attrition_factor = -0.2
 				supply_node_range = 0.15
 				industrial_capacity_factory = 0.1
@@ -532,7 +532,7 @@ country = {
 			removal_cost = -1
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				local_resources_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				army_speed_factor = 0.1
@@ -577,7 +577,7 @@ country = {
 			removal_cost = -1
 	
 			modifier = {
-				consumer_goods_expected_value = 0.02
+				consumer_goods_factor = 0.05
 				stability_factor = 0.05
 				MONTHLY_POPULATION = 0.2
 			}
@@ -608,7 +608,7 @@ country = {
 	
 			modifier = {
 				political_power_factor = 0.05
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				production_factory_max_efficiency_factor = -0.1
 			}
 		}     
@@ -621,7 +621,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				production_factory_max_efficiency_factor = 0.2
 				production_factory_efficiency_gain_factor = 0.2
 			}
@@ -637,7 +637,7 @@ country = {
 	
 			modifier = {
 				stability_factor = 0.03
-			    consumer_goods_expected_value = 0.02
+			    consumer_goods_factor = 0.05
 				min_export = -0.05
 			}
 		}     
@@ -652,7 +652,7 @@ country = {
 	
 			modifier = {
 				stability_factor = 0.06
-			    consumer_goods_expected_value = 0.05
+			    consumer_goods_factor = 0.1
 				min_export = -0.1
 			}
 		}     
@@ -666,7 +666,7 @@ country = {
 			removal_cost = -1
 	
 			modifier = {
-				consumer_goods_expected_value = -0.02
+				consumer_goods_factor = -0.05
 				stability_factor = -0.03
 			}
 		}     
@@ -706,11 +706,11 @@ country = {
 				production_factory_max_efficiency_factor = -0.2
 				production_speed_buildings_factor = -0.2
 				industrial_capacity_factory = -0.35
-				consumer_goods_expected_value = 0.4
+				consumer_goods_factor = 0.8
 				min_export = -0.4
 			}
 		}
-                JAP_black_thursdayk_TAKAHASHI = {
+        JAP_black_thursdayk_TAKAHASHI = {
 			allowed = {
 				always = no
 			}
@@ -722,11 +722,11 @@ country = {
 				production_factory_max_efficiency_factor = -0.10
 				production_speed_buildings_factor = -0.1
 				industrial_capacity_factory = -0.15
-				consumer_goods_expected_value = 0.3
+				consumer_goods_factor = 0.6
 				min_export = -0.15
 			}
 		}
-                JAP_black_thursdayk_TAKAHASHI1 = {
+        JAP_black_thursdayk_TAKAHASHI1 = {
 			allowed = {
 				always = no
 			}
@@ -738,11 +738,11 @@ country = {
 				production_factory_max_efficiency_factor = -0.07
 				production_speed_buildings_factor = -0.07
 				industrial_capacity_factory = -0.10
-				consumer_goods_expected_value = 0.20
+				consumer_goods_factor = 0.4
 				min_export = -0.10
 			}
 		}
-                JAP_black_thursdayk_TAKAHASHI2 = {
+        JAP_black_thursdayk_TAKAHASHI2 = {
 			allowed = {
 				always = no
 			}
@@ -754,51 +754,95 @@ country = {
 				production_factory_max_efficiency_factor = -0.04
 				production_speed_buildings_factor = -0.04
 				industrial_capacity_factory = -0.05
-				consumer_goods_expected_value = 0.10
+				consumer_goods_factor = 0.2
 				min_export = -0.05
 			}
 		}
-                JAP_Managed_system = {
-			allowed = {
-				always = no
-			}
-
-			picture = generic_economic_increase
-			removal_cost = -1
+		JAP_Inoue_Finance = {
+			picture = generic_goods_red_bonus
+			cancel = {
+				has_country_flag = JAP_recovering_from_the_depression
+            }
 			modifier = {
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				stability_factor = -0.2
+				political_power_gain = 0.5
+                consumer_goods_factor = -0.25
+				production_speed_buildings_factor = -0.25
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
-                JAP_Public_Works = {
-			allowed = {
-				always = no
-			}
-
-			picture = generic_production_bonus
-			removal_cost = -1
+		JAP_Reform_of_the_Tax_Bureau = {
+			picture = SPR_seize_the_gold_reserves
 			modifier = {
-                                consumer_goods_expected_value = 0.03
+                consumer_goods_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+        JAP_Critical_Industry_Control_Law = {
+			picture = man_five_year_plan_industry
+			modifier = {
+                industrial_capacity_factory = 0.1
+			}
+		}
+		JAP_Economic_Darwinism = {
+			picture = generic_central_management
+			modifier = {
+                production_factory_max_efficiency_factor = 0.2
+				production_factory_start_efficiency_factor = 0.1 
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		JAP_Mitsuchi_Finance = {
+			picture = generic_goods_red_bonus
+			cancel = {
+				has_country_flag = JAP_recovering_from_the_depression
+            }
+			modifier = {
+                consumer_goods_factor = 0.2
+				political_power_gain = 0.5
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = 0.25
+			}
+		}
+		JAP_Managed_system = {
+			picture = generic_economic_increase
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		JAP_Managed_system_1 = {
+			name = JAP_Managed_system
+			picture = generic_economic_increase
+			modifier = {
+				political_power_gain = 0.2
+				min_export = -0.05
+				trade_opinion_factor = -0.05
+			}
+		}
+		JAP_price_control_law = {
+			picture = ETH_customs_barrier_ITA
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+        JAP_Public_Works = {
+			picture = generic_production_bonus
+			modifier = {
 				production_speed_buildings_factor = 0.1
 			}
 		}
-                JAP_black_thursdayk_INOUE = {
-			allowed = {
-				always = no
-			}
-
+        JAP_black_thursdayk_INOUE = {
 			picture = JAP_disaster_stricken_country
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.25
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.3
-				consumer_goods_expected_value = 0.15
+				consumer_goods_factor = 0.3
 				min_export = -0.1
 			}
 		}
-                JAP_black_thursdayk_INOUE1 = {
+        JAP_black_thursdayk_INOUE1 = {
 			allowed = {
 				always = no
 			}
@@ -810,16 +854,11 @@ country = {
 				production_factory_max_efficiency_factor = -0.15
 				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.3
-                                consumer_goods_expected_value = 0.05
+                consumer_goods_factor = 0.1
 			}
 		}
-                JAP_black_thursdayk_INOUE2 = {
-			allowed = {
-				always = no
-			}
-
+        JAP_black_thursdayk_INOUE2 = {
 			picture = JAP_disaster_stricken_country
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.2
 				production_factory_max_efficiency_factor = -0.1
@@ -827,244 +866,138 @@ country = {
 				industrial_capacity_factory = -0.2
 			}
 		}
-                JAP_Kinshuku_zaisei = {
-			allowed = {
-				always = no
-			}
-
-			picture = SPR_seize_the_gold_reserves
-
-			removal_cost = -1
-			modifier = {
-                                consumer_goods_expected_value = -0.05
-				production_factory_efficiency_gain_factor = -0.05
-			}
-		}
-                JAP_Jyuyosangyo = {
-			allowed = {
-				always = no
-			}
-
-			picture = man_five_year_plan_industry
-			removal_cost = -1
-			modifier = {
-                                stability_factor = -0.05
-                                industrial_capacity_factory = 0.1
-			}
-		}
 		JAP_Five_Year_Plan = {
-			allowed = {
-				always = no
-			}
-                        picture = JAP_industrial_standard
-
-			
-			removal_cost = -1
-	
-
+            picture = JAP_industrial_standard
 			modifier = {
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
 				production_speed_infrastructure_factor = 0.2
-                                production_speed_rail_way_factor = 0.2
+                production_speed_rail_way_factor = 0.2
 			}
 		}
 		JAP_Danganressya_Plan = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_build_infrastructure
-
-			
-			removal_cost = -1
-	
-
+            picture = generic_build_infrastructure
 			modifier = {
 				production_speed_infrastructure_factor = 0.2
-                                production_speed_rail_way_factor = 0.2
+                production_speed_rail_way_factor = 0.2
 			}
 		}
 		JAP_Mobilization = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_manpower_bonus
-
-			
-			removal_cost = -1
-	
-
+            picture = generic_manpower_bonus
+			cancel = {
+				has_war = no
+            }
 			modifier = {
-				conscription = 0.025
-                                industrial_capacity_factory = -0.03
-				industrial_capacity_dockyard = -0.03
+				conscription = 0.02
+                industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
 			}
 		}
-
 		JAP_Mobilization1 = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_manpower_bonus
-
-			
-			removal_cost = -1
-	
-
+            picture = generic_manpower_bonus
+			cancel = {
+				has_war = no
+            }
 			modifier = {
-				conscription = 0.05
-                                industrial_capacity_factory = -0.06
-				industrial_capacity_dockyard = -0.06
+				conscription = 0.04
+                industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
 			}
 		}
 		JAP_electric_power = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_production_bonus
-
-			
-			removal_cost = -1
-	
-
+            picture = generic_production_bonus
+			cancel = {
+				has_war = no
+            }
 			modifier = {
 				production_oil_factor = 0.1
-                                local_resources_factor = 0.1
-                                production_speed_synthetic_refinery_factor = 0.1
+                local_resources_factor = 0.1
+                production_speed_synthetic_refinery_factor = 0.1
 			}
 		}
 		JAP_electric_power1 = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_production_bonus
-
-			
-			removal_cost = -1
-	
-
+            picture = generic_production_bonus
+			cancel = {
+				has_war = no
+            }
 			modifier = {
-                                consumer_goods_expected_value = -0.05
+                consumer_goods_factor = -0.1
 				production_oil_factor = 0.15
-                                local_resources_factor = 0.1
-                                production_speed_synthetic_refinery_factor = 0.15
+                local_resources_factor = 0.1
+                production_speed_synthetic_refinery_factor = 0.15
 			}
 		}
 		JAP_Kikakuin = {
-			allowed = {
-				always = no
-			}
-                        picture = JAP_industrial_standard
-
-			
-			removal_cost = -1
-	
-
+            picture = JAP_industrial_standard
+			cancel = {
+				has_war = no
+            }
 			modifier = {
-                                political_power_gain = 0.05
-                                production_speed_buildings_factor = 0.05
-                                conversion_cost_civ_to_mil_factor = -0.2
+                political_power_gain = 0.05
+                production_speed_buildings_factor = 0.05
+                conversion_cost_civ_to_mil_factor = -0.2
 			}
 		}
 		JAP_Kakakutosei1 = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_production_bonus
-
-			
-			removal_cost = -1
-	
-
+            picture = generic_production_bonus
+			cancel = {
+				has_war = no
+            }
 			modifier = {
-                                stability_factor = -0.05
-                                consumer_goods_expected_value = -0.04
+                stability_factor = -0.05
+                consumer_goods_factor = -0.08
 			}
 		}
 		JAP_Kakakutosei2 = {
-			allowed = {
-				always = no
-			}
-                        picture = generic_production_bonus
-
-			
-			removal_cost = -1
-	
-
+            picture = generic_production_bonus
+			cancel = {
+				has_war = no
+            }
 			modifier = {
-                                stability_factor = -0.1
-                                consumer_goods_expected_value = -0.08
+                stability_factor = -0.1
+                consumer_goods_factor = -0.16
 			}
 		}
         JAP_black_thursdayk_KAYA = {
-			allowed = {
-				always = no
-			}
-
 			picture = JAP_disaster_stricken_country
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.15
-				consumer_goods_expected_value = 0.5
+				consumer_goods_factor = 1.0
 				min_export = -0.5
 			}
 		}
         JAP_black_thursdayk_KAYA1 = {
-			allowed = {
-				always = no
-			}
-
 			picture = JAP_disaster_stricken_country
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.10
-				consumer_goods_expected_value = 0.4
+				consumer_goods_factor = 0.8
 				min_export = -0.4
 			}
 		}
         JAP_black_thursdayk_KAYA2 = {
-			allowed = {
-				always = no
-			}
-
 			picture = JAP_disaster_stricken_country
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.05
-				consumer_goods_expected_value = 0.3
+				consumer_goods_expected_value = 0.6
 				min_export = -0.3
 			}
 		}
         JAP_yonkanen = {
-			allowed = {
-				always = no
-			}
-
 			picture = generic_production_bonus
-			removal_cost = -1
 			modifier = {
-                consumer_goods_expected_value = 0.05
+                consumer_goods_factor = 0.1
                 production_speed_buildings_factor = 0.15
 			}
         }
         JAP_Autarkie = {
-			allowed = {
-				always = no
-			}
-
 			picture = can_wartime_prices_and_trade_board
-			removal_cost = -1
 			modifier = {
-                consumer_goods_expected_value = -0.06
+                consumer_goods_factor = -0.12
                 min_export = -0.5
                 local_resources_factor = 0.10
 			}
         }
 		JAP_alienated_army = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
 			on_remove = {
 			}
 			picture = JAP_alienated_army
@@ -1081,10 +1014,6 @@ country = {
 		}
 		JAP_alienated_army_1 = {
 			name = JAP_alienated_army
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
 			on_remove = {
 			}
 			picture = JAP_alienated_army
@@ -1100,10 +1029,6 @@ country = {
 		}
 		JAP_alienated_army_2 = {
 			name = JAP_alienated_army
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
 			on_remove = {
 			}
 			picture = JAP_alienated_army
@@ -1119,10 +1044,6 @@ country = {
 		}
 		JAP_alienated_army_3 = {
 			name = JAP_alienated_army
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
 			on_remove = {
 			}
 			picture = JAP_alienated_army
@@ -1135,10 +1056,6 @@ country = {
 		}
 		JAP_alienated_army_4 = {
 			name = JAP_alienated_army
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
 			on_remove = {
 			}
 			picture = JAP_alienated_army
@@ -1150,10 +1067,6 @@ country = {
 			}
 		}
 		JAP_respected_navy = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
 			on_remove = {
 			}
 			picture = JAP_respected_navy
@@ -1165,10 +1078,6 @@ country = {
 			}
 		}
 		JAP_respected_navy_treatry_faction = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
 			on_remove = {
 			}
 			picture = JAP_respected_navy
@@ -1180,10 +1089,6 @@ country = {
 			}
 		}
 		JAP_respected_navy_Fleet_faction = {
-			allowed = {
-				always = no
-			}
-			removal_cost = -1
 			on_remove = {
 			}
 			picture = JAP_respected_navy
@@ -1194,17 +1099,10 @@ country = {
 				power_balance_weekly = -0.004
 			}
 		}
-        JAP_ugaki_gunshuku = {
-			allowed = {
-				always = no
-			}
-             
+        JAP_ugaki_gunshuku = {          
 			picture = JAP_ugaki_gunshuku
-
-			removal_cost = -1
-
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
                 research_speed_factor = 0.05
                 production_speed_buildings_factor = 0.05
 				equipment_conversion_speed = 0.25
@@ -1216,57 +1114,35 @@ country = {
 		}
 
         JAP_MILITARISM_TR = {
-			allowed = {
-				always = no
-			}
-             
 			picture = warrior_traditions_idea
-
-			removal_cost = -1
 			modifier = {
-                        land_doctrine_cost_factor = -0.1
-                        research_speed_factor = -0.05
-                        mobilization_speed = 0.2
-			war_support_factor = 0.2
-                        production_speed_industrial_complex_factor = -0.1
+                land_doctrine_cost_factor = -0.1
+                research_speed_factor = -0.05
+                mobilization_speed = 0.2
+			    war_support_factor = 0.2
+                production_speed_industrial_complex_factor = -0.1
 			}
 		}
         JAP_MILITARISM_TR2 = {
-			allowed = {
-				always = no
-			}
-             
 			picture = warrior_traditions_idea
-
-			removal_cost = -1
 			modifier = {
-                        conscription_factor = 0.1
-                        army_defence_factor = 0.05
-                        army_attack_factor = 0.05
-                        land_doctrine_cost_factor = -0.1
-                        mobilization_speed = 0.2
-			war_support_factor = 0.2
-                        production_speed_industrial_complex_factor = -0.1
+                conscription_factor = 0.1
+                army_defence_factor = 0.05
+                army_attack_factor = 0.05
+                land_doctrine_cost_factor = -0.1
+                mobilization_speed = 0.2
+			    war_support_factor = 0.2
+                production_speed_industrial_complex_factor = -0.1
 			}
 		}
-                JAP_Propaganda = {
-			allowed = {
-				always = no
-			}
-             
+        JAP_Propaganda = {
 			picture = warrior_traditions_idea
-
-			removal_cost = -1
 			modifier = {
 			war_support_factor = 0.1
                         stability_factor = 0.10
 			}
 		}
-                JAP_Propaganda1 = {
-			allowed = {
-				always = no
-			}
-             
+        JAP_Propaganda1 = {
 			picture = warrior_traditions_idea
 
 			removal_cost = -1
@@ -1294,17 +1170,11 @@ country = {
                         stability_factor = 0.2
 			}
 		}
-                JAP_blockeconomy_nf = {
-			allowed = {
-				always = no
-			}
-             
+        JAP_blockeconomy_nf = {
 			picture = JAP_trade
-
-			removal_cost = -1
 			modifier = {
-                        consumer_goods_expected_value = -0.03
-                        min_export = -0.1	
+				consumer_goods_factor = -0.05
+                min_export = -0.1
 			}
 		}
                 JAP_KAIGENREI = {
@@ -1412,7 +1282,7 @@ country = {
 	
 
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.2
                 research_speed_factor = 0.05
                 production_speed_buildings_factor = 0.1
                 production_factory_max_efficiency_factor = 0.15
@@ -1431,7 +1301,7 @@ country = {
 	
 
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.1
                 production_speed_buildings_factor = 0.4
 			}
 		}
@@ -1447,7 +1317,7 @@ country = {
 
 			modifier = {
                 political_power_factor = 0.1
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
                 resistance_target = -0.3
                 conscription_factor = 0.05
                 industrial_capacity_factory = 0.1
@@ -1485,7 +1355,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_expected_value = 0.05
+                consumer_goods_factor = 0.1
 			    stability_factor = 0.1  	
                 research_speed_factor = 0.05
                 production_speed_dockyard_factor = 0.1
@@ -1524,7 +1394,7 @@ country = {
 	
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 		JAP_Kakushin_Seito = {
@@ -1590,7 +1460,7 @@ country = {
 
 			modifier = {
 				political_power_factor = -0.05
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				conversion_cost_civ_to_mil_factor = -0.2
 			}
 		}
@@ -1656,7 +1526,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_expected_value = -0.05
+                consumer_goods_factor = -0.1
                 stability_factor = -0.05  	
 
 			}
@@ -1670,7 +1540,7 @@ country = {
 
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
                 political_power_cost = 0.1
                 production_speed_buildings_factor = 0.1
                 local_resources_factor = 0.1
@@ -1688,7 +1558,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_expected_value = -0.05
+                consumer_goods_factor = -0.1
                 industrial_capacity_factory = 0.1
                 industrial_capacity_dockyard = 0.1
                 production_factory_max_efficiency_factor = -0.1
@@ -1719,7 +1589,7 @@ country = {
 	
 
 			modifier = {
-			    consumer_goods_expected_value = 0.05
+			    consumer_goods_factor = 0.1
                 production_factory_max_efficiency_factor = 0.15
 				production_factory_efficiency_gain_factor = 0.15
 			}
@@ -1734,7 +1604,7 @@ country = {
 			modifier = {
                 political_power_cost = 1.0
 				stability_factor = -0.15
-				consumer_goods_expected_value = 0.25
+				consumer_goods_factor = 0.5
 				min_export = -0.5
 			}
 		}
@@ -1746,9 +1616,9 @@ country = {
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-                               political_power_cost = 0.6
+                political_power_cost = 0.6
 				stability_factor = -0.10
-				consumer_goods_expected_value = 0.15
+				consumer_goods_factor = 0.3
 				min_export = -0.4
 			}
 		}
@@ -1760,9 +1630,9 @@ country = {
 			picture = great_depression
 			removal_cost = -1
 			modifier = {
-                                political_power_cost = 0.3
+                political_power_cost = 0.3
 				stability_factor = -0.05
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
 				min_export = -0.3
 			}
 		}
@@ -1829,7 +1699,7 @@ country = {
 			picture = ger_mefo_bills
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.1
 				production_speed_naval_base_factor = 0.1
@@ -1854,7 +1724,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_expected_value = 0.05
+                consumer_goods_factor = 0.1
                 production_factory_max_efficiency_factor = 0.15
                 compliance_gain = 0.01
                 MONTHLY_POPULATION = 0.25
@@ -1936,7 +1806,7 @@ country = {
 
 			modifier = {
                 political_power_factor = -0.05
-                consumer_goods_expected_value = -0.05
+                consumer_goods_factor = -0.1
 			}
 		}
         JAP_Kita_Economy2 = {
@@ -1951,7 +1821,7 @@ country = {
 
 			modifier = {
                 political_power_factor = -0.05
-                consumer_goods_expected_value = -0.05
+                consumer_goods_factor = -0.1
                 production_speed_buildings_factor = 0.1
                 industrial_capacity_factory = 0.1
                 industrial_capacity_dockyard = 0.1
@@ -1983,7 +1853,7 @@ country = {
 	
 
 			modifier = {
-                consumer_goods_expected_value = 0.05
+                consumer_goods_factor = 0.1
                 stability_factor = 0.1
                 MONTHLY_POPULATION = 0.25
 			}
@@ -2106,7 +1976,7 @@ country = {
 			picture = generic_constitutional_guarantee
 			
 			modifier = {
-                consumer_goods_expected_value = 0.01
+                consumer_goods_factor = 0.02
                 political_power_cost = 0.1
 			    stability_factor = 0.10
                 conscription_factor = 0.05
@@ -3932,10 +3802,30 @@ naval_manufacturer = {
 				TR_flamboyant_tough_guy
 			}
 		}
+		JAP_Okada_Keisuke = {
+			picture = JAP_Okada_Keisuke
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				authoritarian_democrat
+			    Raccoon_thinking_of_his_country
+			}
+		}
 		JAP_Ugaki_Kazushige = {
-			
 			picture = JAP_Ugaki_Kazushige
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -4200,7 +4090,6 @@ naval_manufacturer = {
 			}
 		}
 		JAP_Hirota_Kouki = {
-			
 			picture = JAP_Hirota_Kouki
 			
 			allowed = {
@@ -4490,9 +4379,7 @@ naval_manufacturer = {
 			}
 		}
 		JAP_Inoue_junnosuke = {
-			
 			picture = JAP_Inoue_junnosuke
-			
 			allowed = {
 				original_tag = JAP
 			}
@@ -4510,13 +4397,11 @@ naval_manufacturer = {
 			traits = { 
 				Minister_of_Economy
 				market_liberal
-				TR_bank_president 
+				TR_Second_Shibusawa
 			}
 		}
 		JAP_Katsu_Masanori = {
-			
-			picture = JAP_Katsu_Masanori
-			
+			picture = JAP_Katsu_Masanori	
 			allowed = {
 				original_tag = JAP
 			}
@@ -4537,10 +4422,31 @@ naval_manufacturer = {
 				TR_reformer
 			 }
 		}
+		JAP_Mitsuchi_Chuzo_MoE = {
+			name = JAP_Mitsuchi_Chuzo
+			picture = JAP_Mitsuchi_Chuzo
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_conservative
+				TR_small_daruma
+			}
+		}
         JAP_Takahashi_Korekiyo = {
-			
 			picture = JAP_Takahashi_Korekiyo
-			
 			allowed = {
 				original_tag = JAP
                 }
@@ -4633,6 +4539,30 @@ naval_manufacturer = {
 				TR_planned_economy_proponent 
 			}
 		}
+		JAP_Kishi_Nobusuke = {
+			name = MAN_Kishi_Nobusuke
+			picture = MAN_Kishi_Nobusuke
+                      			
+			allowed = {
+				original_tag = JAP
+                }  
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Economy_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1			
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+				TR_planned_economy_proponent
+			}
+		}
 		JAP_Yuuki_Toyotaro = {
 			
 			picture = JAP_Yuuki_Toyotaro
@@ -4682,7 +4612,6 @@ naval_manufacturer = {
 			}
 		}
 		JAP_ikeda_sumihisa = {
-			
 			picture = JAP_ikeda_sumihisa
 			
 			allowed = {
@@ -4705,31 +4634,6 @@ naval_manufacturer = {
 				TR_planned_economy_proponent
 			}
 		}
-        JAP_Kishi_Nobusuke = {
-			name = MAN_Kishi_Nobusuke
-			picture = MAN_Kishi_Nobusuke
-                      			
-			allowed = {
-				original_tag = JAP
-                }  
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = Minister_of_Economy_available
-					always = no
-				}
-				hidden_trigger = {
-					has_country_flag = can_change_minister
-				}
-			}
-			cancel_if_invalid = no
-			removal_cost = -1			
-			traits = { 
-				Minister_of_Economy
-				national_populist
-				TR_planned_economy_proponent
-			}
-		}
-
 	}
     Minister_of_Interior = { 
 		JAP_Aso_Hisashi = {
@@ -4972,10 +4876,31 @@ naval_manufacturer = {
 				JAP_Oodanuki
 			}
 		}
+		JAP_Hatoyama_Ichiro_MoI = {
+			name = JAP_Hatoyama_Ichiro
+			picture = JAP_Hatoyama_Ichiro
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				social_conservative
+				TR_back_stabber
+			}
+		}
 		JAP_Mitsuchi_Chuzo = {
-			
 			picture = JAP_Mitsuchi_Chuzo
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -5133,7 +5058,6 @@ naval_manufacturer = {
 				cos_school_of_psychology
 			}
 		}
-
 		JAP_Kanin_Kotohito = {
 			
 			picture = JAP_Kanin_Kotohito

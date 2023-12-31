@@ -61,6 +61,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/minister/JAP/Konoe.png"
 	}
 	SpriteType = {	
+		name = "GFX_idea_JAP_Okada_Keisuke"
+		texturefile = "gfx/interface/ideas/minister/JAP/okada_keisuke.png"
+	}
+	SpriteType = {	
 		name = "GFX_idea_JAP_Nagata_Tetsuzan"
 		texturefile = "gfx/interface/ideas/minister/JAP/Nagata.png"
 	}
@@ -358,22 +362,30 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/minister/JAP/Watanabe_Jotaro.png"
 	}
 ###満州###
-    #国家元首
-    SpriteType = {	
-		name = "GFX_idea_MAN_Masahiko_Amakasu"
-		texturefile = "gfx/interface/ideas/minister/MAN/amakasu.png"
+	SpriteType = {	
+		name = "GFX_idea_MAN_Yamaoka_Mannosuke"
+		texturefile = "gfx/interface/ideas/minister/MAN/Yamaoka_Mannosuke.png"
 	}
-    #政府首班
+	SpriteType = {	
+		name = "GFX_idea_MAN_Hoshino_Naoki"
+		texturefile = "gfx/interface/ideas/minister/MAN/Hoshino_Naoki.png"
+	}
     SpriteType = {	
 		name = "GFX_idea_MAN_Furumi_Tadayuki"
 		texturefile = "gfx/interface/ideas/minister/MAN/Furumi.png"
 	}
-    #経済
     SpriteType = {	
 		name = "GFX_idea_MAN_Kishi_Nobusuke"
 		texturefile = "gfx/interface/ideas/minister/MAN/Kishi.png"
 	}
-
+	SpriteType = {	
+		name = "GFX_idea_MAN_Masahiko_Amakasu"
+		texturefile = "gfx/interface/ideas/minister/MAN/amakasu.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_MAN_Toyama_Hidezo"
+		texturefile = "gfx/interface/ideas/minister/MAN/Toyama_Hidezo.png"
+	}
 ###ブルガリア###
     #国家元首
     SpriteType = {	
@@ -414,11 +426,50 @@ spriteTypes = {
 	}
 ###オスマン###
 
-      SpriteType = {	
-		name = "GFX_idea_OTT_Abdulmecid_Ottoman"
-		texturefile = "gfx/interface/ideas/minister/OTT/idea_OTT_Abdulmecid_Ottoman.png"
+    SpriteType = {	
+		name = "GFX_idea_OTT_Abdulmecid_II"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Abdulmecid_II.png"
 	}
-
+    SpriteType = {	
+		name = "GFX_idea_OTT_Ahmed_Izzet_Pasha"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Ahmed_Izzet_Pasha.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Ali_Kemal"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Ali_Kemal.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Anzavur_Ahmed_Pasha"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Anzavur_Ahmed_Pasha.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Enver_Pasha"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Enver_Pasha.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Fevzi_Pasha"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Fevzi_Pasha.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Kazim_Karabekir"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Kazim_Karabekir.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Mustafa_Kemal"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Mustafa_Kemal.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Riza_Tevfik_Bey"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Riza_Tevfik_Bey.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Rumbeyoglu_Fahreddin_Bey"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Rumbeyoglu_Fahreddin_Bey.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_OTT_Suleyman_Sefik_Pasha"
+		texturefile = "gfx/interface/ideas/minister/OTT/OTT_Suleyman_Sefik_Pasha.png"
+	}
 
 ###フランス###
     #国家元首
@@ -719,207 +770,222 @@ SpriteType = {
 	}
 ###ドイツ###
     #国家元首
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_rosa_luxemburg"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_rosa_luxemburg.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Otto_Strasser"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Otto_Strasser.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Ernst_Junger"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Ernst_Junger.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Eugen_Levine"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Eugen_Levine.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Lev_Trotsky"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Lev_Trotsky.png"
 	}
     #政府首班
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Karl_Liebknecht"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Karl_Liebknecht.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Gregor_Strasser"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Gregor_Strasser.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Ruth_Fischer"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Ruth_Fischer.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Wilhelm_Pieck"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Wilhelm_Pieck.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Joseph_Goebbels"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Joseph_Goebbels.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Walter_Ulbricht"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Walter_Ulbricht.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Ernst_von_Salomon"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Ernst_von_Salomon.png"
 	}
     #外相
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Thalman"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Thalman.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Anton_Ackermann"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Anton_Ackermann.png"
 	}
-
+	SpriteType = {	
+		name = "GFX_idea_GER_Karl_Otto_Paetel"
+		texturefile = "gfx/interface/ideas/minister/GER/Karl_Otto_Paetel.png"
+	}
     #経済
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Paul_Levi"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Paul_Levi.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Ernst_Meyer"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Ernst_Meyer.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Wilhelm_reich"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Wilhelm_reich.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Ernst_Niekisch"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Ernst_Niekisch.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Speer"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Speer.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_todt"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_todt.png"
 	}
 
     #内相
-
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Rohm"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Rohm.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Edmund_Heines"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Edmund_Heines.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Roland_Freisler"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Roland_Freisler.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Ludwig_Renn"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Ludwig_Renn.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Julius_Leber"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Julius_Leber.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GER_Erich_Mielke"
 		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Erich_Mielke.png"
 	}
+	SpriteType = {	
+		name = "GFX_idea_GER_Erich_Mielke"
+		texturefile = "gfx/interface/ideas/minister/GER/idea_GER_Erich_Mielke.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_GER_Friedrich_Wilhelm_Heinz"
+		texturefile = "gfx/interface/ideas/minister/GER/Friedrich_Wilhelm_Heinz.png"
+	}
+	#軍人
+	SpriteType = {	
+		name = "GFX_idea_GER_Albert_Kesselring"
+		texturefile = "gfx/interface/ideas/minister/GER/Albert_Kesselring.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_GER_Hermann_Ehrhardt"
+		texturefile = "gfx/interface/ideas/minister/GER/Hermann_Ehrhardt.png"
+	}
 ###プロイセン###
 
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Reinhard_Heydrich"
 		texturefile = "gfx/interface/ideas/minister/PRE/idea_PRE_Reinhard_Heydrich.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Ribbentrop"
 		texturefile = "gfx/interface/ideas/minister/PRE/idea_PRE_Ribbentrop.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Franz_von_Papen"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Franz_von_Papen.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Wilhelm_II"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Wilhelm_II.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Wilhelm_III"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Wilhelm_III.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Otto_von_Bismarck"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Otto_von_Bismarck.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Alfred_Hugenberg"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Alfred_Hugenberg.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Kurt_von_Schleicher"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Kurt_von_Schleicher.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Erich_Ludendorff"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Erich_Ludendorff.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Konstantin_von_Neurath"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Konstantin_von_Neurath.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Hjalmar_Schacht"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Hjalmar_Schacht.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Werner_von_Blomberg"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Werner_von_Blomberg.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Otto_Meissner"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Otto_Meissner.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Wilhelm_Groener"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Wilhelm_Groener.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_von_Hammerstein_Equord"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_von_Hammerstein_Equord.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Heinz_Guderian"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Heinz_Guderian.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Erich_von_Manstein"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Erich_von_Manstein.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Werner_von_Fritsch"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Werner_von_Fritsch.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Walther_von_Brauchitsch"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Walther_von_Brauchitsch.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Fedor_von_Bock"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Fedor_von_Bock.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_PRE_Erwin_von_Witzleben"
 		texturefile = "gfx/interface/ideas/minister/PRE/PRE_Erwin_von_Witzleben.png"
 	}
-
 
 ###オーストリア###
 
@@ -1107,7 +1173,7 @@ SpriteType = {
 		name = "GFX_idea_AUS_Sigismund_Schilhawsky"
 		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Sigismund_Schilhawsky.png"
 	}
-
+	
 	SpriteType = {
 		name = "GFX_idea_AUS_Alfred_Jansa"
 		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Alfred_Jansa.png"
@@ -1127,6 +1193,7 @@ SpriteType = {
 		name = "GFX_idea_AUS_Wilhelm_Zehner"
 		texturefile = "gfx/interface/ideas/minister/AUS/idea_AUS_Wilhelm_Zehner.png"
 	}
+
 
 ###カリフォルニア###
 
@@ -1184,44 +1251,58 @@ SpriteType = {
 	}
 ###アメリカ###
 
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_USA_Darlington_Hoopes"
 		texturefile = "gfx/interface/ideas/minister/USA/Darlington_Hoopes.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_USA_Devere_Allen"
 		texturefile = "gfx/interface/ideas/minister/USA/Devere_Allen.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_USA_Haim_Kantorovitch"
 		texturefile = "gfx/interface/ideas/minister/USA/Haim_Kantorovitch.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_USA_James_Hudson_Maurer"
 		texturefile = "gfx/interface/ideas/minister/USA/James_Hudson_Maurer.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_USA_Norman_Thomas"
 		texturefile = "gfx/interface/ideas/minister/USA/Norman_Thomas.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_USA_Malin_craig"
 		texturefile = "gfx/interface/ideas/minister/USA/Malin_craig.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_USA_henry_arnold"
 		texturefile = "gfx/interface/ideas/minister/USA/henry_arnold.png"
 	}
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_USA_William_Leahy"
 		texturefile = "gfx/interface/ideas/minister/USA/William_Leahy.png"
+	}
+
+	SpriteType = {	
+		name = "GFX_idea_USA_Gerald_LK_Smith"
+		texturefile = "gfx/interface/ideas/minister/USA/Gerald_LK_Smith.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_USA_William_Dudley_Pelley"
+		texturefile = "gfx/interface/ideas/minister/USA/William_Dudley_Pelley.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_USA_Hamilton_Fish_III"
+		texturefile = "gfx/interface/ideas/minister/USA/Hamilton_Fish_III.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_USA_william_lemke"
+		texturefile = "gfx/interface/ideas/minister/USA/william_lemke.png"
+	}
+    SpriteType = {	
+		name = "GFX_idea_USA_lothrop_stoddard"
+		texturefile = "gfx/interface/ideas/minister/USA/lothrop_stoddard.png"
 	}
 
 ###イギリス###
@@ -1362,6 +1443,14 @@ SpriteType = {
 	SpriteType = {	
 		name = "GFX_idea_RUS_Vladimir_Purishkevich"
 		texturefile = "gfx/interface/ideas/minister/RUS/Vladimir_Purishkevich.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_RUS_Alexander_Kolchak"
+		texturefile = "gfx/interface/ideas/minister/RUS/Alexander_Kolchak.png"
+	}
+	SpriteType = {	
+		name = "GFX_idea_RUS_Alexander_Seversky"
+		texturefile = "gfx/interface/ideas/minister/RUS/Alexander_Seversky.png"
 	}
 ###ソビエト###
     SpriteType = {	

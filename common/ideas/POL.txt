@@ -3,30 +3,23 @@ ideas = {
 	country = {
 
 		POL_Red_Poland = {
-
 			picture = ast_abandon_the_westminster_system_communism
-			
 			allowed = {
 				original_tag = POL
 			}
-
-			
-			removal_cost = -1
+			cancel = {
+				has_socialist_government = no
+            }
 			modifier = {
 				conscription_factor = 0.05
 				army_core_defence_factor = 0.1
 		   }
 		}
 		POL_Anti_Communist_Generals = {
-
 			picture = generic_volunteer_expedition_bonus
-			
 			allowed = {
 				original_tag = POL
 			}
-
-			
-			removal_cost = -1
 			modifier = {
 				paternal_autocrat_drift = 0.03
 				drift_defence_factor = -0.2
@@ -35,15 +28,13 @@ ideas = {
 		   }
 		}
 		POL_German_puppet= {
-
 			picture = SPR_collectivized_society
-			
 			allowed = {
 				original_tag = POL
 			}
-
-			
-			removal_cost = -1
+			cancel = {
+				has_socialist_government = no
+            }
 			modifier = {
 				stability_factor = -0.10
 				political_power_cost = 0.2

@@ -822,8 +822,17 @@ news_event = {
 	
 	is_triggered_only = yes
 	
-       option = {
+	option = {
 		name = TR_news.36.a
+		trigger = {
+			NOT = {
+				TAG = JAP
+			}
+		}
+	}
+	option = {
+		name = TR_news.36.b
+		trigger = { TAG =JAP }
 	}
 
 }

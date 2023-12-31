@@ -1,0 +1,27 @@
+state={
+	id=825
+	name="STATE_825"
+	local_supplies=0.0 
+provinces={
+		1123 7115 
+	}
+	state_category=one_island
+	manpower=38293
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 2
+			7115  = {
+				naval_base = 1
+
+			}
+		}
+		
+
+
+	}
+	buildings_max_level_factor=1.000
+}
+
+
