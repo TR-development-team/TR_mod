@@ -1,0 +1,269 @@
+#####################
+
+###  ##  #  # # #  ## 
+ #  #  # ## # # # #   
+ #  #### # ## ##   #  
+ #  #  # #  # # #   # 
+ #  #  # #  # # # ## 
+
+ #################### 
+
+AUS_graef_stift_organisation = {
+	include = generic_infantry_tank_organization
+	name = graef_stift
+	icon = GFX_idea_graef_stift
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+AUS_puch_organisation = {
+	include = generic_medium_tank_organization
+	name = puch
+	icon = GFX_idea_puch
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+AUS_saurer_organisation = {
+	include = generic_mobile_tank_organization
+	name = saurer
+	icon = GFX_idea_saurer
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+AUS_simmering_organisation = {
+	include = generic_heavy_tank_organization
+	name = simmering
+	icon = GFX_idea_simmering
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+
+#####################
+
+ ## #  # ### ###   ## 
+#   #  #  #  #  # #   
+ #  ####  #  ###   #  
+  # #  #  #  #      # 
+##  #  # ### #    ##  
+ 
+#####################
+
+AUS_austriawerft_organisation = {
+	include = generic_task_force_ship_organization
+	name = austriawerft
+	icon = GFX_idea_austriawerft
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = {
+		#流石に造船所全部奪われるなんてことは阻止するよね、カール君？
+		#OR = {
+		#	FROM = {
+		#		owns_state = 736
+		#	}
+		#	any_country = {
+		#		owns_state = 736
+		#		custom_trigger_tooltip = {
+		#			tooltip = austria_friends_tt
+		#			is_ally_with = FROM
+		#		}
+		#	}
+		#}
+	}
+}
+AUS_3maj_organisation = {
+	include = generic_raider_ship_organization
+	name = 3maj
+	icon = GFX_idea_3maj
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = {
+		OR = {
+			FROM = {
+				owns_state = 948
+			}
+			any_country = {
+				owns_state = 948
+				custom_trigger_tooltip = {
+					tooltip = austria_friends_tt
+					is_ally_with = FROM
+				}
+			}
+		}
+	}
+}
+AUS_cantiere_navale_triestino_organisation = {
+	include = generic_battle_line_ship_organization
+	name = cantiere_navale_triestino
+	icon = GFX_idea_cantiere_navale_triestino
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = {
+		OR = {
+			FROM = {
+				owns_state = 736
+			}
+			any_country = {
+				owns_state = 736
+				custom_trigger_tooltip = {
+					tooltip = austria_friends_tt
+					is_ally_with = FROM
+				}
+			}
+		}
+	}
+}
+AUS_lloydarsenal_organisation = {
+	include = generic_escort_ship_organization
+	name = lloydarsenal
+	icon = GFX_idea_lloydarsenal
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = {
+		OR = {
+			FROM = {
+				owns_state = 736
+			}
+			any_country = {
+				owns_state = 736
+				custom_trigger_tooltip = {
+					tooltip = austria_friends_tt
+					is_ally_with = FROM
+				}
+			}
+		}
+	}
+}
+AUS_seearsenal_pola_organisation = {
+	include = generic_submarine_organization
+	name = seearsenal_pola
+	icon = GFX_idea_seearsenal_pola
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = {
+		OR = {
+			FROM = {
+				owns_state = 992
+			}
+			any_country = {
+				owns_state = 992
+				custom_trigger_tooltip = {
+					tooltip = austria_friends_tt
+					is_ally_with = FROM
+				}
+			}
+		}
+	}
+}
+
+###########################
+
+###  #    ##  #  # ###  ## 
+#  # #   #  # ## # #   #   
+###  #   #### # ## ##   #  
+#    #   #  # #  # #     # 
+#    ### #  # #  # ### ##  
+
+###########################
+
+AUS_phoenix_organisation = {
+	include = generic_high_agility_fighter_aircraft_organization
+	name = phoenix
+	icon = GFX_idea_phoenix
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+	}
+	research_categories = {	
+		mio_cat_all_light_fighter_and_modules 
+	}
+}
+AUS_oeffag_organisation = {
+	include = generic_light_aircraft_organization
+	name = oeffag
+	icon = GFX_idea_oeffag
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+	equipment_type = {
+		mio_cat_eq_all_small_plane
+	}
+	research_categories = {	
+		mio_cat_all_light_fighter_and_modules 
+	}
+}
+AUS_wnf_organisation = {
+	include = generic_general_aircraft_organization
+	name = wnf
+	icon = GFX_idea_wnf
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+
+################################### 
+
+#   #  ##  ### ### ###  ### ### #   
+## ## #  #  #  #   #  #  #  #   #   
+# # # ####  #  ##  ###   #  ##  #   
+#   # #  #  #  #   #  #  #  #   #   
+#   # #  #  #  ### #  # ### ### ### 
+
+
+###################################
+
+AUS_steyr_organisation = {
+	include = generic_infantry_equipment_organization
+	name = steyr
+	icon = GFX_idea_steyr
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+AUS_hirtenberger_organisation = {
+	include = generic_support_equipment_organization
+	name = hirtenberger
+	icon = GFX_idea_hirtenberger
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+
+AUS_boehler_organisation = {
+	include = generic_artillery_organization
+	name = boehler
+	icon = GFX_idea_boehler
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+AUS_laurin_klement_organisation = {
+	include = generic_motorized_mechanized_organization
+	name = laurin_klement
+	icon = GFX_idea_laurin_klement
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+AUS_austro_daimler_organisation = {
+	include = generic_armored_car_organization
+	name = austro_daimler
+	icon = GFX_idea_austro_daimler
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}
+
+###
+AUS_wnlf_organisation = {
+	include = generic_tank_refurbishment_plant_organization
+	name = wnlf
+	icon = GFX_idea_wnlf
+	allowed = { original_tag = AUS }
+	visible = { }
+	available = { }
+}

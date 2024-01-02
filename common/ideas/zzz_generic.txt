@@ -116,7 +116,7 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			
@@ -140,7 +140,7 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			
@@ -164,7 +164,7 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			
@@ -183,7 +183,7 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			
@@ -202,7 +202,7 @@ ideas = {
 			picture = generic_air_manufacturer_2
 			
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			
@@ -221,7 +221,7 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			
@@ -243,7 +243,7 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = MAN } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS tag = MAN } }
 
 			}
 			
@@ -266,7 +266,7 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = MAN } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS tag = MAN } }
 
 			}
 			modifier = {
@@ -292,7 +292,7 @@ ideas = {
 			picture = generic_motorized_equipment_manufacturer_3
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			
@@ -311,7 +311,7 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			
@@ -330,7 +330,7 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 
 			allowed = {
-				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA } }
+				NOT = { OR = { tag = RAT tag = FRA tag = JAP tag = USA tag = AUS } }
 
 			}
 			

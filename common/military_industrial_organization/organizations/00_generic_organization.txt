@@ -15,7 +15,7 @@ generic_tank_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = SWE tag = CAN tag = MEX tag = AST tag = MAN } }
+		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = SWE tag = CAN tag = MEX tag = AST tag = MAN tag = AUS } }
 	}
 
 	equipment_type = { mio_cat_eq_all_light_tank mio_cat_eq_all_medium_tank }
@@ -2037,7 +2037,7 @@ generic_escort_ship_organization = {
 	icon = GFX_idea_generic_naval_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN tag = HUN} }
+		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN tag = HUN tag = AUS } }
 		is_chinese_tag = no
 	}
 
@@ -3466,7 +3466,7 @@ generic_general_aircraft_organization = {
 	icon = GFX_idea_generic_air_manufacturer_1
 
 	allowed = {
-		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN tag = HUN} }
+		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN tag = HUN tag = AUS } }
 	}
 
 	equipment_type = {
@@ -5782,7 +5782,7 @@ generic_high_agility_fighter_aircraft_organization = {
 		mutually_exclusive = { generic_mio_trait_gunboat }
 
 		equipment_bonus = {
-			air_attack = 0.5
+			air_attack = 0.05
 		}
 	}
 
@@ -5840,7 +5840,7 @@ generic_high_agility_fighter_aircraft_organization = {
 
 		equipment_bonus = {
 			air_range = 0.10
-			air_attack = 0.5
+			air_attack = 0.05
 		}
 	}
 }
@@ -6185,7 +6185,7 @@ generic_artillery_organization = {
 	icon = GFX_idea_generic_artillery_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN } }
+		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN tag = AUS } }
 		is_chinese_tag = no
 	}
 
@@ -6497,7 +6497,7 @@ generic_infantry_equipment_organization = {
 	icon = GFX_idea_generic_infantry_equipment_manufacturer_2
 
 	allowed = {
-		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN tag = HUN } }
+		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN tag = HUN tag = AUS } }
 		is_chinese_tag = no
 	}
 
@@ -7053,7 +7053,7 @@ generic_motorized_mechanized_organization = {
 	icon = GFX_idea_generic_motorized_equipment_manufacturer_3
 
 	allowed = {
-		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN } }
+		NOT = { OR = { tag = RAT tag = GBR tag = FRA tag = JAP tag = USA tag = GRE tag = OTT tag = ROM tag = BUL tag = SWE tag = NTL tag = SPR tag = ADU tag = CAT tag = CAN tag = MEX tag = POR tag = AST tag = MAN tag = AUS } }
 		is_chinese_tag = no
 	}
 

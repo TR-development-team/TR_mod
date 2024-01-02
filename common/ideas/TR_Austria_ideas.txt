@@ -1,4 +1,5 @@
 @minister_cost = 200
+@concern_cost = 100
 ideas = {
 	Head_of_State = {
 		#国家元首
@@ -600,12 +601,7 @@ ideas = {
 			picture = AUS_wiener_kreis
 			modifier = {
 				research_speed_factor = 0.12
-				political_power_gain = 0.3
-				stability_weekly = 0.001
-				drift_defence_factor = -0.1
-				power_balance_weekly = -0.005
-				production_speed_buildings_factor = 0.06
-				consumer_goods_factor = -0.05
+				political_power_factor = 0.15
 				ai_focus_peaceful_factor = 0.25
 			}
 		}
@@ -763,6 +759,343 @@ ideas = {
 			picture = generic_war_preparation
 			modifier = {
 				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+	industrial_concern = {
+		oeamg = {
+			allowed = { original_tag = AUS }
+			traits = {
+				mining_company
+			}
+			cost = @concern_cost
+			modifier = {
+				local_resources_factor = 0.15
+				production_speed_buildings_factor = 0.05
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+		kapsch = {
+			allowed = { original_tag = AUS }
+			traits = {
+				electronics_manufacturer
+			}
+			cost = @concern_cost
+			modifier = {
+				research_speed_factor = 0.05
+			}
+			research_bonus = {
+				electronics = 0.25
+			}
+		}
+		semperit = {
+			allowed = { original_tag = AUS }
+			traits = {
+				chemical_producer
+			}
+			cost = @concern_cost
+			modifier = {
+				production_speed_synthetic_refinery_factor = 0.2
+			}
+			research_bonus = {
+				industry = 0.1
+				synth_resources = 0.2
+			}
+		}
+		perlmooser = {
+			allowed = { original_tag = AUS }
+			traits = {
+				industrial_manufacturer
+			}
+			cost = @concern_cost
+			modifier = {
+				production_speed_buildings_factor = 0.12
+			}
+			research_bonus = {
+				industry = 0.05
+			}
+		}
+		suedbahn = {
+			allowed = { original_tag = AUS }
+			traits = {
+				railroad_company
+			}
+			cost = @concern_cost
+			modifier = {
+				production_speed_rail_way_factor = 0.25
+				production_speed_supply_node_factor = 0.25
+			}
+			equipment_bonus = {
+				train_equipment = {
+					instant = yes
+					build_cost_ic = -0.25
+					reliability = 0.1
+				}
+			}
+			research_bonus = {
+				train_tech = 0.25
+			}
+		}
+	}
+	materiel_manufacturer = {
+		designer = yes
+		austro_daimler = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				motorised_equipment_producer_offense_1
+			}
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+		}
+		boehler = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				artillery_producer_defense_1
+			}
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+		}
+		hirtenberger = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				support_equipment_producer_mass_1
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+		}
+		laurin_klement = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				motorised_equipment_producer_mass_1
+			}
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+		}
+		steyr = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				infantry_equipment_producer_assualt_1
+			}
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+		}
+		#wnlf = {
+		#	allowed = { original_tag = AUS }
+		#	available = { }
+		#	traits = {
+		#		army_equipment_producer_1
+		#	}
+		#	research_bonus = {
+		#		infantry_weapons = 0.15
+		#	}
+		#}
+	}
+	tank_manufacturer = {
+		designer = yes
+		graef_stift = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				medium_tank_producer_defense_1
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+		}
+		puch = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				medium_tank_producer_offense_1
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+		}
+		saurer = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				small_tank_producer_offense_1
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+		}
+		simmering = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				heavy_tank_producer_defense_1
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+		}
+	}
+	naval_manufacturer = {
+		designer = yes
+		3maj = {
+			allowed = { original_tag = AUS }
+			available = {
+				OR = {
+					ROOT = {
+						owns_state = 948
+					}
+					any_country = {
+						owns_state = 948
+						custom_trigger_tooltip = {
+							tooltip = austria_friends_tt
+							is_ally_with = ROOT
+						}
+					}
+				}
+			}
+			traits = {
+				capital_ship_producer_mass_1
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		}
+		austriawerft = {
+			allowed = { original_tag = AUS }
+			available = {
+				OR = {
+					ROOT = {
+						owns_state = 736
+					}
+					any_country = {
+						owns_state = 736
+						custom_trigger_tooltip = {
+							tooltip = austria_friends_tt
+							is_ally_with = ROOT
+						}
+					}
+				}
+			}
+			traits = {
+				capital_ship_producer_defense_1
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		}
+		cantiere_navale_triestino = {
+			allowed = { original_tag = AUS }
+			available = {
+				OR = {
+					ROOT = {
+						owns_state = 736
+					}
+					any_country = {
+						owns_state = 736
+						custom_trigger_tooltip = {
+							tooltip = austria_friends_tt
+							is_ally_with = ROOT
+						}
+					}
+				}
+			}
+			traits = {
+				capital_ship_producer_offense_1
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		}
+		lloydarsenal = {
+			allowed = { original_tag = AUS }
+			available = {
+				#OR = {
+				#	ROOT = {
+				#		owns_state = 736
+				#	}
+				#	any_country = {
+				#		owns_state = 736
+				#		custom_trigger_tooltip = {
+				#			tooltip = austria_friends_tt
+				#			is_ally_with = ROOT
+				#		}
+				#	}
+				#}
+			}
+			traits = {
+				convoy_producer_2
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.05
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		}
+		seearsenal_pola = {
+			allowed = { original_tag = AUS }
+			available = {
+				OR = {
+					ROOT = {
+						owns_state = 992
+					}
+					any_country = {
+						owns_state = 992
+						custom_trigger_tooltip = {
+							tooltip = austria_friends_tt
+							is_ally_with = ROOT
+						}
+					}
+				}
+			}
+			traits = {
+				small_ship_producer_defense_1
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+		}
+	}
+	aircraft_manufacturer = {
+		designer = yes
+		phoenix = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				phoenix_fighters
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		oeffag = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				fighter_producer_defense_1
+			}
+			research_bonus = {
+				air_equipment = 0.1
+			}
+		}
+		wnf = {
+			allowed = { original_tag = AUS }
+			available = { }
+			traits = {
+				bomber_producer_mass_2
+			}
+			research_bonus = {
+				air_equipment = 0.2
 			}
 		}
 	}

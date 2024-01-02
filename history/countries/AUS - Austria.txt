@@ -47,54 +47,54 @@ create_import = {
 	exporter = HUN
 }
 
-set_power_balance = {	id = AUS_power_balance	}
+#set_power_balance = {	id = AUS_power_balance	}
 
 ###Events
 country_event = {	id = TR_Austria.1	days = 5	}
 
 ###Dynamic_modifier
-#reichs agriculture
-set_variable = { AUS_ra_min_export_modifier = 0 }
-set_variable = { AUS_ra_war_stability_factor_modifier = -0.1 }
-set_variable = { AUS_ra_attrition_modifier = 0.2 }
-set_variable = { AUS_ra_consumer_goods_factor_modifier = 0.1 }
-set_variable = { AUS_ra_conscription_factor_modifier = -0.25 }
-set_variable = { AUS_ra_monthly_population_modifier = -0.5 }
-set_variable = { AUS_ra_embargo_threshold_factor_modifier = 0 }
-set_variable = { AUS_ra_embargo_cost_factor_modifier = 0 }
-
-add_dynamic_modifier = { modifier = AUS_reichs_agriculture }
-
-#reichs industry
-set_variable = { AUS_ri_local_resources_factor_modifier = -0.2 }
-set_variable = { AUS_ri_min_export_modifier = 0 }
-set_variable = { AUS_ri_social_democrat_drift_modifier = 0.00 }
-set_variable = { AUS_ri_syndicalist_drift_modifier = 0.00 }
-set_variable = { AUS_ri_radical_socialist_drift_modifier = 0.00 }
-set_variable = { AUS_ri_production_factory_efficiency_gain_factor_modifier = -0.2 }
-set_variable = { AUS_ri_production_factory_max_efficiency_factor_modifier = 0 }
-set_variable = { AUS_ri_production_factory_start_efficiency_factor_modifier = -0.1 }
-set_variable = { AUS_ri_production_lack_of_resource_penalty_factor_modifier = 0.1 }
-set_variable = { AUS_ri_consumer_goods_factor_modifier = 0.05 }
-set_variable = { AUS_ri_production_speed_industrial_complex_factor_modifier = -0.25 }
-set_variable = { AUS_ri_production_speed_infrastructure_factor_modifier = 0 }
-set_variable = { AUS_ri_production_speed_rail_way_factor_modifier = 0 }
-set_variable = { AUS_ri_production_speed_arms_factory_factor_modifier = 0 }
-set_variable = { AUS_ri_production_speed_dockyard_factor_modifier = 0 }
-set_variable = { AUS_ri_production_speed_synthetic_refinery_factor_modifier = 0 }
-set_variable = { AUS_ri_global_building_slots_factor_modifier = 0 }
-set_variable = { AUS_ri_production_speed_buildings_factor_modifier = -0.20 }
-set_variable = { AUS_ri_industrial_capacity_factory_modifier = 0 }
-set_variable = { AUS_ri_industrial_capacity_dockyard_modifier = 0 }
-set_variable = { AUS_ri_industry_free_repair_factor_modifier = 0 }
-set_variable = { AUS_ri_industry_repair_factor_modifier = 0 }
-set_variable = { AUS_ri_production_oil_factor_modifier = 0 }
-set_variable = { AUS_ri_industry_air_damage_factor_modifier = 0 }
-
-add_dynamic_modifier = { modifier = AUS_reichs_industry }
-
-#great depression
-set_variable = { AUS_plunge_escalation_level = 10 }
+##reichs agriculture
+#set_variable = { AUS_ra_min_export_modifier = 0 }
+#set_variable = { AUS_ra_war_stability_factor_modifier = -0.1 }
+#set_variable = { AUS_ra_attrition_modifier = 0.2 }
+#set_variable = { AUS_ra_consumer_goods_factor_modifier = 0.1 }
+#set_variable = { AUS_ra_conscription_factor_modifier = -0.25 }
+#set_variable = { AUS_ra_monthly_population_modifier = -0.5 }
+#set_variable = { AUS_ra_embargo_threshold_factor_modifier = 0 }
+#set_variable = { AUS_ra_embargo_cost_factor_modifier = 0 }
+#
+#add_dynamic_modifier = { modifier = AUS_reichs_agriculture }
+#
+##reichs industry
+#set_variable = { AUS_ri_local_resources_factor_modifier = -0.2 }
+#set_variable = { AUS_ri_min_export_modifier = 0 }
+#set_variable = { AUS_ri_social_democrat_drift_modifier = 0.00 }
+#set_variable = { AUS_ri_syndicalist_drift_modifier = 0.00 }
+#set_variable = { AUS_ri_radical_socialist_drift_modifier = 0.00 }
+#set_variable = { AUS_ri_production_factory_efficiency_gain_factor_modifier = -0.2 }
+#set_variable = { AUS_ri_production_factory_max_efficiency_factor_modifier = 0 }
+#set_variable = { AUS_ri_production_factory_start_efficiency_factor_modifier = -0.1 }
+#set_variable = { AUS_ri_production_lack_of_resource_penalty_factor_modifier = 0.1 }
+#set_variable = { AUS_ri_consumer_goods_factor_modifier = 0.05 }
+#set_variable = { AUS_ri_production_speed_industrial_complex_factor_modifier = -0.25 }
+#set_variable = { AUS_ri_production_speed_infrastructure_factor_modifier = 0 }
+#set_variable = { AUS_ri_production_speed_rail_way_factor_modifier = 0 }
+#set_variable = { AUS_ri_production_speed_arms_factory_factor_modifier = 0 }
+#set_variable = { AUS_ri_production_speed_dockyard_factor_modifier = 0 }
+#set_variable = { AUS_ri_production_speed_synthetic_refinery_factor_modifier = 0 }
+#set_variable = { AUS_ri_global_building_slots_factor_modifier = 0 }
+#set_variable = { AUS_ri_production_speed_buildings_factor_modifier = -0.20 }
+#set_variable = { AUS_ri_industrial_capacity_factory_modifier = 0 }
+#set_variable = { AUS_ri_industrial_capacity_dockyard_modifier = 0 }
+#set_variable = { AUS_ri_industry_free_repair_factor_modifier = 0 }
+#set_variable = { AUS_ri_industry_repair_factor_modifier = 0 }
+#set_variable = { AUS_ri_production_oil_factor_modifier = 0 }
+#set_variable = { AUS_ri_industry_air_damage_factor_modifier = 0 }
+#
+#add_dynamic_modifier = { modifier = AUS_reichs_industry }
+#
+##great depression
+#set_variable = { AUS_plunge_escalation_level = 10 }
 
 #wien in blute
 
@@ -203,16 +203,17 @@ if = {
 
 add_ideas = {
 	Constitutional_monarchy
-	acceptable_minimum_wage
+	low_minimum_wage
+	trinket_max_workhours
 	trinket_safety_regulations
 	trinket_Unemployment_subsidies
 	trinket_pensions
-	trinket_health_care
+	low_health_care
 	acceptable_school_system
-	AUS_geteiltes_reich_idea
-	AUS_financial_difficulties_idea
 	AUS_frohlichen_apokalypse_idea
-	AUS_hungarian_scientist_idea
+	#AUS_geteiltes_reich_idea
+	#AUS_financial_difficulties_idea
+	#AUS_hungarian_scientist_idea
 }
 
 set_politics = {
