@@ -1,0 +1,23 @@
+state = {
+	id = 1089
+	name = "STATE_1089"
+	manpower = 100200	#現代人口を参照
+	state_category = one
+	local_supplies = 0.000
+	history = {
+		owner = AUS
+		victory_points = {
+			#Lienz
+			671
+			3
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = AUS
+		add_core_of = TYR
+	}
+	provinces = {
+		671
+	}
+}
