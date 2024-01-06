@@ -2,13 +2,13 @@ state = {
 	id = 948
 	name = "STATE_948"	# Dalmatia #TODO_Manu: VP name (Fiume) should change to Rijeka under YUG control. Maybe state name too (State name changed from Carniola to Istria after merging with Pola (Istria))
 	manpower = 151020	# Fiume had 75000 before merging rest of Istria # Dalmatia had 1431700 before Fiume split
-	state_category = two_port
+	state_category = three_port
 	history = {
 		owner = ITA
 		victory_points = {
 			#Fiume(C:Rijeka,G:Flaum)
 			11564
-			3
+			8
 		}
 		buildings = {
 			infrastructure = 3

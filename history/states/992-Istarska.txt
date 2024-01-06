@@ -2,7 +2,7 @@ state = {
 	id = 992
 	name = "STATE_992"
 	manpower = 249666	#現代人口を参照
-	state_category = three
+	state_category = four
 	local_supplies = 0.000
 	#resources = {
 	#	
@@ -12,7 +12,7 @@ state = {
 		victory_points = {
 			#Pola(G:Polei,C:Pula)
 			13364
-			2
+			5
 		}
 		buildings = {
 			infrastructure = 2

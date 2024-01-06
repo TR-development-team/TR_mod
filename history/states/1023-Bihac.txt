@@ -1,25 +1,25 @@
 state = {
 	id = 1023
 	name = "STATE_1023"
-	manpower = 239154	#findpopを参照
-	state_category = three
+	manpower = 314486	#findpopを参照
+	state_category = two
 	local_supplies = 0.000
 	#resources = {
 	#	
 	#}
 	history = {
-		owner = HUN
+		owner = BOS
 		victory_points = {
-			#Pécs
-			11610
-			3
+			#Cazin
+			6614
+			1
 		}
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = HUN
+		add_core_of = BOS
 	}
 	provinces = {
-		9624 9643 11610
+		6614 9586
 	}
 }

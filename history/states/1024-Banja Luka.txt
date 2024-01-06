@@ -1,7 +1,7 @@
 state = {
-	id = 993
-	name = "STATE_993"
-	manpower = 1008148
+	id = 1024
+	name = "STATE_1024"
+	manpower = 660466
 	state_category = three
 	local_supplies = 0.000
 	#resources = {
@@ -10,18 +10,18 @@ state = {
 	history = {
 		owner = BOS
 		victory_points = {
-			#Bijeljina
-			13345
+			#Banja Luka
+			13347
+			3
+		}
+		victory_points = {
+			#Prijedor
+			6619
 			1
 		}
 		victory_points = {
-			#Tuzla
-			606
-			1
-		}
-		victory_points = {
-			#Brcko
-			13349
+			#Doboj
+			13344
 			1
 		}
 		buildings = {
@@ -30,6 +30,6 @@ state = {
 		add_core_of = BOS
 	}
 	provinces = {
-		606 9588 13344 13345 13346 13349 13352
+		6619 9588 13344 13347 13352
 	}
 }

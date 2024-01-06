@@ -1,8 +1,8 @@
 state = {
 	id = 982
 	name = "STATE_982"
-	manpower = 507787	#現代人口とfindpopを参照
-	state_category = three
+	manpower = 746941	#現代人口とfindpopを参照
+	state_category = five
 	local_supplies = 0.000
 	#resources = {
 	#	
@@ -19,12 +19,17 @@ state = {
 			682
 			1
 		}
+		victory_points = {
+			#Pécs
+			11610
+			3
+		}
 		buildings = {
 			infrastructure = 2
 		}
 		add_core_of = HUN
 	}
 	provinces = {
-		682 3680 6685 13302 13355 13356
+		682 3680 6685 9624 9643 11610 13302 13355 13356
 	}
 }

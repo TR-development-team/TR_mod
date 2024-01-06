@@ -1,30 +1,28 @@
-state={
-	id=846
-	name="STATE_846"
-	local_supplies=0.0 
-provinces={
-		3959 9909 
+state = {
+	id = 846
+	name = "STATE_846"
+	local_supplies = 0
+	provinces = {
+		3959
+		9909
 	}
-	history={
+	history = {
 		owner = ITA
 		add_core_of = FRA
 		add_core_of = OCC
 		add_core_of = ITA
 		victory_points = {
-			9909 5 
+			9909
+			5
 		}
 		buildings = {
 			infrastructure = 2
-                        9909 = {
+			9909 = {
 				naval_base = 3
 			}
-			
 		}
-
 	}
-
-
-	manpower=442500
-	buildings_max_level_factor=1.000
-	state_category=three_port
+	manpower = 442500
+	buildings_max_level_factor = 1
+	state_category = four_port
 }
