@@ -5,14 +5,14 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		artillery_brigade = { x = 0 y = 2 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-		artillery_brigade = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -57,8 +57,8 @@ division_template = {
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 1 y = 0 }
-		artillery_brigade = { x = 1 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
@@ -185,7 +185,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 12
 		}
-		location = 6682
+		location = 13301
 		division_template = "Gebirgsartilleriebrigaden"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -461,7 +461,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 32
 		}
-		location = 9704
+		location = 6571
 		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -471,7 +471,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 33
 		}
-		location = 713
+		location = 13384
 		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -481,7 +481,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 34
 		}
-		location = 3696
+		location = 6735
 		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -491,7 +491,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 35
 		}
-		location = 11622
+		location = 13374
 		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -501,7 +501,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 36
 		}
-		location = 662
+		location = 9656
 		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -511,7 +511,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 37
 		}
-		location = 11592
+		location = 3617
 		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -521,7 +521,7 @@ units = {
 			is_name_ordered = yes
 			name_order = 38
 		}
-		location = 3649
+		location = 11787
 		division_template = "Infanterietruppendivisionen"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
@@ -610,6 +610,27 @@ units = {
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.8
 	}
+	#Croatian coasral
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 47
+		}
+		location = 13330
+		division_template = "Infanteriebrigaden"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {	
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location = 6611
+		division_template = "Infanteriebrigaden"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
 }
 
 ### Starting Production ###
@@ -651,26 +672,26 @@ instant_effect = {
 		progress = 0.74
 		efficiency = 100
 	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_chassis_2
-			creator = "AUS" 
-			version_name = "TNH"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_chassis_1
-			creator = "AUS" 
-			version_name = "LT vz. 35"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
+	#add_equipment_production = {
+	#	equipment = {
+	#		type = light_tank_chassis_2
+	#		creator = "AUS" 
+	#		version_name = "TNH"
+	#	}
+	#	requested_factories = 1
+	#	progress = 0.4
+	#	efficiency = 100
+	#}
+	#add_equipment_production = {
+	#	equipment = {
+	#		type = light_tank_chassis_1
+	#		creator = "AUS" 
+	#		version_name = "LT vz. 35"
+	#	}
+	#	requested_factories = 1
+	#	progress = 0.4
+	#	efficiency = 100
+	#}
 	add_equipment_production = {
 		equipment = {
 			type = train_equipment_1
