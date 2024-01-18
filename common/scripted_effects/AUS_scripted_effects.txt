@@ -15,34 +15,3 @@
 #		example_effect = yes
 #	}
 #
-AUS_increased_impact_of_the_depression_effect = {
-	custom_effect_tooltip = AUS_dep_inc_tt
-	add_to_variable = {
-		AUS_plunge_escalation_level = 1
-	}
-}
-
-AUS_decreased_impact_of_the_depression_effect = {
-	custom_effect_tooltip = AUS_dep_dec_tt
-	subtract_from_variable = {
-		AUS_plunge_escalation_level = 1
-	}
-}
-
-d_integrate = {
-	FROM = {
-		annex_country = {
-			target = ROOT
-			transfer_troops = yes
-		}
-	}
-}
-
-d_create_wargoal_annex = {
-	FROM = {
-		create_wargoal = {
-			type = annex_everything
-			target = ROOT
-		}
-	}
-}

@@ -7,8 +7,8 @@ create_faction = Austro_hungarian_empire
 
 set_politics = {
 	ruling_party = social_conservative
-	last_election = "1935.11.9"
-	election_frequency = 60
+	last_election = "1932.11.9"
+	election_frequency = 48
 	elections_allowed = yes
 }
 
@@ -25,7 +25,6 @@ set_stability = 0.5
 set_war_support = 0.3
 set_research_slots = 4
 starting_train_buffer = 3
-set_major = yes
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -47,73 +46,10 @@ create_import = {
 	exporter = HUN
 }
 
-#set_power_balance = {	id = AUS_power_balance	}
-
 ###Events
-country_event = {	id = TR_Austria.1	days = 5	}
 
 ###Dynamic_modifier
-##reichs agriculture
-#set_variable = { AUS_ra_min_export_modifier = 0 }
-#set_variable = { AUS_ra_war_stability_factor_modifier = -0.1 }
-#set_variable = { AUS_ra_attrition_modifier = 0.2 }
-#set_variable = { AUS_ra_consumer_goods_factor_modifier = 0.1 }
-#set_variable = { AUS_ra_conscription_factor_modifier = -0.25 }
-#set_variable = { AUS_ra_monthly_population_modifier = -0.5 }
-#set_variable = { AUS_ra_embargo_threshold_factor_modifier = 0 }
-#set_variable = { AUS_ra_embargo_cost_factor_modifier = 0 }
-#
-#add_dynamic_modifier = { modifier = AUS_reichs_agriculture }
-#
-##reichs industry
-#set_variable = { AUS_ri_local_resources_factor_modifier = -0.2 }
-#set_variable = { AUS_ri_min_export_modifier = 0 }
-#set_variable = { AUS_ri_social_democrat_drift_modifier = 0.00 }
-#set_variable = { AUS_ri_syndicalist_drift_modifier = 0.00 }
-#set_variable = { AUS_ri_radical_socialist_drift_modifier = 0.00 }
-#set_variable = { AUS_ri_production_factory_efficiency_gain_factor_modifier = -0.2 }
-#set_variable = { AUS_ri_production_factory_max_efficiency_factor_modifier = 0 }
-#set_variable = { AUS_ri_production_factory_start_efficiency_factor_modifier = -0.1 }
-#set_variable = { AUS_ri_production_lack_of_resource_penalty_factor_modifier = 0.1 }
-#set_variable = { AUS_ri_consumer_goods_factor_modifier = 0.05 }
-#set_variable = { AUS_ri_production_speed_industrial_complex_factor_modifier = -0.25 }
-#set_variable = { AUS_ri_production_speed_infrastructure_factor_modifier = 0 }
-#set_variable = { AUS_ri_production_speed_rail_way_factor_modifier = 0 }
-#set_variable = { AUS_ri_production_speed_arms_factory_factor_modifier = 0 }
-#set_variable = { AUS_ri_production_speed_dockyard_factor_modifier = 0 }
-#set_variable = { AUS_ri_production_speed_synthetic_refinery_factor_modifier = 0 }
-#set_variable = { AUS_ri_global_building_slots_factor_modifier = 0 }
-#set_variable = { AUS_ri_production_speed_buildings_factor_modifier = -0.20 }
-#set_variable = { AUS_ri_industrial_capacity_factory_modifier = 0 }
-#set_variable = { AUS_ri_industrial_capacity_dockyard_modifier = 0 }
-#set_variable = { AUS_ri_industry_free_repair_factor_modifier = 0 }
-#set_variable = { AUS_ri_industry_repair_factor_modifier = 0 }
-#set_variable = { AUS_ri_production_oil_factor_modifier = 0 }
-#set_variable = { AUS_ri_industry_air_damage_factor_modifier = 0 }
-#
-#add_dynamic_modifier = { modifier = AUS_reichs_industry }
-#
-##great depression
-#set_variable = { AUS_plunge_escalation_level = 10 }
 
-#wien in blute
-
-4 = {
-	set_variable = {
-		4_wib_local_building_slots_modifier = 0
-	}
-	set_variable = {
-		4_wib_state_production_speed_buildings_factor = 0.15
-	}
-
-	add_dynamic_modifier = {
-		modifier = 4_wien_in_blute
-	}
-}
-
-#add_dynamic_modifier = {
-#	modifier = AUS_great_depression
-#}
 if = {
 	limit = {
 		has_dlc = "By Blood Alone"
@@ -210,17 +146,6 @@ add_ideas = {
 	trinket_pensions
 	low_health_care
 	acceptable_school_system
-	AUS_frohlichen_apokalypse_idea
-	#AUS_geteiltes_reich_idea
-	#AUS_financial_difficulties_idea
-	#AUS_hungarian_scientist_idea
-}
-
-set_politics = {
-	ruling_party = social_conservative
-	last_election = "1935.11.9"
-	election_frequency = 48
-	elections_allowed = yes
 }
 
 set_popularities = {
@@ -236,9 +161,6 @@ set_popularities = {
 	national_populist = 3
 	Gnosticism = 14
 }
-
-set_stability = 0.5
-set_war_support = 0.3
 
 ### recruit
 recruit_character = AUS_karl_renner
@@ -286,60 +208,60 @@ if = {
 	limit = {
 		has_dlc = "No Step Back"
 	}
-	create_equipment_variant = {
-		name = "Tancik vz. 33"
-		type = light_tank_chassis_1
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_heavy_machine_gun
-			turret_type_slot = tank_light_fixed_superstructure_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 1
-			tank_nsb_armor_upgrade = 1
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "LT vz. 35"
-		type = light_tank_chassis_1
-		parent_version = 1
-		modules = {
-			main_armament_slot = tank_small_cannon
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = additional_machine_guns
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 4
-			tank_nsb_armor_upgrade = 2
-		}
-	}
-	create_equipment_variant = {
-		name = "TNH"
-		type = light_tank_chassis_2
-		parent_version = 0
-		modules = {
-			main_armament_slot = tank_small_cannon_2
-			turret_type_slot = tank_light_two_man_tank_turret
-			suspension_type_slot = tank_bogie_suspension
-			armor_type_slot = tank_riveted_armor
-			engine_type_slot = tank_gasoline_engine
-			special_type_slot_1 = tank_radio_1
-			special_type_slot_2 = additional_machine_guns
-			special_type_slot_3 = additional_machine_guns
-		}
-		upgrades = {
-			tank_nsb_engine_upgrade = 7
-			tank_nsb_armor_upgrade = 3
-		}
-	}
+	#create_equipment_variant = {
+	#	name = "Tancik vz. 33"
+	#	type = light_tank_chassis_1
+	#	parent_version = 0
+	#	modules = {
+	#		main_armament_slot = tank_heavy_machine_gun
+	#		turret_type_slot = tank_light_fixed_superstructure_turret
+	#		suspension_type_slot = tank_bogie_suspension
+	#		armor_type_slot = tank_riveted_armor
+	#		engine_type_slot = tank_gasoline_engine
+	#	}
+	#	upgrades = {
+	#		tank_nsb_engine_upgrade = 1
+	#		tank_nsb_armor_upgrade = 1
+	#	}
+	#	obsolete = yes
+	#}
+	#create_equipment_variant = {
+	#	name = "LT vz. 35"
+	#	type = light_tank_chassis_1
+	#	parent_version = 1
+	#	modules = {
+	#		main_armament_slot = tank_small_cannon
+	#		turret_type_slot = tank_light_two_man_tank_turret
+	#		suspension_type_slot = tank_bogie_suspension
+	#		armor_type_slot = tank_riveted_armor
+	#		engine_type_slot = tank_gasoline_engine
+	#		special_type_slot_1 = tank_radio_1
+	#		special_type_slot_2 = additional_machine_guns
+	#	}
+	#	upgrades = {
+	#		tank_nsb_engine_upgrade = 4
+	#		tank_nsb_armor_upgrade = 2
+	#	}
+	#}
+	#create_equipment_variant = {
+	#	name = "TNH"
+	#	type = light_tank_chassis_2
+	#	parent_version = 0
+	#	modules = {
+	#		main_armament_slot = tank_small_cannon_2
+	#		turret_type_slot = tank_light_two_man_tank_turret
+	#		suspension_type_slot = tank_bogie_suspension
+	#		armor_type_slot = tank_riveted_armor
+	#		engine_type_slot = tank_gasoline_engine
+	#		special_type_slot_1 = tank_radio_1
+	#		special_type_slot_2 = additional_machine_guns
+	#		special_type_slot_3 = additional_machine_guns
+	#	}
+	#	upgrades = {
+	#		tank_nsb_engine_upgrade = 7
+	#		tank_nsb_armor_upgrade = 3
+	#	}
+	#}
 }
 
 # 1936 Start #

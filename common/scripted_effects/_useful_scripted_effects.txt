@@ -634,3 +634,21 @@ remove_claim_by_ROOT_and_add_core_of_ROOT = {
 		add_core_of = ROOT
 	}
 }
+
+d_integrate = {
+	FROM = {
+		annex_country = {
+			target = ROOT
+			transfer_troops = yes
+		}
+	}
+}
+
+d_create_wargoal_annex = {
+	FROM = {
+		create_wargoal = {
+			type = annex_everything
+			target = ROOT
+		}
+	}
+}
