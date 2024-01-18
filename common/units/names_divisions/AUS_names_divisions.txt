@@ -1336,27 +1336,27 @@ AUS_ARM_01 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "k.u.k. %d. Panzertruppendivisionen"
+	fallback_name = "k.u.k. %d. Kampfwagentruppendivisionen"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "k.u.k. %d. Panzertruppendivisionen" }
-		2 = { "k.u.k. %d. Panzertruppendivisionen" }
-		3 = { "k.u.k. %d. Panzertruppendivisionen" }
-		4 = { "k.u.k. %d. Panzertruppendivisionen" }
-		5 = { "k.u.k. %d. Panzertruppendivisionen" }
-		6 = { "k.u.k. %d. Panzertruppendivisionen" }
-		7 = { "k.u.k. %d. Panzertruppendivisionen" }
-		8 = { "k.u.k. %d. Panzertruppendivisionen" }
-		9 = { "k.u.k. %d. Panzertruppendivisionen" }
-		10 = { "k.u.k. %d. Panzertruppendivisionen" }
-		11 = { "k.u.k. %d. Panzertruppendivisionen" }
-		12 = { "k.u.k. %d. Panzertruppendivisionen" }
-		13 = { "k.u.k. %d. Panzertruppendivisionen" }
-		14 = { "k.u.k. %d. Panzertruppendivisionen" }
-		15 = { "k.u.k. %d. Panzertruppendivisionen" }
+		1 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		2 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		3 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		4 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		5 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		6 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		7 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		8 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		9 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		10 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		11 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		12 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		13 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		14 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
+		15 = { "k.u.k. %d. Kampfwagentruppendivisionen" }
 	}
 }
 
@@ -1387,27 +1387,27 @@ AUS_ARM_02 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { AUS_ARM_01 }
 
-	fallback_name = "%d. Panzertruppendivisionen"
+	fallback_name = "%d. Kampfwagentruppendivisionen"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Panzertruppendivisionen" }
-		2 = { "%d. Panzertruppendivisionen" }
-		3 = { "%d. Panzertruppendivisionen" }
-		4 = { "%d. Panzertruppendivisionen" }
-		5 = { "%d. Panzertruppendivisionen" }
-		6 = { "%d. Panzertruppendivisionen" }
-		7 = { "%d. Panzertruppendivisionen" }
-		8 = { "%d. Panzertruppendivisionen" }
-		9 = { "%d. Panzertruppendivisionen" }
-		10 = { "%d. Panzertruppendivisionen" }
-		11 = { "%d. Panzertruppendivisionen" }
-		12 = { "%d. Panzertruppendivisionen" }
-		13 = { "%d. Panzertruppendivisionen" }
-		14 = { "%d. Panzertruppendivisionen" }
-		15 = { "%d. Panzertruppendivisionen" }
+		1 = { "%d. Kampfwagentruppendivisionen" }
+		2 = { "%d. Kampfwagentruppendivisionen" }
+		3 = { "%d. Kampfwagentruppendivisionen" }
+		4 = { "%d. Kampfwagentruppendivisionen" }
+		5 = { "%d. Kampfwagentruppendivisionen" }
+		6 = { "%d. Kampfwagentruppendivisionen" }
+		7 = { "%d. Kampfwagentruppendivisionen" }
+		8 = { "%d. Kampfwagentruppendivisionen" }
+		9 = { "%d. Kampfwagentruppendivisionen" }
+		10 = { "%d. Kampfwagentruppendivisionen" }
+		11 = { "%d. Kampfwagentruppendivisionen" }
+		12 = { "%d. Kampfwagentruppendivisionen" }
+		13 = { "%d. Kampfwagentruppendivisionen" }
+		14 = { "%d. Kampfwagentruppendivisionen" }
+		15 = { "%d. Kampfwagentruppendivisionen" }
 	}
 }
 
@@ -1432,27 +1432,27 @@ AUS_ARM_03 =
 	# Number reservation system will tie to another group.
 	#link_numbering_with = { AUS_INF_01 }
 
-	fallback_name = "k.u.k. %d. Panzerkorps"
+	fallback_name = "k.u.k. %d. Kampfwagenkorps"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "k.u.k. %d. Panzerkorps 'Wean'" }
-		2 = { "k.u.k. %d. Panzerkorps 'Budapest'" }
-		3 = { "k.u.k. %d. Panzerkorps 'Linz'" }
-		4 = { "k.u.k. %d. Panzerkorps 'Graz'" }
-		5 = { "k.u.k. %d. Panzerkorps 'Debrecen'" }
-		6 = { "k.u.k. %d. Panzerkorps 'Pressburg'" }
-		7 = { "k.u.k. %d. Panzerkorps 'Lemberg'" }
-		8 = { "k.u.k. %d. Panzerkorps 'Laibach'" }
-		9 = { "k.u.k. %d. Panzerkorps 'Krakau'" }
-		10 = { "k.u.k. %d. Panzerkorps 'Czernowitz'" }
-		11 = { "k.u.k. %d. Panzerkorps 'Sarajewo'" }
-		12 = { "k.u.k. %d. Panzerkorps 'Breagaz'" }
-		13 = { "k.u.k. %d. Panzerkorps 'Salzburg'" }
-		14 = { "k.u.k. %d. Panzerkorps 'Innschbruck'" }
-		15 = { "k.u.k. %d. Panzerkorps 'Agram'" }
+		1 = { "k.u.k. %d. Kampfwagenkorps 'Wean'" }
+		2 = { "k.u.k. %d. Kampfwagenkorps 'Budapest'" }
+		3 = { "k.u.k. %d. Kampfwagenkorps 'Linz'" }
+		4 = { "k.u.k. %d. Kampfwagenkorps 'Graz'" }
+		5 = { "k.u.k. %d. Kampfwagenkorps 'Debrecen'" }
+		6 = { "k.u.k. %d. Kampfwagenkorps 'Pressburg'" }
+		7 = { "k.u.k. %d. Kampfwagenkorps 'Lemberg'" }
+		8 = { "k.u.k. %d. Kampfwagenkorps 'Laibach'" }
+		9 = { "k.u.k. %d. Kampfwagenkorps 'Krakau'" }
+		10 = { "k.u.k. %d. Kampfwagenkorps 'Czernowitz'" }
+		11 = { "k.u.k. %d. Kampfwagenkorps 'Sarajewo'" }
+		12 = { "k.u.k. %d. Kampfwagenkorps 'Breagaz'" }
+		13 = { "k.u.k. %d. Kampfwagenkorps 'Salzburg'" }
+		14 = { "k.u.k. %d. Kampfwagenkorps 'Innschbruck'" }
+		15 = { "k.u.k. %d. Kampfwagenkorps 'Agram'" }
 	}
 }
 
@@ -1483,27 +1483,27 @@ AUS_ARM_04 =
 	# Number reservation system will tie to another group.
 	link_numbering_with = { AUS_ARM_03 }
 
-	fallback_name = "%d. Panzerkorps"
+	fallback_name = "%d. Kampfwagenkorps"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%d. Panzerkorps 'Wean'" }
-		2 = { "%d. Panzerkorps 'Budapest'" }
-		3 = { "%d. Panzerkorps 'Linz'" }
-		4 = { "%d. Panzerkorps 'Graz'" }
-		5 = { "%d. Panzerkorps 'Debrecen'" }
-		6 = { "%d. Panzerkorps 'Pressburg'" }
-		7 = { "%d. Panzerkorps 'Lemberg'" }
-		8 = { "%d. Panzerkorps 'Laibach'" }
-		9 = { "%d. Panzerkorps 'Krakau'" }
-		10 = { "%d. Panzerkorps 'Czernowitz'" }
-		11 = { "%d. Panzerkorps 'Sarajewo'" }
-		12 = { "%d. Panzerkorps 'Breagaz'" }
-		13 = { "%d. Panzerkorps 'Salzburg'" }
-		14 = { "%d. Panzerkorps 'Innschbruck'" }
-		15 = { "%d. Panzerkorps 'Agram'" }
+		1 = { "%d. Kampfwagenkorps 'Wean'" }
+		2 = { "%d. Kampfwagenkorps 'Budapest'" }
+		3 = { "%d. Kampfwagenkorps 'Linz'" }
+		4 = { "%d. Kampfwagenkorps 'Graz'" }
+		5 = { "%d. Kampfwagenkorps 'Debrecen'" }
+		6 = { "%d. Kampfwagenkorps 'Pressburg'" }
+		7 = { "%d. Kampfwagenkorps 'Lemberg'" }
+		8 = { "%d. Kampfwagenkorps 'Laibach'" }
+		9 = { "%d. Kampfwagenkorps 'Krakau'" }
+		10 = { "%d. Kampfwagenkorps 'Czernowitz'" }
+		11 = { "%d. Kampfwagenkorps 'Sarajewo'" }
+		12 = { "%d. Kampfwagenkorps 'Breagaz'" }
+		13 = { "%d. Kampfwagenkorps 'Salzburg'" }
+		14 = { "%d. Kampfwagenkorps 'Innschbruck'" }
+		15 = { "%d. Kampfwagenkorps 'Agram'" }
 	}
 }
 
@@ -2084,22 +2084,22 @@ AUS_IRL_02 =
 #	# Number reservation system will tie to another group.
 #	#link_numbering_with = { AUS_INF_01 }
 #
-#	fallback_name = "%d. Panzerwagen-Division"
+#	fallback_name = "%d. Kampfwagenwagen-Division"
 #
 #	# Names with numbers (only one number per entry). 
 #	# It's okay to have gaps in numbering.
 #	ordered =
 #	{
-#		1 = { "%d. Panzerwagen-Division" }
-#		2 = { "%d. Panzerwagen-Division" }
-#		3 = { "%d. Panzerwagen-Division" }
-#		4 = { "%d. Panzerwagen-Division" }
-#		5 = { "%d. Panzerwagen-Division" }
-#		6 = { "%d. Panzerwagen-Division" }
-#		7 = { "%d. Panzerwagen-Division" }
-#		8 = { "%d. Panzerwagen-Division" }
-#		9 = { "%d. Panzerwagen-Division" }
-#		10 = { "%d. Panzerwagen-Division" }
+#		1 = { "%d. Kampfwagenwagen-Division" }
+#		2 = { "%d. Kampfwagenwagen-Division" }
+#		3 = { "%d. Kampfwagenwagen-Division" }
+#		4 = { "%d. Kampfwagenwagen-Division" }
+#		5 = { "%d. Kampfwagenwagen-Division" }
+#		6 = { "%d. Kampfwagenwagen-Division" }
+#		7 = { "%d. Kampfwagenwagen-Division" }
+#		8 = { "%d. Kampfwagenwagen-Division" }
+#		9 = { "%d. Kampfwagenwagen-Division" }
+#		10 = { "%d. Kampfwagenwagen-Division" }
 #	}
 #}
 #
