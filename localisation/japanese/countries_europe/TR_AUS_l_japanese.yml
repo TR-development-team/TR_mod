@@ -250,8 +250,8 @@ AUS_eduard_barger:0 "エドゥアルト・バルガー"
 ##.....TTTT.....EEEEEEEEEEE...CCCCCCCCC.HHHH....HHHHH.......SSSSSSSSSS...HHHH....HHHHHHAAA.....AAAAARRRRR...RRRRREEEEEEEEEEE..
 ##............................................................................................................................
 
-austria_hungarian_empire_tech_share_name:0 "オーストリア・ハンガリー帝国の技術共有"
-austria_hungarian_empire_tech_share_desc:0 "オーストリア・ハンガリー帝国内はある程度の技術共有が行われている。"
+austria_hungarian_empire_tech_share_name:0 "オーストリア＝ハンガリー二重君主国の技術共有"
+austria_hungarian_empire_tech_share_desc:0 "オーストリア＝ハンガリー二重君主国内はある程度の技術共有が行われている。"
 
 ##...........................
 ##.NNNNN....NNNN.NFFFFFFFFF..
@@ -314,7 +314,7 @@ decision_cost_PP_50:0 "£pol_power  §Y50§!"
 decision_cost_PP_50_blocked:0 "£pol_power  §R50§!"
 decision_cost_PP_50_tooltip:0 "このディシジョンを実行するには、£pol_power  §Y50§!が必要"
 
-austria_friends_tt:0 "§Yオーストリア諸邦§!と友好関係にある"
+austria_friends_tt:0 "§Y[AUS.GetName]§!と友好関係にある"
 
 ##...................................................
 ##.FFFFFFFFFFFFLLL..........AAAAA.......GGGGGGGGGG...
@@ -348,4 +348,4 @@ austria_friends_tt:0 "§Yオーストリア諸邦§!と友好関係にある"
 ##.FFFF.....FFFA.....AAAAA..CCCCCCCCC.....TTTT....TTIIIIIII..OOOOOOOOO....OONN....NNNNN..
 ##.......................................................................................
 
-Austro_hungarian_empire:0 "オーストリア＝ハンガリー帝国"
+Austro_hungarian_empire:0 "オーストリア＝ハンガリー二重君主国"
