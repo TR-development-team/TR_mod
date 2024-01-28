@@ -15,6 +15,28 @@ AUS_graef_stift_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	add_trait = { 
+		token = AUS_mio_trait_heavy_armor
+		name = AUS_mio_trait_heavy_armor
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_trait_heavy_tank_improvements
+
+		any_parent = {
+			generic_mio_trait_heavy_tank_improvements
+		}
+
+		position = { x=0 y=4 }
+
+		equipment_bonus = {
+			armor_value = 0.1
+			defense = 0.25
+		}
+		production_bonus = {
+			production_cost_factor = 0.03
+		}
+	}
 }
 AUS_puch_organisation = {
 	include = generic_medium_tank_organization
@@ -23,6 +45,61 @@ AUS_puch_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	add_trait = { 
+		token = AUS_mio_trait_utilize_actual_results
+		name = AUS_mio_trait_utilize_actual_results
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_conversion
+		special_trait_background = yes
+
+		position = { x=3 y=0 }
+
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+
+		production_bonus = {
+			production_cost_factor = -0.15
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_vehicle_mounted_machine_gun
+		name = AUS_mio_trait_vehicle_mounted_machine_gun
+		icon = GFX_generic_mio_trait_icon_soft_attack
+		special_trait_background = yes
+
+		relative_position_id = AUS_mio_trait_utilize_actual_results
+
+		any_parent = {
+			AUS_mio_trait_utilize_actual_results
+		}
+
+		position = { x=0 y=2 }
+
+		equipment_bonus = {
+			soft_attack = 0.12
+			defense = 0.03
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_at_combat
+		name = AUS_mio_trait_at_combat
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_at
+		special_trait_background = yes
+
+		relative_position_id = AUS_mio_trait_vehicle_mounted_machine_gun
+
+		any_parent = {
+			AUS_mio_trait_vehicle_mounted_machine_gun
+		}
+
+		position = { x=0 y=2 }
+
+		equipment_bonus = {
+			hard_attack = 0.05
+			ap_attack = 0.05
+			armor_value = 0.05
+		}
+	}
 }
 AUS_saurer_organisation = {
 	include = generic_mobile_tank_organization
@@ -31,6 +108,86 @@ AUS_saurer_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	equipment_type = {
+		armor
+		mechanized_equipment
+	}
+	initial_trait = {
+		equipment_bonus = {
+			maximum_speed = 0.1
+			soft_attack = 0.05
+		}
+	}
+	override_trait = {
+		token = generic_mio_quality_assurance_routines
+		special_trait_background = yes
+		equipment_bonus = {
+			reliability = 0.05
+		}
+	}
+	override_trait = {
+		token = generic_mio_improved_tracks_and_suspension
+		special_trait_background = yes
+		equipment_bonus = {
+			breakthrough = 0.15
+			maximum_speed = 0.05
+		}
+	}
+	override_trait = {
+		token = generic_mio_gunner_sight_improvements
+		special_trait_background = yes
+		equipment_bonus = {
+			breakthrough = 0.15
+			defense = 0.05
+		}
+	}
+	override_trait = {
+		token = generic_mio_sloping_armor
+		icon = GFX_generic_mio_department_icon_tank_general_armor
+		special_trait_background = yes
+		equipment_bonus = {
+			armor_value = 0.05
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_eff_prod
+		name = AUS_mio_trait_eff_prod
+		icon = GFX_generic_mio_department_icon_tank_general_technology
+		special_trait_background = yes
+
+		relative_position_id = generic_mio_streamlined_production
+
+		any_parent = {
+			generic_mio_streamlined_production
+		}
+
+		position = { x=0 y=1 }
+
+		equipment_bonus = {
+			reliability = -0.05
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.10
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_good_engine
+		name = AUS_mio_trait_good_engine
+		icon = GFX_generic_mio_department_icon_tank_general_engine
+		special_trait_background = yes
+
+		position = { x=4 y=0 }
+
+		equipment_bonus = {
+			reliability = 0.05
+			maximum_speed = 0.08
+		}
+
+		production_bonus = {
+			production_efficiency_cap_factor = 0.05
+		}
+	}
 }
 AUS_simmering_organisation = {
 	include = generic_heavy_tank_organization
@@ -39,6 +196,28 @@ AUS_simmering_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	add_trait = { 
+		token = AUS_mio_trait_good_engine_diesel
+		name = AUS_mio_trait_good_engine_diesel
+		icon = GFX_generic_mio_department_icon_tank_heavy_tank_engine
+		special_trait_background = yes
+
+		position = { x=-1 y=2 }
+
+		relative_position_id = generic_mio_trait_wide_tracks
+
+		any_parent = {
+			generic_mio_trait_wide_tracks
+		}
+
+		equipment_bonus = {
+			reliability = 0.1
+		}
+
+		production_bonus = {
+			production_efficiency_gain_factor = 0.05
+		}
+	}
 }
 
 #####################
@@ -72,6 +251,66 @@ AUS_austriawerft_organisation = {
 		#	}
 		#}
 	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_size_up_requirement = -0.20
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_production_under_the_limit
+		name = AUS_mio_trait_production_under_the_limit
+		icon = GFX_generic_mio_department_icon_ship_general_line_efficiency
+		special_trait_background = yes
+
+		position = { x=8 y=3 }
+
+		available = {
+			AUS = {
+				all_owned_state = {
+					OR = {
+						is_coastal = no
+						state = 990
+						state = 103
+						state = 932
+						state = 163
+						state = 804
+					}
+				}
+			}
+		}
+
+		any_parent = {
+			generic_mio_trait_advanced_fitting_works
+		}
+
+		equipment_bonus = {
+			reliability = -0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.15
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_production_under_the_limit_2
+		name = AUS_mio_trait_production_under_the_limit_2
+		icon = GFX_generic_mio_department_icon_ship_general_line_efficiency
+		special_trait_background = yes
+
+		position = { x=8 y=4 }
+		
+		any_parent = {
+			AUS_mio_trait_production_under_the_limit
+		}
+
+		equipment_bonus = {
+			reliability = -0.05
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.15
+		}
+	}
 }
 AUS_3maj_organisation = {
 	include = generic_raider_ship_organization
@@ -91,6 +330,25 @@ AUS_3maj_organisation = {
 					is_ally_with = FROM
 				}
 			}
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_recovered_company
+		name = AUS_mio_trait_recovered_company
+		icon = GFX_generic_mio_department_icon_ship_general_conversion
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_change_cost = -0.75
+			military_industrial_organization_design_team_assign_cost = -0.75
+			military_industrial_organization_industrial_manufacturer_assign_cost = -0.75
+			military_industrial_organization_size_up_requirement = -0.75
 		}
 	}
 }
@@ -114,6 +372,25 @@ AUS_cantiere_navale_triestino_organisation = {
 			}
 		}
 	}
+	add_trait = { 
+		token = AUS_mio_trait_recovered_company
+		name = AUS_mio_trait_recovered_company
+		icon = GFX_generic_mio_department_icon_ship_general_conversion
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_change_cost = -0.75
+			military_industrial_organization_design_team_assign_cost = -0.75
+			military_industrial_organization_industrial_manufacturer_assign_cost = -0.75
+			military_industrial_organization_size_up_requirement = -0.75
+		}
+	}
 }
 AUS_lloydarsenal_organisation = {
 	include = generic_escort_ship_organization
@@ -135,6 +412,88 @@ AUS_lloydarsenal_organisation = {
 			}
 		}
 	}
+	equipment_type = {
+		screen_ship
+		convoy
+	}
+	research_categories = {	
+		mio_cat_tech_all_screen_ship_and_modules
+	}
+	add_trait = { 
+		token = AUS_mio_trait_historic_shipbuilding_industry
+		name = AUS_mio_trait_historic_shipbuilding_industry
+		icon = GFX_generic_mio_department_icon_ship_convoy_ship_engine
+		special_trait_background = yes
+
+		position = { x=9 y=0 }
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_wartime_transport_ship
+		name = AUS_mio_trait_wartime_transport_ship
+		icon = GFX_generic_mio_department_icon_ship_convoy_ship_production
+		special_trait_background = yes
+
+		any_parent = {
+			AUS_mio_trait_historic_shipbuilding_industry
+		}
+
+		relative_position_id = AUS_mio_trait_historic_shipbuilding_industry
+
+		position = { x=0 y=2 }
+
+		limit_to_equipment_type = {
+			convoy
+		}
+
+		production_bonus = {
+			production_capacity_factor = 0.1
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_countermeasures
+		name = AUS_mio_trait_countermeasures
+		icon = GFX_generic_mio_trait_icon_max_strength
+		special_trait_background = yes
+
+		any_parent = {
+			AUS_mio_trait_wartime_transport_ship
+		}
+
+		relative_position_id = AUS_mio_trait_wartime_transport_ship
+
+		position = { x=0 y=2 }
+
+		limit_to_equipment_type = {
+			convoy
+		}
+
+		equipment_bonus = {
+			max_strength = 1
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_recovered_company
+		name = AUS_mio_trait_recovered_company
+		icon = GFX_generic_mio_department_icon_ship_general_conversion
+		special_trait_background = yes
+
+		position = { x=0 y=0 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_change_cost = -0.75
+			military_industrial_organization_design_team_assign_cost = -0.75
+			military_industrial_organization_industrial_manufacturer_assign_cost = -0.75
+			military_industrial_organization_size_up_requirement = -0.80
+		}
+	}
 }
 AUS_seearsenal_pola_organisation = {
 	include = generic_submarine_organization
@@ -154,6 +513,25 @@ AUS_seearsenal_pola_organisation = {
 					is_ally_with = FROM
 				}
 			}
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_recovered_company
+		name = AUS_mio_trait_recovered_company
+		icon = GFX_generic_mio_department_icon_ship_general_conversion
+		special_trait_background = yes
+
+		position = { x=0 y=0 }
+
+		production_bonus = {
+			production_capacity_factor = 0.05
+		}
+
+		organization_modifier = {
+			military_industrial_organization_design_team_change_cost = -0.75
+			military_industrial_organization_design_team_assign_cost = -0.75
+			military_industrial_organization_industrial_manufacturer_assign_cost = -0.75
+			military_industrial_organization_size_up_requirement = -0.75
 		}
 	}
 }
@@ -181,6 +559,25 @@ AUS_phoenix_organisation = {
 	research_categories = {	
 		mio_cat_all_light_fighter_and_modules 
 	}
+	add_trait = { 
+		token = AUS_mio_trait_overloaded_with_weapons
+		name = AUS_mio_trait_overloaded_with_weapons
+		icon = GFX_generic_mio_department_icon_plane_fighter_engine
+		special_trait_background = yes
+
+		any_parent = {
+			generic_mio_trait_metal_skin generic_mio_trait_fabric_skin
+		}
+		any_parent = {
+			generic_mio_trait_bigger_engines
+		}
+
+		position = { x=1 y=4 }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+	}
 }
 AUS_oeffag_organisation = {
 	include = generic_light_aircraft_organization
@@ -194,6 +591,23 @@ AUS_oeffag_organisation = {
 	}
 	research_categories = {	
 		mio_cat_all_light_fighter_and_modules 
+	}
+	add_trait = { 
+		token = AUS_mio_trait_highest_standards_of_maintenance
+		name = AUS_mio_trait_highest_standards_of_maintenance
+		icon = GFX_generic_mio_department_icon_plane_fighter_production
+		special_trait_background = yes
+
+		position = { x=0 y=0 }
+
+		equipment_bonus = {
+			air_defence = 0.03
+			reliability = 0.1
+		}
+
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
 	}
 }
 AUS_wnf_organisation = {
@@ -223,6 +637,24 @@ AUS_steyr_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	add_trait = { 
+		token = AUS_mio_trait_super_high_quality
+		name = AUS_mio_trait_super_high_quality
+		icon = GFX_generic_mio_department_icon_infantry_quality
+		special_trait_background = yes
+
+		position = { x=3 y=0 }
+
+		equipment_bonus = {
+			soft_attack = 0.03
+			breakthrough = 0.03
+			reliability = 0.1
+		}
+
+		production_bonus = {
+			production_cost_factor = 0.07
+		}
+	}
 }
 AUS_hirtenberger_organisation = {
 	include = generic_support_equipment_organization
@@ -231,6 +663,39 @@ AUS_hirtenberger_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	override_trait = { 
+		token = generic_mio_trait_light_mortar	
+		name = AUS_mio_trait_m6
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
+		special_trait_background = yes
+
+		equipment_bonus = {
+			breakthrough = 0.05
+			soft_attack = 0.06
+			build_cost_ic = 0.02
+		}
+	}
+	override_trait = { 
+		token = generic_mio_trait_single_shot_man_portable_anti_tank_system	
+		icon = GFX_generic_mio_trait_icon_hard_attack
+	}
+	add_trait = { 
+		token = AUS_mio_trait_mortar_master
+		name = AUS_mio_trait_mortar_master
+		icon = GFX_generic_mio_trait_icon_naval_range
+		special_trait_background = yes
+
+		position = { x=-2 y=1 }
+		relative_position_id = generic_mio_trait_small_sidearms
+
+		any_parent = { generic_mio_trait_small_sidearms }
+
+		limit_to_equipment_type = { infantry_equipment }
+
+		equipment_bonus = {
+			soft_attack = 0.05
+		}
+	}
 }
 
 AUS_boehler_organisation = {
@@ -248,6 +713,26 @@ AUS_laurin_klement_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	initial_trait = {
+		equipment_bonus = {
+			maximum_speed = 0.05
+		}
+	}
+	add_trait = { 
+		token = AUS_mio_trait_outstanding_mass_productivity
+		name = AUS_mio_trait_outstanding_mass_productivity
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_armored_pulpit_mount
+
+		any_parent = { generic_mio_trait_armored_pulpit_mount }
+
+		equipment_bonus = {
+			build_cost_ic = -0.12
+		}
+	}
 }
 AUS_austro_daimler_organisation = {
 	include = generic_armored_car_organization
@@ -256,6 +741,46 @@ AUS_austro_daimler_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	equipment_type = {
+		armor
+		armored_car_equipment
+	}
+	research_categories = {
+		armor
+		cat_armored_cars
+	}
+	override_trait = {
+		token = generic_mio_trait_reinforced_wheels
+		icon = GFX_generic_mio_trait_icon_maximum_speed
+	}
+	override_trait = {
+		token = generic_mio_trait_standardized_components
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
+	}
+	override_trait = {
+		token = generic_mio_trait_improved_tooling
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
+	}
+	override_trait = {
+		token = generic_mio_trait_mass_production
+		icon = GFX_generic_mio_trait_icon_production_capacity
+	}
+	override_trait = {
+		token = generic_mio_trait_long_barreled_guns
+		icon = GFX_generic_mio_trait_icon_ap_attack
+	}
+	add_trait = { 
+		token = AUS_mio_trait_outstanding_mass_productivity_2
+		name = AUS_mio_trait_outstanding_mass_productivity
+		icon = GFX_generic_mio_trait_icon_build_cost_ic
+		special_trait_background = yes
+
+		position = { x=3 y=0 }
+
+		equipment_bonus = {
+			build_cost_ic = -0.02
+		}
+	}
 }
 
 ###

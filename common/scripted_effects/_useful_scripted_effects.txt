@@ -636,6 +636,7 @@ remove_claim_by_ROOT_and_add_core_of_ROOT = {
 }
 
 d_integrate = {
+	log = "[FROM.GetName] integrated [ROOT.owner.GetName]"
 	FROM = {
 		annex_country = {
 			target = ROOT
@@ -644,11 +645,37 @@ d_integrate = {
 	}
 }
 
+d_unification = {
+	log = "[FROM.GetName] unified [ROOT.owner.GetName]"
+	FROM = {
+		every_state = {
+			limit = {
+				owner = {
+					tag = ROOT
+				}
+			}
+			add_core_of = FROM
+		}
+		annex_country = {
+			target = ROOT
+			transfer_troops = yes
+		}
+	}
+}
+
 d_create_wargoal_annex = {
+	log = "[FROM.GetName] have a casus belli for [ROOT.owner.GetName]"
 	FROM = {
 		create_wargoal = {
 			type = annex_everything
 			target = ROOT
 		}
+	}
+}
+
+d_coring = {
+	log = "[FROM.GetName] cored [ROOT.GetName]"
+	FROM = {
+		add_state_core = ROOT
 	}
 }

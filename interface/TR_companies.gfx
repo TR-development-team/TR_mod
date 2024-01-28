@@ -1,4 +1,20 @@
 spriteTypes = {
+	spriteType = {
+		name = "GFX_military_industrial_organization_convoy"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_convoy_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_mio_department_icon_ship_convoy_ship_engine"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_convoy_ship_engine.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_mio_department_icon_ship_convoy_ship_production"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_convoy_ship_production.dds"
+	}
+	spriteType = {
+		name = "GFX_generic_mio_department_icon_ship_general_line_efficiency"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_ship_general_line_efficiency.dds"
+	}
 	### Austria ###
 	SpriteType = {
 		name = "GFX_idea_oeamg"
