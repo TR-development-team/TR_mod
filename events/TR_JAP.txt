@@ -99,37 +99,53 @@ country_event = {
 	option = {
 		name = TR_japan.103.a
 		add_ideas = JAP_blockeconomy_nf
-        reverse_add_opinion_modifier = {
-				target = RAT
-				modifier = JAP_blockeconomy_1
+        add_opinion_modifier = {
+			target = RAT
+			modifier = JAP_blockeconomy_1
 			}
-        reverse_add_opinion_modifier = {
-				target = FRA
-				modifier = JAP_blockeconomy_1
+        add_opinion_modifier = {
+			target = FRA
+			modifier = JAP_blockeconomy_1
 			}
-        reverse_add_opinion_modifier = {
-				target = USA
-				modifier = JAP_blockeconomy_1
+		add_opinion_modifier = {
+			target = USA
+			modifier = JAP_blockeconomy_1
 			}
-        reverse_add_opinion_modifier = {
-				target = RUS
-				modifier = JAP_blockeconomy_1
+		add_opinion_modifier = {
+			target = RUS
+			modifier = JAP_blockeconomy_1
 			}
-        reverse_add_opinion_modifier = {
-				target = ITA
-				modifier = JAP_blockeconomy_1
+		add_opinion_modifier= {
+			target = ITA
+			modifier = JAP_blockeconomy_1
 			}
-        reverse_add_opinion_modifier = {
-				target = GBR
-				modifier = JAP_blockeconomy_1
+		add_opinion_modifier= {
+		    target = GBR
+			modifier = JAP_blockeconomy_1
+		}
+		reverse_add_opinion_modifier = {
+			target = RAT
+			modifier = small_decrease
 			}
-        reverse_add_opinion_modifier = {
-				target = SWE
-				modifier = JAP_blockeconomy_1
+		reverse_add_opinion_modifier = {
+			target = FRA
+			modifier = small_decrease
 			}
-        reverse_add_opinion_modifier = {
-				target = AUS
-				modifier = JAP_blockeconomy_1
+		reverse_add_opinion_modifier = {
+			target = USA
+			modifier = small_decrease
+			}
+		reverse_add_opinion_modifier = {
+			target = RUS
+			modifier = small_decrease
+			}
+		reverse_add_opinion_modifier = {
+			target = ITA
+			modifier = small_decrease
+			}
+		reverse_add_opinion_modifier = {
+			target = GBR
+			modifier = small_decrease
 			}
 	}
 }
@@ -714,12 +730,19 @@ country_event = {
 			complete_national_focus = JAP_MINSEITO_WIN
 			add_ideas = JAP_machida_chuji
 			add_ideas = JAP_Shigemitsu_Mamoru
-			add_ideas = JAP_Saito_Takao
+			add_ideas = JAP_Saito_Takao_MoI
 			country_event = {
-					id = TR_japan.3
-					days = 7
-					
-				}
+				id = TR_japan.3
+				days = 7
+			}
+			country_event = {
+				id = TR_japan.73
+				days = 70
+			}
+			country_event = {
+				id = TR_japan.77
+				days = 1400
+			}
 		}
 	}
 
@@ -736,8 +759,8 @@ country_event = {
 			ruling_party = social_conservative
 			elections_allowed = yes
 		}
-                set_country_flag = JAP_1936SENKYO
-                set_country_flag = JAP_SEIYUKAI
+        set_country_flag = JAP_1936SENKYO
+        set_country_flag = JAP_SEIYUKAI
         hidden_effect = {
 			complete_national_focus = JAP_SHUGIIN
 			complete_national_focus = JAP_SEIYUKAI_WIN
@@ -745,10 +768,17 @@ country_event = {
 			add_ideas = JAP_Mori_Kaku
 			add_ideas = JAP_Hatoyama_Ichiro_MoI
 			country_event = {
-					id = TR_japan.3
-					days = 7
-					
-				}
+				id = TR_japan.3
+				days = 7
+			}
+			country_event = {
+				id = TR_japan.74
+				days = 1400
+			}
+			country_event = {
+				id = TR_japan.76
+				days = 70
+			}
 		}
 	}
 
@@ -773,6 +803,14 @@ country_event = {
 			add_ideas = JAP_Inukai_Tsuyoshi
 			add_ideas = JAP_Yoshizawa_Kenkichi
 			add_ideas = JAP_Uehara_Etsujiro
+			country_event = {
+				id = TR_japan.73
+				days = 56
+			}
+			country_event = {
+				id = TR_japan.76
+				days = 64
+			}
 		}
 	}
 
@@ -797,6 +835,14 @@ country_event = {
 			add_ideas = JAP_Abe_Iso
 			add_ideas = JAP_Shigemitsu_Mamoru
 			add_ideas = JAP_Katayama_Tetsu_Int
+			country_event = {
+				id = TR_japan.73
+				days = 56
+			}
+			country_event = {
+				id = TR_japan.76
+				days = 64
+			}
 		}
 
 	}
@@ -1658,10 +1704,11 @@ country_event = {#衆議院の解散
 	desc = TR_japan.30.d
 	picture = GFX_report_event_generic_parliament
 
-
+	trigger = {
+		has_elections = yes
+	}
     fire_only_once = yes
     is_triggered_only = yes
-
 	
 	option = { 
 		name = TR_japan.30.a
@@ -1683,7 +1730,7 @@ country_event = {#衆議院の解散
 		ai_chance = {
 			base = 25
 		}
-		add_political_power = 5
+		add_political_power = 10
 		country_event = {
 			id = TR_japan.31
 			days = 21			
@@ -1707,7 +1754,7 @@ country_event = {#衆議院の解散
 	option = { 
 		name = TR_japan.30.e
 		trigger = {
-			has_country_flag = JAP_KAIGEN_KEIZOKU
+			has_country_flag = JAP_Rise_of_the_Military
 		}
 	}
 }
@@ -1718,10 +1765,8 @@ country_event = {
 	desc = TR_japan.31.d
 	picture = GFX_report_event_election_vote
 	is_triggered_only = yes
-        fire_only_once = yes
+    fire_only_once = yes
 
-       
-	
 	option = {#立憲民政党
 		name = TR_japan.31.a
 		ai_chance = {
@@ -1743,16 +1788,30 @@ country_event = {
         set_country_flag = JAP_MINSEITO_1940
         hidden_effect = {
 			complete_national_focus = JAP_1940SENKYO
-			add_ideas = JAP_machida_chuji
+			if = {
+				limit = { has_country_flag = JAP_1940_inoue_win }
+				add_ideas = JAP_Inoue_junnosuke_GL
+			}
+			if = {
+				limit = { has_country_flag = JAP_1940_nagai_win }
+				add_ideas = JAP_Nagai_Ryutaro
+			}
 			add_ideas = JAP_Shigemitsu_Mamoru
 			add_ideas = JAP_Katsu_Masanori
-			add_ideas = JAP_Oasa_Tadao
+			add_ideas = JAP_Oasa_Tadao_MoI
 			promote_character = JAP_Kuhara_Fusanosuke
 			promote_character = JAP_Nakano_Seigo
 			promote_character = JAP_Katayama_Tetsu
+			country_event = {
+				id = TR_japan.752
+				days = 1400
+			}
+			country_event = {
+				id = TR_japan.782
+				days = 1400
+			}
 		}
 	}
-
 	option = {#立憲政友会
 		name = TR_japan.31.b
 		ai_chance = {
@@ -1774,16 +1833,30 @@ country_event = {
         set_country_flag = JAP_SEIYUKAI_1940
         hidden_effect = {
 			complete_national_focus = JAP_1940SENKYO
-			add_ideas = JAP_Kuhara_Fusanosuke
+			if = {
+				limit = { has_country_flag = JAP_1940_kuhara_win }
+				add_ideas = JAP_Kuhara_Fusanosuke
+			}
+			if = {
+				limit = { has_country_flag = JAP_1940_nakajima_win }
+				add_ideas = JAP_Nakajima_Chikuhei
+			}
 			add_ideas = JAP_Mori_Kaku
 			add_ideas = JAP_Ikeda_Shigeaki
 			add_ideas = JAP_Mitsuchi_Chuzo
 			promote_character = JAP_Kuhara_Fusanosuke
 			promote_character = JAP_Nakano_Seigo
 			promote_character = JAP_Katayama_Tetsu
+			country_event = {
+				id = TR_japan.752
+				days = 1400
+			}
+			country_event = {
+				id = TR_japan.782
+				days = 1400
+			}
 		}
 	}
-
 	option = {#東洋革新党
 		name = TR_japan.31.c
 		ai_chance = {
@@ -1808,13 +1881,20 @@ country_event = {
 			add_ideas = JAP_Nakano_Seigo
 			add_ideas = JAP_Yoshizawa_Kenkichi
 			add_ideas = JAP_Kiyose_Ichiro
-			add_ideas = JAP_Ogata_Taketora
+			add_ideas = JAP_Ogata_Taketora_MoI
 			promote_character = JAP_Kuhara_Fusanosuke
 			promote_character = JAP_Nakano_Seigo
 			promote_character = JAP_Katayama_Tetsu
+			country_event = {
+				id = TR_japan.752
+				days = 1400
+			}
+			country_event = {
+				id = TR_japan.782
+				days = 1400
+			}
 		}
 	}
-
 	option = {#社会大衆党
 		name = TR_japan.31.e
 		ai_chance = {
@@ -1843,8 +1923,15 @@ country_event = {
 			promote_character = JAP_Kuhara_Fusanosuke
 			promote_character = JAP_Nakano_Seigo
 			promote_character = JAP_Katayama_Tetsu
+			country_event = {
+				id = TR_japan.752
+				days = 1400
+			}
+			country_event = {
+				id = TR_japan.782
+				days = 1400
+			}
 		}
-
 	}
 }
 
@@ -1861,16 +1948,6 @@ country_event = {
 	
 	option = {#大連立
 		name = TR_japan.32.a
-		hidden_effect = { 
-		    JAP_Hatoyama_Ichiro = {
-			    promote_character = {
-			        Ideology = liberal_conservative_subtype
-			    }
-				promote_character = {
-					Ideology = national_coalition_subtype
-				}
-		    }
-	    }
         add_popularity = {
 			ideology =authoritarian_democrat
 			popularity = 0.2
@@ -1882,7 +1959,6 @@ country_event = {
         set_country_flag = JAP_1940SENKYO
         set_country_flag = JAP_Dairenritsu_1940
         hidden_effect = {
-			add_ideas = JAP_Hatoyama_Ichiro
 			add_ideas = JAP_Yoshida_Shigeru
 			add_ideas = JAP_Kono_Ichiro
 			add_ideas = JAP_Miki_Bukichi
@@ -2592,8 +2668,8 @@ country_event = {
 	    ai_chance = {
 		    base = 50
 	    }		
-            add_manpower = -100
-            add_stability = -0.1
+        add_manpower = -100
+        add_stability = -0.1
 	    set_country_flag = JAP_Kodoha_Coup
     }
 }
@@ -2637,22 +2713,19 @@ country_event = {
 	option = {#良い案だ
 	    name = TR_japan.54.a
 	    ai_chance = {
-		    base = 90
+		    base = 120
 	    }		
-        add_stability = -0.05
+		add_stability = -0.05
+		add_political_power = -100
 		set_country_flag = JAP_LDP_Establish
 	    add_ideas = JAP_LDP_Hegemony
 		add_popularity = {
 			ideology = social_conservative
-			popularity = 0.5
+			popularity = 0.2
 		}
 		add_popularity = {
 			ideology = market_liberal
-			popularity = 0.25
-		}
-		set_politics = {
-			ruling_party = social_conservative
-			elections_allowed = yes
+			popularity = 0.2
 		}
 		set_party_name = {
 			ideology = authoritarian_democrat
@@ -2669,13 +2742,244 @@ country_event = {
 			long_name = JAP_LDP_long
 			name = JAP_LDP_a
 		}
+		JAP= {
+			country_event = {
+				id = TR_japan.541
+				days = 1
+			}
+		}
+		set_country_flag = JAP_Establishment_LDP
 	}
-	option = {#このような大政党の誕生は民主主義を損なう
-	    name = TR_japan.54.b
+	#option = {#このような大政党の誕生は民主主義を損なう
+	#    name = TR_japan.54.b
+	#    ai_chance = {
+	#	    base = 0
+	#    }	   
+    #}
+}
+#自由民主党結党大会
+country_event = {
+	id = TR_japan.541
+	title = TR_japan.541.t
+	desc = TR_japan.541.d
+	picture = GFX_report_event_generic_rally_3
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	
+	option = {#久原房之助
+	    name = TR_japan.541.a
 	    ai_chance = {
-		    base = 10
+		    base = 40
+	    }	
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}	
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		JAP_Inoue_junnosuke = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		JAP_Kuhara_Fusanosuke = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+		hidden_effect = { 
+			add_ideas = JAP_Kuhara_Fusanosuke
+			country_event = {
+				id = TR_japan.542
+				days = 1350
+			}
+		}
+	}
+	option = {#井上準之助
+	    name = TR_japan.541.b
+	    ai_chance = {
+		    base = 40
 	    }		
-	    
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		JAP_Inoue_junnosuke = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+		JAP_Kuhara_Fusanosuke = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			add_ideas = JAP_Inoue_junnosuke_GL
+			country_event = {
+				id = TR_japan.542
+				days = 1350
+			}
+		}
+    }
+}
+#自由民主党総裁選
+country_event = {
+	id = TR_japan.542
+	title = TR_japan.542.t
+	desc = TR_japan.542.d
+	picture = GFX_report_event_generic_rally_3
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	
+	option = {#鳩山一郎
+	    name = TR_japan.542.a
+	    ai_chance = {
+		    base = 40
+	    }	
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}	
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		JAP_Oasa_Tadao = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		JAP_Hatoyama_Ichiro = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+		hidden_effect = { 
+			if = { limit = { OR = { has_government = social_conservative has_government = market_liberal }}}
+			add_ideas = JAP_Hatoyama_Ichiro
+		}
+	}
+	option = {#大麻唯男
+	    name = TR_japan.542.b
+	    ai_chance = {
+		    base = 40
+	    }		
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		JAP_Oasa_Tadao = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+		JAP_Hatoyama_Ichiro = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			if = { limit = { OR = { has_government = social_conservative has_government = market_liberal }}}
+			add_ideas = JAP_Oasa_Tadao
+		}
+    }
+}
+#自由民主党総裁選
+country_event = {
+	id = TR_japan.543
+	title = TR_japan.543.t
+	desc = TR_japan.543.d
+	picture = GFX_report_event_generic_rally_3
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	
+	option = {#鳩山一郎
+	    name = TR_japan.543.a
+	    ai_chance = {
+		    base = 40
+	    }	
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}	
+		add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		JAP_Oasa_Tadao = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		JAP_Hatoyama_Ichiro = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+		hidden_effect = { 
+			if = { limit = { OR = { has_government = social_conservative has_government = market_liberal }}}
+			add_ideas = JAP_Hatoyama_Ichiro
+		}
+	}
+	option = {#大麻唯男
+	    name = TR_japan.543.b
+	    ai_chance = {
+		    base = 40
+	    }		
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		JAP_Oasa_Tadao = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+			promote_character = {
+			    Ideology = national_coalition_subtype
+		    }
+		}
+		JAP_Hatoyama_Ichiro = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			if = { limit = { OR = { has_government = social_conservative has_government = market_liberal }}}
+			add_ideas = JAP_Oasa_Tadao
+		}
     }
 }
 #魔王
@@ -3096,7 +3400,7 @@ country_event = {
 		}
 		country_event = {
 			id = TR_japan.65
-			days = 14
+			days = 7
 			}
 	}
 	option = {
@@ -3106,7 +3410,7 @@ country_event = {
 		}
 		country_event = {
 			id = TR_japan.66
-			days = 14
+			days = 7
 			}
 
 	}
@@ -3129,6 +3433,35 @@ country_event = {
 		    }
 		}
 		set_country_flag = JAP_Rise_of_the_Military
+		set_country_flag = JAP_Rise_of_the_Military_ugaki
+	}
+}
+#橋本欣五郎宣言
+country_event = {
+	id = TR_japan.651
+	title = TR_japan.651.t
+	desc = TR_japan.651.d
+	picture = GFX_report_event_generic_read_write
+
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japan.651.a
+		set_country_flag = JAP_Hashikin_pro_ugaki
+		add_popularity = {
+			ideology = paternal_autocrat
+			popularity = 0.02
+		}
+	}
+	option = {
+		name = TR_japan.651.b
+		add_to_variable = { JAP_ugaki_no_confidence_motion = 1 }
+		set_country_flag = JAP_Hashikin_anti_ugaki
+		add_popularity = {
+			ideology = national_populist
+			popularity = 0.02
+		}
 	}
 }
 #国を想う狸
@@ -3149,6 +3482,7 @@ country_event = {
 		    }
 		}
 		set_country_flag = JAP_Rise_of_the_Military
+		set_country_flag = JAP_Rise_of_the_Military_okada
 	}
 }
 #井上・三土論争
@@ -3229,6 +3563,911 @@ country_event = {
 		}
 	}
 }
+country_event = {#衆議院の解散
+	id = TR_japan.70
+	title = TR_japan.70.t
+	desc = TR_japan.70.d
+	picture = GFX_report_event_generic_parliament
+
+	trigger = {
+		has_elections = yes
+	}
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.70.a
+		trigger = {
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
+			NOT = { has_government = authoritarian_democrat }
+		}
+		country_event = {
+			id = TR_japan.71
+			days = 21
+		}
+	}
+	option = { 
+		name = TR_japan.70.b
+		trigger = {
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
+			has_war = yes
+		}
+		add_political_power = -25
+		set_country_flag = JAP_postponement_of_election
+	}
+	option = { 
+		name = TR_japan.70.c
+		trigger = {
+			has_country_flag = JAP_Rise_of_the_Military
+		}
+	}
+}
+country_event = {#衆議院の解散
+	id = TR_japan.701
+	title = TR_japan.701.t
+	desc = TR_japan.701.d
+	picture = GFX_report_event_generic_parliament
+
+	trigger = {
+		has_elections = yes
+	}
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.701.a
+		trigger = {
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
+			NOT = { has_government = authoritarian_democrat }
+		}
+		country_event = {
+			id = TR_japan.72
+			days = 21
+		}
+	}
+	option = { 
+		name = TR_japan.701.b
+		trigger = {
+			NOT = { has_country_flag = JAP_Rise_of_the_Military }
+			has_war = yes
+		}
+		add_political_power = -25
+		set_country_flag = JAP_postponement_of_election
+	}
+	option = { 
+		name = TR_japan.701.c
+		trigger = {
+			has_country_flag = JAP_Rise_of_the_Military
+		}
+	}
+}
+#1944年衆議院選挙
+country_event = {
+	id = TR_japan.71
+	title = TR_japan.71.t
+	desc = TR_japan.71.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {#立憲民政党
+		name = TR_japan.71.a
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 2
+				has_government = market_liberal
+			}
+		}
+		trigger = { 
+			NOT = { has_country_flag = JAP_Establishment_LDP }
+	    }
+        add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+        hidden_effect = {
+			if = {
+				limit = { has_country_flag = JAP_1944_oasa_win }
+				add_ideas = JAP_Oasa_Tadao
+			}
+			if = {
+				limit = { has_country_flag = JAP_1944_saito_win }
+				add_ideas = JAP_Saito_Takao_GL
+			}
+			add_ideas = JAP_Shigemitsu_Mamoru
+			add_ideas = JAP_Inoue_junnosuke
+			add_ideas = JAP_Miki_Bukichi
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Nishio_Suehiro
+			if = { 
+				limit = {
+					NOT = { has_country_flag = JAP_Establishment_LDP }
+				}
+				country_event = {
+					id = TR_japan.753
+					days = 1400
+				}
+				country_event = {
+					id = TR_japan.783
+					days = 1400
+				}
+			}
+			if = { 
+				limit = {
+					has_country_flag = JAP_Establishment_LDP
+				}
+				country_event = {
+					id = TR_japan.543
+					days = 1400
+				}
+			}
+		}
+	}
+	option = {#立憲政友会
+		name = TR_japan.71.b
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 2
+				has_government = social_conservative
+			}
+		}
+		trigger = { 
+			NOT = { has_country_flag = JAP_Establishment_LDP }
+	    }
+        add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+        hidden_effect = {
+			if = {
+				limit = { has_country_flag = JAP_1944_kuhara_win }
+				add_ideas = JAP_Kuhara_Fusanosuke
+			}
+			if = {
+				limit = { has_country_flag = JAP_1944_nakajima_win }
+				add_ideas = JAP_Nakajima_Chikuhei
+			}
+			add_ideas = JAP_Yoshida_Shigeru
+			add_ideas = JAP_Mitsuchi_Chuzo_MoE
+			add_ideas = JAP_Hatoyama_Ichiro_MoI
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Nishio_Suehiro
+			if = { 
+				limit = {
+					NOT = { has_country_flag = JAP_Establishment_LDP }
+				}
+				country_event = {
+					id = TR_japan.753
+					days = 1400
+				}
+				country_event = {
+					id = TR_japan.783
+					days = 1400
+				}
+			}
+			if = { 
+				limit = {
+					has_country_flag = JAP_Establishment_LDP
+				}
+				country_event = {
+					id = TR_japan.543
+					days = 1400
+				}
+			}
+		}
+	}
+	option = {#東洋革新党
+		name = TR_japan.71.c
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 4
+				has_government = social_liberal
+			}
+		}
+        add_popularity = {
+			ideology = social_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			add_ideas = JAP_Nakano_Seigo
+			add_ideas = JAP_Hirota_Kouki
+			add_ideas = JAP_Hoshishima_Nirou
+			add_ideas = JAP_Ogata_Taketora_MoI
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Nishio_Suehiro
+			if = { 
+				limit = {
+					NOT = { has_country_flag = JAP_Establishment_LDP }
+				}
+				country_event = {
+					id = TR_japan.753
+					days = 1400
+				}
+				country_event = {
+					id = TR_japan.783
+					days = 1400
+				}
+			}
+			if = { 
+				limit = {
+					has_country_flag = JAP_Establishment_LDP
+				}
+				country_event = {
+					id = TR_japan.543
+					days = 1400
+				}
+			}
+		}
+	}
+	option = {#社会大衆党
+		name = TR_japan.71.e
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 4
+				has_government = social_democrat
+			}
+		}
+        add_popularity = {
+			ideology = social_democrat
+			popularity = 0.2
+		}
+        set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			add_ideas = JAP_Nishio_Suehiro_GL
+			add_ideas = JAP_Suzuki_Bunji
+			add_ideas = JAP_Mizutani_Chozaburou
+			add_ideas = JAP_Katayama_Tetsu_Int
+			promote_character = JAP_Nakano_Seigo
+			promote_character = JAP_Nishio_Suehiro
+			if = { 
+				limit = {
+					NOT = { has_country_flag = JAP_Establishment_LDP }
+				}
+				country_event = {
+					id = TR_japan.753
+					days = 1400
+				}
+				country_event = {
+					id = TR_japan.783
+					days = 1400
+				}
+			}
+			if = { 
+				limit = {
+					has_country_flag = JAP_Establishment_LDP
+				}
+				country_event = {
+					id = TR_japan.543
+					days = 1400
+				}
+			}
+		}
+	}
+	option = {#自由民主党
+	    name = TR_japan.71.f
+	    ai_chance = {
+		    base = 120
+	    }
+	    trigger = { 
+            has_country_flag = JAP_Establishment_LDP
+	    }
+		if = { 
+			limit = {
+				has_government = JAP_LDP_seiyukai_win_1944
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = social_conservative
+				elections_allowed = yes
+			}
+			hidden_effect = { add_ideas = JAP_Hatoyama_Ichiro }
+		}
+		if = { 
+			limit = {
+				has_country_flag = JAP_LDP_minseito_win_1944
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = market_liberal
+				elections_allowed = yes
+			}
+			hidden_effect = { add_ideas = JAP_Oasa_Tadao }
+		}
+	    hidden_effect = {
+			add_ideas = JAP_Yoshida_Shigeru
+			add_ideas = JAP_Mitsuchi_Chuzo_MoE
+			add_ideas = JAP_Suma_Yakichiro
+		    promote_character = JAP_Nakano_Seigo
+		    promote_character = JAP_Nishio_Suehiro
+			if = { 
+				limit = {
+					NOT = { has_country_flag = JAP_Establishment_LDP }
+				}
+				country_event = {
+					id = TR_japan.753
+					days = 1400
+				}
+				country_event = {
+					id = TR_japan.783
+					days = 1400
+				}
+			}
+			if = { 
+				limit = {
+					has_country_flag = JAP_Establishment_LDP
+				}
+				country_event = {
+					id = TR_japan.543
+					days = 1400
+				}
+			}
+	    }
+    }
+}
+#1948年衆議院選挙
+country_event = {
+	id = TR_japan.72
+	title = TR_japan.72.t
+	desc = TR_japan.72.d
+	picture = GFX_report_event_election_vote
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {#立憲民政党
+		name = TR_japan.72.a
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 2
+				has_government = market_liberal
+			}
+		}
+		trigger = { 
+			NOT = { has_country_flag = JAP_Establishment_LDP }
+	    }
+        add_popularity = {
+			ideology = market_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = market_liberal
+			elections_allowed = yes
+		}
+        hidden_effect = {
+			if = {
+				limit = { has_country_flag = JAP_1948_oasa_win }
+				add_ideas = JAP_Oasa_Tadao
+			}
+			if = {
+				limit = { has_country_flag = JAP_1948_saito_win }
+				add_ideas = JAP_Saito_Takao_GL
+			}
+			add_ideas = JAP_Shigemitsu_Mamoru
+			add_ideas = JAP_Inoue_junnosuke
+			add_ideas = JAP_Miki_Bukichi
+			promote_character = JAP_Ogata_Taketora
+			promote_character = JAP_Nishio_Suehiro
+			country_event = {
+				id = TR_japan.753
+				days = 1400
+			}
+			country_event = {
+				id = TR_japan.783
+				days = 1400
+			}
+		}
+	}
+	option = {#立憲政友会
+		name = TR_japan.72.b
+		ai_chance = {
+			base = 35
+			modifier = {
+				factor = 2
+				has_government = social_conservative
+			}
+		}
+		trigger = { 
+			NOT = { has_country_flag = JAP_Establishment_LDP }
+	    }
+        add_popularity = {
+			ideology = social_conservative
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_conservative
+			elections_allowed = yes
+		}
+        hidden_effect = {
+			if = {
+				limit = { has_country_flag = JAP_1948_hatoyama_win }
+				add_ideas = JAP_Hatoyama_Ichiro
+			}
+			if = {
+				limit = { has_country_flag = JAP_1948_maeda_win }
+				add_ideas = JAP_Maeda_Yonezo
+			}
+			add_ideas = JAP_Yoshida_Shigeru
+			add_ideas = JAP_Mitsuchi_Chuzo_MoE
+			add_ideas = JAP_Hatoyama_Ichiro_MoI
+			promote_character = JAP_Ogata_Taketora
+			promote_character = JAP_Nishio_Suehiro
+			country_event = {
+				id = TR_japan.753
+				days = 1400
+			}
+			country_event = {
+				id = TR_japan.783
+				days = 1400
+			}
+		}
+	}
+	option = {#東洋革新党
+		name = TR_japan.72.c
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 4
+				has_government = social_liberal
+			}
+		}
+        add_popularity = {
+			ideology = social_liberal
+			popularity = 0.2
+		}
+		set_politics = {
+			ruling_party = social_liberal
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			add_ideas = JAP_Ogata_Taketora
+			add_ideas = JAP_Hirota_Kouki
+			add_ideas = JAP_Hoshishima_Nirou
+			add_ideas = JAP_Takeru_inukai
+			promote_character = JAP_Ogata_Taketora
+			promote_character = JAP_Nishio_Suehiro
+		}
+	}
+	option = {#社会大衆党
+		name = TR_japan.72.e
+		ai_chance = {
+			base = 15
+			modifier = {
+				factor = 4
+				has_government = social_democrat
+			}
+		}
+        add_popularity = {
+			ideology = social_democrat
+			popularity = 0.2
+		}
+        set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		hidden_effect = {
+			add_ideas = JAP_Nishio_Suehiro_GL
+			add_ideas = JAP_Suzuki_Bunji
+			add_ideas = JAP_Mizutani_Chozaburou
+			add_ideas = JAP_Katayama_Tetsu_Int
+			promote_character = JAP_Ogata_Taketora
+			promote_character = JAP_Nishio_Suehiro
+		}
+	}
+	option = {#自由民主党
+	    name = TR_japan.72.f
+	    ai_chance = {
+		    base = 120
+	    }
+	    trigger = { 
+            has_country_flag = JAP_Establishment_LDP
+	    }
+		if = { 
+			limit = {
+				has_government = JAP_LDP_seiyukai_win_1948
+			}
+			add_popularity = {
+				ideology = social_conservative
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = social_conservative
+				elections_allowed = yes
+			}
+			hidden_effect = { add_ideas = JAP_Hatoyama_Ichiro }
+		}
+		if = { 
+			limit = {
+				has_country_flag = JAP_LDP_minseito_win_1948
+			}
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.2
+			}
+			set_politics = {
+				ruling_party = market_liberal
+				elections_allowed = yes
+			}
+			hidden_effect = { add_ideas = JAP_Oasa_Tadao }
+		}
+	    hidden_effect = {
+			add_ideas = JAP_Yoshida_Shigeru
+			add_ideas = JAP_Mitsuchi_Chuzo_MoE
+			add_ideas = JAP_Suma_Yakichiro
+			promote_character = JAP_Ogata_Taketora
+			promote_character = JAP_Nishio_Suehiro
+	    }
+    }
+}
+country_event = {#鈴木喜三郎の辞任
+	id = TR_japan.73
+	title = TR_japan.73.t
+	desc = TR_japan.73.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.73.a
+		country_event = {
+			id = TR_japan.751
+			days = 3
+		}
+	}
+}
+country_event = {#鈴木喜三郎の辞任
+	id = TR_japan.74
+	title = TR_japan.74.t
+	desc = TR_japan.74.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.74.a
+		country_event = {
+			id = TR_japan.751
+			days = 3
+		}
+	}
+}
+country_event = {#政友会総裁選
+	id = TR_japan.751
+	title = TR_japan.751.t
+	desc = TR_japan.751.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.751.a
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Kuhara_Fusanosuke = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1940_kuhara_win
+			if = { 
+				limit = { has_government = social_conservative }
+				add_ideas = JAP_Kuhara_Fusanosuke
+			}
+		}
+	}
+	option = { 
+		name = TR_japan.751.b
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Nakajima_Chikuhei = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1940_nakajima_win
+			if = { 
+				limit = { has_government = social_conservative }
+				add_ideas = JAP_Nakajima_Chikuhei 
+			}
+		}
+	}
+}
+country_event = {#政友会総裁選
+	id = TR_japan.752
+	title = TR_japan.752.t
+	desc = TR_japan.752.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.752.a
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Kuhara_Fusanosuke = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1944_kuhara_win
+			if = { 
+				limit = { has_government = social_conservative }
+				add_ideas = JAP_Kuhara_Fusanosuke
+			}
+		}
+	}
+	option = { 
+		name = TR_japan.752.b
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Nakajima_Chikuhei = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1944_nakajima_win
+			if = { 
+				limit = { has_government = social_conservative }
+				add_ideas = JAP_Nakajima_Chikuhei 
+			}
+		}
+	}
+}
+country_event = {#政友会総裁選
+	id = TR_japan.753
+	title = TR_japan.753.t
+	desc = TR_japan.753.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.753.a
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Hatoyama_Ichiro = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1948_hatoyama_win
+			if = { 
+				limit = { has_government = social_conservative }
+				add_ideas = JAP_Hatoyama_Ichiro
+			}
+		}
+	}
+	option = { 
+		name = TR_japan.753.b
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Maeda_Yonezo = {
+			promote_character = {
+			    Ideology = Royal_Centerism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1948_maeda_win
+			if = { 
+				limit = { has_government = social_conservative }
+				add_ideas = JAP_Maeda_Yonezo
+			}
+		}
+	}
+}
+country_event = {#町田忠治の辞任
+	id = TR_japan.76
+	title = TR_japan.76.t
+	desc = TR_japan.76.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.76.a
+		country_event = {
+			id = TR_japan.781
+			days = 3
+		}
+	}
+}
+country_event = {#町田忠治の辞任
+	id = TR_japan.77
+	title = TR_japan.77.t
+	desc = TR_japan.77.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.77.a
+		country_event = {
+			id = TR_japan.781
+			days = 3
+		}
+	}
+}
+country_event = {#民政党総裁選
+	id = TR_japan.781
+	title = TR_japan.781.t
+	desc = TR_japan.781.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.781.a
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Inoue_junnosuke = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1940_inoue_win
+			if = { 
+				limit = { has_government = market_liberal }
+				add_ideas = JAP_Inoue_junnosuke_GL
+			}
+		}
+	}
+	option = { 
+		name = TR_japan.781.b
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Nagai_Ryutaro = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1940_nagai_win
+			if = { 
+				limit = { has_government = market_liberal }
+				add_ideas = JAP_Nagai_Ryutaro
+			}
+		}
+	}
+}
+country_event = {#民政党総裁選
+	id = TR_japan.782
+	title = TR_japan.782.t
+	desc = TR_japan.782.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.782.a
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Oasa_Tadao = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1944_oasa_win
+			if = { 
+				limit = { has_government = market_liberal }
+				add_ideas = JAP_Oasa_Tadao
+			}
+		}
+	}
+	option = { 
+		name = TR_japan.782.b
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Saito_Takao = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1944_saito_win
+			if = { 
+				limit = { has_government = market_liberal }
+				add_ideas = JAP_Saito_Takao_GL
+			}
+		}
+	}
+}
+country_event = {#民政党総裁選
+	id = TR_japan.783
+	title = TR_japan.783.t
+	desc = TR_japan.783.d
+	picture = GFX_report_event_generic_parliament
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_japan.783.a
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Oasa_Tadao = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1948_oasa_win
+			if = { 
+				limit = { has_government = market_liberal }
+				add_ideas = JAP_Oasa_Tadao
+			}
+		}
+	}
+	option = { 
+		name = TR_japan.783.b
+	    ai_chance = {
+		    base = 40
+	    }
+		JAP_Saito_Takao = {
+			promote_character = {
+			    Ideology = parliamentarism_subtype
+		    }
+		}
+		hidden_effect = { 
+			set_country_flag = JAP_1948_saito_win
+			if = { 
+				limit = { has_government = market_liberal }
+				add_ideas = JAP_Saito_Takao_GL
+			}
+		}
+	}
+}
+
 #アメリカ政府、無条件降伏を宣言
 country_event = {
 	id = TR_japfor.1
@@ -3602,8 +4841,103 @@ country_event = {
 		add_war_support = -0.1
 	}
 }
+#泰緬国境紛争
+country_event = {
+	id = TR_japfor.11
+	title = TR_japfor.11.t
+	desc = TR_japfor.11.d
+	picture = GFX_report_event_usa_election_generic
 
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japfor.11.a
+		BRM = {
+			country_event = {
+				id = TR_Burma.7
+				days = 1
+			}
+		}
+		SIA = {
+			country_event = {
+				id = TR_Siam.2
+				days = 1
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_japfor.12
+				days = 5
+			}
+		}
+	}
+}
+#東京裁定
+country_event = {
+	id = TR_japfor.12
+	title = TR_japfor.12.t
+	desc = TR_japfor.12.d
+	picture = GFX_report_event_usa_election_generic
 
+	is_triggered_only = yes
+    fire_only_once = yes
+	
+	option = {
+		name = TR_japfor.12.a
+		ai_chance = {
+			base = 80
+		}
+		BRM = {
+			country_event = {
+				id = TR_Burma.9
+				days = 1
+			}
+		}
+		SIA = {
+			country_event = {
+				id = TR_Siam.4
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = TR_japfor.12.b
+		ai_chance = {
+			base = 40 
+		}
+		BRM = {
+			country_event = {
+				id = TR_Burma.10
+				days = 1
+			}
+		}
+		SIA = {
+			country_event = {
+				id = TR_Siam.5
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = TR_japfor.12.c
+		ai_chance = {
+			base = 20 
+		}
+		BRM = {
+			country_event = {
+				id = TR_Burma.8
+				days = 1
+			}
+		}
+		SIA = {
+			country_event = {
+				id = TR_Siam.3
+				days = 1
+			}
+		}
+	}
+}
 
 #紀元2600年
 country_event = {

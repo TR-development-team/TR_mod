@@ -11,10 +11,10 @@ characters={
 		}
 	}
 	UKR_Nikita_Khrushchev={
-		name=MHN_Nikita_Khrushchev
+		name=UKR_Nikita_Khrushchev
 		portraits={
 			civilian={
-				large="gfx/leaders/MHN/Portrait_MHN_Khrushchev.png"
+				large="gfx/leaders/UKR/Portrait_UKR_Khrushchev.png"
 			}
 		}
 		country_leader={
@@ -25,14 +25,61 @@ characters={
 		}
 	}
 	UKR_Volodymyr_Vynnychenko={
-		name=MHN_Volodymyr_Vynnychenko
+		name=UKR_Volodymyr_Vynnychenko
 		portraits={
 			civilian={
-				large="gfx/leaders/MHN/Portrait_MHN_Volodymyr_Vynnychenko.png"
+				large="gfx/leaders/UKR/Portrait_UKR_Volodymyr_Vynnychenko.png"
 			}
 		}
 		country_leader={
-			ideology= social_democrat_subtype
+			ideology= Democratic_socialism_left_subtype
+		}
+	}
+	UKR_Symon_Petliura={
+		name=UKR_Symon_Petliura
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Symon_Petliura.png"
+			}
+			carmy={
+				large="gfx/leaders/UKR/Portrait_UKR_Symon_Petliura.png"
+			}
+		}
+		country_leader={
+			ideology= Democratic_socialism_subtype
+		}
+		field_marshal = {
+			traits = { media_personality politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	UKR_Andriy_Melnyk={
+		name=UKR_Andriy_Melnyk
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Andriy_Melnyk.png"
+			}
+		}
+		country_leader={
+			ideology= Catholic_Integralism_subtype
+		}
+	}
+	UKR_Stepan_Bandera={
+		name=UKR_Stepan_Bandera
+		portraits={
+			civilian={
+				large="gfx/leaders/UKR/Portrait_UKR_Stepan_Bandera.png"
+			}
+		}
+		country_leader={
+			ideology= Fascist_subtype
+		}
+		country_leader={
+			ideology= esotericism_subtype
 		}
 	}
 	UKR_ivan_chernyakhovsky = {

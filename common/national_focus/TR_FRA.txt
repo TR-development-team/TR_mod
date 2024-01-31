@@ -2168,6 +2168,7 @@ focus = {
 	prerequisite = { focus = FRA_DIP_20 }
 	relative_position_id = FRA_DIP_1
 	completion_reward = {
+		
 	}
 }
 #欧州新秩序
@@ -2274,7 +2275,7 @@ focus = {
 	y = 0
 	cost = 2
 	ai_will_do = {
-		factor = 100
+		factor = 120
 	}
 	available = {
 		has_country_flag = FRA_Economy_Reform
@@ -2292,7 +2293,7 @@ focus = {
 	y = 1
 	cost = 2
 	ai_will_do = {
-		factor = 100
+		factor = 120
 	}
 	prerequisite = { focus = FRA_Economy_1 }
 	available = {
@@ -2445,7 +2446,7 @@ focus = {
 	y = 2
 	cost = 5
 	ai_will_do = {
-		factor = 100
+		factor = 120
 	}
 	prerequisite = { focus = FRA_Economy_2 }
 	relative_position_id = FRA_Economy_1

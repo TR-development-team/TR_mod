@@ -15,7 +15,7 @@ characters={
 		name=FRA_albert_camus
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_France_Camus.tga"
+				large="gfx/leaders/FRA/Portrait_France_Camus.png"
 			}
 		}
 		country_leader={
@@ -40,7 +40,7 @@ characters={
 		name=FRA_Jean_Paul_Sartre
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_France_Sartre.tga"
+				large="gfx/leaders/FRA/Portrait_France_Sartre.png"
 			}
 		}
 		country_leader={
@@ -113,7 +113,7 @@ characters={
 		name=FRA_maurras
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_Charles_Maurras.tga"
+				large="gfx/leaders/FRA/Portrait_Charles_Maurras.png"
 			}
 		}
 		country_leader={
@@ -142,24 +142,24 @@ characters={
 			ideology=Catholic_Integralism_subtype
 		}
 	}
-	FRA_maxime_weygand={
-		name=FRA_Maxime_Weygand_TR
+	FRA_Philippe_Petain={
+		name=FRA_Philippe_Petain
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.png"
+				large="gfx/leaders/FRA/Portrait_FRA_Philippe_Petain.png"
 			}
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Maxime_Weygand.png"
+				large="gfx/leaders/FRA/Portrait_FRA_Philippe_Petain.png"
 			}
 		}
 		country_leader={
 			ideology=Military_junta_subtype
 		}
 		field_marshal={
-			traits={ organizer old_guard inflexible_strategist career_officer }
+			traits={ organizer old_guard unyielding_defender war_hero }
 			skill=3
-			attack_skill=3
-			defense_skill=3
+			attack_skill=2
+			defense_skill=4
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=0
@@ -169,7 +169,7 @@ characters={
 		name=FRA_Jacques_Doriot
 		portraits={
 			civilian={
-				large="gfx/leaders/FRA/Portrait_FRA_doriot.tga"
+				large="gfx/leaders/FRA/Portrait_FRA_doriot.png"
 			}
 		}
 		country_leader={
@@ -204,10 +204,9 @@ characters={
 			traits={ organizer defensive_doctrine old_guard war_hero }
 			skill=4
 			attack_skill=2
-			defense_skill=5
-			planning_skill=5
+			defense_skill=4
+			planning_skill=4
 			logistics_skill=3
-			legacy_id=0
 		}
 	}
 
@@ -217,7 +216,7 @@ characters={
 		name=FRA_Maurice_Pujo
 		portraits={
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Maurice_Pujo.tga"
+				large="gfx/leaders/FRA/Portrait_FRA_Maurice_Pujo.png"
 				small=GFX_idea_FRA_Maurice_Pujo
 			}
 		}
@@ -314,14 +313,12 @@ characters={
 		}
 	}
 
-	FRA_charles_de_gaulle={
-		name=FRA_charles_de_gaulle
+	FRA_Charles_de_Gaulle={
+		name=FRA_Charles_de_Gaulle
 		portraits={
 			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Charles_De_Gaulle1.png"
 				small=GFX_idea_FRA_Charles_de_Gaulle
-			}
-			army={
-				large=GFX_portrait_FRA_charles_de_gaulle
 			}
 		}
 		
@@ -332,7 +329,23 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=101
+		}
+	}
+	FRA_Raoul_Salan={
+		name=FRA_Raoul_Salan
+		portraits={
+			army={
+				large="gfx/leaders/FRA/Portrait_FRA_Louis_Salan.png"
+			}
+		}
+		
+		corps_commander={
+			traits={ commando harsh_leader }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=1
 		}
 	}
 
@@ -362,7 +375,7 @@ characters={
 		name=FRA_Joseph_Darnand
 		portraits={
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Joseph_Darnand.tga"
+				large="gfx/leaders/FRA/Portrait_FRA_Joseph_Darnand.png"
 			}
 		}
 		
@@ -381,7 +394,7 @@ characters={
 		name=FRA_Marc_Augier
 		portraits={
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Marc_Augier.tga"
+				large="gfx/leaders/FRA/Portrait_FRA_Marc_Augier.png"
 			}
 		}
 		
@@ -400,7 +413,7 @@ characters={
 		name=FRA_Marcel_Bucard
 		portraits={
 			army={
-				large="gfx/leaders/FRA/Portrait_FRA_Marcel_Bucard.tga"
+				large="gfx/leaders/FRA/Portrait_FRA_Marcel_Bucard.png"
 			}
 		}
 		

@@ -1778,3 +1778,30 @@ news_event = {
 		trigger = { TAG = HNN }
 	}
 }
+#ウクライナ内戦
+news_event = {
+	id =TR_news.73
+	title = TR_news.73.t
+	desc = TR_news.73.d
+	picture = GFX_news_event_Russian_civil_war
+	
+	major = yes
+	is_triggered_only = yes
+	
+    option = {
+		name = TR_news.73.a
+		trigger = {
+			NOT = {
+				OR = { TAG = MHN TAG = UKR }	
+			}
+		}
+	}
+	option = {
+		name = TR_news.73.b
+		trigger = { TAG = MHN }
+	}
+	option = {
+		name = TR_news.73.c
+		trigger = { TAG = UKR }
+	}
+}

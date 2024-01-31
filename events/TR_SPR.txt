@@ -380,7 +380,7 @@ country_event = {
 		ai_chance = {
 			base = 34
 		}
-                add_popularity = {
+        add_popularity = {
 			ideology = syndicalist
 			popularity = 0.2
 		}
@@ -388,6 +388,7 @@ country_event = {
 			ruling_party = syndicalist
 			elections_allowed = no
 		}
+		set_cosmetic_tag = IBE_anarchist_federation
 	}
 
 	option = {#POUM
@@ -395,7 +396,7 @@ country_event = {
 		ai_chance = {
 			base = 33
 		}
-                add_popularity = {
+        add_popularity = {
 			ideology = radical_socialist
 			popularity = 0.2
 		}
@@ -403,6 +404,7 @@ country_event = {
 			ruling_party = radical_socialist
 			elections_allowed = no
 		}
+		set_cosmetic_tag = SPR_council_republic
 
 	}
 
@@ -419,7 +421,7 @@ country_event = {
 			ruling_party = totalist
 			elections_allowed = no
 		}
-
+		set_cosmetic_tag = SPR_socialist_republic
 	}
 
 

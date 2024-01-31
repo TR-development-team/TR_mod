@@ -14,15 +14,15 @@ country_event = {
 	
 	option = { 
 		name = TR_Mexico.1.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		}
-                trigger = {
-                        country_exists = MEX
+        trigger = {
+            country_exists = MEX
 			is_subject = no	
-                        is_in_faction = no
+            is_in_faction = no
 		}
-                USA = { add_to_faction = MEX }
+        USA = { add_to_faction = MEX }
 
 	}
         option = { 
@@ -48,15 +48,15 @@ country_event = {
 	
 	option = { 
 		name = TR_Mexico.2.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		}
-                trigger = {
-                        country_exists = EQB
+        trigger = {
+            country_exists = EQB
 			is_subject = no	
-                        is_in_faction = no
+            is_in_faction = no
 		}
-                USA = { add_to_faction = EQB }
+        USA = { add_to_faction = EQB }
 
 	}
         option = { 
@@ -82,15 +82,15 @@ country_event = {
 	
 	option = { 
 		name = TR_Mexico.3.a
-                ai_chance = {
+        ai_chance = {
 			base = 100
 		}
-                trigger = {
-                        country_exists = COL
+        trigger = {
+			country_exists = COL
 			is_subject = no	
-                        is_in_faction = no
+            is_in_faction = no
 		}
-                USA = { add_to_faction = COL }
+        USA = { add_to_faction = COL }
 
 	}
         option = { 

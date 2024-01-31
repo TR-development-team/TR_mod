@@ -5,9 +5,7 @@ state={
 
 	history={
 		owner = OTT
-		victory_points = {
-			9893 3
-		}
+
 		victory_points = {
 			12473 10 
 		}
@@ -15,11 +13,9 @@ state={
 			6883 1
 		}
 		victory_points = {
-			6813 1
+			9823 1 
 		}
-		victory_points = {
-			12029 1
-		}
+
 		buildings = {
 			infrastructure = 2
                         arms_factory = 1
@@ -33,9 +29,9 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		1606 1634 3889 3921 3942 6813 6883 7140 7671 9823 9893 11871 12029 12473 
+		1606 1634 3942 6883 7140 7671 9823 11871 12473 
 	}
-	manpower=1525594
+	manpower=1005594
 	buildings_max_level_factor=1.000
-	state_category=five
+	state_category=four
 }

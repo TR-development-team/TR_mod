@@ -86,7 +86,7 @@
 				production_factory_max_efficiency_factor = -0.1
 				production_factory_efficiency_gain_factor = -0.1
 				industrial_capacity_factory = -0.2
-				consumer_goods_expected_value = 0.25
+				consumer_goods_factor = 0.4
 				min_export = -0.15
 			}
 		}
@@ -97,7 +97,7 @@
 				production_factory_max_efficiency_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.2
 				industrial_capacity_factory = -0.3
-				consumer_goods_expected_value = 0.5
+				consumer_goods_factor = 0.8
 				min_export = -0.5
 			}
 		}
@@ -109,7 +109,7 @@
 				production_factory_max_efficiency_factor = -0.16
 				production_factory_efficiency_gain_factor = -0.16
 				industrial_capacity_factory = -0.24
-				consumer_goods_expected_value = 0.4
+				consumer_goods_factor = 0.6
 				min_export = -0.4
 			}
 		}
@@ -121,7 +121,7 @@
 				production_factory_max_efficiency_factor = -0.12
 				production_factory_efficiency_gain_factor = -0.12
 				industrial_capacity_factory = -0.18
-				consumer_goods_expected_value = 0.3
+				consumer_goods_factor = 0.4
 				min_export = -0.3
 			}
 		}
@@ -133,7 +133,7 @@
 				production_factory_max_efficiency_factor = -0.08
 				production_factory_efficiency_gain_factor = -0.08
 				industrial_capacity_factory = -0.12
-				consumer_goods_expected_value = 0.2
+				consumer_goods_factor = 0.2
 				min_export = -0.2
 			}
 		}
@@ -145,21 +145,21 @@
 				production_factory_max_efficiency_factor = -0.04
 				production_factory_efficiency_gain_factor = -0.04
 				industrial_capacity_factory = -0.08
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.1
 				min_export = -0.1
 			}
 		}
 		GBR_Subsidies_for_miners = {
 			picture = SPR_seize_the_gold_reserves
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.15
 			}
 		}
 		GBR_National_Health_Service = {
 			picture = EST_democratic_opposition
 			modifier = {
 				stability_factor = 0.1
-                consumer_goods_expected_value = 0.02
+                consumer_goods_factor = 0.05
                 MONTHLY_POPULATION = 0.1
 			}
 		}
@@ -172,6 +172,7 @@
 				radical_socialist_drift = -0.01
 				national_populist_drift = -0.01
 				Gnosticism_drift = -0.01
+				political_power_gain = 0.1
 			}
 		}
 		GBR_Defensive_democracy_1 = {
@@ -184,7 +185,7 @@
 				radical_socialist_drift = -0.01
 				national_populist_drift = -0.01
 				Gnosticism_drift = -0.01
-				political_power_gain = 0.1
+				political_power_gain = 0.2
 			}
 		}
 		GBR_we_shall_never_surrender = {
@@ -228,7 +229,7 @@
 		GBR_National_Efficiency = {
 			picture = generic_production_bonus
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
 				research_speed_factor = 0.05
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.05
@@ -250,14 +251,14 @@
 		GBR_agricultural_subsidy = {
 			picture = generic_agrarian_society
 			modifier = {
-				consumer_goods_expected_value = -0.02
+				consumer_goods_factor = -0.1
 				global_building_slots_factor = 0.1
 			}
 		}
 		GBR_London_Stock_Exchange = {
 			picture = SPR_seize_the_gold_reserves
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 		GBR_Outlawing_of_unions = {
@@ -276,14 +277,14 @@
             picture = man_five_year_plan_industry
 			modifier = {
                 production_speed_buildings_factor = 0.2
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
                 war_support_factor = -0.2
 			}
 		}  
 		GBR_Strengthened_economy = {
             picture = man_five_year_plan_industry
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 			}

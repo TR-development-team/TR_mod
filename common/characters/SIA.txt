@@ -1,4 +1,15 @@
 characters={
+	SIA_Pridi_Banomyong={
+		name=SIA_Pridi_Banomyong
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_SIA_Pridi_Banomyong.png"
+			}
+		}
+		country_leader={
+			ideology=Democratic_socialism_left_subtype
+		}
+	}
 	SIA_phraya_phahon={
 		name=SIA_phraya_phahon
 		portraits={
@@ -11,22 +22,39 @@ characters={
 		}
 		country_leader={
 			ideology=dem_Military_junta_subtype
-			expire="1965.1.1.1"
-			id=-1
 		}
 		country_leader={
 			ideology=Military_junta_subtype
-			expire="1965.1.1.1"
-			id=-1
 		}
 		field_marshal = {
-			traits = { old_guard career_officer organizer }
-			skill = 3
-			attack_skill = 3
+			traits = { politically_connected career_officer unyielding_defender }
+			skill = 2
+			attack_skill = 2
 			defense_skill = 1
 			planning_skill = 2
-			logistics_skill = 3
-			legacy_id = 0
+			logistics_skill = 2
+		}
+	}
+	SIA_Plaek_Phibunsongkhram={
+		name=SIA_Plaek_Phibunsongkhram
+		portraits={
+			civilian={
+				large="gfx/leaders/SIA/Portrait_SIA_Plaek_Phibunsongkhram.png"
+			}
+			army={
+				large="gfx/leaders/SIA/Portrait_SIA_Plaek_Phibunsongkhram.png"
+			}
+		}
+		country_leader={
+			ideology=Fascist_subtype
+		}
+		field_marshal = {
+			traits = { politically_connected career_officer organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
 		}
 	}
 

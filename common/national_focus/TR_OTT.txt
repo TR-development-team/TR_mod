@@ -1,21 +1,21 @@
 focus_tree = {
-	id = ottoman_start_focus
-	continuous_focus_position = { x = 300 y = 600 }
+	id = ottoman_focus
+	continuous_focus_position = { x = 1000 y = 1000 }
 	country = {
 		factor = 0
 		modifier = {
-			add = 50
+			add = 10
 			tag = OTT
 		}
 	}
     default = no
-	#無能な大宰相府
+	#関税の引き上げ
 	focus = {
-		id = OTT_focus_1
-		icon = GFX_focus_OTT_Incompetent_Sublime_Porte
-		x = 6
+		id = OTT_Economy_focus_1
+		icon = GFX_
+		x = 1
 		y = 0
-		cost = 100
+		cost = 6
         available = {
             }
 		cancelable = no

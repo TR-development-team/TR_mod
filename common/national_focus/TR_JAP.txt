@@ -385,7 +385,7 @@ focus_tree = {
 
 	#日はまた昇る
 	focus = {
-		id = JAP_WOFBuHbq
+		id = JAP_Rising_Sun_NF
 		icon = GFX_goal_JP_sun
 		x = 11
 		y = 7
@@ -410,6 +410,7 @@ focus_tree = {
 				remove_idea = JAP_Shading_sun
 				add_idea = JAP_rising_sun
 			}	
+			set_country_flag = JAP_Rising_Sun_flag
 		}
 	}
 	#教育の振興
@@ -1311,7 +1312,7 @@ focus_tree = {
             always = no
             }
 		prerequisite = { 
-			focus = JAP_WOFBuHbq
+			focus = JAP_Rising_Sun_NF
 
 		}
 		ai_will_do = {
@@ -2315,7 +2316,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 80
+			factor = 100
 		}
 	completion_reward = {
 		add_political_power = 50
@@ -2423,7 +2424,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 80
+			factor = 100
 		}
 	completion_reward = {
 		custom_effect_tooltip = JAP_Agriculture_focus_5_tt
@@ -2451,7 +2452,7 @@ focus_tree = {
             }
 		available_if_capitulated = yes
 		ai_will_do = {
-			factor = 80
+			factor = 100
 		}
 	completion_reward = {
 		custom_effect_tooltip = JAP_Agriculture_focus_5_tt
@@ -2517,7 +2518,7 @@ focus_tree = {
 		cost = 5
 		relative_position_id = JAP_Agriculture_focus_1
 		available = {
-			has_completed_focus = JAP_WOFBuHbq
+			has_country_flag = JAP_Rising_Sun_flag
             }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -2873,7 +2874,7 @@ focus_tree = {
 		cost = 6
 		relative_position_id = JAP_Agriculture_focus_1
 		available = {
-			has_completed_focus = JAP_WOFBuHbq
+			has_country_flag = JAP_Rising_Sun_flag
             }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -3115,7 +3116,7 @@ focus_tree = {
 		}
 		add_to_variable = {
 			var = JAP_administrative_reform_consumer_goods_factor
-			value = -0.03
+			value = -0.06
 		}
 		}
 	}
@@ -3286,7 +3287,7 @@ focus_tree = {
 		cost = 6
 		relative_position_id = JAP_Agriculture_focus_1
 		available = {
-			has_completed_focus = JAP_WOFBuHbq
+			has_country_flag = JAP_Rising_Sun_flag
             }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -3467,7 +3468,7 @@ focus_tree = {
 		relative_position_id = JAP_Army_focus_1
 		prerequisite = { focus = JAP_Army_focus_1 }
 		available = {
-			has_completed_focus = JAP_WOFBuHbq
+			has_country_flag = JAP_Rising_Sun_flag
             }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -4522,7 +4523,7 @@ focus_tree = {
 		relative_position_id = JAP_Army_focus_1
 		prerequisite = { focus = JAP_Army_focus_1 }
 		available = {
-			has_completed_focus = JAP_WOFBuHbq
+			has_country_flag = JAP_Rising_Sun_flag
             }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -5133,7 +5134,7 @@ focus_tree = {
 		relative_position_id = JAP_Army_focus_1
 		prerequisite = { focus = JAP_Army_focus_1 }
 		available = {
-			has_completed_focus = JAP_WOFBuHbq
+			has_country_flag = JAP_Rising_Sun_flag
             }
 		available_if_capitulated = yes
 		ai_will_do = {
@@ -5816,12 +5817,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5831,12 +5832,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5846,12 +5847,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 
@@ -5862,12 +5863,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 
@@ -5878,12 +5879,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 
@@ -5894,12 +5895,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5909,12 +5910,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5924,12 +5925,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5939,12 +5940,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -5954,12 +5955,12 @@ focus_tree = {
 				limit = { is_controlled_by = ROOT }
 				add_building_construction = {
 					type = radar_station 
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 8
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -6332,20 +6333,21 @@ focus_tree = {
 		id =JAP_Ugaki_Cabinet
 		icon = GFX_
 		allow_branch = {
-			has_country_flag = JAP_Rise_of_the_Military
-			has_country_leader = {
-				character = JAP_Ugaki_Kazushige
-				ruling_only = yes
-			}
+			has_country_flag = JAP_Rise_of_the_Military_ugaki
 		}
-        available = { }
+        available = {
+            NOT = { has_country_flag = JAP_ugaki_be_overthrown }
+		}
 		mutually_exclusive = { }
 		bypass = { }
 		ai_will_do = { factor = 200 }
 		x = 11
 		y = 0
-		cost = 1
+		cost = 3
 		cancelable = no
+		select_effect = {
+            set_variable = { JAP_ugaki_no_confidence_motion = 0 }
+		}
 		completion_reward = {
 			remove_power_balance = {
 				id = JAP_Political_Distrust_bop
@@ -6362,11 +6364,7 @@ focus_tree = {
 		icon = GFX_
 		relative_position_id = JAP_Ugaki_Cabinet
 		available = {
-			has_country_flag = JAP_Rise_of_the_Military
-			has_country_leader = {
-				character = JAP_Ugaki_Kazushige
-				ruling_only = yes
-			}
+			NOT = { has_country_flag = JAP_ugaki_be_overthrown }
 		}
 		mutually_exclusive = { }
         bypass = { }
@@ -6377,7 +6375,7 @@ focus_tree = {
 		cost = 1
 		cancelable = no
 		completion_reward = {
-
+            country_event = TR_japan.651
 		}
 	}  
 	#政党を欺く
@@ -6386,11 +6384,7 @@ focus_tree = {
 		icon = GFX_
 		relative_position_id = JAP_Ugaki_Cabinet
 		available = {
-			has_country_flag = JAP_Rise_of_the_Military
-			has_country_leader = {
-				character = JAP_Ugaki_Kazushige
-				ruling_only = yes
-			}
+			NOT = { has_country_flag = JAP_ugaki_be_overthrown }
 		}
 		mutually_exclusive = { }
         bypass = { }
@@ -6401,7 +6395,7 @@ focus_tree = {
 		cost = 1
 		cancelable = no
 		completion_reward = {
-
+			country_event = TR_japan.652
 		}
 	}  
 	#軍内部の懐柔
@@ -6410,11 +6404,7 @@ focus_tree = {
 		icon = GFX_
 		relative_position_id = JAP_Ugaki_Cabinet
 		available = {
-			has_country_flag = JAP_Rise_of_the_Military
-			has_country_leader = {
-				character = JAP_Ugaki_Kazushige
-				ruling_only = yes
-			}
+			NOT = { has_country_flag = JAP_ugaki_be_overthrown }
 		}
 		mutually_exclusive = { }
         bypass = { }
@@ -6422,6 +6412,28 @@ focus_tree = {
 		prerequisite = { focus = JAP_Ugaki_Cabinet }
 		x = 2
 		y = 1
+		cost = 1
+		cancelable = no
+		completion_reward = {
+			country_event = TR_japan.653
+		}
+	}  
+	#火を点ける
+    focus = {
+		id = JAP_Ugaki_Cabinet_4
+		icon = GFX_
+		relative_position_id = JAP_Ugaki_Cabinet
+		available = {
+			NOT = { has_country_flag = JAP_ugaki_be_overthrown }
+		}
+		mutually_exclusive = { }
+        bypass = { }
+		ai_will_do = { factor = 200 }
+		prerequisite = { focus = JAP_Ugaki_Cabinet_1 }
+		prerequisite = { focus = JAP_Ugaki_Cabinet_2 }
+		prerequisite = { focus = JAP_Ugaki_Cabinet_3 }
+		x = 0
+		y = 2
 		cost = 1
 		cancelable = no
 		completion_reward = {
@@ -6436,11 +6448,7 @@ focus_tree = {
 		id =JAP_Okada_Cabinet
 		icon = GFX_
 		allow_branch = {
-			has_country_flag = JAP_Rise_of_the_Military
-			has_country_leader = {
-				character = JAP_Okada_Keisuke
-				ruling_only = yes
-			}
+			has_country_flag = JAP_Rise_of_the_Military_okada
 		}
         available = {
             always = no

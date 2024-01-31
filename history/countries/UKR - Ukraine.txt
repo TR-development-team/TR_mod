@@ -56,21 +56,25 @@ set_politics = {
 
 set_popularities = {
 	totalist = 8
-	syndicalist = 5
+	syndicalist = 3
 	radical_socialist = 6
-	social_democrat = 21
-	social_liberal = 10
+	social_democrat = 32
+	social_liberal = 7
 	market_liberal = 8
 	social_conservative = 6
 	authoritarian_democrat = 5
-	paternal_autocrat = 5
-	national_populist = 12
-	Gnosticism = 14
+	paternal_autocrat = 9
+	national_populist = 16
+	Gnosticism = 0
 }
 
 recruit_character = UKR_Nestor_Makhno
 recruit_character = UKR_Nikita_Khrushchev
 recruit_character = UKR_Volodymyr_Vynnychenko
+recruit_character = UKR_Andriy_Melnyk
+recruit_character = UKR_Stepan_Bandera
+
+recruit_character = UKR_Symon_Petliura
 recruit_character = UKR_ivan_chernyakhovsky
 recruit_character = UKR_kirill_moskalenko
 recruit_character = UKR_dmitry_lelyushenko

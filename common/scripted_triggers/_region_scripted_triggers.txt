@@ -26,7 +26,7 @@ is_island_region = {
 	OR = {
 		is_actual_island_state = yes
 		is_great_britain = yes
-                is_japan = yes
+        is_japan = yes
 		region = 4 #Ireland
 		region = 36 #Greenland
 		region = 53 #Caribbean Sea
@@ -45,17 +45,25 @@ is_island_region = {
 	}
 }
 
-is_japan = {
+is_japan = {#内地(樺太含む)
 	OR = {
 		region = 154 #East Japan
 		region = 275 #West Japan
 		region = 276 #Kyushu
 		region = 277 #North Japan
 		state = 526 #Okinawa
-		state = 555 #South Chishima
-		state = 828 #North Chishima
-		state = 537 #South Sakhalin
-		state = 655 #North Sakhalin
+		state = 825 #Amami
+		state = 828 #Chishima
+		state = 537 #Sakhalin
+		state = 645 #硫黄島
+		state = 648 #南鳥島
+	}
+}
+is_greater_japan = {
+	OR = {
+		is_japan = yes
+		region = 186 #朝鮮
+		state = 524 #台湾
 	}
 }
 is_great_britain = {
@@ -65,29 +73,26 @@ is_great_britain = {
 		region = 3 #Scotland
 	}
 }
-
 is_european_france = {
 	OR = {
 		region = 19 #Northern France
 		region = 20 #Southern France
 		region = 208 #Western France
+		state = 1 #コルシカ
 	}
 }
-is_italy = {
+is_italy = {#イタリア統一時の版図
 	OR = {
 		region = 21 #北イタリア
 		region = 23 #南イタリア
 		region = 287 #中部イタリア
-	}
-}
-is_full_italy = {
-	OR = {
-		region = 21 #北イタリア
-		region = 23 #南イタリア
-		region = 287 #中部イタリア
-		state = 39 #南チロル
 		state = 114 #サルデーニャ
 		state = 115 #シチリア
+	}
+}
+is_full_italy = {#イタリア初期領土
+	OR = {
+		is_italy = yes
 		state = 735 #サヴォイ
 		state = 736 #トリエステ
 		state = 846 #ニース
@@ -95,15 +100,6 @@ is_full_italy = {
 		state = 991 #ゴリツィア・グラディスカ
 		state = 992 #イストリアーナ
 		state = 1016 #ノトランスカ
-	}
-}
-
-
-is_iberia = {
-	OR = {
-		region = 41 #Northeastern Iberia
-		region = 209 #Northwestern Iberia
-		region = 210 #Southern Iberia
 	}
 }
 
@@ -115,7 +111,6 @@ is_germany = {#現代ドイツ
 		region = 283 #ドイツ南部
 	}
 }
-
 is_full_germany = {#ドイツ帝国
 	OR = {
 		is_germany = yes
@@ -125,7 +120,6 @@ is_full_germany = {#ドイツ帝国
         state = 850 #North slesvig
 	}
 }
-
 is_core_austria = {#現代オーストリア
     OR = {
 	    state = 4
@@ -137,6 +131,7 @@ is_core_austria = {#現代オーストリア
 		state = 986
 		state = 987
 		state = 997
+		state = 1089
     }
 }
 is_full_austria = {
@@ -149,8 +144,86 @@ is_greater_germany = {#大ドイツ
 		state = 8 #Luxembourg
 	}
 }
-
-is_bulgaria = {
+is_netherlands = {
+	OR = {
+		state = 7
+		state = 35
+		state = 36
+	}
+}
+is_belgium = {
+	OR = {
+		state = 6
+		state = 34
+	}
+}
+is_sweden = {
+	OR = {
+		region = 10
+		region = 192
+		state = 124
+	}
+}
+is_norway = {
+	OR = {
+		region = 11
+		region = 191
+	}
+}
+is_finland = {
+	OR = {
+		region = 13
+		state = 145
+		state = 148
+	}
+}
+is_full_finland = {
+	OR = {
+		is_finland = yes
+		state = 146
+		state = 147
+		state = 722
+	}
+}
+is_core_hungary = {#現代ハンガリー
+	OR = {
+	state = 43
+	state = 154
+	state = 155
+	state = 981
+	state = 982
+	state = 983
+	state = 984
+	state = 995
+	state = 1020
+	state = 1021
+	}
+}
+is_greater_hungary = {#大ハンガリー(クロアチア除く)
+	OR = {
+	region = 27 #ハンガリー
+	region = 285 #トランシルヴァニア
+	}
+}
+is_slovakia = {
+	OR = {
+		state = 70
+		state = 71
+		state = 73
+		state = 664
+		state = 979
+		state = 1088
+	}
+}
+is_greater_romania = {
+	OR = {
+		region = 280 #ルーマニア
+		region = 285 #トランシルヴァニア
+		state = 77
+		state = 841
+	}
+}
+is_core_bulgaria = {#最小ブルガリア
 	OR = {
 		state = 48
 		state = 211
@@ -158,27 +231,241 @@ is_bulgaria = {
 		state = 801
 		state = 853
 		state = 854
+		state = 1047
 		state = 1048
 	}
 }
-
-is_full_bulgaria = {
+is_bulgaria = {#希土戦争後ブルガリア
 	OR = {
-		is_bulgaria = yes
-		state = 77
+		is_core_bulgaria = yes
+		state = 184
+		state = 803
+		state = 1085
+	}
+}
+is_full_bulgaria = {#大ブルガリア
+	OR = {
+		region = 26 #ブルガリア
 		state = 106
 		state = 184
-		state = 731
+		state = 1050
+		state = 1085
+	}
+}
+is_core_serbia = {#初期セルビア
+	OR = {
+		state = 107
+		state = 108
+	}
+}
+is_serbia = {#WW1時のセルビア王国
+	OR = {
+		is_core_serbia = yes
+		state = 106
+		state = 802
 		state = 803
-		state = 841
 		state = 1046
 		state = 1050
 	}
 }
+is_greater_serbia = {#ヴォイヴォディナ併合
+	OR = {
+		is_serbia = yes
+		state = 45
+		state = 764
+		state = 988
+	}
+}
+is_albania = {
+	OR = {
+		state = 44
+		state = 805
+	}
+}
+is_montenegro = {
+	OR = {
+		state = 105
+		state = 990
+		state = 1049
+	}
+}
+is_poland = {
+	OR = {
+		region = 281 #ポーランド
+		region = 39 #ガリツィア・ロドメリア
+	}
+}
+is_full_poland = {
+	OR = {
+		is_poland = yes
+		state = 85
+		state = 86
+		state = 762
+		state = 845
+	}
+}
+is_core_greece = {#ゲーム開始時点のギリシャ
+	OR = {
+		state = 47
+		state = 185
+		state = 186
+		state = 1044
+		state = 1075
+	}
+}
+is_greece = {#希土戦争敗戦後のギリシャ
+	OR = {
+		is_core_greece = yes
+		state = 182
+		state = 731
+		state = 1045
+	}
+}
+is_full_greece = {#史実ギリシャ
+	OR = {
+		is_greece = yes
+		state = 164
+		state = 187
+		state = 1086
+		state = 1085
+		state = 184
+	}
+}
+is_portugal = {#ポルトガル
+	OR = {
+		state = 112
+		state = 179
+		state = 180
+		state = 181
+		state = 697
+		state = 698
+		state = 795
+	}
+}
+is_spain = {#スペイン
+	OR = {
+		region = 41
+		state = 41
+		state = 118
+		state = 168
+		state = 169
+		state = 170
+		state = 171
+		state = 173
+		state = 174
+		state = 175
+		state = 177
+		state = 178
+		state = 788
+		state = 789
+		state = 790
+		state = 791
+	}
+}
+is_iberia = {
+	OR = {
+		region = 41 #Northeastern Iberia
+		region = 209 #Northwestern Iberia
+		region = 210 #Southern Iberia
+	}
+}
+is_bitter_peace_russia = {
+	OR = {
+		region = 132 #ノヴゴロド
+		region = 133 #中央ロシア
+		region = 134 #コーカサス
+		region = 135 #クバン地方
+		region = 150 #アルハンゲリスク
+		region = 265 #東カレリア
+		region = 288 #スモレンスク
+		state = 213 #ムルマンスク
+		state = 217 #ツァリーツィン
+		state = 239
+		state = 245
+		state = 265
+	}
+}
+is_european_russia = {
+	OR = {
+		region = 40 #トランスヴォルガ
+		region = 132 #ノヴゴロド
+		region = 133 #中央ロシア
+		region = 135 #クバン地方
+		region = 150 #アルハンゲリスク
+		region = 264 #コミ・ネネツ
+		region = 265 #東カレリア
+		region = 288 #スモレンスク
+		state = 213 #ムルマンスク
+		state = 573 #ズラトウースト
+		state = 582
+		state = 217
+		state = 239
+		state = 245
+		state = 251
+        state = 265
+		state = 401
+		state = 652
+		state = 899
+	}
+}
 
+is_manchuria = {
+	OR = {
+		region = 155
+		region = 242
+		region = 243
+	}
+}
+is_full_manchuria = {#外満洲含む
+	OR = {
+		region = 148
+		region = 155
+		region = 242
+		region = 243
+		region = 255
+	}
+}
+is_xinjiang = {
+	OR = {
+		region = 145 #Taklamakan
+		region = 252 #Tian Shan
+	}
+}
+is_china_Concession = {
+	OR = {
+		state = 920 #天津
+		state = 816 #上海
+		state = 842 #威海衛
+		state = 743 #青島
+		state = 745 #関東州
+		state = 863 #広東
+		state = 864 #福州
+		state = 865 #廈門
+		state = 849 #寧波
+		state = 728 #広州湾
+		state = 326 #香港
+		state = 729 #マカオ
+	}
+}
+is_china_Concession_jap = {
+	OR = {
+		state = 920 #天津
+		state = 816 #上海
+		state = 842 #威海衛
+		state = 743 #青島
+		state = 745 #関東州
+		state = 863 #広東
+		state = 864 #福州
+		state = 865 #廈門
+		state = 849 #寧波
+		state = 728 #広州湾
+		state = 326 #香港
+		state = 729 #マカオ
+		state = 591 #海南
+	}
+}
 is_china_proper = {
 	OR = {
-		state = 752
 		region = 143
 		region = 144
 		region = 164
@@ -189,27 +476,10 @@ is_china_proper = {
 		region = 247
 		region = 248
 		region = 249
+		region = 250
 		state = 524 #Taiwan
 	}
 }
-
-
-is_manchuria = {
-	OR = {
-		region = 155
-		region = 242
-		region = 243
-	}
-}
-
-is_xinjiang = {
-	OR = {
-		region = 145 #Taklamakan
-		region = 252 #Tian Shan
-	}
-}
-
-
 is_mainland_china = {
 	OR = {
 		is_china_proper = yes
@@ -264,6 +534,7 @@ is_greater_california = {
 }
 
 is_Kazakhstan = {
+
 	OR = {
 		region = 136 #Alash
 		state = 402

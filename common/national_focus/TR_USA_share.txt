@@ -72,7 +72,7 @@
 			limit = {
 				is_core_of = CAN
 			}
-			add_core_of = USA
+			add_claim_by = USA
 		}		
 		declare_war_on = {
 			target = CAN
@@ -1313,6 +1313,66 @@
 				level = 1
 				instant_build = yes
 			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = dockyard
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = dockyard
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = dockyard
+				level = 1
+				instant_build = yes
+			}
 		}        
 		}
 	}
@@ -1373,8 +1433,17 @@
 			factor = 40
 		}
 	completion_reward = {
-		add_political_power = -100
-		add_ideas = norfolk_naval_yard_1
+		mio:USA_norfolk_naval_yard_organization = {
+			add_mio_funds = 1000
+		}
+		362 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = dockyard
+				level = 3
+				instant_build = yes
+			}
+		}
 		}
 	}
 	#海兵隊の強化
@@ -1724,8 +1793,17 @@
 			factor = 40
 		}
 	completion_reward = {
-        add_political_power = -100
-		add_ideas = springfield_armory_1 
+		mio:USA_springfield_armory_organization = {
+			add_mio_funds = 1000
+		}
+		357 = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
 		}
 	}
 	#フォード自動車
@@ -1749,10 +1827,13 @@
 		393 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
-				type = industrial_complex
+				type = arms_factory
 				level = 1
 				instant_build = yes
 			}
+		}
+		mio:USA_ford_motor_company_organization = {
+			add_mio_funds = 500
 		}
 		}
 	}
@@ -2046,8 +2127,9 @@
 			factor = 40
 		}
 	completion_reward = {
-		add_political_power = -100
-		add_ideas = detroit_arsenal_1
+		mio:USA_detroit_arsenal_organization = {
+			add_mio_funds = 1000
+		}
 		393 = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {

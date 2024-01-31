@@ -1,0 +1,108 @@
+characters={
+	SAF_moses_kotane={
+		name=SAF_moses_kotane
+		portraits={
+			civilian={
+				large="GFX_SAF_moses_kotane"
+			}
+		}
+		country_leader={
+			ideology=African_socialism_tot_subtype
+		}
+		country_leader={
+			ideology=African_socialism_syn_subtype
+		}
+		country_leader={
+			ideology=African_socialism_rs_subtype
+		}
+	}
+	SAF_pixley_ka_isaka_seme={
+		name=SAF_pixley_ka_isaka_seme
+		portraits={
+			civilian={
+				large=GFX_portrait_SAF_pixley_ka_isaka_seme
+			}
+		}
+		country_leader={
+			ideology=Progressivism_subtype
+		}
+	}
+	SAF_j_b_m_hertzog={
+		name=SAF_j_b_m_hertzog
+		portraits={
+			civilian={
+				large="gfx/leaders/SAF/Portrait_SAF_J_B_M_Hertzog1.png"
+			}
+		}
+		country_leader={
+			ideology=National_conservative_subtype
+		}
+	}
+	SAF_jan_smuts = {
+		name=SAF_jan_smuts
+		portraits={
+			civilian={
+				large=GFX_portrait_SAF_jan_smuts
+			}
+		}
+		country_leader={
+			ideology=National_conservative_subtype
+		}
+	}
+	SAF_d_f_malan={
+		name=SAF_d_f_malan
+		portraits={
+			civilian={
+				large="GFX_SAF_daniel_malan"
+			}
+			army={
+				small=GFX_portrait_SAF_d_f_malan_small
+			}
+		}
+		
+		country_leader={
+			ideology=civilian_dictatorship_subtype
+		}
+	}
+
+	SAF_george_edwin_brink={
+		name=SAF_george_edwin_brink
+		portraits={
+			army={
+				large="GFX_SAF_george_edwin_brink"
+				small=GFX_portrait_SAF_george_edwin_brink_small
+			}
+		}
+		corps_commander={
+			traits={ desert_fox }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+
+	SAF_guy_hallifax={
+		name=SAF_guy_hallifax
+		portraits={
+			army={
+				large="GFX_SAF_guy_halifax"
+				small=GFX_portrait_SAF_guy_hallifax_small
+			}
+		}
+		navy_leader={
+			traits={ battleship_adherent }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=2
+			coordination_skill=2
+			legacy_id=-1
+		}
+	}
+	
+
+	#Illusive Gentleman auto-generated
+}

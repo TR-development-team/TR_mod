@@ -19,7 +19,11 @@ state={
 
 		}
 		add_core_of = GRE
-
+		set_state_name = STATE_1086_TURKISH
+		set_province_name = {
+			id = 11818
+			name = "VICTORY_POINTS_11818_TURKISH"
+		}
 	}
 
 	local_supplies=0.0 

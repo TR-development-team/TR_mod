@@ -21,7 +21,11 @@ set_popularities = {
 	national_populist = 13
 }
 
+recruit_character = BRM_Aung_San
 recruit_character = BRM_Ba_Maw
+
+
+country_event = { id = TR_Burma.1 days = 330 }#1936年ビルマ下院総選挙
 
 add_ideas = {
 	Democratic_Republic
@@ -30,9 +34,11 @@ add_ideas = {
 	BRM_National_Army
 	BRM_ethnic_conflict
 	BRM_Thai_Burma_Railway
-	BRM_black_thursday
 }
-
+add_timed_idea = {
+	idea = BRM_black_thursday
+	days = 730
+}  
 set_convoys = 5
 set_technology = {
 	infantry_weapons = 1

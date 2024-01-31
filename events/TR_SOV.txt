@@ -124,6 +124,7 @@ country_event = {
 	desc = TR_Soviet.3.d
 	picture = GFX_report_event_france_parade
 	trigger = {
+		is_subject = no
 		tag = SOV
         RUS = { exists = no }
         }

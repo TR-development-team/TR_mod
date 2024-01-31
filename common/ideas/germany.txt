@@ -6,34 +6,18 @@
 		### Starting ###
 
 		GER_Junker_resistance = {
-			allowed = {
-				always = no
-			}
-                        picture = eng_tackle_capitalism
-
-			
-			removal_cost = -1
-	
-
+            picture = eng_tackle_capitalism
 			modifier = {
-			       consumer_goods_expected_value = 0.1
-                               political_power_factor = -0.1
-                               stability_factor = -0.25
+			    consumer_goods_factor = 0.25
+                political_power_factor = -0.1
+                stability_factor = -0.25
 			}
 		}
         GER_WAR_HORROR = {
-			allowed = {
-				always = no
-			}
-                        picture = ENG_the_war_to_end_all_wars
-
-			
-			removal_cost = -1
-	
-
+            picture = ENG_the_war_to_end_all_wars
 			modifier = {
-			       war_support_factor = -0.2
-			       conscription_factor = -0.2
+			    war_support_factor = -0.2
+			    conscription_factor = -0.2
 			}
 		}
         GER_REVOLUTION_ARMY = {
@@ -332,21 +316,10 @@
 		}
 
         GER_CIVIL_WAR = {
-			allowed = {
-				always = no
-			}
-                        picture = chi_war_of_resistance3
-
-			
-			removal_cost = -1
-	
+            picture = chi_war_of_resistance3
 
 			modifier = {
-                         conscription = 0.02
-			 war_support_factor = 1.0
-                         stability_factor = -0.1
-                         army_core_defence_factor = 0.1
-                         surrender_limit= 0.1
+				surrender_limit = 0.1
 			}
 		}
         GER_WAR_COMMUNISM = {
@@ -582,7 +555,7 @@
 	
 
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = -0.1
 				industrial_capacity_factory = 0.03
@@ -600,7 +573,7 @@
 	
 
 			modifier = {
-				consumer_goods_expected_value = -0.02
+				consumer_goods_factor = -0.05
 				MONTHLY_POPULATION = 0.2
 				global_building_slots_factor = 0.05
 			}
@@ -630,7 +603,7 @@
 	
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 		GER_market_socialism_1 = {
@@ -643,7 +616,7 @@
 	
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				production_speed_arms_factory_factor = 0.05
 				production_speed_industrial_complex_factor = 0.05
 			}
@@ -658,7 +631,7 @@
 	
 
 			modifier = {
-				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.1
 				political_power_cost = 0.2
 				roduction_speed_arms_factory_factor = 0.1
 			}
@@ -703,7 +676,7 @@
 	
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				local_resources_factor = 0.1
 				conscription_factor = 0.02
 			}
@@ -734,7 +707,7 @@
 			removal_cost = -1
                      
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
                 production_speed_buildings_factor = 0.1
 			}
 		}
@@ -748,7 +721,7 @@
 			removal_cost = -1
                      
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
                 political_power_cost = 0.1
                 production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.1
@@ -765,7 +738,7 @@
 			removal_cost = -1
                      
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
                 political_power_cost = 0.2
                 production_speed_buildings_factor = 0.1
 				industrial_capacity_factory = 0.1
@@ -786,7 +759,7 @@
                      
 			modifier = {
 				research_speed_factor = 0.05
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
                 political_power_cost = 0.2
                 production_speed_buildings_factor = 0.15
 				industrial_capacity_factory = 0.1
@@ -810,7 +783,7 @@
                 conscription_factor = -0.3
                 political_power_factor = -0.2
                 industrial_capacity_factory = -0.15
-				consumer_goods_expected_value = 0.15
+				consumer_goods_factor = 0.9
 				war_support_factor = -0.3
 			}
 		}
@@ -828,7 +801,7 @@
                 conscription_factor = -0.2
                 political_power_factor = -0.1
                 industrial_capacity_factory = -0.1
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.6
 				war_support_factor = -0.2
 			}
 		}
@@ -846,7 +819,7 @@
                 conscription_factor = -0.1
                 political_power_factor = -0.05
                 industrial_capacity_factory = -0.05
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.3
 				war_support_factor = -0.1
 			}
 		}
@@ -864,7 +837,7 @@
 			modifier = {
                 political_power_factor = -0.05
                 industrial_capacity_factory = -0.1
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
         GER_deutschland = {
@@ -966,7 +939,7 @@
 			picture = Fascism_Council
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				stability_factor = 0.1
 				political_power_factor = -0.05
 				army_morale_factor = 0.1
@@ -1045,7 +1018,7 @@
 			modifier = {
 				political_power_factor = -0.1
 				global_building_slots_factor = 0.1
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.05
 			}
 		}
         GER_industrial_union = {
@@ -1220,7 +1193,7 @@
 	
 
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
 				production_speed_buildings_factor = 0.1
 				local_resources_factor = 0.1
 			}
@@ -1298,7 +1271,7 @@
 	
 
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				production_factory_max_efficiency_factor = -0.1
 			}
 		}
@@ -1313,7 +1286,7 @@
 
 			modifier = {
 				political_power_factor = -0.1
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 				global_building_slots_factor = 0.1
 			}
 		}
@@ -1467,7 +1440,7 @@
 	
 
 			modifier = {
-                consumer_goods_expected_value = 0.01
+                consumer_goods_factor = 0.05
 			}
 		}
       GER_Kidosen = {
@@ -1544,9 +1517,11 @@
 			removal_cost = -1
 
 			modifier = {
-				political_power_cost = 0.5
+				political_power_cost = 0.25
                 stability_factor = -0.3
 				war_support_factor = -0.3
+				conscription_factor = -0.3
+				non_core_manpower = 0.05
 			}
 		}
 }

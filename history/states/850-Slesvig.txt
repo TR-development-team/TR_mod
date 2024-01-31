@@ -1,0 +1,27 @@
+state={
+	id=850
+	name="STATE_850"
+	local_supplies=0.0 
+provinces={
+		317 332 11251 11366
+	}
+
+	manpower = 454928
+	state_category = two
+	
+	history=
+	{
+		owner = RAT
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+
+		}
+		victory_points = {
+			317 1
+		}
+		add_core_of = RAT
+		add_core_of = DEN
+	}
+	buildings_max_level_factor=1.000
+}

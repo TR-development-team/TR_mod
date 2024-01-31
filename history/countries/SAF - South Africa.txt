@@ -72,43 +72,24 @@ set_politics = {
 }
 
 set_popularities = {
-	social_democrat = 22
-	social_liberal = 15
-	market_liberal = 18
-	social_conservative = 45
+	totalist = 8
+	syndicalist = 5
+	radical_socialist = 3
+	social_democrat = 5
+	social_liberal = 11 
+	market_liberal = 12 
+	social_conservative = 27
+	authoritarian_democrat = 6
+	paternal_autocrat = 16
+	national_populist = 7
+	Gnosticism = 0
 }
+recruit_character = SAF_moses_kotane
+recruit_character = SAF_pixley_ka_isaka_seme
+recruit_character = SAF_j_b_m_hertzog
+recruit_character = SAF_d_f_malan
 
-create_country_leader = {
-	name = "J. B. M. Hertzog"
-	desc = "POLITICS_J_B_M_HERTZOG_DESC"
-	picture = "GFX_SAF_james_hertzog"
-	expire = "1965.1.1"
-	ideology = social_conservative_subtype
-	traits = {
-		#
-	}
-}
+recruit_character = SAF_jan_smuts
 
-
-
-create_corps_commander = {
-	name = "George Edwin Brink"
-	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox  }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 1
-}
-
-create_navy_leader = {
-	name = "Guy Hallifax"
-	gfx = "GFX_SAF_guy_halifax"
-	traits = { battleship_adherent }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
+recruit_character = SAF_george_edwin_brink
+recruit_character = SAF_guy_hallifax

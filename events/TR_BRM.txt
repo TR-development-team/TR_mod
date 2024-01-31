@@ -1,0 +1,362 @@
+add_namespace = TR_Burma
+
+#1936年ビルマ下院総選挙
+country_event = {
+	id = TR_Burma.1
+	title = TR_Burma.1.t
+	desc = TR_Burma.1.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.1.a
+		ai_chance = {
+			base = 40
+		}
+		country_event = {
+			id = TR_Burma.2
+			days = 7
+		}
+	}
+	option = {
+		name = TR_Burma.1.b
+		ai_chance = {
+			base = 40
+		}
+		country_event = {
+			id = TR_Burma.3
+			days = 7
+		}
+	}
+}
+
+#バー・モウが再び大統領に
+country_event = {
+	id = TR_Burma.2
+	title = TR_Burma.2.t
+	desc = TR_Burma.2.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.2.a
+		set_politics = {
+			ruling_party = social_democrat
+			elections_allowed = yes
+		}
+		add_popularity = {
+			ideology = social_democrat
+			popularity = 0.1
+		}
+	}
+}
+#ビルマ人団体総評議会の勝利
+country_event = {
+	id = TR_Burma.3
+	title = TR_Burma.3.t
+	desc = TR_Burma.3.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.3.a
+		add_popularity = {
+			ideology = social_liberal
+			popularity = 0.1
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.1
+		}
+	    hidden_effect = {
+		    country_event = {
+			    id = TR_Burma.4
+			    days = 1
+		    }
+	    }
+	}
+}
+#三十人の志士の蹶起
+country_event = {
+	id = TR_Burma.4
+	title = TR_Burma.4.t
+	desc = TR_Burma.4.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.4.a
+		add_stability = -0.1
+		add_popularity = {
+			ideology = social_liberal
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.1
+		}
+		add_popularity = {
+			ideology = totalist
+			popularity = 0.2
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_Burma.5
+				days = 1
+			}
+		}
+	}
+}
+#アウンサン体制の成立
+country_event = {
+	id = TR_Burma.5
+	title = TR_Burma.5.t
+	desc = TR_Burma.5.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.5.a
+		set_politics = {
+			ruling_party = totalist
+			elections_allowed = no
+		}
+		swap_ideas = {
+			remove_idea = BRM_National_Army
+			add_idea = BRM_National_Army_1
+		}	
+	}
+}
+#泰緬国境紛争
+country_event = {
+	id = TR_Burma.6
+	title = TR_Burma.6.t
+	desc = TR_Burma.6.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.6.a
+		add_manpower = -100
+		hidden_effect = {
+			JAP = { 
+				country_event = {
+					id = TR_japfor.11
+					days = 1
+				}
+			}
+		}
+
+	}
+}
+#東京の仲介人
+country_event = {
+	id = TR_Burma.7
+	title = TR_Burma.7.t
+	desc = TR_Burma.7.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.7.a
+
+	}
+}
+#東京裁定-シャムの有利
+country_event = {
+	id = TR_Burma.8
+	title = TR_Burma.8.t
+	desc = TR_Burma.8.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.8.a
+		ai_chance = {
+			base = 20
+		}
+		1035 = { transfer_state_to = SIA }
+		set_country_flag = BRM_SIA_border_dispute_end
+	}
+	option = {
+		name = TR_Burma.8.a
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_Burma.11
+				days = 3
+			}
+			SIA = { 
+				country_event = {
+					id = TR_Siam.6
+					days = 3
+				}
+			}
+		}
+	}
+}
+#東京裁定-現国境の維持
+country_event = {
+	id = TR_Burma.9
+	title = TR_Burma.9.t
+	desc = TR_Burma.9.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.9.a
+		set_country_flag = BRM_SIA_border_dispute_end
+	}
+}
+#東京裁定-ビルマの有利
+country_event = {
+	id = TR_Burma.10
+	title = TR_Burma.10.t
+	desc = TR_Burma.10.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.10.a
+		set_country_flag = BRM_SIA_border_dispute_end
+	}
+}
+#紛争のエスカレーション
+country_event = {
+	id = TR_Burma.11
+	title = TR_Burma.11.t
+	desc = TR_Burma.11.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.11.a
+		add_war_support = 0.1
+	}
+}
+#シャムとの講和
+country_event = {
+	id = TR_Burma.12
+	title = TR_Burma.12.t
+	desc = TR_Burma.12.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	trigger = {
+        tag = BRM
+		is_subject = no
+		is_in_faction = no
+        surrender_progress > 0.25
+		has_war_with = SIA
+	}
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.12.a
+		ai_chance = {
+			base = 40
+		}
+		SIA = { 
+			country_event = TR_Siam.7
+		}
+	}
+	option = {
+		name = TR_Burma.12.b
+		ai_chance = {
+			base = 0
+		}
+		add_war_support = -0.2
+	}
+}
+#シャムとの講和
+country_event = {
+	id = TR_Burma.13
+	title = TR_Burma.13.t
+	desc = TR_Burma.13.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.13.a
+		ai_chance = {
+			base = 40
+		}
+		every_state = {
+			limit = {
+				is_owned_by = SIA
+				OR = { 	
+					is_core_of = BRM
+					is_claimed_by = BRM
+				}
+			}
+			transfer_state_to = BRM
+		}
+		white_peace = SIA
+		if = {
+			limit = { NOT = { has_country_flag = BRM_SIA_border_dispute_end } }
+			set_country_flag = BRM_SIA_border_dispute_end
+		}
+		SIA = { 
+			if = {
+				limit = { NOT = { has_country_flag = SIA_BRM_border_dispute_end } }
+				set_country_flag = SIA_BRM_border_dispute_end
+			}
+		}
+	}
+	option = {
+		name = TR_Burma.13.b
+		ai_chance = {
+			base = 0
+		}
+		add_war_support = -0.2
+	}
+}
+#日本が同盟を提案
+country_event = {
+	id = TR_Burma.14
+	title = TR_Burma.14.t
+	desc = TR_Burma.14.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Burma.14.a
+		ai_chance = {
+			base = 80
+		}
+        JAP = { add_to_faction = BRM }
+	}
+	option = {
+		name = TR_Burma.14.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}

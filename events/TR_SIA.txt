@@ -1,0 +1,252 @@
+add_namespace = TR_Siam
+
+#泰緬国境紛争
+country_event = {
+	id = TR_Siam.1
+	title = TR_Siam.1.t
+	desc = TR_Siam.1.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.1.a
+		add_manpower = -100
+		add_state_claim = 859
+		hidden_effect = {
+			BRM = { 
+				country_event = {
+					id = TR_Burma.6
+					days = 1
+				}
+			}
+		}
+	}
+}
+#東京の仲介人
+country_event = {
+	id = TR_Siam.2
+	title = TR_Siam.2.t
+	desc = TR_Siam.2.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.2.a
+	}
+}
+#東京裁定-シャムの有利
+country_event = {
+	id = TR_Siam.3
+	title = TR_Siam.3.t
+	desc = TR_Siam.3.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.3.a
+		set_country_flag = SIA_BRM_border_dispute_end
+	}
+}
+#東京裁定-現国境の維持
+country_event = {
+	id = TR_Siam.4
+	title = TR_Siam.4.t
+	desc = TR_Siam.4.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.4.a
+		ai_chance = {
+			base = 40
+		}
+		remove_state_claim = 859
+		set_country_flag = SIA_BRM_border_dispute_end
+	}
+	option = {
+		name = TR_Siam.4.b
+		ai_chance = {
+			base = 40
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_Siam.6
+				days = 3
+			}
+			BRM = { 
+				country_event = {
+					id = TR_Burma.11
+					days = 3
+				}
+			}
+		}
+	}
+}
+#東京裁定-ビルマの有利
+country_event = {
+	id = TR_Siam.5
+	title = TR_Siam.5.t
+	desc = TR_Siam.5.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.5.a
+		ai_chance = {
+			base = 20
+		}
+		858 = { transfer_state_to = BRM }
+		remove_state_claim = 859
+		set_country_flag = SIA_BRM_border_dispute_end
+	}
+	option = {
+		name = TR_Siam.5.b
+		ai_chance = {
+			base = 80
+		}
+		hidden_effect = {
+			country_event = {
+				id = TR_Siam.6
+				days = 3
+			}
+			BRM = { 
+				country_event = {
+					id = TR_Burma.11
+					days = 3
+				}
+			}
+		}
+	}
+}
+#紛争のエスカレーション
+country_event = {
+	id = TR_Siam.6
+	title = TR_Siam.6.t
+	desc = TR_Siam.6.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.6.a
+		add_war_support = 0.1
+		declare_war_on = {
+			target = BRM
+			type = take_state_focus
+			generator = { 859 1035 } 
+		}
+	}
+}
+#ビルマとの講和
+country_event = {
+	id = TR_Siam.7
+	title = TR_Siam.7.t
+	desc = TR_Siam.7.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.7.a
+		ai_chance = {
+			base = 40
+		}
+		every_state = {
+			limit = {
+				is_owned_by = BRM
+				OR = { 	
+					is_core_of = SIA
+					is_claimed_by = SIA
+				}
+			}
+			transfer_state_to = SIA
+		}
+		white_peace = BRM
+		if = {
+			limit = { NOT = { has_country_flag = SIA_BRM_border_dispute_end } }
+			set_country_flag = SIA_BRM_border_dispute_end
+		}
+		BRM = { 
+			if = {
+				limit = { NOT = { has_country_flag = BRM_SIA_border_dispute_end } }
+				set_country_flag = BRM_SIA_border_dispute_end
+			}
+		}
+	}
+	option = {
+		name = TR_Siam.7.b
+		ai_chance = {
+			base = 0
+		}
+		add_war_support = -0.2
+	}
+}
+#ビルマとの講和
+country_event = {
+	id = TR_Siam.8
+	title = TR_Siam.8.t
+	desc = TR_Siam.8.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	trigger = {
+        tag = SIA
+		is_subject = no
+		is_in_faction = no
+        surrender_progress > 0.25
+		has_war_with = BRM
+	}
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.8.a
+		ai_chance = {
+			base = 40
+		}
+		BRM = { 
+			country_event = TR_Burma.13
+		}
+	}
+	option = {
+		name = TR_Siam.8.b
+		ai_chance = {
+			base = 0
+		}
+		add_war_support = -0.2
+	}
+}
+#日本が同盟を提案
+country_event = {
+	id = TR_Siam.9
+	title = TR_Siam.9.t
+	desc = TR_Siam.9.d
+	picture = GFX_report_event_spr_anarchist_uprising
+
+	is_triggered_only = yes
+    fire_only_once = yes
+
+	option = {
+		name = TR_Siam.9.a
+		ai_chance = {
+			base = 80
+		}
+        JAP = { add_to_faction = SIA }
+	}
+	option = {
+		name = TR_Siam.9.b
+		ai_chance = {
+			base = 10
+		}
+	}
+}

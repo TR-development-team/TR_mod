@@ -210,13 +210,13 @@ leader_traits = {
 		political_power_gain = -0.2
 		army_org_Factor = -0.1
 		drift_defence_factor = 0.25
-		encryption_factor = 0.2
-		Intelligence_agency_defense = 0.5
+		intel_network_gain_factor = 0.2
+		intelligence_agency_defense = 0.4
 	}
 	TR_autocratic_charmer = {
 		#ワンマン政治家
 		random = no
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.1
 		stability_factor = 0.05
 		industrial_capacity_factory = -0.1
 		industrial_capacity_dockyard = -0.1
@@ -297,47 +297,6 @@ leader_traits = {
 	}
 	####首相#####
 	#固有
-	Nonkinatousan = {
-		#町田忠治
-		random = no
-		political_power_gain = 0.1
-		production_factory_efficiency_gain_factor = 0.05
-		industrial_capacity_factory = 0.05
-		consumer_goods_factor = -0.05
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	JAP_Zaibatsu_Sousui = {
-		#久原房之介
-		random = no
-		political_power_factor = -0.05
-		production_speed_arms_factory_factor = 0.1
-		production_speed_dockyard_factor = 0.1
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.1
-	}
-	Nagata_traits = {
-		#永田鉄山
-		random = no
-		consumer_goods_factor = 0.05
-		army_org_Factor = 0.1
-		experience_gain_army = 0.07
-	}
-	Raccoon_thinking_of_his_country = {
-		#岡田啓介
-		random = no
-		political_power_factor = 0.1
-		production_speed_naval_base_factor = 0.1
-		production_speed_dockyard_factor = 0.05
-	}
-	Ugaki_traits = {
-		#宇垣一成
-		random = no
-		political_power_cost = 0.05
-		experience_gain_army_factor = 0.1
-		experience_gain_army = 0.1
-	}
 	Kitaikki_traits = {
 		#北一輝
 		random = no
@@ -348,12 +307,83 @@ leader_traits = {
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
 	}
+	TR_father_of_Japanese_socialism = {
+		#安部磯雄
+		random = no
+		stability_factor = 0.06
+		production_factory_max_efficiency_factor = 0.1
+	}
+	TR_chancellor_of_letters = {
+		#片山哲
+		random = no
+		political_power_cost = 0.05
+		consumer_goods_factor = 0.02
+		stability_factor = 0.05
+		industrial_capacity_factory = 0.1
+	}
+	TR_wind_and_snow = {
+		#西尾末広
+		random = no
+		political_power_gain = 0.15
+		industrial_capacity_factory = 0.05
+	}
+	TR_constitutional_god = {
+		#犬養毅
+		random = no
+		stability_factor = 0.05
+		political_power_gain = 0.15
+		send_volunteer_size = 1
+		ai_strategy = {
+			type = befriend
+			id = "WHN"
+			value = 50
+		}
+		ai_strategy = {
+			type = befriend
+			id = "IND"
+			value = 50
+		}
+		ai_strategy = {
+			type = befriend
+			id = "KOR"
+			value = 50
+		}
+		ai_strategy = {
+			type = befriend
+			id = "SIA"
+			value = 50
+		}
+		ai_strategy = {
+			type = befriend
+			id = "BRM"
+			value = 50
+		}
+		ai_strategy = {
+			type = befriend
+			id = "PHI"
+			value = 50
+		}
+	}
+	TR_Ebisubanba = {
+		#中野正剛
+		random = no
+		political_power_factor = 0.05
+		war_stability_factor = 0.1
+		war_support_factor = 0.1
+	}
+	TR_Editor_Ogata = {
+		#緒方竹虎
+		random = no
+		political_power_gain = 0.1
+		drift_defence_factor = 0.2
+		social_liberal_drift = 0.01
+		intelligence_agency_defense = 0.25
+	}
 	Pan_Asian_Politician = {
-		#犬養毅など
+		#アジア主義者
 		random = no
 		stability_factor = 0.05
 		political_power_gain = 0.02
-		non_core_manpower = 0.02
 		opinion_gain_monthly_factor = 0.2
 		send_volunteer_size = 1
 		ai_strategy = {
@@ -386,9 +416,110 @@ leader_traits = {
 			id = "PHI"
 			value = 50
 		}
-		ai_will_do = {
-			factor = 1
+	}
+	Nonkinatousan = {
+		#町田忠治
+		random = no
+		political_power_gain = 0.1
+		production_factory_efficiency_gain_factor = 0.05
+		industrial_capacity_factory = 0.05
+		consumer_goods_factor = -0.05
+	}
+	TR_man_long_cherished_desire = {
+		#井上準之助
+		random = no
+		political_power_cost = 0.1
+		stability_factor = -0.1
+		consumer_goods_factor = -0.1
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+	}
+	TR_Gladstone_in_the_Orient = {
+		#永井柳太郎
+		random = no
+		political_power_gain = 0.1
+		consumer_goods_factor = -0.05
+		war_support_factor = 0.1
+	}
+	TR_underhanded_dealings = {
+		#大麻唯男
+		random = no
+		political_power_gain = 0.2
+		stability_factor = -0.02
+	}
+	JAP_Zaibatsu_Sousui = {
+		#久原房之介
+		random = no
+		political_power_factor = -0.05
+		production_speed_arms_factory_factor = 0.1
+		production_speed_dockyard_factor = 0.1
+		production_speed_industrial_complex_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+	}
+	TR_fraternal_prime_minister = {
+		#鳩山一郎
+		random = no
+		political_power_gain = 0.15
+		stability_factor = 0.05
+		war_support_factor = -0.05
+	}
+	TR_Aircraft_King = {
+		#中島知久平
+		random = no		
+		political_power_factor = -0.05
+		production_speed_air_base_factor = 0.1
+		production_speed_arms_factory_factor = 0.1
+		equipment_bonus = {
+			fighter_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			heavy_fighter_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			CAS_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			tac_bomber_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
+			strat_bomber_equipment = {
+				build_cost_ic = -0.1
+				instant = yes
+			}
 		}
+	}
+	Raccoon_thinking_of_his_country = {
+		#岡田啓介
+		random = no
+		political_power_gain = 0.1
+		production_speed_naval_base_factor = 0.1
+		production_speed_dockyard_factor = 0.05
+	}
+	Ugaki_traits = {
+		#宇垣一成
+		random = no
+		political_power_cost = 0.05
+		experience_gain_army_factor = 0.1
+		experience_gain_army = 0.1
+		production_speed_arms_factory_factor = 0.05
+	}
+	Nagata_traits = {
+		#永田鉄山
+		random = no
+		consumer_goods_factor = 0.05
+		army_org_Factor = 0.1
+		experience_gain_army = 0.07
+		production_speed_arms_factory_factor = 0.05
+	}
+	TR_Devil_of_showa = {
+		#岸信介
+		random = no
+		political_power_gain = -0.1
+		production_speed_buildings_factor = 0.15
 	}
 	AUS_Hitler_traits = {
 		#ヒトラー
@@ -794,8 +925,8 @@ leader_traits = {
 		resistance_damage_to_garrison = -0.1
 		foreign_subversive_activites = -0.1
 		subversive_activites_upkeep = -0.1
-		decryption_factor = 0.1
-		encryption_factor = 0.1
+		intel_network_gain_factor = 0.15
+		intelligence_agency_defense = 0.3
 		random = no
 	}
 	GER_Rohm_traits = {
@@ -837,8 +968,8 @@ leader_traits = {
 	Founder_of_intelligence = {	#情報機関の創設者
 		random = no
 		foreign_subversive_activites = -0.2
-		decryption_factor = 0.1
-		encryption_factor = 0.1
+		intel_network_gain_factor = 0.25
+		intelligence_agency_defense = 0.5
 	}
 	TR_prince_of_terror = {	#恐怖公
 		non_core_manpower = 0.03
@@ -865,7 +996,7 @@ leader_traits = {
 		random = no
 	}
 	TR_crooked_kleptocrat = {	#ねじくれた汚職屋
-		political_power_gain = -0.05
+		political_power_gain = -0.07
 		consumer_goods_factor = 0.05
 		random = no
 	}

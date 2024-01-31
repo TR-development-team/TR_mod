@@ -71,6 +71,8 @@ country_event = { id = TR_japan.5 days = 120 }#血のメーデー事件
 country_event = { id = TR_jafrica.240 days = 238 }#日本・エジプト同盟条約
 country_event = { id = TR_japan.19 days = 382 }#朝鮮問題
 country_event = { id = TR_japan.30 days = 1491 }#1940年度衆院選
+country_event = { id = TR_japan.70 days = 2952 }#1944年度衆院選
+country_event = { id = TR_japan.701 days = 4413 }#1948年度衆院選
 country_event = { id = TR_jap_flavor.5 days = 484 }#ヒサトモ
 country_event = { id = TR_jap_flavor.1 days = 1460 }#紀元2600年
 country_event = { id = TR_jap_flavor.2 days = 1243 }#クモハタ
@@ -289,10 +291,19 @@ recruit_character = JAP_Nagata_Tetsuzan
 recruit_character = JAP_Araki_Sadao
 recruit_character = JAP_Takeuchi_Kiyomaro
 
+recruit_character = JAP_Aso_Hisashi
 recruit_character = JAP_Katayama_Tetsu
+recruit_character = JAP_Nishio_Suehiro
 recruit_character = JAP_Nakano_Seigo
+recruit_character = JAP_Ogata_Taketora
+recruit_character = JAP_Inoue_junnosuke
+recruit_character = JAP_Nagai_Ryutaro
+recruit_character = JAP_Saito_Takao
+recruit_character = JAP_Oasa_Tadao
 recruit_character = JAP_Kuhara_Fusanosuke
 recruit_character = JAP_Hatoyama_Ichiro
+recruit_character = JAP_Nakajima_Chikuhei
+recruit_character = JAP_Maeda_Yonezo
 recruit_character = JAP_Daihonei
 recruit_character = JAP_Ugaki_Kazushige
 recruit_character = JAP_Okada_Keisuke
@@ -300,6 +311,7 @@ recruit_character = JAP_Hideki_Tojo_2
 recruit_character = JAP_Konoe_Fumimaro
 recruit_character = JAP_yasuhito
 recruit_character = JAP_hirohito_1
+recruit_character = JAP_Hashimoto_Kingoro
 
 promote_character = JAP_Tokonami_Takejiro
 

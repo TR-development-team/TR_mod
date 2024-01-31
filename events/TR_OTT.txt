@@ -799,6 +799,11 @@ country_event = {
 				active = no
 			}
             }
+		1086 = { set_state_name = STATE_1086_TURKISH }
+		set_province_name = {
+			id = 11818
+			name = "VICTORY_POINTS_11818_TURKISH"
+		}
 		hidden_effect = {
 			GRE = { 
 				country_event = TR_Greece.13

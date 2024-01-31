@@ -22,13 +22,13 @@ characters={
 		}
 	}
 	INC_Yamanashi_Katsunoshin={
-		name=JAP_Yamanashi_Katsunoshin
+		name=INC_Yamanashi_Katsunoshin
 		portraits={
 			civilian={
-				large="gfx/leaders/JAP/Portrait_JAP_Yamanashi.tga"
+				large="gfx/leaders/INC/Portrait_INC_Yamanashi_Katsunoshin.png"
 			}
 			navy={
-				large="gfx/leaders/JAP/Portrait_JAP_Yamanashi.tga"
+				large="gfx/leaders/INC/Portrait_INC_Yamanashi_Katsunoshin.png"
 			}
 		}
 		country_leader={
@@ -59,6 +59,25 @@ characters={
 		}
 		country_leader={
 			ideology= asian_monroe_subtype
+		}
+	}
+	INC_Tominaga_Kyoji={
+		name=INC_Tominaga_Kyoji
+		portraits={
+			civilian={
+				large="gfx/leaders/INC/Portrait_INC_Tominaga_Kyoji.png"
+			}
+			army={
+				large="gfx/leaders/INC/Portrait_INC_Tominaga_Kyoji.png"
+			}
+		}
+		corps_commander = {
+			traits = { trait_reckless infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
 		}
 	}
 }
