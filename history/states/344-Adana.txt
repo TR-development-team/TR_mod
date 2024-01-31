@@ -2,9 +2,9 @@
 state={
 	id=344
 	name="STATE_344"
-	manpower = 481781
+	manpower = 1029389
 	
-	state_category = two
+	state_category = four
 
 	history={
 		owner = OTT
@@ -12,7 +12,16 @@ state={
 			11746 5 
 		}
 		victory_points = {
+			9893 3
+		}
+		victory_points = {
 			11810 1 
+		}
+		victory_points = {
+			12029 1
+		}
+		victory_points = {
+			6813 1
 		}
 		buildings = {
 			infrastructure = 2
@@ -26,7 +35,7 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		806 886 6956 11746  11810 
+		806 886  3889 3921 6813 6956 9893 11746 11810 12029
 	}
 
 }

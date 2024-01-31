@@ -1,4 +1,15 @@
 characters={
+	INS_Tan_Malaka={
+		name=INS_Tan_Malaka
+		portraits={
+			civilian={
+				large="gfx/leaders/INS/Portrait_INS_Tan_Malaka.png"
+			}
+		}
+		country_leader={
+			ideology=national_communism_subtype
+		}
+	}
 	INS_amir_sjarifuddin_harahap={
 		name=INS_amir_sjarifuddin_harahap
 		portraits={
@@ -8,10 +19,6 @@ characters={
 		}
 		country_leader={
 			ideology=Democratic_socialism_left_subtype
-			traits = {
-			}
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
@@ -24,10 +31,6 @@ characters={
 		}
 		country_leader={
 			ideology=Progressivism_subtype
-			traits = {
-			}
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 	INS_sukarno={
@@ -39,10 +42,6 @@ characters={
 		}
 		country_leader={
 			ideology=oligarchy_subtype
-			traits = {
-			}
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 
@@ -55,10 +54,6 @@ characters={
 		}
 		country_leader={
 			ideology=Military_junta_subtype
-			traits = {
-			}
-			expire="1965.1.1.1"
-			id=-1
 		}
 	}
 

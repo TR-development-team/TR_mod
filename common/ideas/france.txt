@@ -55,7 +55,7 @@
 				stability_factor = -0.3
 				production_speed_buildings_factor = -0.25
 				industrial_capacity_factory = -0.2
-				consumer_goods_expected_value = 0.25
+				consumer_goods_factor = 0.3
 			}
 		}
         FRA_black_thursday1 = {
@@ -69,7 +69,7 @@
 				stability_factor = -0.2
 				production_speed_buildings_factor = -0.15
 				industrial_capacity_factory = -0.1
-				consumer_goods_expected_value = 0.15
+				consumer_goods_factor = 0.2
 			}
 		}
         FRA_black_thursday2 = {
@@ -83,7 +83,7 @@
 				stability_factor = -0.1
 				production_speed_buildings_factor = -0.10
 				industrial_capacity_factory = -0.05
-				consumer_goods_expected_value = 0.10
+				consumer_goods_factor = 0.1
 			}
 		}
         FRA_economic = {
@@ -160,7 +160,7 @@
 			picture = generic_fascism_drift_2
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
                 research_speed_factor = -0.05
 			    production_speed_buildings_factor = 0.1
                 political_power_cost = 0.25
@@ -175,7 +175,7 @@
 			picture = generic_fascism_drift_2
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.1
+				consumer_goods_factor = -0.2
                 research_speed_factor = -0.1
 			    production_speed_buildings_factor = 0.2
                 political_power_cost = 0.5
@@ -353,8 +353,8 @@
 			picture = FRA_ethnic_leader
 			removal_cost = -1
 			modifier = {
-                stability_weekly = 0.002
-                war_support_weekly = 0.005
+                stability_weekly = 0.001
+                war_support_weekly = 0.001
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1
 			}
@@ -455,7 +455,7 @@
 			removal_cost = -1
                      
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
                 political_power_factor = -0.05
                 production_factory_max_efficiency_factor = 0.1
 				research_speed_factor = 0.05
@@ -471,7 +471,7 @@
 			removal_cost = -1
                      
 			modifier = {
-				consumer_goods_expected_value = 0.05
+				consumer_goods_factor = 0.1
                 political_power_factor = -0.1
                 production_factory_max_efficiency_factor = 0.15
 				production_speed_buildings_factor = 0.1
@@ -521,7 +521,7 @@
 			modifier = {
 				conscription_factor = 0.03
 				industrial_capacity_factory = 0.05
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.05
 			}
 		}
 		FRA_national_revolution = {
@@ -834,7 +834,7 @@
 			
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 		ITA_reparations_to_FRA = {
@@ -845,7 +845,7 @@
 			
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.2
 			}
 		}
 		ITA_reparations_from_FRA = {
@@ -856,7 +856,7 @@
 			
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = -0.05
+				consumer_goods_factor = -0.1
 			}
 		}
 		FRA_reparations_to_ITA = {
@@ -867,7 +867,7 @@
 			
 			removal_cost = -1
 			modifier = {
-				consumer_goods_expected_value = 0.1
+				consumer_goods_factor = 0.2
 			}
 		}
 		ITA_limitation_of_armaments = {

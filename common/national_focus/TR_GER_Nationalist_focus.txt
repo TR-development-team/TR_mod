@@ -943,13 +943,6 @@ focus_tree = {
 				}
 			}
 			if = {
-				limit = { country_exists = CAT }
-				create_wargoal = {
-					target = CAT
-					type = puppet_wargoal_focus
-				}
-			}
-			if = {
 				limit = { country_exists = POR }
 				create_wargoal = {
 					target = POR
@@ -1053,6 +1046,13 @@ focus_tree = {
 				limit = { country_exists = SER }
 				create_wargoal = {
 					target = SER
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = MNT }
+				create_wargoal = {
+					target = MNT
 					type = puppet_wargoal_focus
 				}
 			}

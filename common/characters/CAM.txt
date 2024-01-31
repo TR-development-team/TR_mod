@@ -1,0 +1,28 @@
+characters={
+	CAM_Norodom_Sihanouk={
+		name=CAM_Norodom_Sihanouk
+		portraits={
+			civilian={
+				large="gfx/leaders/CAM/Portrait_CAM_Norodom_Sihanouk.png"
+			}
+			army={
+				small="gfx/leaders/CAM/Portrait_CAM_Norodom_Sihanouk.png"
+			}
+		}
+		country_leader={
+			ideology= Buddhist_socialism_subtype
+		}
+		country_leader={
+			ideology= Buddhist_socialism_sd_subtype
+		}
+		country_leader={
+			ideology= National_conservative_subtype
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+	}
+}

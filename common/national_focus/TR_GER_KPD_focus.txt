@@ -825,7 +825,7 @@ focus_tree = {
 			}
 		}
 	}
-	#兄弟の解放
+	#中欧の解放
 	focus = {
 		id = GER_KPD_War_focus_7
 		icon = GFX_
@@ -844,11 +844,7 @@ focus_tree = {
 				}
 			}
 		bypass = {
-		OR = {
-			has_war_with = AUS
-			is_in_faction_with = AUS
-			NOT = { country_exists = AUS }
-			}
+
 		}
 		ai_will_do = {
 			factor = 80
@@ -858,6 +854,27 @@ focus_tree = {
 				limit = { country_exists = AUS }
 				create_wargoal = {
 					target = AUS
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = CZE }
+				create_wargoal = {
+					target = CZE
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = HUN }
+				create_wargoal = {
+					target = HUN
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = { country_exists = CRO }
+				create_wargoal = {
+					target = CRO
 					type = annex_everything
 				}
 			}
@@ -932,13 +949,6 @@ focus_tree = {
 				limit = { country_exists = ADU }
 				create_wargoal = {
 					target = ADU
-					type = puppet_wargoal_focus
-				}
-			}
-			if = {
-				limit = { country_exists = CAT }
-				create_wargoal = {
-					target = CAT
 					type = puppet_wargoal_focus
 				}
 			}
@@ -1041,6 +1051,13 @@ focus_tree = {
 				limit = { country_exists = SER }
 				create_wargoal = {
 					target = SER
+					type = puppet_wargoal_focus
+				}
+			}
+			if = {
+				limit = { country_exists = MNT }
+				create_wargoal = {
+					target = MNT
 					type = puppet_wargoal_focus
 				}
 			}

@@ -16,6 +16,7 @@ focus_tree = {
 		x = 11
 		y = 0
 		cost = 6
+
 		select_effect = {
 			if = {
 				limit = { has_country_flag = GBR_Emergency_Powers_Act }
@@ -323,7 +324,7 @@ focus_tree = {
 	completion_reward = {
 		add_stability = 0.05
 		GBR_social_recovery = yes
-		
+		remove_ideas = GBR_crumbling_empire
 		}
 	}
 	#帝国の防衛
@@ -625,6 +626,7 @@ focus_tree = {
 		}
 	completion_reward = {
 		GBR_social_recovery = yes
+		remove_ideas = GBR_crumbling_empire
 		}
 	}
 	#経済再建法
@@ -1016,6 +1018,96 @@ focus_tree = {
 		}
 	completion_reward = {
 		GBR_economy_recovery = yes
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
 		}
 	}
 	#軍需産業の再建
@@ -1038,10 +1130,10 @@ focus_tree = {
 		126 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1079,10 +1171,10 @@ focus_tree = {
 		129 = {
 			if = {
 				limit = { is_controlled_by = ROOT }
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1215,6 +1307,11 @@ focus_tree = {
 			limit = { is_in_faction = no }
 			create_faction = GBR_faction
 		}
+		AST = { country_event = TR_UK.16 }
+		CAN = { country_event = TR_UK.15 }
+		IRE = { country_event = TR_UK.19 }
+		NZL = { country_event = TR_UK.17 }
+		SAF = { country_event = TR_UK.18 }
 		}
 	}
 	#現実主義外交

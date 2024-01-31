@@ -85,7 +85,6 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "GER_1936_naval"
 }
 if = {
 	limit = {
@@ -115,7 +114,6 @@ if = {
 		sonar = 1
 		basic_cruiser_armor_scheme = 1
 	}
-	set_naval_oob = "RAT_1936_naval_mtg"
 }
 if = {
 	limit = {
@@ -127,7 +125,6 @@ if = {
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "RAT_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			aa_cannon_1 = 1
@@ -142,7 +139,6 @@ if = {
 			iw_large_airframe = 1
 		}
 	else = {
-		set_air_oob = "RAT_1936_air_legacy"
 		set_technology = {
 			early_fighter = 1
 			fighter1 = 1

@@ -15,27 +15,20 @@ GER_integrate_policy = {
 				tag = GER
 				tag = RAT
 			}
-			OR = {
-				4 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				152 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				153 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				929 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				945 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-				978 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                986 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                987 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-                997 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			every_state = {
+				limit = {
+					is_core_austria = yes
+				}
+				is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes
 			}
 		}
 		available = {
-			has_full_control_of_state = 4
-			has_full_control_of_state = 152
-			has_full_control_of_state = 153
-			has_full_control_of_state = 929
-			has_full_control_of_state = 978
-			has_full_control_of_state = 986
-			has_full_control_of_state = 987
-			has_full_control_of_state = 997
+			every_state = {
+				limit = {
+					is_core_austria = yes
+				}
+				is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes
+			}
 		}
 		highlight_states = {
 			highlight_state_targets = { state = 4 }
@@ -58,16 +51,12 @@ GER_integrate_policy = {
 			}
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_AUS_province"
-			4 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-			152 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-			153 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-			929 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-			945 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-            978 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-            986 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-            987 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
-            997 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			every_state = {
+				limit = {
+					is_core_austria = yes
+				}
+				remove_claim_by_ROOT_and_add_core_of_ROOT = yes
+			}
 
 		}
 		ai_will_do = {
@@ -103,8 +92,8 @@ GER_integrate_policy = {
 		cost = 50
 		fire_only_once = yes
 		modifier = {
-                        consumer_goods_factor = 0.05
-                        MONTHLY_POPULATION = -0.1
+            consumer_goods_factor = 0.05
+            MONTHLY_POPULATION = -0.1
 			political_power_gain = -0.25
 		}
 		days_remove = 100
@@ -112,7 +101,6 @@ GER_integrate_policy = {
 			add_state_claim = 8
 		}
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_LUX_province"
 			8 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {
@@ -133,7 +121,7 @@ GER_integrate_policy = {
 			OR = {
 				tag = PRE
 				tag = GER
-				AND = { tag = RAT has_country_flag = RAT_Greater_germany }
+				tag = RAT
 			}
 			OR = {
 				3 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
@@ -161,7 +149,6 @@ GER_integrate_policy = {
 		}
 		days_remove = 200
 		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_SWI_province"
 			3 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			151 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
@@ -171,4 +158,2283 @@ GER_integrate_policy = {
 	}
 }
 annexation_decisions = {
+#ハンガリー
+RAT_annexation_HUN_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		43 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = HUN }
+	}
+	available = {
+		has_full_control_of_state = 43
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 43 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = HUN
+				}
+				remove_core_of = HUN
+			}
+			every_state = {
+				limit = {
+					is_core_hungary = yes
+				}
+				add_core_of = HUN
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_core_hungary = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = HUN
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = HUN
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				HUN = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = HUN_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = HUN
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				HUN = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = HUN_council_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#スロヴァキア
+RAT_annexation_SLO_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		70 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = SLO }
+	}
+	available = {
+		has_full_control_of_state = 70
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 70 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = SLO
+				}
+				remove_core_of = SLO
+			}
+			every_state = {
+				limit = {
+					is_slovakia = yes
+				}
+				add_core_of = SLO
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_slovakia = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = SLO
+			}
+		}
+		if = {
+			limit = { 
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = SLO
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				SLO = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = SLO_rada_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = SLO
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				SLO = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = SLO_rada_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ポーランド
+RAT_annexation_POL_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		10 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = POL }
+	}
+	available = {
+		has_full_control_of_state = 10
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 10 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = POL
+				}
+				remove_core_of = POL
+			}
+			every_state = {
+				limit = {
+					is_poland = yes
+				}
+				add_core_of = POL
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_poland = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = POL
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = POL
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				POL = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = POL_rada_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = POL
+			    autonomy_state = military_occupation
+		    }
+			hidden_effect = { 
+				POL = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = POL_RAT_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ルーマニア
+RAT_annexation_ROM_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		46 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = ROM }
+	}
+	available = {
+		has_full_control_of_state = 46
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 46 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = ROM
+				}
+				remove_core_of = ROM
+			}
+			every_state = {
+				limit = {
+					is_greater_romania = yes
+				}
+				add_core_of = ROM
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_greater_romania = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = ROM
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = ROM
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				ROM = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = ROM_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = ROM
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				ROM = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = ROM_council_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ブルガリア
+RAT_annexation_BUL_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		48 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = BUL }
+	}
+	available = {
+		has_full_control_of_state = 48
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 48 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = BUL
+				}
+				remove_core_of = BUL
+			}
+			every_state = {
+				limit = {
+					is_full_bulgaria = yes
+				}
+				add_core_of = BUL
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_full_bulgaria = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = BUL
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = BUL
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				BUL = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BUL_soviet_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = BUL
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				BUL = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BUL_soviet_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#チェコ
+RAT_annexation_CZE_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		9 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = CZE }
+	}
+	available = {
+		has_full_control_of_state = 9
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 9 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = CZE
+				}
+				remove_core_of = CZE
+			}
+			every_state = {
+				limit = {
+					region = 22
+				}
+				add_core_of = CZE
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					region = 22
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = CZE
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = CZE
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				CZE = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = CZE_rada_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = CZE
+			    autonomy_state = military_occupation
+		    }
+			hidden_effect = { 
+				CZE = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = CZE_RAT_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ユーゴ
+RAT_annexation_YUG_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		OR = { 
+			107 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			109 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		}
+		NOT = { country_exists = YUG }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 107
+			has_full_control_of_state = 109
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 109 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = YUG
+				}
+				remove_core_of = YUG
+			}
+			every_state = {
+				limit = {
+					OR = { 
+						is_greater_serbia = yes
+						is_montenegro = yes
+						region = 279
+						state = 989
+					}
+				}
+				add_claim_by = YUG
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					OR = { 
+						is_greater_serbia = yes
+						is_montenegro = yes
+						region = 279
+						state = 989
+					}
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = YUG
+			}
+			107= { 
+				add_core_of = YUG
+			}
+			109= { 
+				add_core_of = YUG
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = YUG
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				YUG = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = YUG_Socialist_Federal_Republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = YUG
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				YUG = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = YUG_Socialist_Federal_Republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+
+#アルバニア
+RAT_annexation_ALB_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		44 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = ALB }
+	}
+	available = {
+		has_full_control_of_state = 44
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 44 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = ALB
+				}
+				remove_core_of = ALB
+			}
+			every_state = {
+				limit = {
+					is_albania = yes
+				}
+				add_core_of = ALB
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_albania = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = ALB
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = ALB
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				ALB = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = ALB_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = ALB
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				ALB = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = ALB_council_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ギリシャ
+RAT_annexation_GRE_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		47 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = GRE }
+	}
+	available = {
+		has_full_control_of_state = 47
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 47 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = GRE
+				}
+				remove_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_full_greece = yes
+				}
+				add_core_of = GRE
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_full_greece = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = GRE
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = GRE
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				GRE = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = GRE_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = GRE
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				GRE = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = GRE_council_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ウクライナ
+RAT_annexation_UKR_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		202 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = UKR }
+	}
+	available = {
+		has_full_control_of_state = 202
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 202 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					region = 130
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = UKR
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = UKR
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				UKR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = UKR_rada_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = UKR
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				UKR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = UKR_rada_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ベラルーシ
+RAT_annexation_BLR_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		206 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = BLR }
+	}
+	available = {
+		has_full_control_of_state = 206
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 206 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					region = 131
+					is_claim_or_core_of_ROOT = no
+				}
+				add_claim_by = BLR
+				transfer_state_to = BLR
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = BLR
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				BLR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BLR_rada_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = BLR
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				BLR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BLR_rada_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+
+}
+#ネーデルラント
+RAT_annexation_NTL_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		7 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = NTL }
+	}
+	available = {
+		has_full_control_of_state = 7
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 7 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_netherlands = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = NTL
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = NTL
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				NTL = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = NTL_RAT_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = NTL
+			    autonomy_state = military_occupation
+		    }
+			hidden_effect = { 
+				NTL = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = NTL_RAT_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ベルギー
+RAT_annexation_BEL_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		6 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = BEL }
+	}
+	available = {
+		has_full_control_of_state = 6
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 6 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_belgium = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = BEL
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = BEL
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				BEL = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BEL_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = BEL
+			    autonomy_state = military_occupation
+		    }
+			hidden_effect = { 
+				BEL = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BEL_RAT_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#バルト
+RAT_annexation_BLT_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		OR = { 
+			784 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			878 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+			882 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		}
+		NOT = { country_exists = BLT }
+		NOT = { country_exists = PRE }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 784
+			has_full_control_of_state = 878
+			has_full_control_of_state = 882
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 878 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = BLT
+				}
+				remove_core_of = BLT
+			}
+			every_state = {
+				limit = {
+					is_core_of = PRE
+				}
+				remove_core_of = PRE
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = PRE
+				}
+				remove_claim_by = PRE
+			}
+			every_state = {
+				limit = {
+					region = 37
+				}
+				add_claim_by = BLT
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					region = 37
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = BLT
+			}
+			784 = { add_core_of = BLT }
+			878 = { add_core_of = BLT }
+			882 = { add_core_of = BLT }
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = BLT
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				BLT = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BLT_RAT_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = BLT
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				BLT = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BLT_RAT_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#スペイン
+RAT_annexation_CAT_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		41 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = CAT }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 41
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 41 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_spain = yes
+				}
+				add_claim_by = CAT
+			}
+			41 = { add_core_of = CAT }
+			165 = { add_core_of = CAT }
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_spain = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = CAT
+			}
+			CAT = { 
+				set_capital = {
+					state = 41
+					remember_old_capital = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = CAT
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				CAT = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = SPR_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = CAT
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				CAT = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = SPR_council_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ポルトガル
+RAT_annexation_POR_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		112 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = POR }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 112
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 112 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = POR
+				}
+				remove_core_of = POR
+			}
+			every_state = {
+				limit = {
+					is_portugal = yes
+				}
+				add_core_of = POR
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_portugal = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = POR
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = POR
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				POR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = POR_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = POR
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				POR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = POR_council_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#イタリア
+RAT_annexation_ITA_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		2 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = ITA }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 2
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 2 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_full_austria = yes
+				}
+				add_claim_by = RAT
+			}
+			every_state = {
+				limit = {
+					is_full_italy = yes
+				}
+				add_claim_by = ITA
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_italy = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = ITA
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = ITA
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				ITA = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = ITA_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = ITA
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				ITA = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = ITA_council_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#スウェーデン
+RAT_annexation_SWE_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		141 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = SWE }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 141
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 141 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = SWE
+				}
+				remove_core_of = SWE
+			}
+			every_state = {
+				limit = {
+					is_sweden = yes
+				}
+				add_core_of = SWE
+			}
+			145 = { add_core_of = SWE }
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_sweden = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = SWE
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = SWE
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				SWE = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = SWE_RAT_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = SWE
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				SWE = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = SWE_RAT_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#デンマーク
+RAT_annexation_DEN_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		37 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = DEN }
+	}
+	available = {
+		has_full_control_of_state = 37
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 37 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					region = 282
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = DEN
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = DEN
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				DEN = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = DEN_RAT_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = DEN
+			    autonomy_state = military_occupation
+		    }
+			hidden_effect = { 
+				DEN = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = DEN_RAT_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ノルウェー
+RAT_annexation_NOR_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		110 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = NOR }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 110
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 110 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_norway = yes
+				}
+				add_core_of = NOR
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_norway = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = NOR
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = NOR
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				NOR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = NOR_RAT_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = NOR
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				NOR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = NOR_RAT_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#フィンランド
+RAT_annexation_FIN_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		111 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = FIN }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 111
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 111 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = FIN
+				}
+				remove_core_of = FIN
+			}
+			every_state = {
+				limit = {
+					is_full_finland = yes
+				}
+				add_core_of = FIN
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_full_finland = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = FIN
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = FIN
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				FIN = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = FIN_neuvosto_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = FIN
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				FIN = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = FIN_neuvosto_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ロシア
+RAT_annexation_SOV_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		219 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = SOV }
+	}
+	available = {
+		219 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 219 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_european_russia = yes
+				}
+				remove_core_of = SOV
+				add_claim_by = SOV
+				add_core_of = RUS
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_european_russia = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = SOV
+			}
+			195 = { add_core_of = SOV }
+			217 = { add_core_of = SOV }
+			219 = { add_core_of = SOV }
+			SOV = { 
+				set_capital = {
+					state = 219
+					remember_old_capital = no
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = SOV
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				SOV = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = RUS_soviet_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = SOV
+			    autonomy_state = military_occupation
+		    }
+			hidden_effect = { 
+				SOV = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = RUS_soviet_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#コーカサス
+RAT_annexation_SCC_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		231 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = SCC }
+	}
+	available = {
+		231 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 231 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					region = 134
+				}
+				remove_core_of = SCC
+				add_claim_by = SCC
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					region = 134
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = SCC
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = SCC
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				SCC = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = SCC_SOV_federative_socialist_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = SCC
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				SCC = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = SCC_SOV_federative_socialist_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#イギリス
+RAT_annexation_GBR_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		126 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = GBR }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 126
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 126 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_great_britain = yes
+				}
+				add_core_of = GBR
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_great_britain = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = GBR
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = GBR
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				GBR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BRITANNIA_socialist_republics_union
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = GBR
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				GBR = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = BRITANNIA_socialist_republics_union
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#アイルランド
+RAT_annexation_IRE_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		113 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = IRE }
+	}
+	available = {
+		OR = { 
+			has_full_control_of_state = 113
+		}
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 113 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					region = 4
+				}
+				add_core_of = IRE
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					region = 4
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = IRE
+			}
+		}
+		if = {
+			limit = {
+				NOT = { 
+					OR = { 
+						has_government = totalist
+						has_government = syndicalist
+					}
+				}
+			}  
+		    set_autonomy = {
+			    target = IRE
+			    autonomy_state = constituent_republic
+		    }
+			hidden_effect = { 
+				IRE = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = IRE_council_republic
+				}   
+			}
+	    }
+		if = {
+			limit = { 
+				OR = { 
+					has_government = totalist
+					has_government = syndicalist
+				}
+			}  
+		    set_autonomy = {
+			    target = IRE
+			    autonomy_state = autonomy_puppet
+		    }
+			hidden_effect = { 
+				IRE = { 
+					add_ideas = FRP_Government_without_legitimacy
+					add_ideas = Democratic_centralism
+					set_cosmetic_tag = IRE_council_republic
+				}   
+			}
+	    }
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ジュネーヴ
+RAT_annexation_Romandie = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		925 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		FRP = { is_subject_of = ROOT }
+	}
+	available = {
+		925 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		FRP = { is_subject_of = ROOT }
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 925 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		925 = {
+			add_claim_by = FRP
+			transfer_state_to = FRP
+		}
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
+#ティチーノ
+RAT_annexation_Ticino = {
+	icon = infiltrate_state
+	allowed = {
+		tag = RAT
+	}
+	visible = {
+		tag = RAT
+		943 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		ITA = { is_subject_of = ROOT }
+	}
+	available = {
+		943 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		ITA = { is_subject_of = ROOT }
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 943 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		943 = {
+			add_claim_by = ITA
+			transfer_state_to = ITA
+		}
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
 }

@@ -1,0 +1,19 @@
+characters={
+	LAO_Souphanouvong={
+		name=LAO_Souphanouvong
+		portraits={
+			civilian={
+				large="gfx/leaders/LAO/Portrait_LAO_Souphanouvong.png"
+			}
+			army={
+				small="gfx/leaders/LAO/Portrait_LAO_Souphanouvong.png"
+			}
+		}
+		country_leader={
+			ideology=national_communism_subtype
+		}
+		country_leader={
+			ideology=Leninist_subtype
+		}
+	}
+}

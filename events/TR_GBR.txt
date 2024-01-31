@@ -330,7 +330,7 @@ country_event = {#TUCの運命
 	is_triggered_only = yes
 
 	option = {
-		name = TR_UK.13.a
+		name = TR_UK.14.a
 		ai_chance = {
 			base = 40
 		}
@@ -340,7 +340,7 @@ country_event = {#TUCの運命
 		}
 	}
 	option = {
-		name = TR_UK.13.b
+		name = TR_UK.14.b
 		ai_chance = {
 			base = 40
 		}
@@ -348,6 +348,181 @@ country_event = {#TUCの運命
 		add_popularity = {
 			ideology = syndicalist
 			popularity = -0.05
+		}
+	}
+}
+country_event = {#コモンウェルスへの復帰？CAN
+	id = TR_UK.15
+	title = TR_UK.15.t
+	desc = TR_UK.15.d
+	picture = GFX_report_event_generic_communist_congress
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.15.a
+		ai_chance = {
+			base = 40
+		}
+		modifier = {
+			factor = 5
+			GBR = { has_democratic_government = yes }
+		}
+		modifier = {
+			factor = 0.5
+			GBR = { has_authoritarian_government = yes }
+		}
+		GBR = {
+			country_event = TR_UK.20
+		}
+		set_cosmetic_tag = CAN_GBRandIREbyENG
+	}
+	option = {
+		name = TR_UK.15.b
+		ai_chance = {
+			base = 40
+		}
+		GBR = {
+			country_event = TR_UK.21
+		}
+	}
+}
+country_event = {#コモンウェルスへの復帰？AST
+	id = TR_UK.16
+	title = TR_UK.16.t
+	desc = TR_UK.16.d
+	picture = GFX_report_event_generic_communist_congress
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.16.a
+		ai_chance = {
+			base = 40
+		}
+		modifier = {
+			factor = 5
+			GBR = { has_democratic_government = yes }
+		}
+		modifier = {
+			factor = 0.5
+			GBR = { has_authoritarian_government = yes }
+		}
+		GBR = {
+			country_event = TR_UK.20
+		}
+		set_cosmetic_tag = AST_GBRandIREbyENG
+	}
+	option = {
+		name = TR_UK.16.b
+		ai_chance = {
+			base = 40
+		}
+		GBR = {
+			country_event = TR_UK.21
+		}
+	}
+}
+country_event = {#コモンウェルスへの復帰？NZL
+	id = TR_UK.17
+	title = TR_UK.17.t
+	desc = TR_UK.17.d
+	picture = GFX_report_event_generic_communist_congress
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.17.a
+		ai_chance = {
+			base = 40
+		}
+		modifier = {
+			factor = 5
+			GBR = { has_democratic_government = yes }
+		}
+		modifier = {
+			factor = 0.5
+			GBR = { has_authoritarian_government = yes }
+		}
+		GBR = {
+			country_event = TR_UK.20
+		}
+		set_cosmetic_tag = NZL_GBRandIREbyENG
+	}
+	option = {
+		name = TR_UK.17.b
+		ai_chance = {
+			base = 40
+		}
+		GBR = {
+			country_event = TR_UK.21
+		}
+	}
+}
+country_event = {#コモンウェルスへの復帰？SAF
+	id = TR_UK.18
+	title = TR_UK.18.t
+	desc = TR_UK.18.d
+	picture = GFX_report_event_generic_communist_congress
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.18.a
+		ai_chance = {
+			base = 5
+		}
+		GBR = {
+			country_event = TR_UK.20
+		}
+		set_cosmetic_tag = SAF
+	}
+	option = {
+		name = TR_UK.18.b
+		ai_chance = {
+			base = 120
+		}
+		GBR = {
+			country_event = TR_UK.21
+		}
+	}
+}
+country_event = {#コモンウェルスへの復帰？IRE
+	id = TR_UK.19
+	title = TR_UK.19.t
+	desc = TR_UK.19.d
+	picture = GFX_report_event_generic_communist_congress
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.19.b
+		GBR = {
+			country_event = TR_UK.21
+		}
+	}
+}
+country_event = {#[From.GetName]がイギリス連邦に参加
+	id = TR_UK.20
+	title = TR_UK.20.t
+	desc = TR_UK.20.d
+	picture = GFX_report_event_generic_communist_congress
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.20.a
+		GBR = { add_to_faction = FROM }
+	}
+}
+country_event = {#[From.GetName]がイギリス連邦への参加を拒否
+	id = TR_UK.21
+	title = TR_UK.21.t
+	desc = TR_UK.21.d
+	picture = GFX_report_event_generic_communist_congress
+	fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = TR_UK.21.a
+		add_opinion_modifier = {
+			target = FROM
+			modifier = medium_decrease
 		}
 	}
 }

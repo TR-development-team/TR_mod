@@ -7,8 +7,19 @@ characters={
 			}
 		}
 		country_leader={
-                        desc = "POLITICS_KITA_IKKI_DESC"
+            desc = "POLITICS_KITA_IKKI_DESC"
 			ideology=pure_socialism_subtype
+		}
+	}
+	JAP_Aso_Hisashi={
+		name=JAP_Aso_Hisashi
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Aso_Hisashi.png"
+			}
+		}
+		country_leader={
+			ideology=National_syndicalist_subtype
 		}
 	}
 	JAP_oosugi_sakae={
@@ -55,6 +66,17 @@ characters={
 			ideology=Christian_socialism_subtype
 		}
 	}
+	JAP_Nishio_Suehiro={
+		name=JAP_Nishio_Suehiro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Nishio_Suehiro.png"
+			}
+		}
+		country_leader={
+			ideology=Democratic_socialism_subtype
+		}
+	}
 	JAP_Inukai_Tsuyoshi={
 		name=JAP_Inukai_Tsuyoshi
 		portraits={
@@ -77,6 +99,17 @@ characters={
 			ideology=Pan_Asianism_subtype
 		}
 	}
+	JAP_Ogata_Taketora={
+		name=JAP_Ogata_Taketora
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Ogata_Taketora.png"
+			}
+		}
+		country_leader={
+			ideology=Pan_Asianism_subtype
+		}
+	}
 	JAP_machida_chuji={
 		name=JAP_machida_chuji
 		portraits={
@@ -85,11 +118,61 @@ characters={
 			}
 		}
 		country_leader={
-                        desc = "POLITICS_MACHIDA_CHUJI_DESC"
+            desc = "POLITICS_MACHIDA_CHUJI_DESC"
 			ideology=parliamentarism_subtype
 		}
 		country_leader={
-                        desc = "POLITICS_MACHIDA_CHUJI_DESC"
+            desc = "POLITICS_MACHIDA_CHUJI_DESC"
+			ideology=national_coalition_subtype
+		}
+	}
+	JAP_Inoue_junnosuke={
+		name=JAP_Inoue_junnosuke
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Inoue_junnosuke.png"
+			}
+		}
+		country_leader={
+			ideology=parliamentarism_subtype
+		}
+		country_leader={
+			ideology=national_coalition_subtype
+		}
+	}
+	JAP_Nagai_Ryutaro={
+		name=JAP_Nagai_Ryutaro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Nagai_Ryutaro.png"
+			}
+		}
+		country_leader={
+			ideology=parliamentarism_subtype
+		}
+	}
+	JAP_Saito_Takao={
+		name=JAP_Saito_Takao
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Saito_Takao.png"
+			}
+		}
+		country_leader={
+			ideology=parliamentarism_subtype
+		}
+	}
+	JAP_Oasa_Tadao={
+		name=JAP_Oasa_Tadao
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Oasa_Tadao.png"
+			}
+		}
+		country_leader={
+			ideology=parliamentarism_subtype
+		}
+		country_leader={
 			ideology=national_coalition_subtype
 		}
 	}
@@ -117,6 +200,9 @@ characters={
 		country_leader={
 			ideology=Royal_Centerism_subtype
 		}
+		country_leader={
+			ideology=national_coalition_subtype
+		}
 	}
 	JAP_Hatoyama_Ichiro={
 		name=JAP_Hatoyama_Ichiro
@@ -126,10 +212,32 @@ characters={
 			}
 		}
 		country_leader={
-			ideology=liberal_conservative_subtype
+			ideology=Royal_Centerism_subtype
 		}
 		country_leader={
 			ideology=national_coalition_subtype
+		}
+	}
+	JAP_Nakajima_Chikuhei={
+		name=JAP_Nakajima_Chikuhei
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Nakajima_Chikuhei.png"
+			}
+		}
+		country_leader={
+			ideology=Royal_Centerism_subtype
+		}
+	}
+	JAP_Maeda_Yonezo={
+		name=JAP_Maeda_Yonezo
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Maeda_Yonezo.png"
+			}
+		}
+		country_leader={
+			ideology=Royal_Centerism_subtype
 		}
 	}
 	JAP_Tokonami_Takejiro={
@@ -228,7 +336,7 @@ characters={
 			}
 		}
 		country_leader={
-                        desc = "POLITICS_KONOE_FUMIMARO_DESC"
+            desc = "POLITICS_KONOE_FUMIMARO_DESC"
 			ideology=president_principle_subtype
 		}
 	}
@@ -254,6 +362,23 @@ characters={
 			ideology=kokoku_shikan_subtype
 		}
 	}
+	JAP_Hashimoto_Kingoro={
+		name=JAP_Hashimoto_Kingoro
+		portraits={
+			civilian={
+				large="gfx/leaders/JAP/Portrait_JAP_Hashimoto_Kingoro.png"
+			}
+			army={
+				large="gfx/leaders/JAP/Portrait_JAP_Hashimoto_Kingoro.png"
+			}
+		}
+		country_leader={
+			ideology=Catholic_Integralism_subtype
+		}
+		country_leader={
+			ideology=Integralism_subtype
+		}
+	}
 	JAP_Takeuchi_Kiyomaro={
 		name=JAP_Takeuchi_Kiyomaro
 		portraits={
@@ -269,8 +394,8 @@ characters={
 		name=JAP_Shirakawa_Yoshinori
 		portraits={
 			army={
-				large="gfx/leaders/JAP/portrait_JAP_shirakawa.tga"
-                                small = GFX_idea_JAP_Shirakawa_Yoshinori
+				large="gfx/leaders/JAP/portrait_JAP_shirakawa.png"
+                small = GFX_idea_JAP_Shirakawa_Yoshinori
 			}
 		}
 		field_marshal = {
@@ -286,8 +411,8 @@ characters={
 		name=JAP_Muto_Nobuyoshi
 		portraits={
 			army={
-				large="gfx/leaders/JAP/portrait_JAP_muto.tga"
-                                small = GFX_idea_JAP_Muto_Nobuyoshi
+				large="gfx/leaders/JAP/portrait_JAP_muto.png"
+                small = GFX_idea_JAP_Muto_Nobuyoshi
 			}
 		}
 		field_marshal = {
@@ -729,7 +854,7 @@ characters={
 		name=JAP_Doihara_Kenji
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_Japan_Doihara.tga"
+				large="gfx/leaders/JAP/Portrait_Japan_Doihara.png"
 			}
 		}
 		corps_commander={
@@ -880,7 +1005,7 @@ characters={
 		name=JAP_iwane_matsui
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Matuiiwane.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Matuiiwane.png"
 				small="gfx/interface/ideas/idea_JAP_iwane_matsui.dds"
 			}
 		}
@@ -1448,7 +1573,7 @@ characters={
 		name=JAP_Terazima_Ken
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Terazima_Ken.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Terazima_Ken.png"
 			}
 		}
 		navy_leader={
@@ -1465,7 +1590,7 @@ characters={
 		name=JAP_Nagano_Osami
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Nagano_osami.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Nagano_osami.png"
 				small=GFX_idea_JAP_Nagano_Osami
 			}
 		}
@@ -1483,7 +1608,7 @@ characters={
 		name=JAP_Suetugu_nobumasa
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Suetugu_nobumasa.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Suetugu_nobumasa.png"
 			}
 		}
 		navy_leader={
@@ -1500,7 +1625,7 @@ characters={
 		name=JAP_Yonai_Mitsumasa
 		portraits={
 			army={
-				large="gfx/leaders/JAP/Portrait_JAP_Yonai_mitsumasa.tga"
+				large="gfx/leaders/JAP/Portrait_JAP_Yonai_mitsumasa.png"
                                 small=GFX_idea_JAP_Yonai_Mitsumasa
 			}
 		}

@@ -635,7 +635,7 @@ country_event = {
 	id = TR_germany.9
 	title = TR_germany.9.t
 	desc = TR_germany.9.d
-	picture = GFX_report_event_ger_civil_war
+	picture = GFX_report_event_france_victory_syria
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -657,7 +657,7 @@ country_event = {
 	id = TR_germany.10
 	title = TR_germany.10.t
 	desc = TR_germany.10.d
-	picture = GFX_report_event_soldiers_in_france
+	picture = GFX_report_event_german_troops
     fire_only_once = yes
 	trigger = {
 		tag = RAT
@@ -680,7 +680,7 @@ country_event = {
 	id = TR_germany.11
 	title = TR_germany.11.t
 	desc = TR_germany.11.d
-	picture = GFX_report_event_hol_cabinet_gerbrandy
+	picture = GFX_report_event_usa_election_generic
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -703,7 +703,7 @@ country_event = {
 	id = TR_germany.12
 	title = TR_germany.12.t
 	desc = TR_germany.12.d
-	picture = GFX_report_event_hol_cabinet_gerbrandy
+	picture = GFX_report_event_generic_sign_treaty1
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -721,7 +721,7 @@ country_event = {
 	id = TR_germany.13
 	title = TR_germany.13.t
 	desc = TR_germany.13.d
-	picture = GFX_report_event_hol_cabinet_gerbrandy
+	picture = GFX_report_event_hungary_parliament
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1414,7 +1414,7 @@ country_event = {
 	id = TR_germany.21
 	title = TR_germany.21.t
 	desc = TR_germany.21.d
-	picture = GFX_
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1460,7 +1460,7 @@ country_event = {
 	id = TR_germany.22
 	title = TR_germany.22.t
 	desc = TR_germany.22.d
-	picture = GFX_
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1486,7 +1486,7 @@ country_event = {
 	id = TR_germany.23
 	title = TR_germany.23.t
 	desc = TR_germany.23.d
-	picture = GFX_
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1512,7 +1512,7 @@ country_event = {
 	id = TR_germany.24
 	title = TR_germany.24.t
 	desc = TR_germany.24.d
-	picture = GFX_
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1538,7 +1538,7 @@ country_event = {
 	id = TR_germany.25
 	title = TR_germany.25.t
 	desc = TR_germany.25.d
-	picture = GFX_
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1584,7 +1584,7 @@ country_event = {
 	id = TR_germany.26
 	title = TR_germany.26.t
 	desc = TR_germany.26.d
-	picture = GFX_
+	picture = GFX_report_event_generic_parliament
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1604,7 +1604,7 @@ country_event = {
 	id = TR_germany.27
 	title = TR_germany.27.t
 	desc = TR_germany.27.d
-	picture = GFX_
+	picture = GFX_report_event_SWI_parliament_members
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1690,7 +1690,7 @@ country_event = {
 	id = TR_germany.28
 	title = TR_germany.28.t
 	desc = TR_germany.28.d
-	picture = GFX_
+	picture = GFX_report_event_germany_victory
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1810,7 +1810,7 @@ country_event = {
 	id = TR_germany.31
 	title = TR_germany.31.t
 	desc = TR_germany.31.d
-	picture = GFX_
+	picture = GFX_report_event_german_italian_pact
 
 	is_triggered_only = yes
     fire_only_once = yes
@@ -1858,7 +1858,7 @@ country_event = {#ドイツが同盟を提案(イタリア)
 	id = TR_germany.32
 	title = TR_germany.32.t
 	desc = TR_germany.32.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_german_italian_pact
 
 
         fire_only_once = yes
@@ -1911,7 +1911,7 @@ country_event = {#ドイツが不可侵条約を提案(イタリア)
 	id = TR_germany.33
 	title = TR_germany.33.t
 	desc = TR_germany.33.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_german_italian_pact
 
 
         fire_only_once = yes
@@ -1953,7 +1953,7 @@ country_event = {#フランス統治問題
 	id = TR_gerfor.1
 	title = TR_gerfor.1.t
 	desc = TR_gerfor.1.d
-	picture = GFX_report_event_generic_lend_lease
+	picture = GFX_report_event_soldiers_in_france
 
 
         fire_only_once = yes
@@ -2500,7 +2500,7 @@ country_event = {
 	id = TR_gerfor.2
 	title = TR_gerfor.2.t
 	desc = TR_gerfor.2.d
-	picture = GFX_report_event_france_parade
+	picture = GFX_report_event_soldiers_in_france
 
     fire_only_once = yes
     is_triggered_only = yes
@@ -2599,4 +2599,53 @@ country_event = {
 	    }
 
     }
+}
+country_event = {#ロシアが降伏
+	id = TR_gerfor.3
+	title = TR_gerfor.3.t
+	desc = TR_gerfor.3.d
+	picture = GFX_report_event_soviet_german_soldier_handshake
+
+    fire_only_once = yes
+    is_triggered_only = yes
+	
+	option = { 
+		name = TR_gerfor.3.a
+		ai_chance = {
+		    base = 40
+		}
+		every_state = {
+			limit = {
+				is_owned_by = RUS
+				OR = { 	
+					is_bitter_peace_russia = yes
+					is_full_finland = yes
+					is_sweden = yes
+					is_norway = yes
+					is_poland = yes
+					is_greater_romania = yes
+					region = 37
+					region = 130
+					region = 131
+				}
+			}
+			transfer_state_to = RAT
+		}
+		white_peace = RUS
+		hidden_effect = { 
+			RUS = { 
+				set_capital = {
+					state = 249
+					remember_old_capital = yes
+				}
+			}
+		}
+	}
+	option = { 
+		name = TR_gerfor.3.b
+		ai_chance = {
+			base = 0
+		}
+		add_war_support = -0.5
+	}
 }

@@ -218,6 +218,8 @@
  
  ALB_kingdom:0 "アルバニア王国"
  ALB_kingdom_DEF:0 "アルバニア王国"
+ ALB_council_republic:0 "アルバニア評議会共和国"
+ ALB_council_republic_DEF:0 "アルバニア評議会共和国"
  
  AUS_arch_duchy:0 "オーストリア大公国"
  AUS_arch_duchy_DEF:0 "オーストリア大公国"
@@ -229,16 +231,24 @@
  
  BEL_kingdom:0 "ベルギー王国"
  BEL_kingdom_DEF:0 "ベルギー王国"
+ BEL_council_republic:0 "ベルギー評議会共和国"
+ BEL_council_republic_DEF:0 "ベルギー評議会共和国"
+ BEL_RAT_republic:0 "ベルギエン・レーテ共和国"
+ BEL_RAT_republic_DEF:0 "ベルギエン・レーテ共和国"
  
  BLR_SOV_socialist_republic:0 "ベラルーシ・ソビエト社会主義共和国"
  BLR_SOV_socialist_republic_DEF:0 "ベラルーシ・ソビエト社会主義共和国"
  BLR_peoples_republic:0 "ベラルーシ人民共和国"
  BLR_peoples_republic_DEF:0 "ベラルーシ人民共和国"
+ BLR_rada_republic:0 "ベラルーシ・ラーダ共和国"
+ BLR_rada_republic_DEF:0 "ベラルーシ・ラーダ共和国"
  
  BUL_khanate:0 "ブルガリア・ハン国"
  BUL_khanate_DEF:0 "ブルガリア・ハン国"
  BUL_principality:0 "ブルガリア公国"
  BUL_principality_DEF:0 "ブルガリア公国"
+ BUL_soviet_republic:0 "ブルガリア・ソビエト共和国"
+ BUL_soviet_republic_DEF:0 "ブルガリア・ソビエト共和国"
  BUL_tsardom:0 "ブルガリア・ツァール国"
  BUL_tsardom_DEF:0 "ブルガリア・ツァール国"
  
@@ -260,12 +270,18 @@
  
  CZE_kingdom:0 "チェコ王国"
  CZE_kingdom_DEF:0 "チェコ王国"
+ CZE_rada_republic:0 "チェコ・ラーダ共和国"
+ CZE_rada_republic_DEF:0 "チェコ・ラーダ共和国"
+ CZE_RAT_republic:0 "ベーメン・レーテ共和国"
+ CZE_RAT_republic_DEF:0 "ベーメン・レーテ共和国"
  
  DAG_republic:0 "ダゲスタン共和国"
  DAG_republic_DEF:0 "ダゲスタン共和国"
  
  DEN_kingdom:0 "デンマーク王国"
  DEN_kingdom_DEF:0 "デンマーク王国"
+ DEN_RAT_republic:0 "デンマーク・レーテ共和国"
+ DEN_RAT_republic_DEF:0 "デンマーク・レーテ共和国"
  
  DNZ_free_city:0 "自由都市ダンツィヒ"
  DNZ_free_city_DEF:0 "自由都市ダンツィヒ"
@@ -280,6 +296,8 @@
  EST_republic:0 "エストニア共和国"
  EST_republic_DEF:0 "エストニア共和国"
  
+ FIN_neuvosto_republic:0 "フィンランド・ニューヴォスト共和国"
+ FIN_neuvosto_republic_DEF:0 "フィンランド・ニューヴォスト共和国"
  FIN_republic:0 "フィンランド共和国"
  FIN_republic_DEF:0 "フィンランド共和国"
  
@@ -322,6 +340,8 @@
  GRE_kingdom_DEF:0 "ギリシャ王国"
  GRE_republic:0 "ギリシャ共和国"
  GRE_republic_DEF:0 "ギリシャ共和国"
+ GRE_council_republic:0 "ギリシャ評議会共和国"
+ GRE_council_republic_DEF:0 "ギリシャ評議会共和国"
  
  HOL_kingdom:0 "ホラント王国"
  HOL_kingdom_DEF:0 "ホラント王国"
@@ -331,11 +351,18 @@
  
  HUN_crown_lands:0 "ハンガリー王冠領"
  HUN_crown_lands_DEF:0 "ハンガリーの聖イシュトヴァーンの王冠諸邦"
+ HUN_council_republic:0 "ハンガリー評議会共和国"
+ HUN_council_republic_DEF:0 "ハンガリー評議会共和国"
  
- 
+ IRE_council_republic:0 "アイルランド評議会共和国"
+ IRE_council_republic_DEF:0 "アイルランド評議会共和国"
  IRE_republic:0 "アイルランド共和国"
  IRE_republic_DEF:0 "アイルランド共和国"
  
+ ITA_council_republic:0 "イタリア評議会共和国"
+ ITA_council_republic_DEF:0 "イタリア評議会共和国"
+ ITA_republic:0 "イタリア共和国"
+ ITA_republic_DEF:0 "イタリア共和国"
  ITA_social_republic:0 "イタリア社会共和国"
  ITA_social_republic_DEF:0 "イタリア社会共和国"
 
@@ -361,6 +388,8 @@
  LAT_republic:0 "ラトビア共和国"
  LAT_republic_DEF:0 "ラトビア共和国"
  
+ LIT_republic:0 "リトアニア共和国"
+ LIT_republic_DEF:0 "リトアニア共和国"
  LIT_republic:0 "リトアニア共和国"
  LIT_republic_DEF:0 "リトアニア共和国"
  
@@ -398,6 +427,8 @@
  
  NOR_kingdom:0 "ノルウェー王国"
  NOR_kingdom_DEF:0 "ノルウェー王国"
+ NOR_RAT_republic:0 "ノルウェー・レーテ共和国"
+ NOR_RAT_republic_DEF:0 "ノルウェー・レーテ共和国"
  
  OCC_republic:0 "オクシタニア共和国"
  OCC_republic_DEF:0 "オクシタニア共和国"
@@ -406,13 +437,19 @@
  POL_republic_DEF:0 "ポーランド共和国"
  POL_rada_republic:0 "ポーランド・ラーダ共和国"
  POL_rada_republic_DEF:0 "ポーランド・ラーダ共和国"
+ POL_RAT_republic:0 "ポーレン・レーテ共和国"
+ POL_RAT_republic_DEF:0 "ポーレン・レーテ共和国"
  
+ POR_council_republic:0 "ポルトガル評議会共和国"
+ POR_council_republic_DEF:0 "ポルトガル評議会共和国"
  POR_kingdom:0 "ポルトガル王国"
  POR_kingdom_DEF:0 "ポルトガル王国"
  
  PRE_kingdom:0 "プロイセン王国"
  PRE_kingdom_DEF:0 "プロイセン王国"
  
+ ROM_council_republic:0 "ルーマニア評議会共和国"
+ ROM_council_republic_DEF:0 "ルーマニア評議会共和国"
  ROM_kingdom:0 "ルーマニア王国"
  ROM_kingdom_DEF:0 "ルーマニア王国"
  
@@ -434,17 +471,27 @@
  
  SLO_republic:0 "スロバキア共和国"
  SLO_republic_DEF:0 "スロバキア共和国"
+ SLO_rada_republic:0 "スロバキア・ラーダ共和国"
+ SLO_rada_republic_DEF:0 "スロバキア・ラーダ共和国"
  
  SLV_republic:0 "スロベニア共和国"
  SLV_republic_DEF:0 "スロベニア共和国"
  
  
+ SPR_council_republic:0 "スペイン評議会共和国"
+ SPR_council_republic_DEF:0 "スペイン評議会共和国"
  SPR_kingdom:0 "スペイン王国"
  SPR_kingdom_DEF:0 "スペイン王国"
+ SPR_socialist_republic:0 "スペイン社会主義共和国"
+ SPR_socialist_republic_DEF:0 "スペイン社会主義共和国"
  
  SRD_kingdom:0 "サルディーニャ王国"
  SRD_kingdom_DEF:0 "サルディーニャ王国"
  
+ SWE_kingdom:0 "スウェーデン王国"
+ SWE_kingdom_DEF:0 "スウェーデン王国"
+ SWE_RAT_republic:0 "スウェーデン・レーテ共和国"
+ SWE_RAT_republic_DEF:0 "スウェーデン・レーテ共和国"
  
  SWI_confederation:0 "スイス連邦"
  SWI_confederation_DEF:0 "スイス連邦"
@@ -465,6 +512,8 @@
  UKR_free_territory_DEF:0 "ウクライナ自由地区"
  UKR_peoples_republic:0 "ウクライナ人民共和国"
  UKR_peoples_republic_DEF:0 "ウクライナ人民共和国"
+ UKR_rada_republic:0 "ウクライナ・ラーダ共和国"
+ UKR_rada_republic_DEF:0 "ウクライナ・ラーダ共和国"
  
  VAT_city_state:0 "バチカン市国"
  VAT_city_state_DEF:0 "バチカン市国"
@@ -477,6 +526,8 @@
  
  YUG_kingdom:0 "ユーゴスラビア王国"
  YUG_kingdom_DEF:0 "ユーゴスラビア王国"
+ YUG_Socialist_Federal_Republic:0 "ユーゴスラビア社会主義連邦評議会共和国"
+ YUG_Socialist_Federal_Republic_DEF:0 "ユーゴスラビア社会主義連邦評議会共和国"
  
 #アフリカ
  AFA_republic:0 "アファール共和国"
@@ -862,6 +913,8 @@
  BLT_commune_DEF:0 "バルト・コムーナ"
  BLT_Freikorps:0 "バルト義勇軍"	
  BLT_Freikorps_DEF:0 "バルト義勇軍"
+ BLT_RAT_republic:0 "バルト社会主義連邦レーテ共和国"
+ BLT_RAT_republic_DEF:0 "バルト社会主義連邦レーテ共和国"
  BLT_united_republic:0 "バルト連合共和国"
  BLT_united_republic_DEF:0 "バルト連合共和国"
  
@@ -896,6 +949,8 @@
  NIE_arch_duchy:0 "ニーダーエスターライヒ大公国"
  NIE_arch_duchy_DEF:0 "ニーダーエスターライヒ大公国"
  
+ NTL_RAT_republic:0 "ネーデルラント・レーテ共和国"
+ NTL_RAT_republic_DEF:0 "ネーデルラント・レーテ共和国"
  NTL_state:0 "ネーデルラント国"
  NTL_state_DEF:0 "ネーデルラント国"
  
@@ -922,6 +977,8 @@
  RUS_peoples_republic_DEF:0 "ロシア人民共和国"
  RUS_republic:0 "ロシア共和国"
  RUS_republic_DEF:0 "ロシア共和国"
+ RUS_soviet_republic:0 "ロシア・ソビエト共和国"
+ RUS_soviet_republic_DEF:0 "ロシア・ソビエト共和国"
  
  SAL_principality:0 "ザルツブルク公国"
  SAL_principality_DEF:0 "ザルツブルク公国"

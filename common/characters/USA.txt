@@ -3,11 +3,22 @@ characters={
 		name=USA_Earl_Browder
 		portraits={
 			civilian={
-				large="gfx/leaders/USA/Portrait_USA_Earl_Browder.png"
+				large="gfx/leaders/USA/Portrait_USA_Earl_Browder1.png"
 			}
 		}
 		country_leader={
 			ideology= Jughashvilist_subtype
+		}
+	}
+	USA_Jay_Lovestone={
+		name=USA_Jay_Lovestone
+		portraits={
+			civilian={
+				large="gfx/leaders/USA/Portrait_USA_Jay_Lovestone.png"
+			}
+		}
+		country_leader={
+			ideology= Trotskyist_subtype
 		}
 	}
  	USA_Norman_Thomas={
@@ -19,7 +30,6 @@ characters={
 		}
 		country_leader={
 			ideology= Democratic_socialism_left_subtype
- 	                traits = { champion_of_peace_1 }
 		}
 	}
  	USA_Franklin_Roosevelt={
@@ -161,6 +171,17 @@ characters={
 		}
 		country_leader={
 			ideology= Aryanism_subtype
+		}
+	}
+	USA_Elwood_Towner={
+		name=USA_Elwood_Towner
+		portraits={
+			civilian={
+				large= "gfx/leaders/USA/Portrait_USA_Elwood_Towner.png"
+			}
+		}
+		country_leader={
+			ideology= esotericism_subtype
 		}
 	}
  	USA_HP_Lovecraft={

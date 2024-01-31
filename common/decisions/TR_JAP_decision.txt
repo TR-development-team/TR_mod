@@ -1,9 +1,69 @@
 
+JAP_Indo_Pacific_Co_prosperity_Sphere_policy = {
+	JAP_SIA_military_alliance_decision = { #シャムとの同盟
+		icon = eng_trade_unions_demand
+		available = {
+			is_faction_leader = yes
+			FROM = { 
+				is_subject = no
+				exists = yes
+				is_in_faction = no 
+			}
+		}
+		visible = { 
+			SIA = { has_country_flag = SIA_BRM_border_dispute_end }
+            BRM = { has_country_flag = BRM_SIA_border_dispute_end }
+		}
+		cost = 30
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 80
+		}
+		targets = { SIA }
+		complete_effect = {
+			FROM = {
+				country_event = {
+					id = TR_Siam.9
+					days = 1
+				}
+			}
+		}
+	}
+	JAP_BRM_military_alliance_decision = { #ビルマとの同盟
+	    icon = eng_trade_unions_demand	
+		available = {
+			is_faction_leader = yes
+			FROM = { 
+				is_subject = no
+				exists = yes
+				is_in_faction = no 
+			}
+		}				
+	    visible = { 
+		    SIA = { has_country_flag = SIA_BRM_border_dispute_end }
+		    BRM = { has_country_flag = BRM_SIA_border_dispute_end }
+	    }
+	    cost = 30
+	    fire_only_once = yes
+	    ai_will_do = {
+		    factor = 80
+	    }
+		targets = { BRM }
+	    complete_effect = {
+			FROM = {
+				country_event = {
+					id = TR_Burma.14
+					days = 1
+				}
+			}
+	    }
+    }
+}
 JAP_Imperialisation_policy = {
 
 	Korea_Integrate_decision_1 = {
 		icon = eng_trade_unions_demand
-                allowed = { always = no } #イベントorNFで解禁
+        allowed = { always = no } #イベントorNFで解禁
 		available = {
 			FROM = {
 				is_fully_controlled_by = ROOT
@@ -83,7 +143,7 @@ JAP_Imperialisation_policy = {
 
 
 JAP_Power_Struggle_Policy = {
-	JAP_Jyushin_Kousaku  = { #重臣へ工作を行い、宇垣支持を増やす
+	JAP_Jyushin_Kousaku = { #重臣へ工作を行い、宇垣支持を増やす
 	    priority = 50
 		icon = eng_ally_imperialist_coup
 
@@ -117,7 +177,7 @@ JAP_Power_Struggle_Policy = {
 		}
 
 	}
-	JAP_Toseiha_Kaiju  = { #永田との会談
+	JAP_Toseiha_Kaiju = { #永田との会談
 	    priority = 48
 		icon = eng_ally_imperialist_coup
 
@@ -1977,7 +2037,7 @@ JAP_Economic_Policy = {
 		days_remove = 180
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 40
+			factor = 60
 		}
 		state_target = yes
 		target_trigger = {
@@ -2018,7 +2078,7 @@ JAP_Economic_Policy = {
 		days_remove = 1080
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 40
+			factor = 60
 		}
 		complete_effect = {
 			set_country_flag = JAP_National_Plan_Ongoing
@@ -2047,7 +2107,7 @@ JAP_Economic_Policy = {
 		days_remove = 1080
 		fire_only_once = yes
 		ai_will_do = {
-			factor = 40
+			factor = 60
 		}
 		complete_effect = {
 			set_country_flag = JAP_National_Plan_Ongoing
@@ -2073,11 +2133,11 @@ JAP_Inoue_Plan_Policy = {
 		}
 		modifier = {
 			production_speed_buildings_factor = -0.5
-			political_power_factor = 0.25
+			political_power_factor = 0.3
 		}
 		cost = 0
 		days_remove = 100
-		fire_only_once = yes
+		days_re_enable = 200
 		ai_will_do = {
 			factor = 200
 		}
@@ -2498,4 +2558,108 @@ JAP_Mitsuchi_Plan_Policy = {
 			modify_country_flag= { flag = JAP_military_budget value = -1 }
 		}
 	}
+}
+annexation_decisions = {
+#中国の併合
+JAP_annexation_china_province = {
+	icon = infiltrate_state
+	allowed = {
+		tag = JAP
+	}
+	visible = {
+		tag = JAP
+		620 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+		NOT = { country_exists = WHN }
+		NOT = { country_exists = CNK }
+	}
+	available = {
+		has_full_control_of_state = 620
+	}
+	highlight_states = {
+		highlight_state_targets = { state = 620 }
+	}
+	cost = 0
+	fire_only_once = no
+	modifier = {
+	}
+	complete_effect = {
+		hidden_effect = { 
+			every_state = {
+				limit = {
+					is_core_of = WHN
+				}
+				remove_core_of = WHN
+			}
+			every_state = {
+				limit = {
+					is_claimed_by = WHN
+				}
+				remove_claim_by = WHN
+			}
+			every_state = {
+				limit = {
+					is_china_Concession_jap = yes
+				}
+				add_claim_by = JAP
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					region = 248
+					is_claim_or_core_of_ROOT = no
+				}
+				add_claim_by = GND
+				transfer_state_to = GND
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					state = 615
+					is_claim_or_core_of_ROOT = no
+				}
+				add_claim_by = ZHI
+				transfer_state_to = ZHI
+			}
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					is_china_proper = yes
+					is_claim_or_core_of_ROOT = no
+				}
+				transfer_state_to = CNK
+			}
+		}
+		set_autonomy = {
+		    target = CNK
+		    autonomy_state = military_occupation
+		}
+		hidden_effect = { 
+			CNK = { 
+				add_ideas = Democratic_Republic
+				set_cosmetic_tag = CHI_minguo
+				set_politics = {
+					ruling_party = social_democrat
+					elections_allowed = no
+				}
+				set_popularities = {
+					totalist = 8
+					syndicalist = 3
+					radical_socialist = 5
+					social_democrat = 27
+					social_liberal = 8
+					market_liberal = 9
+					social_conservative = 4
+					authoritarian_democrat = 11
+					paternal_autocrat = 12
+					national_populist = 13
+					Gnosticism = 0
+				} 
+			}  
+
+		}
+	}
+	ai_will_do = {
+		factor = 4000
+	}
+}
 }

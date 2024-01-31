@@ -19,8 +19,8 @@ ideas = {
 				stability_factor = -0.3
 				production_factory_max_efficiency_factor = -0.2
 				production_factory_efficiency_gain_factor = -0.2
-				industrial_capacity_factory = -0.3
-				consumer_goods_factor = 0.5
+				industrial_capacity_factory = -0.2
+				consumer_goods_factor = 0.2
 				min_export = -0.4
 			}
 		}
@@ -30,8 +30,8 @@ ideas = {
 				stability_factor = -0.2
 				production_factory_max_efficiency_factor = -0.15
 				production_factory_efficiency_gain_factor = -0.15
-				industrial_capacity_factory = -0.2
-				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.15
 				min_export = -0.2
 			}
 		}
@@ -39,7 +39,7 @@ ideas = {
 			name = USA_Share_Our_Wealth
 			picture = SOV_fourth_five_year_plan
 			modifier = {
-				consumer_goods_factor = 0.6
+				consumer_goods_factor = 0.3
 				min_export = -0.2
 			}
 		}
@@ -47,7 +47,7 @@ ideas = {
 			name = USA_Share_Our_Wealth
 			picture = SOV_fourth_five_year_plan
 			modifier = {
-				consumer_goods_factor = 0.3
+				consumer_goods_factor = 0.2
 				min_export = -0.1
 				production_factory_max_efficiency_factor = 0.05
 			}
@@ -792,7 +792,6 @@ ideas = {
 		    }
         }
 		USA_crusade = {
-			name = USA_holy_plan
 			picture = FRA_feudalism
 			cancel = {
 				is_subject = yes

@@ -10,6 +10,8 @@ if = {
 
 set_cosmetic_tag = SIA_kingdom
 
+country_event = { id = TR_Siam.1 days = 821 }#泰緬国境紛争
+
 add_ideas = {
     Constitutional_monarchy
     trinket_minimum_wage
@@ -19,9 +21,12 @@ add_ideas = {
 
 	SIA_Aftermath_of_the_Revolution
 	SIA_the_absentee_king
-	SIA_Thai_Burma_Railway
-	SIA_black_thursday
+	SIA_Thai_Burma_Railway	
 }
+add_timed_idea = {
+	idea = SIA_black_thursday
+	days = 730
+}  
  
 # Starting tech
 set_technology = {
@@ -50,80 +55,6 @@ if = {
 }
 set_convoys = 15
 
-1939.1.1 = {
-
-	add_political_power = 1198
-	
-	#generic focuses
-	complete_national_focus = army_effort
-	complete_national_focus = equipment_effort
-	complete_national_focus = motorization_effort
-	complete_national_focus = aviation_effort
-	complete_national_focus = naval_effort
-	complete_national_focus = flexible_navy
-	complete_national_focus = industrial_effort
-	complete_national_focus = construction_effort
-	complete_national_focus = production_effort
-	
-	oob = "SIA_1939"
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SIA_1939_naval_mtg"
-		else = {
-			set_naval_oob = "SIA_1939_naval_legacy"
-		}
-	}
-
-	set_technology = {
-		gwtank = 1
-		tech_support = 1
-		tech_recon = 1
-		support_weapons = 1
-		interwar_artillery = 1
-		early_bomber = 1
-
-		#doctrines
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		synth_oil_experiments = 1
-		fuel_silos = 1
-		oil_processing = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-	if = {
-		limit = { not = { has_dlc = "Man the Guns" } }
-		set_technology = {
-			basic_submarine = 1
-			basic_heavy_cruiser = 1
-		}
-	}
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-		set_technology = {
-			early_ship_hull_submarine = 1
-			basic_ship_hull_submarine = 1
-			early_ship_hull_cruiser = 1
-			basic_medium_battery = 1
-		}
-	}
-}
-
 
 set_politics = {
 	ruling_party = authoritarian_democrat
@@ -142,10 +73,13 @@ set_popularities = {
 	authoritarian_democrat = 24
 	paternal_autocrat = 12
 	national_populist = 11
-        Gnosticism = 0
+    Gnosticism = 0
 }
 
+recruit_character = SIA_Pridi_Banomyong
 recruit_character = SIA_phraya_phahon
+recruit_character = SIA_Plaek_Phibunsongkhram
+
 
 
 

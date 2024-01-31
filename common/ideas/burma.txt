@@ -15,6 +15,15 @@
 				totalist_drift = 0.02
 			}
 		}
+		BRM_National_Army_1 = {
+			name = BRM_National_Army
+			picture = MEX_revolutionary_army
+			modifier = {
+				political_power_cost = 0.1
+				army_morale_factor = 0.1
+				training_time_army_factor = -0.1
+			}
+		}
 		BRM_ethnic_conflict = {
 			picture = chi_war_of_resistance3
 			modifier = {

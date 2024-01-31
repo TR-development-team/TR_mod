@@ -3,7 +3,6 @@
 ######################
 
 ideas = {
-
 #####################
 ### Country Ideas ###
 #####################
@@ -522,7 +521,7 @@ country = {
 			}
 		}
 		JAP_bullet_train = {
-			name = generic_exploit_mines
+			name = JAP_bullet_train
 			allowed = {
 				always = no
 			}
@@ -921,10 +920,10 @@ country = {
 				has_war = no
             }
 			modifier = {
-                consumer_goods_factor = -0.1
+                consumer_goods_factor = -0.05
 				production_oil_factor = 0.15
-                local_resources_factor = 0.1
-                production_speed_synthetic_refinery_factor = 0.15
+                local_resources_factor = 0.15
+                production_speed_synthetic_refinery_factor = 0.1
 			}
 		}
 		JAP_Kikakuin = {
@@ -1973,15 +1972,15 @@ country = {
 			
 			removal_cost = -1
 
-			picture = generic_constitutional_guarantee
+			picture = generic_constitutional_guarantees
 			
 			modifier = {
-                consumer_goods_factor = 0.02
+                consumer_goods_factor = 0.05
                 political_power_cost = 0.1
 			    stability_factor = 0.10
-                conscription_factor = 0.05
-                non_core_manpower = 0.02
-                compliance_growth = 0.2
+                conscription_factor = -0.05
+                non_core_manpower = 0.01
+                compliance_growth = 0.1
 			}
 		}
 
@@ -3363,9 +3362,7 @@ naval_manufacturer = {
     }
     Government_leaders = { 	
 		JAP_Kita_Ikki = {
-			
 			picture = JAP_Kita_Ikki
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3379,9 +3376,6 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Kita_Ikki"
-			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -3392,7 +3386,6 @@ naval_manufacturer = {
 		JAP_Aso_Hisashi_GL = {
 			name = JAP_Aso_Hisashi
 			picture = JAP_Aso_Hisashi
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3406,9 +3399,6 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Aso_Hisashi_GL"
-			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
@@ -3417,6 +3407,7 @@ naval_manufacturer = {
 			}
 		}
 		JAP_Ito_Noe = {
+			picture = JAP_Ito_Noe
 			allowed = {
 				original_tag = JAP
 			}
@@ -3430,12 +3421,6 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Ito_Noe"
-			}
-            picture = JAP_Ito_Noe
-
-			
 		    removal_cost = -1
 	        traits = { 
 				Government_leaders
@@ -3445,10 +3430,9 @@ naval_manufacturer = {
 		}
         JAP_Nosaka_Sanzo = {
 			picture = JAP_Nosaka_Sanzo
-                      			
 			allowed = {
 				original_tag = JAP
-                                  }  
+                }  
 			available = {
 				custom_trigger_tooltip = {
 					tooltip = Government_leaders_available
@@ -3459,9 +3443,6 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Nosaka_Sanzo"
-			}
 			removal_cost = -1			
 			traits = { 
 				Government_leaders
@@ -3470,9 +3451,7 @@ naval_manufacturer = {
 			}
 		}
 		JAP_Abe_Iso = {
-			
 			picture = JAP_Abe_Iso
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3486,20 +3465,15 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Abe_Iso"
-			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
 				social_democrat
-				TR_silent_workhorse
+				TR_father_of_Japanese_socialism
 			}
 		}
 		JAP_Katayama_Tetsu = {
-			
 			picture = JAP_Katayama_Tetsu
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3513,20 +3487,16 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Katayama_Tetsu"
-			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
 				social_democrat
-				TR_happy_amateur
+				TR_chancellor_of_letters
 			}
 		}
 		JAP_Nishio_Suehiro_GL = {
 			name = JAP_Nishio_Suehiro
 			picture = JAP_Nishio_Suehiro
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3540,47 +3510,15 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Nishio_Suehiro_GL"
-			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
 				social_democrat
-				TR_ambitious_union_boss
-			}
-		}
-		JAP_Takeru_inukai = {
-			
-			picture = JAP_Takeru_inukai
-			
-			allowed = {
-				original_tag = JAP
-            }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = Government_leaders_available
-					always = no
-				}
-				hidden_trigger = {
-					has_country_flag = can_change_minister
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Takeru_inukai"
-			}
-			removal_cost = -1
-			traits = { 
-				Government_leaders
-				social_liberal
-				Pan_Asian_Politician
+				TR_wind_and_snow
 			}
 		}
 		JAP_Inukai_Tsuyoshi = {
-			
 			picture = JAP_Inukai_Tsuyoshi
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3594,20 +3532,15 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Inukai_Tsuyoshi"
-			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
 				social_liberal
-				Pan_Asian_Politician
+				TR_constitutional_god
 			}
 		}
 		JAP_Nakano_Seigo = {
-			
 			picture = JAP_Nakano_Seigo
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3621,20 +3554,15 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_Nakano_Seigo"
-			}
 			removal_cost = -1
 			traits = { 
 				Government_leaders
 				social_liberal
-				TR_flamboyant_tough_guy
+				TR_Ebisubanba
 			}
 		}
-		JAP_machida_chuji = {
-			
-			picture = JAP_machida_chuji
-			
+		JAP_Ogata_Taketora = {
+			picture = JAP_Ogata_Taketora
 			allowed = {
 				original_tag = JAP
             }
@@ -3648,14 +3576,79 @@ naval_manufacturer = {
 				}
 			}
 			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea JAP_machida_chuji"
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_liberal
+				TR_Editor_Ogata
 			}
+		}
+		JAP_machida_chuji = {
+			picture = JAP_machida_chuji
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 			removal_cost = -1
 			traits = { 
 				Government_leaders
 				market_liberal
 				Nonkinatousan 
+			}
+		}
+		JAP_Inoue_junnosuke_GL = {
+			name = JAP_Inoue_junnosuke
+			picture = JAP_Inoue_junnosuke
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				market_liberal
+				TR_man_long_cherished_desire
+			}
+		}
+		JAP_Nagai_Ryutaro = {
+			picture = JAP_Nagai_Ryutaro
+			
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				market_liberal
+				TR_Gladstone_in_the_Orient
 			}
 		}
 		JAP_Saito_Takao_GL = {
@@ -3682,8 +3675,7 @@ naval_manufacturer = {
 				Defender_of_freedom
 			}
 		}
-		JAP_Oasa_Tadao_GL = {
-			name = JAP_Oasa_Tadao
+		JAP_Oasa_Tadao = {
 			picture = JAP_Oasa_Tadao
 			
 			allowed = {
@@ -3703,13 +3695,11 @@ naval_manufacturer = {
 			traits = { 
 				Government_leaders
 				market_liberal
-				TR_silent_workhorse
+				TR_underhanded_dealings
 			}
 		}
 		JAP_Suzuki_Kisaburo = {
-			
 			picture = JAP_Suzuki_Kisaburo
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3730,34 +3720,8 @@ naval_manufacturer = {
 				TR_happy_amateur
 			}
 		}
-		JAP_Hatoyama_Ichiro = {
-			
-			picture = JAP_Hatoyama_Ichiro
-			
-			allowed = {
-				original_tag = JAP
-            }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = Government_leaders_available
-					always = no
-				}
-				hidden_trigger = {
-					has_country_flag = can_change_minister
-				}
-			}
-			cancel_if_invalid = no
-			removal_cost = -1
-			traits = { 
-				Government_leaders
-				social_conservative
-				TR_silent_workhorse
-			}
-		}
 		JAP_Kuhara_Fusanosuke = {
-			
 			picture = JAP_Kuhara_Fusanosuke
-			
 			allowed = {
 				original_tag = JAP
             }
@@ -3776,6 +3740,72 @@ naval_manufacturer = {
 				Government_leaders
 				social_conservative
 				JAP_Zaibatsu_Sousui
+			}
+		}
+		JAP_Hatoyama_Ichiro = {
+			picture = JAP_Hatoyama_Ichiro
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_conservative
+				TR_fraternal_prime_minister
+			}
+		}
+		JAP_Nakajima_Chikuhei = {
+			picture = JAP_Nakajima_Chikuhei
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_conservative
+				TR_Aircraft_King
+			}
+		}
+		JAP_Maeda_Yonezo = {
+			picture = JAP_Maeda_Yonezo
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Government_leaders
+				social_conservative
+				TR_silent_workhorse
 			}
 		}
 		JAP_Yoshida_Shigeru_GL = {
@@ -4709,7 +4739,6 @@ naval_manufacturer = {
 			}
 		}
 		JAP_Nishio_Suehiro = {
-			
 			picture = JAP_Nishio_Suehiro
 			
 			allowed = {
@@ -4756,8 +4785,8 @@ naval_manufacturer = {
 				TR_silent_lawyer
 			}
 		}
-		JAP_Ogata_Taketora = {
-			
+		JAP_Ogata_Taketora_MoI = {
+			name = JAP_Ogata_Taketora
 			picture = JAP_Ogata_Taketora
 			
 			allowed = {
@@ -4780,8 +4809,29 @@ naval_manufacturer = {
 				TR_media_magnate
 			}
 		}
+		JAP_Takeru_inukai = {
+			picture = JAP_Takeru_inukai
+			allowed = {
+				original_tag = JAP
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				social_liberal
+				TR_back_stabber
+			}
+		}
 		JAP_Yamamoto_Tatsuo = {
-			
 			picture = JAP_Yamamoto_Tatsuo
 			
 			allowed = {
@@ -4804,8 +4854,8 @@ naval_manufacturer = {
 				TR_compassionate_gentleman
 			}
 		}
-		JAP_Saito_Takao = {
-			
+		JAP_Saito_Takao_MoI = {
+			name = JAP_Saito_Takao	
 			picture = JAP_Saito_Takao
 			
 			allowed = {
@@ -4828,8 +4878,8 @@ naval_manufacturer = {
 				TR_man_of_the_people
 			}
 		}
-		JAP_Oasa_Tadao = {
-			
+		JAP_Oasa_Tadao_MoI = {
+			name = JAP_Oasa_Tadao
 			picture = JAP_Oasa_Tadao
 			
 			allowed = {
@@ -5083,17 +5133,6 @@ naval_manufacturer = {
 			traits = { 
 				chief_of_staff
 				cos_school_of_mass_combat
-			}
-		}
-		JAP_Muto_Nobuyoshi = {
-			picture = JAP_Muto_Nobuyoshi
-			cancel_if_invalid = yes			
-			allowed = {
-				original_tag = JAP
-                        }
-			traits = { 
-				chief_of_staff
-				cos_school_of_fire_support
 			}
 		}
 		JAP_Obata_Toshiro_cos = {

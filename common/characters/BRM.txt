@@ -1,4 +1,29 @@
 characters={
+	BRM_Aung_San={
+		name=BRM_Aung_San
+		portraits={
+			civilian={
+				large="gfx/leaders/BRM/Portrait_BRM_Aung_San.png"
+			}
+			army={
+				large="gfx/leaders/BRM/Portrait_BRM_Aung_San.png"
+			}
+		}
+		country_leader={
+			ideology=national_communism_subtype
+		}
+		country_leader={
+			ideology=military_socialism_subtype
+		}
+		field_marshal = {
+			traits = { politically_connected media_personality organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
 	BRM_Ba_Maw={
 		name=BRM_Ba_Maw
 		portraits={

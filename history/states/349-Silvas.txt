@@ -2,26 +2,25 @@
 state={
 	id=349
 	name="STATE_349"
-	manpower = 892821
-	
-	state_category = three
 
 	history={
 		owner = OTT
 		victory_points = {
 			9777 3 
 		}
-		victory_points = {
-			7620 10
-		}
 		buildings = {
 			infrastructure = 2
+
 		}
 		add_core_of = OTT
+
 	}
 
-	local_supplies=0.0 
-provinces={
-		3890 3903 3950 6919 6950 6965 7620 9912 9761 9777 
+	provinces={
+		3890 3903 3950 6919 6950 9761 9777 
 	}
+	manpower=892821
+	buildings_max_level_factor=1.000
+	state_category=three
+	local_supplies=0.000
 }

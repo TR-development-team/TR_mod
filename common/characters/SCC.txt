@@ -10,6 +10,50 @@ characters={
 			ideology=Jughashvilist_subtype
 		}
 	}
+	SCC_Mirsaid_Sultan_Galiev={
+		name=SCC_Mirsaid_Sultan_Galiev
+		portraits={
+			civilian={
+				large="gfx/leaders/SCC/Portrait_SCC_Mirsaid_Sultan_Galiev.png"
+			}
+			army={
+				large="gfx/leaders/SCC/Portrait_SCC_Mirsaid_Sultan_Galiev.png"
+			}
+		}
+		country_leader={
+			ideology=national_communism_subtype
+		}
+		corps_commander = {
+			traits = { politically_connected organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 4
+		}
+	}
+	SCC_Sergo_Ordzhonikidze={
+		name=SCC_Sergo_Ordzhonikidze
+		portraits={
+			civilian={
+				large="gfx/leaders/SCC/Portrait_SCC_Sergo_Ordzhonikidze.png"
+			}
+			army={
+				large="gfx/leaders/SCC/Portrait_SCC_Sergo_Ordzhonikidze.png"
+			}
+		}
+		country_leader={
+			ideology=Jughashvilist_subtype
+		}
+		field_marshal = {
+			traits = { politically_connected organizer }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
 	SCC_Sergei_Kirov={
 		name=SCC_Sergei_Kirov
 		portraits={
@@ -47,7 +91,6 @@ characters={
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 3
-			legacy_id = 0
 		}
 	}
 	SCC_kliment_voroshilov = {
@@ -61,12 +104,12 @@ characters={
 		}
 
 		field_marshal = {
-			traits = { old_guard inflexible_strategist politically_connected }
-			skill = 1
+			traits = { politically_connected organizer skilled_staffer }
+			skill = 2
 			attack_skill = 1
 			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 1
+			planning_skill = 5
+			logistics_skill = 5
 		}
 	}
 	SCC_aleksandr_yegorov = {

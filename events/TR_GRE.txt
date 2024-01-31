@@ -34,6 +34,11 @@ country_event = {
 	option = {
 		name = TR_Greece.2.a
 		add_political_power = 25
+		1086 = { set_state_name = STATE_1086 }
+		set_province_name = {
+			id = 11818
+			name = "VICTORY_POINTS_11818"
+		}
 	}
 }
 #熱狂
