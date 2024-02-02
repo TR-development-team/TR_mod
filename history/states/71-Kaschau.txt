@@ -1,0 +1,24 @@
+state = {
+	id = 71
+	name = "STATE_71"
+	manpower = 628480 #findpop*1.3(大分おおざっぱ)
+	state_category = four
+	local_supplies = 0.000
+	history = {
+		owner = HUN
+		victory_points = {
+			#Kaschau(S:Košice,H:Kassa)
+			6573
+			10
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = HUN
+		add_claim_by = SLO
+	}
+	provinces = {
+		13284 9537 6573
+	}
+}
