@@ -1,0 +1,27 @@
+state = {
+	id = 1016
+	name = "STATE_1016"
+	manpower = 464846	#findpop*1.3
+	state_category = three
+	local_supplies = 0.000
+	#resources = {
+	#	
+	#}
+	history = {
+		owner = HUN
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		victory_points = {
+			#Trentschin(S:Trenčín,H:Trencsén)
+			557
+			2
+		}
+		add_core_of = HUN
+		add_core_of = SLO
+	}
+	provinces = {
+		557 13263 13342
+	}
+}

@@ -1,7 +1,7 @@
 state = {
 	id = 103
 	name = "STATE_103"
-	manpower = 285328 #x3.3
+	manpower = 86463
 	state_category = one
 	local_supplies = 0.000
 	#resources = {
@@ -11,11 +11,11 @@ state = {
 		owner = CRO
 		victory_points = {
 			#Gospić
-			591
-			3
+			6611
+			1
 		}
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
 		add_core_of = CRO
 		add_core_of = HUN

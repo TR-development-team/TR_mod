@@ -1,0 +1,60 @@
+state = {
+	id = 664
+	name = "STATE_664"
+	manpower = 5570326	#現代人口を参照(etc)
+	state_category = nine
+	local_supplies = 0.000
+	resources = {
+		tungsten = 4
+		steel = 17
+	}
+	history = {
+		owner = HUN
+		victory_points = {
+			#Neutra(S:Nitra,H:Nyitra)
+			13281
+			3
+		}
+		victory_points = {
+			#Tyrnau(S:Trnava,H:Nagyszombat)
+			541
+			1
+		}
+		victory_points = {
+			#Sillein(S:Žilina,H:Zsolna)
+			3484
+			3
+		}
+		victory_points = {
+			#Neusohl(S:Banská Bystrica,H:Besztercebánya)
+			3537
+			3
+		}
+		victory_points = {
+			#(Turz-) St. Martin(S:Martin,H:Turócszentmárton)
+			13283
+			1
+		}
+		victory_points = {
+			#Preschau(S:Prešov,H:Eperjes)
+			3581
+			3
+		}
+		victory_points = {
+			#Deutschendorf(S:Poprad,H:Poprád)
+			3550
+			1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+		}
+		add_core_of = HUN
+		add_core_of = SLO
+	}
+	provinces = {
+		541 3484 11522 581 3537 6561 11539 11554 13282 13283 13281 555 3550 3565 3581 6586 6604
+	}
+}

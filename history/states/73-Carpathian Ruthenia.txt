@@ -7,15 +7,18 @@ state={
 		owner = HUN
 		buildings = {
 			infrastructure = 2
-
 		}
 		add_core_of = HUN
-		add_core_of = SLO
-
+		add_claim_by = SLO
+		victory_points = {
+			#Ungstadt(R:Ужгород,H:Ungvar)
+			11536
+			3
+		}
 	}
 
 	provinces={
-		3548 6571 9563 11536 13385 13411 
+		3548 6571 9563 11536 13319 13385 13411
 	}
 	manpower=1024470
 	buildings_max_level_factor=1.000

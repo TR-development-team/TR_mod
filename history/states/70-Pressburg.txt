@@ -1,0 +1,24 @@
+state = {
+	id = 70
+	name = "STATE_70"
+	manpower = 917410	#現代人口を参照 x1.7
+	state_category = three_town
+	local_supplies = 0.000
+	history = {
+		owner = HUN
+		victory_points = {
+			#Preßburg
+			9692
+			20
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+		}
+		add_core_of = HUN
+		add_core_of = SLO
+	}
+	provinces = {
+		9539 9692
+	}
+}

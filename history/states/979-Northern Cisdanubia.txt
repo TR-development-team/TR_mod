@@ -1,0 +1,24 @@
+state = {
+	id = 979
+	name = "STATE_979"
+	manpower = 824799 #findpop*1.3
+	state_category = three
+	local_supplies = 0.000
+	history = {
+		owner = HUN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			#Neuhäus(S:Nové Zámky,H:Érsekújvár)
+			9551
+			1
+		}
+		add_core_of = HUN
+		add_claim_by = SLO
+	}
+	provinces = {
+		9551 3716 11679
+	}
+}
