@@ -4,15 +4,15 @@ state = {
 	manpower = 1178914	#現代人口を参照 x1.3
 	state_category = four
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		steel = 23
+	}
 	history = {
 		owner = HUN
 		victory_points = {
 			#Miskolc
 			3713
-			3
+			10
 		}
 		victory_points = {
 			#Eger

@@ -5,7 +5,7 @@ state = {
 	state_category = four
 	local_supplies = 0.000
 	resources = {
-		oil = 7
+		oil = 17
 	}
 	history = {
 		owner = GAL
@@ -16,6 +16,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		add_core_of = GAL
 		add_core_of = POL

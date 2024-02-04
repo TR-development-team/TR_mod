@@ -2,11 +2,11 @@ state = {
 	id = 109
 	name = "STATE_109"
 	manpower = 1560239	#Find popより
-	state_category = five
+	state_category = nine
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		steel = 5
+	}
 	history = {
 		owner = CRO
 		victory_points = {
@@ -21,8 +21,8 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 1
+			industrial_complex = 3
+			arms_factory = 2
 			air_base = 4
 		}
 		add_core_of = HUN

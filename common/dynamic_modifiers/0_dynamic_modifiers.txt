@@ -529,3 +529,10 @@ RUS_soviet_imports = { #STATE MODIFIER
 	state_resource_rubber = 2
 }
 
+generic_limited_coastal_area = { #STATE MODIFIER
+	enable = { always = yes }
+	icon = GFX_modifiers_generic_limited_coastal_area
+	state_production_speed_dockyard_factor = -1
+	state_production_speed_naval_base_factor = -1
+	naval_invasion_penalty = 1
+}

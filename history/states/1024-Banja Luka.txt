@@ -4,9 +4,9 @@ state = {
 	manpower = 660466
 	state_category = three
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		steel = 6
+	}
 	history = {
 		owner = BOS
 		victory_points = {

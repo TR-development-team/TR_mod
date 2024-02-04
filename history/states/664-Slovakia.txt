@@ -2,7 +2,7 @@ state = {
 	id = 664
 	name = "STATE_664"
 	manpower = 5570326	#現代人口を参照(etc)
-	state_category = nine
+	state_category = eight
 	local_supplies = 0.000
 	resources = {
 		tungsten = 4
@@ -13,7 +13,7 @@ state = {
 		victory_points = {
 			#Neutra(S:Nitra,H:Nyitra)
 			13281
-			3
+			5
 		}
 		victory_points = {
 			#Tyrnau(S:Trnava,H:Nagyszombat)
@@ -23,7 +23,7 @@ state = {
 		victory_points = {
 			#Sillein(S:Žilina,H:Zsolna)
 			3484
-			3
+			5
 		}
 		victory_points = {
 			#Neusohl(S:Banská Bystrica,H:Besztercebánya)
@@ -38,7 +38,7 @@ state = {
 		victory_points = {
 			#Preschau(S:Prešov,H:Eperjes)
 			3581
-			3
+			5
 		}
 		victory_points = {
 			#Deutschendorf(S:Poprad,H:Poprád)
@@ -47,7 +47,7 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 1
 			air_base = 2
 		}

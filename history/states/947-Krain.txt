@@ -4,9 +4,9 @@ state = {
 	manpower = 716411	#史実1880年国勢調査-インナークライン+152400(ノトランスカ)
 	state_category = five
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		steel = 5
+	}
 	history = {
 		owner = AUS
 		victory_points = {
@@ -22,11 +22,12 @@ state = {
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 3
 		}
 		add_core_of = AUS
 		add_core_of = KRA
-		#add_core_of = SLV
+		add_core_of = SLV
 	}
 	provinces = {
 		3631 6650 9627 13257 13258 13366

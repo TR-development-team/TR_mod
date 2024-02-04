@@ -5,7 +5,8 @@ state = {
 	state_category = four
 	local_supplies = 0.000
 	resources = {
-		aluminium = 21
+		aluminium = 11
+		steel = 7
 	}
 	history = {
 		owner = BOS
@@ -16,11 +17,14 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 2
+			industrial_complex = 1
 			arms_factory = 1
 		}
 		add_core_of = BOS
 		add_core_of = HRZ
+		add_dynamic_modifier = {
+			modifier = generic_limited_coastal_area
+		}
 	}
 	provinces = {
 		953 6942 9894 11845 13343 13348

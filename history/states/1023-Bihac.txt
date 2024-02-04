@@ -4,9 +4,10 @@ state = {
 	manpower = 314486	#findpopを参照
 	state_category = two
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		aluminium = 9
+		steel = 9
+	}
 	history = {
 		owner = BOS
 		victory_points = {

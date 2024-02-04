@@ -4,9 +4,9 @@ state = {
 	manpower = 776838	#史実1880年国勢調査を参照
 	state_category = five_indus
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		steel = 6
+	}
 	history = {
 		owner = AUS
 		victory_points = {
@@ -25,7 +25,7 @@ state = {
 		}
 		add_core_of = AUS
 		add_core_of = STE
-		#add_core_of = SLV
+		add_core_of = SLV
 	}
 	provinces = {
 		596 665 3654 9596 13307

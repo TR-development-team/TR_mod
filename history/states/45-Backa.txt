@@ -4,9 +4,9 @@ state = {
 	manpower = 1352762	#史実'10国勢調査より x1.6
 	state_category = five
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		steel = 6
+	}
 	history = {
 		owner = HUN
 		victory_points = {

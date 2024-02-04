@@ -4,9 +4,9 @@ state = {
 	manpower = 888484	#Find popや現代の南ボヘミアの人口を参考に導出
 	state_category = seven_indus
 	local_supplies = 5.000
-	#resources={
-	#	
-	#}
+	resources={
+		tungsten = 12
+	}
 	history = {
 		owner = CZE
 		victory_points = {

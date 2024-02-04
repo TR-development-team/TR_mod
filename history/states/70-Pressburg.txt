@@ -4,16 +4,19 @@ state = {
 	manpower = 917410	#現代人口を参照 x1.7
 	state_category = three_town
 	local_supplies = 0.000
+	resources = {
+		oil = 3
+	}
 	history = {
 		owner = HUN
 		victory_points = {
 			#Preßburg
 			9692
-			20
+			15
 		}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 2
+			industrial_complex = 1
 		}
 		add_core_of = HUN
 		add_core_of = SLO

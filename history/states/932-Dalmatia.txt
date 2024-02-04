@@ -2,11 +2,12 @@ state = {
 	id = 932
 	name = "STATE_932"
 	manpower = 654203
-	state_category = four
+	state_category = five
 	local_supplies = 0.000
-	#resources = {
-	#	
-	#}
+	resources = {
+		steel = 2
+		aluminium = 11
+	}
 	history = {
 		owner = DAL
 		victory_points = {
@@ -28,6 +29,7 @@ state = {
 			infrastructure = 3
 			dockyard = 2
 			industrial_complex = 1
+			arms_factory = 1
 			3924 = {
 				naval_base = 3
 			}
