@@ -312,9 +312,9 @@ AUS_austriawerft_organisation = {
 		}
 	}
 }
-AUS_3maj_organisation = {
+AUS_fiume_3maj_organisation = {
 	include = generic_raider_ship_organization
-	name = 3maj
+	name = fiume_3maj
 	icon = GFX_idea_3maj
 	allowed = { original_tag = AUS }
 	visible = { }
