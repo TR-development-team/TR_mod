@@ -63,6 +63,13 @@
  industrialize_state_category_tt:0 "州が§Y工業地域化§!する。\n"
  deindustrialize_state_category_tt:0 "州が§Y脱工業化§!する。\n"
 
+ is_island_category:0 "は州区分が島嶼である。"
+ is_unexplored_category:0 "は州区分が未開地である。"
+ is_port_category:0 "は州区分が港湾である。"
+ is_urban_category:0 "は州区分が市街地である。"
+ is_industrial_cateogry:0 "は州区分が工業地区である。"
+ is_exclave_category:0 "は州区分が飛び地である。"
+
 #stat_mod
  generic_limited_coastal_area:0 "限られた沿岸部"
  generic_limited_coastal_area_desc:0 "この州の沿岸部は極めて限られており、海との接続は困難を極める。"

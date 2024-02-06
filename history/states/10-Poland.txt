@@ -1,17 +1,17 @@
-state={
-	id=10
-	name="STATE_10"
+state = {
+	id = 10
+	name = "STATE_10"
 	manpower = 3089000
-
-	state_category = large_city
-
-	history={
+	state_category = eight
+	history = {
 		owner = POL
 		victory_points = {
-			3544 25
+			3544
+			25
 		}
 		victory_points = {
-			402 1
+			402
+			1
 		}
 		buildings = {
 			infrastructure = 4
@@ -22,9 +22,16 @@ state={
 		}
 		add_core_of = POL
 	}
-
-	local_supplies=0.0 
-provinces={
-		402 467 524 3482 3544 6511 9400 11492 12562 
+	local_supplies = 0
+	provinces = {
+		402
+		467
+		524
+		3482
+		3544
+		6511
+		9400
+		11492
+		12562
 	}
 }

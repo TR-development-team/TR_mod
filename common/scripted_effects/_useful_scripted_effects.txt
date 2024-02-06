@@ -131,6 +131,7 @@ copy_government_of_ROOT = {
 			authoritarian_democrat = ROOT.party_popularity_100@authoritarian_democrat
 			paternal_autocrat = ROOT.party_popularity_100@paternal_autocrat
 			national_populist = ROOT.party_popularity_100@national_populist
+			Gnosticism = ROOT.party_popularity_100@Gnosticism
 		}
 	}
 }
@@ -150,6 +151,7 @@ copy_government_of_PREV = {
 			authoritarian_democrat = PREV.party_popularity_100@authoritarian_democrat
 			paternal_autocrat = PREV.party_popularity_100@paternal_autocrat
 			national_populist = PREV.party_popularity_100@national_populist
+			Gnosticism = PREV.party_popularity_100@Gnosticism
 		}
 	}
 }
@@ -171,6 +173,8 @@ get_current_government_type = {
 	add_to_array = { original_popularities = party_popularity_100@social_conservative }
 	add_to_array = { original_popularities = party_popularity_100@authoritarian_democrat }
 	add_to_array = { original_popularities = party_popularity_100@paternal_autocrat }
+	add_to_array = { original_popularities = party_popularity_100@national_populist }
+	add_to_array = { original_popularities = party_popularity_100@Gnosticism }
 
 	set_temp_variable = { sum = 100 }
 	for_each_loop = {
@@ -209,6 +213,7 @@ restore_previous_government_type = {
 				authoritarian_democrat = original_popularities^7
 				paternal_autocrat = original_popularities^8
 				national_populist = original_popularities^9
+				Gnosticism = original_popularities^10
 			}
 			clear_array = original_popularities
 		}

@@ -1,0 +1,78 @@
+### 単にstate_categoryだけを見て判断します
+### in state scope
+is_island_category = {	#島or諸島カテゴリ
+	custom_trigger_tooltip = {
+		tooltip = is_island_category
+		OR = {
+			has_state_category = zero_island
+			has_state_category = one_island
+			has_state_category = two_island
+			has_state_category = three_island
+			has_state_category = four_island
+			has_state_category = five_island
+			has_state_category = one_archipelago
+		}
+	}
+}
+is_unexplored_category = {	#スロット0カテゴリ 町は除く
+	custom_trigger_tooltip = {
+		tooltip = is_unexplored_category
+		OR = {
+			has_state_category = zero_wasteland
+			has_state_category = zero_hardpan
+			has_state_category = zero_exclave
+			has_state_category = zero_island
+		}
+	}
+}
+is_port_category = {	#港カテゴリ
+	custom_trigger_tooltip = {
+		tooltip = is_port_category
+		OR = {
+			has_state_category = one_port
+			has_state_category = two_port
+			has_state_category = three_port
+			has_state_category = four_port
+			has_state_category = five_port
+		}
+	}
+}
+is_urban_category = {	#市街地カテゴリ
+	custom_trigger_tooltip = {
+		tooltip = is_urban_category
+		OR = {
+			has_state_category = zero_town
+			has_state_category = one_town
+			has_state_category = two_town
+			has_state_category = three_town
+			has_state_category = four_town
+			has_state_category = five_town
+			has_state_category = six_town
+		}
+	}
+}
+is_industrial_cateogry = {	#工業地区カテゴリ
+	custom_trigger_tooltip = {
+		tooltip = is_industrial_cateogry
+		OR = {
+			has_state_category = five_indus
+			has_state_category = six_indus
+			has_state_category = seven_indus
+			has_state_category = eight_indus
+			has_state_category = nine_indus
+			has_state_category = ten_indus
+			has_state_category = eleven_indus
+			has_state_category = twelve_indus
+		}
+	}
+}
+is_exclave_category = {	#飛び地カテゴリ
+	custom_trigger_tooltip = {
+		tooltip = is_exclave_category
+		OR = {
+			has_state_category = zero_exclave
+			has_state_category = one_exclave
+			has_state_category = two_exclave
+		}
+	}
+}

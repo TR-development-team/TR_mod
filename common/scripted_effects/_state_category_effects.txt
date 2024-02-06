@@ -782,3 +782,17 @@ deindustrialize_state_category = {
 		custom_effect_tooltip = deindustrialize_state_category_tt
 	}
 }
+store_all_default_category = {
+	every_state = {
+		if = {
+			limit = { has_state_category = one }
+			set_variable = {
+				var = THIS.default_category
+				value = 1
+			}
+		}
+		else_if = {
+			limit = { }
+		}
+	}
+}
