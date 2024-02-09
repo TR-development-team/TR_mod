@@ -12,6 +12,31 @@ set_politics = {
 	elections_allowed = yes
 }
 
+set_popularities = {
+	totalist = 3
+	syndicalist = 3
+	radical_socialist = 8
+	social_democrat = 25
+	social_liberal = 3
+	market_liberal = 9
+	social_conservative = 29
+	authoritarian_democrat = 3
+	paternal_autocrat = 0
+	national_populist = 3
+	Gnosticism = 14
+}
+
+add_ideas = {
+	Constitutional_monarchy
+	low_minimum_wage
+	trinket_max_workhours
+	trinket_safety_regulations
+	trinket_Unemployment_subsidies
+	trinket_pensions
+	low_health_care
+	acceptable_school_system
+}
+
 add_to_tech_sharing_group = austria_hungarian_empire_tech_share
 HUN = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
 CRO = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
@@ -32,12 +57,14 @@ set_technology = {
 	tech_support = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_trucks = 1
 	motorised_infantry = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	basic_train = 1
 	fuel_silos = 1
 	interwar_artillery = 1
+	armored_car1 = 1
 }
 
 create_import = {
@@ -49,6 +76,8 @@ create_import = {
 ###Events
 
 ###Dynamic_modifier
+
+###tech
 
 if = {
 	limit = {
@@ -62,6 +91,7 @@ if = {
 		iw_small_airframe = 1
 		iw_medium_airframe = 1
 		iw_large_airframe = 1
+		air_torpedoe_1 = 1
 	}
 	else = {
 		set_technology = {
@@ -94,7 +124,6 @@ if = {
 	set_technology = {
 		gwtank_chassis = 1
 		basic_light_tank_chassis = 1
-		improved_light_tank_chassis = 1
 		engine_tech_1 = 1
 	}
 }
@@ -132,34 +161,7 @@ if = {
 		basic_depth_charges = 1
 		coastal_defense_ships = 1
 		basic_light_battery = 1
-		basic_medium_battery = 1
-		tech_trucks = 1
 	}
-}
-
-add_ideas = {
-	Constitutional_monarchy
-	low_minimum_wage
-	trinket_max_workhours
-	trinket_safety_regulations
-	trinket_Unemployment_subsidies
-	trinket_pensions
-	low_health_care
-	acceptable_school_system
-}
-
-set_popularities = {
-	totalist = 3
-	syndicalist = 3
-	radical_socialist = 8
-	social_democrat = 25
-	social_liberal = 3
-	market_liberal = 9
-	social_conservative = 29
-	authoritarian_democrat = 3
-	paternal_autocrat = 0
-	national_populist = 3
-	Gnosticism = 14
 }
 
 ### recruit
@@ -204,159 +206,159 @@ add_ideas = {
 }
 
 ### VARIANTS ###
-if = {
-	limit = {
-		has_dlc = "No Step Back"
-	}
-	#create_equipment_variant = {
-	#	name = "Tancik vz. 33"
-	#	type = light_tank_chassis_1
-	#	parent_version = 0
-	#	modules = {
-	#		main_armament_slot = tank_heavy_machine_gun
-	#		turret_type_slot = tank_light_fixed_superstructure_turret
-	#		suspension_type_slot = tank_bogie_suspension
-	#		armor_type_slot = tank_riveted_armor
-	#		engine_type_slot = tank_gasoline_engine
-	#	}
-	#	upgrades = {
-	#		tank_nsb_engine_upgrade = 1
-	#		tank_nsb_armor_upgrade = 1
-	#	}
-	#	obsolete = yes
-	#}
-	#create_equipment_variant = {
-	#	name = "LT vz. 35"
-	#	type = light_tank_chassis_1
-	#	parent_version = 1
-	#	modules = {
-	#		main_armament_slot = tank_small_cannon
-	#		turret_type_slot = tank_light_two_man_tank_turret
-	#		suspension_type_slot = tank_bogie_suspension
-	#		armor_type_slot = tank_riveted_armor
-	#		engine_type_slot = tank_gasoline_engine
-	#		special_type_slot_1 = tank_radio_1
-	#		special_type_slot_2 = additional_machine_guns
-	#	}
-	#	upgrades = {
-	#		tank_nsb_engine_upgrade = 4
-	#		tank_nsb_armor_upgrade = 2
-	#	}
-	#}
-	#create_equipment_variant = {
-	#	name = "TNH"
-	#	type = light_tank_chassis_2
-	#	parent_version = 0
-	#	modules = {
-	#		main_armament_slot = tank_small_cannon_2
-	#		turret_type_slot = tank_light_two_man_tank_turret
-	#		suspension_type_slot = tank_bogie_suspension
-	#		armor_type_slot = tank_riveted_armor
-	#		engine_type_slot = tank_gasoline_engine
-	#		special_type_slot_1 = tank_radio_1
-	#		special_type_slot_2 = additional_machine_guns
-	#		special_type_slot_3 = additional_machine_guns
-	#	}
-	#	upgrades = {
-	#		tank_nsb_engine_upgrade = 7
-	#		tank_nsb_armor_upgrade = 3
-	#	}
-	#}
-}
+#if = {
+#	limit = {
+#		has_dlc = "No Step Back"
+#	}
+#	create_equipment_variant = {
+#		name = "Tancik vz. 33"
+#		type = light_tank_chassis_1
+#		parent_version = 0
+#		modules = {
+#			main_armament_slot = tank_heavy_machine_gun
+#			turret_type_slot = tank_light_fixed_superstructure_turret
+#			suspension_type_slot = tank_bogie_suspension
+#			armor_type_slot = tank_riveted_armor
+#			engine_type_slot = tank_gasoline_engine
+#		}
+#		upgrades = {
+#			tank_nsb_engine_upgrade = 1
+#			tank_nsb_armor_upgrade = 1
+#		}
+#		obsolete = yes
+#	}
+#	create_equipment_variant = {
+#		name = "LT vz. 35"
+#		type = light_tank_chassis_1
+#		parent_version = 1
+#		modules = {
+#			main_armament_slot = tank_small_cannon
+#			turret_type_slot = tank_light_two_man_tank_turret
+#			suspension_type_slot = tank_bogie_suspension
+#			armor_type_slot = tank_riveted_armor
+#			engine_type_slot = tank_gasoline_engine
+#			special_type_slot_1 = tank_radio_1
+#			special_type_slot_2 = additional_machine_guns
+#		}
+#		upgrades = {
+#			tank_nsb_engine_upgrade = 4
+#			tank_nsb_armor_upgrade = 2
+#		}
+#	}
+#	create_equipment_variant = {
+#		name = "TNH"
+#		type = light_tank_chassis_2
+#		parent_version = 0
+#		modules = {
+#			main_armament_slot = tank_small_cannon_2
+#			turret_type_slot = tank_light_two_man_tank_turret
+#			suspension_type_slot = tank_bogie_suspension
+#			armor_type_slot = tank_riveted_armor
+#			engine_type_slot = tank_gasoline_engine
+#			special_type_slot_1 = tank_radio_1
+#			special_type_slot_2 = additional_machine_guns
+#			special_type_slot_3 = additional_machine_guns
+#		}
+#		upgrades = {
+#			tank_nsb_engine_upgrade = 7
+#			tank_nsb_armor_upgrade = 3
+#		}
+#	}
+#}
 
 # 1936 Start #
-if = {
-	limit = {
-		not = {
-			has_dlc = "Man the Guns"
-		}
-	}
-	### Ship Variants ###
-	create_equipment_variant = {
-		name = "Dubrovnik Class"
-		type = destroyer_1
-		upgrades = {
-			ship_torpedo_upgrade = 1
-			destroyer_engine_upgrade = 1
-			ship_ASW_upgrade = 1
-			ship_anti_air_upgrade = 1
-		}
-	}
-	create_equipment_variant = {
-		name = "Dalmacija Class"
-		type = heavy_cruiser_1
-		upgrades = {
-			ship_reliability_upgrade = 1
-			ship_engine_upgrade = 1
-			ship_armor_upgrade = 1
-			ship_gun_upgrade = 1
-		}
-	}
-}
+#if = {
+#	limit = {
+#		not = {
+#			has_dlc = "Man the Guns"
+#		}
+#	}
+#	### Ship Variants ###
+#	create_equipment_variant = {
+#		name = "Dubrovnik Class"
+#		type = destroyer_1
+#		upgrades = {
+#			ship_torpedo_upgrade = 1
+#			destroyer_engine_upgrade = 1
+#			ship_ASW_upgrade = 1
+#			ship_anti_air_upgrade = 1
+#		}
+#	}
+#	create_equipment_variant = {
+#		name = "Dalmacija Class"
+#		type = heavy_cruiser_1
+#		upgrades = {
+#			ship_reliability_upgrade = 1
+#			ship_engine_upgrade = 1
+#			ship_armor_upgrade = 1
+#			ship_gun_upgrade = 1
+#		}
+#	}
+#}
 
-if = {
-	limit = {
-		has_dlc = "By Blood Alone"
-	}
-	create_equipment_variant = {
-		name = "Phönix D.IV"
-		type = small_plane_airframe_0
-		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			engine_type_slot = engine_1_1x
-			special_type_slot_1 = empty
-		}
-		obsolete = no
-	}
-}
+#if = {
+#	limit = {
+#		has_dlc = "By Blood Alone"
+#	}
+#	create_equipment_variant = {
+#		name = "Phönix D.IV"
+#		type = small_plane_airframe_0
+#		modules = {
+#			fixed_main_weapon_slot = light_mg_2x
+#			engine_type_slot = engine_1_1x
+#			special_type_slot_1 = empty
+#		}
+#		obsolete = no
+#	}
+#}
 
-if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	# Submarines #
-	create_equipment_variant = {
-		name = "U-107 Class"
-		type = ship_hull_submarine_2
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
-	# Destroyers #
-	create_equipment_variant = {
-		name = "Radetzky Class"
-		type = ship_hull_light_2
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = light_ship_engine_1
-			fixed_ship_torpedo_slot = ship_torpedo_1
-			mid_1_custom_slot = ship_mine_layer_1
-			rear_1_custom_slot = ship_depth_charge_1
-		}
-	}
-	# Cruisers #
-	create_equipment_variant = {
-		name = "Zenta Class"
-		type = ship_hull_cruiser_coastal_defense_ship
-		parent_version = 0
-		modules = {
-			fixed_ship_battery_slot = ship_light_medium_battery_1
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = cruiser_ship_engine_1
-			fixed_ship_armor_slot = empty
-			fixed_ship_secondaries_slot = empty
-			mid_1_custom_slot = empty
-			mid_2_custom_slot = empty
-			rear_1_custom_slot = empty
-		}
-	}
-}
+#if = {
+#	limit = {
+#		has_dlc = "Man the Guns"
+#	}
+#	# Submarines #
+#	create_equipment_variant = {
+#		name = "U-107 Class"
+#		type = ship_hull_submarine_2
+#		parent_version = 0
+#		modules = {
+#			fixed_ship_torpedo_slot = ship_torpedo_sub_1
+#			fixed_ship_engine_slot = sub_ship_engine_1
+#			rear_1_custom_slot = empty
+#		}
+#	}
+#	# Destroyers #
+#	create_equipment_variant = {
+#		name = "Radetzky Class"
+#		type = ship_hull_light_2
+#		parent_version = 0
+#		modules = {
+#			fixed_ship_battery_slot = ship_light_battery_1
+#			fixed_ship_anti_air_slot = ship_anti_air_1
+#			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+#			fixed_ship_radar_slot = empty
+#			fixed_ship_engine_slot = light_ship_engine_1
+#			fixed_ship_torpedo_slot = ship_torpedo_1
+#			mid_1_custom_slot = ship_mine_layer_1
+#			rear_1_custom_slot = ship_depth_charge_1
+#		}
+#	}
+#	# Cruisers #
+#	create_equipment_variant = {
+#		name = "Zenta Class"
+#		type = ship_hull_cruiser_coastal_defense_ship
+#		parent_version = 0
+#		modules = {
+#			fixed_ship_battery_slot = ship_light_medium_battery_1
+#			fixed_ship_anti_air_slot = ship_anti_air_1
+#			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+#			fixed_ship_radar_slot = empty
+#			fixed_ship_engine_slot = cruiser_ship_engine_1
+#			fixed_ship_armor_slot = empty
+#			fixed_ship_secondaries_slot = empty
+#			mid_1_custom_slot = empty
+#			mid_2_custom_slot = empty
+#			rear_1_custom_slot = empty
+#		}
+#	}
+#}
