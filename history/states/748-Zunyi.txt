@@ -2,8 +2,12 @@ state={
 	id=748
 	name="STATE_748"
 	local_supplies=0.0 
+	resources={
+		aluminium=6
+	}
+
 provinces={
-		1010 4325 9939 10763 10822 11972 
+		1010 1474 4325 4532 7521 7549 7577 8095 10616 10763
 	}
 	history={
 		owner = CNK
@@ -15,10 +19,10 @@ provinces={
 
 		}
 		victory_points = {
-			1010 3
+			1010 1
 		}
 	}
-	manpower=1500000
+	manpower=6800000
 	state_category=one
 	buildings_max_level_factor=1.000
 }

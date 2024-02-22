@@ -1003,6 +1003,13 @@ focus_tree = {
 					type = puppet_wargoal_focus
 				}
 			}
+			if = {
+				limit = { NOT = { is_in_faction_with = RUS } country_exists = RUS }
+				create_wargoal = {
+					target = RUS
+					type = puppet_wargoal_focus
+				}
+			}
 		}
 	}
 	#南へ

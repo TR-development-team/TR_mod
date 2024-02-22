@@ -35,4 +35,160 @@ ideas = {
 			}
 		}
 	}
+#大臣
+    Head_of_State = {	
+        ZHI_Wang_Kemin = {
+			picture = ZHI_Wang_Kemin
+			allowed = {
+				original_tag = ZHI
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+
+			removal_cost = -1
+			
+			traits = {
+				Head_of_State
+                authoritarian_democrat
+				TR_insignificant_layman
+			}
+		}
+    }
+    Government_leaders = {	  
+		ZHI_Tang_Erho = {
+			picture = ZHI_Tang_Erho
+			allowed = {
+				original_tag = ZHI
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			
+			traits = {
+				Government_leaders
+                authoritarian_democrat
+				TR_silent_workhorse
+			}
+		}  
+    }
+    Minister_of_Foreign_Affairs = { 
+		ZHI_Tung_Kang = {
+			picture = ZHI_Tung_Kang
+			allowed = {
+				original_tag = ZHI
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				authoritarian_democrat
+				TR_apologetic_clerk
+			}
+		}
+	}
+    Minister_of_Economy = {	
+        ZHI_Pan_Fu = {
+		    picture = ZHI_Pan_Fu
+			allowed = {
+				original_tag = ZHI
+                }  
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no	
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+				TR_resource_industrialist
+			}
+		}
+    }
+    Minister_of_Interior = {	
+		ZHI_Doihara_kenji = {
+			picture = ZHI_Doihara_kenji
+			allowed = {
+				original_tag = ZHI
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				paternal_autocrat
+				Founder_of_intelligence
+			}
+		}          
+    }
+	chief_of_staff = { 
+		ZHI_Koumoto_Daisaku = {
+			picture = ZHI_Koumoto_Daisaku
+			name = ZHI_Koumoto_Daisaku
+			allowed = {
+				original_tag = ZHI
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_commando_operations
+			}
+		}
+	}
+	chief_of_army = { 
+        ZHI_Zhang_Zuolin = {
+			picture = ZHI_Zhang_Zuolin
+			name = ZHI_Zhang_Zuolin
+			allowed = {
+				original_tag = ZHI
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_army
+				carm_doctrine_of_autonomy
+			}
+		}
+	}
 }

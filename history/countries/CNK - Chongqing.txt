@@ -20,6 +20,8 @@ set_popularities = {
 recruit_character = CNK_Wang_Jingwei
 recruit_character = CNK_Kagesa_Sadaaki
 
+recruit_character = CNK_Ren_Yuandao
+
 country_event = {	id = TR_CNK.3	days = 120	}
 
 add_ideas = {
@@ -30,6 +32,14 @@ add_ideas = {
 	trinket_pensions
 	CNK_jap_economic
 	WHN_late_army
+
+	CNK_Wang_Jingwei
+	CNK_Chen_Gongbo
+	CNK_Chu_Minyi
+	CNK_Mei_Siping
+	CNK_Zhou_Fohai
+	CNK_Yang_Kuiyi
+	CNK_Ren_Yuandao
 }
 add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
 

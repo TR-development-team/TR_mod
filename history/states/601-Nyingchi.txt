@@ -1,0 +1,28 @@
+state={
+	id=601
+	name="STATE_601"
+	resources={
+		oil=2.000
+	}
+
+	history={
+		owner = TIB
+		add_core_of = TIB
+		add_claim_by = WHN
+		add_claim_by = SCH
+		buildings = {
+			infrastructure = 1
+
+		}
+
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		5018 5080 8041 8059 10741
+	}
+	manpower=143829
+	buildings_max_level_factor=1.000
+	state_category=one
+}

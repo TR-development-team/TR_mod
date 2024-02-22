@@ -15,20 +15,10 @@ GER_integrate_policy = {
 				tag = GER
 				tag = RAT
 			}
-			every_state = {
-				limit = {
-					is_core_austria = yes
-				}
-				is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes
-			}
+			4 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 		}
 		available = {
-			every_state = {
-				limit = {
-					is_core_austria = yes
-				}
-				is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes
-			}
+			has_full_control_of_state = 4
 		}
 		highlight_states = {
 			highlight_state_targets = { state = 4 }
@@ -79,9 +69,7 @@ GER_integrate_policy = {
 				tag = GER
 				tag = RAT
 			}
-			OR = {
-				8 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
-			}
+			8 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 		}
 		available = {
 			has_full_control_of_state = 8

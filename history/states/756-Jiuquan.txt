@@ -3,7 +3,10 @@ state={
 	name="STATE_756"
 	local_supplies=0.0 
 provinces={
-		1778 2028 5076 7727 7971 8102 12596 12820 
+		1778 2028 5076 7971 12596 12820 
+	}
+        resources={
+                chromium=19
 	}
 	manpower=1000000
 	buildings_max_level_factor=1.000

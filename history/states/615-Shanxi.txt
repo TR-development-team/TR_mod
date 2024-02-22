@@ -6,7 +6,8 @@ state=
 	
 	state_category = nine_indus
         resources={
-		steel=25
+		steel=42
+                aluminium=12
 	}
 	
 	history=
@@ -17,7 +18,7 @@ state=
 		add_claim_by = CNK
 
 		victory_points = {
-			1519 5 
+			1519 15
 		}
 		victory_points = {
 			1575 1 

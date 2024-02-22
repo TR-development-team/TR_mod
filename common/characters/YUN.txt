@@ -51,25 +51,37 @@ characters={
 			ideology=Nationalism_subtype
 		}
 		field_marshal={
-			traits={ politically_connected organizer }
-			skill=4
+			traits={ politically_connected war_hero media_personality organizer }
+			skill=5
 			attack_skill=3
-			defense_skill=4
+			defense_skill=5
 			planning_skill=4
 			logistics_skill=4
 		}
 	}
-	YUN_lu_han={
-		name=YUN_lu_han
+	YUN_Li_Zonghuang={
+		name=YUN_Li_Zonghuang
+		portraits={
+			civilian={
+				large="gfx/leaders/YUN/Portrait_YUN_Li_Zonghuang.png"
+			}
+		}
+		country_leader={
+            ideology=San_min_Doctrine_CC_subtype
+		}
+	}
+	YUN_Lu_Han={
+		name=YUN_Lu_Han
 		portraits={
 			army={
 				small=GFX_portrait_CNK_lu_han_small
-				large=GFX_portrait_CNK_lu_han
+				large="gfx/leaders/YUN/Portrait_YUN_Lu_Han.png"
 			}
 		}
 
 		corps_commander={
 			skill=3
+			traits={ infantry_officer }
 			attack_skill=4
 			defense_skill=2
 			planning_skill=1
@@ -77,5 +89,4 @@ characters={
 			legacy_id=-1
 		}
 	}
-
 }

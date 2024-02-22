@@ -1,0 +1,163 @@
+
+ideas = {       
+    country = {
+
+		### Starting ###
+    }
+#大臣
+    Head_of_State = {	
+        ANH_Duan_Qirui = {
+			picture = ANH_Duan_Qirui
+			allowed = {
+				original_tag = ANH
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+
+			removal_cost = -1
+			
+			traits = {
+				Head_of_State
+                authoritarian_democrat
+				TR_resigned_generalissimo
+			}
+		}
+    }
+    Government_leaders = {	  
+		ANH_Wang_Yitang = {
+			picture = ANH_Wang_Yitang
+			allowed = {
+				original_tag = ANH
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			
+			traits = {
+				Government_leaders
+                authoritarian_democrat
+				TR_political_protege
+			}
+		}  
+    }
+    Minister_of_Foreign_Affairs = { 
+		ANH_Wang_Yinchuang = {
+			picture = ANH_Wang_Yinchuang
+			allowed = {
+				original_tag = ANH
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				authoritarian_democrat
+				TR_biased_intellectual
+			}
+		}
+	}
+    Minister_of_Economy = {	
+        ANH_Liang_Hongzhi = {
+		    picture = ANH_Liang_Hongzhi
+			allowed = {
+				original_tag = ANH
+                }  
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no	
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				authoritarian_democrat
+				TR_railway_magnate
+			}
+		}
+    }
+    Minister_of_Interior = {	
+		ANH_Liu_Enko = {
+			picture = ANH_Liu_Enko
+			allowed = {
+				original_tag = ANH
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				authoritarian_democrat
+				TR_silent_lawyer
+			}
+		}          
+    }
+	chief_of_staff = { 
+		ANH_Xu_Shuzheng = {
+			picture = ANH_Xu_Shuzheng
+			name = ANH_Xu_Shuzheng
+			allowed = {
+				original_tag = ANH
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_mass_combat
+			}
+		}
+	}
+	chief_of_army = { 
+		ANH_Jin_Yunpeng = {
+			picture = ANH_Jin_Yunpeng
+			name = ANH_Jin_Yunpeng
+			allowed = {
+				original_tag = ANH
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_army
+				carm_decisive_battle_doctrine
+			}
+		}
+	}
+}

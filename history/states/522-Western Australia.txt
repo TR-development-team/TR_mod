@@ -1,7 +1,9 @@
 state={
 	id=522
 	name="STATE_522"
-
+	resources={
+		aluminium=22
+	}
 	history={
 		owner = AST
 		buildings = {

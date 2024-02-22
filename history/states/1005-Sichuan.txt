@@ -6,7 +6,7 @@ state={
 		steel=14.000
 	}
 provinces={
-		1367 1395 4925 7256 8026 10132 12705 12767 
+		1367 1395 4375 4925 7256 8026 10132 10841 11972  12141 12705 12767 12819  
 	}
 	manpower=31210000
 	buildings_max_level_factor=1.000
@@ -24,6 +24,9 @@ provinces={
 		}
 		victory_points = {
 			4925 10 
+		}
+		victory_points = {
+			12141 3
 		}
 
 	}

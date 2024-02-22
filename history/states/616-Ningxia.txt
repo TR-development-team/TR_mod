@@ -1,0 +1,28 @@
+state={
+	id=616
+	name="STATE_616"
+
+	history={
+		owner = NIG
+                add_core_of = NIG
+		add_claim_by = WHN
+		add_claim_by = CNK
+                add_core_of = MEN
+		buildings = {
+			infrastructure = 1
+                        industrial_complex = 1
+		}
+		victory_points = {
+			8127 5 #銀川
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		4783 5031 7727 7803 8055 8102 8127 10724 10770 10899 12750
+	}
+	manpower=1123043
+	buildings_max_level_factor=1.000
+	state_category=three
+}
