@@ -740,13 +740,12 @@ SpriteType = {
 	texturefile = "gfx/interface/ideas/minister/RJN/RJN_Zhou_Enlai.png"
 }
 ###河西###
-
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GAN_Ma_Zhongying"
 		texturefile = "gfx/interface/ideas/minister/GAN/Ma_Zhongying.png"
 	}
 
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_GAN_Ma_Hushan"
 		texturefile = "gfx/interface/ideas/minister/GAN/Ma_Hushan.png"
 	}
@@ -776,10 +775,97 @@ SpriteType = {
 		name = "GFX_idea_XIB_Zhang_Zhijiang"
 		texturefile = "gfx/interface/ideas/minister/XIB/Zhang_Zhijiang.png"
 	}
-      SpriteType = {	
+    SpriteType = {	
 		name = "GFX_idea_XIB_Zheng_Jinsheng"
 		texturefile = "gfx/interface/ideas/minister/XIB/Zheng_Jinsheng.png"
 	}
+###安徽###
+    SpriteType = {	
+	    name = "GFX_idea_ANH_Duan_Qirui"
+	    texturefile = "gfx/interface/ideas/minister/ANH/Duan_Qirui.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ANH_Jin_Yunpeng"
+	    texturefile = "gfx/interface/ideas/minister/ANH/Jin_Yunpeng.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ANH_Liang_Hongzhi"
+	    texturefile = "gfx/interface/ideas/minister/ANH/Liang_Hongzhi.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ANH_Liu_Enko"
+	    texturefile = "gfx/interface/ideas/minister/ANH/Liu_Enko.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ANH_Wang_Yinchuang"
+	    texturefile = "gfx/interface/ideas/minister/ANH/Wang_Yinchuang.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ANH_Wang_Yitang"
+	    texturefile = "gfx/interface/ideas/minister/ANH/Wang_Yitang.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ANH_Xu_Shuzheng"
+	    texturefile = "gfx/interface/ideas/minister/ANH/Xu_Shuzheng.png"
+    }
+###重慶###
+    SpriteType = {	
+	    name = "GFX_idea_CNK_Chen_Gongbo"
+	    texturefile = "gfx/interface/ideas/minister/CNK/Chen_Gongbo.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_CNK_Chu_Minyi"
+	    texturefile = "gfx/interface/ideas/minister/CNK/Chu_Minyi.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_CNK_Mei_Siping"
+	    texturefile = "gfx/interface/ideas/minister/CNK/Mei_Siping.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_CNK_Ren_Yuandao"
+	    texturefile = "gfx/interface/ideas/minister/CNK/Ren_Yuandao.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_CNK_Wang_Jingwei"
+	    texturefile = "gfx/interface/ideas/minister/CNK/Wang_Jingwei.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_CNK_Yang_Kuiyi"
+	    texturefile = "gfx/interface/ideas/minister/CNK/Yang_Kuiyi.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_CNK_Zhou_Fohai"
+	    texturefile = "gfx/interface/ideas/minister/CNK/Zhou_Fohai.png"
+    }
+###華北###
+    SpriteType = {	
+	    name = "GFX_idea_ZHI_Doihara_kenji"
+	    texturefile = "gfx/interface/ideas/minister/ZHI/Doihara_kenji.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ZHI_Koumoto_Daisaku"
+	    texturefile = "gfx/interface/ideas/minister/ZHI/Koumoto_Daisaku.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ZHI_Pan_Fu"
+	    texturefile = "gfx/interface/ideas/minister/ZHI/Pan_Fu.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ZHI_Tang_Erho"
+	    texturefile = "gfx/interface/ideas/minister/ZHI/Tang_Erho.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ZHI_Tung_Kang"
+	    texturefile = "gfx/interface/ideas/minister/ZHI/Tung_Kang.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ZHI_Wang_Kemin"
+	    texturefile = "gfx/interface/ideas/minister/ZHI/Wang_Kemin.png"
+    }
+	SpriteType = {	
+	    name = "GFX_idea_ZHI_Zhang_Zuolin"
+	    texturefile = "gfx/interface/ideas/minister/ZHI/Zhang_Zuolin.png"
+    }
 ###ドイツ###
     #国家元首
     SpriteType = {	

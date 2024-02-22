@@ -150,17 +150,26 @@ if = {
 set_convoys = 20
 
 add_ideas = {
-        Colonical_system
-        Tiyoda_Kensho
-		ZHI_North_China_secession
-		ZHI_Control_of_special_agencies 
-		ZHI_formless_nation
-        ZHI_opium_trade
+    Colonical_system
+    Tiyoda_Kensho
+	ZHI_North_China_secession
+	ZHI_Control_of_special_agencies 
+	ZHI_formless_nation
+    ZHI_opium_trade
+
+	ZHI_Wang_Kemin
+	ZHI_Tang_Erho
+	ZHI_Tung_Kang
+	ZHI_Pan_Fu
+	ZHI_Doihara_kenji
+	ZHI_Koumoto_Daisaku
+	ZHI_Zhang_Zuolin
 }
+
 add_timed_idea = {
-		idea = JAPCO_black_thursday
-		days = 500
-    }  
+	idea = JAPCO_black_thursday
+	days = 500
+}  
 
 
 set_politics = {
@@ -185,7 +194,10 @@ set_popularities = {
 recruit_character = ZHI_Minoda_Muneki
 recruit_character = ZHI_Wang_Kemin
 recruit_character = ZHI_Doihara_Kenji
+recruit_character = ZHI_Zhang_Zuolin
+recruit_character = WHN_zhang_xueliang
 recruit_character = ZHI_Pu_Yi
+
 recruit_character = JAP_Doihara_Kenji
 recruit_character = JAP_Nemoto_Hiroshi
 recruit_character = JAP_Sugiyama_Hajime

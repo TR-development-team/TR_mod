@@ -1,0 +1,32 @@
+state={
+	id=603
+	name="STATE_603"
+	resources={
+		steel = 16
+		aluminium=4
+	}
+	history={
+		owner = CNK
+		add_core_of = CNK
+		add_claim_by = WHN
+                add_core_of = YUN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
+
+		}
+		victory_points = {
+			4504 3 
+		}
+
+	}
+
+	local_supplies=0.0 
+provinces={
+		1884 4192 4504 
+	}
+	manpower=2243200
+	buildings_max_level_factor=1.000
+	state_category=four
+}
