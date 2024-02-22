@@ -3,23 +3,34 @@ state={
 	name="STATE_751"
 	local_supplies=0.0 
 provinces={
-		2067 7294 10726
+		1999 2067 7294 10726 10841 12141 12819 
 	}
 	manpower=300000
 	buildings_max_level_factor=1.000
 	state_category=one
 	history={
-		owner = SCH
+		owner = CNK
+		add_core_of = CNK
 		add_claim_by = WHN
-		add_claim_by = CNK
 		add_core_of = SCH
+		
 		buildings = {
 			infrastructure = 1
 
 		}
-
+		victory_points = {
+			12141 3
+		}
 		victory_points = {
 			7294 1
+		}
+		1939.1.1 = {
+			buildings = {
+				industrial_complex = 1
+				infrastructure = 1
+
+			}
+
 		}
 
 	}

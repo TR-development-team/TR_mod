@@ -1,0 +1,26 @@
+state={
+	id=752
+	name="STATE_752"
+	local_supplies=0.0 
+provinces={
+		1918 7988 8104 12724 12837 4999
+	}
+	manpower=1160000
+	buildings_max_level_factor=1.000
+	state_category = one
+	history={
+		owner = SCH
+		add_core_of = SCH
+		add_core_of = TIB
+		add_claim_by = WHN
+		add_claim_by = CNK
+
+		victory_points = {
+			4999 1
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+}

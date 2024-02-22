@@ -1,33 +1,14 @@
 characters={
-	SGH_Zhang_Renjie={
-		name=SGH_Zhang_Renjie
-		portraits={
-			civilian={
-				large="gfx/leaders/SGH/Portrait_SGH_Zhang_Renjie.png"
-			}
-		}
-		country_leader={
-			ideology= National_conservative_subtype
-		}
-	}
 	SGH_Kohinata_Hakuro={
 		name=SGH_Kohinata_Hakuro
 		portraits={
 			civilian={
-				large="gfx/leaders/SGH/Portrait_SGH_Kohinata_Hakuro.png"
+				large="gfx/leaders/SGH/Portrait_JAP_Kohinata.png"
 			}
 		}
 		country_leader={
 			ideology= dem_Military_junta_subtype
 		}
-		corps_commander = {
-			traits = { cavalry_officer }
-			skill = 2
-			attack_skill = 2
-			defense_skill = 1
-			planning_skill = 1
-			logistics_skill = 2
-		}	
 	}
 	SGH_Honjo_Shigeru={
 		name=SGH_Honjo_Shigeru
@@ -44,7 +25,7 @@ characters={
 		name=SGH_Ishiwara_Kanji
 		portraits={
 			civilian={
-				large="gfx/leaders/SGH/Portrait_SGH_Kanji_Ishiwara.png"
+				large="gfx/leaders/SGH/Portrait_JAP_Ishiwara_Kanji.png"
 			}
 		}
 		country_leader={
@@ -65,7 +46,7 @@ characters={
 	JAP_Honjo_Shigeru={
 		name=SGH_Honjo_Shigeru
 		portraits={
-			army={
+			civilian={
 				large="gfx/leaders/SGH/Portrait_JAP_Honjo_Shigeru.png"
 			}
 		}
@@ -81,8 +62,8 @@ characters={
 	JAP_Ishiwara_Kanji={
 		name=SGH_Ishiwara_Kanji
 		portraits={
-			army={
-				large="gfx/leaders/SGH/Portrait_SGH_Kanji_Ishiwara.png"
+			civilian={
+				large="gfx/leaders/SGH/Portrait_JAP_Ishiwara_Kanji.png"
 			}
 		}
 		corps_commander = {
@@ -92,6 +73,22 @@ characters={
 			defense_skill = 2
 			planning_skill = 3
 			logistics_skill = 3
+		}		
+	}
+	JAP_Kohinata_Hakuro={
+		name=SGH_Kohinata_Hakuro
+		portraits={
+			civilian={
+				large="gfx/leaders/SGH/Portrait_JAP_Kohinata.png"
+			}
+		}
+		corps_commander = {
+			traits = { }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
 		}		
 	}
 }

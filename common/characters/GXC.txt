@@ -1,15 +1,16 @@
 characters={
-	GXC_Li_Zongren={
-		name=GXC_Li_Zongren
+	GXC_li_zongren={
+		name=GXC_li_zongren
 		portraits={
 			civilian={
-				large="gfx/leaders/GXC/Portrait_GXC_Li_Zongren.png"
+				large=GFX_portrait_GXC_li_zongren
 			}
 			army={
 				small=GFX_portrait_GXC_li_zongren_small
-				large="gfx/leaders/GXC/Portrait_GXC_Li_Zongren.png"
+				large="GFX_portrait_li_zongren"
 			}
 		}
+
 		country_leader={
 			ideology=dem_Military_junta_subtype
 			id=-1
@@ -18,14 +19,6 @@ characters={
 			ideology=Fascist_subtype
 			id=-1
 		}
-		field_marshal = {
-			traits = { organizer politically_connected }
-			skill = 3
-			attack_skill = 2
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 3
-		}
 	}
 	GXC_Liu_Chen_fuan={
 		name=GXC_Liu_Chen_fuan
@@ -33,13 +26,18 @@ characters={
 			civilian={
 				large="gfx/leaders/GXC/Portrait_GXC_Liu_Chen_fuan.png"
 			}
-			army={
-				large="gfx/leaders/GXC/Portrait_GXC_Liu_Chen_fuan.png"
-			}
 		}
 		country_leader={
 			ideology=Military_junta_subtype
 			id=-1
+		}
+	}
+	GXC_Liu_Chen_fuan_marshal={
+		name=GXC_Liu_Chen_fuan
+		portraits={
+			civilian={
+				large="gfx/leaders/GXC/Portrait_GXC_Liu_Chen_fuan.png"
+			}
 		}
 		field_marshal = {
 			traits = { politically_connected }
@@ -50,21 +48,20 @@ characters={
 			logistics_skill = 1
 		}
 	}
-	GXC_Bai_Chongxi={
-		name=GXC_Bai_Chongxi
+	GXC_li_zongren_marshal={
+		name=GXC_li_zongren
 		portraits={
-			army={
-				large="gfx/leaders/GXC/Portrait_GXC_Bai_Chongxi.png"
+			civilian={
+				large=GFX_portrait_GXC_li_zongren
 			}
 		}
-		corps_commander={
-			skill=4
-			traits = { brilliant_strategist war_hero career_officer }
-			attack_skill=3
-			defense_skill=4
-			planning_skill=4
-			logistics_skill=3
-			legacy_id=-1
+		field_marshal = {
+			traits = { organizer politically_connected }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
 		}
 	}
 	GXC_chen_jitang={

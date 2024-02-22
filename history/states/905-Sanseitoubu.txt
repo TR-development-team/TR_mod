@@ -1,0 +1,32 @@
+state={
+	id=905
+	name="STATE_905"
+	
+	state_category = five_indus
+
+	resources={
+		steel=30
+	}
+
+	history={
+		owner = ZHI
+		add_core_of = ZHI
+                add_core_of = SHX
+		add_claim_by = WHN
+		buildings = {
+			infrastructure = 3
+                        arms_factory = 1
+			industrial_complex = 2
+
+		}
+                victory_points = {
+			1027 1
+		}
+	}
+
+	provinces={
+		1027 10480 1438 1203 4538 10421 1180 12078 12344 12432
+	}
+	manpower=4910023
+	local_supplies=0.0 
+}

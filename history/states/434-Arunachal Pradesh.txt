@@ -12,20 +12,17 @@ state={
 	history={
 		owner = BAN
 		add_core_of = BAN
-		add_claim_by = TIB
-		add_claim_by = WHN
-
+		victory_points = {
+			1116 1
+		}
 		buildings = {
 			infrastructure = 1
-		}
-		victory_points = {
-			12730 1
 		}
 
 	}
 
 	local_supplies=0.0 
 provinces={
-		1996 10810 12730 
+		1116 1996 10810 12322 12730 
 	}
 }

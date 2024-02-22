@@ -1,5 +1,5 @@
 characters={
-    WHN_Sung_Qingling = {
+        WHN_Sung_Qingling = {
 		name=WHN_Sung_Qingling
 		portraits={
 			civilian={
@@ -44,22 +44,9 @@ characters={
 			civilian={
 				large="gfx/leaders/WHN/Portrait_China_Chen_Cheng.png"
 			}
-			army={
-				large="gfx/leaders/WHN/Portrait_China_Chen_Cheng.png"
-				small=GFX_idea_WHN_Chen_Cheng
-			}
 		}
 		country_leader={
-            ideology=San_min_Doctrine_Sanseidan_subtype
-		}
-		field_marshal={
-			traits={ politically_connected brilliant_strategist organizer }
-			skill=4
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=4
-			legacy_id=-1
+                        ideology=San_min_Doctrine_Sanseidan_subtype
 		}
 	}
 	WHN_chiang_kaishek={
@@ -126,26 +113,46 @@ characters={
 			ideology=Gnosticism_subtype
 		}
 	}
-	WHN_He_Yingqin={
-		name=WHN_He_Yingqin
+
+	WHN_Chen_Cheng_marshal={
+		name=WHN_Chen_Cheng
 		portraits={
 			army={
-				large="gfx/leaders/WHN/Portrait_WHN_He_Yingqin.png"
-				small=GFX_idea_WHN_He_Yingqin
-			}
-			civilian={
-				large="gfx/leaders/WHN/Portrait_WHN_He_Yingqin.png"
+				large="gfx/leaders/WHN/Portrait_China_Chen_Cheng.png"
+				small=GFX_idea_WHN_Chen_Cheng
 			}
 		}
 		field_marshal={
-			traits={ politically_connected infantry_officer organizer logistics_wizard }
-			skill=3
-			attack_skill=2
-			defense_skill=1
+			traits={ logistics_wizard organizer brilliant_strategist politically_connected }
+			skill=4
+			attack_skill=3
+			defense_skill=3
 			planning_skill=4
 			logistics_skill=4
+			legacy_id=-1
 		}
 	}
+	
+	
+	WHN_tu_yuming={
+		name=CHI_tu_yuming
+		portraits={
+			army={
+				large="GFX_portrait_chi_du_yuming"
+				small="GFX_idea_WHN_du_yuming"
+			}
+		}
+		field_marshal={
+			traits={ trait_cautious harsh_leader armor_officer defensive_doctrine }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	
 	WHN_hsueh_yueh={
 		name=CHI_hsueh_yueh
 		portraits={
@@ -164,24 +171,6 @@ characters={
 			legacy_id=-1
 		}
 	}
-	WHN_tu_yuming={
-		name=CHI_tu_yuming
-		portraits={
-			army={
-				large="GFX_portrait_chi_du_yuming"
-				small="GFX_idea_WHN_du_yuming"
-			}
-		}
-		corps_commander ={
-			traits={ trait_cautious harsh_leader armor_officer }
-			skill=4
-			attack_skill=4
-			defense_skill=4
-			planning_skill=2
-			logistics_skill=3
-			legacy_id=-1
-		}
-	}
 	
 	WHN_tai_anlan={
 		name=CHI_tai_anlan
@@ -191,8 +180,8 @@ characters={
 				small="GFX_idea_WHN_tai_an_lan"
 			}
 		}
-		corps_commander={
-			traits={ career_officer trait_reckless }
+		field_marshal={
+			traits={ career_officer trait_reckless offensive_doctrine }
 			skill=3
 			attack_skill=3
 			defense_skill=3
@@ -210,8 +199,8 @@ characters={
 				small="GFX_idea_WHN_wang_yaowu"
 			}
 		}
-		corps_commander={
-			traits={ trait_cautious infantry_officer }
+		field_marshal={
+			traits={ trait_cautious infantry_officer defensive_doctrine }
 			skill=2
 			attack_skill=2
 			defense_skill=1
@@ -333,22 +322,5 @@ characters={
 		}
 	}
 
-	WHN_Zhang_Lingfu={
-		name=WHN_Zhang_Lingfu
-		portraits={
-			army={
-				large="gfx/leaders/WHN/Portrait_WHN_Zhang_Lingfu.png"
-			}
-		}
-		corps_commander ={
-			traits={ brilliant_strategist career_officer infantry_officer trait_reckless }
-			skill=4
-			attack_skill=4
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=2
-			legacy_id=-1
-		}
-	}
 
 }

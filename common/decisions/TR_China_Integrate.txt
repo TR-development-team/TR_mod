@@ -21,9 +21,9 @@
 # 1005 四川
 
 #四川
-# 605 重慶
+# 605 四川
+# 751 涼山
 # 753 甘南
-# 1005 四川
 
 #貴州
 # 603 貴州
@@ -34,8 +34,8 @@
 # 747 大理
 
 #西康
-# 751 涼山
-# 752 西康
+# 601 西康
+# 752 甘孜
 
 #湖南
 # 602 湖南
@@ -84,6 +84,7 @@
 
 #寧夏
 # 616 寧夏
+# 912 アルシャー
 
 #青海
 # 604 青海
@@ -151,10 +152,8 @@
 
 #チベット
 # 322 ナクチュ
-# 601 ニンティ
 # 757 シガツェ
 # 758 ガリ
-# 912 チャムド
 
 #蔵南地区
 # 434 アルナーチャル・プラデーシュ
@@ -388,17 +387,19 @@ WHN_integrate_policy = {
 			}
 			OR = {
 				605 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				751 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				753 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				1005 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
 			has_full_control_of_state = 605
+			has_full_control_of_state = 751
 			has_full_control_of_state = 753
 			has_full_control_of_state = 1005
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 605 state = 753 state = 1005 }
+			highlight_state_targets = { state = 605 state = 751 state = 753 state = 1005 }
 		}
 		cost = 75
 		fire_only_once = yes
@@ -409,6 +410,7 @@ WHN_integrate_policy = {
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Sichuan_province"
 			605 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			751 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			753 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			1005 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
@@ -534,16 +536,16 @@ WHN_integrate_policy = {
  				tag = SGH
 			}
 			OR = {
-				751 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
+				601 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 				752 = { is_fully_controlled_by_ROOT_and_is_not_core_of_ROOT = yes }
 			}
 		}
 		available = {
-			has_full_control_of_state = 751
+			has_full_control_of_state = 601
 			has_full_control_of_state = 752
 		}
 		highlight_states = {
-			highlight_state_targets = { state = 751 state = 752 }
+			highlight_state_targets = { state = 325 state = 747 }
 		}
 		cost = 30
 		fire_only_once = yes
@@ -553,7 +555,7 @@ WHN_integrate_policy = {
 		days_remove = 60
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove tr_integrate_Xikang_province"
-			751 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
+			601 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 			752 = { remove_claim_by_ROOT_and_add_core_of_ROOT = yes }
 		}
 		ai_will_do = {

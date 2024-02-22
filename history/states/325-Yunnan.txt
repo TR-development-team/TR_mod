@@ -2,7 +2,6 @@ state={
 	id=325
 	name="STATE_325"
 	resources={
-		steel = 8
 		tungsten=12
 		aluminium=5
 	}
@@ -27,7 +26,7 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		1114 1172 1196 1319 1383 1522 1653 4501 5072 7446 7606 8023 10346 10776 10819 12262 12282 12841  
+		1114 1172 1196 1319 1383 1522 1653 4501 7446 7606 8023 10346 10776 12262 12282 
 	}
 	manpower=10994500
 	buildings_max_level_factor=1.000

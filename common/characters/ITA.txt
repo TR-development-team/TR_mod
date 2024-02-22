@@ -8,9 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=National_syndicalist_subtype
-		}
-		country_leader={
-			ideology=Fascist_subtype
+			traits = { Mussolini_traits }
 		}
 	}
 	ITA_Michele_Bianchi={
@@ -70,33 +68,6 @@ characters={
 		}
 	}
 
-	ITA_pietro_badoglio={
-		name=ITA_pietro_badoglio
-		portraits={
-			army={
-				small="GFX_idea_pietro_badoglio"
-			}
-			army={
-				large="gfx/leaders/ITA/Portrait_ITA_Pietro_Badoglio.png"
-			}
-			civilian={
-				large="gfx/leaders/ITA/Portrait_ITA_Pietro_Badoglio.png"
-			}
-		}
-		country_leader={
-			ideology=militarism_subtype
-		}
-		field_marshal={
-			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine }
-			skill=2
-			attack_skill=1
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=2
-			legacy_id=0
-		}
-	}
-
 	ITA_victor_emmanuel_iii={
 		name=ITA_victor_emmanuel_iii
 		portraits={
@@ -121,6 +92,19 @@ characters={
 		}
 	}
 
+ 	ITA_benito_mussolini_NP ={
+		name=ITA_benito_mussolini
+		portraits={
+			civilian={
+				large="gfx/leaders/ITA/Portrait_ITA_benito_mussolini.png"
+			}
+		}
+		country_leader={
+			ideology=Fascist_subtype
+			traits = { Mussolini_traits }
+		}
+	}
+
 	ITA_Julius_Evola={
 		name=ITA_Julius_Evola
 		portraits={
@@ -133,7 +117,27 @@ characters={
 		}
 	}
 
+	ITA_pietro_badoglio={
+		name=ITA_pietro_badoglio
+		portraits={
+			army={
+				small="GFX_idea_pietro_badoglio"
+			}
+			army={
+				large=GFX_portrait_ITA_pietro_badoglio
+			}
+		}
 
+		field_marshal={
+			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
 
 	ITA_emilio_de_bono={
 		name=ITA_emilio_de_bono

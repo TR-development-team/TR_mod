@@ -25,20 +25,11 @@ set_popularities = {
 
 recruit_character = ANH_Duan_Qirui
 recruit_character = ANH_Liang_Hongzhi
-recruit_character = ANH_Xu_Shuzheng
 
 add_ideas = {
 	militaly_dictatorship
 	WHN_late_army
 	CNK_jap_economic
-
-	ANH_Duan_Qirui
-	ANH_Wang_Yitang
-	ANH_Wang_Yinchuang
-	ANH_Liang_Hongzhi 
-	ANH_Liu_Enko
-	ANH_Xu_Shuzheng
-	ANH_Jin_Yunpeng
 }
 add_timed_idea = {	idea = JAPCO_black_thursday	days = 500	}
 

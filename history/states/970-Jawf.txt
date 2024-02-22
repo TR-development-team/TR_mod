@@ -1,22 +1,16 @@
-
 state={
 	id=970
 	name="STATE_970"
-
-	history={
+	provinces={
+		2057 4562 4603 4974 5027 5099 7970 8101 10815 10901 12455 12758 
+	}
+	history = {
 		owner = JBS
 		add_core_of = JBS
-		victory_points = {
-			2057 1 
-		}
-
-	}
-
-	provinces={
-		2057 5027 5099 7970 10901 12455 12758 
+		victory_points = { 2057 1 }
 	}
 	manpower=185000
-	buildings_max_level_factor=1.000
 	state_category=pastoral
+	buildings_max_level_factor=1.000
 	local_supplies=0.000
 }

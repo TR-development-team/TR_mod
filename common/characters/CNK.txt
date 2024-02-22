@@ -35,23 +35,4 @@ characters={
 			logistics_skill=3
 		}
 	}
-	CNK_Ren_Yuandao={
-		name=CNK_Ren_Yuandao
-		portraits={
-			civilian={
-				large="gfx/leaders/CNK/Portrait_CNK_Ren_Yuandao.png"
-			}
-			army={
-				large="gfx/leaders/CNK/Portrait_CNK_Ren_Yuandao.png"
-			}
-		}
-		field_marshal ={
-			traits={ career_officer }
-			skill=2
-			attack_skill=1
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=2
-		}
-	}
 }

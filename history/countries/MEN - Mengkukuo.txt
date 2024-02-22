@@ -18,18 +18,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	totalist = 7
-	syndicalist = 0
-	radical_socialist = 16
-	social_democrat = 18
-	social_liberal = 0
-    market_liberal = 0
-	social_conservative = 0
-	authoritarian_democrat = 12
-	paternal_autocrat = 32
-	national_populist = 11
-	Gnosticism = 4
+	paternal_autocrat = 100
 }
 
-recruit_character = MEN_Demchugdongrub
-recruit_character = MEN_Li_Shouxin
+create_country_leader = {
+	name = "デムチュクドンロブ"
+	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
+	picture = "gfx/leaders/Asia/Portrait_MEN_Demchugdongrub.png"
+	expire = "1965.1.1"
+	ideology = paternal_autocrat_subtype
+	traits = {
+		spirit_of_genghis
+	}
+}
