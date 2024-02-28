@@ -6,17 +6,12 @@ characters={
 				large="gfx/leaders/ANH/Portrait_ANH_Duan_Qirui_old.png"
 			}
 		}
-		country_leader={
-			ideology= social_conservative_subtype
-		}
+
 		country_leader={
 			ideology= dem_Military_junta_subtype
 		}
 		country_leader={
 			ideology= Military_junta_subtype
-		}
-		country_leader={
-			ideology=national_populist_subtype
 		}
 	}
 	ANH_Liang_Hongzhi={
@@ -27,16 +22,36 @@ characters={
 			}
 		}
 		country_leader={
-			ideology= social_conservative_subtype
+			ideology= oligarchy_subtype
+		}
+		country_leader={
+			ideology=civilian_dictatorship_subtype
+		}
+	}
+	ANH_Xu_Shuzheng={
+		name=ANH_Xu_Shuzheng
+		portraits={
+			civilian={
+				large="gfx/leaders/ANH/Portrait_ANH_Xu_Shuzheng.png"
+			}
+			army={
+				large="gfx/leaders/ANH/Portrait_ANH_Xu_Shuzheng.png"
+			}
 		}
 		country_leader={
 			ideology= dem_Military_junta_subtype
 		}
 		country_leader={
-			ideology=Military_junta_subtype
+			ideology= Military_junta_subtype
 		}
-		country_leader={
-			ideology=Fascist_subtype
+		field_marshal={
+			traits={ politically_connected organizer skilled_staffer infantry_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=0
 		}
 	}
 }

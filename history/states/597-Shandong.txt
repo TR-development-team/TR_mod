@@ -2,7 +2,10 @@
 state={
 	id=597
 	name="STATE_597"
-
+	resources={
+		steel=11
+		aluminium=44
+	}
 	history={
 		owner = SHD
 		add_claim_by = WHN

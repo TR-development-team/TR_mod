@@ -2,6 +2,8 @@ state={
 	id=605
 	name="TR_STATE_605"
 	resources={
+		steel = 5
+		aluminium=11
 	}
 
 	history={
@@ -24,7 +26,7 @@ state={
 
 	local_supplies=0.0 
 provinces={
-		1893 2030 2091 4141 4431 5048 6999 7240 10144 10304 11865 12274  
+		1893 2030 2091 4141 4431 5048 6999 7240 9939 10144 11865 12274  
 	}
 	manpower=20733300
 	buildings_max_level_factor=1.000

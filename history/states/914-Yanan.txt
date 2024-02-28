@@ -1,7 +1,9 @@
 state={
 	id=914
 	name="STATE_914"
-
+	resources={
+		steel = 12
+	}
 	history={
 		owner = SHA
                 add_core_of = SHA
@@ -26,7 +28,7 @@ state={
 provinces={
 		12356 7208 8049 5007
 	}
-	manpower=1013400
+	manpower=3013400
 	buildings_max_level_factor=1.000
 	state_category=four
 }

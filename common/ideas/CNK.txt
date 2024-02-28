@@ -1,44 +1,187 @@
 
- ideas = {
-       
-     country = {
+ideas = {       
+    country = {
 
 		### Starting ###
 
 		CNK_jap_economic = {
-			allowed = {
-				always = no
-			}
-                        picture = jap_ichi_go
-
-			
-			removal_cost = -1
-                        targeted_modifier = {
+            picture = jap_ichi_go
+            targeted_modifier = {
 				tag = JAP
 				trade_cost_for_target_factor = -0.30
 				extra_trade_to_target_factor = 0.30
 			}
 
 			modifier = {
-                               war_support_factor = -0.15
-			       production_speed_buildings_factor = 0.05
-			       industrial_capacity_factory = 0.075
-                               political_power_cost = 0.25
+                war_support_factor = -0.15
+			    production_speed_buildings_factor = 0.05
+			    industrial_capacity_factory = 0.075
+                political_power_cost = 0.25
 			}
 		}
-                  CNK_black_thursday = {
-			allowed = {
-				always = no
-			}
-
+        CNK_black_thursday = {
 			picture = great_depression
-			removal_cost = -1
 			modifier = {
 				stability_factor = -0.5
 				production_speed_buildings_factor = -0.5
 				consumer_goods_expected_value = 0.15
 			}
 		}
+    }
+#大臣
+    Head_of_State = {	
+        CNK_Wang_Jingwei = {
+			picture = CNK_Wang_Jingwei
+			allowed = {
+				original_tag = CNK
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_state_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
 
-}
+			removal_cost = -1
+			
+			traits = {
+				Head_of_State
+                social_democrat
+				TR_benevolent_gentleman
+			}
+		}
+    }
+    Government_leaders = {	  
+		CNK_Chen_Gongbo = {
+			picture = CNK_Chen_Gongbo
+			allowed = {
+				original_tag = CNK
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Government_leaders_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			
+			traits = {
+				Government_leaders
+                social_democrat
+				TR_political_protege
+			}
+		}  
+    }
+    Minister_of_Foreign_Affairs = { 
+		CNK_Chu_Minyi = {
+			picture = CNK_Chu_Minyi
+			allowed = {
+				original_tag = CNK
+            }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Foreign_Affairs_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Foreign_Affairs
+				social_democrat
+				TR_biased_intellectual
+			}
+		}
+	}
+    Minister_of_Economy = {	
+        CNK_Mei_Siping = {
+		    picture = CNK_Mei_Siping
+			allowed = {
+				original_tag = CNK
+                }  
+				available = {
+					custom_trigger_tooltip = {
+						tooltip = Minister_of_Economy_available
+						always = no
+					}
+					hidden_trigger = {
+						has_country_flag = can_change_minister
+					}
+				}
+				cancel_if_invalid = no	
+			removal_cost = -1
+			traits = { 
+				Minister_of_Economy
+				social_democrat
+				TR_mixed_economy
+			}
+		}
+    }
+    Minister_of_Interior = {	
+		CNK_Zhou_Fohai = {
+			picture = CNK_Zhou_Fohai
+			allowed = {
+				original_tag = CNK
+			}
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = Minister_of_Interior_available
+					always = no
+				}
+				hidden_trigger = {
+					has_country_flag = can_change_minister
+				}
+			}
+			cancel_if_invalid = no
+			removal_cost = -1
+			traits = { 
+				Minister_of_Interior
+				social_democrat
+				TR_back_stabber
+			}
+		}          
+    }
+	chief_of_staff = { 
+		CNK_Yang_Kuiyi = {
+			picture = CNK_Yang_Kuiyi
+			name = CNK_Yang_Kuiyi
+			allowed = {
+				original_tag = CNK
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_staff
+				cos_school_of_psychology
+			}
+		}
+	}
+	chief_of_army = { 
+        CNK_Ren_Yuandao = {
+			picture = CNK_Ren_Yuandao
+			name = CNK_Ren_Yuandao
+			allowed = {
+				original_tag = CNK
+			}
+
+			removal_cost = -1
+			
+			traits = {
+				chief_of_army
+				carm_static_defence_doctrine
+			}
+		}
+	}
 }

@@ -1,0 +1,25 @@
+state={
+	id=912
+	name="STATE_912"
+	local_supplies=0.0 
+provinces={
+		4407 5102 10856 
+	}
+	manpower=218594
+	buildings_max_level_factor=1.000
+	state_category = one
+	history={
+		owner = TIB
+		add_core_of = TIB
+		add_claim_by = WHN
+		add_claim_by = SCH
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = {
+			10856 1
+		}
+
+
+	}
+}

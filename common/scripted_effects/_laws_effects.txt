@@ -17,7 +17,7 @@ increase_trade_laws = {
 			add_idea = free_trade
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = limited_exports
 		}
@@ -26,7 +26,7 @@ increase_trade_laws = {
 			add_idea = export_focus
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = closed_economy
 		}
@@ -47,7 +47,7 @@ decrease_trade_laws = {
 			add_idea = closed_economy
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = export_focus
 		}
@@ -56,7 +56,7 @@ decrease_trade_laws = {
 			add_idea = limited_exports
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = free_trade
 		}
@@ -77,7 +77,7 @@ increase_economy_laws = {
 			add_idea = tot_economic_mobilisation
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = partial_economic_mobilisation
 		}
@@ -86,7 +86,7 @@ increase_economy_laws = {
 			add_idea = war_economy
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = low_economic_mobilisation
 		}
@@ -95,7 +95,7 @@ increase_economy_laws = {
 			add_idea = partial_economic_mobilisation
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = civilian_economy
 		}
@@ -115,7 +115,7 @@ decrease_economy_laws = {
 			add_idea = civilian_economy
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = partial_economic_mobilisation
 		}
@@ -124,7 +124,7 @@ decrease_economy_laws = {
 			add_idea = low_economic_mobilisation
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = war_economy
 		}
@@ -133,7 +133,7 @@ decrease_economy_laws = {
 			add_idea = partial_economic_mobilisation
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = tot_economic_mobilisation
 		}
@@ -154,7 +154,7 @@ increase_school_system = {
 			add_idea = acceptable_school_system
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = trinket_school_system
 		}
@@ -163,7 +163,7 @@ increase_school_system = {
 			add_idea = low_school_system
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = no_school_system
 		}
@@ -183,7 +183,7 @@ decrease_school_system = {
 			add_idea = no_school_system 
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = low_school_system
 		}
@@ -192,7 +192,7 @@ decrease_school_system = {
 			add_idea = trinket_school_system 
 		}
 	}
-	if = {
+	else_if = {
 		limit = {
 			has_idea = acceptable_school_system
 		}

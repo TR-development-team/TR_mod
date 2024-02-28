@@ -35,6 +35,25 @@ characters={
 			ideology= absolute_monarchy_subtype
 		}
 	}
+	ZHI_Zhang_Zuolin={
+		name=ZHI_Zhang_Zuolin
+		portraits={
+			civilian={
+				large="gfx/leaders/ZHI/Portrait_ZHI_Zhang_Zuolin.png"
+			}
+		}
+		country_leader={
+			ideology= Military_junta_subtype
+		}
+		corps_commander = {
+			traits = { politically_connected career_officer old_guard }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+		}	
+	}
 	ZHI_Minoda_Muneki={
 		name=ZHI_Minoda_Muneki
 		portraits={

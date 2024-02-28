@@ -3,8 +3,11 @@ state={
 	id=607
 	name="STATE_607"
 	manpower=15919800
-	
-	state_category = four
+	resources={
+		steel=15
+		aluminium=9
+	}
+	state_category = five
 	
 	buildings_max_level_factor=1.000
 

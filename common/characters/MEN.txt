@@ -1,0 +1,41 @@
+characters={
+	MEN_Demchugdongrub={
+		name=MEN_Demchugdongrub
+		portraits={
+			civilian={
+				large="gfx/leaders/MEN/Portrait_MEN_Demchugdongrub1.png"
+			}
+			army={
+				large="gfx/leaders/MEN/Portrait_MEN_Demchugdongrub1.png"
+			}
+		}
+		country_leader={
+			ideology= social_conservative_subtype
+		}
+		country_leader={
+			ideology= prussian_constitutionalism_subtype
+		}
+		country_leader={
+			ideology= absolute_monarchy_subtype
+		}
+	}
+	MEN_Li_Shouxin={
+		name=MEN_Li_Shouxin
+		portraits={
+			civilian={
+				large="gfx/leaders/MEN/Portrait_MEN_Li_Shouxin.png"
+			}
+			army={
+				large="gfx/leaders/MEN/Portrait_MEN_Li_Shouxin.png"
+			}
+		}
+		field_marshal={
+			traits={ politically_connected career_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+}
