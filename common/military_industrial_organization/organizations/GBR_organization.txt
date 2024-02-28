@@ -196,8 +196,13 @@ ENG_yarrow_shipbuilders_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_yarrow_shipbuilders
 	
-	allowed = {	
-		tag = GBR 
+	allowed = {
+		OR = { tag = GBR tag = AUS }
+	}
+	visible = {
+		FROM = {
+			NOT = { tag = AUS }
+		}
 	}
 
 }

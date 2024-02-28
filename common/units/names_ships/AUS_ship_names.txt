@@ -1,0 +1,449 @@
+﻿### Historical
+## Destroyer
+AUS_DD_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_DESTROYERS
+
+	for_countries = { AUS }
+	can_use = {
+		#
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	prefix = "SMS "
+	fallback_name = "Z-%s"
+
+	unique = {
+		#Huszár-class
+		"Csikós"
+		"Dinara"
+		"Huszár"
+		"Pandur"
+		"Reka"
+		"Scharfschütze"
+		"Streiter"
+		"Turul"
+		"Ulan"
+		"Uskoke"
+		"Velebit"
+		"Wildfang"
+		#
+		"Warasdiner"
+		#Tátra-class
+		"Balaton"
+		"Csepel"
+		"Lika(T)"
+		"Orjen"
+		"Tátra"
+		"Triglav(T)"
+		#Ersatz-Triglav-class
+		"Dukla"
+		"Lika(E)"
+		"Triglav(E)"
+		"Uzsok"
+		"Honved" #in OTL, Cancelled
+	}
+}
+AUS_TB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_TB
+
+	for_countries = { AUS }
+	can_use = {
+		#
+	}
+
+	type = ship
+	ship_types = { ship_hull_light destroyer }
+
+	prefix = ""
+	fallback_name = "TB.%s"
+
+	unique = {
+		#Kaiman-class
+		"SMS Kaiman"
+		"SMS Anaconda"
+		"SMS Alligator"
+		"SMS Krokodil"
+		"SMS Wal"
+		"SMS Seehund"
+		"SMS Delphin"
+		"SMS Narwal"
+		"SMS Hai"
+		"SMS Möwe"
+		"SMS Schwalbe"
+		"SMS Pinguin"
+		"SMS Drache"
+		"SMS Greif"
+		"SMS Triton"
+		"SMS Hydra"
+		"SMS Skorpion"
+		"SMS Phönix"
+		"SMS Krake"
+		"SMS Polyp"
+		"SMS Echse"
+		"SMS Molch"
+		"SMS Kormoran"
+		"SMS Alk"
+		#
+		"SMS Magnet"
+		"SMS Satellit"
+		"SMS Trabant"
+		"SMS Planet"
+		#Meteor-class,old
+		"SMS Blitz"
+		"SMS Komet"
+		"SMS Meteor"
+		#Schichau-class,old
+		"SMS Kibitz"
+		"SMS Kukuk"
+		"SMS Staar"
+		"SMS Krähe"
+		"SMS Rabe"
+		"SMS Elster"
+		"SMS Gaukler"
+		"SMS Flamingo"
+		"SMS Sekretär"
+		"SMS Weihe"
+		"SMS Marabu"
+		"SMS Harpie"
+		"SMS Sperber"
+		"SMS Habicht"
+		"SMS Bussard"
+		"SMS Condor"
+		"SMS Geier"
+		"SMS Uhu"
+		"SMS Würger"
+		"SMS Kranich"
+		"SMS Reihar"
+		"SMS Ibis"
+		#Cobra-class,old
+		"SMS Python"
+		"SMS Kígyó"
+		"SMS Boa"
+		"SMS Cobra"
+		#Adler-class,old
+		"SMS Adler"
+		"SMS Falke"
+		#old
+		"SMS Natter"
+		"SMS Viper"
+	}
+	ordered = {
+		##250t
+		#T-group
+		74 = {"74 T"}
+		75 = {"75 T"}
+		76 = {"76 T"}
+		77 = {"77 T"}
+		78 = {"78 T"}
+		79 = {"79 T"}
+		80 = {"80 T"}
+		81 = {"81 T"}
+		#F-group
+		82 = {"82 F"}
+		83 = {"83 F"}
+		84 = {"84 F"}
+		85 = {"85 F"}
+		86 = {"86 F"}
+		87 = {"87 F"}
+		88 = {"88 F"}
+		89 = {"89 F"}
+		90 = {"90 F"}
+		91 = {"91 F"}
+		92 = {"92 F"}
+		93 = {"93 F"}
+		94 = {"94 F"}
+		95 = {"95 F"}
+		96 = {"96 F"}
+		97 = {"97 F"}
+		#M-group
+		98 = {"98 M"}
+		99 = {"99 M"}
+		100 = {"100 M"}
+		##110t
+		#T-group
+		1 = {"TB.I"}
+		2 = {"TB.II"}
+		3 = {"TB.III"}
+		4 = {"TB.IV"}
+		5 = {"TB.V"}
+		6 = {"TB.VI"}
+		#F-group
+		7 = {"TB.VII"}
+		8 = {"TB.VIII"}
+		9 = {"TB.IX"}
+		10 = {"TB.X"}
+		11 = {"TB.XI"}
+		12 = {"TB.XII"}
+	}
+}
+## Battleship
+AUS_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { AUS }
+	can_use = {
+		#
+	}
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship }
+
+	prefix = "SMS "
+	fallback_name = "S-%s"
+
+	unique = {
+		#Tegetthoff-class
+		"Viribus Unitis"
+		"Tegetthoff"
+		"Prinz Eugen"
+		"Szent István"
+		#Ersatz-Monarch-class
+		"Ersatz Monarch"
+		"Ersatz Habsburg"
+		"Hunyadi"	#cancel
+		"Graf Daun"	#cancel
+		#Habsburg-class,old
+		"Habsburg"
+		"Árpád"
+		"Babenberg"
+		#Erzherzog Karl-class,old
+		"Erzherzog Karl"
+		"Erzherzog Friedrich"
+		"Erzherzog Ferdinand Max"
+		#Radetzky-class,old
+		"Erzherzog Franz Ferdinand"
+		"Radetzky"
+		"Zrínyi"
+	}
+}
+### non-Historical
+AUS_SLAVIC_MYTHOLOGY = {
+	name = NAME_THEME_SLAVIC_MYTHOLOGY
+
+	for_countries = { AUS }
+	can_use = {
+		#
+	}
+
+	type = ship
+
+	prefix = "SMS "
+
+	unique = {
+		#Free
+		"Svarog"
+		"Perun"
+		"Veles"
+		"Morana"
+		"Víťaz"
+		"Bogdan"
+		"Drahomír"
+		"Zdeněk"
+		"Jaroslav"
+		"Belobog"
+		"Černobog"
+		"Dazhbog"
+		"Radogost"
+		"Mokosh"
+		"Velesova Noć"
+		"Svarožić"
+		"Perunica"
+		"Rusalka"
+		"Velesiči"
+		"Domovoj"
+		"Leshy"
+		"Polevica"
+		"Vodník"
+		#Bistrica-class
+		"Bistrica"
+		"Granica"
+		"Hora"
+		"Jezero"
+		"Vila"
+		"Snežnik"
+		"Veter"
+		"Vlna"
+		"Struja"
+		"Sokol"
+		"Medvědi"
+		"Vlk"
+		"Rys"
+		"Orel"
+		"Jastrub"
+		"Sova"
+		"Gradi"
+		"Radomír"
+		"Slovo"
+		"Svoboda"
+		"Nadežda"
+		"Věra"
+		"Bratstvo"
+		"Jedinstvo"
+		"Síla"
+		"Moudrost"
+		"Sláva"
+	}
+}
+AUS_BIRDS = {
+	name = NAME_THEME_BIRDS
+
+	for_countries = { AUS }
+	can_use = {
+		#
+	}
+
+	type = ship
+
+	prefix = "SMS "
+
+	unique = {
+		#Free
+		"Adler"
+		"Auerhahn"
+		"Drossel"
+		"Ente"
+		"Falke"
+		"Finke"
+		"Gayer"
+		"Habicht"
+		"Hahn"
+		"Heher"
+		"Holztaube"
+		"Kolbe"
+		"Krähe"
+		"Kleine"
+		"Mauersegler"
+		"Möwe"
+		"Eule"
+		"Papagei"
+		"Pelikan"
+		"Pfau"
+		"Rabe"
+		"Sperber"
+		"Storch"
+		"Schwalbe"
+		"Taube"
+		"Weis"
+		"Zapfen"
+		"Ziegel"
+		#Umkehrung-class
+		"Umkehrung"
+		"Kaunitz"
+		"Pompadour"
+		"Marie Antoinette"
+		"Louis XVI"
+		"MDCCLVI"
+	}
+}
+AUS_CITIES = {
+	name = NAME_THEME_CITIES
+
+	for_countries = { AUS }
+	can_use = {
+		#
+	}
+
+	type = ship
+
+	prefix = "SMS "
+
+	unique = {
+		#Free
+		"Wien"
+		"Sankt Pölten"
+		"Krems an der Donau"
+		"Wiener Neustadt"
+		"Amstetten"
+		"Klosterneuburg"
+		"Baden bei Wien"
+		"Graz"
+		"Leoben"
+		"Kapfenberg"
+		"Linz"
+		"Steyr"
+		"Wels"
+		"Vöcklabruck"
+		"Klagenfurt"
+		"Villach"
+		"Wolfsberg"
+		"Salzburg"
+		"Hallein"
+		"Saalfelden"
+		"Lienz"
+		"Innsbruck"
+		"Kufstein"
+		"Hall in Tirol"
+		"Feldkirch"
+		"Bregenz"
+		#Slovenia
+		"Marburg"
+		"Cilli"
+		"Laibach"
+		"Krainburg"
+		#Dalmatia
+		"Spalato"
+		"Sibenning"
+		"Ragusa"
+		"Càttaro"
+		#Galicia and Lodomeria
+		"Krakau"
+		"Tarnau"
+		"Reichshof"
+		"Lemberg"
+		"Drohobych"
+		"Stanislau"
+		"Tarnopol"
+		#Dartmouth-class
+		"Dartmouth"
+		"Cotswolds"
+		"Witby"
+		"Cambridge"
+	}
+}
+AUS_KAISER = {
+	name = NAME_THEME_KAISER
+
+	for_countries = { AUS }
+	can_use = {
+		#
+	}
+
+	type = ship
+
+	prefix = "SMS "
+
+	unique = {
+		#Kaiser Karl I-class
+		"Kaiser Karl I"
+		"Kaiser Maximilian I"
+		"Kaiser Rudolf I"
+		"Kaiser Franz II" #unvollendet
+		#Freie?
+		"Kaiser Franz Joseph II"
+		"Kaiser Rudolf I"
+		"Kaiser Albrecht I"
+		"Kaiser Albrecht II"
+		"Kaiser Friedrich III"
+		"Kaiser Maximilian I"
+		"Kaiser Karl V"
+		"Kaiser Ferdinand I"
+		"Kaiser Maximilian II"
+		"Kaiser Rudolf II"
+		"Kaiser Matthias"
+		"Kaiser Ferdinand II"
+		"Kaiser Ferdinand III"
+		"Kaiser Leopold I"
+		"Kaiser Joseph I"
+		"Kaiser Karl VI"
+		"Kaiser Franz I"
+		"Maria Theresia"
+		"Kaiser Joseph II"
+		"Kaiser Leopold II"
+		"Kaiser Franz II"
+		"Kaiser Ferdinand I"
+		"Kaiser Franz Joseph I"
+		"Kaiser Karl I"
+	}
+}

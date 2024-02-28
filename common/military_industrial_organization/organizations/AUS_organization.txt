@@ -231,7 +231,7 @@ AUS_simmering_organisation = {
 #####################
 
 AUS_austriawerft_organisation = {
-	include = generic_task_force_ship_organization
+	include = generic_raider_ship_organization
 	name = austriawerft
 	icon = GFX_idea_austriawerft
 	allowed = { original_tag = AUS }
@@ -256,7 +256,7 @@ AUS_austriawerft_organisation = {
 			military_industrial_organization_size_up_requirement = -0.20
 		}
 	}
-	add_trait = { 
+	add_trait = {
 		token = AUS_mio_trait_production_under_the_limit
 		name = AUS_mio_trait_production_under_the_limit
 		icon = GFX_generic_mio_department_icon_ship_general_line_efficiency
@@ -277,10 +277,7 @@ AUS_austriawerft_organisation = {
 					}
 				}
 			}
-		}
-
-		any_parent = {
-			generic_mio_trait_advanced_fitting_works
+			date > 1939.1.1
 		}
 
 		equipment_bonus = {
@@ -291,14 +288,14 @@ AUS_austriawerft_organisation = {
 			production_capacity_factor = 0.15
 		}
 	}
-	add_trait = { 
+	add_trait = {
 		token = AUS_mio_trait_production_under_the_limit_2
 		name = AUS_mio_trait_production_under_the_limit_2
 		icon = GFX_generic_mio_department_icon_ship_general_line_efficiency
 		special_trait_background = yes
 
 		position = { x=8 y=4 }
-		
+
 		any_parent = {
 			AUS_mio_trait_production_under_the_limit
 		}
@@ -313,7 +310,7 @@ AUS_austriawerft_organisation = {
 	}
 }
 AUS_fiume_3maj_organisation = {
-	include = generic_raider_ship_organization
+	include = generic_task_force_ship_organization
 	name = fiume_3maj
 	icon = GFX_idea_3maj
 	allowed = { original_tag = AUS }
@@ -791,4 +788,13 @@ AUS_wnlf_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	initial_trait = {
+		limit_to_equipment_type = {
+			train_equipment
+			railway_gun
+		}
+		production_bonus = {
+			production_capacity_factor = 0.33
+		}
+	}
 }

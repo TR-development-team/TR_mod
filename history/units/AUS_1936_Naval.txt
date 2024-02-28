@@ -1,0 +1,211 @@
+﻿units = {
+	##### NAVAL UNITS #####
+	### 1. Schlachtflotte
+	fleet = {
+		name = "1. Schlachtflotte"
+		naval_base = 13285  # Cattaro
+		#1. Schlachtschiffgeschwader
+		task_force = {
+			name = "1. Schlachtschiffgeschwader"
+			location = 13285  # Cattaro
+			ship = { name = "SMS Balaton" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Tátra-Klasse" } } }
+			ship = { name = "SMS Csepel" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Tátra-Klasse" } } }
+			ship = { name = "SMS Lika(T)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Tátra-Klasse" } } }
+			ship = { name = "SMS Orjen" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Tátra-Klasse" } } }
+			ship = { name = "SMS Tátra" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Tátra-Klasse" } } }
+			ship = { name = "SMS Triglav(T)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Tátra-Klasse" } } }
+		}
+		#2. Schlachtschiffgeschwader
+		task_force = {
+			name = "2. Schlachtschiffgeschwader"
+			location = 13285  # Cattaro
+			ship = { name = "SMS Dukla" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Ersatz-Triglav-Klasse" } } }
+			ship = { name = "SMS Lika(E)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Ersatz-Triglav-Klasse" } } }
+			ship = { name = "SMS Triglav(E)" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Ersatz-Triglav-Klasse" } } }
+			ship = { name = "SMS Uzsok" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Ersatz-Triglav-Klasse" } } }
+			ship = { name = "SMS Honved" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Ersatz-Triglav-Klasse" } } }
+		}
+	}
+	### 2. Schlachtflotte
+	fleet = {
+		name = "2. Schlachtflotte"
+		naval_base = 13252  # Kraljevica
+		#3. Schlachtschiffgeschwader
+		task_force = {
+			name = "3. Schlachtschiffgeschwader"
+			location = 13252  # Kraljevica
+			ship = { name = "SMS Csikós" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Dinara" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Huszár" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Pandur" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Reka" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Scharfschütze" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Streiter" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Turul" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Ulan" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Uskoke" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Velebit" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Wildfang" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+			ship = { name = "SMS Warasdiner" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Huszár-Klasse" } } }
+		}
+		#4. Schlachtschiffgeschwader
+		task_force = {
+			name = "4. Schlachtschiffgeschwader"
+			location = 13252  # Kraljevica
+			ship = { name = "SMS Bistrica" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Granica" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Hora" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Jezero" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Vila" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Snežnik" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Veter" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Vlna" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Struja" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Sokol" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Medvědi" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Vlk" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Rys" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Orel" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Jastrub" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Sova" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Gradi" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Radomír" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Slovo" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Svoboda" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Nadežda" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Věra" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Bratstvo" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Jedinstvo" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Síla" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Moudrost" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+			ship = { name = "SMS Sláva" definition = destroyer start_experience_factor = 0.15 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Bistrica-Klasse" } } }
+		}
+	}
+	### Kreuzerflotte
+	fleet = {
+		name = "Kreuzerflotte"
+		naval_base = 13285  # Cattaro
+		#Kreuzerflotte
+		task_force = {
+			name = "Kreuzerflotte"
+			location = 13285  # Cattaro
+			ship = { name = "SMS Umkehrung" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Umkehrung-Klasse" } } }
+			ship = { name = "SMS Kaunitz" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Umkehrung-Klasse" } } }
+			ship = { name = "SMS Pompadour" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Umkehrung-Klasse" } } }
+			ship = { name = "SMS Marie Antoinette" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Umkehrung-Klasse" } } }
+			ship = { name = "SMS Louis XVI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Umkehrung-Klasse" } } }
+			ship = { name = "SMS MDCCLVI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Umkehrung-Klasse" } } }
+		}
+	}
+	### 1. Torpedoflotte
+	fleet = {
+		name = "1. Torpedoflotte"
+		naval_base = 3974  # Sibenning
+		#1. Torpedoflotte
+		task_force = {
+			name = "1. Torpedoflotte"
+			location = 3974  # Sibenning
+			ship = { name = "SMS Viribus Unitis" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Tegetthoff-Klasse" } } }
+			ship = { name = "SMS Tegetthoff" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Tegetthoff-Klasse" } } }
+			ship = { name = "SMS Prinz Eugen" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Tegetthoff-Klasse" } } }
+			ship = { name = "SMS Szent István" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Tegetthoff-Klasse" } } }
+		}
+	}
+	### 2. Torpedoflotte
+	fleet = {
+		name = "2. Torpedoflotte"
+		naval_base = 3924  # Spalato
+		#2. Torpedoflotte
+		task_force = {
+			name = "2. Torpedoflotte"
+			location = 3924  # Spalato
+			ship = { name = "SMS Dartmouth" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Dartmouth-Klasse" } } }
+			ship = { name = "SMS Cotswolds" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Dartmouth-Klasse" } } }
+			ship = { name = "SMS Witby" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Dartmouth-Klasse" } } }
+			ship = { name = "SMS Cambridge" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_2 = { amount = 1 owner = AUS version_name = "Dartmouth-Klasse" } } }
+		}
+	}
+	### Küstenverteidigungsflotte
+	fleet = {
+		name = "Küstenverteidigungsflotte"
+		naval_base = 13285  # Cattaro
+		#5. Schlachtschiffgeschwader
+		task_force = {
+			name = "5. Schlachtschiffgeschwader"
+			location = 13285  # Cattaro
+			ship = { name = "SMS Ersatz Monarch" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Ersatz-Monarch-Klasse" } } }
+			ship = { name = "SMS Ersatz Habsburg" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Ersatz-Monarch-Klasse" } } }
+			ship = { name = "SMS Kaiser Karl I" pride_of_the_fleet = yes definition = battle_cruiser start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Kaiser Karl I-Klasse" } } }
+			ship = { name = "SMS Kaiser Maximilian I" definition = battle_cruiser start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Kaiser Karl I-Klasse" } } }
+			ship = { name = "SMS Kaiser Rudolf I" definition = battle_cruiser start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Kaiser Karl I-Klasse" } } }
+		}
+	}
+}
+##### TBs
+#ship = { name = "SMS Kaiman" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Anaconda" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Alligator" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Krokodil" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Wal" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Seehund" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Delphin" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Narwal" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Hai" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Möwe" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Schwalbe" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Pinguin" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Drache" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Greif" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Triton" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Hydra" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Skorpion" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Phönix" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Krake" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Polyp" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Echse" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Molch" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Kormoran" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Alk" definition = destroyer start_experience_factor = 0.20 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Magnet" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Satellit" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Trabant" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "SMS Planet" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "Kaiman-Klasse" } } }
+#ship = { name = "TB.I" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.II" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.III" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.IV" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.V" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.VI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.VII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.VIII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.IX" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.X" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.XI" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "TB.XII" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "110t-Klasse" } } }
+#ship = { name = "74 T" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "75 T" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "76 T" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "77 T" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "78 T" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "79 T" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "80 T" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "81 T" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "82 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "83 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "84 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "85 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "86 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "87 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "88 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "89 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "90 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "91 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "92 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "93 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "94 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "95 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "96 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "97 F" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "98 M" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "99 M" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+#ship = { name = "100 M" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }

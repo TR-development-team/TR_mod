@@ -1,5 +1,6 @@
 ﻿capital = 4
 oob = "AUS_1936"
+set_naval_oob = "AUS_1936_Naval"
 
 set_cosmetic_tag = AUS_lands
 
@@ -45,6 +46,7 @@ GAL = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
 BOS = { add_to_tech_sharing_group = austria_hungarian_empire_tech_share }
 
 add_manpower = 300000
+set_convoys = 250
 
 set_stability = 0.5
 set_war_support = 0.3
@@ -157,11 +159,18 @@ if = {
 		basic_ship_hull_cruiser = 1
 		basic_cruiser_armor_scheme = 1
 		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
 		basic_battery = 1
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		coastal_defense_ships = 1
 		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_heavy_battery = 1
+		panzerschiffe = 1
+		pre_dreadnoughts = 1
+		improved_ship_torpedo_launcher = 1
+		sonar = 1
 	}
 }
 
@@ -207,6 +216,229 @@ add_ideas = {
 }
 
 ### VARIANTS ###
+
+#Ships
+#create_equipment_variant = {
+#	name = "Kaiman-Klasse"
+#	type = ship_hull_light_1
+#	name_group = AUS_TB_HISTORICAL
+#	parent_version = 0
+#	modules = {
+#		fixed_ship_battery_slot = ship_torpedo_1
+#		fixed_ship_anti_air_slot = ship_anti_air_1
+#		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+#		fixed_ship_radar_slot = empty
+#		fixed_ship_engine_slot = light_ship_engine_1
+#		fixed_ship_torpedo_slot = empty
+#		mid_1_custom_slot = empty
+#		rear_1_custom_slot = empty
+#	}
+#	obsolete = yes
+#	design_team = mio:AUS_austriawerft_organisation
+#}
+#create_equipment_variant = {
+#	name = "110t-Klasse"
+#	type = ship_hull_light_1
+#	name_group = AUS_TB_HISTORICAL
+#	parent_version = 0
+#	modules = {
+#		fixed_ship_battery_slot = ship_torpedo_2
+#		fixed_ship_anti_air_slot = ship_anti_air_1
+#		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+#		fixed_ship_radar_slot = empty
+#		fixed_ship_engine_slot = light_ship_engine_1
+#		fixed_ship_torpedo_slot = empty
+#		mid_1_custom_slot = empty
+#		rear_1_custom_slot = empty
+#	}
+#	obsolete = yes
+#	design_team = mio:AUS_austriawerft_organisation
+#}
+#create_equipment_variant = {
+#	name = "250t-Klasse"
+#	type = ship_hull_light_1
+#	name_group = AUS_TB_HISTORICAL
+#	parent_version = 0
+#	modules = {
+#		fixed_ship_battery_slot = ship_torpedo_2
+#		fixed_ship_anti_air_slot = ship_anti_air_1
+#		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+#		fixed_ship_radar_slot = empty
+#		fixed_ship_engine_slot = light_ship_engine_1
+#		fixed_ship_torpedo_slot = ship_torpedo_1
+#		mid_1_custom_slot = empty
+#		rear_1_custom_slot = empty
+#	}
+#	obsolete = yes
+#	design_team = mio:AUS_austriawerft_organisation
+#}
+create_equipment_variant = {
+	name = "Huszár-Klasse"
+	type = ship_hull_light_1
+	name_group = AUS_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = empty
+	}
+	obsolete = yes
+	design_team = mio:AUS_austriawerft_organisation
+}
+create_equipment_variant = {
+	name = "Tátra-Klasse"
+	type = ship_hull_light_1
+	name_group = AUS_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = empty
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_light_battery_1
+	}
+	obsolete = yes
+	#design_team = mio:AUS_austriawerft_organisation
+}
+create_equipment_variant = {
+	name = "Ersatz-Triglav-Klasse"
+	type = ship_hull_light_1
+	name_group = AUS_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_light_battery_1
+	}
+	obsolete = yes
+	#design_team = mio:AUS_austriawerft_organisation
+}
+create_equipment_variant = {
+	name = "Bistrica-Klasse"
+	type = ship_hull_light_2
+	name_group = AUS_SLAVIC_MYTHOLOGY
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_2
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = ship_light_battery_1
+	}
+	design_team = mio:AUS_austriawerft_organisation
+}
+create_equipment_variant = {
+	name = "Umkehrung-Klasse"
+	type = ship_hull_light_2
+	name_group = AUS_BIRDS
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = light_ship_engine_2
+		fixed_ship_torpedo_slot = ship_torpedo_2
+		mid_1_custom_slot = empty
+		rear_1_custom_slot = ship_light_battery_1
+	}
+	design_team = mio:FRA_fcm_organization
+}
+create_equipment_variant = {
+	name = "Dartmouth-Klasse"
+	type = ship_hull_light_2
+	name_group = AUS_CITIES
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = dp_light_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = ship_sonar_1
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_1
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_depth_charge_1
+	}
+	design_team = mio:ENG_yarrow_shipbuilders_organization
+}
+create_equipment_variant = {
+	name = "Tegetthoff-Klasse"
+	type = ship_hull_heavy_1
+	name_group = AUS_BB_HISTORICAL
+	parent_version = 1
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_1
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = empty
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_heavy_battery_1
+	}
+	obsolete = yes
+	design_team = mio:AUS_austriawerft_organisation
+}
+create_equipment_variant = {
+	name = "Ersatz-Monarch-Klasse"
+	type = ship_hull_heavy_1
+	name_group = AUS_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_1
+		front_1_custom_slot = ship_secondaries_1
+		mid_1_custom_slot = ship_secondaries_1
+		mid_2_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_heavy_battery_1
+	}
+	obsolete = yes
+	design_team = mio:AUS_austriawerft_organisation
+}
+create_equipment_variant = {
+	name = "Kaiser Karl I-Klasse"
+	type = ship_hull_heavy_1
+	name_group = AUS_KAISER
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_2
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+		fixed_ship_radar_slot = empty
+		fixed_ship_engine_slot = heavy_ship_engine_2
+		fixed_ship_secondaries_slot = dp_ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bc_1
+		front_1_custom_slot = empty
+		mid_1_custom_slot = dp_ship_secondaries_1
+		mid_2_custom_slot = ship_anti_air_2
+		rear_1_custom_slot = ship_heavy_battery_2
+	}
+	design_team = mio:AUS_austriawerft_organisation
+}
 #if = {
 #	limit = {
 #		has_dlc = "No Step Back"

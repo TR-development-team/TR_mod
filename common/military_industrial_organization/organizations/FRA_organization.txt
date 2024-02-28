@@ -117,8 +117,11 @@ FRA_fcm_organization = {
 	include = generic_escort_ship_organization
 	icon = GFX_idea_fcm
 	allowed = {	
-		tag = FRA 
+		OR = { tag = FRA tag = AUS }
 		has_dlc = "Arms Against Tyranny"
+	}
+	visible = {
+		FROM = { NOT = { tag = AUS } }
 	}
 }
 
