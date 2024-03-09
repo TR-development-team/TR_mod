@@ -254,6 +254,7 @@ AUS_austriawerft_organisation = {
 	initial_trait = {
 		organization_modifier = {
 			military_industrial_organization_size_up_requirement = -0.20
+			military_industrial_organization_research_bonus = 0.05
 		}
 	}
 	add_trait = {
