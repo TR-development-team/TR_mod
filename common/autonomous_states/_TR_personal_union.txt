@@ -3,31 +3,29 @@ autonomy_state = {	#同君連合下位国
 	is_puppet = yes
 	min_freedom_level = 0.5
 	manpower_influence = 0.2
-	use_overlord_color = yes
-	
+
 	rule = {
 		can_boost_other_ideologies = no
 		can_decline_call_to_war = yes
 		can_force_government = no
 		can_not_declare_war = no
 	}
-	
+
 	modifier = {
 		autonomy_manpower_share = 0.0
 		extra_trade_to_overlord_factor = 0.5
 		overlord_trade_cost_factor = -0.5
-		can_master_build_for_us = 1
 	}
-	
+
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
-	
+
 	allowed_levels_filter = {
 		junior_partner_state
 		AUS_crown_land
 		HUN_crown_land
 	}
-	
+
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
@@ -36,8 +34,7 @@ autonomy_state = {
 	is_puppet = yes
 	min_freedom_level = 0
 	manpower_influence = 1
-	use_overlord_color = yes
-	
+
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no
@@ -55,13 +52,13 @@ autonomy_state = {
 		mic_to_overlord_factor = 0.75
 		research_sharing_per_country_bonus_factor = -0.5
 	}
-	
+
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
-	
+
 	allowed = {	OVERLORD = {	original_tag = AUS	has_cosmetic_tag = AUS_lands	}	}
 	allowed_levels_filter = {	AUS_crown_land	}
-	
+
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
@@ -70,8 +67,7 @@ autonomy_state = {
 	is_puppet = yes
 	min_freedom_level = 0
 	manpower_influence = 1
-	use_overlord_color = yes
-	
+
 	rule = {
 		can_not_declare_war = yes
 		can_decline_call_to_war = no

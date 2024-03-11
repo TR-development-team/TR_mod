@@ -36,11 +36,11 @@
 	### 2. Schlachtflotte
 	fleet = {
 		name = "2. Schlachtflotte"
-		naval_base = 13252  # Kraljevica
+		naval_base = 11564  # Fiume
 		#3. Schlachtschiffgeschwader
 		task_force = {
 			name = "3. Schlachtschiffgeschwader"
-			location = 13252  # Kraljevica
+			location = 11564  # Fiume
 			ship = { name = "SMS Ersatz Monarch" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Ersatz-Monarch-Klasse" } } }
 			ship = { name = "SMS Viribus Unitis" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Tegetthoff-Klasse" } } }
 
@@ -53,7 +53,7 @@
 		#4. Schlachtschiffgeschwader
 		task_force = {
 			name = "4. Schlachtschiffgeschwader"
-			location = 13252  # Kraljevica
+			location = 11564  # Fiume
 			ship = { name = "SMS Ersatz Habsburg" definition = battleship start_experience_factor = 0.2 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Ersatz-Monarch-Klasse" } } }
 			ship = { name = "SMS Tegetthoff" definition = battleship start_experience_factor = 0.3 equipment = { ship_hull_heavy_1 = { amount = 1 owner = AUS version_name = "Tegetthoff-Klasse" } } }
 
@@ -143,11 +143,11 @@
 	### Unterseebootflottille
 	fleet = {
 		name = "Unterseebootflottille"
-		naval_base = 13252  # Kraljevica
+		naval_base = 11564  # Fiume
 		#Unterseebootflottille
 		task_force = {
 			name = "Unterseebootflottille"
-			location = 13252  # Kraljevica
+			location = 11564  # Fiume
 
 			ship = { name = "SM U-107" definition = submarine start_experience_factor = 0.30 equipment = { ship_hull_submarine_1 = { amount = 1 owner = AUS version_name = "U-107-Klasse" } } }
 			ship = { name = "SM U-108" definition = submarine start_experience_factor = 0.30 equipment = { ship_hull_submarine_1 = { amount = 1 owner = AUS version_name = "U-107-Klasse" } } }
@@ -256,3 +256,153 @@
 #ship = { name = "98 M" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
 #ship = { name = "99 M" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
 #ship = { name = "100 M" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = AUS version_name = "250t-Klasse" } } }
+instant_effect = {
+	### Ongoing Ship Production Jan 1 1936 ###
+	# CLP
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_panzerschiff
+			creator = "AUS"
+			version_name = "Donau-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.97
+		amount = 1
+		industrial_manufacturer = mio:AUS_austriawerft_organisation
+	}
+	# CL
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "AUS"
+			version_name = "Tarvisium-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.3
+		amount = 1
+		industrial_manufacturer = mio:AUS_austriawerft_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_2
+			creator = "AUS"
+			version_name = "Tarvisium-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.25
+		amount = 1
+		industrial_manufacturer = mio:AUS_fiume_3maj_organisation
+	}
+	# DD
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "AUS"
+			version_name = "Bistrica-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.95
+		amount = 3
+		industrial_manufacturer = mio:AUS_austriawerft_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "AUS"
+			version_name = "Bistrica-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.95
+		amount = 3
+		industrial_manufacturer = mio:AUS_austriawerft_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "AUS"
+			version_name = "Bistrica-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.90
+		amount = 3
+		industrial_manufacturer = mio:AUS_austriawerft_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "AUS"
+			version_name = "Bistrica-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.90
+		amount = 3
+		industrial_manufacturer = mio:AUS_austriawerft_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "AUS"
+			version_name = "Bistrica-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.85
+		amount = 3
+		industrial_manufacturer = mio:AUS_fiume_3maj_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "AUS"
+			version_name = "Bistrica-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.85
+		amount = 3
+		industrial_manufacturer = mio:AUS_fiume_3maj_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "AUS"
+			version_name = "Bistrica-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 3
+		industrial_manufacturer = mio:AUS_fiume_3maj_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "AUS"
+			version_name = "Bistrica-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 3
+		industrial_manufacturer = mio:AUS_fiume_3maj_organisation
+	}
+	# SS
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "AUS"
+			version_name = "U-140-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.65
+		amount = 1
+		industrial_manufacturer = mio:AUS_austriawerft_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "AUS"
+			version_name = "U-140-Klasse"
+		}
+		requested_factories = 1
+		progress = 0.55
+		amount = 1
+		industrial_manufacturer = mio:AUS_austriawerft_organisation
+	}
+}

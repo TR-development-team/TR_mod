@@ -1,10 +1,10 @@
 state = {
 	id = 948
-	name = "STATE_948"	# Dalmatia #TODO_Manu: VP name (Fiume) should change to Rijeka under YUG control. Maybe state name too (State name changed from Carniola to Istria after merging with Pola (Istria))
-	manpower = 151020	# Fiume had 75000 before merging rest of Istria # Dalmatia had 1431700 before Fiume split
+	name = "STATE_948"
+	manpower = 151020
 	state_category = three_port
 	history = {
-		owner = ITA
+		owner = AUS
 		victory_points = {
 			#Fiume(C:Rijeka,G:Flaum)
 			11564
@@ -12,19 +12,20 @@ state = {
 		}
 		buildings = {
 			infrastructure = 3
-			dockyard = 1
+			dockyard = 2
 			11564 = {
-				naval_base = 2
+				naval_base = 3
 			}
 		}
 		add_core_of = ITA
-		#add_core_of = AUS
+		add_core_of = AUS
 		add_core_of = CRO
 		#add_core_of = IST
-		#CONTROLLED BY ITALY AT GAME START -> ITALIAN NAMES
+		#CONTROLLED BY OESTERREICH AT GAME START -> AUSTRO NAMES
+		set_state_name = STATE_948_GERMANY
 		set_province_name = {
 			id = 11564
-			name = VICTORY_POINTS_11564_ITALIAN
+			name = VICTORY_POINTS_11564_GERMANY
 		}
 	}
 	provinces = {
