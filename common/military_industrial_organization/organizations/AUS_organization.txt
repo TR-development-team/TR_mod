@@ -15,6 +15,11 @@ AUS_graef_stift_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
 	add_trait = { 
 		token = AUS_mio_trait_heavy_armor
 		name = AUS_mio_trait_heavy_armor
@@ -45,6 +50,11 @@ AUS_puch_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
 	add_trait = { 
 		token = AUS_mio_trait_utilize_actual_results
 		name = AUS_mio_trait_utilize_actual_results
@@ -116,6 +126,9 @@ AUS_saurer_organisation = {
 		equipment_bonus = {
 			maximum_speed = 0.1
 			soft_attack = 0.05
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
 		}
 	}
 	override_trait = {
@@ -196,6 +209,11 @@ AUS_simmering_organisation = {
 	allowed = { original_tag = AUS }
 	visible = { }
 	available = { }
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
 	add_trait = { 
 		token = AUS_mio_trait_good_engine_diesel
 		name = AUS_mio_trait_good_engine_diesel
@@ -598,6 +616,11 @@ AUS_phoenix_organisation = {
 	research_categories = {	
 		mio_cat_all_light_fighter_and_modules 
 	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
 	add_trait = { 
 		token = AUS_mio_trait_overloaded_with_weapons
 		name = AUS_mio_trait_overloaded_with_weapons
@@ -630,6 +653,11 @@ AUS_oeffag_organisation = {
 	}
 	research_categories = {	
 		mio_cat_all_light_fighter_and_modules 
+	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
 	}
 	add_trait = { 
 		token = AUS_mio_trait_highest_standards_of_maintenance
@@ -788,6 +816,11 @@ AUS_austro_daimler_organisation = {
 		armor
 		cat_armored_cars
 	}
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
+		}
+	}
 	override_trait = {
 		token = generic_mio_trait_reinforced_wheels
 		icon = GFX_generic_mio_trait_icon_maximum_speed
@@ -837,6 +870,9 @@ AUS_wnlf_organisation = {
 		}
 		production_bonus = {
 			production_capacity_factor = 0.33
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.05
 		}
 	}
 }
