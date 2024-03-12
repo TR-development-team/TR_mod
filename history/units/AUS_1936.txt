@@ -89,19 +89,27 @@ division_template = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
 		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
 		light_armor = { x = 1 y = 0 }
 		light_armor = { x = 1 y = 1 }
 		light_armor = { x = 1 y = 2 }
 		motorized = { x = 2 y = 0 }
 		motorized = { x = 2 y = 1 }
 		motorized = { x = 2 y = 2 }
-		motorized = { x = 2 y = 3 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		mot_artillery_brigade = { x = 4 y = 0 }
+		mot_artillery_brigade = { x = 4 y = 1 }
+		mot_artillery_brigade = { x = 4 y = 2 }
 	}
 	support = {
 		mot_recon = { x = 0 y = 0 }
 		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 2 }
 	}
+
+	priority = 2
 }
 
 
@@ -117,6 +125,12 @@ units = {
 		division_template = "Kampfwagentruppendivisionen"
 		start_experience_factor = 0.3
 		#start_equipment_factor = 0.9
+		force_equipment_variants = {
+			light_tank_chassis_1 = {
+				owner = AUS
+				version_name = "Kpwg. 31 A"
+			}
+		}
 	}
 	division= {	
 		division_name = {
@@ -127,6 +141,12 @@ units = {
 		division_template = "Kampfwagentruppendivisionen"
 		start_experience_factor = 0.3
 		#start_equipment_factor = 0.9
+		force_equipment_variants = {
+			light_tank_chassis_1 = {
+				owner = AUS
+				version_name = "Kpwg. 31 A"
+			}
+		}
 	}
 	division= {	
 		division_name = {
@@ -137,6 +157,12 @@ units = {
 		division_template = "Kampfwagentruppendivisionen"
 		start_experience_factor = 0.3
 		#start_equipment_factor = 0.9
+		force_equipment_variants = {
+			light_tank_chassis_1 = {
+				owner = AUS
+				version_name = "Kpwg. 31 A"
+			}
+		}
 	}
 	#Mountain
 	division= {	
@@ -634,6 +660,7 @@ units = {
 }
 
 ### Starting Production ###
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -641,16 +668,15 @@ instant_effect = {
 			creator = "AUS"
 		}
 		requested_factories = 4
-		progress = 0.54
 		efficiency = 100
+		industrial_manufacturer = mio:AUS_steyr_organisation
 	}
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
 			creator = "AUS"
 		}
-		requested_factories = 2
-		progress = 0.74
+		requested_factories = 1
 		efficiency = 100
 	}
 	add_equipment_production = {
@@ -659,26 +685,44 @@ instant_effect = {
 			creator = "AUS"
 		}
 		requested_factories = 2
-		progress = 0.74
+		efficiency = 100
+		industrial_manufacturer = mio:AUS_boehler_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 1
 		efficiency = 100
 	}
-	#add_equipment_production = {
-	#	equipment = {
-	#		type = small_plane_airframe_0
-	#		creator = "AUS"
-	#		version_name = "Phönix D.IV"
-	#	}
-	#	requested_factories = 2
-	#	progress = 0.74
-	#	efficiency = 100
-	#}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_2
+			creator = "AUS"
+			version_name = "Kpwg. 35 A"
+		}
+		requested_factories = 2
+		efficiency = 100
+		industrial_manufacturer = mio:AUS_saurer_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "AUS"
+		}
+		requested_factories = 1
+		efficiency = 100
+		industrial_manufacturer = mio:AUS_laurin_klement_organisation
+	}
 	add_equipment_production = {
 		equipment = {
 			type = train_equipment_1
-			creator = "AUS" 
+			creator = "AUS"
 		}
-		requested_factories = 2
-		progress = 0.9
+		requested_factories = 1
+		progress = 0.99
 		efficiency = 100
+		industrial_manufacturer = mio:AUS_wnlf_organisation
 	}
 }
