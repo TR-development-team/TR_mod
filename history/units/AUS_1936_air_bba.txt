@@ -1,0 +1,42 @@
+﻿air_wings = {
+	997 = {
+		small_plane_airframe_0 = {
+			owner = "AUS"
+			amount = 100
+			version_name = "Phönix E.II"
+		}
+		medium_plane_airframe_0 = {
+			owner = "AUS"
+			amount = 50
+			version_name = "WN 26"
+		}
+	}
+	947 = {
+		small_plane_airframe_0 = {
+			owner = "AUS"
+			amount = 100
+			version_name = "ÖF 27"
+		}
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			version_name = "ÖF 27"
+		}
+		requested_factories = 1
+		efficiency = 100
+		industrial_manufacturer = mio:AUS_oeffag_organisation
+	}
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_0
+			version_name = "WN 26"
+		}
+		requested_factories = 1
+		efficiency = 100
+		industrial_manufacturer = mio:AUS_wnf_organisation
+	}
+}

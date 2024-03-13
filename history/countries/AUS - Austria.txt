@@ -1,6 +1,7 @@
 ﻿capital = 4
 oob = "AUS_1936"
 set_naval_oob = "AUS_1936_naval_mtg"
+set_air_oob = "AUS_1936_air_bba"
 
 set_cosmetic_tag = AUS_lands
 
@@ -97,7 +98,6 @@ if = {
 		aircraft_construction = 1
 		iw_small_airframe = 1
 		iw_medium_airframe = 1
-		iw_large_airframe = 1
 		air_torpedoe_1 = 1
 	}
 	else = {
@@ -646,6 +646,59 @@ create_equipment_variant = {
 		rear_1_custom_slot = ship_heavy_battery_2
 	}
 	design_team = mio:AUS_austriawerft_organisation
+}
+
+#Air
+create_equipment_variant = {
+	name = "Phönix D.III"
+	type = small_plane_airframe_0
+	parent_version = 0
+	modules = {
+		fixed_main_weapon_slot = light_mg_2x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+	obsolete = yes
+	design_team = mio:AUS_phoenix_organisation
+}
+create_equipment_variant = {
+	name = "Phönix E.II"
+	type = small_plane_airframe_0
+	parent_version = 1
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+	design_team = mio:AUS_phoenix_organisation
+}
+create_equipment_variant = {
+	name = "ÖF 27"
+	type = small_plane_airframe_0
+	parent_version = 2
+	modules = {
+		fixed_main_weapon_slot = light_mg_4x
+		fixed_auxiliary_weapon_slot_1 = light_mg_2x
+		engine_type_slot = engine_1_1x
+		special_type_slot_1 = empty
+	}
+	design_team = mio:AUS_oeffag_organisation
+}
+create_equipment_variant = {
+	name = "WN 26"
+	type = medium_plane_airframe_0
+	modules = {
+		fixed_main_weapon_slot = medium_bomb_bay
+		fixed_auxiliary_weapon_slot_1 = empty
+		fixed_auxiliary_weapon_slot_2 = empty
+		fixed_auxiliary_weapon_slot_3 = empty
+		engine_type_slot = engine_1_2x
+		special_type_slot_1 = lmg_defense_turret_2x
+		special_type_slot_2 = empty
+		special_type_slot_3 = empty
+		special_type_slot_4 = empty
+	}
+	design_team = mio:AUS_wnf_organisation
 }
 #if = {
 #	limit = {
