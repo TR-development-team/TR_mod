@@ -19,29 +19,11 @@ AUS_debug_category = {
 		fire_only_once = no
 		available = {
 		}
-		
 		modifier = {
-			org_loss_when_moving = -0.5
 		}
 		days_remove = 1000
 		complete_effect = {
 			custom_effect_tooltip = AUS_integration_csp_into_gdp
-			random_owned_controlled_state = {
-				prioritize = { 152 }
-				increase_state_category_one = yes
-			}
-			random_owned_controlled_state = {
-				prioritize = { 153 }
-				increase_state_category_two = yes
-			}
-			random_owned_controlled_state = {
-				prioritize = { 987 }
-				increase_state_category_one = yes
-			}
-			random_owned_controlled_state = {
-				prioritize = { 997 }
-				increase_state_category_one = yes
-			}
 			hidden_effect = {
 				set_temp_variable = {
 					temp_main = party_popularity_100@social_conservative
@@ -64,6 +46,71 @@ AUS_debug_category = {
 					paternal_autocrat = party_popularity_100@paternal_autocrat
 					national_populist = party_popularity_100@national_populist
 					Gnosticism = party_popularity_100@Gnosticism
+				}
+			}
+			HUN = {
+				end_puppet = CRO
+			}
+			end_puppet = HUN
+			CRO = {
+				leave_faction = yes
+				set_cosmetic_tag = CRO
+			}
+			HUN = {
+				leave_faction = yes
+				create_faction = "イシュトヴァーン協約"
+				set_autonomy = {
+					target = CRO
+					autonomous_state = HUN_crown_land
+				}
+				set_cosmetic_tag = HUN
+			}
+			set_autonomy = {
+				target = CZE
+				autonomous_state = AUS_crown_land
+			}
+			CZE = {
+				set_cosmetic_tag = CZE_crown_lands
+			}
+		}
+	}
+	AUS_fifth_balkan_war = {
+		complete_effect = {
+			random_other_country = {
+				limit = {
+					is_puppet = no
+					OR = {
+						original_tag = BUL
+						original_tag = SER
+						original_tag = GRE
+						original_tag = ROM
+					}
+				}
+				create_faction = "バルカン同盟"
+			}
+			every_other_country = {
+				limit = {
+					is_puppet = no
+					is_faction_leader = no
+					OR = {
+						original_tag = BUL
+						original_tag = SER
+						original_tag = GRE
+						original_tag = ROM
+						original_tag = MNT
+					}
+				}
+				random_country = {
+					limit = {
+						is_faction_leader = yes
+						OR = {
+							original_tag = BUL
+							original_tag = SER
+							original_tag = GRE
+							original_tag = ROM
+						}
+					}
+					add_to_faction = PREV
 				}
 			}
 		}

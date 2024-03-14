@@ -19,8 +19,8 @@ set_popularities = {
 	syndicalist = 3
 	radical_socialist = 8
 	social_democrat = 25
-	social_liberal = 3
-	market_liberal = 9
+	social_liberal = 5
+	market_liberal = 7
 	social_conservative = 29
 	authoritarian_democrat = 3
 	paternal_autocrat = 0
@@ -224,7 +224,7 @@ add_ideas = {
 ### VARIANTS ###
 #Tanks
 create_equipment_variant = {
-	name = "Kpwg. 31 B"
+	name = "Kpwg. 31 Ausf. B"
 	type = light_tank_chassis_1
 	parent_version = 0
 	modules = {
@@ -244,7 +244,7 @@ create_equipment_variant = {
 	design_team = mio:AUS_saurer_organisation
 }
 create_equipment_variant = {
-	name = "Skpwg. 30 A"
+	name = "Skpwg. 30 Ausf. A"
 	type = heavy_tank_chassis_0
 	parent_version = 0
 	modules = {
@@ -265,7 +265,7 @@ create_equipment_variant = {
 	icon = "GFX_GER_basic_heavy_tank_medium"
 }
 create_equipment_variant = {
-	name = "Kpwg. 35 A"
+	name = "Kpwg. 35 Ausf. A"
 	type = light_tank_chassis_2
 	parent_version = 0
 	modules = {
